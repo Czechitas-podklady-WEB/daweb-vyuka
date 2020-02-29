@@ -55,7 +55,7 @@ Počítač ve svojí nejzákladnější podstatě funguje přesně jako náš bl
 
 ## První JavaScript příkazy
 
-Po dlouhých povídáních konečně přichází ten čas, kdy si začneme ušpiníme ruce skutečným JavaScriptem. Nejdříve si ovšem pořádně unajasníme terminologii. JavaScript je programovací jazyk, tedy sada nějakých pravidel jak sestavovat příkazy. Pokud chceme, aby náš počítač tyto příkazy vykonal, protřebujeme takzvaný *JavaScript runtime*. To je program, který čte naše JavaScriptové příkazy a jeden za druhým je provádí. 
+Po dlouhých povídáních konečně přichází ten čas, kdy si začneme ušpiníme ruce skutečným JavaScriptem. Nejdříve si ovšem pořádně ujasníme terminologii. JavaScript je programovací jazyk, tedy sada nějakých pravidel jak sestavovat textové příkazy pro počítač. Pokud chceme, aby náš stoj tyto příkazy vykonal, protřebujeme takzvaný *JavaScript runtime*. To je program, který čte naše JavaScriptové příkazy a jeden za druhým je provádí. 
 
 Každý webový prohlížeč má v sobě JavaScript runtime, můžeme tedy naše první JavaScriptové příkazy psát rovnou v prohlížeči. Stačí otevřít takzvané *Developer Tools*.
 
@@ -80,20 +80,101 @@ Všimněte si, že vždy, když v konzoli napíšete příkaz a stiknete kláves
 Pozor na to, že ve všech programovacích jazycích se destinná čísla píší s tečkou, nikoliv s čárkou. 
 :::
 
-Operátory jsou v našem případě sčítání, odčítání, násobení a dělení. Je potřeba si zvyknout na to jakými symboly se JavaScriptu zapisují. Možná budete muset malinko prohledat klávesnici, než najdete například dopředné lomítko nebo hvězdičku. Z opetárotů a hodnot můžete samozřejmě stavět mnohem složitější konstrukce třeba i s použitím závorek.
+Operátory jsou v našem případě sčítání, odčítání, násobení a dělení. Je potřeba si zvyknout na to jakými symboly se JavaScriptu zapisují. Možná budete muset malinko prohledat klávesnici, než najdete například dopředné lomítko nebo hvězdičku. 
+
+Kromě výše zmíněných nabízí JavaScript dva další zajímavé operátory: mocnění a zbytek po dělení, tzv. *modulo*.
 
 ```jscon
-> 5 * (8 + 4) / 6
-10
+> 2 ** 4
+16
+> 12 % 5
+2
 ```
 
-Konstrukcím vytvořeným z hodnot a operátorů se odborně říká *výrazy*. Pokud spočítáme výsledek výrazu, získáme tak jeho hodnotu. Každý výraz tedy má svoji hodnotu a JavaScript runtime nám ji rád sdělí, když mu výraz pošleme v konzoli. Ne všechny konstrukce v JavaScriptu jsou výrazy. To se však ukáže jako důležité až později.
+Mocnění si nejspíš pamatujete ještě ze základní školy. Modulo však může být překvapení obzvlášť proto, že se zapisuje symbolem procenta. Výsledek této operace je zbytek po celočíselném dělení. Tento operátor se hodí v různých situacích. Můžeme pomocí něj například zjistit, zda je číslo sudé, tedy zbytek po dělení dvěma je roven nule.
 
-## Řetězce
+Z operátorů a hodnot můžete samozřejmě stavět mnohem složitější konstrukce třeba i s použitím závorek.
+
+```jscon
+> 5 * (9 + 7) ** (1/2)
+20
+```
+
+Konstrukcím vytvořeným z hodnot a operátorů se odborně říká *výrazy*. Pokud necháme JavaScript spočítat výsledek výrazu, získáme tak jeho hodnotu. Každý výraz tedy má svoji hodnotu a JavaScript runtime nám ji rád sdělí, když mu výraz pošleme v konzoli. Je dobré zde zmínit, že ne všechny konstrukce v JavaScriptu jsou výrazy. To se však ukáže jako důležité až později.
+
+### Řetězce
 
 Pokud chceme v JavaScriptu pracovat s textem, použijeme hodnotu, které se říká *řetězec*. Můžeme pak psát například
 
+```jscon
+> 'Pavel'
+"Pavel"
+> 'Prací prášek'
+"Prací prášek"
+> "I'am awesome"
+"I'am awesome"
+> 'Řekl: "ahoj"'
+"Řekl: "ahoj""
+```
+
+Textové řetězce vždy uzavíráme do uvozovek. V JavaScritpu můžete používat jak jednoduché tak dvojité uvozovky, z hlediska funkčnosti programu je to jedno. Můžete si tak pomaličku začít budovat svůj programátorský styl a používat ty uvozovky, které se vám líbí. Občas se dvojité uvozovky hodí pokud chceme mít uvnitř řetězce například apostrof. Pro tento případ si však později ukážeme obecnější techniku.
+
+Textové řetězce jdou sčítat podobně jako čísla, můžete tedy psát například
+
+```jscon
+> 'Digitální akademie' + ' Web'
+'Digitální akademie Web'
+> 'Digitální akademie' + ' ' + 'Web'
+'Digitální akademie Web'
+> 'Digitální akademie' + ''
+'Digitální akademie'
+```
+
+Všimněte si v druhém příkladu řetězce, který obsahuje pouze mezeru. V třetím případě dokonce vidíme řetězec, který neobsahuje vůbec nic. To je takzvaný *prázdný řetězec*. Chová se podobně jako nula při sčítání čísel a bude se nám pozdějí hodit v různých situacích.
+
 ## Proměnné
+
+Při složitějších operacích a výpočtech často vyvstane potřeba si nějaký mezivýpočet uložit pro pozdější použití. K tomu nám slouží takzvané *proměnné*. Proměnná je jakási pojmenovaná krabička nebo šuplík, do kterého si můžeme uložit nějakou hodnotu, abychom ji neztratili a mohli ji používat v dalších výpočtech. 
+
+Můžeme například v rámci dietního programu spočítat, kolik vanilkových věnečků denně jsme spořádali za posledních 5 dní.
+
+```jscon
+> const celkem = 1 + 2 + 4 + 1 + 6
+> const prumer = celkem / 5
+```
+
+Každá proměnné v JavaScriptu musí mít své jméno. To by mělo vystihovat, co je v ní uloženo. Pokud chceme používat nějakou promennou, musíme ji nejdříve vytvořit, což se dělá pomocí klíčového slova `const`. Takovou proměnnou pak můžeme použít v libovolném výrazu tak, že prostě uvedeme její jméno.
+
+Většinu proměnných budeme používat tak, že jim při vytvoření přiřadíme nějakou hodnotu a tato hodnota už v proměnná zůstane až do konce jejího života. Občas se však stane, že potřebujeme hodnotu uloženou v nějako proměnné změnit. V takovém případě musíme proměnnou vytvořit pomocí slovíčka `let`. 
+
+```jscon
+> let sazba = 500
+> let vyplata = 8 * 21 * sazba
+> sazba = 600
+```
+
+Pokud měníme hodnotu v proměnné, už **nepoužíváme** `const` ani `let`. Zde je dobré si zapamatovat několik důležitých věcí. 
+
+
+### Preferujte const
+Proměnné vytvořené pomocí `const` měnit nelze. U dobrých programátorů je zvykem vytvářet proměnné téměř výhradně pomocí `const` a používat `let` pouze v případě, že k tomu máme dobrý důvod. Čím méně proměnných lze měnit, tím menší je totiž riziku vzniku nežádoucích chyb v programu.
+
+### JavaScript není Excel
+Dejte pozor na to, že do proměnné se jako do šuplíku ukládá pouze hodnota a nikoliv celý výraz. Všimněte si, že v příkladu výše jsem změnili hodnotu proměnné <var>sazba</var>. Po této změně bude v proměnné <var>vyplata</var> pořád původní hodnota. Pokud chceme obsah této proměnné aktualizovat, musíme příkaz spustit znova.
+
+```jscon
+> vyplata = 8 * 21 * 500
+```
+
+### Pojmenování proměnných
+
+Už od úplných začátků s programováním je dobré učit se dobrým návykům, které budou později prospěšné nejen vám, ale hlavně lidem ve vašem okolí. Jedním z takových návyků je správné pojmenovávání proměnných.
+
+1. Název proměnné by neměl začínat velkým písmenem, např. ~~<var>Pocet</var>~~. Takové názvy jsou rezervované pro speciální typy proměnných, ke kterým se v tomto kurzu dostaneme až téměř na konci.
+1. Název proměnné by neměl obsahovat diakritiku, např. ~~<var>počet</var>~~. Programovací jazyky vznikaly v anglickém prostředí, kde se diakritika nepoužívá, takže si s ní většina jazyků neporadí.
+1. Víceslovné proměnné nesmí obsahovat mezeru, např. ~~<var>pocet hodin</var>~~. To by si JavaScript myslel, že to jsou dvě proměnné za sebou a nevěděl by co s tím. Pokud chcete proměnnou s více slovy, použijte takzvanou *velbloudí notaci* <var>pocetHodin</var> nebo *hadí notaci* <var>pocet_hodin</var>.
+1. Vždy proměnnou pojmenujte tak, aby její název jasně napovídal, co se uvnitř ní nachází. Například proměnná <var>pocet_hodin</var> jasně říká, že v ní bude uložen asi nějaký počet hodin. Můžeme podlehnout touze název proměnné zkrátit například na <var>pcthdn</var>, aby se nám lépe psala. Až ovšem někdo další bude takový program číst, bude mlátit hlavou do stolu, cože proboha znamená zkratka <var>pcthdn</var>.
+1. Naposledy je dobré si uvědomit, že programy i programátoři se téměř vždy pohybují v mezinárodním prostředí. Takže je vždycky lepší pojmenovávat proměnné anglicky. V tomto kurzu ještě tohle pravidlo trošku rozvolníme, ale i tak si můžete začít zvykat na proměnné s názvem <var>number_of_hours</var>.
 
 ## Volání funkcí
 
