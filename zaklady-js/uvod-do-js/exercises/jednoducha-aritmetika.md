@@ -1,5 +1,6 @@
 ---
 title: Jednoduchá aritmetika
+demand: 1
 ---
 
 Použijte JavaScript konzoli jako kalkulačku:

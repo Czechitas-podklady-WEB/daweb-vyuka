@@ -41,15 +41,17 @@ Jak často bývá zvykem, tito spolubydlící se dohodli, že některé spotřeb
   </tbody>
 </table>
 
-Představme si, že naši studentni se chtějí rozestěhovat a potřebují se finančně vyrovnat. Někteří totiž přirozaně utratili za společné věci o něco víc než jiní. Váš úkol je zamyslet se nad tím, jakým postupem takového vyrovnání dosáhnout. Je zde však několik důležitých pravidel a omezení. 
+Představme si, že naši studenti se chtějí rozestěhovat a potřebují se finančně vyrovnat. Někteří totiž přirozaně utratili za společné věci o něco víc než jiní. Váš úkol je zamyslet se nad tím, jakým postupem takového vyrovnání dosáhnout. Je zde však několik důležitých pravidel a omezení. 
 
-Samotné zpracování tabulky nebudete dělat vy, nýbrž člověk, o kterém bychom mohli říct, že je to pečlivý blbec. To znamená, že není vůbec schopen přemýšlet sám za sebe. Je pouze schopen do puntíku plnit vaše pokyny jsou-li dostatečně detailní a přímočaré. Takto přesně totiž funguje počítač. Nic za vás nevymyslí, postup řešení mu musíte do detailu sdělit vy. Počítač pak jen váš postup bleskurychle vykoná. Podobně jako má počítač k dispozici pamět, náš blbec má k dispozici tužku a papír. Počítače také mají takzvaný procesor, což je pro našeho blbce bude kalkulačka. 
+Samotné zpracování tabulky nebudete dělat vy, nýbrž člověk, o kterém bychom mohli říct, že je to pečlivý blbec. To znamená, že není vůbec schopen přemýšlet sám za sebe. Je pouze schopen do puntíku plnit vaše pokyny jsou-li dostatečně detailní a přímočaré. Tento náš úřednický blbec má navíc k dispozici pouze tužku, papír a kalkulačku. Kalkulačku k tomu, aby mohl spolehlivě provádět jednoduché výpočty a tužku a papír, aby si mohl poznamenávat mezivýsledky.
 
 ![Tužka, papír, kalkulačka a blbec](/czechitas/daweb/assets/zaklady-js/uvod-do-js/dummy.jpg)
 
-Váš popis řešení tedy musí sestávat pouze z jednoduchých kroků s tužkou, papírem a kalkulačkou. Pokud například blbci řeknete, aby zjistil kolik různých jmen se v tabulce nachází, nebude vůbec vědět, co má dělat, protože jste mu neřekli, jak má použít tužku, papír a kalkulačku k tomu, aby splnil váš příkaz.
+Počítač ve svojí nejzákladnější podstatě funguje přesně jako náš blbec. Nic za vás nevymyslí, pouze slepě vykonává postup řešení, který musíte do detailu popsat vy. Papír pak pro nás představuje pamět počítače a kalkulačka procesor. 
 
-
+@exercises[
+- spolubydleni
+]@
 
 ## První JavaScript příkazy
 
@@ -57,7 +59,7 @@ Po dlouhých povídáních konečně přichází ten čas, kdy si začneme ušpi
 
 Každý webový prohlížeč má v sobě JavaScript runtime, můžeme tedy naše první JavaScriptové příkazy psát rovnou v prohlížeči. Stačí otevřít takzvané *Developer Tools*.
 
-## Hodnoty a operátory
+### Hodnoty a operátory
 
 Každý počítač je ve svojí nejniternější podstatě jen hrozně rychlá kalkulačka. Proto je přirozené, že si v JavaScriptu nejdříve vyzkoušíme počítání. Do žádné tvrdé matematiky se však pouštět nebudeme. Zcela vám postačí znalosti nabyté ve školce. Můžete to JS konzole rovnou zkusit napsat následující příkazy
 
@@ -94,7 +96,6 @@ Pokud chceme v JavaScriptu pracovat s textem, použijeme hodnotu, které se ří
 ## Proměnné
 
 ## Volání funkcí
-
 
 @exercises[
 - jednoducha-aritmetika
