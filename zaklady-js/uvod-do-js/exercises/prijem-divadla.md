@@ -1,0 +1,9 @@
+---
+title: Příjem divadla
+demand: 1
+---
+
+Použijte JavaScript konzoli jako kalkulačku:
+
+1. Jeden lístek do divadla <i>Pěst na oko</i> stojí 12 euro. Spočítejte měsíční příjem divadla ze vstupného přichází-li průměrně 174 návštěvníků na jedno představení a divadlo hraje 15 představení měsíčně. Ulože výsledek do proměnné <var>prijem</var>.
+1. Divadlo se rozhodlo prodávat studentské vstupné ve výši 65% plného vstupného. Jak se změní měsíční příjem divadla pokud víme, že polovina návštěvníků jsou studenti?

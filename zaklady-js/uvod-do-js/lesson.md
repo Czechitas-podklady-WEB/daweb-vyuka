@@ -155,11 +155,12 @@ Většinu proměnných budeme používat tak, že jim při vytvoření přiřad�
 
 Pokud měníme hodnotu v proměnné, už **nepoužíváme** `const` ani `let`. Zde je dobré si zapamatovat několik důležitých věcí. 
 
-
 ### Preferujte const
+
 Proměnné vytvořené pomocí `const` měnit nelze. U dobrých programátorů je zvykem vytvářet proměnné téměř výhradně pomocí `const` a používat `let` pouze v případě, že k tomu máme dobrý důvod. Čím méně proměnných lze měnit, tím menší je totiž riziku vzniku nežádoucích chyb v programu.
 
 ### JavaScript není Excel
+
 Dejte pozor na to, že do proměnné se jako do šuplíku ukládá pouze hodnota a nikoliv celý výraz. Všimněte si, že v příkladu výše jsem změnili hodnotu proměnné <var>sazba</var>. Po této změně bude v proměnné <var>vyplata</var> pořád původní hodnota. Pokud chceme obsah této proměnné aktualizovat, musíme příkaz spustit znova.
 
 ```jscon
@@ -176,8 +177,62 @@ Už od úplných začátků s programováním je dobré učit se dobrým návyk�
 1. Vždy proměnnou pojmenujte tak, aby její název jasně napovídal, co se uvnitř ní nachází. Například proměnná <var>pocet_hodin</var> jasně říká, že v ní bude uložen asi nějaký počet hodin. Můžeme podlehnout touze název proměnné zkrátit například na <var>pcthdn</var>, aby se nám lépe psala. Až ovšem někdo další bude takový program číst, bude mlátit hlavou do stolu, cože proboha znamená zkratka <var>pcthdn</var>.
 1. Naposledy je dobré si uvědomit, že programy i programátoři se téměř vždy pohybují v mezinárodním prostředí. Takže je vždycky lepší pojmenovávat proměnné anglicky. V tomto kurzu ještě tohle pravidlo trošku rozvolníme, ale i tak si můžete začít zvykat na proměnné s názvem <var>number_of_hours</var>.
 
+@exercises[
+- prijem-divadla
+- vyplata
+]@
+
 ## Volání funkcí
 
-@exercises[
-- jednoducha-aritmetika
-]@
+Pouze s proměnnými, hodnotami a operátory bychom se v programování daleko nedostali. Často budeme potřeboval vykonat nějakou složitější operaci než jen matematický výpočet. Pokud takovou operaci programátoři potřebují často, šance je, že pro ni existuje *funkce*.
+
+Funkce je kousek programu řešící nějakou konkrétní úlohu, která se často opakuje. Příkladem může být například zaokrouhlování desetinných čísel na celá čísla. To je operace, která se hodí velmi často a bylo by zbyteční ji programovat pořád znova. V JavaScriptu proto máme k dispozici funkci jménem `Math.round`. Pokud chceme funkci použít, napíšeme její jméno a do kulatých závorek vložíme hodnotu. 
+
+```jscon
+> Math.round(3.14)
+3
+```
+
+Hodnotě uvnitř kulatých závorek říkáme *vstup funkce*. Spuštění funkce se říká *volání*. Jakmile funkce dokončí operaci, *vrátí* nám takzvaný *výstup*. V programátorském žargonu tedy říkáme, že když zavoláme funkci s nějakým vstupem, ona nám vrátí výstup. Podobně jako operace s hodnotami a proměnnými, volání funkce je také výraz. Volání funkce také můžeme použít uvnitř libovolného jiného výrazu. Navíc vstup pro funkci taky můžeme vytvořit pomocí výrazu. Nabízí se tedy mnoho způsobů, jak vytvářet složitější výrazy, jak například tento.
+
+```jscon
+> 17 % Math.round(30 ** 0.5)
+2
+```
+
+### Další užitečné funkce
+
+JavaScript obsahuje spousty a spousty funkcí, díky kterým můžeme provádět mnoho užitěčných a zajímavých věcí. Budeme je postupně společně objevovat během celého kurzu. Takto z kraje si ukážeme jen ty nejzákladnější.
+
+Pokud bychom místo klasického zaokrouhlování chtěli zaokrouhlovat vždy dolů nebo vždy nahoru, můžeme použít funkce `Math.floor` a `Math.ceil`.
+
+```jscon
+> Math.floor(3.9)
+3
+> Math.ceil(3.1)
+4
+```
+
+Funkce, se kterou si lze užít více zábavy je `Math.random`. Ta při každém zavolání vrátí náhodné desetinné číslo mezi 0 a 1.
+
+```jscon
+> Math.random()
+0.3533144240115158
+> Math.random()
+0.30269146855422213
+> Math.random()
+0.3730206392247666
+```
+
+Chytrým použitím zaokrouhlování a trochou matematiky můžeme pomocí této funkce generovat náhodná celá čísla například v rozmezí 0 až 9.
+
+```jscon
+> Math.floor(Math.random() * 10)
+8
+> Math.floor(Math.random() * 10)
+2
+> Math.floor(Math.random() * 10)
+5
+```
+
+
