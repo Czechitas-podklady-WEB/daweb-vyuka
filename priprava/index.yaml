@@ -1,0 +1,9 @@
+title: Příprava před kurzem
+link: priprava
+lessons:
+  - title: Instalace nástrojů
+    link: instalace-nastroju
+    brief: Před tím, než začneme tvořit weby, je potřeba si počítač vybavit nástroji, které nám usnadní práci.
+  - title: Klávesnice a terminál
+    link: klavesnice-terminal
+    brief: Pro všechny programátory je důležité umět psát na klávesnici speciální znaky a ovládat práci s terminálem.
