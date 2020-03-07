@@ -7,3 +7,6 @@ lessons:
   - title: První programy a podmínky
     link: programy-podminky
     brief: Ukážeme si jak vytvářet JavaScriptové programy a naučíme je dělat rozhodnutí pomocí podmínek.
+  - title: Práce s DOMem
+    link: dom
+    brief: Přidáme do našich JavaScriptových programů možnost manipulovat s obsahem stránky.

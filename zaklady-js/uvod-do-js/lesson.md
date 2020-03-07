@@ -1,4 +1,4 @@
-Milí účastníci webové akademie, v tomto kurzu si možná úplně poprvé v životě vyzkoušíte co je to programování a osaháte si svůj první programovací jazyk. Programování ze začátku může působit jako velmi tajemný svět plný zlých nástrah a neproniknutelných složitostí. Nutnost zapojovat možná trochu zaprášená zákoutí vašeho mozku může ze začátku být velká výzva. Proto společně vykročíme zvolna a krůček po krůčku. Budeme věnovat péči každému jednotlivému tématu tak, abyste do něj dokázali skutečně proniknout a nepřipadali si jako na jiné planetě. Vězte, že po chvíli se možná trochu zrezivělá mozkové kolečka začnou točit lehčeji a programování vám bude přinášet velkou radost z tvoření.  
+Milí účastníci webové akademie, v tomto kurzu si možná úplně poprvé v životě vyzkoušíte co je to programování a osaháte si svůj první programovací jazyk. Programování ze začátku může působit jako velmi tajemný svět plný zlých nástrah a neproniknutelných složitostí. Nutnost zapojovat možná trochu zaprášená zákoutí vašeho mozku může ze začátku být velká výzva. Proto společně vykročíme zvolna a krůček po krůčku. Budeme věnovat péči každému jednotlivému tématu tak, abyste do něj dokázali skutečně proniknout a nepřipadali si jako na jiné planetě. Vězte, že po chvíli se možná trochu zrezivělá mozkové kolečka začnou točit lehčeji a programování vám bude přinášet velkou radost z tvoření.
 
 Na začátku počítáme s tím, že jste programováním zcela nepolíbeni. Není tedy od věci trochu si přiblížit, jak programátorský svět vlastně funguje, abyste si dokázali představit do jakých vod se chystáte vrhnout. Ještě před tím, než spustíte svůj první JavaScriptový příkaz, si společně osaháme jak programátoři přemýšlejí a jaké problémy v praxi doopravdy řeší.
 
@@ -8,13 +8,13 @@ Programátora si možná představujete jako týpka či týpčici, který/která
 
 ![Programátor](/czechitas/daweb/assets/zaklady-js/uvod-do-js/programmer.jpg)
 
-Je pravda, že psaní kódu je velkou částí programátorské práce. Podstata programování ovšem tkví v něčem jiném. Například takový spisovatel jistě tráví hodně času psaním textu, zvládat dobře česky psát však není jádro jeho umění. Dobrý spisovatel či spisovatelka především umějí vybudovat poutavý příběh, který čtenáře zaujme a vtáhne. Podobně programátorům také zdaleka nestačí umět kódit. Musí především umět přemýšlet a řešit problémy, což znamená mít dobré logické a analytické myšlení. 
+Je pravda, že psaní kódu je velkou částí programátorské práce. Podstata programování ovšem tkví v něčem jiném. Například takový spisovatel jistě tráví hodně času psaním textu, zvládat dobře česky psát však není jádro jeho umění. Dobrý spisovatel či spisovatelka především umějí vybudovat poutavý příběh, který čtenáře zaujme a vtáhne. Podobně programátorům také zdaleka nestačí umět kódit. Musí především umět přemýšlet a řešit problémy, což znamená mít dobré logické a analytické myšlení.
 
 ### Problém spolubydlení
 
-Logické a analytické myšlení rozhodně není spojeno jen s programo&shy;váním, matematikou apod. Spousta problémů přímo ze života vyžaduje, abychom se dokázali nad řešením opravdu zamyslet. Na následujícím příkladu si názorně ukážeme, jak takové zamyšlení vypadá z programá&shy;torského hlediska. 
+Logické a analytické myšlení rozhodně není spojeno jen s programo&shy;váním, matematikou apod. Spousta problémů přímo ze života vyžaduje, abychom se dokázali nad řešením opravdu zamyslet. Na následujícím příkladu si názorně ukážeme, jak takové zamyšlení vypadá z programá&shy;torského hlediska.
 
-Mějme následujících šest studentů, kteří společně bydlí v jednom bytě. 
+Mějme následujících šest studentů, kteří společně bydlí v jednom bytě.
 
 ![Studenti](/czechitas/daweb/assets/zaklady-js/uvod-do-js/roommates.jpg)
 
@@ -41,23 +41,24 @@ Jak často bývá zvykem, tito spolubydlící se dohodli, že některé spotřeb
   </tbody>
 </table>
 
-Představme si, že naši studenti se chtějí rozestěhovat a potřebují se finančně vyrovnat. Někteří totiž přirozaně utratili za společné věci o něco víc než jiní. Váš úkol je zamyslet se nad tím, jakým postupem takového vyrovnání dosáhnout. Je zde však několik důležitých pravidel a omezení. 
+Představme si, že naši studenti se chtějí rozestěhovat a potřebují se finančně vyrovnat. Někteří totiž přirozaně utratili za společné věci o něco víc než jiní. Váš úkol je zamyslet se nad tím, jakým postupem takového vyrovnání dosáhnout. Je zde však několik důležitých pravidel a omezení.
 
 Samotné zpracování tabulky nebudete dělat vy, nýbrž člověk, o kterém bychom mohli říct, že je to pečlivý blbec. To znamená, že není vůbec schopen přemýšlet sám za sebe. Je pouze schopen do puntíku plnit vaše pokyny jsou-li dostatečně detailní a přímočaré. Tento náš úřednický blbec má navíc k dispozici pouze tužku, papír a kalkulačku. Kalkulačku k tomu, aby mohl spolehlivě provádět jednoduché výpočty a tužku a papír, aby si mohl poznamenávat mezivýsledky.
 
 ![Tužka, papír, kalkulačka a blbec](/czechitas/daweb/assets/zaklady-js/uvod-do-js/dummy.jpg)
 
-Počítač ve svojí nejzákladnější podstatě funguje přesně jako náš blbec. Nic za vás nevymyslí, pouze slepě vykonává postup řešení, který musíte do detailu popsat vy. Papír pak pro nás představuje pamět počítače a kalkulačka procesor. 
+Počítač ve svojí nejzákladnější podstatě funguje přesně jako náš blbec. Nic za vás nevymyslí, pouze slepě vykonává postup řešení, který musíte do detailu popsat vy. Papír pak pro nás představuje pamět počítače a kalkulačka procesor.
 
 @exercises[
+
 - spolubydleni
-]@
+  ]@
 
 ## První JavaScript příkazy
 
-Po dlouhých povídáních konečně přichází ten čas, kdy si začneme ušpiníme ruce skutečným JavaScriptem. Nejdříve si ovšem pořádně ujasníme terminologii. JavaScript je programovací jazyk, tedy sada nějakých pravidel jak sestavovat textové příkazy pro počítač. Pokud chceme, aby náš stoj tyto příkazy vykonal, protřebujeme takzvaný *JavaScript runtime*. To je program, který čte naše JavaScriptové příkazy a jeden za druhým je provádí. 
+Po dlouhých povídáních konečně přichází ten čas, kdy si začneme ušpiníme ruce skutečným JavaScriptem. Nejdříve si ovšem pořádně ujasníme terminologii. JavaScript je programovací jazyk, tedy sada nějakých pravidel jak sestavovat textové příkazy pro počítač. Pokud chceme, aby náš stoj tyto příkazy vykonal, protřebujeme takzvaný _JavaScript runtime_. To je program, který čte naše JavaScriptové příkazy a jeden za druhým je provádí.
 
-Každý webový prohlížeč má v sobě JavaScript runtime, můžeme tedy naše první JavaScriptové příkazy psát rovnou v prohlížeči. Stačí otevřít takzvané *Developer Tools*.
+Každý webový prohlížeč má v sobě JavaScript runtime, můžeme tedy naše první JavaScriptové příkazy psát rovnou v prohlížeči. Stačí otevřít takzvané _Developer Tools_.
 
 ### Hodnoty a operátory
 
@@ -74,15 +75,15 @@ Každý počítač je ve svojí nejniternější podstatě jen hrozně rychlá k
 2.4
 ```
 
-Všimněte si, že vždy, když v konzoli napíšete příkaz a stiknete klávesu [[Enter]], pošlete tím JavaScriptu příkaz a ten vám ihned odpoví výsledek. Zatím jsme sice nic závratného nespočítali, použili jsme ovšem dva zcela základní stavební bloky všech programů: *hodnoty* a *operátory*. Hodnoty jsou v našem případě čísla, později však uvidíme ještě další druhy hodnot, které už na kalkulačce nepotkáte.
+Všimněte si, že vždy, když v konzoli napíšete příkaz a stiknete klávesu [[Enter]], pošlete tím JavaScriptu příkaz a ten vám ihned odpoví výsledek. Zatím jsme sice nic závratného nespočítali, použili jsme ovšem dva zcela základní stavební bloky všech programů: _hodnoty_ a _operátory_. Hodnoty jsou v našem případě čísla, později však uvidíme ještě další druhy hodnot, které už na kalkulačce nepotkáte.
 
 :::warn
-Pozor na to, že ve všech programovacích jazycích se destinná čísla píší s tečkou, nikoliv s čárkou. 
+Pozor na to, že ve všech programovacích jazycích se destinná čísla píší s tečkou, nikoliv s čárkou.
 :::
 
-Operátory jsou v našem případě sčítání, odčítání, násobení a dělení. Je potřeba si zvyknout na to jakými symboly se JavaScriptu zapisují. Možná budete muset malinko prohledat klávesnici, než najdete například dopředné lomítko nebo hvězdičku. 
+Operátory jsou v našem případě sčítání, odčítání, násobení a dělení. Je potřeba si zvyknout na to jakými symboly se JavaScriptu zapisují. Možná budete muset malinko prohledat klávesnici, než najdete například dopředné lomítko nebo hvězdičku.
 
-Kromě výše zmíněných nabízí JavaScript dva další zajímavé operátory: mocnění a zbytek po dělení, tzv. *modulo*.
+Kromě výše zmíněných nabízí JavaScript dva další zajímavé operátory: mocnění a zbytek po dělení, tzv. _modulo_.
 
 ```jscon
 > 2 ** 4
@@ -100,11 +101,11 @@ Z operátorů a hodnot můžete samozřejmě stavět mnohem složitější konst
 20
 ```
 
-Konstrukcím vytvořeným z hodnot a operátorů se odborně říká *výrazy*. Pokud necháme JavaScript spočítat výsledek výrazu, získáme tak jeho hodnotu. Každý výraz tedy má svoji hodnotu a JavaScript runtime nám ji rád sdělí, když mu výraz pošleme v konzoli. Je dobré zde zmínit, že ne všechny konstrukce v JavaScriptu jsou výrazy. To se však ukáže jako důležité až později.
+Konstrukcím vytvořeným z hodnot a operátorů se odborně říká _výrazy_. Pokud necháme JavaScript spočítat výsledek výrazu, získáme tak jeho hodnotu. Každý výraz tedy má svoji hodnotu a JavaScript runtime nám ji rád sdělí, když mu výraz pošleme v konzoli. Je dobré zde zmínit, že ne všechny konstrukce v JavaScriptu jsou výrazy. To se však ukáže jako důležité až později.
 
 ### Řetězce
 
-Pokud chceme v JavaScriptu pracovat s textem, použijeme hodnotu, které se říká *řetězec*. Můžeme pak psát například
+Pokud chceme v JavaScriptu pracovat s textem, použijeme hodnotu, které se říká _řetězec_. Můžeme pak psát například
 
 ```jscon
 > 'Pavel'
@@ -130,22 +131,22 @@ Textové řetězce jdou sčítat podobně jako čísla, můžete tedy psát nap�
 'Digitální akademie'
 ```
 
-Všimněte si v druhém příkladu řetězce, který obsahuje pouze mezeru. V třetím případě dokonce vidíme řetězec, který neobsahuje vůbec nic. To je takzvaný *prázdný řetězec*. Chová se podobně jako nula při sčítání čísel a bude se nám pozdějí hodit v různých situacích.
+Všimněte si v druhém příkladu řetězce, který obsahuje pouze mezeru. V třetím případě dokonce vidíme řetězec, který neobsahuje vůbec nic. To je takzvaný _prázdný řetězec_. Chová se podobně jako nula při sčítání čísel a bude se nám pozdějí hodit v různých situacích.
 
 ## Proměnné
 
-Při složitějších operacích a výpočtech často vyvstane potřeba si nějaký mezivýpočet uložit pro pozdější použití. K tomu nám slouží takzvané *proměnné*. Proměnná je jakási pojmenovaná krabička nebo šuplík, do kterého si můžeme uložit nějakou hodnotu, abychom ji neztratili a mohli ji používat v dalších výpočtech. 
+Při složitějších operacích a výpočtech často vyvstane potřeba si nějaký mezivýpočet uložit pro pozdější použití. K tomu nám slouží takzvané _proměnné_. Proměnná je jakási pojmenovaná krabička nebo šuplík, do kterého si můžeme uložit nějakou hodnotu, abychom ji neztratili a mohli ji používat v dalších výpočtech.
 
-Můžeme například v rámci dietního programu spočítat, kolik vanilkových věnečků denně jsme spořádali za posledních 5 dní.
+Abychom si procvičili zajímavé operátory, zkusíme vyřešit následující úlohu. Mějme čas v hodinách zadaný ve 24-hodinovém formátu. Tři hodiny odpoledne tedy píšeme jako 13h. Nyní chceme spočítat, kolik hodin bude po uplynutí doby zadané také v hodinách. Například jaký bude čas po uplynutí 15ti hodin?
 
 ```jscon
-> const celkem = 1 + 2 + 4 + 1 + 6
-> const prumer = celkem / 5
+> const cas = 13
+> const novyCas = (cas + 15)
 ```
 
 Každá proměnné v JavaScriptu musí mít své jméno. To by mělo vystihovat, co je v ní uloženo. Pokud chceme používat nějakou promennou, musíme ji nejdříve vytvořit, což se dělá pomocí klíčového slova `const`. Takovou proměnnou pak můžeme použít v libovolném výrazu tak, že prostě uvedeme její jméno.
 
-Většinu proměnných budeme používat tak, že jim při vytvoření přiřadíme nějakou hodnotu a tato hodnota už v proměnná zůstane až do konce jejího života. Občas se však stane, že potřebujeme hodnotu uloženou v nějako proměnné změnit. V takovém případě musíme proměnnou vytvořit pomocí slovíčka `let`. 
+Většinu proměnných budeme používat tak, že jim při vytvoření přiřadíme nějakou hodnotu a tato hodnota už v proměnná zůstane až do konce jejího života. Občas se však stane, že potřebujeme hodnotu uloženou v nějako proměnné změnit. V takovém případě musíme proměnnou vytvořit pomocí slovíčka `let`.
 
 ```jscon
 > let sazba = 500
@@ -153,7 +154,7 @@ Většinu proměnných budeme používat tak, že jim při vytvoření přiřad�
 > sazba = 600
 ```
 
-Pokud měníme hodnotu v proměnné, už **nepoužíváme** `const` ani `let`. Zde je dobré si zapamatovat několik důležitých věcí. 
+Pokud měníme hodnotu v proměnné, už **nepoužíváme** `const` ani `let`. Zde je dobré si zapamatovat několik důležitých věcí.
 
 ### Preferujte const
 
@@ -173,27 +174,29 @@ Už od úplných začátků s programováním je dobré učit se dobrým návyk�
 
 1. Název proměnné by neměl začínat velkým písmenem, např. ~~<var>Pocet</var>~~. Takové názvy jsou rezervované pro speciální typy proměnných, ke kterým se v tomto kurzu dostaneme až téměř na konci.
 1. Název proměnné by neměl obsahovat diakritiku, např. ~~<var>počet</var>~~. Programovací jazyky vznikaly v anglickém prostředí, kde se diakritika nepoužívá, takže si s ní většina jazyků neporadí.
-1. Víceslovné proměnné nesmí obsahovat mezeru, např. ~~<var>pocet hodin</var>~~. To by si JavaScript myslel, že to jsou dvě proměnné za sebou a nevěděl by co s tím. Pokud chcete proměnnou s více slovy, použijte takzvanou *velbloudí notaci* <var>pocetHodin</var> nebo *hadí notaci* <var>pocet_hodin</var>.
+1. Víceslovné proměnné nesmí obsahovat mezeru, např. ~~<var>pocet hodin</var>~~. To by si JavaScript myslel, že to jsou dvě proměnné za sebou a nevěděl by co s tím. Pokud chcete proměnnou s více slovy, použijte takzvanou _velbloudí notaci_ <var>pocetHodin</var> nebo _hadí notaci_ <var>pocet_hodin</var>.
 1. Vždy proměnnou pojmenujte tak, aby její název jasně napovídal, co se uvnitř ní nachází. Například proměnná <var>pocet_hodin</var> jasně říká, že v ní bude uložen asi nějaký počet hodin. Můžeme podlehnout touze název proměnné zkrátit například na <var>pcthdn</var>, aby se nám lépe psala. Až ovšem někdo další bude takový program číst, bude mlátit hlavou do stolu, cože proboha znamená zkratka <var>pcthdn</var>.
 1. Naposledy je dobré si uvědomit, že programy i programátoři se téměř vždy pohybují v mezinárodním prostředí. Takže je vždycky lepší pojmenovávat proměnné anglicky. V tomto kurzu ještě tohle pravidlo trošku rozvolníme, ale i tak si můžete začít zvykat na proměnné s názvem <var>number_of_hours</var>.
 
 @exercises[
-- prijem-divadla
+
 - vyplata
-]@
+- ultramaraton
+- prijem-divadla
+  ]@
 
 ## Volání funkcí
 
-Pouze s proměnnými, hodnotami a operátory bychom se v programování daleko nedostali. Často budeme potřeboval vykonat nějakou složitější operaci než jen matematický výpočet. Pokud takovou operaci programátoři potřebují často, šance je, že pro ni existuje *funkce*.
+Pouze s proměnnými, hodnotami a operátory bychom se v programování daleko nedostali. Často budeme potřeboval vykonat nějakou složitější operaci než jen matematický výpočet. Pokud takovou operaci programátoři potřebují často, šance je, že pro ni existuje _funkce_.
 
-Funkce je kousek programu řešící nějakou konkrétní úlohu, která se často opakuje. Příkladem může být například zaokrouhlování desetinných čísel na celá čísla. To je operace, která se hodí velmi často a bylo by zbyteční ji programovat pořád znova. V JavaScriptu proto máme k dispozici funkci jménem `Math.round`. Pokud chceme funkci použít, napíšeme její jméno a do kulatých závorek vložíme hodnotu. 
+Funkce je kousek programu řešící nějakou konkrétní úlohu, která se často opakuje. Příkladem může být například zaokrouhlování desetinných čísel na celá čísla. To je operace, která se hodí velmi často a bylo by zbyteční ji programovat pořád znova. V JavaScriptu proto máme k dispozici funkci jménem `Math.round`. Pokud chceme funkci použít, napíšeme její jméno a do kulatých závorek vložíme hodnotu.
 
 ```jscon
 > Math.round(3.14)
 3
 ```
 
-Hodnotě uvnitř kulatých závorek říkáme *vstup funkce*. Spuštění funkce se říká *volání*. Jakmile funkce dokončí operaci, *vrátí* nám takzvaný *výstup*. V programátorském žargonu tedy říkáme, že když zavoláme funkci s nějakým vstupem, ona nám vrátí výstup. Podobně jako operace s hodnotami a proměnnými, volání funkce je také výraz. Volání funkce také můžeme použít uvnitř libovolného jiného výrazu. Navíc vstup pro funkci taky můžeme vytvořit pomocí výrazu. Nabízí se tedy mnoho způsobů, jak vytvářet složitější výrazy, jak například tento.
+Hodnotě uvnitř kulatých závorek říkáme _vstup funkce_. Spuštění funkce se říká _volání_. Jakmile funkce dokončí operaci, _vrátí_ nám takzvaný _výstup_. V programátorském žargonu tedy říkáme, že když zavoláme funkci s nějakým vstupem, ona nám vrátí výstup. Podobně jako operace s hodnotami a proměnnými, volání funkce je také výraz. Volání funkce také můžeme použít uvnitř libovolného jiného výrazu. Navíc vstup pro funkci taky můžeme vytvořit pomocí výrazu. Nabízí se tedy mnoho způsobů, jak vytvářet složitější výrazy, jak například tento.
 
 ```jscon
 > 17 % Math.round(30 ** 0.5)
@@ -237,11 +240,11 @@ Chytrým použitím zaokrouhlování a trochou matematiky můžeme pomocí této
 
 ## Povinné čtení na doma
 
-JavaScript je programovací jazyk s dlouhou historií. Ta se píše už od roku 1995, kdy jistý pán jménem [Brendan Eich](https://cs.wikipedia.org/wiki/Brendan_Eich) vytvořil první verzi JavaScriptu tak, že spojil koncepty ze tří různých jazyků: Scheme, Self a Java. Od té doby si JavaScript s sebou nese některé zajímavé a užitečné koncepty, které v jiných mainstreamových jazycích moc nenajdete. Zároveň však obsahuje myšlenky, jež programování spíše komplikují. Na obojí, dobré i zlé, budeme v tomto kurzu často narážet. 
+JavaScript je programovací jazyk s dlouhou historií. Ta se píše už od roku 1995, kdy jistý pán jménem [Brendan Eich](https://cs.wikipedia.org/wiki/Brendan_Eich) vytvořil první verzi JavaScriptu tak, že spojil koncepty ze tří různých jazyků: Scheme, Self a Java. Od té doby si JavaScript s sebou nese některé zajímavé a užitečné koncepty, které v jiných mainstreamových jazycích moc nenajdete. Zároveň však obsahuje myšlenky, jež programování spíše komplikují. Na obojí, dobré i zlé, budeme v tomto kurzu často narážet.
 
 ### ECMAScript
 
-Podobně jako má čeština <i>Pravidla českého pravopisu</i>, má i JavaScript svoje standardizovaná pravidla, kterým se říká *ECMAScript*. Podobně jako pravidla češtiny i ECMAScript se v čase vyvíjí a proměňuje. Aby se vždy vědělo o jaké verzi ECMAScript pravidel se mluví, používají se čísla verzí jako ECMAScript 1, ECMAScript 2 apod. Ke dnešnímu dni je aktuálně nejpoužívanější JavaScript ve verzi ECMAScript 6, zkráceně ES6. Je to poměrně mladá verze z roku 2015, takže často ještě narazíte na kód, který je napsaný ve verzi ES5 z roku 2009 nebo ještě starší.
+Podobně jako má čeština <i>Pravidla českého pravopisu</i>, má i JavaScript svoje standardizovaná pravidla, kterým se říká _ECMAScript_. Podobně jako pravidla češtiny i ECMAScript se v čase vyvíjí a proměňuje. Aby se vždy vědělo o jaké verzi ECMAScript pravidel se mluví, používají se čísla verzí jako ECMAScript 1, ECMAScript 2 apod. Ke dnešnímu dni je aktuálně nejpoužívanější JavaScript ve verzi ECMAScript 6, zkráceně ES6. Je to poměrně mladá verze z roku 2015, takže často ještě narazíte na kód, který je napsaný ve verzi ES5 z roku 2009 nebo ještě starší.
 
 Ve verzi ES5 se například proměnné nevytvářejí pomocí `let` a `const` nýbrž pomocí `var`. Náš příklad s výplatou by tedy ve verzi ES5 vypadal takto.
 
@@ -254,11 +257,11 @@ Proměnné vytvořené pomocí `var` se dají měnit podobně jako proměnné vy
 
 ### Vytváření proměnných
 
-V JavaScriptu se ukrývá mnoho různých pastí, ve kterých je možné snadno uvíznout. Jedna z opravdu záludných věci je, že k vytvoření proměnné ve skutečnosti nepotřebujete ani `let`, ani `const`, ani `var`. Pokud přiřadíte hondnotu do proměnné, která ještě neexistuje, JavaScript runtime ji pro vás vytvoří automaticky. To však otvírá velký prostor pro chyby vzniklé překlepem. Uvažte například tento kód. 
+V JavaScriptu se ukrývá mnoho různých pastí, ve kterých je možné snadno uvíznout. Jedna z opravdu záludných věci je, že k vytvoření proměnné ve skutečnosti nepotřebujete ani `let`, ani `const`, ani `var`. Pokud přiřadíte hondnotu do proměnné, která ještě neexistuje, JavaScript runtime ji pro vás vytvoří automaticky. To však otvírá velký prostor pro chyby vzniklé překlepem. Uvažte například tento kód.
 
 ```jscon
 > let mzda = 500
 > nzda = 350
 ```
 
-JavaScript runtime si zde neuvědomí, že jsme udělali překlep a vytvoří novou proměnnou <var>nzda</var> s hodnotou 350. Původní proměnná tedy zůstane nezměněná a už máme zaděláno na problém. Naštěstí se tento zdroj chyb dá odstranit tím, že JavaScript runtimu zakážeme vytvářet proměnné bez uvedení `let`, `const` nebo `var`. Jak se toto zařídí si ukážeme v následující lekci. 
+JavaScript runtime si zde neuvědomí, že jsme udělali překlep a vytvoří novou proměnnou <var>nzda</var> s hodnotou 350. Původní proměnná tedy zůstane nezměněná a už máme zaděláno na problém. Naštěstí se tento zdroj chyb dá odstranit tím, že JavaScript runtimu zakážeme vytvářet proměnné bez uvedení `let`, `const` nebo `var`. Jak se toto zařídí si ukážeme v následující lekci.
