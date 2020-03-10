@@ -6,14 +6,23 @@ Studijní materiály pro DA Web na kodim.cz
 
 ### Blok 1
 
-- Práce s textem - color, background-color, font-size, font-weight...
+- Základní koncepty a účely HTML
+- První skoro-prázdná HTML stránka
+- Validita syntaktická a sémantická
+- Značky `<p>, <h1>, <h2>, <a>, <img>, <ol>, <ul>, <li>`
 
 ### Blok 2
 
-- Box model - margin, padding, border, width/height
+- Koncept jazyka CSS a jeho vazba na HTML
+- Základy selektorového jazyka: názvy značek, atributový filtr, zkratky pro id/class, kombinátory čárka a mezera
+- CSS vlastnosti pro práci s textem - color, background-color, font-size, font-weight, font-family, ...
+- HTML značky pro tabulky: `<table>, <thead>, <tbody>, <tr>, <td>, <th>`
 
 ### Blok 3
 
+- HTML značky pro layout stránky: `<header>, <footer>, <main>, <nav>, ...`
+- Box model - margin, padding, border, width/height
+- CSS vlastnost `display`
 - Úvod do Flexboxu - co to je a jak to funguje
 - Nastavení velikosti prvků uvnitř flexboxu pomocí flex-grow, flex-shrink, flex-basis
 - Směr hlavní osy flexboxu - flex-direction
@@ -26,33 +35,31 @@ Studijní materiály pro DA Web na kodim.cz
 - Zalomení prvků uvnitř flexboxu - flex-wrap
 - Komplexnější layouty pomocí flexboxu - 1+3, holy grail, …
 - Vnořování flexboxů do sebe
+- Tiskový styl
 
 ### Blok 5
 
-- Responzivní webdesign
+- Responzivní webdesign, testování responzivity v prohlížeči
 - Media query - změna CSS v závislosti na šířce viewportu
 - Mobile first přístup
 - Co je breakpoint a existují pevně stanovené pro mobil/tablet/počítač?
+- Další techniky pro responzivní design: device orientation, viewport-relative units
 
 ### Blok 6
 
 - Skrývání/zobrazování prvků v breakpointech
 - Změna velikosti nebo rozložení (vedle sebe/pod sebou) v breakpointech
 - Aplikace responzivního webdesignu na dříve vyrobené flexbox layouty (3+1, holy grail)
+- Responzivní webdesign - pokračování, viewport
+- Pokročilé responzivní layouty a změna rozložení stránky
 
 ### Blok 7
 
-- Responzivní webdesign - pokračování
-- Pokročilé responzivní layouty a změna rozložení stránky
-- Projekt - Recepty
+- CSS Transitions / Animations
 - Pokročilejší CSS selectory - first/last/nth child, adjacent sibling, apod.
 - CSS specificita
 
 ### Blok 8
-
-- CSS Animace - transition, keyframes
-
-### Blok 9
 
 - formuláře v HTML - input, textarea, checkbox, radio, select, apod,
 - validátory
@@ -60,7 +67,8 @@ Studijní materiály pro DA Web na kodim.cz
 
 ### Nezařazeno
 
-- Typy elementů - display (block, inline, inline-block)
+- Projekt - Recepty
+- ~~Typy elementů - display (block, inline, inline-block)~~
 - Float - obtékání obrázků textem, zastavení obtékání, clearfix
 - Pozicování elementů - static, relative, absolute, fixed, sticky
 - Projekt - Profil Jana Czechita
@@ -77,6 +85,7 @@ Studijní materiály pro DA Web na kodim.cz
 
 - Základní Práce s větvemi
 - merge
+- co je to konflikt a jak jej řešit
 
 ## Sylabus JavaScript
 
@@ -128,8 +137,9 @@ Studijní materiály pro DA Web na kodim.cz
 - Vytvoření pole
 - Přístup k hodnotám v poli
 - Metody pole pro vkládání/odebírání hodnot - push, pop, shift, unshift, slice, splice
-- Vyhledávání v poli - indexOf, includes, some, …
+- Vyhledávání v poli - indexOf, includes,  …
 - Procházení pole pomocí cyklu forEach
+- Funkcionální iterace (map, filter, some, …)
 - querySelectorAll
 
 ### Blok 6: Cykly a algoritmy
@@ -158,13 +168,16 @@ Studijní materiály pro DA Web na kodim.cz
 
 - innerHTML atd.
 
-### Blok 10: Webpack
+### Blok 10: Modularizace a preprocessing
 
-- ES6 + transpilace do ES5
-- Webpack
-- Moduly
-- Import/export (named/default)
 - Rozdělení kódu na menší funkční celky
+- ES6 Moduly, výhody a nevýhody
+- Otázka zpětné kompatibility (až do ES5?)
+- Tři techniky pro podporu:
+  - Transpilace
+  - Polyfilly
+  - Bundling
+- 3rd party tools: Webpack, Rollup, Babel, Closure Compiler?
 
 ### Blok 11:
 
