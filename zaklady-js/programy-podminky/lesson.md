@@ -57,11 +57,11 @@ const konec = (start + delka) % 24;
 document.write(konec);
 ```
 
-Tento program vypadá velmi přímočaře. Zadáme-li mu však v dobré víře na vstup délku 10 dočkáme se odpovědi nesprávné odpovědi 22. Abychom odhalili, kde je zakopaný pes, musíme si pověděť něco o konverzi hodnot.
+Tento program vypadá velmi přímočaře. Zadáme-li mu však v dobré víře na vstup délku 10 dočkáme se odpovědi nesprávné odpovědi 22. Abychom odhalili, kde je zakopaný pes, musíme si povědět něco o konverzi hodnot.
 
 ## Konverze hodnot
 
-Úplně na začátku je šikovné všimnout si rozdílu mezi hodnotami jako `12` a `'12'`. Jedna je číslo dvanáct a druhá je řetezec obsahující znaky 1 a 2. Proto můžeme čekat, že aritmetické operace s těmito hodnotami dopadnou jinak podle toho zda jde o číslo nebo o řetězec.
+Úplně na začátku je šikovné všimnout si rozdílu mezi hodnotami jako `12` a `'12'`. Jedna je číslo dvanáct a druhá je řetězec obsahující znaky 1 a 2. Proto můžeme čekat, že aritmetické operace s těmito hodnotami dopadnou jinak podle toho zda jde o číslo nebo o řetězec.
 
 ```jscon
 > 12 + 5
@@ -124,7 +124,7 @@ Abychom si s touto situací poradili, budeme potřebovat možnost provést konve
 
 ### Explicitní konverze
 
-Pokud chceme konvertovat číslo na řetězec, použíjeme funkci `String`.
+Pokud chceme konvertovat číslo na řetězec, použijeme funkci `String`.
 
 ```jscon
 > String(12)
@@ -156,3 +156,17 @@ const delka = Number(prompt("Zadej délku závodu:"));
 const konec = (start + delka) % 24;
 document.write(konec);
 ```
+
+Z tohoto příklady plyne do budoucna velmi důležité poučení. Vždycky si dávejte dobrý pozor na to, s jakými typy hodno pracujete. Pokud například chcete s používat výstup funkce `prompt` jako číslo, vždycky jej explicitně převeďte na číslo. Dáte tak i čtenářům vašeho programu najevo, co je vaším záměrem a oni tak nebudou muset smysl vašeho programu rozplétat jako detektivní zápletku.
+
+To, že JavaScript pro nás některé konverze dělá automaticky můžeme využít k tomu, abychom uživateli vypsali nějakou hezčí zprávu než jen holé číslo.
+
+```js
+document.write("Běžec dorazí v " + konec + "h");
+```
+
+## Podmínky
+
+Zatím všechny naše programy vypadaly jako sekvence příkazů vykonávané jeden za druhým. Pro komplikovanější problémy ale budeme potřebovat umožnit, aby se některé části programu vykonaly jen za určitých podmínek.
+
+Pro jednoduchý příklad se opět vraťme k našemu ultramaratonskému běhu.

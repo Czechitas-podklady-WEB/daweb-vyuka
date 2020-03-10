@@ -6,17 +6,43 @@ Studijní materiály pro DA Web na kodim.cz
 
 ### Blok 1
 
-- Práce s textem - color, background-color, font-size, font-weight...
+Část první
+
+- Základní koncepty a účely HTML
+- První skoro-prázdná HTML stránka
+- Co je to syntaxe a sémantika
+- Značky `<p>, <h1>, <h2>, <a>, <img>, <ol>, <ul>, <li>`
+- Atributy `src`, `href`
+
+Část druhá
+
+- Koncept jazyka CSS a jeho vazba na HTML
+- Základy selektorového jazyka: názvy značek, zkratky pro třídy
+- CSS vlastnosti pro práci s textem - `color`, `background-color`, `font-size`, `font-weight`, `font-family`, ...
 
 ### Blok 2
 
-- Box model - margin, padding, border, width/height
+Část první
+
+- HTML značky pro layout stránky: `<div>, <header>, <footer>, <main>, <nav>, ...`
+- Box model - `box-sizing`, `margin`, `padding`, `border`, `width/height`
+- CSS jednotky - `px`, `procenta`, `rem`, `em`
+
+Část druhá
+
+- CSS vlastnost `display`
+- Pozicování elementů - `static`, `relative`, `absolute`
 
 ### Blok 3
+
+Část první
 
 - Úvod do Flexboxu - co to je a jak to funguje
 - Nastavení velikosti prvků uvnitř flexboxu pomocí flex-grow, flex-shrink, flex-basis
 - Směr hlavní osy flexboxu - flex-direction
+
+Část druhá
+
 - Základní layouty pomocí flexboxu (prvky vedle sebe)
 
 ### Blok 4
@@ -24,35 +50,33 @@ Studijní materiály pro DA Web na kodim.cz
 - Flexbox - pokračování
 - Zarovnání prvků ve flexboxu pomocí justify-content a align-items
 - Zalomení prvků uvnitř flexboxu - flex-wrap
+
 - Komplexnější layouty pomocí flexboxu - 1+3, holy grail, …
 - Vnořování flexboxů do sebe
 
 ### Blok 5
 
-- Responzivní webdesign
+- Responzivní webdesign, testování responzivity v prohlížeči
 - Media query - změna CSS v závislosti na šířce viewportu
 - Mobile first přístup
 - Co je breakpoint a existují pevně stanovené pro mobil/tablet/počítač?
+- Další techniky pro responzivní design: device orientation, viewport-relative units
 
 ### Blok 6
 
 - Skrývání/zobrazování prvků v breakpointech
 - Změna velikosti nebo rozložení (vedle sebe/pod sebou) v breakpointech
 - Aplikace responzivního webdesignu na dříve vyrobené flexbox layouty (3+1, holy grail)
+- Responzivní webdesign - pokračování, viewport
+- Pokročilé responzivní layouty a změna rozložení stránky
 
 ### Blok 7
 
-- Responzivní webdesign - pokračování
-- Pokročilé responzivní layouty a změna rozložení stránky
-- Projekt - Recepty
+- CSS Transitions / Animations
 - Pokročilejší CSS selectory - first/last/nth child, adjacent sibling, apod.
 - CSS specificita
 
 ### Blok 8
-
-- CSS Animace - transition, keyframes
-
-### Blok 9
 
 - formuláře v HTML - input, textarea, checkbox, radio, select, apod,
 - validátory
@@ -60,10 +84,8 @@ Studijní materiály pro DA Web na kodim.cz
 
 ### Nezařazeno
 
-- Typy elementů - display (block, inline, inline-block)
-- Float - obtékání obrázků textem, zastavení obtékání, clearfix
-- Pozicování elementů - static, relative, absolute, fixed, sticky
-- Projekt - Profil Jana Czechita
+- Float - obtékání obrázků textem, zastavení obtékání, clearfi
+- HTML značky pro tabulky: `<table>, <thead>, <tbody>, <tr>, <td>, <th>`
 
 ## Sylabus Git
 
@@ -77,24 +99,44 @@ Studijní materiály pro DA Web na kodim.cz
 
 - Základní Práce s větvemi
 - merge
+- co je to konflikt a jak jej řešit
 
 ## Sylabus JavaScript
 
 ### Blok 1: Úvod do JavaScriptu
 
+Část první
+
+- Úvod do programování - problém spolubydlení
 - Čísla a aritmetika
 - Textové řetězce a práce s nimi (spojování)
 - Proměnné
+
+Část druhá
+
 - Voláni funkcí (náhodná čísla, zaokrouhlování, apod)
+
+Čtení na doma
+
 - Deklarace proměnných pomocí var/let/const
 
 ### Blok 2: První programy a podmínky
 
+Část první
+
 - První programy
 - Vstup výstup, document.write, console.log, prompt
 - Konverze hodnot, Number, String
+
+Část druhá
+
+- Booleovské hodnoty
 - Podmínky - if/else if/else
 - Porovnávací operátory = vs. ===
+
+Čtení na doma
+
+- Logické operátory
 
 ### Blok 3: Document Object Model
 
@@ -106,7 +148,7 @@ Studijní materiály pro DA Web na kodim.cz
 - atributy prvku - src, href, apod.
 - CSS třídy - přidat/odebrat/přepnout
 
-### Blok 4: Vlastní funkce, funkce vyšího řádu
+### Blok 4: Vlastní funkce, funkce vyššího řádu
 
 - Vlastní funkce
 - Předávání parametrů do funkce a vracení hodnoty
@@ -125,16 +167,22 @@ Studijní materiály pro DA Web na kodim.cz
 
 ### Blok 5: Pole a cykly
 
+Část první
+
 - Vytvoření pole
 - Přístup k hodnotám v poli
 - Metody pole pro vkládání/odebírání hodnot - push, pop, shift, unshift, slice, splice
-- Vyhledávání v poli - indexOf, includes, some, …
+
+Část druhá
+
+- Vyhledávání v poli - indexOf, includes, …
 - Procházení pole pomocí cyklu forEach
 - querySelectorAll
 
 ### Blok 6: Cykly a algoritmy
 
 - Cyklus for - předem známý počet opakování
+- Funkcionální iterace (map, filter, some, …)
 - Cyklus while - cyklus s předem neurčeným počtem opakování
 - Práce s náhodnými čísly - házení kostkou, dokud nepadne 6, apod.
 
@@ -160,15 +208,18 @@ Studijní materiály pro DA Web na kodim.cz
 
 ### Blok 10: Webpack
 
-- ES6 + transpilace do ES5
-- Webpack
-- Moduly
-- Import/export (named/default)
 - Rozdělení kódu na menší funkční celky
+- ES6 Moduly, výhody a nevýhody
+- Otázka zpětné kompatibility (až do ES5?)
+- Tři techniky pro podporu:
+  - Transpilace
+  - Polyfilly
+  - Bundling
 
 ### Blok 11:
 
 - Práce s API
+- Google Sheets API
 - Odesílání dat na server pomocí fetch
 
 ### Blok 12:
