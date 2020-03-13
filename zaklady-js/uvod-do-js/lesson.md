@@ -178,11 +178,17 @@ Už od úplných začátků s programováním je dobré učit se dobrým návyk�
 1. Vždy proměnnou pojmenujte tak, aby její název jasně napovídal, co se uvnitř ní nachází. Například proměnná <var>pocet_hodin</var> jasně říká, že v ní bude uložen asi nějaký počet hodin. Můžeme podlehnout touze název proměnné zkrátit například na <var>pcthdn</var>, aby se nám lépe psala. Až ovšem někdo další bude takový program číst, bude mlátit hlavou do stolu, cože proboha znamená zkratka <var>pcthdn</var>.
 1. Naposledy je dobré si uvědomit, že programy i programátoři se téměř vždy pohybují v mezinárodním prostředí. Takže je vždycky lepší pojmenovávat proměnné anglicky. V tomto kurzu ještě tohle pravidlo trošku rozvolníme, ale i tak si můžete začít zvykat na proměnné s názvem <var>number_of_hours</var>.
 
-@exercises[
+@exercises ## Cvičení - hodnoty a proměnné [
 
 - vyplata
 - ultramaraton
 - prijem-divadla
+  ]@
+
+@exercises bonuses [
+
+- uroky
+- novy-koberec
   ]@
 
 ## Volání funkcí
@@ -237,6 +243,12 @@ Chytrým použitím zaokrouhlování a trochou matematiky můžeme pomocí této
 > Math.floor(Math.random() * 10)
 5
 ```
+
+@exercises ## Povinné úložky na doma [
+
+- delka-filmu
+- hazeni-kostkou
+  ]@
 
 ## Povinné čtení na doma
 
