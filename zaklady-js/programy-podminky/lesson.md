@@ -61,7 +61,7 @@ Tento program vypadá velmi přímočaře. Zadáme-li mu však v dobré víře n
 
 ## Konverze hodnot
 
-Úplně na začátku je šikovné všimnout si rozdílu mezi hodnotami jako `12` a `'12'`. Jedna je číslo dvanáct a druhá je řetězec obsahující znaky 1 a 2. Proto můžeme čekat, že aritmetické operace s těmito hodnotami dopadnou jinak podle toho zda jde o číslo nebo o řetězec.
+Úplně na začátku je šikovné všimnout si rozdílu mezi hodnotami jako `12` a `'12'`. Jedna představuje číslo dvanáct, druhá představuje řetězec obsahující znaky 1 a 2. Proto můžeme čekat, že aritmetické operace s těmito hodnotami dopadnou jinak podle toho zda jde o číslo nebo o řetězec.
 
 ```jscon
 > 12 + 5
@@ -165,8 +165,64 @@ To, že JavaScript pro nás některé konverze dělá automaticky můžeme využ
 document.write("Běžec dorazí v " + konec + "h");
 ```
 
+## Metody a vlastnosti
+
+Než se vhrnete do víru psaní vlastních programů, ukážeme si ještě jeden důležitý nástroj, který nám otevře mnoho zajímavých možností, a tím jsou _metody_ a _vlastnosti_. Metodu si můžeme představit jako speciální druh funkce, která se používá pouze ve spojení s konkrétním typem hodnoty. Představme si, že chcete například změnit všechna písmenka nějakého řetězce na velká. Na něco takového by mohla existovat funkce například s názvem `toUpperCase`.
+
+```jscon
+> toUpperCase('martin')
+'MARTIN'
+```
+
+Takováto funkce v JavaScriptu ve skutečnosti neexistuje. Když se ale nad ní malinko zamyslíte, zjistíte, že by fungovala pouze na řetězcích. Těžko si představit, co by taková funkce měla dělat například s číslem -0.46. V takovém případě můžeme říct, že naše funkce je _metodou na řetězcích_ a zavoláme ji pomocí tečkové notace.
+
+```jscon
+> 'martin'.toUpperCase()
+'MARTIN'
+```
+
+Tento kód už v JavaScriptu funguje a dělá přesně to, co bychom čekali. Kromě `toUpperCase` mají řetězce mnoho dalších užitečných metod. Například metoda `toLowerCase`, která naopak konvertuje všechna písmenka na malá. Máme ale i metody, které vyžadují další vstupy. Například metoda `substring`, která umí vyříznout část řetězce podle zadaných mezí.
+
+```jscon
+> 'martin'.substring(2, 4)
+'rt'
+> 'martin'.substring(0, 5)
+'marti'
+```
+
+U metody `substring` poprvé narážíme na jednu programátorskou výstřednost, kterou budeme potkávat pořád znovu a znovu: **programátoři vždy počítají od nuly**, nikoliv od jedničky jako běžní lidé. V řetězci `'martin'` je tedy písmenko `'m'` na pozici nula, písmenko `'a'` na pozici 1 a tak dále. Metoda `substring` navíc bere dolní mez **včetně**, kdežto horní mez se bere **vyjma**.
+
+Na řetězcích i na dalších nám zatím neznámých hodnotách najdeme mnoho a mnoho dalších metod, které budem postupně potkávat během celého kurzu.
+
+Možná vám nyní vrtá hlavou, jestli funkce `Math.round` není také náhodou metoda, když používá tečkovou notaci. Je to skutečně tak. Nyní se ale budete chtít zeptat, co že teda je to `Math` za hodnotu a tady se dostáváme do úzkých, protože na zodpovězení této otázky ještě nemáme dost terminologie a znalostí. Takže `Math` pro nás na chvíli ještě zůstane tajemstvím.
+
+### Vlastnosti
+
+Už víme, že metody jsou něco jako funkce, které přísluší k nějakému typu hodnoty, například řetězci. _Vlastnosti_ jsou něco jako proměnné, které patří k určitému typu hodnoty. Používá se u nich stejná tečková notace jako u metod. Řetězce například mají vlastnost `length`, která udává délku řetězce.
+
+```jscon
+> 'martin'.length
+6
+> 'm'.length
+1
+> ''.length
+0
+```
+
+Všimněte si, že za názvem vlastnosti nejsou kulatá závorky, protože vlastnosti nejsou metody, které bychom volali jako funkce. Vlastnost `length` je zatím jediná vlastnost, kterou poznáme. Později v kurzu jich však uvidíme více.
+
+@exercises ## Cvičení - vstup, výstup, metody [
+
+- vyplata-stranka
+- email
+  ]@
+
+## Pravdivostní hodnoty
+
 ## Podmínky
 
 Zatím všechny naše programy vypadaly jako sekvence příkazů vykonávané jeden za druhým. Pro komplikovanější problémy ale budeme potřebovat umožnit, aby se některé části programu vykonaly jen za určitých podmínek.
 
 Pro jednoduchý příklad se opět vraťme k našemu ultramaratonskému běhu.
+
+## Povinné čtení na doma - logické operátory
