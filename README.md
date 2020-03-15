@@ -138,32 +138,49 @@ Studijní materiály pro DA Web na kodim.cz
 
 - Logické operátory
 
-### Blok 3: Document Object Model
+### Blok 3: DOM a vlastní funkce
+
+Část první
 
 - Vyhledávání prvků na stránce - querySelector
 - Změna vlastností prvku
 - CSS vlastnosti element.style.xxxx
-- textový obsah prvku textContent, innerHTML
-- ukázka nebezpečnosti innerHTML
+- textový obsah prvku textContent
 - atributy prvku - src, href, apod.
-- CSS třídy - přidat/odebrat/přepnout
 
-### Blok 4: Vlastní funkce, funkce vyššího řádu
+Část druhá
 
 - Vlastní funkce
 - Předávání parametrů do funkce a vracení hodnoty
+
+Čtení na doma
+
+- CSS třídy - přidat/odebrat/přepnout
+
+### Blok 4: Funkce vyššího řádu, události
+
+Část první
+
 - Funkce jako hodnoty
 - Předávání funkcí funkcím
 - setTimer, setInterval
 
-### Blok 5: Události
+Část druhá
 
 - Události
 - přidávání událostí pomocí addEventListener
 - událost onClick, onKeyDown a event.key
+
+Čtení na doma
+
 - vlastnosti události předané v event objektu
+
+### Blok 5: Volnější lekce
+
+- příklady na procvičení
 - delegování událostí - událost přidaná na rodiče se vykoná i při kliku na potomky
 - DOMContentLoaded
+- Drobnosti a opakování
 
 ### Blok 5: Pole a cykly
 
@@ -188,12 +205,17 @@ Studijní materiály pro DA Web na kodim.cz
 
 ### Blok 7: Objekty a práce s daty
 
+Část první
+
 - Vytvoření objektu pomocí object literal
 - Vlastnosti objektu
 - Tečková konvence vs. přístup k vlastnostem jako k prvkům pole
 - Objekty v poli = zdroj dat, “databáze”
+
+Část druhá
+
+- innerHTML
 - Procházení pole objektů a generování HTML
-- Data atributy v HTML - do vygenerovaného HTML si přidáváme doplňková data
 
 ### Blok 8: Remote APIs
 
