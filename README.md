@@ -178,9 +178,10 @@ Studijní materiály pro DA Web na kodim.cz
 ### Blok 5: Volnější lekce
 
 - příklady na procvičení
+- Drobnosti a opakování
+- Programátorské best practices - členění kódu do funkcí, zásady psaní hezkého kódu
 - delegování událostí - událost přidaná na rodiče se vykoná i při kliku na potomky
 - DOMContentLoaded
-- Drobnosti a opakování
 
 ### Blok 5: Pole a cykly
 
