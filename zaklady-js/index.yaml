@@ -7,6 +7,9 @@ lessons:
   - title: První programy a podmínky
     link: programy-podminky
     brief: Ukážeme si jak vytvářet JavaScriptové programy a naučíme je dělat rozhodnutí pomocí podmínek.
-  - title: Document Object Model
-    link: dom
-    brief: Přidáme do našich JavaScriptových programů možnost manipulovat s obsahem stránky.
+  - title: DOM a vlastní funkce
+    link: dom-funkce
+    brief: Přidáme do našich JavaScriptových programů možnost manipulovat s obsahem stránky a naučíme se psát vlastní funkce.
+  - title: Funkce vyšších řádů, události
+    link: hof-udalosti
+    brief: Naučíme naše stránky reagovat na události jako je kliknutí, stisknutí klávesy nebo scrollování. K tomu budeme potřebovat porozumět funkcím vyššího řádu.
