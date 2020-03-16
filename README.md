@@ -177,8 +177,8 @@ Studijní materiály pro DA Web na kodim.cz
 
 ### Blok 5: Volnější lekce
 
-- příklady na procvičení
-- Drobnosti a opakování
+- Opakování, příklady na procvičení
+- Drobnosti - template strings, destrukturing...
 - Programátorské best practices - členění kódu do funkcí, zásady psaní hezkého kódu
 - delegování událostí - událost přidaná na rodiče se vykoná i při kliku na potomky
 - DOMContentLoaded
@@ -214,7 +214,7 @@ Studijní materiály pro DA Web na kodim.cz
 - Objekty v poli = zdroj dat, “databáze”
 
 Část druhá
-
+- tvorba vlastních DOM elementů
 - innerHTML
 - Procházení pole objektů a generování HTML
 
@@ -226,7 +226,7 @@ Studijní materiály pro DA Web na kodim.cz
 - Metody pro práci s polem - forEach, filter, sort, map, reduce
 
 ### Blok 9: Tvorba komponent
-
+- šablony, 
 - innerHTML atd.
 
 ### Blok 10: Webpack
