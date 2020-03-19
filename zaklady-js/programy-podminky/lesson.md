@@ -19,7 +19,7 @@ Naše JavaScriptové programy budou vždy součástí nějaké webové stránky.
 </html>
 ```
 
-Podobně jako jste zvyklí u CSS stylů, pro JavaScriptový kód budeme také vždy vytvářet separátní soubor. Nyní mu dáme název `index.js`. Jeho obsah bude vypadat takto.
+Podobně jako jste zvyklí u CSS stylů, pro JavaScriptový kód budeme také vždy vytvářet oddělený soubor. Nyní mu dáme název `index.js`. Jeho obsah bude vypadat takto.
 
 ```js
 "use strict";
@@ -38,7 +38,7 @@ Pokud chceme JavaScriptový program propojit se stránku, vložíme odkaz na kon
 
 Pokud nyní soubor `index.html` otevřete v prohlížeči, měli byste pod nadpisem vidět text, který jsme předali funkci `document.write`. To je funkce, která dokáže na konec naší stránky vložit libovolný řetězec. Takto může náš jednoduchý program komunikovat s uživatelem.
 
-Všimněte si, že náš program začíná direktivou `use strict`. Ta je pro nás velmi důležitá obzvlášť na úplném začátku kurzu, protože nás chrání před různými začátečníckými chybami. Zakazuje JavaScript runtimu například vytvářet nové proměnné bez použití `let`, `const` nebo `var`. Vždy, když přiřadíte hodnotu do neexistující proměnné obdržíte chybovou hlášku místo toho, aby runtime vytvořil novou proměnnou jako by se nechumelilo. Tuto direktivu budeme používat ve všech našich programech abychom si usnadnili lovení chyb.
+Všimněte si, že náš program začíná direktivou `use strict`. Ta je pro nás velmi důležitá obzvlášť na úplném začátku kurzu, protože nás chrání před různými začátečníckými chybami. Zakazuje JavaScript runtimu například vytvářet nové proměnné bez použití `let`, `const` nebo `var`. Vždy, když přiřadíte hodnotu do neexistující proměnné, obdržíte chybovou hlášku místo toho, aby runtime vytvořil novou proměnnou, jako by se nechumelilo. Tuto direktivu budeme používat ve všech našich programech, abychom si usnadnili lovení chyb.
 
 ### Středníky
 
@@ -159,7 +159,7 @@ document.write(konec);
 
 Z tohoto příklady plyne do budoucna velmi důležité poučení. Vždycky si dávejte dobrý pozor na to, s jakými typy hodno pracujete. Pokud například chcete s používat výstup funkce `prompt` jako číslo, vždycky jej explicitně převeďte na číslo. Dáte tak i čtenářům vašeho programu najevo, co je vaším záměrem a oni tak nebudou muset smysl vašeho programu rozplétat jako detektivní zápletku.
 
-To, že JavaScript pro nás některé konverze dělá automaticky můžeme využít k tomu, abychom uživateli vypsali nějakou hezčí zprávu než jen holé číslo.
+To, že JavaScript pro nás některé konverze dělá automaticky, můžeme využít k tomu, abychom uživateli vypsali nějakou hezčí zprávu, než jen holé číslo.
 
 ```js
 document.write("Běžec dorazí v " + konec + "h");
@@ -181,7 +181,7 @@ Takováto funkce v JavaScriptu ve skutečnosti neexistuje. Když se ale nad ní 
 'MARTIN'
 ```
 
-Tento kód už v JavaScriptu funguje a dělá přesně to, co bychom čekali. Kromě `toUpperCase` mají řetězce mnoho dalších užitečných metod. Například metoda `toLowerCase`, která naopak konvertuje všechna písmenka na malá. Máme ale i metody, které vyžadují další vstupy. Například metoda `substring`, která umí vyříznout část řetězce podle zadaných mezí.
+Tento kód už v JavaScriptu funguje a dělá přesně to, co bychom čekali. Kromě `toUpperCase` mají řetězce mnoho dalších užitečných metod. Například metoda `toLowerCase`, která naopak převádí všechna písmenka na malá. Máme ale i metody, které vyžadují další vstupy. Například metoda `substring`, která umí vyříznout část řetězce podle zadaných mezí.
 
 ```jscon
 > 'martin'.substring(2, 4)
@@ -266,7 +266,7 @@ V JavaScriptu můžete narazit i na operátory `==` a `!=`. Ty však nebudeme ni
 
 Nyní se konečně dostáváme k tématu, na které jsme se tak dlouho připravovali. Doposud všechny naše programy vypadaly jako sekvence příkazů vykonávané jeden za druhým. Pro komplikovanější problémy ale budeme potřebovat umožnit, aby se některé části programu vykonaly jen za určitých podmínek.
 
-Pro jednoduchý příklad se opět vraťme k našemu ultramaratonskému běhu. Závod začiná ve tři hodiny odpoledne a počítáme s tím, že závodníci doběhnou někdy příští den ráno. Nebudeme ale v cíli čekat na každého dědulu, který to celé poběží 20 hodin. Řekněme, že organizátoři mají padla druhý den v poledne. Potřebujeme tedy do naší stránky zakomponovat informaci o tom, jestli trasu dokážeme uběhnout do 12ti hodin. 
+Pro jednoduchý příklad se opět vraťme k našemu ultramaratonskému běhu. Závod začiná ve tři hodiny odpoledne a počítáme s tím, že závodníci doběhnou někdy příští den ráno. Nebudeme ale v cíli čekat na každého dědulu, který to celé poběží 20 hodin. Řekněme, že organizátoři mají padla druhý den v poledne. Potřebujeme tedy do naší stránky zakomponovat informaci o tom, jestli trasu dokážeme uběhnout do 12 hodin.
 
 ```js
 "use strict";
@@ -286,11 +286,11 @@ Toto je příklad velmi jednoduché podmínky se dvěm větvemi. V závorkách p
 
 ### Bloky kódu
 
-Pokud nějaké řádky kódu uzavřeme do složených závorek, vytváříme takzvaný blok. JavaScript každý blok chápe jako samostatnou jednotku, která se vykoná za určité situace. Taková situace muže být například splnění nebo nesplnění výrazu v podmínce. Později uvidíme další situace, kde se spouštěnjí bloky kódu. 
+Pokud nějaké řádky kódu uzavřeme do složených závorek, vytváříme takzvaný blok. JavaScript každý blok chápe jako samostatnou jednotku, která se vykoná za určité situace. Taková situace muže být například splnění nebo nesplnění výrazu v podmínce. Později uvidíme další situace, kde se spouštěnjí bloky kódu.
 
 Aby se nám kód dobře četl, odsazujeme řádky uvnitř bloku o kus doprava. V tomto kurzu budeme používat dvě mezery. Pokud máte VS Code nastavené podle naších doporučení, při psaní se vám řádky budou automaticky odsazovat. Stisknutím tabulátoru [[Tab]] pak můžete odsazení vložit sami. Stisknutím [[Shift]]+[[Tab]] jej naopak zrušíte. To se hodí pokud chcete například odsadit velký kus kódu najednou. Stačí jej vybrat myší a stiknout [[Tab]] nebo [[Shift]]+[[Tab]].
 
-Je dobré mít na paměti, že odsazování a obecně většina bílých znaků jsou JavaScriptu především pro nás lidi, tedy pro čtenáře kódu. Počítači, tedy přesnějí JavaScript runtimu, jsou bílé znaky jedno. Můžeme si je tady dávat kam chceme. Následující dva zápisy jsoy z hlediska runtimu zcela stejné. 
+Je dobré mít na paměti, že odsazování a obecně většina bílých znaků je především pro nás lidi, tedy pro čtenáře kódu. Počítači, tedy přesnějí JavaScript runtimu, jsou bílé znaky jedno. Můžeme si je tady dávat kam chceme. Následující dva zápisy jsou z hlediska runtimu zcela stejné.
 
 ```js
 if (vek >= 18) {
@@ -304,14 +304,14 @@ if (vek >= 18) {
 if(vek>=18){document.write('Nalej si');}else{document.write('Žádné chlastání!');}
 ```
 
-Věřím, že uznáte, že první varianta je mnohem čitelnější než druhá. Způsobů, jak formátovat kód existuje vícero a můžete se tak účastnit nekonečných hospodských disputací o tom, jestli odsazovat pomocí dvou mezer nebo čtyř, jestli otvírací složenou závorku psát na konec řádku nebo na začátek nového a tak dále. 
+Věřím, že uznáte, že první varianta je mnohem čitelnější než druhá. Způsobů, jak formátovat kód existuje vícero a můžete se tak účastnit nekonečných hospodských disputací o tom, jestli odsazovat pomocí dvou mezer nebo čtyř, jestli otvírací složenou závorku psát na konec řádku nebo na začátek nového a tak dále.
 
 ```js
-if (vek >= 18) 
+if (vek >= 18)
 {
     document.write('Nalej si');
-} 
-else 
+}
+else
 {
     document.write('Žádné chlastání!');
 }
@@ -321,15 +321,15 @@ Nakonec je však důležité hlavně si nějaká pravidla stanovit a ta pak dodr
 
 ### Podmínky s více větvemi
 
-Zatím jsme viděli podmínky se dvěma větvemi. Není ovšem problém mít podmínku například jen s jednou větví. 
+Zatím jsme viděli podmínky se dvěma větvemi. Není ovšem problém mít podmínku například jen s jednou větví.
 
 ```js
 if (vek >= 18) {
   document.write('Nalej si');
-} 
+}
 ```
 
-Pokud je výraz v podmínce `false`, blok kódu se prostě přeskočí. Občas ale naopak potřebujeme podmínky s vícero větvemi. Uvažte například situaci, kdy se snažíme ohodnotit písemku známkami A až F podle dosaženého počtu budů. 
+Pokud je výraz v podmínce `false`, blok kódu se prostě přeskočí. Občas ale naopak potřebujeme podmínky s vícero větvemi. Uvažte například situaci, kdy se snažíme ohodnotit písemku známkami A až F podle dosaženého počtu budů.
 
 ```js
 let znamka = '';
@@ -362,7 +362,7 @@ if (body >= 90) {
   znamka = 'D';
 } else if (body >= 50) {
   znamka = 'E';
-} 
+}
 ```
 
 ### Vnořené podmínky
@@ -384,7 +384,7 @@ if (vek >= 18) {
 }
 ```
 
-Takto můžeme vytvářet relativně komplikované rozhodování. Se zanořováním podmínek je ale dobré to příliš nepřehánět. Málokdo se dokáže snadno zorientovat v temných hlubínách pětkrát zanořené podmínky. Později se naučímte strategie, jak se takovým hlubokým zanořením vyhnout. 
+Takto můžeme vytvářet relativně komplikované rozhodování. Se zanořováním podmínek je ale dobré to příliš nepřehánět. Málokdo se dokáže snadno zorientovat v temných hlubínách pětkrát zanořené podmínky. Později se naučímte strategie, jak se takovým hlubokým zanořením vyhnout.
 
 @exercises ## Cvičení - podmínky [
 

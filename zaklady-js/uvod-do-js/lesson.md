@@ -78,10 +78,10 @@ Každý počítač je ve svojí nejniternější podstatě jen hrozně rychlá k
 Všimněte si, že vždy, když v konzoli napíšete příkaz a stiknete klávesu [[Enter]], pošlete tím JavaScriptu příkaz a ten vám ihned odpoví výsledek. Zatím jsme sice nic závratného nespočítali, použili jsme ovšem dva zcela základní stavební bloky všech programů: _hodnoty_ a _operátory_. Hodnoty jsou v našem případě čísla, později však uvidíme ještě další druhy hodnot, které už na kalkulačce nepotkáte.
 
 :::warn
-Pozor na to, že ve všech programovacích jazycích se destinná čísla píší s tečkou, nikoliv s čárkou.
+Pozor na to, že ve všech programovacích jazycích (s výjimkou MS Excel) se destinná čísla píší s tečkou, nikoliv s čárkou.
 :::
 
-Operátory jsou v našem případě sčítání, odčítání, násobení a dělení. Je potřeba si zvyknout na to jakými symboly se JavaScriptu zapisují. Možná budete muset malinko prohledat klávesnici, než najdete například dopředné lomítko nebo hvězdičku.
+Operátory jsou v našem případě sčítání, odčítání, násobení a dělení. Je potřeba si zvyknout na to, jakými symboly se JavaScriptu zapisují. Možná budete muset malinko prohledat klávesnici, než najdete například dopředné lomítko nebo hvězdičku.
 
 Kromě výše zmíněných nabízí JavaScript dva další zajímavé operátory: mocnění a zbytek po dělení, tzv. _modulo_.
 
@@ -118,7 +118,7 @@ Pokud chceme v JavaScriptu pracovat s textem, použijeme hodnotu, které se ří
 "Řekl: "ahoj""
 ```
 
-Textové řetězce vždy uzavíráme do uvozovek. V JavaScritpu můžete používat jak jednoduché tak dvojité uvozovky, z hlediska funkčnosti programu je to jedno. Můžete si tak pomaličku začít budovat svůj programátorský styl a používat ty uvozovky, které se vám líbí. Občas se dvojité uvozovky hodí pokud chceme mít uvnitř řetězce například apostrof. Pro tento případ si však později ukážeme obecnější techniku.
+Textové řetězce vždy uzavíráme do uvozovek. V JavaScriptu můžete používat jak apostrofy (jednoduché uvozovky), tak dvojité uvozovky, z hlediska funkčnosti programu je to jedno. Můžete si tak pomaličku začít budovat svůj programátorský styl a používat ty uvozovky, které se vám líbí. Občas se dvojité uvozovky hodí pokud chceme mít uvnitř řetězce například apostrof. Pro tento případ si však později ukážeme obecnější techniku.
 
 Textové řetězce jdou sčítat podobně jako čísla, můžete tedy psát například
 
@@ -137,7 +137,7 @@ Všimněte si v druhém příkladu řetězce, který obsahuje pouze mezeru. V t�
 
 Při složitějších operacích a výpočtech často vyvstane potřeba si nějaký mezivýpočet uložit pro pozdější použití. K tomu nám slouží takzvané _proměnné_. Proměnná je jakási pojmenovaná krabička nebo šuplík, do kterého si můžeme uložit nějakou hodnotu, abychom ji neztratili a mohli ji používat v dalších výpočtech.
 
-Abychom si procvičili zajímavé operátory, zkusíme vyřešit následující úlohu. Mějme čas v hodinách zadaný ve 24-hodinovém formátu. Tři hodiny odpoledne tedy píšeme jako 13h. Nyní chceme spočítat, kolik hodin bude po uplynutí doby zadané také v hodinách. Například jaký bude čas po uplynutí 15ti hodin?
+Abychom si procvičili zajímavé operátory, zkusíme vyřešit následující úlohu. Mějme čas v hodinách zadaný ve 24-hodinovém formátu. Tři hodiny odpoledne tedy píšeme jako 15h. Nyní chceme spočítat, kolik hodin bude po uplynutí doby zadané také v hodinách. Například jaký bude čas po uplynutí 15 hodin?
 
 ```jscon
 > const cas = 13
@@ -269,7 +269,7 @@ Proměnné vytvořené pomocí `var` se dají měnit podobně jako proměnné vy
 
 ### Vytváření proměnných
 
-V JavaScriptu se ukrývá mnoho různých pastí, ve kterých je možné snadno uvíznout. Jedna z opravdu záludných věci je, že k vytvoření proměnné ve skutečnosti nepotřebujete ani `let`, ani `const`, ani `var`. Pokud přiřadíte hondnotu do proměnné, která ještě neexistuje, JavaScript runtime ji pro vás vytvoří automaticky. To však otvírá velký prostor pro chyby vzniklé překlepem. Uvažte například tento kód.
+V JavaScriptu se ukrývá mnoho různých pastí, ve kterých je možné snadno uvíznout. Jedna z opravdu záludných věci je, že k vytvoření proměnné ve skutečnosti nepotřebujete ani `let`, ani `const`, ani `var`. Pokud přiřadíte hodnotu do proměnné, která ještě neexistuje, JavaScript runtime ji pro vás vytvoří automaticky. To však otvírá velký prostor pro chyby vzniklé překlepem. Uvažte například tento kód.
 
 ```jscon
 > let mzda = 500
