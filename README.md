@@ -175,13 +175,22 @@ Studijní materiály pro DA Web na kodim.cz
 
 - vlastnosti události předané v event objektu
 
-### Blok 5: Volnější lekce
+### Blok 5: Prohlubování znalostí
 
-- Opakování, příklady na procvičení
+Část první
+
+- Scope, globální proměnné
+- Closures
+
+Část druhá
+
+- Programátorské best practices - DRY, členění kódu do funkcí
 - Drobnosti - template strings, destrukturing...
-- Programátorské best practices - členění kódu do funkcí, zásady psaní hezkého kódu
 - delegování událostí - událost přidaná na rodiče se vykoná i při kliku na potomky
-- DOMContentLoaded
+
+Čtení na doma
+
+Zásady psaní hezkého kódu
 
 ### Blok 5: Pole a cykly
 
@@ -214,22 +223,49 @@ Studijní materiály pro DA Web na kodim.cz
 - Objekty v poli = zdroj dat, “databáze”
 
 Část druhá
+
 - tvorba vlastních DOM elementů
 - innerHTML
 - Procházení pole objektů a generování HTML
 
 ### Blok 8: Remote APIs
 
+Část první
+
 - Serverová API - REST
 - Data ve formátu JSON
 - Čtení dat pomocí fetch
-- Metody pro práci s polem - forEach, filter, sort, map, reduce
 
-### Blok 9: Tvorba komponent
-- šablony, 
-- innerHTML atd.
+Část druhá
 
-### Blok 10: Webpack
+- Práce s Google Sheets API
+
+### Blok 9: Základy OOP
+
+Část první
+
+- Funkce jako prvky objektů
+- `function` a `this`
+- prototypy, vlastnost `__proto__`
+- vlastnost `constructor` a `Object.create`
+
+Část druhá
+
+- Základy objektového myšlení
+- Objekty jako samostatné jednotky
+
+### Blok 10: Tvorba komponent
+
+Část první
+
+- Komponenty pomoci objektů
+- `render`, `mount` a `update`
+
+Část druhá
+
+- Zpracování událostí v komponentách
+
+### Blok 11: Webpack
 
 - Rozdělení kódu na menší funkční celky
 - ES6 Moduly, výhody a nevýhody
@@ -239,15 +275,13 @@ Studijní materiály pro DA Web na kodim.cz
   - Polyfilly
   - Bundling
 
-### Blok 11:
+### Blok 12: Opakování
 
-- Práce s API
-- Google Sheets API
-- Odesílání dat na server pomocí fetch
-
-### Blok 12:
+- Příklady na práci s komponentami
 
 ## Sylabus Vue.js
+
+### Blok 1:
 
 Sobota 9.11. - Vue.js
 Vue.js (8 h)
