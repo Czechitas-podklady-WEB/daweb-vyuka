@@ -1,0 +1,15 @@
+title: Základy webových stránek – jayzyky HTML a CSS
+link: html-css
+lessons:
+  - title: První webová stránka
+    link: prvni-stranka
+    brief: Vytvoříme svoji první webovou stránku a začneme pracovat na jejím designu
+  - title: Rozložení stránky
+    link: layout-stranky
+    brief: Podíváme se na základní techniky tvorby layoutu, tedy rozložení prvků na stránce
+  - title: Flexbox – moderní layout
+    link: flexbox-1
+    brief: Flexbox je velmi oblíbená moderní technika pro layout
+  - title: Flexbox pro pokročilé
+    link: flexbox-2
+    brief: Čeká nás pokračování Flexboxu, jeho další CSS vlastnosti a jejich využití
