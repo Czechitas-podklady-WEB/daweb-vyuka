@@ -44,7 +44,7 @@ const divide = (num1, num2) => num1 / num2;
 Jelikož každá takováto funkce je hodnota, můžeme ji předat jako vstup do funkce `calc`. Ta pak obdrženou funkci pouze zavolá.
 
 ```js
-const calc = (num1, op, num2) => op(num1 + num2);
+const calc = (num1, op, num2) => op(num1, num2);
 ```
 
 Funkci `calc` pak pužijeme velmi přímočaře.
@@ -112,7 +112,7 @@ setTimeout(() => {
 
 Pokud nějakou funkci vytváříme přímo takto na místě místo toho, abychom ji nejdříve uložili do proměné, říkáme, že taková funkce je takzvaně _anonymní_. Takto napsaný program vám možná přijde hůř k přečtení. Anonymní funkce se ovšem v JavaScriptu používají zcela běžně a jakmile si na tento způsob zapisu zvyknete, budete jej radostně používat také.
 
-Podobně jako u funkce `setTimout` bychonm mohli anonymní funkci předat i naší známé funkci funkci `calc`. Schválně zkuste odhanout, co bude výsledkem následujícího výrazu a proč.
+Podobně jako u funkce `setTimout` bychom mohli anonymní funkci předat i naší známé funkci funkci `calc`. Schválně zkuste odhanout, co bude výsledkem následujícího výrazu a proč.
 
 ```jscon
 > calc(13, (x, y) => x % y, 7)
