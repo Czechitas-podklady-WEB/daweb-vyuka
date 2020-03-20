@@ -10,7 +10,7 @@ Aktuální verzi editoru si naistalujte podle instrukcí na [oficiálních strá
 
 ## NPM a Node.js
 
-Jakmile máme nainstalován balíčkovací systém NPM, hned si nainstalujeme první balíček jménem `esline`, který nám pomůže psát hezký JavaScriptový kód
+Jakmile máme nainstalován balíčkovací systém NPM, hned si nainstalujeme první balíček jménem `eslint`, který nám pomůže psát hezký JavaScriptový kód
 
 ```shell
 $ npm install eslint -g
