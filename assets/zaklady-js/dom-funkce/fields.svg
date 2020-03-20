@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="960" height="540" version="1.1" viewBox="0 0 960 540" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <marker id="marker2821" overflow="visible" orient="auto">
+   <path transform="scale(1.1) rotate(180) translate(1)" d="m8.719 4.034-10.93-4.018 10.93-4.018c-1.745 2.372-1.735 5.617-6e-7 8.035z" fill-rule="evenodd" stroke="#000" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="marker2057" overflow="visible" orient="auto">
+   <path transform="scale(1.1) rotate(180) translate(1)" d="m8.719 4.034-10.93-4.018 10.93-4.018c-1.745 2.372-1.735 5.617-6e-7 8.035z" fill-rule="evenodd" stroke="#000" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="marker1317" overflow="visible" orient="auto">
+   <path transform="scale(1.1) rotate(180) translate(1)" d="m8.719 4.034-10.93-4.018 10.93-4.018c-1.745 2.372-1.735 5.617-6e-7 8.035z" fill-rule="evenodd" stroke="#000" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="Arrow2Lend" overflow="visible" orient="auto">
+   <path transform="scale(1.1) rotate(180) translate(1)" d="m8.719 4.034-10.93-4.018 10.93-4.018c-1.745 2.372-1.735 5.617-6e-7 8.035z" fill-rule="evenodd" stroke="#000" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+ </defs>
+ <g transform="translate(0 -582.5)">
+  <rect y="582.5" width="960" height="540" rx="3" ry="3" fill="#61b651" stroke="#6a6a6a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" style="paint-order:stroke fill markers"/>
+  <path d="m80 582.5h80l-40 250h-80z" fill="#c6d852" style="paint-order:stroke fill markers"/>
+  <path d="m490 987.5h150" fill="none" marker-end="url(#Arrow2Lend)" stroke="#000" stroke-width="1px"/>
+  <g fill="#c6d852">
+   <path d="m640 902.5 320 80v120l-320-80z" style="paint-order:stroke fill markers"/>
+   <path d="m180 1063 460-60v120l-460-1e-4z" style="paint-order:stroke fill markers"/>
+   <path d="m240 582.5h80l-40 250h-80z" style="paint-order:stroke fill markers"/>
+   <path d="m240 962.5 400-240v240z"/>
+   <path d="m640 752.5 320 70v90l-320-70z" style="paint-order:stroke fill markers"/>
+  </g>
+  <g fill="none" stroke="#6a6a6a" stroke-width="1px">
+   <path d="m80 582.5-40 250"/>
+   <path d="m160 582.5-40 250"/>
+   <path d="m960 1103-320-80"/>
+   <path d="m640 962.5v160"/>
+   <path d="m240 582.5-40 250"/>
+  </g>
+  <path d="m400 582.5h80l-40 250h-80z" fill="#c6d852" style="paint-order:stroke fill markers"/>
+  <g fill="none" stroke="#6a6a6a">
+   <g stroke-width="1px">
+    <path d="m220 962.5h420v-260"/>
+    <path d="m960 982.5-320-80"/>
+    <path d="m960 912.5-320-70"/>
+    <path d="m960 822.5-320-70"/>
+    <path d="m320 582.5-40 250"/>
+    <path d="m400 582.5-40 250"/>
+    <path d="m640 1003-460 60"/>
+   </g>
+   <g stroke-dasharray="4,4">
+    <path d="m320 962.5v-240"/>
+    <path d="m400 962.5v-240"/>
+    <path d="m480 962.5v-240"/>
+    <path d="m560 962.5v-240"/>
+    <path d="m640 882.5h-380"/>
+    <path d="m640 802.5h-380"/>
+   </g>
+  </g>
+  <path d="m240 962.5c100-60 360-220 400-240s110-60 180-40l140 40v-140h-500s0.6527 47.9-80 100-160 50-280 100-100 190-100 190v150h200c25.44-51.58-60-100 40-160z" fill="#7aacd0" stroke="#6a6a6a" stroke-width="1px"/>
+  <text x="420" y="992.51965" fill="#000000" font-family="Lato" font-size="21.33px" font-weight="bold" letter-spacing="0px" text-align="center" text-anchor="middle" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="420" y="992.51965" font-family="'Roboto Mono'" font-weight="bold" text-align="start" text-anchor="start">width</tspan></text>
+  <g fill="none" stroke="#000" stroke-width="1px">
+   <path d="m415 987.5h-175" marker-end="url(#marker1317)"/>
+   <path d="m665 897.5v65" marker-end="url(#marker2057)"/>
+   <path d="m665 812.5v-90" marker-end="url(#marker2821)"/>
+  </g>
+  <text transform="rotate(-90)" x="-892.51965" y="670" fill="#000000" font-family="Lato" font-size="21.33px" font-weight="bold" letter-spacing="0px" text-align="center" text-anchor="middle" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-892.51965" y="670" font-family="'Roboto Mono'" font-weight="bold" text-align="start" text-anchor="start">height</tspan></text>
+  <path d="m580 582.5c-15.29 27.98-126.7 105-173.5 135.2-96.34 62.23-149 55.4-224.7 86.93s-115.7 66.99-121.8 117.8 20 120-20 200h120c-4.331-19.86-25.55-88.31-19.2-142.4 6.351-54.06 75.83-99.65 139.2-137.6 82.64-50.08 190-60 390-170s267.6 9.854 290 0v-90zm318.4 60 1.598 0.457v-0.457z" fill="#7493bf"/>
+ </g>
+</svg>

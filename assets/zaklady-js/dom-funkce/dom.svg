@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="640" height="480" version="1.1" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <style type="text/css">
+   @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&amp;display=swap&amp;subset=latin-ext');
+  </style>
+  <marker id="marker893" overflow="visible" orient="auto">
+   <path transform="matrix(-.4 0 0 -.4 -4 0)" d="m0 0 5-5-17.5 5 17.5 5z" fill="#acacac" fill-rule="evenodd" stroke="#acacac" stroke-width="1pt"/>
+  </marker>
+  <marker id="marker887" overflow="visible" orient="auto">
+   <path transform="matrix(-.4 0 0 -.4 -4 0)" d="m0 0 5-5-17.5 5 17.5 5z" fill="#acacac" fill-rule="evenodd" stroke="#acacac" stroke-width="1pt"/>
+  </marker>
+  <marker id="marker881" overflow="visible" orient="auto">
+   <path transform="matrix(-.4 0 0 -.4 -4 0)" d="m0 0 5-5-17.5 5 17.5 5z" fill="#acacac" fill-rule="evenodd" stroke="#acacac" stroke-width="1pt"/>
+  </marker>
+  <marker id="marker875" overflow="visible" orient="auto">
+   <path transform="matrix(-.4 0 0 -.4 -4 0)" d="m0 0 5-5-17.5 5 17.5 5z" fill="#acacac" fill-rule="evenodd" stroke="#acacac" stroke-width="1pt"/>
+  </marker>
+  <marker id="marker869" overflow="visible" orient="auto">
+   <path transform="matrix(-.4 0 0 -.4 -4 0)" d="m0 0 5-5-17.5 5 17.5 5z" fill="#acacac" fill-rule="evenodd" stroke="#acacac" stroke-width="1pt"/>
+  </marker>
+  <marker id="Arrow1Mend" overflow="visible" orient="auto">
+   <path transform="matrix(-.4 0 0 -.4 -4 0)" d="m0 0 5-5-17.5 5 17.5 5z" fill="#acacac" fill-rule="evenodd" stroke="#acacac" stroke-width="1pt"/>
+  </marker>
+ </defs>
+ <g transform="translate(0,-120)">
+  <g>
+   <rect x="400" y="360" width="180" height="40" rx="5" ry="5" fill="#ffec88" style="paint-order:stroke fill markers"/>
+   <text x="415" y="385" fill="#000000" font-family="Lato" font-size="16px" font-weight="bold" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="415" y="385" font-family="'Roboto Mono'" font-weight="normal">div class="card"</tspan></text>
+   <rect x="400" y="420" width="180" height="40" rx="5" ry="5" fill="#ffec88" style="paint-order:stroke fill markers"/>
+   <text x="415" y="445" fill="#000000" font-family="Lato" font-size="16px" font-weight="bold" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="415" y="445" font-family="'Roboto Mono'" font-weight="normal">div class="card"</tspan></text>
+   <rect x="400" y="480" width="180" height="40" rx="5" ry="5" fill="#ffec88" style="paint-order:stroke fill markers"/>
+   <text x="415" y="505" fill="#000000" font-family="Lato" font-size="16px" font-weight="bold" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="415" y="505" font-family="'Roboto Mono'" font-weight="normal">div class="card"</tspan></text>
+  </g>
+  <g fill="none" stroke="#acacac" stroke-width="2">
+   <path d="m340 220v340h20" marker-end="url(#marker875)"/>
+   <path d="m340 220v40h20" marker-end="url(#marker869)"/>
+   <path d="m340 220v100h20" marker-end="url(#Arrow1Mend)"/>
+  </g>
+  <g>
+   <rect x="360" y="300" width="220" height="40" rx="5" ry="5" fill="#ffec88" style="paint-order:stroke fill markers"/>
+   <text x="375" y="325" fill="#000000" font-family="Lato" font-size="16px" font-weight="bold" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="375" y="325" font-family="'Roboto Mono'" font-weight="normal">div class="cards"</tspan></text>
+   <rect x="360" y="240" width="220" height="40" rx="5" ry="5" fill="#ffec88" style="paint-order:stroke fill markers"/>
+   <text x="375" y="265" fill="#000000" font-family="Lato" font-size="16px" font-weight="bold" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="375" y="265" font-family="'Roboto Mono'" font-weight="normal">div class="header"</tspan></text>
+   <rect x="360" y="540" width="220" height="40" rx="5" ry="5" fill="#ffec88" style="paint-order:stroke fill markers"/>
+   <text x="375" y="565" fill="#000000" font-family="Lato" font-size="16px" font-weight="bold" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="375" y="565" font-family="'Roboto Mono'" font-weight="normal">div class="footer"</tspan></text>
+   <rect x="320" y="180" width="260" height="40" rx="5" ry="5" fill="#ffec88" style="paint-order:stroke fill markers"/>
+   <text x="335" y="205" fill="#000000" font-family="Lato" font-size="16px" font-weight="bold" letter-spacing="0px" stroke-width="3" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="335" y="205" font-family="'Roboto Mono'" font-weight="normal" stroke-width="3">body</tspan></text>
+  </g>
+  <g fill="none" stroke="#acacac" stroke-width="2">
+   <path d="m380 340v100h20" marker-end="url(#marker881)"/>
+   <path d="m380 340v40h20" marker-end="url(#marker887)"/>
+   <path d="m380 340v160h20" marker-end="url(#marker893)"/>
+  </g>
+  <g fill="#000000" letter-spacing="0px" word-spacing="0px">
+   <text x="60" y="170" font-family="Lato" font-size="29.33px" font-weight="bold" style="line-height:1.25" xml:space="preserve"><tspan x="60" y="170" font-family="Montserrat" font-weight="bold">HTML</tspan></text>
+   <text x="60" y="210" font-family="'Roboto Mono'" font-size="16px" text-align="center" style="line-height:1.25" xml:space="preserve"><tspan x="60" y="210" text-align="start">&lt;body&gt;</tspan><tspan x="60" y="230.16768" text-align="start">  &lt;div class="header"&gt;</tspan><tspan x="60" y="250.33536" text-align="start">    Hlavička</tspan><tspan x="60" y="270.50302" text-align="start">  &lt;/div&gt;</tspan><tspan x="60" y="290.67068" text-align="start">  &lt;div class="cards"&gt;</tspan><tspan x="60" y="310.83835" text-align="start">    &lt;div class="card"&gt;</tspan><tspan x="60" y="331.00604" text-align="start">      Karta 1</tspan><tspan x="60" y="351.17371" text-align="start">    &lt;/div&gt;</tspan><tspan x="60" y="371.34137" text-align="start">    &lt;div class="card"&gt;</tspan><tspan x="60" y="391.50903" text-align="start">      Karta 2</tspan><tspan x="60" y="411.67673" text-align="start">    &lt;/div&gt;</tspan><tspan x="60" y="431.84439" text-align="start">    &lt;div class="card"&gt;</tspan><tspan x="60" y="452.01205" text-align="start">      Karta 3</tspan><tspan x="60" y="472.17972" text-align="start">    &lt;/div&gt;</tspan><tspan x="60" y="492.34741" text-align="start">  &lt;/div&gt;</tspan><tspan x="60" y="512.51508" text-align="start">  &lt;div class="footer"&gt;</tspan><tspan x="60" y="532.68274" text-align="start">    Patička</tspan><tspan x="60" y="552.8504" text-align="start">  &lt;/div&gt;</tspan><tspan x="60" y="573.01807" text-align="start">&lt;/body&gt;</tspan></text>
+   <text x="320" y="170" font-family="Lato" font-size="29.33px" font-weight="bold" style="line-height:1.25" xml:space="preserve"><tspan x="320" y="170" font-family="Montserrat" font-weight="bold">DOM</tspan></text>
+  </g>
+ </g>
+</svg>

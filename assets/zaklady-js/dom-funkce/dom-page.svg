@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="640" height="480" version="1.1" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <style type="text/css">
+   @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&amp;display=swap&amp;subset=latin-ext');
+  </style>
+  <marker id="marker893" overflow="visible" orient="auto">
+   <path transform="matrix(-.4 0 0 -.4 -4 0)" d="m0 0 5-5-17.5 5 17.5 5z" fill="#acacac" fill-rule="evenodd" stroke="#acacac" stroke-width="1pt"/>
+  </marker>
+  <marker id="marker887" overflow="visible" orient="auto">
+   <path transform="matrix(-.4 0 0 -.4 -4 0)" d="m0 0 5-5-17.5 5 17.5 5z" fill="#acacac" fill-rule="evenodd" stroke="#acacac" stroke-width="1pt"/>
+  </marker>
+  <marker id="marker881" overflow="visible" orient="auto">
+   <path transform="matrix(-.4 0 0 -.4 -4 0)" d="m0 0 5-5-17.5 5 17.5 5z" fill="#acacac" fill-rule="evenodd" stroke="#acacac" stroke-width="1pt"/>
+  </marker>
+  <marker id="marker875" overflow="visible" orient="auto">
+   <path transform="matrix(-.4 0 0 -.4 -4 0)" d="m0 0 5-5-17.5 5 17.5 5z" fill="#acacac" fill-rule="evenodd" stroke="#acacac" stroke-width="1pt"/>
+  </marker>
+  <marker id="marker869" overflow="visible" orient="auto">
+   <path transform="matrix(-.4 0 0 -.4 -4 0)" d="m0 0 5-5-17.5 5 17.5 5z" fill="#acacac" fill-rule="evenodd" stroke="#acacac" stroke-width="1pt"/>
+  </marker>
+  <marker id="Arrow1Mend" overflow="visible" orient="auto">
+   <path transform="matrix(-.4 0 0 -.4 -4 0)" d="m0 0 5-5-17.5 5 17.5 5z" fill="#acacac" fill-rule="evenodd" stroke="#acacac" stroke-width="1pt"/>
+  </marker>
+ </defs>
+ <g transform="translate(0 -258.2)">
+  <rect x="60" y="278.2" width="520" height="120" rx="3" ry="3" fill="#5baeff" style="paint-order:stroke fill markers"/>
+  <rect x="60" y="598.2" width="520" height="120" rx="3" ry="3" fill="#5baeff" style="paint-order:stroke fill markers"/>
+  <rect x="60" y="418.2" width="160" height="160" rx="3" ry="3" fill="#a5d3ff" style="paint-order:stroke fill markers"/>
+  <text x="90" y="338.24997" fill="#000000" font-family="Lato" font-size="20px" font-weight="bold" letter-spacing="0px" text-align="center" text-anchor="middle" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="90" y="338.24997" font-family="Montserrat" font-weight="normal" text-align="start" text-anchor="start">Hlavička</tspan></text>
+  <rect x="240" y="418.2" width="160" height="160" rx="3" ry="3" fill="#a5d3ff" style="paint-order:stroke fill markers"/>
+  <rect x="420" y="418.2" width="160" height="160" rx="3" ry="3" fill="#a5d3ff" style="paint-order:stroke fill markers"/>
+  <g fill="#000000" font-family="Lato" font-size="20px" font-weight="bold" letter-spacing="0px" text-anchor="middle" word-spacing="0px">
+   <text x="90" y="468.24997" text-align="center" style="line-height:1.25" xml:space="preserve"><tspan x="90" y="468.24997" font-family="Montserrat" font-weight="normal" text-align="start" text-anchor="start">Karta 1</tspan></text>
+   <text x="270" y="468.24997" text-align="center" style="line-height:1.25" xml:space="preserve"><tspan x="270" y="468.24997" font-family="Montserrat" font-weight="normal" text-align="start" text-anchor="start">Karta 2</tspan></text>
+   <text x="450" y="468.24997" text-align="center" style="line-height:1.25" xml:space="preserve"><tspan x="450" y="468.24997" font-family="Montserrat" font-weight="normal" text-align="start" text-anchor="start">Karta 3</tspan></text>
+   <text x="90" y="678.25" text-align="center" style="line-height:1.25" xml:space="preserve"><tspan x="90" y="678.25" font-family="Montserrat" font-weight="normal" text-align="start" text-anchor="start">Patička</tspan></text>
+  </g>
+ </g>
+</svg>
