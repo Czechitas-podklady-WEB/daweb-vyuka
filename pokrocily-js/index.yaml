@@ -1,0 +1,6 @@
+title: Pokročilý JavaScript
+link: pokrocily-js
+lessons:
+  - title: Objekty a práce s daty
+    link: objekty-data
+    brief: Začneme pomalu objevovat taje objektového programování a ukážeme si, jak pracovat se strukturovanými daty.
