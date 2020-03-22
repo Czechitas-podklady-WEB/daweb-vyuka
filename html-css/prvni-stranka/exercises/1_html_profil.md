@@ -28,11 +28,11 @@ demand: 1
 >   - Jedná se o HTML **tabulku**, kde budou údaje:
 >   - Pro **nadpis** použijte tag `<h2>`
 
-     | Celé jméno | Rowan Sebastian Atkinson |
-     | ------------- |--------------|
-     | Narození | 6. ledna 1955, Spojené království Consett, Anglie, |
-     | Aktivní roky | 1978 - dosud |
-     | Hlavní žánr | komedie |
+     | Celé jméno   | Rowan Sebastian Atkinson                          |
+     |--------------|---------------------------------------------------|
+     | Narození     | 6. ledna 1955, Spojené království Consett, Anglie |
+     | Aktivní roky | 1978 - dosud                                      |
+     | Hlavní žánr  | komedie                                           |
 
 > - #### Část 2: **Život**
 >
