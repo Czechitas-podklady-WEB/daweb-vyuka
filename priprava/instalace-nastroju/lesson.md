@@ -8,28 +8,25 @@ Visual Studio Code je textový editor specializovaný na psaní programů a výv
 
 Aktuální verzi editoru si naistalujte podle instrukcí na [oficiálních stránkách](https://code.visualstudio.com/). VS Code je dostupný pro všechny operační systémy.
 
-### Visual Studio Code - Extensions
+### VS Code - Extensions
 
-VS Code lze přizpůsobit instalací různých rozšíření, které vývojářům psokytují nové možnosti. Rozšíření nainstalujete tak, že kliknete na ikonu rozšíření (Extensions) v levém sloupci na kraji okna VS Code (případně můžete zmáčknout klávesovou zkratku Ctrl + Shift + X). Pak do okna pro vyhledávání ("Search Extensions in Marketplace") zadáte název příslušného rozšíření.
+VS Code lze přizpůsobit instalací různých rozšíření, které vývojářům poskytují nové možnosti. Rozšíření nainstalujete tak, že kliknete na ikonu rozšíření (Extensions) v levém sloupci na kraji okna VS Code. Případně můžete zmáčknout klávesovou zkratku [[Ctrl]] + [[Shift]] + [[X]]. Pak do okna pro vyhledávání ("Search Extensions in Marketplace") zadáte název příslušného rozšíření.
 
 My Doporučujeme použití následujících rozšíření.
 
-- **Prettier** - Kontroluje a upravuje formát sytlu, jak píšete kód a sám ho podle toho upraví. Díky tomu Váš kód vypadá hezky a "profesionálně" :-)
-- **Live Server** - Díky tomuto rozšíření nemusíte pokaždé dát refresh stránky, když něco v kódu upravíte. Rozšíření spustí vývojový místní server s funkcí živého opětovného načtení statických a dynamických stránek.
-- **Bracket Pair Colorizer** - Díky tomuto rozšířené lépe poznáte, k čemu patří specifické závorky. :-)
+- **Prettier** - Automaticky formátuje váš kód tak, aby vypadal hezky a "profesionálně" 🙂. Budeme jej používat na jazyky jako HTML, CSS, JSON a další.
+- **ESLint** - Prettier umí formátovat i JavaScript, ale nedělá to tak hezky jako ESLint, který je zaměřený přímo na JavaScript. ESLint i Prettier bude potřeba ještě nakonfigurovat, což provedeme v následující sekci.
+- **Live Server** - Díky tomuto rozšíření nemusíte pokaždé obnovovat stránku, když něco v kódu upravíte. Rozšíření spustí vývojový místní server s funkcí živého opětovného načtení statických a dynamických stránek.
+- **Bracket Pair Colorizer** - Díky tomuto rozšířené lépe poznáte, které závorky k sobě patří. Pro nováčky neocenitelná pomoc, pro staré harcovníky možná spíš otrava 🙂.
 
 ## NPM a Node.js
 
-Jakmile máme nainstalován balíčkovací systém NPM, hned si nainstalujeme první balíček jménem `eslint`, který nám pomůže psát hezký JavaScriptový kód
+Jakmile máme nainstalován balíčkovací systém NPM, připravíme si složku pro naše projekty. Následující postup zajistí, že ESLint a Prettier budou formátovat všechny naše soubory s kódem podle standardních pravidel.
+
+Někde na svém disku si založte složku s názvem `daweb-projekty`. Ta bude obsahovat většinu vašich projektů a příkladů z této digitální akademie. Do této složky rozbalte tři soubory obsažené v tomto ZIP archivu. Poté ve této složce otevřete terminál a napište
 
 ```shell
-$ npm install eslint -g
-```
-
-Na Linuxu a Macu budete možná muset napsat
-
-```shell
-$ sudo npm install eslint -g
+$ npm install
 ```
 
 ## Git
