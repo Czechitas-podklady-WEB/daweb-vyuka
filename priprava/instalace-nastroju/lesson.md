@@ -2,11 +2,15 @@ Ke tvorbě webů budeme potřebovat několik speciálních programů, které vě
 
 ## Prohlížeč Chrome
 
+Abychom nemuseli hned zkraje řešit rodíly mezi jednotlivými prohlíženči, budeme všichni svorně používat Google Chrome. Tímto vás rozhodně nenutíme jej používat v soukromí nebo snad psát aplikace pouze pro tento prohlížeč. Krása internetu spočívá právě v tom, že je do velké míry nezávislý na konkrétním softwaru. Pro nás je však ze začátku praktičtější mít vývojová prostředí co nejpodobnější kvůli snadnajšímu řešení problémů, kterých bude i tak dost.
+
+Prohlížeč Google Chrome najdete na jeho oficiálních stránkách https://www.google.com/chrome. Google Chrome je dostupný pro všechny operační systémy.
+
 ## Visual Studio Code
 
 Visual Studio Code je textový editor specializovaný na psaní programů a vývoj software. Obsahuje spoustu pomůcek, nástrojů a rozšíření, která zjednodušují programátorům život a umožňují jim spravovat obsáhlé projekty. VS Code je v současné době jedním z nejpoužívanějších programátorských editorů a mnoho profesionálů jej používá při své práci každý den.
 
-Aktuální verzi editoru si naistalujte podle instrukcí na [oficiálních stránkách](https://code.visualstudio.com/). VS Code je dostupný pro všechny operační systémy.
+Aktuální verzi editoru si naistalujte podle instrukcí na oficiálních stránkách https://code.visualstudio.com. VS Code je dostupný pro všechny operační systémy.
 
 ### VS Code - Extensions
 
@@ -20,14 +24,48 @@ My Doporučujeme použití následujících rozšíření.
 - **Bracket Pair Colorizer** - Díky tomuto rozšířené lépe poznáte, které závorky k sobě patří. Pro nováčky neocenitelná pomoc, pro staré harcovníky možná spíš otrava 🙂.
 - **Vetur** - Toto rozšíření nám bude užitečné až začneme pracovat s frameworkem Vue. Můžeme si jej ale nainstalovat už nyní, ať máme všechno hezky pohromadě.
 
+### Nastavení VS Code
+
+Aby se nám s VS Code pracovalo dobře a zároveň nám všem fungovalo stejně, je potřeba vzít následující text a zkopírovat jej do nastavení editoru.
+
+```json
+{
+  "editor.tabSize": 2,
+  "editor.links": false,
+  "editor.renderWhitespace": "boundary",
+  "editor.insertSpaces": true,
+  "editor.wordWrap": "on",
+  "files.eol": "\n",
+  "editor.minimap.enabled": false,
+  "editor.fontSize": 16,
+  "eslint.alwaysShowStatus": true,
+  "editor.multiCursorModifier": "alt",
+  "workbench.colorCustomizations": {
+    "editorError.foreground": "#ffff00"
+  },
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "prettier.disableLanguages": ["javascript"],
+  "window.zoomLevel": 0,
+  "eslint.format.enable": true,
+  "files.autoSave": "off"
+}
+```
+
 ## NPM a Node.js
+
+Nyní je potřeba nainstalovat balíčkovací systém NPM. Opět následujte instrukce na oficiální stránce https://nodejs.org.
 
 Jakmile máme nainstalován balíčkovací systém NPM, připravíme si složku pro naše projekty. Následující postup zajistí, že ESLint a Prettier budou formátovat všechny naše soubory s kódem podle standardních pravidel.
 
-Někde na svém disku si založte složku s názvem `daweb-projekty`. Ta bude obsahovat většinu vašich projektů a příkladů z této digitální akademie. Do této složky rozbalte tři soubory obsažené v tomto ZIP archivu. Poté ve této složce otevřete terminál a napište
+Někde na svém disku si založte složku s názvem `daweb-projekty`. Ta bude obsahovat většinu vašich projektů a příkladů z této digitální akademie. Do této složky rozbalte všechny soubory obsažené v [tomto ZIP archivu](/czechitas/daweb/assets/priprava/instalace-nastroju/prostredi.zip). Poté se přesuňte do VS Code, otevřete terminál a přesuňte se do této složky. Spustťe následující příkaz.
 
 ```shell
 $ npm install
 ```
 
 ## Git
+
+Git je verzovací systém, bez kterého se dnes už žádný pořádny programátor neobejde. Najdete jej na adrese https://git-scm.com. Jako všechny zde prezentovaní nástroje, i Git je dostupný pro všechny operační systémy.
