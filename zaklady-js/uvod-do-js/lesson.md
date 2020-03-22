@@ -75,7 +75,7 @@ Každý počítač je ve svojí nejniternější podstatě jen hrozně rychlá k
 2.4
 ```
 
-Všimněte si, že vždy, když v konzoli napíšete příkaz a stiknete klávesu [[Enter]], pošlete tím JavaScriptu příkaz a ten vám ihned odpoví výsledek. Zatím jsme sice nic závratného nespočítali, použili jsme ovšem dva zcela základní stavební bloky všech programů: _hodnoty_ a _operátory_. Hodnoty jsou v našem případě čísla, později však uvidíme ještě další druhy hodnot, které už na kalkulačce nepotkáte.
+Všimněte si, že vždy, když v konzoli napíšete příkaz a stisknete klávesu [[Enter]], pošlete tím JavaScriptu příkaz a ten vám ihned odpoví výsledek. Zatím jsme sice nic závratného nespočítali, použili jsme ovšem dva zcela základní stavební bloky všech programů: <term cs="hodnoty" en="values"> a <term cs="operátory" en="operators">. Hodnoty jsou v našem případě čísla, později však uvidíme ještě další druhy hodnot, které už na kalkulačce nepotkáte.
 
 :::warn
 Pozor na to, že ve všech programovacích jazycích (s výjimkou MS Excel) se destinná čísla píší s tečkou, nikoliv s čárkou.
@@ -101,11 +101,11 @@ Z operátorů a hodnot můžete samozřejmě stavět mnohem složitější konst
 20
 ```
 
-Konstrukcím vytvořeným z hodnot a operátorů se odborně říká _výrazy_. Pokud necháme JavaScript spočítat výsledek výrazu, získáme tak jeho hodnotu. Každý výraz tedy má svoji hodnotu a JavaScript runtime nám ji rád sdělí, když mu výraz pošleme v konzoli. Je dobré zde zmínit, že ne všechny konstrukce v JavaScriptu jsou výrazy. To se však ukáže jako důležité až později.
+Konstrukcím vytvořeným z hodnot a operátorů se odborně říká <term cs="výrazy" en="expressions">. Pokud necháme JavaScript spočítat výsledek výrazu, získáme tak jeho hodnotu. Každý výraz tedy má svoji hodnotu a JavaScript runtime nám ji rád sdělí, když mu výraz pošleme v konzoli. Je dobré zde zmínit, že ne všechny konstrukce v JavaScriptu jsou výrazy. To se však ukáže jako důležité až později.
 
 ### Řetězce
 
-Pokud chceme v JavaScriptu pracovat s textem, použijeme hodnotu, které se říká _řetězec_. Můžeme pak psát například
+Pokud chceme v JavaScriptu pracovat s textem, použijeme hodnotu, které se říká <term cs="řetězec" en="string">. Můžeme pak psát například
 
 ```jscon
 > 'Pavel'
@@ -131,11 +131,11 @@ Textové řetězce jdou sčítat podobně jako čísla, můžete tedy psát nap�
 'Digitální akademie'
 ```
 
-Všimněte si v druhém příkladu řetězce, který obsahuje pouze mezeru. V třetím případě dokonce vidíme řetězec, který neobsahuje vůbec nic. To je takzvaný _prázdný řetězec_. Chová se podobně jako nula při sčítání čísel a bude se nám pozdějí hodit v různých situacích.
+Všimněte si v druhém příkladu řetězce, který obsahuje pouze mezeru. V třetím případě dokonce vidíme řetězec, který neobsahuje vůbec nic. To je takzvaný <term cs="prázdný řetězec" en="empty string">. Chová se podobně jako nula při sčítání čísel a bude se nám pozdějí hodit v různých situacích.
 
 ## Proměnné
 
-Při složitějších operacích a výpočtech často vyvstane potřeba si nějaký mezivýpočet uložit pro pozdější použití. K tomu nám slouží takzvané _proměnné_. Proměnná je jakási pojmenovaná krabička nebo šuplík, do kterého si můžeme uložit nějakou hodnotu, abychom ji neztratili a mohli ji používat v dalších výpočtech.
+Při složitějších operacích a výpočtech často vyvstane potřeba si nějaký mezivýpočet uložit pro pozdější použití. K tomu nám slouží takzvané <term cs="proměnné" en="variables">. Proměnná je jakási pojmenovaná krabička nebo šuplík, do kterého si můžeme uložit nějakou hodnotu, abychom ji neztratili a mohli ji používat v dalších výpočtech.
 
 Abychom si procvičili zajímavé operátory, zkusíme vyřešit následující úlohu. Mějme čas v hodinách zadaný ve 24-hodinovém formátu. Tři hodiny odpoledne tedy píšeme jako 15h. Nyní chceme spočítat, kolik hodin bude po uplynutí doby zadané také v hodinách. Například jaký bude čas po uplynutí 15 hodin?
 
@@ -174,7 +174,7 @@ Už od úplných začátků s programováním je dobré učit se dobrým návyk�
 
 1. Název proměnné by neměl začínat velkým písmenem, např. ~~<var>Pocet</var>~~. Takové názvy jsou rezervované pro speciální typy proměnných, ke kterým se v tomto kurzu dostaneme až téměř na konci.
 1. Název proměnné by neměl obsahovat diakritiku, např. ~~<var>počet</var>~~. Programovací jazyky vznikaly v anglickém prostředí, kde se diakritika nepoužívá, takže si s ní většina jazyků neporadí.
-1. Víceslovné proměnné nesmí obsahovat mezeru, např. ~~<var>pocet hodin</var>~~. To by si JavaScript myslel, že to jsou dvě proměnné za sebou a nevěděl by co s tím. Pokud chcete proměnnou s více slovy, použijte takzvanou _velbloudí notaci_ <var>pocetHodin</var> nebo _hadí notaci_ <var>pocet_hodin</var>.
+1. Víceslovné proměnné nesmí obsahovat mezeru, např. ~~<var>pocet hodin</var>~~. To by si JavaScript myslel, že to jsou dvě proměnné za sebou a nevěděl by co s tím. Pokud chcete proměnnou s více slovy, použijte takzvanou <term cs="velbloudí notaci" en="camel case"> <var>pocetHodin</var> nebo <term cs="hadí notaci" en="snake case"> <var>pocet_hodin</var>.
 1. Vždy proměnnou pojmenujte tak, aby její název jasně napovídal, co se uvnitř ní nachází. Například proměnná <var>pocet_hodin</var> jasně říká, že v ní bude uložen asi nějaký počet hodin. Můžeme podlehnout touze název proměnné zkrátit například na <var>pcthdn</var>, aby se nám lépe psala. Až ovšem někdo další bude takový program číst, bude mlátit hlavou do stolu, cože proboha znamená zkratka <var>pcthdn</var>.
 1. Naposledy je dobré si uvědomit, že programy i programátoři se téměř vždy pohybují v mezinárodním prostředí. Takže je vždycky lepší pojmenovávat proměnné anglicky. V tomto kurzu ještě tohle pravidlo trošku rozvolníme, ale i tak si můžete začít zvykat na proměnné s názvem <var>number_of_hours</var>.
 
@@ -193,7 +193,7 @@ Už od úplných začátků s programováním je dobré učit se dobrým návyk�
 
 ## Volání funkcí
 
-Pouze s proměnnými, hodnotami a operátory bychom se v programování daleko nedostali. Často budeme potřeboval vykonat nějakou složitější operaci než jen matematický výpočet. Pokud takovou operaci programátoři potřebují často, šance je, že pro ni existuje _funkce_.
+Pouze s proměnnými, hodnotami a operátory bychom se v programování daleko nedostali. Často budeme potřeboval vykonat nějakou složitější operaci než jen matematický výpočet. Pokud takovou operaci programátoři potřebují často, šance je, že pro ni existuje <term cs="funkce" en="function">.
 
 Funkce je kousek programu řešící nějakou konkrétní úlohu, která se často opakuje. Příkladem může být například zaokrouhlování desetinných čísel na celá čísla. To je operace, která se hodí velmi často a bylo by zbyteční ji programovat pořád znova. V JavaScriptu proto máme k dispozici funkci jménem `Math.round`. Pokud chceme funkci použít, napíšeme její jméno a do kulatých závorek vložíme hodnotu.
 
@@ -202,7 +202,7 @@ Funkce je kousek programu řešící nějakou konkrétní úlohu, která se čas
 3
 ```
 
-Hodnotě uvnitř kulatých závorek říkáme _vstup funkce_. Spuštění funkce se říká _volání_. Jakmile funkce dokončí operaci, _vrátí_ nám takzvaný _výstup_. V programátorském žargonu tedy říkáme, že když zavoláme funkci s nějakým vstupem, ona nám vrátí výstup. Podobně jako operace s hodnotami a proměnnými, volání funkce je také výraz. Volání funkce také můžeme použít uvnitř libovolného jiného výrazu. Navíc vstup pro funkci taky můžeme vytvořit pomocí výrazu. Nabízí se tedy mnoho způsobů, jak vytvářet složitější výrazy, jak například tento.
+Hodnotě uvnitř kulatých závorek říkáme <term cs="vstup" en="input"> funkce. Spuštění funkce se říká <term cs="volání" en="call">. Jakmile funkce dokončí operaci, <term cs="vrátí" en="return"> nám takzvaný <term cs="výstup" en="output">. V programátorském žargonu tedy říkáme, že když zavoláme funkci s nějakým vstupem, ona nám vrátí výstup. Podobně jako operace s hodnotami a proměnnými, volání funkce je také výraz. Volání funkce také můžeme použít uvnitř libovolného jiného výrazu. Navíc vstup pro funkci taky můžeme vytvořit pomocí výrazu. Nabízí se tedy mnoho způsobů, jak vytvářet složitější výrazy, jak například tento.
 
 ```jscon
 > 17 % Math.round(30 ** 0.5)
