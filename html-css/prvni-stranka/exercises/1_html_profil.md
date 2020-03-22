@@ -44,15 +44,15 @@ demand: 1
 >     > Vlastní dvě filmové společnosti, Tiger Television a Tiger Aspect Films. Je velký milovník rychlých aut
 >
 > - #### Část 3: **Hlavní počiny**
->   - Pro **nadpis** použijte tag `<h2>`
 >
-> * Obsahuje **nečíslovaný seznam**:
->   > - Černá zmije (1983–1987)
->   > - Mr. Bean (1990–1995)
->   > - Čtyři svatby a jeden pohřeb (1993)
->   > - Mr. Bean: Největší filmová katastrofa (1997)
->   > - Johnny English (2003)
->   > - Johnny English znovu zasahuje (2018)
+>   - Pro **nadpis** použijte tag `<h2>`
+>   - Obsahuje **nečíslovaný seznam**:
+>     > - Černá zmije (1983–1987)
+>     > - Mr. Bean (1990–1995)
+>     > - Čtyři svatby a jeden pohřeb (1993)
+>     > - Mr. Bean: Největší filmová katastrofa (1997)
+>     > - Johnny English (2003)
+>     > - Johnny English znovu zasahuje (2018)
 >
 > - ### C) Odkazy a zdroje
 >   - Pro **nadpis** použijte tag `<h2>`
