@@ -27,12 +27,13 @@ demand: 1
 >
 >   - Jedná se o HTML **tabulku**, kde budou údaje:
 >   - Pro **nadpis** použijte tag `<h2>`
->     | Celé jméno | Rowan Sebastian Atkinson |
->     | Narození | 6. ledna 1955, Spojené království Consett, Anglie, |
->     | Aktivní roky | 1978 - dosud |  
->     | Hlavní žánr | komedie |
->
-> * #### Část 2: **Život**
+
+     | Celé jméno | Rowan Sebastian Atkinson |
+     | Narození | 6. ledna 1955, Spojené království Consett, Anglie, |
+     | Aktivní roky | 1978 - dosud |
+     | Hlavní žánr | komedie |
+
+> - #### Část 2: **Život**
 >
 >   - Pro **nadpis** použijte tag `<h2>`
 >   - obsahuje text dostupný na webu v **odstavcích** (použijte tagy `<p>`) (text můžete ho zkopírovat ze zadání):
@@ -41,10 +42,10 @@ demand: 1
 >     > Od roku 1990 byl ženatý se Sunetrou Sastry, s níž má dvě děti, Lily a Benjamina. Rozvedl se v roce 2015.
 >     > Vlastní dvě filmové společnosti, Tiger Television a Tiger Aspect Films. Je velký milovník rychlých aut
 >
-> * #### Část 3: **Hlavní počiny**
+> - #### Část 3: **Hlavní počiny**
 >   - Pro **nadpis** použijte tag `<h2>`
 >
-> - Obsahuje **nečíslovaný seznam**:
+> * Obsahuje **nečíslovaný seznam**:
 >   > - Černá zmije (1983–1987)
 >   > - Mr. Bean (1990–1995)
 >   > - Čtyři svatby a jeden pohřeb (1993)
@@ -52,7 +53,7 @@ demand: 1
 >   > - Johnny English (2003)
 >   > - Johnny English znovu zasahuje (2018)
 >
-> * ### C) Odkazy a zdroje
+> - ### C) Odkazy a zdroje
 >   - Pro **nadpis** použijte tag `<h2>`
 >   - Obsahuje **nečíslovaný seznam** s odkazy, které po kliku otevřou stránku na nové záložce
 >     > - Článek [Rowana Atkinsona](https://cs.wikipedia.org/wiki/Rowan_Atkinson) z Wikipedie
