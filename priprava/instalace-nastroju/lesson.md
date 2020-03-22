@@ -18,6 +18,7 @@ My Doporučujeme použití následujících rozšíření.
 - **ESLint** - Prettier umí formátovat i JavaScript, ale nedělá to tak hezky jako ESLint, který je zaměřený přímo na JavaScript. ESLint i Prettier bude potřeba ještě nakonfigurovat, což provedeme v následující sekci.
 - **Live Server** - Díky tomuto rozšíření nemusíte pokaždé obnovovat stránku, když něco v kódu upravíte. Rozšíření spustí vývojový místní server s funkcí živého opětovného načtení statických a dynamických stránek.
 - **Bracket Pair Colorizer** - Díky tomuto rozšířené lépe poznáte, které závorky k sobě patří. Pro nováčky neocenitelná pomoc, pro staré harcovníky možná spíš otrava 🙂.
+- **Vetur** - Toto rozšíření nám bude užitečné až začneme pracovat s frameworkem Vue. M?Můžeme si jej ale nainstalovat už nyní, ať máme všechno hezky pohromadě.
 
 ## NPM a Node.js
 
