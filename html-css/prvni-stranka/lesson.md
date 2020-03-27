@@ -1,1 +1,5 @@
-FIXME
+@exercises[
+
+- html-profil
+- profil-styl
+  ]@
