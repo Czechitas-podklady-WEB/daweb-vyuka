@@ -10,7 +10,7 @@ Použijte HTML strukturu stránky s profilem herce **Rowana Atkinsona** na zdroj
 
 ### HTML Úpravy
 
-- Založte nový element `<nav>` v body jako první element a dejte mu třídu `"siteNav:`. Pak do něj přesuňte celý element `<ul>`, který obsahuje odkazy na jednotlivé sekce stránky (Obecné údaje, Role, Život, Odkazy). Navigací tak posuneme na začátek stránky. Výsledek bude vypadat takto:
+- Založte nový element `<nav>` v body jako první element a dejte mu třídu `"siteNav"`. Pak do něj přesuňte celý element `<ul>`, který obsahuje odkazy na jednotlivé sekce stránky (Obecné údaje, Role, Život, Odkazy). Navigací tak posuneme na začátek stránky. Výsledek bude vypadat takto:
 
 ```html
 <nav class="siteNav" >
@@ -26,7 +26,7 @@ Použijte HTML strukturu stránky s profilem herce **Rowana Atkinsona** na zdroj
 
 ```
 
-- Za element `<nav>` vložte nový element `<main>` a do něj zanořte element `<div>` s třídou `"main-profile"`. Do tohoto elementu s třídou `"main-profile"` přesuňte obrázek s třídou `"profilePicture"`, nadpis `<h1>` s jm0nem herce a `<p>` s popisem herce. Výsledek bude vypadat takto:
+- Za element `<nav>` vložte nový element `<main>` a do něj zanořte element `<div>` s třídou `"main-profile"`. Do tohoto elementu s třídou `"main-profile"` přesuňte obrázek s třídou `"profilePicture"`, nadpis `<h1>` s jménem herce a `<p>` s popisem herce. Výsledek bude vypadat takto:
 
 ```html
 <main>
@@ -125,7 +125,7 @@ main{
   margin: 0 auto;
 }
 ```
-- Udělejte změny pro hlavního nadpis `<h1>` v elementu `<main>` i pro odstavec s popisem herce. Dejte `padding` o úrovni `2rem`. Odsaťe text nas střed a dejte textu tmavě modrou barvu, stejnou jako je hranice profilového obrázku.
+- Udělejte změny pro hlavní nadpis `<h1>` v elementu `<main>` i pro odstavec s popisem herce. Dejte `padding` o úrovni `2rem`. Odsaťe text nas střed a dejte textu tmavě modrou barvu, stejnou jako je hranice profilového obrázku.
 
 ```css
 main h1, main p{
