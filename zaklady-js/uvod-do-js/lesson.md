@@ -6,7 +6,7 @@ Na začátku počítáme s tím, že jste programováním zcela nepolíbeni. Nen
 
 Programátora si možná představujete jako týpka či týpčici, který/která sedí před počítačem ve ztemnělém sklepení nebo hipsterské kavárně a do klávesnice buší nesrozumitelné tajemné kódy.
 
-![Programátor](/czechitas/daweb/assets/zaklady-js/uvod-do-js/programmer.jpg)
+![Programátor](assets/programmer.jpg)
 
 Je pravda, že psaní kódu je velkou částí programátorské práce. Podstata programování ovšem tkví v něčem jiném. Například takový spisovatel jistě tráví hodně času psaním textu, zvládat dobře česky psát však není jádro jeho umění. Dobrý spisovatel či spisovatelka především umějí vybudovat poutavý příběh, který čtenáře zaujme a vtáhne. Podobně programátorům také zdaleka nestačí umět kódit. Musí především umět přemýšlet a řešit problémy, což znamená mít dobré logické a analytické myšlení.
 
@@ -16,7 +16,7 @@ Logické a analytické myšlení rozhodně není spojeno jen s programo&shy;ván
 
 Mějme následujících šest studentů, kteří společně bydlí v jednom bytě.
 
-![Studenti](/czechitas/daweb/assets/zaklady-js/uvod-do-js/roommates.jpg)
+![Studenti](assets/roommates.jpg)
 
 Jak často bývá zvykem, tito spolubydlící se dohodli, že některé spotřební věci budou nakupovat vždy pro všechny, aby si každý nemusal kupovat vlastní mouku, vlastní toaleťák a podobně. Po čase tedy vznikne tabulka nákupů podobné této.
 
@@ -45,7 +45,7 @@ Představme si, že naši studenti se chtějí rozestěhovat a potřebují se fi
 
 Samotné zpracování tabulky nebudete dělat vy, nýbrž člověk, o kterém bychom mohli říct, že je to pečlivý blbec. To znamená, že není vůbec schopen přemýšlet sám za sebe. Je pouze schopen do puntíku plnit vaše pokyny jsou-li dostatečně detailní a přímočaré. Tento náš úřednický blbec má navíc k dispozici pouze tužku, papír a kalkulačku. Kalkulačku k tomu, aby mohl spolehlivě provádět jednoduché výpočty a tužku a papír, aby si mohl poznamenávat mezivýsledky.
 
-![Tužka, papír, kalkulačka a blbec](/czechitas/daweb/assets/zaklady-js/uvod-do-js/dummy.jpg)
+![Tužka, papír, kalkulačka a blbec](assets/dummy.jpg)
 
 Počítač ve svojí nejzákladnější podstatě funguje přesně jako náš blbec. Nic za vás nevymyslí, pouze slepě vykonává postup řešení, který musíte do detailu popsat vy. Papír pak pro nás představuje pamět počítače a kalkulačka procesor.
 
