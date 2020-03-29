@@ -29,11 +29,11 @@ Ve chvíli, kdy uživatel zadá do prohlížeče URL adresu, webový prohlíže�
 
 Prohlížeč si HTML přečte a vytvoří si z něj v paměti stromovou strukturu, která reprezentuje obsah stránky. Této struktuře říkáme DOM a můžeme ji znázornit jako na obrázku níže.
 
-![HTML a DOM](/czechitas/daweb/assets/zaklady-js/dom-funkce/dom.svg)
+![HTML a DOM](assets/dom.svg)
 
 Jakmile má prohlížeč DOM zkonstruovaný, může úplně zapomenout na HTML a stránku zobrazí podle toho, co je obsaženo v DOMu.
 
-![DOM Stránka](/czechitas/daweb/assets/zaklady-js/dom-funkce/dom-page.svg)
+![DOM Stránka](assets/dom-page.svg)
 
 Je to podobné, jak když si například čtete knížku a v hlavě si automaticky vytváříte reprezentaci celého příběhu. takže jej později dokážete odvyprávět i bez knihy. Výhoda pro nás programátory spočívá v tom, že prohlížeč nám umožní DOM pomocí JavaScriptu měnit a tím ovlivňovat, co se zobrazuje na stránce.
 
@@ -179,7 +179,7 @@ Oba z výše uvedených způsobů výběru podle `id` jsou zcela legitimní a je
 
 Funkce jsou jednou z nejdůležitějších součástí programování. Všimněte si, jak často vaše programy sestávají z volání různých funkcí. Ve všech programovacích jazycích je již od začátku mnoho funkcí rovnou k dispozici. Často ale potřebujeme funkci, která dělá něco specifického, důležitého pouze pro náš program. Představme si například, že vyměřujeme pozemek a chceme spočítat plochu pozemku, který má tvar pravoúhlého trojúhelníka o šířce ;;`width` a výšce `height` jako na obrázku.
 
-![Pozemek](/czechitas/daweb/assets/zaklady-js/dom-funkce/fields.svg)
+![Pozemek](assets/fields.svg)
 
 Naše funkce tedy bude mít dva vstupy - šířku a výšku. Ze školy si pamatujeme, že plochu prvoúhlého trojúhelníka spočítáme tak, že vynásobíme šířku výškou a výsledek vydělíme dvěma. Už tedy víme, co má funkce dělat a zbývá nám tento postup zapsat v JavaScritpu.
 

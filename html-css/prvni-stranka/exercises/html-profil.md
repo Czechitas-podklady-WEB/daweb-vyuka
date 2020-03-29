@@ -9,7 +9,7 @@ Text stránky můžete vykopírovat přímo ze vzorové stránky. Jako zdroj dal
 
 #### Hlavička
 
-- Obrázek herce. Můžete si jej stáhnout z [tohoto odkazu](/czechitas/daweb/assets/html-css/prvni-stranka/atkinson.jpg).
+- Obrázek herce. Můžete si jej stáhnout z [tohoto odkazu](../assets/atkinson.jpg).
 - Nadpis (použijte tag `<h1>`)
 - Popis s původem a povoláním pod obrázkem.
 - Menu s očíslovaným seznamem (použijte tag `<ol>`). Každá položka představuje odkaz, který vede k přislušnému nadpisu, který je značen pomocí id

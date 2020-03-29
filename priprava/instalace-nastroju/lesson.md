@@ -60,7 +60,7 @@ Nyní je potřeba nainstalovat balíčkovací systém NPM. Opět následujte ins
 
 Jakmile máme nainstalován balíčkovací systém NPM, připravíme si složku pro naše projekty. Následující postup zajistí, že ESLint a Prettier budou formátovat všechny naše soubory s kódem podle standardních pravidel.
 
-Někde na svém disku si založte složku s názvem `daweb-projekty`. Ta bude obsahovat většinu vašich projektů a příkladů z této digitální akademie. Do této složky rozbalte všechny soubory obsažené v [tomto ZIP archivu](/czechitas/daweb/assets/priprava/instalace-nastroju/prostredi.zip). Poté se přesuňte do VS Code, otevřete terminál a přesuňte se do této složky. Spustťe následující příkaz.
+Někde na svém disku si založte složku s názvem `daweb-projekty`. Ta bude obsahovat většinu vašich projektů a příkladů z této digitální akademie. Do této složky rozbalte všechny soubory obsažené v [tomto ZIP archivu](assets/prostredi.zip). Poté se přesuňte do VS Code, otevřete terminál a přesuňte se do této složky. Spustťe následující příkaz.
 
 ```shell
 $ npm install

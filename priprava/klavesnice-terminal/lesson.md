@@ -2,17 +2,17 @@ V této části si ukážeme, jakým způsobem budeme jako programátoři s poč
 
 Počítačový terminál je zařízení, které má počátky ve 40. a 50. letech. Tehdy vypadal jako elektrický psací stroj a používal se k posílání textových příkazů do počítače, který byl v těchto dobách velký jako kuchyňská linka. Později terminály získaly obrazovky, podobně jako ten na obrázku z roku 1978, takže už se výsledky počítače nemusely tisknout přímo na papír.
 
-![VT100 Terminál](/czechitas/daweb/assets/priprava/klavesnice-terminal/vt100.jpg)
+![VT100 Terminál](assets/vt100.jpg)
 
 Možná vám to přijde neuvěřitelné, ale i v době, kdy se nám počítače vejdou do kapsy a máme úžasné grafické dotykové obrazovky, pro programátory je často nejrychlejší a nejpřehlednější zadávat příkazy textově jako na starých terminálech. Jediný rozdíl je dnes v tom, že terminál už není fyzické zařízení. Je to prostě program, který si spustíte na svém počítači, a hned vypadáte jako hackeři z nějakého béčkového filmu.
 
 V našem případě máme život jednoduchý, protože Visual Studio Code má terminál zabudovaný přímo v sobě. Spustíte jej tak, že ve VS Code v horním menu zvolíte <i>Terminal → New Terminal</i>.
 
-![VS Code Terminál](/czechitas/daweb/assets/priprava/klavesnice-terminal/vscode-term.png){.fig .fig-100}
+![VS Code Terminál](assets/vscode-term.png){.fig .fig-100}
 
 Okno terminálu po otevření vypadá podobně, jako kdybyste používali skutečný fyzický terminál ze sedmdesátých let. Vidíte v něm velký bílý kurzor a před ním jakýsi kus textu, který ve vašem terminálu nejspíše vypadá jinak než v tom na obrázku.
 
-![Terminál](/czechitas/daweb/assets/priprava/klavesnice-terminal/terminal.png){.fig .fig-100}
+![Terminál](assets/terminal.png){.fig .fig-100}
 
 Po otevření terminálu se v něm ihned spustí takzvaný _shell_, což je program, který vykonává vaše textové příkazy a vypisuje jejich výsledky. Zde se opět dostáváme trochu do potíží, protože každý operační systém má svůj vlastní shell. To je důvod proč před kurzorem nejspíše vidíte něco jiného než na obrázku. Ve Windows se používá shell jménem _cmd_, na Linuxu máme _bash_, MacOS používal také bash, nedávno ale přesedlal na shell jménem _zsh_. V horní liště mého terminálu vidíte, že můj shell je bash. Mám jej nastavený tak, aby před kurzorem zobrazoval název složky, ve které se zrovna nacházím. Vy tam pravděpodobně máte celou cestu ke složce, ve které se vám terminál otevřel.
 
@@ -22,7 +22,7 @@ Pokud pracujete na Windows, možná v horní liště terminálu vidíte název P
 
 Nyní můžeme zkusit našemu shellu poslat nějaký příkaz. Nejdříve budeme chtít vidět obsah složky, ve které se právě nacházíme. Pokud jste v shellu cmd, napište do termínálu `dir` a stiskněte [[Enter]]. Pokud máte bash nebo zsh, příkaz se jmenuje `ls`. V mém případě vypadá výsledek takto.
 
-![Terminál](/czechitas/daweb/assets/priprava/klavesnice-terminal/terminal-ls.png){.fig .fig-100}
+![Terminál](assets/terminal-ls.png){.fig .fig-100}
 
 Později v kurzu budeme psát příkazy i jinam než do shellu. Pokud tedy bude potřeba zadat nějaký příkaz přímo v shellu, naznačíme to symbolem dolaru, například takto:
 
@@ -79,11 +79,11 @@ Při práci s terminálem ale především během programování budeme často p
 
 ### Používat českou klávesnici
 
-Všechny důležité speciální znaky lze napsat na českém QWERTZ rozložení klávesnice za pomoci klávesy [[Alt Gr]] (pravý Alt). Například levá složená závorka se napíše jako [[Alt Gr]] + [[B]]. Následující [plánek](/czechitas/daweb/assets/priprava/klavesnice-terminal/keyboard-cs-en.pdf) by vám měl pomoci najít na českém rozložení všechny znaky, které budete potřebovat. Jen pozor, že pokud máte české rozložení ve variantě QWERTY, zkratky používající [[Alt Gr]] vám pravděpodobně fungovat nebudou.
+Všechny důležité speciální znaky lze napsat na českém QWERTZ rozložení klávesnice za pomoci klávesy [[Alt Gr]] (pravý Alt). Například levá složená závorka se napíše jako [[Alt Gr]] + [[B]]. Následující [plánek](assets/keyboard-cs-en.pdf) by vám měl pomoci najít na českém rozložení všechny znaky, které budete potřebovat. Jen pozor, že pokud máte české rozložení ve variantě QWERTY, zkratky používající [[Alt Gr]] vám pravděpodobně fungovat nebudou.
 
 ### Přepínat mezi českou a anglickou klávesnicí
 
-Druhá možnost je během programování přepínat mezi českou a anglickou klávesnicí. Zde je výhoda v tom, že většina důležitých speciálních znaků se na anglické klávesnici nachází v horní řadě tam, kde jsou běžně písmenka s diakritikou, opět viz [plánek](/czechitas/daweb/assets/priprava/klavesnice-terminal/keyboard-cs-en.pdf). Drobná potíž spočívá v tom, že na české a anglické klávesnizi se liší pozice písmen [[Y]] a [[Z]]. Proto je lepší používat české rozložení ve variantě QWERTY. V takovémto případě je také dobré naučit se zkratku pro přepínání mezi klávesnicemi. Ve Windows to bývá většinou [[Alt]] + [[Shift]].
+Druhá možnost je během programování přepínat mezi českou a anglickou klávesnicí. Zde je výhoda v tom, že většina důležitých speciálních znaků se na anglické klávesnici nachází v horní řadě tam, kde jsou běžně písmenka s diakritikou, opět viz [plánek](assets/keyboard-cs-en.pdf). Drobná potíž spočívá v tom, že na české a anglické klávesnizi se liší pozice písmen [[Y]] a [[Z]]. Proto je lepší používat české rozložení ve variantě QWERTY. V takovémto případě je také dobré naučit se zkratku pro přepínání mezi klávesnicemi. Ve Windows to bývá většinou [[Alt]] + [[Shift]].
 
 @exercises[
 
