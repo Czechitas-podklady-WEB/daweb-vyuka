@@ -22,9 +22,9 @@ Naše JavaScriptové programy budou vždy součástí nějaké webové stránky.
 Podobně jako jste zvyklí u CSS stylů, pro JavaScriptový kód budeme také vždy vytvářet oddělený soubor. Nyní mu dáme název `index.js`. Jeho obsah bude vypadat takto.
 
 ```js
-"use strict";
+'use strict';
 
-document.write("Moc nečum!");
+document.write('Moc nečum!');
 ```
 
 Pokud chceme JavaScriptový program propojit se stránku, vložíme odkaz na konec značky `body`.
@@ -49,10 +49,10 @@ Další důležitá věc je, že téměř každý příkaz v JavaScriptu končí
 Každý program musí být schopen nějakým způsobem komunikovat s uživatelem. Zatím jsme viděli, jak může náš program provést jednoduchý výstup pomocí funkce `document.write`. Později uvidíme mnohem zajímavější způsoby jak uživateli něco sdělit. Nyní ale potřebujeme od uživatele taky získat nějaký vstup. K tomu budeme pro tuto chvíli používat funkci `prompt`. Zkusme napsat program, který bude řešit naši ultramaratonskou úlohu z minulé lekce.
 
 ```js
-"use strict";
+'use strict';
 
 const start = 15;
-const delka = prompt("Zadej délku závodu:");
+const delka = prompt('Zadej délku závodu:');
 const konec = (start + delka) % 24;
 document.write(konec);
 ```
@@ -149,10 +149,10 @@ Všimněte si, co se stane, když se pokusíme zkonvertovat nějaký řetězec, 
 Nyní už můžeme náš program přepracovat tak, aby fungoval správně.
 
 ```js
-"use strict";
+'use strict';
 
 const start = 15;
-const delka = Number(prompt("Zadej délku závodu:"));
+const delka = Number(prompt('Zadej délku závodu:'));
 const konec = (start + delka) % 24;
 document.write(konec);
 ```
@@ -162,19 +162,19 @@ Z tohoto příklady plyne do budoucna velmi důležité poučení. Vždycky si d
 To, že JavaScript pro nás některé konverze dělá automaticky, můžeme využít k tomu, abychom uživateli vypsali nějakou hezčí zprávu, než jen holé číslo.
 
 ```js
-document.write("Běžec dorazí v " + konec + "h");
+document.write('Běžec dorazí v ' + konec + 'h');
 ```
 
 ## Metody a vlastnosti
 
-Než se vhrnete do víru psaní vlastních programů, ukážeme si ještě jeden důležitý nástroj, který nám otevře mnoho zajímavých možností, a tím jsou _metody_ a _vlastnosti_. Metodu si můžeme představit jako speciální druh funkce, která se používá pouze ve spojení s konkrétním typem hodnoty. Představme si, že chcete například změnit všechna písmenka nějakého řetězce na velká. Na něco takového by mohla existovat funkce například s názvem `toUpperCase`.
+Než se vhrnete do víru psaní vlastních programů, ukážeme si ještě jeden důležitý nástroj, který nám otevře mnoho zajímavých možností, a tím jsou <term cs="metody" en="methods"> a <term cs="vlastnosti" en="properties">. Metodu si můžeme představit jako speciální druh funkce, která se používá pouze ve spojení s konkrétním typem hodnoty. Představme si, že chcete například změnit všechna písmenka nějakého řetězce na velká. Na něco takového by mohla existovat funkce například s názvem `toUpperCase`.
 
 ```jscon
 > toUpperCase('martin')
 'MARTIN'
 ```
 
-Takováto funkce v JavaScriptu ve skutečnosti neexistuje. Když se ale nad ní malinko zamyslíte, zjistíte, že by fungovala pouze na řetězcích. Těžko si představit, co by taková funkce měla dělat například s číslem -0.46. V takovém případě můžeme říct, že naše funkce je _metodou na řetězcích_ a zavoláme ji pomocí tečkové notace.
+Takováto funkce v JavaScriptu ve skutečnosti neexistuje. Když se ale nad ní malinko zamyslíte, zjistíte, že by fungovala pouze na řetězcích. Těžko si představit, co by taková funkce měla dělat například s číslem -0.46. V takovém případě můžeme říct, že naše funkce je <term cs="metodou na řetězcích" en="string method"> a zavoláme ji pomocí tečkové notace.
 
 ```jscon
 > 'martin'.toUpperCase()
@@ -198,7 +198,7 @@ Možná vám nyní vrtá hlavou, jestli funkce `Math.round` není také náhodou
 
 ### Vlastnosti
 
-Už víme, že metody jsou něco jako funkce, které přísluší k nějakému typu hodnoty, například řetězci. _Vlastnosti_ jsou něco jako proměnné, které patří k určitému typu hodnoty. Používá se u nich stejná tečková notace jako u metod. Řetězce například mají vlastnost `length`, která udává délku řetězce.
+Už víme, že metody jsou něco jako funkce, které přísluší k nějakému typu hodnoty, například řetězci. <term cs="Vlastnosti" en="Properties"> jsou něco jako proměnné, které patří k určitému typu hodnoty. Používá se u nich stejná tečková notace jako u metod. Řetězce například mají vlastnost `length`, která udává délku řetězce.
 
 ```jscon
 > 'martin'.length
@@ -219,7 +219,7 @@ Všimněte si, že za názvem vlastnosti nejsou kulatá závorky, protože vlast
 
 ## Pravdivostní hodnoty
 
-Ve zbývající části lekce se vrhneme na podmínky a umožníme naším programům se rozhodovat. Před tím si ale musíme trošku připravit půdu a ukázat si nový typ hodnoty. Zatím jsme viděli čísla a řetězce, nyní přichází takzvané _pravdivostní hodnoty_. Čísel a řetězců je nekonečně mnoho, pravdivostní hodnoty jsou však jen dvě: `true` a `false`. Používají se k tomu, abychom vyjádřili, zda je něco pravda nebo není. Například:
+Ve zbývající části lekce se vrhneme na podmínky a umožníme naším programům se rozhodovat. Před tím si ale musíme trošku připravit půdu a ukázat si nový typ hodnoty. Zatím jsme viděli čísla a řetězce, nyní přichází takzvané <term cs="pravdivostní hodnoty" en="boolean values">. Čísel a řetězců je nekonečně mnoho, pravdivostní hodnoty jsou však jen dvě: `true` a `false`. Používají se k tomu, abychom vyjádřili, zda je něco pravda nebo není. Například:
 
 ```jscon
 > const pristupPovolen = false
@@ -227,7 +227,7 @@ Ve zbývající části lekce se vrhneme na podmínky a umožníme naším progr
 > const mobilniProhlizec = true
 ```
 
-K tomu, abychom mohli v našich programech činit rozhodnutí budeme také potřebovat výrazy, které vrací pravdivostní hodnoty. Ty můžeme sestavit pomocí takzvaných _porovnávacích operátorů_.
+K tomu, abychom mohli v našich programech činit rozhodnutí budeme také potřebovat výrazy, které vrací pravdivostní hodnoty. Ty můžeme sestavit pomocí takzvaných <term cs="porovnávacích operátorů" en="comparison operators">.
 
 ```jscon
 > const vek = 21
@@ -269,10 +269,10 @@ Nyní se konečně dostáváme k tématu, na které jsme se tak dlouho připravo
 Pro jednoduchý příklad se opět vraťme k našemu ultramaratonskému běhu. Závod začiná ve tři hodiny odpoledne a počítáme s tím, že závodníci doběhnou někdy příští den ráno. Nebudeme ale v cíli čekat na každého dědulu, který to celé poběží 20 hodin. Řekněme, že organizátoři mají padla druhý den v poledne. Potřebujeme tedy do naší stránky zakomponovat informaci o tom, jestli trasu dokážeme uběhnout do 12 hodin.
 
 ```js
-"use strict";
+'use strict';
 
 const start = 15;
-const delka = Number(prompt("Zadej délku závodu:"));
+const delka = Number(prompt('Zadej délku závodu:'));
 const konec = (start + delka) % 24;
 
 if (konec > 12) {
@@ -301,23 +301,24 @@ if (vek >= 18) {
 ```
 
 ```js
-if(vek>=18){document.write('Nalej si');}else{document.write('Žádné chlastání!');}
+if (vek >= 18) {
+  document.write('Nalej si');
+} else {
+  document.write('Žádné chlastání!');
+}
 ```
 
 Věřím, že uznáte, že první varianta je mnohem čitelnější než druhá. Způsobů, jak formátovat kód existuje vícero a můžete se tak účastnit nekonečných hospodských disputací o tom, jestli odsazovat pomocí dvou mezer nebo čtyř, jestli otvírací složenou závorku psát na konec řádku nebo na začátek nového a tak dále.
 
 ```js
-if (vek >= 18)
-{
-    document.write('Nalej si');
-}
-else
-{
-    document.write('Žádné chlastání!');
+if (vek >= 18) {
+  document.write('Nalej si');
+} else {
+  document.write('Žádné chlastání!');
 }
 ```
 
-Nakonec je však důležité hlavně si nějaká pravidla stanovit a ta pak dodržovat. V tomto směru existuje [několik manuálů](https://codeburst.io/5-javascript-style-guides-including-airbnb-github-google-88cbc6b2b7aa), kterým se říká *style guide*. Ty kodifikují určitá pravidla formátování kódu tak, abyste je nemuseli vždy od nuly vymýšlet sami. Ve firmě nebo v programátorském týmu pak stačí říct, že používáme takový nebo onaký style guide a předejít tak nekonečným diskuzím o tom, kde mají být mezery a kde ne. V tomto kurzu používáme [AirBnB style guide](https://github.com/airbnb/javascript). Pokud máte dobře nastavený VS Code, při každém uložení souboru se váš kód automaticky přeformátuje podle těchto pravidel. Můžete se tak místo na počty mezer soustředit na to, aby váš program skutečně fungoval.
+Nakonec je však důležité hlavně si nějaká pravidla stanovit a ta pak dodržovat. V tomto směru existuje [několik manuálů](https://codeburst.io/5-javascript-style-guides-including-airbnb-github-google-88cbc6b2b7aa), kterým se říká _style guide_. Ty kodifikují určitá pravidla formátování kódu tak, abyste je nemuseli vždy od nuly vymýšlet sami. Ve firmě nebo v programátorském týmu pak stačí říct, že používáme takový nebo onaký style guide a předejít tak nekonečným diskuzím o tom, kde mají být mezery a kde ne. V tomto kurzu používáme [AirBnB style guide](https://github.com/airbnb/javascript). Pokud máte dobře nastavený VS Code, při každém uložení souboru se váš kód automaticky přeformátuje podle těchto pravidel. Můžete se tak místo na počty mezer soustředit na to, aby váš program skutečně fungoval.
 
 ### Podmínky s více větvemi
 
@@ -393,6 +394,7 @@ Takto můžeme vytvářet relativně komplikované rozhodování. Se zanořován
   ]@
 
 @exercises ## Povinné úložky na doma [
+
 - superhruba
 - slevy
   ]@
@@ -400,6 +402,7 @@ Takto můžeme vytvářet relativně komplikované rozhodování. Se zanořován
 ## Povinné čtení na doma - logické operátory
 
 @exercises ## Nepovinné úložky [
+
 - ruleta
 - prestupny-rok
   ]@

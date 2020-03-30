@@ -13,3 +13,6 @@ lessons:
   - title: Funkce vyšších řádů, události
     link: hof-udalosti
     brief: Naučíme naše stránky reagovat na události jako je kliknutí, stisknutí klávesy nebo scrollování. K tomu budeme potřebovat porozumět funkcím vyššího řádu.
+  - title: Prohlubování znalostí
+    link: prohlubovani
+    brief: Tato lekce vám pomůže zorientovat se v tom, jak JavaScript runtime provádí váš kód a taky jak psát větší programy tak, abychom se v nich dokázali vyznat.
