@@ -101,7 +101,7 @@ Studijní materiály pro DA Web na kodim.cz
 - merge
 - co je to konflikt a jak jej řešit
 
-## Sylabus JavaScript
+## Sylabus Základy JavaScriptu
 
 ### Blok 1: Úvod do JavaScriptu
 
@@ -192,7 +192,7 @@ Studijní materiály pro DA Web na kodim.cz
 
 Zásady psaní hezkého kódu
 
-### Blok 5: Pole a cykly
+### Blok 6: Pole a cykly
 
 Část první
 
@@ -206,14 +206,16 @@ Zásady psaní hezkého kódu
 - Procházení pole pomocí cyklu forEach
 - querySelectorAll
 
-### Blok 6: Cykly a algoritmy
+### Blok 7: Cykly a algoritmy
 
 - Cyklus for - předem známý počet opakování
 - Funkcionální iterace (map, filter, some, …)
 - Cyklus while - cyklus s předem neurčeným počtem opakování
 - Práce s náhodnými čísly - házení kostkou, dokud nepadne 6, apod.
 
-### Blok 7: Objekty a práce s daty
+## Sylabus Pokročilý JavaScriptu
+
+### Blok 1: Objekty a práce s daty
 
 Část první
 
@@ -228,7 +230,7 @@ Zásady psaní hezkého kódu
 - innerHTML
 - Procházení pole objektů a generování HTML
 
-### Blok 8: Remote APIs
+### Blok 2: Remote APIs
 
 Část první
 
@@ -240,7 +242,7 @@ Zásady psaní hezkého kódu
 
 - Práce s Google Sheets API
 
-### Blok 9: Základy OOP
+### Blok 3: Základy OOP
 
 Část první
 
@@ -254,7 +256,7 @@ Zásady psaní hezkého kódu
 - Základy objektového myšlení
 - Objekty jako samostatné jednotky
 
-### Blok 10: Tvorba komponent
+### Blok 4: Tvorba komponent
 
 Část první
 
@@ -265,7 +267,7 @@ Zásady psaní hezkého kódu
 
 - Zpracování událostí v komponentách
 
-### Blok 11: Webpack
+### Blok 5: Webpack
 
 - Rozdělení kódu na menší funkční celky
 - ES6 Moduly, výhody a nevýhody
@@ -275,7 +277,7 @@ Zásady psaní hezkého kódu
   - Polyfilly
   - Bundling
 
-### Blok 12: Opakování
+### Blok 6: Opakování
 
 - Příklady na práci s komponentami
 
