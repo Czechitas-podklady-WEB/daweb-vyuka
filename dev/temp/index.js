@@ -1,8 +1,8 @@
 'use strict';
 
 const btnClick = (event) => {
-  const inputElm = document.querySelector('.input');
-  inputElm.textContent += event.target.textContent;
+  const displayElm = document.querySelector('.display');
+  displayElm.textContent += event.target.textContent;
 };
 
 document.querySelector('#btn0').addEventListener('click', btnClick);

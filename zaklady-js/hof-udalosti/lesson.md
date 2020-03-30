@@ -189,6 +189,94 @@ Všimněte si, že jsme parametr `event` uvnitř naší funkce `changeTitle` zat
 `event.shiftKey`, `event.altKey`, `event.ctrlKey`
 : Tyto vlastnosti obsahují pravdivostní hodnoty, které udávají, zda byla při kliknutí stisknuta klávesa [[Alt]], [[Shift]] nebo [[Ctrl]].
 
-Vlastnost `target` je jedna z vůbec nejdůležitějších. Díky se můžeme dostat z mnoha jinak svízelných situací.
+### Kalkulačka
+
+Vlastnost `target` je jedna z vůbec nejdůležitějších. Díky se můžeme dostat z mnoha jinak svízelných situací. Představte si například, že chceme naprogramovat jednoduchou webovou kalkulačku. Pravděpodobně bychom začali s číselníkem jako na obrázku.
 
 ![Číselník](assets/numpad.png){.fig}
+
+Nejdříve budeme potřebovat HTML část naší malé aplikace.
+
+```html
+<div class="numpad">
+  <div class="display">0</div>
+  <button id="btn7" class="num-btn">7</button>
+  <button id="btn8" class="num-btn">8</button>
+  <button id="btn9" class="num-btn">9</button>
+  <button id="btn4" class="num-btn">4</button>
+  <button id="btn5" class="num-btn">5</button>
+  <button id="btn6" class="num-btn">6</button>
+  <button id="btn1" class="num-btn">1</button>
+  <button id="btn2" class="num-btn">2</button>
+  <button id="btn3" class="num-btn">3</button>
+  <button id="btn0" class="num-btn num-btn--wide">0</button>
+</div>
+```
+
+Nyní budeme chtít, aby při stisku každého tlačíka přibyla na displaji kalkulačky správná cifra. První řešení, které nás může napadnout, je dát každému tlačíku na kliknutí jinou funkci, která nastaví správnou cifru.
+
+```js
+'use strict';
+
+const displayElm = document.querySelector('.display');
+
+document.querySelector('#btn0').addEventListener('click', (event) => {
+  displayElm.textContent += '0';
+});
+document.querySelector('#btn1').addEventListener('click', (event) => {
+  displayElm.textContent += '1';
+});
+document.querySelector('#btn2').addEventListener('click', (event) => {
+  displayElm.textContent += '2';
+});
+document.querySelector('#btn3').addEventListener('click', (event) => {
+  displayElm.textContent += '3';
+});
+document.querySelector('#btn3').addEventListener('click', (event) => {
+  displayElm.textContent += '3';
+});
+document.querySelector('#btn4').addEventListener('click', (event) => {
+  displayElm.textContent += '4';
+});
+document.querySelector('#btn5').addEventListener('click', (event) => {
+  displayElm.textContent += '5';
+});
+document.querySelector('#btn6').addEventListener('click', (event) => {
+  displayElm.textContent += '6';
+});
+document.querySelector('#btn7').addEventListener('click', (event) => {
+  displayElm.textContent += '7';
+});
+document.querySelector('#btn8').addEventListener('click', (event) => {
+  displayElm.textContent += '8';
+});
+document.querySelector('#btn9').addEventListener('click', (event) => {
+  displayElm.textContent += '9';
+});
+```
+
+Tento kód sice bude fungovat, ale už od pohledu je strašlivě ukecaný. Všech naších deset funkcí dělá v podstatě totéž. Liší se pouze v jednom znaku. Mnohem šikovnější by bylo mít pouze jednu funkci, která se připojí na každé tlačítko. Tato funkce ale musí nějak zjistit, jakou cifru má na displej připojit. Zde můžeme mazaně využít toho, že kýženou cifru má každé tlačíko jako svůj `textContent`. A díky vlastnosti `event.target` může naše funkce snadno zjistit, na které tlačíko bylo zrovna kliknuto. Výsledný kód pak bude vypadat takto.
+
+```js
+'use strict';
+
+const btnClick = (event) => {
+  const displayElm = document.querySelector('.display');
+  displayElm.textContent += event.target.textContent;
+};
+
+document.querySelector('#btn0').addEventListener('click', btnClick);
+document.querySelector('#btn1').addEventListener('click', btnClick);
+document.querySelector('#btn2').addEventListener('click', btnClick);
+document.querySelector('#btn3').addEventListener('click', btnClick);
+document.querySelector('#btn4').addEventListener('click', btnClick);
+document.querySelector('#btn5').addEventListener('click', btnClick);
+document.querySelector('#btn6').addEventListener('click', btnClick);
+document.querySelector('#btn7').addEventListener('click', btnClick);
+document.querySelector('#btn8').addEventListener('click', btnClick);
+document.querySelector('#btn9').addEventListener('click', btnClick);
+```
+
+Takový kód už je mnohem hezčí. Kdybychom ještě navíc uměli cykly, které nás již brzo čekají, dokázali bychom jej zkrátit ještě výrazněji.
+
+## Reakce na stisk kláves
