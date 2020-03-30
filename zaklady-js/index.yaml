@@ -16,3 +16,9 @@ lessons:
   - title: Prohlubování znalostí
     link: prohlubovani
     brief: Tato lekce vám pomůže zorientovat se v tom, jak JavaScript runtime provádí váš kód a taky jak psát větší programy tak, abychom se v nich dokázali vyznat.
+  - title: Pole a cykly
+    link: pole-cykly
+    brief: Užitečnost počítačů spočívá především v tom, že dokážou velmi rychle provádět opakovaně nějakou činnost, tedy provádět takzvaný cyklus.
+  - title: Cykly a algoritmy
+    link: cykly-algoritmy
+    brief: Cykly a pole otvírají bránu do světa datových struktur a algoritmů. Je tedy čas procvičit si algoritmické myšlení.
