@@ -6,7 +6,7 @@ Z předchozí lekce už víme, že funkce jsou hodnoty podobně jako čísla, ř
 
 ### Chytřejší kalkulačka
 
-Vraťme s na chvíli k příkladu [kalkulačka](dom-funkce#exrc-kalkula%C4%8Dka) z minulé lekce. Zadání bylo vytvořit funkci `calc`, která spočítá výsledek operace zadané jako řetězec. Přímočaré řešení mohlo vypadat například takto.
+Vraťme s na chvíli k příkladu [kalkulačka](../dom-funkce/#cvi-kalkulacka) z minulé lekce. Zadání bylo vytvořit funkci `calc`, která spočítá výsledek operace zadané jako řetězec. Přímočaré řešení mohlo vypadat například takto.
 
 ```js
 const calc = (num1, op, num2) => {
