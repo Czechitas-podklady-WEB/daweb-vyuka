@@ -25,7 +25,7 @@ const calc = (num1, op, num2) => {
 };
 ```
 
-Možná si říkáte, jestli by tato funkce nešlo napsat nějak šikovněji a úsporněji. Například předat funkci operaci tak nějak přímo a naše funkce by ji jen vykonala. Něco ve stylu
+Možná si říkáte, jestli by tato funkce nešla napsat nějak šikovněji a úsporněji. Například předat funkci operaci tak nějak přímo a naše funkce by ji jen vykonala. Něco ve stylu
 
 ```jscon
 > calc(2, +, 3)

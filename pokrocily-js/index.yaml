@@ -4,3 +4,18 @@ lessons:
   - title: Objekty a práce s daty
     link: objekty-data
     brief: Začneme pomalu objevovat taje objektového programování a ukážeme si, jak pracovat se strukturovanými daty.
+  - title: Volání API
+    link: volani-api
+    brief: Ukážeme si, jak využívat veřejná API k tomu, abychom získali strukturované data pro naše aplikace.
+  - title: Základy objektového programování
+    link: zaklady-oop
+    brief: Naučíme se základní principy objektově orientovaného programování, které nám umožní lépe strukturovat naše aplikace.
+  - title: Tvorba komponent
+    link: komponenty
+    brief: Představíme si způsob, jakým můžeme vytvářet znovupoužitelné prvky naších stránek, které mají vlastní HTML, CSS i JavaScript.
+  - title: Procvičování komponent
+    link: komponenty-cviceni
+    brief: Komponentové myšlení je potřeba dostat trochu pod kůži. Příklady v této lekci vám s tím pomohou.
+  - title: Webpack
+    link: webpack
+    brief: FIXME
