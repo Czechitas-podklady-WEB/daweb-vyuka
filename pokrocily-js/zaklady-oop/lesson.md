@@ -73,16 +73,16 @@ const marge = {
 };
 ```
 
-Život by nám ulehčilo, kdybychom se mohli uvnitř metody nějak odkázat na objekt, jehož je tato metoda součáctí. JavaScript runtime nám v tom rád pomůže. Musíme mu však vyjít naproti a k tomu budeme potřebovat malinko jiný způsob deklarace funkcí.
+Život by nám ulehčilo, kdybychom se mohli uvnitř metody nějak odkázat na objekt, jehož je tato metoda součástí. JavaScript runtime nám v tom rád pomůže. Musíme mu však vyjít naproti a k tomu budeme potřebovat malinko jiný způsob deklarace funkcí.
 
 ## Staré dobré funkce
 
 Způsob zápisu funkcí jako níže, který jsem doteď používali, je ve skutečnosti v JavaScriptu docela novinka.
 
 ```js
-const personEmail = (person) => {
+const personEmail = (person, domain) => {
   const username = `${person.firstName}.${person.lastName}`;
-  return username.toLowerCase() + '@gmail.com';
+  return username.toLowerCase() + domain;
 };
 ```
 
