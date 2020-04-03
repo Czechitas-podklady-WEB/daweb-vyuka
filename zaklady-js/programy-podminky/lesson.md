@@ -230,16 +230,16 @@ Ve zbývající části lekce se vrhneme na podmínky a umožníme naším progr
 K tomu, abychom mohli v našich programech činit rozhodnutí budeme také potřebovat výrazy, které vrací pravdivostní hodnoty. Ty můžeme sestavit pomocí takzvaných <term cs="porovnávacích operátorů" en="comparison operators">.
 
 ```jscon
-> const vek = 21
-> vek > 18
+> const age = 21
+> age > 18
 true
-> vek > 21
+> age > 21
 false
-> vek >= 21
+> age >= 21
 true
-> vek === 21
+> age === 21
 true
-> vek !== 21
+> age !== 21
 true
 ```
 
@@ -293,7 +293,7 @@ Aby se nám kód dobře četl, odsazujeme řádky uvnitř bloku o kus doprava. V
 Je dobré mít na paměti, že odsazování a obecně většina bílých znaků je především pro nás lidi, tedy pro čtenáře kódu. Počítači, tedy přesnějí JavaScript runtimu, jsou bílé znaky jedno. Můžeme si je tady dávat kam chceme. Následující dva zápisy jsou z hlediska runtimu zcela stejné.
 
 ```js
-if (vek >= 18) {
+if (age >= 18) {
   document.write('Nalej si');
 } else {
   document.write('Žádné chlastání!');
@@ -301,7 +301,7 @@ if (vek >= 18) {
 ```
 
 ```js
-if (vek >= 18) {
+if (age >= 18) {
   document.write('Nalej si');
 } else {
   document.write('Žádné chlastání!');
@@ -311,8 +311,8 @@ if (vek >= 18) {
 Věřím, že uznáte, že první varianta je mnohem čitelnější než druhá. Způsobů, jak formátovat kód existuje vícero a můžete se tak účastnit nekonečných hospodských disputací o tom, jestli odsazovat pomocí dvou mezer nebo čtyř, jestli otvírací složenou závorku psát na konec řádku nebo na začátek nového a tak dále.
 
 ```js
-if (vek >= 18) {
-  document.write('Nalej si');
+if (age >= 18) {
+  document.write('Nalej si u nás');
 } else {
   document.write('Žádné chlastání!');
 }
@@ -325,7 +325,7 @@ Nakonec je však důležité hlavně si nějaká pravidla stanovit a ta pak dodr
 Zatím jsme viděli podmínky se dvěma větvemi. Není ovšem problém mít podmínku například jen s jednou větví.
 
 ```js
-if (vek >= 18) {
+if (age >= 18) {
   document.write('Nalej si');
 }
 ```
@@ -371,13 +371,13 @@ if (body >= 90) {
 Každý blok kódu může obsahovat libovolné příkazy, tedy i další podmínky. Můžeme tak snadno vnořovat podmínky do sebe.
 
 ```js
-if (vek >= 18) {
+if (age >= 18) {
   document.write('Nalej si');
 } else {
-  const rozdil = 18 - vek;
-  if (rozdil < 2) {
+  const remains = 18 - age;
+  if (remains < 2) {
     document.write('Ještě si chvíli počkej');
-  } else if (rodil < 5)
+  } else if (remains < 5)
     document.write('Co to tady zkoušíš?');
   } else {
     document.write('Utíkej za mamkou!');
@@ -400,6 +400,76 @@ Takto můžeme vytvářet relativně komplikované rozhodování. Se zanořován
   ]@
 
 ## Povinné čtení na doma - logické operátory
+
+V matematice jsme zvyklí na takzvané aritmetické operátory, tedy plus, mínus apod. Takové operátory obecně vyrábějí z čísel jiná čísla, například
+
+```jscon
+> 2 + 3
+5
+```
+
+Logika má však také své operátory, kterým se (logicky) říká <em>logické operátory</em>. Tyto operátory místo čísel pracují s pravdivostními hodnotami. Můžeme tak použít například operátor `&&`.
+
+```jscon
+> true && true
+true
+> true && false
+false
+> false && true
+false
+> false && false
+false
+```
+
+Tento operátor v podstatě znamená **a zároveň**. Tedy pokud jsou obě hodnoty `true`, výsledek je také `true`. Jinak je výsledek `false`.
+
+Můžeme také použít operátor **nebo** který se píše jako dvě roury `||`.
+
+```jscon
+> true || true
+true
+> true || false
+true
+> false || true
+true
+> false || false
+false
+```
+
+Operátor `||` vrací `true` v případě, že alespoň jedna z hodnot je `true`. Jako poslední máme operátor negace, který se píše jako vykřičník `!`. Ten jen vrací opak zadané pravdivostní hodnoty.
+
+```jscon
+> !true
+false
+> !false
+true
+```
+
+Tyto logické operátory můžeme s výhodou využít v našich podmínkách. Například bychom mohli chtít zkontrolovat, že věk uživatele je mezi 15 a 18. Chceme tedy logicky říct že věk je <i>větší nebo roven 15</i> **a zároveň** <i>menší nebo roven 18</i>. Kombinujeme tak vlastně dva logické výrazy do jednoho.
+
+```js
+if (age >= 15 && age <= 18) {
+  document.write('Jsi mladistvým intelektuálem');
+}
+```
+
+V jiném případě můžeme chtít zkontrolovat, že věk uživatele je menší než 18 nebo větší či roven 65.
+
+```js
+if (age < 18 || age >= 65) {
+  document.write('Nemusíš pracovat');
+}
+```
+
+Tutéž podmínku bychom mohli napsat pomocí negace.
+
+```js
+if (!(age >= 18 && age < 65)) {
+  document.write('Nemusíš pracovat');
+}
+```
+
+Takovýto výraz už je však trochu hůře k přečtení. Logické operátory jsou užiteční pomocníci, v praxi je však dobré s nimi šetřit. Pokud výraz ve vaší podmínce obsahuje více než jeden logický operátor, váš kód se stává těžko čitelným a pochopitelným. Držte se proto při používání logickách operátor pri zemi. Vaši budoucí kolegová vás za to budou mít rádi.
 
 @exercises ## Nepovinné úložky [
 
