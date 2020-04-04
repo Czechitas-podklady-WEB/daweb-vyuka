@@ -14,7 +14,7 @@ Naše JavaScriptové programy budou vždy součástí nějaké webové stránky.
   <title>První program</title>
 </head>
 <body>
-  <h1>První program</h2>
+  <h1>První program</h1>
 </body>
 </html>
 ```
@@ -31,7 +31,7 @@ Pokud chceme JavaScriptový program propojit se stránku, vložíme odkaz na kon
 
 ```html
 <body>
-  <h1>První program</h2>
+  <h1>První program</h1>
   <script src="index.js"></script>
 </body>
 ```
