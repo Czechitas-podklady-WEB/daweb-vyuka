@@ -377,7 +377,7 @@ if (age >= 18) {
   const remains = 18 - age;
   if (remains < 2) {
     document.write('Ještě si chvíli počkej');
-  } else if (remains < 5)
+  } else if (remains < 5) {
     document.write('Co to tady zkoušíš?');
   } else {
     document.write('Utíkej za mamkou!');
