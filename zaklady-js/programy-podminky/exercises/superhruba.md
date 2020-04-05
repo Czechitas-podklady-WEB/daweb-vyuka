@@ -5,7 +5,7 @@ demand: 3
 
 Vytvořte webovou stránku, která pomůže zaměstnavatelům spočítat náklady na jednoho zaměstnance, tedy takzvenou superhrubou mzdu. Zaměstnavetel zadá na vstupu dvě hodnoty: hodinovou sazbu zaměstnance a velikost úvazku v procentech. Tedy například 100% je plný úvazek (8 hodině denně), 50% poloviční apod. Stránka vypíše výši superhrubé mzdy, výší hrubé mzdy a výší čisté mzdy, vše v korunách.
 
-Pravdila pro tyto výpočty se v čase mění. Aktuální pravidla v době vzniku tohoto cvičení platí od 1.7.2019 a jsou následující ([zdroj](https://www.vypocet.cz/popis-vypoctu-ciste-mzdy)).
+Pravidla pro tyto výpočty se v čase mění. Aktuální pravidla v době vzniku tohoto cvičení platí od 1.7.2019 a jsou následující ([zdroj](https://www.vypocet.cz/popis-vypoctu-ciste-mzdy)).
 
 1. Spočítáme hrubou mzdu. Předpokládejme, že každý měsíc má 21 pracovních dní.
 1. Přičteme náklady na zdravotní pojištění (9 % z hrubé mzdy)
