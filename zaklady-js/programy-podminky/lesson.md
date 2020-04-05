@@ -476,4 +476,5 @@ Takovýto výraz už je však trochu hůře k přečtení. Logické operátory j
 - ruleta
 - prestupny-rok
 - prestupny-rok-2
+- prestupny-rok-3
   ]@
