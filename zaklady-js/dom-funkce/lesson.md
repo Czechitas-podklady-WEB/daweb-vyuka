@@ -112,7 +112,7 @@ Pomocí JavaScriptu můžeme také snadno změnit CSS třídu elementu. Použije
 <div class="new-header">Dobré ráno</div>
 ```
 
-U vlastnosti `className` je dobré si dát pozor na to, že se mždy mění celý obsah atributu. Dejme tomu, že mám tlačítko s třídou `btn`.
+U vlastnosti `className` je dobré si dát pozor na to, že se vždy mění celý obsah atributu. Dejme tomu, že mám tlačítko s třídou `btn`.
 
 ```html
 <button class="btn">Click me</button>
