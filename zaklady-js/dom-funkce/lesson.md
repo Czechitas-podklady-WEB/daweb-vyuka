@@ -58,8 +58,8 @@ Když prohlížeč zpracovává HTML kód, každá značka a její obsah se pře
 JavaScript říká DOMu celé naší stránky _dokument_. Funkce `document.querySelector` umí z dokumentu vybrat DOM element podle stejných pravidel, která používají CSS selektory. Například element hlavičky najdeme snadno podle jeho třídy. Výsledný DOM element si pak uložíme do proměnné. Zatím budeme experimentovat v konzoli, abychom si mohli rovnou zobrazit výsledky.
 
 ```jscon
-> const hlavicka = document.querySelector('.header');
-> hlavicka
+> const headerElm = document.querySelector('.header');
+> headerElm
 <div class="header">Hlavička</div>
 ```
 
@@ -70,38 +70,74 @@ Jakmile máme element uložený v proměnné, můžeme si s ním začít hrát p
 První důležitá vlastnost každého DOM elementu je `textContent`. Ta obsahuje textový obsah našeho elementu. Použitím vlastnosti `textContent` můžeme tento obsah číst a také měnit.
 
 ```jscon
-> const hlavicka = document.querySelector('.header')
-> hlavicka.textContent
+> const headerElm = document.querySelector('.header')
+> headerElm.textContent
 Hlavička
-> hlavicka.textContent = 'Dobré ráno'
-> hlavicka
+> headerElm.textContent = 'Dobré ráno'
+> headerElm
 <div class="header">Dobré ráno</div>
 ```
 
 Snadno také můžeme změnit jakýkoliv styl pomocí vlastnosti `style`. Takto můžeme změnit například barvu textu a dolní okraj.
 
 ```jscon
-> const hlavicka = document.querySelector('.header')
-> hlavicka.style.color = 'white'
-> hlavicka.style.marginBottom = '2rem'
+> const headerElm = document.querySelector('.header')
+> headerElm.style.color = 'white'
+> headerElm.style.marginBottom = '2rem'
 ```
 
 Všimněte si hned dvou důležitých věcí. Za prvé, názvy CSS vlastností musíme zapisovat **velbloudí notací**. Je to proto, že kdybychom použili kebab notaci (ano, toto je skutečný název) jako zde
 
 ```jscon
-> hlavicka.style.margin-bottom = '2rem'
+> headerElm.style.margin-bottom = '2rem'
 ```
 
 JavaScript by si pomlčku spletl s mínusem a kód by nefungoval. Druhá důležitá věc je, že hodnoty všech CSS vlastností se zapisují pomocí řetězců. Proto dávejte pozor například na takového chyby.
 
 ```jscon
-> hlavicka.style.color = white
-> hlavicka.style.marginBottom = 2rem
+> headerElm.style.color = white
+> headerElm.style.marginBottom = 2rem
+```
+
+### Změna třídy
+
+Pomocí JavaScriptu můžeme také snadno změnit CSS třídu elementu. Použijeme k tomu vlastnost `className`. Můžeme tak například snadno měnit třídy hlavičky na naší stránce.
+
+```jscon
+> const headerElm = document.querySelector('.header')
+> headerElm
+<div class="header">Dobré ráno</div>
+> headerElm.className = 'new-header'
+> headerElm
+<div class="new-header">Dobré ráno</div>
+```
+
+U vlastnosti `className` je dobré si dát pozor na to, že se mždy mění celý obsah atributu. Dejme tomu, že mám tlačítko s třídou `btn`.
+
+```html
+<button class="btn">Click me</button>
+```
+
+Pokud chci tlačítko vzýraznit a přidat mu další třídu například takto
+
+```html
+<button class="btn btn-primary">Click me</button>
+```
+
+musím nastavit obsah celého atributu `class`.
+
+```jscon
+> const buttonElm = document.querySelector('button')
+> buttonElm
+<button class="btn">Click me</button>
+> buttonElm.className = 'btn btn-primary'
+> headerElm
+<button class="btn btn-primary">Click me</button>
 ```
 
 ### Změna atributů
 
-Podobně jako obsah nebo styly můžeme měnit i atributy elementů. Nejšikovnější je například změna obrázku v elementu `img`. Mějme například následující HTML.
+Podobně jako obsah, třídy nebo styly můžeme měnit i atributy elementů. Nejšikovnější je například změna obrázku v elementu `img`. Mějme například následující HTML.
 
 ```html
 <img class="pet" alt="Kočka" src="img/cat.jpg" />
@@ -145,7 +181,7 @@ Jelikož lze v `document.querySelector` použít libovolný CSS selektor, někoh
 const cardElm = document.querySelector('.card:nth-child(2)');
 ```
 
-Tento kód bude skutečně fungovat, ale rovnou tedy na místě vám takové triky navždy zakazuju. Takovéto komplikované selektory používejte pouze v případě, že opravdu není vyhnutí. Pro nás existuje jednodušší řešení a to dát každé kartě unikátní `id`.
+Tento kód bude skutečně fungovat, ale rovnou zde na místě vám takové triky navždy zakazuju. Takovéto komplikované selektory používejte pouze v případě, že opravdu není vyhnutí. Pro nás existuje jednodušší řešení a to dát každé kartě unikátní `id`.
 
 ```html
 <body>
@@ -174,6 +210,12 @@ const cardElm = document.getElementById('card2');
 Všimněte si, že zde napíšeme znak mřížky, protože vstupem pro `document.getElementById` není CSS selektor, nýbrž samotné `id` prvku.
 
 Oba z výše uvedených způsobů výběru podle `id` jsou zcela legitimní a je pouze na vás, který si zvolíte.
+
+@exercises ## Cvičení - Manipulace s DOMem [
+
+- novinky
+- kviz
+  ]@
 
 ## Vlastní funkce
 
@@ -244,11 +286,20 @@ Proč není `else` potřeba? Zde je nuté oprášit logické uvažování. Pokud
 
 Zkušení programátoři `else` vynechávají, pokud není potřeba. Je proto dobré si na tento způsob zápistu zvyknout.
 
+@exercises ## Cvičení - Vlastní funkce [
+
+- obsah-elipsy
+- maximum-ze-dvou
+- ramecek
+  ]@
+
 ## Povinné čtení na doma
 
 Manipulace s CSS třídami pomocí `classList`.
 
-@exercises ## Povinné úložky na doma [
+@exercises ## Doporučené úložky na doma [
 
 - kalkulacka
+- dovednosti
+- python-round
   ]@
