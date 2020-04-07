@@ -393,9 +393,14 @@ Takto můžeme vytvářet relativně komplikované rozhodování. Se zanořován
 - cena-vstupenky
   ]@
 
-@exercises ## Povinné úložky na doma [
+@exercises ## Povinná úloha na doma [
 
 - superhruba
+- slevy
+  ]@
+
+@exercises ## Doporučené úložky na doma [
+
 - slevy
   ]@
 
@@ -471,7 +476,7 @@ if (!(age >= 18 && age < 65)) {
 
 Takovýto výraz už je však trochu hůře k přečtení. Logické operátory jsou užiteční pomocníci, v praxi je však dobré s nimi šetřit. Pokud výraz ve vaší podmínce obsahuje více než jeden logický operátor, váš kód se stává těžko čitelným a pochopitelným. Držte se proto při používání logickách operátor pri zemi. Vaši budoucí kolegová vás za to budou mít rádi.
 
-@exercises ## Nepovinné úložky [
+@exercises ## Volitelné úložky na doma [
 
 - ruleta
 - prestupny-rok

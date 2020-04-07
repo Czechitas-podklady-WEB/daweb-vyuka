@@ -244,7 +244,7 @@ Chytrým použitím zaokrouhlování a trochou matematiky můžeme pomocí této
 5
 ```
 
-@exercises ## Povinné úložky na doma [
+@exercises ## Doporučené úložky na doma [
 
 - delka-filmu
 - schopnejsi-zaokrouhlovani
@@ -279,7 +279,7 @@ V JavaScriptu se ukrývá mnoho různých pastí, ve kterých je možné snadno 
 
 JavaScript runtime si zde neuvědomí, že jsme udělali překlep a vytvoří novou proměnnou <var>nzda</var> s hodnotou 350. Původní proměnná tedy zůstane nezměněná a už máme zaděláno na problém. Naštěstí se tento zdroj chyb dá odstranit tím, že JavaScript runtimu zakážeme vytvářet proměnné bez uvedení `let`, `const` nebo `var`. Jak se toto zařídí si ukážeme v následující lekci.
 
-@exercises ## Nepovinné úložky na doma [
+@exercises ## Volitelné úložky na doma [
 
 - schopnejsi-zaokrouhlovani-2
   ]@
