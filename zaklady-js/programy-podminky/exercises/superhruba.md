@@ -7,7 +7,10 @@ Vytvořte webovou stránku, která pomůže zaměstnavatelům spočítat náklad
 
 Pravidla pro tyto výpočty se v čase mění. Aktuální pravidla v době vzniku tohoto cvičení platí od 1.7.2019 a jsou následující ([zdroj](https://www.vypocet.cz/popis-vypoctu-ciste-mzdy)).
 
-1. Spočítáme hrubou mzdu. Předpokládejme, že každý měsíc má 21 pracovních dní.
+Hrubou mzdu spočítáme z hodinové sazby a velikosti úvazku. Předpokládejme, že každý měsíc má 21 pracovních dní. Výsledné číslo zaokrouhlíme běžným způsobem na celé koruny.
+
+Superhrubá mzda se spočítá z hrubé mzdy takto:
+
 1. Přičteme náklady na zdravotní pojištění (9 % z hrubé mzdy)
 1. Přičteme náklady na sociální pojištění (24,8 % z hrubé mzdy)
 1. Výsledné číslo zaokrouhlíme **nahoru** na celé koruny.

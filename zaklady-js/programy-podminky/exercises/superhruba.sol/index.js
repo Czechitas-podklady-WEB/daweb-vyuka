@@ -3,7 +3,7 @@
 const pay = Number(prompt('Hodinová mzda:'));
 const time = Number(prompt('Velikost uvazku (%):'));
 
-const gross = pay * 8 * 21 * time / 100;
+const gross = Math.round(pay * 8 * 21 * time / 100);
 const superGross = Math.ceil(gross + gross * 0.09 + gross * 0.248);
 const taxBase = Math.ceil(superGross / 100) * 100;
 
