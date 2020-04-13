@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+body {
+  display: flex;
+  background-color: #4ecdc4;
+}
+
+.container {
+  width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alarm {
+  width: 30rem;
+  height: 30rem;
+  background-size: contain;
+  background-image: url('assets/alarm.svg');
+}
+
+@keyframes ring {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  25% {
+    transform: rotateZ(5deg);
+  }
+  50% {
+    transform: rotateZ(0deg);
+  }
+  75% {
+    transform: rotateZ(-5deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+.alarm--ring {
+  animation: ring 100ms 50;
+}
