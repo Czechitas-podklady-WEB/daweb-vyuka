@@ -322,17 +322,17 @@ document.addEventListener('click', (e) => console.log('klik'));
 Takto přidáme posluchače události k celé naší stránce. Na celé stránce také můžeme použít událost `scroll`, která nastave pokaždé, když uživatel na stránce zascrolluje.
 
 ```js
-document.addEventListener('scroll', (e) => console.log('klik'));
+document.addEventListener('scroll', (e) => console.log('skrol'));
 ```
 
 Často se nám tako mohou hodit události `keydown` a `keyup`. Událost `keydown` nastane, když uživatel stiskne nějakou klávesu. Událost `keyup` nastane, když uživatel klávesu uvolní. To je velmi šikovné, protože pokud uživatel drží zmáčknutou nějakou klávesu, událost `keydown` nám bude chodit pořád dokola. Naopak událost `keyup` přijde vždy pouze jednou ve chvíli, kdy uživatel klávesu uvolní.
 
-Pokud chceme zjistit, jaká klávesa byla stisknuta, musíme znát její kód. Kódy kláves snadno najdete na [keycode.info](http://keycode.info). Zjistíme tak například, že mezerník má kód 32. Takto pak na stránce můžeme zareagovat na stisknutí mezerníku.
+Pokud chceme zjistit, jaká klávesa byla stisknuta, musíme znát její kód. Kódy kláves snadno najdete na [keycode.info](http://keycode.info). Zjistíme tak například, že klávesa [[Enter]] má kód 13. Takto pak na stránce můžeme zareagovat na stisknutí [[Enter]].
 
 ```js
 document.addEventListener('keyup', (event) => {
-  if (event.keyCode === 32) {
-    console.log('mezerník');
+  if (event.keyCode === 13) {
+    console.log('enter');
   }
 });
 ```
@@ -348,6 +348,12 @@ document.addEventListener('keyup', (event) => {
 ```
 
 Událostí, na které můžete na stránce reagovat je nepřeberné množství. Seznam všech událostí si můžete pro inspiraci prohlédnout [na stránkách MDN](https://developer.mozilla.org/en-US/docs/Web/Events).
+
+@exercises ## Cvičení - Události [
+
+- zarovka
+- kostka
+  ]@
 
 ## Povinné čtení a doma
 
