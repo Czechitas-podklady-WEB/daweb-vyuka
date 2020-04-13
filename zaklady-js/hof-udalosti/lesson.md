@@ -64,6 +64,30 @@ Ze začátku se vám možná z takovýchto triků malinko točí hlava. Projdět
 
 Funkcím, které berou jiné funkce jako vstup nebo vracejí funkce jako svůj výstup, se v teorii programování říká _funkce vyšších řádů_. Je to velmi důležitý koncept, který má spoustu využítí a budeme jej používat v mnoha různých situacích.
 
+### Malé cvičení
+
+Abychom byli mezi funkcemi vyšších řádů jako ryba ve vodě, je potřeba trošku procvičit tento nový styl přemýšlení. Projděte si následující výrazu a zkuste předpovědět, jaký bude výsledek.
+
+```jscon
+> const foo = (f, x) => 3 * f(x + 2);
+> foo(Math.round, 3.74)
+?
+> foo((a) => a ** 2, 3)
+?
+> foo((x) => 17 % x, 5)
+?
+```
+
+```jscon
+> const foo = (g, x, y) => g(x, y) + g(y, x);
+> foo(Math.max, 5, 10)
+?
+> foo((a, b) => 2 * (a - b), 2, 5)
+?
+> foo((x, y) => x + ' ' + y, 'petr', 'pavel')
+?
+```
+
 ### Zpoždění a časovače
 
 Jedna ze situací, kdy se nám velmi hodí funkce vyššího řádu, je chvíle, kdy chceme v JavaScriptu provedení nějaké funkce pozdržet nebo její volání pravidelně opakovat. Představme si, že programujeme nějakou kvízovou stránku, kde uživatel odpovídá na otázky a na každou otázku má čas například 5 vteřin. Když se mu otázka zobrazí, chceme počkat 5 vteřin a poté vypsat něco jako "čas vypršel". Vyrobíme si tedy funkci, který vypisuje naši zprávu, zatím pro jednoduchost pouze do konzole.
@@ -118,6 +142,12 @@ Podobně jako u funkce `setTimout` bychom mohli anonymní funkci předat i naš�
 > calc(13, (x, y) => x % y, 7)
 ?
 ```
+
+@exercises ## Cvičení - funkce vyššího řádu [
+
+- jednoduche-hof
+- minutka
+  ]@
 
 ## Události
 
@@ -280,3 +310,5 @@ document.querySelector('#btn9').addEventListener('click', btnClick);
 Takový kód už je mnohem hezčí. Kdybychom ještě navíc uměli cykly, které nás již brzo čekají, dokázali bychom jej zkrátit ještě výrazněji.
 
 ## Reakce na stisk kláves
+
+## Povinné čtení a doma - rušení časovačů

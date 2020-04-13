@@ -295,6 +295,35 @@ Zkušení programátoři `else` vynechávají, pokud není potřeba. Je proto do
 
 ## Povinné čtení na doma
 
+Představme si nějaký DOM element, který na sobě má vícero tříd. Například přepínací tlačíko, které začíná ve stavu 'vypnuto'.
+
+```html
+<button id="login-btn" class="btn btn--off btn--primary">Login</button>
+```
+
+Dejme tomu, že bychom chtěli prostřední třídu odstranit a tím tlačítko přepnout do stavu 'zapnuto'. Se současnými dovednostmi můžeme udělat například toto.
+
+```js
+const btnElm = document.querySelector('#login-btn');
+btnElm.className = 'btn btn--primary';
+```
+
+Vždy takto musíme nastavit celý atribut `class`. Musíme tedy znát všechny ostatní třídy, které na tlačítku máme. To nám začne časem velmi znepříjmňovat život. JavaScript nám však nabízí vlastnost `classList`, díky které můžeme s CSS třídami na elementu pracovat mnohem přímočařeji. Výše zmíněný úkol pak vyřešíme takto.
+
+```js
+const btnElm = document.querySelector('#login-btn');
+btnElm.classList.remove('btn--off');
+```
+
+Metoda `remove` udělá veškerou špinavou práci za nás nehledě na to jako další CSS třídy jsou na element navázány. Pokud chceme naopak třídu přidat, použíjeme metodu `add`.
+
+```js
+const btnElm = document.querySelector('#login-btn');
+btnElm.classList.add('btn--off');
+```
+
+Často se nám stává, podobně jako u tohoto tlačítka, že chceme stav nějakého elementu měnit stejnou akcí tam a zpět. Tedy například na kliknutí přepínat stav z 'vypnuto' na 'zapnuto' a zpět. K tomu můžeme použít metody `toggle`. Pokud se zadaná třída
+
 Manipulace s CSS třídami pomocí `classList`.
 
 @exercises ## Doporučené úložky na doma [
