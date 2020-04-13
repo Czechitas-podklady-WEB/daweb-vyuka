@@ -41,7 +41,7 @@ Pozor na to, že `ls` funguje jen v bashi, tedy pouze na Linuxu a MacOS, ve Wind
 
 ## Navigování mezi složkami
 
-Každý shell má mnoho příkazů, pomocí kterých můžete dělat věci jako kopírovat soubory, vytvářet složky, pracovat se sítí apod. My v tomto kurzu budeme shell používat jen málo, protože si chceme povídat především s Pythonem. V této části se tedy z shellu naučíme jen to nejdůležitější a to je přecházení mezi složkami.
+Každý shell má mnoho příkazů, pomocí kterých můžete dělat věci jako kopírovat soubory, vytvářet složky, pracovat se sítí apod. My v tomto kurzu budeme shell používat jen málo, protože si chceme povídat především s JavaScriptem. V této části se tedy z shellu naučíme jen to nejdůležitější a to je přecházení mezi složkami.
 
 Je dobré si zapamatovat, že shell je vždy otevřený uvnitř nějaké složky. Cestu ke složce, ve které se právě nacházíte byste měli vidět před kurzorem. Pokud se chcete přesunout do jiné složky, použijete příkaz `cd`, který zrovna náhodou funguje úplně ve všech shellech.
 
