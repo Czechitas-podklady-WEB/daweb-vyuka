@@ -47,7 +47,7 @@ Jelikož každá takováto funkce je hodnota, můžeme ji předat jako vstup do 
 const calc = (num1, op, num2) => op(num1, num2);
 ```
 
-Funkci `calc` pak pužijeme velmi přímočaře.
+Funkci `calc` pak použijeme velmi přímočaře.
 
 ```jscon
 > calc(2, plus, 3)
@@ -56,17 +56,17 @@ Funkci `calc` pak pužijeme velmi přímočaře.
 20
 ```
 
-Ze začátku se vám možná z takovýchto triků malinko točí hlava. Projdětě si proto následující fakta, abyste získali zpět ztracenou rovnováhu.
+Ze začátku se vám možná z takovýchto triků malinko točí hlava. Projděme si proto následující fakta, abychom získali zpět ztracenou rovnováhu.
 
 1. V parametru `op` nyní není řetězec, jako tomu bylo dříve, nýbrž funkce.
 1. Funkce `calc` funkci `op` zavolá, aniž by věděla, co je tato funkce vlastně zač. Prostě vezme cokoliv, co jí dáme na vstup, a zavolá to.
 1. Když voláme funkci `calc` a na vstupu je například funkce `plus`, všimněte si, že funkci `plus` nevoláme. Za proměnnou `plus` nejsou kulaté závorky. Funkci pouze předáváme jako hodnotu, podobně, jako bychom předávali číslo, řetězec apod.
 
-Funkcím, které berou jiné funkce jako vstup nebo vracejí funkce jako svůj výstup, se v teorii programování říká _funkce vyšších řádů_. Je to velmi důležitý koncept, který má spoustu využítí a budeme jej používat v mnoha různých situacích.
+Funkcím, které berou jiné funkce jako vstup nebo vracejí funkce jako svůj výstup, se v teorii programování říká <term cs="funkce vyšších řádů" en="higher order functions">. Je to velmi důležitý koncept, který má spoustu využítí a budeme jej používat v mnoha různých situacích.
 
 ### Malé cvičení
 
-Abychom byli mezi funkcemi vyšších řádů jako ryba ve vodě, je potřeba trošku procvičit tento nový styl přemýšlení. Projděte si následující výrazu a zkuste předpovědět, jaký bude výsledek.
+Abychom byli mezi funkcemi vyšších řádů jako ryba ve vodě, je potřeba trošku procvičit tento nový styl přemýšlení. Projděte si následující výrazy a zkuste předpovědět, jaký bude výsledek.
 
 ```jscon
 > const foo = (f, x) => 3 * f(x + 2);
@@ -90,7 +90,7 @@ Abychom byli mezi funkcemi vyšších řádů jako ryba ve vodě, je potřeba tr
 
 ### Zpoždění a časovače
 
-Jedna ze situací, kdy se nám velmi hodí funkce vyššího řádu, je chvíle, kdy chceme v JavaScriptu provedení nějaké funkce pozdržet nebo její volání pravidelně opakovat. Představme si, že programujeme nějakou kvízovou stránku, kde uživatel odpovídá na otázky a na každou otázku má čas například 5 vteřin. Když se mu otázka zobrazí, chceme počkat 5 vteřin a poté vypsat něco jako "čas vypršel". Vyrobíme si tedy funkci, který vypisuje naši zprávu, zatím pro jednoduchost pouze do konzole.
+Jedna ze situací, kdy se nám velmi hodí funkce vyššího řádu, je chvíle, kdy chceme v JavaScriptu provedení nějaké funkce pozdržet nebo její volání pravidelně opakovat. Vzpomeňte si na příklad [kvíz](../dom-funkce/#cvi-kviz) z minulé lekce. Představme si, že chceme, aby uživatel měl na každou odpověď nějaký časový limit. Po zobrazení otázky chceme počkat 5 vteřin a poté vypsat něco jako "čas vypršel". Vyrobíme si tedy funkci, která vypisuje naši zprávu, zatím pro jednoduchost pouze do konzole.
 
 ```js
 const timeIsUp = () => {
@@ -134,9 +134,11 @@ setTimeout(() => {
 }, 5000);
 ```
 
-Pokud nějakou funkci vytváříme přímo takto na místě místo toho, abychom ji nejdříve uložili do proměné, říkáme, že taková funkce je takzvaně _anonymní_. Takto napsaný program vám možná přijde hůř k přečtení. Anonymní funkce se ovšem v JavaScriptu používají zcela běžně a jakmile si na tento způsob zapisu zvyknete, budete jej radostně používat také.
+Pokud nějakou funkci vytváříme přímo takto na místě místo toho, abychom ji nejdříve uložili do proměné, říkáme, že taková funkce je takzvaně <term cs="anonymní" en="anonymous">. V teorii programování se místo pojmu anonymní funkce používá pojem <term cs="lambda funkce" en="lambda functions">. V JavaScriptu se tento pojem až tolik nepoužívá, zato v jazyce Python je to zažitý termín.
 
-Podobně jako u funkce `setTimout` bychom mohli anonymní funkci předat i naší známé funkci funkci `calc`. Schválně zkuste odhanout, co bude výsledkem následujícího výrazu a proč.
+Program napsaný pomocí lambda funkcí vám možná přijde hůř k přečtení. Anonymní funkce se ovšem v JavaScriptu používají zcela běžně a jakmile si na tento způsob zapisu zvyknete, budete jej radostně používat také.
+
+Podobně jako u funkce `setTimout`, anonymní funkci můžeme předat i naší známé funkci `calc`. Schválně zkuste odhanout, co bude výsledkem následujícího výrazu a proč.
 
 ```jscon
 > calc(13, (x, y) => x % y, 7)
@@ -221,7 +223,7 @@ Všimněte si, že jsme parametr `event` uvnitř naší funkce `changeTitle` zat
 
 ### Kalkulačka
 
-Vlastnost `target` je jedna z vůbec nejdůležitějších. Díky se můžeme dostat z mnoha jinak svízelných situací. Představte si například, že chceme naprogramovat jednoduchou webovou kalkulačku. Pravděpodobně bychom začali s číselníkem jako na obrázku.
+Vlastnost `target` je jedna z vůbec nejdůležitějších. Díky ní se můžeme dostat z mnoha jinak svízelných situací. Představte si například, že chceme naprogramovat jednoduchou webovou kalkulačku. Pravděpodobně bychom začali s číselníkem jako na obrázku.
 
 ![Číselník](assets/numpad.png){.fig}
 
@@ -309,6 +311,46 @@ document.querySelector('#btn9').addEventListener('click', btnClick);
 
 Takový kód už je mnohem hezčí. Kdybychom ještě navíc uměli cykly, které nás již brzo čekají, dokázali bychom jej zkrátit ještě výrazněji.
 
-## Reakce na stisk kláves
+## Další druhy událostí
 
-## Povinné čtení a doma - rušení časovačů
+Jak už bylo řečeno, událostí je mnoho typů a mohou nastat na různých elementech. My jsme zatím reagovali na kliknutí na tlačítko. Kliknutí však může nastat na jakémkoliv elementu. Takto například zareagujeme na kliknutí na celé stránce.
+
+```js
+document.addEventListener('click', (e) => console.log('klik'));
+```
+
+Takto přidáme posluchače události k celé naší stránce. Na celé stránce také můžeme použít událost `scroll`, která nastave pokaždé, když uživatel na stránce zascrolluje.
+
+```js
+document.addEventListener('scroll', (e) => console.log('klik'));
+```
+
+Často se nám tako mohou hodit události `keydown` a `keyup`. Událost `keydown` nastane, když uživatel stiskne nějakou klávesu. Událost `keyup` nastane, když uživatel klávesu uvolní. To je velmi šikovné, protože pokud uživatel drží zmáčknutou nějakou klávesu, událost `keydown` nám bude chodit pořád dokola. Naopak událost `keyup` přijde vždy pouze jednou ve chvíli, kdy uživatel klávesu uvolní.
+
+Pokud chceme zjistit, jaká klávesa byla stisknuta, musíme znát její kód. Kódy kláves snadno najdete na [keycode.info](http://keycode.info). Zjistíme tak například, že mezerník má kód 32. Takto pak na stránce můžeme zareagovat na stisknutí mezerníku.
+
+```js
+document.addEventListener('keyup', (event) => {
+  if (event.keyCode === 32) {
+    console.log('mezerník');
+  }
+});
+```
+
+Nebo na stisknutí [[Ctrl]]+[[C]].
+
+```js
+document.addEventListener('keyup', (event) => {
+  if (event.keyCode === 67 && event.ctrlKey) {
+    console.log('Ctrl+C');
+  }
+});
+```
+
+Událostí, na které můžete na stránce reagovat je nepřeberné množství. Seznam všech událostí si můžete pro inspiraci prohlédnout [na stránkách MDN](https://developer.mozilla.org/en-US/docs/Web/Events).
+
+## Povinné čtení a doma
+
+### Rušení časovačů
+
+### Vstup pomocí textových políček
