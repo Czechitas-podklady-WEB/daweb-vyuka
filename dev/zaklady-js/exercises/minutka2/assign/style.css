@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+body {
+  display: flex;
+  background-color: #4ecdc4;
+}
+
+.container {
+  width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alarm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30rem;
+  height: 30rem;
+  background-size: contain;
+  background-image: url('assets/alarm.svg');
+}
+
+@keyframes ring {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  25% {
+    transform: rotateZ(5deg);
+  }
+  50% {
+    transform: rotateZ(0deg);
+  }
+  75% {
+    transform: rotateZ(-5deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+.alarm--ring {
+  animation: ring 100ms 50;
+}
+
+.alarm__seconds,
+.alarm__minutes {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+.alarm__minutes {
+  font-weight: 900;
+}
+
+.alarm__seconds {
+  font-weight: 100;
+}
+
+.controls {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+input[type='text'] {
+  border: none;
+  background-color: gray;
+  color: white;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.time-input {
+  width: 6rem;
+}
+
+button {
+  border: none;
+  background-color: #f4081e;
+  color: white;
+  border-radius: 5px;
+  padding: 0.5rem;
+  cursor: pointer;
+}

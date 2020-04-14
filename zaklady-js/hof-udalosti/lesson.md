@@ -360,3 +360,13 @@ Událostí, na které můžete na stránce reagovat je nepřeberné množství. 
 ### Rušení časovačů
 
 ### Vstup pomocí textových políček
+
+@exercises ## Doporučené úložky na doma [
+
+- minutka2
+  ]@
+
+@exercises ## Volitelné úložky na doma [
+
+- minutka3
+  ]@
