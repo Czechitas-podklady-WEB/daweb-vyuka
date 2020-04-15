@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.display {
+  width: 8.8rem;
+  height: 2rem;
+  background-color: lightblue;
+  margin: 0.1rem;
+  line-height: 2rem;
+  text-align: right;
+  padding: 0 0.5rem;
+  border-radius: 3px;
+}
+
+.numpad {
+  display: flex;
+  flex-wrap: wrap;
+  width: 8.8rem;
+}
+
+.num-btn {
+  width: 2rem;
+  height: 2rem;
+  margin: 0.1rem;
+}
+
+.num-btn--wide {
+  width: 4.2rem;
+}
