@@ -56,7 +56,8 @@ Použijte základní HTML a CSS na stránce [vzoru](https://codepen.io/SimonB87/
 #### PC:
 
 - na každém řádku budou vidět čtyři karty technologií
-  - tedy: elementy `article` v `main` budou mít šířku třetiny šířky rodičovského elementu 
+  - tedy: elementy `article` v `main` budou mít šířku čtvrtiny šířky rodičovského elementu 
+
 - element `main` bude mít maximální šířku `1600px` a bude zarovnaná na střed řádku
   - podél něho tedy budou jen bílé okraje
 
