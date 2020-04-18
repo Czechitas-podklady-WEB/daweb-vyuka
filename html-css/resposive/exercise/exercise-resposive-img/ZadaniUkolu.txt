@@ -1,0 +1,26 @@
+ÚKOLY:
+
+- Upravte zobrazení článků tak, aby byly články dva na řádku jen u zařízeních s šířkou okna větší jak 800px.
+  - na menších displejích bude jeden na řádku
+
+- Upravte kód pro obrázky tak, ať prohlížeč zobrazuje specifické obrázky pro specifickou šířku okna (viz přednáška pro responsivní obrázky a "příklad img tagu s "srcset"" níže )
+  - základní defaultní atribut obrázku je "hackaton-babis.jpg" a "worldpress_big.jpg"
+  - pracujte s atributem obrázku "srcset" pro specifické šířky oken prohlížeče
+    - pro 800w platí: 
+      - pro první obrázek "hackaton-babis_800.jpg" 
+        a pro druhý obrázek "worldpress_800.jpg"
+    - pro 500w platí: 
+      - pro první obrázek "hackaton-babis_500.jpg" 
+        a pro druhý obrázek "worldpress_big_500.jpg"
+
+
+- Příklad img tagu s "srcset"
+
+<img src= "scriptInHtml_2000.jpg"
+     srcset= "scriptInHtml_2000.jpg 2000w,
+              scriptInHtml_1000.jpg 1000w,
+              scriptInHtml_500.jpg  500w"
+     width= "100" height= "100"
+     alt="hezký obrázek">
+
+- tip - kontrolujte v Chrome Develer Tools co se Vám stáhne za obrázek: v tabu "Sources" > "Page"
