@@ -3,7 +3,7 @@ title: Responsivní layout s webovými technologiemi
 demand: 3
 ---
 
-Použijte základní HTML a CSS na stránce [vzoru](https://codepen.io/SimonB87/pen/JjYdqWZ). 
+Použijte základní HTML a CSS na stránce [vzoru](https://codepen.io/SimonB87/pen/ExVjXKJ). 
 
 ## Proveďte následující úpravy:
 
