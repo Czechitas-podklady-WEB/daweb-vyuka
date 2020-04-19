@@ -1,0 +1,9 @@
+title: Základy Gitu
+link: zaklady-gitu
+lessons:
+  - title: Seznámení s Gitem
+    link: seznameni
+    brief: Představíme si verzovací systém Git, který nám usnadní spravování a zálohování našich projektů.
+  - title: Spolupráce v Gitu
+    link: spoluprace
+    brief: Ukážeme si, jak s využítím Gitu organizovat práci více vývojářů na jednom projektu.
