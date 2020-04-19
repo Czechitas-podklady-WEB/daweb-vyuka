@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="640" height="360" version="1.1" viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(0 -378.2)" display="none">
+  <rect x="60" y="278.2" width="520" height="120" rx="3" ry="3" fill="#5baeff" style="paint-order:stroke fill markers"/>
+  <rect x="60" y="598.2" width="520" height="120" rx="3" ry="3" fill="#5baeff" style="paint-order:stroke fill markers"/>
+  <rect x="60" y="418.2" width="160" height="160" rx="3" ry="3" fill="#a5d3ff" style="paint-order:stroke fill markers"/>
+  <text x="90" y="338.24997" fill="#000000" font-family="Lato" font-size="20px" font-weight="bold" letter-spacing="0px" text-align="center" text-anchor="middle" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="90" y="338.24997" font-family="Montserrat" font-weight="normal" text-align="start" text-anchor="start">Hlavička</tspan></text>
+  <rect x="240" y="418.2" width="160" height="160" rx="3" ry="3" fill="#a5d3ff" style="paint-order:stroke fill markers"/>
+  <rect x="420" y="418.2" width="160" height="160" rx="3" ry="3" fill="#a5d3ff" style="paint-order:stroke fill markers"/>
+  <g fill="#000000" font-family="Lato" font-size="20px" font-weight="bold" letter-spacing="0px" text-anchor="middle" word-spacing="0px">
+   <text x="90" y="468.24997" text-align="center" style="line-height:1.25" xml:space="preserve"><tspan x="90" y="468.24997" font-family="Montserrat" font-weight="normal" text-align="start" text-anchor="start">Karta 1</tspan></text>
+   <text x="270" y="468.24997" text-align="center" style="line-height:1.25" xml:space="preserve"><tspan x="270" y="468.24997" font-family="Montserrat" font-weight="normal" text-align="start" text-anchor="start">Karta 2</tspan></text>
+   <text x="450" y="468.24997" text-align="center" style="line-height:1.25" xml:space="preserve"><tspan x="450" y="468.24997" font-family="Montserrat" font-weight="normal" text-align="start" text-anchor="start">Karta 3</tspan></text>
+   <text x="90" y="678.25" text-align="center" style="line-height:1.25" xml:space="preserve"><tspan x="90" y="678.25" font-family="Montserrat" font-weight="normal" text-align="start" text-anchor="start">Patička</tspan></text>
+  </g>
+ </g>
+ <g transform="translate(0,-240)">
+  <path d="m80 540v-240" fill="none" stroke="#000" stroke-width="1px"/>
+  <g>
+   <circle cx="80" cy="420" r="15" fill="#dcdcff" stroke="#5e5e5e" stroke-linecap="round" stroke-width="2" style="paint-order:normal"/>
+   <text x="120" y="414.85199" fill="#000000" font-family="Montserrat" font-size="14.67px" font-weight="bold" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="120" y="414.85199" font-family="Montserrat" font-weight="normal"><tspan x="120" y="414.85199">72aaa9ce3ba5a583a00666997f80277b886dfbf7</tspan><tspan x="466.09897" y="414.85199" dx="0"/></tspan><tspan x="120" y="433.18533"><tspan x="120" y="433.18533" font-family="Montserrat" font-weight="normal">Logo stránky.</tspan></tspan></text>
+   <circle cx="80" cy="360" r="15" fill="#dcdcff" stroke="#5e5e5e" stroke-linecap="round" stroke-width="2" style="paint-order:normal"/>
+   <text x="120" y="354.85199" fill="#000000" font-family="Montserrat" font-size="14.67px" font-weight="bold" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="120" y="354.85199" font-family="Montserrat" font-weight="normal"><tspan x="120" y="354.85199">22b141272390be2a77f3243479f2d7dc886678fb</tspan><tspan x="455.24219" y="354.85199" dx="0"/></tspan><tspan x="120" y="373.18533"><tspan x="120" y="373.18533" font-family="Montserrat" font-weight="normal">Návrh hlavní sekce.</tspan></tspan></text>
+   <circle cx="80" cy="480" r="15" fill="#dcdcff" stroke="#5e5e5e" stroke-linecap="round" stroke-width="2" style="paint-order:normal"/>
+   <text x="120" y="474.85199" fill="#000000" font-family="Montserrat" font-size="14.67px" font-weight="bold" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="120" y="474.85199" font-family="Montserrat" font-weight="normal"><tspan x="120" y="474.85199">f5d9bec1bda63e9977df30d1d5402273b74cdb99</tspan><tspan x="465.52606" y="474.85199" dx="0"/></tspan><tspan x="120" y="493.18533"><tspan x="120" y="493.18533" font-family="Montserrat" font-weight="normal">Obrázek v banneru a hlavní menu.</tspan></tspan></text>
+   <circle cx="80" cy="300" r="15" fill="#dcdcff" stroke="#5e5e5e" stroke-linecap="round" stroke-width="2" style="paint-order:normal"/>
+   <text x="120" y="294.85199" fill="#000000" font-family="Montserrat" font-size="14.67px" font-weight="bold" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="120" y="294.85199" font-family="Montserrat" font-weight="normal"><tspan x="120" y="294.85199">ce9d265edbb5deef0dbf249cded08d86c39125ec</tspan><tspan x="470.91147" y="294.85199" dx="0"/></tspan><tspan x="120" y="313.18533"><tspan x="120" y="313.18533" font-family="Montserrat" font-weight="normal">Základní styl patičky.</tspan></tspan></text>
+   <circle cx="80" cy="540" r="15" fill="#dcdcff" stroke="#5e5e5e" stroke-linecap="round" stroke-width="2" style="paint-order:normal"/>
+   <text x="120" y="534.85199" fill="#000000" font-family="Montserrat" font-size="14.67px" font-weight="bold" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="120" y="534.85199" font-family="Montserrat" font-weight="normal"><tspan x="120" y="534.85199">35d1a349263b291c5f7b3f5f4c5673a771126256</tspan><tspan x="442.9245" y="534.85199" dx="0"/></tspan><tspan x="120" y="553.1853"><tspan x="120" y="553.1853" font-family="Montserrat" font-weight="normal">Základní layout stránky.</tspan></tspan></text>
+  </g>
+ </g>
+</svg>

@@ -24,9 +24,12 @@ Samotné pole je ovšem také hodnota. Není tedy problém mít pole polí.
 
 ### Indexy
 
-Hodnoty uvnitř polí sídlí na takzvaných indexech, které se vždy počítají od nuly. Je to takový zvláštní programátorský úzus, že se většinou vždy začíná počítat od nuly a ne od jedničky. Má to svoje důvody, které tady ovšem nebudeme rozvádět. Raději si rovnou ukážeme, jak přistupovat k hodnotám na indexech.
+Hodnoty uvnitř polí sídlí na takzvaných indexech. Je to takový zvláštní programátorský fetiš, že indexy začínají nulou, nikoliv jedničkou. Má to svoje důvody, které tady ovšem nebudeme rozvádět. Raději si rovnou ukážeme, jak přistupovat k hodnotám na indexech.
 
 ```jscon
+> const marks = [3, 1, 2, 4]
 > marks[0]
 3
+> marks[3]
+4
 ```

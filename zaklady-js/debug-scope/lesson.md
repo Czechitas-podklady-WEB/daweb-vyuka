@@ -1,8 +1,10 @@
 Do této chvíli jsme ohledně jazyka JavaScript učili mnoho a mnoho nových věcí. Věcí, které často potřebují čas na strávení a zažití aby se v hlavě dobře usadily na ta správná místa. Pokud se něco nového a náročného snažíme naučit příliš rychle, snadno se stane, že nám v hlavách nové pojmy lítají jak splašené a není jasné, co souvisí s čím a co kam patří. V této lekci tedy vrhneme více světla na věci, které jste už v minulých lekcích použili, ale možná ještě nebyl čas se nad nimi pořádně zamyslet.
 
-## Jak to vidí runtime
+## Ladění programů
 
-Jistě už si pamatujete, že úkolem JavaScript runtimu je číst váš kód a vykonávat ho přesně tak, jak jste jej napsali. Jako programátorům nám bude velmi k užitku, když si dokážeme dobře představit, co všechno vlastně musí runtime při vykonávání našeho kódu dělat a jak nad naším kódem vlastně "přemýšlí".
+Žádný programátor na světě nepíše programy bez chyby. Taková věc je zcela mimo lidské možnosti a schopnosti. Navíc čím jsou programy větší a složitější, tím roste prostor pro stále záludnější a húře odhalitelné chyby. Velmi brzy už je program tak komplikovaný, že programátor není schopen chybu najít pouze tím, že si po sobě čte svůj kód. Nedej bože, pokud navíc před sebou nemá vlastní, nýbrž kód kolegy, který již dávno opustil firmu, a svému kódu rozuměl pouze on. V takovou chvíli přichází na řadu takzvané <term cs="ladění" en="debugging">.
+
+Ladění kódu probíhá tak, že spustíme JavaScript runtime ve speciálním ladícím módu. V tomto módu můžeme kód spouštět řádek po řádku a máme tak čas si prohlédnout, co se v programu přesně děje. Ladění se také velmi hodí v začátcích programování. To, že si můžete program krok po kroku zastavovat a sledovat jak se doopravdy provádí, vám pomůže lépe si představit, co runtime při spouštění kódu vlastně dělá a jak nad ním "přemýšlí",
 
 ## Obor platnosti proměnných
 
@@ -12,9 +14,9 @@ Mějme následující podmínku, která kontroluje věk uživatele a vypisuje ne
 if (age < 18) {
   const remains = 18 - age;
 
-  if (remains >= 2) {
+  if (remains <= 2) {
     alert('Už to máš za pár');
-  } else if (remains >= 5) {
+  } else if (remains <= 5) {
     alert(`Ještě si počkáš ${remains} let`);
   } else {
     alert('Utíkej za mamkou');
@@ -171,15 +173,3 @@ Všimněte si lokální proměnné `timeElm`. Tato je vytvořena v bloku `if`. J
 JavaScript runtime však tuto prekérní situaci vyřeší za nás. Ve chvíli, kdy nějaká funkce používá proměnnou z nadřazeného bloku, runtime si zapamatuje, že takovou proměnnou nemá na konci jejího bloku mazat. Funkce si potom tuto proměnnou nese s sebou po celý svůj život. Říkáme pak, že proměnná se do funkce uzavře a vzniká tak <term cs="uzávěr" en="closure">. V našem případě se tedy proměnná `timeElm` uzavřela do funkce `countDown`.
 
 Uzávěr takto zkraje možná zní jako velmi technická záležitost. V JavaScriptu ale budeme uzávěry používat na každém kroku. Je tedy dobré vědět, co se v takovém případě děje. Občas také můžeme narazit na velmi prekérní problémy způsobené nesprávným použitím uzávěru. Takovéto perly si ukážeme, až budeme probírat cykly.
-
-## Ladění programů
-
-Žádný programátor na světě nepíše programy bez chyby. Taková věc je zcela mimo lidské možnosti a schopnosti. Navíc čím jsou programy větší a složitější, tím roste prostor pro stále záludnější a húře odhalitelné chyby. Velmi brzy už je program tak komplikovaný, že programátor není schopen chybu najít pouze tím, že si po sobě čte svůj kód. Nedej bože, pokud to navíc není jeho kód, ale kód kolegy, který už dávno opustil firmu a svému kódu rozuměl pouze on. V takovou chvíli přichází na řadu takzvané <term cs="ladění" en="debugging">.
-
-## Jak stavět programy
-
-### DRY - neopakuj se!
-
-```
-
-```

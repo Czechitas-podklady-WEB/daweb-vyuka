@@ -26,3 +26,38 @@ Přestavte si, že jste právě dokončili nějakou ucelenou věc na vašem proj
 Náš snímek si tedy pamatuje stav celého projektu v určitém čase. V teorii verzování kódu se takovému snímku říká <term cs="revize" en="revision">. Git však místo termínu revize používá slovo _commit_, které nemá žádný časký překlad. Toto slovo ale používají naprosto všichni, kdo s Gitem pracují. Budeme jej tedy používat i my.
 
 Ke každému commitu se navíc přidává zpráva o tom, co se v něm dokončilo za práci. Po čase si pak můžeme prohlédnout historii commitů v projektu a přehledně vidět, co se přesně dělo.
+
+![Commity](assets/commits.svg)
+
+Všimněte si, že každý commit obsahuje zprávu a takzvaný <term cs="digitální otisk" en="hash">. Tento otisku jednoznačně identifikuje každý commit, abychom se kdykoliv mohli k libovolnému commitu vrátit.
+
+## Důležíté příkazy
+
+**clone**
+: Vytvoří lokální kopii vzdáleného repozitáře.
+
+**add**
+: Přidá změny do oblasti připravených změn.
+
+**status**
+: Zobrazí všechny změny proti poslednímu commitu.
+
+**reset**
+: Vyprázdní oblast připravených změn.
+
+**commit**
+: Vytvoří novou revizi
+
+**push**
+: Nahraje všechny nově vytvořené commity do vzdáleného repozítáře.
+
+**log**
+: zobrazí historii commitů.
+
+### Časté příkazy
+
+Zahrnout do stage všechny změny z aktuálního adresáře
+
+```sh
+$ git add .
+```
