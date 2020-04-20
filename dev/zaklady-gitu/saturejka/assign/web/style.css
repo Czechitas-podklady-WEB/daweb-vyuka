@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300|Playfair+Display:700&display=swap&subset=latin-ext');
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+}
+
+h1,
+h2 {
+  font-family: 'Playfair Display', serif;
+}

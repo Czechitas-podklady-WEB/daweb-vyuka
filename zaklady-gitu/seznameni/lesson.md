@@ -19,7 +19,7 @@ Základním pojmem Gitu je takzvaný <term cs="repozitář" en="repository">, ve
 
 My si společně vytvoříme účet na GitHubu.
 
-## Zákldní pojmy
+## Základní pojmy
 
 Přestavte si, že jste právě dokončili nějakou ucelenou věc na vašem projektu. Například jste opravili nějakou chybu nebo přidali nějakou funkčnost. V tuto chvíli si chcete udělat jakýsi snímek toho, v jakém stavu se projekt právě teď nachází, abyste se případně do tohoto stavu mohli kdykoliv vrátit. Je to podobné, jako když hrajete počítačovou hru a chcete si ji v nějakém místě uložit, abyste se pak na toto místo mohli vrátit, kdyby vaši postavu později ve hře potkal neblahý osud.
 
@@ -61,3 +61,8 @@ Zahrnout do stage všechny změny z aktuálního adresáře
 ```sh
 $ git add .
 ```
+
+@exercises ## Cvičení [
+
+- saturejka
+  ]@
