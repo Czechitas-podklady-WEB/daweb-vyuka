@@ -16,7 +16,7 @@ Git je velmi flexibilní a dá se použít mnoha různými způsoby. Existuje v�
 ### Repozitář
 
 Základním pojmem Gitu je takzvaný <term cs="repozitář" en="repository">, ve kterém se nachází všechny soubory, které tvoří váš projekt. Většinou bývá na nějakém serveru, na který mají přistup všichni vývojáři projektu a mohou do něj přispívat svým kódem. Takový server může běžet například v rámci nějaké firmy a pouze vývojáři z této firmy něj mají přístup. Pokud na projektu pracujete sami, můžete si pro něj vytvořit repozitář na některé hostovací službě jako [GitHub](https://github.com/), [GitLab](https://gitlab.com/), [Bitbucket](https://bitbucket.org/) a další.
-
+  
 My si společně vytvoříme účet na GitHubu.
 
 ## Základní pojmy
@@ -53,6 +53,13 @@ Všimněte si, že každý commit obsahuje zprávu a takzvaný <term cs="digitá
 
 **log**
 : zobrazí historii commitů.
+
+### Příkazy pro počáteční nastavení
+
+```sh
+$ git config --global user.name "Jméno Příjmení"
+$ git config --global user.email "muj-email@example.com"
+```
 
 ### Časté příkazy
 
