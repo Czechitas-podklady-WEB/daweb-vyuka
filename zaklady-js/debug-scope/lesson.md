@@ -1,6 +1,190 @@
 Do této chvíli jsme ohledně jazyka JavaScript učili mnoho a mnoho nových věcí. Věcí, které často potřebují čas na strávení a zažití aby se v hlavě dobře usadily na ta správná místa. Pokud se něco nového a náročného snažíme naučit příliš rychle, snadno se stane, že nám v hlavách nové pojmy lítají jak splašené a není jasné, co souvisí s čím a co kam patří. V této lekci tedy vrhneme více světla na věci, které jste už v minulých lekcích použili, ale možná ještě nebyl čas se nad nimi pořádně zamyslet.
 
+## Hodnoty null a undefined
+
+Občas se nám stane, že si potřebujeme nějakou proměnnou připravit, ale zatím ještě nevíme, jaká v ní má být hodnota. Chceme tedy, aby na začátku byla prázdná. To můžeme zařídit pomocí speciální hodnoty `null`. Toto je v postatě nový typ hodnoty vedle čísel, řetězců, funkcí apod. Můžeme si představit, že hodnota `null` znamená <i>nic</i>.
+
+```js
+'use strict';
+
+const passwordElm = document.querySelector('#pass-input');
+const password = passwordElm.value;
+let message = null;
+
+if (password === 'swordfish') {
+  message = 'Access granted';
+} else {
+  message = 'Access denied';
+}
+
+alert(message);
+```
+
+Explicitnímu ukládání hodnoty `null` do proměnných jako výše, bychom se měli spíše vyhýbat. Uvedený program se dá bez problému přepsat bez použití `null`.
+
+```js
+'use strict';
+
+const passwordElm = document.querySelector('#pass-input');
+const password = passwordElm.value;
+let message = 'Access denied';
+
+if (password === 'swordfish') {
+  message = 'Access granted';
+}
+
+alert(message);
+```
+
+Často se však stane, že hodnotu `null` vrací nějaké funkce v situaci, kdy se něco nepovedlo. Velmi častý případ je to u funkce `document.querySelector`, která vrací `null`, pokud se jí na stránce nezdaří najít element podle zadaného selektoru.
+
+Pojďme zkusit omylem vybrat vstupní políčko pomocí CSS třídy, která však v HTML vůbec není.
+
+```jscon
+> const passwordElm = document.querySelector('.pass-input')
+> passwordElm
+null
+```
+
+Vidíte, že v proměnné `passwordElm` máme místo očekávaného elementu uloženo `null`.
+
+Otestovat proměnnou na hodnotu `null` můžeme provést jednoduchou podmínkou.
+
+```js
+if (passwordElm === null) {
+  console.log('Element nenalezen');
+}
+```
+
+### Hodnota undefined
+
+Kromě celkem užitečné hodnoty `null` JavaScript také obsahuje zákeřnou hodnotu `undefined`. Tato hodnota v podstatě znamená "ještě větší prázdno než nic". Pokud bychom přirovnali proměnné k šuplíkům, mohli bychom si představovat, že hodnota `null` znamená prázdný šuplík. Hodnota `undefined` by pak znamenala, že ve skříni chybí i sám šuplík a zíráme jen na prázdnou díru ve skříni.
+
+Hodnotu `undefined` potkáme v mnoha situacích, ale nejčastěji ve chvíli, kdy se snažíme přistoupit k vlastnosi, která neexistuje. Je například velmi snadné udělat překlep v anglickém slově `length`.
+
+```jscon
+> const name = 'martin'
+> name.lenght
+undefined
+```
+
+Všimněte si, že JavaScript runtime vrací `undefined` také jako výsldek vytvoření proměnné. Kód uvedený výše tak ve skutečnosti vypadá v konzoli takto.
+
+```jscon
+> const name = 'martin'
+undefined
+> name.lenght
+undefined
+```
+
+Hodnotu `undefined` najdeme také v proměnných, do kterých nepřiřadíme žádnout hodnotu. Toto je však možné provést pouze s proměnnými vytvořenými pomocí `let`.
+
+```jscon
+> let name
+undefined
+> name
+undefined
+```
+
+Podobně jako u hodnoty `null` můžeme přítomnost hodnoty `udefined` ověřit podmínkou.
+
+```js
+if (name === undefined) {
+  console.log('Něco se pokazilo');
+}
+```
+
+Hodnota `undefined` nám v budoucní způsobí ještě hodně nepříjemností, je tedy dobré se již teď obrnit trpělivostí.
+
+## Porozumění chybám
+
+Každý programátor, začátečník i profesionál, dělá v programech chyby. Nikdy se vám nepodaří dosáhout toho, že byste chyby přestali dělat. Jak časem porostou vaše zkušenosti a dovednosti, tím také poroste komplikovanost programů, které budete psát. Důležité je tedy naučit se chybu co nejrychlej odhalit a opravit.
+
+Pokud máme v programu tak závažnou chybu, že JavaScript runtime vůbec nerozumí tomu, co po něm chceme, vypíše takzvanou <term cs="chybovou hlášku" en="error message">. Pokud náš program nefunguje, jak má, a obdržíme chybovou hlášku, je to důved k velké radosti. Máme totiž rovnou informaci o tom, kde je něco špatně.
+
+V následující částí si probereme nejčastější chyby, na které jako začátečníci jistě často narazíte.
+
+### Přístup k neexistujicím věcem
+
+Často se nám může stát, že se pokoušíme použít proměnnou, funkci, metodu či vlastnost, která neexistuje.
+
+**Neexistujicí proměnná.** Uvažte náš program z předchozí kapitoly napsaný takto.
+
+```js
+'use strict';
+
+const passwordElm = document.querySelector('#pass-input');
+const password = passwordElm.value;
+let message = 'Access denied';
+
+if (pasword === 'swordfish') {
+  message = 'Access granted';
+}
+
+alart(message);
+```
+
+Při pokusu o spuštění takového programu obdržíme tuto chybovou hlášku
+
+```
+Uncaught ReferenceError: pasword is not defined
+    at index.js:
+```
+
+JavaScript runtime se nám tímto snaží říct, že na řádku 7 v souboru `index.js` přestal našemu programu rozumět. Dokonce nám i řekne proč. Říká, že `pasword` není definováno. Což je pravda, žádné taková proměnná v našem programu neexistuje. Nejspíš jsme měli na mysli proměnnou `password`. Opravit takovou chybu je tedy velmi jednoduché.
+
+Podobnou chybu však obdržíme i na řádku 11, kde se snažíme zavolat neexistující funkci.
+
+```js
+Uncaught ReferenceError: alart is not defined
+    at index.js:11
+```
+
+Vzpomeňte si, že funkce voláme tak, že použijeme proměnnou, ve které je funkce uložena. Je tedy logické, že runtime hlásí, že proměnnou `alart` nezná.
+
+**Neexistující vlastnost či metoda.** Upravme náš předchozí program takto.
+
+```js
+'use strict';
+
+const passwordElm = document.querySelevtor('#pass-input');
+const password = passwordElm.value;
+let message = 'Insecure password';
+
+if (password.lenght >= 8) {
+  message = 'Secure password';
+}
+
+alert(message);
+```
+
+Při jeho spuštění narazíme na následující hlášku.
+
+```
+Uncaught TypeError: document.querySelevtor is not a function
+    at index.js:3
+```
+
+Tímto nám JavaScript runtime říká, že `document.querySelevtor` není funkce, nemůže ji tedy zavolat. A má pravdu. Pokud zkusíme zjistit, co je uloženo ve vlastnosti `document.querySelevtor`, objevíme naši známou hodnotu.
+
+```jscon
+> document.querySelevtor
+undefined
+```
+
+Pokoušíme se tedy zavolat hodnotu `undefined`, což se nám nepovede, protože to skutečně není funkce. Můžeme si to dokonce přímo vyzkoušet.
+
+```jscon
+> undefined()
+Uncaught TypeError: undefined is not a function
+    at <anonymous>:1:1
+```
+
+Pokud tento překlep opravíme, dostaneme ihned další chybu.
+
 ## Ladění programů
+
+Často totiž náš program napíšeme tak, že nedělá, co chceme, ale s hlediska JavaScriptu je zcela v pořádku.
 
 Žádný programátor na světě nepíše programy bez chyby. Taková věc je zcela mimo lidské možnosti a schopnosti. Navíc čím jsou programy větší a složitější, tím roste prostor pro stále záludnější a húře odhalitelné chyby. Velmi brzy už je program tak komplikovaný, že programátor není schopen chybu najít pouze tím, že si po sobě čte svůj kód. Nedej bože, pokud navíc před sebou nemá vlastní, nýbrž kód kolegy, který již dávno opustil firmu, a svému kódu rozuměl pouze on. V takovou chvíli přichází na řadu takzvané <term cs="ladění" en="debugging">.
 
