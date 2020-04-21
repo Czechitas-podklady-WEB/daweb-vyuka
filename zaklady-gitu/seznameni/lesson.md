@@ -54,6 +54,13 @@ Všimněte si, že každý commit obsahuje zprávu a takzvaný <term cs="digitá
 **log**
 : zobrazí historii commitů.
 
+### Příkazy pro počáteční nastavení
+
+```sh
+$ git config --global user.name "Jméno Příjmení"
+$ git config --global user.email "muj-email@example.com"
+```
+
 ### Časté příkazy
 
 Zahrnout do stage všechny změny z aktuálního adresáře
