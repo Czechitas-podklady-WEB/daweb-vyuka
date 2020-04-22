@@ -49,7 +49,7 @@ Všimněte si, že každý commit obsahuje zprávu a takzvaný <term cs="digitá
 : Vytvoří novou revizi
 
 **push**
-: Nahraje všechny nově vytvořené commity do vzdáleného repozítáře.
+: Nahraje všechny nově vytvořené commity do vzdáleného repozitáře.
 
 **log**
 : zobrazí historii commitů.
@@ -67,6 +67,24 @@ Zahrnout do stage všechny změny z aktuálního adresáře
 
 ```sh
 $ git add .
+```
+
+Zobrazit lokální stav (ukáže například, co je a není na stage)
+
+```sh
+$ git status
+```
+
+Vytvořit commit ze stage
+
+```sh
+$ git commit -m "Zpráva"
+```
+
+Nahrát nové commity na server (GitHub, GitLab, Bitbucket, …)
+
+```sh
+$ git push
 ```
 
 @exercises ## Cvičení [
