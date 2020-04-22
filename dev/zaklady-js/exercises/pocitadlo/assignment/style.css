@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+button {
+  border: none;
+  background-color: orange;
+  padding: 0.5rem;
+  width: 5rem;
+  color: white;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: red;
+}
+
+.counter {
+  width: 5rem;
+}
+
+.counter__value {
+  text-align: center;
+  font-size: 3rem;
+  padding: 1rem;
+  width: 5rem;
+}

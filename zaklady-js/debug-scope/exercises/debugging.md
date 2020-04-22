@@ -2,33 +2,31 @@ Josef Nováček z Rožnova pod Radhoštěm ještě neabsolvoval žádný kurz Cz
 
 Níže vidíte celou řadu pokusů, které neúspěšný Nováček sestavil. V každém je chyba. Zkuste si každý úryvek kódu nejprve prohlédnout a odhadnout, co je špatně; pokud si nebudete vědět rady, můžete jej zkopírovat do souboru a odhalit s výpomocí devtools v prohlížeči.
 
-```
+```html
 <button>Klikni sem</button>
 
 <script>
-function pozdrav() {
-  alert("Ahoj!");
-}
+  const pozdrav = () => {
+    alert('Ahoj!');
+  };
 
-let tlacitko = document.querySelector("button");
-tlacitko.addEventListener("click", pozdrav());
+  let tlacitko = document.querySelector('mutton');
+  tlacitko.addEventListener('click', pozdrav);
 </script>
 ```
 
-
-```
+```html
 <button>Klikni sem</button>
 
 <script>
-function pozdrav() {
-  alert("Ahoj!");
-}
+  const pozdrav = () => {
+    alert('Ahoj!');
+  };
 
-let tlacitko = document.querySelector("mutton");
-tlacitko.addEventListener("click", pozdrav);
+  const tlacitko = document.querySelector('button');
+  tlacitko.addEventListener('click', pozdrav());
 </script>
 ```
-
 
 ```
 <button>Klikni sem</button>
@@ -43,7 +41,6 @@ tlacitko.removeEventListener("click", pozdrav);
 </script>
 ```
 
-
 ```
 <button>Klikni sem</button>
 
@@ -57,7 +54,6 @@ tlacitko.addEventListener("click", pozdrav);
 </script>
 ```
 
-
 ```
 <button>Klikni sem</button>
 
@@ -70,7 +66,6 @@ let tlacitko = document.querySelector("button");
 tlacitko.addEventListener("click", pozdrav);
 </script>
 ```
-
 
 ```
 <button>Klikni sem</button>
@@ -90,7 +85,6 @@ tlacitko.addEventListener("click", pozdrav);
 </script>
 ```
 
-
 ```
 <button>Klikni sem</button>
 
@@ -104,7 +98,6 @@ let tlacitko = document.querySelector("button");
 tlacitko.addEventListener("click", pozdrav);
 </script>
 ```
-
 
 ```
 <button>Klikni sem</button>
@@ -121,7 +114,6 @@ tlacitko.addEventListener("click", pozdrav);
 </script>
 ```
 
-
 ```
 <script>
 function pozdrav() {
@@ -135,7 +127,6 @@ tlacitko.addEventListener("click", pozdrav);
 <button>Klikni sem</button>
 ```
 
-
 ```
 <button id="pozdrav">Klikni sem</button>
 
@@ -148,7 +139,6 @@ let tlacitko = document.getElementById("#pozdrav");
 tlacitko.addEventListener("click", pozdrav);
 </script>
 ```
-
 
 ```
 <button>Klikni sem</button>
