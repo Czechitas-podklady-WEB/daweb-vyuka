@@ -31,7 +31,7 @@ Vaším úkolem je doplnit kód do následujicích funkcí:
 : Funkce, která se spustí při stisknutí tlačítka s číslicí. Pokud je zrovna na displeji zobrazen výstup, tedy proměnná `display` obsahuje řetězec `'output'`, stisknutá cifra nahradí celý obsah displeje a přepne displej do stavu `'input'`. Pokud je displej ve stavu `'input'`, znamená to, že jsme v procesu zadávání čísla. Cifra se tedy přidá na konec všech cifer, které už na displeji svítí. Pozor na cifru 0, které se nepřídává na konec, pokud na displeji svítí jen nula. To je proto, abychom nemohli zadat čísla jako 00007.
 
 `getValue`
-: Získá hodnotu z displeje jako datový typ číslo.
+: Získá hodnotu z displeje kalkulačky. Hodnotu vrátí jako datový typ číslo.
 
 `setAccumulator`
 : Tuto funkci používáme ve chvíli, kdy chceme do akumulátoru uložit nějakou hodnotu (parametr `value`) a zároveň ji zobrazit na displeji. Pozor, že v tuto chvíli používáme displej jako výstup, takže kromě nastavení proměnné `acc` a zobrazení na displeji musíme také proměnnou `display` nastavit na hodnotu `'output'`.
