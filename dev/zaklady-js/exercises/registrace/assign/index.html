@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Registrace</title>
+  </head>
+  <body>
+    <div class="reg-form">
+      <div class="reg-form__inputs">
+        <label for="username">Uživatelské jméno:</label>
+        <input id="username" type="text" spellcheck="false" />
+
+        <label for="pass1">Heslo:</label>
+        <input id="pass1" type="password" />
+
+        <label for="pass2">Heslo podruhé:</label>
+        <input id="pass2" type="password" />
+      </div>
+      <div class="reg-form__controls">
+        <button id="btn-register">Registrovat</button>
+      </div>
+
+      <div class="reg-form__error"></div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

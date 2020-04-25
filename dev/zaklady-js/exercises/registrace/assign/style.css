@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+.reg-form {
+  max-width: 16rem;
+  margin: 5rem auto;
+}
+
+label,
+input {
+  display: block;
+  width: 100%;
+  color: #666;
+}
+
+label {
+  margin: 1rem 0 0.25rem 0;
+}
+
+input {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 2px solid lightgray;
+}
+
+.reg-form__controls {
+  margin: 1rem 0;
+  text-align: right;
+}
+
+button {
+  border-radius: 5px;
+  background-color: lightcoral;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+}
+
+.reg-form__error {
+  color: red;
+}
