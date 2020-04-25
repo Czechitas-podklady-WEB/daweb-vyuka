@@ -267,3 +267,12 @@ Tímto způsobem se můžeme propracovat až k velmi složitým algoritmům, cyk
 - uzivatele
 - pohyby-na-uctu
   ]@
+
+## Povinné čtení na doma
+
+Funkce `document.querySelectorAll`.
+
+@exercises ## Doporučené úložky na doma [
+
+- cekani-na-sestku
+  ]@
