@@ -3,7 +3,7 @@ title: Uživatelé
 demand: 2
 ---
 
-Mejmě následující seznam uživatelů.
+Založte JavaScriptový program s následujícím seznamem uživatelů.
 
 ```
 const users = ['paja', 'kaja', 'vlasta', 'peta', 'alex', 'misa'];

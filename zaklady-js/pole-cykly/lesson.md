@@ -23,6 +23,8 @@ Samotné pole je ovšem také hodnota. Není tedy problém mít například pole
 > const expenses = [['john', 250], ['sue', 170], ['peter', 337]]
 ```
 
+Pozor na to, že podobně jako existuje prázný řetězec `''`, existuje také prázdné pole `[]`. Je to zcela běžná hodnota, která se často velmi hodí.
+
 ### Indexy
 
 Hodnoty uvnitř polí sídlí na takzvaných indexech. Programátoři však mají takový zvláštní fetiš, že všechno počítačí počínaje nulou, nikoliv jedničkou. Má to svoje důvody, které však zatím nebudeme rozvádět. Raději si rovnou ukážeme, jak přistupovat k hodnotám na jednotlivých indexech.
@@ -44,6 +46,17 @@ Pomocí indexů také můžeme hodnoty uvnitř pole měnit. Dejme tomu, že si p
 > marks
 [ 3, 1, 2, 2 ]
 ```
+
+U polí, která obsahují další pole, se k jednotlivým prvkům dostaneme pomocí vícenásobného indexování. Takto například zjistíme, kolik utratil Petr v našem polí výdajů.
+
+```jscon
+> const expenses = [['john', 250], ['sue', 170], ['peter', 337]]
+undefined
+> expenses[2][1]
+337
+```
+
+### Vlastnosti a metody
 
 Pole také mají zajímavé vlastnosti a metody. Vlastnost `length` už známe z řetězců.
 
@@ -140,10 +153,54 @@ true
 -1
 ```
 
+### Použití polí
+
+Pole v programování potkáme na každém kroku. Můžeme je například použít pro reprezentaci dat. Takto například pomocí reprezentujeme tabulku výdajů z našeho úplně prvního příkladu se spolubydlením.
+
+```js
+const expenses = [
+  ['Petr', 'Prací prášek', 240],
+  ['Ondra', 'Savo', 80],
+  ['Pavla', 'Toaleťák', 65],
+  ['Zuzka', 'Mýdlo', 50],
+  ['Pavla', 'Závěs do koupelny', 350],
+  ['Libor', 'Pivka na kolaudačku', 124],
+  ['Petr', 'Pytle na odpadky', 75],
+  ['Míša', 'Utěrky na nádobí', 130],
+  ['Ondra', 'Toaleťák', 120],
+  ['Míša', 'Pečící papír', 30],
+  ['Zuzka', 'Savo', 80],
+  ['Petr', 'Tapeta na záchod', 315],
+  ['Ondra', 'Toaleťák', 64],
+];
+```
+
+Pomocí pole polí můžeme také reprezentovat herní plány v různých počítačovách hrách. Takto například mohou vypadat rozehrané piškvorky 3x3.
+
+```js
+const tictactoe = [
+  ['o', ' ', ' '],
+  [' ', 'x', ' '],
+  [' ', 'o', 'x'],
+];
+```
+
+Vidíme, že na tahu je zrovna křížek. Můžeme tak snadno provést nějaký chytrý tah.
+
+```jscon
+> tictactoe[0][2] = 'x'
+> tictactoe
+[
+  ['o', ' ', 'x'],
+  [' ', 'x', ' '],
+  [' ', 'o', 'x'],
+];
+```
+
 @exercises ## Cvičení - práce s poli [
 
 - pole-v-divadle
-- registrace
+- sachovnice
   ]@
 
 ## Cykly
@@ -270,9 +327,102 @@ Tímto způsobem se můžeme propracovat až k velmi složitým algoritmům, cyk
 
 ## Povinné čtení na doma
 
-Funkce `document.querySelectorAll`.
+Díky tomu, že už rozumíme polím, si můžeme představit funkci `document.querySelectorAll`. Tato funguje podobně jako už známá funkce `document.querySelector`. Vrátí nám však **všechny** elementy, které najde pomocí zadaného selektoru. Výsledek obdržíme jako pole DOM elementů, které pak můžeme zpracovat v nějakém cyklu.
+
+V lekci o událostech jsme si slíbili, že díky cyklům dokážeme zjednodušít kód číselníku naší kalkulačky. Ten nejprve vypadal takto.
+
+```html
+<div class="numpad">
+  <div class="display">0</div>
+  <button id="btn7" class="num-btn">7</button>
+  <button id="btn8" class="num-btn">8</button>
+  <button id="btn9" class="num-btn">9</button>
+  <button id="btn4" class="num-btn">4</button>
+  <button id="btn5" class="num-btn">5</button>
+  <button id="btn6" class="num-btn">6</button>
+  <button id="btn1" class="num-btn">1</button>
+  <button id="btn2" class="num-btn">2</button>
+  <button id="btn3" class="num-btn">3</button>
+  <button id="btn0" class="num-btn num-btn--wide">0</button>
+</div>
+```
+
+```js
+'use strict';
+
+const btnClick = (event) => {
+  const displayElm = document.querySelector('.display');
+  displayElm.textContent += event.target.textContent;
+};
+
+document.querySelector('#btn0').addEventListener('click', btnClick);
+document.querySelector('#btn1').addEventListener('click', btnClick);
+document.querySelector('#btn2').addEventListener('click', btnClick);
+document.querySelector('#btn3').addEventListener('click', btnClick);
+document.querySelector('#btn4').addEventListener('click', btnClick);
+document.querySelector('#btn5').addEventListener('click', btnClick);
+document.querySelector('#btn6').addEventListener('click', btnClick);
+document.querySelector('#btn7').addEventListener('click', btnClick);
+document.querySelector('#btn8').addEventListener('click', btnClick);
+document.querySelector('#btn9').addEventListener('click', btnClick);
+```
+
+Díky `document.querySelectorAll` můžeme posluchače `btnClick` nasadit na všechna tlačítka jedním cyklem.
+
+```js
+'use strict';
+
+const btnClick = (event) => {
+  const displayElm = document.querySelector('.display');
+  displayElm.textContent += event.target.textContent;
+};
+
+const buttons = document.querySelectorAll('.num-btn');
+for (let i = 0; i < button.length; i += 1) {
+  buttons[i].addEventListener('click', btnClick);
+}
+```
+
+### Datové atributy
+
+Všimněte si, že funkce `btnClick` používá `textContent` k tomu, aby získala číslo, které má tlačítko vlažit na displej. Snadno bychom se však mohli ocitnout v situaci, kdy by naše tlačítka neobsahovala ten správný `textContent`. Například bychom mohli chtít mít tlačítka jako obrázky, které žádný `textContent` nemají. I tak bychom si ale potřebovali někam uložit cifru, která k tlačítku patří. K tomu můžeme použít takzvané datové atributy.
+
+Do jakéhokoliv HTML elementu můžeme přídat libovolný atribut, jehož jméno začíná předponou `data-`. Cifry si tak můžeme uložit například do atributu `data-digit`.
+
+```html
+<div class="numpad">
+  <div class="display">0</div>
+  <img id="btn7" data-digit="7" class="num-btn" src="img/digit7.png" />
+  <img id="btn8" data-digit="8" class="num-btn" src="img/digit8.png" />
+  <img id="btn9" data-digit="9" class="num-btn" src="img/digit9.png" />
+  <img id="btn4" data-digit="4" class="num-btn" src="img/digit4.png" />
+  <img id="btn5" data-digit="5" class="num-btn" src="img/digit5.png" />
+  <img id="btn6" data-digit="6" class="num-btn" src="img/digit6.png" />
+  <img id="btn1" data-digit="1" class="num-btn" src="img/digit1.png" />
+  <img id="btn2" data-digit="2" class="num-btn" src="img/digit2.png" />
+  <img id="btn3" data-digit="3" class="num-btn" src="img/digit3.png" />
+  <img
+    id="btn0"
+    data-digit="0"
+    class="num-btn num-btn--wide"
+    src="img/digit0.png"
+  />
+</div>
+```
+
+K datovým atributům se pak v JavaScriptu snadno dostaneme pomocí vlastnosti `dataset`. Funkci `btnClick` bychom tak mohli přepsat takto.
+
+```js
+const btnClick = (event) => {
+  const displayElm = document.querySelector('.display');
+  displayElm.textContent += event.target.dataset.digit;
+};
+```
+
+Pomocí datových atributů si můžeme k elementům uložit libovolné informace, se kterými pak můžeme v JavaScriptu snadno pracovat.
 
 @exercises ## Doporučené úložky na doma [
 
 - cekani-na-sestku
+- registrace
   ]@
