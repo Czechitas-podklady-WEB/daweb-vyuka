@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('img/bg.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.field {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: calc(8rem + 16px);
+  width: calc(8rem + 16px);
+}
+
+.square {
+  background-color: black;
+  background-size: contain;
+  width: 2rem;
+  height: 2rem;
+  margin: 2px;
+  box-shadow: 0 0 4px lightblue;
+}
+
+.square--cross {
+  background-image: url('img/cross.svg');
+}
+
+.square--circle {
+  background-image: url('img/circle.svg');
+}

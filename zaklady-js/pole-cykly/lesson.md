@@ -424,5 +424,15 @@ Pomocí datových atributů si můžeme k elementům uložit libovolné informac
 @exercises ## Doporučené úložky na doma [
 
 - cekani-na-sestku
+- male-algoritmy
+- piskvorky-zaklad
+  ]@
+
+@exercises ## Nepovinné úložky na doma [
+
 - registrace
+- skalarni-soucin
+- piskvorky-dokonceni
+- tezsi-algoritmy
+- algoritmy-fajnsmekri
   ]@

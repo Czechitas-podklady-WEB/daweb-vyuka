@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <filter id="filter1283" x="-.24" y="-.24" width="1.48" height="1.48" color-interpolation-filters="sRGB">
+   <feGaussianBlur stdDeviation="5"/>
+  </filter>
+ </defs>
+ <g transform="translate(0 -270.5)">
+  <ellipse cx="50" cy="320.5" rx="22" ry="22" fill="none" filter="url(#filter1283)" stroke="#add8e6" stroke-linecap="round" stroke-width="15" style="paint-order:normal"/>
+ </g>
+</svg>

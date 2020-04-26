@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="720" height="640" version="1.1" viewBox="0 0 720 640" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(0 -392.4)">
+  <g fill="none" stroke="#000" stroke-width="2">
+   <path d="m120 472.4v160"/>
+   <path d="m200 472.4v160"/>
+   <path d="m160 472.4v160"/>
+   <path d="m80 512.4h160"/>
+   <path d="m80 552.4h160"/>
+   <path d="m80 592.4h160"/>
+  </g>
+  <g>
+   <rect x="130" y="522.4" width="20" height="20" ry="4.962e-7" style="paint-order:normal"/>
+   <rect x="90" y="522.4" width="20" height="20" ry="4.962e-7" style="paint-order:normal"/>
+   <rect x="170" y="522.4" width="20" height="20" ry="4.962e-7" style="paint-order:normal"/>
+   <rect x="210" y="522.4" width="20" height="20" ry="4.962e-7" style="paint-order:normal"/>
+  </g>
+  <g fill="none" stroke="#000" stroke-width="2">
+   <path d="m320 472.4v160"/>
+   <path d="m400 472.4v160"/>
+   <path d="m360 472.4v160"/>
+   <path d="m280 512.4h160"/>
+   <path d="m280 552.4h160"/>
+   <path d="m280 592.4h160"/>
+  </g>
+  <g>
+   <rect x="330" y="522.4" width="20" height="20" ry="4.962e-7" style="paint-order:normal"/>
+   <rect x="330" y="482.4" width="20" height="20" ry="4.962e-7" style="paint-order:normal"/>
+   <rect x="330" y="562.4" width="20" height="20" ry="4.962e-7" style="paint-order:normal"/>
+   <rect x="330" y="602.4" width="20" height="20" ry="4.962e-7" style="paint-order:normal"/>
+  </g>
+  <g fill="none" stroke="#000" stroke-width="2">
+   <path d="m520 472.4v160"/>
+   <path d="m600 472.4v160"/>
+   <path d="m560 472.4v160"/>
+   <path d="m480 512.4h160"/>
+   <path d="m480 552.4h160"/>
+   <path d="m480 592.4h160"/>
+  </g>
+  <g>
+   <rect x="530" y="522.4" width="20" height="20" ry="4.962e-7" style="paint-order:normal"/>
+   <rect x="490" y="482.4" width="20" height="20" ry="4.962e-7" style="paint-order:normal"/>
+   <rect x="570" y="562.4" width="20" height="20" ry="4.962e-7" style="paint-order:normal"/>
+   <rect x="610" y="602.4" width="20" height="20" ry="4.962e-7" style="paint-order:normal"/>
+  </g>
+  <g fill="none" stroke="#000" stroke-width="2">
+   <path d="m320 752.4v160"/>
+   <path d="m400 752.4v160"/>
+   <path d="m360 752.4v160"/>
+   <path d="m280 792.4h160"/>
+   <path d="m280 832.4h160"/>
+   <path d="m280 872.4h160"/>
+  </g>
+  <g>
+   <rect x="330" y="802.4" width="20" height="20" ry="4.962e-7" style="paint-order:normal"/>
+   <rect x="290" y="802.4" width="20" height="20" ry="4.962e-7" style="paint-order:normal"/>
+   <rect x="290" y="842.4" width="20" height="20" ry="4.962e-7" style="paint-order:normal"/>
+   <rect x="330" y="842.4" width="20" height="20" ry="4.962e-7" style="paint-order:normal"/>
+  </g>
+  <g fill="none" stroke="#000" stroke-width="2">
+   <path d="m520 752.4v160"/>
+   <path d="m600 752.4v160"/>
+   <path d="m560 752.4v160"/>
+   <path d="m480 792.4h160"/>
+   <path d="m480 832.4h160"/>
+   <path d="m480 872.4h160"/>
+  </g>
+  <g>
+   <rect x="530" y="762.4" width="20" height="20" ry="4.962e-7" style="paint-order:normal"/>
+   <rect x="490" y="802.4" width="20" height="20" ry="4.962e-7" style="paint-order:normal"/>
+   <rect x="570" y="802.4" width="20" height="20" ry="4.962e-7" style="paint-order:normal"/>
+   <rect x="530" y="842.4" width="20" height="20" ry="4.962e-7" style="paint-order:normal"/>
+  </g>
+  <g fill="#000000" font-family="Lato" font-size="26.67px" font-weight="bold" letter-spacing="0px" text-anchor="middle" word-spacing="0px">
+   <text x="160" y="682.41663" text-align="center" style="line-height:1.25" xml:space="preserve"><tspan x="160" y="682.41663" font-family="Montserrat" font-weight="normal">řádek</tspan></text>
+   <text x="360" y="682.41663" text-align="center" style="line-height:1.25" xml:space="preserve"><tspan x="360" y="682.41663" font-family="Montserrat" font-weight="normal">sloupec</tspan></text>
+   <text x="560" y="682.41663" text-align="center" style="line-height:1.25" xml:space="preserve"><tspan x="560" y="682.41663" font-family="Montserrat" font-weight="normal">diagonála</tspan></text>
+   <text x="360" y="962.41669" text-align="center" style="line-height:1.25" xml:space="preserve"><tspan x="360" y="962.41669" font-family="Montserrat" font-weight="normal">čtverec</tspan></text>
+   <text x="560" y="962.41669" text-align="center" style="line-height:1.25" xml:space="preserve"><tspan x="560" y="962.41669" font-family="Montserrat" font-weight="normal">diamant</tspan></text>
+  </g>
+  <g fill="none" stroke="#000" stroke-width="2">
+   <path d="m120 752.4v160"/>
+   <path d="m200 752.4v160"/>
+   <path d="m160 752.4v160"/>
+   <path d="m80 792.4h160"/>
+   <path d="m80 832.4h160"/>
+   <path d="m80 872.4h160"/>
+  </g>
+  <g>
+   <rect x="170" y="802.4" width="20" height="20" ry="4.962e-7" style="paint-order:normal"/>
+   <rect x="90" y="882.4" width="20" height="20" ry="4.962e-7" style="paint-order:normal"/>
+   <rect x="130" y="842.4" width="20" height="20" ry="4.962e-7" style="paint-order:normal"/>
+   <rect x="210" y="762.4" width="20" height="20" ry="4.962e-7" style="paint-order:normal"/>
+  </g>
+  <text x="160" y="962.41663" fill="#000000" font-family="Lato" font-size="26.67px" font-weight="bold" letter-spacing="0px" text-align="center" text-anchor="middle" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="160" y="962.41663" font-family="Montserrat" font-weight="normal">diagonála</tspan></text>
+ </g>
+</svg>
