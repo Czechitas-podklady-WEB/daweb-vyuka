@@ -87,7 +87,7 @@ undefined
 undefined
 ```
 
-Podobně jako u hodnoty `null` můžeme přítomnost hodnoty `udefined` ověřit podmínkou.
+Podobně jako u hodnoty `null` můžeme přítomnost hodnoty `undefined` ověřit podmínkou.
 
 ```js
 if (name === undefined) {
