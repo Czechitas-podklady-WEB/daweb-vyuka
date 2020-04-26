@@ -15,4 +15,8 @@ Založte JavaScriptový program a vytvořte v něm pole, které bude reprezentav
    - 4 - střelec
    - 5 - dáma
    - 6 - král
-1. Otevřete tento program v konzoli a napište příkaz, který přesune bílého koně z pozice f3 na pozici h4.
+1. Otevřete tento program v konzoli a napište příkaz, který přesune bílého koně z pozice f3 na pozici e5.
+
+<!--
+Šachové pozice: https://chessfox.com/how-to-play-in-chess-positions-that-feature-material-imbalances/
+-->
