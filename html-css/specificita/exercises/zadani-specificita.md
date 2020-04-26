@@ -1,5 +1,5 @@
 ---
-title: Úkol na scpecificitu a CSS selektory
+title: Úkol na specificitu a CSS selektory
 demand: 3
 ---
 
