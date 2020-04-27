@@ -19,6 +19,6 @@ lessons:
   - title: Pole a cykly
     link: pole-cykly
     brief: Užitečnost počítačů spočívá především v tom, že dokážou velmi rychle provádět opakovaně nějakou činnost, tedy provádět takzvaný cyklus.
-  - title: Vlastní elementy, stuktura programů
-    link: own-elements
-    brief: Naučíme se vytvářet vlastní DOM elementy a ukážeme si jak psát větší programy tak, abychom se v nich dokázali vyznat.
+  - title: Vlastní DOM elementy
+    link: vlastni-elementy
+    brief: Naučíme se vytvářet vlastní DOM elementy a ukážeme si, jak díky nim vytvářet větší celky na naší stránce pomocí JavaScriptu.

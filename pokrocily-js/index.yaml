@@ -1,18 +1,18 @@
 title: Pokročilý JavaScript
 link: pokrocily-js
 lessons:
-  - title: Objekty a práce s daty
+  - title: Objekty jako data, struktura programů
     link: objekty-data
-    brief: Začneme pomalu objevovat taje objektového programování a ukážeme si, jak pracovat se strukturovanými daty.
+    brief: Ukážeme si jak použít objekty reprezentoci strukturovaných data. Také se naučíme, jak ukáznit kód větších programů.
   - title: Volání API
     link: volani-api
-    brief: Ukážeme si, jak využívat veřejná API k tomu, abychom získali strukturované data pro naše aplikace.
+    brief: Naučíme se, jak využívat veřejná API k tomu, abychom získali strukturované data pro naše aplikace.
   - title: Základy objektového programování
     link: zaklady-oop
-    brief: Naučíme se základní principy objektově orientovaného programování, které nám umožní lépe strukturovat naše aplikace.
+    brief: Představíme si základní principy objektově orientovaného programování, které nám umožní lépe strukturovat naše aplikace.
   - title: Tvorba komponent
     link: komponenty
-    brief: Představíme si způsob, jakým můžeme vytvářet znovupoužitelné prvky naších stránek, které mají vlastní HTML, CSS i JavaScript.
+    brief: Předvedeme si způsob, jakým můžeme vytvářet znovupoužitelné prvky naších stránek, které mají vlastní HTML, CSS i JavaScript.
   - title: Procvičování komponent
     link: komponenty-cviceni
     brief: Komponentové myšlení je potřeba dostat trochu pod kůži. Příklady v této lekci vám s tím pomohou.

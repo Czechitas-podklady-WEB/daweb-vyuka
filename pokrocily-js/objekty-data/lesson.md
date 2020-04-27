@@ -1,6 +1,6 @@
 Čím jsou naše programy větší a užitečnější v reálném životě, tím větší je objem a složitost informací, se kterými potřebují pracovat. Informacím, se kterými program pracuje říkáme data. Jednoduchá data v naších programech reprezentujeme pomocí hodnot jako čísla, řetězce, pravdivostní hodnoty apod. Brzy ale narazíme na komplexnější data, která mají nějakou složitější vnitřní strukturu. K reprezentaci takových dat používáme různé <term cs="datové struktury" en="data structures">. V tomto kurzu jsme zatím viděli pouze jednu takovou strukturu a tou je pole. Dnes si ukážeme další strukturu zvanou <term cs="objekt" en="object">, která na začátku vypadá zcela nevinně, nakonec však navždy změní naše životy a programování už nikdy nebude to, co bývalo dříve.
 
-## Objekty
+## Objekty jako data
 
 Pokud chceme reprezentovat složitější data, i obyčejná pole nám nabízejí dostatak prostoru. Vzpomeňte si například na naši tabulku útrat.
 
@@ -18,7 +18,7 @@ const expenses = [
   ['Míša', 'Pečící papír', 30],
   ['Zuzka', 'Savo', 80],
   ['Petr', 'Tapeta na záchod', 315],
-  ['Ondra', 'Toaleťák', 64]
+  ['Ondra', 'Toaleťák', 64],
 ];
 ```
 
@@ -38,7 +38,7 @@ const expenses = [
   [['Michaela', 'Reischlová'], ['Pečící papír', 1, 'balení'], 30],
   [['Zuzana', 'Kaczynská'], ['Savo', 1, 'ks'], 80],
   [['Petr', 'Bílek'], ['Tapeta na záchod', 1, 'ks'], 315],
-  [['Ondřej', 'Zvěřina'], ['Toaleťák', 1, 'balení'], 64]
+  [['Ondřej', 'Zvěřina'], ['Toaleťák', 1, 'balení'], 64],
 ];
 ```
 
@@ -57,7 +57,7 @@ Abychom měli život o kus jednodušší, použijeme k reprezentaci řádku v ta
 const row = {
   name: 'Petr',
   product: 'Prací prášek',
-  price: 240
+  price: 240,
 };
 ```
 
@@ -98,14 +98,14 @@ Navíc, každý klíč v objektu může odkazovat na libovolnou hodnotu. V řád
 const row = {
   name: {
     first: 'Petr',
-    last: 'Bílek'
+    last: 'Bílek',
   },
   product: {
     name: 'Prací prášek',
     amount: 1.5,
-    unit: 'kg'
+    unit: 'kg',
   },
-  price: 240
+  price: 240,
 };
 ```
 
@@ -127,7 +127,7 @@ Pokud objekty zapisujeme způsobem jako výše, názvy klíčů se musí řídit
 ```js
 const person = {
   'first-name': 'Petr',
-  'last-name': 'Bílek'
+  'last-name': 'Bílek',
 };
 ```
 
@@ -168,6 +168,8 @@ const row = {
 <!-- prettier-ignore-end -->
 
 Toto je z hlediska JavaSriptu naprosto validní zápis. Vznikne tak zcela stejný objekt, jak ten, který by vznikl bez použití uvozovek kolem klíčů. Tento způsob zápisu má své speciální jméno - JavaScript Object Notation, nebo-li JSON. Za dobu existence JavaScriptu se tento zápis tak rozšířil, že se stal jedním z hlavních formátů pro výměnu dat na internetu.
+
+## Princip DRY
 
 ## Mandatory home reading
 
