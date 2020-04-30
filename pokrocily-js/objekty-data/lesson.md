@@ -146,40 +146,8 @@ JavaScript by si myslel, že od hodnoty `person.first` odečítáme hodnotu `nam
 
 Tento způsob zdaleka není tak elegantní jako tečková notace. Proto se snažíme v názvech klíčů vyhýbat znakům, které nepatří do názvů proměnných a můžeme tak používat tečkocou notaci.
 
-## Formát JSON
+## Vlastní DOM elementy
 
-Podle většiny moderních doporučení je lepší v JavaScriptu používat v řetězcích jednoduché uvozovky. V počátcích JavaScriptu však bylo běžné používat spíše dvojité. Pokud v našich objektech schválně uzavřeme všechny klíče a řetězce do dvojitých uvozovek i tam, kde by to jinak nebylo potřeba, dostaneme reprezentaci zapsanou takto.
+Při práci s `innerHTML` narazíme na jeden velký problém. Při každé změně této vlastnosti se celý DOM uvnitř elementu zkonstruuje zcela znova. Tím přijdeme o všechny posluchače událostí. Způsob, jak toto obejít, je vytvořit si DOM element mimo dokument.
 
-<!-- prettier-ignore-start -->
-```js
-const row = {
-  "name": {
-    "first": "Petr",
-    "last": "Bílek"
-  },
-  "product": {
-    "name": "Prací prášek",
-    "amount": 1.5,
-    "unit": "kg"
-  },
-  "price": 240
-};
-```
-<!-- prettier-ignore-end -->
-
-Toto je z hlediska JavaSriptu naprosto validní zápis. Vznikne tak zcela stejný objekt, jak ten, který by vznikl bez použití uvozovek kolem klíčů. Tento způsob zápisu má své speciální jméno - JavaScript Object Notation, nebo-li JSON. Za dobu existence JavaScriptu se tento zápis tak rozšířil, že se stal jedním z hlavních formátů pro výměnu dat na internetu.
-
-## Princip DRY
-
-## Mandatory home reading
-
-To better prepare you for the life of a professional programmer, from this lesson onwards we are going to write the mandatory home readings in English. Even if you do not aspire for a professional career in programming, even if you just want to be a hobbyist, you will not be able to avoid English for long. It slowly sneaks in with variable names but the road goes much further.
-
-- Most of good courses, articles and video tutorials are in English.
-- Most helpful books about programming are written in English.
-- All the documentation for HTML, CSS, JavaScript and other tools and technologies is in English.
-- If you have a problem and decide to take it to Stack Overflow, guess what? Your communication will be in English.
-
-Switching to English may seem daunting at first. But in a while you will find that technical English is rather straightforward. Reading technical manuals and articles is not like reading a novel or, God forbid, reading the newspapers. The vocabulary in this particular area is quite limited and most of the time the hardest part is understanding the technical terms. If at first you feel a bit frightened by English, do not hesitate to chuck this paragraph into [Google Translator](https://translate.google.com/?sl=en&tl=cs). It is quite capable these days. In fact, with these simple texts, most of the time the translation is almost 100% acurate.
-
-Once you get the hang of it, reading IT English will be a breeze. Actually, reading IT articles and books is a good way to get better in English in general. When at last you are smoothly reading through all the discussions on Stack Overflow, you might even get excited to read some real English literature.
+`document.createElement`

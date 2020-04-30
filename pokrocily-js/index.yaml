@@ -1,10 +1,13 @@
 title: Pokročilý JavaScript
 link: pokrocily-js
 lessons:
-  - title: Objekty jako data, struktura programů
+  - title: Práce s innerHTML a dvouvrstvá architektura
+    link: inner-html
+    brief: Naučíme si, jak v JavaScriptu vytvářet složitější HTML struktury a jak organizovat větší aplikace.
+  - title: Objekty jako data, vlastní DOM elementy
     link: objekty-data
-    brief: Ukážeme si jak použít objekty reprezentoci strukturovaných data. Také se naučíme, jak ukáznit kód větších programů.
-  - title: Volání API
+    brief: Ukážeme si jak použít objekty pro reprezentoci strukturovaných data a jak vytvářet vlastní DOM elementy.
+  - title: JSON a volání API
     link: volani-api
     brief: Naučíme se, jak využívat veřejná API k tomu, abychom získali strukturované data pro naše aplikace.
   - title: Základy objektového programování
