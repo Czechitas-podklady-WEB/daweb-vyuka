@@ -16,6 +16,46 @@ Proto napíšeme řaději
 
 Ve složených závorkách máme jakési JavaScriptové okno uvnitř řetězce, do kterého můžeme vepsat nejen proměnnou, ale zcela libovolný výraz, jehož výsledek bude automaticky zkonvertován na řetězec.
 
+### Víceřádkové řetězce
+
+Dále v tomto kurzu budeme chtít pracovat s delšími řetězci, které se nám často nevejdou na jeden řádek. V JavaScriptu bohužel nelze udělat běžný řetězec na více řádků. Následující kód by bohužel nefungoval.
+
+```js
+const name = '
+  petr
+';
+```
+
+Abychom takový řetězec sestavili, musíme si pomoct sčítáním řetězců.
+
+```js
+const may = (
+  'Late evening, on the first of May—\n' +
+  'The twilit May—the time of love.\n' +
+  'Meltingly called the turtle-dove,\n' +
+  'Where rich and sweet pinewoods lay.\n' +
+  'Whispered of love the mosses frail,\n' +
+  'The flowering tree as sweetly lied,\n' +
+  'The rose\'s fragrant sigh replied\n' +
+  'To love-songs of the nightingale' +
+);
+```
+
+Naustálé sčítání a vkládání escape sekvencí nás však brazy začne dost zdržovat. Nyní však můžeme použí nové cool řetězce se zpětnými apostrofy a zapsat náš řetězec takto.
+
+```js
+const may = `
+  Late evening, on the first of May—
+  The twilit May—the time of love.
+  Meltingly called the turtle-dove,
+  Where rich and sweet pinewoods lay.
+  Whispered of love the mosses frail,
+  The flowering tree as sweetly lied,
+  The rose's fragrant sigh replied
+  To love-songs of the nightingale
+`;
+```
+
 ## Tvorba HTML pomocí JavaScriptu
 
 Z předchozích lekcí už dávno umíme změnit obsah nějakého DOM elementu pomocí vlastnosti `textContent`. U složitějších aplikací však narazíme na situace, kdy nechceme měnit jen text už existujícího elementu, ale chceme vytvořit úplně nový element. Na začátku nám k tomu poslouží vlastnost `innerHTML`. Pomocí této vlastnosti můžeme nějakému elementu nastavit obsah jako HTML. Můžeme tak uvnitř elementu vyrobit úplně novou HTML strukturu.
@@ -37,23 +77,7 @@ cardElm.innerHTML =
   '<div class="card__body">Cena: 12 000 kč</div>';
 ```
 
-Můžeme si ověřit, že se nám a stránce skutečně objeví tato nově vytvořené struktura. Takto můžeme dovnitř libovolného elementu vložit libobolně komplikované HTML. Jen nás za chvíli začne dost obtěžovat neustálé sčítání řetězců. V JavaScriptu bohužel nelze udělat běžný řetězec na více řádků. Následující kód by bohužel nefungoval.
-
-```js
-const name = '
-  petr
-';
-```
-
-Pokud však použijeme nové cool řetězce se zpatnými apostrofy, takovýto trik si dovolit můžeme.
-
-```js
-const name = `
-  petr
-`;
-```
-
-Navíc můžeme do takovýchto řetězců vkádat proměnné. Není tedy problém sestavit naše HTML s použitím nějakých dat.
+Můžeme si ověřit, že se nám a stránce skutečně objeví tato nově vytvořené struktura. Takto můžeme dovnitř libovolného elementu vložit libobolně komplikované HTML. Všimněte se, že jsme zatím pro náš HTML kód použili sčítání řetězců. Už však známe i lepší způsob pomocí zpětný apostrofů. Navíc můžeme do takovýchto řetězců vkádat proměnné. Není tedy problém sestavit naše HTML s použitím nějakých dat.
 
 ```js
 const product = ['Lednička', 12000];
@@ -97,6 +121,11 @@ for (let i = 0; i < shoppingList.length; i += 1) {
 ```
 
 Každá obrátka tohoto cyklu nám tak přidá do HTML seznamu jeden další `li` element.
+
+@exercises ## Cvičení - innerHTML [
+
+- interpolace
+  ]@
 
 ## Aktualizování stránky
 
@@ -174,7 +203,7 @@ Důležité je, že data a prezentace jsou na sobě zcela nezávislé. Pokud ně
 
 ## Mandatory home reading
 
-To better prepare you for the life of a badass professional programmer, from this lesson onwards we are going to write the mandatory home readings in English. Even if you do not aspire for a professional career in programming, even if you just want to be a hobbyist, you will not be able to avoid English for long. It slowly sneaks in with variable names but the road goes much further.
+To better prepare you for the life of a badass professional programmer, from this lesson onwards we are going to write the mandatory home readings in English. Even if you do not aspire for a professional career in programming and just want to be a hobbyist, you will not be able to avoid English for long. It slowly sneaks in with your variable names but the road continues much further.
 
 - Most of good courses, articles and video tutorials are in English.
 - Most helpful books about programming are written in English.
