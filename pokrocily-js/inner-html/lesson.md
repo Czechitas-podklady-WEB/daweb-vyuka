@@ -81,7 +81,7 @@ cardElm.innerHTML =
   '<div class="card__body">Cena: 12 000 kč</div>';
 ```
 
-Můžeme si ověřit, že se nám a stránce skutečně objeví tato nově vytvořené struktura. Takto můžeme dovnitř libovolného elementu vložit libobolně komplikované HTML. Všimněte se, že jsme zatím pro náš HTML kód použili sčítání řetězců. Už však známe i lepší způsob pomocí zpětný apostrofů. Navíc můžeme do takovýchto řetězců vkádat proměnné. Není tedy problém sestavit naše HTML s použitím nějakých dat.
+Můžeme si ověřit, že se nám na stránce skutečně objeví tato nově vytvořené struktura. Takto můžeme dovnitř libovolného elementu vložit libovolně komplikované HTML. Všimněte si, že jsme zatím pro náš HTML kód použili sčítání řetězců. Už však známe i lepší způsob pomocí zpětných apostrofů. Navíc můžeme do takovýchto řetězců vkládat proměnné. Není tedy problém sestavit naše HTML s použitím nějakých dat.
 
 ```js
 const product = ['Lednička', 12000];
@@ -118,7 +118,7 @@ Díky použití `innerHTML` můžeme snadno naše pole převést na hezký HTML 
 ```
 
 ```js
-const listElm = document.querySelector('#shopping-ling');
+const listElm = document.querySelector('#shopping-list');
 for (let i = 0; i < shoppingList.length; i += 1) {
   listElm.innerHTML += `<li>${shoppingList[i]}</li>`;
 }
@@ -146,7 +146,7 @@ const shoppingList = [
   'sojová omáčka',
 ];
 
-const listElm = document.querySelector('#shopping-ling');
+const listElm = document.querySelector('#shopping-list');
 for (let i = 0; i < shoppingList.length; i += 1) {
   listElm.innerHTML += `<li>${shoppingList[i]}</li>`;
 }
@@ -163,7 +163,7 @@ Naše pole se tedy rozrostlo o jeden prvek. K našemu zklamání však obsah str
 
 ```js
 const updateShoppingList = () => {
-  const listElm = document.querySelector('#shopping-ling');
+  const listElm = document.querySelector('#shopping-list');
   listElm.innerHTML = '';
   for (let i = 0; i < shoppingList.length; i += 1) {
     listElm.innerHTML += `<li>${shoppingList[i]}</li>`;
