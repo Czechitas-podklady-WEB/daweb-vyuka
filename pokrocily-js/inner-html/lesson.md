@@ -41,7 +41,9 @@ const may = (
 );
 ```
 
-Naustálé sčítání a vkládání escape sekvencí nás však brazy začne dost zdržovat. Nyní však můžeme použí nové cool řetězce se zpětnými apostrofy a zapsat náš řetězec takto.
+Všimněte si použití zpětného lomítka u sybmolů jako `\n` a `\'`. Toto jsou takzvané _escape sekvence_, které nám umožní vložit dovnitř řetězce znak, který by jinak nešel napsat. Sekvence `\n` znamená nový řádek, sekvence `\'` vloží apostrof. Ten bychom to řetězce napsat nemohli, protože by si JavaScript myslel, že tím chceme řetězec ukončit.
+
+Naustálé sčítání a vkládání escape sekvencí nás ovšem brzy začne dost zdržovat. Nyní však můžeme použí nové cool řetězce se zpětnými apostrofy a zapsat náš řetězec takto.
 
 ```js
 const may = `
@@ -55,6 +57,8 @@ const may = `
   To love-songs of the nightingale
 `;
 ```
+
+Zde už apostrof i nový řádek můžeme napsat rovnou bez escape sekvencí.
 
 ## Tvorba HTML pomocí JavaScriptu
 
@@ -125,6 +129,7 @@ Každá obrátka tohoto cyklu nám tak přidá do HTML seznamu jeden další `li
 @exercises ## Cvičení - innerHTML [
 
 - interpolace
+- podcasty
   ]@
 
 ## Aktualizování stránky
