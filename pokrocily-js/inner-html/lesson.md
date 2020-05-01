@@ -164,9 +164,17 @@ Vývoj aplikací už má za dobu existence počítačů dlouhou historii. Tisíc
 
 V principu nejde o nic zvlášť komplikovaného. Podstatou celé věci je si uvědomit, že téměř každá aplikace obsahuje dvě zcela základních části: data a prezentaci. Data jsou naše JavaScriptové hodnoty jako čísla, řetězce, pole a podobně. Prezentace je způsob, jakým tato data zobrazujeme uživateli. V našem případě jako prezentaci používáme HTML a CSS.
 
+Důležité je, že data a prezentace jsou na sobě zcela nezávislé. Pokud nějakým zůsobem změníme data, naše prezentace se sama od sebe neaktualizuje. Musíme to provést explicitně. Vždy proto potřebujeme nějakou funkci, která prezentaci aktualizuje podle toho, co zrovna data obsahují. Abychom takovou funkci v kódu jasně poznali, dáváme do jejího názvu slovo `update`. Naše funkce `updateShoppingList` je příkladem takové funkce.
+
+@exercises ## Cvičení - dvouvrstvá architektura [
+
+- hodiny
+- kostky
+  ]@
+
 ## Mandatory home reading
 
-To better prepare you for the life of a professional programmer, from this lesson onwards we are going to write the mandatory home readings in English. Even if you do not aspire for a professional career in programming, even if you just want to be a hobbyist, you will not be able to avoid English for long. It slowly sneaks in with variable names but the road goes much further.
+To better prepare you for the life of a badass professional programmer, from this lesson onwards we are going to write the mandatory home readings in English. Even if you do not aspire for a professional career in programming, even if you just want to be a hobbyist, you will not be able to avoid English for long. It slowly sneaks in with variable names but the road goes much further.
 
 - Most of good courses, articles and video tutorials are in English.
 - Most helpful books about programming are written in English.
