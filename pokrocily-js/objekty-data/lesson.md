@@ -323,3 +323,72 @@ const updateShoppingList = () => {
   }
 };
 ```
+
+### Implementace klikání
+
+Zatím jsme se nezabývali tím, jak implementovat kliknutí na položku seznamu tak, aby se nám ji povedlo vymazat. V podstatě jediný problém zde je, že posluchač události musí znát index položky, kterou chceme z pole smazat. Tento si však můžeme šikovně uložit do datového atributu například s názvem `data-index`. Pak už nám stačí pouze si tento index přečíst a smazat prvek pole pomocí metody `splice`. Pozor na to, že pak musíme zase zavolat funkci `updateShoppingList`, neboť jsme změnili obsah pole.
+
+```js
+const renderShopItem = (item, index) => {
+  const shopItemElm = document.createElement('li');
+  shopItemElm.className = 'shop-item';
+  shopItemElm.dataset.index = index;
+  shopItemElm.innerHTML = `<span>${item}</span><button>koupeno</button>`;
+
+  const btnElm = shopItemElm.querySelector('button');
+  btnElm.addEventListener('click', (e) => {
+    const index = e.target.dataset.index;
+    shoppingList.splice(index, 1);
+    updateShoppingList();
+  });
+
+  return shopItemElm;
+};
+```
+
+Funkce `renderShopItem` začiná být malinko dlouhá a trošku nepřehledná především kvůli tomu, že uvnitř ní vytváříme další funkci pro kliknutí na tlačítko. Nejlepší bude si tuto funkci pojmenovat a vytáhnout ven. Ḱód celé aplikace pak bude vypadat takto.
+
+```js
+'use strict';
+
+const shoppingList = [
+  'mrkev',
+  'paprika',
+  'cibule',
+  'čínské zelí',
+  'arašídy',
+  'sojová omáčka',
+];
+
+const deleteClick = (e) => {
+  const index = e.target.dataset.index;
+  shoppingList.splice(index, 1);
+  updateShoppingList();
+};
+
+const renderShopItem = (item, index) => {
+  const shopItemElm = document.createElement('li');
+  shopItemElm.className = 'shop-item';
+  shopItemElm.dataset.index = index;
+  shopItemElm.innerHTML = `<span>${item}</span><button>koupeno</button>`;
+
+  const btnElm = shopItemElm.querySelector('button');
+  btnElm.addEventListener('click', deleteClick);
+
+  return shopItemElm;
+};
+
+const updateShoppingList = () => {
+  const listElm = document.querySelector('#shopping-list');
+  listElm.innerHTML = '';
+  for (let i = 0; i < shoppingList.length; i += 1) {
+    const itemElm = renderShopElm(shoppingList[i], i);
+    listElm.appendChild(itemElm);
+  }
+};
+```
+
+@exercises ## Cvičení - vlastní DOM elementy [
+
+- podcasty-2
+  ]@

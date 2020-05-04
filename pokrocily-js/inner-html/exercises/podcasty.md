@@ -15,12 +15,12 @@ Stáhněte si [základ stránky](../assets/podcasty-zadani.zip) zobrazující se
 </div>
 ```
 
-1. V souboru `index.html` smažte obsah elementu `episodes`. V JavaScriptu vyberte tento element a s použitím vlastnosti `innerHTML` v něm vytvořte jednu epizodu podcastu dle hodnot uložených v proměnných `number`, `title` a `guest`.
+1. V souboru `index.html` smažte obsah elementu `episode-list`. V JavaScriptu vyberte tento element a s použitím vlastnosti `innerHTML` v něm vytvořte jednu epizodu podcastu dle hodnot uložených v proměnných `number`, `title` a `guest`.
 1. Mějme následující pole obsahující několik epizod našeho podcastu.
    ```js
    const episodes = [
      [127, 'Hledání plyšového Yettiho', 'Vojtěch Ryba'],
-     [128, 'Moderní hrachová plolévka', 'Kamila Štancová'],
+     [128, 'Moderní hrachová polévka', 'Kamila Štancová'],
      [129, 'Poloautomatické zrcadlo', 'Janka Janovská'],
      [130, 'Máčené hlavy parlamentu', 'Jonáš Daněk'],
      [131, 'Služby na hraně přívěsu', 'Tereza Křivánková'],
@@ -28,4 +28,4 @@ Stáhněte si [základ stránky](../assets/podcasty-zadani.zip) zobrazující se
      [133, 'Rybolov v Oceánu bouří', 'Ludmila Gajová'],
    ];
    ```
-   Napište cyklus, který projde toto pole a pro každou položku vytvoří novou epizodu uvnitř elementu `episodes`.
+   Napište cyklus, který projde toto pole a pro každou položku vytvoří novou epizodu uvnitř elementu `episodes-list`.
