@@ -36,4 +36,10 @@ Pomocí pole `pattern` jsem tak vyzkoušeli první řádek. Zbývá nám vyzkou�
 K dokončení hry postupujte podle následujicích instrukcí.
 
 1. Sestavte pole `patterns`, které obsahuje všechny pole udávající výherní kombinace ve hře. Nerad bych váš připravil a zábavu při hledání všech možností. Pro kontrolu však vězte, že je jich dohromady 23.
-1. Vytvořte funkci `score`, která jako svůj vstup dostane hrací plán a vrátí v jakém stavu se zrovna hra nachází. Výsledek 1 znamená, že vyhrál křížek, výsledek -1, že vyhrálo kolečko, výsledek 0, že nastala remíza a výsledek `null`, že hra se ještě hraje.
+1. Vytvořte funkci `score`, která jako svůj vstup dostane hrací plán a vrátí v jakém stavu se zrovna hra nachází. Výsledek 1 znamená, že vyhrál křížek, výsledek -1, že vyhrálo kolečko, výsledek 0, že nastala remíza a výsledek `null`, že hra se ještě hraje. Pokud si nejste jistí, jak funkci napsat, postupujte následujícím postupem.
+   1. Funkce nejprve zkontroluje, zda již někdo vyhrál. Musí tedy v cyklu projít všechny výherní vzory a zkontrolovat, jestli skalární součin herního plánu s nekterým vzorem vyjde 4 nebo -4. V takovém případě vrátím z funkce rovnou 1 nebo -1.
+   1. Pokud skalární součin ani jednou nevyšel 4 nebo -4, znamaná to, že hra je ještě v běhu nebo že nastala remíza. Remíza nastala tehdy, když na hracím plánu již není žádné volné políčko. V takovém případě vraťte číslo 0.
+   1. Pokud neplatí ani jedna z předešlých možností, hra je stále v běhu. Vraťte hodnotu `null`.
+1. Po provedení každého tahu si nechte pomocí funkce `score` zjistit stav hry. Podle výsledku buď nechte hru normálně pokračovat nebo zobrazte uživateli zprávu že vyhrál, prohrál nebo nastala remíza.
+
+Hurá!! Napsali jste svoji možná úplně první počítačovou hru.

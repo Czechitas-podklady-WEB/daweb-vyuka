@@ -3,7 +3,7 @@ title: Piškvorky základ
 demand: 2
 ---
 
-Hrát piškvorky 3x3 rychle přestane být zábava, neboť brzy objevíme, že pokud začínající hráč hraje dobře, nemůže nikdy prohrát. Podobná situace náš čeká u piškvorek 4x4. Zde ale můžeme hru vylepšit tak, že přidáme další možnosti, jak vyhrát.
+Hrát piškvorky 3x3 rychle přestane být zábava, neboť brzy objevíme, že pokud oba hráči hrají dobře, nemůže žádný z nich vyhrát. Pokud však herní plán zvětšíme na 4x4 a přidáme dvě nová pravidla, začínající hráč může vždy vyhrát. A pokud zrovna první hráč nehraje dokonalou hru, i druhý hráč má slušnou naději na vítězství.
 
 V našich piškvorkách vyhraje ten hráč, který na libovolném místě hracího plánu vytvoří ze svých symbolů jeden z následujících vzorů.
 
