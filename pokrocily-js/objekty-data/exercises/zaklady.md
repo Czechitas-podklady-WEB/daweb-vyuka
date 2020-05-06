@@ -10,9 +10,9 @@ const person = {
     name: "Karel",
     age: 27,
     "favorite color": "yellow"
-}
+};
 ```
 
-1. Vypište do konzole jméno osoby popsané objektem.
-1. Změňte věk dané osoby a pak ho vypište do konzole.
+1. Vypište do konzole jméno osoby z objektu.
+1. Změňte věk dané osoby na 28 a pak ho vypište do konzole.
 1. Vypište do konzole oblíbenou barvu osoby popsané objektem.

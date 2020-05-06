@@ -347,7 +347,7 @@ const renderShopItem = (item, index) => {
 };
 ```
 
-Funkce `renderShopItem` začiná být malinko dlouhá a trošku nepřehledná především kvůli tomu, že uvnitř ní vytváříme další funkci pro kliknutí na tlačítko. Nejlepší bude si tuto funkci pojmenovat a vytáhnout ven. Ḱód celé aplikace pak bude vypadat takto.
+Funkce `renderShopItem` začiná být malinko dlouhá a trošku nepřehledná především kvůli tomu, že uvnitř ní vytváříme další funkci pro kliknutí na tlačítko. Nejlepší bude si tuto funkci pojmenovat a vytáhnout ven. Kód celé aplikace pak bude vypadat takto.
 
 ```js
 'use strict';
