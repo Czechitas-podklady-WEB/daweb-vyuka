@@ -20,9 +20,9 @@ Vyzkoušejte si práci s řešením s větvemi v Gitu.
 
 - Podívejte se, jak konflikt vypadá v konzoli a ve vašem kódu v souboru "style.css"
 
-- Příjměte verzi kódu "navStyleRed", comitněte vyřešení konfliktu
+- Příjměte verzi kódu "navStyleRed", commitněte vyřešení konfliktu
 - Přepojte se do větve master
 - Proveďte merge větve "navStyleRed" do masteru
-- Pusněte kód na master
+- Pushněte kód na master
 
-- Podívejte se na hostorii commitů v onlione aplikaci na git-hubu
+- Podívejte se na historii commitů v online aplikaci na git-hubu
