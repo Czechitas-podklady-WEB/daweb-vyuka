@@ -3,7 +3,7 @@ title: Podcasty 2
 demand: 3
 ---
 
-Stáhněte si [vzorové řešení](../assets/podcasty-reseni.zip) aplikace podcasty z předchozí lekce. Otevřete si aplikaci v prohlížeši a přesuňte se do JavaScriptové konzole. Zkuste ručně vyrobit DOM element jedné epizody.
+Stáhněte si [vzorové řešení](../assets/podcasty-reseni.zip) aplikace podcasty z předchozí lekce. Otevřete si aplikaci v prohlížeči a přesuňte se do JavaScriptové konzole. Zkuste ručně vyrobit DOM element jedné epizody.
 
 1. Pomocí funkce `document.createElement` vytvořte prázdný `div` a uložte si jej do proměnné `episodeElm`. Vyzkoušejte v konzoli, že se element povedlo vytvořit.
 1. Nastavte elementu třídu `episode` a opět zkontrolujte, že se změna podařila.
