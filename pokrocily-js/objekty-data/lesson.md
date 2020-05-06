@@ -183,6 +183,7 @@ Všimněte si, jak objekt představující jeden kurz obsahuje pod klíčem `kon
 
 @exercises ## Cvičení - objekty jako data [
 
+- zaklady
 - kurz
 - knihovna
   ]@

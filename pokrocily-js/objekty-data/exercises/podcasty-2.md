@@ -1,6 +1,6 @@
 ---
 title: Podcasty 2
-demand: 2
+demand: 3
 ---
 
 Stáhněte si [vzorové řešení](../assets/podcasty-reseni.zip) aplikace podcasty z předchozí lekce. Otevřete si aplikaci v prohlížeši a přesuňte se do JavaScriptové konzole. Zkuste ručně vyrobit DOM element jedné epizody.

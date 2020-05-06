@@ -1,6 +1,6 @@
 ---
 title: Kurz
-demand: 1
+demand: 2
 ---
 
 Založte si JavaScriptový program a zkopírujte si do něj datovou strukturu kurzu <i>Úvod do programování</i> z textu výše.
