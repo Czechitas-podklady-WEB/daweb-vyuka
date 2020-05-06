@@ -12,5 +12,5 @@ Stáhněte si [vzorové řešení](../assets/podcasty-reseni.zip) aplikace podca
 
 Nyní přesuneme náš kód z konzole do funkce.
 
-1. Ve vašem programu vytvořte funkci `renderEpisode`, která bude mít tři parametry: `num`, `title` a `guest`. Funkce vrátí nový DOM element sestavený stejnám způsobem jako jsme prve použili v konzoli. Atribut `innerHTML` už nastavte na plný obsah elementu a zakompounujte do něj údaje z parametrů funkce.
+1. Ve vašem programu vytvořte funkci `renderEpisode`, která bude mít tři parametry: `num`, `title` a `guest`. Funkce vrátí nový DOM element sestavený stejným způsobem jako jsme prve použili v konzoli. Atribut `innerHTML` už nastavte na plný obsah elementu a zakompounujte do něj údaje z parametrů funkce.
 1. V programu najdete cyklus, který vytváři strukturu podcastu. Upravte tento cyklus tak, aby používal funkci `renderEpisode` a metodu `appendChild`.
