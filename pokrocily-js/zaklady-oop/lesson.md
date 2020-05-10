@@ -9,7 +9,7 @@ const homer = {
   firstName: 'Homer',
   middleName: 'Jay',
   lastName: 'Simpson',
-  age: 39
+  age: 39,
 };
 ```
 
@@ -42,14 +42,14 @@ const homer = {
 };
 ```
 
-Můžeme pak psát
+Všimněte si, že funkce nyní nemá žádné parametry, protože přímo pracuje s objektem `homer`. Můžeme pak psát
 
 ```jscon
 > homer.name()
 'Homer J. Simpson
 ```
 
-To vypadá daleko elegantněji. Co se týče funkcí jako hodnot v objektech, nečeká nás zatím žádné velké překvapení. Dokonce si možná někteří z vás hnání zvědavostí podobnou věc už zkusili na vlastní pěst. Je tu však jedna drobnost, která je trochu nešikovná. Uvnitř metody se musíme k našemu objektu odkazovat skrze proměnnou `homer`. Vzniká nám tak uzávěr, který však musíme pro každý další objekt vyrábět znova.
+To vypadá daleko elegantněji. Co se týče funkcí jako hodnot v objektech, nečeká nás zatím žádné velké překvapení. Dokonce si možná někteří z vás hnání zvědavostí podobnou věc už zkusili na vlastní pěst. Je tu však jedna drobnost, která je trochu nešikovná. Uvnitř metody se musíme k našemu objektu odkazovat skrze proměnnou `homer`. Funkce je tak závislé na jedné konkrétní proměnné musíme ji tak pro každý další objekt vyrábět znova.
 
 ```js
 const homer = {
@@ -89,7 +89,7 @@ const personEmail = (person, domain) => {
 Tomuto zápisu se říká <em>arrow funkce</em> a v JavaScriptu přibyl až ve verzi ES6. Dříve bylo zvykem psát funkce takto.
 
 ```js
-const personEmail = function(person, domain) {
+const personEmail = function (person, domain) {
   const username = `${person.firstName}.${person.lastName}`;
   return username.toLowerCase() + domain;
 };
@@ -100,12 +100,12 @@ Takovýmto funkcím budeme říkat <term cs="staré dobré funkce" en="old-fashi
 ```js
 'use strict';
 
-const greet = function(name) {
+const greet = function (name) {
   return `hello from ${this} and ${name}`;
 };
 ```
 
-Tato funkce jednoduše vrátí řetězec obsahující cokoliv, co je zrovna uloženo v tajném parametru `this` a v parametru `name`. Pokud takovou funkci zavoláme zavoláme ve strict módu běžným způsobem, parametr `this` je `undefined`.
+Tato funkce jednoduše vrátí řetězec obsahující cokoliv, co je zrovna uloženo v tajném parametru `this` a v parametru `name`. Pokud takovou funkci zavoláme ve strict módu běžným způsobem, parametr `this` je `undefined`.
 
 ```jscon
 > greet('Martin')
@@ -149,11 +149,11 @@ Pozor na to, že takto fungují pouze staré dobré funkce. Arrow funkce žádn�
 Díky všem komplikovaným hrátkám s `this` jsme se tak posunuli o krok kupředu na naší cestě za elegantním objektovým programováním. Díky starým dobrým funkcím se naše objekty Simpsonovic rodinky o kus zpřehlední. Nemusíme už vytvářet nové metody pro každý objekt zvlášt. Stačí nám vytvořit je všehny pouze jednout a pak je k naším objektům jen připojit.
 
 ```js
-const name = function() {
+const name = function () {
   return `${this.firstName} ${this.middleName[0]}. ${this.lastName}`;
 };
 
-const email = function(domain) {
+const email = function (domain) {
   const username = `${this.firstName}.${this.lastName}`;
   return username.toLowerCase() + domain;
 };
@@ -164,7 +164,7 @@ const homer = {
   lastName: 'Simpson',
   age: 39,
   name: name,
-  email: email
+  email: email,
 };
 
 const marge = {
@@ -173,7 +173,7 @@ const marge = {
   lastName: 'Simpson',
   age: 36,
   name: name,
-  email: email
+  email: email,
 };
 ```
 
@@ -198,8 +198,8 @@ const fridge1 = {
 
   __proto__: {
     name: 'SNAIGE CD290 1008',
-    price: 7990
-  }
+    price: 7990,
+  },
 };
 ```
 
@@ -235,7 +235,7 @@ const homer = {
   firstName: 'Homer',
   middleName: 'Jay',
   lastName: 'Simpson',
-  age: 39
+  age: 39,
 };
 
 const marge = {
@@ -244,7 +244,7 @@ const marge = {
   firstName: 'Marge',
   middleName: 'Jacqueline',
   lastName: 'Simpson',
-  age: 36
+  age: 36,
 };
 ```
 
@@ -257,6 +257,106 @@ Nyní když provedeme takovéto volání
 
 JavaScript runtime zkouší najit metodu `name` v objektu `homer`. Pokud tam není, zkouší ji najít v jeho prototypu `Person`. Tam už metoda je. Runtime tedy nastaví její `this` na objekt `homer` a zavolá ji. Tím se nám všchno hezky propojí a běží jako po másle.
 
-Na závěr této sekce je nutno dodat, že vlastnost `__proto__` není úplně spolehlivá, protože nejde o standardizovanou část JavaScriptu. Na světě existuje vícero JavaScriptových runtimů a každý může prototypy objektů ukládat malinko jinak. V příští části si tedy ukážeme, jak naše objekty tvořit ještě elegantnějí, abychom se použití `__proto__` zcela vyhnuli.
+@exercises ## Cvičení - Objekty a prototypy [
+
+- pozemky
+- cena-pozemku
+  ]@
 
 ## Konstrukce objektů
+
+Přechozí část této lekce sloužila k tomu, abychom si osahali jak technicky fungují prototypy objektů. Způsob, jakým jsme vytvářeli naše objekty je však pořád dost neohrabaný. V této části si ukážeme, jak tento postup zkrátit díky různým JavaScriptovým vychytávkám.
+
+Na úvod je nutno zmínit, že vlastnost `__proto__` není spolehlivá. Nejde totiž o standardizovanou část JavaScriptu. Na světě existuje vícero JavaScriptových runtimů a každý může prototypy objektů ukládat malinko jinak. Budeme proto potřebovat způsob, jak se vyhnout přímému nastavování vlasnoti `__proto__`.
+
+Přesně k tomu slouží funkce s názvem `Object.create`. Tato funkce vytvoří prázdný objekt a jeho prototyp nastaví na hodnotu, kterou dostane v prvním parametru.
+
+Pokud tedy chceme vytvořit objekt, který ve výsledku bude vypadat takto
+
+```js
+const homer = {
+  __proto__: Person,
+
+  firstName: 'Homer',
+  middleName: 'Jay',
+  lastName: 'Simpson',
+  age: 39,
+};
+```
+
+stačí napsat
+
+```js
+const homer = Object.create(Person);
+homer.firstName = 'Homer';
+homer.middleName = 'Jay';
+homer.lastName = 'Simpson';
+homer.age = 39;
+
+const marge = Object.create(Person);
+marge.firstName = 'Marge';
+marge.middleName = 'Jacqueline';
+marge.lastName = 'Simpson';
+marge.age = 36;
+```
+
+Takto jsme se hezky zbavili nutnosti používat vlastnost `__proto__` a nechali jsme nastavení prototypu na JavaScript runtimu. Chtěli bychom se však také zbavit neustálého opakování nastavování hodnot jednotlivých vlastností. K tomu si uvnitř prototypu vytvříme speciální metodu s názvem `constructor`. Tato metoda bude brát všechna potřebná data jako vstupy nastaví je rovnou jako vlastností prototypu. Náš prototyp `Person` pak bude vypadat takto.
+
+```js
+const Person = {
+  constructor: function (firstName, middleName, lastName, age) {
+    this.firstName = 'Marge';
+    this.middleName = 'Jacqueline';
+    this.lastName = 'Simpson';
+    this.age = 36;
+  },
+  name: function () {
+    return `${this.firstName} ${this.middleName[0]}. ${this.lastName}`;
+  },
+  email: function (domain) {
+    const username = `${this.firstName}.${this.lastName}`;
+    return username.toLowerCase() + domain;
+  },
+};
+```
+
+Při vytváření objektů nám pak stačí zavolat konstruktor se správnými hodnotami.
+
+```js
+const homer = Object.create(Person);
+homer.constructor('Homer', 'Jay', 'Simpson', 39);
+
+const marge = Object.create(Person);
+marge.constructor('Marge', 'Jacqueline', 'Simpson', 36);
+```
+
+Vytváření objektů se tak významně zkrátilo díky tomu, že se všechna práce děje uvnitř prototypu.
+
+Vzhledem k tomu, že objekty se v JavaScriptu vytváří velmi často a protože programátoři jsou pohodlní a nechce se jim psát ani písmenko navíc, existuje způsob jak zápis prototypu ještě o kousek zkrátit. Vždy, když v objektu vytváříme metodu, můžeme beztrestně vynechat dvojtečku a klíčové slovo `function`. Prototyp potom bude vypadat takto.
+
+```js
+const Person = {
+  constructor(firstName, middleName, lastName, age) {
+    this.firstName = 'Marge';
+    this.middleName = 'Jacqueline';
+    this.lastName = 'Simpson';
+    this.age = 36;
+  },
+  name() {
+    return `${this.firstName} ${this.middleName[0]}. ${this.lastName}`;
+  },
+  email(domain) {
+    const username = `${this.firstName}.${this.lastName}`;
+    return username.toLowerCase() + domain;
+  },
+};
+```
+
+Jde pouze o kosmetickou změnu, která nám ušetří ťukání na klávesnici. Tento nový zápis znamená přesně totéž co předchozí zápis s funkcemi.
+
+Tento způsob vytváření objektů už je na chlup blízko tomu, jak se objekty v praxi skutečně vytvářejí. Ještě nám chybí poslední drobnost, kterou si však necháme na některou z dalších lekcí.
+
+@exercises ## Cvičení - konstrukce objektů [
+
+- pozemky-2
+  ]@
