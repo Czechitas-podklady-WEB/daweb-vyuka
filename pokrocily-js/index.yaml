@@ -16,9 +16,9 @@ lessons:
   - title: Tvorba komponent
     link: komponenty
     brief: Předvedeme si způsob, jakým můžeme vytvářet znovupoužitelné prvky naších stránek, které mají vlastní HTML, CSS i JavaScript.
-  - title: Procvičování komponent
-    link: komponenty-cviceni
-    brief: Komponentové myšlení je potřeba dostat trochu pod kůži. Příklady v této lekci vám s tím pomohou.
   - title: Webpack
     link: webpack
-    brief: FIXME
+    brief: Ukážeme si, jak rozsekat zdrojový kód naší aplikace do logických celků a automaticky je sestavit v jeden výsledný program.
+  - title: Opakování
+    link: opakovani
+    brief: Upevníme znalosti a dovednosti nabytí v této kapitole.
