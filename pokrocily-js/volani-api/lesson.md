@@ -39,7 +39,7 @@ Takto například vypadá adresa požadavku na server `www.google.com`, který s
 https://www.google.com/search?q=praha&sourceid=chrome
 ```
 
-Cesta v požadavku je tedy `/search`, parametr `q` udává, že se má vyhledat slovo `praha` a parametr `sourceid` říká, že se ptáme z prohlížeče `chrone`. Tuto adresu můžete normálně zadat do prohlížeče a uvidíte výsledky vyhledávání.
+Cesta v požadavku je tedy `/search`, parametr `q` udává, že se má vyhledat slovo `praha` a parametr `sourceid` říká, že se ptáme z prohlížeče `chrome`. Tuto adresu můžete normálně zadat do prohlížeče a uvidíte výsledky vyhledávání.
 
 ### Dotazy na API
 
