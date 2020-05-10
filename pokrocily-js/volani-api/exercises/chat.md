@@ -12,11 +12,7 @@ demand: 3
       ```js
       renderMessages([
         { name: 'Pavel', message: 'Ahoj 👋', date: '11. 5. 2020 17:30:00' },
-        {
-          name: 'Martina',
-          message: 'Ja se máte?',
-          date: '11. 5. 2020 17:29:54',
-        },
+        { name: 'Martina', message: 'Ja se máte?', date: '11. 5. 2020 17:29:54' },
         { name: 'Michal', message: 'Nazdar', date: '12. 5. 2020 12:17:21' },
         { name: 'Ivana', message: 'Ahoj', date: '12. 5. 2020 11:02:15' },
       ]);
