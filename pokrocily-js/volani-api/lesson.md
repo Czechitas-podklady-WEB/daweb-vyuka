@@ -222,3 +222,13 @@ Tímto způsobem můžete snadno vytvořit zdroj dat pro vaši frontendovou apli
 Z Google Sheets lze pomocí API data nejen číst ale i zapisovat. Zde náš však čeká zklamání. Google Sheets pro zápis do tabulek vyžadují vyšší úroveň zabezpečení. Práce s takto zabezpečenou tabulkou však znamená provést mnoho technických kroků navíc, na což v této lekci nemáme prostor.
 
 Napsat aplikaci, která někam posílá data se nám tedy pomocí Google Sheets napsat nepodaří. K tomu bychom už potřebovali skutečné vlastní API. Pokud však naše aplikace data pouze zobrazuje, jsou Google Sheets velmi šikovná volba.
+
+@exercises [
+
+- chat
+  ]@
+
+@exercises ## Volitelné rozšíření na doma [
+
+- lepsi-chat
+  ]@
