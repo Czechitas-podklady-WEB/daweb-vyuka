@@ -6,7 +6,7 @@ demand: 3
 1. Vytvořte si repozitář ze šablony stejně jako to děláme s úkoly. Odkaz na přijetí zadání najdete na [classroom.github.com/a/dKpD9cWy](https://classroom.github.com/a/dKpD9cWy).
 1. Prohlédněte si soubor `index.html`. Stránka je nastylovaná pomocí [Bootstrapu](https://getbootstrap.com/). Nejsou potřeba žádné další CSS. Všimněte si formulářových inputů `#name-input` a `#message-input`, elementu `#messages`, se kterými budete později pracovat. Pro splnění zadání stačí upravovat pouze soubor `index.js`.
 1. Upravte soubor `index.js` tak, aby stránka zobrazovala nejnovější zprávy z api.
-   1. Doplňte tělo funkce `renderMessage`. Jejím úkolem bude vracet HTML jedné zprávy podle předlohy, kterou najdeš v `index.html`. Správné chování můžete vyzkoušet například výpisem do konzole pomocí `console.log(renderMessage('Pavel', 'Ahoj 👋', '11. 5. 2020 17:30:00'))`.
+   1. Doplňte tělo funkce `renderMessage`. Jejím úkolem bude vracet HTML jedné zprávy podle předlohy, kterou najdete v `index.html`. Správné chování můžete vyzkoušet například výpisem do konzole pomocí `console.log(renderMessage('Pavel', 'Ahoj 👋', '11. 5. 2020 17:30:00'))`.
    1. Dopište funkci `renderMessages`, ať pomocí for smyčky zavolá pro každou zprávu `renderMessage` a přidá ji do elementu s id `messages`. Nezapomeňte obsah `#messages` nejdříve vyčistit, jinak se vám zprávy budou časem opakovat.
    1. Vyzkoušejte, že volání přidává zprávy do stránky.
       ```js
