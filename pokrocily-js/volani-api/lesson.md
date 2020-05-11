@@ -223,12 +223,16 @@ Z Google Sheets lze pomocí API data nejen číst ale i zapisovat. Zde náš vš
 
 Napsat aplikaci, která někam posílá data se nám tedy pomocí Google Sheets napsat nepodaří. K tomu bychom už potřebovali skutečné vlastní API. Pokud však naše aplikace data pouze zobrazuje, jsou Google Sheets velmi šikovná volba.
 
-@exercises [
+## Zápis pomocí API
+
+Google Sheets API je sice pro zapisování příliš náročné, avšak používat nějaké API k zapisování dat je běžná věc. Zatím jsme na všechna naše API posílali požadavek, aby nám server nějaká dat poslal. Těmto požadavkům se ve webové hantýrce říká GET, tedy něco jako "získat". Pokud chce naopak něco my odeslat na server, použijeme požadavek POST.
+
+@exercises ## Cvičení - zápis pomocí API [
 
 - chat
   ]@
 
-@exercises ## Volitelné rozšíření na doma [
+@exercises ## Dobrovolné úložky na doma [
 
 - lepsi-chat
   ]@
