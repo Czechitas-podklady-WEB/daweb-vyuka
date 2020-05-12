@@ -261,6 +261,7 @@ JavaScript runtime zkouší najit metodu `name` v objektu `homer`. Pokud tam nen
 
 - pozemky
 - cena-pozemku
+- hodiny
   ]@
 
 ## Konstrukce objektů
@@ -359,4 +360,6 @@ Tento způsob vytváření objektů už je na chlup blízko tomu, jak se objekty
 @exercises ## Cvičení - konstrukce objektů [
 
 - pozemky-2
+- hodiny-2
+- hodiny-3
   ]@
