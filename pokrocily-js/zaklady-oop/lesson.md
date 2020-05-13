@@ -35,10 +35,10 @@ const homer = {
   firstName: 'Homer',
   middleName: 'Jay',
   lastName: 'Simpson',
-  age: 39
+  age: 39,
   name: () => {
     return `${homer.firstName} ${homer.middleName[0]}. ${homer.lastName}`;
-  }
+  },
 };
 ```
 
@@ -56,20 +56,20 @@ const homer = {
   firstName: 'Homer',
   middleName: 'Jay',
   lastName: 'Simpson',
-  age: 39
+  age: 39,
   name: () => {
     return `${homer.firstName} ${homer.middleName[0]}. ${homer.lastName}`;
-  }
+  },
 };
 
 const marge = {
   firstName: 'Marge',
   middleName: 'Jacqueline',
   lastName: 'Simpson',
-  age: 36
+  age: 36,
   name: () => {
     return `${marge.firstName} ${marge.middleName[0]}. ${marge.lastName}`;
-  }
+  },
 };
 ```
 
