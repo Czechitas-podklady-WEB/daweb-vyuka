@@ -2,7 +2,7 @@ Dnes konečně pootevřeme Pandořinu skříňku a nahlédneme do tajů objektov
 
 ## Metody
 
-Zečněme opravdu zvolna a jednoduše. Vytvoříme si objekt, představující jednoho člena jedné z nejznámějších seriálových rodinek.
+Začněme opravdu zvolna a jednoduše. Vytvoříme si objekt, představující jednoho člena jedné z nejznámějších seriálových rodinek.
 
 ```js
 const homer = {
