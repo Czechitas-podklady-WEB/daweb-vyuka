@@ -1,5 +1,5 @@
 ---
-title: Bonus: Hledání na MDN
+title: Hledání na MDN
 demand: 1
 ---
 

@@ -183,10 +183,15 @@ Můžeme pak psát jako obvykle
 > marge.email('gmail.com')
 "marge.simpson@gmail.com"
 ```
+
 @exercises ## Cvičení - Metody a this [
 
 - pejsek
 - seznamka
+  ]@
+
+@exercises bonuses [
+
 - hledani
   ]@
 

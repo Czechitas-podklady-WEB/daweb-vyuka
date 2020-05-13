@@ -22,7 +22,7 @@ Tento objekt bude představovat prototyp pro všechny naše pozemky.
 
 1. Doplňte kód metody `area`, která na základě hodnot `this.width` a `this.height` vrátí výměru pozemku v metrech čtverečních.
 1. Doplňte kód metody `border`, která spočítá délku hranice pozemku v metrech.
-1. Vytvořte objekt `estate1` jak níže.
+1. Vytvořte objekt `estate1` jako níže.
    ```js
    const estate1 = {
      width: 120,
