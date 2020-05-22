@@ -133,7 +133,7 @@ const episodeTemplate = Handlebars.compile(
 
 Pomocí této šablony pak zkonstruujeme DOM element naší epizody. Zde náš čeká jeden technický zádrhel, který nám trochu kazí eleganci kód, ale bohužel nejde nijak obejít.
 
-Všimněte si, že do šablony v vkládáme i hlavní `div` celé epizody s třídou `episode`. To jsme v předchozích příkladech nedělali. Tento hlavní `div` jsme si vždy vyrobili pomocí `createElement` a pak jej jen naplnili obsahem pomocí `innerHTML`. Tento postup se nám však při použití šablon nehodí. Chceme, aby naše šablona obsahovala HTML celého elementu epizody, ne jen jeho vnitřek.
+Všimněte si, že do šablony vkládáme i hlavní `div` celé epizody s třídou `episode`. To jsme v předchozích příkladech nedělali. Tento hlavní `div` jsme si vždy vyrobili pomocí `createElement` a pak jej jen naplnili obsahem pomocí `innerHTML`. Tento postup se nám však při použití šablon nehodí. Chceme, aby naše šablona obsahovala HTML celého elementu epizody, ne jen jeho vnitřek.
 
 Pokud však chceme z nějakého řetězce vyrobit DOM elementy, nezbývá nám jiná možnost než použít vlastnost `innerHTML` nějakého jiného elementu. Zařídíme se tedy tak, že vyrobíme dočasný `div`, kterému nastavíme `innerHTML`. Tak uvnitř vyrobíme DOM strukturu naší epizody a pak ji z tohoto dočasného elementu vyjmeme a přesuneme na naši stránku. Náš kód tedy dopadne takto.
 
