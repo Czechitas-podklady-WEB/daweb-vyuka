@@ -70,7 +70,7 @@ undefined
 'Film Román pro ženy začne za 5 minut.'
 ```
 
-Takto můžeme pomocí naší připravené šablony vyrobit řetězec s libovolnými hodnotami parametrů. Takto si například můžeme dopředu vytvořit šablony pro epizodu pocastu a pak ji použít pro vytvoření našeho elementu.
+Takto můžeme pomocí naší připravené šablony vyrobit řetězec s libovolnými hodnotami parametrů. Takto si například můžeme dopředu vytvořit šablony pro epizodu podcastu a pak ji použít pro vytvoření našeho elementu.
 
 ```js
 const episodeTemplate = Handlebars.compile(`
