@@ -179,13 +179,6 @@ Vložit HTML strukturu komonenty do stránky.
 : update
 Pokud se něco změnilo, aktualizovat HTML komponenty tak, aby zobrazovala aktuální stav.
 
-@exercises ## Cvičení - šablony uvnitř HTML [
-
-- sablony
-- nazev-kina
-- program-kina
-  ]@
-
 ## Tvorba komponent
 
 Nástřel komponenty.
