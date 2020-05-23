@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -13,4 +15,37 @@ body {
 .container {
   max-width: 600px;
   margin: 2rem auto;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.menu-item__icon {
+  width: 3rem;
+  height: 3rem;
+  background-image: url('img/item.png');
+  background-size: contain;
+}
+
+.menu-item__meal {
+  margin-left: 2rem;
+  flex: 1;
+}
+
+.meal__title {
+  font-weight: bold;
+}
+
+.meal__info {
+  max-width: 25rem;
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #999;
 }

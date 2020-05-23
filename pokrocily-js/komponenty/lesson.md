@@ -174,7 +174,14 @@ episodesListElm.appendChild(elm);
 - kontakty
   ]@
 
-## Hlavní komponentové funkce
+## Struktura projektu
+
+@exercises ## Cvičení - struktura projektu [
+
+- menu
+  ]@
+
+<!-- ## Hlavní komponentové funkce
 
 V terminologii komponentových frameworků jako React nebo Vue se používají ustálené termíny, které popisují jednotlivé fáze života nějaké komponenty.
 
@@ -186,8 +193,9 @@ Vložit HTML strukturu komonenty do stránky.
 
 : update
 Pokud se něco změnilo, aktualizovat HTML komponenty tak, aby zobrazovala aktuální stav.
+ -->
 
-## Tvorba komponent
+<!-- ## Tvorba komponent
 
 Nástřel komponenty.
 
@@ -226,4 +234,4 @@ const Clock = {
     this.element = newElm;
   },
 };
-```
+``` -->
