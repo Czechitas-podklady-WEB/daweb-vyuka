@@ -171,6 +171,7 @@ episodesListElm.appendChild(elm);
 @exercises ## Cvičení - šablony uvnitř HTML [
 
 - program-kina-2
+- kontakty
   ]@
 
 ## Hlavní komponentové funkce
