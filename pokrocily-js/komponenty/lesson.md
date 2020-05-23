@@ -145,20 +145,27 @@ Všimněte si, že do šablony vkládáme i hlavní `div` celé epizody s tříd
 Pokud však chceme z nějakého řetězce vyrobit DOM elementy, nezbývá nám jiná možnost než použít vlastnost `innerHTML` nějakého jiného elementu. Zařídíme se tedy tak, že vyrobíme dočasný `div`, kterému nastavíme `innerHTML`. Tak uvnitř vyrobíme DOM strukturu naší epizody a pak ji z tohoto dočasného elementu vyjmeme a přesuneme na naši stránku. Náš kód tedy dopadne takto.
 
 ```js
+'use strict';
+
 const episodeTemplate = Handlebars.compile(
-  document.querySelector('#episode-templ').innerHTML
+  document.querySelector('#episode-template').innerHTML
 );
 
-const tempElm = document.createElement('div');
-tempElm.innerHTML = episodeTemplate({
+const episode1 = {
   num: 123,
   title: 'Robot, který snědl koblihu',
   guest: 'Radovan Holátko',
-});
-const episodeElm = tempElm.children[0];
+};
+
+const renderEpisode = (episode) => {
+  const helperELm = document.createElement('div');
+  helperELm.innerHTML = episodeTemplate(episode);
+  return helperELm.children[0];
+};
 
 const episodesListElm = document.querySelector('.episodes-list');
-episodeListElm.appendChild(episodeElm);
+const elm = renderEpisode(episode1);
+episodesListElm.appendChild(elm);
 ```
 
 @exercises ## Cvičení - šablony uvnitř HTML [

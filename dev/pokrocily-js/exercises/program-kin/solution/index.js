@@ -9,3 +9,9 @@ const movie1 = {
   time: '19:30',
   hall: 7,
 };
+
+const movie1 = {
+  title: 'Casablanca',
+  time: '19:30',
+  hall: 7,
+};
