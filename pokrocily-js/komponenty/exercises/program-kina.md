@@ -28,7 +28,7 @@ Vytvořte Handlebars šablonu, která bude pro každý film vytvářet HTML vypa
 
 ```
 <span class="movie__title">Casablanca</span>
-<span class="movie__time">19:30</span>
+<span class="movie__time">18:30</span>
 <span class="movie__hall">sál č. 7</span>
 ```
 
@@ -37,7 +37,7 @@ Vezměte první film a pomocí vaší šablony a funkce `document.createElement`
 ```html
 <div class="name">
   <span class="movie__title">Casablanca</span>
-  <span class="movie__time">19:30</span>
+  <span class="movie__time">18:30</span>
   <span class="movie__hall">sál č. 7</span>
 </div>
 ```
