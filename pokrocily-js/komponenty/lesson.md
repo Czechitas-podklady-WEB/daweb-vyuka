@@ -10,8 +10,8 @@ const title = 'Robot, který snědl koblihu';
 const guest = 'Radovan Holátko';
 
 const episodeElm = document.createElement('div');
-episode.className = 'episode';
-episode.innerHTML = `
+episodeElm.className = 'episode';
+episodeElm.innerHTML = `
   <div class="episode__num">${num}</div>
   <div class="episode__body">
     <div class="episode__title">${title}</div>
@@ -82,15 +82,22 @@ const episodeTemplate = Handlebars.compile(`
 `);
 
 const episodeElm = document.createElement('div');
-episode.className = 'episode';
-episode.innerHTML = episodeTemplate({
+episodeElm.className = 'episode';
+episodeElm.innerHTML = episodeTemplate({
   num: 123,
   title: 'Robot, který snědl koblihu',
   guest: 'Radovan Holátko',
 });
 ```
 
-### Šablony uvnitř HTML
+@exercises ## Cvičení - šablony [
+
+- sablony
+- nazev-kina
+- program-kina
+  ]@
+
+## Šablony uvnitř HTML
 
 Je šikovné, že si můžeme šablony připravit takto dopředu. Pořád nám však zbývá jedna nepříjemnost. Naše HTML musíme psát dovnitř řetězců a tím přicházíme o zvýrazňování syntaxe. Navíc máme HTML kód rozházeny po celém JavaScriptovém programu místo toho, abychom jej měli na jednom místě tam, kde bychom jej čakeli - uvnitř souboru `index.html`.
 
@@ -154,11 +161,9 @@ const episodesListElm = document.querySelector('.episodes-list');
 episodeListElm.appendChild(episodeElm);
 ```
 
-@exercises ## Cvičení - šablony [
+@exercises ## Cvičení - šablony uvnitř HTML [
 
-- sablony
-- nazev-kina
-- program-kina
+- menu
   ]@
 
 ## Hlavní komponentové funkce
@@ -173,6 +178,13 @@ Vložit HTML strukturu komonenty do stránky.
 
 : update
 Pokud se něco změnilo, aktualizovat HTML komponenty tak, aby zobrazovala aktuální stav.
+
+@exercises ## Cvičení - šablony uvnitř HTML [
+
+- sablony
+- nazev-kina
+- program-kina
+  ]@
 
 ## Tvorba komponent
 

@@ -1,0 +1,27 @@
+.menu-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.menu-item__icon {
+  width: 3rem;
+  height: 3rem;
+  background-image: url('img/item.png');
+  background-size: contain;
+}
+
+.menu-item__meal {
+  margin-left: 2rem;
+  flex: 1;
+}
+
+.meal__title {
+  font-weight: bold;
+}
+
+.meal__info {
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #999;
+}

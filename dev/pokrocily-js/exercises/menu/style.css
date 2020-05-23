@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  color: #444;
+}
+
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+}
