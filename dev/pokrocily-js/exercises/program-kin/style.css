@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  color: #444;
+}
+
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.cinema__head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.address {
+  color: #999;
+}
+
+.movie {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.movie__title {
+  flex: 0 0 20rem;
+}
+
+.movie__title {
+  font-weight: bold;
+}
+
+.movie__time {
+  flex: 0 0 3rem;
+  text-align: right;
+}
+
+.movie__hall {
+  flex: 1;
+  text-align: right;
+}

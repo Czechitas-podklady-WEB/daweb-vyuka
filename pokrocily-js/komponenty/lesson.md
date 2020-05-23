@@ -154,6 +154,26 @@ const episodesListElm = document.querySelector('.episodes-list');
 episodeListElm.appendChild(episodeElm);
 ```
 
+@exercises ## Cvičení - šablony [
+
+- sablony
+- nazev-kina
+- program-kina
+  ]@
+
+## Hlavní komponentové funkce
+
+V terminologii komponentových frameworků jako React nebo Vue se používají ustálené termíny, které popisují jednotlivé fáze života nějaké komponenty.
+
+: render
+Vytvořit HTML strukturu komponenty.
+
+: mount
+Vložit HTML strukturu komonenty do stránky.
+
+: update
+Pokud se něco změnilo, aktualizovat HTML komponenty tak, aby zobrazovala aktuální stav.
+
 ## Tvorba komponent
 
 Nástřel komponenty.
