@@ -10,9 +10,9 @@ Vytvořte webovou stránku, která zobrazuje seznam kontaktů. U každého konta
    ```
    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
    ```
-1. Uvnitř `index.js` si vytvořte pole objektů, které bude obsahovat jenotlivé kontakty.
-1. Uvnitř `index.html` vytvořte šablonu pro jeden kontakt. Také vytvořte `div`, do kterého dubeme později naše kontakty vkládat.
-1. V souboru `index.js` si zkompilujte Hanldebars šablonu pro jeden kontakt.
-1. Vytvořte funkci `renderContact`, jejíž vstupem bude objektu kontaktu a výstupem DOM element vyrobený z vaší šablony.
-1. Pomocí cyklu projděte všechny konsakty a zapojte je do stránky.
-1. Nepovinně si můžeme pohrát se stylováním. U každého kontaktu se nám například může hodit takováto hezká [ikonka](../assets/contact.png).
+1. Uvnitř `index.js` si vytvořte pole objektů, které bude obsahovat jednotlivé kontakty.
+1. Uvnitř `index.html` vytvořte šablonu pro jeden kontakt. Také vytvořte `div`, do kterého budeme později naše kontakty vkládat.
+1. V souboru `index.js` si zkompilujte Handlebars šablonu pro jeden kontakt.
+1. Vytvořte funkci `renderContact`, jejímž vstupem bude objekt kontaktu a výstupem DOM element vyrobený z vaší šablony.
+1. Pomocí cyklu projděte všechny kontakty a zapojte je do stránky.
+1. Nepovinně si můžete pohrát se stylováním. U každého kontaktu se vám například může hodit takováto hezká [ikonka](../assets/contact.png).

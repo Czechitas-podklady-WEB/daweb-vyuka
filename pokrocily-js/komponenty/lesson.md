@@ -99,7 +99,7 @@ episodeElm.innerHTML = episodeTemplate({
 
 ## Šablony uvnitř HTML
 
-Je šikovné, že si můžeme šablony připravit takto dopředu. Pořád nám však zbývá jedna nepříjemnost. Naše HTML musíme psát dovnitř řetězců a tím přicházíme o zvýrazňování syntaxe. Navíc máme HTML kód rozházeny po celém JavaScriptovém programu místo toho, abychom jej měli na jednom místě tam, kde bychom jej čakeli - uvnitř souboru `index.html`.
+Je šikovné, že si můžeme šablony připravit takto dopředu. Pořád nám však zbývá jedna nepříjemnost. Naše HTML musíme psát dovnitř řetězců a tím přicházíme o zvýrazňování syntaxe. Navíc máme HTML kód rozházeny po celém JavaScriptovém programu místo toho, abychom jej měli na jednom místě tam, kde bychom jej čekali - uvnitř souboru `index.html`.
 
 Z této prekérie nám pomůže speciální HTML element s výmluvným názvem `template`. Tento element můžeme vložit kamkoliv do našich stránek, jeho obsah se však nikde nezobrazí. Element `template` slouží jako určité místo, kam si můžeme odložit HTML kód, který zobrazíme až pomocí JavaScriptu. Takto si můžeme si můžeme snadno vytvořit šablonu pro naši podcastovou epizodu.
 
