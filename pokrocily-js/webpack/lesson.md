@@ -88,26 +88,6 @@ Kód naší aplikace budeme vkládat do složky s názvem `src`. To je zkratka z
 </html>
 ```
 
-`src/index.html`:
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Pokusník</title>
-  </head>
-  <body>
-    <h1>
-      <!-- Nadpis stránky -->
-    </h1>
-    <script src="index.js"></script>
-  </body>
-</html>
-```
-
 `src/style.css`
 
 ```css
@@ -145,4 +125,166 @@ Celá struktura našeho projektu tedy bude vypadat takto.
 
 ## Webpack
 
-## Struktura projektu
+V minulé lekci jsme viděli, že větší projekty jako naše podcastová aplikace obsahují mnoho JavaScriptových i CSS souborů. To se velmi hodí nám lidem, abychom se v projektu vyznali. Pro naše výsledné stránky to však je problém, protože stahovat velké množství malých souborů je mnohem pomalejší než stahovat jeden velký soubor. Potřebujeme tedy nástroj, který dokáže naše malé souboru spojit do jednoho. Tomuto procesu se říká <term cs="sestavení projektu" en="project building">. Na sestavování projektů existuje mnoho nástrojů, mezi které patří například Browserify, Gulp, Brunch, Webpack, Rollup, Parcel a další. Jeden z nejpopulárnějších nástrojů je v dnešní době Webpack. Budeme jej tedy používat ve zbytku našeho kurzu.
+
+### Nastavení Webpacku
+
+Abychom mohli webpack v našem projektu požívat, musíme jej nejdříve nainstalovat příslušné balíčky.
+
+```sh
+$ npm install --save-dev webpack webpack-cli
+```
+
+V našem souboru `package.json` nám přibudou dva řádky.
+
+```json
+"devDependencies": {
+  "handlebars": "^4.7.6",
+  "webpack": "^4.43.0",
+  "webpack-cli": "^3.3.11"
+}
+```
+
+Aby se nám projekt dobře sestavoval, změníme obsah sekce `scripts` v `package.json` takto.
+
+````
+```json
+"scripts": {
+  "build": "webpack -d",
+  "watch": "webpack -wd",
+  "build:prod": "webpack -p",
+}
+````
+
+Nakonec potřebujeme říct webpacku co má s naším projektem dělat. K tomu potřebujeme v hlavní složce projektu vytvořit configurační soubor `webpack.config.js`, který bude obsahovat následující kód.
+
+```js
+const path = require('path');
+
+module.exports = {
+  entry: './src/index.js',
+  output: {
+    path: path.join(__dirname, 'dist'),
+    filename: 'bundle.js',
+  },
+};
+```
+
+V tomto kódu v podstatě říkáme, že Webpack má zpracovat soubor `index.js` a vyrobit z něj soubor `bundle.js` ve složce `dist`.
+
+Nyní už můžeme zkusit náš projekt sestavit příkazem
+
+```sh
+$ npm run build
+```
+
+Pokud se v3echno povedlo, měli byste v konzoli vidět výstup pobodný tomuto.
+
+```
+Version: webpack 4.43.0
+Time: 89ms
+Built at: 05/25/2020 9:56:40 AM
+    Asset      Size  Chunks             Chunk Names
+bundle.js  4.26 KiB    main  [emitted]  main
+Entrypoint main = bundle.js
+[./src/index.js] 90 bytes {main} [built]
+```
+
+Ve složce projektu by měla přibýt nová složka `dist` se souborem `bundle.js`. To je náš výsledný sestvený soubor. Můžete do něj zkusit nahlédnout, avšak pouze na vlastní nebezpečí, neboť obsahuje mnoho webackového kódu, který se těžko čte a slabším povahám by mohl přivodit záchvat tropického šílenství. Webový prohlížeč však z takového kódu má radost a my zase máme radost z našeho hezky strukturovaného kódu uvnitř složky `src`.
+
+### Soubory CSS a HTML
+
+Všimněte si, že výsledkem naše sestavovacího procesu je pouze jeden JavaSciptový soubor. Žádné HTML ani CSS. Webpack totiž primárně pracuje s JavaScriptem. Pokud chceme, aby zpracoval i HTML a CSS, musíme ho to naučit pomocá takzvaných loaderů. Budeme potřebovat nainstalovat tři loadery.
+
+```sh
+$ npm install --save-dev file-loader style-loader css-loader
+```
+
+Nyni musíme doplnit kus konfigurace do `webpack.config.js`, abychom webpacku řekli, co má dělat s jednotlivými souboru. Obsah souboru pak bude vypadat takto.
+
+```js
+const path = require('path');
+
+module.exports = {
+  entry: './src/index.js',
+  output: {
+    path: path.join(__dirname, 'dist'),
+    filename: 'bundle.js',
+  },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.html$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(png|jpe?g|svg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name]-[hash:6].[ext]',
+              outputPath: 'img',
+            },
+          },
+        ],
+      },
+    ],
+  },
+};
+```
+
+Přibyla nám sekce `modules`, ve kter říkáme, co si má Webpac počít a jednotlivými typy souborů.
+
+Webpack však naše CSS a HTML soubory nezpracuje jen tak sám od sebe. Musíme mu přesně říct, které soubory má zpracovat. A protože Webpack vždy začíná od souboru `index.js`, musíme do něj takzvaně importovat všechny soubory, které chceme v projektu mít.
+
+Náš `index.js` tak bude vypadat takto.
+
+```js
+import './index.html';
+import './style.css';
+
+const titleElm = document.querySelector('h1');
+titleElm.textContent = 'Pokusník funguje';
+```
+
+Musíme taky malinko upravit náš `index.html`, protože náš výsledný skript se jmenuje `bundle.js`.
+
+```html
+<script src="bundle.js"></script>
+```
+
+Nyní už můžeme spusti sestavení.
+
+```sh
+$ npm run build
+```
+
+Pokud se vše povedlo správně, obdržíme následující výstup.
+
+```
+Hash: 56f005029328396e0902
+Version: webpack 4.43.0
+Time: 571ms
+Built at: 05/25/2020 10:36:39 AM
+     Asset       Size  Chunks             Chunk Names
+ bundle.js   35.6 KiB    main  [emitted]  main
+index.html  349 bytes          [emitted]
+Entrypoint main = bundle.js
+[./node_modules/css-loader/dist/cjs.js!./src/style.css] 337 bytes {main} [built]
+[./src/index.html] 54 bytes {main} [built]
+[./src/index.js] 136 bytes {main} [built]
+[./src/style.css] 519 bytes {main} [built]
+    + 2 hidden modules
+```
