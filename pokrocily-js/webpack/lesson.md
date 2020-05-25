@@ -31,7 +31,7 @@ Vytvoříme si pokusný projekt s názvem `pokusnik`.
    }
    ```
 
-V souboru `package.json` je uložena veškerá konfigurace našeho projektu. Jsou zde uloženy informace o všec balíčcích, které náš projekt použivá, jeho verze, název, autor a podobně.
+V souboru `package.json` je uložena veškerá konfigurace našeho projektu. Jsou zde uloženy informace o všech balíčcích, které náš projekt použivá, jeho verze, název, autor a podobně.
 
 V našem projektu zatím žádný balíček nepoužíváme. Rovnou si tedy pojďme nainstalovat balíček `handlerbars`, který obsahuje dobře známé Handlebars šablony.
 
