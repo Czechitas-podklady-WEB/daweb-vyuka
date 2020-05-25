@@ -39,7 +39,7 @@ V našem projektu zatím žádný balíček nepoužíváme. Rovnou si tedy pojď
   $ npm install --save-dev handlebars
 ```
 
-Všimněte si, že po spuštení tohoto příkazu nám ve složce projektu přibyly nějaké nové soubory a složky. Souboru `package-lock.json` si zatím všímat moc nebudeme. Přibyla nám však složka `node_modules`, ve které je stažný náš balíček `handlebars` spolu se všami dalšími balíčky, na které `handlebars` používají.
+Všimněte si, že po spuštení tohoto příkazu nám ve složce projektu přibyly nějaké nové soubory a složky. Souboru `package-lock.json` si zatím všímat moc nebudeme. Přibyla nám však složka `node_modules`, ve které je stažný náš balíček `handlebars` spolu se všemi dalšími balíčky, které `handlebars` používají.
 
 Změnil se nám také soubor `package.json`.
 
