@@ -291,7 +291,7 @@ Entrypoint main = bundle.js
 
 Nyní stačí zajít do nově vytvořené složky `dist` a pomocí Live Serveru otevřít soubor `index.html`.
 
-@xercises ## Cvičení - Základy Webpacku [
+@exercises ## Cvičení - Základy Webpacku [
 
 - schranka-zalozeni
   ]@
