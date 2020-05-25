@@ -178,7 +178,7 @@ Nyní už můžeme zkusit náš projekt sestavit příkazem
 $ npm run build
 ```
 
-Pokud se v3echno povedlo, měli byste v konzoli vidět výstup pobodný tomuto.
+Pokud se všechno povedlo, měli byste v konzoli vidět výstup pobodný tomuto.
 
 ```
 Version: webpack 4.43.0
