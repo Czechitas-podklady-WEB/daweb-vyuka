@@ -200,7 +200,7 @@ Všimněte si, že výsledkem naše sestavovacího procesu je pouze jeden JavaSc
 $ npm install --save-dev file-loader style-loader css-loader
 ```
 
-Nyni musíme doplnit kus konfigurace do `webpack.config.js`, abychom webpacku řekli, co má dělat s jednotlivými souboru. Obsah souboru pak bude vypadat takto.
+Nyní musíme doplnit kus konfigurace do `webpack.config.js`, abychom webpacku řekli, co má dělat s jednotlivými souboru. Obsah souboru pak bude vypadat takto.
 
 ```js
 const path = require('path');
