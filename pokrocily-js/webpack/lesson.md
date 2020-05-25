@@ -294,4 +294,5 @@ Nyní stačí zajít do nově vytvořené složky `dist` a pomocí Live Serveru 
 @exercises ## Cvičení - Základy Webpacku [
 
 - schranka-zalozeni
+- schranka-zprava
   ]@
