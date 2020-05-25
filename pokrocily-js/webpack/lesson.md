@@ -265,7 +265,7 @@ Musíme taky malinko upravit náš `index.html`, protože náš výsledný skrip
 <script src="bundle.js"></script>
 ```
 
-Nyní už můžeme spusti sestavení.
+Nyní už můžeme spustit sestavení.
 
 ```sh
 $ npm run build
@@ -288,3 +288,10 @@ Entrypoint main = bundle.js
 [./src/style.css] 519 bytes {main} [built]
     + 2 hidden modules
 ```
+
+Nyní stačí zajít do nově vytvořené složky `dist` a pomocí Live Serveru otevřít soubor `index.html`.
+
+@xercises ## Cvičení - Základy Webpacku [
+
+- schranka-zalozeni
+  ]@
