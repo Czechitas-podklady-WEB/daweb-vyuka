@@ -245,7 +245,7 @@ module.exports = {
 };
 ```
 
-Přibyla nám sekce `modules`, ve kter říkáme, co si má Webpac počít a jednotlivými typy souborů.
+Přibyla nám sekce `modules`, ve kter říkáme, co si má Webpack počít a jednotlivými typy souborů.
 
 Webpack však naše CSS a HTML soubory nezpracuje jen tak sám od sebe. Musíme mu přesně říct, které soubory má zpracovat. A protože Webpack vždy začíná od souboru `index.js`, musíme do něj takzvaně importovat všechny soubory, které chceme v projektu mít.
 
