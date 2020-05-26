@@ -155,7 +155,7 @@ Aby se nám projekt dobře sestavoval, změníme obsah sekce `scripts` v `packag
 }
 ````
 
-Nakonec potřebujeme říct webpacku co má s naším projektem dělat. K tomu potřebujeme v hlavní složce projektu vytvořit configurační soubor `webpack.config.js`, který bude obsahovat následující kód.
+Nakonec potřebujeme říct webpacku, co má s naším projektem dělat. K tomu potřebujeme v hlavní složce projektu vytvořit configurační soubor `webpack.config.js`, který bude obsahovat následující kód.
 
 ```js
 const path = require('path');
