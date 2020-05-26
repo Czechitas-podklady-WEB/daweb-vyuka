@@ -4,7 +4,7 @@ V lekci o komponentách jsme poprvé potkali takzvanou <term cs="knihovnu" en="l
 
 Knihoven existuje obrovská spousta a každá řeší nějaký problém jako jsou například pokročilé matematické výpočty, různé algoritmy, práce s datem a časem, zpracování dat nebo práce s 2D i 3D grafikou.
 
-Aby byl v JavaScriptových knihovnách trochu pořádek a neváleli se jen tak všude možně po internetu, máme k dispozici takzvaný Node Package Manager (NPM).
+Aby byl v JavaScriptových knihovnách trochu pořádek a neválely se jen tak všude možně po internetu, máme k dispozici takzvaný Node Package Manager (NPM).
 
 ### Nastavení projektu
 
