@@ -147,7 +147,6 @@ V našem souboru `package.json` nám přibudou dva řádky.
 
 Aby se nám projekt dobře sestavoval, změníme obsah sekce `scripts` v `package.json` takto.
 
-````
 ```json
 "scripts": {
   "build": "webpack -d",
