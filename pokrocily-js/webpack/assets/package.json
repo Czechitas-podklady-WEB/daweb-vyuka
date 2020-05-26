@@ -10,6 +10,9 @@
   },
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "handlebars": "^4.7.6"
+  },
   "devDependencies": {
     "css-loader": "^3.5.3",
     "file-loader": "^6.0.0",

@@ -4,7 +4,7 @@ V lekci o komponentách jsme poprvé potkali takzvanou <term cs="knihovnu" en="l
 
 Knihoven existuje obrovská spousta a každá řeší nějaký problém jako jsou například pokročilé matematické výpočty, různé algoritmy, práce s datem a časem, zpracování dat nebo práce s 2D i 3D grafikou.
 
-Aby byl v JavaScriptových knihovnách trochu pořádek a neváleli se jen tak všude možně po internetu, máme k dispozici takzvaný Node Package Manager (NPM).
+Aby byl v JavaScriptových knihovnách trochu pořádek a neválely se jen tak všude možně po internetu, máme k dispozici takzvaný Node Package Manager (NPM).
 
 ### Nastavení projektu
 
@@ -31,7 +31,7 @@ Vytvoříme si pokusný projekt s názvem `pokusnik`.
    }
    ```
 
-V souboru `package.json` je uložena veškerá konfigurace našeho projektu. Jsou zde uloženy informace o všec balíčcích, které náš projekt použivá, jeho verze, název, autor a podobně.
+V souboru `package.json` je uložena veškerá konfigurace našeho projektu. Jsou zde uloženy informace o všech balíčcích, které náš projekt použivá, jeho verze, název, autor a podobně.
 
 V našem projektu zatím žádný balíček nepoužíváme. Rovnou si tedy pojďme nainstalovat balíček `handlerbars`, který obsahuje dobře známé Handlebars šablony.
 
@@ -39,7 +39,7 @@ V našem projektu zatím žádný balíček nepoužíváme. Rovnou si tedy pojď
   $ npm install --save-dev handlebars
 ```
 
-Všimněte si, že po spuštení tohoto příkazu nám ve složce projektu přibyly nějaké nové soubory a složky. Souboru `package-lock.json` si zatím všímat moc nebudeme. Přibyla nám však složka `node_modules`, ve které je stažný náš balíček `handlebars` spolu se všami dalšími balíčky, na které `handlebars` používají.
+Všimněte si, že po spuštení tohoto příkazu nám ve složce projektu přibyly nějaké nové soubory a složky. Souboru `package-lock.json` si zatím všímat moc nebudeme. Přibyla nám však složka `node_modules`, ve které je stažný náš balíček `handlebars` spolu se všemi dalšími balíčky, které `handlebars` používají.
 
 Změnil se nám také soubor `package.json`.
 
@@ -147,7 +147,6 @@ V našem souboru `package.json` nám přibudou dva řádky.
 
 Aby se nám projekt dobře sestavoval, změníme obsah sekce `scripts` v `package.json` takto.
 
-````
 ```json
 "scripts": {
   "build": "webpack -d",
@@ -156,7 +155,7 @@ Aby se nám projekt dobře sestavoval, změníme obsah sekce `scripts` v `packag
 }
 ````
 
-Nakonec potřebujeme říct webpacku co má s naším projektem dělat. K tomu potřebujeme v hlavní složce projektu vytvořit configurační soubor `webpack.config.js`, který bude obsahovat následující kód.
+Nakonec potřebujeme říct webpacku, co má s naším projektem dělat. K tomu potřebujeme v hlavní složce projektu vytvořit configurační soubor `webpack.config.js`, který bude obsahovat následující kód.
 
 ```js
 const path = require('path');
@@ -178,7 +177,7 @@ Nyní už můžeme zkusit náš projekt sestavit příkazem
 $ npm run build
 ```
 
-Pokud se v3echno povedlo, měli byste v konzoli vidět výstup pobodný tomuto.
+Pokud se všechno povedlo, měli byste v konzoli vidět výstup pobodný tomuto.
 
 ```
 Version: webpack 4.43.0
@@ -200,7 +199,7 @@ Všimněte si, že výsledkem naše sestavovacího procesu je pouze jeden JavaSc
 $ npm install --save-dev file-loader style-loader css-loader
 ```
 
-Nyni musíme doplnit kus konfigurace do `webpack.config.js`, abychom webpacku řekli, co má dělat s jednotlivými souboru. Obsah souboru pak bude vypadat takto.
+Nyní musíme doplnit kus konfigurace do `webpack.config.js`, abychom webpacku řekli, co má dělat s jednotlivými souboru. Obsah souboru pak bude vypadat takto.
 
 ```js
 const path = require('path');
@@ -245,7 +244,7 @@ module.exports = {
 };
 ```
 
-Přibyla nám sekce `modules`, ve kter říkáme, co si má Webpack počít a jednotlivými typy souborů.
+Přibyla nám sekce `modules`, ve které říkáme, co si má Webpack počít s jednotlivými typy souborů.
 
 Webpack však naše CSS a HTML soubory nezpracuje jen tak sám od sebe. Musíme mu přesně říct, které soubory má zpracovat. A protože Webpack vždy začíná od souboru `index.js`, musíme do něj takzvaně importovat všechny soubory, které chceme v projektu mít.
 
@@ -294,4 +293,5 @@ Nyní stačí zajít do nově vytvořené složky `dist` a pomocí Live Serveru 
 @exercises ## Cvičení - Základy Webpacku [
 
 - schranka-zalozeni
+- schranka-zprava
   ]@
