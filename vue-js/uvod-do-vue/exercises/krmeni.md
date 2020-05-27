@@ -1,9 +1,9 @@
 ---
-title: Metody a události
+title: Krmení a venčení
 demand: 2
 ---
 
-Použij projekt z předchozího cvičení
+Použij projekt z předchozího cvičení.
 
 1. Přidej do stránky tlačítka `nakrm trochu` a `nakrm hodně`. Tlačítko nakrm trochu zvýší váhu o 2 kg, tlačítko nakrm hodně o 5 kg. 
 1. Přidej do stránky tlačítka `vyvenči`, které sníží váhu o 1 kg.
