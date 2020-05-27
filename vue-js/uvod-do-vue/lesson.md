@@ -4,6 +4,7 @@ Dnes hlavně k tomu, abychom v něm mohli vypracovat následující úkoly.
 
 @exercises ## Cvičení - Úvod do Vue a práce s daty [
 
+- prvnikroky
 - mazlicek
   ]@
 
