@@ -10,3 +10,7 @@ Konfigurační soubory pro Vue a Webpack.
 - produkt-webpack
 ]@
 
+@exercises ## Cvičení - Vue komponenty [
+- ukolnicek
+]@
+
