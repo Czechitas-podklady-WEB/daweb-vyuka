@@ -6,4 +6,4 @@ lessons:
     brief: Ponoříme se do jednoho z hlavních frameworků pro tvorbu moderních webových aplikací.
   - title: Vue komponenty
     link: vue-komponenty
-    brief: Ukážeme si, jak ve Vue vytvářet komponenty a jak z ních skládat výslednou aplikaci.
+    brief: Ukážeme si, jak ve Vue vytvářet komponenty a jak z nich skládat výslednou aplikaci.
