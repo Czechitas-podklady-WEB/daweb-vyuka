@@ -2,10 +2,11 @@
 
 Konfigurační soubory pro Vue a Webpack.
 
-[assets/package.json](package.json)
-[assets/webpack.config.js](webpack.config.js)
+[package.json](assets/package.json)
+[webpack.config.js](assets/webpack.config.js)
 
 @exercises ## Cvičení - Vue a Webpack [
 - produkt
+- produkt-webpack
 ]@
 
