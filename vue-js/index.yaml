@@ -7,3 +7,6 @@ lessons:
   - title: Vue komponenty
     link: vue-komponenty
     brief: Ukážeme si, jak ve Vue vytvářet komponenty a jak z nich skládat výslednou aplikaci.
+  - title: Komunikace mezi komponentami
+    link: komponenty-komunikace
+    brief: Lorem ipsum
