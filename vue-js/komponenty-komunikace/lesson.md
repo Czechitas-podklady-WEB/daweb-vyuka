@@ -5,7 +5,7 @@
   ]@
 
 @exercises ## Cvičení - Komunikace [
-
+- menu
 - pocitadla-celkem
 - pocitadla-celkem-reset
   ]@
