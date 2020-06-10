@@ -15,3 +15,8 @@ Obsah souboru `.vscode/settings.json`.
 
 - u-potucku
   ]@
+
+@exercises ## Cvičení - Router parametry [
+
+- prichozi-posta
+  ]@
