@@ -10,3 +10,6 @@ lessons:
   - title: Komunikace mezi komponentami
     link: komponenty-komunikace
     brief: Lorem ipsum
+  - title: Vue router
+    link: vue-router
+    brief: Lorem ipsum
