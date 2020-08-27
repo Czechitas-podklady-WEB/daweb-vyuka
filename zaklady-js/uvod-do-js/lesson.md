@@ -1,64 +1,14 @@
-Milí účastníci webové akademie, v tomto kurzu si možná úplně poprvé v životě vyzkoušíte co je to programování a osaháte si svůj první programovací jazyk. Programování ze začátku může působit jako velmi tajemný svět plný zlých nástrah a neproniknutelných složitostí. Nutnost zapojovat možná trochu zaprášená zákoutí vašeho mozku může ze začátku být velká výzva. Proto společně vykročíme zvolna a krůček po krůčku. Budeme věnovat péči každému jednotlivému tématu tak, abyste do něj dokázali skutečně proniknout a nepřipadali si jako na jiné planetě. Vězte, že po chvíli se možná trochu zrezivělá mozkové kolečka začnou točit lehčeji a programování vám bude přinášet velkou radost z tvoření.
+Milí účastníci webové akademie, v této části kurzu se postupně začneme učit programovat v jazyce JavaScript. Jak už jste poznali z předchozích lekcí, jazyky HTML a CSS dávají webovým stránkám strukturu a vzhled. Většina stránek a aplikací však také nabízí nějaké chování a interaktivitu, kterou zajišťuje právě program napsaný v JavaScritpu. 
 
-Na začátku počítáme s tím, že jste programováním zcela nepolíbeni. Není tedy od věci trochu si přiblížit, jak programátorský svět vlastně funguje, abyste si dokázali představit do jakých vod se chystáte vrhnout. Ještě před tím, než spustíte svůj první JavaScriptový příkaz, si společně osaháme jak programátoři přemýšlejí a jaké problémy v praxi doopravdy řeší.
+Svět programování může ve srovnání s HTML a CSS ze začátku působit velmi tajemně, plný zlých nástrah a neproniknutelných složitostí. Nutnost zapojovat možná trochu zaprášená zákoutí vašeho mozku může ze začátku být velká výzva. Proto společně vykročíme zvolna a krůček po krůčku. Budeme věnovat péči každému jednotlivému tématu tak, abyste do něj dokázali skutečně proniknout a nepřipadali si jako na jiné planetě. Vězte, že po chvíli se možná trochu zrezivělá mozkové kolečka začnou točit lehčeji a programování vám bude přinášet velkou radost z tvoření.
 
-## Co je to programování
+Jazyk JavaScript je jedním z nejdůležitějších programovacích jazyků v prostředí webu. V tomto kurzu se tedy budeme zaměřovat pouze na něj. Do začátku počítáme s tím, že jste už nějaký programovací jazyk viděli alespoň z jedoucího vlaku. I tak však budeme při představování JavaScriptu postupovat od úplných základů.
 
-Programátora si možná představujete jako týpka či týpčici, který/která sedí před počítačem ve ztemnělém sklepení nebo hipsterské kavárně a do klávesnice buší nesrozumitelné tajemné kódy.
+## JavaScript
 
-![Programátor](assets/programmer.jpg)
+Než se naplno pustíme do JavaScriptu, je dobré si pořádně ujasnit terminologii. JavaScript je programovací jazyk, tedy sada nějakých gramatických pravidel jak sestavovat textové příkazy pro počítač. Pokud chceme, aby náš stroj tyto příkazy vykonal, protřebujeme takzvaný _JavaScript runtime_. To je program, který čte JavaScriptové příkazy a jeden za druhým je provádí. Pokud bychom použili divadelní analogii, můžeme si představit, že JavaScriptový program je scénář nějakého představení, a JavaScript runtime je herec, který představení podle tohoto scénáře zahraje.
 
-Je pravda, že psaní kódu je velkou částí programátorské práce. Podstata programování ovšem tkví v něčem jiném. Například takový spisovatel jistě tráví hodně času psaním textu, zvládat dobře česky psát však není jádro jeho umění. Dobrý spisovatel či spisovatelka především umějí vybudovat poutavý příběh, který čtenáře zaujme a vtáhne. Podobně programátorům také zdaleka nestačí umět kódit. Musí především umět přemýšlet a řešit problémy, což znamená mít dobré logické a analytické myšlení.
-
-### Problém spolubydlení
-
-Logické a analytické myšlení rozhodně není spojeno jen s programo&shy;váním, matematikou apod. Spousta problémů přímo ze života vyžaduje, abychom se dokázali nad řešením opravdu zamyslet. Na následujícím příkladu si názorně ukážeme, jak takové zamyšlení vypadá z programá&shy;torského hlediska.
-
-Mějme následujících šest studentů, kteří společně bydlí v jednom bytě.
-
-![Studenti](assets/roommates.jpg)
-
-Jak často bývá zvykem, tito spolubydlící se dohodli, že některé spotřební věci budou nakupovat vždy pro všechny, aby si každý nemusal kupovat vlastní mouku, vlastní toaleťák a podobně. Po čase tedy vznikne tabulka nákupů podobné této.
-
-<table>
-  <thead>
-    <tr><th>Jméno</th><th>Věc</th><th>Částka</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Petr</td><td>Prací prášek</td><td>240 kč</td></tr>
-    <tr><td>Ondra</td><td>Savo</td><td>80 kč</td></tr>
-    <tr><td>Pavla</td><td>Toaleťák</td><td>65 kč</td></tr>
-    <tr><td>Zuzka</td><td>Mýdlo</td><td>50 kč</td></tr>
-    <tr><td>Pavla</td><td>Závěs do koupelny</td><td>350 kč</td></tr>
-    <tr><td>Libor</td><td>Pivka na kolaudačku</td><td>124 kč</td></tr>
-    <tr><td>Petr</td><td>Pytle na odpadky</td><td>75 kč</td></tr>
-    <tr><td>Míša</td><td>Utěrky na nádobí</td><td>130 kč</td></tr>
-    <tr><td>Ondra</td><td>Toaleťák</td><td>120 kč</td></tr>
-    <tr><td>Míša</td><td>Pečící papír</td><td>30 kč</td></tr>
-    <tr><td>Zuzka</td><td>Savo</td><td>80 kč</td></tr>
-    <tr><td>Petr</td><td>Tapeta na záchod</td><td>315 kč</td></tr>
-    <tr><td>Ondra</td><td>Toaleťák</td><td>64 kč</td></tr>
-  </tbody>
-</table>
-
-Představme si, že naši studenti se chtějí rozestěhovat a potřebují se finančně vyrovnat. Někteří totiž přirozaně utratili za společné věci o něco víc než jiní. Váš úkol je zamyslet se nad tím, jakým postupem takového vyrovnání dosáhnout. Je zde však několik důležitých pravidel a omezení.
-
-Samotné zpracování tabulky nebudete dělat vy, nýbrž člověk, o kterém bychom mohli říct, že je to pečlivý blbec. To znamená, že není vůbec schopen přemýšlet sám za sebe. Je pouze schopen do puntíku plnit vaše pokyny jsou-li dostatečně detailní a přímočaré. Tento náš úřednický blbec má navíc k dispozici pouze tužku, papír a kalkulačku. Kalkulačku k tomu, aby mohl spolehlivě provádět jednoduché výpočty a tužku a papír, aby si mohl poznamenávat mezivýsledky.
-
-![Tužka, papír, kalkulačka a blbec](assets/dummy.jpg)
-
-Počítač ve svojí nejzákladnější podstatě funguje přesně jako náš blbec. Nic za vás nevymyslí, pouze slepě vykonává postup řešení, který musíte do detailu popsat vy. Papír pak pro nás představuje pamět počítače a kalkulačka procesor.
-
-@exercises[
-
-- spolubydleni
-  ]@
-
-## První JavaScript příkazy
-
-Po dlouhých povídáních konečně přichází ten čas, kdy si začneme ušpiníme ruce skutečným JavaScriptem. Nejdříve si ovšem pořádně ujasníme terminologii. JavaScript je programovací jazyk, tedy sada nějakých pravidel jak sestavovat textové příkazy pro počítač. Pokud chceme, aby náš stoj tyto příkazy vykonal, protřebujeme takzvaný _JavaScript runtime_. To je program, který čte naše JavaScriptové příkazy a jeden za druhým je provádí.
-
-Každý webový prohlížeč má v sobě JavaScript runtime, můžeme tedy naše první JavaScriptové příkazy psát rovnou v prohlížeči. Stačí otevřít takzvané _Developer Tools_.
+Velkou výhodu máme do zacátku v tom, že každý webový prohlížeč v sobě obsahuje JavaScript runtime. Naše první JavaScriptové příkazy tak můžeme psát rovnou v prohlížeči. Stačí otevřít takzvané _Developer Tools_.
 
 ### Hodnoty a operátory
 
