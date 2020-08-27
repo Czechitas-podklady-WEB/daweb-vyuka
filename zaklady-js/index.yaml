@@ -10,15 +10,15 @@ lessons:
   - title: DOM a vlastní funkce
     link: dom-funkce
     brief: Přidáme do našich JavaScriptových programů možnost manipulovat s obsahem stránky a naučíme se psát vlastní funkce.
+  - title: Funkce a obory platnosti
+    link: funkce-obory
+    brief: Procvičíme si psaní vlastních funkcí a ukážeme si, jak pracovat s obory platnosti proměnných. 
   - title: Funkce vyšších řádů, události
     link: hof-udalosti
     brief: Naučíme naše stránky reagovat na události jako je kliknutí, stisknutí klávesy nebo scrollování. K tomu budeme potřebovat porozumět funkcím vyššího řádu.
-  - title: Ladění a obory platnosti
-    link: debug-scope
-    brief: V této lekci se naučíte lovit chyby ve vašich programech a zjistíte jak se lépe orientovat v tom, jak JavaScript runtime vaše programy provádí.
+  - title: Procvičování událostí, lovení chyb
+    link: udalosti-chyby
+    brief: Procvičíme se zacházení s událostmi a naučíme se v našich programech lovit chyby.
   - title: Pole a cykly
     link: pole-cykly
-    brief: Užitečnost počítačů spočívá především v tom, že dokážou velmi rychle provádět opakovaně nějakou činnost, tedy provádět takzvaný cyklus.
-  - title: Opakování, princip DRY
-    link: opakovani-dry
-    brief: Upevňíme znalosti nabyté v této kapitole a ukážeme si, jak dělat naše programy čitelnější a přehlednější.
+    brief: Užitečnost počítačů spočívá především v tom, že dokážou velmi rychle provádět opakovaně nějakou činnost, tedy provádět takzvaný cyklus.  
