@@ -1,5 +1,6 @@
 title: Základy Gitu
 link: zaklady-gitu
+brief: Git je nástroj pro verzování kódu, který vám usnadní správu vašeho projektu a práci v týmu.
 lessons:
   - title: Seznámení s Gitem
     link: seznameni

@@ -1,5 +1,6 @@
 title: Základy JavaScriptu
 link: zaklady-js
+brief: Naučíte se základy programování v jazyce JavaScript a to vám umožní udělát vaše stránky interaktivní.
 lessons:
   - title: Úvod do JavaScriptu
     link: uvod-do-js
@@ -12,7 +13,7 @@ lessons:
     brief: Přidáme do našich JavaScriptových programů možnost manipulovat s obsahem stránky a naučíme se psát vlastní funkce.
   - title: Funkce a obory platnosti
     link: funkce-obory
-    brief: Procvičíme si psaní vlastních funkcí a ukážeme si, jak pracovat s obory platnosti proměnných. 
+    brief: Procvičíme si psaní vlastních funkcí a ukážeme si, jak pracovat s obory platnosti proměnných.
   - title: Funkce vyšších řádů, události
     link: hof-udalosti
     brief: Naučíme naše stránky reagovat na události jako je kliknutí, stisknutí klávesy nebo scrollování. K tomu budeme potřebovat porozumět funkcím vyššího řádu.
@@ -21,4 +22,4 @@ lessons:
     brief: Procvičíme se zacházení s událostmi a naučíme se v našich programech lovit chyby.
   - title: Pole a cykly
     link: pole-cykly
-    brief: Užitečnost počítačů spočívá především v tom, že dokážou velmi rychle provádět opakovaně nějakou činnost, tedy provádět takzvaný cyklus.  
+    brief: Užitečnost počítačů spočívá především v tom, že dokážou velmi rychle provádět opakovaně nějakou činnost, tedy provádět takzvaný cyklus.
