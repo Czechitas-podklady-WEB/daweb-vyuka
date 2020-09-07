@@ -6,7 +6,13 @@ Počítačový terminál je zařízení, které má počátky ve 40. a 50. letec
 
 Možná vám to přijde neuvěřitelné, ale i v době, kdy se nám počítače vejdou do kapsy a máme úžasné grafické dotykové obrazovky, pro programátory je často nejrychlejší a nejpřehlednější zadávat příkazy textově jako na starých terminálech. Jediný rozdíl je dnes v tom, že terminál už není fyzické zařízení. Je to prostě program, který si spustíte na svém počítači, a hned vypadáte jako hackeři z nějakého béčkového filmu.
 
-V našem případě máme život jednoduchý, protože Visual Studio Code má terminál zabudovaný přímo v sobě. Spustíte jej tak, že ve VS Code v horním menu zvolíte <i>Terminal → New Terminal</i>.
+Můžete se podívat na krátké video, které ukazuje základní práci s termínálem. V následujicím textu pak půjdeme malinko víc do hloubky.
+
+<youtube video="uneXj86hOTk">
+
+## Práce s terminálem
+
+Visual Studio Code má terminál zabudovaný přímo v sobě. Spustíte jej tak, že ve VS Code v horním menu zvolíte <i>Terminal → New Terminal</i>.
 
 ![VS Code Terminál](assets/vscode-term.png){.fig .fig-100}
 
@@ -85,7 +91,11 @@ Všechny důležité speciální znaky lze napsat na českém QWERTZ rozložení
 
 Druhá možnost je během programování přepínat mezi českou a anglickou klávesnicí. Zde je výhoda v tom, že většina důležitých speciálních znaků se na anglické klávesnici nachází v horní řadě tam, kde jsou běžně písmenka s diakritikou, opět viz [plánek](assets/keyboard-cs-en.pdf). Drobná potíž spočívá v tom, že na české a anglické klávesnizi se liší pozice písmen [[Y]] a [[Z]]. Proto je lepší používat české rozložení ve variantě QWERTY. V takovémto případě je také dobré naučit se zkratku pro přepínání mezi klávesnicemi. Ve Windows to bývá většinou [[Alt]] + [[Shift]].
 
-@exercises[
+Pokud si chcete na vašem počítači nanistalovat českou QWERTY klávesnici, postupujte podle tohoto videa.
+
+<youtube video="7aZzfua1keA">
+
+@exercises ## Cvičení [
 
 - klavesova-zviratka
   ]@
