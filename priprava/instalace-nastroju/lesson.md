@@ -49,6 +49,7 @@ Aby se nám s VS Code pracovalo dobře a zároveň nám všem fungovalo stejně,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "prettier.singleQuote": true,
+  "prettier.arrowParens": "always",
   "prettier.trailingComma": "all",
   "workbench.colorCustomizations": {
     "editorError.foreground": "#ffff00"

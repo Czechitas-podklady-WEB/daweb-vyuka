@@ -1,4 +1,4 @@
-Milí účastníci webové akademie, v této části kurzu se postupně začneme učit programovat v jazyce JavaScript. Jak už jste poznali z předchozích lekcí, jazyky HTML a CSS dávají webovým stránkám strukturu a vzhled. Většina stránek a aplikací však také nabízí nějaké chování a interaktivitu, kterou zajišťuje právě program napsaný v JavaScritpu. 
+Milí účastníci webové akademie, v této části kurzu se postupně začneme učit programovat v jazyce JavaScript. Jak už jste poznali z předchozích lekcí, jazyky HTML a CSS dávají webovým stránkám strukturu a vzhled. Většina stránek a aplikací však také nabízí nějaké chování a interaktivitu, kterou zajišťuje právě program napsaný v JavaScritpu.
 
 Svět programování může ve srovnání s HTML a CSS ze začátku působit velmi tajemně, plný zlých nástrah a neproniknutelných složitostí. Nutnost zapojovat možná trochu zaprášená zákoutí vašeho mozku může ze začátku být velká výzva. Proto společně vykročíme zvolna a krůček po krůčku. Budeme věnovat péči každému jednotlivému tématu tak, abyste do něj dokázali skutečně proniknout a nepřipadali si jako na jiné planetě. Vězte, že po chvíli se možná trochu zrezivělá mozkové kolečka začnou točit lehčeji a programování vám bude přinášet velkou radost z tvoření.
 
@@ -192,6 +192,92 @@ Chytrým použitím zaokrouhlování a trochou matematiky můžeme pomocí této
 2
 > Math.floor(Math.random() * 10)
 5
+```
+
+## Metody
+
+Často se stane, že některé funkce se hodí na práci pouze s jedním typem hodnoty.
+Například bychom mohli mít funkci `toUpperCase`, která by převedla všechna písmena
+v řetězci na velká písmena. Kdyby taková funkce existovala, mohli bychom ji
+volat třeba takto
+
+```jscon
+> toUpperCase('martin')
+'MARTIN'
+```
+
+Je pochopitelné, že taková funkce funguje pouze pro řetězce. Pro ostatní
+hodnoty nedává smysl. Těžko si představit, co by taková funkce měla vrátit
+například v takovémto případě:
+
+```jscon
+> toUpperCase(3.14)
+```
+
+Funkce, které pracují pouze na jednom typu hodnoty, se tvůrci JavaScriptu
+rozhodli svázat přímo s touto hodnotu. Můžeme tedy říct, že funkce `toUpperCase`
+patří řetězcům. Máme-li nějaký řetězec, funkci, která patří pouze k
+typu řetězec, pak zavoláme pomocí takzvané <term cs="tečkové notace" en="dot notation">.
+
+```jscon
+> 'martin'.toUpperCase()
+'MARTIN'
+```
+
+Funkcím jako výše, které patří jen konkrétním typům hodnot, říkáme <term cs="metody" en="methods">. Všimněte si, že metoda `toUpperCase` v JavaScriptu skutečně existuje, takže výše
+uvedený kód bude opravdu fungovat. Podobně existuje například metoda
+`toLowerCase`. Vyzkoušejte si ji!
+
+### Užitečné metody na řetězcích
+
+Na řetězcích máme v JavaScriptu spoustu metod, které nám umožňují provádět mnoho užitečných operací. Zde pro začátek vybereme pár z nich.
+
+`toUpperCase()`
+: Převede všechna písmena na velká.
+
+```jscon
+> 'Martin'.toUpperCase()
+'MARTIN'
+```
+
+`toLowerCase()`
+: Převede všechna písmena na malá.
+
+```jscon
+> 'Martin'.toLowerCase()
+'martin'
+```
+
+`trim()`
+: Odstraní bílé znaky ze začátku a konce.
+
+```jscon
+> '  martin '.trim()
+'martin'
+```
+
+`slice(start, end)`
+: Vyřízne z řetězce kus podle zadaných pozic začátku a konce. Pozor, že vždy počítáme od nuly a koncová pozice se bere **vyjma**.
+
+```jscon
+> 'martin'.slice(2, 4)
+'rt'
+> 'martin'.slice(0, 3)
+'mar'
+```
+
+`padStart(targetLength, padString)`
+: Prodlouží řetězec na zadanou délku tak, že na začátek přidá opakování řetězce `padString`. Hodí se na zarovnávání nebo na formátování čísel.
+
+```jscon
+> '12'.padStart(4, '0')
+'0012'
+> '12'.padStart(4, ' ')
+'  12'
+> '12'.padStart(3, ' ')
+' 12'
+> '12'.padStart(2, ' ')
+'12'
 ```
 
 @exercises ## Doporučené úložky na doma [
