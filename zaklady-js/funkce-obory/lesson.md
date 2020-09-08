@@ -97,11 +97,6 @@ if (name === undefined) {
 
 Hodnota `undefined` nám v budoucní způsobí ještě hodně nepříjemností, je tedy dobré se již teď obrnit trpělivostí.
 
-@exercises ## Cvičení - vlastní funkce [
-
-- pocitadlo
-  ]@
-
 ## Obor platnosti proměnných
 
 Mějme následující podmínku, která kontroluje věk uživatele a vypisuje neurvalé hlášky.
