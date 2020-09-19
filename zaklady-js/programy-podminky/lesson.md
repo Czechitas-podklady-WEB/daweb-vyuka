@@ -362,13 +362,9 @@ Takto můžeme vytvářet relativně komplikované rozhodování. Se zanořován
 - cena-vstupenky
   ]@
 
-@exercises ## Povinná úloha na doma [
-
-- superhruba
-  ]@
-
 @exercises ## Doporučené úložky na doma [
 
+- superhruba
 - slevy
   ]@
 
