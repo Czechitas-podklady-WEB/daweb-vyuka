@@ -439,7 +439,6 @@ if (!(age >= 18 && age < 65)) {
 ```
 
 Takovýto výraz už je však trochu hůře k přečtení. Logické operátory jsou užiteční pomocníci, v praxi je však dobré s nimi šetřit. Pokud výraz ve vaší podmínce obsahuje více než jeden logický operátor, váš kód se stává těžko čitelným a pochopitelným. Držte se proto při používání logickách operátor pri zemi. Vaši budoucí kolegová vás za to budou mít rádi.
-
 @exercises ## Volitelné úložky na doma [
 
 - ruleta
