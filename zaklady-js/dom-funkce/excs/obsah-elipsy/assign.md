@@ -5,7 +5,7 @@ demand: 1
 
 Zlovolní zahrádkáři nám chtějí stížit výměru pozemků a proto si pořídíli pozemek ve tvru elipsy.
 
-![Elipsa](../assets/ellipse.png){.fig .fig-100}
+![Elipsa](assets/ellipse.png){.fig .fig-100}
 
 Z matematiky víme, že známe-li šířku a výšku elipsy, její obsah je polovina šířky krát polovina výšky krát číslo π.
 

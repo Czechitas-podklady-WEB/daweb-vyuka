@@ -97,6 +97,14 @@ if (name === undefined) {
 
 Hodnota `undefined` nám v budoucní způsobí ještě hodně nepříjemností, je tedy dobré se již teď obrnit trpělivostí.
 
+@exercises ## Procvičování funkcí [
+
+- neosobni-pozdravy
+- osobni-pozdravy
+- pozdrav-na-strance
+- vyplnorez
+  ]@
+
 ## Obor platnosti proměnných
 
 Mějme následující podmínku, která kontroluje věk uživatele a vypisuje neurvalé hlášky.
@@ -238,7 +246,12 @@ Vytváříme zde funkci `checkAge`, která má dva parametry `age` a `message`. 
 
 Je dobré připomenout, že program výše je napsán obzvlášť zlovolně je zde především ze vzdělávacích důvdodů. Pokud takový kód někady napíšete v praxi, dostanete od vašich kolegů nejspíš pořádně za uši. Nikdo nechce číst kód, nad kterým musí zbytečně hodinu přemýšlet.
 
-## Uzávěry
+@exercises ## Cvičení - porozumění kódu [
+
+- porozumeni-kodu
+  ]@
+
+<!-- ## Uzávěry
 
 Když JavaScript runtime vykonává blok kódu, po celou dobu si pamatuje všechny proměnné, které v něm byly vytvořeny. Jakmile vykonávání bloku skončí, všechny takto zapamatované proměnné se z paměti uvolní. Toto může představovat problém ve chvíli, kdy uvnitř nějakého bloku vytváříme vlastní funkci. Prohlédněte si následující kód, který požádá uživatele o počet vteřin a poté postupně odpočítává každou vteřinu směrem dolů.
 
@@ -263,4 +276,74 @@ Všimněte si lokální proměnné `timeElm`. Tato je vytvořena v bloku `if`. J
 
 JavaScript runtime však tuto prekérní situaci vyřeší za nás. Ve chvíli, kdy nějaká funkce používá proměnnou z nadřazeného bloku, runtime si zapamatuje, že takovou proměnnou nemá na konci jejího bloku mazat. Funkce si potom tuto proměnnou nese s sebou po celý svůj život. Říkáme pak, že proměnná se do funkce uzavře a vzniká tak <term cs="uzávěr" en="closure">. V našem případě se tedy proměnná `timeElm` uzavřela do funkce `countDown`.
 
-Uzávěr takto zkraje možná zní jako velmi technická záležitost. V JavaScriptu ale budeme uzávěry používat na každém kroku. Je tedy dobré vědět, co se v takovém případě děje. Občas také můžeme narazit na velmi prekérní problémy způsobené nesprávným použitím uzávěru. Takovéto perly si ukážeme, až budeme probírat cykly.
+Uzávěr takto zkraje možná zní jako velmi technická záležitost. V JavaScriptu ale budeme uzávěry používat na každém kroku. Je tedy dobré vědět, co se v takovém případě děje. Občas také můžeme narazit na velmi prekérní problémy způsobené nesprávným použitím uzávěru. Takovéto perly si ukážeme, až budeme probírat cykly. -->
+
+@exercises ## Doporučené úložky na doma [
+
+- kalkulacka
+- prestupny-rok-funkce
+  ]@
+
+## Povinné čtení na doma - interpolace řetězců
+
+Když chceme v JavaScriptu vytvořit nějaký kus textu, například nějakou zprávu pro uživatele, často potřebujeme do tohoto textu vložit obsah několika různých proměnných.
+
+```js
+'Zákazník ' + name + ' utratil ' + amount + ' kč za ' + product + '.';
+```
+
+Abychom se ze všeho toho sčítání a uvozovek nezbláznili, moderní JavaScript nabízí nový zápis řetězců, kterému se odborně říká <term cs="interpolace řetězců" em="string interpolation">. V tomto zápisu se místo obyčejný nebo dvojitých uvozovek používají takzvaný zpětný apostrof &#96;. Pomocí tohoto zápisu můžeme obsah proměnných vložit do řetězce pomocí znaku `$` a složených závorek.
+
+```js
+`Zákazník ${name} utratil ${amount} kč za ${product}.`;
+```
+
+Uvnitř složených závorek se nám otevírá jakési JavaScriptové okno, do kterého můžeme vepsat nejen proměnnou, ale zcela libovolný výraz, jehož výsledek bude automaticky zkonvertován na řetězec.
+
+```js
+`Zákazník ${name} utratil ${String(amount).padStart()} kč za ${product}.`;
+```
+
+### Víceřádkové řetězce a escape sekvence
+
+Dále v tomto kurzu budeme chtít pracovat s delšími řetězci, které se nám často nevejdou na jeden řádek. V JavaScriptu bohužel nelze udělat běžný řetězec na více řádků. Následující kód by bohužel nefungoval.
+
+```js
+const name = '
+  petr
+';
+```
+
+Abychom takový řetězec sestavili, musíme si pomoct sčítáním řetězců.
+
+```js
+const may = (
+  'Late evening, on the first of May—\n' +
+  'The twilit May—the time of love.\n' +
+  'Meltingly called the turtle-dove,\n' +
+  'Where rich and sweet pinewoods lay.\n' +
+  'Whispered of love the mosses frail,\n' +
+  'The flowering tree as sweetly lied,\n' +
+  'The rose\'s fragrant sigh replied\n' +
+  'To love-songs of the nightingale' +
+);
+```
+
+Všimněte si použití zpětného lomítka u sybmolů jako `\n` a `\'`. Toto jsou takzvané _escape sekvence_, které nám umožní vložit dovnitř řetězce znak, který by jinak nešel napsat. Sekvence `\n` znamená nový řádek, sekvence `\'` vloží apostrof. Ten bychom to řetězce napsat nemohli, protože by si JavaScript myslel, že tím chceme řetězec ukončit.
+
+Naustálé sčítání a vkládání escape sekvencí nás ovšem brzy začne dost zdržovat. Nyní však můžeme použí nové cool řetězce se zpětnými apostrofy a zapsat náš řetězec takto.
+
+```js
+const may = `
+  Late evening, on the first of May—
+  The twilit May—the time of love.
+  Meltingly called the turtle-dove,
+  Where rich and sweet pinewoods lay.
+  Whispered of love the mosses frail,
+  The flowering tree as sweetly lied,
+  The rose's fragrant sigh replied
+  To love-songs of the nightingale
+`;
+```
+
+Zde už apostrof i nový řádek můžeme napsat rovnou bez escape sekvencí.

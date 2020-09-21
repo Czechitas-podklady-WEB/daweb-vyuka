@@ -35,7 +35,7 @@ Jakmile má prohlížeč DOM zkonstruovaný, může úplně zapomenout na HTML a
 
 ![DOM Stránka](assets/dom-page.svg)
 
-Je to podobné, jak když si například čtete knížku a v hlavě si automaticky vytváříte reprezentaci celého příběhu. takže jej později dokážete odvyprávět i bez knihy. Výhoda pro nás programátory spočívá v tom, že prohlížeč nám umožní DOM pomocí JavaScriptu měnit a tím ovlivňovat, co se zobrazuje na stránce.
+Je to podobné, jak když si například čtete knížku a v hlavě si automaticky vytváříte reprezentaci celého příběhu. Později jej tedy dokážete odvyprávět i bez knihy. Výhoda pro nás programátory spočívá v tom, že prohlížeč nám umožní DOM pomocí JavaScriptu měnit a tím ovlivňovat, co se zobrazuje na stránce.
 
 To hlavní, co je dobré si z tého sekce zapamatovat je, že HTML je pouze text, který se za života stránky nikdy nemění, kdežto DOM je vnitřní reprezentace stránky, která se měnit dá.
 
@@ -229,7 +229,7 @@ Naše funkce tedy bude mít dva vstupy - šířku a výšku. Ze školy si pamatu
 (width, height) => (width * height) / 2;
 ```
 
-Zápis funkce se dělí na definici _vstupů_ (před šipkou) a _tělo_ (za šipkou). Jako vstupy v kulatých závorkách vidíme dvě slova `width` a `height`. To jsou speciální proměnné, kterým říkáme _parametry_. Pokud naší funkci zavoláme s nějakými hodnotami, například 5 a 3 jak napovídá obrázek, JavaScript tyto hodnoty uloží do argumentů. V těle funkce pak můžeme agrumenty použít jako normální proměnné pro náš výpočet.
+Zápis funkce se dělí na definici _vstupů_ (před šipkou) a _tělo_ (za šipkou). Jako vstupy v kulatých závorkách vidíme dvě slova `width` a `height`. To jsou speciální proměnné, kterým říkáme _parametry_. Pokud naší funkci zavoláme s nějakými hodnotami, například 5 a 3 jak napovídá obrázek, JavaScript tyto hodnoty uloží do jijích parametrů. V těle funkce pak můžeme parametry použít jako normální proměnné pro náš výpočet.
 
 Zbývá nám ukázat si, jak naší funkci zavolat. Zde přichází jedno z nejdůležitějších uvědomění, které v JavaScriptu kdy zažijete.
 
@@ -293,7 +293,7 @@ Zkušení programátoři `else` vynechávají, pokud není potřeba. Je proto do
 - ramecek
   ]@
 
-## Povinné čtení na doma
+## Povinné čtení na doma - pokročilejší práce s třídami
 
 Představme si nějaký DOM element, který na sobě má navázáno vícero CSS tříd. Například nějaké přepínací tlačíko, které začíná ve stavu 'vypnuto'.
 
@@ -348,7 +348,6 @@ Pomocí vlastnosti `classList` jsme opět rozšířili náš arzenál pro manipu
 
 @exercises ## Doporučené úložky na doma [
 
-- kalkulacka
 - dovednosti
 - python-round
   ]@

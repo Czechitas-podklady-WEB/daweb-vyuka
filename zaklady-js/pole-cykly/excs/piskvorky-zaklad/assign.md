@@ -7,7 +7,7 @@ Hrát piškvorky 3x3 rychle přestane být zábava, neboť brzy objevíme, že p
 
 V našich piškvorkách vyhraje ten hráč, který na libovolném místě hracího plánu vytvoří ze svých symbolů jeden z následujících vzorů.
 
-![Piškvorky](../assets/piskvorky.svg){.fig .fig-80}
+![Piškvorky](assets/piskvorky.svg){.fig .fig-80}
 
 **Reprezentace hracího plánu**
 
@@ -44,7 +44,7 @@ Nyní už jsme připravení začít psát naši aplikaci.
 
 **Aplikace piškvorky**
 
-Stáhněte si [základ webové aplikace](../assets/piskvorky-zadani.zip) pro naše piškvorky a postupujte dle následujících kroků.
+Stáhněte si [základ webové aplikace](assets/piskvorky-zadani.zip) pro naše piškvorky a postupujte dle následujících kroků.
 
 1. Vytvořte funkci `squareClick`, která bude reagovat na kliknutí na čtverec na hracím plánu. Uvnitř této funkce získejte odkaz na element, na který bylo kliknuto, a vypište do konzole hodnotu atributu `data-index`.
 1. Vyberte z dokumentu všechny elementy s třídou `square` a na každý z nich pověste funkci `squareClick` jako reakci na kliknutí. Po spuštení aplikace pozorujte, zda se v konzoli po kliknutí na jeden čtverec zobrazí jeho správný index.

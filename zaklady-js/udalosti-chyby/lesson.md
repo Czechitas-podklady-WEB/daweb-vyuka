@@ -1,3 +1,5 @@
+V této lekci si pořádně procvičíme události
+
 ## Opakování matka moudrosti.
 
 ## Porozumění chybám
@@ -111,6 +113,20 @@ false
 Výsledek je prostě `false`. Naše podmínka tedy vždy tiše selže a náš program běží vesele dál. Na to, že ve skutečnosti porovnáváme hrušky s jabkama, nás JavaScript runtime nijak neupozorní. Toto je jeden z důvodů, proč mnoho programátorů nemá JavaScript rádo. Většina ostatních programovacích jazyků by totiž v takovémto případě vyhodila chybu. V JavaScriptu si však musíte obléknout svůj detektivní plášť a vyrazit chybu hledat sami.
 
 ## JavaScriptové recitály
+
+Jedním z hlavních způsobů, jak si ušetřit monho frustrace a mlácení hlavou o stůl během programování, je naučit se doopravdy porozumět tomu, co děláte. V předchozích lekcích se na vás vyhrnolo velké množství nových pojmů a možná se mezi nimi zmítáte jako vratká bárka v rozbouřeném moři. Zkusíme tedy zakotvit tím, že se budeme učit přesně popsat - takzvaně odrecitovat - co přesně dělá nějaký kousek kódu, aby si vás mozek zvyknul na JavaScriptové myšlení.
+
+Zkusme například co nejpřesnějí popsat, co se děje v následujícím kousku kódu.
+
+```js
+const result = Math.floor(2.618);
+```
+
+Můžeme například říct toto:
+
+> Vytváříme proměnnou `result`, do které ukládáme výsledek volání funkce `Math.floor`. Tuto funkci voláme s jedním vstupem (argumentem) 2.618.
+
+Díky tomuto cvičení si tak lépe ujasníme pojmy jako _proměnná_, _volání funkce_, _argument funkce_ apod.
 
 ## Ladění programů
 
