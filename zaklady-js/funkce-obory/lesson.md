@@ -99,10 +99,9 @@ Hodnota `undefined` nám v budoucní způsobí ještě hodně nepříjemností, 
 
 @exercises ## Procvičování funkcí [
 
-- neosobni-pozdravy
-- osobni-pozdravy
-- pozdrav-na-strance
-- vyplnorez
+- pozdravy
+- e-mail
+- prevod-meny
   ]@
 
 ## Obor platnosti proměnných
@@ -280,8 +279,9 @@ Uzávěr takto zkraje možná zní jako velmi technická záležitost. V JavaScr
 
 @exercises ## Doporučené úložky na doma [
 
+- vyplata
 - kalkulacka
-- prestupny-rok-funkce
+- cennik
   ]@
 
 ## Povinné čtení na doma - interpolace řetězců
@@ -347,3 +347,9 @@ const may = `
 ```
 
 Zde už apostrof i nový řádek můžeme napsat rovnou bez escape sekvencí.
+
+@exercises ## Volitelné úložky na doma [
+
+- vyplnorez
+- prestupny-rok-funkce
+  ]@

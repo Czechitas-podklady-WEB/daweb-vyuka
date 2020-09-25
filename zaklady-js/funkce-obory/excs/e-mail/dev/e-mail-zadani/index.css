@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.email__subject,
+.email__body {
+  background-color: #efefef;
+  margin: 1rem;
+  color: #555;
+}
+
+.email__subject {
+  padding: 1rem 2rem;
+}
+
+.email__body {
+  padding: 2rem;
+}
