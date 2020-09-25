@@ -253,38 +253,83 @@ landArea(5, 3);
 
 ### Složitější funkce
 
-Ne každá funkce je tak přímočará, jako výpočet obsahu. Často se stane, že potřebujeme ve funkci provést nějaké rozhodování, výpočet sestávají více kroků apod. Mějme například funkci, která nám vrátí absolutní hodnotu čísla. V takové funkci potřebujeme použít podmínky. Tělo funkce tedy bude obsahuje více příkazů a nevejde se nám na jeden řádek. V takovém případě může tělo funkce být blokem kódu podobně jako je to už známe u podmínek.
+Ne každá funkce je tak přímočará, jako výpočet obsahu. Často se stane, že potřebujeme ve funkci provést nějaké rozhodování, výpočet sestávají z více kroků apod. Mějme například funkci, která rozhodne, zda máme dostatečně bezpečné heslo. Heslo budeme považovat za bezpečné, pokud je delší než 12 znkaů. V takovéto funkci tedy potřebujeme použít podmínky. Tělo funkce proto bude obsahovat více příkazů, které se nám už nevejdou na jeden řádek. V takovém případě bude tělo funkce blok kódu podobně jako to už známe u podmínek.
 
 ```js
-const abs = (x) => {
-  if (x >= 0) {
-    return x;
+const isSafe = (password) => {
+  if (password.length >= 12) {
+    return true;
   } else {
-    return -x;
+    return false;
   }
 };
 ```
 
-Všimněte si důležitého slovíčka `return`. To slouží k tomu, abychom z funkce vrátili nějakou hodnotu. Ve chvíli, kdy napíšeme `return`, kontrola se vrátí zpět na místo, odkud byla funkce volána a vrácená hodnota bude na tomto místě výsledkem naší funkce.
+Všimněte si důležitého slovíčka `return`. To slouží k tomu, abychom z funkce vrátili nějakou hodnotu. Ve chvíli, kdy napíšeme `return`, kontrola se vrátí zpět na místo, odkud byla funkce volána, a vrácená hodnota bude na tomto místě výsledkem naší funkce.
 
 ```js
-const delka = abs(-10);
+const result = isSafe('popokatepetl');
 ```
 
-Vzhledem k tomu, že příkazem `return` se průběh funkce ukončuje, můžeme funkce `abs` napsat také takto.
+Vzhledem k tomu, že příkazem `return` se průběh funkce ukončuje, můžeme funkci `isSafe` napsat také takto.
 
 ```js
-const abs = (x) => {
-  if (x >= 0) {
-    return x;
+const isSafe = (password) => {
+  if (password.length >= 12) {
+    return true;
   }
-  return -x;
+  return false;
 };
 ```
 
-Proč není `else` potřeba? Zde je nuté oprášit logické uvažování. Pokud bylo <var>x</var> kladné nebo nula, funkce skončila u prvního `return` a k druhému se vůbec nedostala. Pokud se tedy vykonávání funkce dostalo až k druhému `return`, znamená to, že <var>x</var> musí být záporné, jinak by funkce skončila mnohem dřív a sem bychom se vůbec nedostali. Nemusíme už tedy říkat žádné `else` a prostě vrátíme `-x`.
+Proč není `else` potřeba? Zde je nuté oprášit logické uvažování. Pokud byla délka hesla dotatečná, funkce skončila u prvního `return` a k druhému se vůbec nedostala. Pokud se tedy vykonávání funkce dostalo až k druhému `return`, znamená to, heslo kontrolou neprošlo. Jinak by totiž funkce skončila mnohem dřív a sem bychom se vůbec nedostali. Nemusíme už tedy říkat žádné `else` a prostě vrátíme `false`.
 
-Zkušení programátoři `else` vynechávají, pokud není potřeba. Je proto dobré si na tento způsob zápistu zvyknout.
+Zkušení programátoři `else` vynechávají, pokud není potřeba. Je proto dobré si na tento způsob zápistu zvyknout. V programátorské hantýrce se této strategii říká _early return_ a budeme ji běžně používat všude dam, kde je to možné.
+
+### Funkce bez parametrů
+
+V praxi běžně narazíme také na funkce, které žádné parametry nemají. V takovém případě na místo parametrů píšeme prostě prázdné závorky. Příkladem může být následující funkce, která pro nás hodí kostkou, tedy vygeneruje náhodné celé číslo mezi 1 a 6.
+
+```js
+const roll = () => {
+  return Math.floor(Math.random() * 6) + 1;
+};
+```
+
+Tato funkce ke své činnosti žádné hodnoty z venku napotřebuje, proto je bez parametrů. Další příklad může být funkce, který obarví nadpis stránky na červeno.
+
+```js
+const colorHeadingRed = () => {
+  const headingElm = document.querySelector('h1');
+  headingElm.style.color = 'red';
+};
+```
+
+Tato funkce parametry nemá, protože ke své činnosti opět nepotřebuje žádné informace z venku. Mohli bychom však také chtít funkci, která obarví nadpis námi zvolenou barvou. V takovém případě funkci přidáme jeden parametr.
+
+```js
+const colorHeading = (colorName) => {
+  const headingElm = document.querySelector('h1');
+  headingElm.style.color = colorName;
+};
+```
+
+### Alternativní zápis funkcí
+
+V různých výukových materiálech se můžete setkat s alternativním zápisem funkce. Ten by pro naši obarvovací funkci vypadal takto.
+
+```js
+function colorHeading(colorName) {
+  const headingElm = document.querySelector('h1');
+  headingElm.style.color = colorName;
+}
+```
+
+Mezi těmito dvěma zápisy jsou co do významu drobné rozdíly. V tuto chvíli však ještě nemáme dostatečný aparát k tomu, abychom dobře vysvětlili, v čem přesně rozdíly mezi takto zapsanými funkcemi spočívají. Navíc v žádném tématu probíraném v rámci celé akademie se rozdíly mezi těmito zápisy neprojeví. Pro účely našeho kurzu tedy stačí si vybrat jeden zápis a toho se držet. My si vybereme ten první, kterému se odborně říká _arrow funkce_. Výhody tohoto zápisu spočívají v tom, že
+
+1. názorně ukazuje, že funkce se ukládá do proměnné, a je to tedy hodnota jako každá jiná,
+2. arrow funkce fungují uvnitř jednodušeji než funkce zapsané pomocí `function`,
+3. zápis arrow funkcí je většinou kratší a méně ukecaný.
 
 @exercises ## Cvičení - Vlastní funkce [
 
