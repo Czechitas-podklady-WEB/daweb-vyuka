@@ -209,7 +209,7 @@ true
 > age === 21
 true
 > age !== 21
-true
+false
 ```
 
 Kompletní sada porovnávacích operátorů vypadá takto.
