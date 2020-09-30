@@ -1,12 +1,101 @@
-Předchozí <term cs="jak to jde" en="nazdarek"> lekce nám ukázala, jak můžeme pomocí JavaScriptu měnit obsah stránky. K plně interaktivním stránkám však potřebujeme také reagovat na akce uživatele. Chceme například něco zobrazit, když uživatel klikne na tlačítko, umožnit mu vložit nějaký vstup do textového políčka a tak dále. K tomu potřebujeme porozumět takzvaným událostem. K tomu, abychom uměli dobře používat události se však také potřebujeme dozvědět něco málo více o tom, jak fungují funkce.
+V předchozích lekcích jsme si ukázali, jak můžeme pomocí JavaScriptu měnit obsah stránky a jak vyrábět vlastní funkce. Obě tato témata tvoří základ pro to, abychom mohli naše stránky udělat skutečně interaktivní. Chceme například umět něco zobrazit, když uživatel klikne na tlačítko, umožnit mu vložit nějaký vstup do textového políčka a tak dále. K tomu potřebujeme porozumět takzvaným událostem. K tomu, abychom uměli dobře používat události se však také potřebujeme dozvědět něco více o tom, jak fungují funkce.
 
 ## Funkce vyššího řádu
 
-Z předchozí lekce už víme, že funkce jsou hodnoty podobně jako čísla, řetězce nebo DOM elementy a viděli jsme, že je díky tomu můžeme ukládat do proměnných. To je však pouze začátek toho, co je možné s funkcemi dělat a nyní se pustíme králičí norou malinko hlouběji. Funkce je totiž zcela rovnoprávná hodnota, a tak ji můžeme nejen uložit do proměnné, ale také předat jiné funkci na vstup. Můžeme tedy funkci předat jinou funkci. Taková myšlenka může ze začátku působit dost odvážně a možná až děsivě. Postupujme tedy pomaličku a s rozvahou.
+Z minula už víme, že funkce jsou hodnoty podobně jako čísla, řetězce nebo DOM elementy. Vzpomeňte si, že při vytváření funkce ve skutečnosti vytváříme proměnnou do které novou funkci ukládáme.
+
+```js
+const goodbye = (name) => {
+  return `S pozdravem ${name}`;
+};
+```
+
+Ohledně toho, co vše je možné s funkcemi dělat, jsme teprve na začátku. Je tedy čas pustit se králičí norou malinko hlouběji.
+
+Jelikož každá funkce je zcela rovnoprávná hodnota, můžeme ji nejen uložit do proměnné, ale také předat jiné funkci jako vstup. Je tedy možné zavolat funkci a na vstup jí při tom předat jinou funkci jako hodnotu. Taková myšlenka může ze začátku působit dost odvážně a neuchopitelně. Postupujme tedy pomaličku a s rozvahou.
+
+### Rozvoz jídla
+
+Představme si Pražskou restauraci, která rozváží jídlo k jednotlivým zákazníkům. K rozvozu jídla máme k dispozici následující tři rozvozové služby, každou s jiným cenníkem a jinou úrovní kvality služeb.
+
+**Hejsci na kolech**
+: Šance, že zásilka bude skutečně doručena, je 90%. Pokud se doručení povede, je to vždy do 30 minut do okolí 5 km.
+
+**Machři, co maj drony**
+: Šance, že zásilka bude skutečně doručena, je 50%. Pokud se doručení povede, je to vždy do deseti minut po celé Praze.
+
+**Borci v autech**
+: Zásilka je doručena vždy. Doručení však může trvat až dvě hodiny.
+
+Napišme si funkce, které simulují naše doručovací společnosti.
+
+```js
+const hejsci = (zasilka) => {
+  if (Math.random() > 0.1) {
+    return `Zásilka ${zasilka} doručena za 30 minut, kámo.`;
+  }
+
+  return `Zásilka ${zasilka} se ztratila. Kurýra přepadla smečka hladových bezdomovců.`;
+};
+
+const machri = (zasilka) => {
+  if (Math.random() > 0.5) {
+    return `Zásilka ${zasilka} doručena za 10 minut.`;
+  }
+
+  return `Zásilka ${zasilka} ztracena. Drona přepadlo hejno hladových holubů`;
+};
+
+const borci = (zasilka) => {
+  return `Zásilka ${zasilka} doručena s přehledem za dvě hodiny.`;
+};
+```
+
+Tyto funkce si můžeme vyzkoušet například v konzoli.
+
+```jscon
+> machri('Cous cous se zeleninou')
+'Zásilka Cous cous se zeleninou ztracena. Drona přepadlo hejno hladových holubů.'
+```
+
+Představme si nyní, že si jako zákazník objednáte jídlo a chcete si zvolit, jakou službou vám bude doručeno. Můžeme tedy napsat funkci `objednat`, které předáme objednané jídlo a funkci, která se má použít k doručení. Funkci `objednat` vygeneruje číslo objednávky a použije zadanou funkci k doručení balíčku.
+
+```js
+const objednat = (jidlo, doruceni) => {
+  const cislo = Math.floor(Math.random() * 1000);
+  const id = String(cislo).padStart(4, '0');
+  const balicek = `${jidlo} (${id})`;
+  return doruceni(balicek);
+};
+```
+
+Všimněte si, že funkce `objednat` se chová k parametru `doruceni` jako by to byla funkce. Očekáváme tedy, že v tomto parametru skutečnš obdržíme nějakou funkci, kterou poté můžeme zavolat. Zkusme třeba naši funkci `objednat` zavolat s funkcí `hejsci`.
+
+```jscon
+> objednat('Hovězí cheeseburger', hejsci)
+'Zásilka Hovězí cheeseburger (0397) doručena za 30 minut, kámo.'
+```
+
+Pokud si chceme být doručením opravdu jistí, můžeme použít Borce v autech.
+
+```jscon
+> objednat('Hovězí cheeseburger', borci)
+'Zásilka Hovězí cheeseburger (7354) doručena s přehledem za dvě hodiny.'
+```
+
+Všimněte si, že funkce `hejsci` a `borci` předáváme jako celek, tedy jako hodnotu. Nevoláme je tady my sami, nýbrž je předáváme funkci `objednat`, aby ta je zavolala dle svého vlastního uvážení.
+
+Dejte si pozor na následující chybu, kdy funkci `hejsci` místo předávání omylem zavoláme a funkce `objednat` tak jako druhý vstup nedostane funkci `hejsci` ale její výsledek.
+
+```jscon
+> odeslat('6682', hejsci())
+```
+
+Způsob uvažování, na který si díky tomuto příkladu snažíme zvyknout je, že občas můžeme mít funkci jako například `objednat`, která očekává na vstupu nějako jinou funkci, kterou poté sama zavolá. Takových funkcí uvidíme během naší pouti JavaScriptovou krajinou docela dost a budeme je často používat.
 
 ### Chytřejší kalkulačka
 
-Vraťme s na chvíli k příkladu [kalkulačka](../dom-funkce/#cvi-kalkulacka) z minulé lekce. Zadání bylo vytvořit funkci `calc`, která spočítá výsledek operace zadané jako řetězec. Přímočaré řešení mohlo vypadat například takto.
+Příklad výše byl malinko strojený a trošku přitažený za vlasy, abyste si ihned neutopili v technickém žargonu. Nyní však zkusíme něco praktičtějšího. Vraťme se na chvíli k příkladu [kalkulačka](../funkce-obory/#exc-kalkulacka) z minulé lekce. Zadání bylo vytvořit funkci `calc`, která spočítá výsledek operace zadané jako řetězec. Přímočaré řešení by mohlo vypadat například takto.
 
 ```js
 const calc = (num1, op, num2) => {
@@ -22,10 +111,12 @@ const calc = (num1, op, num2) => {
   if (op === '/') {
     return num1 / num2;
   }
+
+  return null;
 };
 ```
 
-Možná si říkáte, jestli by tato funkce nešla napsat nějak šikovněji a úsporněji. Například předat funkci operaci tak nějak přímo a naše funkce by ji jen vykonala. Něco ve stylu
+Možná si říkáte, jestli by tato funkce nešla napsat nějak šikovněji a úsporněji. Například zkusit předat funkci operaci tak nějak přímo a naše funkce by ji jen vykonala. Něco ve stylu
 
 ```jscon
 > calc(2, +, 3)
@@ -35,16 +126,29 @@ Možná si říkáte, jestli by tato funkce nešla napsat nějak šikovněji a �
 Pokud přemýšlíte tímto směrem, jste na správné stopě. Jen na to musíme jít trošku od lesa. Nejprve si vyrobíme funkce, které provádějí jednotlivé operace.
 
 ```js
-const plus = (num1, num2) => num1 + num2;
-const minus = (num1, num2) => num1 - num2;
-const times = (num1, num2) => num1 * num2;
-const divide = (num1, num2) => num1 / num2;
+const plus = (num1, num2) => {
+  return num1 + num2;
+};
+
+const minus = (num1, num2) => {
+  return num1 - num2;
+};
+
+const times = (num1, num2) => {
+  return num1 * num2;
+};
+
+const divide = (num1, num2) => {
+  return num1 / num2;
+};
 ```
 
 Jelikož každá takováto funkce je hodnota, můžeme ji předat jako vstup do funkce `calc`. Ta pak obdrženou funkci pouze zavolá.
 
 ```js
-const calc = (num1, op, num2) => op(num1, num2);
+const calc = (num1, op, num2) => {
+  return op(num1, num2);
+};
 ```
 
 Funkci `calc` pak použijeme velmi přímočaře.
@@ -56,41 +160,25 @@ Funkci `calc` pak použijeme velmi přímočaře.
 20
 ```
 
-Ze začátku se vám možná z takovýchto triků malinko točí hlava. Projděme si proto následující fakta, abychom získali zpět ztracenou rovnováhu.
+Ze začátku se vám možná z takovýchto triků malinko točí hlava. Pojďme si proto zopakovat následující fakta, abychom získali zpět ztracenou rovnováhu.
 
-1. V parametru `op` nyní není řetězec, jako tomu bylo dříve, nýbrž funkce.
+1. V parametru `op` nyní není řetězec, jako tomu bylo dříve, nýbrž celá funkce.
 1. Funkce `calc` funkci `op` zavolá, aniž by věděla, co je tato funkce vlastně zač. Prostě vezme cokoliv, co jí dáme na vstup, a zavolá to.
 1. Když voláme funkci `calc` a na vstupu je například funkce `plus`, všimněte si, že funkci `plus` nevoláme. Za proměnnou `plus` nejsou kulaté závorky. Funkci pouze předáváme jako hodnotu, podobně, jako bychom předávali číslo, řetězec apod.
 
 Funkcím, které berou jiné funkce jako vstup nebo vracejí funkce jako svůj výstup, se v teorii programování říká <term cs="funkce vyšších řádů" en="higher order functions">. Je to velmi důležitý koncept, který má spoustu využítí a budeme jej používat v mnoha různých situacích.
 
-### Malé cvičení
+@exercises ## Cvičení - funkce vyššího řádu [
 
-Abychom byli mezi funkcemi vyšších řádů jako ryba ve vodě, je potřeba trošku procvičit tento nový styl přemýšlení. Projděte si následující výrazy a zkuste předpovědět, jaký bude výsledek.
-
-```jscon
-> const foo = (f, x) => 3 * f(x + 2);
-> foo(Math.round, 3.74)
-?
-> foo((a) => a ** 2, 3)
-?
-> foo((x) => 17 % x, 5)
-?
-```
-
-```jscon
-> const foo = (g, x, y) => g(x, y) + g(y, x);
-> foo(Math.max, 5, 10)
-?
-> foo((a, b) => 2 * (a - b), 2, 5)
-?
-> foo((x, y) => x + ' ' + y, 'petr', 'pavel')
-?
-```
+- hesla
+- e-mail-2
+  ]@
 
 ### Zpoždění a časovače
 
-Jedna ze situací, kdy se nám velmi hodí funkce vyššího řádu, je chvíle, kdy chceme v JavaScriptu provedení nějaké funkce pozdržet nebo její volání pravidelně opakovat. Vzpomeňte si na příklad [kvíz](../dom-funkce/#cvi-kviz) z minulé lekce. Představme si, že chceme, aby uživatel měl na každou odpověď nějaký časový limit. Po zobrazení otázky chceme počkat 5 vteřin a poté vypsat něco jako "čas vypršel". Vyrobíme si tedy funkci, která vypisuje naši zprávu, zatím pro jednoduchost pouze do konzole.
+Dobrá zpráva pro začínající programátory je, že psát vlastní funkce vyšších řádů je spíš pokročilá věc a budeme ji používat až při práci v Reactu. Zatím budeme používat funkce vyšších řádů, které nám JavaScript nabízí už hotové.
+
+Jedna ze situací, kdy se nám velmi hodí funkce vyššího řádu, je chvíle, kdy chceme v JavaScriptu provedení nějaké funkce pozdržet nebo její volání pravidelně opakovat. Vzpomeňte si na příklad [kvíz](../dom-funkce/#exc-kviz). Představme si, že chceme, aby uživatel měl na každou odpověď nějaký časový limit. Po zobrazení otázky chceme počkat 5 vteřin a poté vypsat něco jako "čas vypršel". Vyrobíme si tedy funkci, která vypisuje naši zprávu, zatím pro jednoduchost pouze do konzole.
 
 ```js
 const timeIsUp = () => {
@@ -145,12 +233,6 @@ Podobně jako u funkce `setTimout`, anonymní funkci můžeme předat i naší z
 ?
 ```
 
-@exercises ## Cvičení - funkce vyššího řádu [
-
-- jednoduche-hof
-- minutka
-  ]@
-
 ## Události
 
 Aby naše stránky mohly být skutečně interaktivní, potřebujeme být schopni reagovat na akce, které uživatel na stránce provádí - klikání na tlačíka, stiknutí kláves, scrollování, pohyb myší apod. Vždy, když některá z těcho akcí na stránce nastane, říkáme, že nastala určitá <term cs="událost" en="event">. JavaScript reprezentuje takovou událost jako speciální typ hodnoty podobně jako číslo, řetězec nebo funkci. Událost tedy můžeme uložit do proměnné nebo poslat nějaké funkci jako vstup. Událost obsahuje vlastnosti a metody, které popisují co se přesně stalo, například jaká klávesa byla zrovna stisknuta, kde na obrazovce bylo kliknuto a spoustu dalších užitenčných informací.
@@ -158,13 +240,13 @@ Aby naše stránky mohly být skutečně interaktivní, potřebujeme být schopn
 Abychom mohli na události reagovat, JavaScriptu nám umožňuje ke každé události, která nás zajímá, připojit funkci, která se zavolá ve chvíli, kdy daná událost nastane. Takové funkci často říkáme <term cs="posluchač události" en="event listener">. Můžeme si představit, že JavaScirpt runtime pečlivě naslouchá všem možným událostem a volá k nim přiřazené funkce. Ve chvíli, kdy JavaScript runtimu tuto funkcí volá, předá jí na vstup událost, která zrovna nastala. Taková funkce tedy může vypadat například takto.
 
 ```js
-const changeTitle = (event) => {
+const changeTitle = () => {
   const h1Elm = document.querySelector('h1');
   h1Elm.textContent = 'Baf!';
 };
 ```
 
-Nyní zařídíme, aby se tato funkce zavolala ve chvíli, kdy stiskneme tlačítko. Vytvoříme si tedy jedndouchou stránku s tlačítkem a nadpisem.
+Nyní zařídíme, aby se tato funkce zavolala ve chvíli, kdy stiskneme tlačítko. Vytvoříme si tedy jednoduchou stránku s tlačítkem a nadpisem.
 
 ```html
 <body>
@@ -179,7 +261,7 @@ Nejdříve tlačítko z dokumentu vybereme a poté na něm zavoláme speciální
 ```js
 'use strict';
 
-const changeTitle = (event) => {
+const changeTitle = () => {
   const h1Elm = document.querySelector('h1');
   h1Elm.textContent = 'Baf!';
 };
@@ -203,163 +285,52 @@ V tomto případě se funkce `changeTitle` zavolá už ve chvíli, kdy voláme m
 Nástraha druhá spočívá v názvech událostí. To jsou obyčejné řetězce jak je známe už z první lekce. Není vůbec těžké udělat v názvu události překlep, obzvlášť, pokud je název delší, nebo nejsme tolik zdatní v angličtině.
 
 ```js
-btnElm.addEventListener('clik', changeTitle());
-btnElm.addEventListener('keypres', changeTitle());
+btnElm.addEventListener('clik', changeTitle);
+btnElm.addEventListener('keypres', changeTitle);
 ```
 
 JavaScript runtime bohužel nekontroluje, zda událost `clik` nebo `keypres` může skutečně nastat nebo nikoliv. Jenoduše k tomuto názvu připojí posluchače a o nic dalšího se nestará. Jelikož takto pojmenované události nikdy nenastanou, naše stránka nebude fungovat a opět také nenastane žádná chyba. Z hlediska runtimu je jako v předchozím případě všechno v naprostém pořádku.
 
 Když tedy pracujete s událostmi, vždy si dobře zkontrolujte, že jste jméno události napsali správně a že také správným způsobem předáváte posluchače.
 
-### Vlastnosti událostí
-
-Všimněte si, že jsme parametr `event` uvnitř naší funkce `changeTitle` zatím k ničemu nepoužili. V tomto parametru je uložena hodnota, která obsahuje informace o události, která nastala. Najdeme zde například tyto vlastnosti
-
-`event.target`
-: DOM element, na kterém událost nastala. V našem případě je to element tlačítka.
-
-`event.shiftKey`, `event.altKey`, `event.ctrlKey`
-: Tyto vlastnosti obsahují pravdivostní hodnoty, které udávají, zda byla při kliknutí stisknuta klávesa [[Alt]], [[Shift]] nebo [[Ctrl]].
-
-### Kalkulačka
-
-Vlastnost `target` je jedna z vůbec nejdůležitějších. Díky ní se můžeme dostat z mnoha jinak svízelných situací. Představte si například, že chceme naprogramovat jednoduchou webovou kalkulačku. Pravděpodobně bychom začali s číselníkem jako na obrázku.
-
-![Číselník](assets/numpad.png){.fig}
-
-Nejdříve budeme potřebovat HTML část naší malé aplikace.
-
-```html
-<div class="numpad">
-  <div class="display">0</div>
-  <button id="btn7" class="num-btn">7</button>
-  <button id="btn8" class="num-btn">8</button>
-  <button id="btn9" class="num-btn">9</button>
-  <button id="btn4" class="num-btn">4</button>
-  <button id="btn5" class="num-btn">5</button>
-  <button id="btn6" class="num-btn">6</button>
-  <button id="btn1" class="num-btn">1</button>
-  <button id="btn2" class="num-btn">2</button>
-  <button id="btn3" class="num-btn">3</button>
-  <button id="btn0" class="num-btn num-btn--wide">0</button>
-</div>
-```
-
-Nyní budeme chtít, aby při stisku každého tlačíka přibyla na displaji kalkulačky správná cifra. První řešení, které nás může napadnout, je dát každému tlačíku na kliknutí jinou funkci, která nastaví správnou cifru.
-
-```js
-'use strict';
-
-const displayElm = document.querySelector('.display');
-
-document.querySelector('#btn0').addEventListener('click', (event) => {
-  displayElm.textContent += '0';
-});
-document.querySelector('#btn1').addEventListener('click', (event) => {
-  displayElm.textContent += '1';
-});
-document.querySelector('#btn2').addEventListener('click', (event) => {
-  displayElm.textContent += '2';
-});
-document.querySelector('#btn3').addEventListener('click', (event) => {
-  displayElm.textContent += '3';
-});
-document.querySelector('#btn3').addEventListener('click', (event) => {
-  displayElm.textContent += '3';
-});
-document.querySelector('#btn4').addEventListener('click', (event) => {
-  displayElm.textContent += '4';
-});
-document.querySelector('#btn5').addEventListener('click', (event) => {
-  displayElm.textContent += '5';
-});
-document.querySelector('#btn6').addEventListener('click', (event) => {
-  displayElm.textContent += '6';
-});
-document.querySelector('#btn7').addEventListener('click', (event) => {
-  displayElm.textContent += '7';
-});
-document.querySelector('#btn8').addEventListener('click', (event) => {
-  displayElm.textContent += '8';
-});
-document.querySelector('#btn9').addEventListener('click', (event) => {
-  displayElm.textContent += '9';
-});
-```
-
-Tento kód sice bude fungovat, ale už od pohledu je strašlivě ukecaný. Všech naších deset funkcí dělá v podstatě totéž. Liší se pouze v jednom znaku. Mnohem šikovnější by bylo mít pouze jednu funkci, která se připojí na každé tlačítko. Tato funkce ale musí nějak zjistit, jakou cifru má na displej připojit. Zde můžeme mazaně využít toho, že kýženou cifru má každé tlačíko jako svůj `textContent`. A díky vlastnosti `event.target` může naše funkce snadno zjistit, na které tlačíko bylo zrovna kliknuto. Výsledný kód pak bude vypadat takto.
-
-```js
-'use strict';
-
-const btnClick = (event) => {
-  const displayElm = document.querySelector('.display');
-  displayElm.textContent += event.target.textContent;
-};
-
-document.querySelector('#btn0').addEventListener('click', btnClick);
-document.querySelector('#btn1').addEventListener('click', btnClick);
-document.querySelector('#btn2').addEventListener('click', btnClick);
-document.querySelector('#btn3').addEventListener('click', btnClick);
-document.querySelector('#btn4').addEventListener('click', btnClick);
-document.querySelector('#btn5').addEventListener('click', btnClick);
-document.querySelector('#btn6').addEventListener('click', btnClick);
-document.querySelector('#btn7').addEventListener('click', btnClick);
-document.querySelector('#btn8').addEventListener('click', btnClick);
-document.querySelector('#btn9').addEventListener('click', btnClick);
-```
-
-Takový kód už je mnohem hezčí. Kdybychom ještě navíc uměli cykly, které nás již brzo čekají, dokázali bychom jej zkrátit ještě výrazněji.
-
-## Další druhy událostí
+## Druhy událostí
 
 Jak už bylo řečeno, událostí je mnoho typů a mohou nastat na různých elementech. My jsme zatím reagovali na kliknutí na tlačítko. Kliknutí však může nastat na jakémkoliv elementu. Takto například zareagujeme na kliknutí na celé stránce.
 
 ```js
-document.addEventListener('click', (e) => console.log('klik'));
+const handleClick = () => {
+  console.log('klik');
+};
+
+document.addEventListener('click', handleClick);
 ```
 
 Takto přidáme posluchače události k celé naší stránce. Na celé stránce také můžeme použít událost `scroll`, která nastave pokaždé, když uživatel na stránce zascrolluje.
 
 ```js
-document.addEventListener('scroll', (e) => console.log('skrol'));
+const handleScroll = () => {
+  console.log('skrol');
+};
+
+document.addEventListener('scroll', handleScroll);
 ```
 
-Často se nám tako mohou hodit události `keydown` a `keyup`. Událost `keydown` nastane, když uživatel stiskne nějakou klávesu. Událost `keyup` nastane, když uživatel klávesu uvolní. To je velmi šikovné, protože pokud uživatel drží zmáčknutou nějakou klávesu, událost `keydown` nám bude chodit pořád dokola. Naopak událost `keyup` přijde vždy pouze jednou ve chvíli, kdy uživatel klávesu uvolní.
-
-Pokud chceme zjistit, jaká klávesa byla stisknuta, musíme znát její kód. Kódy kláves snadno najdete na [keycode.info](http://keycode.info). Zjistíme tak například, že klávesa [[Enter]] má kód 13. Takto pak na stránce můžeme zareagovat na stisknutí [[Enter]].
-
-```js
-document.addEventListener('keyup', (event) => {
-  if (event.keyCode === 13) {
-    console.log('enter');
-  }
-});
-```
-
-Nebo na stisknutí [[Ctrl]]+[[C]].
-
-```js
-document.addEventListener('keyup', (event) => {
-  if (event.keyCode === 67 && event.ctrlKey) {
-    console.log('Ctrl+C');
-  }
-});
-```
+Často se nám také mohou hodit události `keydown` a `keyup`. Událost `keydown` nastane, když uživatel stiskne nějakou klávesu. Událost `keyup` nastane, když uživatel klávesu uvolní. To je velmi šikovné, protože pokud uživatel drží zmáčknutou nějakou klávesu, událost `keydown` nám bude chodit pořád dokola. Naopak událost `keyup` přijde vždy pouze jednou ve chvíli, kdy uživatel klávesu uvolní.
 
 Událostí, na které můžete na stránce reagovat je nepřeberné množství. Seznam všech událostí si můžete pro inspiraci prohlédnout [na stránkách MDN](https://developer.mozilla.org/en-US/docs/Web/Events).
 
 @exercises ## Cvičení - Události [
 
+- objednavka
+- kontrola-dostupnosti
 - zarovka
-- kostka
   ]@
 
-## Povinné čtení a doma
+## Povinné čtení na doma
 
 ### Rušení časovačů
 
-Pokud spustímě nějaký časovač, často jej také chceme po určité době zrušit. Vyrobme například časovač, který každé 3 vteřiny řekne 'ahoj'.
+Pokud spustíme nějaký časovač, často jej také chceme po určité době zrušit. Vyrobme například časovač, který každé 3 vteřiny řekne 'ahoj'.
 
 ```js
 const timerId = setInterval(() => console.log('ahoj'), 3000);
@@ -378,40 +349,11 @@ const timerId = setTimeout(() => console.log('ahoj'), 5000);
 setTimeout(() => clearTimeout(timerId), 2000);
 ```
 
-Tento kód zařídí, že první časovač vůbec neproběhne. Jeho čas je nastaven na 5 vteřin. Už za dvě vteřiny se však spustí druhý časovač, který jej nekompromisně vypne dřív, než stačí cokoli udělat.
-
-### Vstup pomocí textových políček
-
-Poslední věc, která nám chybí pro příjemnou interakci s uživatelem, je získávat vstup jinak, než pomnocí funkce `prompt`. Naštěstí se vším, co už umíme je to už jen malý krůček. Stačí kdekoliv na stránce použít textové políčko, například takto.
-
-```html
-<input id="my-input" type="text" />
-```
-
-Kdykoliv chceme získat text, který uživatel do políčka vepsal, stačí nám toto políčko vybrat pomocí `querySelector` a použít vlastnost `value`.
-
-```js
-const inputElm = document.querySelector('#my-input');
-const text = inputElm.value;
-```
-
-Stejně jako vlastnost `textContent`, i vlastnost `value` je jak pro čtení, tak pro zápis. Můžeme tak řetězec z políčka přečíst, ale také jej políčku nastavit. Všimněte si, že schválně používám slovo řetězec. Stejně jako u funkce `prompt` i zde platí, že vlastnost `value` je vždy řetězec. Je tedy opět nutné mít se na pozoru, chceme-li od uživatele například číslo, a provést nezbytnou konverzi.
-
-```js
-const inputElm = document.querySelector('#my-input');
-const num = Number(inputElm.value);
-```
-
-Od této chvíle navždy se vzdáváme funkce `prompt` a budeme už používat pouze textová políčka. Ta můžeme hezky nastylovat, aby dobře zapadla do grafiky našich stránek.
+Tento kód zařídí, že první časovač vůbec neproběhne. Jeho čas je nastaven na 5 vteřin. Už za dvě vteřiny se však spustí druhý časovač, který jej nekompromisně vypne ten první dřív, než stačí cokoli udělat.
 
 @exercises ## Doporučené úložky na doma [
 
-- predikat
-- minutka2
-- kalkulacka
-  ]@
-
-@exercises ## Volitelné úložky na doma [
-
-- minutka3
+- catering
+- kostka
+- minutka
   ]@
