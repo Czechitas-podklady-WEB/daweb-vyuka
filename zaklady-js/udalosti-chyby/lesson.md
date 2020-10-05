@@ -132,7 +132,7 @@ const num = Number(inputElm.value);
 
 Od této chvíle navždy se tedy vzdáváme funkce `prompt` a budeme už používat pouze textová políčka. Ta můžeme hezky nastylovat, aby dobře zapadla do grafiky našich stránek.
 
-@exercises ## Cvičení - hledání chyb [
+@exercises ## Cvičení - vlastnosti událostí [
 
 - registrace
 - auto
