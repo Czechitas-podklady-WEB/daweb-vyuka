@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 540 220"
+   height="220"
+   width="540"
+   sodipodi:docname="recitation02.svg"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1280"
+     inkscape:window-height="656"
+     id="namedview354"
+     showgrid="true"
+     inkscape:zoom="1.2644531"
+     inkscape:cx="339.59727"
+     inkscape:cy="52.563717"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg8"
+     inkscape:snap-text-baseline="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid394" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata142">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs114">
+    <style
+       id="style112"
+       type="text/css">
+     @import url('https://fonts.googleapis.com/css2?family=Montserrat&amp;family=Ubuntu+Mono');
+   </style>
+  </defs>
+  <text
+     id="text117"
+     xml:space="preserve"
+     style="font-size:40px;line-height:1.25;fill:#000000;stroke:none"
+     x="60"
+     y="80" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m 60,75 v -5 h 160 v 5"
+     id="path18"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cccc" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M 120,50 V 70"
+     id="path20"
+     inkscape:connector-curvature="0" />
+  <path
+     id="path25"
+     d="m 80,120 v 5 h 300 v -5"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cccc" />
+  <path
+     id="path27"
+     d="m 220,125 v 20"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     inkscape:connector-curvature="0" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m 470,155 h 5 V 75 h -5"
+     id="path39"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cccc" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m 475,105 h 15 v 75"
+     id="path41"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="ccc" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:21.33333397px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     x="60"
+     y="90"
+     id="text398"><tspan
+       sodipodi:role="line"
+       id="tspan396"
+       x="60"
+       y="90"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.33333397px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono'">const setColor = (element, color) =&gt; {</tspan><tspan
+       sodipodi:role="line"
+       x="60"
+       y="117.6891"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.33333397px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono'"
+       id="tspan400">  element.style.color = color;</tspan><tspan
+       sodipodi:role="line"
+       x="60"
+       y="145.3782"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.33333397px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono'"
+       id="tspan402">};</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:13.33333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     x="60"
+     y="25"
+     id="text406"><tspan
+       sodipodi:role="line"
+       id="tspan404"
+       x="60"
+       y="25"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Montserrat;-inkscape-font-specification:Montserrat">vytváříme proměnnou</tspan><tspan
+       sodipodi:role="line"
+       x="60"
+       y="42.124371"
+       id="tspan408"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Montserrat;-inkscape-font-specification:Montserrat">setColor</tspan></text>
+  <text
+     id="text414"
+     y="180"
+     x="360"
+     style="font-style:normal;font-weight:normal;font-size:13.33333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     xml:space="preserve"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Montserrat;-inkscape-font-specification:Montserrat"
+       id="tspan412"
+       y="180"
+       x="360"
+       sodipodi:role="line">vytváříme funkci</tspan><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Montserrat;-inkscape-font-specification:Montserrat"
+       y="197.12437"
+       x="360"
+       sodipodi:role="line"
+       id="tspan418">se dvěma parametry</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:13.33333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     x="110"
+     y="165"
+     id="text424"><tspan
+       id="tspan422"
+       sodipodi:role="line"
+       x="110"
+       y="165"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Montserrat;-inkscape-font-specification:Montserrat">nastavujeme vlastnost color</tspan><tspan
+       sodipodi:role="line"
+       x="110"
+       y="182.12437"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Montserrat;-inkscape-font-specification:Montserrat"
+       id="tspan428">na hodnotu z parametru color</tspan></text>
+</svg>

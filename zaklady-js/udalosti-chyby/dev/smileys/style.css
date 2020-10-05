@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.msg {
+  margin: 1rem;
+}
+
+.msg__text {
+  background-color: cornflowerblue;
+  color: white;
+  padding: 2rem;
+  line-height: 1.35rem;
+  border-radius: 0.5rem;
+}
+
+.msg__smileys {
+  display: flex;
+  width: 16rem;
+  height: 3rem;
+  padding: 0rem 0.5rem;
+  background-color: white;
+  margin-top: -1rem;
+  border-radius: 1.5rem;
+  box-shadow: 0px 0px 5px #999;
+}
+
+.btn-smiley {
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  line-height: 3rem;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  margin: 0;
+  opacity: 0.3;
+  transition: 300ms;
+}
+
+.btn-smiley:hover {
+  transform: scale(1.2);
+}
+
+.btn-smiley:focus {
+  border: none;
+  outline: none;
+}
+
+.btn-smiley--selected {
+  opacity: 1;
+}
