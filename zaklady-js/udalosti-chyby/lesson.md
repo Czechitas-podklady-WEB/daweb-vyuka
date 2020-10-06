@@ -296,8 +296,14 @@ Záměr funkce můžeme odhadnout takto.
 
 > Funkce `setColor` nastavuje barvu textu zadaného elementu na zadanou barvu.
 
-@exercises ## Cvičení - hledání chyb [
+@exercises ## Doporučené úložky na doma [
 
 - recitaly
 - pocitadlo
+- minutka2
+  ]@
+
+@exercises ## Volitelné úložky na doma [
+
+- minutka3
   ]@

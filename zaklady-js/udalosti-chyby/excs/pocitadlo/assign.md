@@ -1,6 +1,6 @@
 ---
 title: Počítadlo
-demand: 2
+demand: 3
 ---
 
 Stáhněte si [webovou stránku](assets/pocitadlo-zadani.zip), která má fungovat jako počítadlo. Při klikání na tlačítka <i>up</i> a <i>down</i> by počítadlo správně mělo narůst nebo poklesnout o jedna. Nic takového se však neděje, neboť v kódu stránky je mnoho chyb. Použijte znalosti nabyté v této lekci ke splnění následujících úkolů.
