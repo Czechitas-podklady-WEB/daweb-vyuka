@@ -190,7 +190,7 @@ Upravme nyní naši funkce `submitClick` takto.
 'use strict';
 
 const submitClick = () => {
-  const passwordElm = document.querySelector('.pass-input');
+  const passwordElm = document.querySelevtor('.pass-input');
   const password = passwordElm.value;
   let message = 'Insecure password';
 
@@ -233,7 +233,7 @@ Uncaught TypeError: Cannot read property 'value' of null
 
 Nyní náš čeká malé detektivní pátrání. Z chybové hlášky vyluštíme, že na řádku 5 se snažíme přistoupit k vlastnosti `value` na hodnotě `null`. Hodnota `null` žádné vlastnosti nemá, takže to je jistě chyba. Když se podíváme na řádek 5, vydedukujeme, že v proměnné `passwordElm` tedy musí být hodnota `null`. Tuto hodnotu tam jistě musela uložit funkce `document.querySelector`. Aha!! To tedy znamená, že funkce nenašla element, který jsme hledali. Máme totiž chybu v selektoru na řádku 4, kde jsme omylem vybírali podle třídy a ne podle `id`.
 
-Tato situace je velmi častá. JavaScript přestal našemu programu rozumět na řádku 5, ale problém vznikl už dříve na řádku 4. Ne vždy tedy chyba vznikne tam, kde se JavaScirpt runtime ztratil. Občas musíme v programu hledat chybu o několik řádků zpět.
+Tato situace je velmi častá. JavaScript přestal našemu programu rozumět na řádku 5, ale problém vznikl už dříve na řádku 4. Ne vždy tedy chyba vznikne tam, kde se JavaScirpt runtime ztratil. Místo příčíny chyby a místo, kde se chyba projeví, mohou být od sebe vzdáleny i mnoho řádků. Občas tedy musíme použít naše detektivní schonposti a hledat chybu o několik řádků zpět.
 
 ### Když žádná chyba nenastane
 
@@ -247,6 +247,10 @@ false
 ```
 
 Výsledek je prostě `false`. Naše podmínka tedy vždy tiše selže a náš program běží vesele dál. Na to, že ve skutečnosti porovnáváme hrušky s jabkama, nás JavaScript runtime nijak neupozorní. Toto je jeden z důvodů, proč mnoho programátorů nemá JavaScript rádo. Většina ostatních programovacích jazyků by totiž v takovémto případě vyhodila chybu. V JavaScriptu si však musíte obléknout svůj detektivní plášť a vyrazit chybu hledat sami.
+
+## Ladění programů
+
+Situace, kdy náš program napíšeme tak, že nedělá, co chceme, ale z hlediska JavaScriptu je zcela v pořádku, budou náš denní chleba. Čím jsou však naše programy větší a složitější, tím roste prostor pro stále záludnější a húře odhalitelné chyby. Velmi brzy už je program tak dlouhý a komplikovaný, že nejsme schopni chybu najít pouze tím, že si po sobě čteme svůj kód. Nedej bože, pokud navíc před sebou nemáme kód vlastní, nýbrž kód kolegy, který již dávno opustil firmu, a svému kódu rozuměl pouze on. V takovou chvíli přichází na řadu funkce `console.log`.
 
 ## JavaScriptové recitály
 
@@ -292,11 +296,8 @@ Záměr funkce můžeme odhadnout takto.
 
 > Funkce `setColor` nastavuje barvu textu zadaného elementu na zadanou barvu.
 
-## Ladění programů
-
-Situace, kdy náš program napíšeme tak, že nedělá, co chceme, ale s hlediska JavaScriptu je zcela v pořádku, budou náš denní chleba. Čím jsou však naše programy větší a složitější, tím roste prostor pro stále záludnější a húře odhalitelné chyby. Velmi brzy už je program tak dlouhý a komplikovaný, že nejsme schopni chybu najít pouze tím, že si po sobě čteme svůj kód. Nedej bože, pokud navíc před sebou nemáme kód vlastní, nýbrž kód kolegy, který již dávno opustil firmu, a svému kódu rozuměl pouze on. V takovou chvíli přichází na řadu funkce `console.log`.
-
 @exercises ## Cvičení - hledání chyb [
 
+- recitaly
 - pocitadlo
   ]@
