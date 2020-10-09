@@ -320,70 +320,58 @@ Tímto způsobem se můžeme propracovat až k velmi složitým algoritmům, cyk
 
 @exercises ## Cvičení - Cykly [
 
-- suda-cisla
+- pocitani-while
+- pocitani-for
 - uzivatele
 - pohyby-na-uctu
   ]@
 
 ## Povinné čtení na doma
 
-Díky tomu, že už rozumíme polím, si můžeme představit funkci `document.querySelectorAll`. Tato funguje podobně jako už známá funkce `document.querySelector`. Vrátí nám však **všechny** elementy, které najde pomocí zadaného selektoru. Výsledek obdržíme jako pole DOM elementů, které pak můžeme zpracovat v nějakém cyklu.
+Díky tomu, že už rozumíme polím, si můžeme představit funkci `document.querySelectorAll`. Tato funguje podobně jako už známá funkce `document.querySelector`. Vrátí nám však **všechny** elementy, které najde pomocí zadaného selektoru. Výsledek obdržíme jako pole DOM elementů. To pak můžeme zpracovat pomocí nějakého cyklu.
 
-V lekci o událostech jsme si slíbili, že díky cyklům dokážeme zjednodušít kód číselníku naší kalkulačky. Ten nejprve vypadal takto.
+V lekci o událostech jsme si slíbili, že díky cyklům dokážeme zjednodušít kód naší aplikace se smajlíky. Připomeňme si HTML kód našich tlačítek.
 
 ```html
-<div class="numpad">
-  <div class="display">0</div>
-  <button id="btn7" class="num-btn">7</button>
-  <button id="btn8" class="num-btn">8</button>
-  <button id="btn9" class="num-btn">9</button>
-  <button id="btn4" class="num-btn">4</button>
-  <button id="btn5" class="num-btn">5</button>
-  <button id="btn6" class="num-btn">6</button>
-  <button id="btn1" class="num-btn">1</button>
-  <button id="btn2" class="num-btn">2</button>
-  <button id="btn3" class="num-btn">3</button>
-  <button id="btn0" class="num-btn num-btn--wide">0</button>
-</div>
+<button id="btn-smiley1" class="btn-smiley">😀</button>
+<button id="btn-smiley2" class="btn-smiley">😍</button>
+<button id="btn-smiley3" class="btn-smiley">😜</button>
+<button id="btn-smiley4" class="btn-smiley">😢</button>
+<button id="btn-smiley5" class="btn-smiley">😱</button>
 ```
+
+Náš výsledný učesaný JavaScriptový kód vypadal takto.
 
 ```js
 'use strict';
 
-const btnClick = (event) => {
-  const displayElm = document.querySelector('.display');
-  displayElm.textContent += event.target.textContent;
+const selectSmiley = (event) => {
+  event.target.classList.add('btn-smiley--selected');
 };
 
-document.querySelector('#btn0').addEventListener('click', btnClick);
-document.querySelector('#btn1').addEventListener('click', btnClick);
-document.querySelector('#btn2').addEventListener('click', btnClick);
-document.querySelector('#btn3').addEventListener('click', btnClick);
-document.querySelector('#btn4').addEventListener('click', btnClick);
-document.querySelector('#btn5').addEventListener('click', btnClick);
-document.querySelector('#btn6').addEventListener('click', btnClick);
-document.querySelector('#btn7').addEventListener('click', btnClick);
-document.querySelector('#btn8').addEventListener('click', btnClick);
-document.querySelector('#btn9').addEventListener('click', btnClick);
+document.querySelector('#btn1').addEventListener('click', selectSmiley);
+document.querySelector('#btn2').addEventListener('click', selectSmiley);
+document.querySelector('#btn3').addEventListener('click', selectSmiley);
+document.querySelector('#btn4').addEventListener('click', selectSmiley);
+document.querySelector('#btn5').addEventListener('click', selectSmiley);
 ```
 
-Díky `document.querySelectorAll` můžeme posluchače `btnClick` nasadit na všechna tlačítka jedním cyklem.
+Všimněte si, že kód pro nasazení posluchače na událost `click` jsme museli opakovat pětkrát. Díky `document.querySelectorAll` můžeme nyní posluchače nasadit na všechna tlačítka jedním cyklem.
 
 ```js
 'use strict';
 
-const btnClick = (event) => {
-  const displayElm = document.querySelector('.display');
-  displayElm.textContent += event.target.textContent;
+const selectSmiley = (event) => {
+  event.target.classList.add('btn-smiley--selected');
 };
 
-const buttons = document.querySelectorAll('.num-btn');
-for (let i = 0; i < button.length; i += 1) {
-  buttons[i].addEventListener('click', btnClick);
+const buttons = document.querySelectorAll('.btn-smiley');
+for (let i = 0; i < buttons.length; i += 1) {
+  buttons[i].addEventListener('click', selectSmiley);
 }
 ```
 
-### Datové atributy
+<!-- ### Datové atributy
 
 Všimněte si, že funkce `btnClick` používá `textContent` k tomu, aby získala číslo, které má tlačítko vlažit na displej. Snadno bychom se však mohli ocitnout v situaci, kdy by naše tlačítka neobsahovala ten správný `textContent`. Například bychom mohli chtít mít tlačítka jako obrázky, které žádný `textContent` nemají. I tak bychom si ale potřebovali někam uložit cifru, která k tlačítku patří. K tomu můžeme použít takzvané datové atributy.
 
@@ -419,20 +407,18 @@ const btnClick = (event) => {
 };
 ```
 
-Pomocí datových atributů si můžeme k elementům uložit libovolné informace, se kterými pak můžeme v JavaScriptu snadno pracovat.
+Pomocí datových atributů si můžeme k elementům uložit libovolné informace, se kterými pak můžeme v JavaScriptu snadno pracovat. -->
 
 @exercises ## Doporučené úložky na doma [
 
+- pocitani-hodin
 - cekani-na-sestku
 - male-algoritmy
-- piskvorky-zaklad
   ]@
 
 @exercises ## Nepovinné úložky na doma [
 
 - registrace
-- skalarni-soucin
-- piskvorky-dokonceni
 - tezsi-algoritmy
 - algoritmy-fajnsmekri
   ]@
