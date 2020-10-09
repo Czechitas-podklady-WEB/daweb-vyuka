@@ -3,7 +3,7 @@ link: pokrocily-js
 brief: Naučíte se vytvářet složitější webové aplikace a poznáte hlubší zákoutí JavaScriptu.
 lessons:
   - title: Procvičování cyklů, práce s innerHTML
-    link: loops-inner-html
+    link: cykly-inner-html
     brief: Procvičíme si cykly a naučíme se, jak v JavaScriptu vytvářet složitější HTML.
   - title: Objekty jako data, vlastní DOM elementy
     link: objekty-data
@@ -12,7 +12,7 @@ lessons:
     link: volani-api
     brief: Naučíme se, jak využívat veřejná API k tomu, abychom získali strukturované data pro naše aplikace.
   - title: Funkcionální zpracování dat, destructuring
-    link: func-data
+    link: func-data-dest
     brief: Ukážeme si šikovné funkce pro práci s daty jako map a filter, a také takzvaný destructuring.
   - title: Webpack a větší aplikace
     link: webpack
