@@ -79,6 +79,12 @@ Všimněte si, že jsme funkci pojmenovali s velkým písmenem na začátku. Tot
 
 - nadpis-stranky
 - nadpis-stranky-komponenta
+- hodiny
+  ]@
+
+@exercises ## Doporučené úložky na doma [
+
+- podcasty
 - ukolnicek
   ]@
 
@@ -137,12 +143,6 @@ undefined
 > updateShoppingList()
 undefined
 ``` -->
-
-@exercises ## Doporučené úložky na doma [
-
-- hodiny
-- kostky
-  ]@
 
 ## Mandatory home reading
 

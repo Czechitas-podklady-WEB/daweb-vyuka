@@ -1,0 +1,26 @@
+@font-face {
+  font-family: Digital-7;
+  src: url(digital-7.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.clock {
+  font-family: 'Digital-7';
+  font-size: 3rem;
+  line-height: 3rem;
+  padding: 1rem 3rem 1.5rem 3rem;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.5rem gray;
+  margin-bottom: 1rem;
+}
