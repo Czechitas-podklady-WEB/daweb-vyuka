@@ -1,5 +1,10 @@
-Blok 2: Větve
+## Spolupráce na jedné větvi
 
- - Základní Práce s větvemi
- - Merge
- - Co je to konflikt a jak jej řešit
+Nejduležitější pravidlo spolupráce na jedné větvi zní: **Vždycky udělej pull dřív, než děláš commit!**
+
+## Řešení konfliktů
+
+@exercises ## Cvičení - Spolupráce v Gitu [
+
+- panske-obleky
+  ]@
