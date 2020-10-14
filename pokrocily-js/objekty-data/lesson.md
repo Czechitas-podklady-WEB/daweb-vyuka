@@ -76,19 +76,19 @@ Objekt je nový typ hodnoty. Můžeme s ním tedy jako vždy provádět cokoliv,
 
 ```js
 const expenses = [
-  {name: 'Petr', product: 'Prací prášek', price: 240},
-  {name: 'Ondra', product: 'Savo', price: 80},
-  {name: 'Pavla', product: 'Toaleťák', price: 65},
-  {name: 'Zuzka', product: 'Mýdlo', price: 50},
-  {name: 'Pavla', product: 'Závěs do koupelny', price: 350},
-  {name: 'Libor', product: 'Pivka na kolaudačku', price: 124},
-  {name: 'Petr', product: 'Pytle na odpadky', price: 75},
-  {name: 'Míša', product: 'Utěrky na nádobí', price: 130},
-  {name: 'Ondra', product: 'Toaleťák', price: 120},
-  {name: 'Míša', product: 'Pečící papír', price: 30},
-  {name: 'Zuzka', product: 'Savo', price: 80},
-  {name: 'Petr', product: 'Tapeta na záchod', price: 315},
-  {name: 'Ondra', product: 'Toaleťák', price: 6}]
+  { name: 'Petr', product: 'Prací prášek', price: 240 },
+  { name: 'Ondra', product: 'Savo', price: 80 },
+  { name: 'Pavla', product: 'Toaleťák', price: 65 },
+  { name: 'Zuzka', product: 'Mýdlo', price: 50 },
+  { name: 'Pavla', product: 'Závěs do koupelny', price: 350 },
+  { name: 'Libor', product: 'Pivka na kolaudačku', price: 124 },
+  { name: 'Petr', product: 'Pytle na odpadky', price: 75 },
+  { name: 'Míša', product: 'Utěrky na nádobí', price: 130 },
+  { name: 'Ondra', product: 'Toaleťák', price: 120 },
+  { name: 'Míša', product: 'Pečící papír', price: 30 },
+  { name: 'Zuzka', product: 'Savo', price: 80 },
+  { name: 'Petr', product: 'Tapeta na záchod', price: 315 },
+  { name: 'Ondra', product: 'Toaleťák', price: 6 }]
 ];
 ```
 
@@ -204,8 +204,8 @@ const Clock = (hours, minutes) => {
 };
 ```
 
-Naše komponenty vždy měly jeden nebo více parametrů představujících data, která chceme zakomponovat do výsledného HTML. Nyní však uděláme změnu a budeme vždy komponentě předávat data jako objekt. Všechny naše komponenty tak budou mít pouze jeden parametr, ve kterém budeme očekávat objekt obsahující všechna nezbytná data. Tento parametr se bude u všech komponent jmenovat `props`.
-Naše komponenta `Clock` bude po této změně vypadat takto.
+Naše komponenty vždy měly jeden nebo více parametrů. To jsou vždy data, která chceme zakomponovat do výsledného HTML. Nyní však uděláme změnu a budeme vždy komponentě předávat data jako objekt. Všechny naše komponenty tak budou mít navždy pouze jeden parametr, ve kterém bude komponenta očekávat objekt obsahující všechna nezbytná data. Tento parametr se bude u všech komponent jmenovat `props`.
+Naše komponenta `Clock` tak bude po této změně vypadat následovně.
 
 ```js
 const Clock = (props) => {
@@ -219,15 +219,17 @@ const Clock = (props) => {
 };
 ```
 
+Tuto změnu děláme proto, abychom se přiblížili k tomu, jak s komonentami pracuje React, ke kterému postupně krůček po krůčku směřujeme.
+
 ### Aktualizace obsahu stránky
 
-Pohlédněme na celý kód naší stránky s nákupním seznamem.
+Pohlédněme na celý kód naší stránky s nákupním seznamem. Komponentu `ShoppingList` aktualizujeme dle našeho předchozího výkladu tak, že bude brát jeden parametr jménem `props`.
 
 ```js
-const ShoppingList = (items) => {
+const ShoppingList = (props) => {
   let result = '';
-  for (let i = 0; i < items.length; i += 1) {
-    items.innerHTML += `<li>${items[i]}</li>`;
+  for (let i = 0; i < props.items.length; i += 1) {
+    result += `<li>${props.items[i]}</li>`;
   }
 
   return result;
@@ -243,41 +245,39 @@ const list = [
 ];
 
 const listElm = document.querySelector('#shopping-list');
-listElm.innerHTML = ShoppingList(list);
+listElm.innerHTML = ShoppingList({ items: list });
 ```
 
-Stránka je zatím poměrně statícká. Zobrazuje pořád tentýž seznam. Určitě bychom chtěli uživateli umožnit přidat do seznamu nějakou položku. Naše pole je globální, můžeme to tedy zatím zkusit udělat programátorsky přímo z konzole.
+Stránka je zatím poměrně statická. Zobrazuje pořád tentýž seznam. Určitě bychom chtěli uživateli umožnit přidat do seznamu nějakou položku. Naše pole je globální, můžeme to tedy zatím zkusit udělat programátorsky přímo z konzole.
 
 ```js
-> shoppingList.push('koriandr');
+> list.push('koriandr');
 7
 ```
 
-Naše pole se tedy rozrostlo o jeden prvek. K našemu zklamání však obsah stránky zůstává pořád stejný. Je to logické, protože obsah seznamu `ul` jsme v JavaScriptu vytvořili hned po načtení stránky. Změna našeho pole tento kód znovu magicky nespustí. Musíme jej spustit sami ve chvíli, kdy chceme říct, že se má obsah seznamu `ul` vytvořit znova podle nového obsahu pole `list`. Máme zde velkou výhodou v tom, že náš kód vytvářející obsah stránky dle pole `list` máme hezky zabalený v komponentě `ShoppingList`. Chceme-li tedy obsah stránky aktualizovat podle nových hodnot v poli `list`, sta49 naši komponentu znova zavolat.
+Naše pole se tedy rozrostlo o jeden prvek. K našemu zklamání však obsah stránky zůstává pořád stejný. Je to logické, protože obsah seznamu `ul` jsme v JavaScriptu vytvořili hned po načtení stránky. Změna našeho pole tento kód znovu magicky nespustí. Musíme jej spustit sami ve chvíli, kdy chceme říct, že se má obsah seznamu `ul` vytvořit znova podle nového obsahu pole `list`. Máme zde velkou výhodou v tom, že náš kód vytvářející obsah stránky dle pole `list` máme hezky zabalený v komponentě `ShoppingList`. Chceme-li tedy obsah stránky aktualizovat podle nových hodnot v poli `list`, stačí naši komponentu znova zavolat a vytvořit nové HTML.
 
 ```js
-const updateShoppingList = () => {
-  const listElm = document.querySelector('#shopping-list');
-  listElm.innerHTML = '';
-  for (let i = 0; i < shoppingList.length; i += 1) {
-    listElm.innerHTML += `<li>${shoppingList[i]}</li>`;
-  }
-};
+listElm.innerHTML = ShoppingList({ items: list });
 ```
 
-Všimněte si, že na začátku funkce vymažeme `innerHTML` našeho `ul` seznamu, abychom celou HTML strukturu vytvořili úplně znova. Máme tak k dispozici funkci, kterou můžeme zavolat pokaždé, když chceme, aby naše stránka zobrazila aktuální obsah našeho pole `shoppingList`. To nám dává svobodu si s polem dělat co chceme, přidávat položky, měnit položky, mazat položky a tak dále. Vždy jen pak musíme zavolat funkci `updateShoppingList`, aby se změny projevily i v našem HTML. Můžete si to vyzkoušet rovnou z konzole a sledovat, jak stránka reaguje.
+Všimněte si, že takto zcela přepíšeme původní obsah `innerHTML` našeho `ul` seznamu, abychom celou HTML strukturu vytvořili úplně znova. Funkci `ShoppingList` tak můžeme zavolat pokaždé, když chceme, aby naše stránka zobrazila aktuální obsah našeho pole `list`. To nám dává svobodu si s polem dělat co chceme, přidávat položky, měnit položky, mazat položky a tak dále. Vždy jen pak musíme zavolat funkci `ShoppingList`, aby se změny projevily i v našem HTML. Můžete si to vyzkoušet rovnou z konzole a sledovat, jak stránka reaguje.
 
 ```js
-> shoppingList.push('zázvor');
+> list.push('zázvor');
 8
-> updateShoppingList()
-undefined
-> shoppingList.shift();
-'mrkev',
-> updateShoppingList()
-undefined
-> shoppingList[0] = 'klíčky';
-'klíčky',
-> updateShoppingList()
-undefined
+> listElm.innerHTML = ShoppingList({ items: list });
+> list.shift();
+'mrkev'
+> listElm.innerHTML = ShoppingList({ items: list });
+> list[0] = 'klíčky';
+'klíčky'
+> listElm.innerHTML = ShoppingList({ items: list });
 ```
+
+@exercises ## Cvičení - komponenty a objekty [
+
+- kontakt
+- emaily
+- emaily2
+  ]@

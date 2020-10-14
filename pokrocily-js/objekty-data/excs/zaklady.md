@@ -7,9 +7,9 @@ Zkopírujte si do konzole následující datovou strukturu.
 
 ```js
 const person = {
-    name: "Karel",
-    age: 27,
-    "favorite color": "yellow"
+  name: 'Karel',
+  age: 27,
+  'favorite color': 'yellow',
 };
 ```
 
