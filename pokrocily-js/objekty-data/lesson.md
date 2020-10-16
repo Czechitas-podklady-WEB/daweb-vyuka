@@ -221,63 +221,17 @@ const Clock = (props) => {
 
 Tuto změnu děláme proto, abychom se přiblížili k tomu, jak s komonentami pracuje React, ke kterému postupně krůček po krůčku směřujeme.
 
-### Aktualizace obsahu stránky
-
-Pohlédněme na celý kód naší stránky s nákupním seznamem. Komponentu `ShoppingList` aktualizujeme dle našeho předchozího výkladu tak, že bude brát jeden parametr jménem `props`.
-
-```js
-const ShoppingList = (props) => {
-  let result = '';
-  for (let i = 0; i < props.items.length; i += 1) {
-    result += `<li>${props.items[i]}</li>`;
-  }
-
-  return result;
-};
-
-const list = [
-  'mrkev',
-  'paprika',
-  'cibule',
-  'čínské zelí',
-  'arašídy',
-  'sojová omáčka',
-];
-
-const listElm = document.querySelector('#shopping-list');
-listElm.innerHTML = ShoppingList({ items: list });
-```
-
-Stránka je zatím poměrně statická. Zobrazuje pořád tentýž seznam. Určitě bychom chtěli uživateli umožnit přidat do seznamu nějakou položku. Naše pole je globální, můžeme to tedy zatím zkusit udělat programátorsky přímo z konzole.
-
-```js
-> list.push('koriandr');
-7
-```
-
-Naše pole se tedy rozrostlo o jeden prvek. K našemu zklamání však obsah stránky zůstává pořád stejný. Je to logické, protože obsah seznamu `ul` jsme v JavaScriptu vytvořili hned po načtení stránky. Změna našeho pole tento kód znovu magicky nespustí. Musíme jej spustit sami ve chvíli, kdy chceme říct, že se má obsah seznamu `ul` vytvořit znova podle nového obsahu pole `list`. Máme zde velkou výhodou v tom, že náš kód vytvářející obsah stránky dle pole `list` máme hezky zabalený v komponentě `ShoppingList`. Chceme-li tedy obsah stránky aktualizovat podle nových hodnot v poli `list`, stačí naši komponentu znova zavolat a vytvořit nové HTML.
-
-```js
-listElm.innerHTML = ShoppingList({ items: list });
-```
-
-Všimněte si, že takto zcela přepíšeme původní obsah `innerHTML` našeho `ul` seznamu, abychom celou HTML strukturu vytvořili úplně znova. Funkci `ShoppingList` tak můžeme zavolat pokaždé, když chceme, aby naše stránka zobrazila aktuální obsah našeho pole `list`. To nám dává svobodu si s polem dělat co chceme, přidávat položky, měnit položky, mazat položky a tak dále. Vždy jen pak musíme zavolat funkci `ShoppingList`, aby se změny projevily i v našem HTML. Můžete si to vyzkoušet rovnou z konzole a sledovat, jak stránka reaguje.
-
-```js
-> list.push('zázvor');
-8
-> listElm.innerHTML = ShoppingList({ items: list });
-> list.shift();
-'mrkev'
-> listElm.innerHTML = ShoppingList({ items: list });
-> list[0] = 'klíčky';
-'klíčky'
-> listElm.innerHTML = ShoppingList({ items: list });
-```
+### Komponenty uvnitř komponent
 
 @exercises ## Cvičení - komponenty a objekty [
 
 - kontakt
 - emaily
 - emaily2
+  ]@
+
+@exercises ## Doporučené úložky na doma [
+
+- jogini
+- odjezdy
   ]@
