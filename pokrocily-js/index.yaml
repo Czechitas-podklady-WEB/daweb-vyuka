@@ -2,15 +2,15 @@ title: Pokročilý JavaScript
 link: pokrocily-js
 brief: Naučíte se vytvářet složitější webové aplikace a poznáte hlubší zákoutí JavaScriptu.
 lessons:
-  - title: Procvičování cyklů, práce s innerHTML
-    link: cykly-inner-html
+  - title: Procvičování cyklů, jednoduché komponenty
+    link: cykly-komponenty
     brief: Procvičíme si cykly a naučíme se, jak v JavaScriptu vytvářet složitější HTML.
   - title: Objekty jako data
     link: objekty-data
     brief: Ukážeme si jak použít objekty pro reprezentoci strukturovaných dat v naší aplikaci.
-  - title: JSON a volání API
+  - title: Volání API, aktualizace stránky
     link: volani-api
-    brief: Naučíme se, jak využívat veřejná API k tomu, abychom získali strukturované data pro naše aplikace.
+    brief: Naučíme se, jak využívat veřejná API k získání dat pro naše aplikace, a ukážeme si, jak aktualizovat komponenty při změně dat.
   - title: Webpack a větší aplikace
     link: webpack
     brief: Ukážeme si jak stavět větší aplikace z menších částí pomocí Webpacku.
@@ -20,6 +20,6 @@ lessons:
   - title: Funkcionální zpracování dat, destructuring
     link: func-data-dest
     brief: Ukážeme si šikovné funkce pro práci s daty jako map a filter, a také takzvaný destructuring.
-  - title: Procvičování
-    link: procvicovani
-    brief: Pořádně procvíčíme a zopakujeme všechno, co jsme se dosud naučili.
+  - title: 'Opakování: Café Lóra'
+    link: cafe-lora
+    brief: Všechno, co jsme se doposud naučili si procvičíme na projektu takzvaně "ze života".

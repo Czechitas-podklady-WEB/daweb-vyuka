@@ -1,1 +1,0 @@
-Opakování matka moudrosti

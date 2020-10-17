@@ -1,3 +1,7 @@
+## Oddělování komponent
+
+Naše webové aplikace již začínají obsahovat vícero komponentu. Ukážeme si to na příkladu našeho nákupního seznamu.
+
 ## NPM
 
 V lekci o komponentách jsme poprvé potkali takzvanou <term cs="knihovnu" en="library">. Knihovna je v podstatě ucelená sada funkcí, které řeší nějakou konkrétni věc. Například šablonovací systém Handlebars je knihovna, která nám umožňuje v naších programech používat pokřočilé šablony.
@@ -153,7 +157,7 @@ Aby se nám projekt dobře sestavoval, změníme obsah sekce `scripts` v `packag
   "watch": "webpack -wd",
   "build:prod": "webpack -p",
 }
-````
+```
 
 Nakonec potřebujeme říct webpacku, co má s naším projektem dělat. K tomu potřebujeme v hlavní složce projektu vytvořit configurační soubor `webpack.config.js`, který bude obsahovat následující kód.
 
