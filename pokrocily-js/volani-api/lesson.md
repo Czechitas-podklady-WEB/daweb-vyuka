@@ -268,3 +268,9 @@ addBtn.addEventListener('click', () => {
   listElm.innerHTML = ShoppingList({ items: list });
 });
 ```
+
+@exercises ## Cvičení - aktualizace stránky [
+
+- lokalni-cas
+- dopravni-prestupky
+  ]@
