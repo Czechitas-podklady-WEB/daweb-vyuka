@@ -90,7 +90,7 @@ promise.then((resp) => {
 Promise se můžeme uložit do proměnné jako vidíme výše, je to však trochu zbytečné. Metodu `then` můžeme zavolat roznou na výsledku funkce `fetch`.
 
 ```js
-fetch('https://api.abalin.net/today?country=cz');
+fetch('https://api.abalin.net/today?country=cz')
   .then((resp) => {
     console.log(resp);
   });
