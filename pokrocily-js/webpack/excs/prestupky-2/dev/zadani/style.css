@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:400;700&display=swap');
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+body {
+  background-image: url('img/bg.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  color: #666;
+}
+
+.container {
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: right;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+main {
+  margin-left: 50%;
+}
+
+.form {
+  margin-top: 2rem;
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 0.5rem;
+}
+
+.form label {
+  margin-right: 1rem;
+}
+
+.form input {
+  flex: 1;
+  border: 1px solid #666;
+  line-height: 2rem;
+  padding: 0 0.5rem;
+  margin-right: 1rem;
+}
+
+.form input:focus {
+  outline: none;
+  border: 1px solid black;
+}
+
+button {
+  outline: none;
+  border: none;
+  color: white;
+  background-color: blue;
+  padding: 0.5rem 1rem;
+  transition: 200ms;
+}
+
+button:hover {
+  box-shadow: 0 0 1rem #aaa;
+}
+
+.offences-list {
+  margin-top: 2rem;
+}
+
+.offence {
+  display: flex;
+  justify-content: space-between;
+  background-color: lightblue;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  border-left: 5px solid orange;
+}
