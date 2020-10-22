@@ -242,7 +242,7 @@ const ShoppingItem = (props) => {
 const ShoppingList = (props) => {
   let result = '';
   for (let i = 0; i < props.items.length; i += 1) {
-    result += ShoppingItem({ name: props.items[i] });
+    result += ShoppingItem(props.items[i]);
   }
 
   return result;
