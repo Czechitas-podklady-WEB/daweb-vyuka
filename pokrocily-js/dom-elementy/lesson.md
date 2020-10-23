@@ -119,7 +119,7 @@ const Post = (props) => {
     </button>
   `;
 
-  const likeBtn = document.querySelector('#like-btn');
+  const likeBtn = element.querySelector('.like-btn');
   likeBtn.addEventListener('click', () => {
     likeBtn.classList.toggle('like-btn--on');
   });
@@ -131,9 +131,9 @@ const Post = (props) => {
 Všimněte si, že metodu `querySelector` voláme nikoliv na dokumentu, ale na našem novém elementu. Pokud tuto metodu zavoláme na DOM elementu, vybíráme pouze zevnitř tohoto elementu a nikoliv z celého dokumentu. Snadno tak vyberme naše tlačíkto a pověsíme na něj posluchače. Každý DOM element naší komponenty tak má svoje tlačíko se svým vlastním posluchače. Veškerou logiku tak mám zabalenou uvnitř komponenty a můžene si jich na stránce vytvořit kolik chceme. Nyní však musíme použít metodu `appendChild`, protože naše komponenta už nevrací řetězec, ale hotový DOM element.
 
 ```js
-const post1 = Post({ text: 'Zrovna drtím JavaScript!')});
-const post2 = Post({ text: 'Digitální akademie je nejvíc cool')});
-const post3 = Post({ text: 'Bude ze mě velká programátorka')});
+const post1 = Post({ text: 'Zrovna drtím JavaScript!' });
+const post2 = Post({ text: 'Digitální akademie je nejvíc cool' });
+const post3 = Post({ text: 'Bude ze mě velká programátorka' });
 
 const appElm = document.querySelector('#app');
 appElm.appendChild(post1);
