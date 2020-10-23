@@ -14,9 +14,9 @@ lessons:
   - title: Webpack a větší aplikace
     link: webpack
     brief: Ukážeme si jak stavět větší aplikace z menších částí pomocí Webpacku.
-  - title: vlastní DOM elementy
+  - title: Vlastní DOM elementy
     link: dom-elementy
-    brief: Ukážeme si, jak .
+    brief: Ukážeme si, jak vytvořit vlastní DOM elementy a udělat naše komopnenty interaktivní.
   - title: Funkcionální zpracování dat, destructuring
     link: func-data-dest
     brief: Ukážeme si šikovné funkce pro práci s daty jako map a filter, a také takzvaný destructuring.
