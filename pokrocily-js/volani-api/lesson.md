@@ -90,10 +90,9 @@ promise.then((resp) => {
 Promise se můžeme uložit do proměnné jako vidíme výše, je to však trochu zbytečné. Metodu `then` můžeme zavolat roznou na výsledku funkce `fetch`.
 
 ```js
-fetch('https://api.abalin.net/today?country=cz')
-  .then((resp) => {
-    console.log(resp);
-  });
+fetch('https://api.abalin.net/today?country=cz').then((resp) => {
+  console.log(resp);
+});
 ```
 
 V parametru `resp` máme uloženu odpověd ze serveru. Pokud z této odpovědi chceme získat JSON, stačí na něm zavolat metodu `json`. Čeká nás však podraz. Tado metoda opět nevrací samotný JSON nýbrž pouze promise. Musíme tedy znova použít metodu `then` a vznikne nám takováto kaskáda.
@@ -273,4 +272,10 @@ addBtn.addEventListener('click', () => {
 
 - lokalni-cas
 - dopravni-prestupky
+  ]@
+
+@exercises ## Doporučené úložky na doma [
+
+- svetovy-cas
+- svetovy-cas-2
   ]@
