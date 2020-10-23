@@ -25,6 +25,24 @@ Pojďme si dělení kódu aplikace do vícero souborů vyzkoušet na našem nák
 
 ## Webpack
 
+V předchozí části jsme rozdělili komponenty v projektu Nákupní seznam do jednotlivých souborů, což velmi pomáhá nám programátorům. Do našeho HTML však kvůli tomu musíme vložit celkem šest souborů.
+
+```html
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="ShoppingItem/style.css" />
+<link rel="stylesheet" href="ShoppingList/style.css" />
+
+...
+
+<script src="ShoppingItem/index.js"></script>
+<script src="ShoppingList/index.js"></script>
+<script src="index.js"></script>
+```
+
+Prohlížeč tak musí kvůli dvěma komponentám stáhnout šest různých souborů. Reálné aplikace však obsahují desítky, stovky a tisíce komponent.
+
+https://github.com/facebook/react/issues/9463#issuecomment-295643228
+
 Webpack je nástroj, který slouží ke spojení zdrojových JavaScriptových souborů do jednoho výsledného souboru, který pak prohlížeč může stáhnout najednou. Tomuto procesu se říká <term cs="sestavení" en="build">. K tomu, aby se náš projekt správně sestavil, potřebujeme Webpack správně nakonfigurovat. Vytvořít takovou konfiguraci od základu je už relativně pokročilá dovednost. V našem případě tedy budeme pracovat s již předem připravenou konfigurací, která se hodí na většinu jednoduchých frontendových projektů.
 
 ### Postup založení nového projektu
@@ -65,4 +83,9 @@ Tento postup následujte vždy, když chcete založit nový frontendový projekt
 @exercises ## Cvičení - Základy Webpacku [
 
 - citat
+  ]@
+
+@exercises ## Doporučené úložky na doma [
+
+- svetovy-cas-webpack
   ]@

@@ -1,5 +1,5 @@
 ---
-title: Přesupky 2
+title: Přestupky 2
 demand: 2
 ---
 
