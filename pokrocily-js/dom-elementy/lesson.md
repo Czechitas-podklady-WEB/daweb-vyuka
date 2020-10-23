@@ -229,3 +229,9 @@ mainElm.appendChild(ShoppingList({ items: list }));
 ```
 
 Všimněte si, že je třeba nejdříve vyprázdnit element `mainElm`, abychom do něj mohli vložit nový obsah pomocí `appendChild`.
+
+@exercises ## Cvičení - interaktivní komponenty [
+
+- zarovky
+- kostky-1
+  ]@

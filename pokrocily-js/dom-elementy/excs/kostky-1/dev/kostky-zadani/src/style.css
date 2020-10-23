@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+}
+
+.dice-row {
+  display: flex;
+}
+
+.dice {
+  width: 3rem;
+  height: 3rem;
+  margin: 0.2rem;
+  background-size: contain;
+}
+
+.dice--1 {
+  background-image: url('./img/side1.svg');
+}
+
+.dice--2 {
+  background-image: url('./img/side2.svg');
+}
+
+.dice--3 {
+  background-image: url('./img/side3.svg');
+}
+
+.dice--4 {
+  background-image: url('./img/side4.svg');
+}
+
+.dice--5 {
+  background-image: url('./img/side5.svg');
+}
+
+.dice--6 {
+  background-image: url('./img/side6.svg');
+}
+
+.controls {
+  margin: 1rem;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: blue;
+  color: white;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+}
+
+button:hover {
+  background-color: navy;
+}
