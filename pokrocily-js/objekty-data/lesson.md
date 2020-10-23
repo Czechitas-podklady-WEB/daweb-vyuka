@@ -88,7 +88,7 @@ const expenses = [
   { name: 'Míša', product: 'Pečící papír', price: 30 },
   { name: 'Zuzka', product: 'Savo', price: 80 },
   { name: 'Petr', product: 'Tapeta na záchod', price: 315 },
-  { name: 'Ondra', product: 'Toaleťák', price: 6 }]
+  { name: 'Ondra', product: 'Toaleťák', price: 6 },
 ];
 ```
 
