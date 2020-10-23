@@ -16,5 +16,5 @@ Vytvořte jednoduchou webovou stránku, která zobrazuje seznam kontaktů. U ka�
    <span class="email">lesni.bystrina@gmail.com</span>
    ```
 1. Vyberte ze stránky element `#app` a vložte do něj element s kontaktem.
-1. Stejným postupem přidejte na stránku ještě další dva kontakty `cantact2` a `contact3`.
+1. Stejným postupem přidejte na stránku ještě další dva kontakty `contact2` a `contact3`.
 1. Nepovinně si můžete pohrát se stylováním. U každého kontaktu se vám například může hodit takováto hezká [ikonka](assets/contact.png).
