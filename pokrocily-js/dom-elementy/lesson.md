@@ -17,7 +17,7 @@ V tuto chvíli máme vytvořený zcela plnoprávný DOM element, se kterým mů�
 > h1Elm.className = 'title'
 ```
 
-Důležité je, že tento element není zapojen do naší stránky. Je zatím uložen pouze v proměnné `elm` a na stránce jej tedy není vidět. Pokud jej chceme do stránky vložit, můžeme jej například zapojit na konec nějakého elementu, který už na stránce je.
+Důležité je, že tento element není zapojen do naší stránky. Je zatím uložen pouze v proměnné `h1Elm` a na stránce jej tedy není vidět. Pokud jej chceme do stránky vložit, můžeme jej například zapojit na konec nějakého elementu, který už na stránce je.
 
 Mějme například následujicí HTML.
 
