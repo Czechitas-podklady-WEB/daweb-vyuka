@@ -1,0 +1,28 @@
+title: React
+link: react
+brief: Díky Reactu budete schopni vytvářet profesionální webové aplikace mnohem rychleji než v čistém JavaScriptu.
+lessons:
+  - title: Úvod do Reactu
+    link: uvod-do-reactu
+    brief: ''
+  - title: Dynamické třídy, podmíněné zobrazení
+    link: podminene-zobrazeni
+    brief: ''
+  - title: Události, stav
+    link: udalosti-stav
+    brief: ''
+  - title: Práce se stavem, zobrazování seznamů
+    link: zobrazovani-seznamu
+    brief: ''
+  - title: Životní cyklus komponenty, useEffect
+    link: use-effect
+    brief: ''
+  - title: Komunikace mezi komponentami
+    link: komponenty-komunikace-1
+    brief: ''
+  - title: Komunikace mezi komponentami
+    link: komponenty-komunikace-2
+    brief: ''
+  - title: React router
+    link: react-router
+    brief: ''
