@@ -281,77 +281,20 @@ Zásady psaní hezkého kódu
 
 - Příklady na práci s komponentami
 
-## Sylabus Vue.js
+## Sylabus React
 
-### Blok 1:
+### Blok 1: Úvod do Reactu
 
-Sobota 9.11. - Vue.js
-Vue.js (8 h)
-Začínáme s Vue.js - reaktivní JS framework
-Nejjednodušší způsob, jak začít = připojený script. Magicky funguje.
-Vue šablony (templates)
-Vue instance
-Data ve Vue instanci
-Napojení dat na HTML atributy (binding)
-Direktivy
-Události
-Obousměrný data binding
+### Blok 2: Podmíněné zobrazení, dynamické třídy
 
-Úterý 12.11. - Vue.js
-Vue.js (3 h)
-Vue a interakce s DOMem
-Computed properties
-Dynamické CSS třídy
+### Blok 3: Události, stav
 
-Sobota 16.11. - Vue.js
-Vue.js (8 h)
-Podmíněné zobrazení v šablonách - v-if, v-else, v-show
-Generování seznamů - v-for
-Procházení dat (objekty vs. čísla)
+### Blok 4: Práce se stavem, zobrazování seznamů
 
-Čtvrtek 21.11. - Vue.js
-Vue.js (3 h)
-Životní cyklus Vue instance
-Metody životního cyklu - mounted, created, apod.
+### Blok 5: Životní cyklus komponenty, useEffect
 
-Sobota 23.11. - Vue.js
-Vue.js (8 h)
-Přechod na reálné vývojové workflow - Webpack a Vue CLI
-Vue CLI 3 - proč a k čemu
-.vue soubory - vše v jednom (template, script, style)
-Ukládání dat v komponentě pomocí metody data()
-Lokální registrace komponent
-Omezení dosahu CSS pouze na komponentu (scoping component styles)
+### Blok 6: Komunikace mezi komponentami
 
-Úterý 26.11. - Vue.js
-Vue.js (3 h)
-Úvod do Vue komponent
-Používání props pro komunikaci rodič -> potomek
-Používání props pro komunikaci potomek -> rodič
+### Blok 7: Komunikace mezi komponentami
 
-Čtvrtek 28.11. - Vue.js
-Vue.js (3 h)
-Komunikace mezi komponentami na stejné úrovni (siblings)
-
-Sobota 30.11. - Vue.js
-Vue.js (8 h)
-Zpracování formulářů
-Základní binding na element <input>
-Modifikace uživatelských vstupů pomocí modifikátorů
-Binding elementu <textarea> a zachování konců řádků
-Používání checkboxů a ukládání dat v poli
-Používání radio buttonů
-Zpracování rozbalovacích nabídek - <select> a <option>
-Odeslání formuláře
-
-Úterý 3.12. - Vue.js
-Vue.js (3 h)
-Pokročilé použití komponent
-Validace formulářů
-
-Sobota 7.12. - Vue.js - VOLITELNÉ
-Vue.js (8 h)
-Čtení a zpracování dat ze serveru pomocí knihovny Axios
-HTTP komunikace
-
-.
+### Blok 8: React router
