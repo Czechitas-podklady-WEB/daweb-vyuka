@@ -10,7 +10,7 @@ const product = {
   name: 'Toaster',
   brand: 'Tefal',
   inStock: 34,
-  price: '25 $',
+  price: '$25',
   colors: ['black', 'red', 'silver', 'blue', 'silver'],
 };
 ```
