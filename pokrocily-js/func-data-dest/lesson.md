@@ -80,7 +80,7 @@ const [from, , to] = cities;
 
 ### Destrukturování a komponenty
 
-Destrukturování můžeme s výhodou použít při psaní komponent. Uvažme naší známou komponentu `ShoppingList`.
+Destrukturování můžeme s výhodou použít při psaní komponent. Uvažme naši známou komponentu `ShoppingList`.
 
 ```js
 const ShoppingItem = (props) => {
@@ -96,7 +96,7 @@ const ShoppingItem = (props) => {
 };
 ```
 
-Abychom před každou hodnotu nemusi psát `props.`, můžeme si objekt `props` na začátku funkce destrukturovat.
+Abychom před každou hodnotu nemuseli psát `props.`, můžeme si objekt `props` na začátku funkce destrukturovat.
 
 ```js
 const ShoppingItem = (props) => {
