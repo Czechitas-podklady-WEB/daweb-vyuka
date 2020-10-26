@@ -17,9 +17,9 @@ lessons:
   - title: Vlastní DOM elementy
     link: dom-elementy
     brief: Ukážeme si, jak vytvořit vlastní DOM elementy a udělat naše komopnenty interaktivní.
-  - title: Funkcionální zpracování dat, destructuring
+  - title: Funkcionální zpracování dat, destrukturování
     link: func-data-dest
-    brief: Ukážeme si šikovné funkce pro práci s daty jako map a filter, a také takzvaný destructuring.
+    brief: Ukážeme si šikovné funkce pro práci s daty jako map a filter, a také takzvané destrukturování.
   - title: 'Opakování: Café Lóra'
     link: cafe-lora
     brief: Všechno, co jsme se doposud naučili si procvičíme na projektu takzvaně "ze života".
