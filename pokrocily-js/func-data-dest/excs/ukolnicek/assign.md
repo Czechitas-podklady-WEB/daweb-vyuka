@@ -3,7 +3,7 @@ title: Úkolníček
 demand: 2
 ---
 
-Založte si JavaScriptový program a vložte do něj následujicí [datovou strukturu](assets/tasks.js) představující seznam úkolů. Každý objekt obsahouje tyto položky
+Založte si JavaScriptový program a vložte do něj následujicí [datovou strukturu](assets/tasks.js) představující seznam úkolů. Každý objekt obsahuje tyto položky
 
 - `name` - název úkolu,
 - `due` - za jak dlouho má být úkol splněn,
