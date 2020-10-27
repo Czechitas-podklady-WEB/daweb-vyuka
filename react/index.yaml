@@ -4,7 +4,7 @@ brief: Díky Reactu budete schopni vytvářet profesionální webové aplikace m
 lessons:
   - title: Úvod do Reactu
     link: uvod-do-reactu
-    brief: ''
+    brief: Napíšeme si první aplikace v Reactu a představíme si hlavní principy tohoto moderního frameworku.
   - title: Dynamické třídy, podmíněné zobrazení
     link: podminene-zobrazeni
     brief: ''
