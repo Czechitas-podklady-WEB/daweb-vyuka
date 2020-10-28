@@ -31,7 +31,7 @@ Pokud má naše funkce parametr, dáváme tím JavaScript runtimu najevo, že n�
 
 ### Vlastnost target
 
-Nejříve si na příkladu vysvětlíme vlastnost `target`. Je to jedna z vůbec nejdůležitějších vlastní na událostech. Díky ní se můžeme dostat z mnoha jinak svízelných situací. Představte si například, že chceme naprogramovat jednoduchou chatovací aplikaci, která umožňuje přiřadit zprávě smajlíka. Začneme s již připaveným kód, který si můžete [stáhnout zde](assets/smileys.zip). Pro nás je v tuto chvíli relavanentí část HTML zobrazující tlačítka se smajlíky.
+Nejříve si na příkladu vysvětlíme vlastnost `target`. Je to jedna z vůbec nejdůležitějších vlastností na událostech. Díky ní se můžeme dostat z mnoha jinak svízelných situací. Představte si například, že chceme naprogramovat jednoduchou chatovací aplikaci, která umožňuje přiřadit zprávě smajlíka. Začneme s již připaveným kód, který si můžete [stáhnout zde](assets/smileys.zip). Pro nás je v tuto chvíli relavanentí část HTML zobrazující tlačítka se smajlíky.
 
 ```html
 <button id="btn-smiley1" class="btn-smiley">😀</button>
@@ -254,7 +254,7 @@ Situace, kdy náš program napíšeme tak, že nedělá, co chceme, ale z hledis
 
 ## JavaScriptové recitály
 
-Jedním z hlavních způsobů, jak si ušetřit monho frustrace a mlácení hlavou o stůl během programování, je naučit se doopravdy porozumět tomu, co děláte. V předchozích lekcích se na vás vyhrnolo velké množství nových pojmů a možná se mezi nimi zmítáte jako vratká bárka v rozbouřeném moři. Zkusíme tedy postupně zakotvit tím, že se budeme učit přesně popsat - takzvaně recitovat - co přesně dělá nějaký kousek kódu, aby si vás mozek zvyknul na JavaScriptové myšlení.
+Jedním z hlavních způsobů, jak si ušetřit monho frustrace a mlácení hlavou o stůl během programování, je naučit se doopravdy porozumět tomu, co děláte. V předchozích lekcích se na vás vyhrnulo velké množství nových pojmů a možná se mezi nimi zmítáte jako vratká bárka v rozbouřeném moři. Zkusíme tedy postupně zakotvit tím, že se budeme učit přesně popsat - takzvaně recitovat - co přesně dělá nějaký kousek kódu, aby si vás mozek zvyknul na JavaScriptové myšlení.
 
 ### Recitál první
 
@@ -290,7 +290,7 @@ Technický rozbor by mohl vypadat takto.
 
 ![Recitál druhý](assets/recitation02.svg)
 
-> Vytváříme proměnnou `setColor`, do které ukládáme novou funkce se dvěma parametry. Tato funkce vezme hodnotu v parametru `element` a nastaví vlastnost `color` vlastnosti `style` na hodnotu uloženou v parametru `color`.
+> Vytváříme proměnnou `setColor`, do které ukládáme novou funkci se dvěma parametry. Tato funkce vezme hodnotu v parametru `element` a nastaví vlastnost `color` vlastnosti `style` na hodnotu uloženou v parametru `color`.
 
 Záměr funkce můžeme odhadnout takto.
 
