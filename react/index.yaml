@@ -7,7 +7,7 @@ lessons:
     brief: Napíšeme si první aplikace v Reactu a představíme si hlavní principy tohoto moderního frameworku.
   - title: Dynamické třídy, podmíněné zobrazení
     link: podminene-zobrazeni
-    brief: ''
+    brief: Naučíme si jak sestavovat CSS třídy a jak se rozhodnout, kterou část JSX chceme zobrazit.
   - title: Události, stav
     link: udalosti-stav
     brief: ''
