@@ -271,7 +271,7 @@ while (i < marks.length) {
 
 Aby cyklus správně fungoval, musíme si dát dobrý pozor jednak na to, abychom s indexm `i` začínali od nuly a bychom nepřekročili délku pole.
 
-Všimněte si, že už po několikáté vidíme cyklus, kde používáme nějakou proměnnou, kterou postupně navyšujeme dokud nedojdeme k nějakému limitu. Protože tato proměnná vlastně řídí, jak dlouho se celý cyklus bude opakovat, říkáme jí _řídící proměnná_.
+Všimněte si, že už po několikáté vidíme cyklus, kde používáme nějakou proměnnou, kterou postupně navyšujeme dokud nedojdeme k nějakému limitu. Protože tato proměnná vlastně řídí, jak dlouho se celý cyklus bude opakovat, říkáme jí <term cs="řídící proměnná" en="control variable">.
 
 ### Cyklus FOR
 
