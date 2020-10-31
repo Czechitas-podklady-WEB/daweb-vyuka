@@ -13,4 +13,4 @@ Stáhněte si [základ projektu](https://github.com/Czechitas-podklady-WEB/cafel
     1. Pojmenujte hlavní větev `git branch -M main`.
     1. Proveďte první push `git push -u origin main`.
 1. Nainstalujte závislosti pomocí `npm install` a spusťte projekt pomocí `npm run start`.
-1. Prohlédněte si design stránky a vyzkoušejte si její responzivitu. Všimnětě si, že například ikonka navigace zatím moc nefunguje.
+1. Prohlédněte si design stránky a vyzkoušejte si její responzivitu. Všimněte si, že například ikonka navigace zatím moc nefunguje.
