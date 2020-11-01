@@ -10,22 +10,23 @@ V tomto cvičení budeme chtít na stránce zobrazit vícero nápojů.
    ```js
    const drinks = [
      {
-       id: 'cappucino',
+       id: 'cappuccino',
        name: 'Cappuccino',
        ordered: false,
        layers: [
-       {
-         color: '#feeeca',
-         label: 'mléčná pěna',
-       },
-       {
-         color: '#fed7b0',
-         label: 'teplé mléko',
-       },
-       {
-         color: '#613916',
-         label: 'espresso',
-       },
+         {
+           color: '#feeeca',
+           label: 'mléčná pěna',
+         },
+         {
+           color: '#fed7b0',
+           label: 'teplé mléko',
+         },
+         {
+           color: '#613916',
+           label: 'espresso',
+         },
+       ],
      },
      {
        id: 'romano',
