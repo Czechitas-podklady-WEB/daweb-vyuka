@@ -34,15 +34,20 @@ const appElm = document.querySelector('#app');
 appElm.appendChild = obsah;
 ```
 
-Toto řešení už je praktičtější, kód je však delší a méně přehledný. Zde přichází ke slovu React se třetím způsobem, jak obsah stránky vytvářet.
+Toto řešení už je praktičtější, kód je však delší a méně přehledný. Zde proto s velkou famfárou a na alegorickém voze přijíždí React s třetím způsobem, jak vytvářet obsah stránky.
 
 ```js
 const obsah = <h1 className="title">Moje stránka</h1>;
 ```
 
-Všimněte si, že do proměnné <var>obsah</var> přímo bez obalení uvozovkami ukládáme něco, co vypadá podezřele jako HTML. Není to však přesně HTML, nýbrž takzvané JSX (JavaScript XML). Zápis JSX je velmi podobný jazyku HTML, jsou zde však drobné rozdíly. Například místo atributu `class` se v JSX používá atribut `className`. JSX elementy jsou Reactová obdoba DOM elementů, které jsme používali ve vanilla JavaScriptu. Jde tedy o zcela nový typ hodnoty. JSX elementy proto můžeme ukládat do proměnných, předávat funkcím, vracet z funkcí, vkládat do polí a objektů a tak dále.
+Všimněte si, že do proměnné <var>obsah</var> přímo bez obalení uvozovkami ukládáme něco, co vypadá podezřele jako HTML. Není to však přesně HTML, nýbrž takzvané _JSX (JavaScript XML)_. Zápis JSX je velmi podobný jazyku HTML, jsou zde však drobné rozdíly. Například místo atributu `class` se v JSX používá atribut `className`.
 
-Pokud chceme náš JSX element vložit na stránku, musíme použít Reactovou funkci `render`. Tato funkce má dva parametry. První parametr je JSX element a druhý parametr je element na stránce, do kterého chceme náš obsah vložit.
+JSX elementy jsou Reactová obdoba DOM elementů, které jsme používali ve vanilla JavaScriptu. Jde o zcela nový typ hodnoty, a proto je můžeme stejně jako ostatní hodnoty ukládat do proměnných, předávat funkcím, vracet z funkcí, vkládat do polí i objektů a tak dále.
+
+Pokud chceme náš JSX element vložit na stránku, musíme použít Reactovou funkci `render`. Tato funkce má dva parametry:
+
+1. JSX element, který cheme zobrazit.
+1. DOM element na stránce, do kterého chceme náš obsah vložit.
 
 ```js
 render(<h1 className="title">Moje stránka</h1>, document.getElementById('app'));
@@ -58,7 +63,7 @@ import './index.html';
 render(<h1 className="title">Moje stránka</h1>, document.getElementById('app'));
 ```
 
-Všimněte si, že aby nám React fungoval, musíme na začátku importovat balíček `react`. Funkci `render` si importujeme z balíčku `react-dom`.
+Aby nám React správně fungoval, musíme importovat balíček `react` na začátku každého souboru, ve kterém pracujeme s JSX. Funkci `render` si pak importujeme z balíčku `react-dom`.
 
 ### Obsah stránky v Reactu
 
@@ -154,14 +159,14 @@ const nazev = 'Moje stránka';
 const obsah = `<h1 class="title">${nazev}</h1>`;
 ```
 
-JSX funguje velmi podobně, nepoužívá ale symbol dolaru. V Reactu tedy budeme psát následující.
+JSX funguje velmi podobně, nepoužívá ale symbol dolaru. V Reactu budeme psát následující:
 
 ```js
 const nazev = 'Moje stránka';
 const obsah = <h1 className="title">{nazev}</h1>;
 ```
 
-Když stavíme řetězec, můžeme si obsah proměnné vložit kam chceme. JSX je přísnější a tak velkou svobodu nemáme. Složené závorky můžeme použít pouze pro obsah elementu nebo pro hodnotu atributu. Následující kód je tedy v pořádku.
+Když stavíme řetězec, můžeme si obsah proměnné vložit kam chceme. JSX je však přísnější a takto velkou svobodu nemáme. Složené závorky můžeme použít pouze pro obsah elementu nebo pro hodnotu atributu. Následující kód je tedy v pořádku.
 
 ```js
 const nazev = 'Moje stránka';
@@ -207,7 +212,7 @@ render(appContent, document.getElementById('app'));
 
 ## React komponenty a props
 
-Velká výhoda, kterou nám JSX přináší spočívá v tom, že můžeme naše komponenty psát podobně, jako na začátku, kdy jsme z komponent vraceli řetězec obsahující HTML. Připomeňme si, jak tehdy vypadala naše komponenta `ShoppingList`.
+Velká výhoda, kterou nám JSX přináší, spočívá v tom, že můžeme naše komponenty psát podobně, jako na začátku, kdy jsme z komponent vraceli řetězec obsahující HTML. Připomeňme si, jak tehdy vypadala naše komponenta `ShoppingItem`.
 
 ```js
 const ShoppingItem = (props) => {
@@ -235,7 +240,7 @@ const ShoppingItem = (props) => {
 
 Všimněte si důležitých rozdílů:
 
-1. Nepoužíváme už zpětné apostrofy. Místo toho celé JSX uzavřeme do závorek.
+1. Nepoužíváme už zpětné apostrofy. Místo toho celé JSX uzavřeme do závorek, aby se nám kód hezky četl.
 1. Pokud chceme dovnitř JSX zakomponenovat obsah nějaké proměnné, místo `${promenna}` píšeme prostě `{promenna}`. Proti předchozímu zápisu nám tak zmizí znak dolaru.
 
 Ta nejhezčí věc na Reactu je však způsob, jakým naši komponentu zapojíme do zbytku stránky. Místo toho, abychom složitě používali `innerHTML` nebo `appendChild`, můžeme se tvářít, že naše komponenta je obyčejný tag a `props` jí předat pomocí atributů. Použití komponenty `ShoppingItem` by pak mohlo vypadat takto.
@@ -270,6 +275,8 @@ render(
   document.getElementById('app')
 );
 ```
+
+React se za nás postará a veškerou špinavou práci, kdy hodnoty atributů zabalí do jednoho objektu, pošle jej funkci `ShoppingItem` a výsledek zapojí do naší stránky.
 
 ## Doporučené postupy
 
@@ -314,3 +321,76 @@ render(<App />, document.getElementById('app'));
 ```
 
 ### Rozdělení komponent do složek
+
+Už při práci v čistém JavaScriptu jsme se učili rozdělovat komponenty do separátních složek. Tento postup budeme v Reactu přísně dodržovat a pro každou komponenty vždy vytvoříme složku obsahující její zdrojový JavaScript, styly i obrázky.
+
+Naší komponentu `ShoppingItem` tak vložíme do složky `ShoppingItem` se souborem `index.jsx`. Ten bude obsahovat kód naší komponenty.
+
+```js
+import React from 'react';
+
+const ShoppingItem = (props) => {
+  return (
+    <div class="item">
+      <span class="item__name">{props.name}</span>
+      <span class="item__amount">{props.amount}</span>
+    </div>
+  );
+};
+
+export default ShoppingItem;
+```
+
+Všimněte si, že zde neimportujeme funkci `render`. Tu použijeme pouze v hlavním `index.jsx` na zobrazení celé aplikace. V jednotlivých komponentách ji nepotřebujeme. Také dejte pozor na to, že komponentu exportujeme pomocí `export default`. To je speciální forma exportování pro případ, kdy z našeho souboru chceme exportovat pouze jednu funkci.
+
+Pokud bychom komponentu exportovali tak, jako dříve
+
+```js
+export const ShoppingItem = (props) => {
+```
+
+importovali bychom ji pak takto
+
+```js
+import { ShoppingItem } from './ShoppingItem';
+```
+
+Pokud ji exportujeme pomocí `export default`, při importu vynecháme složené závorky.
+
+```js
+import ShoppingItem from './ShoppingItem';
+```
+
+Výsledný hlavní `index.jsx` celé aplikace pak bude vypadat takto.
+
+```js
+import React from 'react';
+import { render } from 'react-dom';
+import ShoppingItem from './ShoppingItem';
+import './index.html';
+
+const App = () => {
+  return (
+    <>
+      <header>
+        <h1>Shopping List</h1>
+      </header>
+      <main class="shopping-list">
+        <ShoppingItem name="Jablka" amount="1 kg" />
+        <ShoppingItem name="Skořice" amount="1 balení" />
+        <ShoppingItem name="Máslo" amount="250 g" />
+        <ShoppingItem name="Mouka" amount="500 g" />
+      </main>
+      <footer>Martin Podloucký</footer>
+    </>
+  );
+};
+
+render(<App />, document.getElementById('app'));
+```
+
+@exercises ## Cvičení - React komponenty [
+
+- prvni-kroky
+- plysaci
+  ]@
