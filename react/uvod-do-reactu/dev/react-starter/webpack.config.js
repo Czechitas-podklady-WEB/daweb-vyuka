@@ -9,7 +9,7 @@ module.exports = {
   devtool: 'none',
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
-    port: 9000,
+    writeToDisk: true,
   },
   module: {
     rules: [
