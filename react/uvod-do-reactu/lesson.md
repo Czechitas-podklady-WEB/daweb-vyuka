@@ -391,6 +391,6 @@ render(<App />, document.getElementById('app'));
 
 @exercises ## Cvičení - React komponenty [
 
-- prvni-kroky
-- plysaci
+- aplikace
+- datumy
   ]@
