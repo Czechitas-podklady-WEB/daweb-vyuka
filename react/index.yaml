@@ -10,10 +10,10 @@ lessons:
     brief: Naučíme si jak sestavovat CSS třídy a jak se rozhodnout, kterou část JSX chceme zobrazit.
   - title: Události, stav
     link: udalosti-stav
-    brief: ''
-  - title: Práce se stavem, zobrazování seznamů
+    brief: 'Přidáme do našich komponent stav abychom mohli měnit obsah stránky podle interakce s uživatelem.'
+  - title: Zobrazování seznamů
     link: zobrazovani-seznamu
-    brief: ''
+    brief: 'Ukážeme si, jak v React komponentách zobrazovat seznamy.'
   - title: Životní cyklus komponenty, useEffect
     link: use-effect
     brief: ''
