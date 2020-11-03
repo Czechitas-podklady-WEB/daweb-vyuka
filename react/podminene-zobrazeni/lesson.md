@@ -39,7 +39,7 @@ const ShoppingItem = (props) => {
 };
 ```
 
-Dejme tomu, že chceme být schopni položku vysvítit jako vybraznou. Můžeme tedy komponentě přidat novou `prop` s názvem `selected` a použít ji takto.
+Dejme tomu, že chceme být schopni položku vysvítit jako vybranou. Můžeme tedy komponentě přidat novou `prop` s názvem `selected` a použít ji takto.
 
 ```js
 <ShoppingList name="jablka" amount="1 kg" selected={true} />
