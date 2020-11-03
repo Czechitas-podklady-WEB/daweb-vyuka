@@ -21,12 +21,12 @@ Postupujte dle následujících kroků.
    const plushy1 = {
      name: 'Silvestr',
      image: 'adresa obrazku',
-     text: 'Text o silvestrovi',
+     text: 'Silvestr rád pozoruje dění za oknem a upřímně se usmívá na všechno kolemjdoucí.',
    };
    const plushy2 = {
      name: 'Ctirad',
      image: 'adresa obrazku',
-     text: 'Text o silvestrovi',
+     text: 'Ctirad tráví svůj čas v blízkosti lednice a s očekáváním pozoruje její bílé dveře.',
    };
    ```
 1. Adresy obrázků si můžeme zkopírovat z těcho odkazů: [elephant](assets/elephant.jpg), [mouse](assets/mouse.jpg).
