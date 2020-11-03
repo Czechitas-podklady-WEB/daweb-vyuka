@@ -230,9 +230,9 @@ V Reactu tutéž komponenty napíšeme tak, že místo řetězce bude vracet JSX
 ```js
 const ShoppingItem = (props) => {
   return (
-    <div class="item">
-      <span class="item__name">{props.name}</span>
-      <span class="item__amount">{props.amount}</span>
+    <div className="item">
+      <span className="item__name">{props.name}</span>
+      <span className="item__amount">{props.amount}</span>
     </div>
   );
 };
