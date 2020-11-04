@@ -57,9 +57,9 @@ Obsah atributu `className` tedy chceme zkonstruovat dle hodnoty `props.selected`
 const ShoppingItem = (props) => {
   let itemClass = null;
   if (props.selected) {
-    itemClass = 'item';
-  } else {
     itemClass = 'item item--selected';
+  } else {
+    itemClass = 'item';
   }
 
   return (
@@ -75,7 +75,7 @@ Díky podmíněnému operátoru si situaci můžeme zjednodušit takto.
 
 ```js
 const ShoppingItem = (props) => {
-  const itemClass = props.selected ? 'item' : 'item item--selected';
+  const itemClass = props.selected ? 'item item--selected' : 'item';
 
   return (
     <div className={itemClass}>
@@ -91,7 +91,7 @@ Dokonce bychom hodnotu ani nemuseli ukládat do proměnné a použít podmíněn
 ```js
 const ShoppingItem = (props) => {
   return (
-    <div className={props.selected ? 'item' : 'item item--selected'}>
+    <div className={props.selected ? 'item item--selected' : 'item'}>
       <span className="item__name">{props.name}</span>
       <span className="item__amount">{props.amount}</span>
     </div>
