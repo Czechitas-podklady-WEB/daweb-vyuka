@@ -6,7 +6,7 @@ demand: 2
 Přepište následující úryvky kódu tak, aby místo podmínek používaly operátor pro podmíněný výraz. Pracujeme v čistém JavaScriptu, takže není potřeba zakládat React projekt.
 
 1.  ```js
-    const password = prompt('Zadejte heslo: ');
+    const password = prompt('Zadejte heslo:');
     let valid = null;
     if (password.length > 8) {
       valid = 'Heslo je v pořádku';
@@ -15,7 +15,7 @@ Přepište následující úryvky kódu tak, aby místo podmínek používaly op
     }
     ```
 1.  ```js
-    const grade = prompt('Počet bodů z písemky: ');
+    const grade = prompt('Počet bodů z písemky:');
     let passed = null;
     if (grade >= 50) {
       passed = '<span>prošel</span>';
