@@ -150,7 +150,35 @@ stačí napsat pouze název dané prop a React už si domyslí, že do ní chcem
 
 ## Stylování JSX elementů
 
-Podobně jako při práci s HTML tu a tam nastane chvíle, kdy potřebujeme změnit individuální CSS styl na nějakém prvku.
+Podobně jako při práci s HTML tu a tam nastane chvíle, kdy potřebujeme změnit individuální CSS styl na nějakém prvku. V JSX k tomu také použijeme prop jménem `style`. Obsahem však musí být JavaScriptový objekt, kde jednotlivé CSS vlastnosti mají jména v camel case formátu. Takto například v Reactu nastavíme barvu pozadí, barvu písma a výšku elementu.
+
+```js
+<div style={{ height: '5rem', color: 'white', backgroundColor: '#ff0000' }} />
+```
+
+Všimněte si, že zde narážíme na situaci, kdy máme objekt, jako hodnota pro nějakou prop. Je proto třeba dát si dobrý pozor na složené závorky. Takovýto kód nám fungovat nebude.
+
+```js
+<div style={ height: '5rem', color: 'white', backgroundColor: '#ff0000' } />
+```
+
+Druhý důležitý fakt je, že všechny hodnoty pro naše styly musí být řetězce. Proto nám rozhodně nebude fungovat například takovýto kód.
+
+```js
+<div style={{ height: 5rem, color: white, backgroundColor: #ff0000 }} />
+```
+
+Naopak co si snadno dovolit můžeme, je nastavit hodnotu stylu pomocí podmíněného operátoru.
+
+```js
+<div
+  style={{
+    height: '5rem',
+    color: 'white',
+    backgroundColor: podminka ? '#ff0000' : '#0000ff',
+  }}
+/>
+```
 
 ## Podmíněné zobrazení.
 
@@ -205,7 +233,19 @@ const Product = (props) => {
 };
 ```
 
-Občas se nám stane, že v jednom z případů podmínky nechcem zobrazit nic.
+Občas se nám stane, že v jednom z případů podmínky nechcem zobrazit nic. Dejme tomu, že nechceme uživateli umožnit zrušit objednávku přímo u daného produktu. V takovém případě můžeme vrátit hodnotu `null`, která pro React znamená, že nemá zobrazit nic.
+
+```js
+const Product = (props) => {
+  return (
+    <div className="product">
+      <div className="product__name">{props.name}</div>
+      <img className="product__img" src={props.img} />
+      {props.ordered ? null : <button>Vložit do košíku</button>}
+    </div>
+  );
+};
+```
 
 @exercises ## Cvičení - Podmíněné zobrazování [
 
