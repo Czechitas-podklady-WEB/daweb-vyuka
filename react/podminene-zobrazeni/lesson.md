@@ -145,6 +145,7 @@ stačí napsat pouze název dané prop a React už si domyslí, že do ní chcem
 
 @exercises ## Cvičení - Podmíněné výrazy [
 
+- react-zarovka
 - podminene-jednohubky
   ]@
 
