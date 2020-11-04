@@ -264,7 +264,7 @@ render(
     <header>
       <h1>Shopping List</h1>
     </header>
-    <main class="shopping-list">
+    <main className="shopping-list">
       <ShoppingItem name="Jablka" amount="1 kg" />
       <ShoppingItem name="Skořice" amount="1 balení" />
       <ShoppingItem name="Máslo" amount="250 g" />
