@@ -3,10 +3,10 @@ title: React žárovka
 demand: 2
 ---
 
-Vzpomeňte si na naše cvičení s vanilla JavaScirptu, kdy jsme rozsvěcovali a zhasínali žárovku. Zkusíme naši žárovku zprovoznit v Reactu.
+Vzpomeňte si na naše cvičení z vanilla JavaScriptu, kdy jsme rozsvěcovali a zhasínali žárovku. Zkusíme naši žárovku zprovoznit v Reactu.
 
 1. Založte si React projekt dle šablony z předchozí lekce.
-1. Stáhněte si [zadani](assets/zarovka-zadani.zip) obsahující připravené styly pro rozsvícenou i zhasnutou žárovku.
+1. Stáhněte si [zadaní](assets/zarovka-zadani.zip) obsahující připravené styly pro rozsvícenou i zhasnutou žárovku.
 1. Ve vašem React projektu vytvořte komponentu `Bulb` a nastylujte ji podle vzoru ze zadání.
 1. Chceme zařídit, že pokud komponentu použijeme takto
 
