@@ -101,6 +101,114 @@ const ShoppingItem = (props) => {
 
 Takovýto kód už však může být hůře čitelný, takže je dobré jej používat s mírou a uvážením.
 
+## Předávání hodnot pomocí props
+
+Všimněte si, jak jsme použili naši komponentu `ShoppingItem` a jak jsme jí předali prop `selected`.
+
+```js
+<ShoppingList name="jablka" amount="1 kg" selected={true} />
+```
+
+Kdybychom to udělali takto
+
+```js
+<ShoppingList name="jablka" amount="1 kg" selected="true" />
+```
+
+ve vlastnosti `props.selected` uvnitř komponenty bychom měli řetězec `'true'`. Pokud totiž předáváme hodnoty pro props pomocí uvozovek jako jsme zvyklí z HTML, uvnitř komponenty vždy obdržíme tyto hodnoty jako řetězce. Pokud chceme skutečnou boolean hodnotu `true` nebo `false`, musíme si pomocí složených závorek otevřít JavaScriptové okénko. Toto platí i pro ostatní hodnoty. Pokud chceme předat pomocí props číslo, provedeme to opět pomocí složených závorek.
+
+```js
+<ShoppingList name="jablka" amount={3} selected="true" />
+```
+
+Malinko nepřehledná situace nastane, pokud takto předáváme objekty, protože pak máme vedle sebe dvě složené závorky, kde každá znamená něco jiného.
+
+```js
+<ShoppingList name="jablka" amount={{ value: 3, unit: 'kg' }} selected="true" />
+```
+
+Vnější pár složených závorek otvírá JavaScript okénko uvnitř JSX a vnitřní pár vytváří objekt. Tento styl zápisu potkáme v druhé části lekce, kdy budeme nastavovat naším komponentám CSS styly.
+
+### Předávání hodnoty true
+
+Poslední trik, kterým si ulehčujeme práci možná znáte již z HTML. Pokud chceme nějaké prop nastavit hodnotu `true` jako v tomto kódu
+
+```js
+<ShoppingList name="jablka" amount="1 kg" selected={true} />
+```
+
+stačí napsat pouze název dané prop a React už si domyslí, že do ní chceme vložit hodnotu `true`. Můžeme pak psát prostě
+
+```js
+<ShoppingList name="jablka" amount="1 kg" selected />
+```
+
+@exercises ## Cvičení - Podmíněné výrazy [
+
+- podminene-jednohubky
+  ]@
+
 ## Stylování JSX elementů
 
+Podobně jako při práci s HTML tu a tam nastane chvíle, kdy potřebujeme změnit individuální CSS styl na nějakém prvku.
+
 ## Podmíněné zobrazení.
+
+Do této chvíle jsme na základě vstupních props komponenty měnili pouze její stylování. Často však narazíme na situaci, kdy chceme změnit i samotný obsah komponenty. Představme si, že máme například komponentu `Product`, která umožňuje objednat vložit produkt v e-shopu do košíku.
+
+```js
+const Product = (props) => {
+  return (
+    <div className="product">
+      <div className="product__name">{props.name}</div>
+      <img className="product__img" src={props.img} />
+      <button>Vložit do košíku</button>
+    </div>
+  );
+};
+```
+
+Pokud už je však produkt objednaný, chtěli bychom zobrazit tlačítko s jiným nápisem. K tomuto můžeme s výhodou právě náš oblíbený podmíněný operátor.
+
+<!-- prettier-ignore -->
+```js
+const Product = (props) => {
+  return (
+    <div className="product">
+      <div className="product__name">{props.name}</div>
+      <img className="product__img" src={props.img} />
+      {
+        props.ordered ? <button>Zrušit objednávku</button> : <button>Vložit do košíku</button>
+      }
+    </div>
+  );
+};
+```
+
+Všimněte si, že na místě, kde chceme provést rozhodnutí, otevřeme pomocí složených závorek JavaScriptové okno, abychom mohli použít náš podmíněný operátor. Ten pak dle hodnoty uložné v prop s názvem `ordered` vrátí příslušný kus JSX.
+
+Pokud v podmíněném operátoru pracujeme s obsáhlejším JSX, často se nám celý výraz nevejde na jeden řádek. Pak je ve zvyku formátovat kód komponenty takto.
+
+```js
+const Product = (props) => {
+  return (
+    <div className="product">
+      <div className="product__name">{props.name}</div>
+      <img className="product__img" src={props.img} />
+      {props.ordered ? (
+        <button>Zrušit objednávku</button>
+      ) : (
+        <button>Vložit do košíku</button>
+      )}
+    </div>
+  );
+};
+```
+
+Občas se nám stane, že v jednom z případů podmínky nechcem zobrazit nic.
+
+@exercises ## Cvičení - Podmíněné zobrazování [
+
+- mejlik-schranka
+- mejlik-hlavicka
+  ]@
