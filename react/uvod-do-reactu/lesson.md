@@ -252,9 +252,9 @@ import './index.html';
 
 const ShoppingItem = (props) => {
   return (
-    <div class="item">
-      <span class="item__name">{props.name}</span>
-      <span class="item__amount">{props.amount}</span>
+    <div className="item">
+      <span className="item__name">{props.name}</span>
+      <span className="item__amount">{props.amount}</span>
     </div>
   );
 };
@@ -293,9 +293,9 @@ import './index.html';
 
 const ShoppingItem = (props) => {
   return (
-    <div class="item">
-      <span class="item__name">{props.name}</span>
-      <span class="item__amount">{props.amount}</span>
+    <div className="item">
+      <span className="item__name">{props.name}</span>
+      <span className="item__amount">{props.amount}</span>
     </div>
   );
 };
@@ -306,7 +306,7 @@ const App = () => {
       <header>
         <h1>Shopping List</h1>
       </header>
-      <main class="shopping-list">
+      <main className="shopping-list">
         <ShoppingItem name="Jablka" amount="1 kg" />
         <ShoppingItem name="Skořice" amount="1 balení" />
         <ShoppingItem name="Máslo" amount="250 g" />
@@ -331,9 +331,9 @@ import React from 'react';
 
 const ShoppingItem = (props) => {
   return (
-    <div class="item">
-      <span class="item__name">{props.name}</span>
-      <span class="item__amount">{props.amount}</span>
+    <div className="item">
+      <span className="item__name">{props.name}</span>
+      <span className="item__amount">{props.amount}</span>
     </div>
   );
 };
@@ -375,7 +375,7 @@ const App = () => {
       <header>
         <h1>Shopping List</h1>
       </header>
-      <main class="shopping-list">
+      <main className="shopping-list">
         <ShoppingItem name="Jablka" amount="1 kg" />
         <ShoppingItem name="Skořice" amount="1 balení" />
         <ShoppingItem name="Máslo" amount="250 g" />
