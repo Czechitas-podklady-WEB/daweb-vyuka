@@ -14,11 +14,11 @@ lessons:
   - title: Události, stav
     link: udalosti-stav
     brief: 'Přidáme do našich komponent stav abychom mohli měnit obsah stránky podle interakce s uživatelem.'
-  - title: Životní cyklus komponenty, useEffect
-    link: use-effect
+  - title: Formulářové prvky
+    link: form-fields
     brief: ''
-  - title: Komunikace mezi komponentami
-    link: komponenty-komunikace-1
+  - title: useEffect
+    link: use-effect
     brief: ''
   - title: Komunikace mezi komponentami
     link: komponenty-komunikace-2
