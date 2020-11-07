@@ -8,9 +8,12 @@ lessons:
   - title: První programy a podmínky
     link: programy-podminky
     brief: Ukážeme si jak vytvářet JavaScriptové programy a naučíme je dělat rozhodnutí pomocí podmínek.
-  - title: DOM a vlastní funkce
-    link: dom-funkce
-    brief: Přidáme do našich JavaScriptových programů možnost manipulovat s obsahem stránky a naučíme se psát vlastní funkce.
+  - title: Document Object Model
+    link: dom
+    brief: Přidáme do našich programů možnost manipulovat pomocí JavaScriptu s obsahem stránky
+  - title: Vlastní funkce
+    link: vlastni-funkce
+    brief: Naučíme se v JavaScriptu vytvářet a volat vlastní funkce.
   - title: Funkce a obory platnosti
     link: funkce-obory
     brief: Procvičíme si psaní vlastních funkcí a ukážeme si jak pracovat s obory platnosti proměnných.
