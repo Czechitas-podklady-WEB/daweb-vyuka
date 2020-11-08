@@ -45,9 +45,9 @@ Občas se nám stane, že funkce sice nedělá nic jiného, než že vrací hodn
 const Time = (props) => {
   return (
     <div className="time">
-      <span className="time__hours">${props.hours}</span>
+      <span className="time__hours">{props.hours}</span>
       :
-      <span className="time__mins">${props.minutes}</span>
+      <span className="time__mins">{props.minutes}</span>
     </div>
   );
 }
@@ -59,9 +59,9 @@ Tuto komponent nedělá nic jiného, než že vrací JSX element. Můžeme ji pr
 ```js
 const Time = (props) => (
   <div className="time">
-    <span className="time__hours">${props.hours}</span>
+    <span className="time__hours">{props.hours}</span>
     :
-    <span className="time__mins">${props.minutes}</span>
+    <span className="time__mins">{props.minutes}</span>
   </div>
 );
 ```
@@ -69,7 +69,7 @@ const Time = (props) => (
 Pokud je však komponenta malá, klidně se bez závorek obejdeme.
 
 ```js
-const User = (username) => <div className="user__name">${username}</div>;
+const User = (username) => <div className="user__name">{username}</div>;
 ```
 
 Všimněte si, že pomocí takovéto komponenty bychom například mohli vyrobit pole JSX elementů z našeho pole uživatelů.
