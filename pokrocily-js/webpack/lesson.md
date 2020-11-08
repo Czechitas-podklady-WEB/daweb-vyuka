@@ -49,8 +49,8 @@ Webpack je nástroj, který slouží ke spojení zdrojových JavaScriptových so
 
 Tento postup následujte vždy, když chcete založit nový frontendový projekt založený na Webpacku.
 
-1. Z [tohoto odkazu](assets/webapp-starter.zip) si stáhněte ZIP soubor s připravenou konfigurací.
-1. Rozbalte ZIP soubor do nějaké složky a přejmenujte si složku `webapp-starter` dle názvu svého projektu, například `muj-projekt`.
+1. Z [tohoto odkazu](https://github.com/Czechitas-podklady-WEB/project-starters/archive/main.zip) si stáhněte ZIP soubor s připravenou konfigurací.
+1. Rozbalte ZIP soubor do nějaké složky a přejmenujte si složku `project-starter` dle názvu svého projektu, například `muj-projekt`.
 1. Otevřete složku `muj-projekt` vs VS Code. Spusťte terminál a uvnitř této složky spusťte příkaz
    ```
    npm install
