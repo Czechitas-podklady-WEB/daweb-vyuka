@@ -10,7 +10,7 @@ Na tyto problémy tvrdě narazili vývojáři Facebooku a proto vytvořili frame
 
 Ať už je to šikovná náhoda nebo dokonale promyšlený plán, velkou část Reactových principů už jste v tomto kurzu používali, aniž byste o tom věděli. K vytvoření našeho prvního React projektu tak stačí pouze malinko upravit konfiguraci Webpacku a naučit se psát náš kód Reactovým způsobem.
 
-Základní Webpack projekt nastavený pro práci v Reactu si můžete [stáhnout zde](assets/react-starter.zip). Používá se stejným způsobem jako jsme u Webpack projektů zvyklí. Všimněte si však, že místo `index.js` zde máme soubor `index.jsx`. Příponu `.jsx` budeme používat u souborů, které obsahují Reactový kód. Co tato přípona znamená si povíme v následující části.
+Základní Webpack projekt nastavený pro práci v Reactu si můžete [stáhnout zde](https://github.com/Czechitas-podklady-WEB/project-starter/archive/react-starter.zip). Používá se stejným způsobem jako jsme u Webpack projektů zvyklí. Všimněte si však, že místo `index.js` zde máme soubor `index.jsx`. Příponu `.jsx` budeme používat u souborů, které obsahují Reactový kód. Co tato přípona znamená si povíme v následující části.
 
 ### JavaScript XML
 
