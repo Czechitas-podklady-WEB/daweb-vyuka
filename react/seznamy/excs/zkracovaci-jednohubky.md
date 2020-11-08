@@ -3,7 +3,7 @@ title: Zkracovací jednohubky
 demand: 1
 ---
 
-Následující funkce přepište do zkráceného zápisu. Vlastními slovy popište, k čemu asi funkce slouží.
+Následující funkce přepište do zkráceného zápisu. Vlastními slovy popište, k čemu nejspíše funkce slouží.
 
 1.  ```js
     const isEmail = (str) => {
