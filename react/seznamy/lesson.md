@@ -103,7 +103,7 @@ const dayElements = [
 ];
 ```
 
-Všimněte si, že jde o normální JavaScriptové pole, které jako sovje prvky obsahuje JSX elementy. Každý JSX element je hodnota, takže není žádný problém mít pole takovýchto hodnot.
+Všimněte si, že jde o normální JavaScriptové pole, které jako svoje prvky obsahuje JSX elementy. Každý JSX element je hodnota, takže není žádný problém mít pole takovýchto hodnot.
 
 Pokud takové pole máme, můžeme tyto elementy zobrazit uvnitř nějakého rodiče prostě tak, že proměnnou `dayElements` do tohoto rodiče prostě vložíme.
 
