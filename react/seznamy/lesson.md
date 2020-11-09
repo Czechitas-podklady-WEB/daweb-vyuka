@@ -258,4 +258,6 @@ Takto je náš kód mnohem čitelnější. Toto je jeden z hlavních důvodů, p
 @exercises ## Cvičení - Zobrazování seznamů [
 
 - ceska-mesta
+- ceska-mesta-2
+- ceska-mesta-3
   ]@
