@@ -33,7 +33,7 @@ Následující funkce přepište do zkráceného zápisu. Vlastními slovy popi�
     };
     ```
 1.  ```js
-    const wather = (temperature) => {
+    const weather = (temperature) => {
       if (temperature > 16) {
         return 'teplo';
       }
