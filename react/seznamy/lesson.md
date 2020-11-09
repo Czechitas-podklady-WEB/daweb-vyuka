@@ -159,7 +159,7 @@ const App = () => (
 );
 ```
 
-Pokud vám kód výše stále přijde srozumitelný, jde zde příležitost jej udělat ještě malinko kompaktnější. V praxi se často setkáte s takovýmo formátováním.
+Pokud vám kód výše stále přijde srozumitelný, je zde příležitost jej udělat ještě malinko kompaktnější. V praxi se často setkáte s takovýmo formátováním.
 
 ```js
 const days = ['pondělí', 'úterý', 'středa', 'čtvrtek', 'pátek'];
