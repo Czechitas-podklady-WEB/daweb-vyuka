@@ -90,5 +90,3 @@ Všechny body níže vyřešte pomocí metody `map`. Tam, kde je to možné, pou
       /* atd. */
     ];
     ```
-
-Založte si React projekt dle už známé šablony.

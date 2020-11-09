@@ -33,12 +33,12 @@ Následující funkce přepište do zkráceného zápisu. Vlastními slovy popi�
     };
     ```
 1.  ```js
-    const isSafe = (password) => {
-      if (password.length > 8) {
-        return true;
+    const wather = (temperature) => {
+      if (temperature > 16) {
+        return 'teplo';
       }
 
-      return false;
+      return 'zima';
     };
     ```
 
