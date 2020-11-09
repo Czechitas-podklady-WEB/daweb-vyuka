@@ -10,7 +10,7 @@ Metoda `map` slouží k tomu, abychom z jednoho JavaScriptového pole vyrobili p
 const names = ['petr', 'jana', 'marek', 'eva', 'lenka', 'ondra'];
 names.map((name) => {
   return `${name}@mejlik.cz`;
-};
+});
 ```
 
 ### Zkracování zápisu funkcí
@@ -209,7 +209,7 @@ const App = () => (
     <h1>Nákupní sezname</h1>
     <div class="shopping-list">
       {list.map((item) => {
-        const itemClass = item.bought ? 'item item-selected' : 'item';
+        const itemClass = item.bought ? 'item item--selected' : 'item';
         return (
           <div className={itemClass}>
             <span className="item__name">{item.name}</span>
