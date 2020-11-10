@@ -259,5 +259,10 @@ Takto je náš kód mnohem čitelnější. Toto je jeden z hlavních důvodů, p
 
 - ceska-mesta
 - ceska-mesta-2
+  ]@
+
+@exercises ## Doporučené úložky na doma [
+
 - ceska-mesta-3
+- podcasty
   ]@
