@@ -286,7 +286,7 @@ Nástraha druhá spočívá v názvech událostí. To jsou obyčejné řetězce 
 
 ```js
 btnElm.addEventListener('clik', changeTitle);
-btnElm.addEventListener('keypres', changeTitle);
+btnElm.addEventListener('keypress', changeTitle);
 ```
 
 JavaScript runtime bohužel nekontroluje, zda událost `clik` nebo `keypres` může skutečně nastat nebo nikoliv. Jenoduše k tomuto názvu připojí posluchače a o nic dalšího se nestará. Jelikož takto pojmenované události nikdy nenastanou, naše stránka nebude fungovat a opět také nenastane žádná chyba. Z hlediska runtimu je jako v předchozím případě všechno v naprostém pořádku.
