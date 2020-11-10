@@ -47,6 +47,10 @@ V Reactu se téměř nikdy nepoužívá přímá manipulace s obsahem stránky. 
 
 ## Práce se stavem
 
+V komponentách můžeme používat proměnné. Ty se ale po renderu zahodí. Pokud si nějakou proměnnou chceme uchovat, abychom ji mohli později měnit, nabízí nám React hook `useState`. Jedná se o speciální funkci, která vrací pole o dvou prvcích. První položka reprezentuje hodnotu stavu a druhá funkci pro jeho změnu. `useState` přijímá jeden vstup, který použije pro počáteční hodnotu stavu. V praxi se pomocí destructuringu zkracuje použití celého hooku na `const [stav, setStav] = useState('výchozí hodnota')`. V tomto případě můžeme dále v komponentě pracovat s proměnnou `stav`, která bude mít při prvním renderu hodnotu `'výchozí hodnota'`. Hodnotu `stav` můžeme třeba při nějaké události měnit voláním `setStav('nová hodnota')` a tím spustit přerenderování komponenty s novým stavem, kde ve `stav` bude uloženo `nová hodnota`.
+
+`useState` můžeme použít v komponentě vícekrát pro několik různých stavových proměnných. Platí však pravidlo, že se při každém renderu musí volat ve stejném pořadí, aby si React mohl vše interně správně propojit. Nemužeme je tedy použít například uvnitř podmínky `if`. Proměnnou pro stav si můžete pojmenovat libovolně. Je však zvykem, že funkce pro změnu stavu se pojmenovává s prefixem `set` a názvem stavu s prvním velkým písmenem podle pravidel camelCase. Například pro stavovou proměnnou `jeVesely` by se funkce pro změnu pojmenovala `setJeVesely`, pro `teplota` pak `setTeplota` apod.
+
 ```js
 import React, { useState } from 'react';
 
