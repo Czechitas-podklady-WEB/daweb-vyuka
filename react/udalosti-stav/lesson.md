@@ -47,6 +47,18 @@ V Reactu se téměř nikdy nepoužívá přímá manipulace s obsahem stránky. 
 
 ## Práce se stavem
 
+```js
+import React, { useState } from 'react';
+
+const App = () => {
+  const [pocet, setPocet] = useState(0);
+
+  return (
+    <button onClick={() => setPocet(pocet + 1)}>Počet kliků: {pocet}</button>
+  );
+};
+```
+
 @exercises ## Cvičení [
 
 - stav
