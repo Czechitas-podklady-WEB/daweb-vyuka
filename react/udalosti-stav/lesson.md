@@ -47,9 +47,61 @@ V Reactu se téměř nikdy nepoužívá přímá manipulace s obsahem stránky. 
 
 ## Práce se stavem
 
-V komponentách můžeme používat proměnné. Ty se ale po renderu zahodí. Pokud si nějakou proměnnou chceme uchovat, abychom ji mohli později měnit, nabízí nám React hook `useState`. Jedná se o speciální funkci, která vrací pole o dvou prvcích. První položka reprezentuje hodnotu stavu a druhá funkci pro jeho změnu. `useState` přijímá jeden vstup, který použije pro počáteční hodnotu stavu. V praxi se pomocí destructuringu zkracuje použití celého hooku na `const [stav, setStav] = useState('výchozí hodnota')`. V tomto případě můžeme dále v komponentě pracovat s proměnnou `stav`, která bude mít při prvním renderu hodnotu `'výchozí hodnota'`. Hodnotu `stav` můžeme třeba při nějaké události měnit voláním `setStav('nová hodnota')` a tím spustit přerenderování komponenty s novým stavem, kde ve `stav` bude uloženo `nová hodnota`.
+Pokud chceme udělat naše React komponenty skutečně interaktivní, je potřeba naučit se pracovat s takzvaným <term cs="stavem" en="state" />. Porozumět tomu, jak stav v Reactu funguje je občas výzva i pro zkušenější programátory. Naštěstí význam slova stav je v Reactu vychází z významu tohoto slova v realitě. Můžeme proto začít příkladem přímo ze života.
 
-`useState` můžeme použít v komponentě vícekrát pro několik různých stavových proměnných. Platí však pravidlo, že se při každém renderu musí volat ve stejném pořadí, aby si React mohl vše interně správně propojit. Nemužeme je tedy použít například uvnitř podmínky `if`. Proměnnou pro stav si můžete pojmenovat libovolně. Je však zvykem, že funkce pro změnu stavu se pojmenovává s prefixem `set` a názvem stavu s prvním velkým písmenem podle pravidel camelCase. Například pro stavovou proměnnou `jeVesely` by se funkce pro změnu pojmenovala `setJeVesely`, pro `teplota` pak `setTeplota` apod.
+### Stav kolem nás
+
+Představte si, že někde přes inzerát prodáváte například svoji starou pohovku. V takovém inzerátu se sluší zmínit její <i>stav</i>, tedy například, že je mírně vybledlá, na některých místech odřená apod. Zde se můžeme zamyslet, o čem to vlastně mluvíme, když říkáme <i>stav pohovky</i>. Mohli bychom říct, že stav je nějaká sada vlastností, které se mohou během života pohovky měnit. Stavem pohovky například není její váha nebo to, zda je rozkládací. To jsou vlastnosti, které se během života pohovky nemění. Pohovka však snadno může časem vyblednout nebo se na některých místech odřít.
+
+Dalším příkladem může být například stav vašeho auta. Během používání auta se například průběžně mění stav nádrže, počet najetých kilometrů, počet pasažérů v autě a podobně. U některých aut je možné přidat nebo ubrat sedadla, takže se může například změnit počet míst v autě. Rozhodně se však nemění například obsah nádrže, počet kol apod.
+
+Uvnitř webové aplikace samozřejmě také nalezneme mnoho stavů. Zaškrtávácí políčko může být zaškrtnuté nebo nezaškrtuné, vyjížděcí menu může být otevřené nebo zavřené. Stavem je však také například počet obejdnaných produktů v košíku, počet nepřečtených emailů ve schránce, jméno právě přihlášeného uživatele, text, který uživatel vyplnil do nějakého formuláře a tak dále.
+
+### Stav v JavaScriptu
+
+V JavaScriptu každou vlastnost, která představuje stav reprezentujeme jednou proměnnou. Můžeme mít například proměnnou udávající stav nádrže v autě.
+
+```js
+let tankLevel = 'full';
+```
+
+Po dlouhé cestě autem se nejspíš stav nádrže změní takto.
+
+```js
+tankLevel = 'almost empty';
+```
+
+a pokud dlouho ignorujeme blikající kontrolku, můžeme se dostat do velmi napříjemného stavu
+
+```js
+tankLevel = 'empty';
+```
+
+Takto bychom mohli se stavem pracovat v čistém JavaScriptu. React však pro práci se stavem nabízí speciální konstrukci. Pokud bychom chtěli například vytvořit komponentu `Auto`, která pracuje se stavem nádrže, napsali bychom toto.
+
+```js
+import React, { useState } from 'react';
+
+const Auto = () => {
+  const [tankLevel, setTankLevel] = useState('full');
+
+  return <div class="auto">Tank level: {tankLevel}</div>;
+};
+```
+
+Pomocí specální funkce `useState` říkáme Reactu, že chceme vytvořit proměnnou, která se během života komponenty bude měnit. Jedná se o speciální funkci, která vrací pole o dvou prvcích. První položka reprezentuje hodnotu našeho stavu. V našm případě budeme použítvat `'full'`, `'almost empty'` nebo `'empty'`. Druhá položka funkci pro změnu hodnoty našeho stavu. Funkce `useState` navíc přijímá jeden vstup, který použije pro počáteční hodnotu stavu.
+
+V našem případě tedy můžeme v komponentě pracovat s proměnnou `tankLevel`, která bude mít při prvním renderu hodnotu `'full'`. Hodnotu `tankLevel` však můžeme například v reakci na nějakou událost změnit. To provedeme voláním
+
+```js
+setTankLevel('almost empty')`
+```
+
+Tím spustíme přerenderování komponenty s novým stavem, kde v `tankLevel` bude uloženo `'almost emmpty'`.
+
+## Vícenásobný stv
+
+Funkci `useState` můžeme použít v komponentě vícekrát pro několik různých stavových proměnných. Platí však pravidlo, že se při každém renderu musí volat ve stejném pořadí, aby si React mohl vše interně správně propojit. Nemužeme je tedy použít například uvnitř podmínky `if`. Proměnnou pro stav si můžete pojmenovat libovolně. Je však zvykem, že funkce pro změnu stavu se pojmenovává s prefixem `set` a názvem stavu s prvním velkým písmenem podle pravidel camelCase. Například pro stavovou proměnnou `jeVesely` by se funkce pro změnu pojmenovala `setJeVesely`, pro `teplota` pak `setTeplota` apod.
 
 ```js
 import React, { useState } from 'react';
