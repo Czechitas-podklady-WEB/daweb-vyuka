@@ -207,7 +207,7 @@ Pokud tento seznam budeme chtít zobrazit, budeme potřebovat složitější JSX
 const App = () => (
   <>
     <h1>Nákupní sezname</h1>
-    <div class="shopping-list">
+    <div className="shopping-list">
       {list.map((item) => {
         const itemClass = item.bought ? 'item item--selected' : 'item';
         return (
@@ -240,7 +240,7 @@ const ShoppingItem = (props) => {
 const App = () => (
   <>
     <h1>Nákupní sezname</h1>
-    <div class="shopping-list">
+    <div className="shopping-list">
       {list.map((item) => (
         <ShoppingList
           name={item.name}
