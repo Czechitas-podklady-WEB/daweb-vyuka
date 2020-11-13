@@ -90,7 +90,7 @@ const App = () => {
 render(<App />, document.querySelector('#app'));
 ```
 
-Funkce `useEffect` má dva parametry. Prvním je funkce, která se má zavolat a druhý parametr říká, za jakých okolností se má naše funkce volat. Prázdné pole `[]` znamený, že se efekt spustí pouze ve chvíli, kdy se komponenta poprvé objeví na stránce. Čas
+Funkce `useEffect` má dva parametry. Prvním je funkce, která se má zavolat a druhý parametr říká, za jakých okolností se má naše funkce volat. Prázdné pole `[]` znamená, že se efekt spustí pouze ve chvíli, kdy se komponenta poprvé objeví na stránce. Čas
 
 ## Efekty a volání API
 
