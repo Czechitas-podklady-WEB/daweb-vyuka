@@ -14,12 +14,12 @@ const tasks = [
   {
     name: 'Nakoupit na nedělní oběd',
     due: {
-      time: 3,
+      time: 2,
       unit: 'day',
     },
     notify: {
-      time: 1,
-      unit: 'day',
+      time: 6,
+      unit: 'hour',
     },
     done: false,
   },

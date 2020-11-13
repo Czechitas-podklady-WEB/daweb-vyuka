@@ -1,12 +1,5 @@
-@exercises ## Cvičení - Procvičování komponent [
+## Komunikace rodič → dítě
 
-- pocitadlo
-- pocitadlo-reset
-  ]@
+## Komunikace dítě → rodič
 
-@exercises ## Cvičení - Komunikace [
-- menu
-- pocitadla-celkem
-- pocitadla-celkem-reset
-  ]@
-
+## Komunikace mezi sourozenci

@@ -1,18 +1,4 @@
-## Funkcionální zpracování dat
-
-Když při programování aplikací používáme cykly, brzy narazíme na často se opakující situace a konstrukce. Pro tyto situace máme na polích pomocné metody z funkcionálního světa.
-
-- `Array.forEach`
-- `Array.map`
-- `Array.filter`
-- `Array.every`
-- `Array.some`
-
-@exercises ## Cvičení - Funkcionální zpracování dat [
-
-- jednohubky
-- ukolnicek
-  ]@
+## Modifikace na místě
 
 ## Destrukturování
 
@@ -80,19 +66,17 @@ const [from, , to] = cities;
 
 ### Destrukturování a komponenty
 
-Destrukturování můžeme s výhodou použít při psaní komponent. Uvažme naši známou komponentu `ShoppingList`.
+Destrukturování můžeme s výhodou použít při psaní komponent. Uvažme naši známou komponentu `ShoppingItem`.
 
 ```js
 const ShoppingItem = (props) => {
-  const element = document.createElement('div');
-  element.className = 'item';
-  element.innerHTML = `
-    <span class="item__name">${props.name}</span>
-    <span class="item__amount">${props.amount}</span>
-    <button class="btn-done">koupeno</button>
-  `;
-
-  return element;
+  return (
+    <div className="item">
+      <span className="item__name">${props.name}</span>
+      <span className="item__amount">${props.amount}</span>
+      <button class="btn-done">koupeno</button>
+    </div>
+  );
 };
 ```
 
@@ -101,15 +85,13 @@ Abychom před každou hodnotu nemuseli psát `props.`, můžeme si objekt `props
 ```js
 const ShoppingItem = (props) => {
   const { name, amount } = props;
-  const element = document.createElement('div');
-  element.className = 'item';
-  element.innerHTML = `
-    <span class="item__name">${name}</span>
-    <span class="item__amount">${amount}</span>
-    <button class="btn-done">koupeno</button>
-  `;
-
-  return element;
+  return (
+    <div className="item">
+      <span className="item__name">${props.name}</span>
+      <span className="item__amount">${props.amount}</span>
+      <button class="btn-done">koupeno</button>
+    </div>
+  );
 };
 ```
 
@@ -117,19 +99,27 @@ Tento zápis má výhodu v tom, že hned na prvním řádku komponenty vidíme, 
 
 ```js
 const ShoppingItem = ({ name, amount }) => {
-  const element = document.createElement('div');
-  element.className = 'item';
-  element.innerHTML = `
-    <span class="item__name">${name}</span>
-    <span class="item__amount">${amount}</span>
-    <button class="btn-done">koupeno</button>
-  `;
-
-  return element;
+  return (
+    <div className="item">
+      <span className="item__name">${props.name}</span>
+      <span className="item__amount">${props.amount}</span>
+      <button class="btn-done">koupeno</button>
+    </div>
+  );
 };
 ```
 
-Takto píšou komponenty ti největší borci.
+Diky tomuto triku jsme zároveň zařídili, že komponenta dělá pouze `return`. Můžeme tedy nakonec použít zkracování.
+
+```js
+const ShoppingItem = ({ name, amount }) => (
+  <div className="item">
+    <span className="item__name">${props.name}</span>
+    <span className="item__amount">${props.amount}</span>
+    <button class="btn-done">koupeno</button>
+  </div>
+);
+```
 
 @exercises ## Cvičení - Destrukturování [
 
