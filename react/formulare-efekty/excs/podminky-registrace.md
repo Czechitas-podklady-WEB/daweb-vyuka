@@ -5,7 +5,7 @@ demand: 2
 
 Pokračujte v předchozím cvičení.
 
-1. Přidejte do vašeho formuláře zaškrtávací tlačíko, které bude obsahovat text
+1. Přidejte do vašeho formuláře zaškrtávací políčko označené textem
    ```
    Souhlasím s obchodními podmínkami
    ```
