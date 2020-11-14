@@ -5,7 +5,7 @@ demand: 2
 
 1. Založte si novou React aplikaci podle klasického [starteru](https://github.com/Czechitas-podklady-WEB/project-starter/archive/react-starter.zip)
 1. Založte komponentu `App` a uvnitř vytvořte jednoduchý efekt, který se spustí pří prvním zobrazení komponenty. Uvnitř tohoto efektu zavolejte funkci `alert` a zobrazte vyskakovcí okno s nějakou zprávou.
-1. Přidejte do vaší komponenty stav `datetime`, jehož výchozí hodnota bude `null`. Ve vašem efektu smažte volání `alert` a uložte do stavu čas jako řetězec ve formátu
+1. Přidejte do vaší komponenty stav `datetime`, jehož výchozí hodnota bude prázdný řetězec. Ve vašem efektu smažte volání `alert` a uložte do stavu nějaký čas jako řetězec ve formátu
 
    ```
    '2020-11-13T22:46';
