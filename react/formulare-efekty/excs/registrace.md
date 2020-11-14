@@ -36,4 +36,4 @@ demand: 2
    ```
    Uživatelské jméno je povinný údaj
    ```
-1. Vzpomeňte si na vlastnost `disables` a zařiďte, aby registrační tlačítko bylo dostupné pouze v případě, že ve stavu `userName` není ani `null` ani prázdný řetězec.
+1. Vzpomeňte si na vlastnost `disabled` a zařiďte, aby registrační tlačítko bylo dostupné pouze v případě, že ve stavu `userName` není ani `null` ani prázdný řetězec.
