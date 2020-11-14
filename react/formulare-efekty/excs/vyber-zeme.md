@@ -9,19 +9,20 @@ Pokračujte v předchozím cvičení.
 
    ```html
    <label>
-      Země původu:
-      <select>
-         <option value="hr">Chorvatsko</option>
-         <option value="cz">Česká republika</option>
-         <option value="pl">Polsko</option>
-         <option value="sk">Slovenská republika</option>
-      </select>
+     Země původu:
+     <select>
+       <option value="Chorvatsko">Chorvatsko</option>
+       <option value="Česká republika">Česká republika</option>
+       <option value="Polsko">Polsko</option>
+       <option value="Slovenská republika">Slovenská republika</option>
+     </select>
    </label>
    ```
 
-1. Vytvořte stav `country`, který bude sloužit k uložení hodnoty z vaší nabídky. Výchozí hodnotu stavu nastavte na `cz`. Zařiďte, aby nabídka zobrazovala hodnotu uloženou ve stavu.
-1. Pomocí události `onChange` zařiďte, aby se stav `country` měnil podle toho, co uživatel z nabídky vybere.
-1. Zprávu po úspěšné regitraci změňte na
+1. Vytvořte stav `country`, který bude sloužit k uložení hodnoty z vaší nabídky. Výchozí hodnotu stavu nastavte na `Česká republika`.
+1. Pomocí události `onChange` zařiďte one-way data binding mezi nabídkou `select` a stavem `country`.
+1. Zařiďte two-way data binding mezi nabídkou `select` a stavem `country` tak, aby nabídka zobrazovala výchozí hodnotu uloženou ve stavu.
+1. Zprávu po úspěšné registraci změňte na
    ```
    Registrován nový uživatel jaroslav ze země Polsko
    ```
