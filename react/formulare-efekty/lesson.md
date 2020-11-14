@@ -132,3 +132,9 @@ V tomto případě jsme si do stavu ukládali pouze obyčejný řetězec. Naše 
 ```
 http://worldtimeapi.org/api/timezone
 ```
+
+@exercises ## Cvičení - Efekty a volání API [
+
+- prazsky-cas
+- vyber-zony
+  ]@
