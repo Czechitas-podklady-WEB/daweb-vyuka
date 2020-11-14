@@ -25,7 +25,7 @@ demand: 2
    ```
 
 1. Na políčko přidejte událost `onChange`. V reakci na událost do konzole vypište obsah políčka pomocí vlastnosti `target.value`. Vyzkoušejte, že když do políčka píšete, v konzoli vidíte každou změnu jeho hodnoty.
-1. Uvnitř komponenty `App` vytvořte stav `userName` s výchozí hodnotou prázdný řetězec. Vytvořte oboucestný (one-way) data binding mezi textovým políčkem a stavem `userName`.
+1. Uvnitř komponenty `App` vytvořte stav `userName` s výchozí hodnotou prázdný řetězec. Vytvořte oboucestný (two-way) data binding mezi textovým políčkem a stavem `userName`.
 1. V reakci na událost `onSubmit` do konzole vypište jméno uživatele uložené ve stavu `userName`.
 1. Na stránku přidejte `div`, který bude vidět pouze pokud ve stavu `userName` bude jméno a nikoliv prázdný řetězec. Obsahem prvku by měla být zpráva
    ```
