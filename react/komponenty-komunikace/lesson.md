@@ -14,6 +14,7 @@ Předávání informací směrem od rodiče k dítěti je z našich tří situac
 
 - kurzovni-listek
 - hamburger-menu
+- nazev-stranky
   ]@
 
 ## Komunikace mezi sourozenci
