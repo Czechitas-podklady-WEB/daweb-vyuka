@@ -10,8 +10,9 @@ Předávání informací směrem od rodiče k dítěti je z našich tří situac
 
 ## Komunikace dítě → rodič
 
-@exercises ## Cvičení - callbacky [
+@exercises ## Cvičení - komunikace [
 
+- kurzovni-listek
 - hamburger-menu
   ]@
 
