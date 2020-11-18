@@ -41,7 +41,7 @@ const AgeField = () => {
 
 ### Data binding
 
-One-way (jednocestný), two-way (oboucestný).
+One-way (jednosměrný), two-way (obousměrný).
 
 @exercises ## Cvičení - formulářové prvky [
 
