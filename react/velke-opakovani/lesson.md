@@ -24,12 +24,18 @@
 - vstup-formular
   ]@
 
-## innerHTML a vlastní DOM elementy
+@exercises ## Cvičení - innerHTML a vlastní DOM elementy [
+
+- cifry-komponenty
+  ]@
 
 ## Fetch a voláni API
 
 ## React, podmíněné zobrazování, seznamy
 
-## React stav a formáře
+@exercises ## Cvičení - React stav a formáře [
+
+- rodne-cislo-react
+  ]@
 
 ## React efekty a fetch
