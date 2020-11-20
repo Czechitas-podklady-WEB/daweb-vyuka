@@ -3,13 +3,26 @@
 - rodna-cisla
   ]@
 
-## Funkce
+@exercises ## Cvičení - Funkce [
 
-## Objekty, pole a cykly
+- platnost-funkce
+  ]@
 
-## map, filter
+@exercises ## Cvičení - Pole a cykly [
 
-## DOM a události
+- kontrola-cifer
+  ]@
+
+@exercises ## Cvičení - Objekty, map, filter [
+
+- kontrola-cifer-filtr
+- kontrola-cifer-map
+  ]@
+
+@exercises ## Cvičení - DOM a události [
+
+- vstup-formular
+  ]@
 
 ## innerHTML a vlastní DOM elementy
 
