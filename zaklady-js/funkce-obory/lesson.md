@@ -65,7 +65,7 @@ Hodnotu `undefined` potkáme v mnoha situacích, ale nejčastěji ve chvíli, kd
 
 ```jscon
 > const name = 'martin'
-> name.lenght
+> name.length
 undefined
 ```
 
@@ -74,7 +74,7 @@ Všimněte si, že JavaScript runtime vrací `undefined` také jako výsledek vy
 ```jscon
 > const name = 'martin'
 undefined
-> name.lenght
+> name.length
 undefined
 ```
 
