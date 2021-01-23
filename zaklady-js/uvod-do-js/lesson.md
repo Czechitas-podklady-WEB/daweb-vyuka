@@ -158,7 +158,7 @@ Chytrým použitím zaokrouhlování a trochou matematiky můžeme pomocí `Math
 
 - vyplata
 - delka-filmu
-- jmena-nazvy
+- email
   ]@
 
 @exercises bonuses [
