@@ -87,80 +87,13 @@ Textové řetězce jdou sčítat podobně jako čísla, můžete tedy psát nap�
 
 Všimněte si v druhém příkladu řetězce, který obsahuje pouze mezeru. V třetím případě dokonce vidíme řetězec, který neobsahuje vůbec nic. To je takzvaný <term cs="prázdný řetězec" en="empty string">. Chová se podobně jako nula při sčítání čísel a bude se nám pozdějí hodit.
 
-## Proměnné
-
-Při složitějších operacích a výpočtech často vyvstane potřeba si nějaký mezivýpočet uložit pro pozdější použití. K tomu nám slouží takzvané <term cs="proměnné" en="variables">. Proměnná je jakási pojmenovaná krabička nebo šuplík, do kterého si můžeme uložit nějakou hodnotu, abychom ji neztratili a mohli ji používat v dalších výpočtech. Abychom si procvičili proměnné a zajímavé operátory, zkusíme vyřešit následující úlohu.
-
-Mějme čas v hodinách zadaný ve 24-hodinovém formátu. Tři hodiny odpoledne tedy píšeme jako 15h. Nyní chceme spočítat, kolik hodin uvidíme na hodinách po uplynutí zadané doby. Například jaký bude čas po uplynutí 15 hodin?
-
-```jscon
-> const cas = 13
-> const novyCas = (cas + 15)
-```
-
-V tomto kusu kódu jsme vytvořili hned dvě proměnné: <var>cas</var> a <var>novyCas</var>. Každá proměnné v JavaScriptu musí mít své jméno. To by mělo dobře vystihovat, co je v proměnné uloženo. Pokud chceme v programu používat nějakou promennou, musíme ji vždy nejdříve vytvořit. To se dělá pomocí klíčového slova `const`. Takovou proměnnou pak můžeme použít v libovolném výrazu tak, že prostě uvedeme její jméno.
-
-Většinu proměnných budeme používat tak, že jim při vytvoření přiřadíme nějakou hodnotu a tato hodnota už v proměnná zůstane až do konce jejího života. Občas se však stane, že potřebujeme hodnotu uloženou v nějaké proměnné změnit. V takovém případě musíme proměnnou vytvořit pomocí slovíčka `let`.
-
-Takto můžeme například zkusit spočítat svou budoucí výplatu, pokud budeme pracovat na plný úvazek 21 dní v měsíci za 500 kč na hodinu.
-
-```jscon
-> let sazba = 500
-> let vyplata = 8 * 21 * sazba
-```
-
-Pokud chceme spočítat výplatu pro jinou sazbu, můžeme hodnotu v proměnné změnit. V takovém případě už **nepoužíváme** `const` ani `let`.
-
-```jscon
-> sazba = 600
-```
-
-Zde si však musíme všimnout jedné velmi důležité věci.
-
-### JavaScript není Excel
-
-Dejte pozor na to, že do proměnné se jako do šuplíku ukládá pouze hodnota a nikoliv celý výraz. Všimněte si, že v příkladu výše jsem změnili hodnotu proměnné <var>sazba</var>. Po této změně bude v proměnné <var>vyplata</var> pořád původní hodnota. Pokud chceme obsah této proměnné aktualizovat, musíme příkaz spustit znova.
-
-```jscon
-> vyplata = 8 * 21 * 500
-```
-
-Při práci s proměnnými je také dobré dodržovat určitá pravidla.
-
-### Preferujte const
-
-Proměnné vytvořené pomocí `const` měnit nelze. U dobrých programátorů je zvykem vytvářet proměnné téměř výhradně pomocí `const` a používat `let` pouze v případě, že k tomu máme dobrý důvod. Čím méně proměnných lze měnit, tím menší je totiž riziko vzniku nežádoucích chyb v programu.
-
-### Pojmenování proměnných
-
-Už od úplných začátků s programováním je dobré učit se dobrým návykům, které budou později prospěšné nejen vám, ale hlavně lidem ve vašem okolí. Jedním z takových návyků je správné pojmenovávání proměnných.
-
-1. Název proměnné by neměl začínat velkým písmenem, např. ~~<var>Pocet</var>~~. Takové názvy jsou rezervované pro speciální typy proměnných, ke kterým se v tomto kurzu dostaneme až téměř na konci.
-1. Název proměnné by neměl obsahovat diakritiku, např. ~~<var>počet</var>~~. Programovací jazyky vznikaly v anglickém prostředí, kde se diakritika nepoužívá, takže si s ní většina jazyků neporadí.
-1. Víceslovné proměnné nesmí obsahovat mezeru, např. ~~<var>pocet hodin</var>~~. To by si JavaScript myslel, že to jsou dvě proměnné za sebou a nevěděl by co s tím. Pokud chcete proměnnou s více slovy, použijte takzvanou <term cs="velbloudí notaci" en="camel case"> <var>pocetHodin</var> nebo <term cs="hadí notaci" en="snake case"> <var>pocet_hodin</var>.
-1. Vždy proměnnou pojmenujte tak, aby její název jasně napovídal, co se uvnitř ní nachází. Například proměnná <var>pocet_hodin</var> jasně říká, že v ní bude uložen asi nějaký počet hodin. Můžeme podlehnout touze název proměnné zkrátit například na <var>pcthdn</var>, aby se nám lépe psala. Až ovšem někdo další bude takový program číst, bude mlátit hlavou do stolu, cože proboha znamená zkratka <var>pcthdn</var>.
-1. Naposledy je dobré si uvědomit, že programy i programátoři se téměř vždy pohybují v mezinárodním prostředí. Takže je vždycky lepší pojmenovávat proměnné anglicky. V tomto kurzu ještě tohle pravidlo trošku rozvolníme, ale i tak si můžete začít zvykat na proměnné s názvem <var>number_of_hours</var>.
-
-@exercises ## Cvičení - hodnoty a proměnné [
-
-- vyplata
-- ultramaraton
-- prijem-divadla
-  ]@
-
-@exercises bonuses [
-
-- uroky
-- novy-koberec
-  ]@
-
-## Funkce a metody
+## Funkce
 
 Pouze s proměnnými, hodnotami a operátory bychom se v programování daleko nedostali. Často budeme potřeboval vykonat nějakou složitější operaci než jen matematický výpočet. Pokud nějakou takovou složitější operaci programátoři potřebují často, šance je, že pro ni existuje <term cs="funkce" en="function">.
 
-Funkce je kousek programu řešící nějakou konkrétní úlohu, kterou potřebujeme řešit velmi často. Příkladem může být například zaokrouhlování desetinných čísel na celá čísla. To je operace, která se hodí skoro ve všech výpočtech a bylo by zbyteční ji programovat neustále znova. V JavaScriptu proto máme k dispozici funkci jménem `Math.round`.
+Funkce je kousek programu řešící nějakou konkrétní úlohu. Většinou jde o úlohu, kterou řešime často a opakovaně. Příkladem může být například zaokrouhlování desetinných čísel na celá čísla. To je operace, která se hodí skoro ve všech výpočtech, a bylo by zbyteční ji programovat neustále znova. V JavaScriptu proto máme k dispozici funkci jménem `Math.round`.
 
-Pokud chceme použít nějakou funkci, uděláme to tak, že napíšeme její jméno a do kulatých závorek vložíme hodnotu, se kterou má funkce pracovat. Takto například použíjeme naši funci `Math.round`.
+Pokud chceme nějakou funkci použít, uděláme to tak, že napíšeme její jméno a do kulatých závorek vložíme hodnotu, se kterou má funkce pracovat. Takto například použíjeme naši funci `Math.round`.
 
 ```jscon
 > Math.round(3.14)
@@ -169,16 +102,24 @@ Pokud chceme použít nějakou funkci, uděláme to tak, že napíšeme její jm
 
 Hodnotě uvnitř kulatých závorek říkáme <term cs="vstup" en="input"> funkce. Spuštění funkce se mezi programátory říká <term cs="volání" en="call">. Jakmile funkce dokončí operaci, <term cs="vrátí" en="return"> nám takzvaný <term cs="výstup" en="output">. V programátorském žargonu tedy říkáme, že když **zavoláme** funkci s nějakým **vstupem**, ona nám **vrátí výstup**.
 
-Podobně jako operace s hodnotami a proměnnými, volání funkce je také výraz. Volání funkce tedy můžeme použít uvnitř libovolného jiného výrazu. Navíc vstup pro funkci taky můžeme vytvořit pomocí výrazu. Nabízí se tedy mnoho způsobů, jak skládat složitější výrazy, jako například tento.
+### Rychlé občerstvení
+
+Funkce jsou rozsáhlé téma, které nás bude provázet až do konce kurzu. Již brzy se naučíme psát funkce vlastní. Pro lepší představu o tom, jak funce fungují, se nám bude hodit následující analogie. 
+
+Můžeme si představovat, že funkce je něco jako stánek s rychlým občerstvením. Takový stánek má dvě okýnka. Jedno vstupní, do kterého zadáte svoji objednávku, a druhé výstupní, kde po chvíli obdržíte svůj hamburger nebo smažák v housce. Objednávání rychlé svačiny je pak podobné jako volání funkce. Do stánku vložíte nějaké vstupy a ven vám vypadne výstup. Pokud nejste vysloveně zvědaví nebo paranoidní, dění uvnitř stánku vás až tolik nezajímá, podobně jako vás až tolik nezajímá, jak vlastně JavaScript technicky provádní zaokrouhlování. Důležité je, že funkce funguje, a že párek v rohlíku naonec chutná tak, jak jste zvyklí. 
+
+### Výrazy s funkcemi
+
+Volání funkce je také výraz podobně jako operace s hodnotami a proměnnými. Můžeme jej tedy použít uvnitř libovolného jiného výrazu. Navíc vstup pro funkci lze také vytvořit pomocí výrazu. Nabízí se tedy mnoho způsobů, jak skládat složitější výpočty, jako například tento.
 
 ```jscon
 > 17 % Math.round(30 ** 0.5)
 2
 ```
 
-### Další užitečné funkce
+### Užitečné funkce
 
-JavaScript obsahuje spousty a spousty funkcí, díky kterým můžeme provádět mnoho užitěčných a zajímavých věcí. Budeme je postupně společně objevovat během celého kurzu. Takto z kraje si ukážeme jen ty nejzákladnější.
+JavaScript obsahuje spousty a spousty funkcí, díky kterým lze provádět mnoho užitěčných a zajímavých věcí. Během celého kurzu je budeme společně objevovat. Takto z kraje si ukážeme jen ty nejzákladnější.
 
 Pokud bychom místo klasického zaokrouhlování chtěli zaokrouhlovat vždy dolů nebo vždy nahoru, můžeme použít funkce `Math.floor` a `Math.ceil`.
 
@@ -200,7 +141,9 @@ Funkce, se kterou si lze užít více zábavy je `Math.random`. Ta při každém
 0.3730206392247666
 ```
 
-Chytrým použitím zaokrouhlování a trochou matematiky můžeme pomocí této funkce generovat náhodná celá čísla například v rozmezí 0 až 9.
+Všimněte si, že tato funkce nemá žádný vstup. I takové funkce jsou možné a nejsou žádnou velkou výjimkou. 
+
+Chytrým použitím zaokrouhlování a trochou matematiky můžeme pomocí `Math.random` generovat náhodná celá čísla například v rozmezí 0 až 9.
 
 ```jscon
 > Math.floor(Math.random() * 10)
@@ -211,123 +154,164 @@ Chytrým použitím zaokrouhlování a trochou matematiky můžeme pomocí této
 5
 ```
 
-## Metody
+@exercises ## Cvičení - výrazy a funkce [
 
-Často se stane, že některé funkce se hodí na práci pouze s jedním typem hodnoty.
-Například bychom mohli mít funkci `toUpperCase`, která by převedla všechna písmena
-v řetězci na velká písmena. Kdyby taková funkce existovala, mohli bychom ji
-volat třeba takto
+- vyplata
+- delka-filmu
+- jmena-nazvy
+  ]@
 
-```jscon
-> toUpperCase('martin')
-'MARTIN'
+@exercises bonuses [
+
+- uroky
+- novy-koberec
+  ]@
+
+## První program
+
+Do této chvíle jsme si s runtimem JavaScriptu povídali pouze skrze konzoli. Vždy jsme poslali jeden příkaz a rovnou na něj dostali odpověď. Nyní je čas začít psát programy, tedy nechat náš prohlížeč spustit více příkazů najednou.
+
+Naše JavaScriptové programy budou vždy součástí nějaké webové stránky. Založíme si proto složku s jedním HTML souborem, který prozatím bude obsahovat jen nadpis.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>První program</title>
+  </head>
+  <body>
+    <h1>První program</h1>
+  </body>
+</html>
 ```
 
-Je pochopitelné, že taková funkce funguje pouze pro řetězce. Pro ostatní
-hodnoty nedává smysl. Těžko si představit, co by taková funkce měla vrátit
-například v takovémto případě.
+Pro náš JavaScriptový kód budeme vždy vytvářet oddělený soubor podobně jako jste zvyklí vytvářet oddělený soubor pro CSS styly. JavaScriptovému programu většinou budeme dávat název `index.js`. Jeho obsah bude vypadat takto.
 
-```jscon
-> toUpperCase(3.14)
+```js
+'use strict';
+
+console.log('ahoj');
 ```
 
-Funkce, které pracují pouze na jednom typu hodnoty, se tvůrci JavaScriptu
-rozhodli svázat přímo s touto hodnotu. Můžeme tedy říct, že funkce `toUpperCase`
-patří pouze řetězcům. Máme-li funkci, která patří pouze typu řetězec, voláme ji pomocí takzvané <term cs="tečkové notace" en="dot notation">.
+Pokud chceme náš program propojit se stránkou, vložíme odkaz na konec značky `body`.
 
-```jscon
-> 'martin'.toUpperCase()
-'MARTIN'
+```html
+<body>
+  <h1>První program</h1>
+  <script src="index.js"></script>
+</body>
 ```
 
-Funkcím jako výše, které patří jen konkrétním typům hodnot, říkáme <term cs="metody" en="methods">. Všimněte si, že metoda `toUpperCase` v JavaScriptu skutečně existuje, takže výše
-uvedený kód bude opravdu fungovat. Podobně existuje například metoda
-`toLowerCase`. Vyzkoušejte si ji!
+Pokud nyní soubor `index.html` otevřete v prohlížeči, měli byste v konzoli vidět text, který jsme předali funkci `console.log`. Toto je nová funkce, která do konzole vypíše cokoliv, co jí předáme na vstupu. Tímto způsobem zařídíme, že s námi náš program bude komunikovat.
 
-### Užitečné metody na řetězcích
+Všimněte si, že náš program začíná direktivou `use strict`. Ta je pro nás velmi důležitá obzvlášť na úplném začátku kurzu, protože nás chrání před různými začátečníckými chybami. Tuto direktivu budeme používat ve všech našich programech, abychom si usnadnili lovení chyb.
 
-Na řetězcích máme v JavaScriptu spoustu metod, které nám umožňují provádět mnoho užitečných operací. Zde pro začátek vybereme pár z nich.
+Funkce `console.log` je zajímavá v tom, že jí můžete předat libovolný počet vstupů. 
 
-`toUpperCase()`
-: Převede všechna písmena na velká.
+Pokud byste chtěli místo do konzole vypsat nějakou informaci přímo do stránky, můžete místo funkce `console.log` použít funkci `document.write`. 
 
-```jscon
-> 'popokatepetl'.toUpperCase()
-'POPOKATEPETL'
+```js
+'use strict';
+
+document.write('ahoj');
 ```
 
-`toLowerCase()`
-: Převede všechna písmena na malá.
+Takovýto výpis informace na stránku bude pro nás zatím provizorní řešení, než se dostaneme k zajímavějším způsobům, jak manipulovat s obsahem stránky. 
 
-```jscon
-> 'Popokatepetl'.toLowerCase()
-'popokatepetl'
+<!-- Zakazuje JavaScript runtimu například vytvářet nové proměnné bez použití `let`, `const` nebo `var`. Vždy, když přiřadíte hodnotu do neexistující proměnné, obdržíte chybovou hlášku místo toho, aby runtime vytvořil novou proměnnou, jako by se nechumelilo.  -->
+
+### Středníky
+
+Téměř každý příkaz v JavaScriptu končí středníkem. Tím JavaScript runtime pozná, kde končí jeden příkaz a začíná jiný. Inu, ve skutečnosti by to JavaScript poznal i bez středníků a ve skutečnosti bychom je na většině míst ani psát nemuseli. Zakopaný pes je však ve slovíčku <i>většině</i>. Pokud středníky nepíšeme, v některých situacích se může stát, že runtime pochopí náš kód špatně. Abychom si nepřidělávali takto ze začátku starosti, budeme vkládat středníky všude, kde to je možné.
+
+## Proměnné
+
+Při složitějších operacích a výpočtech často vyvstane potřeba si nějaký mezivýpočet uložit pro pozdější použití. K tomu nám poslouží takzvané <term cs="proměnné" en="variables">. Proměnná je jakási pojmenovaná krabička nebo šuplík, do kterého si můžeme uložit nějakou hodnotu, abychom ji neztratili a mohli ji používat v dalších výpočtech. Abychom si procvičili proměnné a zajímavé operátory, zkusíme vyřešit následující úlohu.
+
+Mějme čas v hodinách zadaný ve 24-hodinovém formátu. Tři hodiny odpoledne tedy píšeme jako 15h. Nyní chceme spočítat, kolik hodin uvidíme na hodinách po uplynutí zadané doby. Například jaký bude čas po uplynutí 15 hodin?
+
+```js
+'use strict';
+
+const cas = 13;
+const novyCas = (cas + 15);
+console.log(novyCas);
 ```
 
-`trim()`
-: Odstraní bílé znaky ze začátku a konce.
+V tomto kusu kódu jsme vytvořili hned dvě proměnné: <var>cas</var> a <var>novyCas</var>. Každá proměnné v JavaScriptu musí mít své jméno. To by mělo dobře vystihovat, co je v proměnné uloženo. Pokud chceme v programu používat nějakou promennou, musíme ji vždy nejdříve vytvořit. To se dělá pomocí klíčového slova `const`. Takovou proměnnou pak můžeme použít v libovolném výrazu tak, že prostě uvedeme její jméno.
 
-```jscon
-> '  popokatepetl '.trim()
-'popokatepetl'
+Většinu proměnných budeme používat tak, že jim při vytvoření přiřadíme nějakou hodnotu a tato hodnota už v proměnná zůstane až do konce jejího života. Občas se však stane, že potřebujeme hodnotu uloženou v nějaké proměnné změnit. V takovém případě musíme proměnnou vytvořit pomocí slovíčka `let`.
+
+Takto můžeme například zkusit spočítat svou budoucí výplatu, pokud budeme pracovat na plný úvazek 21 dní v měsíci za 500 kč na hodinu.
+
+```js
+'use strict';
+
+let sazba = 500;
+let vyplata = 8 * 21 * sazba;
+console.log(vyplata);
 ```
 
-`slice(start, end)`
-: Vyřízne z řetězce kus podle zadaných pozic začátku a konce. U této metody poprvé narážíme na jednu programátorskou výstřednost, kterou budeme potkávat pořád znovu a znovu: **programátoři vždy počítají od nuly**, nikoliv od jedničky jako běžní lidé. V řetězci `'martin'` je tedy písmenko `'m'` na pozici nula, písmenko `'a'` na pozici 1 a tak dále. Metoda `slice` navíc bere dolní mez **včetně**, kdežto horní mez se bere **vyjma**.
+Pokud chceme spočítat výplatu pro jinou sazbu, můžeme hodnotu v proměnné změnit. V takovém případě už **nepoužíváme** `const` ani `let`.
 
-```jscon
-> 'popokatepetl'.slice(4, 7)
-'kat'
-> 'popokatepetl'.slice(0, 3)
-'pop'
+```js
+let sazba = 500;
+let vyplata = 8 * 21 * sazba;
+
+sazba = 600;
+console.log(vyplata);
 ```
 
-`indexOf(value)`
-: Vyhledá řetězec zadaný v parametru `value` uvnitř řetězce, na kterém tuto metodu voláme. Vrací pozici prvního výskytu nebo -1 pokud se obsah `value` v 5et2zci nenachází.
+Zde si však musíme všimnout jedné velmi důležité věci.
 
-```jscon
-> 'popokatepetl'.indexOf('kat')
-4
-> 'popokatepetl'.indexOf('po')
-0
-> 'popokatepetl'.indexOf('t')
-6
-> 'popokatepetl'.indexOf('katka')
--1
+### JavaScript není Excel
+
+Dejte pozor na to, že do proměnné se jako do šuplíku ukládá pouze hodnota a nikoliv celý výraz. Všimněte si, že v příkladu výše jsem změnili hodnotu proměnné <var>sazba</var>. Po této změně bude v proměnné <var>vyplata</var> pořád původní hodnota. Pokud chceme obsah této proměnné aktualizovat, musíme příkaz spustit znova.
+
+```js
+let sazba = 500;
+let vyplata = 8 * 21 * sazba;
+console.log(vyplata);
+
+sazba = 600;
+vyplata = 8 * 21 * sazba
+console.log(vyplata);
 ```
 
-`padStart(targetLength, padString)`
-: Prodlouží řetězec na zadanou délku tak, že na začátek přidá opakování řetězce `padString`. Hodí se na zarovnávání nebo na formátování čísel.
+Při práci s proměnnými je také dobré dodržovat určitá pravidla.
 
-```jscon
-> '12'.padStart(4, '0')
-'0012'
-> '12'.padStart(4, ' ')
-'  12'
-> '12'.padStart(3, ' ')
-' 12'
-> '12'.padStart(2, ' ')
-'12'
-```
+### Preferujte const
 
-Možná vám nyní vrtá hlavou, jestli funkce `Math.round` není také náhodou metoda, když používá tečkovou notaci. Je to skutečně tak. Nyní se ale budete chtít zeptat, co že teda je to `Math` za hodnotu a tady se dostáváme do úzkých, protože na zodpovězení této otázky ještě nemáme dost terminologie a znalostí. Takže `Math` pro nás na chvíli ještě zůstane tajemstvím.
+Proměnné vytvořené pomocí `const` měnit nelze. U dobrých programátorů je zvykem vytvářet proměnné téměř výhradně pomocí `const` a používat `let` pouze v případě, že k tomu máme dobrý důvod. Čím méně proměnných lze měnit, tím menší je totiž riziko vzniku nežádoucích chyb v programu.
 
-@exercises ## Cvičení - funkce a metody [
+### Pojmenování proměnných
 
+Už od úplných začátků s programováním je dobré učit se dobrým návykům, které budou později prospěšné nejen vám, ale hlavně lidem ve vašem okolí. Jedním z takových návyků je správné pojmenovávání proměnných.
+
+1. Název proměnné by neměl začínat velkým písmenem, např. ~~<var>Pocet</var>~~. Takové názvy jsou rezervované pro speciální typy proměnných, ke kterým se v tomto kurzu dostaneme až téměř na konci.
+1. Název proměnné by neměl obsahovat diakritiku, např. ~~<var>počet</var>~~. Programovací jazyky vznikaly v anglickém prostředí, kde se diakritika nepoužívá, takže si s ní většina jazyků neporadí.
+1. Víceslovné proměnné nesmí obsahovat mezeru, např. ~~<var>pocet hodin</var>~~. To by si JavaScript myslel, že to jsou dvě proměnné za sebou a nevěděl by co s tím. Pokud chcete proměnnou s více slovy, použijte takzvanou <term cs="velbloudí notaci" en="camel case"> <var>pocetHodin</var> nebo <term cs="hadí notaci" en="snake case"> <var>pocet_hodin</var>.
+1. Vždy proměnnou pojmenujte tak, aby její název jasně napovídal, co se uvnitř ní nachází. Například proměnná <var>pocet_hodin</var> jasně říká, že v ní bude uložen asi nějaký počet hodin. Můžeme podlehnout touze název proměnné zkrátit například na <var>pcthdn</var>, aby se nám lépe psala. Až ovšem někdo další bude takový program číst, bude mlátit hlavou do stolu, cože proboha znamená zkratka <var>pcthdn</var>.
+1. Naposledy je dobré si uvědomit, že programy i programátoři se téměř vždy pohybují v mezinárodním prostředí. Takže je vždycky lepší pojmenovávat proměnné anglicky. V tomto kurzu ještě tohle pravidlo trošku rozvolníme, ale i tak si můžete začít zvykat na proměnné s názvem <var>number_of_hours</var>.
+
+@exercises ## Cvičení - programy, proměnné [
+
+- nahodna-cisla
 - prevod-meny
-- nazev-knihy
-- emaily
+- ultramaraton
   ]@
 
 @exercises ## Doporučené úložky na doma [
 
-- delka-filmu
+- prijem-divadla  
 - schopnejsi-zaokrouhlovani
-- jmeno-z-emailu
 - hazeni-kostkou
   ]@
 
-## Povinné čtení na doma
+## Doporučené čtení na doma
 
 JavaScript je programovací jazyk s dlouhou historií. Ta se píše už od roku 1995, kdy jistý pán jménem [Brendan Eich](https://cs.wikipedia.org/wiki/Brendan_Eich) vytvořil první verzi JavaScriptu tak, že spojil koncepty ze tří různých jazyků: Scheme, Self a Java. Od té doby si JavaScript s sebou nese některé zajímavé a užitečné koncepty, které v jiných mainstreamových jazycích moc nenajdete. Zároveň však obsahuje myšlenky, jež programování spíše komplikují. Na obojí, dobré i zlé, budeme v tomto kurzu často narážet.
 
@@ -356,6 +340,19 @@ V JavaScriptu se ukrývá mnoho různých pastí, ve kterých je možné snadno 
 JavaScript runtime si zde neuvědomí, že jsme udělali překlep a vytvoří novou proměnnou <var>nzda</var> s hodnotou 350. Původní proměnná tedy zůstane nezměněná a už máme zaděláno na problém. Naštěstí se tento zdroj chyb dá odstranit tím, že JavaScript runtimu zakážeme vytvářet proměnné bez uvedení `let`, `const` nebo `var`. Jak se toto zařídí si ukážeme v následující lekci.
 
 @exercises ## Volitelné úložky na doma [
-
 - schopnejsi-zaokrouhlovani-2
   ]@
+
+## Shrnutí
+
+Po této lekci byste měli vědět a znát
+
+* první důležité hodnoty - čísla a řetězce,
+* aritmetické operátory - sčítání, odčítání, násobení, dělení, mocnění, zbytek po dělení,
+* základní funkce:
+  - `Math.round`, `Math.floor`, `Math.ceil`,
+  - `Math.random`,
+  - `console.log`, `document.write`,
+* jak vytvořit stránku s JavaScriptovým programem,
+* jak používat a správně pojmenovávat proměnné,
+* rozdíl mezi `let` a `const`.
