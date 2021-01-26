@@ -205,21 +205,32 @@ Pokud chceme náš program propojit se stránkou, vložíme odkaz na konec znač
 </body>
 ```
 
-Pokud nyní soubor `index.html` otevřete v prohlížeči, měli byste v konzoli vidět text, který jsme předali funkci `console.log`. Toto je nová funkce, která do konzole vypíše cokoliv, co jí předáme na vstupu. Tímto způsobem zařídíme, že s námi náš program bude komunikovat.
+Pokud nyní soubor `index.html` otevřete v prohlížeči, měli byste v konzoli vidět text, který jsme předali funkci `console.log`. Tato do konzole vypíše cokoliv, co jí předáme na vstupu. 
 
-Všimněte si, že náš program začíná direktivou `use strict`. Ta je pro nás velmi důležitá obzvlášť na úplném začátku kurzu, protože nás chrání před různými začátečníckými chybami. Tuto direktivu budeme používat ve všech našich programech, abychom si usnadnili lovení chyb.
+### console.log vs document.write
 
-Funkce `console.log` je zajímavá v tom, že jí můžete předat libovolný počet vstupů. 
-
-Pokud byste chtěli místo do konzole vypsat nějakou informaci přímo do stránky, můžete místo funkce `console.log` použít funkci `document.write`. 
+Funkce `console.log` vypisuje obsah do konzole. To se hodí nám programátorům, abychom si mohli vypsat informace o tom, co se v našem programu děje. Pokud chceme nějakou zprávu zobrazit uživateli na stránce, můžeme použít funkci `document.write`. 
 
 ```js
 'use strict';
 
-document.write('ahoj');
+document.write('<p class="message">ahoj</p>');
 ```
 
-Takovýto výpis informace na stránku bude pro nás zatím provizorní řešení, než se dostaneme k zajímavějším způsobům, jak manipulovat s obsahem stránky. 
+Pomocí této funkce lze na konec stránky vložit libovolné HTML. Můžete pak v CSS nastylovat třídu `message` a váš program tak bude vytvářet hezký výstup. Tuto funkci budeme používat do chvíle, než se naučíme chytřejší funkce pro práci s obsahem stránky. 
+
+Funkcie `console.log` i `document.wrtie` jsou zajímavé tím, že jim můžete předat libovolný počet vstupů. 
+
+```js
+'use strict';
+
+console.log('Zpráva:', 'ahoj', 15);
+document.write('<h2>Zpráva</h2>', '<p>ahoj</p>');
+```
+
+### Direktiva use strict
+
+Všimněte si, že náš program začíná řetězcem `use strict`. Tímto způsobem dáváme najevo, že chceme náš program spouštět v přísnějším režimu. JavaScript runtim tak bude náš program přísněji kontrolovat na chyby, což se nám obzvlášť v začátcích velmi hodí. 
 
 <!-- Zakazuje JavaScript runtimu například vytvářet nové proměnné bez použití `let`, `const` nebo `var`. Vždy, když přiřadíte hodnotu do neexistující proměnné, obdržíte chybovou hlášku místo toho, aby runtime vytvořil novou proměnnou, jako by se nechumelilo.  -->
 
