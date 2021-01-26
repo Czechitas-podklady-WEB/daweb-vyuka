@@ -148,7 +148,7 @@ document.write(
 
 Díky interpolaci řetězců se náš kód stává mnohem čitelnějším a budeme ji tedy používat všude, kde to půjde.
 
-### Víceřádkové řetězce a escape sekvence
+### Víceřádkové řetězce
 
 Když v JavaScriptu vytváříme HTML, které chceme vložit do stránky, časti potřebujeme vygenerovat dlouhý řetězec, který se nám nevejde na jeden řáděk. V JavaScriptu ovšem nelze zapsat běžný řetězec na více řádků. Následující kód by bohužel nefungoval.
 
@@ -480,3 +480,22 @@ Takovýto výraz už je však trochu hůře k přečtení. Logické operátory j
 - prestupny-rok-2
 - prestupny-rok-3
   ]@
+
+## Shrnutí
+
+Po této lekci byste měli vědět a znát
+
+* použítí vlastnosti `length` a metod řetězců:
+  - `toUpperCase`, `toLowerCase`,
+  - `trim`, `slice`,
+  - `indexOf`,
+  - `padStart`,
+* interpolaci řetězců,
+* booleovské hodnoty,
+* porovnávací operátory,
+* jednoduché podmínky `if`, `else`, 
+* složitější podmínky `if`, `else if`, `else`,
+* jak správně psát a formátovat bloky kódu,
+* logické operátory `&&`, `||` a `!`.
+
+
