@@ -1,173 +1,10 @@
-Do této chvíle jsme si s runtimem JavaScriptu povídali pouze skrze konzoli. Vždy jsme posílali jeden příkaz a rovnou na něj dostali odpověď. Nyní je čas začít psát programy, tedy nechat náš prohlížeč spustit více příkazů najednou.
+Do této chvile jsme se naučili psát jednoduché JavaScriptové programy a komunikovat s uživatelem. Naše programy ovšem byly velmi jednoduché a moc toho neuměly. V této lekci se naučíme mnoho užitéčných technik pro práci s řetězci a naučíme se pomocí podmínek větvit běh programu tak, aby dokázal provádět rozhodnutí. 
 
-## První program
+## Vlastnosti a metody
 
-Naše JavaScriptové programy budou vždy součástí nějaké webové stránky. Založíme si proto složku s jedním HTML souborem, který prozatím bude obsahovat jen nadpis.
+Z předchozí lekce už víme, jak vytvářet jednoduché objekty a jak do nich přidávat vlastnosti. Za velkou pozornost však stojí fakt, že mnoho hodnot v JavaScriptu jsou samy o sobě také objekty. Například každý řetězec je pod kličkou objekt a my můžeme přistupovat k jeho vlastnostem stejně, jako u objektů, které jsme vytvořili sami. 
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>První program</title>
-  </head>
-  <body>
-    <h1>První program</h1>
-  </body>
-</html>
-```
-
-Podobně jako jste zvyklí u CSS stylů, pro JavaScriptový kód budeme také vždy vytvářet oddělený soubor. Nyní mu dáme název `index.js`. Jeho obsah bude vypadat takto.
-
-```js
-'use strict';
-
-document.write('Moc nečum!');
-```
-
-Pokud chceme JavaScriptový program propojit se stránku, vložíme odkaz na konec značky `body`.
-
-```html
-<body>
-  <h1>První program</h1>
-  <script src="index.js"></script>
-</body>
-```
-
-Pokud nyní soubor `index.html` otevřete v prohlížeči, měli byste pod nadpisem vidět text, který jsme předali funkci `document.write`. To je funkce, která dokáže na konec naší stránky vložit libovolný řetězec. Takto může náš jednoduchý program komunikovat s uživatelem.
-
-Všimněte si, že náš program začíná direktivou `use strict`. Ta je pro nás velmi důležitá obzvlášť na úplném začátku kurzu, protože nás chrání před různými začátečníckými chybami. Zakazuje JavaScript runtimu například vytvářet nové proměnné bez použití `let`, `const` nebo `var`. Vždy, když přiřadíte hodnotu do neexistující proměnné, obdržíte chybovou hlášku místo toho, aby runtime vytvořil novou proměnnou, jako by se nechumelilo. Tuto direktivu budeme používat ve všech našich programech, abychom si usnadnili lovení chyb.
-
-### Středníky
-
-Další důležitá věc je, že téměř každý příkaz v JavaScriptu končí středníkem. Tím JavaScript runtime pozná, kde končí jeden příkaz a začíná jiný. Inu, ve skutečnosti by to JavaScript většinou poznal i bez středníků a ve skutečnosti bychom je ani psát nemuseli. Zakopaný pes je však ve slovíčku <i>většinou</i>. Pokud středníky nepíšeme, v některých situacích se může stát, že runtime pochopí náš kód špatně. Abychom si nepřidělávali takto ze začátku starosti, budeme vkládat středníky všude.
-
-## Vstup a výstup
-
-Každý program musí být schopen nějakým způsobem komunikovat s uživatelem. Zatím jsme viděli, jak může náš program provést jednoduchý výstup pomocí funkce `document.write`. Později uvidíme mnohem zajímavější způsoby jak uživateli něco sdělit. Nyní ale potřebujeme od uživatele taky získat nějaký vstup. K tomu budeme pro tuto chvíli používat funkci `prompt`. Zkusme napsat program, který bude řešit naši ultramaratonskou úlohu z minulé lekce.
-
-```js
-'use strict';
-
-const start = 15;
-const delka = prompt('Zadej délku závodu:');
-const konec = (start + delka) % 24;
-document.write(konec);
-```
-
-Tento program vypadá velmi přímočaře. Zadáme-li mu však v dobré víře na vstup délku 10 dočkáme se odpovědi nesprávné odpovědi 22. Abychom odhalili, kde je zakopaný pes, musíme si povědět něco o konverzi hodnot.
-
-## Konverze hodnot
-
-Úplně na začátku je šikovné všimnout si rozdílu mezi hodnotami jako `12` a `'12'`. Jedna představuje číslo dvanáct, druhá představuje řetězec obsahující znaky 1 a 2. Proto můžeme čekat, že aritmetické operace s těmito hodnotami dopadnou jinak podle toho zda jde o číslo nebo o řetězec.
-
-```jscon
-> 12 + 5
-17
-> '12' + '5'
-'125'
-```
-
-JavaScript se nám (občas k naší škodě) snaží udělat život jednodušší a tak za nás v určitých případech provádí automatickou konverzi.
-
-```jscon
-> '12' + 5
-'125'
-> 12 + '5'
-'125'
-> 1 + 2 + 3 + '4'
-'64'
-> '1' + 2 + 3 + 4
-'1234'
-```
-
-Tato konverze funguje i pro jiné operátory, napříkad násobení
-
-```jscon
-> 12 * 5
-60
-> '12' * 5
-60
-> 12 * '5'
-60
-> '12' * '5'
-60
-```
-
-nebo zbytek po dělení.
-
-```jscon
-> 12 % 5
-2
-> '12' % 5
-2
-> 12 % '5'
-2
-> '12' % '5'
-2
-```
-
-Vybaveni touto zkušeností můžeme začít rozplétat, co se nám pokazilo na našem ultramaratonském programu. To nejdůležitější k zapamatování je, že funkce `prompt` **vždycky vrací vstup od uživatele jako řetězec**. I když uživatel do políčka nakrásně napíše číslo, funkce `prompt` pro nás žádnou konverzi automaticky nedělá. Pokud tedy uživatel zadal jako délku závodu číslo 10, do proměnné délka se nám uložila hodnota `'10'`. V konzoli si pak můžeme vyzkoušet, co se dělo pak.
-
-```jscon
-> const start = 15
-> const delka = '10'
-> start + delka
-'1510'
-> '1510' % 24
-22
-```
-
-Abychom si s touto situací poradili, budeme potřebovat možnost provést konverzi hodnot sami, aniž by nám do toho JavaScript kecal.
-
-### Explicitní konverze
-
-Pokud chceme konvertovat číslo na řetězec, použijeme funkci `String`.
-
-```jscon
-> String(12)
-'12'
-> String(-2.48)
-'-2.48'
-```
-
-Když potřebujeme obrácenou konverzi, tedy řetězec na číslo, použijeme funkci `Number`.
-
-```jscon
-> Number('12')
-12
-> Number('-2.48')
--2.48
-> Number('-2,48')
-NaN
-```
-
-Všimněte si, co se stane, když se pokusíme zkonvertovat nějaký řetězec, který na číslo převést nejde. V takovém případě obdržíme speciální hodnotu `NaN`, což je zkratka pro Not a Number - Není číslo.
-
-Nyní už můžeme náš program přepracovat tak, aby fungoval správně.
-
-```js
-'use strict';
-
-const start = 15;
-const delka = Number(prompt('Zadej délku závodu:'));
-const konec = (start + delka) % 24;
-document.write(konec);
-```
-
-Z tohoto příklady plyne do budoucna velmi důležité poučení. Vždycky si dávejte dobrý pozor na to, s jakými typy hodno pracujete. Pokud například chcete s používat výstup funkce `prompt` jako číslo, vždycky jej explicitně převeďte na číslo. Dáte tak i čtenářům vašeho programu najevo, co je vaším záměrem a oni tak nebudou muset smysl vašeho programu rozplétat jako detektivní zápletku.
-
-To, že JavaScript pro nás některé konverze dělá automaticky, můžeme využít k tomu, abychom uživateli vypsali nějakou hezčí zprávu, než jen holé číslo.
-
-```js
-document.write('Běžec dorazí v ' + konec + 'h');
-```
-
-## Vlastnosti
-
-Z předchozí lekce už víme, že metody jsou něco jako funkce, které přísluší k nějakému typu hodnoty, například řetězci. <term cs="Vlastnosti" en="Properties"> jsou něco jako proměnné, které také patří pouze k určitému typu hodnoty. Používá se u nich stejná tečková notace jako u volání metod. Řetězce například mají vlastnost `length`, která udává délku řetězce.
+U řetězců je situace v celku jednoduchá, protože mají pouze jednu vlastnost. Jmenuje se `length` a udává počet znaků v řetězci.
 
 ```jscon
 > 'martin'.length
@@ -178,12 +15,206 @@ Z předchozí lekce už víme, že metody jsou něco jako funkce, které přísl
 0
 ```
 
-Všimněte si, že za názvem vlastnosti nejsou kulatá závorky, protože vlastnosti nejsou metody, které bychom volali. Vlastnost `length` je zatím jediná vlastnost, kterou poznáme. Později v kurzu jich však uvidíme více.
+Uvnitř objektů však kromě vlastností najdeme i takzvané metody, což jsou funkce, které jsou uzavřené uvnitř objektu. V praxi se často stává, že některé funkce se hodí na práci pouze s jedním typem hodnoty. Například bychom mohli mít funkci `toUpperCase`, která by převedla všechna písmena v řetězci na velká písmena. Kdyby taková funkce existovala, mohli bychom ji
+volat třeba takto
 
-@exercises ## Cvičení - vstup, výstup, metody [
+```jscon
+> toUpperCase('martin')
+'MARTIN'
+```
 
-- vyplata-stranka
+Je pochopitelné, že taková funkce funguje pouze pro řetězce. Pro ostatní
+hodnoty nedává smysl. Těžko si představit, co by taková funkce měla vrátit
+například v takovémto případě.
+
+```jscon
+> toUpperCase(3.14)
+```
+
+Funkce, které pracují pouze na jednom typu objektu můžeme svázat přímo s tímto objektem. Můžeme tedy říct, že funkce `toUpperCase` patří pouze řetězcům. Máme-li funkci, která patří pouze typu řetězec, voláme ji pomocí už známé tečkové notace.
+
+```jscon
+> 'martin'.toUpperCase()
+'MARTIN'
+```
+
+Funkcím jako výše, které patří jen konkrétním typům hodnot, říkáme <term cs="metody" en="methods">. Všimněte si, že metoda `toUpperCase` v JavaScriptu skutečně existuje, takže výše uvedený kód bude opravdu fungovat. Podobně existuje například metoda
+`toLowerCase`. Vyzkoušejte si ji!
+
+## Užitečné metody na řetězcích
+
+Na řetězcích máme v JavaScriptu spoustu metod, které nám umožňují provádět mnoho užitečných operací. Zde pro začátek vybereme pár z nich.
+
+`toUpperCase()`
+: Převede všechna písmena na velká.
+
+```jscon
+> 'popokatepetl'.toUpperCase()
+'POPOKATEPETL'
+```
+
+`toLowerCase()`
+: Převede všechna písmena na malá.
+
+```jscon
+> 'Popokatepetl'.toLowerCase()
+'popokatepetl'
+```
+
+`trim()`
+: Odstraní bílé znaky ze začátku a konce.
+
+```jscon
+> '  popokatepetl '.trim()
+'popokatepetl'
+```
+
+`slice(start, end)`
+: Vyřízne z řetězce kus podle zadaných pozic začátku a konce. U této metody poprvé narážíme na jednu programátorskou výstřednost, kterou budeme potkávat pořád znovu a znovu: **programátoři vždy počítají od nuly**, nikoliv od jedničky jako běžní lidé. V řetězci `'martin'` je tedy písmenko `'m'` na pozici nula, písmenko `'a'` na pozici 1 a tak dále. Metoda `slice` navíc bere dolní mez **včetně**, kdežto horní mez se bere **vyjma**.
+
+```jscon
+> 'popokatepetl'.slice(4, 7)
+'kat'
+> 'popokatepetl'.slice(0, 3)
+'pop'
+```
+
+`indexOf(value)`
+: Vyhledá řetězec zadaný v parametru `value` uvnitř řetězce, na kterém tuto metodu voláme. Vrací pozici prvního výskytu nebo -1 pokud se obsah `value` v 5et2zci nenachází.
+
+```jscon
+> 'popokatepetl'.indexOf('kat')
+4
+> 'popokatepetl'.indexOf('po')
+0
+> 'popokatepetl'.indexOf('t')
+6
+> 'popokatepetl'.indexOf('katka')
+-1
+```
+
+`padStart(targetLength, padString)`
+: Prodlouží řetězec na zadanou délku tak, že na začátek přidá opakování řetězce `padString`. Hodí se na zarovnávání nebo na formátování čísel.
+
+```jscon
+> '12'.padStart(4, '0')
+'0012'
+> '12'.padStart(4, ' ')
+'  12'
+> '12'.padStart(3, ' ')
+' 12'
+> '12'.padStart(2, ' ')
+'12'
+```
+
+Možná vám nyní vrtá hlavou, jestli funkce `Math.round` nebo `console.log` nejsou náhodou metody, když používají tečkovou notaci. Je to skutečně tak. `Math` i `console` jsou speciální JavaScriptové objekty, která sdružují metody pro matematické výpočty nebo pro práci s konzolí. 
+
+## Interpolace řetězců
+
+Když chceme v JavaScriptu vytvořit nějaký kus textu, například nějakou zprávu pro uživatele, často potřebujeme do tohoto textu vložit obsah několika různých proměnných.
+
+```js
+const order = {
+  id: 37214,
+  product: 'pěnová matrace',
+  delivery: '21.8.2021',
+};
+
+const { id, product, delivery } = order;
+
+document.write(
+  '<h2>Objednávka: ' + id + '</h2>',
+  '<p>Zboží ' + product + ' bude doručeno ' + delivery + '.',
+);
+```
+
+Abychom se ze všeho toho sčítání a uvozovek nezbláznili, moderní JavaScript nabízí nový zápis řetězců, kterému se odborně říká <term cs="interpolace řetězců" em="string interpolation">. V tomto zápisu se místo obyčejný nebo dvojitých uvozovek používá takzvaný zpětný apostrof &#96;. Pomocí tohoto zápisu můžeme obsah proměnných vložit do řetězce pomocí znaku `$` a složených závorek.
+
+```js
+document.write(
+  `<h2>Objednávka: ${id}</h2>`,
+  `<p>Zboží ${product} bude doručeno ${delivery}.',
+);
+```
+
+Uvnitř složených závorek otevíráme jakési JavaScriptové okno, do kterého můžeme vepsat nejen proměnnou, ale zcela libovolný výraz, jehož výsledek bude automaticky zkonvertován na řetězec.
+
+```js
+document.write(
+  `<h2>Objednávka: ${String(id).padStart(8, '0')}</h2>`,
+  `<p>Zboží ${product} bude doručeno ${delivery}.`,
+);
+```
+
+Díky interpolaci řetězců se náš kód stává mnohem čitelnějším a budeme ji tedy používat všude, kde to půjde.
+
+### Víceřádkové řetězce a escape sekvence
+
+Když v JavaScriptu vytváříme HTML, které chceme vložit do stránky, časti potřebujeme vygenerovat dlouhý řetězec, který se nám nevejde na jeden řáděk. V JavaScriptu ovšem nelze zapsat běžný řetězec na více řádků. Následující kód by bohužel nefungoval.
+
+```js
+const content = '
+  <header>
+    <h1>Název stránky</h1>
+  </header>
+  <main>Obsah srtánky</main>
+  <footer>Patička</footer>
+';
+```
+
+Abychom takový řetězec sestavili, musíme si pomoct sčítáním řetězců.
+
+```js
+const content = (
+  '<header>' + 
+  '  <h1>Název stránky</h1>' + 
+  '</header>' + 
+  '<main>Obsah stránky</main>' + 
+  '<footer>Patička</footer>'
+);
+```
+
+Tento zápis je ovšem dost neohrabaný a po čase nás začne vytáčet. Interpolace řetězců nás ale zachrání, neboť řetězce v uvozovkách nové řádky obsahovat mohou.
+
+```js
+const content = `
+  <header>
+    <h1>Název stránky</h1>
+  </header>
+  <main>Obsah stránky</main>
+  <footer>Patička</footer>
+`;
+```
+
+Navíc můžeme do takového řetězce snadno zakomponovat proměnné a vytvořit tak obsah stránky opravdu profesionálně. 
+
+```js
+const order = {
+  id: 37214,
+  product: 'pěnová matrace',
+  delivery: '21.8.2021',
+};
+
+const { id, product, delivery } = order;
+
+const content = `
+  <header>
+    <h1>Objednávka: ${String(id).padStart(8, '0')}</h1>
+  </header>
+  <main>
+    <p>Zboží ${product} bude doručeno ${delivery}.</p>
+  </main>
+  <footer>www.matrace-a-syn.cz</footer>
+`;
+
+document.write(content);
+```
+
+@exercises ## Cvičení - práce s řetězci [
+
+- vlastnosti-metody
 - email
+- dorucovani
   ]@
 
 ## Pravdivostní hodnoty
@@ -356,18 +387,18 @@ if (age >= 18) {
 }
 ```
 
-Takto můžeme vytvářet relativně komplikované rozhodování. Se zanořováním podmínek je ale dobré to příliš nepřehánět. Málokdo se dokáže snadno zorientovat v temných hlubínách pětkrát zanořené podmínky. Později se naučímte strategie, jak se takovým hlubokým zanořením vyhnout.
+Takto můžeme vytvářet relativně komplikované rozhodování. Se zanořováním podmínek je ale dobré to příliš nepřehánět. Málokdo se dokáže snadno zorientovat v temných hlubínách pětkrát zanořené podmínky. Později se naučíme strategie, jak se takovým hlubokým zanořením vyhnout.
 
 @exercises ## Cvičení - podmínky [
 
-- registrace
+- registrace-na-ockovani
 - cena-vstupenky
   ]@
 
 @exercises ## Doporučené úložky na doma [
 
-- superhruba
 - slevy
+- superhruba
   ]@
 
 ## Povinné čtení na doma - logické operátory
@@ -441,6 +472,7 @@ if (!(age >= 18 && age < 65)) {
 ```
 
 Takovýto výraz už je však trochu hůře k přečtení. Logické operátory jsou užiteční pomocníci, v praxi je však dobré s nimi šetřit. Pokud výraz ve vaší podmínce obsahuje více než jeden logický operátor, váš kód se stává těžko čitelným a pochopitelným. Držte se proto při používání logickách operátor pri zemi. Vaši budoucí kolegová vás za to budou mít rádi.
+
 @exercises ## Volitelné úložky na doma [
 
 - ruleta
