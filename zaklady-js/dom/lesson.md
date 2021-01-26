@@ -8,7 +8,7 @@ Ve chvíli, kdy uživatel zadá do prohlížeče URL adresu, webový prohlíže�
 
 ```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
