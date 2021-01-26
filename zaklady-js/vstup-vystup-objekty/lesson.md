@@ -149,7 +149,7 @@ Objekt vytvoříme tak, že do složených závorek vložíme čárkou oddělen�
 
 ![Struktura objektu](assets/object.png){.fig .fig-80}
 
-Pomocí klíčů pak můžeme z objektu získat jednotlivé hodnoty použitím tečkové notace. 
+Pomocí klíčů pak můžeme z objektu získat jednotlivé hodnoty použitím takzvané <term cs="tečkové notace" en="dot notation">.
 
 ```jscon
 > user1.fullName
