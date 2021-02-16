@@ -1,0 +1,22 @@
+title: HTML a CSS
+link: html-a-css
+brief: Naučíte se základy programování v jazyce JavaScript, který vám umožní udělat vaše stránky interaktivní.
+lessons:
+  - title: Opakování
+    link: opakovani
+    brief: Připomeneme si základní HTML značky, box model, jednotky.
+  - title: Pozicování a flex 1
+    link: pozicovani-a-flex-1
+    brief: Ukážeme si práci s CSS position a display flex.
+  - title: Flex 2
+    link: flex-2
+    brief: Prozkoumáme pokročilejší vlastnosti flexu.
+  - title: Selektory a BEM
+    link: selektory-a-bem
+    brief: Naučíme se metodiku BEM, která nám usnadní psaní CSS selektorů.
+  - title: Formuláře
+    link: formulare
+    brief: Ukážeme, jak v HTML vytvářet formuláře na získávání dat od uživatele.
+  - title: Responzivní design
+    link: responsivni-design
+    brief: Naučíme naše webové stránky přizpůsobovat se různým velikostem obrazovky, od malého telefonu po velký stolní počítač.
