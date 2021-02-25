@@ -14,9 +14,9 @@ lessons:
   - title: Selektory a BEM
     link: selektory-a-bem
     brief: Naučíme se metodiku BEM, která nám usnadní psaní CSS selektorů.
-  - title: Formuláře
-    link: formulare
-    brief: Ukážeme, jak v HTML vytvářet formuláře na získávání dat od uživatele.
   - title: Responzivní design
     link: responsivni-design
     brief: Naučíme naše webové stránky přizpůsobovat se různým velikostem obrazovky, od malého telefonu po velký stolní počítač.
+  - title: Formuláře
+    link: formulare
+    brief: Ukážeme, jak v HTML vytvářet formuláře na získávání dat od uživatele.
