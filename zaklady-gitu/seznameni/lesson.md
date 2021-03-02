@@ -46,7 +46,7 @@ Všimněte si, že každý commit obsahuje zprávu a takzvaný <term cs="digitá
 : Vyprázdní oblast připravených změn.
 
 **commit**
-: Vytvoří novou revizi
+: Vytvoří novou revizi.
 
 **push**
 : Nahraje všechny nově vytvořené commity do vzdáleného repozitáře.
