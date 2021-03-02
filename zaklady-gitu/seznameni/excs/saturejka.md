@@ -11,7 +11,7 @@ Vyzkoušejte si tvorbu profesionální webové strány za použití systému Git
 1. Ve složce `web` najdete základní soubory se základem stránky. Obsah této složky zkopírujte do vašeho lokálního repozitáře.
 1. V repozitáři přidejte tyto nové soubory do stage pomocí `git add`.
 1. Pomocí `git status` zkontrolujte, že všechny soubory jsou připraveny ke commitu.
-1. Vytvořte nový commit pomocí `git commit`. Ke commitu napište zprávu "Základní soubory stránky."
+1. Vytvořte nový commit pomocí `git commit`. Ke commitu napište zprávu „Základní soubory stránky.“
 1. Pomocí `git log` zkontrolujte, že commit se opravdu vytvořil.
 1. Pomocí `git push` publikujte nový commit na GitHub.
 
