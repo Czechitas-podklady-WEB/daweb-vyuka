@@ -16,3 +16,5 @@ Vyzkoušejte si tvorbu profesionální webové strány za použití systému Git
 1. Pomocí `git push` publikujte nový commit na GitHub.
 
 Pokračujte ve tvorbě stránky vlastním tempem. Vždy, když dokončíte i třeba jen malou část, udělejte nový commit. Stránku rozhodně nemusíte dokončit. Cílem cvičení je především si vyzkoušet reálnou práci s Gitem.
+
+Stránky publikujte pomocí GitHub Pages.

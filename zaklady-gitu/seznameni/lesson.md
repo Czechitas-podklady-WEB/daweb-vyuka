@@ -16,7 +16,7 @@ Git je velmi flexibilní a dá se použít mnoha různými způsoby. Existuje v�
 ### Repozitář
 
 Základním pojmem Gitu je takzvaný <term cs="repozitář" en="repository">, ve kterém se nachází všechny soubory, které tvoří váš projekt. Většinou bývá na nějakém serveru, na který mají přistup všichni vývojáři projektu a mohou do něj přispívat svým kódem. Takový server může běžet například v rámci nějaké firmy a pouze vývojáři z této firmy něj mají přístup. Pokud na projektu pracujete sami, můžete si pro něj vytvořit repozitář na některé hostovací službě jako [GitHub](https://github.com/), [GitLab](https://gitlab.com/), [Bitbucket](https://bitbucket.org/) a další.
-  
+
 My si společně vytvoříme účet na GitHubu.
 
 ## Základní pojmy
@@ -87,6 +87,10 @@ Nahrát nové commity na server (GitHub, GitLab, Bitbucket, …)
 ```sh
 $ git push
 ```
+
+## GitHub Pages
+
+Pokud máte v repozitáři nahrané soubory pro webové stránky (`index.html`, styly, skripty, obrázky, …), GitHub z nich umí udělat veřejný web s vlastní adresou vhodnou pro běžného uživatele internetu, návštěvníka webu. Službu na GitHubu aktivujete z detailu repozitáře v záložce `Settings` v části `GitHub Pages`. Ve vybírátku `Source` stačí vybrat hlavní větev a uložit. Po uložení se zobrazí modrý pruh s adresou, kde web běží.
 
 @exercises ## Cvičení [
 
