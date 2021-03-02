@@ -52,7 +52,7 @@ Všimněte si, že každý commit obsahuje zprávu a takzvaný <term cs="digitá
 : Nahraje všechny nově vytvořené commity do vzdáleného repozitáře.
 
 **log**
-: zobrazí historii commitů.
+: Zobrazí historii commitů.
 
 ### Příkazy pro počáteční nastavení
 
