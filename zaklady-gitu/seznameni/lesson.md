@@ -59,6 +59,7 @@ Všimněte si, že každý commit obsahuje zprávu a takzvaný <term cs="digitá
 ```sh
 $ git config --global user.name "Jméno Příjmení"
 $ git config --global user.email "muj-email@example.com"
+$ git config --global core.editor "code --wait"
 ```
 
 ### Časté příkazy
