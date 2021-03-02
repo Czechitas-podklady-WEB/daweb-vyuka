@@ -3,7 +3,7 @@ title: Saturejka
 demand: 2
 ---
 
-Vyzkoušejte si tvorbu profesionální webové strány za použití systému Gitu.
+Vyzkoušejte si tvorbu profesionální webové strány za použití systému Git.
 
 1. Pod svým účtem na GitHubu vytvořte nový repozitář s názvem **saturejka**. Nastavte jej jako veřejný a nezapomeňte zaškrtnout **Initialize this repository with a README**.
 1. Pomocí příkadu `git clone` vytvořte lokální kopii repozitáře na svém počítači.
