@@ -37,7 +37,7 @@ Všimněte si, že každý commit obsahuje zprávu a takzvaný <term cs="digitá
 : Vytvoří lokální kopii vzdáleného repozitáře.
 
 **add**
-: Přidá změny do oblasti připravených změn.
+: Přidá změny do <term cs="oblasti připravených změn" en="stage">.
 
 **status**
 : Zobrazí všechny rozpracované změny proti poslednímu commitu.
