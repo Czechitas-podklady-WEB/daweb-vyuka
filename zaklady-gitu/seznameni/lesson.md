@@ -40,7 +40,7 @@ Všimněte si, že každý commit obsahuje zprávu a takzvaný <term cs="digitá
 : Přidá změny do oblasti připravených změn.
 
 **status**
-: Zobrazí všechny změny proti poslednímu commitu.
+: Zobrazí všechny rozpracované změny proti poslednímu commitu.
 
 **reset**
 : Vyprázdní oblast připravených změn.
