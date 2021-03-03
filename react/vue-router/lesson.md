@@ -11,12 +11,10 @@ Obsah souboru `.vscode/settings.json`.
 }
 ```
 
-@exercises ## Cvičení - Základy routování [
-
+[[[ excs Cvičení: Základy routování
 - u-potucku
-  ]@
+]]]
 
-@exercises ## Cvičení - Router parametry [
-
+[[[ excs Cvičení: Router parametry
 - prichozi-posta
-  ]@
+]]]

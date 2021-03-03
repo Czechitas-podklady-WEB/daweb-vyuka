@@ -143,11 +143,10 @@ stačí napsat pouze název dané prop a React už si domyslí, že do ní chcem
 <ShoppingItem name="jablka" amount="1 kg" selected />
 ```
 
-@exercises ## Cvičení - Podmíněné výrazy [
-
+[[[ excs Cvičení: Podmíněné výrazy
 - podminene-jednohubky
 - react-zarovka
-  ]@
+]]]
 
 ## Stylování JSX elementů
 
@@ -248,8 +247,7 @@ const Product = (props) => {
 };
 ```
 
-@exercises ## Cvičení - Podmíněné zobrazování [
-
+[[[ excs Cvičení: Podmíněné zobrazování
 - mejlik-schranka
 - mejlik-hlavicka
-  ]@
+]]]

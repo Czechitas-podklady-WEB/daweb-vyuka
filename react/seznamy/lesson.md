@@ -81,11 +81,10 @@ names.map((name) => <User username={name} />);
 
 Z tohoto bodu zbývá už jen malý krůček, abychom takovéto pole JSX komponent dokázali zobrazit na naší stránce. To si však necháme až na druhou část lekce.
 
-@exercises ## Cvičení - Zkracování a map [
-
+[[[ excs Cvičení: Zkracování a map
 - zkracovaci-jednohubky
 - opakovani-map
-  ]@
+]]]
 
 ## Seznamy v JSX
 
@@ -255,14 +254,12 @@ const App = () => (
 
 Takto je náš kód mnohem čitelnější. Toto je jeden z hlavních důvodů, proč rozdělujeme naše aplikace na komponenty. Lépe se tak dokážeme v kódu orientovat nejen my, ale také naší kolegové, kteří pracují na stejném projektu a musí číst náš kód.
 
-@exercises ## Cvičení - Zobrazování seznamů [
-
+[[[ excs Cvičení: Zobrazování seznamů
 - ceska-mesta
 - ceska-mesta-2
-  ]@
+]]]
 
-@exercises ## Doporučené úložky na doma [
-
+[[[ excs Doporučené úložky na doma
 - ceska-mesta-3
 - podcasty
-  ]@
+]]]

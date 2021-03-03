@@ -204,11 +204,10 @@ const appContent = (
 
 render(appContent, document.getElementById('app'));
 
-@exercises ## Cvičení - první React aplikace [
-
+[[[ excs Cvičení: První React aplikace
 - prvni-kroky
 - plysaci
-  ]@
+]]]
 
 ## React komponenty a props
 
@@ -389,8 +388,7 @@ const App = () => {
 render(<App />, document.getElementById('app'));
 ```
 
-@exercises ## Cvičení - React komponenty [
-
+[[[ excs Cvičení: React komponenty
 - aplikace
 - datumy
-  ]@
+]]]

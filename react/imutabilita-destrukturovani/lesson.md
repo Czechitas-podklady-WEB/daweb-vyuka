@@ -121,8 +121,7 @@ const ShoppingItem = ({ name, amount }) => (
 );
 ```
 
-@exercises ## Cvičení - Destrukturování [
-
+[[[ excs Cvičení: Destrukturování
 - produkty
 - cas
-  ]@
+]]]

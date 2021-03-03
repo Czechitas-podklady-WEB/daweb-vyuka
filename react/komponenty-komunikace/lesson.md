@@ -10,11 +10,10 @@ Předávání informací směrem od rodiče k dítěti je z našich tří situac
 
 ## Komunikace dítě → rodič
 
-@exercises ## Cvičení - komunikace [
-
+[[[ excs Cvičení: Komunikace
 - kurzovni-listek
 - hamburger-menu
 - nazev-stranky
-  ]@
+]]]
 
 ## Komunikace mezi sourozenci

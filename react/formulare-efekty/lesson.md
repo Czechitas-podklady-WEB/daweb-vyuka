@@ -43,12 +43,11 @@ const AgeField = () => {
 
 One-way (jednosměrný), two-way (obousměrný).
 
-@exercises ## Cvičení - formulářové prvky [
-
+[[[ excs Cvičení: Formulářové prvky
 - registrace
 - vyber-zeme
 - podminky-registrace
-  ]@
+]]]
 
 ## Efekty
 
@@ -133,8 +132,7 @@ V tomto případě jsme si do stavu ukládali pouze obyčejný řetězec. Naše 
 http://worldtimeapi.org/api/timezone
 ```
 
-@exercises ## Cvičení - Efekty a volání API [
-
+[[[ excs Cvičení: Efekty a volání API
 - prazsky-cas
 - vyber-zony
-  ]@
+]]]
