@@ -46,11 +46,10 @@ DOM elementy, které si vytvoříme pomocí `document.createElement` jsou zcela 
 
 Vidíte tedy, že si tak říkajíc na vlasním písečku můžeme vytvářet i velmi složité a obsáhldé DOM elementy a zapojit je do stránky až ve chvíli, kdy je máme správně zkonstruované. Toto se nám bude velmi hodit při vytváření komponent. O tom však až v druhé části.
 
-@exercises ## Cvičení - vlastní DOM elementy [
-
+[[[ excs Cvičení: Vlastní DOM elementy
 - tlacitko
 - kontakty
-  ]@
+]]]
 
 ## Interaktivní komponenty
 
@@ -230,8 +229,7 @@ mainElm.appendChild(ShoppingList({ items: list }));
 
 Všimněte si, že je třeba nejdříve vyprázdnit element `mainElm`, abychom do něj mohli vložit nový obsah pomocí `appendChild`.
 
-@exercises ## Cvičení - interaktivní komponenty [
-
+[[[ excs Cvičení: Interaktivní komponenty
 - zarovky
 - kostky-1
-  ]@
+]]]

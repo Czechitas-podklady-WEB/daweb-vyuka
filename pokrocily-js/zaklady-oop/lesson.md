@@ -184,16 +184,14 @@ Můžeme pak psát jako obvykle
 "marge.simpson@gmail.com"
 ```
 
-@exercises ## Cvičení - Metody a this [
-
+[[[ excs Cvičení: Metody a this
 - pejsek
 - seznamka
-  ]@
+]]]
 
-@exercises bonuses [
-
+[[[ excs Bonusy 
 - hledani
-  ]@
+]]]
 
 ## Prototypy
 
@@ -268,12 +266,11 @@ Nyní když provedeme takovéto volání
 
 JavaScript runtime zkouší najit metodu `name` v objektu `homer`. Pokud tam není, zkouší ji najít v jeho prototypu `Person`. Tam už metoda je. Runtime tedy nastaví její `this` na objekt `homer` a zavolá ji. Tím se nám všchno hezky propojí a běží jako po másle.
 
-@exercises ## Cvičení - Objekty a prototypy [
-
+[[[ excs Cvičení: Objekty a prototypy
 - pozemky
 - cena-pozemku
 - hodiny
-  ]@
+]]]
 
 ## Konstrukce objektů
 
@@ -368,9 +365,8 @@ Jde pouze o kosmetickou změnu, která nám ušetří ťukání na klávesnici. 
 
 Tento způsob vytváření objektů už je na chlup blízko tomu, jak se objekty v praxi skutečně vytvářejí. Ještě nám chybí poslední drobnost, kterou si však necháme na některou z dalších lekcí.
 
-@exercises ## Cvičení - konstrukce objektů [
-
+[[[ excs Cvičení: Konstrukce objektů
 - pozemky-2
 - hodiny-2
 - hodiny-3
-  ]@
+]]]

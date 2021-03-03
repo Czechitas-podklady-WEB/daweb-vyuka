@@ -181,12 +181,11 @@ Všimněte si, jak objekt představující jeden kurz obsahuje pod klíčem `kon
 [ 'Dan Vrátil', 'Zuzana Tučková', 'Martina Nemčoková' ]
 ```
 
-@exercises ## Cvičení - objekty jako data [
-
+[[[ excs Cvičení: Objekty jako data
 - zaklady
 - kurz
 - knihovna
-  ]@
+]]]
 
 ## Pokročilejší práce s komponentami
 
@@ -223,15 +222,13 @@ Tuto změnu děláme proto, abychom se přiblížili k tomu, jak s komonentami p
 
 ### Komponenty uvnitř komponent
 
-@exercises ## Cvičení - komponenty a objekty [
-
+[[[ excs Cvičení: Komponenty a objekty
 - kontakt
 - emaily
 - emaily2
-  ]@
+]]]
 
-@exercises ## Doporučené úložky na doma [
-
+[[[ excs Doporučené úložky na doma
 - jogini
 - odjezdy
-  ]@
+]]]

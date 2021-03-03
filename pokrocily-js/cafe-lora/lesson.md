@@ -6,8 +6,7 @@ Vaším úkolem bude vytvořit webovou stránku fiktivní kavárny s názvem <i>
 
 Design, CSS styly a všechny obrázky potřebné po tvorbu stránky máte již připraveny. Vaším úkolem je doplnit JavaScriptovou část. Cílem je vyzkoušet si práci na větším uceleném projektu.
 
-@exercises ## Projekt Café Lóra [
-
+[[[ excs Projekt Café Lóra
 - zalozeni-projektu
 - seznameni
 - navigace
@@ -17,4 +16,4 @@ Design, CSS styly a všechny obrázky potřebné po tvorbu stránky máte již p
 - napoj-komponenta
 - seznam-napoju
 - backend
-  ]@
+]]]

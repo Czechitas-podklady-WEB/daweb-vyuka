@@ -1,4 +1,4 @@
-Čím jsou naše webové aplikace rozsáhlejší, tím je těžší se ve zdrojovém kódu orientovat, obzvláště pokud je celý obsažen v jednom souboru `index.js`. Naše aplikace se tedy snažíme rozdělovat na jednotlivé komponenty a jejich kód budeme vkládat do oddělených souborů. Díky tomu se dokážeme abychom ve struktuře aplikace lépe vyznat.
+Čím jsou naše webové aplikace rozsáhlejší, tím těžší je orientovat se ve zdrojovém kódu, obzvlášt pokud je celý obsažen v jednom souboru `index.js`. Abychom se ve větších aplikacích vyznali, budeme je rozdělovat na jednotlivé komponenty a jejich kód budeme vkládat do oddělených souborů. Tím usnadnímě život nejen sobě ale i ostaním programátorům, kteří s nám na aplikaci budou spolupracovat.
 
 ## Oddělování komponent
 
@@ -22,7 +22,7 @@ Pojďme si dělení kódu aplikace do vícero souborů vyzkoušet na našem nák
 - prestupky-2
 ]]]
 
-## Webpack
+## Sestavovací proces
 
 V předchozí části jsme rozdělili komponenty v projektu Nákupní seznam do jednotlivých souborů, což velmi pomáhá nám programátorům. Do našeho HTML však kvůli tomu musíme vložit celkem šest souborů.
 

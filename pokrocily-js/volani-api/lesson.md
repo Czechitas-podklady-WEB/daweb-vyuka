@@ -120,11 +120,10 @@ fetch('https://api.abalin.net/today?country=cz')
   .then(displayName);
 ```
 
-@exercises ## Cvičení - volání API [
-
+[[[ excs Cvičení: Volání API
 - svatek-zitra
 - svatek-v-den
-  ]@
+]]]
 
 ## Aktualizace obsahu stránky
 
@@ -268,14 +267,12 @@ addBtn.addEventListener('click', () => {
 });
 ```
 
-@exercises ## Cvičení - aktualizace stránky [
-
+[[[ excs Cvičení: Aktualizace stránky
 - lokalni-cas
 - dopravni-prestupky
-  ]@
+]]]
 
-@exercises ## Doporučené úložky na doma [
-
+[[[ excs Doporučené úložky na doma
 - svetovy-cas
 - svetovy-cas-2
-  ]@
+]]]

@@ -8,8 +8,7 @@ Když při programování aplikací používáme cykly, brzy narazíme na často
 - `Array.every`
 - `Array.some`
 
-@exercises ## Cvičení - Funkcionální zpracování dat [
-
+[[[ excs Cvičení: Funkcionální zpracování dat
 - jednohubky
 - ukolnicek
-  ]@
+]]]

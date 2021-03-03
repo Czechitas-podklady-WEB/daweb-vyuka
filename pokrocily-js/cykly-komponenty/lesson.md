@@ -2,11 +2,10 @@ Díky JavaScriptu a práci s DOMem už dokážete vašim stránkám vdechnout ho
 
 Než se však pustíme do hlavního tématu, ještě si lehce zopakujeme cykly.
 
-@exercises ## Cvičení - opáčko cyklů [
-
+[[[ excs Cvičení: Opáčko cyklů
 - nakupni-seznam
 - nakupni-seznam-funkce
-  ]@
+]]]
 
 ## Tvorba HTML pomocí JavaScriptu
 
@@ -75,18 +74,16 @@ listElm.innerHTML = ShoppingList(data);
 
 Všimněte si, že jsme funkci pojmenovali s velkým písmenem na začátku. Toto je konvence, kterou si vytvořili především React programátoři, aby dokázali rychle odlišit funkce představující komponenty od všech ostatních funkcí. JavaScriptu je úplně jedno, jaké písmenko na začátku názvu funkce uvedeme. Jde pouze o pomůcku pro nás a čtenáře našeho programu, aby všichni rychle dokázal poznat, z jakých komponent se náš program skládá. Protože také směřujeme směrem k vývoji v Reactu, budeme tuto konvenci dodržovat už od této chvíle.
 
-@exercises ## Cvičení - komponenty [
-
+[[[ excs Cvičení: Komponenty
 - nadpis-stranky
 - nadpis-stranky-komponenta
 - hodiny
-  ]@
+]]]
 
-@exercises ## Doporučené úložky na doma [
-
+[[[ excs Doporučené úložky na doma
 - podcasty
 - ukolnicek
-  ]@
+]]]
 
 ## Mandatory home reading
 
