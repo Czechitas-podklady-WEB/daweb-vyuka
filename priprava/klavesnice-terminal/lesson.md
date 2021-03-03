@@ -95,10 +95,9 @@ Pokud si chcete na vašem počítači nanistalovat českou QWERTY klávesnici, p
 
 <youtube video="7aZzfua1keA">
 
-@exercises ## Cvičení [
-
+[[[ excs Cvičení
 - klavesova-zviratka
-  ]@
+]]]
 
 ## Shrnutí
 
