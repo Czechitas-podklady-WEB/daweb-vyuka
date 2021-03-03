@@ -1,7 +1,6 @@
 ## Formuláře
 
-@exercises ## Cvičení [
-
+[[[ excs Cvičení
 - vyhledavac
 - statisticky-urad
-  ]@
+]]]
