@@ -132,11 +132,10 @@ const num = Number(inputElm.value);
 
 Od této chvíle navždy se tedy vzdáváme funkce `prompt` a budeme už používat pouze textová políčka. Ta můžeme hezky nastylovat, aby dobře zapadla do grafiky našich stránek.
 
-@exercises ## Cvičení - vlastnosti událostí [
-
+[[[ excs Cvičení: Vlastnosti událostí
 - registrace
 - auto
-  ]@
+]]]
 
 ## Porozumění chybám
 
@@ -296,14 +295,12 @@ Záměr funkce můžeme odhadnout takto.
 
 > Funkce `setColor` nastavuje barvu textu zadaného elementu na zadanou barvu.
 
-@exercises ## Doporučené úložky na doma [
-
+[[[ excs Doporučené úložky na doma
 - recitaly
 - pocitadlo
 - minutka2
-  ]@
+]]]
 
-@exercises ## Volitelné úložky na doma [
-
+[[[ excs Volitelné úložky na doma
 - minutka3
-  ]@
+]]]

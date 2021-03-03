@@ -211,11 +211,10 @@ Všimněte si, že zde napíšeme znak mřížky, protože vstupem pro `document
 
 Oba z výše uvedených způsobů výběru podle `id` jsou zcela legitimní a je pouze na vás, který si zvolíte.
 
-@exercises ## Cvičení - Manipulace s DOMem [
-
+[[[ excs Cvičení: Manipulace s DOMem
 - novinky
 - kviz
-  ]@
+]]]
 
 ## Pokročilejší práce s třídami
 
@@ -270,7 +269,6 @@ Pokud se daná CSS třída na elementu nachází, metoda `toggle` ji odstraní. 
 
 Pomocí vlastnosti `classList` jsme opět rozšířili náš arzenál pro manipulaci s obsahem stránky a také máme život zase o kousek jednodušší.
 
-@exercises ## Doporučené úložky na doma [
-
+[[[ excs Doporučené úložky na doma
 - dovednosti
-  ]@
+]]]

@@ -197,11 +197,10 @@ Vidíme, že na tahu je zrovna křížek. Můžeme tak snadno provést nějaký 
 ];
 ```
 
-@exercises ## Cvičení - práce s poli [
-
+[[[ excs Cvičení: Práce s poli
 - pole-v-divadle
 - sachovnice
-  ]@
+]]]
 
 ## Cykly
 
@@ -318,13 +317,12 @@ const averageMark = sum / marks.length;
 
 Tímto způsobem se můžeme propracovat až k velmi složitým algoritmům, cyklům uvnitř cyklů apod. V této lekci se však budeme zatím držet při zemi.
 
-@exercises ## Cvičení - Cykly [
-
+[[[ excs Cvičení: Cykly
 - pocitani-while
 - pocitani-for
 - uzivatele
 - pohyby-na-uctu
-  ]@
+]]]
 
 ## Povinné čtení na doma
 
@@ -409,16 +407,14 @@ const btnClick = (event) => {
 
 Pomocí datových atributů si můžeme k elementům uložit libovolné informace, se kterými pak můžeme v JavaScriptu snadno pracovat. -->
 
-@exercises ## Doporučené úložky na doma [
-
+[[[ excs Doporučené úložky na doma
 - pocitani-hodin
 - cekani-na-sestku
 - male-algoritmy
-  ]@
+]]]
 
-@exercises ## Nepovinné úložky na doma [
-
+[[[ excs Nepovinné úložky na doma
 - registrace
 - tezsi-algoritmy
 - algoritmy-fajnsmekri
-  ]@
+]]]

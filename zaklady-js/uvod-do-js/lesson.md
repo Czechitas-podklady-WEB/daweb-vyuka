@@ -156,18 +156,16 @@ Chytrým použitím zaokrouhlování a trochou matematiky můžeme pomocí `Math
 5
 ```
 
-@exercises ## Cvičení - výrazy a funkce [
-
+[[[ excs Cvičení: Výrazy a funkce
 - vyplata
 - delka-filmu
 - email
-  ]@
+]]]
 
-@exercises bonuses [
-
+[[[ excs Cvičení: Bonusy
 - uroky
 - novy-koberec
-  ]@
+]]]
 
 ## První program
 
@@ -309,19 +307,17 @@ Už od úplných začátků s programováním je dobré učit se dobrým návyk�
 1. Vždy proměnnou pojmenujte tak, aby její název jasně napovídal, co se uvnitř ní nachází. Například proměnná <var>pocet_hodin</var> jasně říká, že v ní bude uložen asi nějaký počet hodin. Můžeme podlehnout touze název proměnné zkrátit například na <var>pcthdn</var>, aby se nám lépe psala. Až ovšem někdo další bude takový program číst, bude mlátit hlavou do stolu, cože proboha znamená zkratka <var>pcthdn</var>.
 1. Naposledy je dobré si uvědomit, že programy i programátoři se téměř vždy pohybují v mezinárodním prostředí. Takže je vždycky lepší pojmenovávat proměnné anglicky. V tomto kurzu ještě tohle pravidlo trošku rozvolníme, ale i tak si můžete začít zvykat na proměnné s názvem <var>number_of_hours</var>.
 
-@exercises ## Cvičení - programy, proměnné [
-
+[[[ excs Cvičení: Programy, proměnné
 - nahodna-cisla
 - prevod-meny
 - ultramaraton
-  ]@
+]]]
 
-@exercises ## Doporučené úložky na doma [
-
+[[[ excs Doporučené úložky na doma
 - prijem-divadla  
 - schopnejsi-zaokrouhlovani
 - hazeni-kostkou
-  ]@
+]]]
 
 ## Doporučené čtení na doma
 
@@ -351,9 +347,9 @@ V JavaScriptu se ukrývá mnoho různých pastí, ve kterých je možné snadno 
 
 JavaScript runtime si zde neuvědomí, že jsme udělali překlep a vytvoří novou proměnnou <var>nzda</var> s hodnotou 350. Původní proměnná tedy zůstane nezměněná a už máme zaděláno na problém. Naštěstí se tento zdroj chyb dá odstranit tím, že JavaScript runtimu zakážeme vytvářet proměnné bez uvedení `let`, `const` nebo `var`. Jak se toto zařídí si ukážeme v následující lekci.
 
-@exercises ## Volitelné úložky na doma [
+[[[ excs Volitelné úložky na doma
 - schopnejsi-zaokrouhlovani-2
-  ]@
+]]]
 
 ## Shrnutí
 

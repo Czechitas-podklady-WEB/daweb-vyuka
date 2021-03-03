@@ -97,12 +97,11 @@ if (name === undefined) {
 
 Hodnota `undefined` nám v budoucní způsobí ještě hodně nepříjemností, je tedy dobré se již teď obrnit trpělivostí.
 
-@exercises ## Procvičování funkcí [
-
+[[[ excs Cvičení: Procvičování funkcí
 - pozdravy
 - e-mail
 - prevod-meny
-  ]@
+]]]
 
 ## Obor platnosti proměnných
 
@@ -245,10 +244,9 @@ Vytváříme zde funkci `checkAge`, která má dva parametry `age` a `message`. 
 
 Je dobré připomenout, že program výše je napsán obzvlášť zlovolně je zde především ze vzdělávacích důvdodů. Pokud takový kód někady napíšete v praxi, dostanete od vašich kolegů nejspíš pořádně za uši. Nikdo nechce číst kód, nad kterým musí zbytečně hodinu přemýšlet.
 
-@exercises ## Cvičení - porozumění kódu [
-
+[[[ excs Cvičení: Porozumění kódu
 - porozumeni-kodu
-  ]@
+]]]
 
 <!-- ## Uzávěry
 
@@ -277,12 +275,11 @@ JavaScript runtime však tuto prekérní situaci vyřeší za nás. Ve chvíli, 
 
 Uzávěr takto zkraje možná zní jako velmi technická záležitost. V JavaScriptu ale budeme uzávěry používat na každém kroku. Je tedy dobré vědět, co se v takovém případě děje. Občas také můžeme narazit na velmi prekérní problémy způsobené nesprávným použitím uzávěru. Takovéto perly si ukážeme, až budeme probírat cykly. -->
 
-@exercises ## Doporučené úložky na doma [
-
+[[[ excs Doporučené úložky na doma
 - vyplata
 - kalkulacka
 - cennik
-  ]@
+]]]
 
 ## Povinné čtení na doma - interpolace řetězců
 
@@ -348,8 +345,7 @@ const may = `
 
 Zde už apostrof i nový řádek můžeme napsat rovnou bez escape sekvencí.
 
-@exercises ## Volitelné úložky na doma [
-
+[[[ excs Volitelné úložky na doma
 - vyplnorez
 - prestupny-rok-funkce
-  ]@
+]]]

@@ -107,17 +107,15 @@ const colorHeading = (colorName) => {
 
 ### Funkce bez návratové hodnoty
 
-@exercises ## Cvičení - Vlastní funkce [
-
+[[[ excs Cvičení: Vlastní funkce
 - obsah-elipsy
 - maximum-ze-dvou
 - ramecek
-  ]@
+]]]
 
-@exercises ## Doporučené úložky na doma [
-
+[[[ excs Doporučené úložky na doma
 - python-round
-  ]@
+]]]
 
 ## Dobrovolné čtení na doma - alternativní zápis funkcí
 

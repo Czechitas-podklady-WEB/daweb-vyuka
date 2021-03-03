@@ -210,12 +210,11 @@ const content = `
 document.write(content);
 ```
 
-@exercises ## Cvičení - práce s řetězci [
-
+[[[ excs Cvičení: Práce s řetězci
 - vlastnosti-metody
 - email
 - dorucovani
-  ]@
+]]]
 
 ## Pravdivostní hodnoty
 
@@ -389,17 +388,15 @@ if (age >= 18) {
 
 Takto můžeme vytvářet relativně komplikované rozhodování. Se zanořováním podmínek je ale dobré to příliš nepřehánět. Málokdo se dokáže snadno zorientovat v temných hlubínách pětkrát zanořené podmínky. Později se naučíme strategie, jak se takovým hlubokým zanořením vyhnout.
 
-@exercises ## Cvičení - podmínky [
-
+[[[ excs Cvičení: Podmínky
 - registrace-na-ockovani
 - cena-vstupenky
-  ]@
+]]]
 
-@exercises ## Doporučené úložky na doma [
-
+[[[ excs Doporučené úložky na doma
 - slevy
 - superhruba
-  ]@
+]]]
 
 ## Povinné čtení na doma - logické operátory
 
@@ -473,13 +470,12 @@ if (!(age >= 18 && age < 65)) {
 
 Takovýto výraz už je však trochu hůře k přečtení. Logické operátory jsou užiteční pomocníci, v praxi je však dobré s nimi šetřit. Pokud výraz ve vaší podmínce obsahuje více než jeden logický operátor, váš kód se stává těžko čitelným a pochopitelným. Držte se proto při používání logickách operátor pri zemi. Vaši budoucí kolegová vás za to budou mít rádi.
 
-@exercises ## Volitelné úložky na doma [
-
+[[[ excs Volitelné úložky na doma
 - ruleta
 - prestupny-rok
 - prestupny-rok-2
 - prestupny-rok-3
-  ]@
+]]]
 
 ## Shrnutí
 

@@ -121,11 +121,10 @@ Fakt, že JavaScript pro nás některé konverze dělá automaticky, můžeme vy
 document.write('Běžec dorazí v ' + konec + 'h');
 ```
 
-@exercises ## Cvičení - vstup a výstup [
-
+[[[ excs Cvičení: Vstup a výstup
 - ockovani
 - vyplata-stranka
-  ]@
+]]]
 
 ## Objekty
 
@@ -252,19 +251,17 @@ const { fullName, login, cartItems } = user1;
 
 Tímto zápisem říkáme, že chceme vyrobit tři proměnné, do kterých se uloží hodnoty z objektu `user1`. 
 
-@exercises ## Cvičení - objekty [
-
+[[[ excs Cvičení: Objekty
 - realitka
 - knihovna
 - ockovani-objekty
-  ]@
+]]]
 
-@exercises ## Doporučené úložky na doma [
-
+[[[ excs Doporučené úložky na doma
 - formatovac-data
 - fahrnheit-vs-celsius
 - letenka
-  ]@
+]]]
 
 ## Shrnutí
 

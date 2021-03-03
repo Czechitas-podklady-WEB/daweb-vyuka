@@ -168,11 +168,10 @@ Ze začátku se vám možná z takovýchto triků malinko točí hlava. Pojďme 
 
 Funkcím, které berou jiné funkce jako vstup nebo vracejí funkce jako svůj výstup, se v teorii programování říká <term cs="funkce vyšších řádů" en="higher order functions">. Je to velmi důležitý koncept, který má spoustu využítí a budeme jej používat v mnoha různých situacích.
 
-@exercises ## Cvičení - funkce vyššího řádu [
-
+[[[ excs Cvičení: Funkce vyššího řádu
 - hesla
 - e-mail-2
-  ]@
+]]]
 
 ### Zpoždění a časovače
 
@@ -319,12 +318,11 @@ document.addEventListener('scroll', handleScroll);
 
 Událostí, na které můžete na stránce reagovat je nepřeberné množství. Seznam všech událostí si můžete pro inspiraci prohlédnout [na stránkách MDN](https://developer.mozilla.org/en-US/docs/Web/Events).
 
-@exercises ## Cvičení - Události [
-
+[[[ excs Cvičení: Události
 - objednavka
 - kontrola-dostupnosti
 - zarovka
-  ]@
+]]]
 
 ## Povinné čtení na doma
 
@@ -351,9 +349,8 @@ setTimeout(() => clearTimeout(timerId), 2000);
 
 Tento kód zařídí, že první časovač vůbec neproběhne. Jeho čas je nastaven na 5 vteřin. Už za dvě vteřiny se však spustí druhý časovač, který jej nekompromisně vypne ten první dřív, než stačí cokoli udělat.
 
-@exercises ## Doporučené úložky na doma [
-
+[[[ excs Doporučené úložky na doma
 - catering
 - kostka
 - minutka
-  ]@
+]]]
