@@ -59,7 +59,7 @@ Aby se nám s VS Code pracovalo dobře a zároveň nám všem fungovalo stejně,
 
 <youtube video="8rv6gK5FN1k">
 
-## NPM a Node.js
+## Node.js a NPM
 
 Nyní je potřeba nainstalovat Node.js a balíčkovací systém NPM. Díky nim budeme moct vytvářet moderní stránky v JavaScriptu. Opět následujte instrukce na oficiální stránce https://nodejs.org nebo si pusťte následující video.
 
