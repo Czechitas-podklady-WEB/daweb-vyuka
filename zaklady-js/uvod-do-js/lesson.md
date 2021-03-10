@@ -1,12 +1,14 @@
-Milí účastníci webové akademie, v této části kurzu se postupně začneme učit programovat v jazyce JavaScript. Jak už jste poznali z předchozích lekcí, jazyky HTML a CSS dávají webovým stránkám strukturu a vzhled. Většina stránek a aplikací však také nabízí nějaké chování a interaktivitu, kterou zajišťuje právě program napsaný v JavaScritpu.
+Milí účastníci webové akademie, v této části kurzu se postupně začneme učit programovat v jazyce JavaScript. Jak už jste poznali z předchozích lekcí, jazyky HTML a CSS dávají webovým stránkám strukturu a vzhled. Většina moderních stránek a aplikací však potřebuje také nějaké chování a interaktivitu. Tu zajišťuje právě v JavaScriptu napsaný program.
 
-Svět programování může ve srovnání s HTML a CSS ze začátku působit velmi tajemně, plný zlých nástrah a neproniknutelných složitostí. Nutnost zapojovat možná trochu zaprášená zákoutí vašeho mozku může ze začátku být velká výzva. Proto společně vykročíme zvolna a krůček po krůčku. Budeme věnovat péči každému jednotlivému tématu tak, abyste do něj dokázali skutečně proniknout a nepřipadali si jako na jiné planetě. Vězte, že po chvíli se možná trochu zrezivělá mozkové kolečka začnou točit lehčeji a programování vám bude přinášet velkou radost z tvoření.
+Svět programování může ve srovnání s HTML a CSS ze začátku působit velmi tajemně, plný zlých nástrah a neproniknutelných složitostí. Nutnost zapojovat možná trochu zaprášená zákoutí vašeho mozku může ze začátku být velká výzva. Proto společně vykročíme zvolna a krůček po krůčku. Budeme věnovat náležitou péči každému jednotlivému tématu tak, abyste do něj dokázali skutečně proniknout a nepřipadali si jako na jiné planetě. Vězte, že po chvíli se možná trochu zrezivělá mozkové kolečka začnou točit lehčeji a programování vám bude přinášet velkou radost z tvoření.
 
 ## JavaScript
 
-Jazyk JavaScript je jedním z nejdůležitějších programovacích jazyků v prostředí webu. V tomto kurzu se tedy budeme zaměřovat pouze na něj. Do začátku počítáme s tím, že jste už nějaký programovací jazyk viděli alespoň z jedoucího vlaku. I tak však budeme při představování JavaScriptu postupovat od úplných základů.
+Jazyk JavaScript je jedním z nejdůležitějších programovacích jazyků nejen v prostředí webu ale i v IT obecně. V tomto kurzu se tedy budeme zaměřovat pouze na něj. Do začátku počítáme s tím, že jste už nějaký programovací jazyk viděli alespoň z jedoucího vlaku. I tak však budeme při představování JavaScriptu postupovat od úplných základů.
 
-Než se naplno pustíme do JavaScriptu, je dobré si pořádně ujasnit terminologii. JavaScript je programovací jazyk, tedy sada nějakých gramatických pravidel jak sestavovat textové příkazy pro počítač. Pokud chceme, aby náš stroj tyto příkazy vykonal, protřebujeme takzvaný _JavaScript runtime_. To je program, který čte JavaScriptové příkazy a jeden za druhým je provádí. Pokud bychom použili divadelní analogii, můžeme si představit, že JavaScriptový program je scénář nějakého představení, a JavaScript runtime je herec, který představení podle tohoto scénáře zahraje.
+Než se naplno pustíme do JavaScriptu, je dobré si pořádně ujasnit terminologii. JavaScript je programovací jazyk, tedy sada nějakých pravidel jak sestavovat textové příkazy pro počítač. Pokud chceme, aby náš počítač tyto příkazy vykonal, protřebujeme takzvaný _JavaScript runtime_. To je program, který čte JavaScriptové příkazy, a jeden za druhým je provádí. Pokud bychom použili divadelní analogii, můžeme si představit, že JavaScriptový program je scénář nějakého představení, a JavaScript runtime je herec, který představení podle tohoto scénáře zahraje.
+
+![JavaScript runtime](assets/runtime.jpg)
 
 Velkou výhodu máme do zacátku v tom, že každý webový prohlížeč v sobě obsahuje JavaScript runtime. Naše první JavaScriptové příkazy tak můžeme psát rovnou v prohlížeči. Stačí otevřít takzvané _Developer Tools_.
 
@@ -29,7 +31,7 @@ Každý počítač je ve svojí nejniternější podstatě jen hrozně rychlá k
 2.4
 ```
 
-Vždy, když v konzoli napíšete příkaz a stisknete klávesu [[Enter]], pošlete tím JavaScriptovému runtimu uvnitř prohlížeřč příkaz. Runtime tento příkaz vykoná a ihned vám odpoví výsledek. Zatím jsme sice nic závratného nespočítali, použili jsme však základní JavaScriptové hodnoty a operátory. Hodnoty jsou v našem případě čísla. Později uvidíme další druhy hodnot, které na kalkulačce nepotkáte.
+Vždy, když v konzoli napíšete příkaz a stisknete klávesu [[Enter]], pošlete tím JavaScriptovému runtimu uvnitř prohlížeče příkaz. Runtime tento příkaz vykoná a ihned vám odpoví výsledek. Zatím jsme sice nic závratného nespočítali, použili jsme však základní JavaScriptové hodnoty a operátory. Hodnoty jsou v našem případě čísla. Později uvidíme další druhy hodnot, které na kalkulačce nepotkáte.
 
 :::warn
 Pozor na to, že ve všech programovacích jazycích (s výjimkou MS Excel) se destinná čísla píší s tečkou, nikoliv s čárkou.
@@ -46,7 +48,7 @@ Kromě výše zmíněných nabízí JavaScript dva další zajímavé operátory
 2
 ```
 
-Mocnění si nejspíš pamatujete ještě ze základní školy. Zbytek po dělení však může být překvapení obzvlášť proto, že se zapisuje symbolem procenta. Výsledek této operace je zbytek po celočíselném dělení. Tento operátor se hodí v různých situacích. Můžeme pomocí něj například zjistit, zda je číslo sudé, tedy zbytek po dělení dvěma je roven nule.
+Mocnění si nejspíš pamatujete ještě ze základní školy. Zbytek po dělení však může být překvapení obzvlášť proto, že se zapisuje symbolem procenta. Výsledek této operace je zbytek po celočíselném dělení. Můžeme pomocí něj například zjistit, zda je číslo sudé, tedy zbytek po dělení dvěma je roven nule. Později uvidíme užitečnější a také zajímavější použití této operace.
 
 Z operátorů a hodnot můžete samozřejmě stavět mnohem složitější konstrukce třeba i s použitím závorek.
 
@@ -70,6 +72,8 @@ Pokud chceme v JavaScriptu pracovat s textem, použijeme hodnotu, které se ří
 "I'am awesome"
 > 'Řekl: "ahoj"'
 "Řekl: "ahoj""
+> '<h1 class="title">Digitální akademie Web</h1>'
+"<h1 class="title">Digitální akademie Web</h1>"
 ```
 
 Textové řetězce vždy uzavíráme do uvozovek. V JavaScriptu můžete používat jak apostrofy (jednoduché uvozovky), tak dvojité uvozovky. Z hlediska funkčnosti programu na druhu použitých uvozovek nezáleží. Můžete si tak pomaličku začít budovat svůj programátorský styl a používat ty uvozovky, které se vám líbí. Občas se dvojité uvozovky hodí pokud chceme mít uvnitř řetězce například apostrof. Pro tento případ si však později ukážeme obecnější techniku.
@@ -78,22 +82,24 @@ Textové řetězce jdou sčítat podobně jako čísla, můžete tedy psát nap�
 
 ```jscon
 > 'Digitální akademie' + ' Web'
-'Digitální akademie Web'
+"Digitální akademie Web"
 > 'Digitální akademie' + ' ' + 'Web'
-'Digitální akademie Web'
+"Digitální akademie Web"
 > 'Digitální akademie' + ''
-'Digitální akademie'
+"Digitální akademie"
+> '<h1>' + 'Digitální akademie Web' + '</h1>'
+"<h1>Digitální akademie Web</h1>"
 ```
 
 Všimněte si v druhém příkladu řetězce, který obsahuje pouze mezeru. V třetím případě dokonce vidíme řetězec, který neobsahuje vůbec nic. To je takzvaný <term cs="prázdný řetězec" en="empty string">. Chová se podobně jako nula při sčítání čísel a bude se nám pozdějí hodit.
 
 ## Funkce
 
-Pouze s proměnnými, hodnotami a operátory bychom se v programování daleko nedostali. Často budeme potřeboval vykonat nějakou složitější operaci než jen matematický výpočet. Pokud nějakou takovou složitější operaci programátoři potřebují často, šance je, že pro ni existuje <term cs="funkce" en="function">.
+Pouze s hodnotami a operátory bychom se v programování daleko nedostali. Často budeme potřeboval vykonat složitější operaci než jen matematický výpočet. Pokud nějakou takovou složitější operaci programátoři používají často, šance je, že pro ni existuje <term cs="funkce" en="function">.
 
 Funkce je kousek programu řešící nějakou konkrétní úlohu. Většinou jde o úlohu, kterou řešime často a opakovaně. Příkladem může být například zaokrouhlování desetinných čísel na celá čísla. To je operace, která se hodí skoro ve všech výpočtech, a bylo by zbyteční ji programovat neustále znova. V JavaScriptu proto máme k dispozici funkci jménem `Math.round`.
 
-Pokud chceme nějakou funkci použít, uděláme to tak, že napíšeme její jméno a do kulatých závorek vložíme hodnotu, se kterou má funkce pracovat. Takto například použíjeme naši funci `Math.round`.
+Pokud chceme nějakou funkci použít, uděláme to tak, že napíšeme její jméno a do kulatých závorek vložíme hodnotu, se kterou má funkce pracovat. Takto například použijeme naši funci `Math.round`.
 
 ```jscon
 > Math.round(3.14)
@@ -104,7 +110,7 @@ Hodnotě uvnitř kulatých závorek říkáme <term cs="vstup" en="input"> funkc
 
 ### Rychlé občerstvení
 
-Funkce jsou rozsáhlé téma, které nás bude provázet až do konce kurzu. Již brzy se naučíme psát funkce vlastní. Pro lepší představu o tom, jak funce fungují, se nám bude hodit následující analogie. 
+Funkce jsou rozsáhlé téma, které nás bude provázet až do konce kurzu. Již brzy se také naučíme psát funkce vlastní. Pro lepší představu o tom, jak funce fungují, se nám bude hodit následující analogie. 
 
 Můžeme si představovat, že funkce je něco jako stánek s rychlým občerstvením. Takový stánek má dvě okýnka. Jedno vstupní, do kterého zadáte svoji objednávku, a druhé výstupní, kde po chvíli obdržíte svůj hamburger nebo smažák v housce. Objednávání rychlé svačiny je pak podobné jako volání funkce. Do stánku vložíte nějaké vstupy a ven vám vypadne výstup. Pokud nejste vysloveně zvědaví nebo paranoidní, dění uvnitř stánku vás až tolik nezajímá, podobně jako vás až tolik nezajímá, jak vlastně JavaScript technicky provádní zaokrouhlování. Důležité je, že funkce funguje, a že párek v rohlíku nakonec chutná tak, jak jste zvyklí. 
 
@@ -121,7 +127,7 @@ Volání funkce je také výraz podobně jako operace s hodnotami a proměnnými
 
 ### Užitečné funkce
 
-JavaScript obsahuje spousty a spousty funkcí, díky kterým lze provádět mnoho užitěčných a zajímavých věcí. Během celého kurzu je budeme společně objevovat. Takto z kraje si ukážeme jen ty nejzákladnější.
+JavaScript obsahuje spousty a spousty funkcí, díky kterým lze provádět mnoho užitěčných a zajímavých věcí. Během celého kurzu je budeme společně objevovat. Takto zkraje si ukážeme jen ty nejzákladnější.
 
 Pokud bychom místo klasického zaokrouhlování chtěli zaokrouhlovat vždy dolů nebo vždy nahoru, můžeme použít funkce `Math.floor` a `Math.ceil`.
 
@@ -132,7 +138,7 @@ Pokud bychom místo klasického zaokrouhlování chtěli zaokrouhlovat vždy dol
 4
 ```
 
-Funkce, se kterou si lze užít více zábavy je `Math.random`. Ta při každém zavolání vrátí náhodné desetinné číslo mezi 0 a 1.
+Jednou z funkcí, se kterými si užijeme více zábavy, je `Math.random`. Ta při každém zavolání vrátí náhodné desetinné číslo mezi 0 a 1.
 
 ```jscon
 > Math.random()
@@ -155,6 +161,8 @@ Chytrým použitím zaokrouhlování a trochou matematiky můžeme pomocí `Math
 > Math.floor(Math.random() * 10)
 5
 ```
+
+To se nám může hodit pokud programujeme nějakou hru nebo třeba chceme-li vygenerovat náhodná testovací data.
 
 [[[ excs Cvičení: Výrazy a funkce
 - vyplata
@@ -208,7 +216,7 @@ Pokud nyní soubor `index.html` otevřete v prohlížeči, měli byste v konzoli
 
 ### console.log vs document.write
 
-Funkce `console.log` vypisuje obsah do konzole. To se hodí nám programátorům, abychom si mohli vypsat informace o tom, co se v našem programu děje. Pokud chceme nějakou zprávu zobrazit uživateli na stránce, můžeme použít funkci `document.write`. 
+Funkce `console.log` vypisuje obsah do konzole. To se hodí nám programátorům, abychom si mohli vypsat informace o tom, co se v našem programu děje. Uživateli však chceme informace zobrazovat přímo na stránce. Než se naučíme lepší postupy, můžeme k tomu využít funkci `document.write`. 
 
 ```js
 'use strict';

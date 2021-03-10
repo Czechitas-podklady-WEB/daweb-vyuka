@@ -4,7 +4,7 @@ brief: Naučíte se základy programování v jazyce JavaScript, který vám umo
 lessons:
   - title: Úvod do JavaScriptu
     link: uvod-do-js
-    brief: Nahlédneme pod pokličku toho, jak programátoři přemýšlejí, a vyzkoušíme si první příkazy v jazyce JavaScript.
+    brief: Seznámíme se s jazykem JavaScript a ukážeme si jak se v JavaScriptu píší jednoduché programy.
   - title: Vstup a výstup, objekty
     link: vstup-vystup-objekty
     brief: Naučíme naše programy komunikovat s uživatelem a pracovat se složitějšími daty.
