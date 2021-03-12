@@ -1,4 +1,4 @@
-V této části si ukážeme, jakým způsobem budeme jako programátoři s počítačem komunikovat. Zatím jste nejspíše zvyklí ovládat svůj počítač pomocí různých okýnek, ikonek, grafických čudlíků apod. Takový způsob je ovšem pro programátory mnohdy zbytečně omezující a zdlouhavý. Často je mnohem jednodušíí s počítačem komunikovat textově pomocí takzvaného _terminálu_.
+V této části si ukážeme, jakým způsobem budeme jako programátoři s počítačem komunikovat. Zatím jste nejspíše zvyklí ovládat svůj počítač pomocí různých okýnek, ikonek, grafických čudlíků apod. Takový způsob je ovšem pro programátory mnohdy zbytečně omezující a zdlouhavý. Často je mnohem jednodušší s počítačem komunikovat textově pomocí takzvaného _terminálu_.
 
 Počítačový terminál je zařízení, které má počátky ve 40. a 50. letech. Tehdy vypadal jako elektrický psací stroj a používal se k posílání textových příkazů do počítače, který byl v těchto dobách velký jako kuchyňská linka. Později terminály získaly obrazovky, podobně jako ten na obrázku z roku 1978, takže už se výsledky počítače nemusely tisknout přímo na papír.
 
