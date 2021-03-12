@@ -1,8 +1,8 @@
-V předchozích lekcích jsme se naučili psát JavaScriptové programy, které už zvládnou hodně věcí a dokážeme napsat i něco skutečně užitečného. Co nám ale zatím chybí je hezká interakce s uživatelem. Budeme chtít, abychom pomocí JavaScriptu dokázali měnit obsah stránky a tak umožnit uživateli opravdu interaktivní zážitek namísto pouhého vypisování textu na obrazovku.
+V předchozích lekcích jsme se naučili psát JavaScriptové programy, které už dokáží dělat něco skutečně užitečného. Co nám však zatím chybí je opravdová interakce s uživatelem. Místo zobrazování vyskakovacích oken budeme chtít pomocí JavaScriptu měnit přímo obsah stránky. 
 
 ## Document Object Model
 
-K interakci se stránkou pomocí JavaScriptu nám slouží takzvaný DOM, neboli _Document Object Model_. Ten představuje interní reprezentaci webové stránky v paměti prohlížeče. Pojďme si vysvětlit, co to znamená.
+K práci s obsahem stránky pomocí JavaScriptu se potřebujeme naučit používat takzvaný DOM, nebo-li _Document Object Model_. 
 
 Ve chvíli, kdy uživatel zadá do prohlížeče URL adresu, webový prohlížeč pošle po internetu požadavek na server sídlící na této adrese. Server pošle prohlížeči zpátky HTML požadované stránky. Takové HTML může vypadat například takto.
 
@@ -31,7 +31,7 @@ Prohlížeč si HTML přečte a vytvoří si z něj v paměti stromovou struktur
 
 ![HTML a DOM](assets/dom.svg)
 
-Jakmile má prohlížeč DOM zkonstruovaný, může úplně zapomenout na HTML a stránku zobrazí podle toho, co je obsaženo v DOMu.
+Jakmile má prohlížeč DOM zkonstruovaný, může úplně zahodit a zapomenout celé HTML. Stránku zobrazí podle toho, co je obsaženo v DOMu.
 
 ![DOM Stránka](assets/dom-page.svg)
 
@@ -118,7 +118,7 @@ U vlastnosti `className` je dobré si dát pozor na to, že se vždy mění cel�
 <button class="btn">Click me</button>
 ```
 
-Pokud chci tlačítko vzýraznit a přidat mu další třídu například takto
+Pokud chci tlačítko zvýraznit a přidat mu další třídu například takto
 
 ```html
 <button class="btn btn-primary">Click me</button>
@@ -201,7 +201,7 @@ Pak se ke druhé kartě snadno dostaneme takto.
 const cardElm = document.querySelector('#card2');
 ```
 
-Používání `id` je vůbec ten nejvychovanější způsob, jak ze stránky něco vybírat, protože je ihned vidět, který prvek máme na mysli a nemusíme řešit žádné CSS hádanky. Dokonce je to tak vychovaný a běžný způsob, že JavaScript poskytuje speciální funkci `document.getElementById`, která vybírá na základě `id`. Kód výše by šel tedy napsat i takto.
+Používání `id` je vůbec ten nejvychovanější způsob, jak ze stránky něco vybírat, protože je ihned vidět, který prvek máme na mysli, a nemusíme řešit žádné CSS hádanky. Dokonce je to tak vychovaný a běžný způsob, že JavaScript poskytuje speciální funkci `document.getElementById`, která vybírá na základě `id`. Kód výše by šel tedy napsat i takto.
 
 ```js
 const cardElm = document.getElementById('card2');
