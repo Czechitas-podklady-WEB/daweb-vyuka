@@ -1,8 +1,8 @@
-Do této chvile jsme se naučili psát jednoduché JavaScriptové programy a komunikovat s uživatelem. Naše programy ovšem byly velmi jednoduché a moc toho neuměly. V této lekci se naučíme mnoho užitéčných technik pro práci s řetězci a naučíme se pomocí podmínek větvit běh programu tak, aby dokázal provádět rozhodnutí. 
+Předchozí lekce váš naučily psát krátké JavaScriptové prográmky, které umí komunikovat s uživatelem. S takto jednoduchými hříčkami ale dlouho nevystačíme. V této lekci do našeho arzenálu přidáme některé užitéčné techniky pro práci s řetězci a také se naučíme větvit běh programu pomocí podmínek.
 
 ## Vlastnosti a metody
 
-Z předchozí lekce už víme, jak vytvářet jednoduché objekty a jak do nich přidávat vlastnosti. Za velkou pozornost však stojí fakt, že mnoho hodnot v JavaScriptu jsou samy o sobě také objekty. Například každý řetězec je pod kličkou objekt a my můžeme přistupovat k jeho vlastnostem stejně, jako u objektů, které jsme vytvořili sami. 
+Z předchozí lekce už víme, jak vytvářet jednoduché objekty a jak do nich přidávat vlastnosti. Za velkou pozornost však stojí fakt, že většina hodnot v JavaScriptu jsou samy o sobě objekty. Například každý řetězec je pod pokličkou objekt a my můžeme přistupovat k jeho vlastnostem stejně, jako u objektů, které jsme vytvářeli sami. 
 
 U řetězců je situace v celku jednoduchá, protože mají pouze jednu vlastnost. Jmenuje se `length` a udává počet znaků v řetězci.
 
@@ -15,7 +15,7 @@ U řetězců je situace v celku jednoduchá, protože mají pouze jednu vlastnos
 0
 ```
 
-Uvnitř objektů však kromě vlastností najdeme i takzvané metody, což jsou funkce, které jsou uzavřené uvnitř objektu. V praxi se často stává, že některé funkce se hodí na práci pouze s jedním typem hodnoty. Například bychom mohli mít funkci `toUpperCase`, která by převedla všechna písmena v řetězci na velká písmena. Kdyby taková funkce existovala, mohli bychom ji
+Uvnitř objektů však kromě vlastností najdeme i takzvané <term cs="metody" en="methods">. Metoda je funkce, které jsou uzavřená uvnitř objektu a je s ním pevně spjata. V praxi se totiž často stává, že některé funkce se hodí na práci pouze s jedním typem hodnoty. Například bychom mohli mít funkci `toUpperCase`, která by převedla všechna písmena v řetězci na velká. Kdyby taková funkce existovala, mohli bychom ji
 volat třeba takto
 
 ```jscon
@@ -23,7 +23,7 @@ volat třeba takto
 'MARTIN'
 ```
 
-Je pochopitelné, že taková funkce funguje pouze pro řetězce. Pro ostatní
+Je pochopitelné, že tato funkce funguje pouze pro řetězce. Pro ostatní
 hodnoty nedává smysl. Těžko si představit, co by taková funkce měla vrátit
 například v takovémto případě.
 
@@ -38,7 +38,7 @@ Funkce, které pracují pouze na jednom typu objektu můžeme svázat přímo s 
 'MARTIN'
 ```
 
-Funkcím jako výše, které patří jen konkrétním typům hodnot, říkáme <term cs="metody" en="methods">. Všimněte si, že metoda `toUpperCase` v JavaScriptu skutečně existuje, takže výše uvedený kód bude opravdu fungovat. Podobně existuje například metoda
+Funkce `toUpperCase` je prvním příkladem jednoduché metody. Výhoda je, že tato metoda v JavaScriptu skutečně existuje, takže výše uvedený kód bude fungovat. Podobně existuje například metoda
 `toLowerCase`. Vyzkoušejte si ji!
 
 ## Užitečné metody na řetězcích
@@ -212,13 +212,13 @@ document.write(content);
 
 [[[ excs Cvičení: Práce s řetězci
 - vlastnosti-metody
-- email
+- emaily
 - dorucovani
 ]]]
 
 ## Pravdivostní hodnoty
 
-Ve zbývající části lekce se vrhneme na podmínky a umožníme naším programům se rozhodovat. Před tím si ale musíme trošku připravit půdu a ukázat si nový typ hodnoty. Zatím jsme viděli čísla a řetězce, nyní přichází takzvané <term cs="pravdivostní hodnoty" en="boolean values">. Čísel a řetězců je nekonečně mnoho, pravdivostní hodnoty jsou však jen dvě: `true` a `false`. Používají se k tomu, abychom vyjádřili, zda je něco pravda nebo není. Například:
+Ve zbývající části lekce se vrhneme na podmínky a umožníme naším programům dělat rozhodnutí. Před tím si ale musíme trošku připravit půdu a ukázat si nový typ hodnoty. Zatím jsme viděli čísla, řetězce a objekty. Nyní přichází takzvané <term cs="pravdivostní hodnoty" en="boolean values">. Čísel a řetězců je nekonečně mnoho, pravdivostní hodnoty jsou však jen dvě: `true` a `false`. Používají se k tomu, abychom vyjádřili, zda je něco pravda nebo není. Například:
 
 ```jscon
 > const pristupPovolen = false
@@ -394,6 +394,7 @@ Takto můžeme vytvářet relativně komplikované rozhodování. Se zanořován
 ]]]
 
 [[[ excs Doporučené úložky na doma
+- fit-email
 - slevy
 - superhruba
 ]]]
