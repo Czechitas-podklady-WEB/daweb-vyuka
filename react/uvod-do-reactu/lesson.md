@@ -185,7 +185,7 @@ const obsah = <{znacka} className={trida}>{nazev}</{znacka}>;
 
 S těmito znalostmi můžeme naši výslednou stránku sestavit třeba takto.
 
-````js
+```js
 const title = 'React Starter';
 const content = 'Moje první React stránka';
 const author = 'Martin Podloucký';
@@ -203,6 +203,7 @@ const appContent = (
 );
 
 render(appContent, document.getElementById('app'));
+```
 
 [[[ excs Cvičení: První React aplikace
 - prvni-kroky
