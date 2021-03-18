@@ -17,11 +17,11 @@ Různých knihoven se na internetu nachází tísíce a tísíce. Pokud během v
 
 ### Kontrola vstupu
 
-Jeden z velmi častých problémů, které při vývoji potkáme, je kontrola vstupu od uživatele. Téměř každá větší stránka umožňuje přihlašování, a tak často musíme vytvořit nějaký formulář, kam uživatel zadává svůj email. Jak ale poznáme, že uživatel do políčka pro email zadal opravdu email a ne nějaký nesmysl? 
+Jeden z velmi častých problémů, které při vývoji potkáme, je kontrola vstupu od uživatele. Téměř každá větší stránka umožňuje přihlašování, a tak často musíme vytvořit nějaký formulář, kam uživatel zadává svůj e-mail. Jak ale poznáme, že uživatel do políčka pro e-mail zadal opravdu e-mail a ne nějaký nesmysl? 
 
-Zkontrolovat správný formát emailu v žádném případě není jednoduchá úloha. Rozhodně nastačí zkontrolovat, že obsahuje zavináč. Na [wikipedii](https://en.wikipedia.org/wiki/Email_address#Examples) si můžete pro zajímavost přečíst, co všechno se považuje za validní email a co naopak ne. 
+Zkontrolovat správný formát e-mailu v žádném případě není jednoduchá úloha. Rozhodně nastačí zkontrolovat, že obsahuje zavináč. Na [wikipedii](https://en.wikipedia.org/wiki/Email_address#Examples) si můžete pro zajímavost přečíst, co všechno se považuje za validní e-mail a co naopak ne. 
 
-Zároveň ověřování emailu je tak častý programátorský úkon, že na to jistě musí existovat knihovna. My použíjeme knihovnu, která se jmenuje [validator.js](https://github.com/validatorjs/validator.js).
+Zároveň ověřování e-mailu je tak častý programátorský úkon, že na to jistě musí existovat knihovna. My použíjeme knihovnu, která se jmenuje [validator.js](https://github.com/validatorjs/validator.js).
 
 ```html
 <head>
@@ -32,7 +32,7 @@ Zároveň ověřování emailu je tak častý programátorský úkon, že na to 
 </head>
 ```
 
-Knihovnu do naší stránky přidáme tak, že její adresu vložíme do hlavičky stránky pomocí tagu `script`. Každá knihovna má svoje pravidla fungování, která vyčteme z dokumentace. Knihovna `validator.js` nám ve stránce vytvoří objekt `validator`, který má mnoho užitečných metod, mezi nimi i metodu `isEmail`, která umí ověřit, zda je zadaný řetězec platný email. Tuto metodu můžeme použít ve svém JavaScriptovém programu nebo si ji vyzkoušet rovnou v konzoli, když naši stránku otevřeme v prohlížeči. 
+Knihovnu do naší stránky přidáme tak, že její adresu vložíme do hlavičky stránky pomocí tagu `script`. Každá knihovna má svoje pravidla fungování, která vyčteme z dokumentace. Knihovna `validator.js` nám ve stránce vytvoří objekt `validator`, který má mnoho užitečných metod, mezi nimi i metodu `isEmail`, která umí ověřit, zda je zadaný řetězec platný e-mail. Tuto metodu můžeme použít ve svém JavaScriptovém programu nebo si ji vyzkoušet rovnou v konzoli, když naši stránku otevřeme v prohlížeči. 
 
 ```jscon
 > validator.isEmail('pepa.novak@seznam.cz')
