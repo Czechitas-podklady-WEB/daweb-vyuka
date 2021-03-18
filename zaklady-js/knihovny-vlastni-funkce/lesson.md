@@ -13,7 +13,7 @@ Knihovna je v podstatě jakýsi balíček funkcí, které se týkají nějaké k
 - psaní her
 - a stovky dalších možností. 
 
-Různých knihoven se na internetu nachází tísíce a tísíce. Pokud během vývoje narazíte na nějaký problém, který potřebujete ve svém program vyřešit, je obrovská šance, že tentýž problém už někdo řešil před vámi a vyrobil na jeho řešení knihonvnu. Často tedy stačí šikovně pogooglovat, najít tu správnou knihovnu a máte vystaráno. 
+Různých knihoven se na internetu nachází tísíce a tísíce. Pokud během vývoje narazíte na nějaký problém, který potřebujete ve svém program vyřešit, je obrovská šance, že tentýž problém už někdo řešil před vámi a vyrobil na jeho řešení knihovnu. Často tedy stačí šikovně pogooglovat, najít tu správnou knihovnu a máte vystaráno. 
 
 ### Kontrola vstupu
 
