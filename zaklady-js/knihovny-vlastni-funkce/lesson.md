@@ -106,7 +106,7 @@ Můžeme také zcela konkrétní datum vyrobit, například
 const stedryDen = dayjs('2021-12-24')
 ```
 
-Pomocí metody `isAfter` pak můžeme vyzkoušet, jestli už jsme propásli štědrý den 2021 nebo nás teprve čeká. 
+Pomocí metody `isAfter` pak můžeme vyzkoušet, jestli už jsme propásli Štědrý den 2021 nebo nás teprve čeká. 
 
 ```js
 const stedryDen = dayjs('2021-12-24')
