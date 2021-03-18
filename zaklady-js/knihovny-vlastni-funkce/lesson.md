@@ -47,7 +47,6 @@ false
 
 Knihovna `validator.js` má desítky ověřovacích funkcí pro mnoho různých situací. Mezi nimi například funkci pro ověřování mobilních čísel pro různé země. 
 
-
 ```jscon
 > validator.isMobilePhone('723 313 256', 'cs-CZ')
 true
@@ -71,7 +70,7 @@ Práce datem a časem je velmi častým úkolem v mnoha různých aplikacích. Z
 - fakt, že každý měsíc má jiný počet dní,
 - přestupné roky,
 - časové zóny,
-- letním a zimním časem v různých zemích,
+- letní a zimní čas v různých zemích,
 - různé kalendáři v různých zemích,
 - různé formáty zápisu data a času v různých zemích,
 - a tak dále. 
@@ -88,7 +87,7 @@ Knihovna `dayjs` toho umí opravdu hodně, například
 - manipulace jako přidat den, ubrat dva týdny apod.,
 - porovnávat, které datum je dřív nebo později,
 
-My si zde vyzkoušíme pouze pár dákladních věci. Aktuální datum a čas získáme zavoláním funkce `dayjs`.
+My si zde vyzkoušíme pouze pár základních věci. Aktuální datum a čas získáme zavoláním funkce `dayjs`.
 
 ```js
 const now = dayjs();
@@ -211,7 +210,6 @@ Této strategii se říká <term cs="časný návrat" en="early return"> a zkuš
 - obsah-elipsy
 - maximum-ze-dvou
 - rodne-cislo
-- ramecek
 ]]]
 
 ## Dobrovolné čtení na doma - alternativní zápis funkcí
