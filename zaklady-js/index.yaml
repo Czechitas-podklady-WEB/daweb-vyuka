@@ -14,9 +14,9 @@ lessons:
   - title: Document Object Model
     link: dom
     brief: Přidáme do našich programů možnost manipulovat pomocí JavaScriptu s obsahem stránky
-  - title: Vlastní funkce
-    link: vlastni-funkce
-    brief: Naučíme se v JavaScriptu vytvářet a volat vlastní funkce.
+  - title: Knihovny a vlastní funkce
+    link: knihovny-vlastni-funkce
+    brief: Ukážeme si jak v JavaScriptu používat knihovny a naučíme se vytvářet vlastní funkce.
   - title: Funkce a obory platnosti
     link: funkce-obory
     brief: Procvičíme si psaní vlastních funkcí a ukážeme si jak pracovat s obory platnosti proměnných.

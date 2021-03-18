@@ -2,27 +2,22 @@ Do této chvíli jsme ohledně jazyka JavaScript učili mnoho a mnoho nových v�
 
 ## Hodnoty null a undefined
 
-Občas se nám stane, že si potřebujeme nějakou proměnnou připravit, ale zatím ještě nevíme, jaká v ní má být hodnota. Chceme tedy, aby na začátku byla prázdná. To můžeme zařídit pomocí speciální hodnoty `null`. Toto je v postatě nový typ hodnoty vedle čísel, řetězců, funkcí apod. Můžeme si představit, že hodnota `null` znamená <i>nic</i>.
+Občas se nám stane, že si potřebujeme nějakou proměnnou připravit, ale zatím ještě nevíme, jaká v ní má být hodnota. Chceme tedy, aby na začátku byla prázdná. To můžeme zařídit pomocí speciální hodnoty `null`. Můžeme si představit, že hodnota `null` znamená <i>nic</i>. Jde zároveň o nový typ hodnoty vedle čísel, řetězců, objektů, funkcí apod. 
 
 ```js
 'use strict';
 
-const submitClick = () => {
-  const passwordElm = document.querySelector('#pass-input');
-  const password = passwordElm.value;
-  let message = null;
+const password = prompt('Zadejte heslo: ');
+let message = null;
 
-  if (password === 'swordfish') {
-    message = 'Access granted';
-  } else {
-    message = 'Access denied';
-  }
+if (password === 'swordfish') {
+  message = 'Access granted';
+} else {
+  message = 'Access denied';
+}
 
-  alert(message);
-};
-
-const submitBtn = document.querySelector('#submit-btn');
-submitBtn.addEventListener('click', submitClick);
+const msgElm = document.querySelector('#msg');
+msgElm.textContent = message;
 ```
 
 Explicitnímu ukládání hodnoty `null` do proměnných jako výše, bychom se měli spíše vyhýbat. Uvedený program se dá bez problému přepsat bez použití `null`.
@@ -34,25 +29,26 @@ if (password === 'swordfish') {
   message = 'Access granted';
 }
 
-alert(message);
+const msgElm = document.querySelector('#msg');
+msgElm.textContent = message;
 ```
 
-Často se však stane, že hodnotu `null` vrací nějaké funkce v situaci, kdy se něco nepovedlo. Velmi častý případ je to u funkce `document.querySelector`, která vrací `null`, pokud se jí na stránce nezdaří najít element podle zadaného selektoru.
+Často se však stane, že hodnotu `null` vrací nějaké funkce v situaci, kdy se něco nepovedlo. Velmi častý případ je to právě u funkce `document.querySelector`, která vrací `null`, pokud se jí na stránce nezdaří najít element podle zadaného selektoru.
 
-Pojďme zkusit omylem vybrat vstupní políčko pomocí CSS třídy, která však v HTML vůbec není.
+Pojďme zkusit omylem vybrat element pro naší zprávu pomocí CSS třídy, která však v HTML vůbec není.
 
 ```jscon
-> const passwordElm = document.querySelector('.pass-input')
-> passwordElm
+> const msgElm = document.querySelector('.msg')
+> msgElm
 null
 ```
 
-Vidíte, že v proměnné `passwordElm` máme místo očekávaného elementu uloženo `null`.
+Vidíme, že v proměnné `msgElm` máme místo očekávaného elementu uloženo `null`. Z toho si domyslíme, že metoda `querySelector` kýžený element nenašla a můžeme začít zkoumat, kde jsme v programu udělali chybu. 
 
-Otestovat proměnnou na hodnotu `null` můžeme provést jednoduchou podmínkou.
+Pokud to v programu potřebujeme, můžeme proměnnou na hodnotu `null` otestovat pomocí jednoduché podmínky.
 
 ```js
-if (passwordElm === null) {
+if (msgElm === null) {
   console.log('Element nenalezen');
 }
 ```
@@ -61,7 +57,7 @@ if (passwordElm === null) {
 
 Kromě celkem užitečné hodnoty `null` JavaScript také obsahuje zákeřnou hodnotu `undefined`. Tato hodnota v podstatě znamená "ještě větší prázdno než nic". Pokud bychom přirovnali proměnné k šuplíkům, mohli bychom si představovat, že hodnota `null` znamená prázdný šuplík. Hodnota `undefined` by pak znamenala, že ve skříni chybí i sám šuplík a zíráme jen na prázdnou díru ve skříni.
 
-Hodnotu `undefined` potkáme v mnoha situacích, ale nejčastěji ve chvíli, kdy se snažíme přistoupit k vlastnosi, která neexistuje. Je například velmi snadné udělat překlep v anglickém slově `length`.
+Hodnotu `undefined` potkáme v mnoha situacích, ale nejčastěji ve chvíli, kdy se snažíme u nějakého objektu přistoupit k vlastnosi, která neexistuje. Je například velmi snadné udělat překlep v anglickém slově `length`.
 
 ```jscon
 > const name = 'martin'
@@ -96,6 +92,45 @@ if (name === undefined) {
 ```
 
 Hodnota `undefined` nám v budoucní způsobí ještě hodně nepříjemností, je tedy dobré se již teď obrnit trpělivostí.
+
+## Speciální druhy funkcí
+
+Většina práce v JavaScriptu se točí kolem vytváření a volání funkcí. Během programování tak často budeme narážet na různé jejich podoby a příchuťe. Je proto dobré se už od začátku začít učit, k čemu tyto různé podoby slouží.
+
+### Funkce bez návratové hodnoty
+
+Podle druhu vykonávané práce můžeme funkce rozdělit v podstatě na dvě skupiny:
+
+1. funkce, které vyrábějí nějaký výsledek (hodnotu),
+1. funkce, které nic nevyrábějí a pouze vykonají nějaký kus práce.
+
+### Funkce bez parametrů
+
+V praxi běžně narazíme také na funkce, které žádné parametry nemají. V takovém případě na místo parametrů píšeme prostě prázdné závorky. Příkladem může být následující funkce, která pro nás hodí kostkou, tedy vygeneruje náhodné celé číslo mezi 1 a 6.
+
+```js
+const roll = () => {
+  return Math.floor(Math.random() * 6) + 1;
+};
+```
+
+Tato funkce ke své činnosti žádné hodnoty z venku napotřebuje, proto je bez parametrů. Další příklad může být funkce, který obarví nadpis stránky na červeno.
+
+```js
+const colorHeadingRed = () => {
+  const headingElm = document.querySelector('h1');
+  headingElm.style.color = 'red';
+};
+```
+
+Tato funkce parametry nemá, protože ke své činnosti opět nepotřebuje žádné informace z venku. Mohli bychom však také chtít funkci, která obarví nadpis námi zvolenou barvou. V takovém případě funkci přidáme jeden parametr.
+
+```js
+const colorHeading = (colorName) => {
+  const headingElm = document.querySelector('h1');
+  headingElm.style.color = colorName;
+};
+```
 
 [[[ excs Cvičení: Procvičování funkcí
 - pozdravy
