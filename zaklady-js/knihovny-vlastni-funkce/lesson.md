@@ -86,7 +86,7 @@ Knihovna `dayjs` toho umí opravdu hodně, například
 
 - formátovat a parsovat datum i čas v různých formátech,
 - manipulace jako přidat den, ubrat dva týdny apod.,
-- porovnávat, které datum je dřív nebo později,
+- porovnávat, který datum je dřív nebo později.
 
 My si zde vyzkoušíme pouze pár dákladních věci. Aktuální datum a čas získáme zavoláním funkce `dayjs`.
 
