@@ -13,15 +13,15 @@ Knihovna je v podstatě jakýsi balíček funkcí, které se týkají nějaké k
 - psaní her
 - a stovky dalších možností. 
 
-Různých knihoven se na internetu nachází tísíce a tísíce. Pokud během vývoje narazíte na nějaký problém, který potřebujete ve svém program vyřešit, je obrovská šance, že tentýž problém už někdo řešil před vámi a vyrobil na jeho řešení knihonvnu. Často tedy stačí šikovně pogooglovat, najít tu správnou knihovnu a máte vystaráno. 
+Různých knihoven se na internetu nachází tísíce a tísíce. Pokud během vývoje narazíte na nějaký problém, který potřebujete ve svém program vyřešit, je obrovská šance, že tentýž problém už někdo řešil před vámi a vyrobil na jeho řešení knihovnu. Často tedy stačí šikovně pogooglovat, najít tu správnou knihovnu a máte vystaráno. 
 
 ### Kontrola vstupu
 
-Jeden z velmi častých problémů, které při vývoji potkáme, je kontrola vstupu od uživatele. Téměř každá větší stránka umožňuje přihlašování, a tak často musíme vytvořit nějaký formulář, kam uživatel zadává svůj email. Jak ale poznáme, že uživatel do políčka pro email zadal opravdu email a ne nějaký nesmysl? 
+Jeden z velmi častých problémů, které při vývoji potkáme, je kontrola vstupu od uživatele. Téměř každá větší stránka umožňuje přihlašování, a tak často musíme vytvořit nějaký formulář, kam uživatel zadává svůj e-mail. Jak ale poznáme, že uživatel do políčka pro e-mail zadal opravdu e-mail a ne nějaký nesmysl? 
 
-Zkontrolovat správný formát emailu v žádném případě není jednoduchá úloha. Rozhodně nastačí zkontrolovat, že obsahuje zavináč. Na [wikipedii](https://en.wikipedia.org/wiki/Email_address#Examples) si můžete pro zajímavost přečíst, co všechno se považuje za validní email a co naopak ne. 
+Zkontrolovat správný formát e-mailu v žádném případě není jednoduchá úloha. Rozhodně nastačí zkontrolovat, že obsahuje zavináč. Na [wikipedii](https://en.wikipedia.org/wiki/Email_address#Examples) si můžete pro zajímavost přečíst, co všechno se považuje za validní e-mail a co naopak ne. 
 
-Zároveň ověřování emailu je tak častý programátorský úkon, že na to jistě musí existovat knihovna. My použíjeme knihovnu, která se jmenuje [validator.js](https://github.com/validatorjs/validator.js).
+Zároveň ověřování e-mailu je tak častý programátorský úkon, že na to jistě musí existovat knihovna. My použíjeme knihovnu, která se jmenuje [validator.js](https://github.com/validatorjs/validator.js).
 
 ```html
 <head>
@@ -32,7 +32,7 @@ Zároveň ověřování emailu je tak častý programátorský úkon, že na to 
 </head>
 ```
 
-Knihovnu do naší stránky přidáme tak, že její adresu vložíme do hlavičky stránky pomocí tagu `script`. Každá knihovna má svoje pravidla fungování, která vyčteme z dokumentace. Knihovna `validator.js` nám ve stránce vytvoří objekt `validator`, který má mnoho užitečných metod, mezi nimi i metodu `isEmail`, která umí ověřit, zda je zadaný řetězec platný email. Tuto metodu můžeme použít ve svém JavaScriptovém programu nebo si ji vyzkoušet rovnou v konzoli, když naši stránku otevřeme v prohlížeči. 
+Knihovnu do naší stránky přidáme tak, že její adresu vložíme do hlavičky stránky pomocí tagu `script`. Každá knihovna má svoje pravidla fungování, která vyčteme z dokumentace. Knihovna `validator.js` nám ve stránce vytvoří objekt `validator`, který má mnoho užitečných metod, mezi nimi i metodu `isEmail`, která umí ověřit, zda je zadaný řetězec platný e-mail. Tuto metodu můžeme použít ve svém JavaScriptovém programu nebo si ji vyzkoušet rovnou v konzoli, když naši stránku otevřeme v prohlížeči. 
 
 ```jscon
 > validator.isEmail('pepa.novak@seznam.cz')
@@ -85,7 +85,7 @@ Knihovna `dayjs` toho umí opravdu hodně, například
 
 - formátovat a parsovat datum i čas v různých formátech,
 - manipulace jako přidat den, ubrat dva týdny apod.,
-- porovnávat, které datum je dřív nebo později,
+- porovnávat, který datum je dřív nebo později.
 
 My si zde vyzkoušíme pouze pár základních věci. Aktuální datum a čas získáme zavoláním funkce `dayjs`.
 
@@ -105,7 +105,7 @@ Můžeme také zcela konkrétní datum vyrobit, například
 const stedryDen = dayjs('2021-12-24')
 ```
 
-Pomocí metody `isAfter` pak můžeme vyzkoušet, jestli už jsme propásli štědrý den 2021 nebo nás teprve čeká. 
+Pomocí metody `isAfter` pak můžeme vyzkoušet, jestli už jsme propásli Štědrý den 2021 nebo nás teprve čeká. 
 
 ```js
 const stedryDen = dayjs('2021-12-24')
