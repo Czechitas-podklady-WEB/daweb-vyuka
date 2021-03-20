@@ -28,21 +28,24 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.8674047"
-     inkscape:cx="86.434576"
-     inkscape:cy="75.594593"
+     inkscape:zoom="2.3493314"
+     inkscape:cx="53.205576"
+     inkscape:cy="43.583076"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
      units="px"
      inkscape:snap-page="false"
      inkscape:snap-text-baseline="true"
-     inkscape:snap-nodes="false"
+     inkscape:snap-nodes="true"
      inkscape:window-width="1280"
      inkscape:window-height="656"
      inkscape:window-x="0"
      inkscape:window-y="27"
-     inkscape:window-maximized="1">
+     inkscape:window-maximized="1"
+     inkscape:snap-bbox="true"
+     inkscape:snap-bbox-edge-midpoints="false"
+     inkscape:bbox-nodes="true">
     <inkscape:grid
        type="xygrid"
        id="grid815" />
@@ -55,7 +58,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -67,7 +70,7 @@
     <rect
        style="opacity:1;fill:#ffe88e;fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect851"
-       width="159"
+       width="136"
        height="11.99999"
        x="26"
        y="389.5"
@@ -76,19 +79,19 @@
     <rect
        rx="2"
        ry="1.99999"
-       y="403.5"
-       x="66"
+       y="431.5"
+       x="93"
        height="11.99999"
-       width="44"
+       width="42"
        id="rect855"
        style="opacity:1;fill:#ffe88e;fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <rect
        style="opacity:1;fill:#ffe88e;fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect857"
-       width="56"
+       width="58"
        height="11.99999"
-       x="27"
-       y="417.5"
+       x="26"
+       y="431.5"
        ry="1.99999"
        rx="2" />
     <text
@@ -106,20 +109,25 @@
          x="18.096386"
          y="399.57159"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono'"
-         id="tspan843">  fullName: 'Lubomír Větvička',</tspan><tspan
+         id="tspan843">  streetName: 'Pod Kaštany',</tspan><tspan
          sodipodi:role="line"
          x="18.096386"
          y="413.24561"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono'"
-         id="tspan845">  login: 'lubos', </tspan><tspan
+         id="tspan845">  number: 31,</tspan><tspan
          sodipodi:role="line"
          x="18.096386"
          y="426.91959"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono'"
-         id="tspan847">  cartItems: 0,</tspan><tspan
+         id="tspan834">  city: 'Horní Dlouhonosy,</tspan><tspan
          sodipodi:role="line"
          x="18.096386"
          y="440.5936"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono'"
+         id="tspan847">  postalCode: '123 11',</tspan><tspan
+         sodipodi:role="line"
+         x="18.096386"
+         y="454.26761"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono'"
          id="tspan849">};</tspan></text>
     <path
@@ -142,34 +150,35 @@
     <path
        inkscape:connector-curvature="0"
        id="path889"
-       d="m 102,415.49998 v 30"
-       style="fill:none;stroke:#ffe88e;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       d="m 102,443.49999 v 12"
+       style="fill:none;stroke:#ffe88e;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        x="84.836044"
-       y="455.5"
+       y="467.5"
        id="text893"><tspan
          sodipodi:role="line"
          x="84.836044"
-         y="455.5"
+         y="467.5"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Montserrat;-inkscape-font-specification:Montserrat"
          id="tspan891">hodnota</tspan></text>
     <path
        style="fill:none;stroke:#ffe88e;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 54,429.49998 v 16"
+       d="m 54,443.49999 v 12"
        id="path895"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <text
        id="text899"
-       y="455.5"
+       y="467.5"
        x="46.956009"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
          id="tspan897"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Montserrat;-inkscape-font-specification:Montserrat"
-         y="455.5"
+         y="467.5"
          x="46.956009"
          sodipodi:role="line">klíč</tspan></text>
   </g>

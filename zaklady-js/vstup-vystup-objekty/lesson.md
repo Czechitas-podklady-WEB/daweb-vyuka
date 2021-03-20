@@ -128,19 +128,20 @@ document.write('Běžec dorazí v ' + konec + 'h');
 
 ## Objekty
 
-Prozatím jsme v naších programech pracovali pouze s čísly a řetězci. V reálnějších programech však budeme potřebovat do naších proměných uložit více, než jednu informaci. Představte si například, že chceme evidovat uživatele e-shopu. Každý uživatel má jméno, login a počet položek v nákupním košíku. Takovou informaci bychom mohli zkusit nacpat do jednoho řetězce třeba takto. 
+Prozatím jsme v naších programech pracovali pouze s čísly a řetězci. V reálnějších programech však budeme potřebovat do naších proměných uložit více, než jednu informaci. Představte si například, že chceme evidovat doručovací adresu uživatele e-shopu. Každý adresa má ulici, číslo domu, město a PSČ.  Takovou informaci bychom mohli zkusit nacpat do jednoho řetězce třeba takto. 
 
 ```js
-const user1 = 'Lubomír Větvička, lubos, 0';
+const address = 'Pod Kaštany 31, 123 11 Horní Dlouhonosy';
 ```
 
-Vysekat z takového řetězce jednotlivé údaje je ovšem dost pracné a našikovné. Pokud chceme informace lépe strukturovat, použijeme v JavaScriptu takzvané objekty. 
+Vysekat z takového řetězce jednotlivé údaje je ovšem dost pracné a našikovné. Pokud chceme informace lépe strukturovat, použijeme v JavaScriptu takzvané <term cs="objekty" en="objects">. 
 
 ```js
-const user1 = {
-  fullName: 'Lubomír Větvička',
-  login: 'lubos', 
-  cartItems: 0,
+const address = {
+  streetName: 'Pod Kaštany',
+  number: 31,
+  city: 'Horní Dlouhonosy',
+  postalCode: '123 11',
 };
 ```
 
@@ -151,75 +152,76 @@ Objekt vytvoříme tak, že do složených závorek vložíme čárkou oddělen�
 Pomocí klíčů pak můžeme z objektu získat jednotlivé hodnoty použitím takzvané <term cs="tečkové notace" en="dot notation">.
 
 ```jscon
-> user1.fullName
-"Lubomír Větvička"
-> user1.login
-"lubos"
-> user1.cartItems
-0
+> address.city
+"Horní Dlouhonosy"
+> address.streetName
+"Pod Kaštany"
+> address.number
+31
 ```
 
 Klíče v objektu se chovají podobně jako proměnné. Řídí se stejnými pravidly pro názvosloví. Můžete tedy mít objekty třeba v hadí notací.
 
 ```js
-const user1 = {
-  full_name: 'Lubomír Větvička',
-  login: 'lubos', 
-  cart_items: 0,
+const address = {
+  street_name: 'Pod Kaštany',
+  number: 31,
+  city: 'Horní Dlouhonosy',
+  postal_code: '123 11',
 };
 ```
 
 Nelze však použít například klíče s pomlčkou.
 
 ```js
-const user1 = {
-  full-name: 'Lubomír Větvička',
-  login: 'lubos', 
-  cart-items: 0,
+const address = {
+  street-name: 'Pod Kaštany',
+  number: 31,
+  city: 'Horní Dlouhonosy',
+  postal-code: '123 11',
 };
 ```
 
 Pokud trváme na tom, že v klíči chceme mít pomlčku nebo dokonce mezeru, můžeme jej uzavřít do uvozovek jako řetězec. 
 
 ```js
-const user1 = {
-  'full name': 'Lubomír Větvička',
-  login: 'lubos', 
-  'cart-items': 0,
+const address = {
+  'street name': 'Pod Kaštany',
+  number: 31,
+  city: 'Horní Dlouhonosy',
+  'postal-code': '123 11',
 };
 ```
 
 Potíž je v tom, že k takovým klíčům se už pomocí tečkové notace nedostaneme a musíme použít jiný zápis. 
 
 ```jscon
-> user1['full name']
-"Lubomír Větvička"
-> user1.login
-"lubos"
-> user1['cart-items']
-0
+> address['street name']
+"Pod Kaštany"
+> address['postal-code']
+"123 11"
 ```
 
 Tento zápis není tak šikovný jako tečková notace a proto se budeme klíčům v uvozovkách snažit co nejvíce vyhýbat. 
 
-Hodnoty uvnitř objektů lze také měnit. Takto například můžeme zvýšit počet položek v košíku. 
+Hodnoty uvnitř objektů lze také měnit. Takto například můžeme změnit číslo ulice. 
 
 ```jscon
-> user1.cartItems = 3
+> address.number = 28
 ```
 
-Všimněte si, že při vytváření objekt ukládáme do proměnné, jde tedy o nový typ hodnoty, podobně jako číslo nebo řetězec. To mimo jiné znamená, že uvnitř objektu můžeme mít vnořené další objekty. Takto bychom mohli například reprezentovat uživatele s doručovací adresou. 
+Všimněte si, že při vytváření objekt ukládáme do proměnné, jde tedy o nový typ hodnoty, podobně jako číslo nebo řetězec. To mimo jiné znamená, že uvnitř objektu můžeme mít vnořené další objekty. Takto bychom mohli například reprezentovat uživatele i s doručovací adresou. 
 
 ```js
 const user1 = {
   fullName: 'Lubomír Větvička',
   login: 'lubos', 
   address: {
-    street: 'Nábřežní',
+    streetName: 'Pod Kaštany',
     number: 31,
-    city: 'Horní Dlouhonosy ',
+    city: 'Horní Dlouhonosy',
     postalCode: '123 11',
-  }
+  },
   cartItems: 0,
 };
 ```
