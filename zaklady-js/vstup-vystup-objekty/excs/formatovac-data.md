@@ -9,7 +9,7 @@ Vytvořte stránku, která se zeptá uživatele na den, měsíc a rok.
    ```
    28.04.2021
    ```
-1. Vypisujte datum jako následující HTML kód.
+1. Vypisujte datum do webové stránky jako následující HTML kód.
    ```html
    <p class="date"><span class="day">28</span>.<span class="month">04</span>.<span class="year">2021</span></p>
    ```
