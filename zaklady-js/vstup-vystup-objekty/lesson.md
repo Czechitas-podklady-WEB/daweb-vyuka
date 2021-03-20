@@ -159,7 +159,7 @@ Pomocí klíčů pak můžeme z objektu získat jednotlivé hodnoty použitím t
 0
 ```
 
-Klíče v objektu se chovají podobně jako proměnné. Řídí se stejnými pravidly pro názvosloví. Můžete tedy mí objekty třeba v hadí notací. 
+Klíče v objektu se chovají podobně jako proměnné. Řídí se stejnými pravidly pro názvosloví. Můžete tedy mít objekty třeba v hadí notací.
 
 ```js
 const user1 = {
@@ -240,7 +240,7 @@ Díky objektům tak můžeme v našich programech reprezentovat i velmi kompliko
 ```js
 const fullName = user1.fullName;
 const login = user1.login;
-const cartItems = cartItems;
+const cartItems = user1.cartItems;
 ```
 
 Programátoři jsou však líné bytosti a tento postup jim přijde zdlouhavý. Pokud se naše proměnné jmenují stejně, jako klíče uvnitř objektu, můžeme si ušetřit psaní a použít takzvané destrukturování. 

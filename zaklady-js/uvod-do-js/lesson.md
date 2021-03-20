@@ -353,7 +353,7 @@ V JavaScriptu se ukrývá mnoho různých pastí, ve kterých je možné snadno 
 > nzda = 350
 ```
 
-JavaScript runtime si zde neuvědomí, že jsme udělali překlep a vytvoří novou proměnnou <var>nzda</var> s hodnotou 350. Původní proměnná tedy zůstane nezměněná a už máme zaděláno na problém. Naštěstí se tento zdroj chyb dá odstranit tím, že JavaScript runtimu zakážeme vytvářet proměnné bez uvedení `let`, `const` nebo `var`. Jak se toto zařídí si ukážeme v následující lekci.
+JavaScript runtime si zde neuvědomí, že jsme udělali překlep a vytvoří novou proměnnou <var>nzda</var> s hodnotou 350. Původní proměnná tedy zůstane nezměněná a už máme zaděláno na problém. Naštěstí se tento zdroj chyb dá odstranit tím, že budeme vždy pamatovat na directivu `use strict` na začátku každého programu. V takovém případě totiž JavaScript zahlásí chybu vždy, když se budeme snažít přiřadit hodnotu proměnné, která před tím nebyla vytvořena. 
 
 [[[ excs Volitelné úložky na doma
 - schopnejsi-zaokrouhlovani-2
