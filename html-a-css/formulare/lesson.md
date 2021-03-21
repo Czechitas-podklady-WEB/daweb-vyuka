@@ -95,6 +95,67 @@ S každým dalším políčkem ale pro uživatele přestává být přehledné, 
 
 ![label](assets/label.png)
 
+### Další druhy formulářových prvků
+
+Kromě základního textového políčka máme i speciální například na datum, e-mail, heslo a jiné. Nastavit ve formuláři správné typy je zásadní pro to, aby se uživateli formulář dobře vyplňoval. Přece jen po něm chceme nějakou práci, a tak je důležité, aby byla co nejjednodušší, aby nám frustrovaný uživatel třeba neutekl ke konkurenci. Dobře nastavený formulář se může umět z části sám vyplnit nebo nabídnout uživateli jiné pomocné nástroje. Třeba textové políčko určené pro e-mailovou adresu může na klávesnici dotykové obrazovky zobrazit snadno dostupnou klávesu pro zavináč, který je pro obyčejný text schovaný. Typ se nastavuje přes atribut `type`.
+
+#### E-mail:
+
+```html
+<label>Zadej e-mail: <input type="email" /></label>
+```
+
+#### Datum:
+
+```html
+<label>Zadej datum: <input type="date" /></label>
+```
+
+#### Číslo:
+
+```html
+<label>Zadej číslo: <input type="number" /></label>
+```
+
+#### Zaškrtávací tlačítko:
+
+```html
+<label><input type="checkbox" /> Souhlasím s obchodními podmínkami</label>
+```
+
+#### Další vybrané:
+
+- Heslo: `type="password"`
+- Telefon: `type="tel"`
+- Barva: `type="color"`
+- Odkaz: `type="url"`
+
+#### Několik možností, ze kterých jde vybrat jen jedna:
+
+```html
+<h1>Oblíbené ovoce:</h1>
+<label><input type="radio" name="ovoce" value="a" /> jablko</label>
+<label><input type="radio" name="ovoce" value="b" /> hruška</label>
+<label><input type="radio" name="ovoce" value="c" /> pomeranč</label>
+```
+
+Je potřeba dbát na to, aby všechny související inputy měly stejný atribut `name`.
+
+```html
+<h1>Oblíbená zelenina:</h1>
+<select name="zelenina">
+  <option value="a">Mrkev</option>
+  <option value="b">Celer</option>
+  <option value="c">Petržel</option>
+</select>
+```
+
+#### Víceřádkový text:
+
+```html
+<label>Zpráva: <textarea name="zprava"></textarea></label>
+```
+
 [[[ excs Cvičení: Pokročilé formuláře
 - statisticky-urad
 ]]]
