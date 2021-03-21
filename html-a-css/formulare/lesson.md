@@ -129,6 +129,7 @@ Kromě základního textového políčka máme i speciální například na datu
 - Telefon: `type="tel"`
 - Barva: `type="color"`
 - Odkaz: `type="url"`
+- Rozmezí: `type="range"`
 
 #### Několik možností, ze kterých jde vybrat jen jedna:
 
@@ -159,3 +160,18 @@ Je potřeba dbát na to, aby všechny související inputy měly stejný atribut
 [[[ excs Cvičení: Pokročilé formuláře
 - statisticky-urad
 ]]]
+
+## Dobrovolné čtení na doma
+
+### Další atributy
+
+- `autocomplete` pro lepší automatické doplňování. Více zde: [The HTML autocomplete attribute | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete).
+- `autofocus` zaměří políčko hned po načtení stránky, aby do něj mohl uživatel okamžitě psát. Užitečné hlavně v případech, kdy očekáváme, že uživatel začne vyplňovat první políčko bezprostředně po načtení stránky.
+- `disabled` zamezí vyplnění políčka nebo odeslání celého formuláře. Disabled políčka se neodesílají na backend.
+- `readonly` podobně jako `disabled` zamezí úpravy, ale odešle se zbytkem formuláře na backend.
+- `value` políčko předvyplní daným obsahem.
+- `checked` říká, že zaškrtávací políčko má být v počátečním stavu předzaškrtnuté.
+- `placeholder` je nevýrazná nápověda v místě, kam uživatel píše text. Není vidět, pokud uživatel začne psát. Protože je nápověda nevýrazná a mizí, není vhodné ji používat pro důležité informace.
+- `required` přiměje uživatele před odesláním vyplnit aspoň něco.
+- `minlength` přiměje uživatele vyplnit políčko o minimální délce.
+- `<form method="POST">` odešle data na backend metodou `POST`. Narozdíl od výchozí `GET`, která dává data od uživatele do url adresy, `POST` je zasílá skrytě. Vhodné pro velké formuláře nebo formuláře s políčkem na heslo.
