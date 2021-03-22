@@ -1,8 +1,8 @@
-Předchozí lekce váš naučily psát krátké JavaScriptové prográmky, které umí komunikovat s uživatelem. S takto jednoduchými hříčkami ale dlouho nevystačíme. V této lekci do našeho arzenálu přidáme některé užitéčné techniky pro práci s řetězci a také se naučíme větvit běh programu pomocí podmínek.
+Přestože jsme se za poslední dvě lekce o JavaScriptu dozvěděli hodně, stačí nám to pouze na krátké přímočaré prográmky. S takovými ale dlouho nevystačíme. V této lekci proto do našeho arzenálu přidáme některé užitečné techniky pro práci s řetězci a naučíme se větvit běh programu pomocí podmínek.
 
 ## Vlastnosti a metody
 
-Z předchozí lekce už víme, jak vytvářet jednoduché objekty a jak do nich přidávat vlastnosti. Za velkou pozornost však stojí fakt, že většina hodnot v JavaScriptu jsou samy o sobě objekty. Například každý řetězec je pod pokličkou objekt a my můžeme přistupovat k jeho vlastnostem stejně, jako u objektů, které jsme vytvářeli sami. 
+Z předchozí lekce už víme jak vytvářet jednoduché objekty a jak do nich přidávat vlastnosti. Za velkou pozornost však stojí fakt, že ostatní hodnoty v JavaScriptu jsou samy o sobě také objekty. Například každý řetězec je pod pokličkou objekt a my můžeme přistupovat k jeho vlastnostem stejně jako u objektů, které jsme vytvářeli sami. 
 
 U řetězců je situace v celku jednoduchá, protože mají pouze jednu vlastnost. Jmenuje se `length` a udává počet znaků v řetězci.
 
@@ -15,7 +15,7 @@ U řetězců je situace v celku jednoduchá, protože mají pouze jednu vlastnos
 0
 ```
 
-Uvnitř objektů však kromě vlastností najdeme i takzvané <term cs="metody" en="methods">. Metoda je funkce, které jsou uzavřená uvnitř objektu a je s ním pevně spjata. V praxi se totiž často stává, že některé funkce se hodí na práci pouze s jedním typem hodnoty. Například bychom mohli mít funkci `toUpperCase`, která by převedla všechna písmena v řetězci na velká. Kdyby taková funkce existovala, mohli bychom ji
+Uvnitř objektů však kromě vlastností najdeme i takzvané <term cs="metody" en="methods">. Metoda je funkce schovaná uvnitř objektu a je tak s ním pevně spjata. V praxi se totiž často stává, že některé funkce se hodí na práci pouze s jedním typem hodnoty. Například bychom mohli mít funkci `toUpperCase`, která by převedla všechna písmena v řetězci na velká. Kdyby taková funkce existovala, mohli bychom ji
 volat třeba takto
 
 ```jscon
@@ -31,7 +31,7 @@ například v takovémto případě.
 > toUpperCase(3.14)
 ```
 
-Funkce, které pracují pouze na jednom typu objektu můžeme svázat přímo s tímto objektem. Můžeme tedy říct, že funkce `toUpperCase` patří pouze řetězcům. Máme-li funkci, která patří pouze typu řetězec, voláme ji pomocí už známé tečkové notace.
+Funkce, které pracují pouze na jednom typu objektu, můžeme svázat přímo s tímto objektem. Můžeme tedy říct, že funkce `toUpperCase` patří pouze řetězcům. Máme-li funkci, která patří pouze typu řetězec, voláme ji pomocí už známé tečkové notace.
 
 ```jscon
 > 'martin'.toUpperCase()
@@ -80,7 +80,7 @@ Na řetězcích máme v JavaScriptu spoustu metod, které nám umožňují prov�
 ```
 
 `indexOf(value)`
-: Vyhledá řetězec zadaný v parametru `value` uvnitř řetězce, na kterém tuto metodu voláme. Vrací pozici prvního výskytu nebo -1 pokud se obsah `value` v 5et2zci nenachází.
+: Vyhledá řetězec zadaný v parametru `value` uvnitř řetězce, na kterém tuto metodu voláme. Vrací pozici prvního výskytu nebo -1 pokud se obsah `value` v řetězci nenachází.
 
 ```jscon
 > 'popokatepetl'.indexOf('kat')
@@ -150,7 +150,7 @@ Díky interpolaci řetězců se náš kód stává mnohem čitelnějším a bude
 
 ### Víceřádkové řetězce
 
-Když v JavaScriptu vytváříme HTML, které chceme vložit do stránky, časti potřebujeme vygenerovat dlouhý řetězec, který se nám nevejde na jeden řáděk. V JavaScriptu ovšem nelze zapsat běžný řetězec na více řádků. Následující kód by bohužel nefungoval.
+Když v JavaScriptu vytváříme HTML, které chceme vložit do stránky, často potřebujeme vygenerovat dlouhý řetězec, který se nám nevejde na jeden řáděk. V JavaScriptu ovšem nelze zapsat běžný řetězec na více řádků. Následující kód by bohužel nefungoval.
 
 ```js
 const content = '
@@ -281,11 +281,11 @@ if (konec > 12) {
 }
 ```
 
-Toto je příklad velmi jednoduché podmínky se dvěm větvemi. V závorkách po klíčovém slovu `if` musí vždy být výraz, který vrací pravdivostní hodnotu. Podle toho, jestli je výsledek výrazu `true` nebo `false` se buď vykoná kód v prvních složených závorkách nebo kód v závorkách za slovem `else`. Tady se proprvé potkáváme s takzvanými `bloky kódu`, které jsou téměř nezbytnou ingrediencí všech programů.
+Toto je příklad velmi jednoduché podmínky se dvěm větvemi. V závorkách po klíčovém slovu `if` musí vždy být výraz, který vrací pravdivostní hodnotu. Podle toho, jestli je výsledek výrazu `true` nebo `false`, se buď vykoná kód v prvních složených závorkách, nebo kód v závorkách za slovem `else`. Tady se proprvé potkáváme s takzvanými <em>bloky kódu</em>, které jsou téměř nezbytnou ingrediencí všech programů.
 
 ### Bloky kódu
 
-Pokud nějaké řádky kódu uzavřeme do složených závorek, vytváříme takzvaný blok. JavaScript každý blok chápe jako samostatnou jednotku, která se vykoná za určité situace. Taková situace muže být například splnění nebo nesplnění výrazu v podmínce. Později uvidíme další situace, kde se spouštěnjí bloky kódu.
+Pokud nějaké řádky kódu uzavřeme do složených závorek, vytváříme takzvaný blok. JavaScript každý blok chápe jako samostatnou jednotku, která se vykoná za určité situace. Taková situace může být například splnění nebo nesplnění výrazu v podmínce. Později uvidíme další situace, kde se nám budou bloky kódu hodit.
 
 Aby se nám kód dobře četl, odsazujeme řádky uvnitř bloku o kus doprava. V tomto kurzu budeme používat dvě mezery. Pokud máte VS Code nastavené podle naších doporučení, při psaní se vám řádky budou automaticky odsazovat. Stisknutím tabulátoru [[Tab]] pak můžete odsazení vložit sami. Stisknutím [[Shift]]+[[Tab]] jej naopak zrušíte. To se hodí pokud chcete například odsadit velký kus kódu najednou. Stačí jej vybrat myší a stiknout [[Tab]] nebo [[Shift]]+[[Tab]].
 
@@ -319,7 +319,7 @@ else
 }
 ```
 
-Nakonec je však důležité hlavně si nějaká pravidla stanovit a ta pak dodržovat. V tomto směru existuje [několik manuálů](https://codeburst.io/5-javascript-style-guides-including-airbnb-github-google-88cbc6b2b7aa), kterým se říká _style guide_. Ty kodifikují určitá pravidla formátování kódu tak, abyste je nemuseli vždy od nuly vymýšlet sami. Ve firmě nebo v programátorském týmu pak stačí říct, že používáme takový nebo onaký style guide a předejít tak nekonečným diskuzím o tom, kde mají být mezery a kde ne. V tomto kurzu používáme [AirBnB style guide](https://github.com/airbnb/javascript). Pokud máte dobře nastavený VS Code, při každém uložení souboru se váš kód automaticky přeformátuje podle těchto pravidel. Můžete se tak místo na počty mezer soustředit na to, aby váš program skutečně fungoval.
+Nakonec je však důležité hlavně si nějaká pravidla stanovit a ta pak dodržovat. V tomto směru existuje [několik manuálů](https://codeburst.io/5-javascript-style-guides-including-airbnb-github-google-88cbc6b2b7aa), kterým se říká _style guide_. Ty kodifikují určitá pravidla formátování kódu tak, abyste je nemuseli vždy od nuly vymýšlet sami. Ve firmě nebo v programátorském týmu pak stačí říct, že používáme takový nebo onaký style guide a předejít tak nekonečným diskuzím o tom, kde mají být mezery a kde ne. V tomto kurzu používáme [AirBnB style guide](https://github.com/airbnb/javascript).
 
 ### Podmínky s více větvemi
 
@@ -350,7 +350,7 @@ if (body >= 90) {
 }
 ```
 
-V takto rozvětvené podmínkce JavaScript runtime prochází jednotlivé výrazy dokud nenarazí na ten, který se vyhodnotí jako `true`. Vykoná příšlušný blok a kódu a **zbylé větve přeskočí.** Vykoná se tak pouze první větev, která se vyhodnotí jako `true`. Pokud by byly všechny výrazy `false`, vykoná se větev `else`. Jak už víme, větev `else` přítomná být nemusí. Výše udovedný kód bychom tedy mohli malinko zkrátit takto.
+V takto rozvětvené podmínkce JavaScript runtime prochází jednotlivé výrazy dokud nenarazí na ten, který se vyhodnotí jako `true`. Vykoná příslušný blok a kódu a **zbylé větve přeskočí.** Vykoná se tak pouze první větev, která se vyhodnotí jako `true`. Pokud by byly všechny výrazy `false`, vykoná se větev `else`. Jak už víme, větev `else` přítomná být nemusí. Výše udovedný kód bychom tedy mohli malinko zkrátit takto.
 
 ```js
 let znamka = 'F';
