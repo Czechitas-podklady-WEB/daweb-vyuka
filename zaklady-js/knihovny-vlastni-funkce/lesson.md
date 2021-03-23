@@ -93,10 +93,10 @@ My si zde vyzkoušíme pouze pár základních věci. Aktuální datum a čas z�
 const now = dayjs();
 ```
 
-Todo datum pak můžeme vypsat do konzole v námi zvoleném formátu.
+Toto datum pak můžeme vypsat do konzole v námi zvoleném formátu.
 
 ```js
-console.log(now.format('MM/DD/YYY'));
+console.log(now.format('MM.DD.YYYY'));
 ```
 
 Můžeme také zcela konkrétní datum vyrobit, například 
@@ -209,7 +209,7 @@ Této strategii se říká <term cs="časný návrat" en="early return"> a zkuš
 [[[ excs Cvičení: Vlastní funkce
 - obsah-elipsy
 - maximum-ze-dvou
-- rodne-cislo
+- kontrola-dic
 ]]]
 
 ## Dobrovolné čtení na doma - alternativní zápis funkcí

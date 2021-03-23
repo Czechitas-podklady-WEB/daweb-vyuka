@@ -1,5 +1,5 @@
 ---
-title: Kontrola rodného čísla
+title: Kontrola DIČ
 demand: 3
 ---
 
