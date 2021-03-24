@@ -11,8 +11,8 @@ lessons:
   - title: Práce s řetězci, podmínky
     link: retezce-podminky
     brief: Vyzkoušíme si užitečné operace s řetězci a naučíme naše programy dělat rozhodnutí.
-  - title: Document Object Model
-    link: dom
+  - title: DOM a innerHTML
+    link: dom-innerhtml
     brief: Přidáme do našich programů možnost manipulovat pomocí JavaScriptu s obsahem stránky
   - title: Knihovny a vlastní funkce
     link: knihovny-vlastni-funkce
