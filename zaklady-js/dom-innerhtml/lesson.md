@@ -216,6 +216,61 @@ Oba z výše uvedených způsobů výběru podle `id` jsou zcela legitimní a je
 - kviz
 ]]]
 
+## Vlastnost innerHTML 
+
+Z předchozí části už umíme změnit obsah nějakého DOM elementu pomocí vlastnosti `textContent`. Takto však můžeme pravovat pouze s čistě textovým obsahem. Co kdybychom však do nějakého elementu chtěli vllžit kust HTML? K tomu nám poslouží vlastnost `innerHTML`.
+
+Vraťme se k ukázkové stránce z předchozí části.
+
+```html
+<body>
+  <div class="header">Hlavička</div>
+  <div class="cards">
+    <div id="card1" class="card">Karta 1</div>
+    <div id="card2" class="card">Karta 2</div>
+    <div id="card3" class="card">Karta 3</div>
+  </div>
+  <div class="footer">Patička</div>
+</body>
+```
+
+Kdybychom chtěli do elementu `header` vložit například nadpis první úrovně, můžeme to provést takto. 
+
+```js
+const headerElm = document.querySelector('.header');
+headerElm.innerHTML = '<h1>Hlavička</h2>';
+```
+
+Ve chvíli, kdy takto nastavíme vlastnost `innerHTML`, prohlížeč si přečte obsah našeho řetězce a automaticky z něj vyrobí DOM elementy pro naši stránku. Můžete si v developer tools zkontrolovat, že obsah hlavičky má nyní opravodou DOM strukturu.
+
+Pokud vytváříme kus stránky pomocí `innerHTML`, děláme to většinou proto, že chceme do HTML vložit obsah nějaký proměnných. Relisičtější příklad by tedy byl ten, kdy máme například název stránku uložený v proměnné. 
+
+```js
+const pageTitle = 'Moje stránka';
+const headerElm = document.querySelector('.header');
+headerElm.innerHTML = `<h1>${pageTitle}</h2>`;
+```
+
+Pomocí `innerHTML` tak získáváme mnohem větší kontrolu nad obsahem stránky než jsme měli pouze s použitím `textContent`. Čím dál častěji se nám bud stávat, že budeme větší a větší kusy stránky vytvářet JavaScriptem právě pomocí `innerHTML`. Můžeme třeba na první kartu naší stránky vložit nějaký produkt.
+
+
+```js
+const product1 = {
+  name: 'Lední brusle',
+  price: 1259,
+  description: 'Lední brusle dámské vhodné pro rekreační bruslaře, nůž: klasická svařovaná brusle, nerezová ocel',
+  color: 'white',
+};
+
+const card1Elm = document.querySelector('#card1');
+card1Elm.innerHTML = `
+  <h2 class="product__name>${product1.name}</h2>
+  <p class="product__desc>${product1.description}</p>
+  <div class="product__price">${product1.price} kč</div>
+  <button>Koupit</button>
+`;
+```
+
 ## Pokročilejší práce s třídami
 
 Představme si nějaký DOM element, který na sobě má navázáno vícero CSS tříd. Například nějaké přepínací tlačíko, které začíná ve stavu 'vypnuto'.
@@ -268,6 +323,8 @@ btnElm.classList.toggle('btn--off');
 Pokud se daná CSS třída na elementu nachází, metoda `toggle` ji odstraní. Pokud tam naopak není, metoda `toggle` ji přidá.
 
 Pomocí vlastnosti `classList` jsme opět rozšířili náš arzenál pro manipulaci s obsahem stránky a také máme život zase o kousek jednodušší.
+
+
 
 [[[ excs Doporučené úložky na doma
 - dovednosti
