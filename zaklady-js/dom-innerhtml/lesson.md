@@ -131,7 +131,7 @@ musím nastavit obsah celého atributu `class`.
 > buttonElm
 <button class="btn">Click me</button>
 > buttonElm.className = 'btn btn-primary'
-> headerElm
+> buttonElm
 <button class="btn btn-primary">Click me</button>
 ```
 
@@ -238,7 +238,7 @@ Kdybychom chtěli do elementu `header` vložit například nadpis první úrovn�
 
 ```js
 const headerElm = document.querySelector('.header');
-headerElm.innerHTML = '<h1>Hlavička</h2>';
+headerElm.innerHTML = '<h1>Hlavička</h1>';
 ```
 
 Ve chvíli, kdy takto nastavíme vlastnost `innerHTML`, prohlížeč si přečte obsah našeho řetězce a automaticky z něj vyrobí DOM elementy pro naši stránku. Můžete si v developer tools zkontrolovat, že obsah hlavičky má nyní opravodou DOM strukturu.
@@ -248,7 +248,7 @@ Pokud vytváříme kus stránky pomocí `innerHTML`, děláme to většinou prot
 ```js
 const pageTitle = 'Moje stránka';
 const headerElm = document.querySelector('.header');
-headerElm.innerHTML = `<h1>${pageTitle}</h2>`;
+headerElm.innerHTML = `<h1>${pageTitle}</h1>`;
 ```
 
 Pomocí `innerHTML` tak získáváme mnohem větší kontrolu nad obsahem stránky než jsme měli pouze s použitím `textContent`. Čím dál častěji se nám bud stávat, že budeme větší a větší kusy stránky vytvářet JavaScriptem právě pomocí `innerHTML`. Můžeme třeba na první kartu naší stránky vložit nějaký produkt.
