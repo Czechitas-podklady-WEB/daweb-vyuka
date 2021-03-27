@@ -14,8 +14,8 @@ Postupujte dle následujících kroků.
 
 1. Vytvořte prázdnou stránku s JavaScriptem a knihovnou `validator.js`.
 1. Vytvořte funkci `isDIC` s jedním parametrem `inputStr`, což bude řetězec, který chceme zkontrolovat. 
-1. Jako první ve funkci zkontrolujte, jestli je vstupní řetězce kratší než 9 znaků. V takovém případě namá smysl dál nic dělat, protože vstup evidentně není DIČ. Vraťte tady z funkce `false`. Tím naše funkce končí. Všimněte si, že takto používáme vzor "časný návrat". 
-1. Dále ve funkci zkontrolujte, jestli je vstupní řetězce delší než 10 znaků. V takovém případě opět vraťte `false`.
+1. Jako první ve funkci zkontrolujte, jestli je vstupní řetězce kratší než 11 znaků. V takovém případě namá smysl dál nic dělat, protože vstup evidentně není DIČ. Vraťte tady z funkce `false`. Tím naše funkce končí. Všimněte si, že takto používáme vzor "časný návrat". 
+1. Dále ve funkci zkontrolujte, jestli je vstupní řetězce delší než 12 znaků. V takovém případě opět vraťte `false`.
 1. Dále ve funkce si do proměnné `prefix` uložte první dva znaky vstupního řetězce. 
 1. Pomocí podmínky zkontrolujte, že proměnná `prefix` obsahuje přesně znaky `CZ`. Pokud ne, ihned vraťte `false`.
 1. Do promměné `digits` si uložte část vstupního řetězce od třetího znaku dále. 
