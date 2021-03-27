@@ -324,7 +324,10 @@ Pokud se daná CSS třída na elementu nachází, metoda `toggle` ji odstraní. 
 
 Pomocí vlastnosti `classList` jsme opět rozšířili náš arzenál pro manipulaci s obsahem stránky a také máme život zase o kousek jednodušší.
 
-
+[[[ excs Cvičení - pokročílé třídy a innerHTML
+- nekupto-tridy
+- nekupto-obsah
+]]]
 
 [[[ excs Doporučené úložky na doma
 - dovednosti
