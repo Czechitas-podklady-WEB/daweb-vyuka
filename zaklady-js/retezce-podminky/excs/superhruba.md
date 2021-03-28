@@ -3,7 +3,7 @@ title: Superhrubá mzda
 demand: 3
 ---
 
-Vytvořte webovou stránku, která pomůže zaměstnavatelům spočítat náklady na jednoho zaměstnance, tedy takzvenou superhrubou mzdu. Zaměstnavetel zadá na vstupu dvě hodnoty: hodinovou sazbu zaměstnance a velikost úvazku v procentech. Tedy například 100% je plný úvazek (8 hodině denně), 50% poloviční apod. Stránka vypíše výši superhrubé mzdy, výší hrubé mzdy a výší čisté mzdy, vše v korunách.
+Vytvořte webovou stránku, která pomůže zaměstnavatelům spočítat náklady na jednoho zaměstnance, tedy takzvanou superhrubou mzdu. Zaměstnavetel zadá na vstupu dvě hodnoty: hodinovou sazbu zaměstnance a velikost úvazku v procentech. Tedy například 100% je plný úvazek (8 hodině denně), 50% poloviční apod. Stránka vypíše výši superhrubé mzdy, výší hrubé mzdy a výší čisté mzdy, vše v korunách.
 
 Pravidla pro tyto výpočty se v čase mění. Aktuální pravidla v době vzniku tohoto cvičení platí od 1.7.2019 a jsou následující ([zdroj](https://www.vypocet.cz/popis-vypoctu-ciste-mzdy)).
 
