@@ -1,8 +1,8 @@
-V předchozích lekcích jsme se naučili psát JavaScriptové programy, které už dokáží dělat něco skutečně užitečného. Co nám však zatím chybí je opravdová interakce s uživatelem. Místo zobrazování vyskakovacích oken budeme chtít pomocí JavaScriptu měnit přímo obsah stránky. 
+V předchozích lekcích jsme se naučili psát JavaScriptové programy, které už dokáží dělat něco skutečně užitečného. Co nám však zatím chybí je opravdová interakce s uživatelem. Místo zobrazování vyskakovacích oken budeme chtít pomocí JavaScriptu měnit přímo obsah stránky.
 
 ## Document Object Model
 
-K práci s obsahem stránky pomocí JavaScriptu se potřebujeme naučit používat takzvaný DOM, nebo-li _Document Object Model_. 
+K práci s obsahem stránky pomocí JavaScriptu se potřebujeme naučit používat takzvaný DOM, nebo-li _Document Object Model_.
 
 Ve chvíli, kdy uživatel zadá do prohlížeče URL adresu, webový prohlížeč pošle po internetu požadavek na server sídlící na této adrese. Server pošle prohlížeči zpátky HTML požadované stránky. Takové HTML může vypadat například takto.
 
@@ -41,7 +41,7 @@ To hlavní, co je dobré si z tého sekce zapamatovat je, že HTML je pouze text
 
 ## DOM Elementy
 
-Když prohlížeč zpracovává HTML kód, každá značka a její obsah se převedou na takzvaný _DOM element_. Každý žlutá krabička na obrázku výše představuje jeden DOM element. Z hlediska JavaScriptu je důležité, že DOM elementy jsou nový typ hodnoty. Můžeme je tedy podobně jako čísla, řetězce nebo pravdivostní hodnoty ukládat do proměnných, předávat jako vstupy funkcím apod. Jak se ale k nějakému DOM elementu z naší stránky dostaneme? Poslouží nám k tomu funkce `document.querySelector`. Pro ukázku použití se vraťme k naší stránce s třemi kartami.
+Když prohlížeč zpracovává HTML kód, každá značka a její obsah se převedou na takzvaný _DOM element_. Každá žlutá krabička na obrázku výše představuje jeden DOM element. Z hlediska JavaScriptu je důležité, že DOM elementy jsou nový typ hodnoty. Můžeme je tedy podobně jako čísla, řetězce nebo pravdivostní hodnoty ukládat do proměnných, předávat jako vstupy funkcím apod. Jak se ale k nějakému DOM elementu z naší stránky dostaneme? Poslouží nám k tomu funkce `document.querySelector`. Pro ukázku použití se vraťme k naší stránce s třemi kartami.
 
 ```html
 <body>
@@ -92,7 +92,7 @@ Všimněte si hned dvou důležitých věcí. Za prvé, názvy CSS vlastností m
 > headerElm.style.margin-bottom = '2rem'
 ```
 
-JavaScript by si pomlčku spletl s mínusem a kód by nefungoval. Druhá důležitá věc je, že hodnoty všech CSS vlastností se zapisují pomocí řetězců. Proto dávejte pozor například na takového chyby.
+JavaScript by si pomlčku spletl s mínusem a kód by nefungoval. Druhá důležitá věc je, že hodnoty všech CSS vlastností se zapisují pomocí řetězců. Proto dávejte pozor například na takové chyby.
 
 ```jscon
 > headerElm.style.color = white
@@ -207,18 +207,19 @@ Používání `id` je vůbec ten nejvychovanější způsob, jak ze stránky ně
 const cardElm = document.getElementById('card2');
 ```
 
-Všimněte si, že zde napíšeme znak mřížky, protože vstupem pro `document.getElementById` není CSS selektor, nýbrž samotné `id` prvku.
+Všimněte si, že zde nepíšeme znak mřížky, protože vstupem pro `document.getElementById` není CSS selektor, nýbrž samotné `id` prvku.
 
 Oba z výše uvedených způsobů výběru podle `id` jsou zcela legitimní a je pouze na vás, který si zvolíte.
 
 [[[ excs Cvičení: Manipulace s DOMem
+
 - novinky
 - kviz
-]]]
+  ]]]
 
-## Vlastnost innerHTML 
+## Vlastnost innerHTML
 
-Z předchozí části už umíme změnit obsah nějakého DOM elementu pomocí vlastnosti `textContent`. Takto však můžeme pravovat pouze s čistě textovým obsahem. Co kdybychom však do nějakého elementu chtěli vllžit kust HTML? K tomu nám poslouží vlastnost `innerHTML`.
+Z předchozí části už umíme změnit obsah nějakého DOM elementu pomocí vlastnosti `textContent`. Takto však můžeme pravovat pouze s čistě textovým obsahem. Co kdybychom však do nějakého elementu chtěli vložit kus HTML? K tomu nám poslouží vlastnost `innerHTML`.
 
 Vraťme se k ukázkové stránce z předchozí části.
 
@@ -234,7 +235,7 @@ Vraťme se k ukázkové stránce z předchozí části.
 </body>
 ```
 
-Kdybychom chtěli do elementu `header` vložit například nadpis první úrovně, můžeme to provést takto. 
+Kdybychom chtěli do elementu `header` vložit například nadpis první úrovně, můžeme to provést takto.
 
 ```js
 const headerElm = document.querySelector('.header');
@@ -243,7 +244,7 @@ headerElm.innerHTML = '<h1>Hlavička</h1>';
 
 Ve chvíli, kdy takto nastavíme vlastnost `innerHTML`, prohlížeč si přečte obsah našeho řetězce a automaticky z něj vyrobí DOM elementy pro naši stránku. Můžete si v developer tools zkontrolovat, že obsah hlavičky má nyní opravodou DOM strukturu.
 
-Pokud vytváříme kus stránky pomocí `innerHTML`, děláme to většinou proto, že chceme do HTML vložit obsah nějaký proměnných. Relisičtější příklad by tedy byl ten, kdy máme například název stránku uložený v proměnné. 
+Pokud vytváříme kus stránky pomocí `innerHTML`, děláme to většinou proto, že chceme do HTML vložit obsah nějaký proměnných. Realističtější příklad by tedy byl ten, kdy máme například název stránky uložený v proměnné.
 
 ```js
 const pageTitle = 'Moje stránka';
@@ -251,14 +252,14 @@ const headerElm = document.querySelector('.header');
 headerElm.innerHTML = `<h1>${pageTitle}</h1>`;
 ```
 
-Pomocí `innerHTML` tak získáváme mnohem větší kontrolu nad obsahem stránky než jsme měli pouze s použitím `textContent`. Čím dál častěji se nám bud stávat, že budeme větší a větší kusy stránky vytvářet JavaScriptem právě pomocí `innerHTML`. Můžeme třeba na první kartu naší stránky vložit nějaký produkt.
-
+Pomocí `innerHTML` tak získáváme mnohem větší kontrolu nad obsahem stránky než jsme měli pouze s použitím `textContent`. Čím dál častěji se nám bude stávat, že budeme větší a větší kusy stránky vytvářet JavaScriptem právě pomocí `innerHTML`. Můžeme třeba na první kartu naší stránky vložit nějaký produkt.
 
 ```js
 const product1 = {
   name: 'Lední brusle',
   price: 1259,
-  description: 'Lední brusle dámské vhodné pro rekreační bruslaře, nůž: klasická svařovaná brusle, nerezová ocel',
+  description:
+    'Lední brusle dámské vhodné pro rekreační bruslaře, nůž: klasická svařovaná brusle, nerezová ocel',
   color: 'white',
 };
 
@@ -286,7 +287,7 @@ const btnElm = document.querySelector('#login-btn');
 btnElm.className = 'btn btn--primary';
 ```
 
-Takto ovšem nastavujeme celý atribut `class`. Musíme tedy znát všechny ostatní třídy, které na tlačítku máme. To nám začne časem velmi znepříjmňovat život. JavaScript však nabízí vlastnost `classList`, díky které můžeme s CSS třídami na elementu pracovat mnohem přímočařeji. Výše zmíněný úkol pak vyřešíme takto.
+Takto ovšem nastavujeme celý atribut `class`. Musíme tedy znát všechny ostatní třídy, které na tlačítku máme. To nám začne časem velmi znepříjemňovat život. JavaScript však nabízí vlastnost `classList`, díky které můžeme s CSS třídami na elementu pracovat mnohem přímočařeji. Výše zmíněný úkol pak vyřešíme takto.
 
 ```js
 const btnElm = document.querySelector('#login-btn');
@@ -325,10 +326,12 @@ Pokud se daná CSS třída na elementu nachází, metoda `toggle` ji odstraní. 
 Pomocí vlastnosti `classList` jsme opět rozšířili náš arzenál pro manipulaci s obsahem stránky a také máme život zase o kousek jednodušší.
 
 [[[ excs Cvičení - pokročílé třídy a innerHTML
+
 - nekupto-tridy
 - nekupto-obsah
-]]]
+  ]]]
 
 [[[ excs Doporučené úložky na doma
+
 - dovednosti
-]]]
+  ]]]
