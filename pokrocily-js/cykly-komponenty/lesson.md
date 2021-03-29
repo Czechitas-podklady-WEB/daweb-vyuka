@@ -7,37 +7,25 @@ Než se však pustíme do hlavního tématu, ještě si lehce zopakujeme cykly.
 - nakupni-seznam-funkce
 ]]]
 
-## Tvorba HTML pomocí JavaScriptu
+## Jednoduché destrukturování
 
-V poslední části našeho cvičení s nákupním seznamem jsme vytvořili řetězec, který obsahuje HTML značky. Po této zkušenosti by nás mohla napadnou otázka, zda-li by nešlo takto vytvořený HTML kód zapojit přímo do naší stránky.
-
-Už dávno umíme změnit obsah nějakého DOM elementu pomocí vlastnosti `textContent`. Takto však můžeme pravovat pouze s obsah, který je čistý text. Pokud chceme do nějakého elementu vložit kus HTML, je třeba k tomu použít vlastnost `innerHTML`.
-
-Pro příklad mějme následující jednoduchou HTML strukturu s prázdným odrážkovým seznamem.
-
-```html
-<body>
-  <ol class="shopping-list"></ol>
-</body>
-```
-
-Nyní vybereme element seznamu dle třídy `shopping-list` a vložíme do něj kus HTML kódu.
+Často se nám stane, že chceme z objektu získat vícero hodnot a uložit se je do proměnných, například takto.
 
 ```js
-const listElm = document.querySelector('.shopping-list');
-listElm.innerHTML = '<li>mouka</li><li>máslo</li>';
+const fullName = user1.fullName;
+const login = user1.login;
+const cartItems = user1.cartItems;
 ```
 
-Na výsledné stránce si můžeme ověřit, že po spuštění tohoto kódu skutečně obsahuje nové HTML elementy. Díky `innerHTML` takto můžeme dovnitř libovolného elementu vložit libovolně komplikované HTML. Navíc můžeme do našich řetězců vkládat obsahy proměnných. Není tedy problém sestavit naše HTML s použitím nějakých dat.
+Programátoři jsou však líné bytosti a tento postup jim přijde zdlouhavý. Pokud se naše proměnné jmenují stejně jako klíče uvnitř objektu, můžeme si ušetřit psaní a použít takzvané destrukturování. 
 
 ```js
-const item1 = 'mouka';
-const item2 = 'máslo';
-const listElm = document.querySelector('.shopping-list');
-listElm.innerHTML = `<li>${item1}</li><li>${item2}</li>`;
+const { fullName, login, cartItems } = user1;
 ```
 
-Pomocí `innerHTML` získáváme mnohem větší kontrolu nad obsahem stránky než jsme měli pouze s použitím `textContent`.
+Tímto zápisem říkáme, že chceme vyrobit tři proměnné, do kterých se uloží hodnoty z objektu `user1`. 
+
+Tento postup se nám bude zvlášť hodit ve chvíli, kdy v nějaké funkci obdržíme na vstupu objekt. 
 
 ## První komponenta
 
