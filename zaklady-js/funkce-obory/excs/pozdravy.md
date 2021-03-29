@@ -10,7 +10,7 @@ Představte si, že tvoříte aplikaci na odesílání e-mailů. Každý e-mail 
    > goodbye()
    Na shledanou
    ```
-1. Končit e-mail slovy "na shledanou" je nezdvořilé. Přidejte proto do funkce `goodbye` parametr představující jméno pisatele e-mailu. Funkce do konzole vypíše koncový pozdrav i se jménem. Příklad použití:
+1. Končit e-mail slovy „na shledanou“ je nezdvořilé. Přidejte proto do funkce `goodbye` parametr představující jméno pisatele e-mailu. Funkce do konzole vypíše koncový pozdrav i se jménem. Příklad použití:
    ```jscon
    > goodbye('Pavel Ovesný')
    S pozdravem Pavel Ovesný
