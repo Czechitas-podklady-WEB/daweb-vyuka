@@ -1,5 +1,5 @@
 ---
-title: Cenník
+title: Ceník
 demand: 3
 ---
 

@@ -357,7 +357,7 @@ Uzávěr takto zkraje možná zní jako velmi technická záležitost. V JavaScr
 [[[ excs Doporučené úložky na doma
 - vyplata
 - kalkulacka
-- cennik
+- cenik
 ]]]
 
 
