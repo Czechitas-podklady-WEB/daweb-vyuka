@@ -8,9 +8,9 @@ Představte si, že tvoříte aplikaci na odesílání e-mailů. Každý e-mail 
 1. Napište funkci bez parametrů s názvem `goodbye`. Funkce do konzole vypíše rozloučení. Příklad použití:
    ```jscon
    > goodbye()
-   Nashledanou
+   Na shledanou
    ```
-1. Končit e-mail slovy "nashledanou" je nezdvořilé. Přidejte proto do funkce `goodbye` parametr představující jméno pisatele e-mailu. Funkce do konzole vypíše koncový pozdrav i se jménem. Příklad použití:
+1. Končit e-mail slovy "na shledanou" je nezdvořilé. Přidejte proto do funkce `goodbye` parametr představující jméno pisatele e-mailu. Funkce do konzole vypíše koncový pozdrav i se jménem. Příklad použití:
    ```jscon
    > goodbye('Pavel Ovesný')
    S pozdravem Pavel Ovesný
