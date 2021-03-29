@@ -61,7 +61,7 @@ Hodnotu `undefined` potkáme v mnoha situacích, ale nejčastěji ve chvíli, kd
 
 ```jscon
 > const name = 'martin'
-> name.length
+> name.lenght
 undefined
 ```
 
@@ -70,7 +70,7 @@ Všimněte si, že JavaScript runtime vrací `undefined` také jako výsledek vy
 ```jscon
 > const name = 'martin'
 undefined
-> name.length
+> name.lenght
 undefined
 ```
 
@@ -191,14 +191,14 @@ if (age < 18) {
   const remains = 18 - age;
 
   if (remains <= 2) {
-    alert('Už to máš za pár');
+    console.log('Už to máš za pár');
   } else if (remains <= 5) {
-    alert(`Ještě si počkáš ${remains} let`);
+    console.log(`Ještě si počkáš ${remains} let`);
   } else {
-    alert('Utíkej za mamkou');
+    console.log('Utíkej za mamkou');
   }
 } else {
-  alert('Vítej mezi dospěláky');
+  console.log('Vítej mezi dospěláky');
 }
 ```
 
@@ -211,15 +211,15 @@ if (age < 18) {
   const remains = 18 - age;
 
   if (remains >= 2) {
-    alert('Už to máš za pár');
+    console.log('Už to máš za pár');
   } else if (remains >= 5) {
-    alert(`Ještě si počkáš ${remains} let`);
+    console.log(`Ještě si počkáš ${remains} let`);
   } else {
-    alert('Utíkej za mamkou');
+    console.log('Utíkej za mamkou');
   }
 } else {
   console.log(remains); // Zde vznikne chyba
-  alert('Vítej mezi dospěláky');
+  console.log('Vítej mezi dospěláky');
 }
 
 console.log(remains); // Zde vznikne chyba
@@ -240,16 +240,16 @@ if (age < 18) {
   const remains = 18 - age;
 
   if (remains >= 2) {
-    alert('Už to máš za pár');
+    console.log('Už to máš za pár');
   } else if (remains >= 5) {
     console.log(age); // V pořádku
-    alert(`Ještě si počkáš ${remains} let`);
+    console.log(`Ještě si počkáš ${remains} let`);
   } else {
-    alert('Utíkej za mamkou');
+    console.log('Utíkej za mamkou');
   }
 } else {
   console.log(age); // V pořádku
-  alert('Vítej mezi dospěláky');
+  console.log('Vítej mezi dospěláky');
 }
 
 console.log(age); // V pořádku
@@ -264,10 +264,10 @@ const age = Number(prompt('Zadej svůj věk:'));
 
 if (age < 18) {
   const message = 'Utíkej za mamkou';
-  alert(message);
+  console.log(message);
 } else {
   const message = 'Vítej mezi dospěláky';
-  alert(message);
+  console.log(message);
 }
 ```
 
@@ -282,10 +282,10 @@ const age = Number(prompt('Zadej svůj věk:'));
 const message = 'Utíkej za mamkou';
 
 if (age < 18) {
-  alert(message);
+  console.log(message);
 } else {
   const message = 'Vítej mezi dospěláky';
-  alert(message);
+  console.log(message);
 }
 ```
 
@@ -360,69 +360,6 @@ Uzávěr takto zkraje možná zní jako velmi technická záležitost. V JavaScr
 - cennik
 ]]]
 
-## Povinné čtení na doma - interpolace řetězců
-
-Když chceme v JavaScriptu vytvořit nějaký kus textu, například nějakou zprávu pro uživatele, často potřebujeme do tohoto textu vložit obsah několika různých proměnných.
-
-```js
-'Zákazník ' + name + ' utratil ' + amount + ' kč za ' + product + '.';
-```
-
-Abychom se ze všeho toho sčítání a uvozovek nezbláznili, moderní JavaScript nabízí nový zápis řetězců, kterému se odborně říká <term cs="interpolace řetězců" em="string interpolation">. V tomto zápisu se místo obyčejný nebo dvojitých uvozovek používají takzvaný zpětný apostrof &#96;. Pomocí tohoto zápisu můžeme obsah proměnných vložit do řetězce pomocí znaku `$` a složených závorek.
-
-```js
-`Zákazník ${name} utratil ${amount} kč za ${product}.`;
-```
-
-Uvnitř složených závorek se nám otevírá jakési JavaScriptové okno, do kterého můžeme vepsat nejen proměnnou, ale zcela libovolný výraz, jehož výsledek bude automaticky zkonvertován na řetězec.
-
-```js
-`Zákazník ${name} utratil ${String(amount).padStart()} kč za ${product}.`;
-```
-
-### Víceřádkové řetězce a escape sekvence
-
-Dále v tomto kurzu budeme chtít pracovat s delšími řetězci, které se nám často nevejdou na jeden řádek. V JavaScriptu bohužel nelze udělat běžný řetězec na více řádků. Následující kód by bohužel nefungoval.
-
-```js
-const name = '
-  petr
-';
-```
-
-Abychom takový řetězec sestavili, musíme si pomoct sčítáním řetězců.
-
-```js
-const may = (
-  'Late evening, on the first of May—\n' +
-  'The twilit May—the time of love.\n' +
-  'Meltingly called the turtle-dove,\n' +
-  'Where rich and sweet pinewoods lay.\n' +
-  'Whispered of love the mosses frail,\n' +
-  'The flowering tree as sweetly lied,\n' +
-  'The rose\'s fragrant sigh replied\n' +
-  'To love-songs of the nightingale' +
-);
-```
-
-Všimněte si použití zpětného lomítka u sybmolů jako `\n` a `\'`. Toto jsou takzvané _escape sekvence_, které nám umožní vložit dovnitř řetězce znak, který by jinak nešel napsat. Sekvence `\n` znamená nový řádek, sekvence `\'` vloží apostrof. Ten bychom to řetězce napsat nemohli, protože by si JavaScript myslel, že tím chceme řetězec ukončit.
-
-Naustálé sčítání a vkládání escape sekvencí nás ovšem brzy začne dost zdržovat. Nyní však můžeme použí nové cool řetězce se zpětnými apostrofy a zapsat náš řetězec takto.
-
-```js
-const may = `
-  Late evening, on the first of May—
-  The twilit May—the time of love.
-  Meltingly called the turtle-dove,
-  Where rich and sweet pinewoods lay.
-  Whispered of love the mosses frail,
-  The flowering tree as sweetly lied,
-  The rose's fragrant sigh replied
-  To love-songs of the nightingale
-`;
-```
-
-Zde už apostrof i nový řádek můžeme napsat rovnou bez escape sekvencí.
 
 [[[ excs Volitelné úložky na doma
 - vyplnorez
