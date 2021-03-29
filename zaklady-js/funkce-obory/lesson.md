@@ -2,7 +2,7 @@ Do této chvíle jsme z jazyka JavaScript již poznali mnoho věcí. Věcí, kte
 
 ## Hodnoty null a undefined
 
-Občas se nám stane, že si potřebujeme nějakou proměnnou připravit, ale zatím ještě nevíme, jaká v ní bude hodnota. Chceme tedy, aby na začátku byla tato proměnná prázdná. To můžeme zařídit pomocí speciální hodnoty `null`. Můžeme si představit, že hodnota `null` znamená <i>nic</i>. Jde zároveň o nový typ hodnoty vedle čísel, řetězců, objektů, funkcí apod. 
+Občas se nám stane, že si potřebujeme nějakou proměnnou připravit, ale zatím ještě nevíme, jaká v ní bude hodnota. Chceme tedy, aby na začátku v proměnné byla nějaká neutrální hodnota, která jakoby nic neznamená. To můžeme zařídit pomocí speciální hodnoty `null`. Můžeme si představit, že hodnota `null` je jakási prázdná výplň, taková vata, která zabírá místo tam, kde zatím nic skutečného není. Jde zároveň o nový typ hodnoty vedle čísel, řetězců, objektů, funkcí apod. 
 
 ```js
 'use strict';
@@ -55,7 +55,7 @@ if (msgElm === null) {
 
 ### Hodnota undefined
 
-Kromě celkem užitečné hodnoty `null` JavaScript také obsahuje zákeřnou hodnotu `undefined`. Tato hodnota v podstatě znamená "ještě větší prázdno než nic". Pokud bychom přirovnali proměnné k šuplíkům, mohli bychom si představovat, že hodnota `null` znamená prázdný šuplík. Hodnota `undefined` by pak znamenala, že ve skříni chybí i sám šuplík a zíráme jen na prázdnou díru ve skříni.
+Kromě celkem užitečné hodnoty `null` JavaScript také obsahuje zákeřnou hodnotu `undefined`. Pokud `null` je jakási neutrální výplň, hodnota `undefined` v podstatě znamená "prázdno". Pokud bychom přirovnali proměnné k šuplíkům, mohli bychom si představovat, že hodnota `null` znamená šuplík vyplněný vatou nebo molitanem. Hodnota `undefined` by pak znamenala, že šuplík je úplně prázdný. 
 
 Hodnotu `undefined` potkáme v mnoha situacích, ale nejčastěji ve chvíli, kdy se snažíme u nějakého objektu přistoupit k vlastnosi, která neexistuje. Je například velmi snadné udělat překlep v anglickém slově `length`.
 
