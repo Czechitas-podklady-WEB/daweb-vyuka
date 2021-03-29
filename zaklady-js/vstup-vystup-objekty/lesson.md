@@ -235,24 +235,6 @@ Kdybychom pak chtěli získat například město, kam máme objednané zboží d
 
 Díky objektům tak můžeme v našich programech reprezentovat i velmi komplikovaná data. 
 
-## Jednoduché destrukturování
-
-Často se nám stane, že chceme z objektu získat vícero hodnot a uložit se je do proměnných, například takto.
-
-```js
-const fullName = user1.fullName;
-const login = user1.login;
-const cartItems = user1.cartItems;
-```
-
-Programátoři jsou však líné bytosti a tento postup jim přijde zdlouhavý. Pokud se naše proměnné jmenují stejně, jako klíče uvnitř objektu, můžeme si ušetřit psaní a použít takzvané destrukturování. 
-
-```js
-const { fullName, login, cartItems } = user1;
-```
-
-Tímto zápisem říkáme, že chceme vyrobit tři proměnné, do kterých se uloží hodnoty z objektu `user1`. 
-
 [[[ excs Cvičení: Objekty
 - realitka
 - knihovna

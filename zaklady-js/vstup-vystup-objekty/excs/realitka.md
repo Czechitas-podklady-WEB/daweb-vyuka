@@ -37,5 +37,5 @@ Vytvořte webovou stránku s JavaScriptem, zkopírujte si tento kód do vašeho 
 1. Pomocí tečkové notace vypište do konzole dispozici bytu.
 1. Vypište do konzole čistý nájem bez poplatků.
 1. Vypište do konzole celý objekt představující výměru bytu. 
-1. Použijte destrukturing a vypište do konzole město a městskou část.
+1. Do separátních proměnných si uložte město a městskou část. Vypište je do konzole.
 1. Změnte stav inzerátu z `'free'` na `'taken'`.
