@@ -1,4 +1,4 @@
-V této lekci opět o kus zvýšíme interaktivnost našich stránek. Naučíme se, jak získat vstup od uživatele skrze HTML prvky jako například textové políčko. Také si trochu rozšíříme znalosti ohledně událostí a naučíme se například poznat, která klávesa na klávesnici byla stisknuta. Zároveň si ukážeme, jak našich programech lovit a opravovat chyby.
+V této lekci opět o kus zvýšíme interaktivnost našich stránek. Naučíme se, jak získat vstup od uživatele skrze HTML prvky jako například textové políčko. Také si trochu rozšíříme znalosti ohledně událostí a naučíme se například poznat, která klávesa na klávesnici byla stisknuta. Zároveň si ukážeme, jak v našich programech lovit a opravovat chyby.
 
 ## Vlastnosti událostí
 
@@ -31,7 +31,7 @@ Pokud má naše funkce parametr, dáváme tím JavaScript runtimu najevo, že n�
 
 ### Vlastnost target
 
-Nejříve si na příkladu vysvětlíme vlastnost `target`. Je to jedna z vůbec nejdůležitějších vlastností na událostech. Díky ní se můžeme dostat z mnoha jinak svízelných situací. Představte si například, že chceme naprogramovat jednoduchou chatovací aplikaci, která umožňuje přiřadit zprávě smajlíka. Začneme s již připaveným kód, který si můžete [stáhnout zde](assets/smileys.zip). Pro nás je v tuto chvíli relavanentí část HTML zobrazující tlačítka se smajlíky.
+Nejříve si na příkladu vysvětlíme vlastnost `target`. Je to jedna z vůbec nejdůležitějších vlastností na událostech. Díky ní se můžeme dostat z mnoha jinak svízelných situací. Představte si například, že chceme naprogramovat jednoduchou chatovací aplikaci, která umožňuje přiřadit zprávě smajlíka. Začneme s již připaveným kódem, který si můžete [stáhnout zde](assets/smileys.zip). Pro nás je v tuto chvíli relavanentí část HTML zobrazující tlačítka se smajlíky.
 
 ```html
 <button id="btn-smiley1" class="btn-smiley">😀</button>
