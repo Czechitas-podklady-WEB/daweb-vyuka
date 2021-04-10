@@ -34,11 +34,11 @@ Pokud má naše funkce parametr, dáváme tím JavaScript runtimu najevo, že n�
 Nejříve si na příkladu vysvětlíme vlastnost `target`. Je to jedna z vůbec nejdůležitějších vlastností na událostech. Díky ní se můžeme dostat z mnoha jinak svízelných situací. Představte si například, že chceme naprogramovat jednoduchou chatovací aplikaci, která umožňuje přiřadit zprávě smajlíka. Začneme s již připaveným kódem, který si můžete [stáhnout zde](assets/smileys.zip). Pro nás je v tuto chvíli relavanentí část HTML zobrazující tlačítka se smajlíky.
 
 ```html
-<button id="btn-smiley1" class="btn-smiley">😀</button>
-<button id="btn-smiley2" class="btn-smiley">😍</button>
-<button id="btn-smiley3" class="btn-smiley">😜</button>
-<button id="btn-smiley4" class="btn-smiley">😢</button>
-<button id="btn-smiley5" class="btn-smiley">😱</button>
+<button id="smiley1" class="btn-smiley">😀</button>
+<button id="smiley2" class="btn-smiley">😍</button>
+<button id="smiley3" class="btn-smiley">😜</button>
+<button id="smiley4" class="btn-smiley">😢</button>
+<button id="smiley5" class="btn-smiley">😱</button>
 ```
 
 Nyní budeme chtít, aby při stisku každého tlačíka přibyla na tomto tlačítku třída `btn-smiley--selected`. První řešení, které nás může napadnout, je dát každému tlačíku na kliknutí jinou funkci.
@@ -46,24 +46,24 @@ Nyní budeme chtít, aby při stisku každého tlačíka přibyla na tomto tlač
 ```js
 'use strict';
 
-document.querySelector('#btn-smiley1').addEventListener('click', () => {
-  const btn = document.querySelector('#btn-smiley1');
+document.querySelector('#smiley1').addEventListener('click', () => {
+  const btn = document.querySelector('#smiley1');
   btn.classList.add('btn-smiley--selected');
 });
-document.querySelector('#btn-smiley2').addEventListener('click', () => {
-  const btn = document.querySelector('#btn-smiley2');
+document.querySelector('#smiley2').addEventListener('click', () => {
+  const btn = document.querySelector('#smiley2');
   btn.classList.add('btn-smiley--selected');
 });
-document.querySelector('#btn-smiley3').addEventListener('click', () => {
-  const btn = document.querySelector('#btn-smiley3');
+document.querySelector('#smiley3').addEventListener('click', () => {
+  const btn = document.querySelector('#smiley3');
   btn.classList.add('btn-smiley--selected');
 });
-document.querySelector('#btn-smiley4').addEventListener('click', () => {
-  const btn = document.querySelector('#btn-smiley4');
+document.querySelector('#smiley4').addEventListener('click', () => {
+  const btn = document.querySelector('#smiley4');
   btn.classList.add('btn-smiley--selected');
 });
-document.querySelector('#btn-smiley5').addEventListener('click', () => {
-  const btn = document.querySelector('#btn-smiley5');
+document.querySelector('#smiley5').addEventListener('click', () => {
+  const btn = document.querySelector('#smiley5');
   btn.classList.add('btn-smiley--selected');
 });
 ```
@@ -77,11 +77,11 @@ const selectSmiley = (event) => {
   event.target.classList.add('btn-smiley--selected');
 };
 
-document.querySelector('#btn1').addEventListener('click', selectSmiley);
-document.querySelector('#btn2').addEventListener('click', selectSmiley);
-document.querySelector('#btn3').addEventListener('click', selectSmiley);
-document.querySelector('#btn4').addEventListener('click', selectSmiley);
-document.querySelector('#btn5').addEventListener('click', selectSmiley);
+document.querySelector('#smiley1').addEventListener('click', selectSmiley);
+document.querySelector('#smiley2').addEventListener('click', selectSmiley);
+document.querySelector('#smiley3').addEventListener('click', selectSmiley);
+document.querySelector('#smiley4').addEventListener('click', selectSmiley);
+document.querySelector('#smiley5').addEventListener('click', selectSmiley);
 ```
 
 Takový kód už je mnohem hezčí. Kdybychom ještě navíc uměli cykly, které nás již brzo čekají, dokázali bychom jej zkrátit ještě výrazněji.
