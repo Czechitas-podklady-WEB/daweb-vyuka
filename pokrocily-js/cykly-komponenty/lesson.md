@@ -19,7 +19,7 @@ Začněme však jednodušeji a představme si, že programujeme aplikaci pro evi
 const item1 = {
   name: 'Rohlíky',
   amount: '10',
-  bougth: false,
+  bought: false,
 };
 ```
 
