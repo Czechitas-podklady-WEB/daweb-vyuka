@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=latin-ext');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+body {
+  color: #666;
+}
+
+.episodes-list {
+  max-width: 20rem;
+  margin: 5rem auto;
+}
+
+.episode {
+  display: flex;
+  padding: 0.25rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.episode__num {
+  flex: 0 0 auto;
+  font-size: 3rem;
+  font-weight: bold;
+  color: lightblue;
+}
+
+.episode__body {
+  padding: 0.7rem;
+}
+
+.episode__title {
+  font-weight: bold;
+}
+
+.episode__guest {
+  color: #999;
+}

@@ -24,5 +24,6 @@ const list = ['mouka', 'máslo', 'cukr', 'jablka', 'skořice'];
 1. Upravte váš program tak, aby výsledný řětězec obsahoval HTML značky.
 
    ```
-   '<li>mouka</li><li>máslo</li><li>cukr</li><li>jablka</li><li>skořice</li>'
+   '&lt;li&gt;mouka&lt;/li&gt;&lt;li&gt;m&aacute;slo&lt;/li&gt;&lt;li&gt;cukr&lt;/li&gt;&lt;li&gt;jablka&lt;/li&gt;&lt;li&gt;skořice&lt;/li&gt;'
    ```
+1. Vytvořte někde na stránce prázdný číslovaný seznam `ol` a pomocí vlastnosti `innerHTML` do něj vložte řetězec sestavený v předchozím kroku.
