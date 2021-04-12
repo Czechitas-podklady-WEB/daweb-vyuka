@@ -85,7 +85,7 @@ můžeme do něj vložit jednu položku tak, že zavoláme naši komponentu.
 const item1 = {
   name: 'Rohlíky',
   amount: '10',
-  bougth: false,
+  bought: false,
 };
 
 const listElm = document.querySelector('.shopping-list');
@@ -102,13 +102,13 @@ Pokud bychom mělí více položek, vložíme je do sezanmu opakovaným volání
 const item1 = {
   name: 'Rohlíky',
   amount: '10',
-  bougth: false,
+  bought: false,
 };
 
 const item2 = {
   name: 'Rajčate',
   amount: '1kg',
-  bougth: false,
+  bought: false,
 };
 
 const listElm = document.querySelector('.shopping-list');
@@ -123,12 +123,12 @@ const items = [
   {
     name: 'Rohlíky',
     amount: '10',
-    bougth: false,
+    bought: false,
   },
   {
     name: 'Rajčate',
     amount: '1kg',
-    bougth: false,
+    bought: false,
   },
 ];
 
