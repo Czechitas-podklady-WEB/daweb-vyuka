@@ -26,11 +26,11 @@ const item1 = {
 Takovouto položku bychom chtěli na stránce zobrazit například takto:
 
 ```html
-<div class="item">
+<li class="item">
   <div class="item__name">Rohlíky</div>
   <div class="item__amount">10</div>
   <div class="item__bought">NE</div>
-</div>
+</li>
 ```
 
 Se současnými znalostmi by nebyl problém vytvořit toto HTML pomocí následujícího kódu.
@@ -42,11 +42,11 @@ if (item1.bought) {
 }
 
 const item1Html = `
-  <div class="item">
+  <li class="item">
     <div class="item__name">${item1.name}</div>
     <div class="item__amount">${item1.amount}</div>
     <div class="item__bought">${yesNo}</div>
-  </div>
+  </li>
 `
 ```
 
@@ -60,11 +60,11 @@ const ShoppingItem = (item) => {
   }
 
   return `
-    <div class="item">
+    <li class="item">
       <div class="item__name">${item.name}</div>
       <div class="item__amount">${item.amount}</div>
       <div class="item__bought">${yesNo}</div>
-    </div>
+    </li>
   `
 };
 ```
@@ -160,11 +160,11 @@ const ShoppingItem = (props) => {
   }
 
   return `
-    <div class="item">
+    <li class="item">
       <div class="item__name">${props.name}</div>
       <div class="item__amount">${props.amount}</div>
       <div class="item__bought">${yesNo}</div>
-    </div>
+    </li>
   `
 };
 ```
