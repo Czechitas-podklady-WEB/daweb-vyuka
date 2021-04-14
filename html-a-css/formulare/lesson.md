@@ -159,6 +159,18 @@ Je potřeba dbát na to, aby všechny související inputy měly stejný atribut
 <label>Zpráva: <textarea name="zprava"></textarea></label>
 ```
 
+### Metody odeslání
+
+Formulář odesílá data na backend přes url adresu. To nemusí být vždy vhodné. Mohly by tak uniknout například tajná hesla nebo vznikat příliš dlouhé adresy. Z těchto důvodů má formulář možnost alternativní metody odeslání pomocí atributu `method` nastaveného na `post` (výchozí je `get`).
+
+```html
+<form method="post" action="http://formular.itgirls.cz/">
+  <label>E-mail: <input type="email" name="email" /></label>
+  <label>Heslo: <input type="password" name="heslo" /></label>
+  <button type="submit">Přihlásit se</button>
+</form>
+```
+
 [[[ excs Cvičení: Pokročilé formuláře
 - statisticky-urad
 ]]]
@@ -176,4 +188,3 @@ Je potřeba dbát na to, aby všechny související inputy měly stejný atribut
 - `placeholder` je nevýrazná nápověda v místě, kam uživatel píše text. Není vidět, pokud uživatel začne psát. Protože je nápověda nevýrazná a mizí, není vhodné ji používat pro důležité informace.
 - `required` přiměje uživatele před odesláním vyplnit aspoň něco.
 - `minlength` přiměje uživatele vyplnit políčko o minimální délce.
-- `<form method="POST">` odešle data na backend metodou `POST`. Narozdíl od výchozí `GET`, která dává data od uživatele do url adresy, `POST` je zasílá skrytě. Vhodné pro velké formuláře nebo formuláře s políčkem na heslo.
