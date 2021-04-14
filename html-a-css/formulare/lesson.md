@@ -131,6 +131,8 @@ Kromě základního textového políčka máme i speciální například na datu
 - Odkaz: `type="url"`
 - Rozmezí: `type="range"`
 
+Tím výčet nekončí. Další typy nademe třeba na [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types) nebo [W3Schools](https://www.w3schools.com/html/html_form_input_types.asp).
+
 #### Několik možností, ze kterých jde vybrat jen jedna:
 
 ```html
