@@ -84,7 +84,7 @@ S každým dalším políčkem ale pro uživatele přestává být přehledné, 
 
    Jednodušší na zápis, ale občas se hůře styluje.
 
-1. Label jako samostatný prvek a input is `id`:
+1. Label jako samostatný prvek a input s `id`:
 
    ```html
    <label for="vstup_na_jmeno">Zadejte jméno:</label>
@@ -131,6 +131,8 @@ Kromě základního textového políčka máme i speciální například na datu
 - Odkaz: `type="url"`
 - Rozmezí: `type="range"`
 
+Tím výčet nekončí. Další typy nademe třeba na [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types) nebo [W3Schools](https://www.w3schools.com/html/html_form_input_types.asp).
+
 #### Několik možností, ze kterých jde vybrat jen jedna:
 
 ```html
@@ -157,6 +159,18 @@ Je potřeba dbát na to, aby všechny související inputy měly stejný atribut
 <label>Zpráva: <textarea name="zprava"></textarea></label>
 ```
 
+### Metody odeslání
+
+Formulář odesílá data na backend přes url adresu. To nemusí být vždy vhodné. Mohly by tak uniknout například tajná hesla nebo vznikat příliš dlouhé adresy. Z těchto důvodů má formulář možnost alternativní metody odeslání pomocí atributu `method` nastaveného na `post` (výchozí je `get`).
+
+```html
+<form method="post" action="http://formular.itgirls.cz/">
+  <label>E-mail: <input type="email" name="email" /></label>
+  <label>Heslo: <input type="password" name="heslo" /></label>
+  <button type="submit">Přihlásit se</button>
+</form>
+```
+
 [[[ excs Cvičení: Pokročilé formuláře
 - statisticky-urad
 ]]]
@@ -168,10 +182,9 @@ Je potřeba dbát na to, aby všechny související inputy měly stejný atribut
 - `autocomplete` pro lepší automatické doplňování. Více zde: [The HTML autocomplete attribute | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete).
 - `autofocus` zaměří políčko hned po načtení stránky, aby do něj mohl uživatel okamžitě psát. Užitečné hlavně v případech, kdy očekáváme, že uživatel začne vyplňovat první políčko bezprostředně po načtení stránky.
 - `disabled` zamezí vyplnění políčka nebo odeslání celého formuláře. Disabled políčka se neodesílají na backend.
-- `readonly` podobně jako `disabled` zamezí úpravy, ale odešle se zbytkem formuláře na backend.
+- `readonly` podobně jako `disabled` zamezí úpravy, ale odešle se se zbytkem formuláře na backend.
 - `value` políčko předvyplní daným obsahem.
 - `checked` říká, že zaškrtávací políčko má být v počátečním stavu předzaškrtnuté.
 - `placeholder` je nevýrazná nápověda v místě, kam uživatel píše text. Není vidět, pokud uživatel začne psát. Protože je nápověda nevýrazná a mizí, není vhodné ji používat pro důležité informace.
 - `required` přiměje uživatele před odesláním vyplnit aspoň něco.
 - `minlength` přiměje uživatele vyplnit políčko o minimální délce.
-- `<form method="POST">` odešle data na backend metodou `POST`. Narozdíl od výchozí `GET`, která dává data od uživatele do url adresy, `POST` je zasílá skrytě. Vhodné pro velké formuláře nebo formuláře s políčkem na heslo.
