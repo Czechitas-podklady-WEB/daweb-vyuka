@@ -122,7 +122,7 @@ Pokud server poskytuje API, cestám v rámci jednoho serveru se říká _endpoin
 
 ### Volání API z JavaScriptu
 
-Většina API funguje velmi přímočaře. Odešlete správně zformulovaný požadavek na nějaký endpont a server vám pošle odpověď s kýženými daty nejčastěji ve formátu JSON.
+Většina API funguje velmi přímočaře. Odešlete správně zformulovaný požadavek na nějaký endpoint a server vám pošle odpověď s kýženými daty nejčastěji ve formátu JSON.
 
 Pokud chceme tento proces provést v JavaScriptu, máme k dispozici velmi šikovnou metodu `fetch`. Můžeme si tedy založit nový program a rovnou napsat toto.
 
@@ -130,9 +130,9 @@ Pokud chceme tento proces provést v JavaScriptu, máme k dispozici velmi šikov
 const promise = fetch('https://api.abalin.net/today?country=cz');
 ```
 
-Je zde však drobný zádrhel. Servery jsou různě rychlé podle toho, jak jsou vytížené nebo jak jsou od nás geograficky daleko. Dat ke stažené také může být poměrně hodně. Všechny tyto faktory přispívají k tomu, že stahování dat může trvat nějakou chvíli, a my dopředu nevím, jak dlouhá tato chvíle bude. Dokonce se může stát, že server data nakonec nepošle vůbec, protože je přetížený požadavky jiných klientů, nebo dokonce úplně spadnul a už není dostupný.
+Je zde však drobný zádrhel. Servery jsou různě rychlé podle toho, jak jsou vytížené nebo jak jsou od nás geograficky daleko. Dat ke stažení také může být poměrně hodně. Všechny tyto faktory přispívají k tomu, že stahování dat může trvat nějakou chvíli, a my dopředu nevíme, jak dlouhá tato chvíle bude. Dokonce se může stát, že server data nakonec nepošle vůbec, protože je přetížený požadavky jiných klientů, nebo dokonce úplně spadnul a už není dostupný.
 
-Kdybychom tedy v našem programu na prvním řádku čekali, až funkce `fetch` skončí, mohli bychom si taky počkat notnou chvíli. Mezi tím by náš program zcela zamrznul a uživatel by neměl ze stránky dobrý pocit. Z tohoto důvodu funkce `fetch` nevrací data, nýbrž takzvaný _promise_. Promise je speciální JavaScriptová konstrukce podobná události. Podobně jako na událost můžeme na promisepověsit funkci, která se má zavolat ve chvíli, kdy dorazí odpověď od serveru. To se provede pomocí metody `then`.
+Kdybychom tedy v našem programu na prvním řádku čekali, až funkce `fetch` skončí, mohli bychom si taky počkat notnou chvíli. Mezi tím by náš program zcela zamrznul a uživatel by neměl ze stránky dobrý pocit. Z tohoto důvodu funkce `fetch` nevrací data, nýbrž takzvaný _promise_. Promise je speciální JavaScriptová konstrukce podobná události. Podobně jako na událost můžeme na promise pověsit funkci, která se má zavolat ve chvíli, kdy dorazí odpověď od serveru. To se provede pomocí metody `then`.
 
 ```js
 const promise = fetch('https://api.abalin.net/today?country=cz');
@@ -141,7 +141,7 @@ promise.then((resp) => {
 });
 ```
 
-Promise se můžeme uložit do proměnné jako vidíme výše, je to však trochu zbytečné. Metodu `then` můžeme zavolat roznou na výsledku funkce `fetch`.
+Promise můžeme uložit do proměnné jako vidíme výše, je to však trochu zbytečné. Metodu `then` můžeme zavolat roznou na výsledku funkce `fetch`.
 
 ```js
 fetch('https://api.abalin.net/today?country=cz').then((resp) => {
@@ -157,7 +157,7 @@ fetch('https://api.abalin.net/today?country=cz')
   .then((json) => console.log(json));
 ```
 
-Tento zápis může na první pohled vypadat poněkud složitě. Jeho použití je však pořád stejné. Stačí si jej tedy prostě zapamatovat a zvyknout si na to, že "takto se to prostě dělá." Promisy jsou relativně komplikované a hluboké téma. Nebudeme proto do nich zabíhat hluběji než je v tuto chvíli nezbytně nutné.
+Tento zápis může na první pohled vypadat poněkud složitě. Jeho použití je však pořád stejné. Stačí si jej tedy prostě zapamatovat a zvyknout si na to, že „takto se to prostě dělá“. Promisy jsou relativně komplikované a hluboké téma. Nebudeme proto do nich zabíhat hluběji než je v tuto chvíli nezbytně nutné.
 
 ### Zpracování dat
 
