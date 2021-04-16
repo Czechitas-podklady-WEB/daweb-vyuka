@@ -1,78 +1,8 @@
-Čím jsou naše programy větší a užitečnější v reálném životě, tím větší je objem a složitost informací, se kterými potřebují pracovat. Informacím, se kterými program pracuje říkáme data. Jednoduchá data v naších programech reprezentujeme pomocí hodnot jako čísla, řetězce, pravdivostní hodnoty apod. Brzy ale narazíme na komplexnější data, která mají nějakou složitější vnitřní strukturu. K reprezentaci takových dat používáme různé <term cs="datové struktury" en="data structures">. V tomto kurzu jsme zatím viděli pouze jednu takovou strukturu a tou je pole. Dnes si ukážeme další strukturu zvanou <term cs="objekt" en="object">, která na začátku vypadá zcela nevinně, nakonec však navždy změní naše životy a programování už nikdy nebude to, co bývalo dříve.
+Čím jsou naše programy větší a užitečnější v reálném životě, tím větší je objem a složitost informací, se kterými potřebují pracovat. Informacím, se kterými program pracuje říkáme data. Jednoduchá data v naších programech reprezentujeme pomocí základních hodnot jako čísla, řetězce, pravdivostní hodnoty apod. Brzy narazíme na komplexnější data, která mají nějakou složitější vnitřní strukturu. Pro uložení takových dat pak používáme pole a objekty. 
 
 ## Objekty jako data
 
-Pokud chceme reprezentovat složitější data, i obyčejná pole nám nabízejí dostatak prostoru. Vzpomeňte si například na naši tabulku útrat.
-
-```js
-const expenses = [
-  ['Petr', 'Prací prášek', 240],
-  ['Ondra', 'Savo', 80],
-  ['Pavla', 'Toaleťák', 65],
-  ['Zuzka', 'Mýdlo', 50],
-  ['Pavla', 'Závěs do koupelny', 350],
-  ['Libor', 'Pivka na kolaudačku', 124],
-  ['Petr', 'Pytle na odpadky', 75],
-  ['Míša', 'Utěrky na nádobí', 130],
-  ['Ondra', 'Toaleťák', 120],
-  ['Míša', 'Pečící papír', 30],
-  ['Zuzka', 'Savo', 80],
-  ['Petr', 'Tapeta na záchod', 315],
-  ['Ondra', 'Toaleťák', 64],
-];
-```
-
-Představme si však, že strukturovanost těchto dat ještě naroste. Každý člověk v tabulce bude mít nejen jméno, ale i příjmení, u zakoupené věci budeme zaznamenávat také množství a jednotky. Pole můžeme libovolně vnořovat, není tedy problém naší strukturu předělat takto.
-
-```js
-const expenses = [
-  [['Petr', 'Bílek'], ['Prací prášek', 1.5, 'kg'], 240],
-  [['Ondřej', 'Zvěřina'], ['Savo', 1, 'ks'], 80],
-  [['Pavla', 'Durdíková'], ['Toaleťák', 1, 'balení'], 65],
-  [['Zuzana', 'Kaczynská'], ['Mýdlo', 200, 'ml'], 50],
-  [['Pavla', 'Durdíková'], ['Závěs do koupelny', 1, 'ks'], 350],
-  [['Libor', 'Krejčí'], ['Pivka na kolaudačku', 40, 'ks'], 124],
-  [['Petr', 'Bílek'], ['Pytle na odpadky', 3, 'balení'], 75],
-  [['Michaela', 'Reischlová'], ['Utěrky na nádobí', 1, 'balení'], 130],
-  [['Ondřej', 'Zvěřina'], ['Toaleťák', 2, 'balení'], 120],
-  [['Michaela', 'Reischlová'], ['Pečící papír', 1, 'balení'], 30],
-  [['Zuzana', 'Kaczynská'], ['Savo', 1, 'ks'], 80],
-  [['Petr', 'Bílek'], ['Tapeta na záchod', 1, 'ks'], 315],
-  [['Ondřej', 'Zvěřina'], ['Toaleťák', 1, 'balení'], 64],
-];
-```
-
-Taková struktura už ale pomalu začíná být malinko nepřehledná. Pokud se chceme dostat k názvu zakoupené věci, musíme napsat například.
-
-```jscon
-> expenses[3][1][0]
-'Mýdlo'
-```
-
-Z tohoto výrazu už je dost těžké vyčíst, co vlastně z tabulky vytahujeme, musíme počítat indexy na prstech ruky a je velmi snadné se splést. Musíme si totiž pamatovat, že jméno produktu je na indexu 0, že produkt samotný je na indexu 1 a tak dále.
-
-Abychom měli život o kus jednodušší, použijeme k reprezentaci řádku v tabulce místo pole objekt. Objekty ukládají data ve formátu klíč - hodnota. Jeden řádek naší tabulky (jednoduchá verze) pak bude vypadat takto.
-
-```js
-const row = {
-  name: 'Petr',
-  product: 'Prací prášek',
-  price: 240,
-};
-```
-
-Výhoda objektů spočívá v tom, že ke každé hodnotě se nyní dostaneme pomocí klíče a nemusíme řešit indexy.
-
-```jscon
-> row.name
-'Petr'
-> row.product
-'Prací prášek'
-> row.price
-240
-```
-
-Objekt je nový typ hodnoty. Můžeme s ním tedy jako vždy provádět cokoliv, co děláme s ostatními hodnotami - ukládat do proměnné, používat ve výrazech, předávat jako vstupy funkcím apod. Díky tomu mohou objekty být součástí polí. Celá naše tabulka pak bude vypadat takto.
+Při práci s většími daty se často potkáváme s polem objektů. Představme si například tabulku výdajů, která má 13 řádků a tři sloupečky. 
 
 ```js
 const expenses = [
@@ -92,63 +22,9 @@ const expenses = [
 ];
 ```
 
-Navíc, každý klíč v objektu může odkazovat na libovolnou hodnotu. V řádku tabulky zatím máme jen řetězce a číslo. Není však problém použít pole nebo rovnou další objekt. Můžeme tak vytvářen zanořené struktury jako například tuto.
+Takováto data bychom pak pomocí komponent zobrazili na naší stránce podobně, jako jste se to naučili v předchozí lekci. 
 
-```js
-const row = {
-  name: {
-    first: 'Petr',
-    last: 'Bílek',
-  },
-  product: {
-    name: 'Prací prášek',
-    amount: 1.5,
-    unit: 'kg',
-  },
-  price: 240,
-};
-```
-
-K názvu produktu se pak snadno dostaneme takto.
-
-```jscon
-> row.product.name
-'Prací prášek'
-```
-
-To je jistě mnohem srozumitelnější, než používat indexu u polí. Díky objektům a polím můžeme vytvářet mnohonásobně složitější a komplikovanější struktury, které mohou reprezentovat téměř jakákoliv strukturovaná data.
-
-**Tajemství**: Pokud může být pod klíčem v objektu livobolná hodnota, zvídavého člověka možná napade co by se tak stalo, kdybychom jako hodnotu v objektu použitli funkci. Funkce jsou přece také právoplatní hodnoty. Toto je ale právě ta věc, která navždy změní naše programátorské životy a na takovou změnu je třeba se duševně připravit. Odložíme ji proto zatím do některé z dalších lekci.
-
-### Tečková notace
-
-Pokud objekty zapisujeme způsobem jako výše, názvy klíčů se musí řídit stejnými pravidly jako názvy proměnných. Nemůžeme tak mít uvnitř názvu klíče mezeru nebo třeba pomlčku. Většinou se nám podaří takovým znakům vyhnout. Ne vždy je to ale možné. Pokud potřebujeme klíč s názvem, který porušuje pravidla JavaScriptových proměnných, stačí jej uzavřít do uvozovek.
-
-```js
-const person = {
-  'first-name': 'Petr',
-  'last-name': 'Bílek',
-};
-```
-
-V takovémto případě ale nemůžeme k hodnotám v objektu přistupovat jako obvykle.
-
-```jscon
-> person.first-name;
-```
-
-JavaScript by si myslel, že od hodnoty `person.first` odečítáme hodnotu `name`. Musíme tedy použít alternativní způsob přistupu ke klíčům.
-
-```jscon
-> person['first-name'];
-'Petr'
-```
-
-Tento způsob zdaleka není tak elegantní jako tečková notace. Proto se snažíme v názvech klíčů vyhýbat znakům, které nepatří do názvů proměnných a můžeme tak používat tečkovou notaci.
-
-### Složitější struktury
-
-Díky objektům a polím můžeme nyní v našich programech reprezentovat mnohem složitější data než dříve. Takto bychom mohli reprezentovat například kurz Czechitas jménem <i>Úvod do programování</i>.
+V praxi samozřejmě budeme mít data, jejichž struktura je hlubší. Budeme tedy často mít struktury jako objekty, které obsahují pole objektů a podobně. Takto bychom mohli reprezentovat například kurz Czechitas jménem <i>Úvod do programování</i>.
 
 ```js
 const course = {
@@ -174,53 +50,266 @@ const course = {
 };
 ```
 
-Všimněte si, jak objekt představující jeden kurz obsahuje pod klíčem `konani` pole dalších objektů. Každý z těchto objektů reprezentuje jedno konání kurzu a dále obsahuje například pole koučů, místo atp. Kdybychom tedy například chtěli seznam všech koučů na druhém konání kurzu, napsali bychom
+Všimněte si, jak objekt představující jeden kurz obsahuje pod klíčem `konani` pole dalších objektů. Každý z těchto objektů reprezentuje jedno konání kurzu a dále obsahuje například pole koučů, místo atp.
 
-```jscon
-> course.konani[1].koucove
-[ 'Dan Vrátil', 'Zuzana Tučková', 'Martina Nemčoková' ]
+## Formát JSON
+
+Podle většiny moderních doporučení je lepší v JavaScriptu používat v řetězcích jednoduché uvozovky. V počátcích JavaScriptu však bylo běžné používat spíše dvojité. Pokud v našich objektech schválně uzavřeme všechny klíče a řetězce do dvojitých uvozovek i tam, kde by to jinak nebylo potřeba, dostaneme reprezentaci zapsanou takto.
+
+<!-- prettier-ignore-start -->
+```js
+const row = {
+  "name": {
+    "first": "Petr",
+    "last": "Bílek"
+  },
+  "product": {
+    "name": "Prací prášek",
+    "amount": 1.5,
+    "unit": "kg"
+  },
+  "price": 240
+};
+```
+<!-- prettier-ignore-end -->
+
+Toto je z hlediska JavaSriptu naprosto korektní zápis. Vznikne tak zcela stejný objekt, jak ten, který by vznikl bez použití uvozovek kolem klíčů. Tento způsob zápisu má své speciální jméno - <i>JavaScript Object Notation</i>, nebo-li <i>JSON</i>. Za dobu existence JavaScriptu se tento zápis rozšířil po celém internetu a dnes jde o nejpoužívanější formát pro výměnu dat mezi aplikacemi. Pokud si budeme chtít stáhnout data z nějakého serveru, dostaneme je většinou právě ve formátu JSON.
+
+## Volání API
+
+Většina webových aplikací pracuje s daty, která jsou uložena na nějakém vzdáleném serveru. Pokud chceme s takovými daty pracovat, musíme si serveru o tato data říct. Požadavky na data se provádějí prostřednictvím takzvaného API (<i>Application Programming Interface</i>). Jak už jsme si řekli výše, většina API poskytuje data ve formátu JSON.
+
+K tomu, abychom mohli pracovat s API, je potřeba si detailněji popsat, jak funguje komunikace s webovým serverem. Pokud po webovém serveru něco chceme, například HTML stránku nebo nějaká data, musíme odeslat takzvaný <term cs="HTTP požadavek" en="HTTP request">. Každý požadavek musí být zacílený na nějakou URL adresu. Adresy URL mají následující formát.
+
+```
+protokol://adresa_serveru/cesta?parametr1=hodnota1&parametr2=hodnota2
 ```
 
-[[[ excs Cvičení: Objekty jako data
-- zaklady
-- kurz
-- knihovna
+Protokol je většinou `http` nebo `https`. Adresa serveru může být například `www.google.com`. Za adresou serveru následuje cesta, která specifikuje kam v rámci serveru se má požadavek odeslat. Za otazníkem se píšou takzvané parametry, které dále upřesňují požadavek.
+
+Takto například vypadá adresa požadavku na server `www.google.com`, který spustí vyhledávání.
+
+```
+https://www.google.com/search?q=praha&sourceid=chrome
+```
+
+Cesta v požadavku je tedy `/search`, parametr `q` udává, že se má vyhledat slovo `praha` a parametr `sourceid` říká, že se ptáme z prohlížeče `chrome`. Tuto adresu můžete normálně zadat do prohlížeče a uvidíte výsledky vyhledávání.
+
+### Dotazy na API
+
+Dotazy na API fungují naprosto stejně jako jsme popsali výše. Jedno z nejjednodušších API, které si můžete sami vyzkoušet, poskytuje informace o tom, kdo má který den v jaké zemi svátek. Pokud chcete vědět, kdo má zrovna dneska svátek v České republice, vložte do prohlížeče následující adresu.
+
+```
+https://api.abalin.net/today?country=cz
+```
+
+Zkuste si pro sebe určit, co je zde adresa serveru, cesta a parametry. Podle toho, jaký je zrovna den, dostanete odpověď podobnou této.
+
+<!-- prettier-ignore -->
+```json
+{"data":{"dates":{"day":9,"month":5},"namedays":{"cz":"Ctibor"}}}
+```
+
+Server se snaží posílat data co nejúsporněji a vynechává v JSONu pro počítače zbytečné mezery. Naštěstí dat není mnoho, takže jsou čitelná i v této formě.
+
+Většina API poskytuje více různých cest. Pro vyhledání jména pro dnešní den jsme použili cestu `/today`. Můžeme však položit i obrácený dotaz a zeptat se, kdy má v Americe svátek Suzanne. K to mu použijeme cestu `/getdate` s parametry `name` a `country`.
+
+```
+https://api.abalin.net/getdate?name=suzanne&country=us
+```
+
+Pokud server poskytuje API, cestám v rámci jednoho serveru se říká _endpointy_. Z našeho API pro získání jsme zatím viděli dva různé endpointy. Toto API jich má však ještě více. Vrátíme se k nim v příkladech na procvičení.
+
+### Volání API z JavaScriptu
+
+Většina API funguje velmi přímočaře. Odešlete správně zformulovaný požadavek na nějaký endpont a server vám pošle odpověď s kýženými daty nejčastěji ve formátu JSON.
+
+Pokud chceme tento proces provést v JavaScriptu, máme k dispozici velmi šikovnou metodu `fetch`. Můžeme si tedy založit nový program a rovnou napsat toto.
+
+```js
+const promise = fetch('https://api.abalin.net/today?country=cz');
+```
+
+Je zde však drobný zádrhel. Servery jsou různě rychlé podle toho, jak jsou vytížené nebo jak jsou od nás geograficky daleko. Dat ke stažené také může být poměrně hodně. Všechny tyto faktory přispívají k tomu, že stahování dat může trvat nějakou chvíli, a my dopředu nevím, jak dlouhá tato chvíle bude. Dokonce se může stát, že server data nakonec nepošle vůbec, protože je přetížený požadavky jiných klientů, nebo dokonce úplně spadnul a už není dostupný.
+
+Kdybychom tedy v našem programu na prvním řádku čekali, až funkce `fetch` skončí, mohli bychom si taky počkat notnou chvíli. Mezi tím by náš program zcela zamrznul a uživatel by neměl ze stránky dobrý pocit. Z tohoto důvodu funkce `fetch` nevrací data, nýbrž takzvaný _promise_. Promise je speciální JavaScriptová konstrukce podobná události. Podobně jako na událost můžeme na promisepověsit funkci, která se má zavolat ve chvíli, kdy dorazí odpověď od serveru. To se provede pomocí metody `then`.
+
+```js
+const promise = fetch('https://api.abalin.net/today?country=cz');
+promise.then((resp) => {
+  console.log(resp);
+});
+```
+
+Promise se můžeme uložit do proměnné jako vidíme výše, je to však trochu zbytečné. Metodu `then` můžeme zavolat roznou na výsledku funkce `fetch`.
+
+```js
+fetch('https://api.abalin.net/today?country=cz').then((resp) => {
+  console.log(resp);
+});
+```
+
+V parametru `resp` máme uloženu odpověd ze serveru. Pokud z této odpovědi chceme získat JSON, stačí na něm zavolat metodu `json`. Čeká nás však podraz. Tado metoda opět nevrací samotný JSON nýbrž pouze promise. Musíme tedy znova použít metodu `then` a vznikne nám takováto kaskáda.
+
+```js
+fetch('https://api.abalin.net/today?country=cz')
+  .then((resp) => resp.json())
+  .then((json) => console.log(json));
+```
+
+Tento zápis může na první pohled vypadat poněkud složitě. Jeho použití je však pořád stejné. Stačí si jej tedy prostě zapamatovat a zvyknout si na to, že "takto se to prostě dělá." Promisy jsou relativně komplikované a hluboké téma. Nebudeme proto do nich zabíhat hluběji než je v tuto chvíli nezbytně nutné.
+
+### Zpracování dat
+
+Naše funkce pro zpracování získaných dat je zatím pouze vypisovala do konzole. Můžeme si však napsat funkci, která dělá cokoliv chceme. Takto například můžeme zobrazím jméno mající dnes svátek v elementu s třídou `name`.
+
+```js
+const displayName = (json) => {
+  const nameElm = document.querySelector('.name');
+  nameElm.textContent = json.data.namedays.cz;
+};
+
+fetch('https://api.abalin.net/today?country=cz')
+  .then((resp) => resp.json())
+  .then(displayName);
+```
+
+[[[ excs Cvičení: Volání API
+- svatek-zitra
+- svatek-v-den
 ]]]
 
-## Pokročilejší práce s komponentami
+## Jednoduché destrukturování
 
-Protože už umíme používat objekty, můžeme udělát malou úpravu v tom, jak v JavaScriptu vytváříme komponenty. Do této chvíle jsme komponenty psali tak, jak vidíme níže na komponentě `Clock`, která zobrazuje hodiny.
+Při tvorbě komponent se nám bude velmi hodit takzvané destrukturování. 
+
+Vezměme pro příklad následující objekt. 
 
 ```js
-const Clock = (hours, minutes) => {
+const product = {
+  name: 'Mlýnek na kávu',
+  price: 520,
+  currency: 'kč',
+}
+```
+
+Často se nám stane, že chceme z objektu získat vícero hodnot a uložit je do proměnných, například takto.
+
+```js
+const name = product.name;
+const price = product.login;
+const currency = product.currency;
+```
+
+Programátoři jsou však líné bytosti a tento postup jim přijde zdlouhavý. Pokud se naše proměnné jmenují stejně jako klíče uvnitř objektu, můžeme si ušetřit psaní a použít takzvané destrukturování. 
+
+```js
+const { name, price, currency } = product;
+```
+
+Tímto zápisem říkáme, že chceme vyrobit tři proměnné, do kterých se uloží hodnoty z objektu `product`. 
+
+Tento postup se nám zvlášť hodí v komponentách, když chceme získat vlastnosti objektu `props`. Vzpomeňme si na komponentu `ShoppingItem` z předchozí lekce.
+
+```js
+const ShoppingItem = (props) => {
+  let yesNo = 'NE';
+  if (props.bought) {
+    yesNo = 'ANO';
+  }
+
   return `
-    <div class="clock">
-      <span class="clock__hours">${hours}</span>
-      :
-      <span class="clock__minutes">${minutes}</span>
-    </div>
-  `;
+    <li class="item">
+      <div class="item__name">${props.name}</div>
+      <div class="item__amount">${props.amount}</div>
+      <div class="item__bought">${yesNo}</div>
+    </li>
+  `
 };
 ```
 
-Naše komponenty vždy měly jeden nebo více parametrů. To jsou vždy data, která chceme zakomponovat do výsledného HTML. Nyní však uděláme změnu a budeme vždy komponentě předávat data jako objekt. Všechny naše komponenty tak budou mít navždy pouze jeden parametr, ve kterém bude komponenta očekávat objekt obsahující všechna nezbytná data. Tento parametr se bude u všech komponent jmenovat `props`.
-Naše komponenta `Clock` tak bude po této změně vypadat následovně.
+Kód můžeme malinko pročistit tím, že si parametr `props` destrukturujeme. 
 
 ```js
-const Clock = (props) => {
+const ShoppingItem = (props) => {
+  const { name, amount, bought } = props;
+
+  let yesNo = 'NE';
+  if (bought) {
+    yesNo = 'ANO';
+  }
+
   return `
-    <div class="clock">
-      <span class="clock__hours">${props.hours}</span>
-      :
-      <span class="clock__minutes">${props.minutes}</span>
-    </div>
-  `;
+    <li class="item">
+      <div class="item__name">${name}</div>
+      <div class="item__amount">${amount}</div>
+      <div class="item__bought">${yesNo}</div>
+    </li>
+  `
 };
 ```
 
-Tuto změnu děláme proto, abychom se přiblížili k tomu, jak s komonentami pracuje React, ke kterému postupně krůček po krůčku směřujeme.
+JavaScript však umožňuje zajít ještě dále a použít destrukturování přímo v parametru funkce. 
 
-### Komponenty uvnitř komponent
+```js
+const ShoppingItem = ({ name, amount, bought }) => {
+  let yesNo = 'NE';
+  if (bought) {
+    yesNo = 'ANO';
+  }
+
+  return `
+    <li class="item">
+      <div class="item__name">${name}</div>
+      <div class="item__amount">${amount}</div>
+      <div class="item__bought">${yesNo}</div>
+    </li>
+  `
+};
+```
+
+Takto píší komponenty praví profesionálové a bychom se jim příblížili, budeme je takto psát také. 
+
+## Skládání komponent
+
+Většina webových aplikací se skládá z mnoha různých komponent. Když aplikaci tvoříme, postupujeme směrem zdola nahoru. Vytváříme nejdříve jednoduché komponenty jako tlačítka, položky seznamů, vstupní pole apod. Tyto pak skládáme do větších komponent jako formuláře, seznamy, různá menu a další. Nakonec se dostaneme až k největším komponentám jako jsou samotné jednotlivé stránky naší aplikace.
+
+Struktura komponent často kopíruje strukturu naších dat. Připomeňme si náš nákupní seznam. Ten bychom z nějakého serveru mohli ve formátu JSON obdržet například takto. 
+
+```js
+const list = [
+  {
+    "name": "Rohlíky",
+    "amount": "10",
+    "bought": false,
+  },
+  {
+    "name": "Máslo",
+    "amount": "1 ks",
+    "bought": false,
+  },
+  {
+    "name": "Mléko",
+    "amount": "1 litr",
+    "bought": true,
+  },
+};
+```
+
+Vidíme, že náš seznam se skládá z jednotlivých položek. Ty můžeme zobrazovat pomocí komponenty `ShoppingItem`, kterou už známe. Celý seznam pak můžeme zobrazit pomocí komponenty `ShoppingList`. Ta bude k zobrazení jednotlivých položek používat právě komponentu `ShoppingItem`.
+
+```js
+const ShoppingList = ({ items }) => {
+  const resultHTML = '<ol class="shopping-list>';
+  for (let i = 0; i < items.length; i += 1) {
+    resultHTML += ShoppingItem(items[i]);
+  }
+
+  return resultHTML + '</ol>';
+};
+```
+
+Pomocí skládání komponent tak můžeme budovat větší a větší kusy naší aplikace, až jednou bude celá hotová.
 
 [[[ excs Cvičení: Komponenty a objekty
 - kontakt
