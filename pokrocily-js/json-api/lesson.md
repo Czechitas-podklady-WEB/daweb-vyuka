@@ -189,7 +189,7 @@ Vezměme pro příklad následující objekt.
 const product = {
   name: 'Mlýnek na kávu',
   price: 520,
-  currency: 'kč',
+  currency: 'Kč',
 }
 ```
 
@@ -197,7 +197,7 @@ const product = {
 
 ```js
 const name = product.name;
-const price = product.login;
+const price = product.price;
 const currency = product.currency;
 ```
 
@@ -207,7 +207,7 @@ Programátoři jsou však líné bytosti a tento postup jim přijde zdlouhavý. 
 const { name, price, currency } = product;
 ```
 
-Tímto zápisem říkáme, že chceme vyrobit tři proměnné, do kterých se uloží hodnoty z objektu `product`. 
+Tímto zápisem říkáme, že chceme vyrobit tři proměnné, do kterých se uloží hodnoty z objektu `product`.
 
 Tento postup se nám zvlášť hodí v komponentách, když chceme získat vlastnosti objektu `props`. Vzpomeňme si na komponentu `ShoppingItem` z předchozí lekce.
 
