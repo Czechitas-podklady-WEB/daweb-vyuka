@@ -1,6 +1,6 @@
 ---
 title: Svátek v den
-demand: 2
+demand: 3
 ---
 
 Dalším užitečným endpointem API pro svátky je `/namedays`. Ten nám umožňuje zjistit, kdo má svátek v přesně určený den. Tento endpoint má tři povinné parametry: `country`, `month` a `day`. Takto například zjistíme, kdo má v Česku svátek 13. února.
