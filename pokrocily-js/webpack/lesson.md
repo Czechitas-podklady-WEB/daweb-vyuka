@@ -63,7 +63,7 @@ Vidíte, že pod klíčem `dependencies` je seznam balíčků a jejich verzí, k
 
 ## Webpack
 
-Ve chvili, kdy máme založený projekt, budeme potřebovat nástroj, vezme náš kód spolu s použitými knihovnami a zabalí je všechny do jednoho jediného velkého JavaScriptového souboru- Ten si pak prohlížeč může stáhnout celý najednou a nemusí tak čekat na spoustu malých souborů. Nástroj, který k tomuto účelu budeme používat se jmenuje Webpack. 
+Ve chvili, kdy máme založený projekt, budeme potřebovat nástroj, který vezme náš kód spolu s použitými knihovnami a zabalí je všechny do jednoho velkého JavaScriptového souboru. Ten si pak prohlížeč může stáhnout celý najednou a nemusí tak čekat na spoustu malých souborů za sebou. Nástroj, který k tomuto účelu budeme používat, se jmenuje Webpack. 
 
 Nejdříve musíme do našeho projektu Webpack nainstalovat. To provedeme příkazem
 
