@@ -136,24 +136,24 @@ Kdybychom tedy v našem programu na prvním řádku čekali, až funkce `fetch` 
 
 ```js
 const promise = fetch('https://api.abalin.net/today?country=cz');
-promise.then((resp) => {
-  console.log(resp);
+promise.then((response) => {
+  console.log(response);
 });
 ```
 
 Promise můžeme uložit do proměnné jako vidíme výše, je to však trochu zbytečné. Metodu `then` můžeme zavolat roznou na výsledku funkce `fetch`.
 
 ```js
-fetch('https://api.abalin.net/today?country=cz').then((resp) => {
-  console.log(resp);
+fetch('https://api.abalin.net/today?country=cz').then((response) => {
+  console.log(response);
 });
 ```
 
-V parametru `resp` máme uloženu odpověd ze serveru. Pokud z této odpovědi chceme získat JSON, stačí na něm zavolat metodu `json`. Čeká nás však podraz. Tado metoda opět nevrací samotný JSON nýbrž pouze promise. Musíme tedy znova použít metodu `then` a vznikne nám takováto kaskáda.
+V parametru `response` máme uloženu odpověd ze serveru. Pokud z této odpovědi chceme získat JSON, stačí na něm zavolat metodu `json`. Čeká nás však podraz. Tado metoda opět nevrací samotný JSON nýbrž pouze promise. Musíme tedy znova použít metodu `then` a vznikne nám takováto kaskáda.
 
 ```js
 fetch('https://api.abalin.net/today?country=cz')
-  .then((resp) => resp.json())
+  .then((response) => response.json())
   .then((json) => console.log(json));
 ```
 
@@ -170,7 +170,7 @@ const displayName = (json) => {
 };
 
 fetch('https://api.abalin.net/today?country=cz')
-  .then((resp) => resp.json())
+  .then((response) => response.json())
   .then(displayName);
 ```
 
