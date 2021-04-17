@@ -220,7 +220,7 @@ const ShoppingItem = (props) => {
 
   return `
     <li class="item">
-      <div class="item__name">${props.name}</div>
+      <div class="item__name">${props.product}</div>
       <div class="item__amount">${props.amount}</div>
       <div class="item__bought">${yesNo}</div>
     </li>
@@ -232,7 +232,7 @@ Kód můžeme malinko pročistit tím, že si parametr `props` destrukturujeme.
 
 ```js
 const ShoppingItem = (props) => {
-  const { name, amount, bought } = props;
+  const { product, amount, bought } = props;
 
   let yesNo = 'NE';
   if (bought) {
@@ -241,7 +241,7 @@ const ShoppingItem = (props) => {
 
   return `
     <li class="item">
-      <div class="item__name">${name}</div>
+      <div class="item__name">${product}</div>
       <div class="item__amount">${amount}</div>
       <div class="item__bought">${yesNo}</div>
     </li>
@@ -252,7 +252,7 @@ const ShoppingItem = (props) => {
 JavaScript však umožňuje zajít ještě dále a použít destrukturování přímo v parametru funkce. 
 
 ```js
-const ShoppingItem = ({ name, amount, bought }) => {
+const ShoppingItem = ({ product, amount, bought }) => {
   let yesNo = 'NE';
   if (bought) {
     yesNo = 'ANO';
@@ -260,7 +260,7 @@ const ShoppingItem = ({ name, amount, bought }) => {
 
   return `
     <li class="item">
-      <div class="item__name">${name}</div>
+      <div class="item__name">${product}</div>
       <div class="item__amount">${amount}</div>
       <div class="item__bought">${yesNo}</div>
     </li>
@@ -279,17 +279,17 @@ Struktura komponent často kopíruje strukturu naších dat. Připomeňme si ná
 ```js
 const list = [
   {
-    "name": "Rohlíky",
+    "product": "Rohlíky",
     "amount": "10",
     "bought": false,
   },
   {
-    "name": "Máslo",
+    "product": "Máslo",
     "amount": "1 ks",
     "bought": false,
   },
   {
-    "name": "Mléko",
+    "product": "Mléko",
     "amount": "1 litr",
     "bought": true,
   },
