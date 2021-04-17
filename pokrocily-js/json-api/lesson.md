@@ -122,7 +122,7 @@ Pokud server poskytuje API, cestám v rámci jednoho serveru se říká _endpoin
 
 ### Volání API z JavaScriptu
 
-Většina API funguje velmi přímočaře. Odešlete správně zformulovaný požadavek na nějaký endpont a server vám pošle odpověď s kýženými daty nejčastěji ve formátu JSON.
+Většina API funguje velmi přímočaře. Odešlete správně zformulovaný požadavek na nějaký endpoint a server vám pošle odpověď s kýženými daty nejčastěji ve formátu JSON.
 
 Pokud chceme tento proces provést v JavaScriptu, máme k dispozici velmi šikovnou metodu `fetch`. Můžeme si tedy založit nový program a rovnou napsat toto.
 
@@ -130,34 +130,34 @@ Pokud chceme tento proces provést v JavaScriptu, máme k dispozici velmi šikov
 const promise = fetch('https://api.abalin.net/today?country=cz');
 ```
 
-Je zde však drobný zádrhel. Servery jsou různě rychlé podle toho, jak jsou vytížené nebo jak jsou od nás geograficky daleko. Dat ke stažené také může být poměrně hodně. Všechny tyto faktory přispívají k tomu, že stahování dat může trvat nějakou chvíli, a my dopředu nevím, jak dlouhá tato chvíle bude. Dokonce se může stát, že server data nakonec nepošle vůbec, protože je přetížený požadavky jiných klientů, nebo dokonce úplně spadnul a už není dostupný.
+Je zde však drobný zádrhel. Servery jsou různě rychlé podle toho, jak jsou vytížené nebo jak jsou od nás geograficky daleko. Dat ke stažení také může být poměrně hodně. Všechny tyto faktory přispívají k tomu, že stahování dat může trvat nějakou chvíli, a my dopředu nevíme, jak dlouhá tato chvíle bude. Dokonce se může stát, že server data nakonec nepošle vůbec, protože je přetížený požadavky jiných klientů, nebo dokonce úplně spadnul a už není dostupný.
 
-Kdybychom tedy v našem programu na prvním řádku čekali, až funkce `fetch` skončí, mohli bychom si taky počkat notnou chvíli. Mezi tím by náš program zcela zamrznul a uživatel by neměl ze stránky dobrý pocit. Z tohoto důvodu funkce `fetch` nevrací data, nýbrž takzvaný _promise_. Promise je speciální JavaScriptová konstrukce podobná události. Podobně jako na událost můžeme na promisepověsit funkci, která se má zavolat ve chvíli, kdy dorazí odpověď od serveru. To se provede pomocí metody `then`.
+Kdybychom tedy v našem programu na prvním řádku čekali, až funkce `fetch` skončí, mohli bychom si taky počkat notnou chvíli. Mezi tím by náš program zcela zamrznul a uživatel by neměl ze stránky dobrý pocit. Z tohoto důvodu funkce `fetch` nevrací data, nýbrž takzvaný _promise_. Promise je speciální JavaScriptová konstrukce podobná události. Podobně jako na událost můžeme na promise pověsit funkci, která se má zavolat ve chvíli, kdy dorazí odpověď od serveru. To se provede pomocí metody `then`.
 
 ```js
 const promise = fetch('https://api.abalin.net/today?country=cz');
-promise.then((resp) => {
-  console.log(resp);
+promise.then((response) => {
+  console.log(response);
 });
 ```
 
-Promise se můžeme uložit do proměnné jako vidíme výše, je to však trochu zbytečné. Metodu `then` můžeme zavolat roznou na výsledku funkce `fetch`.
+Promise můžeme uložit do proměnné jako vidíme výše, je to však trochu zbytečné. Metodu `then` můžeme zavolat roznou na výsledku funkce `fetch`.
 
 ```js
-fetch('https://api.abalin.net/today?country=cz').then((resp) => {
-  console.log(resp);
+fetch('https://api.abalin.net/today?country=cz').then((response) => {
+  console.log(response);
 });
 ```
 
-V parametru `resp` máme uloženu odpověd ze serveru. Pokud z této odpovědi chceme získat JSON, stačí na něm zavolat metodu `json`. Čeká nás však podraz. Tado metoda opět nevrací samotný JSON nýbrž pouze promise. Musíme tedy znova použít metodu `then` a vznikne nám takováto kaskáda.
+V parametru `response` máme uloženu odpověd ze serveru. Pokud z této odpovědi chceme získat JSON, stačí na něm zavolat metodu `json`. Čeká nás však podraz. Tado metoda opět nevrací samotný JSON nýbrž pouze promise. Musíme tedy znova použít metodu `then` a vznikne nám takováto kaskáda.
 
 ```js
 fetch('https://api.abalin.net/today?country=cz')
-  .then((resp) => resp.json())
+  .then((response) => response.json())
   .then((json) => console.log(json));
 ```
 
-Tento zápis může na první pohled vypadat poněkud složitě. Jeho použití je však pořád stejné. Stačí si jej tedy prostě zapamatovat a zvyknout si na to, že "takto se to prostě dělá." Promisy jsou relativně komplikované a hluboké téma. Nebudeme proto do nich zabíhat hluběji než je v tuto chvíli nezbytně nutné.
+Tento zápis může na první pohled vypadat poněkud složitě. Jeho použití je však pořád stejné. Stačí si jej tedy prostě zapamatovat a zvyknout si na to, že „takto se to prostě dělá“. Promisy jsou relativně komplikované a hluboké téma. Nebudeme proto do nich zabíhat hluběji než je v tuto chvíli nezbytně nutné.
 
 ### Zpracování dat
 
@@ -170,7 +170,7 @@ const displayName = (json) => {
 };
 
 fetch('https://api.abalin.net/today?country=cz')
-  .then((resp) => resp.json())
+  .then((response) => response.json())
   .then(displayName);
 ```
 
@@ -189,7 +189,7 @@ Vezměme pro příklad následující objekt.
 const product = {
   name: 'Mlýnek na kávu',
   price: 520,
-  currency: 'kč',
+  currency: 'Kč',
 }
 ```
 
@@ -197,7 +197,7 @@ const product = {
 
 ```js
 const name = product.name;
-const price = product.login;
+const price = product.price;
 const currency = product.currency;
 ```
 
@@ -207,7 +207,7 @@ Programátoři jsou však líné bytosti a tento postup jim přijde zdlouhavý. 
 const { name, price, currency } = product;
 ```
 
-Tímto zápisem říkáme, že chceme vyrobit tři proměnné, do kterých se uloží hodnoty z objektu `product`. 
+Tímto zápisem říkáme, že chceme vyrobit tři proměnné, do kterých se uloží hodnoty z objektu `product`.
 
 Tento postup se nám zvlášť hodí v komponentách, když chceme získat vlastnosti objektu `props`. Vzpomeňme si na komponentu `ShoppingItem` z předchozí lekce.
 
