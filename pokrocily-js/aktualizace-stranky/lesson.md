@@ -158,6 +158,7 @@ addBtn.addEventListener('click', () => {
   const listSection = document.querySelector('#list-section');
   listSection.innerHTML = ShoppingList({ items: list });
 });
+```
 
 [[[ excs Cvičení: Aktualizace stránky
 - lokalni-cas
