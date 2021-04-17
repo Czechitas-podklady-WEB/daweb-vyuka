@@ -293,14 +293,14 @@ const list = [
     "amount": "1 litr",
     "bought": true,
   },
-};
+];
 ```
 
 Vidíme, že náš seznam se skládá z jednotlivých položek. Ty můžeme zobrazovat pomocí komponenty `ShoppingItem`, kterou už známe. Celý seznam pak můžeme zobrazit pomocí komponenty `ShoppingList`. Ta bude k zobrazení jednotlivých položek používat právě komponentu `ShoppingItem`.
 
 ```js
 const ShoppingList = ({ items }) => {
-  const resultHTML = '<ol class="shopping-list>';
+  const resultHTML = '<ol class="shopping-list">';
   for (let i = 0; i < items.length; i += 1) {
     resultHTML += ShoppingItem(items[i]);
   }
