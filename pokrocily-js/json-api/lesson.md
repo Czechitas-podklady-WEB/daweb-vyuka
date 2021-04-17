@@ -300,7 +300,7 @@ Vidíme, že náš seznam se skládá z jednotlivých položek. Ty můžeme zobr
 
 ```js
 const ShoppingList = ({ items }) => {
-  const resultHTML = '<ol class="shopping-list">';
+  let resultHTML = '<ol class="shopping-list">';
   for (let i = 0; i < items.length; i += 1) {
     resultHTML += ShoppingItem(items[i]);
   }
