@@ -3,15 +3,15 @@ title: Kontakt
 demand: 2
 ---
 
-Prohlédněte si kód následující komponenty vytvářející HTML pro kontakt na nějakou osobu. Každý kontakt obsahuje jméno, e-mail a telefon.
+Prohlédněte si kód následující komponenty vytvářející HTML pro kontakt na nějakou osobu. Každý kontakt obsahuje jméno, příjmení a e-mail.
 
 ```js
 const Contact = (props) => {
   return `
     <div class="contact">
-      <div class="contact__name">${props.name}</div>
+      <div class="contact__first">${props.first_name}</div>
+      <div class="contact__last">${props.last_name}</div>
       <div class="contact__email">${props.email}</div>
-      <div class="contact__phone">${props.phone}</div>
     </div>
   `;
 };

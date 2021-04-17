@@ -82,7 +82,7 @@ Většina webových aplikací pracuje s daty, která jsou uložena na nějakém 
 K tomu, abychom mohli pracovat s API, je potřeba si detailněji popsat, jak funguje komunikace s webovým serverem. Pokud po webovém serveru něco chceme, například HTML stránku nebo nějaká data, musíme odeslat takzvaný <term cs="HTTP požadavek" en="HTTP request">. Každý požadavek musí být zacílený na nějakou URL adresu. Adresy URL mají následující formát.
 
 ```
-protokol://adresa_serveru/cesta?parametr1=hodnota1&parametr2=hodnota2
+protokol://adresa_serveru/cesta?parametr1=hodnota1&amp;parametr2=hodnota2
 ```
 
 Protokol je většinou `http` nebo `https`. Adresa serveru může být například `www.google.com`. Za adresou serveru následuje cesta, která specifikuje kam v rámci serveru se má požadavek odeslat. Za otazníkem se píšou takzvané parametry, které dále upřesňují požadavek.
@@ -90,7 +90,7 @@ Protokol je většinou `http` nebo `https`. Adresa serveru může být napříkl
 Takto například vypadá adresa požadavku na server `www.google.com`, který spustí vyhledávání.
 
 ```
-https://www.google.com/search?q=praha&sourceid=chrome
+https://www.google.com/search?q=praha&amp;sourceid=chrome
 ```
 
 Cesta v požadavku je tedy `/search`, parametr `q` udává, že se má vyhledat slovo `praha` a parametr `sourceid` říká, že se ptáme z prohlížeče `chrome`. Tuto adresu můžete normálně zadat do prohlížeče a uvidíte výsledky vyhledávání.
@@ -115,7 +115,7 @@ Server se snaží posílat data co nejúsporněji a vynechává v JSONu pro poč
 Většina API poskytuje více různých cest. Pro vyhledání jména pro dnešní den jsme použili cestu `/today`. Můžeme však položit i obrácený dotaz a zeptat se, kdy má v Americe svátek Suzanne. K to mu použijeme cestu `/getdate` s parametry `name` a `country`.
 
 ```
-https://api.abalin.net/getdate?name=suzanne&country=us
+https://api.abalin.net/getdate?name=suzanne&amp;country=us
 ```
 
 Pokud server poskytuje API, cestám v rámci jednoho serveru se říká _endpointy_. Z našeho API pro získání jsme zatím viděli dva různé endpointy. Toto API jich má však ještě více. Vrátíme se k nim v příkladech na procvičení.
@@ -314,7 +314,7 @@ Pomocí skládání komponent tak můžeme budovat větší a větší kusy naš
 [[[ excs Cvičení: Komponenty a objekty
 - kontakt
 - emaily
-- emaily2
+- prichozi-posta
 ]]]
 
 [[[ excs Doporučené úložky na doma
