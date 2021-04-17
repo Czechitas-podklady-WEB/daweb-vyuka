@@ -17,7 +17,7 @@ Začněme však jednodušeji a představme si, že programujeme aplikaci pro evi
 
 ```js
 const item1 = {
-  name: 'Rohlíky',
+  product: 'Rohlíky',
   amount: '10',
   bought: false,
 };
@@ -43,7 +43,7 @@ if (item1.bought) {
 
 const item1Html = `
   <li class="item">
-    <div class="item__name">${item1.name}</div>
+    <div class="item__name">${item1.product}</div>
     <div class="item__amount">${item1.amount}</div>
     <div class="item__bought">${yesNo}</div>
   </li>
@@ -61,7 +61,7 @@ const ShoppingItem = (item) => {
 
   return `
     <li class="item">
-      <div class="item__name">${item.name}</div>
+      <div class="item__name">${item.product}</div>
       <div class="item__amount">${item.amount}</div>
       <div class="item__bought">${yesNo}</div>
     </li>
@@ -83,7 +83,7 @@ můžeme do něj vložit jednu položku tak, že zavoláme naši komponentu.
 
 ```js
 const item1 = {
-  name: 'Rohlíky',
+  product: 'Rohlíky',
   amount: '10',
   bought: false,
 };
@@ -100,13 +100,13 @@ Pokud bychom mělí více položek, vložíme je do sezanmu opakovaným volání
 
 ```js
 const item1 = {
-  name: 'Rohlíky',
+  product: 'Rohlíky',
   amount: '10',
   bought: false,
 };
 
 const item2 = {
-  name: 'Rajčate',
+  product: 'Rajčate',
   amount: '1kg',
   bought: false,
 };
@@ -121,12 +121,12 @@ Většinou však naše objekty budeme mít v nějakém poli. Výsledný kód by 
 ```js
 const items = [
   {
-    name: 'Rohlíky',
+    product: 'Rohlíky',
     amount: '10',
     bought: false,
   },
   {
-    name: 'Rajčate',
+    product: 'Rajčate',
     amount: '1kg',
     bought: false,
   },
@@ -161,7 +161,7 @@ const ShoppingItem = (props) => {
 
   return `
     <li class="item">
-      <div class="item__name">${props.name}</div>
+      <div class="item__name">${props.product}</div>
       <div class="item__amount">${props.amount}</div>
       <div class="item__bought">${yesNo}</div>
     </li>
