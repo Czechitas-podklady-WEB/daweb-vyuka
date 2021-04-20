@@ -1,1 +1,0 @@
-(self.webpackChunkmuj_projekt=self.webpackChunkmuj_projekt||[]).push([[179],{807:()=>{"use strict";console.log("Hello martin")}},e=>{"use strict";e(e.s=807)}]);

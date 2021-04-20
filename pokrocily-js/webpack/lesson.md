@@ -82,56 +82,138 @@ Po tomto zásahu bude náš `package.json` vypadat následovně.
     "validator": "^13.5.2"
   },
   "devDependencies": {
-    "webpack": "^5.26.3",
-    "webpack-cli": "^4.5.0"
+    "webpack": "^5.34.0",
+    "webpack-cli": "^4.6.0"
   }
 }
 ```
 
-Přibyla nám nová položka `devDependencies`. V té je seznam balíčků, které se nestanou součástí naší výsledné stránky. Tyto balíčky používáme pouze při vývoji. 
+Přibyla nám nová položka `devDependencies`. V té je vypsán seznam balíčků, které představují takzvané vývojové závislosti. Tyto balíčky se nestanou součástí naší výsledné stránky, používáme je pouze během vývoje.
 
+### Struktura projektu
 
+Od této chvíle bude každý náš projekty mít dvě hlavní části: 
 
-Webpack je nástroj, který slouží ke spojení zdrojových JavaScriptových souborů do jednoho výsledného souboru, který pak prohlížeč může stáhnout najednou. Tomuto procesu se říká <term cs="sestavení" en="build">. K tomu, aby se náš projekt správně sestavil, potřebujeme Webpack správně nakonfigurovat. Vytvořít takovou konfiguraci od základu je už relativně pokročilá dovednost. V našem případě tedy budeme pracovat s již předem připravenou konfigurací, která se hodí na většinu jednoduchých frontendových projektů.
+- **zdrojové kódy** - všechny soubory s JavaScriptem, CSS, HTML atd., ze kterých se mát vytvořit výsledná aplikace. Budeme je dávat do složky `src`. 
+- **sestavená aplikace** - výsledná aplikace vytvořená nástrojem Webpack. Tento výsledek pak můžeme nahrát třeba někam na server. Sestavená aplikace se nám objeví ve složce `dist`. 
 
-### Postup založení nového projektu
-
-Tento postup následujte vždy, když chcete založit nový frontendový projekt založený na Webpacku.
-
-1. Z [tohoto odkazu](https://github.com/Czechitas-podklady-WEB/project-starters/archive/main.zip) si stáhněte ZIP soubor s připravenou konfigurací.
-1. Rozbalte ZIP soubor do nějaké složky a přejmenujte si složku `project-starter` dle názvu svého projektu, například `muj-projekt`.
-1. Otevřete složku `muj-projekt` vs VS Code. Spusťte terminál a uvnitř této složky spusťte příkaz
-   ```
-   npm install
-   ```
-1. Spusťte příkaz
-   ```
-   npm run start
-   ```
+Nejprve si založíme složku pro zdrojové kódy. V projektu `muj-projekt` vytvoříme složku `src` a v ní soubor `index.js`. Náš projekt bude pak vypadat takto. 
 
 ```
 ├──node_modules
 ├──src
-│  ├──img
-│  │  └──background.svg
-│  ├──ShoppingItem
-│  │  ├──index.js
-│  │  └──style.css
-│  ├──ShoppingList
-│  │  ├──index.js
-│  │  └──style.css
-│  ├──index.html
-│  ├──index.js
-│  └──style.css
+│  └──index.js
 ├──package-lock.json
 └──package.json
 ```
 
-## Import a export
+Do souboru `index.js` zatím vložíme jednoduchý uvítací kód. 
+
+```js
+const greet = (name) => {
+  return `Hello ${name}`;
+};
+
+const h1Elm = document.querySelector('h1');
+h1Elm.textContent = greet('Martin');
+console.log(greet('Martin'));
+```
+
+Nyní použijeme Webpack k sestavení výsledné aplikace. Aby se náš projekt sestavil, potřebujeme Webpack správně nakonfigurovat. V projektu `muj-projekt` vytvoříme soubor `webpack.config.js` s tímto obsahem. 
+
+```js
+const path = require('path');
+
+module.exports = {
+  entry: './src/index.js',
+  output: {
+    path: path.join(__dirname, 'dist'),
+    filename: 'bundle.js',
+  },
+};
+```
+
+Vytvořit takovou konfiguraci od základu je už relativně pokročilá dovednost. Proto jsme zde rádi, že nám byla dána takto shůry a po jejím původu se nepídíme. Tato konfigurace v podstatě říká, že Webpack má vzít soubor `src/index.js` a sestavit z něj výsledek, který se bude nacházet ve složce `dist/bundle.js`. 
+
+Abychom mohli webpack spustit, v souboru `package.json` si vytvoříme příkaz `build`. 
+
+```json
+{
+  "name": "muj-projekt",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "webpack"
+  },
+  "dependencies": {
+    "dayjs": "^1.10.4",
+    "validator": "^13.5.2"
+  },
+  "devDependencies": {
+    "webpack": "^5.34.0",
+    "webpack-cli": "^4.6.0"
+  }
+}
+```
+
+Nyní stačí otevřít v našem projektu termínál a napsat příkaz
+
+```sh
+$ npm run build
+```
+
+Pokud se vše povedlo, uvnitř projektu se vytvoří soubor `dist/bundle.js`, který obsahuje takzvaně <term cs="minifikovanou" en="minified"> verzi našeho kódu. Ta může vypadat například takto děsivě. 
+
+```js
+(()=>{const t=t=>`Hello ${t}`;document.querySelector("h1").textContent=t("Martin"),console.log(t("Martin"))})();
+```
+
+Webpack dělá minifikaci proto, aby náš výsledný kód byl co nejmenší. Vzhledem k tomu, že kód bude číst prohlížeč, můžeme zcela objetovat jakoukouliv srozumitelnost pro člověka. Webpack tedy
+
+- odstranil všechny bílé znaky,
+- přejmenoval naši funkci `greet` prostě na `t`,
+- všude, kde se dalo vynechal závorky a zbytečné znaky. 
+
+## Startovače projektů
+
+Projekt, který jsme si zkoušeli nakonfiguravat v přechozí části byl extrémně jednoduchý. Ve skutečné aplikace budeme po Webpacku chtít mnohem více věcí než jen zminifikovat JavaScript. Budeme chtít
+
+- spojit všechny JavaSriptové soubory do jednoho,
+- spojit CSS styly,
+- přeložit náš JavaScript do podoby kompotibilní s většinou prohlížečů, 
+- později zapojit knihovnu React. 
+
+Vytvořit konfiguraci pro takovýto projekt z hlavy je velmi obtížené. Zde ke slovu přicházají generátory, které umí základní strukturu projektu i s Webpack konfigurací vytvořit jedním příkazem. 
+
+Jedním z takových oblíbených generátorů pro Reactové projekty je `create-react-app`. Často jej na internetu potkáte v různých Reactových tutoriálech. My však ještě s Reactem nepracujeme a nento generátor se nám tudíž nehodí. Použijeme proto jiný, vytvořený přímo pro tuto akademii. Jmenuje se `create-czechitas-app`.
+
+### Postup založení nového projektu
+
+Pokud chceme pomocí `create-czechitas-app` založit nový projekt, postupujte dle následujících kroků.
+
+1. V terminálu si otevřete složku, ve které skladujete své projekty. 
+1. Pro vytvoření projektu s názvem `muj-projekt` spusťte příkaz
+   ```sh
+   $ npx create-react-app muj-projekt vanilla
+   ```
+1. Otevřete složku `muj-projekt` vs VS Code. Spusťte terminál a uvnitř této složky spusťte příkaz
+   ```
+   npm run start
+   ```
 
 [[[ excs Cvičení: Základy Webpacku
 - citat
+- citat-komponenta
 ]]]
+
+## Import a export
+
+- importování JavaScriptových souborů,
+- importování CSS
+- rozdělení komponent do složek s `index.js`, `style.css`
+- práce s obrázky v CSS
+- práce se složkou `assets`
+
+
 
 [[[ excs Doporučené úložky na doma
 - svetovy-cas-webpack
