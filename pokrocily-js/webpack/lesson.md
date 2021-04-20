@@ -193,7 +193,7 @@ Pokud chceme pomocí `create-czechitas-app` založit nový projekt, postupujte d
 1. V terminálu si otevřete složku, ve které skladujete své projekty. 
 1. Pro vytvoření projektu s názvem `muj-projekt` spusťte příkaz
    ```sh
-   $ npx create-react-app muj-projekt vanilla
+   $ npx create-czechitas-app muj-projekt vanilla
    ```
 1. Otevřete složku `muj-projekt` vs VS Code. Spusťte terminál a uvnitř této složky spusťte příkaz
    ```
