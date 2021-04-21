@@ -213,7 +213,9 @@ Pokud chceme pomocí `create-czechitas-app` založit nový projekt, postupujte d
 - práce s obrázky v CSS
 - práce se složkou `assets`
 
-
+[[[ excs Cvičení: import/export
+- citat-import-export
+]]]
 
 [[[ excs Doporučené úložky na doma
 - svetovy-cas-webpack
