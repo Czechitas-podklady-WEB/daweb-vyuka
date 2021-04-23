@@ -14,7 +14,7 @@ V tuto chvíli máme vytvořený zcela plnoprávný DOM element, se kterým mů�
 
 ```jscon
 > h1Elm.textContent = 'Nadpis'
-> h1Elm.className = 'title'
+> h1Elm.classList.add('title')
 ```
 
 Důležité je, že tento element není zapojen do naší stránky. Je zatím uložen pouze v proměnné `h1Elm` a na stránce jej tedy není vidět. Pokud jej chceme do stránky vložit, můžeme jej například zapojit na konec nějakého elementu, který už na stránce je.
@@ -91,7 +91,7 @@ Nyní bychom chtěli na naše tlačíko pověsit funkci reagující na kliknutí
 ```js
 const Post = (props) => {
   const element = document.createElement('div');
-  element.className = 'post';
+  element.classList.add('post');
   element.innerHTML = `
     <div class="post__text">${props.text}</div>
     <button class="like-btn">
@@ -109,7 +109,7 @@ Díky tomu, že uvnitř funkce vytvářím DOM element, můžeme se díky němu 
 ```js
 const Post = (props) => {
   const element = document.createElement('div');
-  element.className = 'post';
+  element.classList.add('post');
   element.innerHTML = `
     <div class="post__text">${props.text}</div>
     <button class="like-btn">
@@ -150,7 +150,7 @@ Kód naší aplikace pro nákupní seznam si můžete [stáhnout zde](assets/nak
 const ShoppingItem = (props) => {
   return `
     <div class="item">
-      <span class="item__name">${props.name}</span>
+      <span class="item__product">${props.product}</span>
       <span class="item__amount">${props.amount}</span>
     </div>
   `;
@@ -173,32 +173,32 @@ Komponentu `ShoppingItem` převedeme na DOM element a přidáme do ní tlačítk
 ```js
 const ShoppingItem = (props) => {
   const element = document.createElement('div');
-  element.className = 'item';
+  element.classList.add('item');
   element.innerHTML = `
-    <span class="item__name">${props.name}</span>
+    <span class="item__product">${props.product}</span>
     <span class="item__amount">${props.amount}</span>
-    <button class="btn-done">koupeno</button>
+    <button class="btn-bought">koupeno</button>
   `;
 
   return element;
 };
 ```
 
-Nyní chceme přidat funkci pro kliknutí, která na náš element přidá CSS třídu `item--done`.
+Nyní chceme přidat funkci pro kliknutí, která na náš element přidá CSS třídu `item--bought`.
 
 ```js
 const ShoppingItem = (props) => {
   const element = document.createElement('div');
-  element.className = 'item';
+  element.classList.add('item');
   element.innerHTML = `
-    <span class="item__name">${props.name}</span>
+    <span class="item__product">${props.product}</span>
     <span class="item__amount">${props.amount}</span>
-    <button class="btn-delete">koupeno</button>
+    <button class="btn-bought">koupeno</button>
   `;
 
-  const deleteBtn = element.querySelector('.btn-delete');
+  const deleteBtn = element.querySelector('.btn-bought');
   deleteBtn.addEventListener('click', () => {
-    element.classList.add('item--done');
+    element.classList.add('item--bought');
   });
 
   return element;
@@ -210,7 +210,7 @@ Nyní musíme upravit komponentu `ShoppingList`.
 ```js
 const ShoppingList = (props) => {
   const element = document.createElement('div');
-  element.className = 'shopping-list';
+  element.classList.add('shopping-list');
 
   for (let i = 0; i < props.items.length; i += 1) {
     element.appendChild(ShoppingItem(props.item));
