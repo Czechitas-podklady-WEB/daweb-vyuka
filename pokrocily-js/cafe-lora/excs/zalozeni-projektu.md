@@ -3,14 +3,14 @@ title: Založení projektu
 demand: 2
 ---
 
-Stáhněte si [základ projektu](https://github.com/Czechitas-podklady-WEB/cafelora-zadani/archive/main.zip) Café Lóra a vytvořte pro něj GitHub repozitář. Postupujte dle následujících kroků.
+Nejprve pro naši aplikace založíme projekt. 
 
-1. Pod svým GitHub účtem si založte zcela prázdný (tedy bez `README.md`) veřejný repozitář s názvem `cafelora`.
-1. Rozbalte stažený ZIP a pomocí příkazu `git init` (zavolaného uvnitř složky, kde jsou mimo jiné soubory `package.json` a `webpack.config.js`), řekněte, že budete obsah verzovat.
-1. Přdejte všechny soubory pomocí `git add` a proveďte `commit` všech souborů.
-1. Podle návodu na GitHubu, `…or push an existing repository from the command line`, nahrajte soubory do repozitáře.
-   1. Příkazem `git remote add origin https://github.com/{DOPLŇ_TVŮJ_ÚČET}/cafelora.git` propojte vaši lokální složku s GitHub repozitářem.
-   1. Pojmenujte hlavní větev `git branch -M main`.
-   1. Proveďte první push `git push -u origin main`.
-1. Nainstalujte závislosti pomocí `npm install` a spusťte projekt pomocí `npm run start`.
-1. Prohlédněte si design stránky a vyzkoušejte si její responzivitu. Všimněte si, že například ikonka navigace zatím moc nefunguje.
+1. Pod svým GitHub účtem si založte nový veřejný repozitář se souborem `README.md` a názvem `cafelora`.
+1. V terminálu se přesuňte do složky, ve které skladujete své projekty a naklonujte si váš repozitář. Ve VS Code si otevřete naklonovanou složku `cafelora`. Ve složce byste měli vidět pouze soubor `README.md`.
+1. Otevřete v této složce terminál a pomocí `create-czechitas-app` vytvořte v této složce vanilla Webpack projekt.
+   ```sh
+   npx create-czechitas-app . vanilla
+   ```
+1. Z projektu smažte vygenerovanou složku `src`. Stáhněte si [základ projektu](https://github.com/Czechitas-podklady-WEB/cafelora-zadani/archive/main.zip) Café Lóra. Ve staženém ZIPu naleznete složku `src` s již připravným základem aplikace. Tuto složku vložte do vaší složky `cafelora`.
+1. Pomocí `npm run start`, spusťte vývojový server. Prohlédněte si design stránky a vyzkoušejte si její responzivitu. Všimněte si, že například ikonka navigace zatím moc nefunguje.
+1. Pomocí `git add` přidejte do stage všechny nové soubory a proveďte `commit`. Změny pushněte na server.
