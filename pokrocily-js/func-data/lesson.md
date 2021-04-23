@@ -20,8 +20,8 @@ const greet = (name) => {
 
 const conciseGreet = (name) => `Hi, ${name}`;
 
-console.log(greet());
-console.log(conciseGreet());
+console.log(greet('Alex'));
+console.log(conciseGreet('Alex'));
 ```
 
 Dejte si ale pozor, aby kód zůstal čitelný. Pokud je fuknce jasná a jednoduchá, zkrácení se vyplatí, ale není potřeba všechny fuknce zkracovat na úkor čitelnosti kódu!
