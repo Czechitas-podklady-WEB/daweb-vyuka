@@ -6,7 +6,7 @@ demand: 2
 Pomocí `create-czechitas-app` založte projekt s názvem `contacts`.
 
 ```sh
-$ create-czechitas-app contacts vanilla
+$ npx create-czechitas-app contacts vanilla
 ```
 
 Budeme chtít vytvořit aplikace, která zobrazuje seznam kontaktů. U každého kontaktu bychom chtěli evidovat jméno, email a telefonní číslo.
