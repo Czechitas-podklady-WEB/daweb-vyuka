@@ -3,11 +3,16 @@ title: Kontakty
 demand: 2
 ---
 
-Vytvořte jednoduchou webovou stránku, která zobrazuje seznam kontaktů. U každého kontaktu bychom chtěli evidovat jméno, email a telefonní číslo.
+Pomocí `create-czechitas-app` založte projekt s názvem `contacts`.
 
-1. Založte webovou aplikaci se soubory `index.html`, `style.css` a `index.js`.
-1. V souboru `index.html` vytvořte element `#app`.
-1. Uvnitř `index.js` pomocí `document.createElement` vytvořte element `div` a uložte jej do proměnné `contact1`.
+```sh
+$ create-czechitas-app contacts vanilla
+```
+
+Budeme chtít vytvořit aplikace, která zobrazuje seznam kontaktů. U každého kontaktu bychom chtěli evidovat jméno, email a telefonní číslo.
+
+1. V souboru `index.html` smažte obsah elementu `#app`.
+1. Uvnitř souboru`index.js` pomocí `document.createElement` vytvořte element `div` a uložte jej do proměnné `contact1`.
 1. Na váš element přidejte CSS třídu `contact`.
 1. Nastavte `innerHTML` vašho elementu na následujicí obsah
    ```html
