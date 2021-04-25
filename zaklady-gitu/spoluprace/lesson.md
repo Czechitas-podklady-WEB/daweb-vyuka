@@ -6,4 +6,7 @@ Nejduležitější pravidlo spolupráce na jedné větvi zní: **Vždycky uděle
 
 [[[ excs Cvičení: Spolupráce v Gitu
 - panske-obleky
+- obrazky-styly
+- konflikt
+- vlastni-prace
 ]]]

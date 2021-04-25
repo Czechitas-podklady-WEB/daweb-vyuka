@@ -1,17 +1,20 @@
 ---
 title: Pánské obleky
-demand: 3
+demand: 2
 ---
 
 V tomto příkladu si vyzkoušíme týmovou spolupráci v Gitu. Vaším úkolem bude vytvořit webovou stránku pro e-shop s pánskými obleky. Stránka má vypadast přesně dle tohoto [grafického návrhu](assets/layout.png).
 
-Stránka bude fungovat tak, že si uživatel může vybírat barvu košile pomocí tlačítek s barvami. Při kliknutí na příslušné tlačíko se obrázek košile přebarví na zvolenou barvu.
+Pro účely všech následujících cvičení budeme pracovat ve dvoučlenných týmech. Jeden z týmu hraje roli Alice a druhý roli Barbory. Intrukce jsou vždy pro Alici nebo Barboru. Držte si kloubouky, začínáme:
 
-Při práci na projektu postupujte dle následujících kroků.
+Úkol pro **Alici**. Barbora čeká.
 
-1. Vytvořte si tým dvou lidí.
-1. Jeden z členů týmu založí projekt na GitHubu s názvem `panske-obleky`.
-1. Stáhněte si následující [kostru stránky](assets/panske-obleky-zadani.zip). Prohlédněte si připravený HTML kód. Všimněte se, že košile je nakreslena pomocí takzvaného SVG. Je to jazyk podobný HTML určený ke kreslení obrázků. Díky vlastnosti `style` na prvku `svg` můžete ručně nebo pomocí JavaScriptu měnit barvu košile. Vyzkoušejte si to.
-1. Jakmile jste s kódem seznámení, nahrajte všechny tyto soubory do vašeho repozítáře jako základ projektu.
-1. Rozdělte si práci. Jeden z členů týmu bude pracovat na JavaScriptu, druhý na HTML. Vždy, když někdo z váš udělá kus práce a provede `push` do repozitáře, druhý člen týmu provede `pull`, aby si nahrál nové změny k sobě na počítač.
-1. Držte se pravidel pro spolupráce na jedné větvi. Vždy dělejte `pull` před tím, než uděláte `commit`.
+1. Alice vytvoří na svém GitHub účtu fork [repozitáře](https://github.com/Czechitas-podklady-WEB/panske-obleky) obsahující výchozí soubory pro stránku s pánskými obleky.
+1. Naklonuje projekt do svého počítače a otevře složku `panske-obleky` ve VS Code.
+1. Pozve Barboru do svého GitHub projektu jako spolupracovnici. 
+
+Úkol pro **Barboru**, Alice čeká.
+
+1. Jakmile Barbora obdrží pozvánku do projektu, naklonuje si tento projekt do svého počítače a ve VS Code otevře složku `panske-obleky`. 
+
+Na konci tohoto úkolu mají Alice i Barbora každá na svém počítači naklonovaný obsah repozitáře a mají projekt otevřený ve VS Code.
