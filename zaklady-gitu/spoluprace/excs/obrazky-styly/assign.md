@@ -10,7 +10,6 @@ demand: 2
    ```css
    header {
      padding-top: 4rem;
-     color: white;
      background-image: url(img/suit.jpg), url(img/bg.jpg);
      background-position: center, center;
      background-repeat: no-repeat, repeat-x;
