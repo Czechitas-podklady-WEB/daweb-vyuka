@@ -18,10 +18,11 @@ V tuto chvíli se obě dámy nezávisle na sobě rozhodnou upravit stejnou čás
    </div>
    ```
 1. Zatím neřeší stylování a změny rovnou commitne se zprávou "HTML pro výběr barvy."
+1. Provede push na GitHub.
 
 Úkol pro **Alici**, Barbora čeká. 
 
-1. Alice chce také vyrobit HTML pro výběr barvy. Nevšimne si však, že Barbora už commitnula úpravu stejné části kódu. Místo toho, aby si pullnula, vloží do elementu `.product__colors` svůj kód, který vypadá trochu jinak než ten, který vytvořila Barbora.
+1. Alice chce také vyrobit HTML pro výběr barvy. Nevšimne si však, že Barbora už pushnula úpravu stejné části kódu. Místo toho, aby si pullnula, vloží do elementu `.product__colors` svůj kód, který vypadá trochu jinak než ten, který vytvořila Barbora.
    ```html
    <p>Vyberte si barvu produktu</p>
    <div class="choose-colors">
@@ -41,6 +42,7 @@ V tuto chvíli se obě dámy nezávisle na sobě rozhodnou upravit stejnou čás
    - Buď přijmou změny, které provedla Alice (Accept Current Change),
    - nebo Alice svoje změny zahodí a přijme změny od Barbory (Accept Incoming Change),
    - nebo přijmou obě změny (Accept Both Changes) a nějakým způsobem je zkombinují dohromady. 
+   Pro pokračování projektu je jedno, kterou variantu si vyberete. Rozhodněte se dle svých preferencí. 
 1. Jakmile je konflikt vyřešen, Alice pomocí `git add` přidá změny v `index.html` a provede commit se zprávou "Vyřešen konflikt.". 
 1. Nakonec Alice pushne svoje změny do GitHub repozitáře. 
 
