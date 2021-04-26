@@ -32,11 +32,15 @@ V tuto chvíli se obě dámy nezávisle na sobě rozhodnou upravit stejnou čás
    </div>
    ```
 1. Provede commit svých změn se zprávou "Ukázka výběru barev."
-1. Nyní se Alice pokusí provést push svých změn. Pushnutí však selže. Git nedovolí pushnout do repozitáře, který obsahuje změny, které si Alice nepullnula. Alice tedy musí nejdříve udělat pull. 
-1. Během pullování však nastane konflikt v souboru `index.html`. Alice jej musí vyřešit. Kontaktuje Barboru a navzájem se domluví, jak konflikt vyřeší:
-   - Buď přijmou změny, které provedla Alice (accept current change),
-   - nebo Alice svoje změny zahodí a přijme změny od Barbory (accept incomming change),
-   - nebo přijmou obě změny a nějakým způsobem je zkombinují dohromady. 
+1. Nyní se Alice pokusí provést push svých změn. Pushnutí však selže a Alice obdrží červenou zprávu `rejected`. Git nedovolí pushnout do repozitáře obsahující změny, které si Alice ještě nepullnula. Alice tedy musí nejdříve udělat pull. 
+1. Během pullování však nastane konflikt v souboru `index.html`. 
+   ```
+   CONFLICT (content): Merge conflict in index.html
+   ```
+   Alice jej musí vyřešit. Kontaktuje Barboru a navzájem se domluví, jak konflikt vyřeší:
+   - Buď přijmou změny, které provedla Alice (Accept Current Change),
+   - nebo Alice svoje změny zahodí a přijme změny od Barbory (Accept Incoming Change),
+   - nebo přijmou obě změny (Accept Both Changes) a nějakým způsobem je zkombinují dohromady. 
 1. Jakmile je konflikt vyřešen, Alice pomocí `git add` přidá změny v `index.html` a provede commit se zprávou "Vyřešen konflikt.". 
 1. Nakonec Alice pushne svoje změny do GitHub repozitáře. 
 
