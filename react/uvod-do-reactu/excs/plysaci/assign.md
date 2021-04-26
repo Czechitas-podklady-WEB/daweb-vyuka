@@ -13,7 +13,7 @@ Postupujte dle následujících kroků.
 1. Upravte obsah stránky tak, aby vypadal takto.
    ```html
    <h1>Plyšáci</h1>
-   <div className="plushes"></div>
+   <div className="plushies"></div>
    ```
    Uložte si toto JSX do seperátní proměnné. Nezapomeňte jej správně obalit do fragmentu. Tuto proměnnou pak použíjte ve funkci `render`.
 1. Vytvořte si dva objekty obsahující informace o plyšácích dle následujícího vzoru.
@@ -38,5 +38,5 @@ Postupujte dle následujících kroků.
      <p class="plushy__text">Text o plyšákovi</p>
    </div>
    ```
-   Převeďte tento kód na JSX a vložte jej do elementu `.plushes`, jednou pro každého plyšáka. Nezapomeňte, že v JSX se místo `class` píše `className`. Data pro obě karty vezměte z objektů `plushy1` a `plushy2`.
+   Převeďte tento kód na JSX a vložte jej do elementu `.plushies`, jednou pro každého plyšáka. Nezapomeňte, že v JSX se místo `class` píše `className`. Data pro obě karty vezměte z objektů `plushy1` a `plushy2`.
 1. Přidejte do stránky soubor se styly a nastylujte ji dle zadání.
