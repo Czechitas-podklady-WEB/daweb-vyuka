@@ -1,4 +1,4 @@
-Do této chvíle jsme uměli do nějaké proměnné uložit pouze jednu hodnotu, například řetězec, DOM element nebo funkci. Počítače ale často potřebují pracovat v mnohem větším objemem dat, než je několik čísel nebo řetězců. V této lekci si ukážeme jak ukládat větší množství hodnot do jedné proměnné a jak potom můžeme s takovými hodnotami zpracovávat pomocí cyklů.
+Do této chvíle jsme uměli do nějaké proměnné uložit pouze jednu hodnotu, například řetězec, DOM element nebo funkci. Počítače ale často potřebují pracovat s mnohem větším objemem dat, než je několik čísel nebo řetězců. V této lekci si ukážeme jak ukládat větší množství hodnot do jedné proměnné a jak potom můžeme s takovými hodnotami pracovat pomocí cyklů.
 
 ## Pole
 
@@ -125,7 +125,7 @@ Metoda `indexOf` nám přímo řekne první index, na kterém se zadaný prvek v
 
 ### Řetězce versus pole
 
-Řetězce jsme v tomto kurzu potkali na samém začátku. Nyní si však můžeme ukázat, že řetězce mají s poli hodně společného. V některých situacích se totiž chovají jako pole znaků. Už víme, že pole i řetězce mají vlastno `length`. Můžete však také přistupovat k jednotlivých znakům skrze indexy.
+Řetězce jsme v tomto kurzu potkali na samém začátku. Nyní si však můžeme ukázat, že řetězce mají s poli hodně společného. V některých situacích se totiž chovají jako pole znaků. Už víme, že pole i řetězce mají vlastnost `length`. Můžete však také přistupovat k jednotlivých znakům skrze indexy.
 
 ```jscon
 > const name = 'Ernest'
@@ -155,7 +155,7 @@ true
 
 ### Použití polí
 
-Pole v programování potkáme na každém kroku. Můžeme je například použít pro reprezentaci dat. Takto například pomocí reprezentujeme tabulku výdajů z našeho úplně prvního příkladu se spolubydlením.
+Pole v programování potkáme na každém kroku. Můžeme je například použít pro reprezentaci dat. Takto například pomocí pole reprezentujeme tabulku výdajů z našeho úplně prvního příkladu se spolubydlením.
 
 ```js
 const expenses = [
@@ -218,11 +218,11 @@ while (num <= 10) {
 }
 ```
 
-Na začátku si vytváříme proměnnou `num`, která bude obsahovat naše čísla. Poté následuje cyklus, který vypadá velmi podobně jako podmínka `if`. Podobně jaku u podmínek, i zde se do kulatých závorkách píše výraz, který vrací pravdivostní hodnotu. Pokud tento výraz vrátí `true`, vykoná se zadaný blok kódu. Jakmile však blok kódu skončí, výraz v kulatých závorkách se vyhodnotí znovu. Pokud opět vrátí `true`, blok kódu se vykoná znova. Takto se cyklus opakuje tak dlouho, dokud výraz v závorkách nevrátí `false`.
+Na začátku si vytváříme proměnnou `num`, která bude obsahovat naše čísla. Poté následuje cyklus, který vypadá velmi podobně jako podmínka `if`. Podobně jak u podmínek, i zde se do kulatých závorek píše výraz, který vrací pravdivostní hodnotu. Pokud tento výraz vrátí `true`, vykoná se zadaný blok kódu. Jakmile však blok kódu skončí, výraz v kulatých závorkách se vyhodnotí znovu. Pokud opět vrátí `true`, blok kódu se vykoná znova. Takto se cyklus opakuje tak dlouho, dokud výraz v závorkách nevrátí `false`.
 
 Protože v bloku kódu vždy přičteme k proměnné `num` jedničku, cyklus se nám zopakuje dohromady desetkrát.
 
-Cyklus nemusíme použít jen k počítání. Můžeme například nechat uživatele zadávat heslo tak, dlouho, dokud nezadá to správné.
+Cyklus nemusíme použít jen k počítání. Můžeme například nechat uživatele zadávat heslo tak dlouho, dokud nezadá to správné.
 
 ```js
 let pass = prompt('Enter your password:');
@@ -256,7 +256,7 @@ V praxi se nám občas nekonečný cyklus hodí, ale většinou vzníká jako ch
 
 ### Procházení pole
 
-Velmi často budeme používat cyklus k tomu, abychom prošli nejaké pole porvek po prvku a s každým prvkem něco udělali. V takovém případě si vyrobíme cyklus, který prochází jednotlivé indexy pole a tyto indexy pak používáme k přístupu k jednotlivým prvkům. Zkusme například vypsat na obrazovku naše pole známek.
+Velmi často budeme používat cyklus k tomu, abychom prošli nejaké pole prvek po prvku a s každým prvkem něco udělali. V takovém případě si vyrobíme cyklus, který prochází jednotlivé indexy pole a tyto indexy pak používáme k přístupu k jednotlivým prvkům. Zkusme například vypsat na obrazovku naše pole známek.
 
 ```js
 const marks = [2, 4, 1, 3, 4, 3];
@@ -268,13 +268,13 @@ while (i < marks.length) {
 }
 ```
 
-Aby cyklus správně fungoval, musíme si dát dobrý pozor jednak na to, abychom s indexm `i` začínali od nuly a bychom nepřekročili délku pole.
+Aby cyklus správně fungoval, musíme si dát dobrý pozor jednak na to, abychom s indexem `i` začínali od nuly a abychom nepřekročili délku pole.
 
 Všimněte si, že už po několikáté vidíme cyklus, kde používáme nějakou proměnnou, kterou postupně navyšujeme dokud nedojdeme k nějakému limitu. Protože tato proměnná vlastně řídí, jak dlouho se celý cyklus bude opakovat, říkáme jí <term cs="řídící proměnná" en="control variable">.
 
 ### Cyklus FOR
 
-Cyklus s řídící proměnnou je v programování tak častý, že si pro něj programátoři vytvořili speciální syntaxi, která se jmenuje FOR cyklus. V cyklech FOR jsou všechny příkazy s řídící proměnnou na jednom místě a kód je pak lépe čitelný.
+Cyklus s řídící proměnnou je v programování tak častý, že si pro něj programátoři vytvořili speciální syntax, která se jmenuje FOR cyklus. V cyklech FOR jsou všechny příkazy s řídící proměnnou na jednom místě a kód je pak lépe čitelný.
 
 Ukažme si ještě jednou cyklus WHILE pro výpis známek do konzole.
 
@@ -298,7 +298,7 @@ for (let i = 0; i < marks.length; i += 1) {
 }
 ```
 
-Vidíte že, že nyní všechny příkazy pro práci s řídící proměnnou pěkně na začátku cyklu a nemusíme se rozlížet po celém kódu, abychom je našli.
+Vidíte nyní všechny příkazy pro práci s řídící proměnnou pěkně na začátku cyklu a nemusíme se rozlížet po celém kódu, abychom je našli.
 
 ## Složitejší cykly
 
