@@ -1,5 +1,3 @@
-## Modifikace na místě
-
 ## Destrukturování
 
 Téměř v každé webové aplikaci pracujeme s nějakými strukturovanými daty. K jednotlivým položkám těchto dat se chceme v JavaScriptu umět dostat co nejrychleji. Uvažte například tuto jednoduchou strukturu pro reprezentaci jízdenky.

@@ -2,7 +2,6 @@ V předchozích lekcích už jsme se naučili téměř všechno, co v Reactu pot
 
 1. Komunikace rodič → dítě
 1. Komunikace dítě → rodič
-1. Komunikace mezi sourozenci
 
 ## Komunikace rodič → dítě
 
@@ -16,4 +15,3 @@ Předávání informací směrem od rodiče k dítěti je z našich tří situac
 - nazev-stranky
 ]]]
 
-## Komunikace mezi sourozenci

@@ -17,12 +17,12 @@ lessons:
   - title: Formulářové prvky, efekty
     link: formulare-efekty
     brief: 'Zapojíme do našich React aplikací formulářové prvky a ukážeme si jak pomocí efektů volat API.'
-  - title: Komunikace mezi komponentami
-    link: komponenty-komunikace
-    brief: 'Představíme si hlavní scénáře komunikace mezi komponentami a jejich použití v praxi.'
-  - title: Imutabilita a destrukturování
-    link: imutabilita-destrukturovani
-    brief: 'Chceme-li v React stavu používat pole a objekty, musíme s nimi pracovat malinko jinak, než jsme byli doposud zvyklí.'
+  - title: Komunikace dítě rodič
+    link: komunikace-dite-rodic
+    brief: 'Představíme si základní scénáře komunikace mezi komponentami a jejich použití v praxi.'
+  - title: Komunikace mezi sourozenci
+    link: komunikace-mezi-sourozenci
+    brief: 'Nejnáročnejší typ komunikace mezi komponentami je předávání informací mezi sourozenci.'
   - title: React router
     link: react-router
     brief: 'Pomocí routeru dokážeme v Reactu vyrobit vícestránkovou aplikace.'
