@@ -1,11 +1,11 @@
 ---
 title: Nápoj jako komponenta
-demand: 2
+demand: 3
 ---
 
-Abychom nakonec mohli zobrazit celou nabídku nápojů, budeme potřebovat, aby každý nápoj byl jedna komponenta. Podívejte se do `index.html` nebo do devtools na strukturu jednoho nápoje (prvek `.drink` a jeho obsah). Tento obsah si v `index.html` zakomentujte. Zakomentujte si také přidávání ingrediencí capuccina pomocí komponenty `Layer` v hlavním `index.js`.
+Abychom nakonec mohli zobrazit celou nabídku nápojů, budeme potřebovat, aby každý nápoj byl jedna komponenta. Podívejte se do `index.html` nebo do devtools na strukturu jednoho nápoje. Tento obsah si v `index.html` zakomentujte. Zakomentujte si také přidávání ingrediencí capuccina pomocí komponenty `Layer` v hlavním `index.js`.
 
-1. Jak už jsme zvyklí, vytvořte pro komponentu složku `Drink` s `index.js` a `style.css`. Do `style.css` přesuňte styly související s komponentou. Pozor, že tentokrát ke stylu komponenty patří také obrázek `cup-selected.png`. Abychom měli vše hezky pohromadě, vytvořte ve složce komponenty složku `img`, do které tento obrázek přesuňte. (Dané styly musíte smazat v hlavním `style.css`, protože tam bude obrázek `cup-selected.png` teď chybět).
+1. Jak už jsme zvyklí, vytvořte pro komponentu složku `Drink` s `index.js` a `style.css`. Do `style.css` přesuňte styly související s komponentou. Pozor na to, že tentokrát ke stylu komponenty patří také obrázek `cup-selected.png`. Abychom měli vše hezky pohromadě, vytvořte ve složce komponenty složku `img`, do které tento obrázek přesuňte. (Dané styly musíte smazat nebo zakomentovat v hlavním `style.css`, protože tam bude obrázek `cup-selected.png` teď chybět).
 1. V `index.js` vytvořte komponentu `Drink`, která očekává `props` v následujícím tvaru.
 
    ```js

@@ -5,7 +5,7 @@ demand: 2
 
 Nejprve pro naši aplikace založíme projekt.
 
-1. Pod svým GitHub účtem si založte nový veřejný repozitář s Readme se souborem `README.md` a názvem `cafelora`.
+1. Pod svým GitHub účtem si založte nový veřejný repozitář se souborem `README.md` a názvem `cafelora`.
 1. V terminálu se přesuňte do složky, ve které skladujete své projekty a naklonujte si váš repozitář. Ve VS Code si otevřete svou složku naklonovanou z GitHubu `cafelora`. Ve složce byste měli vidět pouze soubor `README.md`.
 1. Otevřete v této složce terminál a pomocí `create-czechitas-app` vytvořte v této složce vanilla Webpack projekt s vlastním názvem.
    ```sh
