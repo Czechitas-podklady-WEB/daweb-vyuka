@@ -26,7 +26,7 @@ Abychom nakonec mohli zobrazit celou nabídku nápojů, budeme potřebovat, aby 
    };
    ```
 
-   Komponentu napište tak, aby vracela DOM element.
+   Komponentu napište tak, aby vracela DOM element. DOM element je potřeba vrátit pouze ten obalový. Vnitřek komponenty stačí jako innerHTML obalového prvku.
 
 1. Uvnitř vaší komponenty bude potřeba použít komponentu `Layer`. Dejte si pozor, abyse ji správně importovali.
 1. Komponentu `Layer` v naší komponentě `Drink` použijte pomocí `innerHTML`, stejně jako jsme to dělali v hlavním `index.js`.
