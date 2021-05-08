@@ -1,16 +1,22 @@
-Do této chvíle jsem naše aplikace psali v "čistém" (anglicky se též říká "vanilla") JavaScriptu. Postupy, které jsme se dosud naučili jsou zcela legitimní a můžeme takto psát i větší aplikace. U aplikací, které jsou velmi interaktivní a často mění obsah stránky, však narazíme na různé problémy.
+Do této chvíle jsem naše aplikace psali v "čistém" (anglicky se též říká "vanilla") JavaScriptu. Postupy, které jsme se dosud naučili, jsou zcela legitimní samy o sobě a můžeme takto psát i větší aplikace. U aplikací, které jsou velmi interaktivní a často mění obsah stránky, však narazíme na různé problémy.
 
 - Budeme muset náš kód zodpovědně strukturovat do komponent. S tím přichází spousta kódu, který píšeme pořád dokola.
 - Zařídit správnou komunikaci mezi velkým množstvím komponent začne být čím dál těžší.
 - Při velkém množství komponent je poměrně těžké zajistit dobrý výkon aplikace.
 
-Na tyto problémy tvrdě narazili vývojáři Facebooku a proto vytvořili framework s názvem React, který by tyto problémy pomohl odstranit. Podobných frameworků existuje více, například Angular, Vue, Ember a další. V současné době je však React s přehledem nejpopulárnější a také nejžádanější na trhu práce.
+Na tyto problémy tvrdě narazili vývojáři Facebooku a proto vytvořili framework s názvem React, který by tyto problémy pomohl odstranit. Podobných frameworků existuje vícero. Mezi nejznámější patří [Angular](https://angular.io/) a [Vue](https://vuejs.org/). Spolu s Reactem tvoří trojici nejpoužívanějších frameworků pro vývoj webů. V současné době je React stále s přehledem nejpopulárnější a také nejžádanější na trhu práce.
 
 ## První React aplikace
 
 Ať už je to šikovná náhoda nebo dokonale promyšlený plán, velkou část Reactových principů už jste v tomto kurzu používali, aniž byste o tom věděli. K vytvoření našeho prvního React projektu tak stačí pouze malinko upravit konfiguraci Webpacku a naučit se psát náš kód Reactovým způsobem.
 
-Základní Webpack projekt nastavený pro práci v Reactu si můžete [stáhnout zde](https://github.com/Czechitas-podklady-WEB/project-starter/archive/react-starter.zip). Používá se stejným způsobem jako jsme u Webpack projektů zvyklí. Všimněte si však, že místo `index.js` zde máme soubor `index.jsx`. Příponu `.jsx` budeme používat u souborů, které obsahují Reactový kód. Co tato přípona znamená si povíme v následující části.
+Základní Webpack projekt nastavený pro práci v Reactu si můžete vygenerovat pomocí `create-czechitas-app`. 
+
+```sh
+$ npx create-czechitas-app my-app
+```
+
+Všimněte si, že tontokrát v příkazu chybí slovíčko `vanilla`. React projekt se používá stejným způsobem jako jsme u Webpack projektů zvyklí. Všimněte si však, že místo `index.js` zde máme soubor `index.jsx`. Příponu `.jsx` budeme používat u souborů, které obsahují Reactový kód. Co tato přípona znamená si povíme v následující části.
 
 ### JavaScript XML
 
@@ -58,9 +64,11 @@ Celý soubor `index.jsx` tak bude vypadat takto.
 ```js
 import React from 'react';
 import { render } from 'react-dom';
-import './index.html';
 
-render(<h1 className="title">Moje stránka</h1>, document.getElementById('app'));
+render(
+  <h1 className="title">Moje stránka</h1>, 
+  document.getElementById('app')
+);
 ```
 
 Aby nám React správně fungoval, musíme importovat balíček `react` na začátku každého souboru, ve kterém pracujeme s JSX. Funkci `render` si pak importujeme z balíčku `react-dom`.
@@ -74,7 +82,6 @@ Mohli bychom tak chtít napsat složitější obsah stránky například takto.
 ```js
 import React from 'react';
 import { render } from 'react-dom';
-import './index.html';
 
 render(
   <header>
@@ -110,7 +117,6 @@ Tento postup však s sebou nese nevýhody. Na stránce se nám objeví zbytečn�
 ```js
 import React from 'react';
 import { render } from 'react-dom';
-import './index.html';
 
 render(
   <>
@@ -131,7 +137,6 @@ Ještě bychom si obsah stránky mohli uložit do proměnné, aby nám volání 
 ```js
 import React from 'react';
 import { render } from 'react-dom';
-import './index.html';
 
 const appContent = (
   <>
@@ -248,7 +253,6 @@ Ta nejhezčí věc na Reactu je však způsob, jakým naši komponentu zapojíme
 ```js
 import React from 'react';
 import { render } from 'react-dom';
-import './index.html';
 
 const ShoppingItem = (props) => {
   return (
@@ -280,7 +284,7 @@ React se za nás postará a veškerou špinavou práci, kdy hodnoty atributů za
 
 ## Doporučené postupy
 
-Framework React vznikl ve společnosti Facebook mezi roky 2011 až 2013. Má tedy za sebou již několik let používání a za tu dobu se ustálily určité doporočené postupy, jak psát React aplikace. Některé z nich zmíníme již takto na začátku, abychom co nejdříve působili jako profesionálové.
+Framework React vznikl ve společnosti Facebook mezi roky 2011 až 2013. Má tedy za sebou již několik let používání a za tu dobu se ustálily určité doporučené postupy, jak psát React aplikace. Některé z nich zmíníme již takto na začátku, abychom co nejdříve působili jako profesionálové.
 
 ### Hlavní komponenta
 
@@ -289,7 +293,6 @@ V Reactu není příliš zvykem psát do funkce `render` příliš obsáhly kód
 ```js
 import React from 'react';
 import { render } from 'react-dom';
-import './index.html';
 
 const ShoppingItem = (props) => {
   return (
@@ -367,7 +370,6 @@ Výsledný hlavní `index.jsx` celé aplikace pak bude vypadat takto.
 import React from 'react';
 import { render } from 'react-dom';
 import ShoppingItem from './ShoppingItem';
-import './index.html';
 
 const App = () => {
   return (

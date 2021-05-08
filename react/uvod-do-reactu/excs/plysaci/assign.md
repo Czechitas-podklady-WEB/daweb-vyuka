@@ -9,7 +9,7 @@ Vytvořte v Reactu webovou stránku dle následujícího vzoru.
 
 Postupujte dle následujících kroků.
 
-1. Založte nový React projekt dle šablony z této lekce.
+1. Založte nový React projekt.
 1. Upravte obsah stránky tak, aby vypadal takto.
    ```html
    <h1>Plyšáci</h1>
