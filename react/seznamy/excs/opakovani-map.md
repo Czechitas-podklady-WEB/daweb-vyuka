@@ -41,7 +41,7 @@ const months = [
     days: 30,
   },
   {
-    name: 'červenc',
+    name: 'červenec',
     days: 31,
   },
   {
