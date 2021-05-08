@@ -12,7 +12,7 @@ Následující funkce přepište do zkráceného zápisu. Vlastními slovy popi�
     ```
 1.  ```js
     const roll = () => {
-      return Math.floor(Math.random(6)) + 1;
+      return Math.floor(Math.random() * 6) + 1;
     };
     ```
 1.  ```js
