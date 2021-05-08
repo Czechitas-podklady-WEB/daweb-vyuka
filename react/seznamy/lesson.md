@@ -205,7 +205,7 @@ Pokud tento seznam budeme chtít zobrazit, budeme potřebovat složitější JSX
 ```js
 const App = () => (
   <>
-    <h1>Nákupní sezname</h1>
+    <h1>Nákupní seznam</h1>
     <div className="shopping-list">
       {list.map((item) => {
         const itemClass = item.bought ? 'item item--selected' : 'item';
@@ -221,9 +221,9 @@ const App = () => (
 );
 ```
 
-Všimněte si, že funkce, která vyrábí JSX pro jednotlivé položky našeho seznamu ja už o kus obsáhlejší. Dokonce o tolik, že už nejde napsat zkráceným způsobem, a musíme použít složené závorky a `return`. Tato ukázka opět poslouží jako dobré cvičení na pozornost ohledně závorek.
+Všimněte si, že funkce, která vyrábí JSX pro jednotlivé položky našeho seznamu je už o kus obsáhlejší. Dokonce o tolik, že už nejde napsat zkráceným způsobem, a musíme použít složené závorky a `return`. Tato ukázka opět poslouží jako dobré cvičení na pozornost ohledně závorek.
 
-V praxi však často nastane situace, že funkce použitá uvnitř `map` už je tak složítá, že je těžké se v kódu zorientovat. Náš poslední příklad už je také trochu na hraně. V takovém případě se nám rozhodně vyplatí vytvořit si pro zobrazování jednotlivých prvků seznamu komponentu, například takto.
+V praxi však často nastane situace, že funkce použitá uvnitř `map` už je tak složitá, že je těžké se v kódu zorientovat. Náš poslední příklad už je také trochu na hraně. V takovém případě se nám rozhodně vyplatí vytvořit si pro zobrazování jednotlivých prvků seznamu komponentu, například takto.
 
 ```js
 const ShoppingItem = (props) => {
@@ -238,7 +238,7 @@ const ShoppingItem = (props) => {
 
 const App = () => (
   <>
-    <h1>Nákupní sezname</h1>
+    <h1>Nákupní seznam</h1>
     <div className="shopping-list">
       {list.map((item) => (
         <ShoppingList
@@ -252,7 +252,7 @@ const App = () => (
 );
 ```
 
-Takto je náš kód mnohem čitelnější. Toto je jeden z hlavních důvodů, proč rozdělujeme naše aplikace na komponenty. Lépe se tak dokážeme v kódu orientovat nejen my, ale také naší kolegové, kteří pracují na stejném projektu a musí číst náš kód.
+Takto je náš kód mnohem čitelnější. Toto je jeden z hlavních důvodů, proč rozdělujeme naše aplikace na komponenty. Lépe se tak dokážeme v kódu orientovat nejen my, ale také naši kolegové, kteří pracují na stejném projektu a musí číst náš kód.
 
 [[[ excs Cvičení: Zobrazování seznamů
 - ceska-mesta
