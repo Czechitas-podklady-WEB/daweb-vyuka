@@ -1,8 +1,8 @@
-Ve vanilla JavaScriptu jsem se nejdříve učili vytvářet statický obsah stránky a později jsme postupně přidávali interaktivitu. V Reactu budeme postupovat stejně. V této lekci uděláme další krok k tomu, aby naše stránky mohly být dynamičtější. Bude se nám k tomu hodit jedna hezká pomůcka z čistého JavaScriptu, kterou jsem v předešlých lekcích vynechali.
+Ve vanilla JavaScriptu jsem se nejdříve učili vytvářet statický obsah stránky a později jsme postupně přidávali interaktivitu. V Reactu budeme postupovat stejně. V této lekci uděláme další krok k tomu, aby naše stránky mohly být dynamičtější. Bude se nám k tomu hodit jedna hezká pomůcka z čistého JavaScriptu, kterou jsme v předešlých lekcích vynechali.
 
 ## Ternární operátor
 
-Představte si situaci, kdy chceme uživateli zobrzit jednoduchou zprávu podle jeho věku.
+Představte si situaci, kdy chceme uživateli zobrazit jednoduchou zprávu podle jeho věku.
 
 ```js
 let message = null;
@@ -150,13 +150,17 @@ stačí napsat pouze název dané prop a React už si domyslí, že do ní chcem
 
 ## Stylování JSX elementů
 
-Podobně jako při práci s HTML tu a tam nastane chvíle, kdy potřebujeme změnit individuální CSS styl na nějakém prvku. V JSX k tomu také použijeme prop jménem `style`. Obsahem však musí být JavaScriptový objekt, kde jednotlivé CSS vlastnosti mají jména v camel case formátu. Takto například v Reactu nastavíme barvu pozadí, barvu písma a výšku elementu.
+V základech HTML a CSS jste se učili, že není dobré stylovat HTML elementy pomocí atributu `style`. Místo toho se vždy snažíme vytvořit nějakou dobře pojmenovanou CSS třídu. Stejné pravidlo platí i v Reactu. Stejně jako v čistém HTML však občas narazíme na výjimky. 
+
+Vzpomeňte si například na náš projekt Café Lóra, kde jsme stylovali barvy jednotlivých ingrediencí v nápoji. Vzhledem k tomu, že kódy barev byly součástí dat stažených z API, nemohli jsme mít dopředu připravené třídy se všemi možnými barvami. V takovém případě je stylování pomocí atributu `style` oprávněné.
+
+V JSX ke změne individuálních stylů použijeme prop jménem `style`. Obsahem této prop musí být JavaScriptový objekt, kde jednotlivé CSS vlastnosti mají jména v camel case formátu. Takto například v Reactu nastavíme barvu pozadí, barvu písma a výšku elementu.
 
 ```js
 <div style={{ height: '5rem', color: 'white', backgroundColor: '#ff0000' }} />
 ```
 
-Všimněte si, že zde narážíme na situaci, kdy máme objekt, jako hodnota pro nějakou prop. Je proto třeba dát si dobrý pozor na složené závorky. Takovýto kód nám fungovat nebude.
+Zde narážíme na situaci, kdy do nějaké prop předáváme objekt. Je proto třeba dát si dobrý pozor na složené závorky. Takovýto kód nám fungovat nebude.
 
 ```js
 <div style={ height: '5rem', color: 'white', backgroundColor: '#ff0000' } />
@@ -180,9 +184,11 @@ Naopak co si snadno dovolit můžeme, je nastavit hodnotu stylu pomocí podmín�
 />
 ```
 
+Na konci této části opět zdůrazněme, že stylování pomocí atributu `style` děláme pouze ve výjimečných a odůvodněných případech. 
+
 ## Podmíněné zobrazení.
 
-Do této chvíle jsme na základě vstupních props komponenty měnili pouze její stylování. Často však narazíme na situaci, kdy chceme změnit i samotný obsah komponenty. Představme si, že máme například komponentu `Product`, která umožňuje objednat vložit produkt v e-shopu do košíku.
+Do této chvíle jsme na základě vstupních props komponenty měnili pouze její stylování. Často však narazíme na situaci, kdy chceme změnit i samotný obsah komponenty. Představme si, že máme například komponentu `Product`, která umožňuje vložit produkt v e-shopu do košíku.
 
 ```js
 const Product = (props) => {
@@ -196,7 +202,7 @@ const Product = (props) => {
 };
 ```
 
-Pokud už je však produkt objednaný, chtěli bychom zobrazit tlačítko s jiným nápisem. K tomuto můžeme s výhodou právě náš oblíbený podmíněný operátor.
+Pokud už je však produkt objednaný, chtěli bychom zobrazit tlačítko s jiným nápisem. K tomuto můžeme s výhodou použít náš oblíbený podmíněný operátor.
 
 <!-- prettier-ignore -->
 ```js

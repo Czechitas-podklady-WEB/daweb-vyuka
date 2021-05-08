@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+}
+
+.bulb {
+  width: 250px;
+  height: 450px;
+  background-size: contain;
+  background-image: url('img/bulb-off.png');
+}
+
+.bulb--on {
+  background-image: url('img/bulb-on.png');
+}

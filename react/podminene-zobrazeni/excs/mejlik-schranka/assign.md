@@ -5,7 +5,7 @@ demand: 2
 
 V tomto cvičení vytvoříme základ komponenty pro zobrazování příchozí e-mailové pošty v naší nové aplikaci jménem <i>Mejlík.cz</i>.
 
-1. Založte si React projekt dle šablony z předchozí lekce.
+1. Založte si nový React projekt dle již známého postupu.
 1. Vytvořte komponentu `Inbox`, která se použije takto.
 
    ```js
