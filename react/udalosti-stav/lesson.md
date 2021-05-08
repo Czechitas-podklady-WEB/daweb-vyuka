@@ -1,4 +1,4 @@
-Práce se stavem je hlavní téma celého React frameworku. Porozumění tomu, jak stav v Reactu funguje je základem pro tvorbu interaktivních komponent. Porozumět stavovému mechanizmu v Reactu může být ze začátku výzva, proto jsme si dali v této kapitola na čas a ke stavu se dostáváme až nyní, kdy už umíme pracovat s komponentami i JSX.
+Práce se stavem je hlavní téma celého React frameworku. Porozumění tomu, jak stav v Reactu funguje je základem pro tvorbu interaktivních komponent. Porozumět stavovému mechanizmu v Reactu může být ze začátku výzva, proto jsme si dali v této kapitole na čas a ke stavu se dostáváme až nyní, kdy už umíme pracovat s komponentami i JSX.
 
 ## Události
 
@@ -88,7 +88,7 @@ const Auto = () => {
 };
 ```
 
-Pomocí specální funkce `useState` říkáme Reactu, že chceme vytvořit proměnnou, která se během života komponenty bude měnit. Jedná se o speciální funkci, která vrací pole o dvou prvcích. První položka reprezentuje hodnotu našeho stavu. V našm případě budeme použítvat `'full'`, `'almost empty'` nebo `'empty'`. Druhá položka je funkce pro změnu hodnoty našeho stavu. Funkce `useState` navíc přijímá jeden vstup, který použije pro počáteční hodnotu stavu.
+Pomocí specální funkce `useState` říkáme Reactu, že chceme vytvořit proměnnou, která se během života komponenty bude měnit. Jedná se o speciální funkci, která vrací pole o dvou prvcích. První položka reprezentuje hodnotu našeho stavu. V našem případě budeme používat `'full'`, `'almost empty'` nebo `'empty'`. Druhá položka je funkce pro změnu hodnoty našeho stavu. Funkce `useState` navíc přijímá jeden vstup, který použije pro počáteční hodnotu stavu.
 
 V našem případě tedy můžeme v komponentě pracovat s proměnnou `tankLevel`, která bude mít při prvním renderu hodnotu `'full'`. Hodnotu `tankLevel` však můžeme například v reakci na nějakou událost změnit. To provedeme voláním
 
