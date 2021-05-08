@@ -10,12 +10,12 @@ Vytvořte v Reactu webovou stránku dle následujícího vzoru.
 Postupujte dle následujících kroků.
 
 1. Založte nový React projekt.
-1. Upravte obsah stránky tak, aby vypadal takto.
+1. Smažte komponentu `App`. Vytvořte si proměnnou `content` a vložte do ní JSX s následujícím obsahem.
    ```html
    <h1>Plyšáci</h1>
    <div className="plushies"></div>
    ```
-   Uložte si toto JSX do seperátní proměnné. Nezapomeňte jej správně obalit do fragmentu. Tuto proměnnou pak použíjte ve funkci `render`.
+   Nezapomeňte obsah správně obalit do fragmentu. Vaši proměnnou pak použíjte ve funkci `render`.
 1. Vytvořte si dva objekty obsahující informace o plyšácích dle následujícího vzoru.
    ```js
    const plushy1 = {
