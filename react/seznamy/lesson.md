@@ -1,8 +1,8 @@
-Naše cesta Reactem pokračuje k další z velmi důležitých dovedností. Téměř každý webové aplikace zobrazuje nějaký seznam, ať už to je nákupní košík, seznam divadelních představení, jídelní lístek nebo třeba seznam nepřečtených e-mailů. V této lekci si ukážeme, jak v Rectu zařídit zobrazení seznamu uloženého v nějakém JavaScriptovém poli.
+Naše cesta Reactem pokračuje k další z velmi důležitých dovedností. Téměř každá webové aplikace zobrazuje nějaký seznam, ať už to je nákupní košík, seznam divadelních představení, jídelní lístek nebo třeba seznam nepřečtených e-mailů. V této lekci si ukážeme jak v Reactu zařídit zobrazení seznamu uloženého v nějakém JavaScriptovém poli.
 
 ## Opakování metody map
 
-Na zobrazování seznamů budeme v Reactu používat metodu `map`, kterou jste si již vyzkoušeli v předchozí kapitole. Určitě se nám však vyplatí si tuto metodu připomenout a zopakovat.
+Na zobrazování seznamů budeme v Reactu používat metodu `map`, kterou již znáte z kapitoly o pokročílém JavaScriptu. Jistě se nám vyplatí si tuto metodu připomenout a zopakovat.
 
 Metoda `map` slouží k tomu, abychom z jednoho JavaScriptového pole vyrobili pole jiné pomocí nějaké tranformační funkce. Takto například vyrobíme e-maily pro seznam uživatelů.
 
@@ -13,23 +13,7 @@ names.map((name) => {
 });
 ```
 
-### Zkracování zápisu funkcí
-
-Už na ternárním operátoru z minulé kapitoly jsme si ukázali, že programátoři se snaží kód zkracovat kde to jen jde, aby dokázali programy psát co nejrychleji. Pro arrow funkce proto existuje speciální zkrácený zápis. Jako příklad vězměme naší funkci pro vytváření e-mailu. Její nezkrácený zápis vypadá takto.
-
-```js
-(name) => {
-  return `${name}@mejlik.cz`;
-};
-```
-
-Pokud však funkce nedělá nic jiného, než že rovnou vrací nějako hodnotu, můžeme její zápis zkrátit tím, že vynecháme složené závorky a slovíčko `return`.
-
-```js
-(name) => `${name}@mejlik.cz`;
-```
-
-Díky tomu můžeme náš kód pro generování e-mailů zapsat takto.
+Jistě si také vzpomenete, že jsme při zápisu takovýchto transformací používali zkrácený zápis arrow funkcí. 
 
 ```js
 const names = ['petr', 'jana', 'marek', 'eva', 'lenka', 'ondra'];
@@ -66,7 +50,7 @@ const Time = (props) => (
 );
 ```
 
-Pokud je však komponenta malá, klidně se bez závorek obejdeme.
+Pokud je komponenta malá, klidně se bez závorek obejdeme.
 
 ```js
 const User = (username) => <div className="user__name">{username}</div>;
@@ -88,7 +72,7 @@ Z tohoto bodu zbývá už jen malý krůček, abychom takovéto pole JSX kompone
 
 ## Seznamy v JSX
 
-Na konci předchozí části už jsme se dotknuli způsobu, jak v Reactu zobrazit nějaký seznam. Celá myšlenka tkví v tom, že React nám velmi přimočaře umožňuje zobrazit pole JSX elementů.
+Na konci předchozí části jsme se dotknuli způsobu, jak v Reactu zobrazit nějaký seznam. Celá myšlenka tkví v tom, že React nám velmi přimočaře umožňuje zobrazit pole JSX elementů.
 
 Představme si následující pole obsahující `li` elementy.
 
@@ -102,9 +86,9 @@ const dayElements = [
 ];
 ```
 
-Všimněte si, že jde o normální JavaScriptové pole, které jako svoje prvky obsahuje JSX elementy. Každý JSX element je hodnota, takže není žádný problém mít pole takovýchto hodnot.
+Všimněte si, že jde o normální JavaScriptové pole, které jako svoje prvky obsahuje JSX elementy. Každý JSX element je hodnota, není tedy žádný problém mít pole takovýchto hodnot.
 
-Pokud takové pole máme, můžeme tyto elementy zobrazit uvnitř nějakého rodiče prostě tak, že proměnnou `dayElements` do tohoto rodiče prostě vložíme.
+Pokud takové pole máme už připravené, můžeme elementy v něm obsažené zobrazit uvnitř nějakého rodiče prostě tak, že proměnnou `dayElements` do tohoto rodiče vložíme.
 
 ```js
 const App = () => (
@@ -191,12 +175,12 @@ Z praktického hlediska je náš ilustrativní příklad výše stále hodně je
 
 ```js
 const list = [
-  { name: 'mrkev', amount: '3ks', bought: false },
-  { name: 'paprika', amount: '2ks', bought: true },
-  { name: 'cibule', amount: '2ks', bought: false },
-  { name: 'čínské zelí', amount: '1ks', bought: true },
-  { name: 'arašídy', amount: '250g', bought: false },
-  { name: 'sojová omáčka', amount: '1ks', bought: false },
+  { product: 'mrkev', amount: '3ks', bought: false },
+  { product: 'paprika', amount: '2ks', bought: true },
+  { product: 'cibule', amount: '2ks', bought: false },
+  { product: 'čínské zelí', amount: '1ks', bought: true },
+  { product: 'arašídy', amount: '250g', bought: false },
+  { product: 'sojová omáčka', amount: '1ks', bought: false },
 ];
 ```
 
@@ -211,7 +195,7 @@ const App = () => (
         const itemClass = item.bought ? 'item item--selected' : 'item';
         return (
           <div className={itemClass}>
-            <span className="item__name">{item.name}</span>
+            <span className="item__product">{item.product}</span>
             <span className="item__amount">{item.amount}</span>
           </div>
         );
@@ -221,16 +205,16 @@ const App = () => (
 );
 ```
 
-Všimněte si, že funkce, která vyrábí JSX pro jednotlivé položky našeho seznamu je už o kus obsáhlejší. Dokonce o tolik, že už nejde napsat zkráceným způsobem, a musíme použít složené závorky a `return`. Tato ukázka opět poslouží jako dobré cvičení na pozornost ohledně závorek.
+Všimněte si, že funkce, která vyrábí JSX pro jednotlivé položky našeho seznamu, je už o kus obsáhlejší. Dokonce o tolik, že už nejde napsat zkráceným způsobem, a musíme použít složené závorky a `return`. Tato ukázka opět poslouží jako dobré cvičení na pozornost ohledně závorek.
 
-V praxi však často nastane situace, že funkce použitá uvnitř `map` už je tak složitá, že je těžké se v kódu zorientovat. Náš poslední příklad už je také trochu na hraně. V takovém případě se nám rozhodně vyplatí vytvořit si pro zobrazování jednotlivých prvků seznamu komponentu, například takto.
+V praxi však často nastane situace, že funkce použitá uvnitř `map` je tak složitá, že je těžké se v kódu orientovat. Náš poslední příklad už je také trochu na hraně. V takovém případě se nám rozhodně vyplatí vytvořit si pro zobrazování jednotlivých prvků seznamu komponentu, například takto.
 
 ```js
 const ShoppingItem = (props) => {
   const itemClass = props.bought ? 'item item-selected' : 'item';
   return (
     <div className={itemClass}>
-      <span className="item__name">{props.name}</span>
+      <span className="item__product">{props.product}</span>
       <span className="item__amount">{props.amount}</span>
     </div>
   );
@@ -242,7 +226,7 @@ const App = () => (
     <div className="shopping-list">
       {list.map((item) => (
         <ShoppingList
-          name={item.name}
+          product={item.product}
           amount={item.amount}
           bought={item.bought}
         />
@@ -253,6 +237,48 @@ const App = () => (
 ```
 
 Takto je náš kód mnohem čitelnější. Toto je jeden z hlavních důvodů, proč rozdělujeme naše aplikace na komponenty. Lépe se tak dokážeme v kódu orientovat nejen my, ale také naši kolegové, kteří pracují na stejném projektu a musí číst náš kód.
+
+## Práce s key prop
+
+U příkladů výše jsme při zobrazování seznamů narazili na toto varování v konzoli 
+
+```
+Warning: Each child in a list should have a unique "key" prop.
+```
+
+Tím se nám React snaží říct, že u každé komponenty v seznamu potřebuje mít unikátní klíč, který tuto položku identifikuje. Jde o podobný princip jako je například `id` u HTML elementů. Díky unikátním klíčům dokáže React rychleji vyřešit změny uvnitř seznamu jako přidávání nebo mazání položek. 
+
+Nejjednodušší situaci máme ve chvíli, kdy jsou naše data připravená tak, že každá položka obsahuje vlastnost s unikátními hodnotami. Podívejme se například na náš nákupní seznam. 
+
+```js
+const list = [
+  { product: 'mrkev', amount: '3ks', bought: false },
+  { product: 'paprika', amount: '2ks', bought: true },
+  { product: 'cibule', amount: '2ks', bought: false },
+  { product: 'čínské zelí', amount: '1ks', bought: true },
+  { product: 'arašídy', amount: '250g', bought: false },
+  { product: 'sojová omáčka', amount: '1ks', bought: false },
+];
+```
+
+Všechny hodnoty vlastnoti `product` jsou unikátní. Můžeme tedy tuto vlastnost použít jako klíč. 
+
+```js
+<div className="shopping-list">
+  {list.map((item) => (
+    <ShoppingList
+      key={item.product}
+      product={item.product}
+      amount={item.amount}
+      bought={item.bought}
+    />
+  ))}
+</div>
+```
+
+Všimněte si, že například vlastnost `amount` unikátní hodnoty nemá. Nelze tedy použít jako klíč. Pokud to uděláte, React si bude v konzoli opět hlasitě stěžovat.
+
+V praxi občas narazíme na data, která žádnou unikátní vlastnost použitelnou jako klíč nemají. V takovém případě čeká trošku bolehlav i zkušenější programátory. Řešení tětcho situací proto necháme na některou z pozdějších lekci, až budete v Reactu více kovaní. 
 
 [[[ excs Cvičení: Zobrazování seznamů
 - ceska-mesta

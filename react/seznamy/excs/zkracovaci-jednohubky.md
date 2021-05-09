@@ -22,14 +22,14 @@ Následující funkce přepište do zkráceného zápisu. Vlastními slovy popi�
     ```
 1.  ```js
     const Searchbox = (props) => {
-      return `
+      return (
         <div className="searchbox">
           <label>
-            ${props.label}
+            {props.label}
             <input type="text" />
           </label>
         </div>
-      `;
+      );
     };
     ```
 1.  ```js

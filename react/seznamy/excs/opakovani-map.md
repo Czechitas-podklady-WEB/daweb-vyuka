@@ -81,12 +81,12 @@ Všechny body níže vyřešte pomocí metody `map`. Tam, kde je to možné, pou
     ```js
     ['1. leden 2020', '1. únor 2020' /* atd. */];
     ```
-1.  Z pole `months` vyrobte pole řetězců obsahujcí HTML dle následujícího vzoru.
+1.  Z pole `months` vyrobte pole JSX elementů dle následujícího vzoru.
 
     ```js
     [
-      '<span class="month">leden</span>',
-      '<span class="month">únor</span>',
+      <span className="month">leden</span>,
+      <span className="month">únor</span>,
       /* atd. */
     ];
     ```
