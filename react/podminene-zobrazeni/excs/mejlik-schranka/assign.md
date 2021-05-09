@@ -20,4 +20,4 @@ V tomto cvičení vytvoříme základ komponenty pro zobrazování příchozí e
 
    ![Schránka](assets/inbox-empty.png){.fig .fig-60}
 
-1. Použijte atribut `style` k tomu, abyste text o nepřečtených zprávách zobrazili červeně, pokud nemáme žádné nepřečtené zprávy.
+1. Pokud nemáte žádné nepřečtené zprávy, použijte atribut `style` k tomu, abyste uvedený text zobrazili červeně.
