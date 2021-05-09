@@ -25,5 +25,5 @@ Založte si React projekt podle již známého [project starteru](https://github
     <div className="city">Název města</div>
     ```
     Výsledné pole uložte do proměnné `cityElements`.
-1.  Použije pole `cityElements` uvnitř komponenty `App` v zobrazte jej na vaší stránce.
+1.  Použijte pole `cityElements` uvnitř komponenty `App` a zobrazte jej tak na vaší stránce.
 1.  Zbavte se proměnné `cityElements` a funkci `map` použijte přímo uvnitř komponenty `App`.
