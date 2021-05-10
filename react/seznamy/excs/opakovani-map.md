@@ -67,7 +67,7 @@ const months = [
 ];
 ```
 
-Všechny body níže vyřešte pomocí metody `map`. Tam, kde je to možné, použijte zkrávený zápis arrow funkcí.
+Všechny body níže vyřešte pomocí metody `map`. Tam, kde je to možné, použijte zkrácený zápis arrow funkcí.
 
 1.  Z pole `weekdays` vyrobte pole obsahující všechny názvy dnů napsané VELKÝMI PÍSMENY.
 1.  Z pole `weekdays` vyrobte pole obsahující pouze první dvě písmena každého dne, tedy
