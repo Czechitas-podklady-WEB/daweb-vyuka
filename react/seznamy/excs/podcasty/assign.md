@@ -4,7 +4,7 @@ demand: 2
 ---
 
 1. Stáhněte si [nastylovanou stránku](assets/podcasty-zadani.zip) zobrazující epizody jakéhosi podcastu.
-1. Známým postuem si založte nový React projekt.
+1. Známým postupem si založte nový React projekt.
 1. Vytvořte komponentu `Episode`, která bude zobrazovat jednu podcastovou epizodu. Její props budou `num`, `title` a `guest`. Pomocí této komponenty zobrazte stejné dvě epizody, jako vidíte na připravené stránce. Z připravné stránky vykradněte CSS styly a zařiďte aby vaše aplikace vypadala stejně.
 1. Nezapomeňte pro vaši komponentu vytvořit separátní složku s vlastním JavaScriptem a CSS styly.
 1. Místo natvrdo zadrátovaných epizod přímo v kódu použijte následujicí data a na stránce zobrazte všechny uvedené epizody.
