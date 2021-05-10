@@ -3,7 +3,7 @@ title: Zkracovací jednohubky
 demand: 1
 ---
 
-Následující funkce přepište do zkráceného zápisu. Vlastními slovy popište, k čemu nejspíše funkce slouží.
+Založte si obyčejnou stránku s JavaScriptem, bez Webpacku i bez Reactu. Následující funkce přepište do zkráceného zápisu. Vlastními slovy popište, k čemu nejspíše funkce slouží.
 
 1.  ```js
     const isEmail = (str) => {
@@ -18,18 +18,6 @@ Následující funkce přepište do zkráceného zápisu. Vlastními slovy popi�
 1.  ```js
     const getNumber = (id) => {
       return Number(document.querySelector(`#${id}`).value);
-    };
-    ```
-1.  ```js
-    const Searchbox = (props) => {
-      return (
-        <div className="searchbox">
-          <label>
-            {props.label}
-            <input type="text" />
-          </label>
-        </div>
-      );
     };
     ```
 1.  ```js

@@ -3,7 +3,7 @@ title: Opakování map
 demand: 2
 ---
 
-Podle již známého postupu založte nový React projekt. Do souboru `index.jsx` zkopírujte následující pole.
+Založte si obyčejnou stránku s JavaScriptem, bez Webpacku i bez Reactu. Do souboru `index.js` si zkopírujte následující pole.
 
 ```js
 const weekdays = [
@@ -80,13 +80,4 @@ Všechny body níže vyřešte pomocí metody `map`. Tam, kde je to možné, pou
 1.  Z pole `months` vyrobte pole obsahující pro každý měsíc datum jeho prvního dne v roce 2020, tedy
     ```js
     ['1. leden 2020', '1. únor 2020' /* atd. */];
-    ```
-1.  Z pole `months` vyrobte pole JSX elementů dle následujícího vzoru.
-
-    ```js
-    [
-      <span className="month">leden</span>,
-      <span className="month">únor</span>,
-      /* atd. */
-    ];
     ```
