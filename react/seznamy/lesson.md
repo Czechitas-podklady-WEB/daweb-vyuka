@@ -1,4 +1,4 @@
-Naše cesta Reactem pokračuje k další z velmi důležitých dovedností. Téměř každá webové aplikace zobrazuje nějaký seznam, ať už to je nákupní košík, seznam divadelních představení, jídelní lístek nebo třeba seznam nepřečtených e-mailů. V této lekci si ukážeme jak v Reactu zařídit zobrazení seznamu uloženého v nějakém JavaScriptovém poli.
+Naše cesta Reactem pokračuje k další z velmi důležitých dovedností. Téměř každá webová aplikace zobrazuje nějaký seznam, ať už to je nákupní košík, seznam divadelních představení, jídelní lístek nebo třeba seznam nepřečtených e-mailů. V této lekci si ukážeme jak v Reactu zařídit zobrazení seznamu uloženého v nějakém JavaScriptovém poli.
 
 ## Opakování metody map
 
