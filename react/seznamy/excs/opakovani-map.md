@@ -3,7 +3,7 @@ title: Opakování map
 demand: 2
 ---
 
-Založte si obyčejnou stránku s JavaScriptem, bez Webpacku i bez Reactu. Do souboru `index.js` si zkopírujte následující pole.
+Podle již známého postupu založte nový React projekt. Do souboru `index.jsx` zkopírujte následující pole.
 
 ```js
 const weekdays = [
@@ -67,7 +67,7 @@ const months = [
 ];
 ```
 
-Všechny body níže vyřešte pomocí metody `map`. Tam, kde je to možné, použijte zkrácený zápis arrow funkcí.
+Všechny body níže vyřešte pomocí metody `map`. Tam, kde je to možné, použijte zkrácený zápis arrow funkcí. Výsledky vypisujte do konzole pomocí `console.log`.
 
 1.  Z pole `weekdays` vyrobte pole obsahující všechny názvy dnů napsané VELKÝMI PÍSMENY.
 1.  Z pole `weekdays` vyrobte pole obsahující pouze první dvě písmena každého dne, tedy
