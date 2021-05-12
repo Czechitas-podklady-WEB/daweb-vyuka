@@ -13,7 +13,7 @@ const App = () => {
   };
 
   return (
-    <button class="greet" onClick={handleClick}>
+    <button className="greet" onClick={handleClick}>
       pozdrav
     </button>
   );
@@ -84,7 +84,7 @@ import React, { useState } from 'react';
 const Auto = () => {
   const [tankLevel, setTankLevel] = useState('full');
 
-  return <div class="auto">Tank level: {tankLevel}</div>;
+  return <div className="auto">Tank level: {tankLevel}</div>;
 };
 ```
 
