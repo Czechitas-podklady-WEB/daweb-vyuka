@@ -8,7 +8,7 @@ Navažte na předchozí příklad se světovým časem. Naším cílem bude stá
 Seznam časových zón stáhnete na adrese
 
 ```
-http://worldtimeapi.org/api/timezone
+https://worldtimeapi.org/api/timezone
 ```
 
 1. Vytvořte komponentu `Timezones`, který vytvoří obsah pro element `zone-select`. Tato komponenta bude očekávat `props` v tomto formátu:

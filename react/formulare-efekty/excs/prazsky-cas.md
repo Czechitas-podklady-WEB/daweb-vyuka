@@ -16,7 +16,7 @@ demand: 2
 1. Upravte váš efekt tak, aby pomocí volání `fetch` získal aktuální datum a čas pro časovou zónu `Europe/Prague`. Hodnotu získáte na API endpointu
 
    ```
-   http://worldtimeapi.org/api/timezone/Europe/Prague
+   https://worldtimeapi.org/api/timezone/Europe/Prague
    ```
 
    pod položkou `datetime`. Získanou hodnotu uložte do stavu a vyzkoušejte, že vaše aplikace funguje.

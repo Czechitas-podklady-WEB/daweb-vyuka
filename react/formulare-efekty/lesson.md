@@ -149,7 +149,7 @@ render(<App />, document.querySelector('#app'));
 V tomto případě jsme si do stavu ukládali pouze obyčejný řetězec. Naše data však budou často zobrazovat seznamy, takže budeme chtít mít ve stavu uložené nějaké pole.
 
 ```
-http://worldtimeapi.org/api/timezone
+https://worldtimeapi.org/api/timezone
 ```
 
 [[[ excs Cvičení: Efekty a volání API
