@@ -88,7 +88,7 @@ Takový kód už je mnohem hezčí. Kdybychom ještě navíc uměli cykly, kter�
 
 ### Vlastnost code
 
-Pokud chceme zjistit, jaká klávesa byla stisknuta při událostech `keyup` a `keydown`, musíme znát název této klávesy. Názvy kláves snadno najdete na [keycode.info](http://keycode.info). Zjistíme tak například, že klávesa [[Enter]] se jemnuje prostě `Enter`, klávesa [[D]] se jmenuje `KeyD` a tak dále. Takto pak na stránce můžeme zareagovat například na stisknutí [[Enter]].
+Pokud chceme zjistit, jaká klávesa byla stisknuta při událostech `keyup` a `keydown`, musíme znát název této klávesy. Názvy kláves snadno najdete na [keycode.info](https://keycode.info). Zjistíme tak například, že klávesa [[Enter]] se jemnuje prostě `Enter`, klávesa [[D]] se jmenuje `KeyD` a tak dále. Takto pak na stránce můžeme zareagovat například na stisknutí [[Enter]].
 
 ```js
 document.addEventListener('keyup', (event) => {
