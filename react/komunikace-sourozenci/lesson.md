@@ -144,6 +144,6 @@ Všimněte si, že komponenta `Candidate` a komponenta `Castle` jsou sourozenci.
 
 Tento princip možná na první pohled vypadá složitě. Výhodou však je, že zůstává vždy stejný. Vždy, když chceme předávat informace mezi sourozenci, předáváme je skrze stav rodiče. 
 
-<!-- [[[ excs Cvičení: Destrukturování
-- produkty
-]]] -->
+[[[ excs Cvičení: Komunikace mezi sourozenci
+- dotaznik
+]]]
