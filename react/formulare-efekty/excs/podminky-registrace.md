@@ -9,4 +9,4 @@ Pokračujte v předchozím cvičení.
    ```
    Souhlasím s obchodními podmínkami
    ```
-1. Zařiďte, aby se uživatel mohl registrovat pouze v případě, že zaškrtnul souhlas s obdchodními podmínkami.
+1. Zařiďte, aby se uživatel mohl registrovat pouze v případě, že zaškrtnul souhlas s obdchodními podmínkami. K tomu bude potřeba vyrobit další stav, například `termsAccepted`, který bude se zaškrtávacím políčkem provázený. 
