@@ -146,5 +146,6 @@ Tento princip možná na první pohled vypadá složitě. Výhodou však je, že
 
 [[[ excs Cvičení: Komunikace mezi sourozenci
 - dotaznik
+- dotaznik-fajfka
 - dotaznik-odpoved
 ]]]
