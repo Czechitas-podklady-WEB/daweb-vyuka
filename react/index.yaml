@@ -25,7 +25,7 @@ lessons:
     brief: 'Nejnáročnejší typ komunikace mezi komponentami je předávání informací mezi sourozenci.'
   - title: React router
     link: react-router
-    brief: 'Pomocí routeru dokážeme v Reactu vyrobit vícestránkovou aplikace.'
+    brief: 'Pomocí routeru dokážeme v Reactu vyrobit vícestránkovou aplikaci.'
   - title: Velké opakování
     link: velke-opakovani
     brief: 'Zopakujeme si všechno, co jsme se doteď v JavaScriptu naučili.'
