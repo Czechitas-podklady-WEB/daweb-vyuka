@@ -20,55 +20,56 @@ Nyní máme v projektu k dispozici celou škálu komponent, se kterými můzeme 
 
 ```js
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from 'react-router-dom';
 
-export default function App() {
-  return (
-    <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/users">Users</Link>
-            </li>
-          </ul>
-        </nav>
-
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-        <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/users">
-            <Users />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
-  );
-}
-
-function Home() {
+const Home = () => {
   return <h2>Home</h2>;
 }
 
-function About() {
+const About = () => {
   return <h2>About</h2>;
 }
 
-function Users() {
+const Users = () => {
   return <h2>Users</h2>;
 }
+
+const App = () => (
+  <Router>
+    <div>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/users">Users</Link>
+          </li>
+        </ul>
+      </nav>
+
+      <Switch>
+        <Route path="/about">
+          <About />
+        </Route>
+        <Route path="/users">
+          <Users />
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </div>
+  </Router>
+);
 ```
 
 [[[ excs Cvičení: React Router
@@ -100,11 +101,7 @@ import {
   useParams
 } from "react-router-dom";
 
-// Params are placeholders in the URL that begin
-// with a colon, like the `:id` param defined in
-// the route in this example.
-
-export default function ParamsExample() {
+const ParamsExample = () => {
   return (
     <Router>
       <div>
@@ -133,9 +130,7 @@ export default function ParamsExample() {
   );
 }
 
-function Child() {
-  // We can use the `useParams` hook here to access
-  // the dynamic pieces of the URL.
+const Child = () => {
   let { id } = useParams();
 
   return (
