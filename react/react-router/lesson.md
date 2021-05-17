@@ -101,7 +101,7 @@ import {
   useParams
 } from "react-router-dom";
 
-export default function ParamsExample() {
+const ParamsExample = () => {
   return (
     <Router>
       <div>
@@ -130,7 +130,7 @@ export default function ParamsExample() {
   );
 }
 
-function Child() {
+const Child = () => {
   let { id } = useParams();
 
   return (
