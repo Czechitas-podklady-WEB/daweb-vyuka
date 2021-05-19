@@ -140,3 +140,7 @@ const Child = () => {
   );
 }
 ```
+
+[[[ excs Cvičení: React Router
+- parametry
+]]]
