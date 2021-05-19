@@ -15,6 +15,6 @@ Vyzkoušejme si práci s URL parametry v naší React Router aplikaci. Podívám
    const urlId = 'moje-id'
    const currentBook = books.find(book => book.id === urlId)
    ```
-O filmu vypište jeho název, popis a zobrazte obrázek.
+   O filmu vypište jeho název, popis a zobrazte obrázek.
 1. V souboru `App.jsx` odkomentujte `<Route>` komponentu uvnitř `<Switch>` komponenty. Zamyslete se, proč jsou `path` a `children` takové, jaké jsou. Porovnejte s dokumentací React Routeru.
 1. Vyzkoušejte, že aplikace funguje - správně naviguje a na stránce se mění detail filmu. Nastylujte dle libosti. Zkuste přidat vlastní film v souboru `movies.js` a pozorujte změny na stránce.
