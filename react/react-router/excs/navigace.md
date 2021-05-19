@@ -9,7 +9,7 @@ Vyzkoušejme si přidání React Router knihovny do naší vlastní aplikace. Zk
    ```sh
      npx create-czechitas-app react-router
    ```
-nebo si otevřete již existující projekt. V případě vygenerování nové aplikace vám vznikne složka `react-router`, nezapomeňte do ní přejít příkazem `cd react-router`.
+   nebo si otevřete již existující projekt. V případě vygenerování nové aplikace vám vznikne složka `react-router`, nezapomeňte do ní přejít příkazem `cd react-router`.
 1. Nainstalujte si knihovnu React Router pomocí npm. Zavolejte příkaz
    ```sh
    npm install react-router-dom
