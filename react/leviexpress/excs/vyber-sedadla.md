@@ -38,7 +38,7 @@ kliknout. API vrací seznam sedadel po řadách – nemusíte tedy řešit rozm�
    `SeatPicker` tedy přidejte dvě props – `seats` a `journeyId`. Zatím si tyto props vypisujte do konzole prohlížeče.
 1. Teď už je potřeba upravit komunentu `Home` tak, že komponentu `SeatPicker` bude zobrazovat jedině v případě, že je stav `journey` jiný, než `null` – stejně,
    jako se zobrazuje komponenta `JourneyDetail`. V komponentě SeatPicker také nastavte atributy `seats` (vloží se do něj `journey.seats`) a `journeyId` (do
-   kterého přijde `journey.id`). Ověřte v prohlížeči, že po vyhledání spoje se zobrazí podrobnosti cesty a také komponenta pro výběr sedadel – zatím s vašimi
+   kterého přijde `journey.journeyId`). Ověřte v prohlížeči, že po vyhledání spoje se zobrazí podrobnosti cesty a také komponenta pro výběr sedadel – zatím s vašimi
    testovacími sedadly. V konzoli prohlížeče se vypíše pole s údaji o sedadlech a také identifikátor spoje.
 1. Konečně nastává čas pro zobrazení správného plánku sedadel. Pracovat budete v komponentě `SeatPicker` uvnitř `div`u s třídou `seats` – tam, kde máte
    testovací sedadla. Ta si zatím můžete v kódu nechat pro inspiraci.
