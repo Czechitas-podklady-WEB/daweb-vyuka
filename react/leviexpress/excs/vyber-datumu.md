@@ -1,10 +1,10 @@
 ---
-title: Výběr datumu cesty
+title: Výběr data cesty
 demand: 2
 ---
 
 Na konci tohoto cvičení bude uživatel schopen vybrat datum cesty podle dat stažených z API. Budeme postupovat obdobně, jako s komponentou `CityOptions`.
-Tentokrát však vytvoříme komponentu `DatesOptions`, která vygeneruje elementy `option` do výběru termínů cesty. Termíny cest s ebudou získávat z API
+Tentokrát však vytvoříme komponentu `DatesOptions`, která vygeneruje elementy `option` do výběru termínů cesty. Termíny cest se budou získávat z API
 endpointu [/api/dates](https://leviexpress-backend.herokuapp.com/api/dates). Prohlédněte si výstup API a všimněte si, že tentokrát v datech nevrací pole
 objektů, ale pole stringů.
 

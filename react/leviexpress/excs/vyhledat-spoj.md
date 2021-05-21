@@ -6,7 +6,7 @@ demand: 3
 V tomto cvičení dokončíte komponentu pro vyhledání spojení. V komponentě už funguje výběr výchozího a cílového města a také data cesty. Nyní napojíte komponentu
 na API pro vyhledávání spojení.
 
-1. Pokračujte v komponentě `JourneyPicker`. Do tlačítka *Vyhledat spoj* přidejte atribut `disabled` tak, aby tlačítko bylo povolené pouze v případě, že jsou
+1. Pokračujte v komponentě `JourneyPicker`. Do tlačítka „Vyhledat spoj“ přidejte atribut `disabled` tak, aby tlačítko bylo povolené pouze v případě, že jsou
    vybrána obě města i datum.
 1. Při kliknutí na tlačítko „Vyhledat spoj“ se volá funkce `handleSubmit`, která vypíše údaje zadané uživatelem. Nyní výpis do konzole nahradíte voláním API.
    Bude se volat následující API endpoint: `https://leviexpress-backend.herokuapp.com/api/journey?fromCity=…&toCity=…&date…`. Vytečkovaná místa se nahradí
