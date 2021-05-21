@@ -17,4 +17,5 @@ Aplikaci budeme vytvářet postupně v několika hlavní milnících.
 [[[ excs Založení aplikace a rozběhání routování
 - zalozeni-projektu
 - hlavni-stranka
+- routovani
 ]]]
