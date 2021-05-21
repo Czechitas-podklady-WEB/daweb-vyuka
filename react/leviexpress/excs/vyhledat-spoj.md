@@ -16,7 +16,7 @@ na API pro vyhledávání spojení.
    komponentě `JourneyPicker` bude property `onJourneyChange`, do které rodič vloží funkci, která se zavolá s údaji nalezeném spoji. Upravte hlavičku
    funkce `JourneyPicker` tak, aby bylo vidět, že akceptuje property `onJourneyChange`.
 1. Ve funkci handleSubmit máte nyní výpis nalezených spojení do konzole prohlížeče. Tento výpis nahraďte voláním funkce uložené v property `onJourneyChange`,
-   které jako paramter předáte data získaná z volání API.
+   které jako paramter předáte data získaná z volání API. Pozor na to, že z vráceného výsledku se použije jenom jeho část – to, co je uložené pod klíčem `data`.
 1. Vraťte se do komponenty `Home`, ze které se volá komponenta `JourneyPicker`. V komponentě Home vytvořte pomocí `useState` nový stav `journey`, výchozí
    hodnota bude `null`.
 1. Propojte komponentu `JourneyPicker` se stavem `journey` – když komponenta `JourneyPicker` zavolá `onJourneyChange` s údaji o nalezeném spoji, nastaví se toto
