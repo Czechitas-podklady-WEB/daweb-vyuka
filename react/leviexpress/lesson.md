@@ -26,3 +26,8 @@ Aplikaci budeme vytvářet postupně v několika hlavní milnících.
 - vyber-datumu
 - vyhledat-spoj
 ]]]
+
+[[[ excs Detail cesty a výběr sedadla
+- podrobnosti-cesty
+- vyber-sedadla
+]]]

@@ -1,5 +1,6 @@
 ---
-title: Výběr datumu cesty demand: 2
+title: Výběr datumu cesty
+demand: 2
 ---
 
 Na konci tohoto cvičení bude uživatel schopen vybrat datum cesty podle dat stažených z API. Budeme postupovat obdobně, jako s komponentou `CityOptions`.

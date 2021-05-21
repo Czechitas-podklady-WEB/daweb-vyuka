@@ -1,5 +1,6 @@
 ---
-title: Údaje o cestě demand: 2
+title: Údaje o cestě
+demand: 2
 ---
 
 V tomto cvičení vytvoříte hlavní komponentu pro výběr startu a cíle. Komponenta získá seznam měst a termíny cest z API, nechá uživateli vybrat výchozí a cílové
