@@ -31,3 +31,12 @@ Aplikaci budeme vytvářet postupně v několika hlavní milnících.
 - podrobnosti-cesty
 - vyber-sedadla
 ]]]
+
+[[[ excs Zprovoznění rezervace
+- potvrzeni-rezervace
+]]]
+
+
+[[[ excs Zobrazení rezervovaní jízdenky
+- detail-jizdenky
+]]]
