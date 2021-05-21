@@ -21,7 +21,8 @@ Aplikaci budeme vytvářet postupně v několika hlavní milnících.
 ]]]
 
 [[[ excs Výběr startovní a cílové lokace
-- start-cil
+- udaje-o-ceste
 - vyber-mesta
 - vyber-datumu
+- vyhledat-spoj
 ]]]

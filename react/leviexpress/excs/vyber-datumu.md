@@ -1,10 +1,23 @@
 ---
-title: Výběr datumu cesty
-demand: 2
+title: Výběr datumu cesty demand: 2
 ---
 
-Na konci tohoto cvičení by si měl uživatel být schopen vybrat datum cesty podle dat stažených z API.
+Na konci tohoto cvičení bude uživatel schopen vybrat datum cesty podle dat stažených z API. Budeme postupovat obdobně, jako s komponentou `CityOptions`.
+Tentokrát však vytvoříme komponentu `DatesOptions`, která vygeneruje elementy `option` do výběru termínů cesty. Termíny cest s ebudou získávat z API
+endpointu [/api/dates](https://leviexpress-backend.herokuapp.com/api/dates). Prohlédněte si výstup API a všimněte si, že tentokrát v datech nevrací pole
+objektů, ale pole stringů.
 
-1. V komponentě `JourneyPicker` nám zbývá ještě jeden select s výběrem datumu cestu. Vytvořte si proto další stav jménem `dates`. Do něj si ze serveru stáhněte jednotlivé dny (endpoint `/dates`). Pro stažení dat si vytvořte nový `useEffect`.  
-1. V komponentě `JourneyPicket` stav `selectedDate` a pomocí data-bindingu svažte s hodnotou selectu pro výběr datumu.
-1. Vyzkoušejte, že si uživatel může vybrat datum a commitněte změny. 
+1. Komponentu `DatesOptions` vytvořte opět přímo v souboru s komponentami `JourneyPicker` a `CityOptions`.
+1. HTML kód s elementy `<option>` pro výběr termínu přesuňte ze `select`u pro výběr data do komponenty `DatesOptions`. V `select`u použijte vytvořenou
+   komponentu `DatesOptions`. Zkontrolujte v prohlížeči, že se výběr termínů zobrazuje stále stejně.
+1. Podobně jako `CityOptions` získává seznam měst v property `cities`, bude i `DatesOptions` získávat seznam termínů v property `dates`. Elementy `<option>` (s
+   výjimkou prvního ručně vloženého s textem „Vyberte“) v této komponentě nebudou mít atribut `value`. Místo toho se jako hodnota použije přímo text (datum).
+1. Připravte si pomocí `useState` další stav `dates`. Pro otestování si do něj vložte data pro tento víkend: `['22. května 2021', '23. května 2021']`. Použijte
+   stav `dates` pro naplnění hodnot property `dates` tam, kde je použita komponenta `DatesOptions`. Ověřte v prohlížeči, že se ve výběru termínů zobrazují dvě
+   uvedená data.
+1. Upravte `useEffect` volaný při prvním zobrazení komponenty. Vedle seznamu měst bude z API získávat také seznam termínů. Endpoint je na
+   adrese `https://leviexpress-backend.herokuapp.com/api/dates` a vrací seznam termínů ve formátu, který máme připraven. Změňte výchozí stav `cities` na prázdné
+   pole a po té do něj nastavte výsledek volání uvedeného endpointu.
+1. Ověřte v prohlížeči, že se do `select`ů načítají data (města a termíny) a že po kliknutí na tlačítko *Vyhledat spoj* se uživatelem zvolené údaje vypíší do
+   konzole prohlížeče.
+1. Commitněte změny.
