@@ -1,5 +1,6 @@
 ---
-title: Výběr města demand: 2
+title: Výběr města 
+demand: 2
 ---
 
 Na konci tohoto cvičení si uživatel bude schopen vybrat startovní a cílové město ze saznamu měst stažených z API. Vytvoříte komponentu `CityOptions`, která

@@ -1,5 +1,6 @@
 ---
-title: Vyhledání spoje: 3
+title: Vyhledání spoje
+demand: 3
 ---
 
 V tomto cvičení dokončíte komponentu pro vyhledání spojení. V komponentě už funguje výběr výchozího a cílového města a také data cesty. Nyní napojíte komponentu

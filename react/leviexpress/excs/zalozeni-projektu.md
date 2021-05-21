@@ -8,5 +8,5 @@ demand: 2
    ```
    npx create-czechitas-app .
    ```
-1. Do projektu doinstalujte React Router. 
+1. Do projektu doinstalujte knihovnu React Router. 
 1. Proveďte commit změn. 
