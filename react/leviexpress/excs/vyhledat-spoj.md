@@ -9,8 +9,11 @@ na API pro vyhledávání spojení.
 1. Pokračujte v komponentě `JourneyPicker`. Do tlačítka „Vyhledat spoj“ přidejte atribut `disabled` tak, aby tlačítko bylo povolené pouze v případě, že jsou
    vybrána obě města i datum.
 1. Při kliknutí na tlačítko „Vyhledat spoj“ se volá funkce `handleSubmit`, která vypíše údaje zadané uživatelem. Nyní výpis do konzole nahradíte voláním API.
-   Bude se volat následující API endpoint: `https://leviexpress-backend.herokuapp.com/api/journey?fromCity=…&toCity=…&date…`. Vytečkovaná místa se nahradí
-   hodnotami vybranými uživatelem.
+   Bude se volat následující API endpoint
+   ```
+   https://leviexpress-backend.herokuapp.com/api/journey?fromCity=…&toCity=…&date…
+   ```
+   Vytečkovaná místa se nahradí hodnotami vybranými uživatelem.
 1. Volání tohoto API vrací JSON s nalezenými spoji. Vypište si výstup do konzole prohlížeče.
 1. Nalezená spojení budeme potřebovat zobrazit v další komponentě na stránce. Potřebujeme je tedy poslat z komponenty `JourneyPicker` jejímu rodiči. V
    komponentě `JourneyPicker` bude property `onJourneyChange`, do které rodič vloží funkci, která se zavolá s údaji nalezeném spoji. Upravte hlavičku

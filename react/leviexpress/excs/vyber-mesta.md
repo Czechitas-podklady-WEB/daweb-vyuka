@@ -11,7 +11,10 @@ vrací.
 1. Přímo v komponentě `JourneyPicker` si vytvořte novou komponentu `CityOptions`. Přesuňte do ní všechny `<option>` ze `select`u pro výběr výchozího města.
    Komponentu `CityOptions` použijte v obou `select`ech pro výběr města. Zkontrolujte, že v prhohlížeči vše funguje stejně.
 1. Vytvořte si pomocí `useState` další stav `cities`. V tomto stavu bude seznam měst, mezi kterými lze cestovat. Pro otestování nastav do seznamu dvě
-   města: `[{name: 'Praha', code: 'CZ-PRG'}, {name: 'Brno', code: 'CZ-BRQ'}]`.
+   města:
+   ```js
+   [{name: 'Praha', code: 'CZ-PRG'}, {name: 'Brno', code: 'CZ-BRQ'}]
+   ```
 1. Komponenta `CityOptions` bude v `props` přijímat `cities`. V něm bude pole – seznam měst, které může uživatel vybrat. Upravte tedy příslušným způsobem
    hlavičku komponenty `CityOptions` a získanou property `cities` si vypište do konzole.
 1. Na obou místech, kde máte komonentu `CityOptions` použitou, nastavte property/atribut `cities` na hodnotu stavu `cities`. V prohlížeči se teď při zobrazení
@@ -26,7 +29,11 @@ vrací.
    naše dvě testovací města. Výchozí stav pro `cities` tedy bude prázdné pole, teprve `useEffect` nastaví seznam měst na Prahu a Brno. Ověřte v prohlížeči, že
    se v `select`ech stále zobrazují obě města. Dejte pozor na to, aby se efekt volal opravdu jen při prvním zobrazení komponenty – můžete si to ověřit pomocným
    výpisem do konzole prohlížeče, který se musí objevit jen jednou – když budete překlikávat na jiná města, výpis už se nebude opakovat.
-1. Upravte `useEffect` tak, že bude seznam měst získávat z API. Endpoint je na adrese `https://leviexpress-backend.herokuapp.com/api/cities` a vrací seznam měst
+1. Upravte `useEffect` tak, že bude seznam měst získávat z API. Endpoint je na adrese 
+   ```
+   https://leviexpress-backend.herokuapp.com/api/cities
+   ```
+   a vrací seznam měst
    jako JSON ve formátu, který jsme použili výše. Získaná data použijte místo Prahy a Brna ve stavu `cities`. Ověřte v prohlížeči, že se v seznamu měst objeví i
    další města.
 1. Commitněte změny.

@@ -16,9 +16,12 @@ objektů, ale pole stringů.
 1. Připravte si pomocí `useState` další stav `dates`. Pro otestování si do něj vložte data pro tento víkend: `['22. května 2021', '23. května 2021']`. Použijte
    stav `dates` pro naplnění hodnot property `dates` tam, kde je použita komponenta `DatesOptions`. Ověřte v prohlížeči, že se ve výběru termínů zobrazují dvě
    uvedená data.
-1. Upravte `useEffect` volaný při prvním zobrazení komponenty. Vedle seznamu měst bude z API získávat také seznam termínů. Endpoint je na
-   adrese `https://leviexpress-backend.herokuapp.com/api/dates` a vrací seznam termínů ve formátu, který máme připraven. Změňte výchozí stav `cities` na prázdné
-   pole a po té do něj nastavte výsledek volání uvedeného endpointu.
-1. Ověřte v prohlížeči, že se do `select`ů načítají data (města a termíny) a že po kliknutí na tlačítko *Vyhledat spoj* se uživatelem zvolené údaje vypíší do
+1. Upravte `useEffect` volaný při prvním zobrazení komponenty. Vedle seznamu měst bude z API získávat také seznam termínů. Endpoint je na adrese
+   ```
+   https://leviexpress-backend.herokuapp.com/api/dates
+   ```
+   a vrací seznam termínů ve formátu, který máme připraven. Změňte výchozí stav `cities` na prázdné pole a po té do něj nastavte výsledek volání uvedeného
+   endpointu.
+1. Ověřte v prohlížeči, že se do `select`ů načítají data (města a termíny) a že po kliknutí na tlačítko „Vyhledat spoj“ se uživatelem zvolené údaje vypíší do
    konzole prohlížeče.
 1. Commitněte změny.
