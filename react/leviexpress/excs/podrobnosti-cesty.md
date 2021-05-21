@@ -1,5 +1,6 @@
 ---
-title: Podrobnosti cesty demand: 1
+title: Podrobnosti cesty
+demand: 1
 ---
 
 V tomto cvičení vytvoříte komponentu pro zobrazení detailu cesty a komponentu pro zobrazení zastávky. Využijí se informace, které vrátilo API pro vyhledání

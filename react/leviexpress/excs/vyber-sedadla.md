@@ -1,5 +1,6 @@
 ---
-title: Výběr sedadla demand: 3
+title: Výběr sedadla
+demand: 3
 ---
 
 V tomto cvičení vytvoříte komponentu pro výběr sedadla. Komponenta zobrazí plánek autobusu se sedadly. Obsazená sedadla budou zobrazena šedě a nepůjde na ně
