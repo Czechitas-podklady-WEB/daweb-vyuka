@@ -13,3 +13,8 @@ Aplikaci budeme vytvářet postupně v několika hlavní milnících.
 1. Zobrazení vyhledané cesty a výběru sedadla
 1. Zprovoznění rezervace
 1. Zobrazení rezervovaní jízdenky
+
+[[[ excs Založení aplikace a rozběhání routování
+- zalozeni-projektu
+- hlavni-stranka
+]]]
