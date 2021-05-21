@@ -19,3 +19,9 @@ Aplikaci budeme vytvářet postupně v několika hlavní milnících.
 - hlavni-stranka
 - routovani
 ]]]
+
+[[[ excs Výběr startovní a cílové lokace
+- start-cil
+- vyber-mesta
+- vyber-datumu
+]]]
