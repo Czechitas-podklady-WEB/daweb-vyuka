@@ -11,7 +11,7 @@ na API pro vyhledávání spojení.
 1. Při kliknutí na tlačítko „Vyhledat spoj“ se volá funkce `handleSubmit`, která vypíše údaje zadané uživatelem. Nyní výpis do konzole nahradíte voláním API.
    Bude se volat následující API endpoint
    ```
-   https://leviexpress-backend.herokuapp.com/api/journey?fromCity=…&toCity=…&date…
+   https://leviexpress-backend.herokuapp.com/api/journey?fromCity=…&toCity=…&date=…
    ```
    Vytečkovaná místa se nahradí hodnotami vybranými uživatelem.
 1. Volání tohoto API vrací JSON s nalezenými spoji. Vypište si výstup do konzole prohlížeče.
