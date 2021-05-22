@@ -25,7 +25,7 @@ na API pro vyhledávání spojení.
 1. Propojte komponentu `JourneyPicker` se stavem `journey` – když komponenta `JourneyPicker` zavolá `onJourneyChange` s údaji o nalezeném spoji, nastaví se toto
    spojení do stavu `journey`.
 1. Upravte komponentu `Home` tak, aby v případě, kdy ve stavu `journey` je nějaké spojení, vypsala pod vyhledávací formulář text „Nalezeno spojení s id …“.
-   Místo tří teček bude id z dat o nalezeném spojení.
+   Místo tří teček bude `journeyId` z dat o nalezeném spojení.
 1. Ověřte, že funguje výběr měst a data, že po zadání všech třech údajů můžete kliknout na „Vyhledat spoj“ a že se po kliknutí vyhledá nějaké spojení a vypíše
    se do stránky jeho id.
 1. Commitněte změny.
