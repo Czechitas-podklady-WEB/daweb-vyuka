@@ -13,7 +13,7 @@ V tomto kroku potvrdíme rezervaci kliknutím na tlačíko, zpracujeme odpověď
    ```   
    https://leviexpress-backend.herokuapp.com/api/cities?seat=…&journeyId=…
    ```
-   Parametr `seat` bude číslo sedadla vybrané uživatelem a parametr `journeyId` bude mít hodnotu `journeyId` z props.
+   Parametr `seat` bude číslo sedadla vybrané uživatelem a parametr `journeyId` bude mít hodnotu `journeyId` z props. Pozor, tento endpoint je nutné volat HTTP metodou `POST` – tělo požadavku zůstane prázdné, tj. ve `fetch` vůbec nebude property `body`.
 1. Volání tohoto API vrací JSON s daty, ze kterých nás bude zajímat hodnota `reservationId`. Vypiště si ji do konzole.
 1. Pomocí naší `history` proměnné, její metody `push` a hodnoty `reservationId` přesměrujte uživatele na stránku detailu rezervace. Takové volání bude může vypadat následovně:
    ```js
