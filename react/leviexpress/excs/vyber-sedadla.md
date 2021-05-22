@@ -42,18 +42,18 @@ kliknout. API vrací seznam sedadel po řadách – nemusíte tedy řešit rozm�
    testovacími sedadly. V konzoli prohlížeče se vypíše pole s údaji o sedadlech a také identifikátor spoje.
 1. Konečně nastává čas pro zobrazení správného plánku sedadel. Pracovat budete v komponentě `SeatPicker` uvnitř `div`u s třídou `seats` – tam, kde máte
    testovací sedadla. Ta si zatím můžete v kódu nechat pro inspiraci.
-1. Plánek sedadel bude vypadat tak, že v HTML bude pro každou řadu sedadel jeden `div` a teprve uvnitř tohoto `div`u budou jednotlivá sedadla –
+1. Plánek sedadel bude vypadat tak, že v HTML bude pro každou řadu sedadel jeden `div` s třídou `seat-row` a teprve uvnitř tohoto `div`u budou jednotlivá sedadla –
    komponenty `Seat`. Třeba plánek pětimístného osobního auta jedoucího vpravo by vypadal takhle:
    ```html
    <div className="seats">
-     <div>
+     <div classname="seat-row">
         <Seat number="3" />
         <Seat number="1" />
      </div>
-     <div>
+     <div classname="seat-row">
         <Seat number="4" />
      </div>
-     <div>
+     <div classname="seat-row">
         <Seat number="2" />
         <Seat number="5" />
      </div>

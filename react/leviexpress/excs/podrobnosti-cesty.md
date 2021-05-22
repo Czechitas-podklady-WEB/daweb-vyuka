@@ -24,7 +24,7 @@ spoje.
 1. Místo jedné komponenty `BusStop` použité v komponentě napište kód, který projde všechny zastávky v `journey.stops` a pro každou zastávku vloží jednu
    komponentu `BusStop`, které předá správné údaje. Můžete si pomoci tak, že nejprve upravíte vloženou komponentu `BusStop`, ve které máte „Praha“, „ÚAN
    Florenc“ a „15:55“ tak, aby se místo těchto údajů vložily údaje z první zastávky v `journey.stops[0]` a následně kód upravíte tak, aby pomocí funkce map
-   prošel všechny zastávky v `journey.stops`.
+   prošel všechny zastávky v `journey.stops`. Jako klíč (`key`) pro Reat můžete použít property `code`, která je uvedená v `journey.stops` u každé zastávky.
 1. Nyní už zbývá jen poslat z komponenty `Home` do komponenty `JourneyDetail` údaje o cestě. Vraťte se do komponenty `Home`. Ve stavu `journey` tam jsou uloženy
    údaje o cestě. Nyní už jen stačí tento stav předat do property journey komponenty `JourneyDetail`.
 1. Ověřte v prohlížeči, že funguje vyhledání spojení a že se pod vyhledávacím formulářem zobrazí „jízdní řád“ spoje – seznam zastávek s časy. Zastávek je u
