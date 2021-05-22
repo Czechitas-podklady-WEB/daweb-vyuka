@@ -19,4 +19,4 @@ Stačí nám vytvořit detail pro jednu jízdenku a zobrazit její data.
 1. Data z endpointu si také můžete vypsat do konzole. Podívejte se na jejich formát a porovnejte strukturu dat s daty, která jsou natvrdo v jsx (která jste vykopírovaly z `reservation.html`).
 1. Nahraďte data jízdenky vepsaná natvrdo za ta, která jsou nyní uložená v proměnné `reservation`. Například hodnotu `21.05.2021` nahraďte za `{reservation.date}`.
 1. Zkontrolujte, že stránka vzhledově odpovídá [zadání](https://czechitas-podklady-web.github.io/leviexpress-zadani/reservation).
-1. Pokochejte se!
+1. Commitněte a pushněte změny a kochejte se!
