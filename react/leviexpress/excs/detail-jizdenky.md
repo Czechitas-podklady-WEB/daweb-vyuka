@@ -5,7 +5,7 @@ demand: 3
 
 Stačí nám vytvořit detail pro jednu jízdenku a zobrazit její data.
 
-1. V souboru `App.js` připravte již existující `<Route path="/reservation">` komponentu na správné zpracování detailu jízdenky. Upravte `path` prop tak, aby dynamicky zpracovávala `:id` parametr. Výsledná path bude vypadat takto: `path="/reservation/:id"`. Uvnitř `<Route>` komponenty ponechte `<Reservation />`.
+1. V komponentě `App` připravte již existující `<Route path="/reservation">` komponentu na správné zpracování detailu jízdenky. Upravte `path` prop tak, aby dynamicky zpracovávala `:id` parametr. Výsledná path bude vypadat takto: `path="/reservation/:id"`. Uvnitř `<Route>` komponenty ponechte `<Reservation />`.
 1. Do komponenty `Reservation` zkopírujte HTML kód ze zadání. Ze souboru `reservation.html` převezměte element `div` s třídou `reservation` i s jeho obsahem.
 1. Vytvoře v komponentě soubor `style.css`, do kterého zkopírujte ze zadání styly pro třídy `.reservation`, `.reservation__body` a `.reservation__body__headings`. Naimportujte soubor se styly do komponenty.
 1. Komponenta musí zjistit, na detailu které jízdenky se nachází. Naimportujte si `useParams` hook z `react-router-dom`. Uvnitř komponenty tento hook zavolejte a získejte z něj parametr `id`. [Příklad použití](https://reactrouter.com/web/api/Hooks/useparams).
