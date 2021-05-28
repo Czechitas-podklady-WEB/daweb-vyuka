@@ -5,11 +5,10 @@ demand: 2
 
 Na konci tohoto cvičení si uživatel bude schopen vybrat startovní a cílové město ze saznamu měst stažených z API. Vytvoříte komponentu `CityOptions`, která dostane na vstupu pole se seznamem destinací a vytvoří z něj elementy `<option>` do `select`ů pro výběr výchozího a cílového města. Seznam měst se bude stahovat v komponentě `JourneyPicker` z API endpointu [/api/cities](https://leviexpress-backend.herokuapp.com/api/cities). Prohlédněte si strukturu dat, která endpoint vrací.
 
-1. Přímo v komponentě `JourneyPicker` si vytvořte novou komponentu `CityOptions`. Přesuňte do ní všechny `<option>` ze `select`u pro výběr výchozího města. Komponentu `CityOptions` použijte v obou `select`ech pro výběr města. Zkontrolujte, že v prhohlížeči vše funguje stejně.
-1. Vytvořte si pomocí `useState` další stav `cities`. V tomto stavu bude seznam měst, mezi kterými lze cestovat. Pro otestování nastavte do seznamu dvě
-   města:
+1. Přímo v souboru `index.jsx` komponenty `JourneyPicker` si vytvořte novou komponentu `CityOptions`. Přesuňte do ní všechny `<option>` ze `select`u pro výběr výchozího města. Komponentu `CityOptions` použijte v obou `select`ech pro výběr města. Zkontrolujte, že v prhohlížeči vše funguje stejně.
+1. Vytvořte si pomocí `useState` další stav `cities`. V tomto stavu bude seznam měst, mezi kterými lze cestovat. Pro otestování nastavte do seznamu dvě města:
    ```js
-   [{name: 'Praha', code: 'CZ-PRG'}, {name: 'Brno', code: 'CZ-BRQ'}]
+   [{ name: 'Praha', code: 'CZ-PRG' }, { name: 'Brno', code: 'CZ-BRQ' }]
    ```
 1. Komponenta `CityOptions` bude v `props` přijímat `cities`. V něm bude pole – seznam měst, které může uživatel vybrat. Upravte tedy příslušným způsobem hlavičku komponenty `CityOptions` a získanou property `cities` si vypište do konzole.
 1. Na obou místech, kde máte komonentu `CityOptions` použitou, nastavte property/atribut `cities` na hodnotu stavu `cities`. V prohlížeči se teď při zobrazení stránky vypíše dvakrát do konzole seznam měst – Praha a Brno.
@@ -21,7 +20,6 @@ Na konci tohoto cvičení si uživatel bude schopen vybrat startovní a cílové
    ```
    https://leviexpress-backend.herokuapp.com/api/cities
    ```
-   a vrací seznam měst
-   jako JSON ve formátu, který jsme použili výše. Získaná data použijte místo Prahy a Brna ve stavu `cities`. Ověřte v prohlížeči, že se v seznamu měst objeví i
+   a vrací seznam měst jako JSON ve formátu, který jsme použili výše. Získaná data použijte místo Prahy a Brna ve stavu `cities`. Ověřte v prohlížeči, že se v seznamu měst objeví i
    další města.
 1. Commitněte změny.
