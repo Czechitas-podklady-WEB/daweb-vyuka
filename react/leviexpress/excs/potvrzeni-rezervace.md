@@ -11,9 +11,22 @@ V tomto kroku potvrdíme rezervaci kliknutím na tlačíko, zpracujeme odpověď
 1. Nad funkcí `handleBuy` vytvořte proměnnou `history` s použitím hooku `useHistory()`, nezapomeňte hook naimportovat z `react-router-dom`. Za moment tuto proměnnou použijeme.
 1. Nákup jízdenky se ve funkci `handleBuy` provede tak, že zavoláte API endpoint
    ```   
-   https://leviexpress-backend.herokuapp.com/api/reserve?seat=…&journeyId=…
+   https://leviexpress-backend.herokuapp.com/api/reserve
    ```
-   Parametr `seat` bude číslo sedadla vybrané uživatelem a parametr `journeyId` bude mít hodnotu `journeyId` z props. Pozor, tento endpoint je nutné volat HTTP metodou `POST` – tělo požadavku zůstane prázdné, tj. ve `fetch` vůbec nebude property `body`.
+   Pozor, tento endpoint je nutné volat HTTP metodou `POST`. Tělo požadavku bude obsahovat vlastnost `seat` – číslo sedadla vybrané uživatelem, a vlastnost `journeyId` – hodnbota `journeyId` z props. Příklad:
+
+   ```js
+   fetch(url, {
+     method: 'POST',
+     headers: {
+       'Content-Type': 'application/json',
+     },
+     body: JSON.stringify({
+       seat: selectedSeatNumber,
+       journeyId: journeyId,
+     })
+   })
+   ```
 1. Volání tohoto API vrací JSON s daty, ze kterých nás bude zajímat hodnota `reservationId`. Vypiště si ji do konzole.
 1. Pomocí naší `history` proměnné, její metody `push` a hodnoty `reservationId` přesměrujte uživatele na stránku detailu rezervace. Takové volání bude může vypadat následovně:
    ```js
@@ -21,6 +34,7 @@ V tomto kroku potvrdíme rezervaci kliknutím na tlačíko, zpracujeme odpověď
    ```
 1. Zkontrolujte, že po vybrání sedadla a kliknutí na tlačíko „Rezervovat" se stránka přesměruje například na adresu
    ```
-   http://localhost:8080/reservation/FwQBAAMcgLs
+   http://localhost:8080/reservation/HAQBAQASf7M
    ```
    kde záhy vytvoříme detail jízdenky!
+1. Commitněte změny.

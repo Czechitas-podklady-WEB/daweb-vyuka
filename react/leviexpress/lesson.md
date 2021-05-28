@@ -28,6 +28,8 @@ Aplikaci budeme vytvářet postupně v několika hlavní milnících.
 
 [[[ excs Detail cesty a výběr sedadla
 - podrobnosti-cesty
+- zobrazeni-sedadla
+- rady-sedadel
 - vyber-sedadla
 ]]]
 
