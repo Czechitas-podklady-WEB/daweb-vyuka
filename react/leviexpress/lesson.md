@@ -15,8 +15,7 @@ Aplikaci budeme vytvářet postupně v několika hlavní milnících.
 1. Zobrazení rezervovaní jízdenky
 
 [[[ excs Založení aplikace a rozběhání routování
-- zalozeni-projektu
-- hlavni-stranka
+- seznameni-s-projektem
 - routovani
 ]]]
 
