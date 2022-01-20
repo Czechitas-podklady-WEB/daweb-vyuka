@@ -6,7 +6,7 @@ time: 20
 
 Založte JavaScriptový program a vytvořte v něm pole, které bude reprezentavat rozehranou šachovou partii jako na obrázku.
 
-![Šachovnice](assets/sachovnice.png){.fig .fig-60}
+::fig[Šachovnice]{src=assets/sachovnice.png size=60}
 
 1. Šachovnici reprezentujte jako pole polí, kde každý řádek je reprezentován jako jedno pole. Políčka reprerezentujte jako čísla dle následujícího klíče.
    <table>

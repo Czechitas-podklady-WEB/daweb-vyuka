@@ -27,7 +27,7 @@ Náš snímek si tedy pamatuje stav celého projektu v určitém čase. V teorii
 
 Ke každému commitu se navíc přidává zpráva o tom, co se v něm dokončilo za práci. Po čase si pak můžeme prohlédnout historii commitů v projektu a přehledně vidět, co se přesně dělo.
 
-![Commity](assets/commits.svg)
+::fig[Commity]{src=assets/commits.svg}
 
 Všimněte si, že každý commit obsahuje zprávu a takzvaný <term cs="digitální otisk" en="hash">. Tento otisk jednoznačně identifikuje každý commit, abychom se kdykoliv mohli k libovolnému commitu vrátit.
 

@@ -1,0 +1,6 @@
+title: Základy JavaScriptu
+lead: Naučíte se základy programování v jazyce JavaScript, který vám umožní udělat vaše stránky interaktivní.
+lessons:
+  - uvod-do-js
+  - vstup-vystup-objekty
+  - retezce-podminky

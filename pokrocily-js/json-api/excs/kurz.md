@@ -3,7 +3,7 @@ title: Kurz
 demand: 2
 ---
 
-Založte si JavaScriptový program a zkopírujte si do něj datovou strukturu kurzu <i>Úvod do programování</i> z textu výše.
+Založte si JavaScriptový program a zkopírujte si do něj datovou strukturu kurzu :i[Úvod do programování] z textu výše.
 
 1. Vypište do konzole počet účastnic na posledním konání kurzu.
 1. Vypište do konzole jméno posledního kouče na prvním konání kurzu.

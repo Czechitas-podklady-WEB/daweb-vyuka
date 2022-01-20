@@ -1,3 +1,8 @@
+---
+title: JSON a voláni API
+lead: Naučíme se, jak využívat veřejná API k získání dat pro naše aplikace.
+---
+
 Čím jsou naše programy větší a užitečnější v reálném životě, tím větší je objem a složitost informací, se kterými potřebují pracovat. Informacím, se kterými program pracuje říkáme data. Jednoduchá data v naších programech reprezentujeme pomocí základních hodnot jako čísla, řetězce, pravdivostní hodnoty apod. Brzy narazíme na komplexnější data, která mají nějakou složitější vnitřní strukturu. Pro uložení takových dat pak používáme pole a objekty. 
 
 ## Objekty jako data
@@ -24,7 +29,7 @@ const expenses = [
 
 Takováto data bychom pak pomocí komponent zobrazili na naší stránce podobně, jako jste se to naučili v předchozí lekci. 
 
-V praxi samozřejmě budeme mít data, jejichž struktura je hlubší. Budeme tedy často mít struktury jako objekty, které obsahují pole objektů a podobně. Takto bychom mohli reprezentovat například kurz Czechitas jménem <i>Úvod do programování</i>.
+V praxi samozřejmě budeme mít data, jejichž struktura je hlubší. Budeme tedy často mít struktury jako objekty, které obsahují pole objektů a podobně. Takto bychom mohli reprezentovat například kurz Czechitas jménem :i[Úvod do programování].
 
 ```js
 const course = {
@@ -73,11 +78,11 @@ const row = {
 ```
 <!-- prettier-ignore-end -->
 
-Toto je z hlediska JavaSriptu naprosto korektní zápis. Vznikne tak zcela stejný objekt, jak ten, který by vznikl bez použití uvozovek kolem klíčů. Tento způsob zápisu má své speciální jméno - <i>JavaScript Object Notation</i>, nebo-li <i>JSON</i>. Za dobu existence JavaScriptu se tento zápis rozšířil po celém internetu a dnes jde o nejpoužívanější formát pro výměnu dat mezi aplikacemi. Pokud si budeme chtít stáhnout data z nějakého serveru, dostaneme je většinou právě ve formátu JSON.
+Toto je z hlediska JavaSriptu naprosto korektní zápis. Vznikne tak zcela stejný objekt, jak ten, který by vznikl bez použití uvozovek kolem klíčů. Tento způsob zápisu má své speciální jméno - :i[JavaScript Object Notation], nebo-li :i[JSON]. Za dobu existence JavaScriptu se tento zápis rozšířil po celém internetu a dnes jde o nejpoužívanější formát pro výměnu dat mezi aplikacemi. Pokud si budeme chtít stáhnout data z nějakého serveru, dostaneme je většinou právě ve formátu JSON.
 
 ## Volání API
 
-Většina webových aplikací pracuje s daty, která jsou uložena na nějakém vzdáleném serveru. Pokud chceme s takovými daty pracovat, musíme si serveru o tato data říct. Požadavky na data se provádějí prostřednictvím takzvaného API (<i>Application Programming Interface</i>). Jak už jsme si řekli výše, většina API poskytuje data ve formátu JSON.
+Většina webových aplikací pracuje s daty, která jsou uložena na nějakém vzdáleném serveru. Pokud chceme s takovými daty pracovat, musíme si serveru o tato data říct. Požadavky na data se provádějí prostřednictvím takzvaného API (:i[Application Programming Interface]). Jak už jsme si řekli výše, většina API poskytuje data ve formátu JSON.
 
 K tomu, abychom mohli pracovat s API, je potřeba si detailněji popsat, jak funguje komunikace s webovým serverem. Pokud po webovém serveru něco chceme, například HTML stránku nebo nějaká data, musíme odeslat takzvaný <term cs="HTTP požadavek" en="HTTP request">. Každý požadavek musí být zacílený na nějakou URL adresu. Adresy URL mají následující formát.
 

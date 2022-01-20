@@ -3,7 +3,7 @@ title: Kontrola cifer pomocí mapy
 demand: 2
 ---
 
-V tomto cvičení budeme chtít kromě seznamu špatně zadaných znaků také u každného znaku informaci, zde ja správně, či nikoliv.
+V tomto cvičení budeme chtít u každného znaku informaci, zde ja správně, či nikoliv.
 
 1. Podobně jako v předchozím cvičení vyrobte z uživatelem zadaného řetězce pole znaků. Na tomto poli použijte metodu `map` a vytvořte pole objektů, obsahující informace o každém znaku. Například pro vstup
 
@@ -30,4 +30,4 @@ V tomto cvičení budeme chtít kromě seznamu špatně zadaných znaků také u
 
    Výsledné pole vypište to konzole.
 
-1. Vyzkoušejte váš kód na různých vstupech a zkontrolujte, že generuje správné výsledky. Vaše aplikace by měla do konzole vypsat jednak seznam špatně zadaných znaků tak, jak jsme to dělali v předchozím cvičení, jednak pole objektů jako výše.
+1. Vyzkoušejte váš kód na různých vstupech a zkontrolujte, že generuje správné výsledky.

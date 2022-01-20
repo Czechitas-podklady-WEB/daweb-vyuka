@@ -1,0 +1,7 @@
+title: Instalace nástrojů
+lead: Před tím, než začneme tvořit weby, je potřeba si počítač vybavit nástroji, které nám usnadní práci.
+sections:
+  - prohlizec-chrome
+  - vs-code
+  - node
+  - git

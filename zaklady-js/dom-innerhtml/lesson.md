@@ -29,11 +29,11 @@ Ve chvíli, kdy uživatel zadá do prohlížeče URL adresu, webový prohlíže�
 
 Prohlížeč si HTML přečte a vytvoří si z něj v paměti stromovou strukturu, která reprezentuje obsah stránky. Této struktuře říkáme DOM a můžeme ji znázornit jako na obrázku níže.
 
-![HTML a DOM](assets/dom.svg)
+::fig[HTML a DOM]{src=assets/dom.svg}
 
 Jakmile má prohlížeč DOM zkonstruovaný, může úplně zahodit a zapomenout celé HTML. Stránku zobrazí podle toho, co je obsaženo v DOMu.
 
-![DOM Stránka](assets/dom-page.svg)
+::fig[DOM Stránka]{src=assets/dom-page.svg}
 
 Je to podobné, jak když si například čtete knížku a v hlavě si automaticky vytváříte reprezentaci celého příběhu. Později jej tedy dokážete odvyprávět i bez knihy. Výhoda pro nás programátory spočívá v tom, že prohlížeč nám umožní DOM pomocí JavaScriptu měnit a tím ovlivňovat, co se zobrazuje na stránce.
 

@@ -2,7 +2,7 @@ Pokud jste všemi předchozíme lekcemi doputovali až sem, naučili jste se toh
 
 ## Zadání
 
-Vaším úkolem bude vytvořit webovou stránku fiktivní dopravní společnosti s názvem <i>LeviExpress</i>. Ta každý den vypravuje dvě autobusové linky spojující východní a západní Evropu. Jedna linka vyjíždí o půlnoci z Budapešti a končí opět o půlnoci v Amsterdamu. Protí ní vždy vyráží linka v opačném směru, tedy z Amsterdamu do Budapešti. 
+Vaším úkolem bude vytvořit webovou stránku fiktivní dopravní společnosti s názvem :i[LeviExpress]. Ta každý den vypravuje dvě autobusové linky spojující východní a západní Evropu. Jedna linka vyjíždí o půlnoci z Budapešti a končí opět o půlnoci v Amsterdamu. Protí ní vždy vyráží linka v opačném směru, tedy z Amsterdamu do Budapešti. 
 
 Výsledná webová stránka bude mít dvě podstránky. Jedna bude umožňovat rezeraci jízdenky, druhá bude zobrazovat již rezervovanou jízdenku. 
 

@@ -1,3 +1,8 @@
+---
+title: Aktualizace stránky
+lead: Pokud se data na naší stránce změní, je potřeba na to správným způsobem zareagovat a stránku aktualizovat.
+---
+
 Pokud ve své aplikaci používáme data z nějakého veřejného API, většinou je stahujeme pouze ke čtení. Málokterý veřejný server by nám jen tak dovolil na něm data upravovat. Pokud však píšeme aplikaci, ve které pužíváme vlastní data, většinou si vytvoříme vlastní databázi a vlastní API, do kterého pak můžeme i zapisovat. V této lekci si ukážeme, jak můžeme pomocí dotazů na API data měnit. 
 
 ## Typy dotazů na server

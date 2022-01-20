@@ -1,11 +1,18 @@
+---
+title: Procvičování cyklů, jednoduché komponenty
+lead: Procvičíme si cykly a naučíme se, jak v JavaScriptu vytvářet složitější HTML.
+---
+
 Díky JavaScriptu a práci s DOMem už dokážete vašim stránkám vdechnout hodně života a zprostředkovat tak uživateli interaktivní zážitek. Vaše aplikace tak můžou začít růst a kódu v nich bude přibývat. Abychom se ve spletitých zdrojácích dokázali vyznat, budeme se postupně učit, jak rozsekávat aplikace na samostatné funkční celky, takzvané komponenty.
 
 Než se však pustíme do tohoto tématu, ještě si lehce zopakujeme cykly z minulé lekce.
 
-[[[ excs Cvičení: Opáčko cyklů
+:::[excs] Cvičení: Opáčko cyklů
+```yaml
 - nakupni-seznam
 - nakupni-seznam-funkce
-]]]
+```
+:::
 
 ## První komponenta
 
@@ -169,16 +176,20 @@ const ShoppingItem = (props) => {
 };
 ```
 
-[[[ excs Cvičení: Komponenty
+:::[excs] Cvičení: Komponenty
+```yaml
 - produkt
 - produkt-komponenta
 - hodiny
-]]]
+```
+:::
 
-[[[ excs Doporučené úložky na doma
+:::[excs] Doporučené úložky na doma
+```yaml
 - podcasty
 - ukolnicek
-]]]
+```
+:::
 
 <!-- ## Mandatory home reading
 

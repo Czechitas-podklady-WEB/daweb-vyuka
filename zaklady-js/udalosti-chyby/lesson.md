@@ -24,7 +24,7 @@ Pokud má naše funkce parametr, dáváme tím JavaScript runtimu najevo, že n�
 : DOM element, na kterém událost nastala. V našem případě je to element tlačítka.
 
 `event.shiftKey`, `event.altKey`, `event.ctrlKey`
-: Tyto vlastnosti obsahují pravdivostní hodnoty, které udávají, zda byla při kliknutí stisknuta klávesa [[Alt]], [[Shift]] nebo [[Ctrl]].
+: Tyto vlastnosti obsahují pravdivostní hodnoty, které udávají, zda byla při kliknutí stisknuta klávesa :kbd[Alt], :kbd[Shift] nebo :kbd[Ctrl].
 
 `event.code`
 : Pokud nastala událost stisknutí klávasy, tato vlastnost obsahuje jméno této klávesy.
@@ -88,7 +88,7 @@ Takový kód už je mnohem hezčí. Kdybychom ještě navíc uměli cykly, kter�
 
 ### Vlastnost code
 
-Pokud chceme zjistit, jaká klávesa byla stisknuta při událostech `keyup` a `keydown`, musíme znát název této klávesy. Názvy kláves snadno najdete na [keycode.info](https://keycode.info). Zjistíme tak například, že klávesa [[Enter]] se jemnuje prostě `Enter`, klávesa [[D]] se jmenuje `KeyD` a tak dále. Takto pak na stránce můžeme zareagovat například na stisknutí [[Enter]].
+Pokud chceme zjistit, jaká klávesa byla stisknuta při událostech `keyup` a `keydown`, musíme znát název této klávesy. Názvy kláves snadno najdete na [keycode.info](https://keycode.info). Zjistíme tak například, že klávesa :kbd[Enter] se jemnuje prostě `Enter`, klávesa :kbd[D] se jmenuje `KeyD` a tak dále. Takto pak na stránce můžeme zareagovat například na stisknutí :kbd[Enter].
 
 ```js
 document.addEventListener('keyup', (event) => {
@@ -98,7 +98,7 @@ document.addEventListener('keyup', (event) => {
 });
 ```
 
-Nebo na stisknutí [[Ctrl]]+[[C]].
+Nebo na stisknutí :kbd[Ctrl]+:kbd[C].
 
 ```js
 document.addEventListener('keyup', (event) => {
@@ -165,7 +165,7 @@ const submitClick = () => {
 };
 ```
 
-Při pokusu o kliknutí na tlačítko <i>submit</i> obdržíme tuto chybovou hlášku
+Při pokusu o kliknutí na tlačítko :i[submit] obdržíme tuto chybovou hlášku
 
 ```
 Uncaught ReferenceError: pasword is not defined
@@ -265,7 +265,7 @@ const input = prompt('Username:');
 
 Tento úryvek můžeme po technické stránkce rozebrat takto.
 
-![Recitál první](assets/recitation01.svg)
+::fig[Recitál první]{src=assets/recitation01.svg}
 
 Dle tohoto rozboru pak můžene sestavit následující technický popis.
 
@@ -287,7 +287,7 @@ const setColor = (element, color) => {
 
 Technický rozbor by mohl vypadat takto.
 
-![Recitál druhý](assets/recitation02.svg)
+::fig[Recitál druhý]{src=assets/recitation02.svg}
 
 > Vytváříme proměnnou `setColor`, do které ukládáme novou funkci se dvěma parametry. Tato funkce vezme hodnotu v parametru `element` a nastaví vlastnost `color` vlastnosti `style` na hodnotu uloženou v parametru `color`.
 

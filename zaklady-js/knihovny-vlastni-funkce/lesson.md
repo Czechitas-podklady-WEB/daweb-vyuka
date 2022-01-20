@@ -132,7 +132,7 @@ Funkce jsou jednou z nejdůležitějších součástí programování. Všimnět
 
 Představme si například, že vyměřujeme pozemek a chceme spočítat plochu pozemku, který má tvar pravoúhlého trojúhelníka o šířce `width` a výšce `height` jako na obrázku.
 
-![Pozemek](assets/fields.svg)
+::fig[Pozemek]{src=assets/fields.svg}
 
 Naše funkce tedy bude mít dva vstupy - šířku a výšku. Ze školy si pamatujeme, že plochu prvoúhlého trojúhelníka spočítáme tak, že vynásobíme šířku výškou a výsledek vydělíme dvěma. Už tedy víme, co má funkce dělat a zbývá nám tento postup zapsat v JavaScritpu.
 

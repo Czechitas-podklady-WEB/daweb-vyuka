@@ -5,7 +5,7 @@ demand: 2
 
 Vytvořte v Reactu webovou stránku dle následujícího vzoru.
 
-![Stránka plyšáci](assets/plysaci.jpg){.fig .fig-100}
+::fig[Stránka plyšáci]{src=assets/plysaci.jpg}
 
 Postupujte dle následujících kroků.
 

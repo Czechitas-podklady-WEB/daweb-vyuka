@@ -1,3 +1,8 @@
+---
+title: Webpack a větší aplikace
+lead: Ukážeme si jak stavět větší aplikace z menších částí pomocí Webpacku.
+---
+
 Čím budou naše webové aplikace pokročilejší a schopnější tím více budou obsahovat nejen kódu ale také různých knihoven. Brzy již přestane být únosné mít všechen kód v jednom obřím `index.js`, protože by se v něm za chvíli už nikdo nikdy nevyznal. Bude tedy potřeba jej rozdělit do více samostatných souborů. 
 
 ## Oddělování komponent

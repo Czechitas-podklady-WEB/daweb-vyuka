@@ -1,0 +1,10 @@
+title: Digitální akademie Web
+lead: enzivní prezenční kurz webového frontendu
+image: intro-image.svg
+chapters:
+  - priprava
+  # - html-a-css
+  - zaklady-js
+  # - zaklady-gitu
+  # - pokrocily-js
+  # - react

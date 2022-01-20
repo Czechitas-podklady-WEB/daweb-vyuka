@@ -1,0 +1,10 @@
+title: Vstup a výstup, objekty
+lead: Naučíme naše programy komunikovat s uživatelem a pracovat se složitějšími daty.
+sections:
+  - vstup-vystup
+  - konverze-hodnot
+  - cv-vstup-vystup
+  - objekty
+  - cv-objekty
+  - cv-ulozky
+  - shrnuti

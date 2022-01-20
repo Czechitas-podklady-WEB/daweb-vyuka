@@ -1,3 +1,8 @@
+---
+title: Vlastní DOM elementy
+lead: Ukážeme si, jak vytvořit vlastní DOM elementy a udělat naše komopnenty interaktivní.
+---
+
 Přestože už dokážeme díky komponentám vytvářet vcelku hezké webové stránky, pořád to ještě nejsou opravdové aplikace. Naše komponenty totiž zatím vytvářejí pouze statické HTML a chybí jim interaktivita. V této lekci tuto situaci napravíme tím, že se naučímte vytvářet vlastní DOM elementy.
 
 ## Vytváření vlastních DOM elementů

@@ -1,8 +1,13 @@
-## Základy formuláře
+---
+title: Formuláře
+lead: Ukážeme, jak v HTML vytvářet formuláře na získávání dat od uživatele.
+---
+
+## Základy formulářů
 
 Pokud na vaší webové stránce potřebujete od uživatele získat nějaká data, bude se vám pravděpodobně hodit formulářový html prvek `<input>`. V základu zobrazí ná stránce obdélníček, do kterého může uživatel psát text.
 
-![input](assets/input.gif){.fig .fig-50}
+::fig[input]{src=assets/input.gif size=50}
 
 Samotné textové políčko ale nestačí. Běžný formulář by měl mít ještě tlačítko, `<button>` pro odeslání a `<form>`, vymezení, kde formulář začíná a končí.
 
@@ -13,7 +18,7 @@ Samotné textové políčko ale nestačí. Běžný formulář by měl mít ješ
 </form>
 ```
 
-![základní formulář](assets/zakladni-formular.png){.fig .fig-50}
+::fig[základní formulář]{src=assets/zakladni-formular.png size=50}
 
 Všechny tři prvky můžou mít nějaké atributy. Většinou se u všech hodí atribut `class` pro jednodušší stylování. CSS se ale zatím zabývat nebudeme.
 
@@ -93,7 +98,7 @@ S každým dalším políčkem ale pro uživatele přestává být přehledné, 
 
    Jednodušší na stylování, ale vyžaduje vymyslet v rámci celé stránky unikátní označení pro atributy `for` a `id`.
 
-![label](assets/label.png){.fig .fig-50}
+::fig[label]{src=assets/label.png size=50}
 
 ### Další druhy formulářových prvků
 

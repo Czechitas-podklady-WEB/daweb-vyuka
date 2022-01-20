@@ -7,7 +7,7 @@ Hrát piškvorky 3x3 rychle přestane být zábava, neboť brzy objevíme, že p
 
 V našich piškvorkách vyhraje ten hráč, který na libovolném místě hracího plánu vytvoří ze svých symbolů jeden z následujících vzorů.
 
-![Piškvorky](assets/piskvorky.svg){.fig .fig-80}
+::fig[Piškvorky]{src=assets/piskvorky.svg size=80}
 
 **Reprezentace hracího plánu**
 

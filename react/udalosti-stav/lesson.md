@@ -46,11 +46,11 @@ V Reactu se téměř nikdy nepoužívá přímá manipulace s obsahem stránky. 
 
 ## Stav
 
-Pokud chceme udělat naše React komponenty skutečně interaktivní, je potřeba naučit se pracovat s takzvaným <term cs="stavem" en="state" />. Porozumět tomu, jak stav v Reactu funguje, je občas výzva i pro zkušenější programátory. Naštěstí význam slova <i>stav</i> v Reactu vychází z významu tohoto slova v realitě. Můžeme proto začít příkladem přímo ze života.
+Pokud chceme udělat naše React komponenty skutečně interaktivní, je potřeba naučit se pracovat s takzvaným <term cs="stavem" en="state" />. Porozumět tomu, jak stav v Reactu funguje, je občas výzva i pro zkušenější programátory. Naštěstí význam slova :i[stav] v Reactu vychází z významu tohoto slova v realitě. Můžeme proto začít příkladem přímo ze života.
 
 ### Stav kolem nás
 
-Představte si, že někde přes inzerát prodáváte svoji starou pohovku. V takovém inzerátu se sluší zmínit její <i>stav</i>, tedy například, že je mírně vybledlá, na některých místech odřená apod. Zde se můžeme zamyslet, o čem to vlastně mluvíme, když říkáme <i>stav pohovky</i>. Mohli bychom říct, že stav je nějaká sada vlastností, které se mohou během života pohovky měnit. Stavem pohovky například není její váha nebo to, zda je rozkládací. To jsou vlastnosti, které se během života pohovky nemění. Pohovka však snadno může časem vyblednout nebo se na některých místech odřít.
+Představte si, že někde přes inzerát prodáváte svoji starou pohovku. V takovém inzerátu se sluší zmínit její :i[stav], tedy například, že je mírně vybledlá, na některých místech odřená apod. Zde se můžeme zamyslet, o čem to vlastně mluvíme, když říkáme :i[stav pohovky]. Mohli bychom říct, že stav je nějaká sada vlastností, které se mohou během života pohovky měnit. Stavem pohovky například není její váha nebo to, zda je rozkládací. To jsou vlastnosti, které se během života pohovky nemění. Pohovka však snadno může časem vyblednout nebo se na některých místech odřít.
 
 Dalším příkladem může být stav vašeho auta. Během používání auta se průběžně mění stav nádrže, počet najetých kilometrů, počet pasažérů v autě a další vlastnosti. U některých aut je možné přidat nebo ubrat sedadla, takže se může například změnit i počet míst v autě. Rozhodně se však nemění například obsah nádrže, počet kol apod.
 

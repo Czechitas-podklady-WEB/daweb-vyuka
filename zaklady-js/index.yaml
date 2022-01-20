@@ -1,16 +1,4 @@
-title: Základy JavaScriptu
-link: zaklady-js
-brief: Naučíte se základy programování v jazyce JavaScript, který vám umožní udělat vaše stránky interaktivní.
 lessons:
-  - title: Úvod do JavaScriptu
-    link: uvod-do-js
-    brief: Seznámíme se s jazykem JavaScript a ukážeme si jak se v JavaScriptu píší jednoduché programy.
-  - title: Vstup a výstup, objekty
-    link: vstup-vystup-objekty
-    brief: Naučíme naše programy komunikovat s uživatelem a pracovat se složitějšími daty.
-  - title: Práce s řetězci, podmínky
-    link: retezce-podminky
-    brief: Vyzkoušíme si užitečné operace s řetězci a naučíme naše programy dělat rozhodnutí.
   - title: DOM a innerHTML
     link: dom-innerhtml
     brief: Přidáme do našich programů možnost manipulovat pomocí JavaScriptu s obsahem stránky

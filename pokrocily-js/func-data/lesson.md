@@ -1,3 +1,8 @@
+---
+title: Funkcionální zpracování dat
+lead: Ukážeme si šikovné funkce pro práci s daty jako map a filter, a také takzvané destrukturování.
+---
+
 ## Funkcionální zpracování dat
 
 Když při programování aplikací používáme cykly, brzy narazíme na často se opakující situace a konstrukce. Pro tyto situace máme na polích pomocné metody z funkcionálního světa.
