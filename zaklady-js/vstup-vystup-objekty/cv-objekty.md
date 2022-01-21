@@ -1,5 +1,5 @@
 ## Cvičení: Objekty
 
-::exc[realitka]
-::exc[knihovna]
-::exc[ockovani-objekty]
+::exc[cvlekce/realitka]
+::exc[cvlekce/knihovna]
+::exc[cvlekce/ockovani-objekty]

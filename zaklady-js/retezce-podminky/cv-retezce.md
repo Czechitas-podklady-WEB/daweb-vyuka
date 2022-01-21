@@ -1,5 +1,5 @@
 ## Cvičení: Práce s řetězci
 
-::exc[vlastnosti-metody]
-::exc[emaily]
-::exc[dorucovani]
+::exc[cvlekce/vlastnosti-metody]
+::exc[cvlekce/emaily]
+::exc[cvlekce/dorucovani]

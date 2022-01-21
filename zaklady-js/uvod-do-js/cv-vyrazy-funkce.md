@@ -1,10 +1,10 @@
 ## Cvičení: Výrazy a funkce
 
-::exc[vyplata]
-::exc[delka-filmu]
-::exc[email]
+::exc[cvlekce/vyplata]
+::exc[cvlekce/delka-filmu]
+::exc[cvlekce/email]
 
 ### Bonusy
 
-::exc[uroky]
-::exc[novy-koberec]
+::exc[cvlekce/uroky]
+::exc[cvlekce/novy-koberec]

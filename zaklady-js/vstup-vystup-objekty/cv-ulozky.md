@@ -1,5 +1,5 @@
 ## Doporučené úložky na doma
 
-::exc[formatovac-data]
-::exc[fahrnheit-vs-celsius]
-::exc[letenka]
+::exc[cvdoma/formatovac-data]
+::exc[cvdoma/fahrnheit-vs-celsius]
+::exc[cvdoma/letenka]

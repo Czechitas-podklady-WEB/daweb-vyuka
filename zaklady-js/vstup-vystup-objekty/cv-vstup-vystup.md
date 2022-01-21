@@ -1,4 +1,4 @@
 ## Cvičení: Vstup a výstup
 
-::exc[ockovani]
-::exc[vyplata-stranka]
+::exc[cvlekce/ockovani]
+::exc[cvlekce/vyplata-stranka]

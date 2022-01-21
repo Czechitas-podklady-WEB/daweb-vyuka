@@ -1,6 +1,6 @@
 ## Cvičení: Programy, proměnné
 
-::exc[nahodna-cisla]
-::exc[prevod-meny]
-::exc[ultramaraton]
+::exc[cvlekce/nahodna-cisla]
+::exc[cvlekce/prevod-meny]
+::exc[cvlekce/ultramaraton]
 
