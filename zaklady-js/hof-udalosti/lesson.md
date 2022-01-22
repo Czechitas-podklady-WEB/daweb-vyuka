@@ -166,7 +166,7 @@ Ze začátku se vám možná z takovýchto triků malinko točí hlava. Pojďme 
 1. Funkce `calc` funkci `op` zavolá, aniž by věděla, co je tato funkce vlastně zač. Prostě vezme cokoliv, co jí dáme na vstup, a zavolá to.
 1. Když voláme funkci `calc` a na vstupu je například funkce `plus`, všimněte si, že funkci `plus` nevoláme. Za proměnnou `plus` nejsou kulaté závorky. Funkci pouze předáváme jako hodnotu, podobně, jako bychom předávali číslo, řetězec apod.
 
-Funkcím, které berou jiné funkce jako vstup nebo vracejí funkce jako svůj výstup, se v teorii programování říká <term cs="funkce vyšších řádů" en="higher order functions">. Je to velmi důležitý koncept, který má spoustu využítí a budeme jej používat v mnoha různých situacích.
+Funkcím, které berou jiné funkce jako vstup nebo vracejí funkce jako svůj výstup, se v teorii programování říká :term{cs="funkce vyšších řádů" en="higher order functions"}. Je to velmi důležitý koncept, který má spoustu využítí a budeme jej používat v mnoha různých situacích.
 
 [[[ excs Cvičení: Funkce vyššího řádu
 - hesla
@@ -221,7 +221,7 @@ setTimeout(() => {
 }, 5000);
 ```
 
-Pokud nějakou funkci vytváříme přímo takto na místě místo toho, abychom ji nejdříve uložili do proměné, říkáme, že taková funkce je takzvaně <term cs="anonymní" en="anonymous">. V teorii programování se místo pojmu anonymní funkce používá pojem <term cs="lambda funkce" en="lambda functions">. V JavaScriptu se tento pojem až tolik nepoužívá, zato v jazyce Python je to zažitý termín.
+Pokud nějakou funkci vytváříme přímo takto na místě místo toho, abychom ji nejdříve uložili do proměné, říkáme, že taková funkce je takzvaně :term{cs="anonymní" en="anonymous">. V teorii programování se místo pojmu anonymní funkce používá pojem <term cs="lambda funkce" en="lambda functions"}. V JavaScriptu se tento pojem až tolik nepoužívá, zato v jazyce Python je to zažitý termín.
 
 Program napsaný pomocí lambda funkcí vám možná přijde hůř k přečtení. Anonymní funkce se ovšem v JavaScriptu používají zcela běžně a jakmile si na tento způsob zapisu zvyknete, budete jej radostně používat také.
 
@@ -234,9 +234,9 @@ Podobně jako u funkce `setTimout`, anonymní funkci můžeme předat i naší z
 
 ## Události
 
-Aby naše stránky mohly být skutečně interaktivní, potřebujeme být schopni reagovat na akce, které uživatel na stránce provádí - klikání na tlačíka, stiknutí kláves, scrollování, pohyb myší apod. Vždy, když některá z těcho akcí na stránce nastane, říkáme, že nastala určitá <term cs="událost" en="event">. JavaScript reprezentuje takovou událost jako speciální typ hodnoty podobně jako číslo, řetězec nebo funkci. Událost tedy můžeme uložit do proměnné nebo poslat nějaké funkci jako vstup. Událost obsahuje vlastnosti a metody, které popisují co se přesně stalo, například jaká klávesa byla zrovna stisknuta, kde na obrazovce bylo kliknuto a spoustu dalších užitenčných informací.
+Aby naše stránky mohly být skutečně interaktivní, potřebujeme být schopni reagovat na akce, které uživatel na stránce provádí - klikání na tlačíka, stiknutí kláves, scrollování, pohyb myší apod. Vždy, když některá z těcho akcí na stránce nastane, říkáme, že nastala určitá :term{cs="událost" en="event"}. JavaScript reprezentuje takovou událost jako speciální typ hodnoty podobně jako číslo, řetězec nebo funkci. Událost tedy můžeme uložit do proměnné nebo poslat nějaké funkci jako vstup. Událost obsahuje vlastnosti a metody, které popisují co se přesně stalo, například jaká klávesa byla zrovna stisknuta, kde na obrazovce bylo kliknuto a spoustu dalších užitenčných informací.
 
-Abychom mohli na události reagovat, JavaScriptu nám umožňuje ke každé události, která nás zajímá, připojit funkci, která se zavolá ve chvíli, kdy daná událost nastane. Takové funkci často říkáme <term cs="posluchač události" en="event listener">. Můžeme si představit, že JavaScirpt runtime pečlivě naslouchá všem možným událostem a volá k nim přiřazené funkce. Ve chvíli, kdy JavaScript runtimu tuto funkcí volá, předá jí na vstup událost, která zrovna nastala. Taková funkce tedy může vypadat například takto.
+Abychom mohli na události reagovat, JavaScriptu nám umožňuje ke každé události, která nás zajímá, připojit funkci, která se zavolá ve chvíli, kdy daná událost nastane. Takové funkci často říkáme :term{cs="posluchač události" en="event listener"}. Můžeme si představit, že JavaScirpt runtime pečlivě naslouchá všem možným událostem a volá k nim přiřazené funkce. Ve chvíli, kdy JavaScript runtimu tuto funkcí volá, předá jí na vstup událost, která zrovna nastala. Taková funkce tedy může vypadat například takto.
 
 ```js
 const changeTitle = () => {

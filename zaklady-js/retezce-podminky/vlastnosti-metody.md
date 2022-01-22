@@ -15,7 +15,7 @@ U řetězců je situace v celku jednoduchá, protože mají pouze jednu vlastnos
 0
 ```
 
-Uvnitř objektů však kromě vlastností najdeme i takzvané <term cs="metody" en="methods">. Metoda je funkce schovaná uvnitř objektu a je tak s ním pevně spjata. V praxi se totiž často stává, že některé funkce se hodí na práci pouze s jedním typem hodnoty. Například bychom mohli mít funkci `toUpperCase`, která by převedla všechna písmena v řetězci na velká. Kdyby taková funkce existovala, mohli bychom ji
+Uvnitř objektů však kromě vlastností najdeme i takzvané :term{cs="metody" en="methods"}. Metoda je funkce schovaná uvnitř objektu a je tak s ním pevně spjata. V praxi se totiž často stává, že některé funkce se hodí na práci pouze s jedním typem hodnoty. Například bychom mohli mít funkci `toUpperCase`, která by převedla všechna písmena v řetězci na velká. Kdyby taková funkce existovala, mohli bychom ji
 volat třeba takto
 
 ```jscon

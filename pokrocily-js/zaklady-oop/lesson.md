@@ -95,7 +95,7 @@ const personEmail = function (person, domain) {
 };
 ```
 
-Takovýmto funkcím budeme říkat <term cs="staré dobré funkce" en="old-fashioned functions">. Není zde velký rozdíl co se týče zápisu. Staré dobré funkce však mají jednu vlastnost, kterou arrow funkce nemají. Mají speciální tajný parametr, který lze do této funkce propašovat jakýmisi zadními vrátky. Tento parametr se jmenuje `this`. Jeho obsah závisí na tom, jakým způsobem naši funkci voláme. Pojďme si rovnou napsat jednoduchou testovací funkcí, abychom zjistili, jak `this` funguje.
+Takovýmto funkcím budeme říkat :term{cs="staré dobré funkce" en="old-fashioned functions"}. Není zde velký rozdíl co se týče zápisu. Staré dobré funkce však mají jednu vlastnost, kterou arrow funkce nemají. Mají speciální tajný parametr, který lze do této funkce propašovat jakýmisi zadními vrátky. Tento parametr se jmenuje `this`. Jeho obsah závisí na tom, jakým způsobem naši funkci voláme. Pojďme si rovnou napsat jednoduchou testovací funkcí, abychom zjistili, jak `this` funguje.
 
 ```js
 'use strict';
@@ -195,7 +195,7 @@ Můžeme pak psát jako obvykle
 
 ## Prototypy
 
-Příklad výše už je trochu hezčí než vytváření nové metody pro každý objekt, pořád však naše metody `name` a `email` musíme ručně vepisovat do každého objektu. To nás brzo přestane bavit. JavaScript runtime nám však opět přispěchá na pomoc, tentokrát s něčím, čemu se říká <term cs="prototyp" en="prototype">.
+Příklad výše už je trochu hezčí než vytváření nové metody pro každý objekt, pořád však naše metody `name` a `email` musíme ručně vepisovat do každého objektu. To nás brzo přestane bavit. JavaScript runtime nám však opět přispěchá na pomoc, tentokrát s něčím, čemu se říká :term{cs="prototyp" en="prototype"}.
 
 Stejně jako mají staré dobré funkce tajný parametr `this`, maji i objekty jeden tajný klíč s trochu zlověstným názvem `__proto__`. Představte si, že máme e-shop a prodáváme v něm ledničky. Jednu ledničku bychom mohli reprezentovat takovýmto objektem.
 

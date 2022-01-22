@@ -1,6 +1,6 @@
 ## Proměnné
 
-Při složitějších operacích a výpočtech často vyvstane potřeba si nějaký mezivýpočet uložit pro pozdější použití. K tomu nám poslouží takzvané <term cs="proměnné" en="variables">. Proměnná je jakási pojmenovaná krabička nebo šuplík, do kterého si můžeme uložit nějakou hodnotu, abychom ji neztratili a mohli ji používat v dalších výpočtech. Abychom si procvičili proměnné a zajímavé operátory, zkusíme vyřešit následující úlohu.
+Při složitějších operacích a výpočtech často vyvstane potřeba si nějaký mezivýpočet uložit pro pozdější použití. K tomu nám poslouží takzvané :term{cs="proměnné" en="variables"}. Proměnná je jakási pojmenovaná krabička nebo šuplík, do kterého si můžeme uložit nějakou hodnotu, abychom ji neztratili a mohli ji používat v dalších výpočtech. Abychom si procvičili proměnné a zajímavé operátory, zkusíme vyřešit následující úlohu.
 
 Mějme čas v hodinách zadaný ve 24-hodinovém formátu. Tři hodiny odpoledne tedy píšeme jako 15h. Nyní chceme spočítat, kolik hodin uvidíme na hodinách po uplynutí zadané doby. Například jaký bude čas po uplynutí 15 hodin?
 

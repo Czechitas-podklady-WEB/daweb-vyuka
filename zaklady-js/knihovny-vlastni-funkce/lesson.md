@@ -1,4 +1,4 @@
-Jak už jsme viděli do této chvíle, jazyk JavaScript nabízí spoustu funkcí a metod, které jsou připravené pro všemožné účely. Máme funkce na práci s řetězci, na práci s DOMem, na matematické výpočty, na vstup a výstup a tak dále. Webové stránky jsou však neskutečně bohatý svět plný tolika možností a problémů, že jazyk JavaScript nikdy nemůže obsáhnout všechny funkce, které budeme při vývoji potřebovat. Zde ke slovu přichází takzvané <term cs="knihovny" en="libraries">. 
+Jak už jsme viděli do této chvíle, jazyk JavaScript nabízí spoustu funkcí a metod, které jsou připravené pro všemožné účely. Máme funkce na práci s řetězci, na práci s DOMem, na matematické výpočty, na vstup a výstup a tak dále. Webové stránky jsou však neskutečně bohatý svět plný tolika možností a problémů, že jazyk JavaScript nikdy nemůže obsáhnout všechny funkce, které budeme při vývoji potřebovat. Zde ke slovu přichází takzvané :term{cs="knihovny" en="libraries"}. 
 
 ## Knihovny
 
@@ -142,7 +142,7 @@ Naše funkce tedy bude mít dva vstupy - šířku a výšku. Ze školy si pamatu
 };
 ```
 
-Zápis funkce se dělí na definici <term cs="vstupů" en="inputs"> (před šipkou) a <term cs="tělo" en="body"> (za šipkou). Jako vstupy v kulatých závorkách vidíme dvě slova `width` a `height`. To jsou speciální proměnné, kterým říkáme <term cs="parametry" en="parameters">.
+Zápis funkce se dělí na definici :term{cs="vstupů" en="inputs"> (před šipkou) a <term cs="tělo" en="body"> (za šipkou). Jako vstupy v kulatých závorkách vidíme dvě slova `width` a `height`. To jsou speciální proměnné, kterým říkáme <term cs="parametry" en="parameters"}.
 
 Ve složených závorkách pak máme takzvané tělo funkce. To obsahuje kód, který se má vykonat, když funkci zavoláme. Úkolem naší funkce je vrátit nějaký výsledek. Speciální slovíčko `return` proto říká, co má být výsledkem naší funkce.
 
@@ -203,7 +203,7 @@ const isSafe = (password) => {
 
 Proč není `else` potřeba? Zde je nuté oprášit logické uvažování. Pokud byla délka hesla dotatečná, funkce skončila u prvního `return` a k druhému se vůbec nedostala. Pokud se tedy vykonávání funkce dostalo až k druhému `return`, znamená to, heslo kontrolou neprošlo. Jinak by totiž funkce skončila mnohem dřív a sem bychom se vůbec nedostali. Nemusíme už tedy říkat žádné `else` a prostě vrátíme `false`.
 
-Této strategii se říká <term cs="časný návrat" en="early return"> a zkušení programátoři jej používají velmi často. Je proto dobré si na tento způsob zápistu zvyknout už od samého začátku.
+Této strategii se říká :term{cs="časný návrat" en="early return"} a zkušení programátoři jej používají velmi často. Je proto dobré si na tento způsob zápistu zvyknout už od samého začátku.
 
 
 [[[ excs Cvičení: Vlastní funkce

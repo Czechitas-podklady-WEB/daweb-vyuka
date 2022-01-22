@@ -6,7 +6,7 @@ Prozatím jsme v naších programech pracovali pouze s čísly a řetězci. V re
 const address = 'Pod Kaštany 31, 123 11 Horní Dlouhonosy';
 ```
 
-Vysekat z takového řetězce jednotlivé údaje je ovšem dost pracné a našikovné. Pokud chceme informace lépe strukturovat, použijeme v JavaScriptu takzvané <term cs="objekty" en="objects">. 
+Vysekat z takového řetězce jednotlivé údaje je ovšem dost pracné a našikovné. Pokud chceme informace lépe strukturovat, použijeme v JavaScriptu takzvané :term{cs="objekty" en="objects"}. 
 
 ```js
 const address = {
@@ -17,11 +17,11 @@ const address = {
 };
 ```
 
-Objekt vytvoříme tak, že do složených závorek vložíme čárkou oddělené záznamy, kterým se říká <term cs="vlastnosti" en="properties">. Každá vlastnost sestává z takzvaného <term cs="klíče" en="key"> a <term cs="hodnoty" en="value">. 
+Objekt vytvoříme tak, že do složených závorek vložíme čárkou oddělené záznamy, kterým se říká :term{cs="vlastnosti" en="properties">. Každá vlastnost sestává z takzvaného <term cs="klíče" en="key"> a <term cs="hodnoty" en="value"}. 
 
 ::fig[Struktura objektu]{src=assets/object.png size=80}
 
-Pomocí klíčů pak můžeme z objektu získat jednotlivé hodnoty použitím takzvané <term cs="tečkové notace" en="dot notation">.
+Pomocí klíčů pak můžeme z objektu získat jednotlivé hodnoty použitím takzvané :term{cs="tečkové notace" en="dot notation"}.
 
 ```jscon
 > address.city

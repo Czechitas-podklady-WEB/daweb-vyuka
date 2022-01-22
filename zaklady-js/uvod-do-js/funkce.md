@@ -1,6 +1,6 @@
 ## Funkce
 
-Pouze s hodnotami a operátory bychom se v programování daleko nedostali. Často budeme potřeboval vykonat složitější operaci než jen matematický výpočet. Pokud nějakou takovou složitější operaci programátoři používají často, šance je, že pro ni existuje <term cs="funkce" en="function">.
+Pouze s hodnotami a operátory bychom se v programování daleko nedostali. Často budeme potřeboval vykonat složitější operaci než jen matematický výpočet. Pokud nějakou takovou složitější operaci programátoři používají často, šance je, že pro ni existuje :term{cs="funkce" en="function"}.
 
 Funkce je kousek programu řešící nějakou konkrétní úlohu. Většinou jde o úlohu, kterou řešime často a opakovaně. Příkladem může být například zaokrouhlování desetinných čísel na celá čísla. To je operace, která se hodí skoro ve všech výpočtech, a bylo by zbyteční ji programovat neustále znova. V JavaScriptu proto máme k dispozici funkci jménem `Math.round`.
 
@@ -11,7 +11,7 @@ Pokud chceme nějakou funkci použít, uděláme to tak, že napíšeme její jm
 3
 ```
 
-Hodnotě uvnitř kulatých závorek říkáme <term cs="vstup" en="input"> funkce. Spuštění funkce se mezi programátory říká <term cs="volání" en="call">. Jakmile funkce dokončí operaci, <term cs="vrátí" en="return"> nám takzvaný <term cs="výstup" en="output">. V programátorském žargonu tedy říkáme, že když **zavoláme** funkci s nějakým **vstupem**, ona nám **vrátí výstup**.
+Hodnotě uvnitř kulatých závorek říkáme :term{cs="vstup" en="input"> funkce. Spuštění funkce se mezi programátory říká <term cs="volání" en="call">. Jakmile funkce dokončí operaci, <term cs="vrátí" en="return"> nám takzvaný <term cs="výstup" en="output"}. V programátorském žargonu tedy říkáme, že když **zavoláme** funkci s nějakým **vstupem**, ona nám **vrátí výstup**.
 
 ### Rychlé občerstvení
 

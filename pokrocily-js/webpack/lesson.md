@@ -27,7 +27,7 @@ Zde se však pomalu dostáváme do potíží. Prohlížeč dokáže mnohem rychl
 
 ## Systém NPM
 
-NPM je nástroj, který umožňuje spravovat knihovny a kód pro větší JavaScriptové projekty. V systému NPM se knihovnám říká <term cs="balíčky" en="packages">, můžeme tedy říct, že NPM je správce balíčků.
+NPM je nástroj, který umožňuje spravovat knihovny a kód pro větší JavaScriptové projekty. V systému NPM se knihovnám říká :term{cs="balíčky" en="packages"}, můžeme tedy říct, že NPM je správce balíčků.
 
 Vytvořit projekt založený na NPM není nic těžkého. Jediné, co k tomu potřebujeme je založit prázdnou složku a do ní vložit speciální soubor `package.json`. Ten obsahuje základní informace o našem projektu, jako je jméno, verze a seznam balíčků (dříve knihoven), které náš projekt používá. 
 
@@ -166,7 +166,7 @@ Nyní stačí otevřít v našem projektu termínál a napsat příkaz
 $ npm run build
 ```
 
-Pokud se vše povedlo, uvnitř projektu se vytvoří soubor `dist/bundle.js`, který obsahuje takzvaně <term cs="minifikovanou" en="minified"> verzi našeho kódu. Ta může vypadat například takto děsivě. 
+Pokud se vše povedlo, uvnitř projektu se vytvoří soubor `dist/bundle.js`, který obsahuje takzvaně :term{cs="minifikovanou" en="minified"} verzi našeho kódu. Ta může vypadat například takto děsivě. 
 
 ```js
 (()=>{const t=t=>`Hello ${t}`;document.querySelector("h1").textContent=t("Martin"),console.log(t("Martin"))})();

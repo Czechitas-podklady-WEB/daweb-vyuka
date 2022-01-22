@@ -1,6 +1,6 @@
 ## Pravdivostní hodnoty
 
-Ve zbývající části lekce se vrhneme na podmínky a umožníme naším programům dělat rozhodnutí. Před tím si ale musíme trošku připravit půdu a ukázat si nový typ hodnoty. Zatím jsme viděli čísla, řetězce a objekty. Nyní přichází takzvané <term cs="pravdivostní hodnoty" en="boolean values">. Čísel a řetězců je nekonečně mnoho, pravdivostní hodnoty jsou však jen dvě: `true` a `false`. Používají se k tomu, abychom vyjádřili, zda je něco pravda nebo není. Například:
+Ve zbývající části lekce se vrhneme na podmínky a umožníme naším programům dělat rozhodnutí. Před tím si ale musíme trošku připravit půdu a ukázat si nový typ hodnoty. Zatím jsme viděli čísla, řetězce a objekty. Nyní přichází takzvané :term{cs="pravdivostní hodnoty" en="boolean values"}. Čísel a řetězců je nekonečně mnoho, pravdivostní hodnoty jsou však jen dvě: `true` a `false`. Používají se k tomu, abychom vyjádřili, zda je něco pravda nebo není. Například:
 
 ```jscon
 > const pristupPovolen = false
@@ -8,7 +8,7 @@ Ve zbývající části lekce se vrhneme na podmínky a umožníme naším progr
 > const mobilniProhlizec = true
 ```
 
-K tomu, abychom mohli v našich programech činit rozhodnutí budeme také potřebovat výrazy, které vrací pravdivostní hodnoty. Ty můžeme sestavit pomocí takzvaných <term cs="porovnávacích operátorů" en="comparison operators">.
+K tomu, abychom mohli v našich programech činit rozhodnutí budeme také potřebovat výrazy, které vrací pravdivostní hodnoty. Ty můžeme sestavit pomocí takzvaných :term{cs="porovnávacích operátorů" en="comparison operators"}.
 
 ```jscon
 > const age = 21

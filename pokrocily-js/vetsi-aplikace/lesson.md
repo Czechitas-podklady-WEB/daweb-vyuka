@@ -42,7 +42,7 @@ Prohlížeč tak musí kvůli dvěma komponentám stáhnout šest různých soub
 
 https://github.com/facebook/react/issues/9463#issuecomment-295643228
 
-Webpack je nástroj, který slouží ke spojení zdrojových JavaScriptových souborů do jednoho výsledného souboru, který pak prohlížeč může stáhnout najednou. Tomuto procesu se říká <term cs="sestavení" en="build">. K tomu, aby se náš projekt správně sestavil, potřebujeme Webpack správně nakonfigurovat. Vytvořít takovou konfiguraci od základu je už relativně pokročilá dovednost. V našem případě tedy budeme pracovat s již předem připravenou konfigurací, která se hodí na většinu jednoduchých frontendových projektů.
+Webpack je nástroj, který slouží ke spojení zdrojových JavaScriptových souborů do jednoho výsledného souboru, který pak prohlížeč může stáhnout najednou. Tomuto procesu se říká :term{cs="sestavení" en="build"}. K tomu, aby se náš projekt správně sestavil, potřebujeme Webpack správně nakonfigurovat. Vytvořít takovou konfiguraci od základu je už relativně pokročilá dovednost. V našem případě tedy budeme pracovat s již předem připravenou konfigurací, která se hodí na většinu jednoduchých frontendových projektů.
 
 ### Postup založení nového projektu
 

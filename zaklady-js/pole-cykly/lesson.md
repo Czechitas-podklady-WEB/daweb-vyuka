@@ -2,7 +2,7 @@ Do této chvíle jsme uměli do nějaké proměnné uložit pouze jednu hodnotu,
 
 ## Pole
 
-<term cs="Pole" en="Array"> nám umožňují do jedné proměnné uložit více hodnot. Pokud znáte například jazyk Python, pole v JavaScriptu jsou totéž co seznamy v Pythonu.
+:term{cs="Pole" en="Array"} nám umožňují do jedné proměnné uložit více hodnot. Pokud znáte například jazyk Python, pole v JavaScriptu jsou totéž co seznamy v Pythonu.
 
 Pole tvoříme pomocí hranatých závorek. Takto například do jedné proměnné uložíme známky ze všech písemek psaných za jedno pololetí.
 
@@ -270,7 +270,7 @@ while (i < marks.length) {
 
 Aby cyklus správně fungoval, musíme si dát dobrý pozor jednak na to, abychom s indexem `i` začínali od nuly a abychom nepřekročili délku pole.
 
-Všimněte si, že už po několikáté vidíme cyklus, kde používáme nějakou proměnnou, kterou postupně navyšujeme dokud nedojdeme k nějakému limitu. Protože tato proměnná vlastně řídí, jak dlouho se celý cyklus bude opakovat, říkáme jí <term cs="řídící proměnná" en="control variable">.
+Všimněte si, že už po několikáté vidíme cyklus, kde používáme nějakou proměnnou, kterou postupně navyšujeme dokud nedojdeme k nějakému limitu. Protože tato proměnná vlastně řídí, jak dlouho se celý cyklus bude opakovat, říkáme jí :term{cs="řídící proměnná" en="control variable"}.
 
 ### Cyklus FOR
 

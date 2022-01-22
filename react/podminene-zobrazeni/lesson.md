@@ -18,7 +18,7 @@ Tato podmínka vypadá velmi přímočaře. Má však určité nevýhody.
 1. Jde o celkem dlouhý kód pro velmi jednoduchou věc.
 1. Musíme požívat proměnnou `let`, čemuž se snažíme co nejvíce vyhýbat.
 
-JavaScript nám pro tuto situaci nabízí zkraktu, které se říká <term cs="operátor pro podmíněný výraz" en="conditional operator">.
+JavaScript nám pro tuto situaci nabízí zkraktu, které se říká :term{cs="operátor pro podmíněný výraz" en="conditional operator"}.
 
 ```js
 const message = age >= 18 ? 'Smíš vstoupit' : 'Utíkej za mamkou';

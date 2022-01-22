@@ -84,7 +84,7 @@ Toto je z hlediska JavaSriptu naprosto korektní zápis. Vznikne tak zcela stejn
 
 Většina webových aplikací pracuje s daty, která jsou uložena na nějakém vzdáleném serveru. Pokud chceme s takovými daty pracovat, musíme si serveru o tato data říct. Požadavky na data se provádějí prostřednictvím takzvaného API (:i[Application Programming Interface]). Jak už jsme si řekli výše, většina API poskytuje data ve formátu JSON.
 
-K tomu, abychom mohli pracovat s API, je potřeba si detailněji popsat, jak funguje komunikace s webovým serverem. Pokud po webovém serveru něco chceme, například HTML stránku nebo nějaká data, musíme odeslat takzvaný <term cs="HTTP požadavek" en="HTTP request">. Každý požadavek musí být zacílený na nějakou URL adresu. Adresy URL mají následující formát.
+K tomu, abychom mohli pracovat s API, je potřeba si detailněji popsat, jak funguje komunikace s webovým serverem. Pokud po webovém serveru něco chceme, například HTML stránku nebo nějaká data, musíme odeslat takzvaný :term{cs="HTTP požadavek" en="HTTP request"}. Každý požadavek musí být zacílený na nějakou URL adresu. Adresy URL mají následující formát.
 
 ```
 protokol://adresa_serveru/cesta?parametr1=hodnota1&amp;parametr2=hodnota2

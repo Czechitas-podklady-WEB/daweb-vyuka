@@ -1,6 +1,6 @@
 ## Hodnoty a operátory
 
-<term cs="Hodnoty" en="Values"> a <term cs="operátory" en="operators"> jsou základním stavebním kamenem veškerého programování. V této lekci se představíme ty nejzákladnější a v dalších lekcích budeme postupně přidávat další.
+:term{cs="Hodnoty" en="Values"} a :term{cs="operátory" en="operators"} jsou základním stavebním kamenem veškerého programování. V této lekci se představíme ty nejzákladnější a v dalších lekcích budeme postupně přidávat další.
 
 ### Čísla a aritmetika
 
@@ -43,11 +43,11 @@ Z operátorů a hodnot můžete samozřejmě stavět mnohem složitější konst
 20
 ```
 
-Konstrukcím vytvořeným z hodnot a operátorů se odborně říká <term cs="výrazy" en="expressions">. Pokud necháme JavaScript runtime spočítat výsledek výrazu, získáme tak jeho hodnotu. Každý výraz tedy má svoji hodnotu a JavaScript runtime nám ji rád sdělí, když mu výraz pošleme v konzoli. Je dobré zde zmínit, že ne všechny konstrukce v JavaScriptu jsou výrazy. To se však ukáže jako důležité až později.
+Konstrukcím vytvořeným z hodnot a operátorů se odborně říká :term{cs="výrazy" en="expressions"}. Pokud necháme JavaScript runtime spočítat výsledek výrazu, získáme tak jeho hodnotu. Každý výraz tedy má svoji hodnotu a JavaScript runtime nám ji rád sdělí, když mu výraz pošleme v konzoli. Je dobré zde zmínit, že ne všechny konstrukce v JavaScriptu jsou výrazy. To se však ukáže jako důležité až později.
 
 ### Řetězce
 
-Pokud chceme v JavaScriptu pracovat s textem, použijeme hodnotu, které se říká <term cs="řetězec" en="string">. Můžeme pak psát například toto.
+Pokud chceme v JavaScriptu pracovat s textem, použijeme hodnotu, které se říká :term{cs="řetězec" en="string"}. Můžeme pak psát například toto.
 
 ```jscon
 > 'Pavel'
@@ -77,5 +77,5 @@ Textové řetězce jdou sčítat podobně jako čísla, můžete tedy psát nap�
 "<h1>Digitální akademie Web</h1>"
 ```
 
-Všimněte si v druhém příkladu řetězce, který obsahuje pouze mezeru. V třetím případě dokonce vidíme řetězec, který neobsahuje vůbec nic. To je takzvaný <term cs="prázdný řetězec" en="empty string">. Chová se podobně jako nula při sčítání čísel a bude se nám pozdějí hodit.
+Všimněte si v druhém příkladu řetězce, který obsahuje pouze mezeru. V třetím případě dokonce vidíme řetězec, který neobsahuje vůbec nic. To je takzvaný :term{cs="prázdný řetězec" en="empty string"}. Chová se podobně jako nula při sčítání čísel a bude se nám pozdějí hodit.
 
