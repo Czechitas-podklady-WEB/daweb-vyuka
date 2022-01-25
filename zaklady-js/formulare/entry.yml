@@ -1,0 +1,7 @@
+title: Vstup a výstup, objekty
+lead: Ukážeme si, jak v HTML vytvářet formuláře na získávání dat od uživatele.
+sections:
+  - zaklady-formulare
+  - cv-textovy-vstup
+  - slozitejsi-formulare
+  - cv-pokrocile-formulare
