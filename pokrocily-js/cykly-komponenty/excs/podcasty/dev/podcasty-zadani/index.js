@@ -1,5 +1,3 @@
-'use strict';
-
 const podcast1 = {
   num: '126',
   title: 'Robot, který snědl koblihu',

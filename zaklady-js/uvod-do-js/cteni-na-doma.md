@@ -24,4 +24,4 @@ V JavaScriptu se ukrývá mnoho různých pastí, ve kterých je možné snadno 
 > nzda = 350
 ```
 
-JavaScript runtime si zde neuvědomí, že jsme udělali překlep a vytvoří novou proměnnou <var>nzda</var> s hodnotou 350. Původní proměnná tedy zůstane nezměněná a už máme zaděláno na problém. Naštěstí se tento zdroj chyb dá odstranit tím, že budeme vždy pamatovat na directivu `use strict` na začátku každého programu. V takovém případě totiž JavaScript zahlásí chybu vždy, když se budeme snažít přiřadit hodnotu proměnné, která před tím nebyla vytvořena. 
+JavaScript runtime si zde neuvědomí, že jsme udělali překlep a vytvoří novou proměnnou <var>nzda</var> s hodnotou 350. Původní proměnná tedy zůstane nezměněná a už máme zaděláno na problém. Na tuto situaci je dobré si v začátcích dávad dobrý pozor. V profesionální praxi se pak často používá takzvaný linter, který autamaticky označuje podezřelá místa v kódu, abychom se vyhnuli častým chybám. V tomto kurzu linter používat nebudeme, protože jeho správné nastavení vyžaduje určité zkušenosti a musí se dělat pro každý projekt zvlášť.

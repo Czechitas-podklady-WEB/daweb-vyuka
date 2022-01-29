@@ -1,5 +1,3 @@
-'use strict';
-
 const Time = (props) => {
   return `
     <div class="time">

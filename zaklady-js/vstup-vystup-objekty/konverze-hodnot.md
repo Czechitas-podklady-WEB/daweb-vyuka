@@ -88,8 +88,6 @@ Všimněte si, co se stane, když se pokusíme zkonvertovat nějaký řetězec, 
 Nyní už můžeme náš program přepracovat tak, aby fungoval správně.
 
 ```js
-'use strict';
-
 const start = 15;
 const delka = Number(prompt('Zadej délku závodu:'));
 const konec = (start + delka) % 24;

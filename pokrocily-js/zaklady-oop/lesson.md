@@ -98,8 +98,6 @@ const personEmail = function (person, domain) {
 Takovýmto funkcím budeme říkat :term{cs="staré dobré funkce" en="old-fashioned functions"}. Není zde velký rozdíl co se týče zápisu. Staré dobré funkce však mají jednu vlastnost, kterou arrow funkce nemají. Mají speciální tajný parametr, který lze do této funkce propašovat jakýmisi zadními vrátky. Tento parametr se jmenuje `this`. Jeho obsah závisí na tom, jakým způsobem naši funkci voláme. Pojďme si rovnou napsat jednoduchou testovací funkcí, abychom zjistili, jak `this` funguje.
 
 ```js
-'use strict';
-
 const greet = function (name) {
   return `hello from ${this} and ${name}`;
 };

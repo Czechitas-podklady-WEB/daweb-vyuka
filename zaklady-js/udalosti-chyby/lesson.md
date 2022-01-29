@@ -44,8 +44,6 @@ Nejříve si na příkladu vysvětlíme vlastnost `target`. Je to jedna z vůbec
 Nyní budeme chtít, aby při stisku každého tlačíka přibyla na tomto tlačítku třída `btn-smiley--selected`. První řešení, které nás může napadnout, je dát každému tlačíku na kliknutí jinou funkci.
 
 ```js
-'use strict';
-
 document.querySelector('#smiley1').addEventListener('click', () => {
   const btn = document.querySelector('#smiley1');
   btn.classList.add('btn-smiley--selected');
@@ -71,8 +69,6 @@ document.querySelector('#smiley5').addEventListener('click', () => {
 Tento kód sice bude fungovat, ale už od pohledu je strašlivě ukecaný. Všech naších pět funkcí dělá v podstatě totéž. Liší se pouze v jednom znaku. Mnohem šikovnější by bylo mít pouze jednu funkci, která se připojí na každé tlačítko. Tato funkce ale musí nějak zjistit, na jaké tlačítko bylo kliknuto. A to právě můžeme šikovně vyčíst z vlastnosti `event.target`. Výsledný kód pak bude vypadat takto.
 
 ```js
-'use strict';
-
 const selectSmiley = (event) => {
   event.target.classList.add('btn-smiley--selected');
 };
@@ -150,8 +146,6 @@ V následující částí si probereme nejčastější chyby, na které jako za�
 Často se nám může stát, že se pokoušíme použít proměnnou, funkci, metodu či vlastnost, která neexistuje. Uvažte funkci `submitClick` z předchozí části napsanou takto.
 
 ```js
-'use strict';
-
 const submitClick = () => {
   const passwordElm = document.querySelector('#pass-input');
   const password = passwordElm.value;
@@ -186,8 +180,6 @@ Vzpomeňte si, že všechny funkce se volají tak, že použijeme proměnnou, ve
 Upravme nyní naši funkce `submitClick` takto.
 
 ```js
-'use strict';
-
 const submitClick = () => {
   const passwordElm = document.querySelevtor('.pass-input');
   const password = passwordElm.value;

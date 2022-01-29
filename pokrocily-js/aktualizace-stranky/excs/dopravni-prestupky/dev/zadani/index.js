@@ -1,5 +1,3 @@
-'use strict';
-
 const localTime = () => {
   const date = new Date();
   return {

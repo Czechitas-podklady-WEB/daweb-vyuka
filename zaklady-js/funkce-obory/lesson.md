@@ -5,8 +5,6 @@ Do této chvíle jsme z jazyka JavaScript již poznali mnoho věcí. Věcí, kte
 Občas se nám stane, že si potřebujeme nějakou proměnnou připravit, ale zatím ještě nevíme, jaká v ní bude hodnota. Chceme tedy, aby na začátku v proměnné byla nějaká neutrální hodnota, která jakoby nic neznamená. To můžeme zařídit pomocí speciální hodnoty `null`. Můžeme si představit, že hodnota `null` je jakási prázdná výplň, taková vata, která zabírá místo tam, kde zatím nic skutečného není. Jde zároveň o nový typ hodnoty vedle čísel, řetězců, objektů, funkcí apod. 
 
 ```js
-'use strict';
-
 const password = prompt('Zadejte heslo: ');
 let message = null;
 
@@ -298,8 +296,6 @@ V praxi je nejlepší, když má náš program tak dobře pojmenované proměnn�
 Jak po předchozích lekcích už všichni víme, bloky kódu se používají také k vytváření funkci. Zde do oborů platnosti vstupuje další hráč, a to jsou parametry funkce. Ty se z hlediska hierarchie nacházejí jakoby na rozhraní mezi blokem funkce a jeho nadřazeným blokem. Prohlédněte si porozně následující kód.
 
 ```js
-'use strict';
-
 const message = 'Vítej ve světě slasti';
 
 const checkAge = (age, message) => {
@@ -332,8 +328,6 @@ Je dobré připomenout, že program výše je napsán obzvlášť zlovolně je z
 Když JavaScript runtime vykonává blok kódu, po celou dobu si pamatuje všechny proměnné, které v něm byly vytvořeny. Jakmile vykonávání bloku skončí, všechny takto zapamatované proměnné se z paměti uvolní. Toto může představovat problém ve chvíli, kdy uvnitř nějakého bloku vytváříme vlastní funkci. Prohlédněte si následující kód, který požádá uživatele o počet vteřin a poté postupně odpočítává každou vteřinu směrem dolů.
 
 ```js
-'use strict';
-
 const seconds = prompt('Zadejte cas:');
 
 if (seconds > 0) {

@@ -194,8 +194,6 @@ setTimeout(timeIsUp, 5000);
 Všimněte si, že `setTimeout` je funkce vyššího řádu, neboť bere jako svůj první vstup funkci. Opět vidíme, že funkci `timeIsUp` nevoláme my, ale zavolá ji až JavaScript runtime po uplynutí 5000 milisekund. Celý program pak vypadá takto.
 
 ```js
-'use strict';
-
 const timeIsUp = () => {
   console.log('Čas vypršel');
 };
@@ -214,8 +212,6 @@ setInterval(timeIsUp, 5000);
 V předchozíme programu je vidět, že funkci `timesIsUp` používáme pouze jednou. Je proto trochu zbytečné pro ni vytvářet proměnnou. Funkci můžeme vytvořit přímo na místě, kdy ji používáme.
 
 ```js
-'use strict';
-
 setTimeout(() => {
   console.log('Čas vypršel');
 }, 5000);
@@ -258,8 +254,6 @@ Nyní zařídíme, aby se tato funkce zavolala ve chvíli, kdy stiskneme tlačí
 Nejdříve tlačítko z dokumentu vybereme a poté na něm zavoláme speciální metodu `addEventListener`. Ta očekává název události a funkci, která se má spustit, když událost nastane. V našem případě se událost jmenuje `click` a naše funkce je `changeTitle`. Celý program tedy bude vypadat takto.
 
 ```js
-'use strict';
-
 const changeTitle = () => {
   const h1Elm = document.querySelector('h1');
   h1Elm.textContent = 'Baf!';

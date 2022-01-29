@@ -1,5 +1,3 @@
-'use strict';
-
 const goodbye = (name) => {
   return 'S pozdravem ' + name;
 };

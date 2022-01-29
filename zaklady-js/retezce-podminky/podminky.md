@@ -5,8 +5,6 @@ Nyní se konečně dostáváme k tématu, na které jsme se tak dlouho připravo
 Pro jednoduchý příklad se opět vraťme k našemu ultramaratonskému běhu. Závod začiná ve tři hodiny odpoledne a počítáme s tím, že závodníci doběhnou někdy příští den ráno. Nebudeme ale v cíli čekat na každého dědulu, který to celé poběží 20 hodin. Řekněme, že organizátoři mají padla druhý den v poledne. Potřebujeme tedy do naší stránky zakomponovat informaci o tom, jestli trasu dokážeme uběhnout do 12 hodin.
 
 ```js
-'use strict';
-
 const start = 15;
 const delka = Number(prompt('Zadej délku závodu:'));
 const konec = (start + delka) % 24;

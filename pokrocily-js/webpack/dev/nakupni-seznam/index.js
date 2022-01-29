@@ -1,5 +1,3 @@
-'use strict';
-
 const ShoppingItem = (props) => {
   return `
     <div class="item">

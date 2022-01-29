@@ -1,5 +1,3 @@
-'use strict';
-
 const departures = [
   {
     time: { hrs: 8, mins: 14 },

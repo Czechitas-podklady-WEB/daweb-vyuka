@@ -341,8 +341,6 @@ V lekci o událostech jsme si slíbili, že díky cyklům dokážeme zjednoduš�
 Náš výsledný učesaný JavaScriptový kód vypadal takto.
 
 ```js
-'use strict';
-
 const selectSmiley = (event) => {
   event.target.classList.add('btn-smiley--selected');
 };
@@ -357,8 +355,6 @@ document.querySelector('#btn5').addEventListener('click', selectSmiley);
 Všimněte si, že kód pro nasazení posluchače na událost `click` jsme museli opakovat pětkrát. Díky `document.querySelectorAll` můžeme nyní posluchače nasadit na všechna tlačítka jedním cyklem.
 
 ```js
-'use strict';
-
 const selectSmiley = (event) => {
   event.target.classList.add('btn-smiley--selected');
 };
