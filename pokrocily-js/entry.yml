@@ -1,11 +1,10 @@
 title: Pokročilý JavaScript
 lead: Naučíte se vytvářet složitější webové aplikace a poznáte hlubší zákoutí JavaScriptu.
 lessons:
-  - pokus
   - cykly-komponenty
-  - json-api
-  - aktualizace-stranky
-  - webpack
-  - dom-elementy
-  - func-data
-  - cafe-lora
+  # - json-api
+  # - aktualizace-stranky
+  # - webpack
+  # - dom-elementy
+  # - func-data
+  # - cafe-lora
