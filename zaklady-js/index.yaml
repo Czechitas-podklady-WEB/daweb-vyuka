@@ -1,7 +1,0 @@
-lessons:
-  - title: Procvičování událostí, lovení chyb
-    link: udalosti-chyby
-    brief: Procvičíme si zacházení s událostmi a naučíme se v našich programech lovit chyby.
-  - title: Pole a cykly
-    link: pole-cykly
-    brief: Užitečnost počítačů spočívá především v tom, že dokážou velmi rychle provádět opakovaně nějakou činnost, tedy provádět takzvaný cyklus.
