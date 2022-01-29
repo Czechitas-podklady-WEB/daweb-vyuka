@@ -1,7 +1,4 @@
 lessons:
-  - title: Funkce a obory platnosti
-    link: funkce-obory
-    brief: Procvičíme si psaní vlastních funkcí a ukážeme si jak pracovat s obory platnosti proměnných.
   - title: Funkce vyšších řádů, události
     link: hof-udalosti
     brief: Naučíme naše stránky reagovat na události jako je kliknutí, stisknutí klávesy nebo scrollování. K tomu budeme potřebovat porozumět funkcím vyššího řádu.

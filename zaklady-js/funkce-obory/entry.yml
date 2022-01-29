@@ -1,0 +1,12 @@
+title: Funkce a obory platnosti
+lead: Procvičíme si psaní vlastních funkcí a ukážeme si jak pracovat s obory platnosti proměnných.
+sections:
+  - null-undefined
+  - specialni-funkce
+  - cv-funkce
+  - obor-platnosti
+  - zastinovani
+  - cv-porozumeni-kodu
+  - uzavery
+  - ulozky-na-doma
+  - volitelne-ulozky
