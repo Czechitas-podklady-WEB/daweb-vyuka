@@ -1,7 +1,4 @@
 lessons:
-  - title: Funkce vyšších řádů, události
-    link: hof-udalosti
-    brief: Naučíme naše stránky reagovat na události jako je kliknutí, stisknutí klávesy nebo scrollování. K tomu budeme potřebovat porozumět funkcím vyššího řádu.
   - title: Procvičování událostí, lovení chyb
     link: udalosti-chyby
     brief: Procvičíme si zacházení s událostmi a naučíme se v našich programech lovit chyby.
