@@ -7,7 +7,7 @@ Po této lekci byste měli vědět a znát
 * základní funkce:
   - `Math.round`, `Math.floor`, `Math.ceil`,
   - `Math.random`,
-  - `console.log`, `document.write`,
+* výstup do stránky pomocí `document.body.innerHTML`,
 * jak vytvořit stránku s JavaScriptovým programem,
 * jak používat a správně pojmenovávat proměnné,
 * rozdíl mezi `let` a `const`.

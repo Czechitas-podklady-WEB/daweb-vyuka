@@ -12,9 +12,9 @@ const delka = Number(prompt('Zadej délku závodu:'));
 const konec = (start + delka) % 24;
 
 if (konec > 12) {
-  document.write('Překročena maximální délka závodu!');
+  document.body.innerHTML = '<p>Překročena maximální délka závodu!</p>';
 } else {
-  document.write('Konec závodu ve ' + konec + ' hodin');
+  document.body.innerHTML = '<p>Konec závodu ve ' + konec + ' hodin</p>';
 }
 ```
 
@@ -30,16 +30,16 @@ Je dobré mít na paměti, že odsazování a obecně většina bílých znaků 
 
 ```js
 if (age >= 18) {
-  document.write('Nalej si');
+  document.body.innerHTML = '<p>Nalej si</p>';
 } else {
-  document.write('Žádné chlastání!');
+  document.body.innerHTML = '<p>Žádné chlastání!</p>';
 }
 ```
 
 <!-- prettier-ignore -->
 ```js
-if(age>=18){document.write('Nalej si');} 
-else{document.write('Žádné chlastání!');}
+if(age>=18){document.body.innerHTML = '<p>Nalej si</p>';} 
+else{document.body.innerHTML = '<p>Žádné chlastání!</p>';}
 ```
 
 Věřím, že uznáte, že první varianta je mnohem čitelnější než druhá. Způsobů, jak formátovat kód existuje vícero a můžete se tak účastnit nekonečných hospodských disputací o tom, jestli odsazovat pomocí dvou mezer nebo čtyř, jestli otvírací složenou závorku psát na konec řádku nebo na začátek nového a tak dále.
@@ -48,11 +48,11 @@ Věřím, že uznáte, že první varianta je mnohem čitelnější než druhá.
 ```js
 if ( age >= 18 ) 
 {
-    document.write('Nalej si');
+    document.body.innerHTML = '<p>Nalej si</p>';
 } 
 else 
 {
-    document.write('Žádné chlastání!');
+    document.body.innerHTML = '<p>Žádné chlastání!</p>';
 }
 ```
 
@@ -64,7 +64,7 @@ Zatím jsme viděli podmínky se dvěma větvemi. Není ovšem problém mít pod
 
 ```js
 if (age >= 18) {
-  document.write('Nalej si');
+  document.body.innerHTML = '<p>Nalej si</p>';
 }
 ```
 
@@ -110,15 +110,15 @@ Každý blok kódu může obsahovat libovolné příkazy, tedy i další podmín
 
 ```js
 if (age >= 18) {
-  document.write('Nalej si');
+  document.body.innerHTML = '<p>Nalej si</p>';
 } else {
   const remains = 18 - age;
   if (remains < 2) {
-    document.write('Ještě si chvíli počkej');
+    document.body.innerHTML = '<p>Ještě si chvíli počkej</p>';
   } else if (remains < 5) {
-    document.write('Co to tady zkoušíš?');
+    document.body.innerHTML = '<p>Co to tady zkoušíš?</p>';
   } else {
-    document.write('Utíkej za mamkou!');
+    document.body.innerHTML = '<p>Utíkej za mamkou!</p>';
   }
 }
 ```

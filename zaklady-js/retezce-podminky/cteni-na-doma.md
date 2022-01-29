@@ -48,7 +48,7 @@ Tyto logické operátory můžeme s výhodou využít v našich podmínkách. Na
 
 ```js
 if (age >= 15 && age <= 18) {
-  document.write('Jsi mladistvým intelektuálem');
+  document.body.innerHTML = '<p>Jsi mladistvým intelektuálem</p>';
 }
 ```
 
@@ -56,7 +56,7 @@ V jiném případě můžeme chtít zkontrolovat, že věk uživatele je menší
 
 ```js
 if (age < 18 || age >= 65) {
-  document.write('Nemusíš pracovat');
+  document.body.innerHTML = '<p>Nemusíš pracovat</p>');
 }
 ```
 
@@ -64,7 +64,7 @@ Tutéž podmínku bychom mohli napsat pomocí negace.
 
 ```js
 if (!(age >= 18 && age < 65)) {
-  document.write('Nemusíš pracovat');
+  document.body.innerHTML = '<p>Nemusíš pracovat</p>');
 }
 ```
 

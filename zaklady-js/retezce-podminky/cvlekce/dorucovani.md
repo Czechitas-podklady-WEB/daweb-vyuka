@@ -13,5 +13,5 @@ Vytvořte webovou stránku, kde uživatel zadá svoji adresu například pro ú�
      <p>12754 Klysnov</p>
    </div>
    ```
-1. Pomocí `document.write` vypište sestavené HTML do stránky. 
+1. Pomocí `document.body.innerHTML` vložte sestavené HTML do stránky. 
 

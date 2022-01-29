@@ -7,7 +7,7 @@ Mějme čas v hodinách zadaný ve 24-hodinovém formátu. Tři hodiny odpoledne
 ```js
 const cas = 13;
 const novyCas = (cas + 15);
-alert(novyCas);
+document.body.innerHTML = novyCas;
 ```
 
 V tomto kusu kódu jsme vytvořili hned dvě proměnné: <var>cas</var> a <var>novyCas</var>. Každá proměnné v JavaScriptu musí mít své jméno. To by mělo dobře vystihovat, co je v proměnné uloženo. Pokud chceme v programu používat nějakou promennou, musíme ji vždy nejdříve vytvořit. To se dělá pomocí klíčového slova `const`. Takovou proměnnou pak můžeme použít v libovolném výrazu tak, že prostě uvedeme její jméno.
@@ -19,7 +19,7 @@ Takto můžeme například zkusit spočítat svou budoucí výplatu, pokud budem
 ```js
 let sazba = 500;
 let vyplata = 8 * 21 * sazba;
-alert(vyplata);
+document.body.innerHTML = vyplata;
 ```
 
 Pokud chceme spočítat výplatu pro jinou sazbu, můžeme hodnotu v proměnné změnit. V takovém případě už **nepoužíváme** `const` ani `let`.
@@ -28,7 +28,7 @@ Pokud chceme spočítat výplatu pro jinou sazbu, můžeme hodnotu v proměnné 
 let sazba = 500;
 let vyplata = 8 * 21 * sazba;
 sazba = 600;
-alert(vyplata);
+document.body.innerHTML = vyplata;
 ```
 
 Zde si však musíme všimnout jedné velmi důležité věci.
@@ -40,11 +40,11 @@ Dejte pozor na to, že do proměnné se jako do šuplíku ukládá pouze hodnota
 ```js
 let sazba = 500;
 let vyplata = 8 * 21 * sazba;
-alert(vyplata);
+document.body.innerHTML = vyplata;
 
 sazba = 600;
 vyplata = 8 * 21 * sazba
-alert(vyplata);
+document.body.innerHTML = vyplata;
 ```
 
 ### Změna na základě předchozí hodnoty
@@ -54,7 +54,7 @@ alert(vyplata);
 ```js
 sazba = sazba + 100;
 vyplata = 8 * 21 * sazba
-alert(vyplata);
+document.body.innerHTML = vyplata;
 ```
 
 Nebo ji můžeme chtít navýšit třeba o 15%.
@@ -62,7 +62,7 @@ Nebo ji můžeme chtít navýšit třeba o 15%.
 ```js
 sazba = sazba * 1.15;
 vyplata = 8 * 21 * sazba
-alert(vyplata);
+document.body.innerHTML = vyplata;
 ```
 
 Tyto případy jsou tak časté, že pro ně JavaScript zavedl speciální operátory. Místo
@@ -94,5 +94,5 @@ Tyto operátory se nám budou hodit také u řetězců. Takto například může
 ```js
 let email = 'alzbeta.zelena';
 email += '@gmail.com';
-alert(email);
+document.body.innerHTML = email;
 ```

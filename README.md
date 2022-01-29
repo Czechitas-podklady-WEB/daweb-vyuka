@@ -125,7 +125,7 @@ Studijní materiály pro DA Web na kodim.cz
 Část první
 
 - První programy
-- Vstup výstup, document.write, console.log, prompt
+- Vstup výstup, prompt
 - Konverze hodnot, Number, String
 
 Část druhá

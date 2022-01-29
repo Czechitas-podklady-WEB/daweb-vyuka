@@ -44,7 +44,7 @@ const net = Math.floor(
   gross - gross * 0.045 - gross * 0.065 - taxBase * 0.15 + 2070
 );
 
-document.write(
+document.body.innerHTML = (
   'superhrubá: ' + superGross + ' kč, ' +
   'hrubá: ' + gross + ' kč, ' +
   'čistá: ' + net + ' kč'

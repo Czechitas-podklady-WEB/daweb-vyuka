@@ -197,7 +197,7 @@ const submitClick = () => {
     message = 'Secure password';
   }
 
-  alert(message);
+  document.body.innerHTML = message;
 };
 ```
 

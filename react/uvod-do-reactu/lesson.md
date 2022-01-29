@@ -33,7 +33,7 @@ Toto řešení je relativně přímočaré, ale má nevýhody v tom, že je tě�
 
 ```js
 const obsah = document.createElement('h1');
-obsah.className = 'title';
+obsah.classList.add('title');
 obsah.textContent = 'Moje stránka';
 
 const appElm = document.querySelector('#app');

@@ -93,7 +93,7 @@ Nyní už můžeme náš program přepracovat tak, aby fungoval správně.
 const start = 15;
 const delka = Number(prompt('Zadej délku závodu:'));
 const konec = (start + delka) % 24;
-document.write(konec);
+document.body.innerHTML = konec;
 ```
 
 Z tohoto příkladu plyne do budoucna velmi důležité poučení. Vždycky si dávejte dobrý pozor na to, s jakými typy hodnot pracujete. Pokud například chcete používat výstup funkce `prompt` jako číslo, vždy jej explicitně převeďte na číslo. Dáte tak i čtenářům vašeho programu najevo, co je vaším záměrem, a oni tak nebudou muset smysl vašeho programu rozplétat jako detektivní zápletku.
@@ -101,5 +101,5 @@ Z tohoto příkladu plyne do budoucna velmi důležité poučení. Vždycky si d
 Fakt, že JavaScript pro nás některé konverze dělá automaticky, můžeme využít k tomu, abychom uživateli vypsali nějakou hezčí zprávu, než jen holé číslo.
 
 ```js
-document.write('Běžec dorazí v ' + konec + 'h');
+document.body.innerHTML = '<p>Běžec dorazí v ' + konec + 'h</p>';
 ```

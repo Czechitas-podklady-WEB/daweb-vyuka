@@ -11,27 +11,27 @@ const order = {
 
 const { id, product, delivery } = order;
 
-document.write(
-  '<h2>Objednávka: ' + id + '</h2>',
-  '<p>Zboží ' + product + ' bude doručeno ' + delivery + '.',
+document.body.innerHTML = (
+  '<h2>Objednávka: ' + id + '</h2>' +
+  '<p>Zboží ' + product + ' bude doručeno ' + delivery + '.'
 );
 ```
 
 Abychom se ze všeho toho sčítání a uvozovek nezbláznili, moderní JavaScript nabízí nový zápis řetězců, kterému se odborně říká <term cs="interpolace řetězců" em="string interpolation">. V tomto zápisu se místo obyčejný nebo dvojitých uvozovek používá takzvaný zpětný apostrof &#96;. Pomocí tohoto zápisu můžeme obsah proměnných vložit do řetězce pomocí znaku `$` a složených závorek.
 
 ```js
-document.write(
-  `<h2>Objednávka: ${id}</h2>`,
-  `<p>Zboží ${product} bude doručeno ${delivery}.',
+document.body.innerHTML = (
+  `<h2>Objednávka: ${id}</h2>` + 
+  `<p>Zboží ${product} bude doručeno ${delivery}.`
 );
 ```
 
 Uvnitř složených závorek otevíráme jakési JavaScriptové okno, do kterého můžeme vepsat nejen proměnnou, ale zcela libovolný výraz, jehož výsledek bude automaticky zkonvertován na řetězec.
 
 ```js
-document.write(
-  `<h2>Objednávka: ${String(id).padStart(8, '0')}</h2>`,
-  `<p>Zboží ${product} bude doručeno ${delivery}.`,
+document.body.innerHTML = (
+  `<h2>Objednávka: ${String(id).padStart(8, '0')}</h2>` +
+  `<p>Zboží ${product} bude doručeno ${delivery}.`
 );
 ```
 
@@ -39,7 +39,7 @@ Díky interpolaci řetězců se náš kód stává mnohem čitelnějším a bude
 
 ### Víceřádkové řetězce
 
-Když v JavaScriptu vytváříme HTML, které chceme vložit do stránky, často potřebujeme vygenerovat dlouhý řetězec, který se nám nevejde na jeden řáděk. V JavaScriptu ovšem nelze zapsat běžný řetězec na více řádků. Následující kód by bohužel nefungoval.
+Když v JavaScriptu vytváříme HTML, které chceme vložit do stránky, často potřebujeme vygenerovat dlouhý řetězec, který se nám nevejde na jeden řádek. V JavaScriptu ovšem nelze zapsat běžný řetězec na více řádků. Následující kód by bohužel nefungoval.
 
 ```js
 const content = '
@@ -96,5 +96,5 @@ const content = `
   <footer>www.matrace-a-syn.cz</footer>
 `;
 
-document.write(content);
+document.body.innerHTML = content;
 ```

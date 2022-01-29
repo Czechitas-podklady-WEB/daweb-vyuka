@@ -1,7 +1,4 @@
 lessons:
-  - title: DOM a innerHTML
-    link: dom-innerhtml
-    brief: Přidáme do našich programů možnost manipulovat pomocí JavaScriptu s obsahem stránky
   - title: Knihovny a vlastní funkce
     link: knihovny-vlastni-funkce
     brief: Ukážeme si jak v JavaScriptu používat knihovny a naučíme se vytvářet vlastní funkce.

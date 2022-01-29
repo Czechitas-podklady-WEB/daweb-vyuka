@@ -1,6 +1,6 @@
 ## Výpis do stránky
 
-Do této chvíle jsme pro zobrazení výstupu z našeho programu používali funkci `alert`. Slušně vychované webové aplikace však s uživatelem pomocí vyskakovacích oken nekomunikují. Mnohem šikovnější je vypisovat výstup přímo do stránky. Prohlížeč nám vychází vstříc tím, že celý obsah stránky je uložen ve speciální proměnné s názvem `document.body.innerHTML`. 
+Zatím jsme si ještě pořád nevysvětlili, jak přesně dokážeme pomocí JavaScriptu měnit obsah stránky. Ve všech dosavadních ukázkách jsme k tomu používali tajemnou promměnou `document.body.innerHTML`. Tuto speciální proměnnou vytváří prohlížeč a ukládá si v ní obsah elementu `body` jako jeden dlouhý řetězec. 
 
 Mějme následující stránku.
 
@@ -30,7 +30,7 @@ Když ji otevřeme v prohlížeči, můžeme si v konzoli ověřit, co proměnn�
 "
 ```
 
-Obdrželi jsme řetězec s celým HTML stránky včetně všech mezer a odsazení. Pokud chceme obsah stránky změnit, můžeme prostě změnit obsah této proměnné. Vyzkoušejte si to v konzoli.
+Obdrželi jsme řetězec s celým HTML stránky včetně všech mezer a odsazení. Pokud chceme obsah stránky změnit, můžeme prostě změnit obsah této proměnné a prohlížeč se už sám postará o překreslení stránky. Vyzkoušejte si to v konzoli.
 
 ```jscon
 > document.body.innerHTML = '<h1>Nový obsah</h1>';
@@ -42,4 +42,4 @@ Tímto postupem nahradíme celý obsah stránky obsahem našeho řetězce. Nejč
 > document.body.innerHTML += '<p>Výsledek výpočtu</p>';
 ```
 
-Takto můžeme přímo do stránky vkládat jakékoliv HTML značky a máme tak stránku zcela po kontrolou.
+Takto můžeme přímo do stránky vkládat jakékoliv HTML značky a máme tak stránku zcela pod kontrolou.
