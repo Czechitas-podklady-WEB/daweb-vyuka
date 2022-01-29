@@ -1,4 +1,10 @@
 title: Procvičování událostí, lovení chyb
 lead: Procvičíme si zacházení s událostmi a naučíme se v našich programech lovit chyby.
 sections:
-  - vse
+  - vlastnosti-udalosti
+  - textova-pole
+  - cv-vlastnosti-udalosti
+  - porozumeni-chybam
+  - ladeni
+  - ulozky-na-doma
+  - volitelne-ulozky
