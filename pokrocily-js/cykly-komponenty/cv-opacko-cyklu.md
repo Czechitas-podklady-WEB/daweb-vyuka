@@ -4,5 +4,5 @@ Než se však pustíme do tohoto tématu, ještě si lehce zopakujeme cykly z mi
 
 ## Cvičení: Opáčko cyklů
 
-::exc[cvlekce/nakupni-seznam]
-::exc[cvlekce/nakupni-seznam-funkce]
+::exc[cvlekce>nakupni-seznam]
+::exc[cvlekce>nakupni-seznam-funkce]

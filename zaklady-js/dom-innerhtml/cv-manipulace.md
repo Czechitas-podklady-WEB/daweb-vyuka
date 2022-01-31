@@ -1,4 +1,4 @@
 ## Cvičení: Manipulace s DOMem
 
-::exc[cvlekce/novinky]
-::exc[cvlekce/kviz]
+::exc[cvlekce>novinky]
+::exc[cvlekce>kviz]

@@ -1,3 +1,3 @@
 ## Volitelné úložky na doma
 
-::exc[cvdoma/schopnejsi-zaokrouhlovani-2]
+::exc[cvdoma>schopnejsi-zaokrouhlovani-2]

@@ -1,3 +1,3 @@
 ## Cvičení: Pokročilé formuláře
 
-::exc[cvlekce/statisticky-urad]
+::exc[cvlekce>statisticky-urad]

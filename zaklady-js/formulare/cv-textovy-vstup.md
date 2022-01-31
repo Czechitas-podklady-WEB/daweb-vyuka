@@ -1,3 +1,3 @@
 ## Cvičení: Textový vstup
 
-::exc[cvlekce/vyhledavac]
+::exc[cvlekce>vyhledavac]
