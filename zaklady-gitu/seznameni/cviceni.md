@@ -1,0 +1,3 @@
+## Cvičení
+
+::exc[cvdoma>saturejka]

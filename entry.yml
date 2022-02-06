@@ -4,7 +4,7 @@ image: intro-image.svg
 chapters:
   - priprava
   # - html-a-css
+  - zaklady-gitu
   - zaklady-js
-  # - zaklady-gitu
   - pokrocily-js
   # - react

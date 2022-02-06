@@ -1,0 +1,6 @@
+title: Spolupráce v Gitu
+lead: Ukážeme si, jak s využítím Gitu organizovat práci více vývojářů na jednom projektu.
+sections:
+  - jedna-vetev
+  - reseni-konfliktu
+  - cv-spoluprace
