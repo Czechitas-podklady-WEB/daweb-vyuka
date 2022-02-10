@@ -1,5 +1,6 @@
 title: Funkce a obory platnosti
 lead: Procvičíme si psaní vlastních funkcí a ukážeme si jak pracovat s obory platnosti proměnných.
+access: claim
 sections:
   - null-undefined
   - specialni-funkce

@@ -1,5 +1,6 @@
 title: DOM a innerHTML
 lead: Přidáme do našich programů možnost manipulovat pomocí JavaScriptu s obsahem stránky
+access: claim
 sections:
   - dom
   - dom-elementy

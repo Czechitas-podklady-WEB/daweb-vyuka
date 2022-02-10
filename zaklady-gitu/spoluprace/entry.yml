@@ -1,5 +1,6 @@
 title: Spolupráce v Gitu
 lead: Ukážeme si, jak s využítím Gitu organizovat práci více vývojářů na jednom projektu.
+access: claim
 sections:
   - jedna-vetev
   - reseni-konfliktu
