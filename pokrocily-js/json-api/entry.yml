@@ -1,5 +1,6 @@
 title: JSON a voláni API
 lead: Naučíme se, jak využívat veřejná API k získání dat pro naše aplikace.
+access: 'claim'
 sections:
   - objekty-data
   - format-json
