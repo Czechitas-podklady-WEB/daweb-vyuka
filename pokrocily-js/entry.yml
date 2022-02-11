@@ -3,7 +3,7 @@ lead: Naučíte se vytvářet složitější webové aplikace a poznáte hlubš�
 lessons:
   - cykly-komponenty
   - json-api
-  # - aktualizace-stranky
+  - aktualizace-stranky
   # - webpack
   # - dom-elementy
   # - func-data
