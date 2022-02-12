@@ -1,10 +1,4 @@
-title: React
-link: react
-brief: Díky Reactu budete schopni vytvářet profesionální webové aplikace mnohem rychleji než v čistém JavaScriptu.
 lessons:
-  - title: Úvod do Reactu
-    link: uvod-do-reactu
-    brief: Napíšeme si první aplikace v Reactu a představíme si hlavní principy tohoto moderního frameworku.
   - title: Podmíněné zobrazení
     link: podminene-zobrazeni
     brief: Naučíme si jak sestavovat CSS třídy a jak se rozhodnout, kterou část JSX chceme zobrazit.
