@@ -1,7 +1,4 @@
 lessons:
-  - title: Události, stav
-    link: udalosti-stav
-    brief: 'Přidáme do našich komponent stav abychom mohli měnit obsah stránky podle interakce s uživatelem.'
   - title: Formulářové prvky, efekty
     link: formulare-efekty
     brief: 'Zapojíme do našich React aplikací formulářové prvky a ukážeme si jak pomocí efektů volat API.'
