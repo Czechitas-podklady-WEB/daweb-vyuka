@@ -5,6 +5,6 @@ lessons:
   - json-api
   - aktualizace-stranky
   - webpack
-  # - dom-elementy
+  - dom-elementy
   # - func-data
   # - cafe-lora
