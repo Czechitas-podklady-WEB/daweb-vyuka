@@ -13,31 +13,3 @@ Aplikaci budeme vytvářet postupně v několika hlavní milnících.
 1. Zobrazení vyhledané cesty a výběru sedadla
 1. Zprovoznění rezervace
 1. Zobrazení rezervovaní jízdenky
-
-[[[ excs Založení aplikace a rozběhání routování
-- seznameni-s-projektem
-- routovani
-]]]
-
-[[[ excs Výběr startovní a cílové lokace
-- udaje-o-ceste
-- vyber-mesta
-- vyber-datumu
-- vyhledat-spoj
-]]]
-
-[[[ excs Detail cesty a výběr sedadla
-- podrobnosti-cesty
-- zobrazeni-sedadla
-- rady-sedadel
-- vyber-sedadla
-]]]
-
-[[[ excs Zprovoznění rezervace
-- potvrzeni-rezervace
-]]]
-
-
-[[[ excs Zobrazení rezervovaní jízdenky
-- detail-jizdenky
-]]]

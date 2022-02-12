@@ -1,7 +1,4 @@
 lessons:
-  - title: 'Opakování: LeviExpress'
-    link: leviexpress
-    brief: Všechno, co jsme se v Reactu naučili si procvičíme na projektu takzvaně „ze života“.
   - title: Velké opakování
     link: velke-opakovani
     brief: 'Zopakujeme si všechno, co jsme se doteď v JavaScriptu naučili.'
