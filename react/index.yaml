@@ -1,7 +1,4 @@
 lessons:
-  - title: Komunikace mezi sourozenci
-    link: komunikace-sourozenci
-    brief: 'Nejnáročnejší typ komunikace mezi komponentami je předávání informací mezi sourozenci.'
   - title: React router
     link: react-router
     brief: 'Pomocí routeru dokážeme v Reactu vyrobit vícestránkovou aplikaci.'
