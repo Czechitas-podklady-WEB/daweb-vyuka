@@ -1,7 +1,4 @@
 lessons:
-  - title: Komunikace dítě rodič
-    link: komunikace-dite-rodic
-    brief: 'Představíme si základní scénáře komunikace mezi komponentami a jejich použití v praxi.'
   - title: Komunikace mezi sourozenci
     link: komunikace-sourozenci
     brief: 'Nejnáročnejší typ komunikace mezi komponentami je předávání informací mezi sourozenci.'
