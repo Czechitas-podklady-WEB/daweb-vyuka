@@ -4,7 +4,7 @@ lessons:
   - cykly-komponenty
   - json-api
   - aktualizace-stranky
-  # - webpack
+  - webpack
   # - dom-elementy
   # - func-data
   # - cafe-lora
