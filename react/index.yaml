@@ -1,7 +1,4 @@
 lessons:
-  - title: Podmíněné zobrazení
-    link: podminene-zobrazeni
-    brief: Naučíme si jak sestavovat CSS třídy a jak se rozhodnout, kterou část JSX chceme zobrazit.
   - title: Zobrazování seznamů
     link: seznamy
     brief: 'Ukážeme si, jak v React komponentách zobrazovat seznamy.'
