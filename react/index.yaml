@@ -1,7 +1,4 @@
 lessons:
-  - title: Formulářové prvky, efekty
-    link: formulare-efekty
-    brief: 'Zapojíme do našich React aplikací formulářové prvky a ukážeme si jak pomocí efektů volat API.'
   - title: Komunikace dítě rodič
     link: komunikace-dite-rodic
     brief: 'Představíme si základní scénáře komunikace mezi komponentami a jejich použití v praxi.'
