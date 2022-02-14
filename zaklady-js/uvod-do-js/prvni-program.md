@@ -2,7 +2,7 @@
 
 Do této chvíle jsme si s runtimem JavaScriptu povídali pouze skrze konzoli. Vždy jsme poslali jeden příkaz a rovnou na něj dostali odpověď. Nyní je čas začít psát programy, tedy nechat náš prohlížeč spustit více příkazů najednou.
 
-Naše JavaScriptové programy budou vždy součástí nějaké webové stránky. Založíme si proto složku s jedním HTML souborem, který prozatím nebude obsahovat nic.
+Naše JavaScriptové programy budou vždy součástí nějaké webové stránky. Založíme si proto složku s jedním HTML souborem, který prozatím nebude obsahovat nic než nadpis.
 
 ```html
 <!DOCTYPE html>
@@ -24,7 +24,7 @@ Pro náš JavaScriptový kód budeme vždy vytvářet oddělený soubor podobně
 document.body.innerHTML = '<h1>ahoj</h1>';
 ```
 
-Pokud chceme náš program propojit se stránkou, vložíme odkaz na tento soubor do hlavičky stránky.
+Co tento kód přesně dělá se dozvíme za malou chvíli. Teď je naším hlavním úkolem zapojit tento program do naší stránky. To provedeme tak, že vložíme značku `script` s odkazkazem na soubor `index.js` do hlavičky stránky.
 
 ```html
 <head>
@@ -36,7 +36,9 @@ Pokud chceme náš program propojit se stránkou, vložíme odkaz na tento soubo
 </head>
 ```
 
-Pokud nyní soubor `index.html` otevřete v prohlížeči, měl by nadpis stránky znít :i[ahoj]. Všimměte si, že v HTML kódu stránka obsahuje nadpis :i[První program]. Změnu nadpisu stránky jsme zařídili pomocí našeho JavaScriptového programu. Jakým kouzlem jsme to zařídili se dozvíte v další části.
+Pokud nyní soubor `index.html` otevřete v prohlížeči, měl by nadpis stránky znít :i[ahoj]. Všimměte si, že v HTML kódu stránka obsahuje nadpis :i[První program]. 
+
+Proč se JavaScriptový kód vkládá do stránky tímto způsobem a co přesně znamená atribut `type="module"` si povíme později, až budete malinko zkušenější.
 
 ### Středníky
 

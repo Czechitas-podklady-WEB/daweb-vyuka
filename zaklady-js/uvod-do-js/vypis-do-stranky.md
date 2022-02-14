@@ -1,6 +1,6 @@
 ## Výpis do stránky
 
-Zatím jsme si ještě pořád nevysvětlili, jak přesně dokážeme pomocí JavaScriptu měnit obsah stránky. Ve všech dosavadních ukázkách jsme k tomu používali tajemnou promměnou `document.body.innerHTML`. Tuto speciální proměnnou vytváří prohlížeč a ukládá si v ní obsah elementu `body` jako jeden dlouhý řetězec. 
+Zatím jsme si ještě pořád nevysvětlili, jak přesně dokážeme pomocí JavaScriptu měnit obsah stránky. Ve všech dosavadních ukázkách jsme k tomu používali tajemnou promměnou :var[document.body.innerHTML], o které zatím víme pouze to, že ji pro nás vytvořil prohlížeč automaticky. V této speciální proměnn je vždý uložen obsah elementu `body`, a to jako jeden dlouhý řetězec. 
 
 Mějme následující stránku.
 
@@ -20,7 +20,7 @@ Mějme následující stránku.
 </html>
 ```
 
-Když ji otevřeme v prohlížeči, můžeme si v konzoli ověřit, co proměnná `document.body.innerHTML` obsahuje. 
+Když ji otevřeme v prohlížeči, můžeme si v konzoli ověřit, co proměnná :var[document.body.innerHTML] obsahuje. 
 
 ```jscon
 > document.body.innerHTML

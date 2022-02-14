@@ -78,4 +78,4 @@ const appContent = (
 render(appContent, document.getElementById('app'));
 ```
 
-Všimněte si šikovně použitých kulatých závorek při vytváření proměnné <var>appContent</var>, které nám umožní mít kód hezky čitelný.
+Všimněte si šikovně použitých kulatých závorek při vytváření proměnné :var[appContent], které nám umožní mít kód hezky čitelný.

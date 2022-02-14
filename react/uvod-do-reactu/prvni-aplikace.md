@@ -46,7 +46,7 @@ Toto řešení už je praktičtější, kód je však delší a méně přehledn
 const obsah = <h1 className="title">Moje stránka</h1>;
 ```
 
-Všimněte si, že do proměnné <var>obsah</var> přímo bez obalení uvozovkami ukládáme něco, co vypadá podezřele jako HTML. Není to však přesně HTML, nýbrž takzvané _JSX (JavaScript XML)_. Zápis JSX je velmi podobný jazyku HTML, jsou zde však drobné rozdíly. Například místo atributu `class` se v JSX používá atribut `className`.
+Všimněte si, že do proměnné :var[obsah] přímo bez obalení uvozovkami ukládáme něco, co vypadá podezřele jako HTML. Není to však přesně HTML, nýbrž takzvané _JSX (JavaScript XML)_. Zápis JSX je velmi podobný jazyku HTML, jsou zde však drobné rozdíly. Například místo atributu `class` se v JSX používá atribut `className`.
 
 JSX elementy jsou Reactová obdoba DOM elementů, které jsme používali ve vanilla JavaScriptu. Jde o zcela nový typ hodnoty, a proto je můžeme stejně jako ostatní hodnoty ukládat do proměnných, předávat funkcím, vracet z funkcí, vkládat do polí i objektů a tak dále.
 

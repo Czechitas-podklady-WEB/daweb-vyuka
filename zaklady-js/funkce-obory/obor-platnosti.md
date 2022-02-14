@@ -18,7 +18,7 @@ if (age < 18) {
 }
 ```
 
-Zatím nebudeme řešit odkud se vzala proměnná <var>age</var>. Především si všimneme, že celý program obsahuje dohromady pět různých bloků kódu oddělených složenými závorkami. Pokud uvnitř nějakého bloku vytvoříme proměnnou, například <var>remains</var>, tato proměnná je "vidět" pouze uvnitř tohoto bloku. Tento blok se stává jejím :term{cs="oborem platnosti" en="scope"}. Jakmile její blok kódu skončí, proměnná <var>remains</var> zanikne a již s ní není možné pracovat.
+Zatím nebudeme řešit odkud se vzala proměnná :var[age</var>. Především si všimneme, že celý program obsahuje dohromady pět různých bloků kódu oddělených složenými závorkami. Pokud uvnitř nějakého bloku vytvoříme proměnnou, například <var>remains</var>, tato proměnná je "vidět" pouze uvnitř tohoto bloku. Tento blok se stává jejím :term{cs="oborem platnosti" en="scope"}. Jakmile její blok kódu skončí, proměnná <var>remains] zanikne a již s ní není možné pracovat.
 
 Pokud se proměnnou pokusíme použít mimo její obor platnosti, JavaScript runtime se bude tvářit jako kdyby tuto proměnnou nikdy neviděl.
 
@@ -71,7 +71,7 @@ if (age < 18) {
 console.log(age); // V pořádku
 ```
 
-V tomto programu vidíme, že proměnná <var>age</var> je vytvořená v globálním oboru platnosti. Takové proměnné říkáme prostě <em>globální</em>. Globální proměnné jsou vidět v celém programu a můžeme je tedy použít kdekoliv. Pokud proměnná není globální a je tedy vytvořena uvnitř nějakého bloku, říkáme o ni, že je :term{cs="lokální" en="local"}.
+V tomto programu vidíme, že proměnná :var[age] je vytvořená v globálním oboru platnosti. Takové proměnné říkáme prostě <em>globální</em>. Globální proměnné jsou vidět v celém programu a můžeme je tedy použít kdekoliv. Pokud proměnná není globální a je tedy vytvořena uvnitř nějakého bloku, říkáme o ni, že je :term{cs="lokální" en="local"}.
 
 Obory platnosti nám pomáhají rodělit náš kód na menší samostatné celky, které se navzájem neovlivňují. Můžete tak bez problému mít ve dvou blocích stejně pojmenovavnou lokální proměnnou a význam bude zcela jasný.
 
@@ -87,4 +87,4 @@ if (age < 18) {
 }
 ```
 
-V tom příkladu máme dvě lokální proměnné <var>message</var>, které náhodou mají stejné jméno, jinak však spolu nemají nic společného.
+V tom příkladu máme dvě lokální proměnné :var[message], které náhodou mají stejné jméno, jinak však spolu nemají nic společného.

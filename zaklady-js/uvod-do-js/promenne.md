@@ -10,7 +10,9 @@ const novyCas = (cas + 15);
 document.body.innerHTML = novyCas;
 ```
 
-V tomto kusu kódu jsme vytvořili hned dvě proměnné: <var>cas</var> a <var>novyCas</var>. Každá proměnné v JavaScriptu musí mít své jméno. To by mělo dobře vystihovat, co je v proměnné uloženo. Pokud chceme v programu používat nějakou promennou, musíme ji vždy nejdříve vytvořit. To se dělá pomocí klíčového slova `const`. Takovou proměnnou pak můžeme použít v libovolném výrazu tak, že prostě uvedeme její jméno.
+V tomto kusu kódu jsme vytvořili hned dvě proměnné: :var[cas] a :var[novyCas]. Každá proměnné v JavaScriptu musí mít své jméno. To by mělo dobře vystihovat, co je v proměnné uloženo. Pokud chceme v programu používat nějakou promennou, musíme ji vždy nejdříve vytvořit. To se dělá pomocí klíčového slova `const`. Takovou proměnnou pak můžeme použít v libovolném výrazu tak, že prostě uvedeme její jméno.
+
+Proměnná :var[document.body.innerHTML] je trochu speciální. Tuto proměnnou vytvářet nemusíme, protože už ji pro nás vytvořil prohlížeč při načtení stránky. Nepíšeme tedy před ni `const`.
 
 Většinu proměnných budeme používat tak, že jim při vytvoření přiřadíme nějakou hodnotu a tato hodnota už v proměnná zůstane až do konce jejího života. Občas se však stane, že potřebujeme hodnotu uloženou v nějaké proměnné změnit. V takovém případě musíme proměnnou vytvořit pomocí slovíčka `let`.
 
@@ -35,7 +37,7 @@ Zde si však musíme všimnout jedné velmi důležité věci.
 
 ### JavaScript není Excel
 
-Dejte pozor na to, že do proměnné se jako do šuplíku ukládá pouze hodnota a nikoliv celý výraz. Všimněte si, že v příkladu výše jsem změnili hodnotu proměnné <var>sazba</var>. Po této změně bude v proměnné <var>vyplata</var> pořád původní hodnota. Pokud chceme obsah této proměnné aktualizovat, musíme příkaz spustit znova.
+Dejte pozor na to, že do proměnné se jako do šuplíku ukládá pouze hodnota a nikoliv celý výraz. Všimněte si, že v příkladu výše jsem změnili hodnotu proměnné :var[sazba</var>. Po této změně bude v proměnné <var>vyplata] pořád původní hodnota. Pokud chceme obsah této proměnné aktualizovat, musíme příkaz spustit znova.
 
 ```js
 let sazba = 500;

@@ -1,6 +1,6 @@
 ## Zastiňování proměnných
 
-Uvažujíc nad příkladem výše vás možná napadne, co by se stalo, kdybychom proměnné <var>message</var> vytvořili takto.
+Uvažujíc nad příkladem výše vás možná napadne, co by se stalo, kdybychom proměnné :var[message] vytvořili takto.
 
 ```js
 const age = Number(prompt('Zadej svůj věk:'));
@@ -14,7 +14,7 @@ if (age < 18) {
 }
 ```
 
-Pravidlo při hledání proměnných říká, že se použije ta deklarace, na kterou runtime při procházení nadřazených bloků narazí nejdříve. Díky tomu, že se prohledává vždy od nejnižšího patra k nejvyššímu, v bloku `if` narazíme nejdřív na globální proměnnou <var>message</var>. Naopak v bloku `else` dříve najdeme lokální proměnnou. Tomuto principu se říká :term{cs="zastínění" en="shadowing"}. Proměnná, která je z hlediska hierarchie bloků níže, takzvaně zastíní stejně pojmenovou proměnnou, která se nachází výše.
+Pravidlo při hledání proměnných říká, že se použije ta deklarace, na kterou runtime při procházení nadřazených bloků narazí nejdříve. Díky tomu, že se prohledává vždy od nejnižšího patra k nejvyššímu, v bloku `if` narazíme nejdřív na globální proměnnou :var[message]. Naopak v bloku `else` dříve najdeme lokální proměnnou. Tomuto principu se říká :term{cs="zastínění" en="shadowing"}. Proměnná, která je z hlediska hierarchie bloků níže, takzvaně zastíní stejně pojmenovou proměnnou, která se nachází výše.
 
 V praxi je nejlepší, když má náš program tak dobře pojmenované proměnné, že se nevzájem nazastiňují. Zjednodušujeme tak práci všem čtenářům, kteří tak mají o starost méně při louskání našeho kódu. Rozhodně je ale dobré vědět, že zastínění může nastat a JavaScript runtime se s ním snadno vypořádá.
 
