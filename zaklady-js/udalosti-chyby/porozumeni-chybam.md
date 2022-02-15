@@ -42,7 +42,7 @@ Uncaught ReferenceError: alart is not defined
 
 Vzpomeňte si, že všechny funkce se volají tak, že použijeme proměnnou, ve které je funkce uložena. Je tedy logické, že runtime hlásí, že proměnnou `alart` nezná.
 
-Upravme nyní naši funkce `submitClick` takto.
+Upravme nyní naši funkci `submitClick` takto.
 
 ```js
 const submitClick = () => {
@@ -89,7 +89,7 @@ Uncaught TypeError: Cannot read property 'value' of null
 
 Nyní náš čeká malé detektivní pátrání. Z chybové hlášky vyluštíme, že na řádku 5 se snažíme přistoupit k vlastnosti `value` na hodnotě `null`. Hodnota `null` žádné vlastnosti nemá, takže to je jistě chyba. Když se podíváme na řádek 5, vydedukujeme, že v proměnné `passwordElm` tedy musí být hodnota `null`. Tuto hodnotu tam jistě musela uložit funkce `document.querySelector`. Aha!! To tedy znamená, že funkce nenašla element, který jsme hledali. Máme totiž chybu v selektoru na řádku 4, kde jsme omylem vybírali podle třídy a ne podle `id`.
 
-Tato situace je velmi častá. JavaScript přestal našemu programu rozumět na řádku 5, ale problém vznikl už dříve na řádku 4. Ne vždy tedy chyba vznikne tam, kde se JavaScirpt runtime ztratil. Místo příčíny chyby a místo, kde se chyba projeví, mohou být od sebe vzdáleny i mnoho řádků. Občas tedy musíme použít naše detektivní schonposti a hledat chybu o několik řádků zpět.
+Tato situace je velmi častá. JavaScript přestal našemu programu rozumět na řádku 5, ale problém vznikl už dříve na řádku 4. Ne vždy tedy chyba vznikne tam, kde se JavaScirpt runtime ztratil. Místo příčíny chyby a místo, kde se chyba projeví, mohou být od sebe vzdáleny i mnoho řádků. Občas tedy musíme použít naše detektivní schopnosti a hledat chybu o několik řádků zpět.
 
 ### Když žádná chyba nenastane
 
