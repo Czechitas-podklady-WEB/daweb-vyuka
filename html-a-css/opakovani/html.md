@@ -17,12 +17,13 @@ HTML soubory jsou ty, které končí koncovkou **.html**. Základní struktura H
 </html>
 ```
 
-V prvku `head` se nachází informace o dokumentu, jako je název, metaznačky (metatags), které pomáhají vyhledávačům, nebo linky na CSS a JS soubory. Do obsahu prvku `body` potom píšeme samotný obsah naší webové stránky. 
+V prvku `head` se nachází 
+- informace o dokumentu, jako je například název,     
+- metaznačky (metatags), které mimo jiné pomáhají vyhledávačům, 
+- nebo linky na CSS a JS soubory.    
+Do obsahu prvku `body` potom píšeme samotný obsah naší webové stránky. 
 
-<img src="htmltag.jpg"
-     alt="HTML tag"
-     style="" 
-/>
+::fig[HTML tag]{src=assets/htmltag.jpg}
 
 Většina elementů má otevírací a zavírací značku, jako například `body`. Existují ale také tzv. self-closing tags, které mají pouze atributy a nemají obsah. To jsou například značky `img` nebo `hr`.    
 Obsahem prvku může být i jiný prvek. V tom případě se obalový prvek stává jeho rodičem a prvek uvnitř dítětem. 
