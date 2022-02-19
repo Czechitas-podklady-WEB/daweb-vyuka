@@ -1,0 +1,9 @@
+title: Seznámení s Gitem
+lead: Představíme si verzovací systém Git, který nám usnadní spravování a zálohování našich projektů.
+access: claim
+sections:
+  - system-git
+  - zakladni-pojmy
+  - dulezite-prikazy
+  - github-pages
+  - cviceni

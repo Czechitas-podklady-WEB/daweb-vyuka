@@ -1,5 +1,6 @@
 title: Klávesnice a terminál
 lead: Pro všechny programátory je důležité umět psát na klávesnici speciální znaky a ovládat práci s terminálem.
+access: 'claim'
 sections:
   - terminal
   - shell-prikazy

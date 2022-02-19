@@ -27,8 +27,9 @@ Zároveň ověřování e-mailu je tak častý programátorský úkon, že na to
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/validator/13.5.2/validator.min.js"></script>
   <title>Moje stránka</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/validator/13.5.2/validator.min.js"></script>
 </head>
 ```
 
@@ -75,7 +76,7 @@ Práce datem a časem je velmi častým úkolem v mnoha různých aplikacích. Z
 - různé formáty zápisu data a času v různých zemích,
 - a tak dále. 
 
-Z toho všecho je jasné, že na práci s datem a časem budeme potřebovat nějakou knihovnu. Těch na internetu existuje vícero. My si vyzkoušíme knihovnu s názvem `dayjs`. Do naší stránky ji vložíme následujícím skriptem. 
+Z toho všecho je jasné, že na práci s datem a časem budeme potřebovat nějakou knihovnu. Takových na internetu existuje vícero. My si vyzkoušíme knihovnu s názvem `dayjs`. Do naší stránky ji vložíme následujícím skriptem. 
 
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/dayjs.min.js" ></script>

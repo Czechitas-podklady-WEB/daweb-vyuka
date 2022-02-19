@@ -2,7 +2,7 @@ Každý program musí být schopen nějakým způsobem komunikovat s uživatelem
 
 ## Vstup a výstup
 
-Zatím jsme viděli, jak může náš program provést jednoduchý výstup pomocí `document.body.innerHTML`. Později uvidíme mnohem zajímavější způsoby jak uživateli něco na stránce zobrazit. Nyní ale potřebujeme od uživatele taky nějaký vstup získat. K tomu budeme pro tuto chvíli používat funkci `prompt`. Zkusme napsat program, který bude řešit naši ultramaratonskou úlohu z minulé lekce.
+Zatím jsme viděli, jak může náš program provést jednoduchý výstup pomocí :var[document.body.innerHTML]. Později uvidíme mnohem zajímavější způsoby jak uživateli něco na stránce zobrazit. Nyní ale potřebujeme od uživatele taky nějaký vstup získat. K tomu budeme pro tuto chvíli používat funkci `prompt`. Zkusme napsat program, který bude řešit naši ultramaratonskou úlohu z minulé lekce.
 
 ```js
 const start = 15;

@@ -1,0 +1,9 @@
+title: Formulářové prvky, efekty
+lead: 'Zapojíme do našich React aplikací formulářové prvky a ukážeme si jak pomocí efektů volat API.'
+access: 'claim'
+sections:
+  - formularove-prvky
+  - cv-formularove-prvky
+  - efekty
+  - efekty-api
+  - cv-efekty-api

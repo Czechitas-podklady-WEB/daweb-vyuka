@@ -1,6 +1,7 @@
 ---
 title: Superhrubá mzda
 demand: 3
+hasSolution: true
 ---
 
 :::assign

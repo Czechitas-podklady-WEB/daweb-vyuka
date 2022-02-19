@@ -1,0 +1,12 @@
+title: JSON a voláni API
+lead: Naučíme se, jak využívat veřejná API k získání dat pro naše aplikace.
+access: 'claim'
+sections:
+  - objekty-data
+  - format-json
+  - volani-api
+  - cv-volani-api
+  - destrukturovani
+  - skladani-komponent
+  - cv-komponenty-objekty
+  - ulozky-na-doma

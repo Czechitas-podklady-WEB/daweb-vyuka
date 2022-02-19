@@ -1,6 +1,7 @@
 ---
 title: Výplata
 demand: 1
+hasSolution: true
 ---
 
 :::assign

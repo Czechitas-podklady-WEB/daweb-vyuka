@@ -14,7 +14,7 @@ const numbers = [
 
 1. Vypište na výstup všechna čísla, která jsou větší než jejich předchůdce.
 1. Vypište na výstup všechny vrcholy v daném poli. Vrchol je číslo, které je větší než jeho předchůdce i jeho následovník.
-1. Nejprve spočítejte průměr čísel v poli a výsledek si ulože do proměnné <var>mean</var>. Poté spočítejte součet druhých mocnin vzdáleností všech čísel od průměru.
+1. Nejprve spočítejte průměr čísel v poli a výsledek si ulože do proměnné :var[mean]. Poté spočítejte součet druhých mocnin vzdáleností všech čísel od průměru.
 1. Spočítejte směrodatnou odchylku čísel v poli. To provedete tak, že nejprve spočítáte takzvaný rozptyl, což je průměr druhých mocnin vzdáleností všech čísel od průměru. Rozptyl pak odmocníte pomocí funkce <code>Math.sqrt</code>.
 1. Najděte s seznamu největší prvek.
 1. Najděte s seznamu největší prvek, který je menší než číslo 16.
