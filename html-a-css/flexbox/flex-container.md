@@ -24,18 +24,20 @@ Pokud máme obsah, který chceme nastylovat jako flexbox, tak vždy musíme zaji
 Kontejneru potom nastavíme vlastnost `display:flex`. 
 Toto nám zajistí, že se nám děti tohoto kontejneru poskládají vedle sebe (respektive podél jedné osy) a stanou se z nich flex-items. 
 
+::codepen{user=marketaanezka id=bGYvMBY tab=html,result}
+
 **`flex-direction: row/column/row-reverse/column-reverse`**
 
 Flexbox je jednosměrný. Směr flexboxu je určený vlastností `flex-direction`. Flexbox má hlavní a vedlejší osu. Buď je hlavní osa horizontální (řádek) a vedlejší osa vertikální (sloupec), nebo naopak. Která osa je hlavní nám určují hodnoty `row / column / row-reverse/ column-reverse`.
 Defaultní hodnota vlastnosti flex-direction je `row`.
 
-CODEPEN
+::codepen{user=marketaanezka id=XWzEqpG tab=html,result}
 
 **`flex-wrap: nowrap/wrap/wrap-reverse`**    
 
 Pomocí vlastnosti `flex-wrap` určujeme, zda se položky ve flexboxu zalamují, nebo ne. Defaultní hodnota je `nowrap`. 
 
-CODEPEN 
+::codepen{user=marketaanezka id=yLPKjMx tab=html,result} 
 
 Dále je na kontejneru možné nastavit, jak se prvky uvnitř něj zarovnají, a to pomocí justify-content a align-items.
 
@@ -49,7 +51,7 @@ Dále je na kontejneru možné nastavit, jak se prvky uvnitř něj zarovnají, a
 - Space around – prvky jsou rozmístěny rovnoměrně na ose, a kolem nich je vždy stejně volného prostoru na každé straně (pro každý prvek zleva i zprava) 
 - Space evenly - prvky jsou rozmístěny rovnoměrně na ose a mezi dvěma prvky je vždy stejné místo 
 
-CODEPEN
+::codepen{user=marketaanezka id=GROxdmW tab=html,result} 
 
 **`align-items: stretch/flex-start/flex-end/center/baseline`**      
        
@@ -60,6 +62,6 @@ CODEPEN
 - Center - zarovnání do středu osy 
 - Baseline - zarovnání podle prvního řádku textu 
 
-CODEPEN 
+::codepen{user=marketaanezka id=qBVoYVd tab=html,result}  
 
 

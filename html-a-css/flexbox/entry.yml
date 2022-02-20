@@ -6,5 +6,7 @@ sections:
   - flex-container
   # - vlastnosti flex items
   - flex-items
-  # 
-  - cv-opakovani
+  # cvičení
+  - cv-flexbox
+  # hry na flexbox 
+  - flexbox-hry

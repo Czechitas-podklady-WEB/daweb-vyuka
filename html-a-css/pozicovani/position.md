@@ -50,6 +50,8 @@ Prvek s pozicí fixed je také vyjmutý z toku stránky. Pozicuje se **vůči vi
 
 ::codepen{user=marketaanezka id=podLgPx tab=html,result}
 
+::codepen{user=marketaanezka id=bGYvYPW tab=html,result}
+
 ### Sticky
 
 Určitě víte, co myslím, když vám připomenu ty otravné reklamy v článku, které i když přes ně scrollujete, "přilepí" se vám k okraji okna a pořád na vás svítí. Přesně takhle se chová pozice sticky. **Pokud je prvek uvnitř viewportu, chová se jako position static** (je v normálním toku stránky). Pokud ale scrollujeme **dál, prvek se "přilepí" a chová se jako position fixed**. Podle toho, jestli nastavíme hodnotu top nebo bottom, se prvek "přilepí" při scrollování nahoru nebo naopak dolů.
