@@ -1,5 +1,5 @@
 ---
-title: Dovednosti
+title: Okno
 demand: 1
 ---
 
