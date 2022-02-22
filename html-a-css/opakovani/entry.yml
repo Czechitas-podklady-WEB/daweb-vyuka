@@ -1,0 +1,9 @@
+title: Opakování
+lead: Opakování základních znalostí HTML a CSS
+sections:
+  # - html - intro, tagy, atributy, 
+  - html
+  # - css - intro, syntax, box-model 
+  - css
+  # - vizitka od Filipa
+  - cv-opakovani

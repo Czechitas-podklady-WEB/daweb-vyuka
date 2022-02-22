@@ -1,0 +1,12 @@
+title: Flexbox
+lead: Naučíme se jak používat magický flexbox!
+access: claim
+sections:
+  # - vyklad  
+  - flex-container
+  # - vlastnosti flex items
+  - flex-items
+  # cvičení
+  - cv-flexbox
+  # hry na flexbox 
+  - flexbox-hry
