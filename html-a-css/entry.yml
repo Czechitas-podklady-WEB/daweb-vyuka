@@ -2,8 +2,8 @@ title: HTML a CSS
 lead: Naučíte se lépe ovládat jazyky HTML a CSS pro obsahovou a vizuální tvorbu statických webových stránek.
 lessons:
   - opakovani
-  - pozicovani-a-flex-1
-  - flex-2
-  - selektory-a-bem
-  - responsivni-design
-  - formulare
+  # - pozicovani-a-flex-1
+  # - flex-2
+  # - selektory-a-bem
+  # - responsivni-design
+  # - formulare
