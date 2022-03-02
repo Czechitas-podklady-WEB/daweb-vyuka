@@ -1,5 +1,3 @@
 ## Node.js a NPM
 
-Nyní je potřeba nainstalovat Node.js a balíčkovací systém NPM. Díky nim budeme moct vytvářet moderní stránky v JavaScriptu. Opět následujte instrukce na oficiální stránce https://nodejs.org nebo si pusťte následující video. NPM je součást Node.js, takže ho není potřeba instalovat zvlášť.
-
-::youtube{uid=qp_Clw7Pw8E}
+Nyní je potřeba nainstalovat Node.js a balíčkovací systém NPM. Tyto programy slouží ke spouštění JavaScriptových programů a díky nim budeme moct vytvářet moderní webové stránky. Opět následujte instrukce na (oficiální stránce)[https://nodejs.org]. Stáhněte a naistalujte verzi označenou jako LTS. V současné době je to verze `16.14.0 LTS`. Ćíslo verze může být i vyšší, pokud tento manuál čtete někdy v budoucnosti. 
