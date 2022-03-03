@@ -3,8 +3,9 @@ lead: Pro všechny programátory je důležité umět psát na klávesnici speci
 access: 'claim'
 sections:
   - terminal
-  - shell-prikazy
-  - slozky-navigovani
+  - slozky-navigace
+  - overeni
   - specialni-znaky
   - cv-znaky
   - shrnuti
+  - dobrovolne-cteni
