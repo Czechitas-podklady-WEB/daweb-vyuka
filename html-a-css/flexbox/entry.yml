@@ -1,0 +1,12 @@
+title: Flexbox
+lead: Naučíme se jak0 vlastnosti mají flex items.
+access: claim
+sections:
+  # - vyklad flex items
+  - flex-items
+  # cvičení
+  - cv-flexbox
+  # hry na flexbox
+  - flexbox-hry
+  # cvičení na doma
+  - cv-nadoma

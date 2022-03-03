@@ -3,7 +3,7 @@ title: Travelweb
 demand: 1
 ---
 
-Stáhněte si [webovou stránku](assets/travelweb.zip). Jedná se o mock cestovatelské stránky. Za použití pozicování přetvoř stránku tak, aby vypadala, jako výsledek: 
+Stáhněte si [webovou stránku](assets/travelweb.zip). Jedná se o mock cestovatelské stránky. Za použití pozicování přetvořte stránku tak, aby vypadala, jako výsledek:
 
 ::fig[travel web result]{src=assets/cviceni_travel_result.gif}
 
