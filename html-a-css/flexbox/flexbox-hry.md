@@ -1,6 +1,7 @@
-## Hry na procvičení 
+## Hry na procvičení
 
-[Žabičky](https://flexboxfroggy.com/#cs)        
+[Žabičky](https://flexboxfroggy.com/#cs)
 
-[Flexbox defense](http://www.flexboxdefense.com/)       
-[Zombíci](https://flexboxzombies.com/p/flexbox-zombies)         
+[Flexbox defense](http://www.flexboxdefense.com/)
+
+[Zombíci](https://flexboxzombies.com/p/flexbox-zombies)

@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+.contact-list {
+  background-color: #cfe1e7;
+  padding: 5px;
+  border-radius: 10px;
+  font-family: monospace;
+}
+.contact {
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #446d8059;
+  padding: 20px;
+  margin: 15px;
+  width: 400px;
+}
+.photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid #6995a959;
+}
+
+.info {
+  margin-left: 20px;
+}
+.info p {
+  font-size: 22px;
+}
+
+.buttons {
+  padding: 0 10px;
+}
+
+.call,
+.message {
+  width: 30px;
+}
+
+/* ----Tvoje styly----- */
