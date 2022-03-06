@@ -1,0 +1,7 @@
+title: CSS selektory a metodika BEM
+lead: Ukážeme si pokročilé CSS selektory a princip psaní CSS pomocí metodiky BEM
+access: claim
+sections:
+  # - vyklad selektory
+  - selectors
+  - specificity

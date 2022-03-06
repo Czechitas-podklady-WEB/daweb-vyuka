@@ -1,0 +1,110 @@
+*,
+:before,
+:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #2c3e66;
+  background-color: #e4e2e2;
+}
+
+h1 {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+/*---------Třídy níže přiřad ke správným elementům v HTML-----*/
+
+.holiday {
+  width: 650px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(92deg, #bdc6f0, #b6e6e9);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 20px;
+}
+
+.holiday__picture {
+  flex: 0 0 50%;
+  width: 50%;
+  margin: 0;
+  border-radius: 4px;
+}
+
+.holiday__offer {
+  height: 100%;
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+
+.holiday__title {
+  margin-bottom: 8px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #4c61c6;
+}
+
+.holiday__stay {
+  color: #4c61c6;
+  letter-spacing: 0.3px;
+  font-weight: 600;
+}
+
+.holiday__description {
+  margin-top: 8px;
+  text-align: justify;
+}
+
+.holiday__footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.holiday__price {
+  width: 120px;
+  height: 50px;
+  border: 1.2px solid #4c61c6;
+  border-radius: 8px;
+  color: #4c61c6;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.holiday__price--promo {
+  background-color: #ffec88;
+  border: 2px solid #dac658;
+}
+
+.holiday__book-btn {
+  width: 120px;
+  height: 50px;
+  border: 1.2px solid #4c61c6;
+  border-radius: 8px;
+  background-color: #4c61c6;
+  color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  box-shadow: 0 0 8px #503d50b6;
+}

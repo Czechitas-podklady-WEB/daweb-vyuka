@@ -1,0 +1,45 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+.container {
+  border: 1px solid #bfd6e6;
+  background-color: #dde9f3;
+}
+.activity {
+  margin: 10px;
+  background-size: contain;
+  width: 300px;
+  height: 200px;
+}
+
+.read {
+  background-image: url("img/read.jpg");
+}
+
+.cook {
+  background-image: url("img/cook.jpg");
+}
+
+.code {
+  background-image: url("img/code.jpg");
+}
+
+.family {
+  background-image: url("img/family.jpg");
+}
+
+.netflix {
+  background-image: url("img/netflix.jpg");
+}
+
+.sleep {
+  background-image: url("img/sleep.jpg");
+}
+
+/* --------------- */
+/* zadání: 
+Prohlédni si html soubor. Nastyluj obrázky, aby se zobrazily vedle sebe, vycentrovaly v obalovém divu a zalamovaly, pokud se nevejdou na stránku. 
+Potom obrázky seřaď podle toho, jakou aktivitu budeš dělat dnes po lekci :)   */

@@ -1,0 +1,23 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+*, :after, :before { box-sizing: border-box; }
+
+.ctverecek {
+    font: 30px/1 sans-serif;
+    font-weight: bold;
+    border: 1px solid black;
+    min-height: 100px;
+}
+
+.prvni { background-color: #2ecc71;}
+.druhy { background-color: #f1c40f;}
+.treti { background-color: #3498db;}
+.ctvrty { background-color: #e74c3c;}
+
+.kontejner {
+    padding: 10px;
+    border: 1px dashed red;
+    background-color: #ffffcc;
+}
+
+/* ---------------------------------------------------- */
+/* ZDE NAPIŠ VLASTNÍ CSS */
