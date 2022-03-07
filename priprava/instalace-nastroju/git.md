@@ -10,7 +10,7 @@ Instalátor Gitu si stáhnete na stránce [git-scm.com](https://git-scm.com). B�
 
 ### Mac OS
 
-Na Macu by mělo stačit spustit termínál a napsat do něj příkaz `git --version`. Pokud nemáte Git již naistalovaný, tak by měl systém sám spustit průvodce instalac9. Pokud nevíte co je termínál a jak do něj napsat příkaz, počkejte s instalací Gitu na následující lekci. 
+Na Macu by mělo stačit spustit terminál a napsat do něj příkaz `git --version`. Pokud nemáte Git již naistalovaný, tak by měl systém sám spustit průvodce instalac9. Pokud nevíte co je termínál a jak do něj napsat příkaz, počkejte s instalací Gitu na následující lekci. 
 
 ### Linux (Ubuntu, Debian)
 

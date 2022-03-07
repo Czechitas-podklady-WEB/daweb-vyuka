@@ -92,7 +92,7 @@ Abychom mohli webpack spustit, v souboru `package.json` si vytvoříme příkaz 
 }
 ```
 
-Nyní stačí otevřít v našem projektu termínál a napsat příkaz
+Nyní stačí otevřít v našem projektu terminál a napsat příkaz
 
 ```sh
 $ npm run build
