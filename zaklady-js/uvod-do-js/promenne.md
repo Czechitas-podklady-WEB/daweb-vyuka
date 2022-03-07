@@ -6,7 +6,7 @@ Mějme čas v hodinách zadaný ve 24-hodinovém formátu. Tři hodiny odpoledne
 
 ```js
 const cas = 13;
-const novyCas = (cas + 15);
+const novyCas = (cas + 15) % 24;
 document.body.innerHTML = novyCas;
 ```
 
