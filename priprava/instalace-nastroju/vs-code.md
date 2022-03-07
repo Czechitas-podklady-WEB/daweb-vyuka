@@ -14,7 +14,7 @@ Poté do okna pro vyhledávání (_Search Extensions in Marketplace_) zadáte n�
 
 Pro webovou akademii doporučujeme použití následujících rozšíření.
 
-- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) - Automaticky formátuje váš kód tak, aby vypadal hezky a "profesionálně" 🙂. Budeme jej používat na jazyky jako HTML, CSS, JavaScript, JSON a další.
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) - Automaticky formátuje váš kód tak, aby vypadal hezky a „profesionálně“ 🙂. Budeme jej používat na jazyky jako HTML, CSS, JavaScript, JSON a další.
 - [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client) - Díky tomuto rozšíření se vám bude lépe pracovat s API v pozdějších lekcích JavaScriptu.
 
 ### Nastavení VS Code
