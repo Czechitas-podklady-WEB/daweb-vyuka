@@ -18,7 +18,7 @@ if (age < 18) {
 }
 ```
 
-Zatím nebudeme řešit odkud se vzala proměnná :var[age</var>. Především si všimneme, že celý program obsahuje dohromady pět různých bloků kódu oddělených složenými závorkami. Pokud uvnitř nějakého bloku vytvoříme proměnnou, například <var>remains</var>, tato proměnná je "vidět" pouze uvnitř tohoto bloku. Tento blok se stává jejím :term{cs="oborem platnosti" en="scope"}. Jakmile její blok kódu skončí, proměnná <var>remains] zanikne a již s ní není možné pracovat.
+Zatím nebudeme řešit odkud se vzala proměnná :var[age]. Především si všimneme, že celý program obsahuje dohromady pět různých bloků kódu oddělených složenými závorkami. Pokud uvnitř nějakého bloku vytvoříme proměnnou, například :var[remains], tato proměnná je "vidět" pouze uvnitř tohoto bloku. Tento blok se stává jejím :term{cs="oborem platnosti" en="scope"}. Jakmile její blok kódu skončí, proměnná :var[remains] zanikne a již s ní není možné pracovat.
 
 Pokud se proměnnou pokusíme použít mimo její obor platnosti, JavaScript runtime se bude tvářit jako kdyby tuto proměnnou nikdy neviděl.
 

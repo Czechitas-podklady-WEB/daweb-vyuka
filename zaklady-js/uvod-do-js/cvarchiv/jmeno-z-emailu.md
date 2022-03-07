@@ -15,7 +15,7 @@ Tedy například:
 - `romana.nejedla@czechitas.cz`
 - `slavomir.ponuchalek@yahoo.com`
 
-Zpracujte každý email takovým způsobem, že na konci budete mit dvě proměnné :var[first</var> a <var>last], které budou obsahovat jméno a příjmení získané z emailové adresy se správnou velikostí písmen. Tedy například
+Zpracujte každý email takovým způsobem, že na konci budete mit dvě proměnné :var[first] a :var[last], které budou obsahovat jméno a příjmení získané z emailové adresy se správnou velikostí písmen. Tedy například
 
 ```jscon
 > first

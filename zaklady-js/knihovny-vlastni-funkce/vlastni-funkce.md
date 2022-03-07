@@ -14,7 +14,7 @@ Naše funkce tedy bude mít dva vstupy - šířku a výšku. Ze školy si pamatu
 };
 ```
 
-Zápis funkce se dělí na definici :term{cs="vstupů" en="inputs"> (před šipkou) a <term cs="tělo" en="body"> (za šipkou). Jako vstupy v kulatých závorkách vidíme dvě slova `width` a `height`. To jsou speciální proměnné, kterým říkáme <term cs="parametry" en="parameters"}.
+Zápis funkce se dělí na definici :term{cs="vstupů" en="inputs"} (před šipkou) a :term{cs="tělo" en="body"} (za šipkou). Jako vstupy v kulatých závorkách vidíme dvě slova `width` a `height`. To jsou speciální proměnné, kterým říkáme :term{cs="parametry" en="parameters"}.
 
 Ve složených závorkách pak máme takzvané tělo funkce. To obsahuje kód, který se má vykonat, když funkci zavoláme. Úkolem naší funkce je vrátit nějaký výsledek. Speciální slovíčko `return` proto říká, co má být výsledkem naší funkce.
 

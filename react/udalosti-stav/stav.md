@@ -1,6 +1,6 @@
 ## Stav
 
-Pokud chceme udělat naše React komponenty skutečně interaktivní, je potřeba naučit se pracovat s takzvaným <term cs="stavem" en="state" />. Porozumět tomu, jak stav v Reactu funguje, je občas výzva i pro zkušenější programátory. Naštěstí význam slova :i[stav] v Reactu vychází z významu tohoto slova v realitě. Můžeme proto začít příkladem přímo ze života.
+Pokud chceme udělat naše React komponenty skutečně interaktivní, je potřeba naučit se pracovat s takzvaným :term{cs="stavem" en="state"}. Porozumět tomu, jak stav v Reactu funguje, je občas výzva i pro zkušenější programátory. Naštěstí význam slova :i[stav] v Reactu vychází z významu tohoto slova v realitě. Můžeme proto začít příkladem přímo ze života.
 
 ### Stav kolem nás
 

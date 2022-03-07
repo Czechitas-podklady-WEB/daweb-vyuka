@@ -24,7 +24,7 @@ Pro náš JavaScriptový kód budeme vždy vytvářet oddělený soubor podobně
 document.body.innerHTML = '<h1>ahoj</h1>';
 ```
 
-Co tento kód přesně dělá se dozvíme za malou chvíli. Teď je naším hlavním úkolem zapojit tento program do naší stránky. To provedeme tak, že vložíme značku `script` s odkazkazem na soubor `index.js` do hlavičky stránky.
+Co tento kód přesně dělá se dozvíme za malou chvíli. Teď je naším hlavním úkolem zapojit tento program do naší stránky. To provedeme tak, že vložíme značku `script` s odkazem na soubor `index.js` do hlavičky stránky.
 
 ```html
 <head>

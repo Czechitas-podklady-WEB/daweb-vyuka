@@ -17,7 +17,7 @@ const address = {
 };
 ```
 
-Objekt vytvoříme tak, že do složených závorek vložíme čárkou oddělené záznamy, kterým se říká :term{cs="vlastnosti" en="properties">. Každá vlastnost sestává z takzvaného <term cs="klíče" en="key"> a <term cs="hodnoty" en="value"}. 
+Objekt vytvoříme tak, že do složených závorek vložíme čárkou oddělené záznamy, kterým se říká :term{cs="vlastnosti" en="properties">. Každá vlastnost sestává z takzvaného :term{cs="klíče" en="key"} a :term{cs="hodnoty" en="value"}.
 
 ::fig[Struktura objektu]{src=assets/object.png size=80}
 

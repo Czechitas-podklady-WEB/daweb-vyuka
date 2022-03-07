@@ -11,7 +11,7 @@ Pokud chceme nějakou funkci použít, uděláme to tak, že napíšeme její jm
 3
 ```
 
-Hodnotě uvnitř kulatých závorek říkáme :term{cs="vstup" en="input"> funkce. Spuštění funkce se mezi programátory říká <term cs="volání" en="call">. Jakmile funkce dokončí operaci, <term cs="vrátí" en="return"> nám takzvaný <term cs="výstup" en="output"}. V programátorském žargonu tedy říkáme, že když **zavoláme** funkci s nějakým **vstupem**, ona nám **vrátí výstup**.
+Hodnotě uvnitř kulatých závorek říkáme :term{cs="vstup" en="input"} funkce. Spuštění funkce se mezi programátory říká :term{cs="volání" en="call"}. Jakmile funkce dokončí operaci, :term{cs="vrátí" en="return"} nám takzvaný :term{cs="výstup" en="output"}. V programátorském žargonu tedy říkáme, že když **zavoláme** funkci s nějakým **vstupem**, ona nám **vrátí výstup**.
 
 ### Rychlé občerstvení
 
@@ -26,8 +26,8 @@ Můžeme si představovat, že funkce je něco jako stánek s rychlým občerstv
 Volání funkce je také výraz podobně jako operace s hodnotami a proměnnými. Můžeme jej tedy použít uvnitř libovolného jiného výrazu. Navíc vstup pro funkci lze také vytvořit pomocí výrazu. Nabízí se tedy mnoho způsobů, jak skládat složitější výpočty, jako například tento.
 
 ```jscon
-> 17 % Math.round(30 ** 0.5)
-2
+> 70 % Math.round(100 / 3)
+4
 ```
 
 ### Užitečné funkce

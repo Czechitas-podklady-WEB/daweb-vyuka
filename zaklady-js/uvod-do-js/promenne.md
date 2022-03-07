@@ -37,7 +37,7 @@ Zde si však musíme všimnout jedné velmi důležité věci.
 
 ### JavaScript není Excel
 
-Dejte pozor na to, že do proměnné se jako do šuplíku ukládá pouze hodnota a nikoliv celý výraz. Všimněte si, že v příkladu výše jsem změnili hodnotu proměnné :var[sazba</var>. Po této změně bude v proměnné <var>vyplata] pořád původní hodnota. Pokud chceme obsah této proměnné aktualizovat, musíme příkaz spustit znova.
+Dejte pozor na to, že do proměnné se jako do šuplíku ukládá pouze hodnota a nikoliv celý výraz. Všimněte si, že v příkladu výše jsem změnili hodnotu proměnné :var[sazba]. Po této změně bude v proměnné :var[vyplata] pořád původní hodnota. Pokud chceme obsah této proměnné aktualizovat, musíme příkaz spustit znova.
 
 ```js
 let sazba = 500;

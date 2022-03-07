@@ -1,6 +1,6 @@
 ## Výpis do stránky
 
-Zatím jsme si ještě pořád nevysvětlili, jak přesně dokážeme pomocí JavaScriptu měnit obsah stránky. Ve všech dosavadních ukázkách jsme k tomu používali tajemnou promměnou :var[document.body.innerHTML], o které zatím víme pouze to, že ji pro nás vytvořil prohlížeč automaticky. V této speciální proměnn je vždý uložen obsah elementu `body`, a to jako jeden dlouhý řetězec. 
+Zatím jsme si ještě pořád nevysvětlili, jak přesně dokážeme pomocí JavaScriptu měnit obsah stránky. Ve všech dosavadních ukázkách jsme k tomu používali tajemnou proměnnou :var[document.body.innerHTML], o které zatím víme pouze to, že ji pro nás vytvořil prohlížeč automaticky. V této speciální proměnné je vždy uložen obsah elementu `body`, a to jako jeden dlouhý řetězec. 
 
 Mějme následující stránku.
 

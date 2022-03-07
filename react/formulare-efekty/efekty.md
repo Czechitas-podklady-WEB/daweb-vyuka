@@ -1,6 +1,6 @@
 ## Efekty
 
-V mírně komplikovanějších React aplikacích brzy narazíme na potřebu zareagovat na určité situace, které nastávají během vykreslování (renderování) komponenty. Budeme chtít například spustit nějaký kód ve chvíli, kdy se komponenta poprvé objeví na stránce. Čas od času také budeme chtít v komponentě provést něco ve chvíli, kdy se změní hodnota v props nebo ve stavu. K tomuto nám v Reactu slouží takzvané <term cs="efekty" en="effects" />.
+V mírně komplikovanějších React aplikacích brzy narazíme na potřebu zareagovat na určité situace, které nastávají během vykreslování (renderování) komponenty. Budeme chtít například spustit nějaký kód ve chvíli, kdy se komponenta poprvé objeví na stránce. Čas od času také budeme chtít v komponentě provést něco ve chvíli, kdy se změní hodnota v props nebo ve stavu. K tomuto nám v Reactu slouží takzvané :term{cs="efekty" en="effects"}.
 
 Efekty jsou v podstatě velmi podobné událostem. Ve chvíli, kdy uvnitř komponenty něco nastane, budeme chtít zavolat naši funkci. Jako příklad si vyrobíme jednoduchou aplikaci, která řiká, kdo má zrovna svátek.
 

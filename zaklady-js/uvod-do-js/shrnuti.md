@@ -3,7 +3,7 @@
 Po této lekci byste měli vědět a znát
 
 * první důležité hodnoty - čísla a řetězce,
-* aritmetické operátory - sčítání, odčítání, násobení, dělení, mocnění, zbytek po dělení,
+* aritmetické operátory - sčítání, odčítání, násobení, dělení, zbytek po dělení,
 * základní funkce:
   - `Math.round`, `Math.floor`, `Math.ceil`,
   - `Math.random`,

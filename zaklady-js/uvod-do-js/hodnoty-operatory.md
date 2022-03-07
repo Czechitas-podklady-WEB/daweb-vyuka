@@ -25,22 +25,22 @@ Pozor na to, že ve všech programovacích jazycích (s výjimkou MS Excel) se d
 
 Operátory jsou v našem případě sčítání, odčítání, násobení a dělení. Je potřeba si zvyknout na to, jakými symboly se JavaScriptu zapisují. Možná budete muset malinko prohledat klávesnici, než najdete například dopředné lomítko nebo hvězdičku.
 
-Kromě výše zmíněných nabízí JavaScript dva další zajímavé operátory: mocnění a zbytek po dělení.
+Kromě výše zmíněných nabízí JavaScript jeden zajímavý operátor, který jste možná ještě nepotkali. Jmenuje se zbytek po dělení.
 
 ```jscon
-> 2 ** 4
-16
 > 12 % 5
 2
+> 11 % 2
+1
 ```
 
-Mocnění si nejspíš pamatujete ještě ze základní školy. Zbytek po dělení však může být překvapení obzvlášť proto, že se zapisuje symbolem procenta. Výsledek této operace je zbytek po celočíselném dělení. Můžeme pomocí něj například zjistit, zda je číslo sudé, tedy zbytek po dělení dvěma je roven nule. Později uvidíme užitečnější a také zajímavější použití této operace.
+Pro zbytek po dělení se překvapivě používá znak procenta, přestože s procenty tento operátor nemá nic společného. Jeho výsledke je zbytek po celočíselném dělení prvního čísla druhým číslem. Zbytek po dělení můžeme použít například k zjištění zde ja číslo sudé nebo liché. Sudá čísla totiž mají po dělení dvěma zbytek 0. Později uvidíme užitečnější a také zajímavější použití této operace.
 
 Z operátorů a hodnot můžete samozřejmě stavět mnohem složitější konstrukce třeba i s použitím závorek.
 
 ```jscon
-> 5 * (9 + 7) ** (1/2)
-20
+> 5 * (3 + 7) % 9
+5
 ```
 
 Konstrukcím vytvořeným z hodnot a operátorů se odborně říká :term{cs="výrazy" en="expressions"}. Pokud necháme JavaScript runtime spočítat výsledek výrazu, získáme tak jeho hodnotu. Každý výraz tedy má svoji hodnotu a JavaScript runtime nám ji rád sdělí, když mu výraz pošleme v konzoli. Je dobré zde zmínit, že ne všechny konstrukce v JavaScriptu jsou výrazy. To se však ukáže jako důležité až později.
