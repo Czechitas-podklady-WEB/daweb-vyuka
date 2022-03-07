@@ -9,7 +9,7 @@ Představte si, že tvoříte e-shop, ve kterém mají produkty následující s
 const product1 = {
   name: 'Mlýnek na kávu',
   price: 520,
-  currency: 'kč',
+  currency: 'Kč',
 };
 ```
 
@@ -27,7 +27,7 @@ Postupujte dle kroků níže a vytvořte kód pro zobrazení produktu na stránc
    ```html
    <div class="product">
      <h2 class="product__name">Mlýnek na kávu</h2>
-     <p class="product__price">Cena: 520 kč</p>
+     <p class="product__price">Cena: 520 Kč</p>
    </div>
    ```
 1. Vyberte ze stránky element `.products-section` a vložte do něj vámi vytvořené HTML.

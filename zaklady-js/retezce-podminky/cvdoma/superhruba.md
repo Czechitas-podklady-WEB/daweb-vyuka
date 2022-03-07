@@ -46,8 +46,8 @@ const net = Math.floor(
 );
 
 document.body.innerHTML = (
-  'superhrubá: ' + superGross + ' kč, ' +
-  'hrubá: ' + gross + ' kč, ' +
-  'čistá: ' + net + ' kč'
+  'superhrubá: ' + superGross + ' Kč, ' +
+  'hrubá: ' + gross + ' Kč, ' +
+  'čistá: ' + net + ' Kč'
 );
 ```

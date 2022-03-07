@@ -48,7 +48,7 @@ const card1Elm = document.querySelector('#card1');
 card1Elm.innerHTML = `
   <h2 class="product__name>${product1.name}</h2>
   <p class="product__desc>${product1.description}</p>
-  <div class="product__price">${product1.price} kč</div>
+  <div class="product__price">${product1.price} Kč</div>
   <button>Koupit</button>
 `;
 ```
