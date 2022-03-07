@@ -10,7 +10,7 @@ const novyCas = (cas + 15);
 document.body.innerHTML = novyCas;
 ```
 
-V tomto kusu kódu jsme vytvořili hned dvě proměnné: :var[cas] a :var[novyCas]. Každá proměnné v JavaScriptu musí mít své jméno. To by mělo dobře vystihovat, co je v proměnné uloženo. Pokud chceme v programu používat nějakou promennou, musíme ji vždy nejdříve vytvořit. To se dělá pomocí klíčového slova `const`. Takovou proměnnou pak můžeme použít v libovolném výrazu tak, že prostě uvedeme její jméno.
+V tomto kusu kódu jsme vytvořili hned dvě proměnné: :var[cas] a :var[novyCas]. Každá proměnná v JavaScriptu musí mít své jméno. To by mělo dobře vystihovat, co je v proměnné uloženo. Pokud chceme v programu používat nějakou promennou, musíme ji vždy nejdříve vytvořit. To se dělá pomocí klíčového slova `const`. Takovou proměnnou pak můžeme použít v libovolném výrazu tak, že prostě uvedeme její jméno.
 
 Proměnná :var[document.body.innerHTML] je trochu speciální. Tuto proměnnou vytvářet nemusíme, protože už ji pro nás vytvořil prohlížeč při načtení stránky. Nepíšeme tedy před ni `const`.
 
