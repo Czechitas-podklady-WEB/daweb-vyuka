@@ -34,7 +34,7 @@ Kromě výše zmíněných nabízí JavaScript jeden zajímavý operátor, kter�
 1
 ```
 
-Pro zbytek po dělení se překvapivě používá znak procenta, přestože s procenty tento operátor nemá nic společného. Jeho výsledke je zbytek po celočíselném dělení prvního čísla druhým číslem. Zbytek po dělení můžeme použít například k zjištění zde ja číslo sudé nebo liché. Sudá čísla totiž mají po dělení dvěma zbytek 0. Později uvidíme užitečnější a také zajímavější použití této operace.
+Pro zbytek po dělení se překvapivě používá znak procenta, přestože s procenty tento operátor nemá nic společného. Jeho výsledek je zbytek po celočíselném dělení prvního čísla druhým číslem. Zbytek po dělení můžeme použít například k zjištění zde ja číslo sudé nebo liché. Sudá čísla totiž mají po dělení dvěma zbytek 0. Později uvidíme užitečnější a také zajímavější použití této operace.
 
 Z operátorů a hodnot můžete samozřejmě stavět mnohem složitější konstrukce třeba i s použitím závorek.
 
