@@ -47,11 +47,11 @@ Jednou z funkcí, se kterými si užijeme více zábavy, je `Math.random`. Ta p�
 
 ```jscon
 > Math.random()
-0.3533144240115158
+0.5533144240115158
 > Math.random()
 0.30269146855422213
 > Math.random()
-0.3730206392247666
+0.8730206392247666
 ```
 
 Všimněte si, že tato funkce nemá žádný vstup. I takové funkce jsou možné a nejsou žádnou velkou výjimkou. 
