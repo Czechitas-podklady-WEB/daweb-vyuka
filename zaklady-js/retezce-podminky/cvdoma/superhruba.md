@@ -23,7 +23,7 @@ Superhrubá mzda se spočítá z hrubé mzdy takto:
 1. Odečteme 4,5 % hrubé mzdy jako zdravotní pojištění, které platí zaměstnanec,
 1. Odečteme 6,5 % hrubé mzdy jako sociální pojištění, které platí zaměstnanec,
 1. Spočítáme daňový základ tak, že superhrubou mzdu zaokrouhlíme na stovky nahoru..
-1. Odečteme daň z příjmu, která činí 15% z daňového základu.
+1. Odečteme daň z příjmu, která činí 15 % z daňového základu.
 1. Přičteme 2070 jako základní slevu na dani, na kterou má nárok každý.
 1. Výsledek zaokrouhlíme **dolů** na celé koruny.
 

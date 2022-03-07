@@ -59,7 +59,7 @@ vyplata = 8 * 21 * sazba
 document.body.innerHTML = vyplata;
 ```
 
-Nebo ji můžeme chtít navýšit třeba o 15%.
+Nebo ji můžeme chtít navýšit třeba o 15 %.
 
 ```js
 sazba = sazba * 1.15;
