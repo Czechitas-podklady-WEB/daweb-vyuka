@@ -10,7 +10,7 @@ V okně terminálu vidíte velký bílý kurzor a před ním jakýsi kus textu, 
 
 ::fig[Terminál]{src=assets/terminal.png}
 
-Můj terminál říká, že moje uživatelské jméno je `podlomar` a terminál jsem otevřel ve složce `daweb`. Po otevření terminálu v něm můžete začít psát příkazy. V předchozí lekci jsme nainstalovali program Node.js. Zkusíme zjistit jeho verzi. Do termínálu napište 
+Můj terminál říká, že moje uživatelské jméno je `podlomar` a terminál jsem otevřel ve složce `daweb`. Po otevření terminálu v něm můžete začít psát příkazy. V předchozí lekci jsme nainstalovali program Node.js. Zkusíme zjistit jeho verzi. Do terminálu napište 
 
 ```
 node --version
@@ -24,7 +24,7 @@ Pokud vidíte vyšší verzi, všechno je v pořádku. Pokud naopak terminál vy
 
 ### Dolary
 
-V životě programátora se příkazy dají psát i jinam než přímo do termínálu. Aby bylo jasné, že daný přikaz se má napsat do terminálu, ustálil se mezi programátory zvyk uvozovat takové příkazy znakem dolaru.
+V životě programátora se příkazy dají psát i jinam než přímo do terminálu. Aby bylo jasné, že daný přikaz se má napsat do terminálu, ustálil se mezi programátory zvyk uvozovat takové příkazy znakem dolaru.
 
 ```sh
 $ node --version
