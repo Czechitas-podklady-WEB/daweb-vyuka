@@ -62,7 +62,8 @@ const flight = {
 
 Proveďte následující:
 
-1. Vypište do konzole název cílové země.
-1. Do separátní proměnné uložte objekt udávající maximální rozměry zavazadel. 
-1. Z objektu s rozměry zavazadel vytáhněte maximální povolené rozměry příručního zavazadla a vypište tyto rozměry jeden po druhém do konzole. 
-1. Vypište do konzole, kolik cestující zaplatí za druhé zavazadlo v českých korunách zaokrouhleno nahoru na celé koruny.
+1. Vypište do stránky název startovní a cílové země.
+1. Pomocí destrukturování uložte do separátní proměnné objekt udávající maximální rozměry zavazadel.
+1. Z objektu s rozměry zavazadel vytáhněte maximální povolené rozměry příručního zavazadla a vypište tyto rozměry opět jeden po druhém vypište do stránky. 
+1. Vypište do stránky, kolik cestující zaplatí za druhé zavazadlo v českých korunách zaokrouhleno nahoru na celé koruny.
+1. Pokud máte chuť, malinko stránku nastylujte, aby se uživatel v informacích vyznal. 
