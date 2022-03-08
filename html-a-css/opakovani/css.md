@@ -28,12 +28,12 @@ Všechny prvky na stránce jsou v základu hranaté / obdélník / box.
 **Box model** je souhrnný název pro skupinu vlastností, která ovlivňuje vzhled a chování tohoto obdélníku. Těmito vlastnostmi myslíme:
 
 - samotný obsah prvku
-- **`margin`** - okraj okolo prvku vně rámečku
-- **`padding`** - okraj okolo prvku unvitř rámečku
-- **`border`** - rámeček, skládá se z vlastností
-  - `border-width` `border-style` `border-color`
 - **`width`** - šířka
 - **`height`** - výška
+- **`padding`** - okraj okolo prvku unvitř rámečku
+- **`border`** - rámeček, skládá se z vlastností
+  - `border-width`, `border-style`, `border-color`
+- **`margin`** - okraj okolo prvku vně rámečku
 
 ::fig[Box model]{src=assets/boxmodel.png}
 

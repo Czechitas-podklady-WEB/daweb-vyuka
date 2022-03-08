@@ -1,9 +1,11 @@
-## Tok stránky
+## CSS position
+
+#### Tok stránky
 
 Před tím, než se ponoříme do pozicování, připomeneme si jak se prvky na naší stránce skládají. Pokud jsou prvky **blokové**, zabírají celou šířku stránky. To je například `div`, `article`, `p` nebo `h2`. Prvky **řádkové** (inline) zabírají pouze tolik, kolik je jejich obsah a skládají se vedle sebe. Inline prvky jsou třeba `span`, `a`, nebo `button`. Tomu se říká normální tok stránky (normal flow).  
 Často se nám ale stává, že potřebujeme prvky poskládat na stránce jinak. Dříve se k tomu využívaly tabulky a vlastnost float, ale dnes se kromě jiného využívá vlastnost position.
 
-## Page a viewport
+#### Page a viewport
 
 Už víme, co je prvek na stránce a co je to tok stránky. Pro pochopení vlastnosti `position` si ještě ujasníme rozdíl mezi **stránkou** (page) a tzv. "průhledem", kterému budeme říkat anglckým výrazem **viewport**.
 Stránka je celý náš HTML obsah, který je na dané URL adrese. Viewport je ta část stránky, kterou momentálně vidíme v našem okně.
@@ -17,13 +19,14 @@ Jak název napovídá, vlastnost `position` nám umožňuje ovlivňovat pozici p
 - `absolute`
 - `fixed`
 - `sticky`
+
 Vlastnost position nastavujeme tomu prvku, který chceme někam pozicovat (posouvat na ose x a y). Tomu samému prvku také nastavíme, o kolik se má posunout a v jakém směru.
 
 - shora – `top`
 - zdola – `bottom`
 - zleva – `left`
 - zprava – `right`
-Hodnoty těchto vlastností jsou jednotky (`pixely, em, rem, vh,` etc.)
+  Hodnoty těchto vlastností jsou jednotky (`pixely, em, rem, vh,` etc.)
 
 Ačkoli se to může zdát trochu zavádějící, tak všimněme si, že top neznamená nahoru, a left doleva, ale shora a zleva. Tyto hodnoty nám říkají, o kolik se prvek posune od okraje toho, vůči čemu se pozicuje.
 

@@ -3,7 +3,7 @@ Například už není potřeba používat tabulky, nebo floaty.
 V současné době se pro rozložení prvků na stránce nebo v sekcích používá **flexbox** nebo **grid**.
 Flexbox je ideální pro rozložení prvků v sekcích (navbar, galerie fotek etc.), ale dá se s ním i udělat layout celého webu. Pro složitější webový layout se doporučuje použití gridu. Ten na daWeb probírat nebudeme, ale určitě se s ním v budoucnu setkáte a nasdílíme zdroje, abyste se ho mohly v průběhu doučit.
 
-## Flexbox
+## Flexbox I
 
 Flexbox je nástroj pro tvorbu layoutu (rozložení prvků) pomocí css.
 Pamatujme si základní pravidla:
@@ -15,7 +15,7 @@ Pamatujme si základní pravidla:
 Flexbox se vždy týká obalového elementu – **kontejneru** a jeho potomků – **položek**. V angličtině se jim říká **flex-container** a **flex-items**.
 Flexbox znamená, že položky v daném kontejneru jsou flexibilní, pružné a tak i vyplňují volný prostor v kontejneru.
 Při tvoření layoutu nastavujeme nějaké vlastnosti kontejneru a jiné zase položkám.
-  
+
 ## Vlastnosti flex-containeru
 
 ### `display: flex`
@@ -51,7 +51,7 @@ Vlastnost `justify-content` určuje, jak se položky zarovnají **podél hlavní
 - `space-between` – prvky jsou rozmístěny rovnoměrně na ose, první prvek úplně na začátku, poslední prvek úplně na konci
 - `space-around` – prvky jsou rozmístěny rovnoměrně na ose, a kolem nich je vždy stejně volného prostoru na každé straně (pro každý prvek zleva i zprava)
 - `space-evenly` - prvky jsou rozmístěny rovnoměrně na ose a mezi dvěma prvky je vždy stejné místo
-  
+
 ::codepen{user=marketaanezka id=GROxdmW tab=html,result}
 
 ### `align-items`
@@ -63,8 +63,8 @@ Vlastnost `align-items` určuje zarovnání prvků **podle vedlejší osy**.
 - `flex-end` - zarovnání na konec osy
 - `center` - zarovnání do středu osy
 - `baseline` - zarovnání podle prvního řádku textu
-  
-::codepen{user=marketaanezka id=qBVoYVd tab=html,result}  
+
+::codepen{user=marketaanezka id=qBVoYVd tab=html,result}
 
 ### Tvorba layoutu
 
