@@ -3,5 +3,5 @@ lead: Ukážeme si pokročilé CSS selektory a princip psaní CSS pomocí metodi
 access: claim
 sections:
   # - vyklad selektory
-  - selectors
-  - specificity
+  - selektory
+  - specificita

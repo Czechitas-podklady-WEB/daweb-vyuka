@@ -24,13 +24,15 @@ selector:pseudo-class {
 
 Existuje mnoho druhů pseudotříd, které určují prvky podle stavu odkazu, chování uživatele, nebo HTML struktury. V HTML tyto třídy nevidíme a prohlížeč si je přidá, pokud prvek stavu odpovídá. Některé často využívané pseudotřídy jsou
 
-#### Při najetí myši `:hover`
-
 #### Odkaz před navštívením `:link`
 
 #### Odkaz po navštívení `:visited`
 
+#### Při najetí myši `:hover`
+
 #### Prvek, který má fokus `:focus`
+
+#### Prvek, který je aktivní `:active`
 
 Existují také pseudotřídy, které vybírají elementy podle jejich pozice v dokumentu
 
@@ -42,8 +44,30 @@ Celý [seznam pseudotříd](https://developer.mozilla.org/en-US/docs/Web/CSS/Pse
 
 #### Vícenásobný selektor `h1, h2`
 
-#### Selektor pro vícenásobnou třídu `.article.active.newsfeed`
+#### Selektor pro vícenásobnou třídu `article.active.newsfeed`
 
 #### Selektor typu potomek `div p`
 
 #### Selektor typu přímý potomek `div > p`
+
+### Pseudoelementy
+
+Za zmínku také stojí kategorie pseudoelementů. Ty nám umožňují ve stránce vybrat „virtuální elementy“, které nevidíme v HTML dokumentu, ale může být užitečné s nimi pracovat a přiřadit jim odlišný způsob zobrazení. Pomocí pseudoelementů můžeme například vybrat první písmeno textu, nebo přidat obsah před prvek.
+
+```css
+selector::pseudo-element {
+  property: value;
+}
+```
+
+Užitečné pseudoelementy jsou například:
+
+#### První písmeno textu `::first-letter`
+
+#### První řádek textu `::first-line`
+
+#### Obsah před prvkem `::before`
+
+#### Obsah za prvkem `::after`
+
+::codepen{user=marketaanezka id=gOXyjqb tab=html,result}
