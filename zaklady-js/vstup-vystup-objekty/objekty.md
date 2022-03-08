@@ -1,6 +1,6 @@
 ## Objekty
 
-Prozatím jsme v naších programech pracovali pouze s čísly a řetězci. V reálnějších programech však budeme potřebovat do naších proměných uložit více, než jednu informaci. Představte si například, že chceme evidovat doručovací adresu uživatele e-shopu. Každý adresa má ulici, číslo domu, město a PSČ.  Takovou informaci bychom mohli zkusit nacpat do jednoho řetězce třeba takto. 
+Prozatím jsme v naších programech pracovali pouze s čísly a řetězci. V reálnějších programech však budeme potřebovat do naších proměných uložit více než pouze jednu informaci. Představte si například, že chceme evidovat doručovací adresu uživatele e-shopu. Každý adresa má ulici, číslo domu, město a PSČ. Takovou informaci bychom mohli zkusit nacpat do jednoho řetězce třeba takto. 
 
 ```js
 const address = 'Pod Kaštany 31, 123 11 Horní Dlouhonosy';
@@ -19,7 +19,7 @@ const address = {
 
 Objekt vytvoříme tak, že do složených závorek vložíme čárkou oddělené záznamy, kterým se říká :term{cs="vlastnosti" en="properties"}. Každá vlastnost sestává z takzvaného :term{cs="klíče" en="key"} a :term{cs="hodnoty" en="value"}.
 
-::fig[Struktura objektu]{src=assets/object.png size=80}
+::fig[Struktura objektu]{src=assets/object.png size=50}
 
 Pomocí klíčů pak můžeme z objektu získat jednotlivé hodnoty použitím takzvané :term{cs="tečkové notace" en="dot notation"}.
 
