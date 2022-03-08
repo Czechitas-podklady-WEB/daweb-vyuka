@@ -1,0 +1,13 @@
+title: Flexbox a BEM
+lead: Naučíme se jaké vlastnosti mají flex items a poté se podíváme na princip psaní CSS pomocí metodiky BEM.
+access: claim
+sections:
+  # - vyklad flex items
+  - flex-items
+  # cvičení
+  - cv-flexbox
+  # hry na flexbox
+  - bem
+  - cv-bem
+  # cvičení na doma
+  - cv-nadoma
