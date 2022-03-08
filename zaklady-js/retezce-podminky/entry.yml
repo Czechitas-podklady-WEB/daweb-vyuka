@@ -7,8 +7,10 @@ sections:
   - interpolace
   - cv-retezce
   - pravdivostni-hodnoty
+  - podminky
   - cv-podminky
   - ulozky-na-doma
   - cteni-na-doma
-  - volitelne-ulozky
   - shrnuti
+  - volitelne-ulozky
+  

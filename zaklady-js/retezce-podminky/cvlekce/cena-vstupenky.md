@@ -3,7 +3,7 @@ title: Cena vstupenky
 demand: 2
 ---
 
-Pokusme se o základ jednoduchého rezervačního sestému pro vstupenky do divadla. Nechte uživatele zadat svůj věk. Vytvořte si proměnnou :var[plnaCena], do které uložte hodnotu 12. Vytvořte podmínku, která do proměnné :var[cena] uloží cenu spočítanou podle věku uživatele dle následujících pravidel
+Pokusme se o základ jednoduchého rezervačního sestému pro vstupenky do divadla. Založte si webovou stránku s JavaScriptem. Nechte uživatele zadat svůj věk. Vytvořte si proměnnou :var[plnaCena], do které uložte hodnotu 12. Vytvořte podmínku, která do proměnné :var[cena] uloží cenu spočítanou podle věku uživatele dle následujících pravidel
 
 - 0 euro pro návštěvníky mladší 6 let,
 - 65 % ze základní ceny pro návštěvníky 6 až 26 let (žák, student),

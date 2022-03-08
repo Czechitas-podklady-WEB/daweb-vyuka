@@ -24,7 +24,7 @@ Pokud nějaké řádky kódu uzavřeme do složených závorek, vytváříme tak
 
 Aby se nám kód dobře četl, odsazujeme řádky uvnitř bloku o kus doprava. V tomto kurzu budeme používat dvě mezery. Pokud máte VS Code nastavené podle naších doporučení, při psaní se vám řádky budou automaticky odsazovat. Stisknutím tabulátoru :kbd[Tab] pak můžete odsazení vložit sami. Stisknutím :kbd[Shift]+:kbd[Tab] jej naopak zrušíte. To se hodí pokud chcete například odsadit velký kus kódu najednou. Stačí jej vybrat myší a stiknout :kbd[Tab] nebo :kbd[Shift]+:kbd[Tab].
 
-Je dobré mít na paměti, že odsazování a obecně většina bílých znaků je především pro nás lidi, tedy pro čtenáře kódu. Počítači, tedy přesnějí JavaScript runtimu, jsou bílé znaky jedno. Můžeme si je tady dávat kam chceme. Následující dva zápisy jsou z hlediska runtimu zcela stejné.
+Je dobré mít na paměti, že odsazování a obecně většina bílých znaků, je především pro nás pro lidi, tedy pro čtenáře kódu. Počítači, tedy přesnějí JavaScript runtimu, jsou bílé znaky jedno. Můžeme si je tady dávat kam chceme. Následující dva zápisy jsou z hlediska runtimu zcela stejné.
 
 ```js
 if (age >= 18) {
@@ -54,7 +54,7 @@ else
 }
 ```
 
-Nakonec je však důležité hlavně si nějaká pravidla stanovit a ta pak dodržovat. V tomto směru existuje [několik manuálů](https://codeburst.io/5-javascript-style-guides-including-airbnb-github-google-88cbc6b2b7aa), kterým se říká _style guide_. Ty kodifikují určitá pravidla formátování kódu tak, abyste je nemuseli vždy od nuly vymýšlet sami. Ve firmě nebo v programátorském týmu pak stačí říct, že používáme takový nebo onaký style guide a předejít tak nekonečným diskuzím o tom, kde mají být mezery a kde ne. V tomto kurzu používáme [AirBnB style guide](https://github.com/airbnb/javascript).
+Nakonec je však důležité hlavně si nějaká pravidla stanovit a ta pak dodržovat. V tomto směru existuje [několik manuálů](https://codeburst.io/5-javascript-style-guides-including-airbnb-github-google-88cbc6b2b7aa), kterým se říká _style guide_. Ty kodifikují určitá pravidla formátování kódu tak, abyste je nemuseli vždy od nuly vymýšlet sami. Ve firmě nebo v programátorském týmu pak stačí říct, že používáme takový nebo onaký style guide, a předejít tak nekonečným diskuzím o tom, kde mají být mezery a kde ne. V tomto kurzu používáme [AirBnB style guide](https://github.com/airbnb/javascript).
 
 ### Podmínky s více větvemi
 

@@ -2,4 +2,3 @@
 
 ::exc[cvdoma>fit-email]
 ::exc[cvdoma>slevy]
-::exc[cvdoma>superhruba]

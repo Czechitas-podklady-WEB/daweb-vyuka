@@ -17,7 +17,7 @@ document.body.innerHTML = (
 );
 ```
 
-Abychom se ze všeho toho sčítání a uvozovek nezbláznili, moderní JavaScript nabízí nový zápis řetězců, kterému se odborně říká :term{cs="interpolace řetězců" em="string interpolation"}. V tomto zápisu se místo obyčejný nebo dvojitých uvozovek používá takzvaný zpětný apostrof &#96;. Pomocí tohoto zápisu můžeme obsah proměnných vložit do řetězce pomocí znaku `$` a složených závorek.
+Abychom se ze všeho toho sčítání a uvozovek nezbláznili, moderní JavaScript nabízí nový zápis řetězců, kterému se odborně říká :term{cs="interpolace řetězců" en="string interpolation"}. V tomto zápisu se místo obyčejných nebo dvojitých uvozovek používá takzvaný zpětný apostrof &#96;. Pomocí tohoto zápisu můžeme obsah proměnných vložit přímo do řetězce pomocí znaku `$` a složených závorek.
 
 ```js
 document.body.innerHTML = (
@@ -63,7 +63,7 @@ const content = (
 );
 ```
 
-Tento zápis je ovšem dost neohrabaný a po čase nás začne vytáčet. Interpolace řetězců nás ale zachrání, neboť řetězce v uvozovkách nové řádky obsahovat mohou.
+Tento zápis je ovšem dost neohrabaný a po čase nám začne lézt na nervy. Interpolace řetězců nás ale zachrání, neboť řetězce ve zpětných apostrofech nové řádky obsahovat mohou.
 
 ```js
 const content = `

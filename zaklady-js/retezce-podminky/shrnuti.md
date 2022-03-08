@@ -2,7 +2,7 @@
 
 Po této lekci byste měli vědět a znát
 
-* použítí vlastnosti `length` a metod řetězců:
+* použití vlastnosti `length` a metod řetězců:
   - `toUpperCase`, `toLowerCase`,
   - `trim`, `slice`,
   - `indexOf`,
