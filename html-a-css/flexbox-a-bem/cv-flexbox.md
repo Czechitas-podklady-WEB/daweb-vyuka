@@ -1,4 +1,4 @@
-## Cvičení: Procvičení flexboxu
+## Cvičení: Flexbox
 
 ::exc[cvflexbox>flexorder]
 ::exc[cvflexbox>contacts]

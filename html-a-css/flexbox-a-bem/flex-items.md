@@ -1,6 +1,8 @@
+## Flexbox II
+
 Z minulé hodiny si pamatujeme, že flexbox je nástroj, pomocí kterého můžeme upravovat rozložení prvků na stránce. Co už o flexboxu víme:
 
-- Nastavením `display:flex` vytvoříme flexbox
+- Nastavením**`display:flex`**vytvoříme flexbox
 - Flexbox je obalený flex-containerem a uvnitř jsou flex-items
 - flexbox je jednosměrný, má hlavní a vedlejší osu
 - flex-container má vlastnosti
@@ -12,7 +14,7 @@ Z minulé hodiny si pamatujeme, že flexbox je nástroj, pomocí kterého může
 
 ### Vlastnosti flex-items
 
-U položek (flex-items) můžeme upravovat pořadí a velikost. Pamatujme, že aby se následující vlastnosti projevily, prvek musí být potomkem prvku, který má nastavenou vlastnost `display:flex`!
+U položek (flex-items) můžeme upravovat pořadí a velikost. Pamatujme, že aby se následující vlastnosti projevily, prvek musí být potomkem prvku, který má nastavenou vlastnost `display:flex`.
 
 ### `order`
 

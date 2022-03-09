@@ -14,4 +14,6 @@ Vývojářské nástroje není potřeba instalovat, jsou už součástí dnešn�
 
 Měla by defaultně být otevřená záložka **Elements**.
 
+Při najetí na elementy v html se nám vyznačí prvky na stránce. Po kliknutí můžeme vidět stylování prvků a dokonce je upravovat. Úpravy jsou pouze v našem prohlížeci a jsou dočasné, po refreshi se stránka načte v původním stavu. Vývojářské nástroje jsou nezbytné pro sledování našich změn i pro zkoušení stylování při kódování stránek.
+
 ::fig[Devtools guide]{src=assets/devtools.gif}

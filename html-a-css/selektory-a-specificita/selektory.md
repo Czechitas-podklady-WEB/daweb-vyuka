@@ -38,7 +38,9 @@ Existují také pseudotřídy, které vybírají elementy podle jejich pozice v 
 
 #### Selektor typu n-tý potomek `p:nth-child(n)`
 
-Celý [seznam pseudotříd](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes#syntax)
+</br>
+
+Pro refernci si můžete pročíst celý [seznam pseudotříd](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes#syntax)
 
 ### Kombinátory selektorů
 

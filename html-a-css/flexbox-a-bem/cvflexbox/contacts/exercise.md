@@ -20,4 +20,4 @@ Každá kartička je nastylovaná tak, že:
 - údaje (jméno a číslo) zabírají volný obsah v kartičce
 - tlačítka `volání` a `zpráva` jsou zarovnané pod sebou a mají mezi sebou rovnoměrné mezery
 
-::fig[Contacts guide]{src=assets/navod.gif}
+::fig[Contacts guide]{src=assets/navod.jpg}
