@@ -1,4 +1,4 @@
-## Dobrobolné čtení - historie terminálu
+## Dobrovolné čtení - historie terminálu
 
 Možná jste zděšeni z toho, že v moderní době mobilních telefonů, dotykových displejů a virtuální reality stále komunikujeme s počítačem pomocí textových příkazů. Časem poznáte, že nic rychlejšího než terminál pořád nikdo nevynalezl a nezbyde vám, než se s terminálem zkamarádit. 
 

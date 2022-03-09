@@ -10,26 +10,16 @@ Dejme tomu, že bychom chtěli prostřední třídu odstranit a tím tlačítko 
 
 ```js
 const btnElm = document.querySelector('#login-btn');
-btnElm.className = 'btn btn--primary';
-```
-
-Takto ovšem nastavujeme celý atribut `class`. Musíme tedy znát všechny ostatní třídy, které na tlačítku máme. To nám začne časem velmi znepříjemňovat život. JavaScript však nabízí vlastnost `classList`, díky které můžeme s CSS třídami na elementu pracovat mnohem přímočařeji. Výše zmíněný úkol pak vyřešíme takto.
-
-```js
-const btnElm = document.querySelector('#login-btn');
 btnElm.classList.remove('btn--off');
 ```
 
-Metoda `remove` udělá veškerou špinavou práci za nás nehledě na to jaké další CSS třídy jsou na element navázány. Pokud chceme naopak třídu přidat, použíjeme metodu `add`.
+Pokud chceme tlačítko vrátit do stavu vypnuto, můžeme třídu opět přidat. 
 
 ```js
-const btnElm = document.querySelector('#login-btn');
 btnElm.classList.add('btn--off');
 ```
 
-### Přepínání
-
-Naše tlačítko funguje jako přepínač. Chceme, aby například na kliknutí přepnulo stav z 'vypnuto' na 'zapnuto' a obráceně. Což v řeči programátorské znamená: když element obsahuje třídu `btn--off` tak ji odstraň, v opačném případě ji přidej. Takový kód můžeme napsat pomocí metody `contains`.
+Naše tlačítko funguje jako přepínač. Chceme, aby například na kliknutí přepnulo stav z 'vypnuto' na 'zapnuto' a obráceně. To v řeči programátorské znamená: když element obsahuje třídu `btn--off` tak ji odstraň, v opačném případě ji přidej. Takový kód můžeme napsat pomocí metody `contains`.
 
 ```js
 const btnElm = document.querySelector('#login-btn');
@@ -47,6 +37,22 @@ const btnElm = document.querySelector('#login-btn');
 btnElm.classList.toggle('btn--off');
 ```
 
-Pokud se daná CSS třída na elementu nachází, metoda `toggle` ji odstraní. Pokud tam naopak není, metoda `toggle` ji přidá.
+Pokud se daná CSS třída na elementu nachází, metoda `toggle` ji odstraní. Pokud tam naopak není, metoda `toggle` ji přidá. 
 
-Pomocí vlastnosti `classList` jsme opět rozšířili náš arzenál pro manipulaci s obsahem stránky a také máme život zase o kousek jednodušší.
+### Vlastnost className
+
+Občas nastane situace, kdy chceme nastavit obsah celého atributu `class` najednou a nechceme se piplat s přidáváním nebo odebiráním jednotlivých CSS tříd. K tomu můžeme použít vlastnost `className`. 
+
+Pokud bychom například chtěli, aby na našem přepínacím tlačíku zůstala jen třída `btn`, místo složitého mazání všech ostatních tříd prostě atribut `class` nastavíme natvrdo. 
+
+```js
+const btnElm = document.querySelector('#login-btn');
+btnElm.className = 'btn';
+```
+
+Podobným postupem můžeme například smazat úplně všechny CSS třídy na nějakém prvku. 
+
+```js
+const btnElm = document.querySelector('#login-btn');
+btnElm.className = '';
+```

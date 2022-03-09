@@ -1,6 +1,6 @@
 ## Vlastnost innerHTML
 
-Z předchozí části už umíme změnit obsah nějakého DOM elementu pomocí vlastnosti `textContent`. Takto však můžeme pravovat pouze s čistě textovým obsahem. Co kdybychom však do nějakého elementu chtěli vložit kus HTML? K tomu nám poslouží vlastnost `innerHTML`. Tuto vlastnost jste potkáváli již od samého počátku kurzu při používání :var[dockument.body.innerHTML]. Vlastnost `innerHTML` však kromě elementu `body` najdeme i na většině ostatních elementů.
+Z předchozí části už umíme změnit obsah nějakého DOM elementu pomocí vlastnosti `textContent`. Takto však můžeme pracovat pouze s čistě textovým obsahem. Co kdybychom však do nějakého elementu chtěli vložit kus HTML? K tomu nám poslouží vlastnost `innerHTML`. Tuto vlastnost jste potkáváli již od samého počátku kurzu při používání :var[dockument.body.innerHTML]. Vlastnost `innerHTML` však kromě elementu `body` najdeme i na většině ostatních elementů.
 
 Vraťme se k ukázkové stránce z předchozí části.
 
@@ -23,7 +23,7 @@ const headerElm = document.querySelector('.header');
 headerElm.innerHTML = '<h1>Hlavička</h1>';
 ```
 
-Ve chvíli, kdy takto nastavíme vlastnost `innerHTML`, prohlížeč si přečte obsah našeho řetězce a automaticky z něj vyrobí DOM elementy pro naši stránku. Můžete si v developer tools zkontrolovat, že obsah hlavičky má nyní opravodou DOM strukturu.
+Ve chvíli, kdy takto nastavíme vlastnost `innerHTML`, prohlížeč si přečte obsah našeho řetězce a automaticky z něj vyrobí DOM elementy pro naši stránku. Můžete si v developer tools zkontrolovat, že obsah hlavičky má nyní opravdovou DOM strukturu.
 
 Pokud vytváříme kus stránky pomocí `innerHTML`, děláme to většinou proto, že chceme do HTML vložit obsah nějaký proměnných. Realističtější příklad by tedy byl ten, kdy máme například název stránky uložený v proměnné.
 

@@ -1,6 +1,6 @@
 ## DOM Elementy
 
-Když prohlížeč zpracovává HTML kód, každá značka a její obsah se převedou na takzvaný _DOM element_. Každá žlutá krabička na obrázku výše představuje jeden DOM element. Z hlediska JavaScriptu je důležité, že DOM elementy jsou nový typ hodnoty. Můžeme je tedy podobně jako čísla, řetězce nebo pravdivostní hodnoty ukládat do proměnných, předávat jako vstupy funkcím apod. Jak se ale k nějakému DOM elementu z naší stránky dostaneme? Poslouží nám k tomu funkce `document.querySelector`. Pro ukázku použití se vraťme k naší stránce s třemi kartami.
+Když prohlížeč zpracovává HTML kód, každá značka a její obsah se převedou na takzvaný _DOM element_. Každá žlutá krabička na obrázku z předchozí sekce představuje jeden DOM element. Z hlediska JavaScriptu je důležité, že DOM elementy jsou opět nový typ hodnoty. Můžeme je tedy podobně jako čísla, řetězce, objekty nebo pravdivostní hodnoty ukládat do proměnných, předávat jako vstupy funkcím apod. Jak se ale k nějakému DOM elementu z naší stránky dostaneme? Poslouží nám k tomu funkce `document.querySelector`. Pro ukázku použití se vraťme k naší stránce s třemi kartami.
 
 ```html
 <body>
@@ -14,7 +14,7 @@ Když prohlížeč zpracovává HTML kód, každá značka a její obsah se pře
 </body>
 ```
 
-JavaScript říká DOMu celé naší stránky _dokument_. Funkce `document.querySelector` umí z dokumentu vybrat DOM element podle stejných pravidel, která používají CSS selektory. Například element hlavičky najdeme snadno podle jeho třídy. Výsledný DOM element si pak uložíme do proměnné. Zatím budeme experimentovat v konzoli, abychom si mohli rovnou zobrazit výsledky.
+Prohlížeč má DOM celé naší stránky uložený v proměnné :var[dokument]. Metoda `document.querySelector` pak umí z dokumentu vybrat DOM element pomocí CSS selektoru. Například element hlavičky najdeme snadno podle jeho třídy. Výsledný DOM element si pak uložíme do proměnné. Zatím budeme experimentovat v konzoli, abychom si mohli rovnou zobrazit výsledky.
 
 ```jscon
 > const headerElm = document.querySelector('.header');
@@ -45,22 +45,23 @@ Snadno také můžeme změnit jakýkoliv styl pomocí vlastnosti `style`. Takto 
 > headerElm.style.marginBottom = '2rem'
 ```
 
-Všimněte si hned dvou důležitých věcí. Za prvé, názvy CSS vlastností musíme zapisovat **velbloudí notací**. Je to proto, že kdybychom použili kebab notaci (ano, toto je skutečný název) jako zde
+Všimněte si hned dvou důležitých věcí:
 
-```jscon
-> headerElm.style.margin-bottom = '2rem'
-```
-
-JavaScript by si pomlčku spletl s mínusem a kód by nefungoval. Druhá důležitá věc je, že hodnoty všech CSS vlastností se zapisují pomocí řetězců. Proto dávejte pozor například na takové chyby.
-
-```jscon
-> headerElm.style.color = white
-> headerElm.style.marginBottom = 2rem
-```
+1. Názvy CSS vlastností musíme zapisovat **velbloudí notací**. Je to proto, že kdybychom použili kebab notaci (ano, toto je skutečný název) jako zde
+   
+   ```jscon
+   > headerElm.style.margin-bottom = '2rem'
+   ```
+   JavaScript by si pomlčku spletl s mínusem a kód by nefungoval.
+2. Hodnoty všech CSS vlastností se zapisují pomocí řetězců. Proto dávejte pozor například na takovéto chyby.
+   ```jscon
+   > headerElm.style.color = white
+   > headerElm.style.marginBottom = 2rem
+   ```
 
 ### Změna třídy
 
-Pomocí JavaScriptu také můžeme elementům snadno přidávat nebo odebírat CSS třídy. Použijeme k tomu vlastnost `classList`. Takto například přidáme třídu hlavičce naší strány.
+Pomocí JavaScriptu také můžeme elementům snadno přidávat nebo odebírat CSS třídy. Použijeme k tomu vlastnost `classList`. Takto například přidáme třídu hlavičce naší stránky.
 
 ```jscon
 > const headerElm = document.querySelector('.header')
@@ -88,7 +89,7 @@ Pokud chceme tlačítku odebrat modifikátor `btn-primary`, použijeme metodu `c
 <button class="btn">Click me</button>
 ```
 
-Vlastnost `classList` nabízí ještě další užitečné metody jako `toggle` nebo `replace`. Ty si zatím necháme na později. Pokud jste zvídaví můžete si o nich přečíst v [MDN dokumentaci](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList).
+Vlastnost `classList` nabízí ještě další užitečné metody jako `toggle`, o kterých si povíme později.
 
 ### Změna atributů
 
