@@ -4,6 +4,10 @@ Při stylování stránky je nutné přesně specifikovat jaký prvek má mít j
 
 ### Základní selektory
 
+| Selektor pro vícenásobnou třídu | article.active.newsfeed |
+| Selektor typu potomek | div p |
+| Selektor typu přímý potomek | div > p |
+
 #### Univerzální selektor: `*`
 
 #### Selektor typu element: `h1`
@@ -11,6 +15,8 @@ Při stylování stránky je nutné přesně specifikovat jaký prvek má mít j
 #### Selektor typu třída: `.card`
 
 #### Selektor typu id: `#unique-content`
+
+::codepen{user=marketaanezka id=qBpBwoP tab=html,result}
 
 ### Pseudotřídy
 
@@ -34,11 +40,15 @@ Existuje mnoho druhů pseudotříd, které určují prvky podle stavu odkazu, ch
 
 #### Prvek, který je aktivní `:active`
 
+::codepen{user=marketaanezka id=rNpNbKM tab=html,result}
+<br/>
+
 Existují také pseudotřídy, které vybírají elementy podle jejich pozice v dokumentu
 
 #### Selektor typu n-tý potomek `p:nth-child(n)`
 
-</br>
+::codepen{user=marketaanezka id=eYyYamW tab=html,result}
+<br/>
 
 Pro refernci si můžete pročíst celý [seznam pseudotříd](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes#syntax)
 
@@ -51,6 +61,9 @@ Pro refernci si můžete pročíst celý [seznam pseudotříd](https://developer
 #### Selektor typu potomek `div p`
 
 #### Selektor typu přímý potomek `div > p`
+
+::codepen{user=marketaanezka id=eYyYapR tab=html,result}
+<br/>
 
 ### Pseudoelementy
 
@@ -72,4 +85,4 @@ Užitečné pseudoelementy jsou například:
 
 #### Obsah za prvkem `::after`
 
-::codepen{user=marketaanezka id=gOXyjqb tab=html,result}
+::codepen{user=marketaanezka id=vYpYwgM tab=html,result}
