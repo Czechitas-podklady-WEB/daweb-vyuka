@@ -4,10 +4,6 @@ Při stylování stránky je nutné přesně specifikovat jaký prvek má mít j
 
 ### Základní selektory
 
-| Selektor pro vícenásobnou třídu | article.active.newsfeed |
-| Selektor typu potomek | div p |
-| Selektor typu přímý potomek | div > p |
-
 #### Univerzální selektor: `*`
 
 #### Selektor typu element: `h1`
