@@ -1,9 +1,9 @@
 ---
-title: Nouzový stav
+title: Mimozemský život
 demand: 2
 ---
 
-Podívejte se na stránku [skonciluznouzovystav.cz](https://skonciluznouzovystav.cz). Podle toho, v jakém období toto zadání čtete, se dozvíte, zda již skončil nouzový stav spojený s pandemií COVID-19 či nikoliv. Stránka zobrazuje obyčejné ANO či NE a krátkou zprávu. Podobných stránek lze na internetu najít vícero. Například
+Podívejte se na stránku [existuje-mimozemsky-zivot.cz](http://existuje-mimozemsky-zivot.cz). Podle toho, v jakém období toto zadání čtete, se dozvíte, zda jsme již objevili život mimo planetu Zemi. Stránka zobrazuje pouze jednoduchou zprávu. Podobných stránek lze na internetu najít vícero. Například
 
 * [sediuzbabis.cz](https://sediuzbabis.cz)
 * [uzjepatek.cz](https://uzjepatek.cz)
