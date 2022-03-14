@@ -15,6 +15,19 @@ demand: 4
 1. Ve složce vytvořte soubor `index.html`.
 1. Do souboru přidejte základní HTML strukturu (zkratka `!`+`enter`).
 1. Mezi značky `<body>` a `</body>` vložte nadpis první úrovně `<h1>Vizitka</h1>`.
+1. Otevřete si terminál v příslušném okně.
+
+   - Ověřte si, že máte terminál otevřený ve správné složce, která obsahuje soubor `index.html`.
+   - Ve Windows by vám příkaz `dir` měl vypsat zhruba toto:
+
+     ::fig[dir]{src=assets/dir.png size=100}
+
+   - Na Macu a v Linux by měl výstup příkazu `ls` vypadat nějak takto:
+
+     ::fig[dir]{src=assets/ls.png size=50}
+
+   - Pokud jste ve špatné složce otevřete znovu VS Code se správným umístěním nebo se příkazem `cd cesta` přesuňte.
+
 1. Příkazy v terminálu příslušného okna nově vytvořený soubor commitněte.
    - `git add index.html`
    - `git commit -m "Základní HTML"`
