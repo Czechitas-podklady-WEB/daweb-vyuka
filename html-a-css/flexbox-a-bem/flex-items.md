@@ -43,7 +43,8 @@ Pokud nastavíme hodnotu na `flex-shrink:0`, prvek se nebude smršťovat.
 
 ::codepen{user=marketaanezka id=PoOReRJ tab=html,result}
 
-**`flex-basis: auto/100px/20%/...`**
+### `flex-basis`
+
 Pokud nastavíme flex-items šířku, tedy `width`, bude se chovat jinak, pokud má flex-container nastaveno `flex-direction:row` nebo `flex-direction:column`. Stejně tak `height`.
 Protože můžeme střídat, která osa je hlavní (zda horizontální nebo vertikální) je tu možnost nastavovat místo toho `flex-basis`.
 U horizontální hlavní osy (flex-direction:row) znamená `flex-basis:100px`, že **šířka** bude 100px a pokud je hlavní osa vertikální (flex-direction: column), tak to znamená, že **výška** bude 100px.
@@ -51,7 +52,7 @@ Defaultní nastavení je auto – to znamená tolik, kolik má prvek obsahu. Je 
 
 ::codepen{user=marketaanezka id=XWzEqEL tab=html,result}
 
-**`flex`**
+### `flex`
 
 Vlastnost `flex` kombinuje vlastnosti `flex-grow`, `flex-shrink` a `flex-basis` ve zkráceném zápisu. Je důležité pořadí hodnot - první je vždy flex-grow, následně flex-shrink a poslední je flex-basis.
 Defaultní hodnoty jsou `flex: 0 1 auto`.

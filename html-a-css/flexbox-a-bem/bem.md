@@ -2,6 +2,11 @@
 
 BEM je jedna z metodik pro pojmenovávání tříd při stylování stánek. BEM není technologie, preprocesor, ani knihovna na stylování. Je to spíš konvence a doporučení, jakým je možné si organizovat CSS soubory, vytvářet znovupoužitelné komponenty a psát čitelné CSS.
 
+Podívejte se na následující design a promyslete si, jak byste přistoupili ke stylování takové stránky.
+
+::fig[BEM Block]{src=assets/page.png}
+Všimněte si, že na stránce je mnoho sekcí, které se opakují, nebo mají velmi podobné stylování. Abychom zbytečně neopakovali stejný kód, je dobré si stránku rozvrhnout. Přesně k tomu se používá metodika BEM.
+
 Než se dostaneme k samotné metodice, připomeneme si, že při zápisu CSS tříd se používá tzv. **kebab case**. Pokud se název třídy skládá z více slov, píše se mezi nimi pomlčka.
 
 ```
@@ -87,6 +92,7 @@ Proto pokud je element modifikovaný, je potřeba přidat všechny stylovací t�
 Tady je jeden z možných příkladů využití metodiky BEM při stylování. Pokud máme takto nachystanou jednu kartičku s profilem kavárny, přidání dalších se stejnými třídami nám je okamžitě nastyluje stejným způsobem.
 
 ::codepen{user=marketaanezka id=rNYRZbB tab=html,result}
+<br/>
 
 #### Výhody použití BEM
 
