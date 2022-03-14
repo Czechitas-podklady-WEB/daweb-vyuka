@@ -71,9 +71,9 @@ Procenta vyjadřují velikost v procentech relativně k velikosti rodiče.
 
 Jednotky `vw` a `vh` reprezentují **viewport width** a **viewport height**, tedy celá šířka nebo výška průhledu (toho, co právě vidíme v okně, ne celé stránky). Element, který má nastaveno `width: 100vw`, zabírá celou šířku viewportu. Nastavení `height: 50vh` znamená 50% výšky viewportu.
 
-### Fuknce calc
+### Funkce calc
 
-Fuknce `calc` se v CSS používá, pokud nedokážeme určit přesnou výšku pomocí celých jednotek. Výhodou je, že můžeme počítat pomocí kombinace různých jednotek. Například potřebujeme, aby element vyplnil celou výšku viewportu kromě headeru, který má výšku 50px. Toto je možné napsat jako:
+Funkce `calc` se v CSS používá, pokud nedokážeme určit přesnou výšku pomocí celých jednotek. Výhodou je, že můžeme počítat pomocí kombinace různých jednotek. Například potřebujeme, aby element vyplnil celou výšku viewportu kromě headeru, který má výšku 50px. Toto je možné napsat jako:
 
 ```css
 .content {
