@@ -1,6 +1,6 @@
 ---
 title: Vizitka
-demand: 2
+demand: 4
 ---
 
 1. Vytvořte na [GitHubu](https://github.com/new) nový repozitář.
