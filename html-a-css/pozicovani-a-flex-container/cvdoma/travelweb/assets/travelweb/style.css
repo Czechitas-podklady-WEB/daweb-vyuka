@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e8d3b6;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  width: 100%;
+  height: 40px;
+  background-color: #ae7e4e;
+  margin: 0;
+  padding: 5px;
+  text-align: center;
+}
+
+nav img {
+  width: 30px;
+  height: 30px;
+}
+
+.intro {
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+figure {
+  width: 400px;
+  height: 270px;
+  margin: 30px;
+  box-shadow: 0 0 10px 0px #172d0394;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.travel {
+  width: 150px;
+  height: 40px;
+  padding: 10px;
+  text-align: center;
+  font-family: monospace;
+  text-transform: uppercase;
+  color: white;
+  background-color: #5c7f3b;
+  border: 2px solid #4b7d1c;
+  box-shadow: 0 0 10px 0px #172d0394;
+}
+
+.chat {
+  width: 75px;
+  height: 75px;
+  background-color: #5c7f3b;
+  border-radius: 50%;
+  padding: 15px;
+}
+
+/* ---Your code starts here--- */
+
+nav {
+  /* všimni si, že při scrollování obsahem stránky navigace zůstává na vrchu viewportu  */
+}
+
+main {
+  /* zajisti, aby navigace nepřekrývala obsah. Navigace je vysoká 40px*/
+}
+
+.travel {
+  /* tento div při scrollování neodjede s obsahem, ale přilepí 10px pod navigací (50px od vrchu obsahu) */
+}
+
+.picture {
+  /* je potřeba zajistit, abychom mohli přesunout popisek obrázku do pravého horního rohu obrázku */
+}
+
+.picture-description {
+  /* popisek obrázku se nachází přímo na obrázku, 10px shora a 10px zprava */
+}
+
+.mountains,
+.sea {
+  /* obrázky hor a moře jsou zleva odsunuty o 450px */
+}
+
+.chat {
+  /* malého chatbota na stránce vidíme pořád. Visí vpravo dole, 10px od okrajů */
+}
