@@ -29,11 +29,11 @@ Zároveň ověřování e-mailu je tak častý programátorský úkon, že na to
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Moje stránka</title>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/validator/13.5.2/validator.min.js"></script>
+  <script src="https://unpkg.com/validator@latest/validator.min.js"></script>
 </head>
 ```
 
-Knihovnu do naší stránky přidáme tak, že její adresu vložíme do hlavičky stránky pomocí tagu `script`. Každá knihovna má svoje pravidla fungování, která vyčteme z dokumentace. Knihovna `validator.js` nám ve stránce vytvoří objekt `validator`, který má mnoho užitečných metod, mezi nimi i metodu `isEmail`, která umí ověřit, zda je zadaný řetězec platný e-mail. Tuto metodu můžeme použít ve svém JavaScriptovém programu nebo si ji vyzkoušet rovnou v konzoli, když naši stránku otevřeme v prohlížeči. 
+Knihovnu do našeho programu přidáme tak, že její adresu vložíme do hlavičky stránky pomocí tagu `script`. Každá knihovna má svoje pravidla fungování, která vyčteme z dokumentace. Knihovna `validator.js` nám ve stránce vytvoří objekt `validator`, který má mnoho užitečných metod. Mezi nimi je i metoda `isEmail`, která umí ověřit, zda je zadaný řetězec platný e-mail. Tuto metodu můžeme použít ve svém JavaScriptovém programu nebo si ji vyzkoušet rovnou v konzoli, když naši stránku otevřeme v prohlížeči. 
 
 ```jscon
 > validator.isEmail('pepa.novak@seznam.cz')
@@ -66,20 +66,20 @@ Pro kompletní výčet všch funkcí nahlédněte do [dokumentace knihovny](http
 
 ### Práce s datem a časem
 
-Práce datem a časem je velmi častým úkolem v mnoha různých aplikacích. Zároveň je to jeden z nejtěžších programovacích problémů, protože datum a čas se řídí neuvěřitelně složitými pravidly, která mimo mnohé další zahrnují
+Práce datem a časem je velmi častým úkolem v mnoha různých aplikacích. Zároveň je to jeden z nejtěžších programovacích problémů, protože datum a čas se řídí neuvěřitelně složitými pravidly jako například
 
 - fakt, že každý měsíc má jiný počet dní,
-- přestupné roky,
+- přestupné roky, přestupné sekundy,
 - časové zóny,
 - letní a zimní čas v různých zemích,
-- různé kalendáři v různých zemích,
+- různé kalendáře v různých zemích,
 - různé formáty zápisu data a času v různých zemích,
-- a tak dále. 
+- a spoustu dalších 
 
-Z toho všecho je jasné, že na práci s datem a časem budeme potřebovat nějakou knihovnu. Takových na internetu existuje vícero. My si vyzkoušíme knihovnu s názvem `dayjs`. Do naší stránky ji vložíme následujícím skriptem. 
+Z toho všecho je jasné, že na práci s datem a časem budeme potřebovat nějakou knihovnu. Takových na internetu existuje vícero. My si vyzkoušíme knihovnu s názvem [dayjs](https://day.js.org). Do naší stránky ji vložíme následujícím skriptem. 
 
 ```html
-<script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/dayjs.min.js" ></script>
+<script src="https://unpkg.com/dayjs@latest/dayjs.min.js" ></script>
 ```
 
 Knihovna `dayjs` toho umí opravdu hodně, například

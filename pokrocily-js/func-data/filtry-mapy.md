@@ -16,7 +16,7 @@ console.log(filteredArray);
 
 ### Metoda map()
 
-Metodu `map()` použijeme především, pokud potřebujeme položky pole pozměnit, nebo z nich něco vytvořit. Metoda bere jako parametr opět fuknci. Tuto fuknci zavolá na každé položce pole a výsledek volání uloží do nově vytvořeného pole. Toto nové pole nám potom vrátí. Původní pole zůstane nezměněné.
+Metodu `map()` použijeme především, pokud potřebujeme položky pole pozměnit, nebo z nich něco vytvořit. Metoda bere jako parametr opět funkci. Tuto funkci zavolá na každé položce pole a výsledek volání uloží do nově vytvořeného pole. Toto nové pole nám potom vrátí. Původní pole zůstane nezměněné.
 Pokud bychom chtěli každé číslo v našem poli `myArray` vynásobit dvěma, můžeme použít metodu `map()`. Dostaneme tak nové pole se zdvojnásobenými čísly. To si můžeme uložit do proměnné. Pole `myArray` zůstane nezměněné.
 
 ```js
