@@ -1,7 +1,6 @@
 ---
 title: Výplata
 demand: 1
-offerSolution: true
 ---
 
 1. Spočítejte svůj měsíční příjem víte-li, že pracujete 7 hodin denně se mzdou 265 Kč na hodinu. Řekněme, že měsíc má 21 pracovních dní.
