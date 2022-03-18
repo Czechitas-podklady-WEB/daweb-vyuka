@@ -1,6 +1,6 @@
 ## Objekty
 
-Prozatím jsme v naších programech pracovali pouze s čísly a řetězci. V reálnějších programech však budeme potřebovat do naších proměných uložit více než pouze jednu informaci. Představte si například, že chceme evidovat doručovací adresu uživatele e-shopu. Každý adresa má ulici, číslo domu, město a PSČ. Takovou informaci bychom mohli zkusit nacpat do jednoho řetězce třeba takto. 
+Prozatím jsme v naších programech pracovali pouze s čísly a řetězci. V reálnějších programech však budeme potřebovat do naších proměných uložit více než pouze jednu informaci. Představte si například, že chceme evidovat doručovací adresu uživatele e-shopu. Každá adresa má ulici, číslo domu, město a PSČ. Takovou informaci bychom mohli zkusit nacpat do jednoho řetězce třeba takto. 
 
 ```js
 const address = 'Pod Kaštany 31, 123 11 Horní Dlouhonosy';

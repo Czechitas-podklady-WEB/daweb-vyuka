@@ -28,4 +28,4 @@ const { name, price, currency } = product;
 
 Tímto zápisem říkáme, že chceme vyrobit tři proměnné, do kterých se uloží hodnoty z objektu `product`.
 
-Jednoduchým destrukturováním si od nynějška budeme zjednodušovat život kde to půjde. V praxi se můžete setkat i se složitejším destrukturováním, to si ale necháme do pozdějších lekcí.
+Jednoduchým destrukturováním si od nynějška budeme zjednodušovat život, kde to půjde. V praxi se můžete setkat i se složitejším destrukturováním, to si ale necháme do pozdějších lekcí.
