@@ -91,7 +91,7 @@ píšeme
 sazba *= 1.15;
 ```
 
-Tyto operátory se nám budou hodit také u řetězců. Takto například můžeme k uživatelskému jménu přidat emailovou doménu. 
+Tyto operátory se nám budou hodit také u řetězců. Takto například můžeme k uživatelskému jménu přidat e-mailovou doménu. 
 
 ```js
 let email = 'alzbeta.zelena';
