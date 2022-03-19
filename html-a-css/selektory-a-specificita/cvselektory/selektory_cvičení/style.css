@@ -1,0 +1,65 @@
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #cfe1e7;
+  padding: 5px;
+  font-family: monospace;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact {
+  background-color: #f3f3f3;
+  padding: 20px;
+  width: 400px;
+  display: flex;
+}
+.photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.info {
+  margin-left: 20px;
+  flex-grow: 2;
+}
+.info p {
+  font-size: 22px;
+}
+
+.buttons {
+  padding: 0 10px 0 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.call,
+.message {
+  width: 30px;
+}
+
+/* ZADÁNÍ: 
+
+PRO TOTO STYLOVÁNÍ NEPOUŽÍVEJ TŘÍDY
+1. každé druhé sekci dej bílé pozadí 
+
+2. fotografii přidej 3px silný rámeček barvy lightblue (dej pozor, aby se rámeček nepřidal i ikonám)
+
+PRO TOTO STYLOVÁNÍ POUŽIJ TŘÍDY
+nastyluj ikonu call a message  tak, aby se při najetí myši zvětšila. 
+Použij pro to vlastnost a hodnotu
+transform: scale(1.3);
+Nastav kurzor na pointer/ručičku (vlasnost cursor)
+BONUS: 
+Pro plynulé zvětšení si můžeš najít použití vlastnosti transition. 
+*/

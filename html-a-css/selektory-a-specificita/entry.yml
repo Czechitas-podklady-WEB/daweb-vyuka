@@ -4,4 +4,6 @@ access: claim
 sections:
   # - vyklad selektory
   - selektory
+  - cv-selektory
   - specificita
+  - cv-specificita
