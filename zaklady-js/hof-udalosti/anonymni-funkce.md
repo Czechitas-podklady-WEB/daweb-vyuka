@@ -4,11 +4,11 @@ V předchozíme programu je vidět, že funkci `timesIsUp` používáme pouze je
 
 ```js
 setTimeout(() => {
-  console.log('Čas vypršel');
+  document.body.innerHTML += '<p>Čas vypršel</p>';
 }, 5000);
 ```
 
-Pokud nějakou funkci vytváříme přímo takto na místě místo toho, abychom ji nejdříve uložili do proměné, říkáme, že taková funkce je takzvaně :term{cs="anonymní" en="anonymous">. V teorii programování se místo pojmu anonymní funkce používá pojem :term{cs="lambda funkce" en="lambda functions"}. V JavaScriptu se tento pojem až tolik nepoužívá, zato v jazyce Python je to zažitý termín.
+Pokud nějakou funkci vytváříme přímo takto na místě místo toho, abychom ji nejdříve uložili do proměné, říkáme, že taková funkce je takzvaně :term{cs="anonymní" en="anonymous"}. V teorii programování se místo tohoto pojmu spíše setkáte s pojmem  :term{cs="lambda funkce" en="lambda functions"}. V JavaScriptu se toto sousloví až tolik nepoužívá, zato v jazyce Python je to zažitý termín.
 
 Program napsaný pomocí lambda funkcí vám možná přijde hůř k přečtení. Anonymní funkce se ovšem v JavaScriptu používají zcela běžně a jakmile si na tento způsob zapisu zvyknete, budete jej radostně používat také.
 

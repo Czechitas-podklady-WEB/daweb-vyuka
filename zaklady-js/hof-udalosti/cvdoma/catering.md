@@ -3,7 +3,7 @@ title: Catering
 demand: 3
 ---
 
-Mějme tři cateringové společnosti dodávají občerstvení na různé akce. Jsou to
+Mějme tři cateringové společnosti dodávající občerstvení na různé akce. Jsou to
 
 **Just Food**
 : Dodává levné jídlo vyrobené z nepříliš kvalitních surovin.

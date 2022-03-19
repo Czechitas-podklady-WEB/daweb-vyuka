@@ -2,7 +2,7 @@
 
 Aby naše stránky mohly být skutečně interaktivní, potřebujeme být schopni reagovat na akce, které uživatel na stránce provádí - klikání na tlačíka, stiknutí kláves, scrollování, pohyb myší apod. Vždy, když některá z těcho akcí na stránce nastane, říkáme, že nastala určitá :term{cs="událost" en="event"}. JavaScript reprezentuje takovou událost jako speciální typ hodnoty podobně jako číslo, řetězec nebo funkci. Událost tedy můžeme uložit do proměnné nebo poslat nějaké funkci jako vstup. Událost obsahuje vlastnosti a metody, které popisují co se přesně stalo, například jaká klávesa byla zrovna stisknuta, kde na obrazovce bylo kliknuto a spoustu dalších užitenčných informací.
 
-Abychom mohli na události reagovat, JavaScriptu nám umožňuje ke každé události, která nás zajímá, připojit funkci, která se zavolá ve chvíli, kdy daná událost nastane. Takové funkci často říkáme :term{cs="posluchač události" en="event listener"}. Můžeme si představit, že JavaScirpt runtime pečlivě naslouchá všem možným událostem a volá k nim přiřazené funkce. Ve chvíli, kdy JavaScript runtimu tuto funkcí volá, předá jí na vstup událost, která zrovna nastala. Taková funkce tedy může vypadat například takto.
+Abychom mohli na události reagovat, JavaScriptu nám umožňuje ke každé události, která nás zajímá, připojit funkci, která se zavolá ve chvíli, kdy daná událost nastane. Takové funkci často říkáme :term{cs="posluchač události" en="event listener"}. Můžeme si představit, že JavaScirpt runtime pečlivě naslouchá všem možným událostem a volá k nim přiřazené funkce. Taková funkce může vypadat například takto.
 
 ```js
 const changeTitle = () => {
@@ -17,7 +17,6 @@ Nyní zařídíme, aby se tato funkce zavolala ve chvíli, kdy stiskneme tlačí
 <body>
   <h1>Nadpis</h1>
   <button>Zmáčkni mě</button>
-  <script src="index.js"></script>
 </body>
 ```
 
@@ -49,9 +48,9 @@ Nástraha druhá spočívá v názvech událostí. To jsou obyčejné řetězce 
 
 ```js
 btnElm.addEventListener('clik', changeTitle);
-btnElm.addEventListener('keypress', changeTitle);
+btnElm.addEventListener('mousdown', changeTitle);
 ```
 
-JavaScript runtime bohužel nekontroluje, zda událost `clik` nebo `keypres` může skutečně nastat nebo nikoliv. Jenoduše k tomuto názvu připojí posluchače a o nic dalšího se nestará. Jelikož takto pojmenované události nikdy nenastanou, naše stránka nebude fungovat a opět také nenastane žádná chyba. Z hlediska runtimu je jako v předchozím případě všechno v naprostém pořádku.
+Správně je `click` a `mousedown`. Toto za nás JavaScript runtime bohužel nezkontroluje. Jenoduše k našemu názvu připojí posluchače a už se nestará o to, že událost se špatným názvem nikdy nenastane. Naše stránka pak prostě nebude fungovat a opět také nenastane žádná chyba. Z hlediska runtimu je však jako v předchozím případě všechno v naprostém pořádku.
 
 Když tedy pracujete s událostmi, vždy si dobře zkontrolujte, že jste jméno události napsali správně a že také správným způsobem předáváte posluchače.
