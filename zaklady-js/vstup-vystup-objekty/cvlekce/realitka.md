@@ -3,7 +3,7 @@ title: Realitka
 demand: 2
 ---
 
-Mějme následující objekt představují inzerát na stránkách nějaké realitní kanceláře. 
+Mějme následující objekt představující inzerát na stránkách nějaké realitní kanceláře. 
 
 ```js
 const apartment = {
