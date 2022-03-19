@@ -37,7 +37,7 @@ Pokud bychom jeden prvek stylovali pomocí dvou selektorů:
 Porovnáme si specificitu jednotlivých selektorů. **`body > h1.hlavni-nadpis`** je selektor, který kombuje dvakrát selektor podle elementu (`body` a `h1`) a jednou třídu `hlavni-nadpis`. Specificita je tedy **`0, 1, 2`**. Zatímco **`h1.hlavni-nadpis.reportaz`** je selektor, který používá jednou element `h1` a dvě třídy `hlavni-nadpis` a `reportaz`. Specificita je **`0, 2, 1`**.
 Při porovnání vidíme, že druhý selektor má vyšší specificitu `0, 2, 1`, na dané vlastnosti bude tedy použito stylování podle selektoru `h1.hlavni-nadpis.reportaz`.
 
-## Specificita - cheatsheet
+### Specificita - cheatsheet
 
 Podívejte se na níže ukázaný cheatsheet. Vidíte kalkulaci specificity, od nejniží po nejvyšší
 
@@ -45,7 +45,7 @@ Podívejte se na níže ukázaný cheatsheet. Vidíte kalkulaci specificity, od 
 
 <br/>
 
-### Inline stylování v HTML
+#### Inline stylování v HTML
 
 Úplně nejníže na obrázku vidíš, že ještě vyšší specificitu než **id**, má inline html stylování. To se aplikuje tak, že přímo u danému prvku do HTML se použije atribut `style`, do kterého se styly napíšou.
 
@@ -55,11 +55,9 @@ Podívejte se na níže ukázaný cheatsheet. Vidíte kalkulaci specificity, od 
 
 Tento způsob stylování není doporučovaný, jelikož může vnést do stylování zmatek. Existují ale případy, kdy se tomu nejde vyhnout, například u stylování některých e-mailových šablon.
 
-### `!important`
+#### `!important`
 
 Úplně nejvyšší specificitu, která přebije i inline HTML stylování má použití `!important` v CSS stylování. Tento příklad si pouze ukážeme, ale takové stylování není "good practice" a je lepší se mu vyhnout. Použití `!important` je možné k přebití stylování, které se tvoří dynamicky pomocí JS a není jiná možnost úpravy.
-
-::fig[important]{src=assets/important.png}
 
 <br/>
 
