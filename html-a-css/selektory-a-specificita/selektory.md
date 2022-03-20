@@ -18,11 +18,9 @@ Vybere všechny elementy, které mají třídu `card`
 
 #### Selektor typu id: `#unique-content`
 
-
 Vybere všechny elementy, které mají id `unique-content`
 
 ::codepen{user=marketaanezka id=qBpBwoP tab=html,result}
-
 
 ### Pseudotřídy
 
@@ -74,7 +72,6 @@ Nezapomeňte, že při výpočtu se počítají všechny potomci v daném rodič
 ::codepen{user=marketaanezka id=eYyYamW tab=html,result}
 <br/>
 
-
 Pro referenci si můžete pročíst celý [seznam pseudotříd](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes#syntax)
 
 ### Selektor podle atributu
@@ -92,7 +89,7 @@ Pro referenci si můžete pročíst celý [seznam selektorů podle atributu](htt
 
 #### Vícenásobný selektor `h1, h2`
 
-Vybere všechny elementy `h1` a na všechny elementy `h2`
+Vybere všechny elementy `h1` a všechny elementy `h2`
 
 #### Selektor pro vícenásobnou třídu `p.active.newsfeed`
 
@@ -108,7 +105,6 @@ Vybere všechny elementy `p`, které jsou přímí potomci elementu `div`.
 
 ::codepen{user=marketaanezka id=eYyYapR tab=html,result}
 <br/>
-
 
 ### Pseudoelementy
 
