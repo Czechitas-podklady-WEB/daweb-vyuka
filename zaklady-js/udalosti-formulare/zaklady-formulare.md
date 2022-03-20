@@ -2,17 +2,6 @@
 
 Pokud na vaší webové stránce potřebujete od uživatele získat nějaká data, bude se vám pravděpodobně hodit formulářový html prvek `<input>`. V základu zobrazí ná stránce obdélníček, do kterého může uživatel psát text.
 
-::fig[input]{src=assets/input.gif size=50}
-
-Samotné textové políčko ale nestačí. Běžný formulář by měl mít ještě tlačítko, `<button>` pro odeslání a `<form>`, vymezení, kde formulář začíná a končí.
-
-```html
-<form>
-	<input />
-	<button>odeslat</button>
-</form>
-```
-
 ::fig[základní formulář]{src=assets/zakladni-formular.png size=50}
 
 Všechny tři prvky můžou mít nějaké atributy. Většinou se u všech hodí atribut `class` pro jednodušší stylování. CSS se ale zatím zabývat nebudeme.

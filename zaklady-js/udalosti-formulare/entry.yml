@@ -1,0 +1,10 @@
+title: Procvičování událostí, formuláře
+lead: Ukážeme si další možností práce s odálostmi a naučíme se získávat data od uživatele.
+access: claim
+sections:
+  - vlastnosti-udalosti
+  - cv-vlastnosti-udalosti
+  - vstup-formulare
+  - cv-textovy-vstup
+  # - slozitejsi-formulare
+  # - cv-pokrocile-formulare
