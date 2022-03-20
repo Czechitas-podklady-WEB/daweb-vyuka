@@ -45,4 +45,38 @@ Pokud v CSS nastavíme
 }
 ```
 
-bude výška a šířka prvku v sobě zahrnovat i padding, border a margin.
+bude výška a šířka prvku v sobě zahrnovat i padding a border.
+
+### Jednotky v CSS
+
+Hodnoty velikostí a vzdáleností můžeme při kódování webových stránek určovat pomocí různých jednotek.
+
+#### `px`
+
+Pixely jsou jednou z nejpoužívanějších absolutních jednotek a původně jsou definovány jako 1/96 palce. Tato velikost odpovídala až do doby, kdy se začaly vyvíjet kvalitnější monitory s velikým rozlišením. Proto v současné době už na nějakých monitorech 1 pixel přesně neodpovídá 1/96 palce.
+
+#### `em`
+
+Pokud použijeme na určení velikosti jednotku **em**, znamená to velikost závisející na velikosti fontu rodičovského elementu. Pokud má rodič nastavenou `font-size: 12px`, a my pak použijeme velikost `2em`, bude to reprezentovat `24px`.
+
+#### `rem`
+
+Jednotka **rem** je velice podobná jednotce `em` s tím rozdílem, že velikost určujeme v poměru vůči velikosti fontu **root elementu**, tedy **html** elementu. Pokud je v dokumentu nastavena `font-size: 16px` a my nastavíme na našem prvku `font-size: 1.25rem` bude to znamenat 16\*1.25, tedy `20px`.
+
+#### `%`
+
+Procenta vyjadřují velikost v procentech relativně k velikosti rodiče.
+
+#### `vw, vh`
+
+Jednotky `vw` a `vh` reprezentují **viewport width** a **viewport height**, tedy celá šířka nebo výška průhledu (toho, co právě vidíme v okně, ne celé stránky). Element, který má nastaveno `width: 100vw`, zabírá celou šířku viewportu. Nastavení `height: 50vh` znamená 50% výšky viewportu.
+
+### Funkce calc
+
+Funkce `calc` se v CSS používá, pokud nedokážeme určit přesnou výšku pomocí celých jednotek. Výhodou je, že můžeme počítat pomocí kombinace různých jednotek. Například potřebujeme, aby element vyplnil celou výšku viewportu kromě headeru, který má výšku 50px. Toto je možné napsat jako:
+
+```css
+.content {
+  height: calc(100vh - 50px);
+}
+```

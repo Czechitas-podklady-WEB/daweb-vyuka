@@ -3,7 +3,7 @@ title: Obsah elipsy
 demand: 1
 ---
 
-Zlovolní zahrádkáři nám chtějí stížit výměru pozemků a proto si pořídíli pozemek ve tvru elipsy.
+Zlovolní zahrádkáři nám chtějí stížit výměru pozemků a proto si pořídíli pozemek ve tvaru elipsy.
 
 ::fig[Elipsa]{src=assets/ellipse.png size=60}
 

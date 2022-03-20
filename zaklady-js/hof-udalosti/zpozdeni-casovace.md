@@ -2,11 +2,11 @@
 
 Dobrá zpráva pro začínající programátory je, že psát vlastní funkce vyšších řádů je spíš pokročilá věc a budeme ji používat až při práci v Reactu. Zatím budeme používat funkce vyšších řádů, které nám JavaScript nabízí už hotové.
 
-Jedna ze situací, kdy se nám velmi hodí funkce vyššího řádu, je chvíle, kdy chceme v JavaScriptu provedení nějaké funkce pozdržet nebo její volání pravidelně opakovat. Vzpomeňte si na příklad [kvíz](../dom-funkce/#exc-kviz). Představme si, že chceme, aby uživatel měl na každou odpověď nějaký časový limit. Po zobrazení otázky chceme počkat 5 vteřin a poté vypsat něco jako "čas vypršel". Vyrobíme si tedy funkci, která vypisuje naši zprávu, zatím pro jednoduchost pouze do konzole.
+Jedna ze situací, kdy se nám velmi hodí funkce vyššího řádu, je chvíle, kdy chceme v JavaScriptu provedení nějaké funkce pozdržet nebo její volání pravidelně opakovat. Vzpomeňte si na příklad [kvíz](../dom-innerhtml/cv-manipulace#cvlekce%3Ekviz). Představme si, že chceme, aby uživatel měl na každou odpověď nějaký časový limit. Po zobrazení otázky chceme počkat 5 vteřin a poté vypsat něco jako "čas vypršel". Vyrobíme si tedy funkci, která vypisuje naši zprávu, zatím pro jednoduchost přimo do `body`.
 
 ```js
 const timeIsUp = () => {
-  console.log('Čas vypršel');
+  document.body.innerHTML += '<p>Čas vypršel</p>';
 };
 ```
 
@@ -20,7 +20,7 @@ Všimněte si, že `setTimeout` je funkce vyššího řádu, neboť bere jako sv
 
 ```js
 const timeIsUp = () => {
-  console.log('Čas vypršel');
+  document.body.innerHTML += '<p>Čas vypršel</p>';
 };
 
 setTimeout(timeIsUp, 5000);

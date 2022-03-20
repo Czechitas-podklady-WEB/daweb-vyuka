@@ -1,6 +1,6 @@
 ## Chytřejší kalkulačka
 
-Příklad výše byl malinko strojený a trošku přitažený za vlasy, abyste si ihned neutopili v technickém žargonu. Nyní však zkusíme něco praktičtějšího. Vraťme se na chvíli k příkladu [kalkulačka](../funkce-obory/#exc-kalkulacka) z minulé lekce. Zadání bylo vytvořit funkci `calc`, která spočítá výsledek operace zadané jako řetězec. Přímočaré řešení by mohlo vypadat například takto.
+Příklad výše byl malinko strojený a trošku přitažený za vlasy, abyste si ihned neutopili v technickém žargonu. Nyní však zkusíme něco praktičtějšího. Vraťme se na chvíli k příkladu Kalkulačka z minulé lekce. Zadání bylo vytvořit funkci `calc`, která spočítá výsledek operace zadané jako řetězec. Přímočaré řešení by mohlo vypadat například takto.
 
 ```js
 const calc = (num1, op, num2) => {

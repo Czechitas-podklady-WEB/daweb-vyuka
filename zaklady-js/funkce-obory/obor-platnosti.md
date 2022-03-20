@@ -7,14 +7,14 @@ if (age < 18) {
   const remains = 18 - age;
 
   if (remains <= 2) {
-    console.log('Už to máš za pár');
+    document.body.innerHTML = '<p>Už to máš za pár</p>';
   } else if (remains <= 5) {
-    console.log(`Ještě si počkáš ${remains} let`);
+    document.body.innerHTML = `<p>Ještě si počkáš ${remains} let</p>`;
   } else {
-    console.log('Utíkej za mamkou');
+    document.body.innerHTML = '<p>Utíkej za mamkou</p>';
   }
 } else {
-  console.log('Vítej mezi dospěláky');
+  document.body.innerHTML = '<p>Vítej mezi dospěláky</p>';
 }
 ```
 
@@ -27,23 +27,23 @@ if (age < 18) {
   const remains = 18 - age;
 
   if (remains >= 2) {
-    console.log('Už to máš za pár');
+    document.body.innerHTML = '<p>Už to máš za pár</p>';
   } else if (remains >= 5) {
-    console.log(`Ještě si počkáš ${remains} let`);
+    document.body.innerHTML = `<p>Ještě si počkáš ${remains} let</p>`;
   } else {
-    console.log('Utíkej za mamkou');
+    document.body.innerHTML = '<p>Utíkej za mamkou</p>';
   }
 } else {
-  console.log(remains); // Zde vznikne chyba
-  console.log('Vítej mezi dospěláky');
+  document.body.innerHTML = `<p>${remains}</p>`; // Zde vznikne chyba
+  document.body.innerHTML += '<p>Vítej mezi dospěláky</p>';
 }
 
-console.log(remains); // Zde vznikne chyba
+document.body.innerHTML = `<p>${remains}</p>`; // Zde vznikne chyba
 ```
 
 Naopak všechny bloky zanořené uvnitř bloku, ve kterém byla proměnná vytvořene, k této proměnné přistupovat mohou. To můžeme v našem kódu vidět v bloku `else if`, kde proměnnou `remains` normálně používáme, přestože je vytvořena o blok výše.
 
-Pokud tedy JavaScript runtime narazí uvnitř nějakého bloku na něco, co vypadá jako jméno proměnné, zkusí tuto proměnnou najít uvnitř tohoto bloku. Pokud se mu to nezdaří, podívá se do bloku a patro výš. Takto postupně prochází všechny nadřezené bloky, dokud nenarazí na nejvyšší patro -- takzvaný :term{cs="globální obor platnosti" en="global scope"}.
+Pokud tedy JavaScript runtime narazí uvnitř nějakého bloku na něco, co vypadá jako jméno proměnné, zkusí tuto proměnnou najít uvnitř tohoto bloku. Pokud se mu to nezdaří, podívá se do bloku a patro výš. Takto postupně prochází všechny nadřezené bloky, dokud nenarazí na nejvyšší patro — takzvaný :term{cs="globální obor platnosti" en="global scope"}.
 
 ### Globální obor platnosti
 
@@ -56,19 +56,19 @@ if (age < 18) {
   const remains = 18 - age;
 
   if (remains >= 2) {
-    console.log('Už to máš za pár');
+    document.body.innerHTML = '<p>Už to máš za pár</p>';
   } else if (remains >= 5) {
-    console.log(age); // V pořádku
-    console.log(`Ještě si počkáš ${remains} let`);
+    document.body.innerHTML = `<p>${age}</p>`; // V pořádku
+    document.body.innerHTML += `<p>Ještě si počkáš ${remains} let</p>`;
   } else {
-    console.log('Utíkej za mamkou');
+    document.body.innerHTML = '<p>Utíkej za mamkou</p>';
   }
 } else {
-  console.log(age); // V pořádku
-  console.log('Vítej mezi dospěláky');
+  document.body.innerHTML = `<p>${age}</p>`; // V pořádku
+  document.body.innerHTML += '<p>Vítej mezi dospěláky</p>';
 }
 
-console.log(age); // V pořádku
+document.body.innerHTML = `<p>${age}</p>`; // V pořádku
 ```
 
 V tomto programu vidíme, že proměnná :var[age] je vytvořená v globálním oboru platnosti. Takové proměnné říkáme prostě <em>globální</em>. Globální proměnné jsou vidět v celém programu a můžeme je tedy použít kdekoliv. Pokud proměnná není globální a je tedy vytvořena uvnitř nějakého bloku, říkáme o ni, že je :term{cs="lokální" en="local"}.
@@ -80,11 +80,11 @@ const age = Number(prompt('Zadej svůj věk:'));
 
 if (age < 18) {
   const message = 'Utíkej za mamkou';
-  console.log(message);
+  document.body.innerHTML = `<p>${message}</p>`;
 } else {
   const message = 'Vítej mezi dospěláky';
-  console.log(message);
+  document.body.innerHTML = `<p>${message}</p>`;
 }
 ```
 
-V tom příkladu máme dvě lokální proměnné :var[message], které náhodou mají stejné jméno, jinak však spolu nemají nic společného.
+V tomto příkladu máme dvě lokální proměnné :var[message], které náhodou mají stejné jméno, jinak ale spolu nemají nic společného, každá je ve svém bloku a každá má jinou hodnotu. 

@@ -18,7 +18,11 @@ Vybere všechny elementy, které mají třídu `card`
 
 #### Selektor typu id: `#unique-content`
 
+
 Vybere všechny elementy, které mají id `unique-content`
+
+::codepen{user=marketaanezka id=qBpBwoP tab=html,result}
+
 
 ### Pseudotřídy
 
@@ -54,6 +58,9 @@ Aplikuje stylování, pokud je prvek aktivní - například tlačítko, na kter�
 
 </br>
 
+::codepen{user=marketaanezka id=rNpNbKM tab=html,result}
+<br/>
+
 Existují také pseudotřídy, které vybírají elementy podle jejich pozice v dokumentu
 
 #### Selektor typu n-tý potomek `p:nth-child(n)`
@@ -63,6 +70,10 @@ Selektor **`p:nth-child(3)`**, vybere ten element `p`, který je třetím potomk
 Selektor **`div:nth-child(2n)`**, vybere všechny elementy `div`, které jsou sudé potomky svého rodiče.
 Nezapomeňte, že při výpočtu se počítají všechny potomci v daném rodiči, ne pouze paragrafy nebo pouze divy.
 </br>
+
+::codepen{user=marketaanezka id=eYyYamW tab=html,result}
+<br/>
+
 
 Pro referenci si můžete pročíst celý [seznam pseudotříd](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes#syntax)
 
@@ -95,6 +106,10 @@ Vybere všechny elementy `p`, které jsou potomky elementu `div`, a to na jakék
 
 Vybere všechny elementy `p`, které jsou přímí potomci elementu `div`.
 
+::codepen{user=marketaanezka id=eYyYapR tab=html,result}
+<br/>
+
+
 ### Pseudoelementy
 
 Za zmínku také stojí kategorie pseudoelementů. Ty nám umožňují ve stránce vybrat „virtuální elementy“, které nevidíme v HTML dokumentu, ale může být užitečné s nimi pracovat a přiřadit jim odlišný způsob zobrazení. Pomocí pseudoelementů můžeme například vybrat první písmeno textu, nebo přidat obsah před prvek.
@@ -115,4 +130,4 @@ Užitečné pseudoelementy jsou například:
 
 #### Obsah za prvkem `::after`
 
-::codepen{user=marketaanezka id=gOXyjqb tab=html,result}
+::codepen{user=marketaanezka id=vYpYwgM tab=html,result}

@@ -1,16 +1,16 @@
 ## Zastiňování proměnných
 
-Uvažujíc nad příkladem výše vás možná napadne, co by se stalo, kdybychom proměnné :var[message] vytvořili takto.
+Uvažujíc nad příkladem z předchozí sekce vás možná napadne, co by se stalo, kdybychom proměnné :var[message] vytvořili takto.
 
 ```js
 const age = Number(prompt('Zadej svůj věk:'));
 const message = 'Utíkej za mamkou';
 
 if (age < 18) {
-  console.log(message);
+  document.innerHTML = `<p>${message}</p>`;
 } else {
   const message = 'Vítej mezi dospěláky';
-  console.log(message);
+  document.innerHTML = `<p>${message}</p>`;
 }
 ```
 

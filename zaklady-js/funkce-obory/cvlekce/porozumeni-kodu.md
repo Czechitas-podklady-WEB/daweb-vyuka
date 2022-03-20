@@ -3,7 +3,7 @@ title: Porozumění kódu
 demand: 2
 ---
 
-Přečtěte si následující úryvky kódu a u každého řekněte, co program vypíše do konzole aniž abyste program spouštěli.
+Přečtěte si následující úryvky kódu a u každého řekněte, co program vypíše do stránky aniž abyste program spouštěli.
 
 **Úryvek 1:**
 
@@ -12,10 +12,10 @@ const name = 'Mississippi';
 
 if (name.length > 5) {
   const name = 'Missi';
-  console.log(name);
+  document.body.innerHTML = `<p>${name}</p>`;
 }
 
-console.log(name);
+document.body.innerHTML = `<p>${name}</p>`;
 ```
 
 **Úryvek 2:**
@@ -25,11 +25,10 @@ const name = 'Franta';
 
 const greet = (name) => {
   const name = 'Pepa';
-  console.log(name);
-  return 'Kuba';
+  document.body.innerHTML = `<p>${name}</p>`;
 };
 
-console.log(greet('Jožin'));
+greet('Jožin');
 ```
 
 **Úryvek 3:**
@@ -45,5 +44,5 @@ if (age > 21) {
   const price = 0;
 }
 
-console.log(price);
+document.body.innerHTML = `<p>${price}</p>`;
 ```

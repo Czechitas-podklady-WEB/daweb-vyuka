@@ -11,7 +11,7 @@ Jsou to metody
 
 ### Vynechání returnu
 
-Předtím, než se podíváme na samotné metody, ukážeme si, jak se dají zkrátit arrow fuknce. Pokud arrow fuknce pouze něco vrací na jednom řádku, je možné vynechat složené závorky a klíčové slovo `return`. Obě níže napsané fuknce budou fungovat a vrátí nám řetězec s pozdravem.
+Předtím, než se podíváme na samotné metody, ukážeme si, jak se dají zkrátit arrow funkce. Pokud arrow funkce pouze něco vrací na jednom řádku, je možné vynechat složené závorky a klíčové slovo `return`. Obě níže napsané funkce budou fungovat a vrátí nám řetězec s pozdravem.
 
 ```js
 const greet = (name) => {
@@ -24,7 +24,7 @@ console.log(greet('Alex'));
 console.log(conciseGreet('Alex'));
 ```
 
-Dejte si ale pozor, aby kód zůstal čitelný. Pokud je fuknce jasná a jednoduchá, zkrácení se vyplatí, ale není potřeba všechny fuknce zkracovat na úkor čitelnosti kódu!
+Dejte si ale pozor, aby kód zůstal čitelný. Pokud je funkce jasná a jednoduchá, zkrácení se vyplatí, ale není potřeba všechny funkce zkracovat na úkor čitelnosti kódu!
 
 ### Metoda forEach()
 
@@ -38,7 +38,7 @@ for (let i = 0; i < myArray.length; i += 1) {
 }
 ```
 
-Další možností je rovnou na daném poli zavolat metodu `forEach()`. Metoda `forEach()` bere jeden parametr, a to funkci (tzv. callback funkce). Tato fuknce se zavolá na každé položce pole.
+Další možností je rovnou na daném poli zavolat metodu `forEach()`. Metoda `forEach()` bere jeden parametr, a to funkci (tzv. callback funkce). Tato funkce se zavolá na každé položce pole.
 
 ```js
 myArray.forEach((item) => {

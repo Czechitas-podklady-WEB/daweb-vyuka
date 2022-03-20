@@ -89,4 +89,4 @@ if (name === undefined) {
 }
 ```
 
-Hodnota `undefined` nám v budoucní způsobí ještě hodně nepříjemností, je tedy dobré se již teď obrnit trpělivostí.
+Hodnota `undefined` nám v budoucnu způsobí ještě hodně nepříjemností, je tedy dobré se již teď obrnit trpělivostí.

@@ -4,7 +4,7 @@ Jak už bylo řečeno, událostí je mnoho typů a mohou nastat na různých ele
 
 ```js
 const handleClick = () => {
-  console.log('klik');
+  document.body.innerHTML += '<p>klik!</p>';
 };
 
 document.addEventListener('click', handleClick);
@@ -14,7 +14,7 @@ Takto přidáme posluchače události k celé naší stránce. Na celé stránce
 
 ```js
 const handleScroll = () => {
-  console.log('skrol');
+  document.body.innerHTML += '<p>skrol!</p>';
 };
 
 document.addEventListener('scroll', handleScroll);
@@ -22,4 +22,4 @@ document.addEventListener('scroll', handleScroll);
 
 Často se nám také mohou hodit události `keydown` a `keyup`. Událost `keydown` nastane, když uživatel stiskne nějakou klávesu. Událost `keyup` nastane, když uživatel klávesu uvolní. To je velmi šikovné, protože pokud uživatel drží zmáčknutou nějakou klávesu, událost `keydown` nám bude chodit pořád dokola. Naopak událost `keyup` přijde vždy pouze jednou ve chvíli, kdy uživatel klávesu uvolní.
 
-Událostí, na které můžete na stránce reagovat je nepřeberné množství. Seznam všech událostí si můžete pro inspiraci prohlédnout [na stránkách MDN](https://developer.mozilla.org/en-US/docs/Web/Events).
+Událostí, na které můžete na stránce reagovat, je nepřeberné množství. Seznam všech událostí si můžete pro inspiraci prohlédnout [na stránkách MDN](https://developer.mozilla.org/en-US/docs/Web/Events).
