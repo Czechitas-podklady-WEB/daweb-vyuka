@@ -28,9 +28,9 @@ Kompletní sada porovnávacích operátorů vypadá takto.
 
 | Operátor  | Popis            |
 | --------- | ---------------- |
-| **`><`**  | větší než        |
+| **`>`**   | větší než        |
 | **`>=`**  | větší nebo rovno |
-| **`<<`**  | menší než        |
+| **`<`**   | menší než        |
 | **`<=`**  | menší nebo rovno |
 | **`===`** | rovno            |
 | **`!==`** | nerovno          |
