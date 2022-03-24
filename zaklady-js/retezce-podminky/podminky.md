@@ -2,17 +2,15 @@
 
 Nyní se konečně dostáváme k tématu, na které jsme se tak dlouho připravovali. Doposud všechny naše programy vypadaly jako sekvence příkazů vykonávané jeden za druhým. Pro komplikovanější problémy ale budeme potřebovat umožnit, aby se některé části programu vykonaly jen za určitých podmínek.
 
-Pro jednoduchý příklad se opět vraťme k našemu ultramaratonskému běhu. Závod začiná ve tři hodiny odpoledne a počítáme s tím, že závodníci doběhnou někdy příští den ráno. Nebudeme ale v cíli čekat na každého dědulu, který to celé poběží 20 hodin. Řekněme, že organizátoři mají padla druhý den v poledne. Potřebujeme tedy do naší stránky zakomponovat informaci o tom, jestli trasu dokážeme uběhnout do 12 hodin.
+Pro jednoduchý příklad si představme e-shop prodávající alkoholické nápoje. Před každou objednávkou musíme zkontrolovat, že zákazník má alepoň 18 let.
 
 ```js
-const start = 15;
-const delka = Number(prompt('Zadej délku závodu:'));
-const konec = (start + delka) % 24;
+const age = Number(prompt('Zadejte svůj věk:'));
 
-if (konec > 12) {
-  document.body.innerHTML = '<p>Překročena maximální délka závodu!</p>';
+if (age >= 18) {
+  document.body.innerHTML = '<p>Pokračujte k platbě</p>';
 } else {
-  document.body.innerHTML = '<p>Konec závodu ve ' + konec + ' hodin</p>';
+  document.body.innerHTML = '<p>Bohužel máte nízký věk</p>';
 }
 ```
 
@@ -28,29 +26,29 @@ Je dobré mít na paměti, že odsazování a obecně většina bílých znaků,
 
 ```js
 if (age >= 18) {
-  document.body.innerHTML = '<p>Nalej si</p>';
+  document.body.innerHTML = '<p>Pokračujte k platbě</p>';
 } else {
-  document.body.innerHTML = '<p>Žádné chlastání!</p>';
+  document.body.innerHTML = '<p>Bohužel máte nízký věk</p>';
 }
 ```
 
 <!-- prettier-ignore -->
 ```js
-if(age>=18){document.body.innerHTML = '<p>Nalej si</p>';} 
-else{document.body.innerHTML = '<p>Žádné chlastání!</p>';}
+if(age>=18){document.body.innerHTML = '<p>Pokračujte k platbě</p>';}
+else{document.body.innerHTML = '<p>Bohužel máte nízký věk</p>';}
 ```
 
 Věřím, že uznáte, že první varianta je mnohem čitelnější než druhá. Způsobů, jak formátovat kód existuje vícero a můžete se tak účastnit nekonečných hospodských disputací o tom, jestli odsazovat pomocí dvou mezer nebo čtyř, jestli otvírací složenou závorku psát na konec řádku nebo na začátek nového a tak dále.
 
 <!-- prettier-ignore -->
 ```js
-if ( age >= 18 ) 
+if (age >= 18)
 {
-    document.body.innerHTML = '<p>Nalej si</p>';
-} 
-else 
+    document.body.innerHTML = '<p>Pokračujte k platbě</p>';
+}
+else
 {
-    document.body.innerHTML = '<p>Žádné chlastání!</p>';
+    document.body.innerHTML = '<p>Bohužel máte nízký věk</p>';
 }
 ```
 
@@ -62,7 +60,7 @@ Zatím jsme viděli podmínky se dvěma větvemi. Není ovšem problém mít pod
 
 ```js
 if (age >= 18) {
-  document.body.innerHTML = '<p>Nalej si</p>';
+  document.body.innerHTML = '<p>Pokračujte k platbě</p>';
 }
 ```
 
@@ -108,11 +106,11 @@ Každý blok kódu může obsahovat libovolné příkazy, tedy i další podmín
 
 ```js
 if (age >= 18) {
-  document.body.innerHTML = '<p>Nalej si</p>';
+  document.body.innerHTML = '<p>Pokračujte k platbě</p>';
 } else {
   const remains = 18 - age;
   if (remains < 2) {
-    document.body.innerHTML = '<p>Ještě si chvíli počkej</p>';
+    document.body.innerHTML = '<p>Ještě si chvíli počkejte</p>';
   } else if (remains < 5) {
     document.body.innerHTML = '<p>Co to tady zkoušíš?</p>';
   } else {

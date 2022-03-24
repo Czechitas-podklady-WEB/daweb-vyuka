@@ -13,7 +13,7 @@ const { id, product, delivery } = order;
 
 document.body.innerHTML = (
   '<h2>Objednávka: ' + id + '</h2>' +
-  '<p>Zboží ' + product + ' bude doručeno ' + delivery + '.'
+  '<p>Zboží ' + product + ' bude doručeno ' + delivery + '.</p>'
 );
 ```
 
@@ -22,7 +22,7 @@ Abychom se ze všeho toho sčítání a uvozovek nezbláznili, moderní JavaScri
 ```js
 document.body.innerHTML = (
   `<h2>Objednávka: ${id}</h2>` + 
-  `<p>Zboží ${product} bude doručeno ${delivery}.`
+  `<p>Zboží ${product} bude doručeno ${delivery}.</p>`
 );
 ```
 
@@ -31,7 +31,7 @@ Uvnitř složených závorek otevíráme jakési JavaScriptové okno, do kteréh
 ```js
 document.body.innerHTML = (
   `<h2>Objednávka: ${String(id).padStart(8, '0')}</h2>` +
-  `<p>Zboží ${product} bude doručeno ${delivery}.`
+  `<p>Zboží ${product} bude doručeno ${delivery}.</p>`
 );
 ```
 
