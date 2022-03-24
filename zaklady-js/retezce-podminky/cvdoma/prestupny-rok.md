@@ -10,19 +10,19 @@ Napište program, který po zadání kalendářního roku vypíše, zda jde o ro
 
 :::solution
 ```js
-  const rok = Number(prompt("Zadej kalendářní rok:"));
-  if (rok % 4 === 0) {
-    if (rok % 100 === 0) {
-      if (rok % 400 === 0) {
-        document.body.innerHTML = `<p>${rok} je přestupný</p>`;
-      } else {
-        document.body.innerHTML = `<p>${rok} není přestupný</p>`;
-      }
-    } else {
+const rok = Number(prompt("Zadej kalendářní rok:"));
+if (rok % 4 === 0) {
+  if (rok % 100 === 0) {
+    if (rok % 400 === 0) {
       document.body.innerHTML = `<p>${rok} je přestupný</p>`;
+    } else {
+      document.body.innerHTML = `<p>${rok} není přestupný</p>`;
     }
   } else {
-    document.body.innerHTML = `<p>${rok} není přestupný</p>`;
+    document.body.innerHTML = `<p>${rok} je přestupný</p>`;
   }
+} else {
+  document.body.innerHTML = `<p>${rok} není přestupný</p>`;
+}
 ```
 :::
