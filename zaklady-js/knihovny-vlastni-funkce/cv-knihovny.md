@@ -1,4 +1,4 @@
 ## Cvičení: Knihovny
 
-::exc[cvlekce>kreditni-karta]
+::exc[cvlekce>zakladni-validace]
 ::exc[cvlekce>mimozemsky-zivot]
