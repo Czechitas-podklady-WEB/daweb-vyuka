@@ -5,6 +5,8 @@ sections:
   - vlastnosti-udalosti
   - cv-vlastnosti-udalosti
   - vstup-formulare
+  - change
   - cv-textovy-vstup
-  # - slozitejsi-formulare
-  # - cv-pokrocile-formulare
+  - slozitejsi-formulare
+  # - cv-slozitejsi-formulare
+  - cteni-na-doma

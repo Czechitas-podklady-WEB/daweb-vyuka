@@ -2,7 +2,7 @@
 
 Od jednoduchého formuláře s jedním textovým políčkem nyní pokročíme k zajímavějším sestavám. Uvnitř jednoho `<form>` můžeme rozhodně mít více inputů a těch máme mnoho různých druhů. Všechny by měly mít různá `id`, abychom pak z nich dokázali získat potřebná data.
 
-Přdejme do našeho formuláře políčko pro přijmení.
+Přidejme do našeho formuláře políčko pro přijmení.
 
 ```html
 <form id="registration">
@@ -54,6 +54,24 @@ S použitím druhého způsobu bude náš registrační formulář vypadat násl
 
 Takto ale rozložení prvků nevypadá moc hezky. Využijeme proto více našich připravných stylů a dáme formuláři hezčí strukturu.
 
+```html
+<form id="registration">
+  <legend>Přihláška na kurz</legend>
+  <div class="field">
+    <label for="firsName">Jméno:</label>
+    <input id="firstName" type="text" />
+  </div>
+  <div class="field">
+    <label for="lastName">Příjmení:</label>
+    <input id="lastName" type="text" />
+  </div>
+  <div class="controls">
+    <button type="submit">Přihlásit</button>
+  </div>
+</form>
+```
+
+::fig[Nastylované labely]{src=assets/labely-styled.png size=80}
 
 ### Další druhy formulářových prvků
 
@@ -62,58 +80,50 @@ Kromě základního textového políčka máme i další typy například `passw
 1. Na mobilním telefonu se zobrazí správné klávesnice. Napřiklad pro typ `number` se zobrazí numerická klávesnice. Pro typ `email` je na klávesnici rychlej dostupný znak zavináče.
 1. Automatický předvyplňovač formulářů ve vašem prohlížeči pozná, kam má vyplnit váš email, adresu a další informace. Toto jistě znáte z různých objednávek v e-shopech.
 
-**Zaškrtávací tlačítko:**
+### Zaškrtávací tlačítko
+
+Umožňuje uživateli zaškrtnout možnost ano či ne. 
 
 ```html
-<label><input type="checkbox" /> Souhlasím s obchodními podmínkami</label>
+<label><input type="checkbox" />Chci dostávat informovat o dalších akcích</label>
 ```
 
 ### Výběr z více možností
 
+Umožňuje uživateli vybrat jednu z více nabízených možností.
+
 ```html
-<h1>Oblíbené ovoce:</h1>
-<label><input type="radio" name="ovoce" value="a" /> jablko</label>
-<label><input type="radio" name="ovoce" value="b" /> hruška</label>
-<label><input type="radio" name="ovoce" value="c" /> pomeranč</label>
+<label>Vaše zkušenosti:</label>
+<div>
+  <label><input type="radio" name="experience" checked="true" /> Nováček </label>
+  <label><input type="radio" name="experience" /> Začátečník </label>
+  <label><input type="radio" name="experience" /> Pokročilý </label>
+</div>
 ```
+
+Pokud chceme, aby tyto inputy patřily do stejné skupiny, musím jim všem dát stejný atribut `name`. Pokud chceme nastavit nějakou možnost jako vybranou, nastavíme jí atribut `checked` na `true`. 
 
 ### Rozbalovací nabídka
 
-Je potřeba dbát na to, aby všechny související inputy měly stejný atribut `name`.
+Také umožňuje výběr z několika možností, tentokrát však formou rozbalovací nabídky.
 
 ```html
-<h1>Oblíbená zelenina:</h1>
-<select name="zelenina">
-  <option value="a">Mrkev</option>
-  <option value="b">Celer</option>
-  <option value="c">Petržel</option>
+<label for="reference">Odkud o nás víte:</label>
+<select id="referece">
+  <option value="facebook">Facebook</option>
+  <option value="instagram">Instagram</option>
+  <option value="friends">Od známých</option>
+  <option value="othen">Jiné...</option>
 </select>
 ```
 
 ### Víceřádkový text
 
+Umožňuje uživateli vložit delsi kus textu. Zobrazuje v podstatě jednoduchý textový editor.
+
 ```html
-<label>Zpráva: <textarea name="zprava"></textarea></label>
+<label for="note">Vzkaz pro nás:</label>
+<textarea id="note" rows="5"></textarea>
 ```
 
-Tímto výčet zdaleka nekončí. Další typy vstupních prvků najdete na [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types) nebo [W3Schools](https://www.w3schools.com/html/html_form_input_types.asp).
-
-
-[[[ excs Cvičení: Pokročilé formuláře
-
-- statisticky-urad
-  ]]]
-
-## Dobrovolné čtení na doma
-
-### Další atributy
-
-- `autocomplete` pro lepší automatické doplňování. Více zde: [The HTML autocomplete attribute | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete).
-- `autofocus` zaměří políčko hned po načtení stránky, aby do něj mohl uživatel okamžitě psát. Užitečné hlavně v případech, kdy očekáváme, že uživatel začne vyplňovat první políčko bezprostředně po načtení stránky.
-- `disabled` zamezí vyplnění políčka nebo odeslání celého formuláře. Disabled políčka se neodesílají na backend.
-- `readonly` podobně jako `disabled` zamezí úpravy, ale odešle se se zbytkem formuláře na backend.
-- `value` políčko předvyplní daným obsahem.
-- `checked` říká, že zaškrtávací políčko má být v počátečním stavu předzaškrtnuté.
-- `placeholder` je nevýrazná nápověda v místě, kam uživatel píše text. Není vidět, pokud uživatel začne psát. Protože je nápověda nevýrazná a mizí, není vhodné ji používat pro důležité informace.
-- `required` přiměje uživatele před odesláním vyplnit aspoň něco.
-- `minlength` přiměje uživatele vyplnit políčko o minimální délce.
+Tímto výčet zdaleka nekončí. Další typy vstupních prvků najdete na [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types) nebo [W3Schools](https://www.w3schools.com/html/html_form_input_types.asp). Výše uvedené prvky už nám však zcela postačí k vytvoření formuláře z úvodu této lekce.
