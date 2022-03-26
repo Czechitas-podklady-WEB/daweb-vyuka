@@ -10,3 +10,7 @@ Naklonujte si [repozitář](https://github.com/Czechitas-podklady-WEB/novinky-za
 1. Vyberte element `h1` a nastavte mu třídu na `news__title`. Nadpis by měl změnit styl. Nastavte také obsah nadpisu na text `Aktuální novinky`.
 1. Pomocí atributu `id` vyberte element obsahující první zprávu. Přidejte do jeho atributu `class` třídu `post--main`. První zpráva by tak měla mírně změnit svůj styl.
 1. Vyberte obrázek v poslední zprávě a změnte jeho atribut `src` na obrázek `img/zprava3-novy.jpg`.
+
+Na konci by stránka v prohlížeči měla vypadat jako na obrázku níže:
+
+::fig[Snímek obazovky s řešením]{src=assets/screenshot-novinky.png}
