@@ -4,7 +4,7 @@ Správný přístup jak navrhovat a kódovat webové stránky je nejprve na mobi
 
 ### Nějaká ta čísla
 
-::fig[Mobile traffic 2011-2021]{src=assets/Mobile-Trafic-2011-2021.png}
+::fig[Mobile traffic 2011-2021]{src=assets/Mobile-Traffic-2011-2021.png}
 [Zdroj obrázku](https://www.broadbandsearch.net/blog/mobile-desktop-internet-usage-statistics)
 <br/>
 
@@ -21,8 +21,10 @@ Prostor na telefonu je omezený, proto je náročný na design. Vždycky je snaz
 
 ::fig[Display comparison czechitas mapy cz]{src=assets/mobile-first-czechitas.png}
 <br/>
+::fig[Display comparison skyscanner]{src=assets/responsive-skyscanner.png}
+<br/>
 
-Zároveň na telefonu se uživatelé chovají jinak, nemají myš a klávesnici, ale většinou jen jeden palec. Proto při designu pro malé obrazovky mějme na paměti, pár pravidel:
+Zároveň na telefonu se uživatelé chovají jinak, nemají myš a klávesnici, ale většinou jen jeden palec. Proto při designu pro malé obrazovky mějme na paměti pár pravidel:
 
 - content first: obsah je klíčový, nezahlcujte uživatele množstvím informací
 - jasná vizuální hierarchie, přehledná navigace

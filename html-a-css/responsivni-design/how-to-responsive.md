@@ -21,9 +21,9 @@ Meta značka `viewport` v hlavičce html zajišťuje, že obsah našeho webu se 
 
 ### Flexibilní grid
 
-Grid, neboli mřížka byla původně používaná pro tištěný design. Mřížku tvořil systém sloupců a řádků, na které se umisťuje obsah. Je to ale i velice užitečný návod pro návrh webových designů.[Příklad komponent navrhovaných do grid systému.](https://dribbble.com/shots/15341964-Grid-System-UI-Components)
+Grid, neboli mřížka byla původně používaná pro tištěný design. Mřížku tvořil systém sloupců a řádků, na které se umisťuje obsah. Je to ale i velice užitečný návod pro návrh webových designů. [Příklad komponent navrhovaných do grid systému.](https://dribbble.com/shots/15341964-Grid-System-UI-Components)
 
-Tím, že nevíme na jak velké obrazovce se bude náš web zobrazovat, je potřeba zajistit, aby se přizpůsobil všem. V našem kódu toho docílíme pomocí relativních jednotek (např. procenta).
+Protože nevíme, na jak velké obrazovce se bude náš web zobrazovat, je potřeba zajistit, aby se přizpůsobil všem. V našem kódu toho docílíme pomocí relativních jednotek (např. procenta).
 
 ::codepen{user=marketaanezka id=RwxpYzY tab=html,result}
 
@@ -39,7 +39,7 @@ img {
 }
 ```
 
-Pokud chceme, aby obrázek měl ideálně šířku 500px, a pokud se nevejde tak se přizpůsobil obsahu, můžeme použít tento zápis.
+Pokud chceme, aby obrázek měl ideálně šířku 500px, a pokud se nevejde, tak se přizpůsobil obsahu, můžeme použít tento zápis.
 
 ```css
 img {
@@ -49,10 +49,10 @@ img {
 ```
 
 ::codepen{user=marketaanezka id=jOYBePP tab=html,result}
-
+<br/>
 Další možností jak přizpůsobit obrázek velikosti kontejneru je použití [background image](https://www.freecodecamp.org/news/css-background-image-with-html-example-code/).
 
-Pro případ, že potřebujeme ovlivnit i rychlost načítání, je možnost na menším displaji zobrazovat menší obrázek a na větším zase obrázek v lepší kvalitě. K tomu se používá [srcset](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/).
+Pro případ, že potřebujeme ovlivnit i rychlost načítání, je možnost na menším displeji zobrazovat menší obrázek a na větším zase obrázek v lepší kvalitě. K tomu se používá [srcset](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/).
 
 ### Media queries
 
@@ -77,4 +77,4 @@ I přesto, že je možné uvádět v media queries [více dalších podmínek](h
 
 #### Breakpoint
 
-Breakpoint se říká bodu, kdy se při překročení určité šířky displeje styl naší stránky změní. Neexistují oficiální breakpointy ale pro inspiraci je možné se podívat třeba na breakpointy populárních stylovacích knihoven jako [Boostrap](https://getbootstrap.com/docs/5.0/layout/breakpoints/), [Material UI](https://mui.com/customization/breakpoints/) nebo [Tailwinds](https://tailwindcss.com/docs/screens). Vývojářských nástrojích je možné taky najít základní breakpointy.
+Breakpoint se říká bodu, kdy se při překročení určité šířky displeje styl naší stránky změní. Neexistují oficiální breakpointy ale pro inspiraci je možné se podívat třeba na breakpointy populárních stylovacích knihoven jako [Boostrap](https://getbootstrap.com/docs/5.0/layout/breakpoints/), [Material UI](https://mui.com/customization/breakpoints/) nebo [Tailwinds](https://tailwindcss.com/docs/screens). Ve vývojářských nástrojích je možné taky najít základní breakpointy.

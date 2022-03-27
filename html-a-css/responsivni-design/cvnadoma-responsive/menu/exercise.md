@@ -11,5 +11,4 @@ Nakódujte stránku podle obrázku `zadani-ukolu.jpg`.
 
 <br/>
 
-Rozložení stránky se mění v breakpointech: 640px a 1000px.
-Prohlédněte si pečlivě HTML strukturu, všímejte si jak jsou prvky do sebe zanořené. Bude potřeba nastylovat i položky seznamu, mimo jiné i vlastnost `list-style-type`.
+Rozložení stránky se mění v breakpointech: 640px a 1000px. Bude potřeba nastylovat i položky seznamu, mimo jiné i vlastnost `list-style-type`.
