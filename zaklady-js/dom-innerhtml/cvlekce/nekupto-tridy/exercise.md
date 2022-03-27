@@ -12,4 +12,4 @@ Naklonujte si [repozitář](https://github.com/Czechitas-podklady-WEB/nekupto-za
 
 Na konci by stránka v prohlížeči měla vypadat jako na obrázku níže:
 
-::fig[Snímek obazovky s řešením]{src=assets/screenshot-nekupto.png}
+::fig[Snímek obazovky s řešením]{src=assets/screen-nekupto.png}

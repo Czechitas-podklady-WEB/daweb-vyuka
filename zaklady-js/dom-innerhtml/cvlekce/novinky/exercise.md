@@ -13,4 +13,4 @@ Naklonujte si [repozitář](https://github.com/Czechitas-podklady-WEB/novinky-za
 
 Na konci by stránka v prohlížeči měla vypadat jako na obrázku níže:
 
-::fig[Snímek obazovky s řešením]{src=assets/screenshot-novinky.png}
+::fig[Snímek obazovky s řešením]{src=assets/screen-novinky.png}
