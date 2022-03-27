@@ -6,9 +6,10 @@ Formulář je sestava různých vstupních prvků jako jsou textová políčka, 
 
 ::fig[formulář]{src=assets/formular.png size=60}
 
-Tanto formulář už je nastylovaný, aby vypadal trochu k světu. Nenastylované HTML formuláře nevypadají moc vábně a jejich stylování je trochu opruz. Proto máme pro tuto lekci připravené styly, které si můžete [stáhnout zde](https://raw.githubusercontent.com/Czechitas-podklady-WEB/formulare/master/style.css) a použít pro základní experimenty s formuláři. 
+Tento formulář už je nastylovaný, aby vypadal trochu k světu. Nenastylované HTML formuláře nevypadají moc vábně a jejich stylování je trochu opruz. Proto máme pro tuto lekci připravené styly, které si můžete [stáhnout zde](https://raw.githubusercontent.com/Czechitas-podklady-WEB/formulare/master/style.css) a použít pro základní experimenty s formuláři. 
 
-Na konci lekce budeme umět postavit formulář jako výše. Začneme však s tím úplně nejjednodušším formulářem, který má pouze textové políčko a odesílací tlačítko. Textové políčko vytvoříme pomocí značky `input`. 
+Formulář výše je už docela obsáhlý a obsahuje prvky, které se v této akademii z časových důvodů učit nebudeme. Na konci lekce najdete odkazy na zdroje, odkud můžete načerpat další informace. 
+V tuto chvíli začneme s tím úplně nejjednodušším formulářem, který má pouze textové políčko a odesílací tlačítko. Textové políčko vytvoříme pomocí značky `input`. 
 
 ```html
 <input id="firstName" type="text" />

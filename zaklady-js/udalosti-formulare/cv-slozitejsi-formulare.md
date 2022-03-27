@@ -1,3 +1,3 @@
 ## Cvičení: Složitější formuláře
 
-::exc[cvlekce>statisticky-urad]
+::exc[cvlekce>objednavka]

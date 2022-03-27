@@ -1,5 +1,34 @@
 ## Dobrovolné čtení na doma
 
+`event.shiftKey`, `event.altKey`, `event.ctrlKey`
+: Tyto vlastnosti obsahují pravdivostní hodnoty, které udávají, zda byla při kliknutí stisknuta klávesa :kbd[Alt], :kbd[Shift] nebo :kbd[Ctrl].
+
+`event.code`
+: Pokud nastala událost stisknutí klávasy, tato vlastnost obsahuje jméno této klávesy.
+
+### Vlastnost code
+
+Pokud chceme zjistit, jaká klávesa byla stisknuta při událostech `keyup` a `keydown`, musíme znát název této klávesy. Názvy kláves snadno najdete na [keycode.info](https://keycode.info). Zjistíme tak například, že klávesa :kbd[Enter] se jmenuje prostě `Enter`, klávesa :kbd[D] se jmenuje `KeyD` a tak dále. Takto pak na stránce můžeme zareagovat například na stisknutí :kbd[Enter].
+
+```js
+document.addEventListener('keyup', (e) => {
+  if (e.code === 'Enter') {
+    console.log('enter');
+  }
+});
+```
+
+Nebo na stisknutí :kbd[Ctrl]+:kbd[C].
+
+```js
+document.addEventListener('keyup', (e) => {
+  if (e.code === 'KeyC' && e.ctrlKey) {
+    console.log('Ctrl+C');
+  }
+});
+```
+
+
 Formulářové prvky mají mnoho dalších atributů, které jsme v lekci nezmínili. Patří mezi ně
 
 - `autocomplete` pro lepší automatické doplňování. Více zde: [The HTML autocomplete attribute | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete).

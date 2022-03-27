@@ -2,11 +2,11 @@ title: Procvičování událostí, formuláře
 lead: Ukážeme si další možností práce s odálostmi a naučíme se získávat data od uživatele.
 access: claim
 sections:
-  - vlastnosti-udalosti
-  - cv-vlastnosti-udalosti
+  - target
   - vstup-formulare
-  - change
-  - cv-textovy-vstup
+  - cv-zaklady
   - slozitejsi-formulare
-  # - cv-slozitejsi-formulare
+  - change
+  - cv-slozitejsi-formulare
   - cteni-na-doma
+  - ulozky-na-doma

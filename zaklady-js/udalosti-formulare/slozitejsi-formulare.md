@@ -17,28 +17,16 @@ Přidejme do našeho formuláře políčko pro přijmení.
 
 Tady už se ale uživatel moc nevyzná kam má co psát. Potřebujeme políčka nějak popsat. 
 
-### Label
+### Popisky
 
-Pro zpřehlednění formulářů používáme značku `label`. Na výběr máme dvě možnosti.
+Pro zpřehlednění formulářů je dobré k jednotlivým vstupním pvkům přidat popisky. K tom používáme značku `label`. Aby prohlížeč věděl, ke kterému prvku patří který popisek, je potřeba je svázat pomocí attributu `for`. 
 
-1. *Label jako obal:*
+```html
+<label for="firstName">Jméno:</label>
+<input id="firstName" type="text" />
+```   
 
-   ```html
-   <label>Jméno: <input id="firstName" type="text" /></label>
-   ```
-
-   Tento způsob je jednodušší na zápis, ale hůře se styluje.
-
-1. *Label jako samostatný prvek:*
-
-   ```html
-   <label for="firstName">Jméno:</label>
-   <input id="firstName" type="text" />
-   ```
-
-   Tento způsob je jednodušší na stylování, vyžaduje ale správnou práci s atributy `for` a `id`.
-
-S použitím druhého způsobu bude náš registrační formulář vypadat následovně.
+S použitím popisků bude náš registrační formulář vypadat následovně.
 
 ```html
 <form id="registration">
@@ -88,24 +76,9 @@ Umožňuje uživateli zaškrtnout možnost ano či ne.
 <label><input type="checkbox" />Chci dostávat informovat o dalších akcích</label>
 ```
 
-### Výběr z více možností
-
-Umožňuje uživateli vybrat jednu z více nabízených možností.
-
-```html
-<label>Vaše zkušenosti:</label>
-<div>
-  <label><input type="radio" name="experience" checked="true" /> Nováček </label>
-  <label><input type="radio" name="experience" /> Začátečník </label>
-  <label><input type="radio" name="experience" /> Pokročilý </label>
-</div>
-```
-
-Pokud chceme, aby tyto inputy patřily do stejné skupiny, musím jim všem dát stejný atribut `name`. Pokud chceme nastavit nějakou možnost jako vybranou, nastavíme jí atribut `checked` na `true`. 
-
 ### Rozbalovací nabídka
 
-Také umožňuje výběr z několika možností, tentokrát však formou rozbalovací nabídky.
+Umožňuje výběr z několika možností formou rozbalovací nabídky.
 
 ```html
 <label for="reference">Odkud o nás víte:</label>
@@ -117,13 +90,4 @@ Také umožňuje výběr z několika možností, tentokrát však formou rozbalo
 </select>
 ```
 
-### Víceřádkový text
-
-Umožňuje uživateli vložit delsi kus textu. Zobrazuje v podstatě jednoduchý textový editor.
-
-```html
-<label for="note">Vzkaz pro nás:</label>
-<textarea id="note" rows="5"></textarea>
-```
-
-Tímto výčet zdaleka nekončí. Další typy vstupních prvků najdete na [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types) nebo [W3Schools](https://www.w3schools.com/html/html_form_input_types.asp). Výše uvedené prvky už nám však zcela postačí k vytvoření formuláře z úvodu této lekce.
+Tímto výčet zdaleka nekončí. Další typy vstupních prvků najdete na [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types) nebo [W3Schools](https://www.w3schools.com/html/html_form_input_types.asp). Výše uvedené prvky už nám však zcela postačí k vytvoření jednoduchých formulářů.
