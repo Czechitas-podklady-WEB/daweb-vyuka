@@ -4,4 +4,3 @@ V následujících cvičeních se mezi prvky, které budeme responzivně skláda
 
 ::exc[cvnadoma-responsive>layout-03]
 ::exc[cvnadoma-responsive>menu]
-::exc[cvnadoma-responsive>projekt-kontakty]
