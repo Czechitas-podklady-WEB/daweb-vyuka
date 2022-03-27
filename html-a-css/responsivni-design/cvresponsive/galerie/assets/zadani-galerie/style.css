@@ -1,0 +1,30 @@
+/* intuitivni box-sizing */
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  font: 16px/1.5 sans-serif;
+}
+
+img {
+  display: block;
+}
+
+/*
+Zařiď, aby se fotogalerie měnila tak, že pro různé
+šířky prohlížeče je na jednom řádku vždy jiný počet
+obrázků vedle sebe. Viz. obrázek zadani-ukolu.jpg.
+
+Okno prohlížeče:
+výchozí (=mobil) - 1 obrázek na řádku (tj. 12 obrázků pod sebou)
+širší než 500px  - 2 obrázky vedle sebe
+širší než 650px  - 3 obrázky vedle sebe
+širší než 800px  - 4 obrázky vedle sebe
+širší než 1000px - 6 obrázků vedle sebe
+*/

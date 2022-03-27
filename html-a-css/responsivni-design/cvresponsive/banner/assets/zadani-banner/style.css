@@ -1,0 +1,35 @@
+/* intuitivni box-sizing */
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  font: 16px/1.5 sans-serif;
+}
+
+.banner,
+.obdelnik {
+  padding: 30px;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.banner {
+  background-color: #e74c3c;
+}
+.obdelnik {
+  background-color: #2ecc71;
+}
+
+/*
+Nastavte CSS pro třídu .banner tak, aby:
+- ve výchozím stavu (=na mobilu) bude banner skrytý
+- na obrazovce širší než 800px se banner zobrazí
+*/
