@@ -1,0 +1,10 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+html { box-sizing: border-box; }
+*, :after, :before { box-sizing: inherit; }
+
+body {
+	font-family: sans-serif;
+	font-size: 14px;
+}
+
+/* ---------------------------------------------------- */
