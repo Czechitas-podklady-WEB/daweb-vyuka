@@ -15,11 +15,11 @@ V tuto chvíli začneme s tím úplně nejjednodušším formulářem, který m�
 <input id="firstName" type="text" />
 ```
 
-Každý formulář by měl mít odesílací tlačítko `button`, kterým uživatel potvrdí odeslání dat. Oba tyto prvky pak uzavřeme do značky `form` pomocí níž vymezíme, kde formulář začíná a končí. Můžeme také přidat legendu, aby měl formulář nějaký nadpis.
+Každý formulář by měl mít odesílací tlačítko `button`, kterým uživatel potvrdí odeslání dat. Oba tyto prvky pak uzavřeme do značky `form` pomocí níž vymezíme, kde formulář začíná a končí. Můžeme také přidat formuláři nadpis.
 
 ```html
 <form id="registration">
-  <legend>Přihláška na kurz</legend>
+  <h1>Přihláška na kurz</h1>
   <input id="firstName" type="text" />
   <button type="submit">Přihlásit</button>
 </form>
@@ -73,7 +73,7 @@ Po této úpravě už se stránka nebude obnovat.
 
 Stejně jako vlastnost `textContent`, i vlastnost `value` je jak pro čtení, tak pro zápis. Můžeme tak řetězec z políčka přečíst, ale také jej políčku nastavit. Všimněte si, že schválně používáme slovo řetězec, protože všechna políčka vždy pracují s jen s řetězci. Nastavování hodnot políček použijeme v pokročilejších formulářích. 
 
-Zdaleka ně všechny formuláře musí používat legendu a mít spoustu vstupů. Často si vystačíme jen s textovým políčkem a odesílacím tlačítkem. Například vyhledávací políčko jako na obrázku níže je také jen hezky nastylovaný formulář. 
+Zdaleka ne všechny formuláře musí používat nadpis a mít spoustu vstupů. Často si vystačíme jen s textovým políčkem a odesílacím tlačítkem. Například vyhledávací políčko jako na obrázku níže je také jen hezky nastylovaný formulář. 
 
 ::fig[Search box]{src=assets/search-box.png}
 

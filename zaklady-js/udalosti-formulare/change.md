@@ -1,11 +1,11 @@
 ## Událost change
 
-Kromě události `submit` se nám ve formulářích bude hodit také událost `change`. Tuto událost vyhazují formulářové prvky ve chvíli, kdy se mění jejich obsah. U textového políčka tak událost nastane po každém stisknutí klávesy. Pojďme zaexperimentovat a zkusme průběžně měnit legendu formuláře podle toho, co uživatel píše do políčka pro křestní jméno.
+Kromě události `submit` se nám ve formulářích bude hodit také událost `change`. Tuto událost vyhazují formulářové prvky ve chvíli, kdy se mění jejich obsah. U textového políčka tak událost nastane po každém stisknutí klávesy. Pojďme zaexperimentovat a zkusme průběžně měnit nadpis formuláře podle toho, co uživatel píše do políčka pro křestní jméno.
 
 ```js
 document.querySelector('#firstName').addEventListener('change', (e) => {
-  const legendElm = document.querySelector('#registration legend');
-  legendElm.textContent = `Přihláška pro ${e.target.value}`;
+  const titleElm = document.querySelector('#registration h1');
+  titleElm.textContent = `Přihláška pro ${e.target.value}`;
 });
 ```
 

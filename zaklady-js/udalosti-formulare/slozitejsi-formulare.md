@@ -6,7 +6,7 @@ Přidejme do našeho formuláře políčko pro přijmení.
 
 ```html
 <form id="registration">
-  <legend>Přihláška na kurz</legend>
+  <h1>Přihláška na kurz</h1>
   <input id="firstName" type="text" />
   <input id="lastName" type="text" />
   <button type="submit">Přihlásit</button>
@@ -44,7 +44,7 @@ Takto ale rozložení prvků nevypadá moc hezky. Využijeme proto více našich
 
 ```html
 <form id="registration">
-  <legend>Přihláška na kurz</legend>
+  <h1>Přihláška na kurz</h1>
   <div class="field">
     <label for="firsName">Jméno:</label>
     <input id="firstName" type="text" />
@@ -86,7 +86,7 @@ Umožňuje výběr z několika možností formou rozbalovací nabídky.
   <option value="facebook">Facebook</option>
   <option value="instagram">Instagram</option>
   <option value="friends">Od známých</option>
-  <option value="othen">Jiné...</option>
+  <option value="other">Jiné...</option>
 </select>
 ```
 
