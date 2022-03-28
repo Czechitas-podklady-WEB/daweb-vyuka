@@ -77,4 +77,4 @@ I přesto, že je možné uvádět v media queries [více dalších podmínek](h
 
 #### Breakpoint
 
-Breakpoint se říká bodu, kdy se při překročení určité šířky displeje styl naší stránky změní. Neexistují oficiální breakpointy ale pro inspiraci je možné se podívat třeba na breakpointy populárních stylovacích knihoven jako [Boostrap](https://getbootstrap.com/docs/5.0/layout/breakpoints/), [Material UI](https://mui.com/customization/breakpoints/) nebo [Tailwinds](https://tailwindcss.com/docs/screens). Ve vývojářských nástrojích je možné taky najít základní breakpointy.
+Breakpoint se říká bodu, kdy se při překročení určité šířky displeje styl naší stránky změní. Neexistují oficiální breakpointy, dobrým pravidlem je **vytvořit breakpoint ve chvíli, kdy současný design už nedává smysl.** Je možné se podívat třeba na breakpointy populárních stylovacích knihoven jako [Boostrap](https://getbootstrap.com/docs/5.0/layout/breakpoints/), [Material UI](https://mui.com/customization/breakpoints/) nebo [Tailwinds](https://tailwindcss.com/docs/screens). Ve vývojářských nástrojích je možné taky najít základní breakpointy.
