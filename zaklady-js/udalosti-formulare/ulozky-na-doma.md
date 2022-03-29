@@ -1,4 +1,5 @@
 ## Doporučené úložky na doma
 
-::exc[cvlekce>newsletter-kontrola]
 ::exc[cvdoma>auto]
+::exc[cvdoma>prihlaseni]
+::exc[cvdoma>newsletter-kontrola]

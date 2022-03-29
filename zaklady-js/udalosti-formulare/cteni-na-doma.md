@@ -1,4 +1,4 @@
-## Dobrovolné čtení na doma
+## Povinné čtení na doma
 
 `event.shiftKey`, `event.altKey`, `event.ctrlKey`
 : Tyto vlastnosti obsahují pravdivostní hodnoty, které udávají, zda byla při kliknutí stisknuta klávesa :kbd[Alt], :kbd[Shift] nebo :kbd[Ctrl].
