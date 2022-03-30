@@ -1,8 +1,10 @@
 ---
 title: Kontrola DIČ
 demand: 3
+offerSolution: true
 ---
 
+:::assign
 Všimněte si, že knihovna `validator.js` v době vzniku tohoto zadání neumí ověřit platnost českého DIČ (daňové identifikační číslo). Zkusme tedy takovou funkci napsat. 
 
 Formát DIČ sestává z předpony CZ a poté následuje devět nebo deset číslic. Tedy například 
@@ -22,3 +24,29 @@ Postupujte dle následujících kroků.
 1. Použijte metodu `validator.isInt`, která umí zkontrolovat, zda řetězec obsahuje pouze číslice. Pokud metoda vrátí `false`, ihned také vraťte `false`. 
 1. Pokud funkce dospěla až do tohoto bodu, vstup prošel všemi testy. Můžeme vrátit `true`.
 1. Vyzoušejte svoji funkci v konzoli na různých vstupech a ověřte, že funguje.
+:::
+
+:::solution
+```
+const isDIC = (inputStr) => {
+  if (inputStr.length < 11) {
+    return false
+  }
+  if (inputStr.length > 12) {
+    return false
+  }
+
+  const prefix = inputStr.slice(0, 2)
+  if (prefix !== 'CZ') {
+    return false
+  }
+
+  const digits = inputStr.slice(2)
+  if (!validator.isInt(digits)) {
+    return false
+  }
+
+  return true
+}
+```
+:::
