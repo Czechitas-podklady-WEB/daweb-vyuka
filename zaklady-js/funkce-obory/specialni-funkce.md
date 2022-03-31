@@ -20,7 +20,7 @@ const showOrderSummary = (summary) => {
     <div class="summary__count">Celkem položek: ${summary.count}</div>
     <div class="summary__sum">Částka: ${summary.sum}</div>
   `;
-}
+};
 ```
 
 K tomu, aby funkce splnila svůj úkol stačí, že do stránky vloží patřičný kus HTML. Už nemusí vracet žádnou hodnotu. JavaScript se však snaží být konzistentní a i takováto funkce tajně vrací hodnotu. Pokud sami nenapíšeme slovíčko `return`, JavaScript si jej sám doplní na konec funkce. 
@@ -34,7 +34,7 @@ const showOrderSummary = (summary) => {
   `;
 
   return undefined;
-}
+};
 ```
 
 V JavaScriptu tedy každá funkce něco vrací. Pokud my sami z naší funkce nevrátíme žádnou hodnotu, JavaScript automaticky vrátí `undefined`. Proto můžeme klidně psát

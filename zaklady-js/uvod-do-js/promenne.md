@@ -45,7 +45,7 @@ let vyplata = 8 * 21 * sazba;
 document.body.innerHTML = vyplata;
 
 sazba = 600;
-vyplata = 8 * 21 * sazba
+vyplata = 8 * 21 * sazba;
 document.body.innerHTML = vyplata;
 ```
 
@@ -55,7 +55,7 @@ document.body.innerHTML = vyplata;
 
 ```js
 sazba = sazba + 100;
-vyplata = 8 * 21 * sazba
+vyplata = 8 * 21 * sazba;
 document.body.innerHTML = vyplata;
 ```
 
@@ -63,7 +63,7 @@ Nebo ji můžeme chtít navýšit třeba o 15 %.
 
 ```js
 sazba = sazba * 1.15;
-vyplata = 8 * 21 * sazba
+vyplata = 8 * 21 * sazba;
 document.body.innerHTML = vyplata;
 ```
 
