@@ -3,7 +3,7 @@ title: Porozumění kódu
 demand: 2
 ---
 
-Přečtěte si následující úryvky kódu a u každého řekněte, co program vypíše do stránky aniž abyste program spouštěli.
+Přečtěte si následující úryvky kódu a u každého řekněte, co program vypíše do stránky aniž byste program spouštěli.
 
 **Úryvek 1:**
 
