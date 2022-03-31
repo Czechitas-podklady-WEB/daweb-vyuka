@@ -7,32 +7,12 @@ offerSolution: true
 :::assign
 Napište funkci `convertToCZK`, která převede částku zadanou v cízí měně na české koruny. Funkce bude podporovat následující měny a kurzy.
 
-<table>
-  <thead>
-    <tr>
-      <th>Měna</th>
-      <th>Kód</th>
-      <th>Kurz</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Euro</td>
-      <td>EUR</td>
-      <td>27.015</td>
-    </tr>
-    <tr>
-      <td>Britská libra</td>
-      <td>GBP</td>
-      <td>29.615</td>
-    </tr>
-    <tr>
-      <td>Americký dolar</td>
-      <td>USD</td>
-      <td>23.197</td>
-    </tr>
-  </tbody>
-</table>
+| Měna           | Kód | Kurz    |
+| -------------- | --- | ------- |
+| Euro           | EUR | 24.42   |
+| Britská libra  | GBP | 28.98   |
+| Americký dolar | USD | 22.07   |
+| Bitcoin        | BTC | 1010077 |
 
 Výslednou částku zakrouhlete na celé koruny. Příklad použití:
 
@@ -47,19 +27,21 @@ Pokud funkce jako parametr dostane neznámý kód měny, vrátí jako výsledek 
 :::solution
 ```js
 const convertToCZK = (amount, currency) => {
-  let rate;
+	let rate;
 
-  if (currency === 'EUR') {
-    rate = 24.42;
-  } else if (currency === 'USD') {
-    rate = 22.07;
-  } else if (currency === 'BTC') {
-    rate = 1010077;
-  } else {
-    return null;
-  }
+	if (currency === 'EUR') {
+		rate = 24.42;
+	} else if (currency === 'GBP') {
+		rate = 28.98;
+	} else if (currency === 'USD') {
+		rate = 22.07;
+	} else if (currency === 'BTC') {
+		rate = 1010077;
+	} else {
+		return null;
+	}
 
-  return Math.round(rate * amount);
+	return Math.round(rate * amount);
 };
 ```
 :::
