@@ -33,7 +33,7 @@ msgElm.textContent = message;
 
 Často se však stane, že hodnotu `null` vrací nějaké funkce v situaci, kdy se něco nepovedlo. Velmi častý případ je to právě u funkce `document.querySelector`, která vrací `null`, pokud se jí na stránce nezdaří najít element podle zadaného selektoru.
 
-Pojďme zkusit omylem vybrat element pro naší zprávu pomocí CSS třídy, která však v HTML vůbec není.
+Pojďme zkusit omylem vybrat element pro naši zprávu pomocí CSS třídy, která však v HTML vůbec není.
 
 ```jscon
 > const msgElm = document.querySelector('.msg')
@@ -53,7 +53,7 @@ if (msgElm === null) {
 
 ### Hodnota undefined
 
-Kromě celkem užitečné hodnoty `null` JavaScript také obsahuje zákeřnou hodnotu `undefined`. Pokud `null` je jakási neutrální výplň, hodnota `undefined` v podstatě znamená "prázdno". Pokud bychom přirovnali proměnné k šuplíkům, mohli bychom si představovat, že hodnota `null` znamená šuplík vyplněný vatou nebo molitanem. Hodnota `undefined` by pak znamenala, že šuplík je úplně prázdný. 
+Kromě celkem užitečné hodnoty `null` JavaScript také obsahuje zákeřnou hodnotu `undefined`. Pokud `null` je jakási neutrální výplň, hodnota `undefined` v podstatě znamená „prázdno“. Pokud bychom přirovnali proměnné k šuplíkům, mohli bychom si představovat, že hodnota `null` znamená šuplík vyplněný vatou nebo molitanem. Hodnota `undefined` by pak znamenala, že šuplík je úplně prázdný. 
 
 Hodnotu `undefined` potkáme v mnoha situacích, ale nejčastěji ve chvíli, kdy se snažíme u nějakého objektu přistoupit k vlastnosi, která neexistuje. Je například velmi snadné udělat překlep v anglickém slově `length`.
 
