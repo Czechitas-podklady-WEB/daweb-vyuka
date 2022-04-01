@@ -43,7 +43,7 @@ const machri = (zasilka) => {
     return `Zásilka "${zasilka}" doručena za 10 minut.`;
   }
 
-  return `Zásilka "${zasilka}" ztracena. Drona přepadlo hejno hladových holubů`;
+  return `Zásilka "${zasilka}" ztracena. Drona přepadlo hejno hladových holubů.`;
 };
 
 const borci = (zasilka) => {
