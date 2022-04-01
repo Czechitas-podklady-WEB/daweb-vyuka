@@ -27,4 +27,5 @@ setTimeout(() => {
 button.addEventListener('click', () => {
   button.textContent = 'Objednáno';
 });
+```
 :::
