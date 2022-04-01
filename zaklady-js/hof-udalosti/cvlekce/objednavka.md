@@ -1,8 +1,10 @@
 ---
 title: Objednávka
 demand: 1
+offerSolution: true
 ---
 
+:::assign
 Vytvoříme jednoduchou stránku s objednávacím tlačítkem.
 
 1. Založte HTML stránku s jedním tlačítkem
@@ -15,3 +17,14 @@ Vytvoříme jednoduchou stránku s objednávacím tlačítkem.
    ```
 1. Upravte program tak, že text se nevypíše do stránky, ale zobrazí se na samotném tlačítku.
 1. Dále program upravte tak, že akce objednání se vykoná při kliknutí kamkoliv na stránku, nikoliv pouze na tlačítko.
+:::
+
+:::solution
+
+```js
+const button = document.querySelector('#btn-order');
+button.addEventListener('click', () => {
+  // document.body.innerHTML += '<p>Objednáno</p>';
+  button.textContent = 'Objednáno';
+});
+:::
