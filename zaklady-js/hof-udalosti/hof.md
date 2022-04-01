@@ -32,22 +32,22 @@ Napišme si funkce, které simulují naše doručovací společnosti.
 ```js
 const hejsci = (zasilka) => {
   if (Math.random() > 0.1) {
-    return `Zásilka "${zasilka}" doručena za 30 minut, kámo.`;
+    return `Zásilka „${zasilka}“ doručena za 30 minut, kámo.`;
   }
 
-  return `Zásilka "${zasilka}" se ztratila. Kurýra přepadla smečka hladových bezdomovců.`;
+  return `Zásilka „${zasilka}“ se ztratila. Kurýra přepadla smečka hladových bezdomovců.`;
 };
 
 const machri = (zasilka) => {
   if (Math.random() > 0.5) {
-    return `Zásilka "${zasilka}" doručena za 10 minut.`;
+    return `Zásilka „${zasilka}“ doručena za 10 minut.`;
   }
 
-  return `Zásilka "${zasilka}" ztracena. Drona přepadlo hejno hladových holubů.`;
+  return `Zásilka „${zasilka}“ ztracena. Drona přepadlo hejno hladových holubů.`;
 };
 
 const borci = (zasilka) => {
-  return `Zásilka "${zasilka}" doručena s přehledem za dvě hodiny.`;
+  return `Zásilka „${zasilka}“ doručena s přehledem za dvě hodiny.`;
 };
 ```
 
@@ -55,7 +55,7 @@ Tyto funkce si můžeme vyzkoušet například v konzoli.
 
 ```jscon
 > machri('Cous cous se zeleninou')
-'Zásilka "Cous cous se zeleninou ztracena". Drona přepadlo hejno hladových holubů.'
+'Zásilka „Cous cous se zeleninou ztracena“. Drona přepadlo hejno hladových holubů.'
 ```
 
 Představme si nyní, že si jako zákazník objednáte jídlo a chcete si zvolit, jakou službou vám bude doručeno. Můžeme tedy napsat funkci `objednat`, které předáme objednané jídlo a funkci, která se má použít k doručení. Funkci `objednat` vygeneruje číslo objednávky a použije zadanou funkci k doručení balíčku.
