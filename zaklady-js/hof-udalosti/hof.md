@@ -55,7 +55,7 @@ Tyto funkce si můžeme vyzkoušet například v konzoli.
 
 ```jscon
 > machri('Cous cous se zeleninou')
-'Zásilka „Cous cous se zeleninou ztracena“. Drona přepadlo hejno hladových holubů.'
+'Zásilka „Cous cous se zeleninou“ ztracena. Drona přepadlo hejno hladových holubů.'
 ```
 
 Představme si nyní, že si jako zákazník objednáte jídlo a chcete si zvolit, jakou službou vám bude doručeno. Můžeme tedy napsat funkci `objednat`, které předáme objednané jídlo a funkci, která se má použít k doručení. Ve funkci `objednat` vygeneruje číslo objednávky a použije zadanou funkci k doručení balíčku.
