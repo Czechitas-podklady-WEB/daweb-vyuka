@@ -31,10 +31,10 @@ S použitím popisků bude náš registrační formulář vypadat následovně.
 
 ```html
 <form id="registration">
-  <label class="field">
+  <label>
     Jméno: <input type="text" id="firstName" />
   </label>
-  <label class="field">
+  <label>
     Příjmení: <input type="text" id="lastName" />
   </label>
   <button type="submit">Přihlásit</button>
@@ -67,7 +67,7 @@ Takto ale rozložení prvků nevypadá moc hezky. Využijeme proto více našich
 Kromě základního textového políčka máme i další typy například `password`, `number`, `email`, `search` apod. Nastavit ve formuláři správné typy je zásadní pro to, aby se uživateli formulář dobře vyplňoval. Použití správnýcn typů u políček má dvě zásadní výhody. 
 
 1. Na mobilním telefonu se zobrazí správné klávesnice. Napřiklad pro typ `number` se zobrazí numerická klávesnice. Pro typ `email` je na klávesnici rychlej dostupný znak zavináče.
-1. Automatický předvyplňovač formulářů ve vašem prohlížeči pozná, kam má vyplnit váš email, adresu a další informace. Toto jistě znáte z různých objednávek v e-shopech.
+1. Automatický předvyplňovač formulářů ve vašem prohlížeči pozná, kam má vyplnit váš e-mail, adresu a další informace. Toto jistě znáte z různých objednávek v e-shopech.
 
 ### Zaškrtávací tlačítko
 
