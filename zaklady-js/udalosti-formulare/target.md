@@ -57,7 +57,7 @@ document.querySelector('#smiley5').addEventListener('click', () => {
 });
 ```
 
-Tento kód sice bude fungovat, ale už od pohledu je strašlivě ukecaný. Všech naších pět funkcí dělá v podstatě totéž. Liší se dokonce pouze v jednom znaku. Mnohem šikovnější by bylo mít pouze jednu funkci, která se připojí na každé tlačítko. Tato funkce ale musí nějak zjistit, na jaké tlačítko bylo kliknuto. A to právě můžeme šikovně vyčíst z vlastnosti `target`. Výsledný kód pak bude vypadat takto.
+Tento kód sice bude fungovat, ale už od pohledu je strašlivě ukecaný. Všech našich pět funkcí dělá v podstatě totéž. Liší se dokonce pouze v jednom znaku. Mnohem šikovnější by bylo mít pouze jednu funkci, která se připojí na každé tlačítko. Tato funkce ale musí nějak zjistit, na jaké tlačítko bylo kliknuto. A to právě můžeme šikovně vyčíst z vlastnosti `target`. Výsledný kód pak bude vypadat takto.
 
 ```js
 const selectSmiley = (evt) => {
