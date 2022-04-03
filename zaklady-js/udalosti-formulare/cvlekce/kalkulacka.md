@@ -22,8 +22,10 @@ Zařiďte, aby se při kliknutí na libovolné tlačítko na displaji kalkulačk
 const display = document.querySelector('.display');
 
 const handleDigitClick = (event) => {
-  const value = event.target.textContent;
-  display.textContent += value;
+  if (display.textContent.length < 9) {
+    const value = event.target.textContent;
+    display.textContent += value;
+  }
 };
 
 document.querySelector('#btn-0').addEventListener('click', handleDigitClick);
