@@ -6,5 +6,5 @@ Po této lekci byste měli vědět a znát
 * jak vyrobit jednoduchý formulář s textovým vstupem a odesílacím tlačítkem,
 * štítky a typy vstupů `text`, `email`, `password`, `checkbox`,
 * jak ovládat prvek `select`,
-* události `change`, `keyup` a `keydown`,
+* události `submit`, `input`, `change`,
 * vlastnosti `code`, `shiftKey`, `altKey`, `ctrlKey`.
