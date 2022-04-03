@@ -1,6 +1,6 @@
 ## Vstup pomocí formuláře
 
-Poslední věc, která nám chybí pro příjemnou interakci s uživatelem, je získávat vstup jinak, než pomnocí funkce `prompt`. Naštěstí se vším, co už umíme, je to jen malý krůček. Stačí si ukázat, jak fungují takzvané _formuláře_. 
+Poslední věc, která nám chybí pro příjemnou interakci s uživatelem, je získávat vstup jinak, než pomocí funkce `prompt`. Naštěstí se vším, co už umíme, je to jen malý krůček. Stačí si ukázat, jak fungují takzvané _formuláře_.
 
 Formulář je sestava různých vstupních prvků jako jsou textová políčka, zaškrtávací tlačíka, rozbalovací nabídky a další. Jako příklad si můžeme představit jednoduchý formulář pro přihlášení na nějaký kurz.
 
@@ -57,7 +57,7 @@ const number = Number(inputElm.value);
 
 Všimněte si však prazvláštní věci. Pokaždé, když formulář odešleme, obnoví se najednou celá stránka. To se děje proto, že HTML formuláře jsou původně určené k odesílání dat na server. Vždy, když formulář potvrdíme, prohlížeč automaticky pošle data z formuláře na server ze kterého obdržel naši stránku. Poté čeká, co server vrátí jako odpověď. Náš jednoduchý lokální servřík však umí odesílat jen a pouze naši stránku. Prohlížeč tak jako odpověd na odeslání formuláře obdrží znova tu samou stránku, na které zrovna je. Proto se naše stránka v prohlížeči obnoví.
 
-My v celém tomto kurzu automatické odesílání formulářů na server používat nebudeme, protože bychom kvůli tomu museli programovat celý vlastní server. Formulářová data budeme zatím zpracovávat přímo na frontendu. Musíme tedy prohlížeči říct, aby formuláře nikam neposílal. K tomu použijeme metodu `preventDefault`. 
+My v celém tomto kurzu automatické odesílání formulářů na server používat nebudeme, protože bychom kvůli tomu museli programovat celý vlastní server. Formulářová data budeme zatím zpracovávat přímo na frontendu. Musíme tedy prohlížeči říct, aby formuláře nikam neposílal. K tomu použijeme metodu `preventDefault`.
 
 ```js
 const formElm = document.querySelector('#registration');
@@ -69,9 +69,9 @@ formElm.addEventListener('submit', (event) => {
 });
 ```
 
-Po této úpravě už se stránka nebude obnovat.
+Po této úpravě se už stránka nebude obnovat.
 
-Stejně jako vlastnost `textContent`, i vlastnost `value` je jak pro čtení, tak pro zápis. Můžeme tak řetězec z políčka přečíst, ale také jej políčku nastavit. Všimněte si, že schválně používáme slovo řetězec, protože všechna políčka vždy pracují s jen s řetězci. Nastavování hodnot políček použijeme v pokročilejších formulářích. 
+Stejně jako vlastnost `textContent`, i vlastnost `value` je jak pro čtení, tak pro zápis. Můžeme tak řetězec z políčka přečíst, ale také jej políčku nastavit. Všimněte si, že schválně používáme slovo řetězec, protože všechna políčka vždy pracují jen s řetězci. Nastavování hodnot políček použijeme v pokročilejších formulářích. 
 
 Zdaleka ne všechny formuláře musí používat nadpis a mít spoustu vstupů. Často si vystačíme jen s textovým políčkem a odesílacím tlačítkem. Například vyhledávací políčko jako na obrázku níže je také jen hezky nastylovaný formulář. 
 
