@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="520"
+   height="520"
+   viewBox="0 0 520 520"
+   version="1.1"
+   id="svg8"
+   inkscape:export-filename="/home/podlomar/bitmap.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodi:docname="figury.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.32562337"
+     inkscape:cx="-226.7659"
+     inkscape:cy="130.95733"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     units="px"
+     inkscape:snap-text-baseline="true"
+     inkscape:window-width="1280"
+     inkscape:window-height="656"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid815" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-159.41663)">
+    <rect
+       style="opacity:1;fill:#dbe8ef;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect828"
+       width="520"
+       height="520"
+       x="0"
+       y="159.41663" />
+    <image
+       sodipodi:absref="/home/podlomar/work/projects/kodim/new-content/kurzy/daweb/zaklady-js/chyby-pole/cvlekce/sachovnice/dev/figury.png"
+       xlink:href="figury.png"
+       width="480"
+       height="480"
+       preserveAspectRatio="none"
+       id="image4759"
+       x="30"
+       y="179.41663" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="110"
+       y="219.41663"
+       id="text832"><tspan
+         sodipodi:role="line"
+         x="110"
+         y="219.41663"
+         id="tspan834">pěšec bílý: 1</tspan></text>
+    <text
+       id="text851"
+       y="299.41663"
+       x="110"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         id="tspan849"
+         y="299.41663"
+         x="110"
+         sodipodi:role="line">střelec bílý: 2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="110"
+       y="379.41663"
+       id="text855"><tspan
+         sodipodi:role="line"
+         x="110"
+         y="379.41663"
+         id="tspan853">jezdec bílý: 3</tspan></text>
+    <text
+       id="text859"
+       y="459.41663"
+       x="110"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         id="tspan857"
+         y="459.41663"
+         x="110"
+         sodipodi:role="line">věž bílá: 4</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="110"
+       y="539.41663"
+       id="text863"><tspan
+         sodipodi:role="line"
+         x="110"
+         y="539.41663"
+         id="tspan861">dáma bílá: 5</tspan></text>
+    <text
+       id="text867"
+       y="619.41663"
+       x="110"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         id="tspan865"
+         y="619.41663"
+         x="110"
+         sodipodi:role="line">král bílý – 6</tspan></text>
+    <text
+       id="text871"
+       y="219.41663"
+       x="350"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         id="tspan869"
+         y="219.41663"
+         x="350"
+         sodipodi:role="line">pěšec černý: -1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="350"
+       y="299.41663"
+       id="text875"><tspan
+         sodipodi:role="line"
+         x="350"
+         y="299.41663"
+         id="tspan873">střelec černý: -2</tspan></text>
+    <text
+       id="text879"
+       y="379.41663"
+       x="350"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         id="tspan877"
+         y="379.41663"
+         x="350"
+         sodipodi:role="line">jezdec černý: -3</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="350"
+       y="459.41663"
+       id="text883"><tspan
+         sodipodi:role="line"
+         x="350"
+         y="459.41663"
+         id="tspan881">věž černá: -4</tspan></text>
+    <text
+       id="text887"
+       y="539.41663"
+       x="350"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         id="tspan885"
+         y="539.41663"
+         x="350"
+         sodipodi:role="line">dáma černá: -5</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="350"
+       y="619.41663"
+       id="text891"><tspan
+         sodipodi:role="line"
+         x="350"
+         y="619.41663"
+         id="tspan889">král černý: -6</tspan></text>
+  </g>
+</svg>
