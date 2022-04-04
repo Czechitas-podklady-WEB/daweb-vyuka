@@ -22,7 +22,7 @@ Pokud má naše funkce parametr, dáváme tím JavaScript runtimu najevo, že n�
 
 Hned z kraje je důležité si zvyknout na to, že jméno pro parametr v našem posluchači jsme si zvolili sami. JavaScript runtimu je srdečně jedno, jaké jméno si zvoláme. V různých jiným materiálech jistě narazíte na název `evt` nebo klidně jen `e`. Abychom vás udrželi ve střehu, i my budeme název různě měnit.
 
-Vlastnost `target` je jedna z vůbec nejdůležitějších vlastností na událostech. Díky ní se můžeme dostat z mnoha jinak svízelných situací. Představte si například, že chceme naprogramovat jednoduchou chatovací aplikaci, která umožňuje přiřadit zprávě smajlíka. Začneme s již připaveným kódem, který si můžete [stáhnout zde](assets/smileys.zip). Pro nás je v tuto chvíli relavanentí část HTML zobrazující tlačítka se smajlíky.
+Vlastnost `target` je jedna z vůbec nejdůležitějších vlastností na událostech. Díky ní se můžeme dostat z mnoha jinak svízelných situací. Představte si například, že chceme naprogramovat jednoduchou chatovací aplikaci, která umožňuje přiřadit zprávě smajlíka. Začneme s již připaveným kódem, který si můžete [stáhnout zde](assets/smileys.zip). Pro nás je v tuto chvíli relevanentí část HTML zobrazující tlačítka se smajlíky.
 
 ```html
 <button id="smiley1" class="btn-smiley">😀</button>
