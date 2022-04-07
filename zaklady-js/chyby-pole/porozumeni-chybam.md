@@ -13,7 +13,7 @@ V následující částí si probereme nejčastější chyby, na které jako za�
 ```js
 const user = {
   email: 'bartolomej.rozumbrada@gmail.com',
-  password: 'Vím, že nic nevím',
+  password: 'vimzenicnevim',
   name: 'Bartoloměj',
 };
 
