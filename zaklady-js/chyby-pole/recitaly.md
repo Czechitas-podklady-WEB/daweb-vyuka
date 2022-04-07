@@ -16,7 +16,7 @@ Tento úryvek můžeme po technické stránkce rozebrat takto.
 
 Dle tohoto rozboru pak můžene sestavit následující technický popis.
 
-> Vytváříme proměnnou `input`, do které ukládáme výsledek volání funkce `pormpt`. Této funkci jako vstup (argument) předáváme řetězec `'Username:'`.
+> Vytváříme proměnnou `input`, do které ukládáme výsledek volání funkce `prompt`. Této funkci jako vstup (argument) předáváme řetězec `'Username:'`.
 
 Vedle technického popisu také zkusíme odhadnout záměr uvedeného kódu.
 

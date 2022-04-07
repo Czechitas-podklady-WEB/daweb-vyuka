@@ -1,10 +1,10 @@
 ## Porozumění chybám
 
-Každý programátor, začátečník i profesionál, dělá v programech chyby. Nikdy se vám nepodaří dosáhout toho, že byste chyby přestali dělat. Jak časem porostou vaše zkušenosti a dovednosti, tím také poroste komplikovanost programů, které budete psát. Důležité je tedy naučit se chybu co nejrychlej odhalit a opravit.
+Každý programátor, začátečník i profesionál, dělá v programech chyby. Nikdy se vám nepodaří dosáhout toho, že byste chyby přestali dělat. Jak časem porostou vaše zkušenosti a dovednosti, tím také poroste komplikovanost programů, které budete psát. Důležité je tedy naučit se chybu co nejrychleji odhalit a opravit.
 
-Pokud máme v programu tak závažnou chybu, že JavaScript runtime vůbec nerozumí tomu, co po něm chceme, vypíše takzvanou :term{cs="chybovou hlášku" en="error message"}. Pokud náš program nefunguje, jak má, a obdržíme chybovou hlášku, je to důved k velké radosti. Máme totiž rovnou informaci o tom, kde je něco špatně.
+Pokud máme v programu tak závažnou chybu, že JavaScript runtime vůbec nerozumí tomu, co po něm chceme, vypíše takzvanou :term{cs="chybovou hlášku" en="error message"}. Pokud náš program nefunguje, jak má, a obdržíme chybovou hlášku, je to důvod k velké radosti. Máme totiž rovnou informaci o tom, kde je něco špatně.
 
-V následující částí si probereme nejčastější chyby, na které jako začátečníci jistě často narazíte. Použijeme k tomu kód
+V následující částí si probereme nejčastější chyby, na které jako začátečníci jistě často narazíte. Použijeme k tomu kód ze cvičení [Přihlášení](/kurzy/daweb/zaklady-js/udalosti-formulare/ulozky-na-doma#cvdoma>prihlaseni).
 
 ### Přístup k neexistujicím věcem
 
@@ -34,7 +34,7 @@ const handleSubmit = (e) => {
 document.querySelector('#login-form').addEventListener('submit', handleSubmit);
 ```
 
-Při pokusu o kliknutí na tlačítko :i[Přihlásit] obdržíme tuto chybovou hlášku
+Při pokusu o kliknutí na tlačítko _Přihlásit_ obdržíme tuto chybovou hlášku
 
 ```
 Uncaught TypeError: document.querySelektor is not a function
@@ -81,8 +81,7 @@ Uncaught ReferenceError: enailInput is not defined
     at HTMLFormElement.handleSubmit (index.js:14:3)
 ```
 
-
-JavaScript runtime si tentokrát stěžuje, že proměnná `enailInput` není definovaná. Což je pravda, žádné taková proměnná v našem programu neexistuje. Nejspíš jsme měli na mysli proměnnou `emailInput`. Opravit takovou chybu je tedy velmi jednoduché.
+JavaScript runtime si tentokrát stěžuje, že proměnná `enailInput` není definovaná. Což je pravda, žádná taková proměnná v našem programu neexistuje. Nejspíš jsme měli na mysli proměnnou `emailInput`. Opravit takovou chybu je tedy velmi jednoduché.
 
 ```js
 const handleSubmit = (e) => {
@@ -113,7 +112,7 @@ Tato situace je velmi častá. JavaScript přestal našemu programu rozumět na 
 
 ### Když žádná chyba nenastane
 
-Selektor jsme tedy opravili a program spustíme. Dostaneme se však do ještě svízelnější situace. Program se sice tváří, že funguje, ale i po pečlivém zadání správných přihlašovacích údajů stejně obdržíme hlášku :i[Neplatné přihlašovací údaje]. Toto je příklad té prekérní situace, kdy program běží bez chyby v konzoli, ale nedělá co dělat má. Bohužel tak nemámě k dispozici žádnou hlášku, která by nám pomohla odhalit, kde je problém.
+Selektor jsme tedy opravili a program spustíme. Dostaneme se však do ještě svízelnější situace. Program se sice tváří, že funguje, ale i po pečlivém zadání správných přihlašovacích údajů stejně obdržíme hlášku :i[Neplatné přihlašovací údaje]. Toto je příklad té prekérní situace, kdy program běží bez chyby v konzoli, ale nedělá co dělat má. Bohužel tak nemáme k dispozici žádnou hlášku, která by nám pomohla odhalit, kde je problém.
 
 Po pečlivé kontrole programu narazíme na to, že jsme špatně napsali název vlastnosti `password` u objektu `user`. Proč nás na to však JavaScript neupozornil? Jak už víme, neexistující vlastnosti jsou `undefined`. Hodnota výrazu `user.pasword` je tedy `undefined`. Pojďme vyzkoušet, co se stane, když zkusíme hodnotu `undefined` porovnat s nějakým řetězcem.
 
@@ -122,10 +121,10 @@ Po pečlivé kontrole programu narazíme na to, že jsme špatně napsali název
 false
 ```
 
-Výsledek je prostě `false`. Stejně to tedy dopadne v případě našeho objektu `user`. 
+Výsledek je prostě `false`. Stejně to tedy dopadne v případě našeho objektu `user`.
 
 ```js
-> user.pasword === 'Vím, že nic nevím'
+> user.pasword === 'vimzenicnevim'
 false
 ```
 

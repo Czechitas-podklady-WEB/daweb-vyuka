@@ -3,7 +3,7 @@ title: Recitály
 demand: 2
 ---
 
-U všech následujících úryvků kódů vytvořte technický popis jejich fungování a zároveň zkuste odhadnout záměr daného kódu. Obě dvě části si skutenčně napište například do textového souboru.
+U všech následujících úryvků kódů vytvořte technický popis jejich fungování a zároveň zkuste odhadnout záměr daného kódu. Obě dvě části si skutečně napište například do textového souboru.
 
 1.  ```js
     const average = (a, b) => {
@@ -11,8 +11,8 @@ U všech následujících úryvků kódů vytvořte technický popis jejich fung
     };
     ```
 1.  ```js
-    const titleElm = document.querySelector('.title');
-    titleElm.textContent = 'Nadpis';
+    const titleElement = document.querySelector('.title');
+    titleElement.textContent = 'Nadpis';
     ```
 1.  ```js
     let time = 0;
@@ -22,13 +22,13 @@ U všech následujících úryvků kódů vytvořte technický popis jejich fung
     }, 1000);
     ```
 1.  ```js
-    btnOk.addEventListener('click', () => {
+    buttonOk.addEventListener('click', () => {
       document.body.innerHTML = '<p>Everything ok</p>');
     });
     ```
 1.  ```js
-    document.addEventListener('keyup', (e) => {
-      if (e.code === 'KeyP') {
+    document.addEventListener('keyup', (event) => {
+      if (event.code === 'KeyP') {
         console.log('paused');
       }
     });
