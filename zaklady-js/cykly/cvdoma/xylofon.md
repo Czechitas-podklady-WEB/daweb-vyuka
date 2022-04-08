@@ -6,7 +6,7 @@ offerSolution: true
 
 :::assign
 
-Postupuj podle zadání v samostatném repozitáři [Cviceni-Xylofon](https://github.com/Czechitas-podklady-WEB/Cviceni-Xylofon).
+Postupujte podle zadání v samostatném repozitáři [Cviceni-Xylofon](https://github.com/Czechitas-podklady-WEB/Cviceni-Xylofon).
 
 :::
 
