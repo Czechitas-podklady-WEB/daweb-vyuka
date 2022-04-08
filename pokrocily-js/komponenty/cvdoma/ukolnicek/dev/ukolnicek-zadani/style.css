@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap&subset=latin-ext');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+body {
+  background-color: #f0efe9;
+}
+
+.todo {
+  background-color: white;
+  color: #777;
+  max-width: 20rem;
+  margin: 4rem auto;
+  padding-bottom: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px lightgray;
+}
+
+.todo__header {
+  padding: 2rem;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+}
+
+.date__daynum {
+  flex: 0;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.date__monthyear {
+  flex: 1;
+  margin-left: 0.25rem;
+}
+
+.date__month {
+  font-weight: bold;
+  line-height: 1.1rem;
+}
+
+.date__year {
+  line-height: 1.1rem;
+}
+
+.date__dayname {
+  flex: 0;
+}
+
+.todo__new {
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.btn-add {
+  width: 3rem;
+  height: 3rem;
+  background-color: #50e3a4;
+  border: none;
+  outline: none;
+  border-radius: 1.5rem;
+
+  font-size: 1.25rem;
+  margin-left: -3.5rem;
+}
+
+.new-task {
+  flex: 1;
+  height: 2rem;
+  border: 1px solid lightgray;
+  border-radius: 1rem;
+  line-height: 2rem;
+  margin-left: 0.5rem;
+  padding: 0 0.75rem;
+  outline: none;
+}
+
+.task {
+  padding: 1rem 2rem;
+}
