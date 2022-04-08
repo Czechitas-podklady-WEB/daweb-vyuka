@@ -21,7 +21,7 @@ const list = ['mouka', 'máslo', 'cukr', 'jablka', 'skořice'];
    'mouka,máslo,cukr,jablka,skořice'
    ```
 
-1. Upravte váš program tak, aby výsledný řětězec obsahoval HTML značky.
+1. Upravte váš program tak, aby výsledný řetězec obsahoval HTML značky.
 
    ```
    '&lt;li&gt;mouka&lt;/li&gt;&lt;li&gt;m&aacute;slo&lt;/li&gt;&lt;li&gt;cukr&lt;/li&gt;&lt;li&gt;jablka&lt;/li&gt;&lt;li&gt;skořice&lt;/li&gt;'
