@@ -7,13 +7,13 @@ Takový seznam vytvoříme opakovaným voláním naší komponenty.
 const item1 = {
   product: 'Rohlíky',
   amount: '10',
-  bought: false,
+  done: true,
 };
 
 const item2 = {
   product: 'Rajčate',
   amount: '1kg',
-  bought: false,
+  done: false,
 };
 
 const listElm = document.querySelector('.shopping-list');
@@ -28,12 +28,12 @@ const items = [
   {
     product: 'Rohlíky',
     amount: '10',
-    bought: false,
+    done: false,
   },
   {
     product: 'Rajčate',
     amount: '1kg',
-    bought: false,
+    done: false,
   },
 ];
 

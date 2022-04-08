@@ -6,18 +6,18 @@ Abychom se při přechodu na React nemuseli nic přeučovat, budeme naše kompon
 
 ```js
 const ShoppingItem = (props) => {
-  let yesNo = 'NE';
-  if (props.bought) {
-    yesNo = 'ANO';
+  let tickClass = '';
+  if (props.done) {
+    tickClass = ' item__done--tick';
   }
 
   return `
     <li class="item">
       <div class="item__name">${props.product}</div>
       <div class="item__amount">${props.amount}</div>
-      <div class="item__bought">${yesNo}</div>
+      <div class="item__done${tickClass}"></div>
     </li>
-  `
+  `;
 };
 ```
 
@@ -25,21 +25,21 @@ U delších komponent se nám velmi hodí destrukturovat objekt `props` do separ
 
 ```js
 const ShoppingItem = (props) => {
-  const { bought, product, amount } = props;
-  
-  let yesNo = 'NE';
-  if (bought) {
-    yesNo = 'ANO';
+  const { done, product, amount } = props;
+
+  let tickClass = '';
+  if (done) {
+    tickClass = ' item__done--tick';
   }
 
   return `
     <li class="item">
       <div class="item__name">${product}</div>
       <div class="item__amount">${amount}</div>
-      <div class="item__bought">${yesNo}</div>
+      <div class="item__done${tickClass}"></div>
     </li>
-  `
+  `;
 };
 ```
 
-Abychom si na tento způsob zvykli, budeme jej používat úplně ve všech komponentách.
+Abychom si na tento způsob zvykli, budeme jej nadále používat úplně ve všech komponentách.

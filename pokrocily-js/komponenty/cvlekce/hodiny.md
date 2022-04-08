@@ -3,7 +3,7 @@ title: Hodiny
 demand: 2
 ---
 
-Stáhněte si [základ stránky](assets/hodiny-zadani.zip) zobrazující digitální hodiny. Následujte instrukce níže.
+Naklonuje si [repozitář](https://github.com/Czechitas-podklady-WEB/hodiny-zadani) se stránku zobrazující digitální hodiny. Následujte instrukce níže.
 
 1. Vytvořte komponentu `Clock`, která bude na vstupu očekávat takovýto objekt:
    ```js

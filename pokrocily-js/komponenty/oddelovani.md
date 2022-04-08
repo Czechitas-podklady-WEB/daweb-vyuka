@@ -20,27 +20,27 @@ V souboru `ShoppingItem/index.js` bude JavaScriptový kód komponenty.
 
 ```js
 const ShoppingItem = (props) => {
-  const { bought, product, amount } = props;
+  const { done, product, amount } = props;
 
   let tickClass = '';
-  if (bought) {
-    tickClass += ' tick';
+  if (done) {
+    tickClass = ' item__done--tick';
   }
 
   return `
-    <li class="shopping-item">
-      <div class="shopping-item__name">${product}</div>
-      <div class="shopping-item__amount">${amount}</div>
-      <div class="shopping-item__bought${tickClass}"></div>
+    <li class="item">
+      <div class="item__name">${product}</div>
+      <div class="item__amount">${amount}</div>
+      <div class="item__done${tickClass}"></div>
     </li>
-  `
+  `;
 };
 ```
 
 Komponentu lehce nastylujeme v souboru `ShoppingItem/style.css`: 
 
 ```css
-.shopping-item {
+.item {
   display: flex;
   align-items: center;
   list-style: none;
@@ -49,29 +49,29 @@ Komponentu lehce nastylujeme v souboru `ShoppingItem/style.css`:
   margin-bottom: 0.5rem;
 }
 
-.shopping-item__name {
+.item__name {
   flex: 1;
 }
 
-.shopping-item__amount {
+.item__amount {
   margin: 0 1rem;
 }
 
-.shopping-item__bought {
+.item__done {
   width: 1.5rem;
   height: 1.5rem;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.tick {
+.item__done--tick {
   background-image: url(./img/tick.svg);
 }
 ```
 
-Do složky `ShoppingItem` také přidáme složku `img` s obrázekm `tick.svg`.
+Do složky `ShoppingItem` také přidáme složku `img` s obrázekm [tick.svg](assets/tick.svg).
 
-V hlavní soubor `index.html` bude vypadat takto:
+Hlavní soubor `index.html` bude vypadat takto:
 
 ```html
 <!DOCTYPE html>
@@ -98,19 +98,19 @@ V hlavní soubor `index.html` bude vypadat takto:
 </html>
 ```
 
-Všimněte si hlavičky, kam musíme vložit všechny soubory styly. Co se JavaScriptu týče, stačí nám do stránky vložit pouze hlavní `index.js` s tímto obsahem:
+Všimněte si hlavičky, kam musíme vložit všechny soubory stylů. Co se JavaScriptu týče, stačí nám do stránky vložit pouze hlavní `index.js` s tímto obsahem:
 
 ```js
 const items = [
   {
     product: 'Rohlíky',
     amount: '10',
-    bought: false,
+    done: true,
   },
   {
     product: 'Rajčate',
     amount: '1kg',
-    bought: true,
+    done: false,
   },
 ];
 
@@ -133,4 +133,4 @@ html {
 }
 ```
 
-Nyní máme veškterý kód projektu hezky rozdělený na logické části. Všimněte si však, že jsme do hlavičky HTML vložili pouze hlavní `index.js`, ale nevložili jsme tam JavaScript naší komponenty. Ten se do naší stránky dostane jiným způsbem, který uvidíme v následující sekci. 
+Nyní máme veškerý kód projektu hezky rozdělený na logické části. Všimněte si však, že jsme do hlavičky HTML vložili pouze hlavní `index.js`, ale nevložili jsme tam JavaScript naší komponenty. Ten se do naší stránky dostane jiným způsbem, který uvidíme v následující sekci. 
