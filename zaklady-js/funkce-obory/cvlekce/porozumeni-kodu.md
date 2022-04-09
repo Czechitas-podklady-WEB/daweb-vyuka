@@ -69,8 +69,32 @@ if (name.length > 5) {
 ```
 
 **Úryvek 2:**
-Kód vůbec neproběhne, prohlížeč jen vypíše v konzoli chybu.
+Kód vůbec neproběhne, prohlížeč jen vypíše v konzoli chybu (přesný text se může lišit v závislosti na prohlížeči):
+
+> Uncaught SyntaxError: Identifier 'name' has already been declared
 
 Funkce `greet`  přijímá jeden parametr pojmenovaný `name`. Na dalším řádku se pokoušíme definovat konstantu `name` a vložit do ní hodnotu *Pepa*. Jenže tím bychom vytvořili už druhou proměnnou (nebo parametr nebo konstantu) pojmenovanou `name` ve stejném bloku – v těle funkce `greet`. A to v JavaScriptu nejde. Zastiňování proměnných funguje pouze mezi vnějším a zanořeným blokem, v rámci jednoho bloku může být každé jméno vytvořené jenom jednou.
 
 **Úryvek 3:**
+Kód vůbec neproběhne, prohlížeč vypíše v konzoli chybu (přesný text se může lišit v závislosti na prohlížeči):
+
+> VM329:11 Uncaught ReferenceError: price is not defined
+
+Na posledním řádku kódu se pokoušíme použít konstantu/proměnnou `price`, která však v tomto bloku není definována. V jednotlivých větvých `if`/`else` sice vunikají konstanty `price`, ty ale mají jen velmi krátký život, protože s koncem bloku (s ukončující závorkou `}`) zaniknou.
+
+Kód by se dal upravit třeba následujícím způsobem. `price` si „vytáhneme“ na globální úroveň. Definujeme ji jako proměnnou (`let`), protože v okamžiku vzniku její hodnotu neznáme – potřebujeme ji dosadit teprve později. V jednotlivých větvých `if`/`else` pak nebudeme vytvářet nové proměnné/konstanty `price`, ale přiřadíme hodnotu do už existující globální proměnné `price`.
+
+```js
+const age = 25;
+let price
+
+if (age > 21) {
+  price = 100;
+} else if (age > 15) {
+  price = 50;
+} else {
+  price = 0;
+}
+
+document.body.innerHTML = `<p>${price}</p>`;
+```
