@@ -9,8 +9,8 @@ Na nejpřímočařejší použití cyklu narazíme ve chvíli, kdy chceme prové
 ```js
 let num = 1
 while (num <= 10) {
-	console.log(num)
-	num += 1
+  console.log(num)
+  num += 1
 }
 ```
 
@@ -23,7 +23,7 @@ Cyklus nemusíme použít jen k počítání. Můžeme například nechat uživa
 ```js
 let pass = prompt('Enter your password:')
 while (pass !== 'fatboyslim') {
-	pass = prompt('Wrong password. Try again:')
+  pass = prompt('Wrong password. Try again:')
 }
 ```
 
@@ -33,8 +33,8 @@ Tento program je na uživatele zbytečně zlý. Lepší by nejspíš bylo, kdyby
 let attempt = 1
 let pass = prompt('Enter your password:')
 while (pass !== 'fatboyslim' && attempt < 6) {
-	pass = prompt('Wrong password. Try again:')
-	attempt += 1
+  pass = prompt('Wrong password. Try again:')
+  attempt += 1
 }
 ```
 
@@ -43,8 +43,8 @@ Pozor na to, že stačí malá nepozornost a vyrobíme cyklus, který se opakuje
 ```js
 let num = 1
 while (num <= 10) {
-	console.log(num)
-	num + 1
+  console.log(num)
+  num + 1
 }
 ```
 
@@ -59,8 +59,8 @@ const marks = [2, 4, 1, 3, 4, 3]
 
 let i = 0
 while (i < marks.length) {
-	console.log(marks[i])
-	i += 1
+  console.log(marks[i])
+  i += 1
 }
 ```
 
@@ -79,8 +79,8 @@ const marks = [2, 4, 1, 3, 4, 3]
 
 let i = 0
 while (i < marks.length) {
-	console.log(marks[i])
-	i += 1
+  console.log(marks[i])
+  i += 1
 }
 ```
 
@@ -90,7 +90,7 @@ Nyní pohlédněte na tutéž funkčnost zapsanou pomocí cyklu FOR.
 const marks = [2, 4, 1, 3, 4, 3]
 
 for (let i = 0; i < marks.length; i += 1) {
-	console.log(marks[i])
+  console.log(marks[i])
 }
 ```
 

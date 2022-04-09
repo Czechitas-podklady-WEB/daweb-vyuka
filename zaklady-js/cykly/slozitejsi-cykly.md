@@ -7,7 +7,7 @@ const marks = [2, 4, 1, 3, 4, 3]
 
 let sum = 0
 for (let i = 0; i < marks.length; i += 1) {
-	sum += marks[i]
+  sum += marks[i]
 }
 
 const averageMark = sum / marks.length
