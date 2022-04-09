@@ -23,7 +23,7 @@ U všech následujících úryvků kódů vytvořte technický popis jejich fung
     ```
 1.  ```js
     buttonOk.addEventListener('click', () => {
-      document.body.innerHTML = '<p>Everything ok</p>');
+      document.body.innerHTML = '<p>Everything ok</p>';
     });
     ```
 1.  ```js
