@@ -12,7 +12,7 @@ Tvoříme je pomocí hranatých závorek. Takto například do jedné proměnné
 Uvnitř polí je možné mít zcela libovolné hodnoty, tedy například řetězce, DOM elementy apod.
 
 ```jscon
-> const temperaturs = [13.5, 12.7, 11.2, 12.3, 15.1]
+> const temperatures = [13.5, 12.7, 11.2, 12.3, 15.1]
 > const users = ['john', 'sue', 'peter', 'jane', 'soji']
 ```
 
