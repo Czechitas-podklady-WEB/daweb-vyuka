@@ -3,7 +3,7 @@ title: Letenky, oddělení komponenty
 demand: 2
 ---
 
-Pokračujte v předchozím zadání. Nyní oddělíme komponentu `Fligth` do samostatné složky.
+Pokračujte v předchozím zadání. Nyní oddělíme komponentu `Flight` do samostatné složky.
 
 1. Ve vašem projektu vytvořte složku `Flight` se souborem `index.js`. Do tohoto souboru přesuňte kód komponenty `Flight`. 
 1. Komponentu `Flight` správně exportujte.
