@@ -1,4 +1,4 @@
-V tomtu kurzu postupně směřujeme k tomu, abychom dokázali naši stránku sestavit z menších stavebních bloků, kterým budeme říkat :term{cs="komponenty" en="components}. Ke skutečným komponentám se vším všudy se dostanema až ve chvíli, kdy potkáme React. Už nyní si však můžeme vyzkoušet malou ochutnávku.
+V tomtu kurzu postupně směřujeme k tomu, abychom dokázali naši stránku sestavit z menších stavebních bloků, kterým budeme říkat :term{cs="komponenty" en="components"}. Ke skutečným komponentám se vším všudy se dostanema až ve chvíli, kdy potkáme React. Už nyní si však můžeme vyzkoušet malou ochutnávku.
 
 ## První komponenta
 
