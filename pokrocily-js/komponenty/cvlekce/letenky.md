@@ -16,5 +16,5 @@ Naklonujte si [repozitář](https://github.com/Czechitas-podklady-WEB/letenky-za
    }
    ```
    Komponenta nechť vytvoří HTML pro jeden podle dle vzoru, který najdete v `index.html`.
-1. HTML kód pro výsledek letu ze stránky vyjměte a nechte v ní pouze element `app`.
+1. HTML kód pro výsledek letu ze stránky vyjměte a nechte v ní pouze element s třídou `container`.
 1. Už známým postupem vložte pomocí komponenty `Flight` do stránky jeden vyhledaný let. Stránka by měla vypadat úplně stejně jako v původním projektu. 
