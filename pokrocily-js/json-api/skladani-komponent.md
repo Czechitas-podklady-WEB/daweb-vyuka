@@ -35,5 +35,6 @@ fetch('https://apps.kodim.cz/daweb/trening-api/apis/shopping')
       items: json
     });
   });
+```
 
 Všimněte si, jak se nám hezky zjednodušil hlavní soubor `index.js`, který pouze získá data z API a zobrazí komponentu `ShoppingList`. O všechno ostatní už se postarají komponenty samy. Do budoucna to bude náš hlavní cíl. Vždy budeme chtít, aby co největší část našeho programu byla v komponentách. Nakonec dojdeme k tomu, že celá náše webová aplikace bude jedna velká komponenta. 
