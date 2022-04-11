@@ -29,4 +29,4 @@ Postupujte dle kroků níže a vytvořte kód pro zobrazení produktu na stránc
      <p class="product__price">Cena: 520 Kč</p>
    </div>
    ```
-1. Vyberte ze stránky element `.products-section` a vložte do něj vámi vytvořené HTML.
+1. Vyberte ze stránky element s id `products-section` a vložte do něj vámi vytvořené HTML.
