@@ -2,7 +2,6 @@ title: Webpack a větší aplikace
 lead: Ukážeme si jak stavět větší aplikace z menších částí pomocí Webpacku.
 access: 'claim'
 sections:
-  - oddelovani-komponent
   - system-npm
   - webpack
   - cv-zaklady-webpacku

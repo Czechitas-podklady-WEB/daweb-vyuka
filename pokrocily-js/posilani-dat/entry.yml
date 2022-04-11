@@ -1,0 +1,10 @@
+title: Posílání dat na server
+lead: Zatím jsme data z API pouze četli. Nyní si ukážeme, jak můžeme data na server také zapisovat.
+access: 'claim'
+sections:
+  - typy-dotazu
+  - nakupni-seznam
+  - cv-manipulace
+  - aktualizace-obsahu
+  - cv-aktualizace
+  - ulozky-na-doma
