@@ -1,3 +1,3 @@
 ## Cvičení: Volání API
 
-::exc[cvlekce>zapad-slunce]
+::exc[cvlekce>vychod-zapad]
