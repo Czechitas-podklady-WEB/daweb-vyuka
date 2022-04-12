@@ -11,3 +11,33 @@ Pokračujte v předchozím cvičení. Cílem cvičení je vytvořit v projektu n
 Kódem, který komponenta vygeneruje, nahraďte innerHTML elementu `#app`  
 1. Bonus: Přesuňte styly patřící komponentě `MovieList` k jejím stylům. Nezapomeňte styly komponenty připojit v souboru `index.html`
 1. Bonus 2: Prohlédněte si [dokumentaci filmového API](https://apps.kodim.cz/daweb/trening-api/docs/filmove-api). Na základě této dokumentace zobrazte na stránce pouze filmy z roku 1994
+
+---solution
+
+1. ```js
+    //MovieList/index.js
+    import { Movie } from './../Movie/index.js';
+
+    export const MovieList = (props) => {
+      const { movies } = props;
+      let result = `<ul class="movie-list">`;
+      for (let i = 0; i < movies.length; i = i + 1) {
+        result += Movie(movies[i]);
+      }
+      result += `</ul>`;
+
+      return result;
+    };
+   ```
+1. ```js
+    //index.js
+    import { MovieList } from './MovieList/index.js';
+
+    fetch('https://apps.kodim.cz/daweb/trening-api/apis/movies')
+      .then((response) => response.json())
+      .then((json) => {
+        document.querySelector('#app').innerHTML = MovieList({
+          movies: json,
+        });
+      });
+   ```
