@@ -1,10 +1,8 @@
 ---
 title: Nekup to, třídy
 demand: 2
-offerSolution: true
 ---
 
-:::assign
 Naklonujte si [repozitář](https://github.com/Czechitas-podklady-WEB/nekupto-zadani) se stránkou, která nabízí několik neotřelých produktů.
 
 1. Otevřete si naklonovanou složku ve VS Code a prohlédněte si zdrojové HTML. Stránka je nastylována pomocí CSS knihovny [Bootstrapu](https://getbootstrap.com). Co přesně dělají použité CSS třídy není pro toto cvičení podstatné, nemusíte jim věnovat velkou pozornost.
@@ -15,9 +13,8 @@ Naklonujte si [repozitář](https://github.com/Czechitas-podklady-WEB/nekupto-za
 Na konci by stránka v prohlížeči měla vypadat jako na obrázku níže:
 
 ::fig[Snímek obazovky s řešením]{src=assets/screen-nekupto.png}
-:::
 
-:::solution
+---solution
 
 ```
 const firstCard = document.querySelector('#product1');
@@ -29,5 +26,3 @@ secondCardButton.classList.remove('btn-primary');
 const thirdCardTitle = document.querySelector('#product3 .card-title');
 thirdCardTitle.classList.toggle('text-center');
 ```
-
-:::

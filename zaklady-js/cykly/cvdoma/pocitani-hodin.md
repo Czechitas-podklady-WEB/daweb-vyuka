@@ -1,10 +1,7 @@
 ---
 title: Počítání hodin
 demand: 3
-offerSolution: true
 ---
-
-:::assign
 
 Napište cyklus WHILE, který do konzole postupně vypíše všechny časové údaje v rámci jednoho dne od 0:00 až po 23:59.
 
@@ -19,9 +16,7 @@ Napište cyklus WHILE, který do konzole postupně vypíše všechny časové ú
 23:59
 ```
 
-:::
-
-:::solution
+---solution
 
 ```js
 for (let hodiny = 0; hodiny < 24; hodiny++) {
@@ -30,5 +25,3 @@ for (let hodiny = 0; hodiny < 24; hodiny++) {
 	}
 }
 ```
-
-:::

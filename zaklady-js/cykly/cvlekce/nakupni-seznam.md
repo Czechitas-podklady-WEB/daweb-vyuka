@@ -1,10 +1,7 @@
 ---
 title: Nákupní seznam
 demand: 2
-offerSolution: true
 ---
-
-:::assign
 
 Mějme pole řetězců představující nákupní seznam
 
@@ -32,9 +29,7 @@ const list = ['mouka', 'máslo', 'cukr', 'jablka', 'skořice']
 
 1. Vytvořte někde na stránce prázdný číslovaný seznam `ol` a pomocí vlastnosti `innerHTML` do něj vložte řetězec sestavený v předchozím kroku.
 
-:::
-
-:::solution
+---solution
 
 1. ```js
    const list = ['mouka', 'máslo', 'cukr', 'jablka', 'skořice']
@@ -69,5 +64,3 @@ const list = ['mouka', 'máslo', 'cukr', 'jablka', 'skořice']
 1. ```js
    document.querySelector('ol').innerHTML = vysledek
    ```
-
-:::

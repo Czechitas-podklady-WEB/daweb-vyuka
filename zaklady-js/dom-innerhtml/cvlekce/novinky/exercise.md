@@ -1,10 +1,8 @@
 ---
 title: Novinky
 demand: 2
-offerSolution: true
 ---
 
-:::assign
 Naklonujte si [repozitář](https://github.com/Czechitas-podklady-WEB/novinky-zadani) s připravenou webovou stránku, která zobrazuje několik zajímavých zpráv. Zobrazte stránku v prohlížeči a veškeré úkoly z tohoto cvičení proveďte v JavaScriptové konzoli.
 
 1. Pomocí `document.querySelector` vyberte element `body` a uložte si jej do proměnné `bodyElm`. Pomocí této proměnné nastavte barvu pozadí elementu na hodnotu `#e9e9e9`.
@@ -16,9 +14,8 @@ Naklonujte si [repozitář](https://github.com/Czechitas-podklady-WEB/novinky-za
 Na konci by stránka v prohlížeči měla vypadat jako na obrázku níže:
 
 ::fig[Snímek obazovky s řešením]{src=assets/screen-novinky.png}
-:::
 
-:::solution
+---solution
 
 ```
 // 1
@@ -44,5 +41,3 @@ firstPostElm.className = `${firstPostElm.className} post--main`;
 const lastPostImgElm = document.querySelector('#zprava3 img');
 lastPostImgElm.src = 'img/zprava3-novy.jpg';
 ```
-
-:::

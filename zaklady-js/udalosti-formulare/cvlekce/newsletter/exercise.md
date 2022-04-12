@@ -1,10 +1,8 @@
 ---
 title: Newsletter
 demand: 2
-offerSolution: true
 ---
 
-:::assign
 Podle postupu níže vyrobte stránku podobnou té na obrázku.
 
 ::fig[Newsletter]{src=assets/newsletter.gif}
@@ -22,10 +20,8 @@ Podle postupu níže vyrobte stránku podobnou té na obrázku.
 
 1. Pokud máte čas a chuť, nastylujte stránku dle svého citu. Obrázek výše může posloužit jako inspirace.
 
-:::
+---solution
 
-:::solution
 Kód: https://github.com/Czechitas-podklady-WEB/newsletter-reseni
 
 Výsledek: https://czechitas-podklady-web.github.io/newsletter-reseni/
-:::

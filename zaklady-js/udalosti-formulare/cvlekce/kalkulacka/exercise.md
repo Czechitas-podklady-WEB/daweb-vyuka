@@ -1,10 +1,8 @@
 ---
 title: Kalkulačka
 demand: 2
-offerSolution: true
 ---
 
-:::assign
 Naklonujte si [repozitář](https://github.com/Czechitas-podklady-WEB/kalkulacka-zadani) se stránkou, která obsahuje číselník a display jednoduché kalkulačky.
 
 Zařiďte, aby se při kliknutí na libovolné tlačítko na displaji kalkulačky objevila cifra, která je na tlačíku napsaná. Postupujte dle návodu:
@@ -17,9 +15,7 @@ Zařiďte, aby se při kliknutí na libovolné tlačítko na displaji kalkulačk
 1. Pověste váš posluchač na všechna tlačítka s ciframi. 
 1. U běžné kalkulačky mačkáním tlačítek postupně sestavujeme nějaké víceciferné číslo. Zařiďte, aby cifry na displeji přibývaly jako na běžné kalkulačce. Také zaříďte, aby se na displej nedalo vložit delší než devíticiferné číslo.
 
-:::
-
-:::solution
+---solution
 
 ```js
 const display = document.querySelector('.display');
@@ -42,4 +38,3 @@ document.querySelector('#btn-7').addEventListener('click', handleDigitClick);
 document.querySelector('#btn-8').addEventListener('click', handleDigitClick);
 document.querySelector('#btn-9').addEventListener('click', handleDigitClick);
 ```
-:::

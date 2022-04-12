@@ -1,10 +1,7 @@
 ---
 title: Východ a západ slunce
 demand: 2
-offerSolution: true
 ---
-
-:::assign
 
 Vytvořme webovou stránku, která bude zobrazovat čas, kdy dnes vyšlo a kdy zapadá slunce. Zatím budeme pracovat bez komponent a vrátíme se k nim v druhé části lekce.
 
@@ -17,9 +14,7 @@ Vytvořme webovou stránku, která bude zobrazovat čas, kdy dnes vyšlo a kdy z
 1. Místo do konzole vypište někam do stránky čas západu a východu slunce.
 1. Přidejte na stránku tlačítko. Když uživatel toto tlačíko stiskne, teprve pak zavolejte API a zobrazte západ slunce.
 
-:::
-
-:::solution
+---solution
 
 Soubor `index.html`:
 
@@ -61,5 +56,3 @@ showBtn.addEventListener('click', () => {
     });
 });
 ```
-
-:::

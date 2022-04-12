@@ -1,10 +1,7 @@
 ---
 title: Nákupní seznam jako funkce
 demand: 2
-offerSolution: true
 ---
-
-:::assign
 
 1. Vytvořte funkci s názvem `shoppingList`, která na vstupu obdrží pole řetězců, představující nákupní seznam. Funkce vrátí řetězec obsahující prvky tohoto seznamu zabalené do HTML značek `li`.
 
@@ -17,9 +14,7 @@ offerSolution: true
 
 1. Upravte výsledek předchozího cvičení tak, že obsah číslovaného seznamu vytvoříte voláním funkce `shoppingList`.
 
-:::
-
-:::solution
+---solution
 
 1. ```js
    const shoppingList = (polozky) => {
@@ -35,5 +30,3 @@ offerSolution: true
    const list = ['mouka', 'máslo', 'cukr', 'jablka', 'skořice']
    document.querySelector('ol').innerHTML = shoppingList(list)
    ```
-
-:::

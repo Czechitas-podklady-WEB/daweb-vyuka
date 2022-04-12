@@ -1,16 +1,11 @@
 ---
 title: Počítání pomocí FOR
 demand: 2
-offerSolution: true
 ---
-
-:::assign
 
 Přepište všechy WHILE cykly z předchozího cvičení na FOR cykly.
 
-:::
-
-:::solution
+---solution
 
 1. ```js
    console.log('První FOR cyklus')
@@ -30,5 +25,3 @@ Přepište všechy WHILE cykly z předchozího cvičení na FOR cykly.
    	console.log(i)
    }
    ```
-
-:::

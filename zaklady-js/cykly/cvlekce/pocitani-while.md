@@ -1,10 +1,7 @@
 ---
 title: Počítání pomocí WHILE
 demand: 2
-offerSolution: true
 ---
-
-:::assign
 
 Založte JavaScriptový program, který provede následující instrukce.
 
@@ -12,9 +9,7 @@ Založte JavaScriptový program, který provede následující instrukce.
 1. Vypište do konzole text `Druhý WHILE cyklus`. Pomocí cyklu WHILE vypište všechna **sudá čísla od jedné až do sta**.
 1. Vypište do konzole text `Třetí WHILE cyklus`. Pomocí cyklu WHILE vypište všechna **sudá čísla pozpátku od sta až k nule**.
 
-:::
-
-:::solution
+---solution
 
 1. ```js
    console.log('První WHILE cyklus')
@@ -40,5 +35,3 @@ Založte JavaScriptový program, který provede následující instrukce.
    	i -= 2
    }
    ```
-
-:::

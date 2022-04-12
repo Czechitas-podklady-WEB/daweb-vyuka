@@ -1,10 +1,8 @@
 ---
 title: Převod měny
 demand: 2
-offerSolution: true
 ---
 
-:::assign
 Napište funkci `convertToCZK`, která převede částku zadanou v cízí měně na české koruny. Funkce bude podporovat následující měny a kurzy.
 
 | Měna           | Kód | Kurz    |
@@ -22,9 +20,9 @@ Výslednou částku zakrouhlete na celé koruny. Příklad použití:
 ```
 
 Pokud funkce jako parametr dostane neznámý kód měny, vrátí jako výsledek `null`. Otestujte funkci v konzoli.
-:::
 
-:::solution
+---solution
+
 ```js
 const convertToCZK = (amount, currency) => {
 	let rate;
@@ -44,4 +42,3 @@ const convertToCZK = (amount, currency) => {
 	return Math.round(rate * amount);
 };
 ```
-:::

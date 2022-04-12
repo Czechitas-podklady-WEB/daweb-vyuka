@@ -1,10 +1,8 @@
 ---
 title: E-mail, pozdravy
 demand: 1
-offerSolution: true
 ---
 
-:::assign
 Naklonujte si [repozitář](https://github.com/Czechitas-podklady-WEB/email-zadani) se stránkou obsahující šablonu jednoduchého e-mailu. Všimněte si, že do stránky je vložený JavaScript bez atributu `type=module`. To nám umožní volat námi vytvořené funkce přímo z konzole. S tímto atributem by to nešlo.
 
 Každý e-mail je třeba zakončit zdvořilým pozdravem.
@@ -19,9 +17,9 @@ Každý e-mail je třeba zakončit zdvořilým pozdravem.
    ```jsc
    S pozdravem Pavel Ovesný
    ```
-:::
 
-:::solution
+---solution
+
 Obsah souboru `index.js`:
 
 ```js
@@ -30,4 +28,3 @@ const goodbye = (name) => {
   closingElement.textContent = `Na shledanou ${name}`;
 };
 ```
-:::

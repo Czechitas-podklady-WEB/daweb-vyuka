@@ -1,10 +1,8 @@
 ---
 title: Nekup to, obsah
 demand: 2
-offerSolution: true
 ---
 
-:::assign
 Pokračujte v předchozím cvičení. Všimněte si, že v souboru `index.js` jsou uloženy údaje k jednotlivým produktům. Budeme chtít obsah naší stránky vygenerovat z těchto dat místo abychom je měli natvrdo zadrátované v HTML kódu.
 
 1. Otevřete si soubor `index.html` a zkopírujte si HTML obsah prvního produktu a vytvořte z něj řetězec v přiloženém JavaScriptovém souboru. Váš kód může vypadat třeba takto.
@@ -27,9 +25,8 @@ Pokračujte v předchozím cvičení. Všimněte si, že v souboru `index.js` js
 1. Pomocí interpolace řetězců předělejte váš JavaScriptový kód tak, že do vašeho řetězce s produktem vložíte obsah vlastností `image`, `name` a `description`.
 1. Do nějaké proměnné si uložte element prvního produktu a nastavte jeho `innerHTML` na váš sestavený řetězec. Tímto na stránku vložíme obrázek prvního produktu.
 1. Opakujte tento postup pro všechny ostatní produkty. Na konci byste měli dospět do stavu, kdy soubor `index.html` vůbec neosahuje vnitřek karet pro jednotlivé produkty. Jejich obsah je celý vyroben JavaScriptem z připravených dat.
-   :::
 
-:::solution
+---solution
 
 ```
 const product1 = {
@@ -86,5 +83,3 @@ const product3HTML = `
 const product3Elm = document.querySelector('#product3');
 product3Elm.innerHTML = product3HTML;
 ```
-
-:::

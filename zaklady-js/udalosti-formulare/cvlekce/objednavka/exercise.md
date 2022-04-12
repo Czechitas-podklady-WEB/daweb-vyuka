@@ -1,10 +1,8 @@
 ---
 title: Objednávka
 demand: 2
-offerSolution: true
 ---
 
-:::assign
 Podle instrukcí níže vytvořte jednoduchý formulář pro dokončení objednávky na nějakém e-shopu. Formulář umožní uživateli zadat číslo platební karty a způsob dopravy.
 
 ::fig[Objednávka]{src=assets/objednavka.gif}
@@ -21,9 +19,7 @@ Podle instrukcí níže vytvořte jednoduchý formulář pro dokončení objedn�
 1. Přidejte tlačítko „Odeslat objednávku“.
 1. Přidejte posluchače na událost `submit`. Jakmile uživatel formulář odešle, nahraďte celý formulář zprávou „Objednávka odeslána ke zpracování.“
 
-:::
-
-:::solution
+---solution
 
 Obsah souboru `index.html`:
 
