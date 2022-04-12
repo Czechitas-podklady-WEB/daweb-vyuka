@@ -94,15 +94,16 @@ Tento zápis může na první pohled vypadat poněkud složitě. Jeho použití 
 
 ### Zpracování dat
 
-Naše funkce pro zpracování získaných dat je zatím pouze vypisovala do konzole. Můžeme si však napsat funkci, která dělá cokoliv chceme. Takto například můžeme zobrazím jméno mající dnes svátek v elementu s třídou `name`.
+Naše funkce pro zpracování získaných dat je zatím pouze vypisovala do konzole. Můžeme si však napsat funkci, která dělá cokoliv chceme. Takto například můžeme zobrazit čas dnešního západu slunce v elementu s třídou `sunset`.
 
 ```js
-const displayName = (json) => {
-  const nameElm = document.querySelector('.name');
-  nameElm.textContent = json.data.namedays.cz;
+const displaySunset = (json) => {
+  const sunsetElm = document.querySelector('.sunset');
+  sunsetElm.textContent = json.results.sunset;
 };
 
 fetch('https://api.sunrise-sunset.org/json?lat=50&lng=14.5')
   .then((response) => response.json())
-  .then(displayName);
+  .then(displaySunset);
+
 ```
