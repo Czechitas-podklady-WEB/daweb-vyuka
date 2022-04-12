@@ -1,4 +1,4 @@
 ## Cvičení: API a komponenty
 
-::exc[cvlekce>emaily]
+::exc[cvlekce>filmy]
 ::exc[cvlekce>prichozi-posta]
