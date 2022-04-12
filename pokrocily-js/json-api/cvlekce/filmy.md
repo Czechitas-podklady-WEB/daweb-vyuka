@@ -19,9 +19,9 @@ Cílem úkolu je nevypisovat filmy z pole, které je připravené v JS souboru, 
 
     fetch('https://apps.kodim.cz/daweb/trening-api/apis/movies')
       .then((response) => response.json())
-      .then((json) => {
-        for (let i = 0; i < json.length; i = i + 1) {
-          document.querySelector('.movie-list').innerHTML += Movie(json[i]);
+      .then((data) => {
+        for (let i = 0; i < data.length; i = i + 1) {
+          document.querySelector('.movie-list').innerHTML += Movie(data[i]);
         }
       });
    ```

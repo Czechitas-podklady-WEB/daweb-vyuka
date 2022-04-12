@@ -38,9 +38,9 @@ Kódem, který komponenta vygeneruje, nahraďte innerHTML elementu `#app`.
 
     fetch('https://apps.kodim.cz/daweb/trening-api/apis/movies')
       .then((response) => response.json())
-      .then((json) => {
+      .then((data) => {
         document.querySelector('#app').innerHTML = MovieList({
-          movies: json,
+          movies: data,
         });
       });
    ```

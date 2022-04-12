@@ -87,7 +87,7 @@ V parametru `response` máme uloženu odpověd ze serveru. Pokud z této odpově
 ```js
 fetch('https://api.sunrise-sunset.org/json?lat=50&lng=14.5')
   .then((response) => response.json())
-  .then((json) => console.log(json));
+  .then((data) => console.log(data));
 ```
 
 Tento zápis může na první pohled vypadat poněkud složitě. Jeho použití je však pořád stejné. Stačí si jej tedy prostě zapamatovat a zvyknout si na to, že „takto se to prostě dělá“. Promisy jsou relativně komplikované a hluboké téma. Nebudeme proto do nich zabíhat hlouběji než je v tuto chvíli nezbytně nutné.
@@ -97,9 +97,9 @@ Tento zápis může na první pohled vypadat poněkud složitě. Jeho použití 
 Naše funkce pro zpracování získaných dat je zatím pouze vypisovala do konzole. Můžeme si však napsat funkci, která dělá cokoliv chceme. Takto například můžeme zobrazit čas dnešního západu slunce v elementu s třídou `sunset`.
 
 ```js
-const displaySunset = (json) => {
+const displaySunset = (data) => {
   const sunsetElm = document.querySelector('.sunset');
-  sunsetElm.textContent = json.results.sunset;
+  sunsetElm.textContent = data.results.sunset;
 };
 
 fetch('https://api.sunrise-sunset.org/json?lat=50&lng=14.5')

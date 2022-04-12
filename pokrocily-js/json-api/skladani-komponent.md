@@ -34,10 +34,10 @@ import { ShoppingList } from "./ShoppingList/index.js";
 
 fetch('https://apps.kodim.cz/daweb/trening-api/apis/shopping')
   .then((response) => response.json())
-  .then((json) => {
+  .then((data) => {
     const container = document.querySelector('.container');
     container.innerHTML = ShoppingList({
-      items: json
+      items: data
     });
   });
 ```

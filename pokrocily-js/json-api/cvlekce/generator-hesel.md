@@ -42,8 +42,8 @@ const buttonElm = document.querySelector('#password-generator');
 buttonElm.addEventListener('click', () => {
   fetch('https://apps.kodim.cz/daweb/trening-api/apis/passwords?length=16')
     .then(response => response.json())
-    .then(json => {
-      document.querySelector('.show-password').textContent = json.password;
+    .then(data => {
+      document.querySelector('.show-password').textContent = data.password;
     })
 });
 ```
@@ -83,8 +83,8 @@ formElm.addEventListener('submit', (e) => {
   const inputElm = document.querySelector('#password-length');
   fetch(`https://apps.kodim.cz/daweb/trening-api/apis/passwords?length=${inputElm.value}`)
     .then((response) => response.json())
-    .then((json) => {
-      document.querySelector('.show-password').textContent = json.password;
+    .then((data) => {
+      document.querySelector('.show-password').textContent = data.password;
     });
 });
 ```

@@ -22,9 +22,9 @@ const Timezones = (props) => {
 
 fetch('https://worldtimeapi.org/api/timezone')
   .then((resp) => resp.json())
-  .then((json) => {
+  .then((data) => {
     const zoneSelectElm = document.querySelector('#zone-select');
-    zoneSelectElm.innerHTML = Timezones({ zones: json });
+    zoneSelectElm.innerHTML = Timezones({ zones: data });
   });
 
 const btnShow = document.querySelector('#btn-show');
@@ -34,10 +34,10 @@ btnShow.addEventListener('click', () => {
 
   fetch(`https://worldtimeapi.org/api/timezone/${zonesSelect.value}`)
     .then((resp) => resp.json())
-    .then((json) => {
+    .then((data) => {
       mainElm.innerHTML = Time({
         zone: zonesSelect.value,
-        datetime: json.datetime,
+        datetime: data.datetime,
       });
     });
 });
