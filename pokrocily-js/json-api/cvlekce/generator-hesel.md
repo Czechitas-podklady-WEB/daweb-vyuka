@@ -11,27 +11,78 @@ Vyrobíme stránku, která pomůže uživateli vygenerovat upravdu silné a nepr
 
 ---solution
 
-1. ```js
-    const buttonElm = document.querySelector('#password-generator');
-    buttonElm.addEventListener('click', () => {
-      fetch('https://apps.kodim.cz/daweb/trening-api/apis/passwords?length=16')
-        .then(response => response.json())
-        .then(json => {
-          document.querySelector('.show-password').textContent = json.password;
-        })
+Soubor `index.html`:
+
+```html
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generátor hesel</title>
+  <script src="index.js" type="module"></script>
+</head>
+<body>
+  <div class="container">  
+    <button id="password-generator">Generuj heslo</button>
+    <p class="show-password"></p>
+  </div>
+</body>
+</html>
+```
+
+Soubor `index.js`:
+
+```js
+const buttonElm = document.querySelector('#password-generator');
+buttonElm.addEventListener('click', () => {
+  fetch('https://apps.kodim.cz/daweb/trening-api/apis/passwords?length=16')
+    .then(response => response.json())
+    .then(json => {
+      document.querySelector('.show-password').textContent = json.password;
+    })
+});
+```
+Bonus
+Soubor `index.html`:
+
+```html
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generátor hesel</title>
+  <script src="index.js" type="module"></script>
+</head>
+<body>
+  <div class="container">
+    <form id="password-form">
+      <label>Délka hesla
+        <input id="password-length" type="number" required>
+      </label>
+      <button type="submit">Generuj heslo</button>
+    </form>
+    <p class="show-password"></p>
+  </div>
+</body>
+</html>
+```
+
+Soubor `index.js`:
+
+```js
+const formElm = document.querySelector('#password-form');
+formElm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const inputElm = document.querySelector('#password-length');
+  fetch(`https://apps.kodim.cz/daweb/trening-api/apis/passwords?length=${inputElm.value}`)
+    .then((response) => response.json())
+    .then((json) => {
+      document.querySelector('.show-password').textContent = json.password;
     });
-   ```
-1. ```js
-    //BONUS
-    const formElm = document.querySelector('#password-form');
-    formElm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const inputElm = document.querySelector('#password-length');
-      fetch(`https://apps.kodim.cz/daweb/trening-api/apis/passwords?length=${inputElm.value}`)
-        .then((response) => response.json())
-        .then((json) => {
-          document.querySelector('.show-password').textContent = json.password;
-        });
-    });
-   ```
+});
+```
 
