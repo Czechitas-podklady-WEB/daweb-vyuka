@@ -8,9 +8,11 @@ Struktura komponent často kopíruje strukturu naších dat. Připomeňme si [pr
 https://apps.kodim.cz/daweb/trening-api/apis/shopping
 ```
 
-Tento enpoint nám vrátí větši množství položek, které chceme zobrazit v našem seznamu. Jednu položku vytváříme pomocí komponenty `ShoppingItem`. Nyní vytvoříme ještě komponentu `ShoppingList`, která bude představovat celý nákupní seznam. Jak už jsme zvyklí, pro komponentu si vytvoříme speciální složku.
+Tento endpoint nám vrátí větši množství položek, které chceme zobrazit v našem seznamu. Jednu položku vytváříme pomocí komponenty `ShoppingItem`. Nyní vytvoříme ještě komponentu `ShoppingList`, která bude představovat celý nákupní seznam. Jak už jsme zvyklí, pro komponentu si vytvoříme speciální složku.
 
 ```js
+import { ShoppingItem } from './../ShoppingItem/index.js';
+
 export const ShoppingList = (props) => {
   const { items } = props;
   let resultHTML = '<ol class="shopping-list">';
@@ -21,6 +23,9 @@ export const ShoppingList = (props) => {
   return resultHTML + '</ol>';
 };
 ```
+
+Jelikož chceme použít komponentu `ShoppingItem` uvnitř komponenty `ShoppingList`,
+musíme ji zde nyní importovat.
 
 Komponentu pak použijeme v našem hlavním `index.js`. 
 
