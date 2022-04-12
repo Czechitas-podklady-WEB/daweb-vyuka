@@ -7,7 +7,10 @@ Vyrobíme stránku, která pomůže uživateli vygenerovat upravdu silné a nepr
 
 1. Prohlédněte si dokumentaci API pro generování hesla a vyzkoušejte si jej „na sucho“ v prohlížeči. Zkuste vygenerovat hesla různých délek a prohlédněte si, jak vypadá struktura dat, která API vrací.
 1. Vytvořte stránku s jedním tlačítkem. Když na něj uživatel klikne, zobrazí se mu vygenerované heslo délky 16.
-1. Bonus: Přepracujte stránku tak, aby obsahovala formulář s textovým políčkem, do kterého uživatel může zadat délku hesla. Po odeslání formuláře se mu zobrazí heslo zadané délky.
+
+#### Bonus
+
+1. Přepracujte stránku tak, aby obsahovala formulář s textovým políčkem, do kterého uživatel může zadat délku hesla. Po odeslání formuláře se mu zobrazí heslo zadané délky.
 
 ---solution
 

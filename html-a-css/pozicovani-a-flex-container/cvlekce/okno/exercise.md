@@ -10,7 +10,7 @@ Stáhněte si [webovou stránku](assets/okno.zip),
 Tedy "Ok" dolů přibližně doprostřed (nemusí být přesně), "X" doprava nahoru.
 Napozicujte je vůči modálu, ve kterém se nacházejí.
 
-### Bonus
+#### Bonus
 
 - Přidejte na stránku mnohem více textu, tak, aby se stránkou dalo posouvat dolů (scroll). Můžete na to použít odstavce p plné textu s lorem ipsum.
 - Nápověda:
