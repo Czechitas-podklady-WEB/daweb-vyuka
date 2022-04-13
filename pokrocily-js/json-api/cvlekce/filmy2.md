@@ -19,7 +19,7 @@ Kódem, který komponenta vygeneruje, nahraďte innerHTML elementu `#app`.
 
 1. ```js
     //MovieList/index.js
-    import { Movie } from './../Movie/index.js';
+    import { Movie } from '../Movie/index.js';
 
     export const MovieList = (props) => {
       const { movies } = props;

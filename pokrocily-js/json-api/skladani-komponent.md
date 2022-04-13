@@ -11,7 +11,7 @@ https://apps.kodim.cz/daweb/trening-api/apis/shopping
 Tento endpoint nám vrátí větší množství položek, které chceme zobrazit v našem seznamu. Jednu položku vytváříme pomocí komponenty `ShoppingItem`. Nyní vytvoříme ještě komponentu `ShoppingList`, která bude představovat celý nákupní seznam. Jak už jsme zvyklí, pro komponentu si vytvoříme speciální složku.
 
 ```js
-import { ShoppingItem } from './../ShoppingItem/index.js';
+import { ShoppingItem } from '../ShoppingItem/index.js';
 
 export const ShoppingList = (props) => {
   const { items } = props;
