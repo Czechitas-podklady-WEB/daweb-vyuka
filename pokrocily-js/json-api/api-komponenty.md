@@ -8,7 +8,9 @@ Pojďme vytvořit komponentu ze cvičení na východ a západ slunce. Bez kompon
 const showBtn = document.querySelector('#show');
 showBtn.addEventListener('click', () => {
   fetch('https://api.sunrise-sunset.org/json?lat=50&lng=14.5')
-    .then((response) => response.json())
+    .then((response) => {
+      return response.json();
+    })
     .then((data) => {
       const { sunrise, sunset } = data.results;
       document.querySelector('#sunrise-sunset').innerHTML = `
@@ -39,7 +41,9 @@ import { SunriseSunset } from './SunriseSunset/index.js';
 const showBtn = document.querySelector('#show');
 showBtn.addEventListener('click', () => {
   fetch('https://api.sunrise-sunset.org/json?lat=50&lng=14.5')
-    .then((response) => response.json())
+    .then((response) => {
+      return response.json();
+    })
     .then((data) => {
       document
         .querySelector('#sunrise-sunset')

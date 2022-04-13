@@ -86,8 +86,12 @@ V parametru `response` máme uloženu odpověd ze serveru. Pokud z této odpově
 
 ```js
 fetch('https://api.sunrise-sunset.org/json?lat=50&lng=14.5')
-  .then((response) => response.json())
-  .then((data) => console.log(data));
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    console.log(data);
+  });
 ```
 
 Tento zápis může na první pohled vypadat poněkud složitě. Jeho použití je však pořád stejné. Stačí si jej tedy prostě zapamatovat a zvyknout si na to, že „takto se to prostě dělá“. Promisy jsou relativně komplikované a hluboké téma. Nebudeme proto do nich zabíhat hlouběji než je v tuto chvíli nezbytně nutné.
@@ -103,7 +107,9 @@ const displaySunset = (data) => {
 };
 
 fetch('https://api.sunrise-sunset.org/json?lat=50&lng=14.5')
-  .then((response) => response.json())
+  .then((response) => {
+    return response.json();
+  })
   .then(displaySunset);
 
 ```

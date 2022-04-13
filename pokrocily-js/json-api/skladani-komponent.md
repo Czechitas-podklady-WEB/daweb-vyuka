@@ -33,7 +33,9 @@ Komponentu pak použijeme v našem hlavním `index.js`.
 import { ShoppingList } from "./ShoppingList/index.js";
 
 fetch('https://apps.kodim.cz/daweb/trening-api/apis/shopping')
-  .then((response) => response.json())
+  .then((response) => {
+    return response.json();
+  })
   .then((data) => {
     const container = document.querySelector('.container');
     container.innerHTML = ShoppingList({
