@@ -1,11 +1,17 @@
 {
-  "extends": ["prettier"],
-  "plugins": ["prettier", "html"],
+  "extends": ["prettier", "plugin:markdown/recommended"],
+  "plugins": ["prettier", "html", "markdown"],
   "rules": {
     "prettier/prettier": ["error"]
   },
   "parserOptions": {
     "sourceType": "module",
     "ecmaVersion": 2020
-  }
+  },
+  "overrides": [
+    {
+      "files": ["**/*.md"],
+      "processor": "markdown/markdown"
+    }
+  ]
 }
