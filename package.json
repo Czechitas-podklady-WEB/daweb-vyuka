@@ -1,8 +1,12 @@
 {
   "scripts": {
-    "quality-assurance": "prettier --check \"**/*.{md,html,js,css}\""
+    "quality-assurance": "eslint . --ext .js,.html"
   },
   "devDependencies": {
+    "eslint": "^8.13.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-html": "^6.2.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "prettier": "2.6.2"
   }
 }
