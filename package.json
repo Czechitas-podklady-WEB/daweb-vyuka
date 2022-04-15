@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "quality-assurance": "eslint . --ext .js,.html"
+    "quality-assurance": "eslint . --ext .js,.html",
+    "fix": "npm run quality-assurance -- --fix"
   },
   "devDependencies": {
     "eslint": "^8.13.0",
