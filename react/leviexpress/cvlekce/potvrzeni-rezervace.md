@@ -24,8 +24,8 @@ V tomto kroku potvrdíme rezervaci kliknutím na tlačíko, zpracujeme odpověď
      body: JSON.stringify({
        seat: selectedSeatNumber,
        journeyId: journeyId,
-     }),
-   });
+     })
+   })
    ```
 1. Volání tohoto API vrací JSON s daty, ze kterých nás bude zajímat hodnota `reservationId`. Vypiště si ji do konzole.
 1. Pomocí naší `history` proměnné, její metody `push` a hodnoty `reservationId` přesměrujte uživatele na stránku detailu rezervace. Takové volání bude může vypadat následovně:

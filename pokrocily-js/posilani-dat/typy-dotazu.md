@@ -5,7 +5,7 @@ Pokud ve své aplikaci používáme data z nějakého veřejného API, většino
 V minulé lekci jsme posílali dotazy na API tímto způsobem.
 
 ```js
-fetch('https://api.abalin.net/today?country=cz');
+fetch('https://api.abalin.net/today?country=cz')
 ```
 
 Tímto způsobem se posílá základní typ dotazu, kterému říkáme GET. Tento dotaz má za úkol získat nějaká data ze serveru. Typů dotazů však existuje více. 
@@ -40,11 +40,11 @@ Představme si zatím fiktivní stránku `https://it-seznamka.cz`, která by moh
 fetch('https://it-seznamka.cz/register', {
   method: 'POST',
   headers: {
-    'Content-Type': 'application/json',
+    'Content-Type': 'application/json'
   },
   body: JSON.stringify({
-    name: 'Petr',
-    age: 25,
+    name: 'Petr', 
+    age: 25
   }),
-});
+})
 ```

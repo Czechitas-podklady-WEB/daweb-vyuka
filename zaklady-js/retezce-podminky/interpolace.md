@@ -2,7 +2,7 @@
 
 Když chceme v JavaScriptu vytvořit nějaký kus textu, například nějakou zprávu pro uživatele, často potřebujeme do tohoto textu vložit obsah několika různých proměnných.
 
-```javascript
+```js
 const order = {
   id: 37214,
   product: 'pěnová matrace',
@@ -20,17 +20,19 @@ document.body.innerHTML = (
 Abychom se ze všeho toho sčítání a uvozovek nezbláznili, moderní JavaScript nabízí nový zápis řetězců, kterému se odborně říká :term{cs="interpolace řetězců" en="string interpolation"}. V tomto zápisu se místo obyčejných nebo dvojitých uvozovek používá takzvaný zpětný apostrof &#96;. Pomocí tohoto zápisu můžeme obsah proměnných vložit přímo do řetězce pomocí znaku `$` a složených závorek.
 
 ```js
-document.body.innerHTML =
-  `<h2>Objednávka: ${id}</h2>` +
-  `<p>Zboží ${product} bude doručeno ${delivery}.</p>`;
+document.body.innerHTML = (
+  `<h2>Objednávka: ${id}</h2>` + 
+  `<p>Zboží ${product} bude doručeno ${delivery}.</p>`
+);
 ```
 
 Uvnitř složených závorek otevíráme jakési JavaScriptové okno, do kterého můžeme vepsat nejen proměnnou, ale zcela libovolný výraz, jehož výsledek bude automaticky zkonvertován na řetězec.
 
 ```js
-document.body.innerHTML =
+document.body.innerHTML = (
   `<h2>Objednávka: ${String(id).padStart(8, '0')}</h2>` +
-  `<p>Zboží ${product} bude doručeno ${delivery}.</p>`;
+  `<p>Zboží ${product} bude doručeno ${delivery}.</p>`
+);
 ```
 
 Díky interpolaci řetězců se náš kód stává mnohem čitelnějším a budeme ji tedy používat všude, kde to půjde.
@@ -39,7 +41,7 @@ Díky interpolaci řetězců se náš kód stává mnohem čitelnějším a bude
 
 Když v JavaScriptu vytváříme HTML, které chceme vložit do stránky, často potřebujeme vygenerovat dlouhý řetězec, který se nám nevejde na jeden řádek. V JavaScriptu ovšem nelze zapsat běžný řetězec na více řádků. Následující kód by bohužel nefungoval.
 
-```
+```js
 const content = '
   <header>
     <h1>Název stránky</h1>
@@ -51,12 +53,12 @@ const content = '
 
 Abychom takový řetězec sestavili, musíme si pomoct sčítáním řetězců.
 
-```javascript
+```js
 const content = (
-  '<header>' +
-  '  <h1>Název stránky</h1>' +
-  '</header>' +
-  '<main>Obsah stránky</main>' +
+  '<header>' + 
+  '  <h1>Název stránky</h1>' + 
+  '</header>' + 
+  '<main>Obsah stránky</main>' + 
   '<footer>Patička</footer>'
 );
 ```
@@ -73,7 +75,7 @@ const content = `
 `;
 ```
 
-Navíc můžeme do takového řetězce snadno zakomponovat proměnné a vytvořit tak obsah stránky opravdu profesionálně.
+Navíc můžeme do takového řetězce snadno zakomponovat proměnné a vytvořit tak obsah stránky opravdu profesionálně. 
 
 ```js
 const order = {

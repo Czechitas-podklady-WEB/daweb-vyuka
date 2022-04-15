@@ -26,7 +26,12 @@ Když však začneme aplikaci skutečně psát, po čase zjistíme, že se nám 
 
 <!-- prettier-ignore -->
 ```js
-const gamePlan = [0, 0, 0, 0, -1, 1, 1, 1, 0, 0, -1, 0, 0, -1, 0, 0];
+const gamePlan = [
+   0,  0,  0,  0,
+  -1,  1,  1,  1,
+   0,  0, -1,  0,
+   0, -1,  0,  0,
+];
 ```
 
 Pozor na to, že bílé znaky jako mezery a nové řádky jsme sem vložili pouze pro lepší čitelnost kódu. Z hlediska JavaScriptu náš hrací plán vypadá takto.

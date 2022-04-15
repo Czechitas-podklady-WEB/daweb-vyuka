@@ -77,11 +77,9 @@ promise.then((response) => {
 Promise můžeme uložit do proměnné jako vidíme výše, je to však trochu zbytečné. Metodu `then` můžeme zavolat rovnou na výsledku funkce `fetch`.
 
 ```js
-fetch('https://api.sunrise-sunset.org/json?lat=50&lng=14.5').then(
-  (response) => {
-    console.log(response);
-  },
-);
+fetch('https://api.sunrise-sunset.org/json?lat=50&lng=14.5').then((response) => {
+  console.log(response);
+});
 ```
 
 V parametru `response` máme uloženu odpověd ze serveru. Pokud z této odpovědi chceme získat JSON, stačí na něm zavolat metodu `json`. Čeká nás však podraz. Tato metoda opět nevrací samotný JSON nýbrž pouze promise. Musíme tedy znova použít metodu `then` a vznikne nám takováto kaskáda.
@@ -113,4 +111,5 @@ fetch('https://api.sunrise-sunset.org/json?lat=50&lng=14.5')
     return response.json();
   })
   .then(displaySunset);
+
 ```

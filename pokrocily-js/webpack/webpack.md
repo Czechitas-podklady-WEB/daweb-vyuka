@@ -101,11 +101,7 @@ $ npm run build
 Pokud se vše povedlo, uvnitř projektu se vytvoří soubor `dist/bundle.js`, který obsahuje takzvaně :term{cs="minifikovanou" en="minified"} verzi našeho kódu. Ta může vypadat například takto děsivě. 
 
 ```js
-(() => {
-  const t = (t) => `Hello ${t}`;
-  (document.querySelector('h1').textContent = t('Martin')),
-    console.log(t('Martin'));
-})();
+(()=>{const t=t=>`Hello ${t}`;document.querySelector("h1").textContent=t("Martin"),console.log(t("Martin"))})();
 ```
 
 Webpack dělá minifikaci proto, aby náš výsledný kód byl co nejmenší. Vzhledem k tomu, že kód bude číst prohlížeč, můžeme zcela objetovat jakoukouliv srozumitelnost pro člověka. Webpack tedy

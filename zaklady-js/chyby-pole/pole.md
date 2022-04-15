@@ -171,7 +171,7 @@ const expenses = [
   ['Zuzka', 'Savo', 80],
   ['Petr', 'Tapeta na záchod', 315],
   ['Ondra', 'Toaleťák', 64],
-];
+]
 ```
 
 Pomocí pole polí můžeme také reprezentovat herní plány v různých počítačovách hrách. Takto například mohou vypadat rozehrané piškvorky 3x3.
@@ -181,7 +181,7 @@ const tictactoe = [
   ['o', ' ', ' '],
   [' ', 'x', ' '],
   [' ', 'o', 'x'],
-];
+]
 ```
 
 Vidíme, že na tahu je zrovna křížek. Můžeme tak snadno provést nějaký chytrý tah.

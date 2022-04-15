@@ -6,7 +6,7 @@ demand: 3
 Založe JavaScriptový program s následujícím s záznamem vkladů a výběrů na nějakém bankovním účtu.
 
 ```js
-const amounts = [2500, -550, 1000, -1200, -3000, 1270, 2300];
+const amounts = [2500, -550, 1000, -1200, -3000, 1270, 2300]
 ```
 
 1. Napište cyklus FOR, který spočítá výsledný zůstatek na účtu za předpokladu, že na účtu byla na začátku nula.
@@ -17,25 +17,25 @@ const amounts = [2500, -550, 1000, -1200, -3000, 1270, 2300];
 ---solution
 
 1. ```js
-   const amounts = [2500, -550, 1000, -1200, -3000, 1270, 2300];
-   let zustatek = 0;
+   const amounts = [2500, -550, 1000, -1200, -3000, 1270, 2300]
+   let zustatek = 0
 
-   for (let i = 0; i < amounts.length; ++) {
-      zustatek += amounts[i];
+   for (let i = 0; i < amounts.length; i++) {
+   	zustatek += amounts[i]
    }
-   console.log(`Na účtě; je ${zustatek}.`);
+   console.log(`Na účtě je ${zustatek}.`)
    ```
 
 2. ```js
-   const amounts = [2500, -550, 1000, -1200, -3000, 1270, 2300];
-   let zustatek = 0;
-   let i = 0;
+   const amounts = [2500, -550, 1000, -1200, -3000, 1270, 2300]
+   let zustatek = 0
+   let i = 0
 
-   while (zustate >= 0) {
-      zustatek +=amounts[i];
-      i +=   ;
+   while (zustatek >= 0) {
+   	zustatek += amounts[i]
+   	i += 1
    }
    console.log(
-   	`Zůstatek se poprvé dostal do záporné hodnoty ${zustatek} p;o transakci číslo ${i}.`,
+   	`Zůstatek se poprvé dostal do záporné hodnoty ${zustatek} po transakci číslo ${i}.`,
    )
    ```

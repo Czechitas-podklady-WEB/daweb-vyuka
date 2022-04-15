@@ -7,14 +7,24 @@ Nyní už si můžeme troufnout dokončit naši hru s piškvorkami. Zbývá nám
 
 <!-- prettier-ignore -->
 ```js
-const gamePlan = [1, -1, 1, 1, 0, 1, 0, -1, -1, -1, 0, 0, -1, 0, 0, 0];
+const gamePlan = [
+   1, -1,  1,  1,
+   0,  1,  0, -1,
+  -1, -1,  0,  0,
+  -1,  0,  0,  0,
+];
 ```
 
 Vezměme nyní pole, které vypadá takto.
 
 <!-- prettier-ignore -->
 ```js
-const pattern = [1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+const pattern = [
+   1,  1,  1,  1,
+   0,  0,  0,  0,
+   0,  0,  0,  0,
+   0,  0,  0,  0,
+];
 ```
 
 Rozmysleme si, jak by dopadl kartézský součin polí `gamePlan` a `pattern`. Ihned vidíme, že nás zajímají pouze první čtyri prvky. Násobení nulou je vždy nula, zbylé prvky pole tedy výsledek nijak neovlivní.

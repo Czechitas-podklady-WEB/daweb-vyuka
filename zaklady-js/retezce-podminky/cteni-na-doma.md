@@ -56,7 +56,7 @@ V jiném případě můžeme chtít zkontrolovat, že věk uživatele je menší
 
 ```js
 if (age < 18 || age >= 65) {
-  document.body.innerHTML = '<p>Nemusíš pracovat</p>';
+  document.body.innerHTML = '<p>Nemusíš pracovat</p>');
 }
 ```
 
@@ -64,7 +64,7 @@ Tutéž podmínku bychom mohli napsat pomocí negace.
 
 ```js
 if (!(age >= 18 && age < 65)) {
-  document.body.innerHTML = '<p>Nemusíš pracovat</p>';
+  document.body.innerHTML = '<p>Nemusíš pracovat</p>');
 }
 ```
 

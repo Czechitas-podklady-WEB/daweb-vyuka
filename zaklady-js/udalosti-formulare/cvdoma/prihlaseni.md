@@ -53,10 +53,7 @@ document.querySelector('#login-form').addEventListener('submit', (e) => {
   const container = document.querySelector('.container');
   const status = document.querySelector('#status');
 
-  if (
-    emailInput.value === user.email &&
-    passwordInput.value === user.password
-  ) {
+  if (emailInput.value === user.email && passwordInput.value === user.password) {
     container.innerHTML = `<h1>Přihlášený uživatel: ${user.name}</h1>`;
   } else {
     status.textContent = 'Neplatné přihlašovací údaje';

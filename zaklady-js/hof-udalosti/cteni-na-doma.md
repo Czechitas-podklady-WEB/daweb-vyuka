@@ -6,8 +6,8 @@ Pokud spustíme nějaký časovač, často jej také chceme po určité době zr
 
 ```js
 const timerId = setInterval(
-  () => (document.body.innerHTML += '<p>ahoj</p>'),
-  3000,
+  () => document.body.innerHTML += '<p>ahoj</p>', 
+  3000
 );
 ```
 
@@ -21,8 +21,8 @@ Takto se dá předčasně zrušit i časovač vyrobený pomocí `setTimeout`. Mu
 
 ```js
 const timerId = setTimeout(
-  () => (document.body.innerHTML += '<p>ahoj</p>'),
-  5000,
+  () => document.body.innerHTML += '<p>ahoj</p>',
+  5000
 );
 setTimeout(() => clearTimeout(timerId), 2000);
 ```

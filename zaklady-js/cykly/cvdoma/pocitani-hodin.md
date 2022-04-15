@@ -20,8 +20,8 @@ Napište cyklus WHILE, který do konzole postupně vypíše všechny časové ú
 
 ```js
 for (let hodiny = 0; hodiny < 24; hodiny++) {
-  for (let minuty = 0; minuty < 60; minuty++) {
-    console.log(`${hodiny}:${minuty.toString().padStart(2, '0')}`);
-  }
+	for (let minuty = 0; minuty < 60; minuty++) {
+		console.log(`${hodiny}:${minuty.toString().padStart(2, '0')}`)
+	}
 }
 ```

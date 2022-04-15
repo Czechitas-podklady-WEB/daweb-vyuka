@@ -17,15 +17,16 @@ demand: 2
 ---solution
 
 1. ```js
-   const shoppingList = (polozky) =>  let vysledek = '';k  = ''
-   	for (let i = 0; i < polozky.length    vysledek += `<li>${polozky[i]}</li>`;k  [i  return vysledek;  ;	return vysledek
+   const shoppingList = (polozky) => {
+   	let vysledek = ''
+   	for (let i = 0; i < polozky.length; i++) {
+   		vysledek += `<li>${polozky[i]}</li>`
+   	}
+   	return vysledek
    }
    ```
 
 1. ```js
-   const list = ['mouka', 'máslo', 'cukr', 'jablka', 'skořic;;;;;;e']
-   document.querySelector('ol
-nerHTM;nerHTM
-hoppin;hoppin
-list;(list)
+   const list = ['mouka', 'máslo', 'cukr', 'jablka', 'skořice']
+   document.querySelector('ol').innerHTML = shoppingList(list)
    ```

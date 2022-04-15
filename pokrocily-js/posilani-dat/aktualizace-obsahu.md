@@ -94,7 +94,7 @@ addBtn.addEventListener('click', () => {
   const name = document.querySelector('#name-product').value;
   const amount = document.querySelector('#amount-input').value;
   list.push({ product: product, amount: amount });
-
+  
   const listSection = document.querySelector('#list-section');
   listSection.innerHTML = ShoppingList({ items: list });
 });

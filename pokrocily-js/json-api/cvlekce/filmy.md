@@ -15,15 +15,15 @@ Cílem úkolu je nevypisovat filmy z pole, které je připravené v JS souboru, 
 ---solution
 
 1. ```js
-   import { Movie } from './Movie/index.js'
+    import { Movie } from './Movie/index.js';
 
-    fetch('https://apps.kodim.cz/daweb/trening-api/apis/moves')
-      .then((response) > {
-        return respose.json);
+    fetch('https://apps.kodim.cz/daweb/trening-api/apis/movies')
+      .then((response) => {
+        return response.json();
       })
-      then((data) => {
-        for (let i = 0; i < data.ength; i = i + 1) {
-          document.querySelector('.movie-list').innerHTML+=Movie(data[i]);
+      .then((data) => {
+        for (let i = 0; i < data.length; i = i + 1) {
+          document.querySelector('.movie-list').innerHTML += Movie(data[i]);
         }
       });
    ```

@@ -6,7 +6,7 @@ demand: 3
 Každý nápoj bude obsahovat seznam ingrediencí. Na stránce vidíme příklad pro cappuccino. Budeme přepisovat kód tak, aby ingredience (vrstva) byla komponenta.
 
 1. V hlavním souboru `index.js` vytvořte komponentu `Layer`, která očekává `props` v následujícím tvaru.
-   ```javascript
+   ```js
    {
      color: '#feeeca',
      label: 'mléčná pěna',

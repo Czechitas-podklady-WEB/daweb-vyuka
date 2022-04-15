@@ -10,16 +10,16 @@ Nyní zařídíme zobrazování sedadel v řadách. Plánek sedadel bude vypadat
    ```js
    const testRow = [
      {
-       number: 33,
-       isOccupied: false,
+       "number": 33,
+       "isOccupied": false
      },
      {
-       number: 29,
-       isOccupied: true,
+       "number": 29,
+       "isOccupied": true
      },
      {
-       number: 25,
-       isOccupied: false,
+       "number": 25,
+       "isOccupied": false
      },
    ];
    ```

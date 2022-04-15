@@ -27,6 +27,6 @@ Postupujte dle následujících kroků.
    const parsedEmail = {
      userName: 'slavomir.ponuchalek',
      domain: 'yahoo.com',
-   };
+   }
    ```
 1. Pro kontrolu vypište tento objekt do stránky. Každou hodnotu vypište jako odstavec.

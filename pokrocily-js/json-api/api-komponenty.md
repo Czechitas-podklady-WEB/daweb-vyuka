@@ -1,6 +1,6 @@
 ## API a komponenty
 
-V předešlé lekci jsme se naučili používat jednoduché komponenty. Pokud naše aplikace volá nějaké API, je práce s komponentami podobná jako dříve. Jen si musíme dát pozor na to, kde přesně v kódu naše komponenty použijeme.
+V předešlé lekci jsme se naučili používat jednoduché komponenty. Pokud naše aplikace volá nějaké API, je práce s komponentami podobná jako dříve. Jen si musíme dát pozor na to, kde přesně v kódu naše komponenty použijeme. 
 
 Pojďme vytvořit komponentu ze cvičení na východ a západ slunce. Bez komponent by náš kód mohl vypadat takto:
 
@@ -45,12 +45,14 @@ showBtn.addEventListener('click', () => {
       return response.json();
     })
     .then((data) => {
-      document.querySelector('#sunrise-sunset').innerHTML = SunriseSunset({
-        sunrise: data.results.sunrise,
-        sunset: data.results.sunset,
-      });
+      document
+        .querySelector('#sunrise-sunset')
+        .innerHTML = SunriseSunset({
+          sunrise: data.results.sunrise,
+          sunset: data.results.sunset,
+        });
     });
 });
 ```
 
-Takto se může zdát, že nám komponenta kód spíše zkomplikovala. To je dáno hlavně tím, že jde především o ilustrační příklad. V praxi by komponenta byla složitejší, zobrazovala by data v určtém formátu, její HTML i stylování by bylo bohatší apod.
+Takto se může zdát, že nám komponenta kód spíše zkomplikovala. To je dáno hlavně tím, že jde především o ilustrační příklad. V praxi by komponenta byla složitejší, zobrazovala by data v určtém formátu, její HTML i stylování by bylo bohatší apod. 

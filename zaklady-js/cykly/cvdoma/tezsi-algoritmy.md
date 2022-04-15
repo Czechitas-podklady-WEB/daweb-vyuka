@@ -8,8 +8,7 @@ Založte si nový JavaScriptový program a na jeho začátek vložte následují
 <!-- prettier-ignore -->
 ```js
 const numbers = [
-  -24, -11, 27, 29, -4, -28, -21, -14, 3, -8, 24, 19, -25, -2, -1, 11, 32, -31,
-  5,
+  -24, -11, 27, 29, -4, -28, -21, -14, 3, -8, 24, 19, -25, -2, -1, 11, 32, -31, 5
 ];
 ```
 

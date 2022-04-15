@@ -16,13 +16,13 @@ const users = ['paja', 'kaja', 'vlasta', 'peta', 'alex', 'ja', 'misa'];
 ---solution
 
 ```js
-const users = ['paja', 'kaja', 'vlasta', 'peta', 'alex', 'ja', 'misa'];
+const users = ['paja', 'kaja', 'vlasta', 'peta', 'alex', 'ja', 'misa']
 
 for (let i = 0; i < users.length; i++) {
-  const jmeno = users[i];
-  if (jmeno.length <= 4) {
-    const email = `${jmeno}@gmail.com`;
-    console.log(email);
-  }
+	const jmeno = users[i]
+	if (jmeno.length <= 4) {
+		const email = `${jmeno}@gmail.com`
+		console.log(email)
+	}
 }
 ```

@@ -30,7 +30,7 @@ musíme ji zde nyní importovat.
 Komponentu pak použijeme v našem hlavním `index.js`. 
 
 ```js
-import { ShoppingList } from './ShoppingList/index.js';
+import { ShoppingList } from "./ShoppingList/index.js";
 
 fetch('https://apps.kodim.cz/daweb/trening-api/apis/shopping')
   .then((response) => {
@@ -39,7 +39,7 @@ fetch('https://apps.kodim.cz/daweb/trening-api/apis/shopping')
   .then((data) => {
     const container = document.querySelector('.container');
     container.innerHTML = ShoppingList({
-      items: data,
+      items: data
     });
   });
 ```
