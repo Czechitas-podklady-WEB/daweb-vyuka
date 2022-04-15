@@ -26,7 +26,7 @@ Vytvoříme jednoduchou aplikaci, která zobrazuje obsah e-mailové schránky.
        subject: 'Objednávka dortu',
        time: '6:31',
      },
-   ]
+   ];
    ```
    Přidejte si do pole ještě pár e-mailů dle tohoto vzoru.
 1. Použijte cyklus `for` a zobrazte tyto e-maily na stránce pomocí komponenty `Email` jako nepřečtené emaily.

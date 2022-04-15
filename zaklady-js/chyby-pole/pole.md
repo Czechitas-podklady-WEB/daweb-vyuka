@@ -2,7 +2,7 @@ Do této chvíle jsme uměli do nějaké proměnné uložit pouze jednu hodnotu,
 
 ## Pole
 
-:term{cs="Pole" en="Array"} nám umožňují do jedné proměnné uložit více hodnot. 
+:term{cs="Pole" en="Array"} nám umožňují do jedné proměnné uložit více hodnot.
 Tvoříme je pomocí hranatých závorek. Takto například do jedné proměnné uložíme známky ze všech písemek psaných za jedno pololetí.
 
 ```jscon
@@ -16,7 +16,7 @@ Uvnitř polí je možné mít zcela libovolné hodnoty, tedy například řetěz
 > const users = ['john', 'sue', 'peter', 'jane', 'soji']
 ```
 
-Samotné pole je ovšem také hodnota. Není tedy problém mít například pole polí. Pole polí je možné si představit jako tabulku. Takto může vypadat například tabulka útrat po jednom příjemném večeru v hospodě. 
+Samotné pole je ovšem také hodnota. Není tedy problém mít například pole polí. Pole polí je možné si představit jako tabulku. Takto může vypadat například tabulka útrat po jednom příjemném večeru v hospodě.
 
 ```jscon
 > const expenses = [['john', 350], ['sue', 470], ['peter', 437]]
@@ -26,7 +26,7 @@ Pozor na to, že podobně jako existuje prázný řetězec `''`, existuje také 
 
 ### Indexy
 
-Hodnoty uvnitř polí sídlí na takzvaných indexech. Na jednotlivé indexy přistupujeme také pomocí hranatých závorek. Jak už víme z lekce o řetězcích, programátoři všechno počítají od nuly. 
+Hodnoty uvnitř polí sídlí na takzvaných indexech. Na jednotlivé indexy přistupujeme také pomocí hranatých závorek. Jak už víme z lekce o řetězcích, programátoři všechno počítají od nuly.
 
 ```jscon
 > const marks = [3, 1, 2, 4]
@@ -171,7 +171,7 @@ const expenses = [
   ['Zuzka', 'Savo', 80],
   ['Petr', 'Tapeta na záchod', 315],
   ['Ondra', 'Toaleťák', 64],
-]
+];
 ```
 
 Pomocí pole polí můžeme také reprezentovat herní plány v různých počítačovách hrách. Takto například mohou vypadat rozehrané piškvorky 3x3.
@@ -181,7 +181,7 @@ const tictactoe = [
   ['o', ' ', ' '],
   [' ', 'x', ' '],
   [' ', 'o', 'x'],
-]
+];
 ```
 
 Vidíme, že na tahu je zrovna křížek. Můžeme tak snadno provést nějaký chytrý tah.

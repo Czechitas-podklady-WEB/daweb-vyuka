@@ -14,14 +14,14 @@ http://example.com?product=1234&utm_source=google
 Právě v nich se dá najít informace, o jaký produkt, o jakého uživatele nebo o jaký článek se jedná. Pojďme se podívat, jak s nimi můžeme pracovat v React Routeru.
 
 ```js
-import React from "react";
+import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link,
-  useParams
-} from "react-router-dom";
+  useParams,
+} from 'react-router-dom';
 
 const ParamsExample = () => {
   return (
@@ -50,7 +50,7 @@ const ParamsExample = () => {
       </div>
     </Router>
   );
-}
+};
 
 const Child = () => {
   let { id } = useParams();
@@ -60,5 +60,5 @@ const Child = () => {
       <h3>ID: {id}</h3>
     </div>
   );
-}
+};
 ```

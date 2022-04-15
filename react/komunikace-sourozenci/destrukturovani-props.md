@@ -1,10 +1,10 @@
-Jakmile máme v naší React aplikaci více než jednu komponentu, vždycku musíme řešit jejich vzájemnou komunikaci. V minulé lekci jsme si ukázali, jak posílat informace mezi rodičem a dítětem. Často nám však praxe přichystá ještě složitější situaci, kdy potřebujeme zařídit komunikaci mezi sourozenci nebo dokonce mezi vzdálenými potomky. Tyto situaci si rozebereme v dnesní lekci. 
+Jakmile máme v naší React aplikaci více než jednu komponentu, vždycku musíme řešit jejich vzájemnou komunikaci. V minulé lekci jsme si ukázali, jak posílat informace mezi rodičem a dítětem. Často nám však praxe přichystá ještě složitější situaci, kdy potřebujeme zařídit komunikaci mezi sourozenci nebo dokonce mezi vzdálenými potomky. Tyto situaci si rozebereme v dnesní lekci.
 
 ## Destrukturování props
 
-V profesionálně napsných React komponentách se často setkámi s takzvaným destrukturováním props. Než se k němu dostaneme, pojďme si v krátkosti připomenout destrukturování jako takové. 
+V profesionálně napsných React komponentách se často setkámi s takzvaným destrukturováním props. Než se k němu dostaneme, pojďme si v krátkosti připomenout destrukturování jako takové.
 
-Mějme například takovýto objekt představující nějakou vlakovou nebo autobusovou jízdenku. 
+Mějme například takovýto objekt představující nějakou vlakovou nebo autobusovou jízdenku.
 
 ```js
 const ticket = {
@@ -25,7 +25,7 @@ const from = ticket.from;
 const destination = ticket.destination;
 ```
 
-Ke zkrácení tohoto zápisu však můžeme s výhodou použít destrukturování. 
+Ke zkrácení tohoto zápisu však můžeme s výhodou použít destrukturování.
 
 ```js
 const { from, destination } = ticket;
@@ -82,4 +82,4 @@ const Ticket = ({ from, destination }) => (
 );
 ```
 
-Protože samozřejmě všichni chceme být opravdoví profící, budeme od této chvíle naše komponenty psát vždy tímto způsobem. 
+Protože samozřejmě všichni chceme být opravdoví profící, budeme od této chvíle naše komponenty psát vždy tímto způsobem.

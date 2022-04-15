@@ -24,3 +24,4 @@ button.addEventListener('click', () => {
   // document.body.innerHTML += '<p>Objednáno</p>';
   button.textContent = 'Objednáno';
 });
+```

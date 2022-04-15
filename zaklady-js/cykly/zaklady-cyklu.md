@@ -7,10 +7,10 @@ Pole a cykly jsou jakýmsi svatým grálem začátečníckého programování. O
 Na nejpřímočařejší použití cyklu narazíme ve chvíli, kdy chceme provést nějaký kus kódu vícekrát po sobě. Pro jednoduchost zečněme tím, že budeme chtít do konzole vypsat čísla od 1 do 10. Toho dosáhneme následujícím kódem.
 
 ```js
-let num = 1
+let num = 1;
 while (num <= 10) {
-  console.log(num)
-  num += 1
+  console.log(num);
+  num += 1;
 }
 ```
 
@@ -21,30 +21,30 @@ Protože v bloku kódu vždy přičteme k proměnné `num` jedničku, cyklus se 
 Cyklus nemusíme použít jen k počítání. Můžeme například nechat uživatele zadávat heslo tak dlouho, dokud nezadá to správné.
 
 ```js
-let pass = prompt('Enter your password:')
+let pass = prompt('Enter your password:');
 while (pass !== 'fatboyslim') {
-  pass = prompt('Wrong password. Try again:')
+  pass = prompt('Wrong password. Try again:');
 }
 ```
 
 Tento program je na uživatele zbytečně zlý. Lepší by nejspíš bylo, kdybychom počet opakování omezili například na maximálně pět.
 
 ```js
-let attempt = 1
-let pass = prompt('Enter your password:')
+let attempt = 1;
+let pass = prompt('Enter your password:');
 while (pass !== 'fatboyslim' && attempt < 6) {
-  pass = prompt('Wrong password. Try again:')
-  attempt += 1
+  pass = prompt('Wrong password. Try again:');
+  attempt += 1;
 }
 ```
 
 Pozor na to, že stačí malá nepozornost a vyrobíme cyklus, který se opakuje do nekonečna.
 
 ```js
-let num = 1
+let num = 1;
 while (num <= 10) {
-  console.log(num)
-  num + 1
+  console.log(num);
+  num + 1;
 }
 ```
 
@@ -55,12 +55,12 @@ V praxi se nám občas nekonečný cyklus hodí, ale většinou vzníká jako ch
 Velmi často budeme používat cyklus k tomu, abychom prošli nejaké pole prvek po prvku a s každým prvkem něco udělali. V takovém případě si vyrobíme cyklus, který prochází jednotlivé indexy pole a tyto indexy pak používáme k přístupu k jednotlivým prvkům. Zkusme například vypsat na obrazovku naše pole známek.
 
 ```js
-const marks = [2, 4, 1, 3, 4, 3]
+const marks = [2, 4, 1, 3, 4, 3];
 
-let i = 0
+let i = 0;
 while (i < marks.length) {
-  console.log(marks[i])
-  i += 1
+  console.log(marks[i]);
+  i += 1;
 }
 ```
 
@@ -75,22 +75,22 @@ Cyklus s řídící proměnnou je v programování tak častý, že si pro něj 
 Ukažme si ještě jednou cyklus WHILE pro výpis známek do konzole.
 
 ```js
-const marks = [2, 4, 1, 3, 4, 3]
+const marks = [2, 4, 1, 3, 4, 3];
 
-let i = 0
+let i = 0;
 while (i < marks.length) {
-  console.log(marks[i])
-  i += 1
+  console.log(marks[i]);
+  i += 1;
 }
 ```
 
 Nyní pohlédněte na tutéž funkčnost zapsanou pomocí cyklu FOR.
 
 ```js
-const marks = [2, 4, 1, 3, 4, 3]
+const marks = [2, 4, 1, 3, 4, 3];
 
 for (let i = 0; i < marks.length; i += 1) {
-  console.log(marks[i])
+  console.log(marks[i]);
 }
 ```
 

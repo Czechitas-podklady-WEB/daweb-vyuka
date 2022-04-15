@@ -28,7 +28,6 @@ document.addEventListener('keyup', (e) => {
 });
 ```
 
-
 Formulářové prvky mají mnoho dalších atributů, které jsme v lekci nezmínili. Patří mezi ně
 
 - `autocomplete` pro lepší automatické doplňování. Více zde: [The HTML autocomplete attribute | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete).

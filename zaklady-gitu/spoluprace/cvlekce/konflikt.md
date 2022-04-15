@@ -20,7 +20,7 @@ V tuto chvíli se obě dámy nezávisle na sobě rozhodnou upravit stejnou čás
 1. Zatím neřeší stylování a změny rovnou commitne se zprávou "HTML pro výběr barvy."
 1. Provede push na GitHub.
 
-Úkol pro **Alici**, Barbora čeká. 
+Úkol pro **Alici**, Barbora čeká.
 
 1. Alice chce také vyrobit HTML pro výběr barvy. Nevšimne si však, že Barbora už pushnula úpravu stejné části kódu. Místo toho, aby si pullnula, vloží do elementu `.product__colors` svůj kód, který vypadá trochu jinak než ten, který vytvořila Barbora.
    ```html
@@ -33,19 +33,19 @@ V tuto chvíli se obě dámy nezávisle na sobě rozhodnou upravit stejnou čás
    </div>
    ```
 1. Provede commit svých změn se zprávou "Ukázka výběru barev."
-1. Nyní se Alice pokusí provést push svých změn. Pushnutí však selže a Alice obdrží červenou zprávu `rejected`. Git nedovolí pushnout do repozitáře obsahující změny, které si Alice ještě nepullnula. Alice tedy musí nejdříve udělat pull. 
-1. Během pullování však nastane konflikt v souboru `index.html`. 
+1. Nyní se Alice pokusí provést push svých změn. Pushnutí však selže a Alice obdrží červenou zprávu `rejected`. Git nedovolí pushnout do repozitáře obsahující změny, které si Alice ještě nepullnula. Alice tedy musí nejdříve udělat pull.
+1. Během pullování však nastane konflikt v souboru `index.html`.
    ```
    CONFLICT (content): Merge conflict in index.html
    ```
    Alice jej musí vyřešit. Kontaktuje Barboru a navzájem se domluví, jak konflikt vyřeší:
    - Buď přijmou změny, které provedla Alice (Accept Current Change),
    - nebo Alice svoje změny zahodí a přijme změny od Barbory (Accept Incoming Change),
-   - nebo přijmou obě změny (Accept Both Changes) a nějakým způsobem je zkombinují dohromady. 
-   Pro pokračování projektu je jedno, kterou variantu si vyberete. Rozhodněte se dle svých preferencí. 
-1. Jakmile je konflikt vyřešen, Alice pomocí `git add` přidá změny v `index.html` a provede commit se zprávou "Vyřešen konflikt.". 
-1. Nakonec Alice pushne svoje změny do GitHub repozitáře. 
+   - nebo přijmou obě změny (Accept Both Changes) a nějakým způsobem je zkombinují dohromady.
+     Pro pokračování projektu je jedno, kterou variantu si vyberete. Rozhodněte se dle svých preferencí.
+1. Jakmile je konflikt vyřešen, Alice pomocí `git add` přidá změny v `index.html` a provede commit se zprávou "Vyřešen konflikt.".
+1. Nakonec Alice pushne svoje změny do GitHub repozitáře.
 
 Úkol pro **Barboru**.
 
-1. Barbora si pullne nový commit, ve kterém je vyřešen konflikt. Tím se lokální repozitáře u Alice i Barbory dostanou opět do synchronizovaného stavu. 
+1. Barbora si pullne nový commit, ve kterém je vyřešen konflikt. Tím se lokální repozitáře u Alice i Barbory dostanou opět do synchronizovaného stavu.

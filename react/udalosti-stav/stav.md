@@ -47,7 +47,7 @@ Pomocí specální funkce `useState` říkáme Reactu, že chceme vytvořit prom
 V našem případě tedy můžeme v komponentě pracovat s proměnnou `tankLevel`, která bude mít při prvním renderu hodnotu `'full'`. Hodnotu `tankLevel` však můžeme například v reakci na nějakou událost změnit. To provedeme voláním
 
 ```js
-setTankLevel('almost empty')
+setTankLevel('almost empty');
 ```
 
 Tím spustíme přerenderování komponenty s novým stavem, kde v `tankLevel` bude uloženo `'almost emmpty'`.

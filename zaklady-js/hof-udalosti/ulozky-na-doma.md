@@ -3,4 +3,3 @@
 ::exc[cvdoma>catering]
 ::exc[cvdoma>kostka]
 ::exc[cvdoma>minutka]
-

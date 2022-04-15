@@ -25,34 +25,34 @@ Obsah souboru `index.html`:
 
 ```html
 <div class="container">
-   <form>
-      <h1>Objednávka</h1>
-      <label class="field">Platební karta: <input type="text" /> </label>
-      <label class="field">
-         Doprava:
-         <select>
-            <option value="pobocka">Vyzvednout na pobočce</option>
-            <option value="zasilkovna">Zásilkovna</option>
-            <option value="posta">Česká pošta</option>
-            <option value="ppl">PPL</option>
-         </select>
-      </label>
-      <div class="controls">
-         <button type="submit">Odeslat objednávku</button>
-      </div>
-   </form>
+  <form>
+    <h1>Objednávka</h1>
+    <label class="field">Platební karta: <input type="text" /> </label>
+    <label class="field">
+      Doprava:
+      <select>
+        <option value="pobocka">Vyzvednout na pobočce</option>
+        <option value="zasilkovna">Zásilkovna</option>
+        <option value="posta">Česká pošta</option>
+        <option value="ppl">PPL</option>
+      </select>
+    </label>
+    <div class="controls">
+      <button type="submit">Odeslat objednávku</button>
+    </div>
+  </form>
 </div>
 ```
 
 Obsah souboru `index.js`:
 
 ```js
-const formular = document.querySelector('form')
+const formular = document.querySelector('form');
 formular.addEventListener('submit', (event) => {
-   event.preventDefault()
-   formular.innerHTML = `
+  event.preventDefault();
+  formular.innerHTML = `
       <h1>Hotovo</h1>
       <p>Objednávka odeslána ke zpracování.</p>
-   `
-})
+   `;
+});
 ```

@@ -16,4 +16,4 @@ Naklonuje si [repozitář](https://github.com/Czechitas-podklady-WEB/hodiny-zada
 1. HTML kód hodin ze stránky vyjměte a nechte v ní pouze element `app`.
 1. Ve vašem programu vyberte element `app` a pomocí komponenty `Clock` do něj zapojte hodiny zobrazující nějaký čas.
 1. Zkuste pomocí funkce `Clock` vložit do stránky několik různých hodin pod sebe.
-1. Zkuste vyrobit pole hodin a zobrazit je pomocí cyklu na stránce. 
+1. Zkuste vyrobit pole hodin a zobrazit je pomocí cyklu na stránce.

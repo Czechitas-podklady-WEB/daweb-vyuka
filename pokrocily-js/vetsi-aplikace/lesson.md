@@ -19,8 +19,9 @@ Pojďme si dělení kódu aplikace do vícero souborů vyzkoušet na našem nák
 ```
 
 [[[ excs Cvičení: Oddělování komponent
+
 - prestupky-2
-]]]
+  ]]]
 
 ## Sestavovací proces
 
@@ -80,9 +81,11 @@ Tento postup následujte vždy, když chcete založit nový frontendový projekt
 ## Import a export
 
 [[[ excs Cvičení: Základy Webpacku
+
 - citat
-]]]
+  ]]]
 
 [[[ excs Doporučené úložky na doma
+
 - svetovy-cas-webpack
-]]]
+  ]]]

@@ -1,6 +1,6 @@
 ## Filtry a mapy
 
-Filtrování a mapování patří mezi vůbec nejpoužívanější funkce pro zpracování dat. 
+Filtrování a mapování patří mezi vůbec nejpoužívanější funkce pro zpracování dat.
 
 ### Metoda filter()
 

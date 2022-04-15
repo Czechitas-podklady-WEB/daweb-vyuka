@@ -5,8 +5,8 @@ demand: 2
 
 Vytvořme webovou stránku, která bude zobrazovat čas, kdy dnes vyšlo a kdy zapadá slunce. Zatím budeme pracovat bez komponent a vrátíme se k nim v druhé části lekce.
 
-1. Založte si novou HTML stránku s JavaScriptem. 
-1. V souboru `index.js` pomocí funkce `fetch` získejte data z API na adrese 
+1. Založte si novou HTML stránku s JavaScriptem.
+1. V souboru `index.js` pomocí funkce `fetch` získejte data z API na adrese
    ```
    https://api.sunrise-sunset.org/json?lat=50&lng=14.5
    ```
@@ -21,22 +21,20 @@ Soubor `index.html`:
 ```html
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="index.js"></script>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script type="module" src="index.js"></script>
+    <title>Východ a západ slunce</title>
+  </head>
 
-  <title>Východ a západ slunce</title>
-</head>
-
-<body>
-   <div class="container">
-   <button id="show">Ukázat</button>
-   <div id="sunrise-sunset"></div>
-   </div>
-</body>
-
+  <body>
+    <div class="container">
+      <button id="show">Ukázat</button>
+      <div id="sunrise-sunset"></div>
+    </div>
+  </body>
 </html>
 ```
 

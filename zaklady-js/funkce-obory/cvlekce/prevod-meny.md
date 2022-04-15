@@ -25,20 +25,20 @@ Pokud funkce jako parametr dostane neznámý kód měny, vrátí jako výsledek 
 
 ```js
 const convertToCZK = (amount, currency) => {
-	let rate;
+  let rate;
 
-	if (currency === 'EUR') {
-		rate = 24.42;
-	} else if (currency === 'GBP') {
-		rate = 28.98;
-	} else if (currency === 'USD') {
-		rate = 22.07;
-	} else if (currency === 'BTC') {
-		rate = 1010077;
-	} else {
-		return null;
-	}
+  if (currency === 'EUR') {
+    rate = 24.42;
+  } else if (currency === 'GBP') {
+    rate = 28.98;
+  } else if (currency === 'USD') {
+    rate = 22.07;
+  } else if (currency === 'BTC') {
+    rate = 1010077;
+  } else {
+    return null;
+  }
 
-	return Math.round(rate * amount);
+  return Math.round(rate * amount);
 };
 ```

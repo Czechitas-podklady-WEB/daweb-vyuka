@@ -15,9 +15,9 @@ Hodnotě uvnitř kulatých závorek říkáme :term{cs="vstup" en="input"} funkc
 
 ### Rychlé občerstvení
 
-Funkce jsou rozsáhlé téma, které nás bude provázet až do konce kurzu. Již brzy se také naučíme psát funkce vlastní. Pro lepší představu o tom, jak funce fungují, se nám bude hodit následující analogie. 
+Funkce jsou rozsáhlé téma, které nás bude provázet až do konce kurzu. Již brzy se také naučíme psát funkce vlastní. Pro lepší představu o tom, jak funce fungují, se nám bude hodit následující analogie.
 
-Můžeme si představovat, že funkce je něco jako stánek s rychlým občerstvením. Takový stánek má dvě okýnka. Jedno vstupní, do kterého zadáte svoji objednávku, a druhé výstupní, kde po chvíli obdržíte svůj hamburger nebo smažák v housce. Objednávání rychlé svačiny je pak podobné jako volání funkce. Do stánku vložíte nějaké vstupy a ven vám vypadne výstup. Pokud nejste vysloveně zvědaví nebo paranoidní, dění uvnitř stánku vás až tolik nezajímá, podobně jako vás až tolik nezajímá, jak vlastně JavaScript technicky provádní zaokrouhlování. Důležité je, že funkce funguje, a že párek v rohlíku nakonec chutná tak, jak jste zvyklí. 
+Můžeme si představovat, že funkce je něco jako stánek s rychlým občerstvením. Takový stánek má dvě okýnka. Jedno vstupní, do kterého zadáte svoji objednávku, a druhé výstupní, kde po chvíli obdržíte svůj hamburger nebo smažák v housce. Objednávání rychlé svačiny je pak podobné jako volání funkce. Do stánku vložíte nějaké vstupy a ven vám vypadne výstup. Pokud nejste vysloveně zvědaví nebo paranoidní, dění uvnitř stánku vás až tolik nezajímá, podobně jako vás až tolik nezajímá, jak vlastně JavaScript technicky provádní zaokrouhlování. Důležité je, že funkce funguje, a že párek v rohlíku nakonec chutná tak, jak jste zvyklí.
 
 ::fig[Zaokrouhlování]{src=assets/zaokrouhlovani.png size=60}
 
@@ -54,7 +54,7 @@ Jednou z funkcí, se kterými si užijeme více zábavy, je `Math.random`. Ta p�
 0.8730206392247666
 ```
 
-Všimněte si, že tato funkce nemá žádný vstup. I takové funkce jsou možné a nejsou žádnou velkou výjimkou. 
+Všimněte si, že tato funkce nemá žádný vstup. I takové funkce jsou možné a nejsou žádnou velkou výjimkou.
 
 Chytrým použitím zaokrouhlování a trochou matematiky můžeme pomocí `Math.random` generovat náhodná celá čísla například v rozmezí 0 až 9.
 

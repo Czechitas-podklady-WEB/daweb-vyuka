@@ -56,7 +56,7 @@ Uncaught TypeError: undefined is not a function
     at <anonymous>:1:1
 ```
 
-Opravíme tedy název funkce a radujeme se, že už bude vše v pořádku. 
+Opravíme tedy název funkce a radujeme se, že už bude vše v pořádku.
 
 ```js
 const handleSubmit = (e) => {

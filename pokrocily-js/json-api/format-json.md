@@ -2,7 +2,7 @@
 
 Podle většiny moderních doporučení je lepší v JavaScriptu používat v řetězcích jednoduché uvozovky. V počátcích JavaScriptu však bylo běžné používat spíše dvojité. Pokud v našich objektech schválně uzavřeme všechny klíče a řetězce do dvojitých uvozovek i tam, kde by to jinak nebylo potřeba, dostaneme reprezentaci zapsanou takto.
 
-```js
+```json
 const course = {
   "nazev": "Úvod do programování",
   "lektor": "Martin Podloucký",

@@ -78,4 +78,3 @@ Textové řetězce jdou sčítat podobně jako čísla, můžete tedy psát nap�
 ```
 
 Všimněte si v druhém příkladu řetězce, který obsahuje pouze mezeru. V třetím případě dokonce vidíme řetězec, který neobsahuje vůbec nic. To je takzvaný :term{cs="prázdný řetězec" en="empty string"}. Chová se podobně jako nula při sčítání čísel a bude se nám pozdějí hodit.
-

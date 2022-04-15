@@ -8,7 +8,7 @@ Pokračujte v předchozím cvičení. Cílem cvičení je vytvořit v projektu n
 1. V projektu vytvořte složku `MovieList` a v ní vytvořte soubory `index.js` a `style.css`.
 1. Napište kód pro komponentu `MovieList`, která ve svých props pod vlastností `movies` očekává pole filmů. Přijaté filmy vykreslí uvnitř elementu `<ul class="movie-list"></ul>` pomocí komponenty `Movie`, kterou již známe z předchozího cvičení.
 1. Upravte hlavní `index.js` tak, aby používal nově vytvořenou komponentu `MovieList` a stažený json s daty jí předával tak, jak jej komponenta očekává.
-Kódem, který komponenta vygeneruje, nahraďte innerHTML elementu `#app`.
+1. Kódem, který komponenta vygeneruje, nahraďte innerHTML elementu `#app`.
 
 #### Bonus
 
@@ -18,31 +18,32 @@ Kódem, který komponenta vygeneruje, nahraďte innerHTML elementu `#app`.
 ---solution
 
 1. ```js
-    //MovieList/index.js
-    import { Movie } from '../Movie/index.js';
+   //MovieList/index.js
+   import { Movie } from '../Movie/index.js';
 
-    export const MovieList = (props) => {
-      const { movies } = props;
-      let result = `<ul class="movie-list">`;
-      for (let i = 0; i < movies.length; i = i + 1) {
-        result += Movie(movies[i]);
-      }
-      result += `</ul>`;
+   export const MovieList = (props) => {
+     const { movies } = props;
+     let result = `<ul class="movie-list">`;
+     for (let i = 0; i < movies.length; i = i + 1) {
+       result += Movie(movies[i]);
+     }
+     result += `</ul>`;
 
-      return result;
-    };
+     return result;
+   };
    ```
-1. ```js
-    //index.js
-    import { MovieList } from './MovieList/index.js';
 
-    fetch('https://apps.kodim.cz/daweb/trening-api/apis/movies')
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => {
-        document.querySelector('#app').innerHTML = MovieList({
-          movies: data,
-        });
-      });
+1. ```js
+   //index.js
+   import { MovieList } from './MovieList/index.js';
+
+   fetch('https://apps.kodim.cz/daweb/trening-api/apis/movies')
+     .then((response) => {
+       return response.json();
+     })
+     .then((data) => {
+       document.querySelector('#app').innerHTML = MovieList({
+         movies: data,
+       });
+     });
    ```

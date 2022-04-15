@@ -28,7 +28,7 @@ Superhrubá mzda se spočítá z hrubé mzdy takto:
 
 ---solution
 
-```js
+```
 const pay = Number(prompt('Hodinová mzda:'));
 const time = Number(prompt('Velikost uvazku (%):'));
 

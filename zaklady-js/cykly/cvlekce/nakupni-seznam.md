@@ -6,7 +6,7 @@ demand: 2
 Mějme pole řetězců představující nákupní seznam
 
 ```js
-const list = ['mouka', 'máslo', 'cukr', 'jablka', 'skořice']
+const list = ['mouka', 'máslo', 'cukr', 'jablka', 'skořice'];
 ```
 
 1. Napište cyklus, který projde celé toto pole a všechny položky spojí dohromady do jednoho velkého řetězce jako níže. A výsledek vypište do konzole.
@@ -32,35 +32,35 @@ const list = ['mouka', 'máslo', 'cukr', 'jablka', 'skořice']
 ---solution
 
 1. ```js
-   const list = ['mouka', 'máslo', 'cukr', 'jablka', 'skořice']
-   let vysledek = ''
+   const list = ['mouka', 'máslo', 'cukr', 'jablka', 'skořice'];
+   let vysledek = '';
    for (let i = 0; i < list.length; i++) {
-   	vysledek += list[i]
+     vysledek += list[i];
    }
-   console.log(vysledek)
+   console.log(vysledek);
    ```
 
 1. ```js
-   const list = ['mouka', 'máslo', 'cukr', 'jablka', 'skořice']
-   let vysledek = ''
+   const list = ['mouka', 'máslo', 'cukr', 'jablka', 'skořice'];
+   let vysledek = '';
    for (let i = 0; i < list.length; i++) {
-   	if (i > 0) {
-   		vysledek += ','
-   	}
-   	vysledek += list[i]
+     if (i > 0) {
+       vysledek += ',';
+     }
+     vysledek += list[i];
    }
-   console.log(vysledek)
+   console.log(vysledek);
    ```
 
 1. ```js
-   const list = ['mouka', 'máslo', 'cukr', 'jablka', 'skořice']
-   let vysledek = ''
+   const list = ['mouka', 'máslo', 'cukr', 'jablka', 'skořice'];
+   let vysledek = '';
    for (let i = 0; i < list.length; i++) {
-   	vysledek += `<li>${list[i]}</li>`
+     vysledek += `<li>${list[i]}</li>`;
    }
-   console.log(vysledek)
+   console.log(vysledek);
    ```
 
 1. ```js
-   document.querySelector('ol').innerHTML = vysledek
+   document.querySelector('ol').innerHTML = vysledek;
    ```

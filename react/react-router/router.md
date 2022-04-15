@@ -14,24 +14,19 @@ Nyní máme v projektu k dispozici celou škálu komponent, se kterými můzeme 
 
 ```js
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 const Home = () => {
   return <h2>Home</h2>;
-}
+};
 
 const About = () => {
   return <h2>About</h2>;
-}
+};
 
 const Users = () => {
   return <h2>Users</h2>;
-}
+};
 
 const App = () => (
   <Router>

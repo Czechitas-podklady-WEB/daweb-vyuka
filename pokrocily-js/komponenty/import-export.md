@@ -14,6 +14,6 @@ Od této chvíle je naše komponenta použitelná i mimo soubor, ve kterém je d
 import { ShoppingItem } from './ShoppingItem/index.js';
 ```
 
-Všimněte si cesty za slovíčkem `from`. Tady si musíme dát pozor, aby to byla správná cesta k souboru, ve kterém sídlí `ShoppingItem`, jinak naši komponentu prohlížeč nenajde a program skončí chybou. 
+Všimněte si cesty za slovíčkem `from`. Tady si musíme dát pozor, aby to byla správná cesta k souboru, ve kterém sídlí `ShoppingItem`, jinak naši komponentu prohlížeč nenajde a program skončí chybou.
 
-Výše popsaný postup stačí k tomu, abychom propojili náš program do jednoho funkčního celku. Celý výsledný projekt najdete v [tomto repozitáři](https://github.com/Czechitas-podklady-WEB/prvni-komponenta). Můžete jej do začátků používat jako tahák, dokud si nebudete zcela jistí strukturou projektů s oddělenými komponentami. 
+Výše popsaný postup stačí k tomu, abychom propojili náš program do jednoho funkčního celku. Celý výsledný projekt najdete v [tomto repozitáři](https://github.com/Czechitas-podklady-WEB/prvni-komponenta). Můžete jej do začátků používat jako tahák, dokud si nebudete zcela jistí strukturou projektů s oddělenými komponentami.

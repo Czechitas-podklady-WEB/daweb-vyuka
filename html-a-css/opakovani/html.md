@@ -11,12 +11,13 @@ HTML soubory jsou ty, které končí koncovkou **.html**. Základní struktura H
 ```html
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>A simple HTML document</title>
-    </head>
-    <body>
-        <p>Hello World!<p>
-    </body>
+  <head>
+    <title>A simple HTML document</title>
+  </head>
+  <body>
+    <p>Hello World!</p>
+    <p></p>
+  </body>
 </html>
 ```
 
@@ -25,6 +26,7 @@ V prvku `head` se nachází
 - informace o dokumentu, jako je například název,
 - metaznačky (metatags), které mimo jiné pomáhají vyhledávačům,
 - nebo linky na CSS a JS soubory.
+
 Do obsahu prvku `body` potom píšeme samotný obsah naší webové stránky.
 
 ### HTML element

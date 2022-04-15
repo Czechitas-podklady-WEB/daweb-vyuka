@@ -7,6 +7,7 @@ Vyzkoušíme si založit jednoduchou React aplikaci s jedním `index.jsx` a jedn
 
 1. Pomocí `create-czechitas-app` vytvořte Reactový projekt. Dejte si pozor, abyste omylem nevytvořili vanilla projekt. Projekt spusťte pomocí `npm run start` jak už to znáte z dřívejška.
 1. Prozatím z projektu vymažte obsah souboru `index.jsx` S komponentou `App` budeme pracovat až v druhé části lekce. Obsah souboru nahraďte tímto kódem.
+
    ```js
    import React from 'react';
    import { render } from 'react-dom';
@@ -19,10 +20,11 @@ Vyzkoušíme si založit jednoduchou React aplikaci s jedním `index.jsx` a jedn
        <main>
          <p>Moje první React aplikace</p>
        </main>
-     </div>, 
+     </div>,
      document.querySelector('#app')
    );
    ```
+
 1. Přímo ve volání funkce `render` změňte nadpis stránky `h1` a v hlavičce uveďte svoje jméno.
 1. Uložte si JSX představující obsah stránky do seperátní proměnné uvnitř `index.jsx` a tu pak použíjte ve funkci `render`.
 1. Uložte si své jméno do proměnné a obsah této proměnné vložte do hlavičky stránky.

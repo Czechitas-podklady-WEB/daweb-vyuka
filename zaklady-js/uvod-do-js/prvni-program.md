@@ -36,10 +36,10 @@ Co tento kód přesně dělá se dozvíme za malou chvíli. Teď je naším hlav
 </head>
 ```
 
-Pokud nyní soubor `index.html` otevřete v prohlížeči, měl by nadpis stránky znít :i[ahoj]. Všimměte si, že v HTML kódu stránka obsahuje nadpis :i[První program]. 
+Pokud nyní soubor `index.html` otevřete v prohlížeči, měl by nadpis stránky znít :i[ahoj]. Všimměte si, že v HTML kódu stránka obsahuje nadpis :i[První program].
 
 Proč se JavaScriptový kód vkládá do stránky tímto způsobem a co přesně znamená atribut `type="module"` si povíme později, až budete malinko zkušenější.
 
 ### Středníky
 
-Téměř každý příkaz v JavaScriptu končí středníkem. Tím JavaScript runtime pozná, kde končí jeden příkaz a začíná jiný. Inu, ve skutečnosti by to JavaScript poznal i bez středníků a dokonce bychom je na většině míst ani psát nemuseli. Psaní nebo nepsaní středníků je opět kulturní záležitost podobně jako jednoduché nebo dvojité uvozovky. Každý to má rád po svém, jednou je trendy to, jindy zase ono. My na tomto webu budeme středníky používat svědomitě a vám do začátku doporučujeme totéž. Později se jistě sami rozhodnete pro styl, který se vám osobně líbí nejvíce. 
+Téměř každý příkaz v JavaScriptu končí středníkem. Tím JavaScript runtime pozná, kde končí jeden příkaz a začíná jiný. Inu, ve skutečnosti by to JavaScript poznal i bez středníků a dokonce bychom je na většině míst ani psát nemuseli. Psaní nebo nepsaní středníků je opět kulturní záležitost podobně jako jednoduché nebo dvojité uvozovky. Každý to má rád po svém, jednou je trendy to, jindy zase ono. My na tomto webu budeme středníky používat svědomitě a vám do začátku doporučujeme totéž. Později se jistě sami rozhodnete pro styl, který se vám osobně líbí nejvíce.

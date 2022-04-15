@@ -1,6 +1,6 @@
 ## Aktualizace obsahu stránky
 
-V této části si ukážeme, jak můžeme aktualizovat obsah stránky, pokud se naše zobrazovaná data nějak změní. V naší aplikaci s nákupním seznamem můžeme například chtít přidat do seznamu novou položku. Abychom si malinko ulehčili situaci, zatím si nákupní seznam uložím natvrdo do proměnné. 
+V této části si ukážeme, jak můžeme aktualizovat obsah stránky, pokud se naše zobrazovaná data nějak změní. V naší aplikaci s nákupním seznamem můžeme například chtít přidat do seznamu novou položku. Abychom si malinko ulehčili situaci, zatím si nákupní seznam uložím natvrdo do proměnné.
 
 ```js
 const list = [
@@ -94,7 +94,7 @@ addBtn.addEventListener('click', () => {
   const name = document.querySelector('#name-product').value;
   const amount = document.querySelector('#amount-input').value;
   list.push({ product: product, amount: amount });
-  
+
   const listSection = document.querySelector('#list-section');
   listSection.innerHTML = ShoppingList({ items: list });
 });

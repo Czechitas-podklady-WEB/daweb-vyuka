@@ -2,7 +2,7 @@
 
 ## Oddělování komponent
 
-Ve výsledku se chceme ke každé komponentě chovat jako k jakémusi samostatnému uzlíku či balíčku. Každá komponenta má nějaký JavaScriptový kód, styly a také třeba soubory s obrázky. Toto všechno chceme mít pohromadě, aby bylo jasné, co všechno patří k jaké komponentě. 
+Ve výsledku se chceme ke každé komponentě chovat jako k jakémusi samostatnému uzlíku či balíčku. Každá komponenta má nějaký JavaScriptový kód, styly a také třeba soubory s obrázky. Toto všechno chceme mít pohromadě, aby bylo jasné, co všechno patří k jaké komponentě.
 
 Pro každou komponentu si tedy vytvoříme spociální složku a domluvíme se na společné struktuře, kterou budeme dodržovat. Každá složka bude obsahovat
 
@@ -10,13 +10,13 @@ Pro každou komponentu si tedy vytvoříme spociální složku a domluvíme se n
 - soubor `style.css` s CSS styly pro komponentu,
 - případně složku `img` s obrázky.
 
-Kromě složek s komponentami budeme v každém projektu také mít hlavní soubor `index.html`, hlavní `index.js` a hlavní `style.css` jak jsme byli doposud zvyklí. 
+Kromě složek s komponentami budeme v každém projektu také mít hlavní soubor `index.html`, hlavní `index.js` a hlavní `style.css` jak jsme byli doposud zvyklí.
 
 Uvažme například projekt používající komponentu `ShoppingItem`, kterou jsme viděli dříve v této lekci. Struktura celého projektu bude vypadat takto.
 
 ::fig{src=assets/struktura-projektu.png size=40}
 
-V souboru `ShoppingItem/index.js` bude JavaScriptový kód komponenty. 
+V souboru `ShoppingItem/index.js` bude JavaScriptový kód komponenty.
 
 ```js
 const ShoppingItem = (props) => {
@@ -37,7 +37,7 @@ const ShoppingItem = (props) => {
 };
 ```
 
-Komponentu lehce nastylujeme v souboru `ShoppingItem/style.css`: 
+Komponentu lehce nastylujeme v souboru `ShoppingItem/style.css`:
 
 ```css
 .item {
@@ -76,25 +76,23 @@ Hlavní soubor `index.html` bude vypadat takto:
 ```html
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="ShoppingItem/style.css" />
 
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="ShoppingItem/style.css" />
+    <script type="module" src="index.js"></script>
 
-  <script type="module" src="index.js"></script>
+    <title>První komponenta</title>
+  </head>
 
-  <title>První komponenta</title>
-</head>
-
-<body>
-  <div class="container">
-    <ul class="shopping-list"></ul>
-  </div>
-</body>
-
+  <body>
+    <div class="container">
+      <ul class="shopping-list"></ul>
+    </div>
+  </body>
 </html>
 ```
 
@@ -133,4 +131,4 @@ html {
 }
 ```
 
-Nyní máme veškerý kód projektu hezky rozdělený na logické části. Všimněte si však, že jsme do hlavičky HTML vložili pouze hlavní `index.js`, ale nevložili jsme tam JavaScript naší komponenty. Ten se do naší stránky dostane jiným způsbem, který uvidíme v následující sekci. 
+Nyní máme veškerý kód projektu hezky rozdělený na logické části. Všimněte si však, že jsme do hlavičky HTML vložili pouze hlavní `index.js`, ale nevložili jsme tam JavaScript naší komponenty. Ten se do naší stránky dostane jiným způsbem, který uvidíme v následující sekci.

@@ -41,8 +41,8 @@ const AgeField = () => {
 
 Tímto postupem se snažíme provázat obsah políčka s hodnotou ve stavu. Kdykoliv uživatel obsah políčka změní, my na to zareagujeme změnou stavu `age`. Tomuto principu se anglicky říká <em>data binding</em>.
 
-Pozor však, že náš data binding zatím funguje pouze jedním směrem, tedy _změna políčka_ ⟶ 
-_změna stavu_. Pokud se z nějakého důvodu změní hodnota ve stavu `age`, obsah políčka se zatím neaktualizuje. 
+Pozor však, že náš data binding zatím funguje pouze jedním směrem, tedy _změna políčka_ ⟶
+_změna stavu_. Pokud se z nějakého důvodu změní hodnota ve stavu `age`, obsah políčka se zatím neaktualizuje.
 
 ### Obousměrný data binding
 
