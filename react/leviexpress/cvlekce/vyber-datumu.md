@@ -12,14 +12,14 @@ Na konci tohoto cvičení bude uživatel schopen vybrat datum cesty podle dat st
    ```js
    [
      {
-       "dateBasic": "28.05.2021",
-       "dateExtended": "pá 28. květen 2021"
+       dateBasic: '28.05.2021',
+       dateExtended: 'pá 28. květen 2021',
      },
      {
-       "dateBasic": "29.05.2021",
-       "dateExtended": "so 29. květen 2021"
+       dateBasic: '29.05.2021',
+       dateExtended: 'so 29. květen 2021',
      },
-   ]
+   ];
    ```
 1. Použijte stav `dates` pro naplnění hodnot property `dates` tam, kde je použita komponenta `DatesOptions`. Ověřte v prohlížeči, že se ve výběru termínů zobrazují dvě uvedená data.
 1. Upravte `useEffect` volaný při prvním zobrazení komponenty. Vedle seznamu měst bude z API získávat také seznam termínů. Endpoint je na adrese

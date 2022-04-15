@@ -18,31 +18,30 @@ Kódem, který komponenta vygeneruje, nahraďte innerHTML elementu `#app`.
 ---solution
 
 1. ```js
-    //MovieList/index.js
-    import { Movie } from '../Movie/index.js';
+   //MovieList/index.s
+    import { Movie } from '../Movie/index.s';
 
-    export const MovieList = (props) => {
-      const { movies } = props;
-      let result = `<ul class="movie-list">`;
-      for (let i = 0; i < movies.length; i = i + 1) {
-        result += Movie(movies[i]);
+    export const MovieList = (props => {
+      const { movies} = props;
+      let result = `<ul class="ovie-list">`;
+      for (let i = 0; i < movies.length;i = i + 1) {
+        result +=Moie(movies[i]);
       }
-      result += `</ul>`;
+     result += `/ul>`;
 
       return result;
     };
    ```
 1. ```js
-    //index.js
-    import { MovieList } from './MovieList/index.js';
+   //indexs
+    import { MovieList } from './MovieList/indexs';
 
-    fetch('https://apps.kodim.cz/daweb/trening-api/apis/movies')
-      .then((response) => {
-        return response.json();
+    fetch('https://apps.kodim.cz/daweb/trening-api/apismoies')
+      .then((resons) => {
+        return eponse.jon();
       })
-      .then((data) => {
-        document.querySelector('#app').innerHTML = MovieList({
-          movies: data,
+     .hen((data) => {
+        document.querySelector('#app').inne rHML = MovieList({       movies: data,
         });
       });
    ```

@@ -11,11 +11,11 @@ Naklonujte si [repozitář](https://github.com/Czechitas-podklady-WEB/ukolnicek-
 1. Zavolejte funkci `Task` v cyklu přes pole úkolů a zapojte výsledek do vaší stránky.
 1. V oddělené složce vytvořte další komponentu `TasksList`, která na vstupu `props` očekává objekt obsahující pole úkolů v tomto tvaru.
    ```js
-     {
-       tasks: [
-         // array of tasks
-       ]
-     }
+   {
+     tasks: [
+       // array of tasks
+     ];
+   }
    ```
 1. Z HTML odstraňte celý prvek `todo__tasks` a nechte komponentu `TasksList` vytvořit celý tento prvek i s jeho obsahem. Komponenta `TasksList` tedy bude postupně v cyklu volat komponentu `Task` a vrátí HTML celého divu s třdiou `todo__taska`. 
 1. Zavolejte funkci `TasksList`, předejte jí všechny úkoly v očekávaném formátu `tasks` a zapojte výsledek funkce do vaší stránky na konec elementu s třidou `todo`.

@@ -46,7 +46,7 @@ buttonElm.addEventListener('click', () => {
     })
     .then((data) => {
       document.querySelector('.show-password').textContent = data.password;
-    })
+    });
 });
 ```
 Bonus
@@ -83,7 +83,9 @@ const formElm = document.querySelector('#password-form');
 formElm.addEventListener('submit', (e) => {
   e.preventDefault();
   const inputElm = document.querySelector('#password-length');
-  fetch(`https://apps.kodim.cz/daweb/trening-api/apis/passwords?length=${inputElm.value}`)
+  fetch(
+    `https://apps.kodim.cz/daweb/trening-api/apis/passwords?length=${inputElm.value}`,
+  )
     .then((response) => {
       return response.json();
     })

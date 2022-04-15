@@ -12,8 +12,8 @@ Vyzkoušejme si práci s URL parametry v naší React Router aplikaci. Podívám
    ```
 1. V souboru `Movie.jsx` vytvořte detail jednoho filmu. Pomocí `useParams` hooku z `react-router-dom` zjistěte id současného filmu. V importovaném poli `movies` podle id najděte současně prohlížený film. Pomůže vám metoda find.
    ```js
-   const urlId = 'moje-id'
-   const currentBook = books.find(book => book.id === urlId)
+   const urlId = 'moje-id';
+   const currentBook = books.find((book) => book.id === urlId);
    ```
    O filmu vypište jeho název, popis a zobrazte obrázek.
 1. V souboru `App.jsx` odkomentujte `<Route>` komponentu uvnitř `<Switch>` komponenty. Zamyslete se, proč jsou `path` a `children` takové, jaké jsou. Porovnejte s dokumentací React Routeru.

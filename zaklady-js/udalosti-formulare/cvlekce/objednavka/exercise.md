@@ -47,12 +47,12 @@ Obsah souboru `index.html`:
 Obsah souboru `index.js`:
 
 ```js
-const formular = document.querySelector('form')
+const formular = document.querySelector('form');
 formular.addEventListener('submit', (event) => {
-   event.preventDefault()
-   formular.innerHTML = `
+  event.preventDefault();
+  formular.innerHTML = `
       <h1>Hotovo</h1>
       <p>Objednávka odeslána ke zpracování.</p>
-   `
-})
+   `;
+});
 ```

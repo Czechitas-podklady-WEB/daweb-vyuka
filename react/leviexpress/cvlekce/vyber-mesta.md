@@ -8,7 +8,10 @@ Na konci tohoto cvičení si uživatel bude schopen vybrat startovní a cílové
 1. Přímo v souboru `index.jsx` komponenty `JourneyPicker` si vytvořte novou komponentu `CityOptions`. Přesuňte do ní všechny `<option>` ze `select`u pro výběr výchozího města. Komponentu `CityOptions` použijte v obou `select`ech pro výběr města. Zkontrolujte, že v prhohlížeči vše funguje stejně.
 1. Vytvořte si pomocí `useState` další stav `cities`. V tomto stavu bude seznam měst, mezi kterými lze cestovat. Pro otestování nastavte do seznamu dvě města:
    ```js
-   [{ name: 'Praha', code: 'CZ-PRG' }, { name: 'Brno', code: 'CZ-BRQ' }]
+   [
+     { name: 'Praha', code: 'CZ-PRG' },
+     { name: 'Brno', code: 'CZ-BRQ' },
+   ];
    ```
 1. Komponenta `CityOptions` bude v `props` přijímat `cities`. V něm bude pole – seznam měst, které může uživatel vybrat. Upravte tedy příslušným způsobem hlavičku komponenty `CityOptions` a získanou property `cities` si vypište do konzole.
 1. Na obou místech, kde máte komonentu `CityOptions` použitou, nastavte property/atribut `cities` na hodnotu stavu `cities`. V prohlížeči se teď při zobrazení stránky vypíše dvakrát do konzole seznam měst – Praha a Brno.

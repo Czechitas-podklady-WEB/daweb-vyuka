@@ -13,7 +13,7 @@ const flight = {
   duration: {
     departure: 8400,
     return: 0,
-    total: 8400
+    total: 8400,
   },
   fly_duration: '2h 20m',
   flyFrom: 'PRG',
@@ -21,14 +21,14 @@ const flight = {
   cityCodeFrom: 'PRG',
   countryFrom: {
     code: 'CZ',
-    name: 'Czechia'
+    name: 'Czechia',
   },
   flyTo: 'BCN',
   cityTo: 'Barcelona',
   cityCodeTo: 'BCN',
   countryTo: {
     code: 'ES',
-    name: 'Spain'
+    name: 'Spain',
   },
   distance: 1359.54,
   airline: 'FR',
@@ -36,8 +36,8 @@ const flight = {
   technical_stops: 0,
   price: 36,
   bags_price: {
-    '1': 34.95,
-    '2': 69.91
+    1: 34.95,
+    2: 69.91,
   },
   baglimit: {
     hand_width: 20,
@@ -48,16 +48,16 @@ const flight = {
     hold_height: 119,
     hold_length: 119,
     hold_dimensions_sum: 319,
-    hold_weight: 20
+    hold_weight: 20,
   },
   availability: {
-    seats: 2
+    seats: 2,
   },
   conversion: {
-    EUR: 36
+    EUR: 36,
   },
   quality: 66.66659,
-}
+};
 ```
 
 Proveďte následující:

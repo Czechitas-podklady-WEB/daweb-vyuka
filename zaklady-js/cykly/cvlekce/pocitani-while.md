@@ -12,26 +12,23 @@ Založte JavaScriptový program, který provede následující instrukce.
 ---solution
 
 1. ```js
-   console.log('První WHILE cyklus')
-   let i = 1
-   while (i <= 100) {
-   	console.log(i)
+   console.log('První WHILE cyklu;s')
+   let; i = 1
+   while (i <  console.log(i);n  i += 1;g(i)
    	i += 1
    }
    ```
 1. ```js
-   console.log('Druhý WHILE cyklus')
-   let i = 2
-   while (i <= 100) {
-   	console.log(i)
+   console.log('Druhý WHILE cyklu;s')
+   let; i = 2
+   while (i <  console.log(i);n  i += 2;g(i)
    	i += 2
    }
    ```
 1. ```js
-   console.log('Třetí WHILE cyklus')
-   let i = 100
-   while (i >= 0) {
-   	console.log(i)
+   console.log('Třetí WHILE cyklu;s')
+   let i; = 100
+   while (i  console.log(i);n  i -= 2;g(i)
    	i -= 2
    }
    ```

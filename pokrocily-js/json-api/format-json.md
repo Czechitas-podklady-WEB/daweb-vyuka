@@ -4,23 +4,23 @@ Podle většiny moderních doporučení je lepší v JavaScriptu používat v ř
 
 ```js
 const course = {
-  "nazev": "Úvod do programování",
-  "lektor": "Martin Podloucký",
-  "konani": [
+  nazev: 'Úvod do programování',
+  lektor: 'Martin Podloucký',
+  konani: [
     {
-      "misto": "T-Mobile",
-      "koucove": ["Dan Vrátil", "Filip Kopecký", "Martina Nemčoková"],
-      "ucastnic": 30,
+      misto: 'T-Mobile',
+      koucove: ['Dan Vrátil', 'Filip Kopecký', 'Martina Nemčoková'],
+      ucastnic: 30,
     },
     {
-      "misto": "MSD IT",
-      "koucove": ["Dan Vrátil", "Zuzana Tučková", "Martina Nemčoková"],
-      "ucastnic": 25,
+      misto: 'MSD IT',
+      koucove: ['Dan Vrátil', 'Zuzana Tučková', 'Martina Nemčoková'],
+      ucastnic: 25,
     },
     {
-      "misto": "Škoda DigiLab",
-      "koucove": ["Dan Vrátil", "Filip Kopecký", "Kateřina Kalášková"],
-      "ucastnic": 41,
+      misto: 'Škoda DigiLab',
+      koucove: ['Dan Vrátil', 'Filip Kopecký', 'Kateřina Kalášková'],
+      ucastnic: 41,
     },
   ],
 };

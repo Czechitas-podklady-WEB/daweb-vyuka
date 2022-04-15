@@ -34,21 +34,21 @@ if (age >= 18) {
 
 <!-- prettier-ignore -->
 ```js
-if(age>=18){document.body.innerHTML = '<p>Pokračujte k platbě</p>';}
-else{document.body.innerHTML = '<p>Bohužel máte nízký věk</p>';}
+if (age >= 18) {
+  document.body.innerHTML = '<p>Pokračujte k platbě</p>';
+} else {
+  document.body.innerHTML = '<p>Bohužel máte nízký věk</p>';
+}
 ```
 
 Věřím, že uznáte, že první varianta je mnohem čitelnější než druhá. Způsobů, jak formátovat kód existuje vícero a můžete se tak účastnit nekonečných hospodských disputací o tom, jestli odsazovat pomocí dvou mezer nebo čtyř, jestli otvírací složenou závorku psát na konec řádku nebo na začátek nového a tak dále.
 
 <!-- prettier-ignore -->
 ```js
-if (age >= 18)
-{
-    document.body.innerHTML = '<p>Pokračujte k platbě</p>';
-}
-else
-{
-    document.body.innerHTML = '<p>Bohužel máte nízký věk</p>';
+if (age >= 18) {
+  document.body.innerHTML = '<p>Pokračujte k platbě</p>';
+} else {
+  document.body.innerHTML = '<p>Bohužel máte nízký věk</p>';
 }
 ```
 
