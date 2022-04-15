@@ -3,7 +3,7 @@ title: E-mail podruhé
 demand: 2
 ---
 
-Pojďme dále rozvinout cvičení s [vyplňováním e-mailu](/kurzy/daweb/zaklady-js/funkce-obory/cv-funkce#cvlekce%3Ee-mail-telo) z předchozí lekce. 
+Pojďme dále rozvinout cvičení s [vyplňováním e-mailu](/kurzy/daweb/zaklady-js/funkce-obory/cv-funkce#cvlekce%3Ee-mail-telo) z předchozí lekce.
 
 1. Opět si naklonujte [repozitář](https://github.com/Czechitas-podklady-WEB/email-zadani) se zadáním pro předchozí cvičení.
 1. Do souboru `index.js` vložte kód [vzorového řešení](/kurzy/daweb/zaklady-js/funkce-obory/cv-funkce/cvlekce%3Ee-mail-telo). Na tomto kódu budeme dále stavět.

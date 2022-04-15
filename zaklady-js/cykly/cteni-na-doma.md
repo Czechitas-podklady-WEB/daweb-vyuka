@@ -16,26 +16,26 @@ Náš výsledný učesaný JavaScriptový kód vypadal takto.
 
 ```js
 const selectSmiley = (event) => {
-	event.target.classList.add('btn-smiley--selected')
-}
+  event.target.classList.add('btn-smiley--selected');
+};
 
-document.querySelector('#btn1').addEventListener('click', selectSmiley)
-document.querySelector('#btn2').addEventListener('click', selectSmiley)
-document.querySelector('#btn3').addEventListener('click', selectSmiley)
-document.querySelector('#btn4').addEventListener('click', selectSmiley)
-document.querySelector('#btn5').addEventListener('click', selectSmiley)
+document.querySelector('#btn1').addEventListener('click', selectSmiley);
+document.querySelector('#btn2').addEventListener('click', selectSmiley);
+document.querySelector('#btn3').addEventListener('click', selectSmiley);
+document.querySelector('#btn4').addEventListener('click', selectSmiley);
+document.querySelector('#btn5').addEventListener('click', selectSmiley);
 ```
 
 Všimněte si, že kód pro nasazení posluchače na událost `click` jsme museli opakovat pětkrát. Díky `document.querySelectorAll` můžeme nyní posluchače nasadit na všechna tlačítka jedním cyklem.
 
 ```js
 const selectSmiley = (event) => {
-	event.target.classList.add('btn-smiley--selected')
-}
+  event.target.classList.add('btn-smiley--selected');
+};
 
-const buttons = document.querySelectorAll('.btn-smiley')
+const buttons = document.querySelectorAll('.btn-smiley');
 for (let i = 0; i < buttons.length; i += 1) {
-	buttons[i].addEventListener('click', selectSmiley)
+  buttons[i].addEventListener('click', selectSmiley);
 }
 ```
 

@@ -1,6 +1,6 @@
 ## Webpack
 
-Ve chvili, kdy máme založený projekt, budeme potřebovat nástroj, který vezme náš kód spolu s použitými knihovnami a zabalí je všechny do jednoho velkého JavaScriptového souboru. Ten si pak prohlížeč může stáhnout celý najednou a nemusí tak čekat na spoustu malých souborů za sebou. Nástroj, který k tomuto účelu budeme používat, se jmenuje Webpack. 
+Ve chvili, kdy máme založený projekt, budeme potřebovat nástroj, který vezme náš kód spolu s použitými knihovnami a zabalí je všechny do jednoho velkého JavaScriptového souboru. Ten si pak prohlížeč může stáhnout celý najednou a nemusí tak čekat na spoustu malých souborů za sebou. Nástroj, který k tomuto účelu budeme používat, se jmenuje Webpack.
 
 Nejdříve musíme do našeho projektu Webpack nainstalovat. To provedeme příkazem
 
@@ -8,7 +8,7 @@ Nejdříve musíme do našeho projektu Webpack nainstalovat. To provedeme přík
 $ npm install -D webpack webpack-cli
 ```
 
-Po tomto zásahu bude náš `package.json` vypadat následovně. 
+Po tomto zásahu bude náš `package.json` vypadat následovně.
 
 ```json
 {
@@ -29,12 +29,12 @@ Přibyla nám nová položka `devDependencies`. V té je vypsán seznam balíčk
 
 ### Struktura projektu
 
-Od této chvíle bude každý náš projekty mít dvě hlavní části: 
+Od této chvíle bude každý náš projekty mít dvě hlavní části:
 
-- **zdrojové kódy** - všechny soubory s JavaScriptem, CSS, HTML atd., ze kterých se mát vytvořit výsledná aplikace. Budeme je dávat do složky `src`. 
-- **sestavená aplikace** - výsledná aplikace vytvořená nástrojem Webpack. Tento výsledek pak můžeme nahrát třeba někam na server. Sestavená aplikace se nám objeví ve složce `dist`. 
+- **zdrojové kódy** - všechny soubory s JavaScriptem, CSS, HTML atd., ze kterých se mát vytvořit výsledná aplikace. Budeme je dávat do složky `src`.
+- **sestavená aplikace** - výsledná aplikace vytvořená nástrojem Webpack. Tento výsledek pak můžeme nahrát třeba někam na server. Sestavená aplikace se nám objeví ve složce `dist`.
 
-Nejprve si založíme složku pro zdrojové kódy. V projektu `muj-projekt` vytvoříme složku `src` a v ní soubor `index.js`. Náš projekt bude pak vypadat takto. 
+Nejprve si založíme složku pro zdrojové kódy. V projektu `muj-projekt` vytvoříme složku `src` a v ní soubor `index.js`. Náš projekt bude pak vypadat takto.
 
 ```
 ├──node_modules
@@ -44,7 +44,7 @@ Nejprve si založíme složku pro zdrojové kódy. V projektu `muj-projekt` vytv
 └──package.json
 ```
 
-Do souboru `index.js` zatím vložíme jednoduchý uvítací kód. 
+Do souboru `index.js` zatím vložíme jednoduchý uvítací kód.
 
 ```js
 const greet = (name) => {
@@ -56,7 +56,7 @@ h1Elm.textContent = greet('Martin');
 console.log(greet('Martin'));
 ```
 
-Nyní použijeme Webpack k sestavení výsledné aplikace. Aby se náš projekt sestavil, potřebujeme Webpack správně nakonfigurovat. V projektu `muj-projekt` vytvoříme soubor `webpack.config.js` s tímto obsahem. 
+Nyní použijeme Webpack k sestavení výsledné aplikace. Aby se náš projekt sestavil, potřebujeme Webpack správně nakonfigurovat. V projektu `muj-projekt` vytvoříme soubor `webpack.config.js` s tímto obsahem.
 
 ```js
 const path = require('path');
@@ -70,9 +70,9 @@ module.exports = {
 };
 ```
 
-Vytvořit takovou konfiguraci od základu je už relativně pokročilá dovednost. Proto jsme zde rádi, že nám byla dána takto shůry a po jejím původu se nepídíme. Tato konfigurace v podstatě říká, že Webpack má vzít soubor `src/index.js` a sestavit z něj výsledek, který se bude nacházet ve složce `dist/bundle.js`. 
+Vytvořit takovou konfiguraci od základu je už relativně pokročilá dovednost. Proto jsme zde rádi, že nám byla dána takto shůry a po jejím původu se nepídíme. Tato konfigurace v podstatě říká, že Webpack má vzít soubor `src/index.js` a sestavit z něj výsledek, který se bude nacházet ve složce `dist/bundle.js`.
 
-Abychom mohli webpack spustit, v souboru `package.json` si vytvoříme příkaz `build`. 
+Abychom mohli webpack spustit, v souboru `package.json` si vytvoříme příkaz `build`.
 
 ```json
 {
@@ -98,9 +98,9 @@ Nyní stačí otevřít v našem projektu terminál a napsat příkaz
 $ npm run build
 ```
 
-Pokud se vše povedlo, uvnitř projektu se vytvoří soubor `dist/bundle.js`, který obsahuje takzvaně :term{cs="minifikovanou" en="minified"} verzi našeho kódu. Ta může vypadat například takto děsivě. 
+Pokud se vše povedlo, uvnitř projektu se vytvoří soubor `dist/bundle.js`, který obsahuje takzvaně :term{cs="minifikovanou" en="minified"} verzi našeho kódu. Ta může vypadat například takto děsivě.
 
-```js
+```
 (()=>{const t=t=>`Hello ${t}`;document.querySelector("h1").textContent=t("Martin"),console.log(t("Martin"))})();
 ```
 
@@ -108,4 +108,4 @@ Webpack dělá minifikaci proto, aby náš výsledný kód byl co nejmenší. Vz
 
 - odstranil všechny bílé znaky,
 - přejmenoval naši funkci `greet` prostě na `t`,
-- všude, kde se dalo vynechal závorky a zbytečné znaky. 
+- všude, kde se dalo vynechal závorky a zbytečné znaky.

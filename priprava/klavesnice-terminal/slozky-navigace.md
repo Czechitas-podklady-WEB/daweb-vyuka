@@ -1,8 +1,8 @@
 ## Navigování mezi složkami
 
-Terminál budete při své práci používat od nynějška každý den až do konce své úspěšsné programátorské kariéry. Pojďme si jej tedy ještě lépe osahat a naučit se první užitečné příkazy. 
+Terminál budete při své práci používat od nynějška každý den až do konce své úspěšsné programátorské kariéry. Pojďme si jej tedy ještě lépe osahat a naučit se první užitečné příkazy.
 
-Na začátek je velmi důležité si uvědomit, že terminál je vždy otevření uvnitř nějaké složky na disku. Název nebo celou adresu této složky většinou vidíte před kurzorem, abyste vždy věděli, kde se nacházíte. Pokud se v terminálu chcete přesunou do jiné složky, slouží k tomu příkaz `cd` (zkratka z _change directory_). 
+Na začátek je velmi důležité si uvědomit, že terminál je vždy otevření uvnitř nějaké složky na disku. Název nebo celou adresu této složky většinou vidíte před kurzorem, abyste vždy věděli, kde se nacházíte. Pokud se v terminálu chcete přesunou do jiné složky, slouží k tomu příkaz `cd` (zkratka z _change directory_).
 
 Já jsem si pro účely této lekce otevřel terminál ve složce `daweb`.
 
@@ -14,7 +14,7 @@ Vím, že uvnitř této složky je složka s názvem `projekty`. Do této složk
 $ cd projekty
 ```
 
-Text před kurzorem se změní, abych věděl, že nyní se nacházím uvnitř složky `projekty`. 
+Text před kurzorem se změní, abych věděl, že nyní se nacházím uvnitř složky `projekty`.
 
 ::fig[Složka projekty]{src=assets/terminal-projekty.png}
 
@@ -36,6 +36,6 @@ Občas jsou názvy složek dlouhé a nechce se nám je celé vypisovat. Obzblá�
 $ cd "Moje projekty"
 ```
 
-V tomto nám pomůže klávesa tabulátor. Zkuste při použití příkazu `cd` napsat jen prvních pár písmenek z názvu složky a stiskněte klávesu :kbd[Tab]. Terminál by měl sám doplnit zbytek názvu. Pokud se tak neděje, buď daná složka neexistuje nebo na daných prvních pár písmenek začíná více složek. V takovím případě musíte napsat písmenek více. 
+V tomto nám pomůže klávesa tabulátor. Zkuste při použití příkazu `cd` napsat jen prvních pár písmenek z názvu složky a stiskněte klávesu :kbd[Tab]. Terminál by měl sám doplnit zbytek názvu. Pokud se tak neděje, buď daná složka neexistuje nebo na daných prvních pár písmenek začíná více složek. V takovím případě musíte napsat písmenek více.
 
-Často se nám také hodí vrátit se k příkazům, které jsme napsali před chvíli. Pokud v terminálu stisknete šipku nahoru :kbd[↑], můžete postupně procházet všechny příkazy, které jste do terminálu napsali. Tento postup velmi urychluje práci, protože často v terminálu opakujeme stejný příkaz mnohorkát po sobě. 
+Často se nám také hodí vrátit se k příkazům, které jsme napsali před chvíli. Pokud v terminálu stisknete šipku nahoru :kbd[↑], můžete postupně procházet všechny příkazy, které jste do terminálu napsali. Tento postup velmi urychluje práci, protože často v terminálu opakujeme stejný příkaz mnohorkát po sobě.

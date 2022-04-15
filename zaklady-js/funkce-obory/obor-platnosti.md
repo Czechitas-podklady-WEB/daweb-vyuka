@@ -87,4 +87,4 @@ if (age < 18) {
 }
 ```
 
-V tomto příkladu máme dvě lokální proměnné :var[message], které náhodou mají stejné jméno, jinak ale spolu nemají nic společného, každá je ve svém bloku a každá má jinou hodnotu. 
+V tomto příkladu máme dvě lokální proměnné :var[message], které náhodou mají stejné jméno, jinak ale spolu nemají nic společného, každá je ve svém bloku a každá má jinou hodnotu.

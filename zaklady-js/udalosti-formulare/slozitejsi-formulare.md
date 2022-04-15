@@ -15,28 +15,22 @@ Přidejme do našeho formuláře políčko pro přijmení.
 
 ::fig[Jméno příjmení]{src=assets/jmeno-prijmeni.png}
 
-Tady už se ale uživatel moc nevyzná kam má co psát. Potřebujeme políčka nějak popsat. 
+Tady už se ale uživatel moc nevyzná kam má co psát. Potřebujeme políčka nějak popsat.
 
 ### Popisky
 
 Pro zpřehlednění formulářů je dobré k jednotlivým vstupním pvkům přidat popisky. K tom používáme značku `label`.
 
 ```html
-<label>
-  Jméno: <input type="text" />
-</label>
-```   
+<label> Jméno: <input type="text" /> </label>
+```
 
 S použitím popisků bude náš registrační formulář vypadat následovně.
 
 ```html
 <form id="registration">
-  <label>
-    Jméno: <input type="text" id="firstName" />
-  </label>
-  <label>
-    Příjmení: <input type="text" id="lastName" />
-  </label>
+  <label> Jméno: <input type="text" id="firstName" /> </label>
+  <label> Příjmení: <input type="text" id="lastName" /> </label>
   <button type="submit">Přihlásit</button>
 </form>
 ```
@@ -48,12 +42,8 @@ Takto ale rozložení prvků nevypadá moc hezky. Využijeme proto více našich
 ```html
 <form id="registration">
   <h1>Přihláška na kurz</h1>
-  <label class="field">
-    Jméno: <input type="text" id="firstName" />
-  </label>
-  <label class="field">
-    Příjmení: <input type="text" id="lastName" />
-  </label>
+  <label class="field"> Jméno: <input type="text" id="firstName" /> </label>
+  <label class="field"> Příjmení: <input type="text" id="lastName" /> </label>
   <div class="controls">
     <button type="submit">Přihlásit</button>
   </div>
@@ -64,14 +54,14 @@ Takto ale rozložení prvků nevypadá moc hezky. Využijeme proto více našich
 
 ### Další druhy formulářových prvků
 
-Kromě základního textového políčka máme i další typy například `password`, `number`, `email`, `search` apod. Nastavit ve formuláři správné typy je zásadní pro to, aby se uživateli formulář dobře vyplňoval. Použití správnýcn typů u políček má dvě zásadní výhody. 
+Kromě základního textového políčka máme i další typy například `password`, `number`, `email`, `search` apod. Nastavit ve formuláři správné typy je zásadní pro to, aby se uživateli formulář dobře vyplňoval. Použití správnýcn typů u políček má dvě zásadní výhody.
 
 1. Na mobilním telefonu se zobrazí správné klávesnice. Napřiklad pro typ `number` se zobrazí numerická klávesnice. Pro typ `email` je na klávesnici rychlej dostupný znak zavináče.
 1. Automatický předvyplňovač formulářů ve vašem prohlížeči pozná, kam má vyplnit váš e-mail, adresu a další informace. Toto jistě znáte z různých objednávek v e-shopech.
 
 ### Zaškrtávací tlačítko
 
-Umožňuje uživateli zaškrtnout možnost ano či ne. 
+Umožňuje uživateli zaškrtnout možnost ano či ne.
 
 ```html
 <label class="check">

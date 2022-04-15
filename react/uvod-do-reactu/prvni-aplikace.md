@@ -10,7 +10,7 @@ Na tyto problémy tvrdě narazili vývojáři Facebooku a proto vytvořili frame
 
 Ať už je to šikovná náhoda nebo dokonale promyšlený plán, velkou část Reactových principů už jste v tomto kurzu používali, aniž byste o tom věděli. K vytvoření našeho prvního React projektu tak stačí pouze malinko upravit konfiguraci Webpacku a naučit se psát náš kód Reactovým způsobem.
 
-Základní Webpack projekt nastavený pro práci v Reactu si můžete vygenerovat pomocí `create-czechitas-app`. 
+Základní Webpack projekt nastavený pro práci v Reactu si můžete vygenerovat pomocí `create-czechitas-app`.
 
 ```sh
 $ npx create-czechitas-app my-app
@@ -65,10 +65,7 @@ Celý soubor `index.jsx` tak bude vypadat takto.
 import React from 'react';
 import { render } from 'react-dom';
 
-render(
-  <h1 className="title">Moje stránka</h1>, 
-  document.getElementById('app')
-);
+render(<h1 className="title">Moje stránka</h1>, document.getElementById('app'));
 ```
 
 Aby nám React správně fungoval, musíme importovat balíček `react` na začátku každého souboru, ve kterém pracujeme s JSX. Funkci `render` si pak importujeme z balíčku `react-dom`.

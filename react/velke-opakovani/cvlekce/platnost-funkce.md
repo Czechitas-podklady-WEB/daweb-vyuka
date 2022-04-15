@@ -9,4 +9,3 @@ Využijte kód z předchozího příkladu a vytvořte funkci s názvem `checkBir
 - `'notANumber'` v případě, že vstup není číslo,
 - `'failedChecksum'` v případě, že číslo není dělitalné 11,
 - `'ok'` v případě, že číslo prošlo kontrolou.
-

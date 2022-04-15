@@ -11,7 +11,7 @@ Funkce vyrábějící nějakou hodnotu tuto hodnotu vrací pomocí `return`. Nao
 
 ### Funkce bez návratové hodnoty
 
-Představte si například funkci, jejíž úkolem je vypsat do stránky nějakou souhrnou informaci, například shrnutí objednávky v e-shopu. 
+Představte si například funkci, jejíž úkolem je vypsat do stránky nějakou souhrnou informaci, například shrnutí objednávky v e-shopu.
 
 ```js
 const showOrderSummary = (summary) => {
@@ -23,7 +23,7 @@ const showOrderSummary = (summary) => {
 };
 ```
 
-K tomu, aby funkce splnila svůj úkol stačí, že do stránky vloží patřičný kus HTML. Už nemusí vracet žádnou hodnotu. JavaScript se však snaží být konzistentní a i takováto funkce tajně vrací hodnotu. Pokud sami nenapíšeme slovíčko `return`, JavaScript si jej sám doplní na konec funkce. 
+K tomu, aby funkce splnila svůj úkol stačí, že do stránky vloží patřičný kus HTML. Už nemusí vracet žádnou hodnotu. JavaScript se však snaží být konzistentní a i takováto funkce tajně vrací hodnotu. Pokud sami nenapíšeme slovíčko `return`, JavaScript si jej sám doplní na konec funkce.
 
 ```js
 const showOrderSummary = (summary) => {
@@ -43,7 +43,7 @@ V JavaScriptu tedy každá funkce něco vrací. Pokud my sami z naší funkce ne
 const result = showOrderSummary({ count: 5, sum: 5270 });
 ```
 
-V proměnné `result` pak po tomto příkazu bude uložena hodnota `undefined`. Vzhledem k tomu, že funkce `showOrderSummary` vrací `undefined` vždy, ukládat si její výsledek je zbytečné. Takovou funkci prostě zavoláme takto. 
+V proměnné `result` pak po tomto příkazu bude uložena hodnota `undefined`. Vzhledem k tomu, že funkce `showOrderSummary` vrací `undefined` vždy, ukládat si její výsledek je zbytečné. Takovou funkci prostě zavoláme takto.
 
 ```js
 showOrderSummary({ count: 5, sum: 5270 });
@@ -51,7 +51,7 @@ showOrderSummary({ count: 5, sum: 5270 });
 
 O její návratovou hodnotu se nestaráme, protože nám k ničemu není. Z této části si však můžeme odnést důležité poučení:
 
-**Každá funkce vrací nějakou hodnotu, i když uvnitř nepoužijeme `return`.** 
+**Každá funkce vrací nějakou hodnotu, i když uvnitř nepoužijeme `return`.**
 
 ### Funkce bez parametrů
 

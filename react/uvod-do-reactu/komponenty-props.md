@@ -11,7 +11,7 @@ const ShoppingItem = (props) => {
     </div>
   `;
 };
-````
+```
 
 V Reactu tutéž komponenty napíšeme tak, že místo řetězce bude vracet JSX element.
 

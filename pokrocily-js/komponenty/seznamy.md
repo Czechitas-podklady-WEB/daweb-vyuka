@@ -1,7 +1,7 @@
 ## Zobrazování více položek
 
 Velmi častým úkolem při vývoji webové aplikace je zobrazovat seznam nějkých položek.
-Takový seznam vytvoříme opakovaným voláním naší komponenty. 
+Takový seznam vytvoříme opakovaným voláním naší komponenty.
 
 ```js
 const item1 = {

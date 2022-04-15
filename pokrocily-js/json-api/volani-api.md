@@ -20,13 +20,13 @@ Cesta v požadavku je tedy `/search`, parametr `q` udává, že se má vyhledat 
 
 ### Dotazy na API
 
-Dotazy na API fungují naprosto stejně jako jsme popsali výše, jen místo HTML stránky obdržíme data ve formátu JSON. Můžeme si například vyzkoušet veřejné API poskytující časy východu a západu slunce na různých místech na Zemi. Takto například zjistíme, kdy dnes vychází a zapadá slunce v České republice. 
+Dotazy na API fungují naprosto stejně jako jsme popsali výše, jen místo HTML stránky obdržíme data ve formátu JSON. Můžeme si například vyzkoušet veřejné API poskytující časy východu a západu slunce na různých místech na Zemi. Takto například zjistíme, kdy dnes vychází a zapadá slunce v České republice.
 
 ```
 https://api.sunrise-sunset.org/json?lat=50&lng=14.5
 ```
 
-Všimněte si parametrů `lat` a `lng`, které udávají souřadnice místa na Zemi v zeměpisné šířce a délce. Bod s hezkými souřadnicemi :i[50, 14.5] je [kousek za Prahou](https://mapy.cz/s/dulojodano) směrem na jihozápad. 
+Všimněte si parametrů `lat` a `lng`, které udávají souřadnice místa na Zemi v zeměpisné šířce a délce. Bod s hezkými souřadnicemi :i[50, 14.5] je [kousek za Prahou](https://mapy.cz/s/dulojodano) směrem na jihozápad.
 
 Po zadání dotazu do prohlížeče obdržíme odpověd podobnou této
 
@@ -77,9 +77,11 @@ promise.then((response) => {
 Promise můžeme uložit do proměnné jako vidíme výše, je to však trochu zbytečné. Metodu `then` můžeme zavolat rovnou na výsledku funkce `fetch`.
 
 ```js
-fetch('https://api.sunrise-sunset.org/json?lat=50&lng=14.5').then((response) => {
-  console.log(response);
-});
+fetch('https://api.sunrise-sunset.org/json?lat=50&lng=14.5').then(
+  (response) => {
+    console.log(response);
+  }
+);
 ```
 
 V parametru `response` máme uloženu odpověd ze serveru. Pokud z této odpovědi chceme získat JSON, stačí na něm zavolat metodu `json`. Čeká nás však podraz. Tato metoda opět nevrací samotný JSON nýbrž pouze promise. Musíme tedy znova použít metodu `then` a vznikne nám takováto kaskáda.
@@ -111,5 +113,4 @@ fetch('https://api.sunrise-sunset.org/json?lat=50&lng=14.5')
     return response.json();
   })
   .then(displaySunset);
-
 ```

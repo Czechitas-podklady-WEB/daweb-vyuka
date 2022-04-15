@@ -15,6 +15,7 @@ V tomto cvičení budeme chtít na stránce zobrazit všechny dostupné nákupn�
          <option value="pavel">pavel</option>
        </select>
      </div>
+   </body>
    ```
 1. Prohlédněte si [dokumentaci](https://apps.kodim.cz/daweb/shoplist/) a podívejte se, jak se dělá výpis všech nákupních seznamů.
-1. Pomocí funkce `fetch` získejte z API seznam jmen jednotlivých seznamů. Projděte je pomocí cyklu a vytvořte z nich obsah selectu `#lists-select`. 
+1. Pomocí funkce `fetch` získejte z API seznam jmen jednotlivých seznamů. Projděte je pomocí cyklu a vytvořte z nich obsah selectu `#lists-select`.

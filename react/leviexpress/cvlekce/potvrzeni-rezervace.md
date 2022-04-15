@@ -10,9 +10,11 @@ V tomto kroku potvrdíme rezervaci kliknutím na tlačíko, zpracujeme odpověď
 1. Podle [dokumentace](https://reactrouter.com/web/api/Hooks/usehistory) React Routeru se podívejte, jak lze pomocí hooku `useHistory` přímo v kódu změnit stránka, na které se uživatel nachází. Tedy jak uživatele přesměrovat.
 1. Nad funkcí `handleBuy` vytvořte proměnnou `history` s použitím hooku `useHistory()`, nezapomeňte hook naimportovat z `react-router-dom`. Za moment tuto proměnnou použijeme.
 1. Nákup jízdenky se ve funkci `handleBuy` provede tak, že zavoláte API endpoint
-   ```   
+
+   ```
    https://leviexpress-backend.herokuapp.com/api/reserve
    ```
+
    Pozor, tento endpoint je nutné volat HTTP metodou `POST`. Tělo požadavku bude obsahovat vlastnost `seat` – číslo sedadla vybrané uživatelem, a vlastnost `journeyId` – hodnbota `journeyId` z props. Příklad:
 
    ```js
@@ -24,9 +26,10 @@ V tomto kroku potvrdíme rezervaci kliknutím na tlačíko, zpracujeme odpověď
      body: JSON.stringify({
        seat: selectedSeatNumber,
        journeyId: journeyId,
-     })
-   })
+     }),
+   });
    ```
+
 1. Volání tohoto API vrací JSON s daty, ze kterých nás bude zajímat hodnota `reservationId`. Vypiště si ji do konzole.
 1. Pomocí naší `history` proměnné, její metody `push` a hodnoty `reservationId` přesměrujte uživatele na stránku detailu rezervace. Takové volání bude může vypadat následovně:
    ```js

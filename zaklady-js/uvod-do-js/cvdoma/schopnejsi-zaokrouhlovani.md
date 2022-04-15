@@ -9,7 +9,7 @@ Mějme v proměnné `x` uloženo nějaké desetinné číslo. Pomocí funkce `Ma
 > Math.round(x)
 ```
 
-Co kdybychom však chtěli zaokrouhlit na desetiny, setiny nebo třeba celé stovky? Napište program, který pomocí funkce `Math.round` 
+Co kdybychom však chtěli zaokrouhlit na desetiny, setiny nebo třeba celé stovky? Napište program, který pomocí funkce `Math.round`
 
 1. zaokrouhlí číslo `x` s přesností na desetiny,
 1. zaokrouhlí číslo `x` s přesností na setiny,

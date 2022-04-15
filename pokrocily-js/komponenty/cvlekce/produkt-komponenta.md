@@ -3,7 +3,7 @@ title: Produkt jako komponenta
 demand: 2
 ---
 
-Pokračujte v předchozím cvičení. 
+Pokračujte v předchozím cvičení.
 
 1. Vytvořte funkci `Product`, s jedním parametrem `props`. Tato funkce bude představovat komponentu pro jeden produkt.
 1. Do funkce `Product` vložte kód vytvářející HTML pro jeden produkt. Dejte pozor, že uvnitř komponenty se produkt předává v parametru `props`. Nechť vaše funkce jako svůj výsledek vrátí vyrobené HTML.

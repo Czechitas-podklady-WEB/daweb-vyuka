@@ -10,7 +10,7 @@ Založte si projekt v čistém JavaScriptu bez Webpacku, stačí soubory `index.
    ```
    Žádné číslo ti nedám
    ```
-   Výsledek kontroly vypište do konzole prohlížeče. 
+   Výsledek kontroly vypište do konzole prohlížeče.
 1. Každé rodné číslo musí být celé číslo. Zde je nějaká hodnota celé číslo v JavaScriptu zkontrolujete pomocí funkce `Number.isInteger`. Musíte však vstup předtím převést na číslo pomocí funkce `Number`.
    ```jscon
    > Number.isInteger(Number('25'))
@@ -20,4 +20,4 @@ Založte si projekt v čistém JavaScriptu bez Webpacku, stačí soubory `index.
    > Number.isInteger(Number('ahoj'))
    false
    ```
-1. Každé rodné číslo musí být dělitelné 11. Zkontrolujte tedy, že zadané číslo je dělitelné jedenácti. Pokud jsou všechny podmínky splněny. rodné číslo budeme považovat za platné. 
+1. Každé rodné číslo musí být dělitelné 11. Zkontrolujte tedy, že zadané číslo je dělitelné jedenácti. Pokud jsou všechny podmínky splněny. rodné číslo budeme považovat za platné.

@@ -6,10 +6,10 @@ Formulář je sestava různých vstupních prvků jako jsou textová políčka, 
 
 ::fig[formulář]{src=assets/formular.png}
 
-Tento formulář už je nastylovaný, aby vypadal trochu k světu. Nenastylované HTML formuláře nevypadají moc vábně a jejich stylování je trochu opruz. Proto máme pro tuto lekci připravené styly, které si můžete [stáhnout zde](https://raw.githubusercontent.com/Czechitas-podklady-WEB/formulare/main/style.css) a použít pro základní experimenty s formuláři. 
+Tento formulář už je nastylovaný, aby vypadal trochu k světu. Nenastylované HTML formuláře nevypadají moc vábně a jejich stylování je trochu opruz. Proto máme pro tuto lekci připravené styly, které si můžete [stáhnout zde](https://raw.githubusercontent.com/Czechitas-podklady-WEB/formulare/main/style.css) a použít pro základní experimenty s formuláři.
 
-Formulář výše je už docela obsáhlý a obsahuje prvky, které se v této akademii z časových důvodů učit nebudeme. Na konci lekce najdete odkazy na zdroje, odkud můžete načerpat další informace. 
-V tuto chvíli začneme s tím úplně nejjednodušším formulářem, který má pouze textové políčko a odesílací tlačítko. Textové políčko vytvoříme pomocí značky `input`. 
+Formulář výše je už docela obsáhlý a obsahuje prvky, které se v této akademii z časových důvodů učit nebudeme. Na konci lekce najdete odkazy na zdroje, odkud můžete načerpat další informace.
+V tuto chvíli začneme s tím úplně nejjednodušším formulářem, který má pouze textové políčko a odesílací tlačítko. Textové políčko vytvoříme pomocí značky `input`.
 
 ```html
 <input id="firstName" type="text" />
@@ -29,7 +29,7 @@ Každý formulář by měl mít odesílací tlačítko `button`, kterým uživat
 
 ### Získání dat z formuláře
 
-Příležitost získat data z formuláře máme ve chvili, kdy uživatel formulář odešle pomocí tlačítka nebo stiskne klávesu :kbd[Enter] uvnitř textového pole. Tuto akci zachytíme pomocí události `submit`, kterou vyhazuje samotný formulář. 
+Příležitost získat data z formuláře máme ve chvili, kdy uživatel formulář odešle pomocí tlačítka nebo stiskne klávesu :kbd[Enter] uvnitř textového pole. Tuto akci zachytíme pomocí události `submit`, kterou vyhazuje samotný formulář.
 
 ```js
 const formElm = document.querySelector('#registration');
@@ -38,7 +38,7 @@ formElm.addEventListener('submit', () => {
 });
 ```
 
-Pokud chceme získat text, který uživatel do políčka vepsal, stačí nám toto políčko vybrat pomocí `querySelector` a použít vlastnost `value`. 
+Pokud chceme získat text, který uživatel do políčka vepsal, stačí nám toto políčko vybrat pomocí `querySelector` a použít vlastnost `value`.
 
 ```js
 const formElm = document.querySelector('#registration');
@@ -71,9 +71,9 @@ formElm.addEventListener('submit', (event) => {
 
 Po této úpravě se už stránka nebude obnovat.
 
-Stejně jako vlastnost `textContent`, i vlastnost `value` je jak pro čtení, tak pro zápis. Můžeme tak řetězec z políčka přečíst, ale také jej políčku nastavit. Všimněte si, že schválně používáme slovo řetězec, protože všechna políčka vždy pracují jen s řetězci. Nastavování hodnot políček použijeme v pokročilejších formulářích. 
+Stejně jako vlastnost `textContent`, i vlastnost `value` je jak pro čtení, tak pro zápis. Můžeme tak řetězec z políčka přečíst, ale také jej políčku nastavit. Všimněte si, že schválně používáme slovo řetězec, protože všechna políčka vždy pracují jen s řetězci. Nastavování hodnot políček použijeme v pokročilejších formulářích.
 
-Zdaleka ne všechny formuláře musí používat nadpis a mít spoustu vstupů. Často si vystačíme jen s textovým políčkem a odesílacím tlačítkem. Například vyhledávací políčko jako na obrázku níže je také jen hezky nastylovaný formulář. 
+Zdaleka ne všechny formuláře musí používat nadpis a mít spoustu vstupů. Často si vystačíme jen s textovým políčkem a odesílacím tlačítkem. Například vyhledávací políčko jako na obrázku níže je také jen hezky nastylovaný formulář.
 
 ::fig[Search box]{src=assets/search-box.png}
 

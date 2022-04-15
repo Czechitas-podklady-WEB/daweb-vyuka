@@ -14,7 +14,7 @@ const price = product.price;
 const currency = product.currency;
 ```
 
-Programátoři jsou líné bytosti a tento postup jim přijde zdlouhavý. Pokud se naše proměnné jmenují stejně jako klíče uvnitř objektu, můžeme si ušetřit psaní a použít takzvané :term{cs="destrukturování" en="destructuring"}. 
+Programátoři jsou líné bytosti a tento postup jim přijde zdlouhavý. Pokud se naše proměnné jmenují stejně jako klíče uvnitř objektu, můžeme si ušetřit psaní a použít takzvané :term{cs="destrukturování" en="destructuring"}.
 
 ```js
 const product = {

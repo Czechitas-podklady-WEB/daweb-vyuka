@@ -64,5 +64,4 @@ Na řetězcích máme v JavaScriptu spoustu metod, které nám umožňují prov�
 '12'
 ```
 
-Možná vám nyní vrtá hlavou, jestli funkce `Math.round` nebo `console.log` nejsou náhodou metody, když používají tečkovou notaci. Je to skutečně tak. `Math` i `console` jsou speciální JavaScriptové objekty, která sdružují metody pro matematické výpočty nebo pro práci s konzolí. 
-
+Možná vám nyní vrtá hlavou, jestli funkce `Math.round` nebo `console.log` nejsou náhodou metody, když používají tečkovou notaci. Je to skutečně tak. `Math` i `console` jsou speciální JavaScriptové objekty, která sdružují metody pro matematické výpočty nebo pro práci s konzolí.

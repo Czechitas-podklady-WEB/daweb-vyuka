@@ -39,10 +39,10 @@ let leap = 'není';
 if (year % 100 === 0) {
   if (year % 400 === 0) {
     leap = 'je';
-  } 
-} else if (year % 4 === 0){
+  }
+} else if (year % 4 === 0) {
   leap = 'není';
 }
 
-document.body.innerHTML = `<p>${year} ${leap} přestupný</p>`
+document.body.innerHTML = `<p>${year} ${leap} přestupný</p>`;
 ```

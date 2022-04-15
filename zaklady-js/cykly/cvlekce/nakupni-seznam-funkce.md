@@ -18,15 +18,15 @@ demand: 2
 
 1. ```js
    const shoppingList = (polozky) => {
-   	let vysledek = ''
-   	for (let i = 0; i < polozky.length; i++) {
-   		vysledek += `<li>${polozky[i]}</li>`
-   	}
-   	return vysledek
-   }
+     let vysledek = '';
+     for (let i = 0; i < polozky.length; i++) {
+       vysledek += `<li>${polozky[i]}</li>`;
+     }
+     return vysledek;
+   };
    ```
 
 1. ```js
-   const list = ['mouka', 'máslo', 'cukr', 'jablka', 'skořice']
-   document.querySelector('ol').innerHTML = shoppingList(list)
+   const list = ['mouka', 'máslo', 'cukr', 'jablka', 'skořice'];
+   document.querySelector('ol').innerHTML = shoppingList(list);
    ```

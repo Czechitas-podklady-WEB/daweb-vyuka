@@ -8,4 +8,3 @@ Postupujte podle zadání v samostatném repozitáři [Cviceni-Xylofon](https://
 ---solution
 
 [index.js](https://github.com/Czechitas-podklady-WEB/Cviceni-Xylofon/blob/reseni/index.js)
-

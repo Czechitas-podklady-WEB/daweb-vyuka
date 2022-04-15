@@ -2,7 +2,7 @@ V tomtu kurzu postupně směřujeme k tomu, abychom dokázali naši stránku ses
 
 ## První komponenta
 
-Komponenta je v podstatě funkce, která dostane na vstupu nějaká data v podobě objektu, a jejím úkolem je vytvořit z těchto dat kus obsahu naší stránky. Ve cvičení [Nákupní seznam jako funkce](../../zaklady-js/cykly/cv-cykly#cvlekce%3Enakupni-seznam-funkce) jste už ve skutečnosti něco jako komponentu vytvořili. Funkce `shoppingList` ze zadaného pole vytvoří kus HTML pro naši stránku na základě pole dat. 
+Komponenta je v podstatě funkce, která dostane na vstupu nějaká data v podobě objektu, a jejím úkolem je vytvořit z těchto dat kus obsahu naší stránky. Ve cvičení [Nákupní seznam jako funkce](../../zaklady-js/cykly/cv-cykly#cvlekce%3Enakupni-seznam-funkce) jste už ve skutečnosti něco jako komponentu vytvořili. Funkce `shoppingList` ze zadaného pole vytvoří kus HTML pro naši stránku na základě pole dat.
 
 Začněme však jednodušeji a představme si, že programujeme aplikaci pro evidenci nákupních seznamů. V takovém seznamu budeme mít položky, které chceme při příštím výletu do města koupit a budeme označovat ty, které už jsme koupili. Jednu položku takového seznamu bychom mohli reprezentavat například takto:
 
@@ -41,7 +41,7 @@ const item1Html = `
 `;
 ```
 
-Takový kus HTML bychom pak mohli vložit někam do stránky. V naší aplikaci však budeme chtít zobrazovat víc než jednu položku. Tento kód tak budeme chtít spustit pro všechny objekty položek. Proto se nám vyplatí napsat si funkci, která na vstupu obdrží objekt nějaké položky a vrátí nám vyrobené HTML. 
+Takový kus HTML bychom pak mohli vložit někam do stránky. V naší aplikaci však budeme chtít zobrazovat víc než jednu položku. Tento kód tak budeme chtít spustit pro všechny objekty položek. Proto se nám vyplatí napsat si funkci, která na vstupu obdrží objekt nějaké položky a vrátí nám vyrobené HTML.
 
 ```js
 const ShoppingItem = (item) => {
@@ -60,7 +60,7 @@ const ShoppingItem = (item) => {
 };
 ```
 
-Tímto jsem vytvořili naši první komponentu! Všechny budoucí komponenty budou ve výsledku vypadat velmi podobně. Komponenta vždy obdrží nějaký datový objekt, který chceme zobrazit na naší stránce a vygeneruje HTML, které pak da stránky vložíme. 
+Tímto jsem vytvořili naši první komponentu! Všechny budoucí komponenty budou ve výsledku vypadat velmi podobně. Komponenta vždy obdrží nějaký datový objekt, který chceme zobrazit na naší stránce a vygeneruje HTML, které pak da stránky vložíme.
 
 Máme-li tedy stránku s prázdným seznamem jako zde
 
@@ -70,7 +70,7 @@ Máme-li tedy stránku s prázdným seznamem jako zde
 </body>
 ```
 
-můžeme do něj vložit jednu položku tak, že zavoláme naši komponentu. 
+můžeme do něj vložit jednu položku tak, že zavoláme naši komponentu.
 
 ```js
 const item1 = {

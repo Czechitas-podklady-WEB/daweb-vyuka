@@ -3,10 +3,10 @@ title: Přihlášení
 demand: 2
 ---
 
-Vytvořte klasický přihlašovací formulář, do kterého uživatel zadá svůj e-mail a heslo a stránka ověří, zda má uživatel přístup do systému. Postupujte podle instrukcí níže. 
+Vytvořte klasický přihlašovací formulář, do kterého uživatel zadá svůj e-mail a heslo a stránka ověří, zda má uživatel přístup do systému. Postupujte podle instrukcí níže.
 
 1. Vytvořte stránku s formulářem, který bude mít jedno textové pole pro e-mail (typ `email`), jedno pole pro heslo (typ `password`) a tlačíto „Přihlásit“.
-1. Na začátek souboru `index.js` vložte následující objekt představující jednoho uživatele. Budeme se tvářit, že jsme jej získali například z databáze. 
+1. Na začátek souboru `index.js` vložte následující objekt představující jednoho uživatele. Budeme se tvářit, že jsme jej získali například z databáze.
    ```js
    const user = {
      email: 'bartolomej.rozumbrada@gmail.com',
@@ -27,8 +27,10 @@ Obsah `body` v souboru `index.html`:
 <div class="container">
   <form id="login-form">
     <h2 id="status"></h2>
-    <label class="field">E-mail: <input id="email-input" type="email"></label>
-    <label class="field">Password: <input id="password-input" type="password"></label>
+    <label class="field">E-mail: <input id="email-input" type="email" /></label>
+    <label class="field"
+      >Password: <input id="password-input" type="password"
+    /></label>
     <div class="controls">
       <button type="submit">Přihlásit</button>
     </div>
@@ -53,7 +55,10 @@ document.querySelector('#login-form').addEventListener('submit', (e) => {
   const container = document.querySelector('.container');
   const status = document.querySelector('#status');
 
-  if (emailInput.value === user.email && passwordInput.value === user.password) {
+  if (
+    emailInput.value === user.email &&
+    passwordInput.value === user.password
+  ) {
     container.innerHTML = `<h1>Přihlášený uživatel: ${user.name}</h1>`;
   } else {
     status.textContent = 'Neplatné přihlašovací údaje';

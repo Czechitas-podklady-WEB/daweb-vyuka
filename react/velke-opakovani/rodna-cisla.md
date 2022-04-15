@@ -1,4 +1,4 @@
-Po mnoha probdělých nocích nad Reactem jste už možná malinko pozapomněli na čistý JavaScript. V této lekci si tedy projdeme sérii cvíčení, která vám přiomnenout většinu toho, co jsme se v čistém JavaScriptu učili. 
+Po mnoha probdělých nocích nad Reactem jste už možná malinko pozapomněli na čistý JavaScript. V této lekci si tedy projdeme sérii cvíčení, která vám přiomnenout většinu toho, co jsme se v čistém JavaScriptu učili.
 
 ## Rodná čísla
 

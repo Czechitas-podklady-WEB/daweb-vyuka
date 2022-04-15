@@ -3,7 +3,7 @@ title: Newsletter, kontrola
 demand: 2
 ---
 
-Pokračujte v příkladu Newsletter z lekce. V tomto cvičení zařidíme, aby uživatel při zadávání e-mailu dostal zpětnou vazbu, pokud zadává neplatný vstup. 
+Pokračujte v příkladu Newsletter z lekce. V tomto cvičení zařidíme, aby uživatel při zadávání e-mailu dostal zpětnou vazbu, pokud zadává neplatný vstup.
 
 1. V CSS si vytvořte třídu, která dělá výrazný červený rámeček kolem textového políčka.
 1. Přidejte na textové políčko posluchač události `input`.

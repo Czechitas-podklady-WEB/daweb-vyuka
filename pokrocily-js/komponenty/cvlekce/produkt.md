@@ -3,7 +3,7 @@ title: Produkt
 demand: 2
 ---
 
-Představte si, že tvoříte e-shop, ve kterém mají produkty následující strukturu. 
+Představte si, že tvoříte e-shop, ve kterém mají produkty následující strukturu.
 
 ```js
 const product1 = {
