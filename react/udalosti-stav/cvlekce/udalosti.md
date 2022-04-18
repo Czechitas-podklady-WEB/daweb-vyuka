@@ -8,3 +8,7 @@ demand: 3
 1. Nainstalujte závislosti pomocí `npm install`.
 1. Spusťte vývojový server přes `npm start`.
 1. Postupně projděte soubory `src/Uloha1/index.jsx`, `src/Uloha2/index.jsx`, `…` a vypracujte zadání v komentářích.
+
+---solution
+
+Vypracované řešení najdete v [repozitáři zde](https://github.com/Czechitas-podklady-WEB/Cviceni-React-udalosti/tree/reseni).
