@@ -8,7 +8,7 @@ V minulé lekci jsme posílali dotazy na API tímto způsobem.
 fetch('https://api.sunrise-sunset.org/json?lat=50&lng=14.5');
 ```
 
-Takto se posílá základní typ dotazu, kterému říkáme GET. Tento dotaz má za úkol získat nějaká data ze serveru. Typů dotazů však existuje více, například POST, PUT, DELETE apod. Tyto většinou slouží k ke změně dat na serveru. My se v tomto kurzu budeme zabývat pouze dotazem POST.  
+Takto se posílá základní typ dotazu, kterému říkáme GET. Tento dotaz má za úkol získat nějaká data ze serveru. Typů dotazů však existuje více, například POST, PUT, DELETE apod. Tyto většinou slouží k ke změně dat na serveru. My se v tomto kurzu budeme zabývat pouze dotazem POST.
 
 ### Data jako řetězec
 
@@ -23,8 +23,8 @@ Na začátek je důležité si uvědomit, že formát JSON je textový formát. 
 
 musíme na příslušný API endpoint odeslat takovýto řetězec.
 
-```js
-'{"name":"Petr","age":25}'
+```json
+{ "name": "Petr", "age": 25 }
 ```
 
 K převodu objektů na řetezce nám pomůže funkce `JSON.stringify`.
@@ -34,7 +34,7 @@ K převodu objektů na řetezce nám pomůže funkce `JSON.stringify`.
 "{"name":"Petr","age":25}"
 ```
 
-Nyní už máme všechny ingredience a můžeme sestavit nějaký POST dotaz. 
+Nyní už máme všechny ingredience a můžeme sestavit nějaký POST dotaz.
 
 ### Odeslání POST dotazu
 
