@@ -3,5 +3,8 @@ lead: Ukážeme si, jak s využítím Gitu organizovat práci více vývojářů
 access: claim
 sections:
   - jedna-vetev
-  - reseni-konfliktu
+  - push-pull
+  - automerge
+  - konflikt
+  - lokalni-zmeny
   - cv-spoluprace
