@@ -1,3 +1,5 @@
+Jak přibývá naších programátorských schopností, tak se naše aplikace stávají většími a složitejšími. Budou postupně obsahovat více a více komponent, knihoven, stylů a dalších. Budeme proto potřebovat pokročileší nástroje, jak tuto rostoutí komplexitu zkrotit a dát jí nějaký řád.
+
 ## Systém NPM
 
 NPM je nástroj, který umožňuje spravovat knihovny a kód pro větší JavaScriptové projekty. V systému NPM se knihovnám říká :term{cs="balíčky" en="packages"}, můžeme tedy říct, že NPM je správce balíčků.

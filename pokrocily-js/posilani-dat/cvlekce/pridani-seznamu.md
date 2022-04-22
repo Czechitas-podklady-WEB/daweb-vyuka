@@ -1,9 +1,16 @@
 ---
-title: Přidání seznamu
+title: Nákupní seznam
 demand: 2
 ---
 
+Další API, na kterém si můžeme vyzkoušet POST se jmenuje :i[Shoplist] a umožňuje pracovat s nákupními seznamy tak, jak je známe z předchozích lekzí. API umožňuje vytvářet nové seznamy, přidávat či odebírat položky ze seznamů nebo nastavovat položky jako koupené. Dokumentaci k tomuto API nejdete [zde](https://apps.kodim.cz/daweb/shoplist/docs/).
+
+Nejdříve si vyzkoušíme vytvoření nového seznamu.
+
+1. V prohlížeči si vyzkoušejte enpoint `/api/lists`. Měl by vrátit názvy všech nákupních seznamů. Vždy byste měli vidět alespoň jeden seznam s názvem :i[defualt].
+1. Pomocí endpointu `/api/lists/default` si prohlédněte obsah senzamu :i[defualt].
+1. Prohlédněte si [dokumentaci](https://apps.kodim.cz/daweb/shoplist/docs) a podívejte se, jak se dělá přidání nového nákupního seznamu.
 1. Založte si prázdnou stránku s JavaScriptovým programem.
-1. Prohlédněte si [dokumentaci](https://apps.kodim.cz/daweb/shoplist/) a podívejte se, jak se dělá přidání nového nákupního seznamu.
-1. Vytvořte na stránce textové políčko a tlačítko s nápisem „Nový seznam“. Jakmile uživatel do políčka zadá název nového seznamu, pomocí volání funkce `fetch` vytvořte na serveru nový seznam s tímto názvem. Zadávejte názvy seznamů pouze malými písmeny bez mezer a bez diakritiky!
-1. Podívejte se, jak vypadá adresa pro získání všech seznamů, zadejte ji do adresní řádky prohlížeče a vyzkoušejte, že se váš nový seznam skutečně přidal.
+1. Zkuste pomocí funkce `fetch` vytvořit prázdný seznam s nějakým názvem. Pozor na název seznamu, může obsahovat pouze malá písmena bez diakritiky a čísla.
+1. Vytvořte na stránce formulář, který umožné uživateli zadat název seznamu a odesláním formuláře tento seznam vytvořit.
+1. V prohlížeči si zkountrolujte, že se vám vytvořené seznamy skutečně vytváří.

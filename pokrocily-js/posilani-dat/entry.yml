@@ -4,8 +4,5 @@ access: 'claim'
 sections:
   - dotaz-post
   - hlasovani
-  - nakupni-seznam
   - cv-post
-  - cv-manipulace
-  - cv-aktualizace
-  - ulozky-na-doma
+  # - ulozky-na-doma
