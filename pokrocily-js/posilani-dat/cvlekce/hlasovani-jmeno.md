@@ -5,9 +5,9 @@ demand: 2
 
 Pokračujte v aplikaci s předchozího příkladu. Mít jméno hlasujícího přímo v kódu je nepraktické. Umožníme tedy uživateli zadat si jméno dle libosti.
 
-⚠ Pro připomenutí: když vložíte tlačítko do HTML formuláře `<form>`, prohlížeč sám zajistí po kliknutí na tlačítko odeslání formuláře. To způsobí znovu načtení stránky – z pohledu uživatele to vypadá, jako by hned po kliknutí obnovil stránku klávesou F5. Pokud JavaScript něco vypsal do konzole, po obnově stránky se výpis ztratí. Protože k obnově dojde rychle, vypadá to, že se nic nestalo.
+Pro připomenutí: když vložíte tlačítko do HTML formuláře `<form>`, prohlížeč sám zajistí odeslání formuláře po kliknutí na tlačítko. Odeslání formuláře způsobí znovunačtení stránky – z pohledu uživatele to vypadá, jako by hned po kliknutí obnovil stránku (třeba klávesou F5). Pokud JavaScript mezi tím něco vypsal do konzole, po obnově stránky se výpis ztratí. Protože k obnově stránky dojde rychle, vypadá to, že se v konzoli nic nestalo.
 
-Aby k odeslání formuláře nedošlo, je potřeba prohlížeči říci, že nemá provádět výchozí akci – k otmu slouží metoda `preventDefault` na události. Tuto metodu byste měli zavolat hned na začátku zpracování události, třeba takhle:
+Aby k odeslání formuláře nedošlo, je potřeba prohlížeči říci, že nemá provádět výchozí akci. K tomu slouží metoda `preventDefault` na události. Tuto metodu byste měli zavolat hned na začátku zpracování události, třeba takhle:
 
 ```javascript
 addButton.addEventListener('click', (event) => {
