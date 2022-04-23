@@ -1,10 +1,10 @@
-Jak přibývá naších programátorských schopností, tak se naše aplikace stávají většími a složitejšími. Budou postupně obsahovat více a více komponent, knihoven, stylů a dalších. Budeme proto potřebovat pokročileší nástroje, jak tuto rostoutí komplexitu zkrotit a dát jí nějaký řád.
+Jak přibývá naších programátorských schopností, tak se naše aplikace stávají většími a složitejšími. Budou postupně obsahovat více a více komponent, knihoven, stylů a dalších. Budeme proto potřebovat pokročilejší nástroje, jak tuto rostoucí komplexitu zkrotit a dát jí nějaký řád.
 
 ## Systém NPM
 
 NPM je nástroj, který umožňuje spravovat knihovny a kód pro větší JavaScriptové projekty. V systému NPM se knihovnám říká :term{cs="balíčky" en="packages"}, můžeme tedy říct, že NPM je správce balíčků.
 
-Vytvořit projekt založený na NPM není nic těžkého. Jediné, co k tomu potřebujeme je založit prázdnou složku a do ní vložit speciální soubor `package.json`. Ten obsahuje základní informace o našem projektu, jako je jméno, verze a seznam balíčků (dříve knihoven), které náš projekt používá.
+Vytvořit projekt založený na NPM není nic těžkého. Jediné, co k tomu potřebujeme, je založit prázdnou složku a do ní vložit speciální soubor `package.json`. Ten obsahuje základní informace o našem projektu, jako je jméno, verze a seznam balíčků (dříve knihoven), které náš projekt používá.
 
 Založíme si tedy složku `muj-projekt` a otevřeme ji ve VS Code. Do ní vložíme soubor `package.json` s tímto obsahem
 
@@ -24,7 +24,7 @@ Mohli bychom však v našem projektu chtít použít například nám už znám�
 $ npm install validator dayjs
 ```
 
-Po spuštění tohoto příkazyu nám v našem projektu přibyla složka `node_modules`. Ta obsahuje stažený kód nainstalovaných balíčků. Dále nám ve složce přibyl soubor `package-lock.json`. Jeho význam je malinko komplikovanější, takže jej pro tuto chvíli necháme být.
+Po spuštění tohoto příkazu nám v našem projektu přibyla složka `node_modules`. Ta obsahuje stažený kód nainstalovaných balíčků. Dále nám ve složce přibyl soubor `package-lock.json`. Jeho význam je malinko komplikovanější, takže jej pro tuto chvíli necháme být.
 
 Zároveň se nám změnil také soubor `package.json`.
 
