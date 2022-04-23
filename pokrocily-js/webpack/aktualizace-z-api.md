@@ -10,7 +10,7 @@ fetch('https://apps.kodim.cz/daweb/shoplist/api/lists/default')
     return response.json();
   })
   .then((data) => {
-    const container = document.querySelector('.container');
+    const container = document.querySelector('#list-container');
     container.innerHTML = ShoppingList({
       items: data.results.items,
     });
