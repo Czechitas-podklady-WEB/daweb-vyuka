@@ -45,7 +45,7 @@ document.addEventListener('click', () => {
 });
 ```
 
-Endpoint pro vložení nové položky je navržený tak, že nám jako odpověď vždy vrátí celý seznam. To je pro nás velká výhoda, protože vrácená data můžeme rovnou předat komponentě `ShoppingList` tak, jak jsme zvyklí a akutalizovat obsah stránky.
+Endpoint pro vložení nové položky je navržený tak, že nám jako odpověď vždy vrátí celý seznam. To je pro nás velká výhoda, protože vrácená data můžeme rovnou předat komponentě `ShoppingList` tak, jak jsme zvyklí, a aktualizovat obsah stránky.
 
 ### Aktualizace a React
 
