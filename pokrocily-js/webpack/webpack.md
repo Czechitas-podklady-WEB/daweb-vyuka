@@ -29,12 +29,9 @@ Přibyla nám nová položka `devDependencies`. V té je vypsán seznam balíčk
 
 ### Struktura projektu
 
-Od této chvíle bude každý náš projekty mít dvě hlavní části:
+Od této chvíle bude každý náš projekty mít více souborů, než jsme zvyklí. Je tedy dobré je projekt smysluplně organizovat, abychom se v něm vyznali.
 
-- **zdrojové kódy** - všechny soubory s JavaScriptem, CSS, HTML atd., ze kterých se mát vytvořit výsledná aplikace. Budeme je dávat do složky `src`.
-- **sestavená aplikace** - výsledná aplikace vytvořená nástrojem Webpack. Tento výsledek pak můžeme nahrát třeba někam na server. Sestavená aplikace se nám objeví ve složce `dist`.
-
-Nejprve si založíme složku pro zdrojové kódy. V projektu `muj-projekt` vytvoříme složku `src` a v ní soubor `index.js`. Náš projekt bude pak vypadat takto.
+Nejprve v projektu `muj-projekt` vytvoříme složku `src`. Do té budeme vždy dávat zdrojové kódy naší aplikace, tedy všechny soubory s JavaScriptem, CSS, HTML atd. Zatím v této složce vytvoříme hlavní soubor `index.js`.
 
 ```
 ├──node_modules
@@ -44,7 +41,7 @@ Nejprve si založíme složku pro zdrojové kódy. V projektu `muj-projekt` vytv
 └──package.json
 ```
 
-Do souboru `index.js` zatím vložíme jednoduchý uvítací kód.
+Do souboru `index.js` vložíme jednoduchý uvítací kód.
 
 ```js
 const greet = (name) => {
@@ -62,15 +59,16 @@ Nyní použijeme Webpack k sestavení výsledné aplikace. Aby se náš projekt 
 const path = require('path');
 
 module.exports = {
+  mode: 'production',
   entry: './src/index.js',
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, 'public'),
     filename: 'bundle.js',
   },
 };
 ```
 
-Vytvořit takovou konfiguraci od základu je už relativně pokročilá dovednost. Proto jsme zde rádi, že nám byla dána takto shůry a po jejím původu se nepídíme. Tato konfigurace v podstatě říká, že Webpack má vzít soubor `src/index.js` a sestavit z něj výsledek, který se bude nacházet ve složce `dist/bundle.js`.
+Vytvořit takovou konfiguraci od základu je už relativně pokročilá dovednost. Proto jsme zde rádi, že nám byla dána takto shůry a po jejím původu se nepídíme. Tato konfigurace v podstatě říká, že Webpack má vzít soubor `src/index.js` a sestavit z něj výsledek, který se bude nacházet ve složce `public/bundle.js`.
 
 Abychom mohli webpack spustit, v souboru `package.json` si vytvoříme příkaz `build`.
 
@@ -98,7 +96,7 @@ Nyní stačí otevřít v našem projektu terminál a napsat příkaz
 $ npm run build
 ```
 
-Pokud se vše povedlo, uvnitř projektu se vytvoří soubor `dist/bundle.js`, který obsahuje takzvaně :term{cs="minifikovanou" en="minified"} verzi našeho kódu. Ta může vypadat například takto děsivě.
+Pokud se vše povedlo, uvnitř projektu se vytvoří soubor `public/bundle.js`, který obsahuje takzvaně :term{cs="minifikovanou" en="minified"} verzi našeho kódu. Ta může vypadat například takto děsivě.
 
 ```
 (()=>{const t=t=>`Hello ${t}`;document.querySelector("h1").textContent=t("Martin"),console.log(t("Martin"))})();

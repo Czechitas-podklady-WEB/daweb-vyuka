@@ -2,7 +2,7 @@
 
 Projekt, který jsme si zkoušeli nakonfiguravat v přechozí části byl extrémně jednoduchý. Ve skutečné aplikace budeme po Webpacku chtít mnohem více věcí než jen zminifikovat JavaScript. Budeme chtít
 
-- spojit všechny JavaSriptové soubory do jednoho,
+- spojit všechny JavaScriptové soubory do jednoho,
 - spojit CSS styly,
 - přeložit náš JavaScript do podoby kompotibilní s většinou prohlížečů,
 - později zapojit knihovnu React.
