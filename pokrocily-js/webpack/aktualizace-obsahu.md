@@ -24,7 +24,7 @@ V našem projektu máme k dispozici komponentu `ShoppingList`, která umí vyrob
 ```js
 import { ShoppingList } from './ShoppingList/index.js';
 
-const container = document.querySelector('.container');
+const container = document.querySelector('#list-container');
 container.innerHTML = ShoppingList({
   items: list,
 });
@@ -36,8 +36,10 @@ Soubor `index.html`:
 
 ```html
 <body>
-  <button id="btn-add">Přidat</button>
-  <div class="container"></div>
+  <div class="container">
+    <button id="btn-add">Přidat</button>
+  </div>
+  <div id="list-container" class="container"></div>
 </body>
 ```
 
