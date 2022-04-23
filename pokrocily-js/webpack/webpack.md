@@ -29,7 +29,7 @@ Přibyla nám nová položka `devDependencies`. V té je vypsán seznam balíčk
 
 ### Struktura projektu
 
-Od této chvíle bude každý náš projekty mít více souborů, než jsme zvyklí. Je tedy dobré je projekt smysluplně organizovat, abychom se v něm vyznali.
+Od této chvíle bude každý náš projekty mít více souborů, než jsme zvyklí. Je tedy dobré projekt smysluplně organizovat, abychom se v něm vyznali.
 
 Nejprve v projektu `muj-projekt` vytvoříme složku `src`. Do té budeme vždy dávat zdrojové kódy naší aplikace, tedy všechny soubory s JavaScriptem, CSS, HTML atd. Zatím v této složce vytvoříme hlavní soubor `index.js`.
 
@@ -96,14 +96,14 @@ Nyní stačí otevřít v našem projektu terminál a napsat příkaz
 $ npm run build
 ```
 
-Pokud se vše povedlo, uvnitř projektu se vytvoří soubor `public/bundle.js`, který obsahuje takzvaně :term{cs="minifikovanou" en="minified"} verzi našeho kódu. Ta může vypadat například takto děsivě.
+Pokud se vše povedlo, uvnitř projektu se vytvoří soubor `public/bundle.js`, který obsahuje takzvaně :term{cs="minifikovanou" en="minified"} verzi našeho kódu. Ta může vypadat například takto děsivě:
 
 ```
 (()=>{const t=t=>`Hello ${t}`;document.querySelector("h1").textContent=t("Martin"),console.log(t("Martin"))})();
 ```
 
-Webpack dělá minifikaci proto, aby náš výsledný kód byl co nejmenší. Vzhledem k tomu, že kód bude číst prohlížeč, můžeme zcela objetovat jakoukouliv srozumitelnost pro člověka. Webpack tedy
+Webpack dělá minifikaci proto, aby náš výsledný kód byl co nejmenší. Vzhledem k tomu, že kód bude číst prohlížeč, můžeme zcela obětovat jakoukouliv srozumitelnost pro člověka. Webpack tedy
 
-- odstranil všechny bílé znaky,
+- odstranil všechny „bílé“ znaky (mezery, konce řádků, tabulátory…),
 - přejmenoval naši funkci `greet` prostě na `t`,
-- všude, kde se dalo vynechal závorky a zbytečné znaky.
+- všude, kde se dalo, vynechal závorky a zbytečné znaky.
