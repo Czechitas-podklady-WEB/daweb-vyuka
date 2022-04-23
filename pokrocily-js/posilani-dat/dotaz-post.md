@@ -8,11 +8,11 @@ V minulé lekci jsme posílali dotazy na API tímto způsobem.
 fetch('https://api.sunrise-sunset.org/json?lat=50&lng=14.5');
 ```
 
-Takto se posílá základní typ dotazu, kterému říkáme GET. Tento dotaz má za úkol získat nějaká data ze serveru. Typů dotazů však existuje více, například POST, PUT, DELETE apod. Tyto většinou slouží k ke změně dat na serveru. My se v tomto kurzu budeme zabývat pouze dotazem POST.
+Takto se posílá základní typ dotazu, kterému říkáme GET. Tento dotaz má za úkol získat nějaká data ze serveru. Typů dotazů však existuje více, například POST, PUT, DELETE apod. Tyto většinou slouží ke změně dat na serveru. My se v tomto kurzu budeme zabývat pouze dotazem POST.
 
 ### Data jako řetězec
 
-Na začátek je důležité si uvědomit, že formát JSON je textový formát. Ze serveru nám tedy data vždychodí jako text a my je také jako text musíme posílat. V JavaScriptové mluvě tedy musíme vždy odeslat řetězec. Pokud bychom chtěli na server poslat například takovýto objekt
+Na začátek je důležité si uvědomit, že formát JSON je textový formát. Ze serveru nám tedy data vždy chodí jako text a my je také jako text musíme posílat. V JavaScriptové mluvě tedy musíme vždy odeslat řetězec. Pokud bychom chtěli na server poslat například takovýto objekt
 
 ```js
 {
@@ -44,7 +44,7 @@ Dotazy POST se posílají opět pomocí funkce `fetch`. Musíme však specifikov
 - takzvaný `Content-Type`, tedy v jakém formátu data na server posíláme. My posíláme JSON, takže content type bude `application/json`,
 - tělo dotazu, tedy samotná JSON data zapsaná jako řetězec.
 
-Představme si zatím fiktivní stránku `https://it-seznamka.cz`, která by mohla mít API endpoint `register`, kde bychom pomocí POST mohlit zaregistrovali nového uživatele. Výslední kód by vypadal takto.
+Představme si zatím fiktivní stránku `https://it-seznamka.cz`, která by mohla mít API endpoint `register`, kde bychom pomocí POST mohlit zaregistrovali nového uživatele. Výslední kód by vypadal takto:
 
 ```js
 fetch('https://it-seznamka.cz/register', {
