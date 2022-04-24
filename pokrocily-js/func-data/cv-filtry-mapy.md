@@ -1,4 +1,3 @@
-## Cvičení: Filtry a mapy
+## Cvičení: Metody filter a map
 
 ::exc[cvlekce>jednohubky2]
-::exc[cvlekce>ukolnicek]
