@@ -1,15 +1,26 @@
 ---
 title: Funkcionální jednohubky 2
-demand: 3
+demand: 2
 ---
 
-Použijte pole `numbers`, `names` a `osoby` z předchozího cvičení.
+Použijte opět pole `numbers`, `names` a `persons`.
 
-1. Pomocí metody `filter` získejte z pole `numbers` pouze ta čísla, která jsou sudá.
-1. Pomocí metody `filter` získejte z pole `names` pouze ta jména, která jsou delší než 4 znaky.
-1. Pomocí metody `filter` získejte z pole `osoby` pouze dospělé lidi.
-1. Pomocí metody `filter` získejte z pole `osoby` pouze dospělé muže.
-1. Pomocí metody `map` vydělte všecha čísla v poli `numbers` třemi.
-1. Pomocí metody `map` převeďte všechna čísla v poli `numbers` na řetězce.
-1. Pomocí metody `map` vytvořte pole, ve kterém budou všechna jména z pole `names` zabalená do `li` tagu. Jméno `Petr` tak dopadne jako `<li>Petr</li>`.
-1. Použijte pole `osoby` a pomocí metody `map` vytvořte pro každou osobu email ve formátu `petr@gmail.com`.
+```js
+const numbers = [15, 6, 70, 41, 33, 27, 8, 16, 98, 60, 56];
+const names = ['Petr', 'Jana', 'Pavel', 'Zuzana', 'Eva', 'Adam', 'Onyx'];
+const persons = [
+  { name: 'Petr', age: 16, gender: 'male' },
+  { name: 'Jana', age: 8, gender: 'female' },
+  { name: 'Pavel', age: 34, gender: 'male' },
+  { name: 'Zuzana', age: 41, gender: 'female' },
+  { name: 'Eva', age: 13, gender: 'female' },
+  { name: 'Adam', age: 22, gender: 'male' },
+  { name: 'Adam', age: 22, gender: 'male' },
+  { name: 'Onyx', age: 37, gender: 'intersex' },
+];
+```
+
+1. Vytvořte pole `evenNumbers`. Pomocí metody `filter` získejte z pole `numbers` pouze ta čísla, která jsou sudá a uložte je do pole `evenNumbers`. Vypište toto nové pole do konzole.
+2. Vytvořte pole `adults`. Pomocí metody `filter` získejte z pole `persons` pouze dospělé lidi a uložte je do pole `adults`. Vypište toto nové pole do konzole.
+3. Vytvořte pole `devidedByThree`. Pomocí metody `map` vydělte všecha čísla v poli `numbers` třemi a uložte je do pole `devidedByThree`. Vypište toto nové pole do konzole.
+4. Vytvořte pole `emails`. Z `persons` pomocí metody `map` vytvořte pro každou osobu email ve formátu `petr@gmail.com`, a výsledek uložte do pole `emails`. Vypište toto nové pole do konzole.
