@@ -16,27 +16,27 @@
 }
 
 .read {
-  background-image: url("img/read.jpg");
+  background-image: url('img/read.jpg');
 }
 
 .cook {
-  background-image: url("img/cook.jpg");
+  background-image: url('img/cook.jpg');
 }
 
 .code {
-  background-image: url("img/code.jpg");
+  background-image: url('img/code.jpg');
 }
 
 .family {
-  background-image: url("img/family.jpg");
+  background-image: url('img/family.jpg');
 }
 
 .netflix {
-  background-image: url("img/netflix.jpg");
+  background-image: url('img/netflix.jpg');
 }
 
 .sleep {
-  background-image: url("img/sleep.jpg");
+  background-image: url('img/sleep.jpg');
 }
 
 /* --------------- */

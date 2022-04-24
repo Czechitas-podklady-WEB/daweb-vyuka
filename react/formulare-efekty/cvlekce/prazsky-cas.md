@@ -12,6 +12,7 @@ demand: 2
    ```
 
    Zobrazte váš čas někde na stránce a vyzkoušejte, že váš efekt správně nastaví stav při prvním zobrazení komponenty.
+
 1. Upravte váš efekt tak, aby pomocí volání `fetch` získal aktuální datum a čas pro časovou zónu `Europe/Prague`. Hodnotu získáte na API endpointu
 
    ```

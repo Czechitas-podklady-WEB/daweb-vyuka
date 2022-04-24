@@ -10,7 +10,7 @@ V okně terminálu vidíte velký bílý kurzor a před ním jakýsi kus textu, 
 
 ::fig[Terminál]{src=assets/terminal.png}
 
-Můj terminál říká, že moje uživatelské jméno je `podlomar` a terminál jsem otevřel ve složce `daweb`. Po otevření terminálu v něm můžete začít psát příkazy. V předchozí lekci jsme nainstalovali program Node.js. Zkusíme zjistit jeho verzi. Do terminálu napište 
+Můj terminál říká, že moje uživatelské jméno je `podlomar` a terminál jsem otevřel ve složce `daweb`. Po otevření terminálu v něm můžete začít psát příkazy. V předchozí lekci jsme nainstalovali program Node.js. Zkusíme zjistit jeho verzi. Do terminálu napište
 
 ```
 node --version
@@ -20,7 +20,7 @@ a stiskněte :kbd[Enter]. Tento příkaz vypíše do terminálu číslo verze pr
 
 ::fig[Terminál]{src=assets/node-version.png}
 
-Pokud vidíte vyšší verzi, všechno je v pořádku. Pokud naopak terminál vypsal nějakou jinou hlášku nebo chybu, pravděpodobně se vám nepodařilo programy Node.js a NPM naistalovat správně. Restartuje počítač a zkuste příkaz znovu. Pokud se stále nedaří, pomohou vám kouči nebo lektor naživo přímo v akademii. 
+Pokud vidíte vyšší verzi, všechno je v pořádku. Pokud naopak terminál vypsal nějakou jinou hlášku nebo chybu, pravděpodobně se vám nepodařilo programy Node.js a NPM naistalovat správně. Restartuje počítač a zkuste příkaz znovu. Pokud se stále nedaří, pomohou vám kouči nebo lektor naživo přímo v akademii.
 
 ### Dolary
 
@@ -30,7 +30,7 @@ V životě programátora se příkazy dají psát i jinam než přímo do termin
 $ node --version
 ```
 
-Znak dolaru do terminálu **nepíšeme**. Slouží pouze jako informace, že tento příkaz je určen pro terminál. Zkusme ještě zjistit verzi Gitu, který jste také instalovali v předchozí lekci. 
+Znak dolaru do terminálu **nepíšeme**. Slouží pouze jako informace, že tento příkaz je určen pro terminál. Zkusme ještě zjistit verzi Gitu, který jste také instalovali v předchozí lekci.
 
 ```sh
 $ git --version

@@ -2,6 +2,7 @@
 
 Filtrování a mapování patří mezi nejpoužívanější funkce pro zpracování dat. V čem jsou tyto metody na polích speciální? Vrací nám nové pole.
 
+
 ### Metoda filter()
 
 U metody `filter` vidíme ve funkci také podmínku, tak jako u metody `some` nebo `every`. Tato metoda nám však nevrací `bool`, nýbrž nové pole. Toto nové obsahuje pouze ty položky, které podmínku splnily.

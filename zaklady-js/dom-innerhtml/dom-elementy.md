@@ -48,11 +48,13 @@ Snadno také můžeme změnit jakýkoliv styl pomocí vlastnosti `style`. Takto 
 Všimněte si hned dvou důležitých věcí:
 
 1. Názvy CSS vlastností musíme zapisovat **velbloudí notací**. Je to proto, že kdybychom použili kebab notaci (ano, toto je skutečný název) jako zde
-   
+
    ```jscon
    > headerElm.style.margin-bottom = '2rem'
    ```
+
    JavaScript by si pomlčku spletl s mínusem a kód by nefungoval.
+
 2. Hodnoty všech CSS vlastností se zapisují pomocí řetězců. Proto dávejte pozor například na takovéto chyby.
    ```jscon
    > headerElm.style.color = white

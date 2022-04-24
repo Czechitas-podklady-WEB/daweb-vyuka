@@ -21,4 +21,5 @@ demand: 2
      { num: 133, title: 'Rybolov v Oceánu bouří', guest: 'Ludmila Gajová' },
    ];
    ```
+
 1. Rozmyslete si, která vlastnost se nejlépe hodí jako klíč a použijte ji, aby React přestal v konzoli prudit, že mu chybí `key` prop.

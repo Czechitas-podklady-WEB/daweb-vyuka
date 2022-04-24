@@ -1,6 +1,6 @@
 ## Povinné čtení na doma
 
-Díky tomu, že už rozumíme polím, si můžeme představit funkci `document.querySelectorAll`. Tato funguje podobně jako už známá funkce `document.querySelector`. Vrátí nám však **všechny** elementy, které najde pomocí zadaného selektoru. Výsledek obdržíme jako pole DOM elementů. To pak můžeme zpracovat pomocí nějakého cyklu.
+Díky tomu, že už rozumíme polím, si můžeme představit funkci `document.querySelectorAll`. Ta funguje podobně jako už známá funkce `document.querySelector`. Vrátí nám však **všechny** elementy, které najde pomocí zadaného selektoru. Výsledek obdržíme jako pole DOM elementů. To pak můžeme zpracovat pomocí nějakého cyklu.
 
 V lekci o událostech jsme si slíbili, že díky cyklům dokážeme zjednodušít kód naší aplikace se smajlíky. Připomeňme si HTML kód našich tlačítek.
 
@@ -16,26 +16,26 @@ Náš výsledný učesaný JavaScriptový kód vypadal takto.
 
 ```js
 const selectSmiley = (event) => {
-	event.target.classList.add('btn-smiley--selected')
-}
+  event.target.classList.add('btn-smiley--selected');
+};
 
-document.querySelector('#btn1').addEventListener('click', selectSmiley)
-document.querySelector('#btn2').addEventListener('click', selectSmiley)
-document.querySelector('#btn3').addEventListener('click', selectSmiley)
-document.querySelector('#btn4').addEventListener('click', selectSmiley)
-document.querySelector('#btn5').addEventListener('click', selectSmiley)
+document.querySelector('#btn1').addEventListener('click', selectSmiley);
+document.querySelector('#btn2').addEventListener('click', selectSmiley);
+document.querySelector('#btn3').addEventListener('click', selectSmiley);
+document.querySelector('#btn4').addEventListener('click', selectSmiley);
+document.querySelector('#btn5').addEventListener('click', selectSmiley);
 ```
 
 Všimněte si, že kód pro nasazení posluchače na událost `click` jsme museli opakovat pětkrát. Díky `document.querySelectorAll` můžeme nyní posluchače nasadit na všechna tlačítka jedním cyklem.
 
 ```js
 const selectSmiley = (event) => {
-	event.target.classList.add('btn-smiley--selected')
-}
+  event.target.classList.add('btn-smiley--selected');
+};
 
-const buttons = document.querySelectorAll('.btn-smiley')
+const buttons = document.querySelectorAll('.btn-smiley');
 for (let i = 0; i < buttons.length; i += 1) {
-	buttons[i].addEventListener('click', selectSmiley)
+  buttons[i].addEventListener('click', selectSmiley);
 }
 ```
 

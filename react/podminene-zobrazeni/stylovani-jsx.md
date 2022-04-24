@@ -1,6 +1,6 @@
 ## Stylování JSX elementů
 
-V základech HTML a CSS jste se učili, že není dobré stylovat HTML elementy pomocí atributu `style`. Místo toho se vždy snažíme vytvořit nějakou dobře pojmenovanou CSS třídu. Stejné pravidlo platí i v Reactu. Stejně jako v čistém HTML však občas narazíme na výjimky. 
+V základech HTML a CSS jste se učili, že není dobré stylovat HTML elementy pomocí atributu `style`. Místo toho se vždy snažíme vytvořit nějakou dobře pojmenovanou CSS třídu. Stejné pravidlo platí i v Reactu. Stejně jako v čistém HTML však občas narazíme na výjimky.
 
 Vzpomeňte si například na náš projekt Café Lóra, kde jsme stylovali barvy jednotlivých ingrediencí v nápoji. Vzhledem k tomu, že kódy barev byly součástí dat stažených z API, nemohli jsme mít dopředu připravené třídy se všemi možnými barvami. V takovém případě je stylování pomocí atributu `style` oprávněné.
 
@@ -34,4 +34,4 @@ Naopak co si snadno dovolit můžeme, je nastavit hodnotu stylu pomocí podmín�
 />
 ```
 
-Na konci této části opět zdůrazněme, že stylování pomocí atributu `style` děláme pouze ve výjimečných a odůvodněných případech. 
+Na konci této části opět zdůrazněme, že stylování pomocí atributu `style` děláme pouze ve výjimečných a odůvodněných případech.

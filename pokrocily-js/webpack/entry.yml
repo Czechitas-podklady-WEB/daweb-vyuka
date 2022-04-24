@@ -1,11 +1,12 @@
-title: Webpack a větší aplikace
-lead: Ukážeme si jak stavět větší aplikace z menších částí pomocí Webpacku.
+title: Aktualizace stránky, Webpack
+lead: Když se data naší aplikace mění, je třeba stránku patřičně aktualizovat. Také uvídíme, jak sestavovat aplikace pomocí nástroje Webpack
 access: 'claim'
 sections:
-  - oddelovani-komponent
+  - aktualizace-obsahu
+  - aktualizace-z-api
+  - cv-aktualizace
   - system-npm
   - webpack
+  - startovace
   - cv-zaklady-webpacku
-  - import-export
-  - cv-import-export
-  - ulozky-na-doma
+#  - ulozky-na-doma

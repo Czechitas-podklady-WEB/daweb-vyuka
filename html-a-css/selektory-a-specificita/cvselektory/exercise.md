@@ -22,6 +22,6 @@ Uvidíte podobnou stránku s kontakty jako ze cvičení flexboxu. V tomto cviče
     `transform: scale(1.3);`
 - Na najetí myši také nastavte kurzor na pointer/ručičku (vlasnost cursor)
 
-### Bonus
+#### Bonus
 
 Pro plynulé zvětšení si můžete najít použití css vlastnosti `transition`.

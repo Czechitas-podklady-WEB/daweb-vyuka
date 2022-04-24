@@ -1,4 +1,4 @@
 ## Cvičení: Volání API
 
-::exc[cvlekce>svatek-zitra]
-::exc[cvlekce>svatek-v-den]
+::exc[cvlekce>vychod-zapad]
+::exc[cvlekce>generator-hesel]

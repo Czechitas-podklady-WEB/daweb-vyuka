@@ -1,8 +1,8 @@
-Čím jsou naše programy větší a užitečnější v reálném životě, tím větší je objem a složitost informací, se kterými potřebují pracovat. Informacím, se kterými program pracuje říkáme data. Jednoduchá data v naších programech reprezentujeme pomocí základních hodnot jako čísla, řetězce, pravdivostní hodnoty apod. Brzy narazíme na komplexnější data, která mají nějakou složitější vnitřní strukturu. Pro uložení takových dat pak používáme pole a objekty. 
+Čím jsou naše programy větší a v reálném životě užitečnější, tím větší je objem a složitost informací, se kterými potřebují pracovat. Informacím, se kterými program pracuje, obecně říkáme _data_. Jednoduchá data v naších programech reprezentujeme pomocí základních hodnot jako čísla, řetězce, pravdivostní hodnoty apod. Brzy narazíme na komplexnější data, která mají nějakou složitější vnitřní strukturu. Pro uložení takových dat pak používáme pole a objekty.
 
 ## Objekty jako data
 
-Při práci s většími daty se často potkáváme s polem objektů. Představme si například tabulku výdajů, která má 13 řádků a tři sloupečky. 
+Při práci s většími daty se často potkáváme s polem objektů. Takovou reprezentaci už jsme potkali v minulé lekci. Můžete si představit například tabulku výdajů spolubydlících, která má 13 řádků a tři sloupečky.
 
 ```js
 const expenses = [
@@ -22,9 +22,9 @@ const expenses = [
 ];
 ```
 
-Takováto data bychom pak pomocí komponent zobrazili na naší stránce podobně, jako jste se to naučili v předchozí lekci. 
+Takováto data bychom pak pomocí komponent zobrazili na naší stránce podobně, jako jste se to naučili v předchozí lekci.
 
-V praxi samozřejmě budeme mít data, jejichž struktura je hlubší. Budeme tedy často mít struktury jako objekty, které obsahují pole objektů a podobně. Takto bychom mohli reprezentovat například kurz Czechitas jménem :i[Úvod do programování].
+V praxi samozřejmě budeme mít data, jejichž struktura je hlubší. Často budeme mít struktury jako objekty, které obsahují pole objektů a podobně. Takto bychom mohli reprezentovat například kurz Czechitas jménem :i[Úvod do programování].
 
 ```js
 const course = {

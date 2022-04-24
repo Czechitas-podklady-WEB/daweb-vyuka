@@ -32,22 +32,22 @@ Napišme si funkce, které simulují naše doručovací společnosti.
 ```js
 const hejsci = (zasilka) => {
   if (Math.random() > 0.1) {
-    return `Zásilka "${zasilka}" doručena za 30 minut, kámo.`;
+    return `Zásilka „${zasilka}“ doručena za 30 minut, kámo.`;
   }
 
-  return `Zásilka "${zasilka}" se ztratila. Kurýra přepadla smečka hladových bezdomovců.`;
+  return `Zásilka „${zasilka}“ se ztratila. Kurýra přepadla smečka hladových bezdomovců.`;
 };
 
 const machri = (zasilka) => {
   if (Math.random() > 0.5) {
-    return `Zásilka "${zasilka}" doručena za 10 minut.`;
+    return `Zásilka „${zasilka}“ doručena za 10 minut.`;
   }
 
-  return `Zásilka "${zasilka}" ztracena. Drona přepadlo hejno hladových holubů`;
+  return `Zásilka „${zasilka}“ ztracena. Drona přepadlo hejno hladových holubů.`;
 };
 
 const borci = (zasilka) => {
-  return `Zásilka "${zasilka}" doručena s přehledem za dvě hodiny.`;
+  return `Zásilka „${zasilka}“ doručena s přehledem za dvě hodiny.`;
 };
 ```
 
@@ -55,10 +55,10 @@ Tyto funkce si můžeme vyzkoušet například v konzoli.
 
 ```jscon
 > machri('Cous cous se zeleninou')
-'Zásilka "Cous cous se zeleninou ztracena". Drona přepadlo hejno hladových holubů.'
+'Zásilka „Cous cous se zeleninou“ ztracena. Drona přepadlo hejno hladových holubů.'
 ```
 
-Představme si nyní, že si jako zákazník objednáte jídlo a chcete si zvolit, jakou službou vám bude doručeno. Můžeme tedy napsat funkci `objednat`, které předáme objednané jídlo a funkci, která se má použít k doručení. Funkci `objednat` vygeneruje číslo objednávky a použije zadanou funkci k doručení balíčku.
+Představme si nyní, že si jako zákazník objednáte jídlo a chcete si zvolit, jakou službou vám bude doručeno. Můžeme tedy napsat funkci `objednat`, které předáme objednané jídlo a funkci, která se má použít k doručení. Ve funkci `objednat` vygeneruje číslo objednávky a použije zadanou funkci k doručení balíčku.
 
 ```js
 const objednat = (jidlo, doruceni) => {
@@ -73,14 +73,14 @@ Všimněte si, že funkce `objednat` se chová k parametru `doruceni` jako by to
 
 ```jscon
 > objednat('Hovězí cheeseburger', hejsci)
-'Zásilka "Hovězí cheeseburger (0397)" doručena za 30 minut, kámo.'
+'Zásilka „Hovězí cheeseburger (0397)“ doručena za 30 minut, kámo.'
 ```
 
 Pokud si chceme být doručením opravdu jistí, můžeme použít Borce v autech.
 
 ```jscon
 > objednat('Hovězí cheeseburger', borci)
-'Zásilka "Hovězí cheeseburger (7354)" doručena s přehledem za dvě hodiny.'
+'Zásilka „Hovězí cheeseburger (7354)“ doručena s přehledem za dvě hodiny.'
 ```
 
 Všimněte si, že funkce `hejsci` a `borci` předáváme jako celek, tedy jako hodnotu. Nevoláme je tady my sami, nýbrž je předáváme funkci `objednat`, aby ta je zavolala dle svého vlastního uvážení.

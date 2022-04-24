@@ -1,10 +1,9 @@
-Do této chvíle jsme uměli do nějaké proměnné uložit pouze jednu hodnotu, například řetězec, DOM element nebo funkci. Počítače ale často potřebují pracovat s mnohem větším objemem dat, než je několik čísel nebo řetězců. V této lekci si ukážeme jak ukládat větší množství hodnot do jedné proměnné a jak potom můžeme s takovými hodnotami pracovat pomocí cyklů.
+Do této chvíle jsme uměli do nějaké proměnné uložit pouze jednu hodnotu, například řetězec, DOM element nebo funkci. Počítače ale často potřebují pracovat s mnohem větším objemem dat, než je několik čísel nebo řetězců. V této části si ukážeme jak ukládat větší množství hodnot do jedné proměnné.
 
 ## Pole
 
-:term{cs="Pole" en="Array"} nám umožňují do jedné proměnné uložit více hodnot. Pokud znáte například jazyk Python, pole v JavaScriptu jsou totéž co seznamy v Pythonu.
-
-Pole tvoříme pomocí hranatých závorek. Takto například do jedné proměnné uložíme známky ze všech písemek psaných za jedno pololetí.
+:term{cs="Pole" en="Array"} nám umožňují do jedné proměnné uložit více hodnot.
+Tvoříme je pomocí hranatých závorek. Takto například do jedné proměnné uložíme známky ze všech písemek psaných za jedno pololetí.
 
 ```jscon
 > const marks = [3, 1, 2, 4]
@@ -13,21 +12,21 @@ Pole tvoříme pomocí hranatých závorek. Takto například do jedné proměnn
 Uvnitř polí je možné mít zcela libovolné hodnoty, tedy například řetězce, DOM elementy apod.
 
 ```jscon
-> const temperaturs = [13.5, 12.7, 11.2, 12.3, 15.1]
+> const temperatures = [13.5, 12.7, 11.2, 12.3, 15.1]
 > const users = ['john', 'sue', 'peter', 'jane', 'soji']
 ```
 
-Samotné pole je ovšem také hodnota. Není tedy problém mít například pole polí.
+Samotné pole je ovšem také hodnota. Není tedy problém mít například pole polí. Pole polí je možné si představit jako tabulku. Takto může vypadat například tabulka útrat po jednom příjemném večeru v hospodě.
 
 ```jscon
-> const expenses = [['john', 250], ['sue', 170], ['peter', 337]]
+> const expenses = [['john', 350], ['sue', 470], ['peter', 437]]
 ```
 
 Pozor na to, že podobně jako existuje prázný řetězec `''`, existuje také prázdné pole `[]`. Je to zcela běžná hodnota, která se často velmi hodí.
 
 ### Indexy
 
-Hodnoty uvnitř polí sídlí na takzvaných indexech. Programátoři však mají takový zvláštní fetiš, že všechno počítačí počínaje nulou, nikoliv jedničkou. Má to svoje důvody, které však zatím nebudeme rozvádět. Raději si rovnou ukážeme, jak přistupovat k hodnotám na jednotlivých indexech.
+Hodnoty uvnitř polí sídlí na takzvaných indexech. Na jednotlivé indexy přistupujeme také pomocí hranatých závorek. Jak už víme z lekce o řetězcích, programátoři všechno počítají od nuly.
 
 ```jscon
 > const marks = [3, 1, 2, 4]
@@ -50,10 +49,10 @@ Pomocí indexů také můžeme hodnoty uvnitř pole měnit. Dejme tomu, že si p
 U polí, která obsahují další pole, se k jednotlivým prvkům dostaneme pomocí vícenásobného indexování. Takto například zjistíme, kolik utratil Petr v našem polí výdajů.
 
 ```jscon
-> const expenses = [['john', 250], ['sue', 170], ['peter', 337]]
+> const expenses = [['john', 350], ['sue', 470], ['peter', 437]]
 undefined
 > expenses[2][1]
-337
+437
 ```
 
 ### Vlastnosti a metody
@@ -74,7 +73,7 @@ Pomocí metody `push` můžeme přidat novou hodnotu na konec pole.
 [ 3, 1, 2, 2, 1]
 ```
 
-Naopak pomocí metody `pop` poslení prvek pole smažeme.
+Naopak pomocí metody `pop` poslední prvek pole smažeme.
 
 ```jscon
 > marks.pop()
@@ -92,7 +91,7 @@ Pokud chceme odebrat prvek ze začátku pole, použijeme metodu `shift`.
 [ 1, 2, 2 ]
 ```
 
-Chceme-li přidat prvek na začátek pole, je to vlastně opačná operace k `shift`. Metoda pro přidání prvku na začátek pole ma tedy trochu zláštní jméno `unshift`.
+Chceme-li přidat prvek na začátek pole, je to vlastně opačná operace k `shift`. Metoda pro přidání prvku na začátek pole má tedy trochu zvláštní jméno `unshift`.
 
 ```jscon
 > marks.unshift(1)
@@ -101,7 +100,7 @@ Chceme-li přidat prvek na začátek pole, je to vlastně opačná operace k `sh
 [ 1, 1, 2, 2 ]
 ```
 
-Pomocí metody `includes` můžeme zjistit, jestli se unvitř pole nechází zadaný prvek.
+Pomocí metody `includes` můžeme zjistit, jestli se uvnitř pole nachází zadaný prvek.
 
 ```jscon
 > marks
@@ -155,34 +154,34 @@ true
 
 ### Použití polí
 
-Pole v programování potkáme na každém kroku. Můžeme je například použít pro reprezentaci dat. Takto například pomocí pole reprezentujeme tabulku výdajů z našeho úplně prvního příkladu se spolubydlením.
+Pole v programování potkáme na každém kroku. Můžeme je například použít pro reprezentaci dat. Takto například pomocí pole reprezentujeme tabulku výdajů několika zpolubydlících za společné věci do domácnosti.
 
 ```js
 const expenses = [
-	['Petr', 'Prací prášek', 240],
-	['Ondra', 'Savo', 80],
-	['Pavla', 'Toaleťák', 65],
-	['Zuzka', 'Mýdlo', 50],
-	['Pavla', 'Závěs do koupelny', 350],
-	['Libor', 'Pivka na kolaudačku', 124],
-	['Petr', 'Pytle na odpadky', 75],
-	['Míša', 'Utěrky na nádobí', 130],
-	['Ondra', 'Toaleťák', 120],
-	['Míša', 'Pečící papír', 30],
-	['Zuzka', 'Savo', 80],
-	['Petr', 'Tapeta na záchod', 315],
-	['Ondra', 'Toaleťák', 64],
-]
+  ['Petr', 'Prací prášek', 240],
+  ['Ondra', 'Savo', 80],
+  ['Pavla', 'Toaleťák', 65],
+  ['Zuzka', 'Mýdlo', 50],
+  ['Pavla', 'Závěs do koupelny', 350],
+  ['Libor', 'Pivka na kolaudačku', 124],
+  ['Petr', 'Pytle na odpadky', 75],
+  ['Míša', 'Utěrky na nádobí', 130],
+  ['Ondra', 'Toaleťák', 120],
+  ['Míša', 'Pečící papír', 30],
+  ['Zuzka', 'Savo', 80],
+  ['Petr', 'Tapeta na záchod', 315],
+  ['Ondra', 'Toaleťák', 64],
+];
 ```
 
 Pomocí pole polí můžeme také reprezentovat herní plány v různých počítačovách hrách. Takto například mohou vypadat rozehrané piškvorky 3x3.
 
 ```js
 const tictactoe = [
-	['o', ' ', ' '],
-	[' ', 'x', ' '],
-	[' ', 'o', 'x'],
-]
+  ['o', ' ', ' '],
+  [' ', 'x', ' '],
+  [' ', 'o', 'x'],
+];
 ```
 
 Vidíme, že na tahu je zrovna křížek. Můžeme tak snadno provést nějaký chytrý tah.

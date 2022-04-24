@@ -13,7 +13,7 @@ names.map((name) => {
 });
 ```
 
-Jistě si také vzpomenete, že jsme při zápisu takovýchto transformací používali zkrácený zápis arrow funkcí. 
+Jistě si také vzpomenete, že jsme při zápisu takovýchto transformací používali zkrácený zápis arrow funkcí.
 
 ```js
 const names = ['petr', 'jana', 'marek', 'eva', 'lenka', 'ondra'];

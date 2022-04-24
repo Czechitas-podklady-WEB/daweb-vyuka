@@ -1,14 +1,11 @@
 ---
 title: Přestupný rok
 demand: 3
-offerSolution: true
 ---
 
-:::assign
 Napište program, který po zadání kalendářního roku vypíše, zda jde o rok přestupný, či nikoliv. Letopočet je přestupný, pokud je dělitelný čtyřmi. Roky, které jsou dělitelné 100 jsou ovšem přestupné pouze tehdy, jsou-li zároveň dělitelné 400.
-:::
 
-:::solution
+---solution
 
 **Řešení 1:**
 
@@ -42,10 +39,10 @@ let leap = 'není';
 if (year % 100 === 0) {
   if (year % 400 === 0) {
     leap = 'je';
-  } 
-} else if (year % 4 === 0){
+  }
+} else if (year % 4 === 0) {
   leap = 'není';
 }
 
-document.body.innerHTML = `<p>${year} ${leap} přestupný</p>`
+document.body.innerHTML = `<p>${year} ${leap} přestupný</p>`;
 ```

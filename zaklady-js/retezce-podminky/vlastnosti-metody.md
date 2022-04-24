@@ -2,7 +2,7 @@ Přestože jsme se za poslední dvě lekce o JavaScriptu dozvěděli hodně, sta
 
 ## Vlastnosti a metody
 
-Z předchozí lekce už víme jak vytvářet jednoduché objekty a jak do nich přidávat vlastnosti. Za velkou pozornost však stojí fakt, že ostatní hodnoty v JavaScriptu jsou samy o sobě také objekty. Například každý řetězec je pod pokličkou objekt a my můžeme přistupovat k jeho vlastnostem stejně jako u objektů, které jsme vytvářeli sami. 
+Z předchozí lekce už víme jak vytvářet jednoduché objekty a jak do nich přidávat vlastnosti. Za velkou pozornost však stojí fakt, že ostatní hodnoty v JavaScriptu jsou samy o sobě také objekty. Například každý řetězec je pod pokličkou objekt a my můžeme přistupovat k jeho vlastnostem stejně jako u objektů, které jsme vytvářeli sami.
 
 U řetězců je situace v celku jednoduchá, protože mají pouze jednu vlastnost. Jmenuje se `length` a udává počet znaků v řetězci.
 
@@ -40,4 +40,3 @@ Funkce, které pracují pouze na jednom typu objektu, můžeme svázat přímo s
 
 Funkce `toUpperCase` je prvním příkladem jednoduché metody. Výhoda je, že tato metoda v JavaScriptu skutečně existuje, takže výše uvedený kód bude fungovat. Podobně existuje například metoda
 `toLowerCase`. Vyzkoušejte si ji!
-

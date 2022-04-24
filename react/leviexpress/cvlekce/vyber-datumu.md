@@ -8,8 +8,8 @@ Na konci tohoto cvičení bude uživatel schopen vybrat datum cesty podle dat st
 1. Komponentu `DatesOptions` vytvořte opět přímo v souboru s komponentami `JourneyPicker` a `CityOptions`.
 1. HTML kód s elementy `<option>` pro výběr termínu přesuňte ze `select`u pro výběr data do komponenty `DatesOptions`. V `select`u použijte vytvořenou komponentu `DatesOptions`. Zkontrolujte v prohlížeči, že se výběr termínů zobrazuje stále stejně.
 1. Podobně jako `CityOptions` získává seznam měst v property `cities`, bude i `DatesOptions` získávat seznam termínů v property `dates`. V elementech `<option>` (s výjimkou prvního ručně vloženého s textem „Vyberte“) požijte jako `value` a `key` hodnotu `dateBasic` a jako hodnotu `dateExtended` použíjte jako obsah.
-1. Připravte si pomocí `useState` další stav `dates`. Pro otestování si do něj vložte tato data: 
-   ```js
+1. Připravte si pomocí `useState` další stav `dates`. Pro otestování si do něj vložte tato data:
+   ```json
    [
      {
        "dateBasic": "28.05.2021",
@@ -18,7 +18,7 @@ Na konci tohoto cvičení bude uživatel schopen vybrat datum cesty podle dat st
      {
        "dateBasic": "29.05.2021",
        "dateExtended": "so 29. květen 2021"
-     },
+     }
    ]
    ```
 1. Použijte stav `dates` pro naplnění hodnot property `dates` tam, kde je použita komponenta `DatesOptions`. Ověřte v prohlížeči, že se ve výběru termínů zobrazují dvě uvedená data.

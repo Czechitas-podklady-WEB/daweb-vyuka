@@ -13,3 +13,16 @@ Naklonujte si [repozitář](https://github.com/Czechitas-podklady-WEB/nekupto-za
 Na konci by stránka v prohlížeči měla vypadat jako na obrázku níže:
 
 ::fig[Snímek obazovky s řešením]{src=assets/screen-nekupto.png}
+
+---solution
+
+```
+const firstCard = document.querySelector('#product1');
+firstCard.classList.add('border-primary');
+
+const secondCardButton = document.querySelector('#product2 button');
+secondCardButton.classList.remove('btn-primary');
+
+const thirdCardTitle = document.querySelector('#product3 .card-title');
+thirdCardTitle.classList.toggle('text-center');
+```

@@ -1,1 +1,0 @@
-## Řešení konfliktů

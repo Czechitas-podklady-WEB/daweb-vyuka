@@ -45,7 +45,7 @@ let vyplata = 8 * 21 * sazba;
 document.body.innerHTML = vyplata;
 
 sazba = 600;
-vyplata = 8 * 21 * sazba
+vyplata = 8 * 21 * sazba;
 document.body.innerHTML = vyplata;
 ```
 
@@ -55,7 +55,7 @@ document.body.innerHTML = vyplata;
 
 ```js
 sazba = sazba + 100;
-vyplata = 8 * 21 * sazba
+vyplata = 8 * 21 * sazba;
 document.body.innerHTML = vyplata;
 ```
 
@@ -63,7 +63,7 @@ Nebo ji můžeme chtít navýšit třeba o 15 %.
 
 ```js
 sazba = sazba * 1.15;
-vyplata = 8 * 21 * sazba
+vyplata = 8 * 21 * sazba;
 document.body.innerHTML = vyplata;
 ```
 
@@ -79,7 +79,7 @@ můžeme psát
 sazba += 100;
 ```
 
-Místo 
+Místo
 
 ```js
 sazba = sazba * 1.15;
@@ -91,7 +91,7 @@ píšeme
 sazba *= 1.15;
 ```
 
-Tyto operátory se nám budou hodit také u řetězců. Takto například můžeme k uživatelskému jménu přidat e-mailovou doménu. 
+Tyto operátory se nám budou hodit také u řetězců. Takto například můžeme k uživatelskému jménu přidat e-mailovou doménu.
 
 ```js
 let email = 'alzbeta.zelena';

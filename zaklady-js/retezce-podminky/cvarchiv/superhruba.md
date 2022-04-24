@@ -1,10 +1,7 @@
 ---
 title: Superhrubá mzda
 demand: 3
-offerSolution: true
 ---
-
-:::assign
 
 Vytvořte webovou stránku, která pomůže zaměstnavatelům spočítat náklady na jednoho zaměstnance, tedy takzvanou superhrubou mzdu. Zaměstnavetel zadá na vstupu dvě hodnoty: hodinovou sazbu zaměstnance a velikost úvazku v procentech. Tedy například 100% je plný úvazek (8 hodině denně), 50% poloviční apod. Stránka vypíše výši superhrubé mzdy, výší hrubé mzdy a výší čisté mzdy, vše v korunách.
 
@@ -29,11 +26,9 @@ Superhrubá mzda se spočítá z hrubé mzdy takto:
 
 **Příklad:** Celkové náklady na mzdu zaměstnance z hodinovou sazbou 450 Kč/h a 70% úvazkem jsou 70&nbsp;807 Kč. Hrubá mzda činí 52&nbsp;920 Kč a čistá mzda 38&nbsp;533 Kč. Své výpočty můžete ověřit například na [této stránce](https://www.vypocet.cz/cista-mzda). Bude nám stačit už pouze jedna lekce, abyste takovou stránku dokázali vyrobit úplně sami.
 
-:::
+---solution
 
-:::solution
-
-```js
+```
 const pay = Number(prompt('Hodinová mzda:'));
 const time = Number(prompt('Velikost uvazku (%):'));
 

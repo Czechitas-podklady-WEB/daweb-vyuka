@@ -1,0 +1,14 @@
+name: Quality assurance
+
+on: push
+
+jobs:
+  test:
+    name: Quality assurance
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install packages
+        run: npm ci
+      - name: Run
+        run: npm run quality-assurance

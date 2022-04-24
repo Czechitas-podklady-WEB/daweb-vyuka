@@ -10,7 +10,7 @@ Pro účely všech následujících cvičení budeme pracovat ve dvoučlenných 
 Úkol pro **Alici**. Barbora čeká.
 
 1. Alice vytvoří na svém GitHub účtu fork [repozitáře](https://github.com/Czechitas-podklady-WEB/panske-obleky) obsahující výchozí soubory pro stránku s pánskými obleky.
-1. Pozve Barboru do svého GitHub projektu jako spolupracovnici. 
+1. Pozve Barboru do svého GitHub projektu jako spolupracovnici.
 1. Naklonuje projekt do svého počítače a otevře složku `panske-obleky` ve VS Code.
 1. Seznámí se se strukturou projektu a otevře si stránku v prohlížeči.
 
