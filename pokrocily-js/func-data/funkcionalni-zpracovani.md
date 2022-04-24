@@ -30,7 +30,22 @@ Dejte si ale pozor, aby kód zůstal čitelný. Pokud je funkce jasná a jednodu
 
 Na polích v javascriptu můžeme zavolat výše vypsané metody. Jak už víme, metody jsou fuknce, a ty mohou očekávat parametry. Například z metod na řetězcích víme, že metoda `slice` očekává dva parametry, odkud má výřez začínat (včetně) a kde výřez končí (vyjma).
 
-Metody na polích dělají to, že pole postupně procházejí a pracují s jednotlivými položkami pole. Tyto metody očekávají jeden parametr. Tímto parametrem je fuknce (tzv. callback funkce). Ve většině případů se používá anonymní arrow funkne se zkráceným zápisem bez returnu, jako jsme viděli výše. Tato fuknce (kterou předáváme jako parametr metodě) má jeden parametr, a tím je jednotlivá položka pole, na kterém metodu voláme. V těle fuknce poté s touto položkou pracujeme. Tento parametr si můžete pojmenovat jak chcete, ale dobré nějak naznačit, co položka obsahuje.
+```js
+'popokatepetl'.slice(4, 7)
+```
+
+Metody na polích očekávají jeden parametr. Tímto parametrem je fuknce (tzv. callback funkce). Tato fuknce sama má také jeden parametr, a tím je jednotlivá položka pole, na kterém metodu voláme. V těle fuknce poté s touto položkou pracujeme.
+
+Takto vypadá zápis metody `forEach`, která každou položku pole vypíše do konzole.
+
+```js
+myArray.forEach((item) => {
+  console.log(item);
+});
+
+```
+
+Ve většině případů se používá anonymní arrow funkne se zkráceným zápisem bez returnu, jako jsme viděli výše.
 
 ### Metoda forEach()
 
@@ -58,7 +73,7 @@ myArray.forEach((item) => {
 
 ### Metoda some()
 
-Řekněme si, že chceme zjistit, zda je alespoň jedno číslo v našem poli větší než deset. Můžeme si na to napsat cyklus, ale metoda `some`, nám usnadní práci. Metoda `some` jako parametr bere funkci, ve které se ptáme na podmínku. Tato podmínka se zkontroluje pro každou položku pole a nakonec nám metoda `some` vrátí `true` nebo `false`, podle toho, zda alespoň jedna položka v poli naši podmínku splňuje. Výsledek volání metody si můžeme uložit do proměnné.
+Řekněme si, že chceme zjistit, zda je alespoň jedno číslo v našem poli větší než deset. Můžeme si na to napsat cyklus, ale metoda `some`, nám usnadní práci. Metoda `some` jako parametr bere funkci, ve které se ptáme na podmínku. Tato podmínka se zkontroluje pro každou položku pole a nakonec nám metoda vrátí `true` nebo `false` podle toho, zda alespoň jedna položka v poli naši podmínku splňuje. Výsledek volání metody si můžeme uložit do proměnné.
 
 ```js
 const biggerThanTen = myArray.some((item) => item > 10);
@@ -70,7 +85,7 @@ console.log(biggerThanTen);
 
 ### Metoda every()
 
-Metoda `every` je podobná metodě `some` v tom, že nám také vrací bool. Metoda `every()` nám však vrátí `true`, pouze pokud **všechny** položky pole splňují naši podmínku.
+Metoda `every` je podobná metodě `some` v tom, že nám také vrací bool. Metoda `every` nám však vrátí `true`, pouze pokud **všechny** položky pole splňují naši podmínku.
 Pokud bychom chtěli zjistit, zda všechna čísla v poli jsou kladná, tedy větší než nula, můžeme použít metodu `every`.
 
 ```js
@@ -128,6 +143,12 @@ Pomocí metody `forEach` můžeme do konzole vypsat datumy následujících pět
 weatherForcast.forEach((dayForecast) => {
   console.log(dayForecast.date);
 });
+
+> "28.4.2022"
+> "29.4.2022"
+> "30.4.2022"
+> "1.5.2022"
+> "2.5.2022"
 ```
 
 Případně pomocí zkráceného zápisu:
@@ -142,4 +163,6 @@ Pomocí metody `some` můžeme například zjistit, zda bude alespoň jeden den 
 const noRain = weatherForcast.some((dayForecast) => dayForecast.rain === 0);
 
 console.log(noRain);
+
+> true
 ```

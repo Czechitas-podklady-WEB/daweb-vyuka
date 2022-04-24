@@ -20,7 +20,7 @@ const persons = [
 ];
 ```
 
-1. Vytvořte pole `evenNumbers`. Pomocí metody `filter` získejte z pole `numbers` pouze ta čísla, která jsou sudá a uložte je do pole `evenNumbers`. Vypište toto nové pole do konzole.
-2. Vytvořte pole `adults`. Pomocí metody `filter` získejte z pole `persons` pouze dospělé lidi a uložte je do pole `adults`. Vypište toto nové pole do konzole.
-3. Vytvořte pole `devidedByThree`. Pomocí metody `map` vydělte všecha čísla v poli `numbers` třemi a uložte je do pole `devidedByThree`. Vypište toto nové pole do konzole.
-4. Vytvořte pole `emails`. Z `persons` pomocí metody `map` vytvořte pro každou osobu email ve formátu `petr@gmail.com`, a výsledek uložte do pole `emails`. Vypište toto nové pole do konzole.
+1. Vytvořte proměnnou `evenNumbers`. Pomocí metody `filter` získejte z pole `numbers` pouze ta čísla, která jsou sudá a uložte je do proměnné `evenNumbers`. Vypište toto nové pole do konzole.
+2. Vytvořte proměnnou `adults`. Pomocí metody `filter` získejte z pole `persons` pouze dospělé lidi a uložte je do proměnné `adults`. Vypište toto nové pole do konzole.
+3. Vytvořte proměnnou `dividedByThree`. Pomocí metody `map` vydělte všecha čísla v poli `numbers` třemi a uložte je do proměnné `dividedByThree`. Vypište toto nové pole do konzole.
+4. Vytvořte proměnnou `emails`. Z pole `persons` pomocí metody `map` vytvořte pro každou osobu email ve formátu `petr@gmail.com`, a výsledek uložte do proměnné `emails`. Vypište toto nové pole do konzole.
