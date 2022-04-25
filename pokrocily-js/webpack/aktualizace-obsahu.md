@@ -2,7 +2,7 @@ V předešlé lekci jsme se naučili, jak pomocí API měnit data na serveru. To
 
 ## Aktualizace obsahu stránky
 
-Budeme pracovat s [poslední verzí](https://github.com/Czechitas-podklady-WEB/skladani-komponent) našeho nákupního seznamu. Při práci s požadavekm POST už jsme si vyzkoušeli, jak do seznamu pomocí API přidat novou položku. Abychom si pro tuto chvíli situaci trochu ulehčili, prozatím si nákupní seznam uložíme natvrdo do proměnné.
+Budeme pracovat s [poslední verzí](https://github.com/podlomar/skladani-komponent) našeho nákupního seznamu. Při práci s požadavekm POST už jsme si vyzkoušeli, jak do seznamu pomocí API přidat novou položku. Abychom si pro tuto chvíli situaci trochu ulehčili, prozatím si nákupní seznam uložíme natvrdo do proměnné.
 
 ```js
 const list = [

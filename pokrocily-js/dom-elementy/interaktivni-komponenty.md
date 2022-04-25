@@ -2,7 +2,7 @@
 
 Do této chvíle naše komponenty tvořily obsah stránky tak, že komponenta vrátila řetězec obsahující HTML. Na žádný prvek uvnitř takového HTML však nejde v komponentě pověsit posluchače událostí. Naše kaomponenty tedy nemohly být nijak interaktivní. To nyní můžeme napravit tak, že naše komopnenty již nebudou vracet HTML jako řetězec, ale vrátí rovnou hotový DOM element.
 
-Tuto novou techniku si ukážeme na našem příkladu s nákupním seznamem. Kód najdeme v už známém [repozitáři](https://github.com/Czechitas-podklady-WEB/skladani-komponent). Budeme chtít uživateli umožnit nějakou položku ze seznamu označit jako koupenou. Vdechneme tedy život tlačíku pro pro označení položky.
+Tuto novou techniku si ukážeme na našem příkladu s nákupním seznamem. Kód najdeme v už známém [repozitáři](https://github.com/podlomar/skladani-komponent). Budeme chtít uživateli umožnit nějakou položku ze seznamu označit jako koupenou. Vdechneme tedy život tlačíku pro pro označení položky.
 
 Prohlédněte na původní kód komponenty `ShoppingItem`.
 
