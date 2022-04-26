@@ -102,7 +102,7 @@ Nebo pomocí metody `map` můžeme vytvořit pole, které bude obsahovat pole ř
 
 ```js
 const rainForecast = weatherForcast.map(
-  (dayForecast) => `${dayForecast.date}, expected rain: ${dayForecast.rain} mm`,
+  (dayForecast) => `${dayForecast.date}, expected rain: ${dayForecast.rain} mm`
 );
 
 console.log(rainForecast);

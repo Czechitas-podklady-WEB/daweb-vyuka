@@ -31,7 +31,7 @@ Dejte si ale pozor, aby kód zůstal čitelný. Pokud je funkce jasná a jednodu
 Na polích v javascriptu můžeme zavolat výše vypsané metody. Jak už víme, metody jsou fuknce, a ty mohou očekávat parametry. Například z metod na řetězcích víme, že metoda `slice` očekává dva parametry, odkud má výřez začínat (včetně) a kde výřez končí (vyjma).
 
 ```js
-'popokatepetl'.slice(4, 7)
+'popokatepetl'.slice(4, 7);
 ```
 
 Metody na polích očekávají jeden parametr. Tímto parametrem je fuknce (tzv. callback funkce). Tato fuknce sama má také jeden parametr, a tím je jednotlivá položka pole, na kterém metodu voláme. V těle fuknce poté s touto položkou pracujeme.
@@ -42,7 +42,6 @@ Takto vypadá zápis metody `forEach`, která každou položku pole vypíše do 
 myArray.forEach((item) => {
   console.log(item);
 });
-
 ```
 
 Ve většině případů se používá anonymní arrow funkne se zkráceným zápisem bez returnu, jako jsme viděli výše.
