@@ -15,3 +15,6 @@ Pokračujte se stránkou z předchozího cvičení. Přidáme na stránku možno
 1. Prohlédněte si [dokumentaci](https://apps.kodim.cz/daweb/shoplist/docs/sending#add-item-to-a-list-post) a podívejte se, jak se přidává položka do seznamu. Do objektu `newItem` přidejte property `action`.
 1. Nechte uživatele zadat do políček na stránce název seznamu, produkt a množství. Po kliknutí na tlačítko :i[Nová položka] přidejte do zadaného seznamu novou položku voláním funkce `fetch`. Nebuďte zatím zlí a přidávejte položky pouze do seznamů, které jste před tím sami vytvořili.
 1. V dokumentaci najděte, jak vypadá adresa pro získání položek v seznamu. Zadejte ji do adresní řádky prohlížeče a vyzkoušejte, že se váš seznam skutečně aktualizoval.
+
+---solution
+Řešení naleznete v samostatném [Codesanboxu zde](https://codesandbox.io/s/da-web-nakupni-seznam-5wiqxd?file=/index.js).
