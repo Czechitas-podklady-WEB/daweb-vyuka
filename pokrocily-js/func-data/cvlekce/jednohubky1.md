@@ -3,7 +3,7 @@ title: Funkcionální jednohubky 1
 demand: 2
 ---
 
-Vytvořte si stránku s JavaScriptem a zkopírujte si do ní následující pole dat. Budeme s nimi pracovat v následujících cvičeních.
+Založte si nový projekt pomocí `create-czechitas-app jednohubky vanilla`. Do `index.js` si zkopírujte následující pole dat. Budeme s nimi pracovat v následujících cvičeních.
 
 ```js
 const numbers = [15, 6, 70, 41, 33, 27, 8, 16, 98, 60, 56];
