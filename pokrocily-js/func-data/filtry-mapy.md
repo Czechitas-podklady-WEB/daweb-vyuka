@@ -1,10 +1,10 @@
 ## Filtrování a mapování
 
-Filtrování a mapování patří mezi nejpoužívanější funkce pro zpracování dat. Proč jsou tyto metody tak oblíbené? Vrací nám nové pole.
+Filtrování a mapování patří mezi nejpoužívanější funkce pro zpracování dat. Proč jsou tyto metody tak oblíbené? Vrací totiž nové pole.
 
 ### Metoda filter()
 
-U metody `filter` vidíme v parametru také podmínku, tak jako u metody `some` nebo `every`. Tato metoda nám však nevrací `bool`, nýbrž nové pole. Toto nové obsahuje pouze ty položky, které podmínku splnily.
+U metody `filter` vidíme v parametru také podmínku, tak jako u metody `some` nebo `every`. Tato metoda však nevrací `bool`, nýbrž nové pole. Toto nové obsahuje pouze ty položky, které podmínku splnily.
 Pokud bychom chtěli z pole `myArray` získat pouze čísla dělitelná třemi, použijeme metodu `filter`. Získáme tak nové pole, které obsahuje jen čísla dělitelná třemi. To si můžeme uložit do proměnné. Původní pole `myArray` zůstane nezměněné.
 
 ```js
@@ -18,7 +18,7 @@ console.log(filteredArray);
 
 ### Metoda map()
 
-Metodu `map` použijeme především pokud potřebujeme položky pole pozměnit, nebo z nich něco vytvořit. Metoda bere jako parametr opět funkci. Tuto funkci zavolá na každé položce pole a výsledek volání uloží do nově vytvořeného pole. Toto nové pole nám potom vrátí. Původní pole zůstane nezměněné.
+Metodu `map` použijeme především pokud potřebujeme položky pole pozměnit, nebo z nich něco vytvořit. Metoda bere jako parametr opět funkci. Tuto funkci zavolá na každé položce pole a výsledek volání uloží do nově vytvořeného pole. Toto nové pole potom funkce `map` vrátí jako svůj výsledek. Původní pole zůstane nezměněné.
 Pokud bychom chtěli každé číslo v našem poli `myArray` vynásobit dvěma, můžeme použít metodu `map`. Dostaneme tak nové pole se zdvojnásobenými čísly. To si můžeme uložit do proměnné. Pole `myArray` zůstane nezměněné.
 
 ```js
@@ -69,7 +69,7 @@ const weatherForcast = [
 ];
 ```
 
-Pomocí metody `filter` můžeme vyfiltrovat pouze dny, které mají uvedenou teplotu (high) alespoň 15 stupňů nebo více. Do proměnné `warmDays` si uložíme pole, které nám vrátí metoda `filter` zavolaná na poli `weatherForecast`. Této metodě předáme jako parametr funkci, která pro každou položku zkontroluje, zda její vlastnost `high` je větší nebo rovna 15.
+Pomocí metody `filter` můžeme vyfiltrovat pouze dny, které mají uvedenou teplotu (`high`) alespoň 15 stupňů nebo více. Do proměnné `warmDays` si uložíme pole, které vrátí metoda `filter` zavolaná na poli `weatherForecast`. Této metodě předáme jako parametr funkci, která pro každou položku zkontroluje, zda její vlastnost `high` je větší nebo rovna 15.
 
 ```js
 const warmDays = weatherForcast.filter((dayForecast) => dayForecast.high >= 15);
@@ -98,7 +98,7 @@ console.log(warmDays);
   ]
 ```
 
-Nebo pomocí metody `map` můžeme vytvořit pole, které bude obsahovat pole řetězců s datumem a předpověďí deště.
+Pomocí metody `map` můžeme také vytvořit pole, které bude obsahovat pole řetězců s datem a předpověďí deště.
 
 ```js
 const rainForecast = weatherForcast.map(
