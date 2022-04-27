@@ -28,10 +28,11 @@ Dejte si ale pozor, aby kód zůstal čitelný. Pokud je funkce jasná a jednodu
 
 ## Metody na polích
 
-Na polích v javascriptu můžeme zavolat výše vypsané metody. Jak už víme, metody jsou fuknce, a ty mohou očekávat parametry. Například z metod na řetězcích víme, že metoda `slice` očekává dva parametry, odkud má výřez začínat (včetně) a kde výřez končí (vyjma).
+Na polích v javascriptu můžeme zavolat výše vypsané metody. Jak už víme, metody jsou fuknce, a ty mohou očekávat parametry. Například z metod na řetězcích víme, že metoda `slice` očekává dva parametry, odkud má výřez začínat (včetně) a kde výřez končí (mimo – uvedený index je první znak, který ve výsledném řetězci nebude).
 
 ```js
 'popokatepetl'.slice(4, 7);
+> 'kat'
 ```
 
 Metody na polích očekávají jeden parametr. Tímto parametrem je fuknce (tzv. callback funkce). Tato fuknce sama má také jeden parametr, a tím je jednotlivá položka pole, na kterém metodu voláme. V těle fuknce poté s touto položkou pracujeme.
@@ -44,11 +45,11 @@ myArray.forEach((item) => {
 });
 ```
 
-Ve většině případů se používá anonymní arrow funkne se zkráceným zápisem bez returnu, jako jsme viděli výše.
+Ve většině případů se používá anonymní arrow funkne se zkráceným zápisem bez `return`u, jako jsme viděli výše.
 
 ### Metoda forEach()
 
-Metoda `forEach` nám nahrazuje `for` cyklus. Do proměnné si uložíme pole čísel. Pomocí for cyklu si můžeme všechny položky vypsat do konzole:
+Metoda `forEach` nahrazuje `for` cyklus. Do proměnné si uložíme pole čísel. Pomocí `for` cyklu si můžeme všechny položky vypsat do konzole:
 
 ```js
 const myArray = [4, 1, 6, 8, 16, -3, 9];
@@ -63,6 +64,8 @@ for (let i = 0; i < myArray.length; i += 1) {
 Další možností je rovnou na daném poli zavolat metodu `forEach`. Metoda `forEach` bere jeden parametr, a to funkci. Tato funkce se zavolá na každé položce pole. Metoda `forEach` vždycky vrací `undefined`.
 
 ```js
+const myArray = [4, 1, 6, 8, 16, -3, 9];
+
 myArray.forEach((item) => {
   console.log(item);
 });
@@ -72,7 +75,7 @@ myArray.forEach((item) => {
 
 ### Metoda some()
 
-Řekněme si, že chceme zjistit, zda je alespoň jedno číslo v našem poli větší než deset. Můžeme si na to napsat cyklus, ale metoda `some`, nám usnadní práci. Metoda `some` jako parametr bere funkci, ve které se ptáme na podmínku. Tato podmínka se zkontroluje pro každou položku pole a nakonec nám metoda vrátí `true` nebo `false` podle toho, zda alespoň jedna položka v poli naši podmínku splňuje. Výsledek volání metody si můžeme uložit do proměnné.
+Řekněme si, že chceme zjistit, zda je alespoň jedno číslo v našem poli větší než deset. Můžeme si na to napsat cyklus, ale metoda `some`, nám usnadní práci. Metoda `some` jako parametr bere funkci, která vyhodnocuje podmínku a vrací `true` nebo `false`. Tato podmínka se zkontroluje pro každou položku pole a nakonec metoda vrátí `true` nebo `false` podle toho, zda alespoň jedna položka v poli podmínku splňuje. Výsledek volání metody si můžeme uložit do proměnné.
 
 ```js
 const biggerThanTen = myArray.some((item) => item > 10);
@@ -84,8 +87,8 @@ console.log(biggerThanTen);
 
 ### Metoda every()
 
-Metoda `every` je podobná metodě `some` v tom, že nám také vrací bool. Metoda `every` nám však vrátí `true`, pouze pokud **všechny** položky pole splňují naši podmínku.
-Pokud bychom chtěli zjistit, zda všechna čísla v poli jsou kladná, tedy větší než nula, můžeme použít metodu `every`.
+Metoda `every` je podobná metodě `some` v tom, že také vrací logickou hodnotu. Metoda `every` však vrátí `true` pouze pokud **všechny** položky pole splňují zadanou podmínku.
+Pokud bychom chtěli zjistit, zda jsou všechna čísla v poli kladná, tedy větší než nula, můžeme použít metodu `every`.
 
 ```js
 const allPositive = myArray.every((item) => item > 0);
@@ -99,7 +102,7 @@ console.log(allPositive);
 
 Jedním z nejčastějších formátů, v jakém budete získávat a zobrazovat data, je pole objektů. Proto je dobré si hned od začátku zvyknout na používání metod na polích, které obsahují objekty. Při používání metod na poli máme přístup k jednotlivým položkám pole, a tak je možné se dostat i ke klíčům objektů.
 
-V proměnné `weatherForcast` je uložená předpověď počasí na následujících 5 dní. Pro každý den máme datum jako string, maximální a minimální teplotu jako číslo (ve stupních celsia) a pravděpodobnost deště jako číslo (v mm).
+V proměnné `weatherForcast` je uložena předpověď počasí na následujících 5 dní. Pro každý den máme datum jako string, maximální a minimální teplotu jako číslo (ve stupních Celsia) a očekávané dešťové srážky jako číslo (v mm).
 
 ```js
 const weatherForcast = [
@@ -136,7 +139,7 @@ const weatherForcast = [
 ];
 ```
 
-Pomocí metody `forEach` můžeme do konzole vypsat datumy následujících pěti dní
+Pomocí metody `forEach` můžeme do konzole vypsat data následujících pěti dní:
 
 ```js
 weatherForcast.forEach((dayForecast) => {
