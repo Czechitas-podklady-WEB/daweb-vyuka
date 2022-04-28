@@ -22,7 +22,7 @@ const persons = [
 
 1. Napište cyklus, který spočítá průměr čísel v poli `numbers`. Napište tento cyklus ve staré formě `for` a v nové formě `forEach`.
 1. Pomocí metody `forEach` napište cyklus, který vypíše do konzole poslední písmeno z každného jména v poli `names`.
-1. Pomocí metody `every` zjistěje, jestli v poli `persons` platí, že každá osoba je vždy buď muž nebo žena (tedy že vlastnost `gender` má hodnotu `male`nebo hodnotu `female`).
+1. Pomocí metody `every` zjistěje, jestli v poli `persons` platí, že každá osoba je vždy buď muž nebo žena (tedy že vlastnost `gender` má hodnotu `male` nebo hodnotu `female`).
 1. Pomocí metody `filter` získejte z pole `names` pouze ta jména, která jsou delší než 4 znaky.
 1. Pomocí metody `filter` získejte z pole `persons` pouze dospělé muže.
 1. Pomocí metody `map` vytvořte pole, ve kterém budou všechna jména z pole `names` zabalená do `li` tagu. Jméno `Petr` tak dopadne jako `<li>Petr</li>`.
