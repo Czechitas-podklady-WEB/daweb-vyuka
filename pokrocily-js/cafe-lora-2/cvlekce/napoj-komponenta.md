@@ -23,6 +23,7 @@ Abychom nakonec mohli zobrazit celou nabídku nápojů, budeme potřebovat, aby 
          label: 'espresso',
        },
      ],
+     image: 'https://apps.kodim.cz/daweb/cafelora/assets/cups/romano.png',
    };
    ```
 

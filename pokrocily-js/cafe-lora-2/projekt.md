@@ -1,6 +1,5 @@
 ## Projekt Café Lóra
 
-::exc[cvlekce>ingredience]
 ::exc[cvlekce>seznam-ingredienci]
 ::exc[cvlekce>napoj-komponenta]
 ::exc[cvlekce>napoj-objednavani]

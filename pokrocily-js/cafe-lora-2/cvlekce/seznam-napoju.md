@@ -27,6 +27,7 @@ V tomto cvičení budeme chtít na stránce zobrazit vícero nápojů.
            label: 'espresso',
          },
        ],
+       image: 'https://apps.kodim.cz/daweb/cafelora/assets/cups/cappuccino.png',
      },
      {
        id: 'romano',
@@ -42,6 +43,7 @@ V tomto cvičení budeme chtít na stránce zobrazit vícero nápojů.
            label: 'espresso',
          },
        ],
+       image: 'https://apps.kodim.cz/daweb/cafelora/assets/cups/romano.png',
      },
    ];
    ```
