@@ -33,5 +33,5 @@ Abychom nakonec mohli zobrazit celou nabídku nápojů, budeme potřebovat, aby 
 1. Komponentu `Layer` v komponentě `Drink` vložíte do `innerHTML`, stejně jako jsme to dělali v hlavním `index.js`.
 1. Název obrázku, který se má zobrazit, můžete vzít z vlastnosti `id`. Je potřeba pouze sestavit správnou cestu pro atribut `src` s použitím vlastnosti `id`.
 1. Tlačítko zatím pouze zobrazte, fuknčnost mu přidáme v dalším kroku.
-1. Zobrazte na stránce nápoj dle dat uvedených výše. V hlavním `index.js` na správný prvek použijte funkci `appendChild`, neboť naše komponenta vrací DOM element. Měli byste teď vidět jeden nápoj, *Romano*.
+1. Zobrazte na stránce nápoj dle dat uvedených výše. V hlavním `index.js` na správný prvek použijte funkci `appendChild`, neboť naše komponenta vrací DOM element. Měli byste teď vidět jeden nápoj, _Romano_.
 1. V této fázi si commitněte kód s užitečně napsanou commit zprávou a pushněte do vzdáleného repozitáře.
