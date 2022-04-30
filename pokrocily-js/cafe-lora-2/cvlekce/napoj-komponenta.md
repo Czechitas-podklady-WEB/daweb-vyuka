@@ -13,6 +13,7 @@ Abychom nakonec mohli zobrazit celou nabídku nápojů, budeme potřebovat, aby 
      id: 'romano',
      name: 'Romano',
      ordered: false,
+     image: 'https://apps.kodim.cz/daweb/cafelora/assets/cups/romano.png',
      layers: [
        {
          color: '#fbdf5b',
@@ -22,8 +23,7 @@ Abychom nakonec mohli zobrazit celou nabídku nápojů, budeme potřebovat, aby 
          color: '#613916',
          label: 'espresso',
        },
-     ],
-     image: 'https://apps.kodim.cz/daweb/cafelora/assets/cups/romano.png',
+     ]
    };
    ```
 
