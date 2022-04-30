@@ -29,6 +29,7 @@ Abychom nakonec mohli zobrazit celou nabídku nápojů, budeme potřebovat, aby 
 
    Komponentu napište tak, aby vracela DOM element (vytvořený pomocí `document.createElement()`). Vnitřek komponenty můžete nastavit jako `innerHTML` tohoto prvku.
 1. Struktura `div`ů uvnitř `innerHTML` je následující (není zde přesný HTML kód, jen základní struktura, aby bylo možné zkotrnolovat si zanoření):
+
   ```html
   <div class="drink__product">
     <div class="drink__cup">
@@ -42,6 +43,7 @@ Abychom nakonec mohli zobrazit celou nabídku nápojů, budeme potřebovat, aby 
     <button class="order-btn">Objednat</button>
   </div>
   ```
+  
 1. Uvnitř komponenty bude potřeba použít komponentu `Layer`. Dejte si pozor, abyse ji správně importovali.
 1. Komponentu `Layer` v komponentě `Drink` vložíte do `innerHTML`, stejně jako jsme to dělali v hlavním `index.js` – nezapomeňte, že metoda `querySelector` se nemusí volat jen na `document`u, ale může se volat i na konkrétním DOM elementu.
 1. Adresa obrázku, který se má zobrazit, je uložena ve vlastnosti `image`. Tato cesta se použije pro atribut `src` obrázku.
