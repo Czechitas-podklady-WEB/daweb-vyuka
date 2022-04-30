@@ -27,11 +27,11 @@ Abychom nakonec mohli zobrazit celou nabídku nápojů, budeme potřebovat, aby 
    };
    ```
 
-   Komponentu napište tak, aby vracela DOM element. DOM element je potřeba vrátit pouze ten obalový. Vnitřek komponenty stačí jako innerHTML obalového prvku.
+   Komponentu napište tak, aby vracela DOM element (vytvořený pomocí `document.createElement()`). Vnitřek komponenty můžete nastavit jako `innerHTML` tohoto prvku.
 
-1. Uvnitř vaší komponenty bude potřeba použít komponentu `Layer`. Dejte si pozor, abyse ji správně importovali.
-1. Komponentu `Layer` v naší komponentě `Drink` použijte pomocí `innerHTML`, stejně jako jsme to dělali v hlavním `index.js`.
-1. Název obrázku, který se má zobrazit, můžete vzít z vlastnosti `id`. Je tak pouze potřeba sestavit správnou cestu pro atribut `src`.
-1. Tlačítko zatím pouze staticky zobrazte, fuknčnost mu přidáme v dalším kroku.
-1. Zobrazte na stránce nápoj dle dat uvedených výše. V hlavním `index.js` na správný prvek použijte funkci `appendChild`, neboť naše komponenta vrací DOM element. Měli byste vidět teď jeden nápoj, 'Romano'.
-1. V této fázi si commitněte kód se užitečně napsanou commit zprávou a pushněte do vzdáleného repozitáře.
+1. Uvnitř komponenty bude potřeba použít komponentu `Layer`. Dejte si pozor, abyse ji správně importovali.
+1. Komponentu `Layer` v komponentě `Drink` vložíte do `innerHTML`, stejně jako jsme to dělali v hlavním `index.js`.
+1. Název obrázku, který se má zobrazit, můžete vzít z vlastnosti `id`. Je potřeba pouze sestavit správnou cestu pro atribut `src` s použitím vlastnosti `id`.
+1. Tlačítko zatím pouze zobrazte, fuknčnost mu přidáme v dalším kroku.
+1. Zobrazte na stránce nápoj dle dat uvedených výše. V hlavním `index.js` na správný prvek použijte funkci `appendChild`, neboť naše komponenta vrací DOM element. Měli byste teď vidět jeden nápoj, *Romano*.
+1. V této fázi si commitněte kód s užitečně napsanou commit zprávou a pushněte do vzdáleného repozitáře.
