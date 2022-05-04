@@ -2,28 +2,27 @@
 
 V tuto chvíli se dostáváme k základnímu principu při vytváření React aplikací. Celý obsah stránky je vždy vytvořen přímo v Reactu. V souboru `index.html` tak už vždy budeme mít pouze element `#app`, do kterého zapojíme obsah vytvořený Reactem.
 
-Mohli bychom tak chtít napsat složitější obsah stránky například takto.
+Samozřejmě budeme chtít, aby naše byla zajímavější než jen jeden nadpis. Můžeme tedy zkusit napsat například toto.
 
 ```js
 import React from 'react';
-import { render } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 
-render(
+createRoot(document.querySelector('#app')).render(
   <header>
     <h1>React Starter</h1>
   </header>
   <main>
     <p>Moje první React stránka</p>
   </main>
-  <footer>Martin Podloucký</footer>,
-  document.getElementById('app')
+  <footer>Martin Podloucký</footer>
 );
 ```
 
 Potíž je v tom, že tento kód nám nebude fungovat. Do funkce `render` můžeme poslat pouze jeden JSX element, my se však pokoušíme vytvořit tři najednou. Můžeme to zachránit tak, že náš obsah obalíme do jednoho velkého `divu`.
 
 ```js
-render(
+createRoot(document.querySelector('#app')).render(
   <div>
     <header>
       <h1>React Starter</h1>
@@ -32,8 +31,7 @@ render(
       <p>Moje první React stránka</p>
     </main>
     <footer>Martin Podloucký</footer>
-  </div>,
-  document.getElementById('app')
+  </div>
 );
 ```
 
@@ -41,9 +39,9 @@ Tento postup však s sebou nese nevýhody. Na stránce se nám objeví zbytečn�
 
 ```js
 import React from 'react';
-import { render } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 
-render(
+createRoot(document.querySelector('#app')).render(
   <>
     <header>
       <h1>React Starter</h1>
@@ -52,8 +50,7 @@ render(
       <p>Moje první React stránka</p>
     </main>
     <footer>Martin Podloucký</footer>
-  </>,
-  document.getElementById('app')
+  </>
 );
 ```
 
@@ -61,7 +58,7 @@ Ještě bychom si obsah stránky mohli uložit do proměnné, aby nám volání 
 
 ```js
 import React from 'react';
-import { render } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 
 const appContent = (
   <>
@@ -75,7 +72,7 @@ const appContent = (
   </>
 );
 
-render(appContent, document.getElementById('app'));
+createRoot(document.querySelector('#app')).render(appContent);
 ```
 
 Všimněte si šikovně použitých kulatých závorek při vytváření proměnné :var[appContent], které nám umožní mít kód hezky čitelný.

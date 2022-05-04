@@ -1,6 +1,6 @@
 ## Doporučené postupy
 
-Framework React vznikl ve společnosti Facebook mezi roky 2011 až 2013. Má tedy za sebou již několik let používání a za tu dobu se ustálily určité doporučené postupy, jak psát React aplikace. Některé z nich zmíníme již takto na začátku, abychom co nejdříve působili jako profesionálové.
+Framework React vznikl ve společnosti Facebook mezi roky 2011 až 2013. Má tedy za sebou již mnoho let používání a za tu dobu se ustálily určité doporučené postupy, jak psát React aplikace. Některé z nich zmíníme již takto na začátku, abychom co nejdříve působili jako profesionálové.
 
 ### Hlavní komponenta
 
@@ -8,13 +8,15 @@ V Reactu není příliš zvykem psát do funkce `render` příliš obsáhly kód
 
 ```js
 import React from 'react';
-import { render } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 
 const ShoppingItem = (props) => {
+  const { name, amount } = props;
+
   return (
     <div className="item">
-      <span className="item__name">{props.name}</span>
-      <span className="item__amount">{props.amount}</span>
+      <span className="item__name">{name}</span>
+      <span className="item__amount">{amount}</span>
     </div>
   );
 };
@@ -36,7 +38,7 @@ const App = () => {
   );
 };
 
-render(<App />, document.getElementById('app'));
+createRoot(document.querySelector('#app')).render(<App />);
 ```
 
 ### Rozdělení komponent do složek
@@ -84,7 +86,7 @@ Výsledný hlavní `index.jsx` celé aplikace pak bude vypadat takto.
 
 ```js
 import React from 'react';
-import { render } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import ShoppingItem from './ShoppingItem';
 
 const App = () => {
@@ -104,5 +106,5 @@ const App = () => {
   );
 };
 
-render(<App />, document.getElementById('app'));
+createRoot(document.querySelector('#app')).render(<App />);
 ```

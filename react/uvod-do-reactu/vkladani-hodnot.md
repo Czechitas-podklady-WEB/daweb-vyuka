@@ -1,6 +1,6 @@
 ## Vkládání hodnot do JSX
 
-Velmi často budeme potřebovat do obsahu stránky zakomponovat také hodnoty uvnitř proměnných. Připomeňme si, jak bychom vložili do našeho HTML obsah proměnné ještě před Reactovými časy.
+Velmi často budeme potřebovat do obsahu stránky zakomponovat také hodnoty uložené v různých proměnných. Připomeňme si, jak bychom vložili do našeho HTML obsah proměnné ještě před Reactovými časy.
 
 ```js
 const nazev = 'Moje stránka';
@@ -34,6 +34,9 @@ const obsah = <{znacka} className={trida}>{nazev}</{znacka}>;
 S těmito znalostmi můžeme naši výslednou stránku sestavit třeba takto.
 
 ```js
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+
 const title = 'React Starter';
 const content = 'Moje první React stránka';
 const author = 'Martin Podloucký';
@@ -50,5 +53,5 @@ const appContent = (
   </>
 );
 
-render(appContent, document.getElementById('app'));
+createRoot(document.querySelector('#app')).render(appContent);
 ```

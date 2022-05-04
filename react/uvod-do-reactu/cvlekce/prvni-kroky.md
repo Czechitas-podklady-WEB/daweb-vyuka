@@ -10,9 +10,9 @@ Vyzkoušíme si založit jednoduchou React aplikaci s jedním `index.jsx` a jedn
 
    ```js
    import React from 'react';
-   import { render } from 'react-dom';
+   import { createRoot } from 'react-dom/client';
 
-   render(
+   createRoot(document.querySelector('#app')).render(
      <div className="container">
        <header>
          <h1>Emílie Zelenohorská</h1>
@@ -20,8 +20,7 @@ Vyzkoušíme si založit jednoduchou React aplikaci s jedním `index.jsx` a jedn
        <main>
          <p>Moje první React aplikace</p>
        </main>
-     </div>,
-     document.querySelector('#app')
+     </div>
    );
    ```
 

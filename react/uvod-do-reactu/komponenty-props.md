@@ -1,13 +1,15 @@
 ## React komponenty a props
 
-Velká výhoda, kterou nám JSX přináší, spočívá v tom, že můžeme naše komponenty psát podobně, jako na začátku, kdy jsme z komponent vraceli řetězec obsahující HTML. Připomeňme si, jak tehdy vypadala naše komponenta `ShoppingItem`.
+Velká výhoda, kterou nám JSX přináší, spočívá v tom, že můžeme naše komponenty psát podobně, jako na začátku, kdy jsme z komponent vraceli řetězec obsahující HTML. Připomeňme si, jak kdysi dávno vypadala jedndoduchá verze naší komponenty `ShoppingItem`.
 
 ```js
 const ShoppingItem = (props) => {
+  const { name, amount } = props;
+
   return `
     <div class="item">
-      <span class="item__name">${props.name}</span>
-      <span class="item__amount">${props.amount}</span>
+      <span class="item__name">${name}</span>
+      <span class="item__amount">${amount}</span>
     </div>
   `;
 };
@@ -17,10 +19,12 @@ V Reactu tutéž komponenty napíšeme tak, že místo řetězce bude vracet JSX
 
 ```js
 const ShoppingItem = (props) => {
+  const { name, amount } = props;
+
   return (
     <div className="item">
-      <span className="item__name">{props.name}</span>
-      <span className="item__amount">{props.amount}</span>
+      <span className="item__name">{name}</span>
+      <span className="item__amount">{amount}</span>
     </div>
   );
 };
@@ -31,22 +35,24 @@ Všimněte si důležitých rozdílů:
 1. Nepoužíváme už zpětné apostrofy. Místo toho celé JSX uzavřeme do závorek, aby se nám kód hezky četl.
 1. Pokud chceme dovnitř JSX zakomponenovat obsah nějaké proměnné, místo `${promenna}` píšeme prostě `{promenna}`. Proti předchozímu zápisu nám tak zmizí znak dolaru.
 
-Ta nejhezčí věc na Reactu je však způsob, jakým naši komponentu zapojíme do zbytku stránky. Místo toho, abychom složitě používali `innerHTML` nebo `appendChild`, můžeme se tvářít, že naše komponenta je obyčejný tag a `props` jí předat pomocí atributů. Použití komponenty `ShoppingItem` by pak mohlo vypadat takto.
+Ta nejhezčí věc na Reactu je však způsob, jakým naši komponentu zapojíme do zbytku stránky. Místo toho, abychom složitě používali `innerHTML` nebo `appendChild`, můžeme se tvářít, že naše komponenta je obyčejná HTML značka a `props` jí předat pomocí atributů. Použití komponenty `ShoppingItem` by pak mohlo vypadat takto.
 
 ```js
 import React from 'react';
-import { render } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 
 const ShoppingItem = (props) => {
+  const { name, amount } = props;
+
   return (
     <div className="item">
-      <span className="item__name">{props.name}</span>
-      <span className="item__amount">{props.amount}</span>
+      <span className="item__name">{name}</span>
+      <span className="item__amount">{amount}</span>
     </div>
   );
 };
 
-render(
+createRoot(document.querySelector('#app')).render(
   <>
     <header>
       <h1>Shopping List</h1>
@@ -58,8 +64,7 @@ render(
       <ShoppingItem name="Mouka" amount="500 g" />
     </main>
     <footer>Martin Podloucký</footer>
-  </>,
-  document.getElementById('app')
+  </>
 );
 ```
 
