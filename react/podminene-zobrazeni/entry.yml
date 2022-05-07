@@ -5,6 +5,6 @@ sections:
   - ternarni-operator
   - predavani-hodnot
   - cv-podminene-vyrazy
-  - stylovani-jsx
   - podminene-zobrazeni
-  - cv-podminene-zobrazeni
+  - rozdelovani-komponent
+  # - cv-podminene-zobrazeni

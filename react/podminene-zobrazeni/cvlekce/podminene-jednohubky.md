@@ -3,7 +3,7 @@ title: Podmíněné jednohubky
 demand: 2
 ---
 
-Přepište následující úryvky kódu tak, aby místo podmínek používaly operátor pro podmíněný výraz. Pracujeme v čistém JavaScriptu, takže není potřeba zakládat React projekt.
+Přepište následující úryvky kódu tak, aby místo podmínek používaly operátor pro podmíněný výraz. Pracujeme v čistém JavaScriptu, není tedy potřeba zakládat ani React ani Webpack projekt.
 
 1.  ```js
     const password = prompt('Zadejte heslo:');

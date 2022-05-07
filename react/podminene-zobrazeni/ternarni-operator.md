@@ -30,58 +30,64 @@ V Reactu se nám tento operátor bude hodit ve více situacích. První z nich j
 
 ```js
 const ShoppingItem = (props) => {
+  const { name, amount } = props;
+
   return (
-    <div className="item">
-      <span className="item__name">{props.name}</span>
-      <span className="item__amount">{props.amount}</span>
-    </div>
+    <li className="item">
+      <div className="item__name">{name}</div>
+      <div className="item__amount">{amount}</div>
+    </li>
   );
 };
 ```
 
-Dejme tomu, že chceme být schopni položku vysvítit jako vybranou. Můžeme tedy komponentě přidat novou `prop` s názvem `selected` a použít ji takto.
+V této verzi komponenty nám zatím chybí možnost označit položku jako koupenou. Předáme tedy komponentě novou `prop` s názvem `done` a použíjeme ji takto.
 
 ```js
-<ShoppingList name="jablka" amount="1 kg" selected={true} />
+<ShoppingList name="jablka" amount="1 kg" done={true} />
 ```
 
-Budeme pak mít CSS třídu `item--selected`, která například nastavuje jinou barvu pozadí. Vybraná položka by tak měla mít atribut `className` nastaven takto.
+Možná si ještě vzpomenete, že zaškrtnutí položky jsme dělali pomocí CSS třídy `item__done--tick`. Vybraná položka by tak měla mít atribut `className` nastaven takto.
 
 ```js
-<div className="item item--selected">
+<div className="item__done item__done--tick">
 ```
 
-Obsah atributu `className` tedy chceme zkonstruovat dle hodnoty `props.selected`. To bychom mohli udělat pomocí podmínky.
+Obsah atributu `className` chceme zkonstruovat dle hodnoty `props.selected`. To bychom mohli udělat pomocí podmínky.
 
 ```js
 const ShoppingItem = (props) => {
-  let itemClass = null;
-  if (props.selected) {
-    itemClass = 'item item--selected';
-  } else {
-    itemClass = 'item';
+  const { product, amount, done } = props;
+
+  let tickClass = 'item__done';
+  if (done) {
+    tickClass = 'item__done item__done--tick';
   }
 
   return (
-    <div className={itemClass}>
-      <span className="item__name">{props.name}</span>
-      <span className="item__amount">{props.amount}</span>
-    </div>
+    <li className="item">
+      <div className="item__name">{name}</div>
+      <div className="item__amount">{amount}</div>
+      <div className={tickClass}></div>
+    </li>
   );
 };
 ```
 
-Díky podmíněnému operátoru si situaci můžeme zjednodušit takto.
+Díky podmíněnému operátoru si ovšem situaci můžeme zjednodušit takto.
 
 ```js
 const ShoppingItem = (props) => {
-  const itemClass = props.selected ? 'item item--selected' : 'item';
+  const { product, amount, done } = props;
+
+  const tickClass = done ? 'item__done item__done--tick' : 'item__done';
 
   return (
-    <div className={itemClass}>
-      <span className="item__name">{props.name}</span>
-      <span className="item__amount">{props.amount}</span>
-    </div>
+    <li className="item">
+      <div className="item__name">{name}</div>
+      <div className="item__amount">{amount}</div>
+      <div className={tickClass}></div>
+    </li>
   );
 };
 ```
@@ -90,11 +96,16 @@ Dokonce bychom hodnotu ani nemuseli ukládat do proměnné a použít podmíněn
 
 ```js
 const ShoppingItem = (props) => {
+  const { product, amount, done } = props;
+
   return (
-    <div className={props.selected ? 'item item--selected' : 'item'}>
-      <span className="item__name">{props.name}</span>
-      <span className="item__amount">{props.amount}</span>
-    </div>
+    <li className="item">
+      <div className="item__name">{name}</div>
+      <div className="item__amount">{amount}</div>
+      <div
+        className={done ? 'item__done item__done--tick' : 'item__done'}
+      ></div>
+    </li>
   );
 };
 ```
