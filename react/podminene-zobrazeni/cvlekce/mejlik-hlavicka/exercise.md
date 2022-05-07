@@ -22,4 +22,4 @@ Navážeme na předchozí cvičení a vytvořím komponentu pro hlavičku naší
    <Header />
    ```
 
-   zobrazí se hlavička nabízející přihlášení. Pokud jsme prop při použití komponenty nezadali žádnou hodnotu, znamená to, že obsahuje hodnotu `undefined`.
+   zobrazí se hlavička nabízející přihlášení. Pokud jsme do prop při použití komponenty nevložili žádnou hodnotu, znamená to, že obsahuje hodnotu `undefined`.

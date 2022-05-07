@@ -20,4 +20,16 @@ V tomto cvičení vytvoříme základ komponenty pro zobrazování příchozí e
 
    ::fig[Schránka]{src=assets/inbox-empty.png size=60}
 
-1. Pokud nemáte žádné nepřečtené zprávy, použijte atribut `style` k tomu, abyste uvedený text zobrazili červeně.
+1. Upravte vaši komponentu tak, že zpráva udávající počet zpráv bude složitější JSX než pouze text. Pokud máme nepřečtené zprávy, zobrazte
+
+   ```js
+   <div className="unread">Nepřečtených zpráv: 5</div>
+   ```
+
+   Pokud žádné nepřečtené zprávy nemáme, zobrazte
+
+   ```js
+   <div className="no-unread">Žádné nepřečtené zprávy</div>
+   ```
+
+1. Upravte CSS styly tak, aby zpráva s třídou `no-unread` měla jiné stylování, například světlejší text.
