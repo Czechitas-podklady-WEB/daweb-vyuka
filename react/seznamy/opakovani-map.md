@@ -8,7 +8,7 @@ Metoda `map` slouží k tomu, abychom z jednoho JavaScriptového pole vyrobili p
 
 ```js
 const names = ['petr', 'jana', 'marek', 'eva', 'lenka', 'ondra'];
-names.map((name) => {
+const emails = names.map((name) => {
   return `${name}@mejlik.cz`;
 });
 ```
@@ -17,16 +17,21 @@ Jistě si také vzpomenete, že jsme při zápisu takovýchto transformací pou�
 
 ```js
 const names = ['petr', 'jana', 'marek', 'eva', 'lenka', 'ondra'];
-names.map((name) => `${name}@mejlik.cz`);
+const emails = names.map((name) => `${name}@mejlik.cz`);
 ```
 
-### Zkrácený zápis se závorkami
+Zkracování funkcí nám však pomůže i v psaní Reactových komponent.
 
-Občas se nám stane, že funkce sice nedělá nic jiného, než že vrací hodnotu, ale tato hodnota se nevejde na jeden řádek. Příkladem budiž například Reactová komponenta.
+### Zkrácený zápis delších funkcí
+
+Při práci v Reactu budeme často mít komponentu, která nedělá nic jiného, než že vrací nějaké JSX. Takové JSX se nám většinou nevejde na jeden řádek. Přesto můžeme funkci s komponentu šikovně zkrátit.
+
+Mejmě následující komponentu.
 
 <!-- prettier-ignore -->
 ```js
 const Time = (props) => {
+  const { hours, minutes } = props;
   return (
     <div className="time">
       <span className="time__hours">{props.hours}</span>
@@ -37,15 +42,30 @@ const Time = (props) => {
 }
 ```
 
-Tuto komponent nedělá nic jiného, než že vrací JSX element. Můžeme ji proto převést na zkrácený zápis. Sluší se ale v zápise ponechat kulaté závorky pro lepší čítelnost.
+Tuto komponentu bychom mohli převést na zkrácený zápis, ale vadí nám tam řádek s destrukturováním. Destrukturování se však v JavaScriptu dá přesunout přímo do parametru funkce.
 
 <!-- prettier-ignore -->
 ```js
-const Time = (props) => (
+const Time = ({ hours, minutes }) => {
+  return (
+    <div className="time">
+      <span className="time__hours">{props.hours}</span>
+      :
+      <span className="time__mins">{props.minutes}</span>
+    </div>
+  );
+}
+```
+
+Takovýto zápis je pro nás novinka, ale v praxi se běžně používá, takže je drobé jej dostat pod kůži. Nyní už komponenta nedělá nic jiného, než že vrací JSX element. Můžeme ji proto převést na zkrácený zápis. Sluší se ale v zápise ponechat kulaté závorky pro lepší čítelnost.
+
+<!-- prettier-ignore -->
+```js
+const Time = ({ hours, minutes }) => (
   <div className="time">
-    <span className="time__hours">{props.hours}</span>
+    <span className="time__hours">{hours}</span>
     :
-    <span className="time__mins">{props.minutes}</span>
+    <span className="time__mins">{minutes}</span>
   </div>
 );
 ```
@@ -53,14 +73,14 @@ const Time = (props) => (
 Pokud je komponenta malá, klidně se bez závorek obejdeme.
 
 ```js
-const User = (username) => <div className="user__name">{username}</div>;
+const User = ({ login }) => <div className="user__login">{login}</div>;
 ```
 
 Všimněte si, že pomocí takovéto komponenty bychom například mohli vyrobit pole JSX elementů z našeho pole uživatelů.
 
 ```js
 const names = ['petr', 'jana', 'marek', 'eva', 'lenka', 'ondra'];
-names.map((name) => <User username={name} />);
+names.map((name) => <User login={name} />);
 ```
 
 Z tohoto bodu zbývá už jen malý krůček, abychom takovéto pole JSX komponent dokázali zobrazit na naší stránce. To si však necháme až na druhou část lekce.
