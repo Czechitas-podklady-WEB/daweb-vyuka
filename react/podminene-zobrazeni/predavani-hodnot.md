@@ -6,7 +6,7 @@ Všimněte si, jak jsme v předchozí sekci použili naši komponentu `ShoppingI
 <ShoppingItem name="jablka" amount="1 kg" done={true} />
 ```
 
-Někoho by mohlo líkat předat hodnotu `true` takto
+Někoho by mohlo lákat předat hodnotu `true` takto
 
 ```js
 <ShoppingItem name="jablka" amount="1 kg" done="true" />
