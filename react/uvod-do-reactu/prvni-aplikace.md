@@ -37,7 +37,7 @@ obsah.classList.add('title');
 obsah.textContent = 'Moje stránka';
 
 const appElm = document.querySelector('#app');
-appElm.appendChild = obsah;
+appElm.appendChild(obsah);
 ```
 
 Toto řešení už je praktičtější, kód je však delší a méně přehledný. Zde proto s velkou famfárou a na alegorickém voze přijíždí React s třetím způsobem, jak vytvářet obsah stránky.
