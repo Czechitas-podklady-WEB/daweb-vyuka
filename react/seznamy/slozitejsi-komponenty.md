@@ -54,7 +54,7 @@ const App = () => (
     <h1>Nákupní seznam</h1>
     <div className="shopping-list">
       {list.map((item) => (
-        <ShoppingList
+        <ShoppingItem
           product={item.product}
           amount={item.amount}
           bought={item.bought}
