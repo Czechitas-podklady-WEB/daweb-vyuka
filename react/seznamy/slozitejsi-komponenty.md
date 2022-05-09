@@ -4,12 +4,12 @@ Z praktického hlediska je náš ilustrativní příklad výše stále hodně je
 
 ```js
 const list = [
-  { product: 'mrkev', amount: '3ks', bought: false },
-  { product: 'paprika', amount: '2ks', bought: true },
-  { product: 'cibule', amount: '2ks', bought: false },
-  { product: 'čínské zelí', amount: '1ks', bought: true },
-  { product: 'arašídy', amount: '250g', bought: false },
-  { product: 'sojová omáčka', amount: '1ks', bought: false },
+  { product: 'mrkev', amount: '3ks', done: false },
+  { product: 'paprika', amount: '2ks', done: true },
+  { product: 'cibule', amount: '2ks', done: false },
+  { product: 'čínské zelí', amount: '1ks', done: true },
+  { product: 'arašídy', amount: '250g', done: false },
+  { product: 'sojová omáčka', amount: '1ks', done: false },
 ];
 ```
 
@@ -21,12 +21,16 @@ const App = () => (
     <h1>Nákupní seznam</h1>
     <div className="shopping-list">
       {list.map((item) => {
-        const itemClass = item.bought ? 'item item--selected' : 'item';
+        const tickClass = item.done
+          ? 'item__done item__done--tick'
+          : 'item__done';
+
         return (
-          <div className={itemClass}>
-            <span className="item__product">{item.product}</span>
-            <span className="item__amount">{item.amount}</span>
-          </div>
+          <li className="item">
+            <div className="item__product">{product}</div>
+            <div className="item__amount">{amount}</div>
+            <div className={tickClass}></div>
+          </li>
         );
       })}
     </div>
@@ -36,31 +40,34 @@ const App = () => (
 
 Všimněte si, že funkce, která vyrábí JSX pro jednotlivé položky našeho seznamu, je už o kus obsáhlejší. Dokonce o tolik, že už nejde napsat zkráceným způsobem, a musíme použít složené závorky a `return`. Tato ukázka opět poslouží jako dobré cvičení na pozornost ohledně závorek.
 
-V praxi však často nastane situace, že funkce použitá uvnitř `map` je tak složitá, že je těžké se v kódu orientovat. Náš poslední příklad už je také trochu na hraně. V takovém případě se nám rozhodně vyplatí vytvořit si pro zobrazování jednotlivých prvků seznamu komponentu, například takto.
+V praxi však často nastane situace, že funkce použitá uvnitř `map` je tak složitá, že je těžké se v kódu orientovat. Náš poslední příklad už je také trochu na hraně. V takovém případě si vzpomeneme na předchozí lekci, kde jsme probírali dozdělování jedné velké komponenty na menší celky. Rozhodně se nám vyplatí vytvořit si pro zobrazování jednotlivých prvků seznamu komponentu, například takto.
 
 ```js
-const ShoppingItem = (props) => {
-  const itemClass = props.bought ? 'item item-selected' : 'item';
+const ShoppingItem = ({ product, amount, done }) => {
+  const tickClass = done ? 'item__done item__done--tick' : 'item__done';
   return (
-    <div className={itemClass}>
-      <span className="item__product">{props.product}</span>
-      <span className="item__amount">{props.amount}</span>
-    </div>
+    <li className="item">
+      <div className="item__name">{name}</div>
+      <div className="item__amount">{amount}</div>
+      <div className={tickClass}></div>
+    </li>
   );
 };
+
+Možná jste ji už někde viděli. Nyní stačí ji použít v komponentě `App`.
 
 const App = () => (
   <>
     <h1>Nákupní seznam</h1>
-    <div className="shopping-list">
+    <ul className="shopping-list">
       {list.map((item) => (
         <ShoppingItem
           product={item.product}
           amount={item.amount}
-          bought={item.bought}
+          done={item.done}
         />
       ))}
-    </div>
+    </ul>
   </>
 );
 ```
