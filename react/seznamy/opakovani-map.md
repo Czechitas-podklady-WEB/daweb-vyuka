@@ -80,7 +80,7 @@ Všimněte si, že pomocí takovéto komponenty bychom například mohli vyrobit
 
 ```js
 const names = ['petr', 'jana', 'marek', 'eva', 'lenka', 'ondra'];
-names.map((name) => <User login={name} />);
+const users = names.map((name) => <User login={name} />);
 ```
 
 Z tohoto bodu zbývá už jen malý krůček, abychom takovéto pole JSX komponent dokázali zobrazit na naší stránce. To si však necháme až na druhou část lekce.
