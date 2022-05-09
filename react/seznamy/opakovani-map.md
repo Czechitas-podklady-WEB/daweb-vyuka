@@ -34,9 +34,9 @@ const Time = (props) => {
   const { hours, minutes } = props;
   return (
     <div className="time">
-      <span className="time__hours">{props.hours}</span>
+      <span className="time__hours">{hours}</span>
       :
-      <span className="time__mins">{props.minutes}</span>
+      <span className="time__mins">{minutes}</span>
     </div>
   );
 }
@@ -49,9 +49,9 @@ Tuto komponentu bychom mohli převést na zkrácený zápis, ale vadí nám tam 
 const Time = ({ hours, minutes }) => {
   return (
     <div className="time">
-      <span className="time__hours">{props.hours}</span>
+      <span className="time__hours">{hours}</span>
       :
-      <span className="time__mins">{props.minutes}</span>
+      <span className="time__mins">{minutes}</span>
     </div>
   );
 }
