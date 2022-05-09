@@ -30,11 +30,11 @@ V Reactu se nám tento operátor bude hodit ve více situacích. První z nich j
 
 ```js
 const ShoppingItem = (props) => {
-  const { name, amount } = props;
+  const { product, amount } = props;
 
   return (
     <li className="item">
-      <div className="item__name">{name}</div>
+      <div className="item__product">{product}</div>
       <div className="item__amount">{amount}</div>
     </li>
   );
@@ -44,7 +44,7 @@ const ShoppingItem = (props) => {
 V této verzi komponenty nám zatím chybí možnost označit položku jako koupenou. Předáme tedy komponentě novou `prop` s názvem `done` a použíjeme ji takto.
 
 ```js
-<ShoppingList name="jablka" amount="1 kg" done={true} />
+<ShoppingList product="jablka" amount="1 kg" done={true} />
 ```
 
 Možná si ještě vzpomenete, že zaškrtnutí položky jsme dělali pomocí CSS třídy `item__done--tick`. Vybraná položka by tak měla mít atribut `className` nastaven takto.
@@ -66,7 +66,7 @@ const ShoppingItem = (props) => {
 
   return (
     <li className="item">
-      <div className="item__name">{name}</div>
+      <div className="item__product">{product}</div>
       <div className="item__amount">{amount}</div>
       <div className={tickClass}></div>
     </li>
@@ -84,7 +84,7 @@ const ShoppingItem = (props) => {
 
   return (
     <li className="item">
-      <div className="item__name">{name}</div>
+      <div className="item__product">{product}</div>
       <div className="item__amount">{amount}</div>
       <div className={tickClass}></div>
     </li>
@@ -100,7 +100,7 @@ const ShoppingItem = (props) => {
 
   return (
     <li className="item">
-      <div className="item__name">{name}</div>
+      <div className="item__product">{product}</div>
       <div className="item__amount">{amount}</div>
       <div
         className={done ? 'item__done item__done--tick' : 'item__done'}
