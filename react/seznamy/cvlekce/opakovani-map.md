@@ -81,3 +81,19 @@ Všechny body níže vyřešte pomocí metody `map`. Tam, kde je to možné, pou
     ```js
     ['1. leden 2020', '1. únor 2020' /* atd. */];
     ```
+
+---solution
+
+```js
+const weekdaysUpper = weekdays.map((weekday) => weekday.toUpperCase());
+console.log(weekdaysUpper);
+
+const weekdaysShort = weekdays.map((weekday) => weekday.slice(0, 2));
+console.log(weekdaysShort);
+
+const monthsDays = months.map((month) => month.days);
+console.log(monthsDays);
+
+const firstMonthsDays = months.map((month) => `1. ${month.name} 2020`);
+console.log(firstMonthsDays);
+```
