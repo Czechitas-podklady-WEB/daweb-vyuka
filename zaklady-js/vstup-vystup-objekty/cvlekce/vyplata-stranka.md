@@ -9,9 +9,9 @@ demand: 2
 ---solution
 
 ```js
-let hodinovaSazba = Number(prompt("Jaka je vasa hodinova sazba?"));
-let pocetHodin = Number(prompt("Kolko hodin denne pracujete?"));
-let pocetDni = Number(prompt("Kolko dni mesacne pracujete?"));
+const hodinovaSazba = Number(prompt("Jaka je vasa hodinova sazba?"));
+const pocetHodin = Number(prompt("Kolko hodin denne pracujete?"));
+const pocetDni = Number(prompt("Kolko dni mesacne pracujete?"));
 ​
 document.body.innerHTML += "<p>" + (hodinovaSazba*pocetHodin*pocetDni) + "</p>";
 ```
