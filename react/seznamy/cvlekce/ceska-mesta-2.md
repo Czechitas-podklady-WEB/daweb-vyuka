@@ -68,6 +68,7 @@ Pokračujte v projektu z předchozího příkladu.
 ---solution
 
 hlavní index.jsx
+
 ```jsx
 import React from 'react';
 import { createRoot } from 'react-dom/client';
@@ -146,6 +147,7 @@ createRoot(document.querySelector('#app')).render(<App />);
 ```
 
 City/index.jsx
+
 ```jsx
 import React from 'react';
 
