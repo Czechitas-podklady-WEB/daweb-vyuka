@@ -19,7 +19,7 @@ Nakonec spočtenou cenu vypište s nějakou hezkou zprávou na výstup.
 ```js
 const plnaCena = 12;
 let cena = '';
-const age = Number(prompt('Zadejte svůj věk: '));
+const age = Number(prompt('Zadejte svůj věk:'));
 if (age < 6) {
   cena = 0;
 } else if (age >= 6 && age <= 26) {
