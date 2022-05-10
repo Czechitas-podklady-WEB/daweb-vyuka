@@ -10,18 +10,19 @@ Založte JavaScriptový program a splňte následující úkoly.
 1. Spusťte váš program desetkrát za sebou a zaznamenejte výsledky. Sdílejte vaše výsledky s ostatními abychom nasbírali co nejvíce dat.
 
 ---solution
+
 ```js
 const roll = () => {
-  return Math.ceil(Math.random() * 6)
+  return Math.ceil(Math.random() * 6);
+};
+
+let counter = 1;
+let rolledNumber = roll();
+while (rolledNumber !== 6) {
+  console.log(`Hodilo se cislo ${rolledNumber}`);
+  rolledNumber = roll();
+  counter += 1;
 }
 
-let counter = 1
-let rolledNumber = roll()
-while(rolledNumber !== 6) {
-  console.log(`Hodilo se cislo ${rolledNumber}`)
-  rolledNumber = roll()
-  counter += 1
-}
-
-console.log(`Šestka se hodila na ${counter}. pokus`)
+console.log(`Šestka se hodila na ${counter}. pokus`);
 ```
