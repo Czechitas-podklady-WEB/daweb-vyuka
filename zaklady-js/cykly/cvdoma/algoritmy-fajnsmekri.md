@@ -55,11 +55,11 @@ const numbers = [
 let longestSequenceLength = 1
 let currentSequenceLength = 0
 
-function isSequenceDeclining(prevNumber, currentNumber, nextNumber) {
+const isSequenceDeclining = (prevNumber, currentNumber, nextNumber) => {
   return prevNumber > currentNumber && currentNumber > nextNumber
 }
 
-function isSequenceGrowing(prevNumber, currentNumber, nextNumber) {
+const isSequenceGrowing = (prevNumber, currentNumber, nextNumber) =>{
   return prevNumber < currentNumber && currentNumber < nextNumber
 }
 
