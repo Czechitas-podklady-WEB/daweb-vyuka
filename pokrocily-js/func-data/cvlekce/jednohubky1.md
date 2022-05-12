@@ -24,3 +24,25 @@ const persons = [
 2. Pomocí metody `forEach` napište cyklus, který vypíše do konzole první písmeno z každného jména v poli `names`.
 3. Pomocí metody `every` zjistěje, jestli v poli `names` platí, že každé jméno má alespoň 4 znaky.
 4. Pomocí metody `some` zjistěte, jestli jsou v poli `numbers` nějaká čísla dělitelná 11.
+
+---solution
+
+```js
+//Pomocí funkce forEach vypište do konzole postupně věk každé osoby z pole persons.
+persons.forEach((person) => {
+  console.log(person.age);
+});
+​
+//Pomocí metody forEach napište cyklus, který vypíše do konzole první písmeno z každného jména v poli names.
+names.forEach((person) => {
+  console.log(person.slice(0,1));
+})
+​
+//Pomocí metody every zjistěje, jestli v poli names platí, že každé jméno má alespoň 4 znaky.
+const longNames = names.every((item) => item.length >= 4);
+console.log(longNames);
+​
+//Pomocí metody some zjistěte, jestli jsou v poli numbers nějaká čísla dělitelná 11.
+const chosenNumbers = numbers.some((item) => item % 11 === 0);
+console.log(chosenNumbers);
+```
