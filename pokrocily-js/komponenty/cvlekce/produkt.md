@@ -30,3 +30,42 @@ Postupujte dle kroků níže a vytvořte kód pro zobrazení produktu na stránc
    </div>
    ```
 1. Vyberte ze stránky element s id `products-section` a vložte do něj vámi vytvořené HTML.
+
+---solution
+
+## `index.html`
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="index.js" type="module"></script>
+  </head>
+  <body>
+    <section id="products-section"></section>
+  </body>
+</html>
+```
+
+## `index.js`
+
+```js
+const product1 = {
+  name: 'Zeleny caj',
+  price: 55,
+  currency: 'Kč',
+};
+
+const productHtml = `
+  <div class="product">
+    <h2 class="product__name">${product1.name}</h2>
+    <p class="product__price">${product1.price}${product1.currency}</p>
+  </div>
+`;
+
+const productSelectionElm = document.querySelector('#products-section');
+productSelectionElm.innerHTML += productHtml;
+```
