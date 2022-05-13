@@ -2,7 +2,7 @@ Díky tomu, že jsem se v minulé lekci naučili pracovat se stavem, otvírají 
 
 ## Formulářové prvky
 
-Formulářové prvky jako textová polížka, zaškrtávací tlačítka apod. jsou jedním z hlavních způsobů, jak získat vstup od uživatele. V čístém JavaScritpu jsme zvyklí získávat hodnoty z těchto prvků tak, že je vybereme pomocí `querySelector` a použijeme například vlastnost `value`.
+Formulářové prvky jako textová políčka, zaškrtávací tlačítka apod. jsou jedním z hlavních způsobů, jak získat vstup od uživatele. V čistém JavaScritpu jsme zvyklí získávat hodnoty z těchto prvků tak, že je vybereme pomocí `querySelector` a použijeme například vlastnost `value`.
 
 ```js
 const inputElm = document.querySelector('input');
