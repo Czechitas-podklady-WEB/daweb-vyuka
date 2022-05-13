@@ -8,7 +8,7 @@ demand: 2
 1. Přidejte do vaší komponenty stav `datetime`, jehož výchozí hodnota bude prázdný řetězec. Ve vašem efektu smažte volání `alert` a uložte do stavu nějaký čas jako řetězec ve formátu
 
    ```
-   '2020-11-13T22:46';
+   '2020-11-13T22:46'
    ```
 
    Zobrazte váš čas někde na stránce a vyzkoušejte, že váš efekt správně nastaví stav při prvním zobrazení komponenty.
