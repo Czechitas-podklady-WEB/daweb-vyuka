@@ -29,7 +29,9 @@ import { render } from 'react-dom';
 import './index.html';
 
 const App = () => {
-  useEffect(() => console.log('jsem tady'), []);
+  useEffect(() => {
+    console.log('jsem tady');
+  }, []);
 
   return (
     <>
