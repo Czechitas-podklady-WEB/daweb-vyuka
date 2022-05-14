@@ -32,7 +32,7 @@ Hodnotu uvnitř elementu `input` si chceme uložit do stavu pokaždé, když doj
 
 ```js
 const AgeField = () => {
-  const [age, setAge] = useState(null);
+  const [age, setAge] = useState('');
 
   return (
     <label>
@@ -54,7 +54,7 @@ V praxi téměř vždy budeme chtít takzvaný two-way (obousměrný) data bindi
 
 ```js
 const AgeField = () => {
-  const [age, setAge] = useState(null);
+  const [age, setAge] = useState('');
 
   return (
     <label>
