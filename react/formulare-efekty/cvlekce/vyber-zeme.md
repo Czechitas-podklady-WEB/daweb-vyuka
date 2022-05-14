@@ -19,11 +19,19 @@ Pokračujte v předchozím cvičení.
    </label>
    ```
 
+1. Do stylů přidejte `display: block;` na prvky `label`, aby se formulář nesléval do jednoho řádku.
+
+   ```css
+   label {
+     display: block;
+   }
+   ```
+
 1. Vytvořte stav `country`, který bude sloužit k uložení hodnoty z vaší nabídky. Výchozí hodnotu stavu nastavte na `Česká republika`.
 1. Pomocí události `onChange` zařiďte one-way data binding mezi nabídkou `select` a stavem `country`.
 1. Zařiďte two-way data binding mezi nabídkou `select` a stavem `country` tak, aby nabídka zobrazovala výchozí hodnotu uloženou ve stavu.
-1. Zprávu vypisovanou do konzole po úspěšné registraci změňte na
+1. Zprávu vypisovanou pomocí funkce `alert` po odeslání formuláře změňte na
+   ```text
+   Uživatel „???“ ze země „???“ se chce zaregistrovat.
    ```
-   Registrován nový uživatel jaroslav ze země Polsko
-   ```
-   Ve zprávě zobrazte zemi, kteoru si uživatel při registraci vybral.
+   Ve zprávě zobrazte jméno a zemi, kteoru si uživatel při registraci vybral.
