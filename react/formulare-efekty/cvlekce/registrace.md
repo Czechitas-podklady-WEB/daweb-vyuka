@@ -6,7 +6,7 @@ demand: 2
 1. Založte si novou React aplikaci dle klasického postupu.
 1. Vytvořte komponentu `App` s jednoduchým textovým políčkem dle následujícího vzoru.
 
-   ```js
+   ```jsx
    const App = () => {
      const handleSubmit = (event) => {
        event.preventDefault();
