@@ -3,6 +3,8 @@ title: Výběr země
 demand: 2
 ---
 
+::fig[BEM Block]{src=assets/ukazka-reseni.gif}
+
 Pokračujte v předchozím cvičení.
 
 1. Přidejte do vašeho formuláře rozbalovací nabídku `select`, která bude sloužit k výběru země, ze které uživatel pochází.
