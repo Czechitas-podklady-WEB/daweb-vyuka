@@ -6,7 +6,7 @@ Formulářové prvky jako textová políčka, zaškrtávací tlačítka apod. js
 
 ```html
 <form>
-  <label> Zadej svůj věk: <input id="age-input" type="text" /> </label>
+  <label>Zadej svůj věk: <input id="age-input" type="text" /></label>
   <button type="submit">Odeslat</button>
 </form>
 ```
