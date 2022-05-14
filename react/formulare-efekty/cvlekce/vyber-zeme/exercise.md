@@ -3,7 +3,7 @@ title: Výběr země
 demand: 2
 ---
 
-::fig[BEM Block]{src=assets/ukazka-reseni.gif}
+::fig[ukázka řešení]{src=assets/ukazka-reseni.gif}
 
 Pokračujte v předchozím cvičení.
 

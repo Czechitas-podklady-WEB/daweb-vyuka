@@ -3,6 +3,8 @@ title: Pražský čas
 demand: 2
 ---
 
+::fig[ukázka řešení]{src=assets/ukazka-reseni.png}
+
 1. Založte si novou React aplikaci podle klasického postupu.
 1. Uvnitř komponenty `App` vytvořte jednoduchý efekt, který se spustí pří prvním zobrazení komponenty. Uvnitř tohoto efektu zavolejte funkci `alert` a zobrazte vyskakovcí okno s nějakou zprávou.
 1. Přidejte do vaší komponenty stav `datetime`, jehož výchozí hodnota bude prázdný řetězec. Ve vašem efektu smažte volání `alert` a uložte do stavu nějaký čas jako řetězec ve formátu
