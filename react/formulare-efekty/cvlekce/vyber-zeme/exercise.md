@@ -37,3 +37,7 @@ Pokračujte v předchozím cvičení.
    Uživatel „???“ ze země „???“ se chce zaregistrovat.
    ```
    Ve zprávě zobrazte jméno a zemi, kteoru si uživatel při registraci vybral.
+
+---solution
+
+Řešení naleznete v samostatném [Codesanboxu zde](https://codesandbox.io/s/da-web-registrace-vyber-zeme-klztj1?file=/src/App.jsx).
