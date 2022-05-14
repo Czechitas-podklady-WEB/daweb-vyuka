@@ -3,6 +3,8 @@ title: Výběr zóny
 demand: 2
 ---
 
+::fig[ukázka řešení]{src=assets/ukazka-reseni.gif}
+
 Pokračujte v předchozím příkladu.
 
 1. Vložte do stránky formulář, ze kterého si uživatel může vybrat časovou zónu. Uvnitř formuláře použijte následující `select`.
