@@ -4,24 +4,28 @@ Díky tomu, že jsem se v minulé lekci naučili pracovat se stavem, otvírají 
 
 Formulářové prvky jako textová políčka, zaškrtávací tlačítka apod. jsou jedním z hlavních způsobů, jak získat vstup od uživatele. V čistém JavaScritpu jsme zvyklí získávat hodnoty z těchto prvků tak, že je vybereme pomocí `querySelector` a použijeme například vlastnost `value`.
 
+```html
+<form>
+  <label> Zadej svůj věk: <input id="age-input" type="text" /> </label>
+  <button type="submit">Odeslat</button>
+</form>
+```
+
 ```js
-const inputElm = document.querySelector('input');
-const value = inputElm.value;
+const ageInput = document.querySelector('#age-input');
+console.log(ageInput.value);
 ```
 
 V Reactu však k DOM elementům na stránce přístup nemáme. Hodnotu uvnitř textového políčka si tak musíme uložit do stavu.
 
-Představme si jednoduchou komponentu, kde uživatel zadá svůj věk.
+Představme si jednoduchou komponentu, kde uživatel zadá svůj věk podobně jako v příkladu výše.
 
 ```js
-const AgeField = () => {
-  return (
-    <label>
-      Zadej svůj věk:
-      <input type="text" />
-    </label>
-  );
-};
+const AgeField = () => (
+  <label>
+    Zadej svůj věk: <input type="text" />
+  </label>
+);
 ```
 
 Hodnotu uvnitř elementu `input` si chceme uložit do stavu pokaždé, když dojde k její změně. Vytvoříme si proto stav `age` a budeme jej měnit v reakci na událost `onChange`.
@@ -46,7 +50,7 @@ _změna stavu_. Pokud se z nějakého důvodu změní hodnota ve stavu `age`, ob
 
 ### Obousměrný data binding
 
-To, co jsme viděli v ukázce výše bychom mohli nazvat one-way (jednosměrný) data binding. V praxi však téměř vždy budeme chtít takzvaný two-way (obousměrný) data binding. Ten zařídíme jednoduše tak, že hodnotu ve stavu vždy nastavíme jako hodnotu políčka.
+V praxi téměř vždy budeme chtít takzvaný two-way (obousměrný) data binding. To zařídíme jednoduše tak, že hodnotu ve stavu vždy nastavíme jako hodnotu políčka.
 
 ```js
 const AgeField = () => {
@@ -61,4 +65,4 @@ const AgeField = () => {
 };
 ```
 
-Takto zajistíme provázanost i druhým směrem, tedy _změna stavu_ ⟶ _změna políčka_.
+Takto zajistíme provázanost i druhým směrem, tedy _změna stavu_ ⟶ _změna políčka_. Nyní, když změníme obsah políčka, změní se nám stav. A když naopak změníme stav, změní se nám obsah políčka.
