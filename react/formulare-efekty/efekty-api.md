@@ -5,10 +5,6 @@ Pokud chceme v naší aplikaci zobrazovat data z nějakého API, musíme si tato
 Naše poslední aplikace zatím zobrazovala, že svátek má Jiří. To je však pravda pouze jeden den v roce. Pojďme aplikace vylepšit tak, aby si stáhla aktuální jméno z API.
 
 ```js
-import React, { useState, useEffect } from 'react';
-import { render } from 'react-dom';
-import './index.html';
-
 const App = () => {
   const [name, setName] = useState('');
 
@@ -25,12 +21,10 @@ const App = () => {
     </>
   );
 };
-
-render(<App />, document.querySelector('#app'));
 ```
 
 V tomto případě jsme si do stavu ukládali pouze obyčejný řetězec. Naše data však budou často zobrazovat seznamy, takže budeme chtít mít ve stavu uložené nějaké pole.
 
-```
+```text
 https://worldtimeapi.org/api/timezone
 ```
