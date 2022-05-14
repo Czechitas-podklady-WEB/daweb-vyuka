@@ -1,6 +1,6 @@
 ## Specializované efekty
 
-Zatím jsme viděli efekty, které se spouštějí pouze jednou, tedy ve chvíli, kdy se komponenta poprvé objeví na stránce. Občas však potřebujeme efekt, který se spustí pokaždé, když se změní nějaká stavová proměnná. Takový efekt vyrobíme tak, že do hranatých závorek napíšeme stavovou proměnnou, na kterou má efekt reagovat.
+Zatím jsme viděli efekty, které se spouštějí pouze jednou, tedy ve chvíli, kdy se komponenta poprvé objeví na stránce. Občas však potřebujeme efekt, který se spustí pokaždé, když se změní nějaká stavová proměnná nebo prop. Takový efekt vyrobíme tak, že do hranatých závorek napíšeme stavovou proměnnou nebo prop, na kterou má efekt reagovat.
 
 ```js
 const Komponenta = () => {
