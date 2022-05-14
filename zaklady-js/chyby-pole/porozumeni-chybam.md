@@ -17,8 +17,8 @@ const user = {
   name: 'Bartoloměj',
 };
 
-const handleSubmit = (e) => {
-  e.preventDefault();
+const handleSubmit = (event) => {
+  event.preventDefault();
 
   const emailInput = document.querySelektor('.email-input');
   const passwordInput = document.querySelector('#password-input');
@@ -59,8 +59,8 @@ Uncaught TypeError: undefined is not a function
 Opravíme tedy název funkce a radujeme se, že už bude vše v pořádku.
 
 ```js
-const handleSubmit = (e) => {
-  e.preventDefault();
+const handleSubmit = (event) => {
+  event.preventDefault();
 
   const emailInput = document.querySelector('.email-input');
   const passwordInput = document.querySelector('#password-input');
@@ -84,8 +84,8 @@ Uncaught ReferenceError: enailInput is not defined
 JavaScript runtime si tentokrát stěžuje, že proměnná `enailInput` není definovaná. Což je pravda, žádná taková proměnná v našem programu neexistuje. Nejspíš jsme měli na mysli proměnnou `emailInput`. Opravit takovou chybu je tedy velmi jednoduché.
 
 ```js
-const handleSubmit = (e) => {
-  e.preventDefault();
+const handleSubmit = (event) => {
+  event.preventDefault();
 
   const emailInput = document.querySelector('.email-input');
   const passwordInput = document.querySelector('#password-input');

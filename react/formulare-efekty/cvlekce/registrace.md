@@ -8,8 +8,8 @@ demand: 2
 
    ```js
    const App = () => {
-     const handleSubmit = (e) => {
-       e.preventDefault();
+     const handleSubmit = (event) => {
+       event.preventDefault();
      };
 
      return (
