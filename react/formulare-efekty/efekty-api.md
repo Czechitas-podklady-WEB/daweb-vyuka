@@ -9,9 +9,9 @@ const App = () => {
   const [name, setName] = useState('');
 
   useEffect(() => {
-    fetch('https://api.abalin.net/today?country=cz')
-      .then((resp) => resp.json())
-      .then((json) => setName(json.data.namedays.cz)
+    fetch('https://svatky.adresa.info/json')
+      .then((response) => response.json())
+      .then((data) => setName(data[0].name));
   }, []);
 
   return (
@@ -23,8 +23,4 @@ const App = () => {
 };
 ```
 
-V tomto případě jsme si do stavu ukládali pouze obyčejný řetězec. Naše data však budou často zobrazovat seznamy, takže budeme chtít mít ve stavu uložené nějaké pole.
-
-```text
-https://worldtimeapi.org/api/timezone
-```
+Výsledný kód si můžete prohlédnout v [Codesandboxu zde](https://codesandbox.io/s/da-web-svatky-ndwfg2?file=/src/App.jsx).
