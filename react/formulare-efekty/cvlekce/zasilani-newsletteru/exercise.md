@@ -3,6 +3,8 @@ title: Zasílání newsletteru
 demand: 2
 ---
 
+::fig[BEM Block]{src=assets/ukazka-reseni.gif}
+
 Pokračujte v předchozím cvičení.
 
 1. Přidejte do vašeho formuláře zaškrtávací políčko označené textem
@@ -20,3 +22,7 @@ Pokračujte v předchozím cvičení.
    ```text
    Uživatel „???“ ze země „???“ se chce zaregistrovat a o novinky nemá zájem.
    ```
+
+---solution
+
+Řešení naleznete v samostatném [Codesanboxu zde](https://codesandbox.io/s/da-web-registrace-zasilani-newsletteru-ibp3g3?file=/src/App.jsx).
