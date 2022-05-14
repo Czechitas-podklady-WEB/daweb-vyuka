@@ -31,5 +31,5 @@ demand: 2
    ```text
    Uživatelské jméno je povinný údaj
    ```
-   Tato zpráva všech bude vidět pouze pokud je ve stavu `userName` prázdný řetězec. V opačném případě tento div skryjte pomocí `display: none`.
-1. Vzpomeňte si na vlastnost `disabled` a zařiďte, aby registrační tlačítko bylo dostupné pouze v případě, že ve stavu `userName` není prázdný řetězec.
+   Tato zpráva všech bude vidět pouze pokud je ve stavu `userName` prázdný řetězec. V opačném případě tento div nezobrazujte.
+1. Vzpomeňte si na vlastnost `disabled` a zařiďte, aby registrační tlačítko bylo klikatelné pouze v případě, že ve stavu `userName` není prázdný řetězec.
