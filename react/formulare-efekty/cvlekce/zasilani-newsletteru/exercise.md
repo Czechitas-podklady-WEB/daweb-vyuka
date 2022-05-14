@@ -1,6 +1,6 @@
 ---
 title: Zasílání newsletteru
-demand: 2
+demand: 3
 ---
 
 ::fig[BEM Block]{src=assets/ukazka-reseni.gif}
