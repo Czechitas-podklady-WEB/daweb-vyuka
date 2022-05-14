@@ -28,7 +28,7 @@ demand: 2
 1. Uvnitř komponenty `App` vytvořte stav `userName` s výchozí hodnotou prázdný řetězec. Vytvořte obousměrný (two-way) data binding mezi textovým políčkem a stavem `userName`.
 1. V reakci na událost `onSubmit` do konzole vypište jméno uživatele uložené ve stavu `userName`.
 1. Na stránku vložte `div` se zprávou
-   ```
+   ```text
    Uživatelské jméno je povinný údaj
    ```
    Tato zpráva všech bude vidět pouze pokud je ve stavu `userName` prázdný řetězec. V opačném případě tento div skryjte pomocí `display: none`.
