@@ -3,6 +3,8 @@ title: Registrace
 demand: 2
 ---
 
+::fig[BEM Block]{src=assets/ukazka-reseni.gif}
+
 1. Založte si novou React aplikaci dle klasického postupu.
 1. Vytvořte komponentu `App` s jednoduchým textovým políčkem dle následujícího vzoru.
 
