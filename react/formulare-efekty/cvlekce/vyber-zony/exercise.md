@@ -20,7 +20,7 @@ Pokračujte v předchozím příkladu.
    ```
 1. Vytvořte stav `timezone` s výchozí hodnotou `Europe/Prague`.
 1. Propojte stav `timezone` s prvkem `select`.
-1. Zařiďte, aby se váš efekt volal při každé změně stavu `timezone`. Uvnitř efektu zkunstruujte URL pro váš dotaz tak, aby server poslal data pro uživatelem vybranou časovou zónu.
+1. Zařiďte, aby se efekt volal při každé změně stavu `timezone`. Uvnitř efektu zkonstruujte URL pro dotaz tak, aby server poslal data pro časovou zónu vybranou uživatelem.
 1. Vaše aplikace by měla fungovat tak, že když uživatel vybere z nabídky časovou zónu, rovnou se mu na stránce ukáže aktuální čas v této zóně.
 
 ---solution
