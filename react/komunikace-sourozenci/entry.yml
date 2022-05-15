@@ -2,6 +2,5 @@ title: Komunikace mezi sourozenci
 lead: 'Nejnáročnejší typ komunikace mezi komponentami je předávání informací mezi sourozenci.'
 access: 'claim'
 sections:
-  - destrukturovani-props
   - sourozenci
   - cv-sourozenci
