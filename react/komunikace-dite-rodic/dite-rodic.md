@@ -27,13 +27,13 @@ V našem příkladu však callback nebudeme používat k poslouchání událost�
 Nejprve tedy přidáme do komponenty `Candidate` novou prop s názvem `onVote`. Abychom dali najevo, že do této prop budeme posílat funkci, volíme jméno podobně jako to známe u událostí, tedy `onClick`, `onMouseMove` apod. Jménem chceme naznačit, že tuto funkci zavoláme ve chvíli, kdy uživatel zahlasuje (anglicky :i[vote]) pro daného kandidáta.
 
 ```js
-const Candidate = ({ name, avatar, onVote }) => (
+const Candidate = ({ name, avatar, onVote }) => ( … )
 ```
 
 Nyní potřebujeme funkci `onVote` zavolat se jménem kondidáta ve chvíli, když uživatel klikne na tlačítko. Použijeme tedy událost `onClick` a naše výsledná komponenta bude vypadat takto.
 
 ```js
-const Candidate = ({ name, avatar }) => (
+const Candidate = ({ name, avatar, onVote }) => (
   <div className="candidate">
     <h3 className="candidate__name">{name}</h3>
     <img className="candidate__avatar" src={avatar} />
