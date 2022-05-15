@@ -6,16 +6,16 @@ demand: 2
 ::fig[ukázka řešení]{src=assets/ukazka-reseni.png}
 
 1. Založte si novou React aplikaci podle klasického postupu.
-1. Uvnitř komponenty `App` vytvořte jednoduchý efekt, který se spustí pří prvním zobrazení komponenty. Uvnitř tohoto efektu zavolejte funkci `alert` a zobrazte vyskakovcí okno s nějakou zprávou.
-1. Přidejte do vaší komponenty stav `datetime`, jehož výchozí hodnota bude prázdný řetězec. Ve vašem efektu smažte volání `alert` a uložte do stavu nějaký čas jako řetězec ve formátu
+1. Uvnitř komponenty `App` vytvořte jednoduchý efekt, který se spustí pří prvním zobrazení komponenty. Uvnitř tohoto efektu zavolejte funkci `alert` a zobrazte vyskakovací okno s nějakou zprávou.
+1. Přidejte do vaší komponenty stav `datetime`, jehož výchozí hodnota bude prázdný řetězec. V efektu smažte volání `alert` a uložte do stavu nějaký čas jako řetězec ve formátu
 
    ```
    '2020-11-13T22:46'
    ```
 
-   Zobrazte váš čas někde na stránce a vyzkoušejte, že váš efekt správně nastaví stav při prvním zobrazení komponenty.
+   Zobrazte čas někde na stránce a vyzkoušejte, že efekt správně nastaví stav při prvním zobrazení komponenty.
 
-1. Upravte váš efekt tak, aby pomocí volání `fetch` získal aktuální datum a čas pro časovou zónu `Europe/Prague`. Hodnotu získáte na API endpointu
+1. Upravte efekt tak, aby pomocí volání `fetch` získal aktuální datum a čas pro časovou zónu `Europe/Prague`. Hodnotu získáte na API endpointu
 
    ```text
    https://worldtimeapi.org/api/timezone/Europe/Prague
