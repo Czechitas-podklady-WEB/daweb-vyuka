@@ -15,7 +15,7 @@ Vyzkoušejme si přidání React Router knihovny do naší vlastní aplikace. Zk
    npm install react-router-dom
    ```
 1. Spusťte si aplikaci příkazem `npm start` a zkontrolujte, že vám v prohlížeči správně běží.
-1. Nebojte se v následujících krocích inspirovat [dokumentací](https://reactrouter.com/web/guides/quick-start) React Routeru!
+1. Nebojte se v následujících krocích inspirovat dokumentací [React Routeru](https://reactrouter.com/docs/en/v6)!
 1. V `src` adresáři vytvořte nové soubory (komponenty) pro jednotlivé stránky. Adekvátně je pojmenujte, tedy: `Home.jsx`, `About.jsx` a `Detail.jsx`. Obsah stránek může být jen jeden paragraf s krátkou zprávou. Nezapomeňte na správný export. Příklad obsahu jedné stránky:
    ```js
    const Home = () => {

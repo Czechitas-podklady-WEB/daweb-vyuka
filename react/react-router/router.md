@@ -1,6 +1,6 @@
 ## React Router
 
-Neexistuje žádný magický přepínač, kterým bychom rozhodli, jestli z aplikace uděláme SPA nebo ne. Takovou funkcionalitu někdo musel nejdříve vymyslet, implementovat a následně aktivně používat v kódu. Naštěstí žijeme v krásné době, kde je taková implementace hotová a připravená k použití. K práci s navigací v našich React aplikacích budeme používat knihovnu [React Router](https://reactrouter.com/web/guides/quick-start). Nainstalujeme si ji jako závislost přes npm a následně z ní můžeme používat připravené komponenty přímo v našem kódu.
+Neexistuje žádný magický přepínač, kterým bychom rozhodli, jestli z aplikace uděláme SPA nebo ne. Takovou funkcionalitu někdo musel nejdříve vymyslet, implementovat a následně aktivně používat v kódu. Naštěstí žijeme v krásné době, kde je taková implementace hotová a připravená k použití. K práci s navigací v našich React aplikacích budeme používat knihovnu [React Router](https://reactrouter.com/). Nainstalujeme si ji jako závislost přes npm a následně z ní můžeme používat připravené komponenty přímo v našem kódu.
 
 ### Instalace a používání knihovny
 
