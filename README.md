@@ -1,4 +1,4 @@
-# daweb
+# daweb [![quality assurance](https://github.com/Czechitas-podklady-WEB/daweb-vyuka/actions/workflows/quality-assurance.yml/badge.svg)](https://github.com/Czechitas-podklady-WEB/daweb-vyuka/actions)
 
 Studijní materiály pro DA Web na kodim.cz
 
