@@ -20,9 +20,9 @@ Vyzkoušejme si přidání React Router knihovny do naší vlastní aplikace. Zk
    ```js
    const Expenses = () => {
      return (
-         <main>
-            <h2>Expenses</h2>
-         </main>
+       <main>
+         <h2>Expenses</h2>
+       </main>
      );
    };
    ```
@@ -34,9 +34,9 @@ Vyzkoušejme si přidání React Router knihovny do naší vlastní aplikace. Zk
 1. Podle dokumentace obalme `jsx` celé aplikace do `<BrowserRouter>` komponenty. To naší aplikaci umožní uvnitř používat ostatní komponenty z `react-router-dom`.
    ```js
    root.render(
-      <BrowserRouter>
-         <App />
-      </BrowserRouter>
+     <BrowserRouter>
+       <App />
+     </BrowserRouter>
    );
    ```
 1. Použitím komponenty `<Link>` vložme do aplikace odkazy na níže uvedené stránky. Vkládat je můžeme například do `<header>` nebo `<nav>` prvku. Záleží na stavbě naší aplikace.
@@ -53,9 +53,9 @@ Vyzkoušejme si přidání React Router knihovny do naší vlastní aplikace. Zk
 1. Podívejme se v [dokumentaci](https://reactrouter.com/docs/en/v6/getting-started/tutorial#add-some-routes), jak se zapisuje struktura s React Router komponentami `<Routes>` a `<Route>`. Tuto strukturu vložme do kódu tak, aby ji obalovala komponenta `<BrowserRouter>` a uvnitř použijme naše dvě nové stránky `Expenses` a `Invoices`, které jsme si naimportovali.
    ```js
    <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="expenses" element={<Expenses />} />
-      <Route path="invoices" element={<Invoices />} />
+     <Route path="/" element={<App />} />
+     <Route path="expenses" element={<Expenses />} />
+     <Route path="invoices" element={<Invoices />} />
    </Routes>
    ```
 1. Vyzkoušejme, že aplikace správně naviguje - mění adresu a obsah podle klikání na odkazy.
