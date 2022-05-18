@@ -53,7 +53,7 @@ const ParamsExample = () => {
 };
 
 const Child = () => {
-  let { id } = useParams();
+  const { id } = useParams();
 
   return (
     <div>
