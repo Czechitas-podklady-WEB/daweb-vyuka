@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "quality-assurance": "prettier --check \"**/*.{md,html,js,css}\"",
+    "fix": "prettier --write \"**/*.{md,html,js,css}\""
+  },
+  "devDependencies": {
+    "prettier": "2.6.2"
+  }
+}

@@ -1,0 +1,15 @@
+title: Úvod do JavaScriptu
+lead: Seznámíme se s jazykem JavaScript a ukážeme si jak se v JavaScriptu píší jednoduché programy.
+sections:
+  - javascript
+  - hodnoty-operatory
+  - funkce
+  - cv-vyrazy-funkce
+  - prvni-program
+  - promenne
+  - vypis-do-stranky
+  - promenne-pravidla
+  - cv-programy-promenne
+  - shrnuti
+  - cv-ulozky
+  - cteni-na-doma

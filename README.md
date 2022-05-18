@@ -1,6 +1,15 @@
-# daweb
+# daweb [![quality assurance](https://github.com/Czechitas-podklady-WEB/daweb-vyuka/actions/workflows/quality-assurance.yml/badge.svg)](https://github.com/Czechitas-podklady-WEB/daweb-vyuka/actions)
 
 Studijní materiály pro DA Web na kodim.cz
+
+## Formátování
+
+Pro jednotný formát podkladů je v repozitáři konfigurace pro Prettier. Je možné ho v IDE nastavit jako výchozí formátovač nebo pouštět ručně přes:
+
+```sh
+npm ci
+npm run fix
+```
 
 ## Sylabus HTML/CSS
 
@@ -125,7 +134,7 @@ Studijní materiály pro DA Web na kodim.cz
 Část první
 
 - První programy
-- Vstup výstup, document.write, console.log, prompt
+- Vstup výstup, prompt
 - Konverze hodnot, Number, String
 
 Část druhá

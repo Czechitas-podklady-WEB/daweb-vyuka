@@ -95,11 +95,9 @@ const personEmail = function (person, domain) {
 };
 ```
 
-Takovýmto funkcím budeme říkat <term cs="staré dobré funkce" en="old-fashioned functions">. Není zde velký rozdíl co se týče zápisu. Staré dobré funkce však mají jednu vlastnost, kterou arrow funkce nemají. Mají speciální tajný parametr, který lze do této funkce propašovat jakýmisi zadními vrátky. Tento parametr se jmenuje `this`. Jeho obsah závisí na tom, jakým způsobem naši funkci voláme. Pojďme si rovnou napsat jednoduchou testovací funkcí, abychom zjistili, jak `this` funguje.
+Takovýmto funkcím budeme říkat :term{cs="staré dobré funkce" en="old-fashioned functions"}. Není zde velký rozdíl co se týče zápisu. Staré dobré funkce však mají jednu vlastnost, kterou arrow funkce nemají. Mají speciální tajný parametr, který lze do této funkce propašovat jakýmisi zadními vrátky. Tento parametr se jmenuje `this`. Jeho obsah závisí na tom, jakým způsobem naši funkci voláme. Pojďme si rovnou napsat jednoduchou testovací funkcí, abychom zjistili, jak `this` funguje.
 
 ```js
-'use strict';
-
 const greet = function (name) {
   return `hello from ${this} and ${name}`;
 };
@@ -185,17 +183,19 @@ Můžeme pak psát jako obvykle
 ```
 
 [[[ excs Cvičení: Metody a this
+
 - pejsek
 - seznamka
-]]]
+  ]]]
 
-[[[ excs Bonusy 
+[[[ excs Bonusy
+
 - hledani
-]]]
+  ]]]
 
 ## Prototypy
 
-Příklad výše už je trochu hezčí než vytváření nové metody pro každý objekt, pořád však naše metody `name` a `email` musíme ručně vepisovat do každého objektu. To nás brzo přestane bavit. JavaScript runtime nám však opět přispěchá na pomoc, tentokrát s něčím, čemu se říká <term cs="prototyp" en="prototype">.
+Příklad výše už je trochu hezčí než vytváření nové metody pro každý objekt, pořád však naše metody `name` a `email` musíme ručně vepisovat do každého objektu. To nás brzo přestane bavit. JavaScript runtime nám však opět přispěchá na pomoc, tentokrát s něčím, čemu se říká :term{cs="prototyp" en="prototype"}.
 
 Stejně jako mají staré dobré funkce tajný parametr `this`, maji i objekty jeden tajný klíč s trochu zlověstným názvem `__proto__`. Představte si, že máme e-shop a prodáváme v něm ledničky. Jednu ledničku bychom mohli reprezentovat takovýmto objektem.
 
@@ -267,10 +267,11 @@ Nyní když provedeme takovéto volání
 JavaScript runtime zkouší najit metodu `name` v objektu `homer`. Pokud tam není, zkouší ji najít v jeho prototypu `Person`. Tam už metoda je. Runtime tedy nastaví její `this` na objekt `homer` a zavolá ji. Tím se nám všchno hezky propojí a běží jako po másle.
 
 [[[ excs Cvičení: Objekty a prototypy
+
 - pozemky
 - cena-pozemku
 - hodiny
-]]]
+  ]]]
 
 ## Konstrukce objektů
 
@@ -366,7 +367,8 @@ Jde pouze o kosmetickou změnu, která nám ušetří ťukání na klávesnici. 
 Tento způsob vytváření objektů už je na chlup blízko tomu, jak se objekty v praxi skutečně vytvářejí. Ještě nám chybí poslední drobnost, kterou si však necháme na některou z dalších lekcí.
 
 [[[ excs Cvičení: Konstrukce objektů
+
 - pozemky-2
 - hodiny-2
 - hodiny-3
-]]]
+  ]]]

@@ -1,0 +1,9 @@
+title: React router
+lead: 'Pomocí routeru dokážeme v Reactu vyrobit vícestránkovou aplikaci.'
+access: 'claim'
+sections:
+  - spa
+  - router
+  - cv-router
+  - dynamicke-detaily
+  - cv-dynamicke-stranky

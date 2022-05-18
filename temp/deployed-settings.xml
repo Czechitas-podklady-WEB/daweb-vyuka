@@ -1,0 +1,513 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- Conditions and imports namespaces have to be specified on root node. Namespaces on subelements will be ignored on (check readme) -->
+<Configuration
+  xmlns:Unix="ScopedXMLConfigurationConditions:OS+Linux|OS+OSX"
+  xmlns:Win="ScopedXMLConfigurationConditions:OS+Windows"
+  >
+  <DBconnectionString RetryCount="10" RetryDelaySeconds="10">server=localhost;uid=beeyprod;pwd=FqPX8YsNJ4Xp%?;database=transcribeair</DBconnectionString>
+  <ElasticSearch Connection="http://192.168.101.7:9200" prefix="beeyio-" Required="true"  TrsxIndexerDisabled="false"/>
+
+  <!-- Setup SPP server endpoint. If one fails before sending any word back, the next one will be used. -->
+  <SppConfiguration>
+    <!-- spp01 192.168.100.202, spp02 (dev) 192.168.101.147, spp03 192.168.100.116 -->
+    <Connections Name="0" Url="ws://192.168.100.116:5000?makePreview=0" MakeFs="2"/>
+    <Connections Name="1" Url="ws://localhost:5000?makePreview=0" MakeFs="1" />
+  </SppConfiguration>
+
+  <!-- Changing this configuration (any parameter) will trigger reconnection to RabbitMQ server. -->
+  <RabbitMQConfiguration VirtualHost="/production" Url="192.168.101.192" ExchangeName="quanda.users" UserName="beey-production" Password="f57uxsT5Gdmhgjwj" Required="false">
+    <RabbitMQConnections Name="Quanda" Enabled="true" RoutingKey="quanda"/>
+  </RabbitMQConfiguration>
+
+  <!--ClientBeeyUrl will be send as full external Endpoint that integration should use as base adress for calls to go through proxy-->
+  <!--for maximum compatibility (proxy and Blazor) all endpoints ;should be lowercase only-->
+  <ProxyIntegrations Enabled="true" AppsEndpoint="/apps">
+    <Integrations Name="link" ProxyEndpoint="/link">
+      <Url>http://3.64.112.111:4446/url2beey</Url>
+      <BeeyUrl>https://editor.beey.io</BeeyUrl>
+      <IconEndpoint>/favicon.ico</IconEndpoint>
+      <ProjectEndpoint></ProjectEndpoint>
+      <ServiceNames Name="0" Text="Link"/>
+    </Integrations>
+    <Integrations Name="stream" ProxyEndpoint="/stream">
+      <Url>http://18.159.220.11:9999/stream2beey</Url>
+      <!--Url>http://192.168.101.10:9990/stream2beey</Url-->
+      <BeeyUrl>https://editor.beey.io</BeeyUrl>
+      <IconEndpoint>/favicon.ico</IconEndpoint>
+      <ProjectEndpoint></ProjectEndpoint>
+      <ServiceNames Name="0" Text="Stream"/>
+    </Integrations>
+    <Integrations Name="streamtvr" ProxyEndpoint="/streamtvr">
+      <Url>http://192.168.101.10:9990/stream2beey</Url>
+      <!--Url>http://192.168.101.10:9990/stream2beey</Url-->
+      <BeeyUrl>https://editor.beey.io</BeeyUrl>
+      <IconEndpoint>/favicon.ico</IconEndpoint>
+      <ProjectEndpoint></ProjectEndpoint>
+      <ServiceNames Name="0" Text="StreamTVR"/>
+    </Integrations>
+    <Integrations Name="splitter" ProxyEndpoint="/splitter">
+      <Url>http://192.168.101.10:61489/</Url>
+      <BeeyUrl>https://editor.beey.io</BeeyUrl>
+      <IconEndpoint>/favicon.ico</IconEndpoint>
+      <ProjectEndpoint></ProjectEndpoint>
+      <ServiceNames Name="0" Text="Splitter"/>
+    </Integrations>
+  </ProxyIntegrations>
+
+  <EmailServiceOptions>
+    <Host>appsmtp.newtonmedia.eu</Host>
+    <Port>25</Port>
+    <EnableSSL>false</EnableSSL>
+
+    <!-- None, Auto, SslOnConnect, StartTls, StartTlsWhenAvailable -->
+    <!-- <SecurityOption></SecurityOption> -->
+    <!--
+    <UserName></UserName>
+    <Password></Password>
+    -->
+  </EmailServiceOptions>
+
+
+  <!-- specify listen all endpoints -->
+  <!-- when any endpoint have https, redirect will be forced-->
+
+  <Http Name="0" UseHttps="false" Port="61497" />
+
+
+  <!--Http Name="1" UseHttps="true" PfxCertPath="mimas-with-chain-with-key.pfx" Port="443" /-->
+
+  <OrderingSettings>
+    <StatusCheckIntervalMinutes>1</StatusCheckIntervalMinutes>
+    <WaitAfterMailSeconds>1</WaitAfterMailSeconds>
+    <AccountancyEmail>podpora@newtontech.cz</AccountancyEmail>
+    <OrderNumberCalculation>
+      <GreaterThan>0</GreaterThan>
+      <!-- 0-99 -->
+      <InstanceNumber>3</InstanceNumber>
+    </OrderNumberCalculation>
+    <PaymentService>
+      <ServiceUrl>https://3dsecure.gpwebpay.com/pgw/order.do</ServiceUrl>
+      <MerchantNumber>488550002</MerchantNumber>
+      <PublicCertificatePath>/www/cert/GPE/gpe.signing_prod.pem</PublicCertificatePath>
+      <MerchantCertificatePath>/www/cert/GPE/gpwebpay-pvk-editor-beey-io.pfx</MerchantCertificatePath>
+      <MerchantCertificatePassword>9^7DdXv$wW#n</MerchantCertificatePassword>
+    </PaymentService>
+    <Pricing Tax="0.21" MinimumCreditOrder="60">
+      <!-- Name of the currency must be ISO 4217 code and supported by the payment service. -->
+      <Currencies Name="CZK">
+        <CreditPriceWithoutTax>2.5</CreditPriceWithoutTax>
+        <FractionalUnitsPerUnit>100</FractionalUnitsPerUnit>
+      </Currencies>
+      <Currencies Name="EUR">
+        <CreditPriceWithoutTax>0.1</CreditPriceWithoutTax>
+        <FractionalUnitsPerUnit>100</FractionalUnitsPerUnit>
+      </Currencies>
+      <Currencies Name="PLN">
+        <CreditPriceWithoutTax>0.42</CreditPriceWithoutTax>
+        <FractionalUnitsPerUnit>100</FractionalUnitsPerUnit>
+      </Currencies>
+    </Pricing>
+  </OrderingSettings>
+
+
+  <!-- When changing password it takes at least 0.5 * PasswordHistoryLength seconds to test the history -->
+  <PasswordConfiguration PasswordHistoryLength="0">
+    <RequiredLength>6</RequiredLength>
+    <RequireNonAlphanumeric>false</RequireNonAlphanumeric>
+    <RequireDigit>false</RequireDigit>
+    <RequireLowercase>false</RequireLowercase>
+    <RequireUppercase>false</RequireUppercase>
+    <RequiredUniqueChars>1</RequiredUniqueChars>
+  </PasswordConfiguration>
+
+  <TranscriptionLimitSettings>
+    <!-- Max simultaneous transcriptions for the whole instance. -->
+    <MaxGlobalTranscriptions>100</MaxGlobalTranscriptions>
+    <!-- Max simultaneous transcriptions for a single user (both direct and in queues). -->
+    <MaxUserTranscriptions>20</MaxUserTranscriptions>
+    <!-- Default max simultaneous direct transcriptions (i.e. outside of queues) for a user. -->
+    <DefaultDirectTranscriptionLimit>20</DefaultDirectTranscriptionLimit>
+    <!-- Default max simultaneous transcriptions inside a queue. -->
+    <DefaultUserQueueLimit>1</DefaultUserQueueLimit>
+  </TranscriptionLimitSettings>
+
+  <!-- data for injected IOptions<Settings>-->
+  <Settings DefaultAccountCreditMinutes="30"  DefaultUserRole="Promo">
+    <WebURL>https://editor.beey.io</WebURL>
+    <WebURLName>Beey</WebURLName>
+    <SupportEmail>podpora@newtontech.cz</SupportEmail>
+
+    <DefaultUsers Name="0" Email="ladislav.seps@newtontech.cz" Password="OVPgod" Role="Developer" />
+    <DefaultUsers Name="1" Email="jan.vacl@newtontech.cz" Password="OVPgod" Role="Developer"  />
+    <DefaultUsers Name="2" Email="martin.spanel@newtontech.cz" Password="OVPgod" Role="Developer"  />
+    <DefaultUsers Name="3" Email="martin.podloucky@newtontech.cz" Password="OVPgod" Role="Developer"  />
+    <DefaultUsers Name="4" Email="milos.kudelka@newtontech.cz" Password="OVPgod" Role="Developer"  />
+    <DefaultUsers Name="5" Email="cyril.janecek@newtontech.cz" Password="OVPgod" Role="Developer"  />
+    <DefaultUsers Name="6" Email="lucie.vrsovska@newtontech.cz" Password="OVPgod" Role="Developer"  />
+    <!--File Download rate on API/File/Download can be limited to given Bytes per second-->
+    <!--<ApiFileDownloadMaxBPS>102400</ApiFileDownloadMaxBPS>-->
+    <!-- EDITED UPLOADS DIR -->
+    <UploadDir>/www3/uploads</UploadDir>
+    <!-- EDITED TEMP DIR -->
+    <TempDir>/www/temp</TempDir>
+    <DemoProjectsDir>/www/demo-projects</DemoProjectsDir>
+    <DevContentDir>DevContent</DevContentDir>
+    <!-- EDITED CONTENT DIR -->
+    <ContentDir>/www/frontend</ContentDir>
+
+    <MaxRequestSizeMB>10</MaxRequestSizeMB>
+    <WebSocketTimeoutSeconds>120</WebSocketTimeoutSeconds>
+    <UploadTimeoutSeconds>120</UploadTimeoutSeconds>
+
+    <!-- Values of enum SpeakerDbScope, currently global/team.-->
+    <SpeakerDbScope>team</SpeakerDbScope>
+    <!--Optional, Remove for on premise -->
+
+    <IsTempMailEnpoint>https://www.istempmail.com/api/check/0H0M4NV7K2SIAB9ZQ22D3CQC6O95YJUI/{0}</IsTempMailEnpoint>
+
+    <RegistrationLimiter Name="0" Type="LimitEmailDomain" Action="ZeroCredit" Rule="pokec.sk" />
+    <RegistrationLimiter Name="1" Type="LimitEmailDomain" Action="ZeroCredit" Rule="azet.sk" />
+    <RegistrationLimiter Name="2" Type="LimitIPRange" Action="ZeroCredit" Rule="185.5.68.0/255.255.254.0" />
+    <RegistrationLimiter Name="3" Type="LimitIPRange" Action="ZeroCredit" Rule="212.51.207.0/24" />
+    <RegistrationLimiter Name="4" Type="LimitIPRange" Action="ZeroCredit" Rule="77.111.247.0/24" />
+    <!--RegistrationLimiter Name="2" Type="LimitIP" Action="ZeroCredit" Rule="127.0.0.1" LastRule="false" /-->
+    <!--RegistrationLimiter Name="3" Type="LimitEmailRegex" Action="SetCredit" Parameter="10000" Rule="(?:ladislav.seps|seps.ladislav)@.*"/-->
+    <!--RegistrationLimiter Name="4" Type="LimitIPRange" Action="ZeroCredit" Rule="192.168.0.0/255.255.255.0" />-->
+  </Settings>
+
+  <ExternalTools UseMP4Box="false">
+    <Win:FFMpeg>.\ExternalTools\FFmpeg\ffmpeg.exe</Win:FFMpeg>
+    <Win:FFProbe>.\ExternalTools\FFmpeg\ffprobe.exe</Win:FFProbe>
+    <Unix:FFMpeg>./ExternalTools/FFmpeg/ffmpeg</Unix:FFMpeg>
+    <Unix:FFProbe>./ExternalTools/FFmpeg/ffprobe</Unix:FFProbe>
+
+    <AudioStreamExtractionParams>-threads 1 -y -i "{0}" {1} -af aresample=async=1 -c:a aac -cutoff 16000 -ar 48000 -b:a 128k -min_frag_duration 3200000 -frag_duration 3200000 -movflags separate_moof+empty_moov+skip_sidx+dash+isml -f mp4 -</AudioStreamExtractionParams>
+    <VideoStreamExtractionParams>-threads 1 -y -i "{0}" {1} -c:v copy -min_frag_duration 3200000 -frag_duration 3200000 -movflags separate_moof+empty_moov+skip_sidx+dash+isml -f mp4 -</VideoStreamExtractionParams>
+
+    <FFmpegConversionParams>-loglevel info {0} -c:a copy -c:v copy -f mp4 -movflags +faststart "{1}"</FFmpegConversionParams>
+
+    <Win:MP4Box>.\ExternalTools\MP4Box\mp4box.exe</Win:MP4Box>
+    <Unix:MP4Box>./ExternalTools/MP4Box/MP4Box</Unix:MP4Box>
+
+    <MP4BoxParams>-dash 3200 -single-segment -single-traf -no-frags-default -rap "{0}" -out "{2}" -new -noprog -init-segment-ext null -segment-name "$Init={1}$"</MP4BoxParams>
+
+    <Win:SubtitleConverter>.\ExternalTools\SubtitleConverter\SubtitleConverter.exe</Win:SubtitleConverter>
+    <Unix:SubtitleConverter>./ExternalTools/SubtitleConverter/SubtitleConverter</Unix:SubtitleConverter>
+    <SubtitleConverterParams>-s "{0}" -f "{1}"</SubtitleConverterParams>
+  </ExternalTools>
+
+  <Transcoding>
+    <VideoBlacklist Name="0">png</VideoBlacklist>
+    <VideoBlacklist Name="1">jpg</VideoBlacklist>
+    <VideoBlacklist Name="2">jpeg</VideoBlacklist>
+    <VideoBlacklist Name="3">mjpeg</VideoBlacklist>
+  </Transcoding>
+
+  <URLRewrites>
+    <!--REGEX cannot BE empty string-->
+    <!--unique Name have to be specified when tag is repeated-->
+    <!--set route rewrites in Content/Settings.RouteRewrites.xml-->
+    <Rewrite Name="0" Regex="^$" Replacement="/index.html" SkipRemainingRules="true" />
+  </URLRewrites>
+  <NanoGridConfiguration Login="transcriber@newtontech.cz" Password="6Y8HIwPW&amp;d6Q" KeepAliveLimit="00:05:00">
+    <TranscriptionTask>
+      <!--<TaskID> should not be used for default transcription, it will force the language onto all transcriptions -->
+
+      <Tags Name="0">type:broadcast</Tags>
+      <Tags Name="1">mode:transcribe</Tags>
+    </TranscriptionTask>
+
+    <DiarizationTask>
+      <TaskID>next/ntx.v2t.engine.EngineService/any/diar/vad</TaskID>
+      <!--<Tags Name="0">lang:any</Tags>
+      <Tags Name="1">mode:diar</Tags>-->
+    </DiarizationTask>
+
+    <SpeakerIDTask>
+      <TaskID>custom/newton/ntx.v2t.engine.EngineService/any/voiceprint-v018/vad</TaskID>
+      <!--<Tags Name="0">lang:any</Tags>
+      <Tags Name="1">mode:voiceprint</Tags>
+      <Tags Name="2">type:v018</Tags>-->
+    </SpeakerIDTask>
+
+    <!-- Buffersize = data buffer per nanogrid connection (and maximum packet payload size, do NOT exceed 2MB) -->
+    <!-- BufferCount nanogrid minimum payload size -->
+    <AudioPacketizer BufferSize="65535" MinPayloadSize="1024" />
+    <URL>https://newton.nanogrid.cloud/</URL>
+    <!-- when nanogrid is running with TLS with custom root authority -->
+    <!--RootCAPEMPath>certificate.pem</RootCAPEMPath-->
+
+    <!--PaddingAudioFile this will be added to the end of all nanogrid recognitions, to fix the "missing last word" problem-->
+    <!--this file MUST contain only MP4 track boxes in same format as transcoded audio WITHOUT HEADER-->
+    <Win:PaddingAudioFile>ExternalTools\CertifiedNoise.bin</Win:PaddingAudioFile>
+    <Unix:PaddingAudioFile>ExternalTools/CertifiedNoise.bin</Unix:PaddingAudioFile>
+  </NanoGridConfiguration>
+
+  <GlobalUserLexicon>
+    <!-- using NanoGrid names for languages
+    <cz> 
+      nejkulaťoulinkatější:nejkulaťoulinkatější 
+      Ř.Í.Z.E.K:řýzenéyntelygentňýzázemýproekstrémňýkachny
+    </cz>
+    -->
+  </GlobalUserLexicon>
+
+  <!-- Languages supported in NanoGrid -->
+  <NanoGridLanguageTable>
+    <!-- Bosnian -->
+    <Languages Name="0" NG="bs" ISO="bs-BA"></Languages>
+    <!-- Bulgarian -->
+    <Languages Name="1" NG="bg" ISO="bg-BG"></Languages>
+    <!-- Czech -->
+    <Languages Name="2" NG="cz" ISO="cs-CZ"></Languages>
+
+    <!-- Czech with forced justice lexicon task id -->
+    <!-- <Languages Name="2" NG="cz" ISO="cs-CZ" NanogridTaskID="ntx.v2t.engine.EngineService/cz/t-justice/v2t" />-->
+
+    <!-- English -->
+    <Languages Name="3" NG="us" ISO="en-US"></Languages>
+    <!-- Spanish -->
+    <Languages Name="4" NG="es" ISO="es-ES"></Languages>
+    <!-- Croatian -->
+    <Languages Name="5" NG="hr" ISO="hr-HR"></Languages>
+    <!-- Hungarian -->
+    <Languages Name="6" NG="hu" ISO="hu-HU"></Languages>
+    <!-- Montenegrin -->
+    <Languages Name="7" NG="cg" ISO="cnr-ME"></Languages>
+    <!-- Macedonian -->
+    <Languages Name="8" NG="mk" ISO="mk-MK"></Languages>
+    <!-- Norwegian -->
+    <Languages Name="9" NG="no" ISO="nb-NO"></Languages>
+    <!-- Polish -->
+    <Languages Name="10" NG="pl" ISO="pl-PL"></Languages>
+    <!-- Romanian -->
+    <Languages Name="11" NG="ro" ISO="ro-RO"></Languages>
+    <!-- Russian -->
+    <Languages Name="12" NG="ru" ISO="ru-RU"></Languages>
+    <!-- Serbian -->
+    <Languages Name="13" NG="sr" ISO="sr-RS"></Languages>
+    <!-- Slovak -->
+    <Languages Name="14" NG="sk" ISO="sk-SK"></Languages>
+    <!-- Slovenian -->
+    <Languages Name="15" NG="sl" ISO="sl-SI"></Languages>
+    <!-- Swedish -->
+    <Languages Name="16" NG="se" ISO="sv-SE"></Languages>
+    <!-- Ukrainian -->
+    <Languages Name="17" NG="uk" ISO="uk-UA"></Languages>
+    <!-- German -->
+    <Languages Name="18" NG="de" ISO="de-DE"></Languages>
+  </NanoGridLanguageTable>
+
+  <LocalizationSettings CookieName="uiLang">
+    <!-- For each culture a file Backend/Resources/[file].[language].resx has to be created. 'en' is default. -->
+    <SupportedCultures Name="0" Language="cs" />
+    <SupportedCultures Name="1" Language="pl" />
+  </LocalizationSettings>
+
+  <SpeakerIdentification>
+    <!-- UsedVoiceprintVersion must match SpeakerIDTask setting to get correct warnings-->
+    <!--
+    <UsedVoiceprintVersion>v018</UsedVoiceprintVersion>
+    <SufficientSpeakerDurationSeconds>10</SufficientSpeakerDurationSeconds>
+    <VoiceprintDataSets Name="0">
+      <Directory>VoiceprintModels/CZ</Directory>
+      <Language>CZ</Language>
+      <InsertMissingSpeakers>false</InsertMissingSpeakers>
+    </VoiceprintDataSets>
+    <VoiceprintDataSets Name="1">
+      <Directory>VoiceprintModels/SK</Directory>
+      <Language>SK</Language>
+      <InsertMissingSpeakers>false</InsertMissingSpeakers>
+    </VoiceprintDataSets>
+    <VoiceprintDataSets Name="2">
+      <Directory>VoiceprintModels/PL</Directory>
+      <Language>PL</Language>
+      <InsertMissingSpeakers>false</InsertMissingSpeakers>
+    </VoiceprintDataSets>
+    -->
+  </SpeakerIdentification>
+  <TrsxExportConfiguration>
+    <PathUnix>/www/squashfs-root/opt/libreoffice7.1/program/soffice</PathUnix>
+    <ArgsUnix>--headless --norestore --writer --convert-to {{OutFormat}} {{InFile}}</ArgsUnix>
+    <StylesDirUnix>/www/trsx-exporter-styles/</StylesDirUnix>
+  </TrsxExportConfiguration>
+
+  <DefaultRoleClaims>
+    <RoleClaims Name="None">
+      <Claims Name="account-active"/>
+      <Claims Name="file-download"/>
+      <Claims Name="websockets-echo"/>
+      <Claims Name="websockets-mockTrsx"/>
+      <Claims Name="websockets-SpeakerSuggestion"/>
+      <Claims Name="projects-list"/>
+      <Claims Name="projects-get"/>
+      <Claims Name="projects-edit"/>
+      <Claims Name="subtitles-srt"/>
+      <Claims Name="subtitles-vtt"/>
+      <Claims Name="subtitles-stl"/>
+      <Claims Name="subtitles-ssa"/>
+      <Claims Name="subtitles-ttml"/>
+      <Claims Name="subtitles-all"/>
+    </RoleClaims>
+    <RoleClaims Name="Promo">
+      <Claims Name="account-active"/>
+      <Claims Name="file-download"/>
+      <Claims Name="websockets-echo"/>
+      <Claims Name="websockets-mockTrsx"/>
+      <Claims Name="websockets-SpeakerSuggestion"/>
+      <Claims Name="projects-list"/>
+      <Claims Name="projects-get"/>
+      <Claims Name="projects-edit"/>
+      <Claims Name="sharing-toPromo"/>
+      <Claims Name="sharing-toUser"/>
+      <Claims Name="subtitles-srt"/>
+      <Claims Name="subtitles-vtt"/>
+      <Claims Name="subtitles-stl"/>
+      <Claims Name="subtitles-ssa"/>
+      <Claims Name="subtitles-ttml"/>
+      <Claims Name="subtitles-all"/>
+    </RoleClaims>
+    <RoleClaims Name="EnterpriseUser">
+      <Claims Name="account-active"/>
+      <Claims Name="file-download"/>
+      <Claims Name="websockets-echo"/>
+      <Claims Name="websockets-mockTrsx"/>
+      <Claims Name="websockets-SpeakerSuggestion"/>
+      <Claims Name="projects-list"/>
+      <Claims Name="projects-get"/>
+      <Claims Name="projects-edit"/>
+      <Claims Name="projects-share"/>
+      <Claims Name="projects-create"/>
+      <Claims Name="file-upload"/>
+      <Claims Name="websockets-LiveUpdate"/>
+      <Claims Name="websockets-Upload"/>
+      <Claims Name="lexicons-get"/>
+      <Claims Name="lexicons-post"/>
+      <Claims Name="apps-list"/>
+      <Claims Name="apps-link"/>
+      <Claims Name="apps-stream"/>
+      <Claims Name="speakers-list"/>
+      <Claims Name="speakers-edit"/>
+      <Claims Name="editor-subtitleMode"/>
+      <Claims Name="paidFeatures-enabled"/>
+      <Claims Name="sharing-toEnterpriseUser"/>
+      <Claims Name="subtitles-srt"/>
+      <Claims Name="subtitles-vtt"/>
+      <Claims Name="subtitles-stl"/>
+      <Claims Name="subtitles-ssa"/>
+      <Claims Name="subtitles-ttml"/>
+      <Claims Name="subtitles-all"/>
+    </RoleClaims>
+    <RoleClaims Name="User">
+      <Claims Name="account-active"/>
+      <Claims Name="file-download"/>
+      <Claims Name="websockets-echo"/>
+      <Claims Name="websockets-mockTrsx"/>
+      <Claims Name="websockets-SpeakerSuggestion"/>
+      <Claims Name="projects-list"/>
+      <Claims Name="projects-get"/>
+      <Claims Name="projects-edit"/>
+      <Claims Name="projects-share"/>
+      <Claims Name="projects-create"/>
+      <Claims Name="file-upload"/>
+      <Claims Name="websockets-LiveUpdate"/>
+      <Claims Name="websockets-Upload"/>
+      <Claims Name="lexicons-get"/>
+      <Claims Name="lexicons-post"/>
+      <Claims Name="apps-list"/>
+      <Claims Name="apps-link"/>
+      <Claims Name="speakers-list"/>
+      <Claims Name="speakers-edit"/>
+      <Claims Name="orders-create"/>
+      <Claims Name="orders-list"/>
+      <!--uncomment to DISABLE behind payment lock for normal accounts (like transcribing more than 10minutes of transcription) -->
+      <!--<Claims Name="paidFeatures-enabled"/>-->
+      <Claims Name="sharing-toPromo"/>
+      <Claims Name="sharing-toUser"/>
+      <Claims Name="subtitles-srt"/>
+      <Claims Name="subtitles-vtt"/>
+      <Claims Name="subtitles-stl"/>
+      <Claims Name="subtitles-ssa"/>
+      <Claims Name="subtitles-ttml"/>
+      <Claims Name="subtitles-all"/>
+    </RoleClaims>
+    <RoleClaims Name="Admin">
+      <Claims Name="file-download"/>
+      <Claims Name="account-active"/>
+      <Claims Name="websockets-echo"/>
+      <Claims Name="websockets-mockTrsx"/>
+      <Claims Name="websockets-SpeakerSuggestion"/>
+      <Claims Name="projects-list"/>
+      <Claims Name="projects-get"/>
+      <Claims Name="projects-edit"/>
+      <Claims Name="projects-share"/>
+      <Claims Name="projects-create"/>
+      <Claims Name="file-upload"/>
+      <Claims Name="websockets-LiveUpdate"/>
+      <Claims Name="websockets-Upload"/>
+      <Claims Name="lexicons-get"/>
+      <Claims Name="lexicons-post"/>
+      <Claims Name="apps-list"/>
+      <Claims Name="speakers-list"/>
+      <Claims Name="speakers-edit"/>
+      <Claims Name="paidFeatures-enabled"/>
+      <Claims Name="orders-create"/>
+      <Claims Name="orders-list"/>
+      <Claims Name="AdminUser-get"/>
+      <Claims Name="AdminUser-post"/>
+      <Claims Name="AdminUser-put"/>
+      <Claims Name="AdminUser-delete"/>
+      <Claims Name="AdminUser-list"/>
+      <Claims Name="Email-send"/>
+      <Claims Name="apps-all"/>
+      <Claims Name="editor-subtitleMode"/>
+      <Claims Name="sharing-all"/>
+      <Claims Name="subtitles-srt"/>
+      <Claims Name="subtitles-vtt"/>
+      <Claims Name="subtitles-stl"/>
+      <Claims Name="subtitles-ssa"/>
+      <Claims Name="subtitles-ttml"/>
+      <Claims Name="subtitles-all"/>
+    </RoleClaims>
+    <RoleClaims Name="Developer">
+      <Claims Name="account-active"/>
+      <Claims Name="file-download"/>
+      <Claims Name="websockets-echo"/>
+      <Claims Name="websockets-mockTrsx"/>
+      <Claims Name="websockets-SpeakerSuggestion"/>
+      <Claims Name="projects-list"/>
+      <Claims Name="projects-get"/>
+      <Claims Name="projects-edit"/>
+      <Claims Name="projects-share"/>
+      <Claims Name="projects-create"/>
+      <Claims Name="file-upload"/>
+      <Claims Name="websockets-LiveUpdate"/>
+      <Claims Name="websockets-Upload"/>
+      <Claims Name="lexicons-get"/>
+      <Claims Name="lexicons-post"/>
+      <Claims Name="apps-list"/>
+      <Claims Name="speakers-list"/>
+      <Claims Name="speakers-edit"/>
+      <Claims Name="paidFeatures-enabled"/>
+      <Claims Name="orders-create"/>
+      <Claims Name="orders-list"/>
+      <Claims Name="AdminUser-get"/>
+      <Claims Name="AdminUser-post"/>
+      <Claims Name="AdminUser-put"/>
+      <Claims Name="AdminUser-delete"/>
+      <Claims Name="AdminUser-list"/>
+      <Claims Name="Email-send"/>
+      <Claims Name="apps-all"/>
+      <Claims Name="system-monitoring"/>
+      <Claims Name="editor-subtitleMode"/>
+      <Claims Name="sharing-all"/>
+      <Claims Name="subtitles-srt"/>
+      <Claims Name="subtitles-vtt"/>
+      <Claims Name="subtitles-stl"/>
+      <Claims Name="subtitles-ssa"/>
+      <Claims Name="subtitles-ttml"/>
+      <Claims Name="subtitles-all"/>
+    </RoleClaims>
+  </DefaultRoleClaims>
+
+</Configuration>

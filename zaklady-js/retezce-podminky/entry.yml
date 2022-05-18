@@ -1,0 +1,16 @@
+title: Práce s řetězci, podmínky
+lead: Vyzkoušíme si užitečné operace s řetězci a naučíme naše programy dělat rozhodnutí.
+access: claim
+sections:
+  - vlastnosti-metody
+  - retezce-metody
+  - interpolace
+  - cv-retezce
+  - pravdivostni-hodnoty
+  - podminky
+  - cv-podminky
+  - ulozky-na-doma
+  - cteni-na-doma
+  - shrnuti
+  - volitelne-ulozky
+  

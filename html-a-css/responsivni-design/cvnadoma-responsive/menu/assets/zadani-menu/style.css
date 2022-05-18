@@ -1,0 +1,45 @@
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+body {
+  font: 24px sans-serif;
+}
+
+.hlavicka {
+  padding: 10px;
+  border: 1px solid silver;
+}
+
+.logo {
+  font-weight: bold;
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  background-color: #f0f0f0;
+  color: #e74c3c;
+  display: block;
+  padding: 10px 20px;
+}
+
+a:hover {
+  background-color: #e74c3c;
+  color: white;
+}
+
+/* ---------------------------------------------------- */
+
+/*
+	Nakóduj stránku podle obrázku zadani-ukolu.jpg.
+	Rozložení stránky se mění v breakpointech:
+	- 640px
+	- 1000px
+*/

@@ -1,0 +1,10 @@
+title: Velké opakování
+lead: 'Zopakujeme si všechno, co jsme se doteď v JavaScriptu naučili.'
+access: 'claim'
+sections:
+  - rodna-cisla
+  - cv-hodnoty-funkce
+  - cv-pole-cykly
+  - cv-objekty-map
+  - cv-dom-udalosti
+  - cv-innerhtml-dom

@@ -1,0 +1,10 @@
+title: 'Opakování: LeviExpress'
+lead: Všechno, co jsme se v Reactu naučili si procvičíme na projektu takzvaně „ze života“.
+access: 'claim'
+sections:
+  - zadani
+  - cv-zalozeni
+  - cv-vyber-lokace
+  - cv-detail-cesty
+  - cv-rezervace
+  - cv-jizdenka

@@ -1,0 +1,11 @@
+title: Pokročilý JavaScript
+lead: Naučíte se vytvářet složitější webové aplikace a poznáte hlubší zákoutí JavaScriptu.
+lessons:
+  - komponenty
+  - json-api
+  - posilani-dat
+  - webpack
+  - dom-elementy
+  - func-data
+  - cafe-lora-1
+  - cafe-lora-2

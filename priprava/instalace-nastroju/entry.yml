@@ -1,0 +1,9 @@
+title: Instalace nástrojů
+lead: Před tím, než začneme tvořit weby, je potřeba si počítač vybavit nástroji, které nám usnadní práci.
+access: 'public'
+sections:
+  - chrome
+  - vs-code
+  - node
+  - git
+  - slozka
