@@ -9,7 +9,7 @@ Vyzkoušejme si práci s URL parametry v naší React Router aplikaci. Podívám
 1. Po otevření projektu nezapomeňme na příkazy `npm install` a `npm start`, abychom mohli začít vyvíjet.
 1. V souboru `data.js` se podívejme na seznam faktur, jejich strukturu a na funkci `getInvoices`, která je jednoduše vrací. Tu můžeme použít v nějaké komponentě, abychom faktury získali a dále s nimi pracovali.
 1. Všimněme si, jak v souboru `Invoices.jsx` importujeme funkci `getInvoices` a jak ji voláme, abychom získali seznam faktur.
-1. Použijme proměnnou `invoices` a uvnitř `<nav>` prvku vytvořme seznam odkazů na jednotlivé faktury. Inspirovat se můžeme v lekci [Zobrazování seznamů](https://stage.kodim.cz/kurzy/daweb/react/seznamy/seznamy-v-jsx) nebo v [dokumentaci](https://reactrouter.com/docs/en/v6/getting-started/tutorial#listing-the-invoices). Používat budeme komponentu [<Link>](https://reactrouter.com/docs/en/v6/components/link).
+1. Použijme proměnnou `invoices` a uvnitř `<nav>` prvku vytvořme seznam odkazů na jednotlivé faktury. Inspirovat se můžeme v lekci [Zobrazování seznamů](https://stage.kodim.cz/kurzy/daweb/react/seznamy/seznamy-v-jsx) nebo v [dokumentaci](https://reactrouter.com/docs/en/v6/getting-started/tutorial#listing-the-invoices). Používat budeme komponentu [Link](https://reactrouter.com/docs/en/v6/components/link).
 
    ```js
    import { Link } from 'react-router-dom';
@@ -47,7 +47,7 @@ Vyzkoušejme si práci s URL parametry v naší React Router aplikaci. Podívám
    import { useParams } from 'react-router-dom';
 
    export default function Invoice() {
-     let params = useParams();
+     const params = useParams();
      return <h2>Invoice: {params.invoiceId}</h2>;
    }
    ```
@@ -80,4 +80,4 @@ Vyzkoušejme si práci s URL parametry v naší React Router aplikaci. Podívám
 #### Bonus
 
 1. Aplikaci libovolně nastylujme nebo změňme téma z faktur třeba na sbírku filmů či knihovnu.
-1. Přidejme zajímavé featury z dokumentace. Například stylování odkazů podle toho, která stránka je zrovna aktivní. S tím nám pomůže komponenta [<NavLink>](https://reactrouter.com/docs/en/v6/getting-started/tutorial#active-links).
+1. Přidejme zajímavé featury z dokumentace. Například stylování odkazů podle toho, která stránka je zrovna aktivní. S tím nám pomůže komponenta [NavLink](https://reactrouter.com/docs/en/v6/getting-started/tutorial#active-links).
