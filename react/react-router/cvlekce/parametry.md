@@ -12,7 +12,7 @@ Vyzkoušejme si práci s URL parametry v naší React Router aplikaci. Podívám
 1. Použijme proměnnou `invoices` a uvnitř `<nav>` prvku vytvořme seznam odkazů na jednotlivé faktury. Inspirovat se můžeme v lekci [Zobrazování seznamů](https://stage.kodim.cz/kurzy/daweb/react/seznamy/seznamy-v-jsx) nebo v [dokumentaci](https://reactrouter.com/docs/en/v6/getting-started/tutorial#listing-the-invoices). Používat budeme komponentu [<Link>](https://reactrouter.com/docs/en/v6/components/link).
 
    ```js
-   import { Link, Outlet } from 'react-router-dom';
+   import { Link } from 'react-router-dom';
 
    <Link
      style={{ display: 'block', margin: '1rem 0' }}
@@ -23,7 +23,7 @@ Vyzkoušejme si práci s URL parametry v naší React Router aplikaci. Podívám
    </Link>;
    ```
 
-1. Vyzkoušejme, že klikání na odkazy na stránce správně mění náš parametr v adresním řádku. Na obsahu stránky se zatím nic nemění.
+1. Vyzkoušejme, že klikání na odkazy faktur na stránce správně mění náš parametr v adresním řádku (například na `http://localhost:8081/invoices/1997`). Na obsahu stránky se zatím nic nemění.
 1. Podívejme se do `index.jsx`, jak je naimportována a použita komponenta `Invoice.jsx`. Uvnitř `<Routes>` je připravena chovat se jako stránka detailu a přijímá URL parametr `invoiceId`, se kterým bude umět vnitřně pracovat.
    ```js
    <Route path="invoices" element={<Invoices />}>
@@ -79,4 +79,5 @@ Vyzkoušejme si práci s URL parametry v naší React Router aplikaci. Podívám
 
 #### Bonus
 
-1. Aplikaci libovolně nastylujme nebo změňme téma z faktur například na sbírku filmů či knihovnu. Přidejme zajímavé featury z dokumentace. Například stylování odkazů podle toho, která stránka je zrovna aktivní. S tím nám pomůže komponenta [<NavLink>](https://reactrouter.com/docs/en/v6/getting-started/tutorial#active-links).
+1. Aplikaci libovolně nastylujme nebo změňme téma z faktur třeba na sbírku filmů či knihovnu.
+1. Přidejme zajímavé featury z dokumentace. Například stylování odkazů podle toho, která stránka je zrovna aktivní. S tím nám pomůže komponenta [<NavLink>](https://reactrouter.com/docs/en/v6/getting-started/tutorial#active-links).

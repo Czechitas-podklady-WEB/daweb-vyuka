@@ -7,7 +7,7 @@ Vyzkoušejme si přidání React Router knihovny do naší vlastní aplikace. Zk
 
 1. Vygenerujeme si novou aplikaci pomocí příkazu
    ```sh
-     npx create-czechitas-app react-router
+   npx create-czechitas-app react-router
    ```
    nebo si otevřeme již existující projekt. V případě vygenerování nové aplikace vám vznikne složka `react-router`, nezapomeňte do ní přejít příkazem `cd react-router`.
 1. Nainstalujme si knihovnu React Router pomocí npm. Zavolejme příkaz
@@ -16,8 +16,11 @@ Vyzkoušejme si přidání React Router knihovny do naší vlastní aplikace. Zk
    ```
 1. Spusťme si aplikaci příkazem `npm start` a zkontrolujme, že nám v prohlížeči správně běží.
 1. Nebojme se v následujících krocích inspirovat dokumentací [React Routeru](https://reactrouter.com/docs/en/v6)!
-1. V `src` adresáři vytvořme nové soubory (komponenty) pro jednotlivé stránky. Adekvátně je pojmenujme, tedy: `Expenses.jsx` a `Invoices.jsx`. Obsah stránek může být cokoliv, stačí jednoduchý text. Nezapomeňme na správný export. Příklad obsahu jedné stránky:
+1. V `src` adresáři vytvořme nové soubory (komponenty) pro jednotlivé stránky. Adekvátně je pojmenujme, tedy: `Expenses.jsx` a `Invoices.jsx`. Obsah stránek může být cokoliv, stačí jednoduchý text. Příklad obsahu jedné stránky:
+
    ```js
+   import React from 'react';
+
    const Expenses = () => {
      return (
        <main>
@@ -25,7 +28,10 @@ Vyzkoušejme si přidání React Router knihovny do naší vlastní aplikace. Zk
        </main>
      );
    };
+
+   export default Expenses;
    ```
+
 1. V souboru `index.jsx` si naimportujme vaše dvě vytvořené stránky.
 1. V souboru `index.jsx` si naimportujme všechny potřebné komponenty z `react-router-dom`. Příklad jednoho importu:
    ```js
