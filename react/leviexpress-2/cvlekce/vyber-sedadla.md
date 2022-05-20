@@ -1,9 +1,9 @@
 ---
-title: Výběř sedadla
-demand: 3
+title: Výběr sedadla
+demand: 4
 ---
 
-Když už dokážeme zobrazit plánek autobusu, je na čase umožnit uživateli vybrat sedadlo.
+Když už dokážeme zobrazit plánek autobusu, je na čase umožnit uživateli vybrat sedadlo. Zde je potřeba se obrnit trpělivostí. Bude potřeba hodně komunikace mezi komponentami.
 
 1. Nejprve musíme upravit komponenta `Seat` tak, aby správně zobrazovala vybrané sedadlo. Přidáme jí tedy dvě nové prop: `isSelected` a `onSelect`. Pokud je sedadlo vybrané (prop `isSelected` je nastavena na `true`), bude mít sedadlo nastavenu vedle `seat` také třídu `seat--selected`.
 1. Nastal čas pro zprovoznění komunikace mezi komponentou `SeatPicker` a `Seat`. Všimněte si, že je mezi nimi vztah vnuk - prarodič. Komponenta `Seat` očekává prop `onSelect`. V této prop bude funkce, kterou `Seat` zavolá, když uživatel vybere sedadlo. Jako parametr této funkci předejte číslo sedadla.
