@@ -3,8 +3,6 @@ title: Údaje o cestě
 demand: 2
 ---
 
-V tomto cvičení vytvoříme hlavní komponentu pro výběr startu a cíle. Komponenta získá seznam měst a termíny cest z API, nechá uživateli vybrat výchozí a cílové město a datum. Po kliknutí na tlačítko pošle vybrané údaje své rodičovské komponentě.
-
 Ve svém projektu již máte vytvořen základy komponenty s názvem `JourneyPicker`. Ta je součástí komponenty `Home` a zatím vrací pouze statické JSX
 
 1. V komponentě `JourenyPicker` si připravte funkci `handleSubmit(event)`, která se bude volat při odeslání formuláře. Ošetřete, aby prohlížeč sám neodesílal formulář a zatím si ve funkci jen vypište do konzole text `'Odesílám formulář s cestou'`.

@@ -6,10 +6,17 @@ Vaším úkolem bude vytvořit webovou stránku fiktivní dopravní společnosti
 
 Výsledná webová stránka bude mít dvě podstránky. Jedna bude umožňovat rezeraci jízdenky, druhá bude zobrazovat již rezervovanou jízdenku.
 
-Aplikaci budeme vytvářet postupně v několika hlavní milnících.
+### Průběh projektu
 
-1. Založení aplikace a rozběhání routování
-1. Výběr startovní a cílové lokace
-1. Zobrazení vyhledané cesty a výběru sedadla
-1. Zprovoznění rezervace
-1. Zobrazení rezervovaní jízdenky
+Aplikaci budeme vytvářet postupně ve dvou fázích.
+
+1. Nejprve vytvoříme základní verzi, kde si uživatel vybere den a odkud kam chce cestovat. Systém mu pak automaticky zarezervuje nějaké volné místo v autobuse.
+1. V další lekci umožníme uživateli, aby si sám vybral místo v autobuse.
+
+### API
+
+K projektu je již připravný funkční backend s API na adrese
+
+https://apps.kodim.cz/daweb/leviexpress/api
+
+Podrobnou dokumentaci ke všem endpointům najdete [zde](https://apps.kodim.cz/daweb/leviexpress/docs/) ve formátu, na který jste zvyklí.
