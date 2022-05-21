@@ -1,3 +1,4 @@
 ## Výběr sedadla
 
-::exc[cvlekce>vyber-sedadla]
+::exc[cvlekce>zobrazeni-sedadla]
+::exc[cvlekce>stav-sedadla]
