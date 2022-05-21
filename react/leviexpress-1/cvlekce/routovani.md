@@ -3,7 +3,7 @@ title: Routování
 demand: 2
 ---
 
-Hned na začátku rozběháme routování, abychom ho pak nemuseli složitě roubovat do již rozpracovaného projektu.
+Hned na začátku rozběháme routování, abychom ho pak nemuseli složitě roubovat do již rozpracovaného projektu. Knihovna `react-router` už je v naklonovaném projektu nainstalovaná, můžete ji rovnou začít používat.
 
 Naše aplikace bude mít dvě hlavní stránky: :i[Home] a :i[Reservation]. Obě obsahují stejnou hlavičku i patičku. Stránka :i[Home] bude pod routou `/`, stránka s detaily rezervace bude mít adresu `/reservation`.
 
