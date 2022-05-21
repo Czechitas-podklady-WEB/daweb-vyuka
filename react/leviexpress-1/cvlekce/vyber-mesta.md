@@ -6,7 +6,7 @@ demand: 2
 Na konci tohoto cvičení si uživatel bude schopen vybrat startovní a cílové město ze seznamu měst stažených z API. Vytvoříte komponentu `CityOptions`, která dostane na vstupu pole se seznamem destinací a vytvoří z něj elementy `<option>` do `select`ů pro výběr výchozího a cílového města. Seznam měst se bude stahovat v komponentě `JourneyPicker` z API endpointu [/api/cities](https://apps.kodim.cz/daweb/leviexpress/api/cities). Prohlédněte si strukturu dat, která endpoint vrací.
 
 1. Přímo v souboru `index.jsx` komponenty `JourneyPicker` si vytvořte novou komponentu `CityOptions`. Přesuňte do ní všechny `<option>` ze `select`u pro výběr výchozího města. Komponentu `CityOptions` použijte v obou `select`ech pro výběr města. Zkontrolujte, že v prohlížeči vše funguje stejně.
-1. Vytvořte si pomocí `useState` další stav `cities`. V tomto stavu bude seznam měst, mezi kterými lze cestovat. Pro otestování nastavte do seznamu dvě města:
+1. V komponentě `JourneyPicker` si vytvořte pomocí `useState` další stav `cities`. V tomto stavu bude seznam měst, mezi kterými lze cestovat. Pro otestování nastavte do seznamu dvě města:
    ```js
    [
      { name: 'Praha', code: 'CZ-PRG' },
