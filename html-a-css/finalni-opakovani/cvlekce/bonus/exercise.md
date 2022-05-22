@@ -12,7 +12,7 @@ V bonusovém úkolu si zprovozníme překlikávání light a dark módu na strá
 - V `index.html` si odkomentujte prvek `theme-switch-wrapper` a jeho obsah.  
 - Do souboru `index.html` si napojte soubor `toggle-switch.css`. Soubor si projděte a všimněte si použití pseudoelementu `:before`
 - Do souboru `index.html` si napojte soubor `index.js`. Nezapomeňte na typ `module`.
-- V souboru `index.js` je odkaz na webovou stránku, která popisuje, jak funguje přepínání mezi light a dark modem. Stránku si pročtěte.
+- V souboru `index.js` je odkaz na [webovou stránku](https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8), která popisuje, jak funguje přepínání mezi light a dark modem. Stránku si pročtěte.
 - Pročtěte si `index.js` a okomentujte, co se děje v kódu.
 - Vyzkoušejte si, že přepínání funguje.
 - Naimplementujte ukládání preferencí light/dark módu do local storage podle článku (`Store the user preference for future visits`).
