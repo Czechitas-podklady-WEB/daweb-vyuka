@@ -1,16 +1,9 @@
 ---
-title: Projekt Chata Arnica
+title: Seznámení se s projektem
 demand: 1
 ---
 
-V této lekci si nastylujeme připravenou stránku fiktivního ubytování chata Arnica.
-Výsledkem bude responzivní stránka s light a dark módem.
-
-::fig[Chata Arnica mobile]{src=assets/arnica-result.gif}
-
-## Seznámení se s projektem
-
-Udělejte si **fork** [repozitáře chata arnica](https://github.com/Czechitas-podklady-WEB/chata-arnica) a naklonujte si ho k sobě. Přesuňte se do správně složky a pomocí `npx serve` si projekt spusťte.
+Zadání úkolu je v [repozitáři chata arnica](https://github.com/Czechitas-podklady-WEB/chata-arnica). Udělejte si **fork** a naklonujte si ho k sobě. Přesuňte se do správně složky a pomocí `npx serve` si projekt spusťte.
 
 Ve složce uvidíte několik souborů. Kromě složek s obrázky a ikonkami jsou tu soubory
 
