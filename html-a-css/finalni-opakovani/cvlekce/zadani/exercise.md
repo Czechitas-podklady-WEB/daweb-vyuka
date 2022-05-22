@@ -10,7 +10,7 @@ Výsledkem bude responzivní stránka s light a dark módem.
 
 ## Seznámení se s projektem
 
-Udělejte si **fork** tohoto repozitáře a naklonujte si ho k sobě. Přesuňte se do správně složky a pomocí `npx serve` si projekt spusťte.
+Udělejte si **fork** [tohoto repozitáře](https://github.com/Czechitas-podklady-WEB/chata-arnica) a naklonujte si ho k sobě. Přesuňte se do správně složky a pomocí `npx serve` si projekt spusťte.
 
 Ve složce uvidíte několik souborů. Kromě složek s obrázky a ikonkami jsou tu soubory
 
