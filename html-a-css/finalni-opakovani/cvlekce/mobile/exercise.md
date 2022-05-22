@@ -22,5 +22,4 @@ Ve složce result se podívejte na soubor `mobil-zadani`. V devtools si otevřet
 - nastylujte cenové nabídky
 - nastylujte text recenze
 
--
 ::fig[Chata Arnica mobile]{src=assets/mobil-zadani.png}
