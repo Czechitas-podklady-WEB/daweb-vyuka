@@ -5,7 +5,7 @@ demand: 3
 
 V bonusovém úkolu si zprovozníme překlikávání light a dark módu na stránce.
 
-- V souboru  `style.css` v sekci CSS variables si vytvořte nové proměnné, a to v elementu `:root[data-theme='dark']`. Tyto proměnné budou:
+- V souboru  `style.css` v sekci CSS variables si vytvořte proměnné pro dark mode, a to v elementu `:root[data-theme='dark']`. Tyto proměnné budou:
   - `--background-primary: #132221;`
   - `--background-secondary: #476462;`
   - `--text: #e1e1e1;`
