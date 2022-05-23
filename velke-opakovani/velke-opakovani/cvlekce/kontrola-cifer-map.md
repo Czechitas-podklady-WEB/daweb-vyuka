@@ -7,13 +7,13 @@ V tomto cvičení budeme chtít u každného znaku informaci, zde ja správně, 
 
 1. Podobně jako v předchozím cvičení vyrobte z uživatelem zadaného řetězce pole znaků. Na tomto poli použijte metodu `map` a vytvořte pole objektů, obsahující informace o každém znaku. Například pro vstup
 
-   ```
+   ```text
    462748/312
    ```
 
    chceme jako výsledek obdržet takovéto pole.
 
-   ```
+   ```js
    [
      { char: '4', digit: true },
      { char: '6', digit: true },
@@ -25,7 +25,7 @@ V tomto cvičení budeme chtít u každného znaku informaci, zde ja správně, 
      { char: '3', digit: true },
      { char: '1', digit: true },
      { char: '2', digit: true },
-   ]
+   ];
    ```
 
    Výsledné pole vypište to konzole.
