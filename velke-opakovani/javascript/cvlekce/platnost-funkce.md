@@ -9,3 +9,53 @@ Využijte kód z předchozího příkladu a vytvořte funkci s názvem `checkBir
 - `'notANumber'` v případě, že vstup není číslo,
 - `'failedChecksum'` v případě, že číslo není dělitalné 11,
 - `'ok'` v případě, že číslo prošlo kontrolou.
+
+Funkci otestujte třeba na hodnotách:
+
+```js
+const rodnaCislaKOtestovani = [
+  '123',
+  'nepovím',
+  '7060201236',
+  '123456789123456789',
+  '9062185440',
+];
+```
+
+---solution
+
+```js
+const checkBirthID = (rodneCislo) => {
+  if (rodneCislo.length !== 10) {
+    return 'invalidLength';
+  }
+
+  if (!Number.isInteger(Number(rodneCislo))) {
+    return 'notANumber';
+  }
+
+  if (Number(rodneCislo) % 11 !== 0) {
+    return 'failedChecksum';
+  }
+
+  return 'ok';
+};
+
+const rodnaCislaKOtestovani = [
+  '123',
+  'nepovím',
+  '7060201236',
+  '123456789123456789',
+  '9062185440',
+];
+
+rodnaCislaKOtestovani.forEach((rc) => {
+  console.log(`Testuji rodné číslo „${rc}“.`);
+  const vysledek = checkBirthID(rc);
+  if (vysledek === 'ok') {
+    console.log('✔️ je platné.');
+  } else {
+    console.log(`❌ je neplatné. Důvod: ${vysledek}.`);
+  }
+});
+```
