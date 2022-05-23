@@ -1,3 +1,0 @@
-## Bonus
-
-::exc[cvlekce>bonus]
