@@ -19,6 +19,7 @@ const rodnaCislaKOtestovani = [
   '7060201236',
   '123456789123456789',
   '9062185440',
+  '123č56q8y7',
 ];
 ```
 
@@ -47,6 +48,7 @@ const rodnaCislaKOtestovani = [
   '7060201236',
   '123456789123456789',
   '9062185440',
+  '123č56q8y7',
 ];
 
 rodnaCislaKOtestovani.forEach((rc) => {
