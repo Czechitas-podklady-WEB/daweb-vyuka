@@ -7,12 +7,12 @@ Založte si projekt v čistém JavaScriptu bez Webpacku, stačí soubory `index.
 
 1. Pomocí funkce `prompt` se zeptejte uživatele na rodné číslo. Rodné číslo zkontrolujte podle bodů popsaných níže.
 1. Každé rodné číslo musí mít přesně 10 znaků. Zkontrolujte tedy, že zadaný řetězec je délky 10 a neprojdou nám například vstupy typu
-   ```
+   ```text
    Žádné číslo ti nedám
    ```
    Výsledek kontroly vypište do konzole prohlížeče.
 1. Každé rodné číslo musí být celé číslo. Zde je nějaká hodnota celé číslo v JavaScriptu zkontrolujete pomocí funkce `Number.isInteger`. Musíte však vstup předtím převést na číslo pomocí funkce `Number`.
-   ```jscon
+   ```text
    > Number.isInteger(Number('25'))
    true
    > Number.isInteger(Number('25.16'))
