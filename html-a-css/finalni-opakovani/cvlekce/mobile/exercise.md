@@ -2,6 +2,7 @@
 title: Mobile first
 demand: 2
 ---
+
 Jako první budeme stylovat stránku pro nejmenší šířku a postupně budeme upravovat styly pro širší obrazovky.
 
 ### Google fonts
