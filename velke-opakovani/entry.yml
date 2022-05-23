@@ -1,4 +1,5 @@
 title: Velké opakování
 lead: Na konci celého kurzu je dobré si zopakovat věci, které jsme se dosud naučili.
 lessons:
+  - html-a-css
   - javascript
