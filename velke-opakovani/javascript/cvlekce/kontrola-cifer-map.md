@@ -33,7 +33,7 @@ V tomto cvičení budeme chtít u každného znaku informaci, zde ja správně, 
 1. Vyzkoušejte váš kód na různých vstupech a zkontrolujte, že generuje správné výsledky.
 
    ```js
-   > console.log(getInvalidCharacters('462748/312'))
+   > console.log(mapCharacters('462748/312'))
    ```
 
 ---solution
