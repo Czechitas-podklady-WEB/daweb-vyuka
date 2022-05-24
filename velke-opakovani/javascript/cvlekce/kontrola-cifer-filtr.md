@@ -19,9 +19,9 @@ V předchozím cvičení jsme vypisovali všechny špatně zadané znaky do konz
 1. Vyzkoušejte vaši funci opět zavolat třeba se vstupy `'123č56q8y7'` a `'7060201236'` a výsledná pole vypište do konzole.
 
    ```js
-   > getInvalidCharacters('123č56q8y7'))
+   > getInvalidCharacters('123č56q8y7')
    ['č', 'q', 'y']
-   > getInvalidCharacters('7060201236'))
+   > getInvalidCharacters('7060201236')
    []
    ```
 
