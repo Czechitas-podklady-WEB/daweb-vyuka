@@ -3,7 +3,7 @@ title: Platnost jako funkce
 demand: 2
 ---
 
-Využijte kód z předchozího příkladu a vytvořte funkci s názvem `checkBirthID`, která zkontroluje platnost rodného čísla. Funkce bude mít jeden parametr, ve kterém bude očekávat rodné číslo jako řetězec. Funkce bude vracet řetězec s výsledkem kontroly podle následujících pravidel:
+Přepiště kód z předchozího příkladu do funkce s názvem `checkBirthID`, která zkontroluje platnost rodného čísla. Funkce bude mít jeden parametr, ve kterém bude očekávat rodné číslo jako řetězec. Funkce bude vracet řetězec s výsledkem kontroly podle následujících pravidel:
 
 - `'invalidLength'` v případě, že vstup nemá 10 znaků,
 - `'notANumber'` v případě, že vstup není číslo,
