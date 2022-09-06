@@ -1,11 +1,15 @@
-title: Pokročilý JavaScript
+title: JavaScript 2
 lead: Naučíte se vytvářet složitější webové aplikace a poznáte hlubší zákoutí JavaScriptu.
 lessons:
+  - opakovani
+  - zaklady-gitu
+  - func-data
   - komponenty
+  - skladani-aktualizace
   - json-api
   - posilani-dat
   - webpack
   - dom-elementy
-  - func-data
+  - dom-elementy2
   - cafe-lora-1
   - cafe-lora-2

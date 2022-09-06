@@ -1,0 +1,10 @@
+title: Základy Gitu
+lead: Představíme si verzovací systém Git, který nám usnadní správu a sdílení zdrojových kódů
+access: claim
+sections:
+  - system-git
+  - zakladni-pojmy
+  - dulezite-prikazy
+  - cviceni-vizitka
+  - github-pages
+  - cviceni-saturejka
