@@ -3,7 +3,6 @@ lead: Osvěžení znalostí nabytých v předchozích lekcích a kurzech
 sections:
   - rodna-cisla
   - cv-hodnoty-funkce
-  - cv-pole-cykly
-  - cv-objekty-map
+  - cv-pole-cykly-objekty
   - cv-dom-udalosti
-  - cv-innerhtml-dom
+  - cv-innerhtml

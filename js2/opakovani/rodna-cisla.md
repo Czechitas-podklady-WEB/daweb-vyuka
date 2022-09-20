@@ -1,4 +1,4 @@
-Na začátku kurzu JavaScript 2 předpokládáme, že máte znalosti jazyka JavaScript srovnatelné s obsahem kurzu JavaScript 1. Možná jste tyto znalosti získali jiným způsobem, možná jste už některé věci malinko pozapomněli. V této první lekci si tedy projdeme sérii cvičení, která vám přiomnenou většinu toho, co jsme se v čistém JavaScriptu učili.
+Na začátku kurzu JavaScript 2 předpokládáme, že máte znalosti jazyka JavaScript srovnatelné s obsahem kurzu JavaScript 1. Možná jste tyto znalosti získali jiným způsobem, možná jste už některé věci malinko pozapomněli. V této první lekci si tedy projdeme sérii cvičení, která vám připomenou většinu toho, co jsme se v čistém JavaScriptu učili.
 
 ## Rodná čísla
 

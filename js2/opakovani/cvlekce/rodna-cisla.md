@@ -1,10 +1,15 @@
 ---
 title: Rodná čísla
-demand: 2
+demand: 3
 ---
 
-Založte si projekt v čistém JavaScriptu bez Webpacku, stačí soubory `index.html` a `index.js`. Napište program, který zjistí, jestli je zadané rodné číslo platné.
+Napište program, který zjistí, jestli je zadané rodné číslo platné. Postupujte dle následujících kroků.
 
+1. Založte si projekt v čistém JavaScriptu, stačí soubory `index.html` a `index.js`. 
+1. JavaScript vložte do stránky pomocí
+   ```html
+   <script type="module" src="index.js"></script>
+   ```
 1. Pomocí funkce `prompt` se zeptejte uživatele na rodné číslo. Rodné číslo zkontrolujte podle bodů popsaných níže.
 1. Každé rodné číslo musí mít přesně 10 znaků. Zkontrolujte tedy, že zadaný řetězec je délky 10 a neprojdou nám například vstupy typu
 

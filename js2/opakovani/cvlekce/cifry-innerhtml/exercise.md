@@ -1,26 +1,18 @@
 ---
-title: Cifry jako komponenty
-demand: 2
+title: Cifry jako HTML elementy
+demand: 3
 ---
 
 Pokračuje v kódu předchozího příkladu. Budeme chtít zobrazit jednotlivé cifry rodného čísla dle následujícího vzoru.
 
 ::fig[Cifry]{src=assets/digits.png size=80}
 
-1. Vytvořte čistě JavaScriptovou komponentu `Digit`, která bude představovat jednu cifru rodného čísla. Tato komponenta bude jako svůj parametr brát props s následující strukturou.
+Cifry budeme do stránky vkládat pomocí vlastnosti `innerHTML`. 
 
-   ```js
-   {
-     char: '3',
-     digit: true,
-   }
-   ```
-
-   Komponentu napište tak, aby vracela řetězec obsahující HTML.
-
-1. Pokud bude prop `digit` mít hodnotu `true`, bude mít znak zelené pozadí `#00DD00`. V opačném případě bude mít červené pozadí `#FF8686`.
+1. Nedříve si rozmysleme, jak bude vypadat HTML pro jednu cifru. Může jít například o jednoduchý `div` s nějakou vhodně nastylovanou třídou.
+1. Pokud je znak platná číslice, bude mít na stránce zelené pozadí `#00DD00`. V opačném případě bude mít červené pozadí `#FF8686`.
 1. V souboru `index.html` vytvořte `div` s nějakým smysluplným `id`, ve kterém budeme zobrazovat jednotlivé cifry. Nastylujte jej pomocí flexboxu tak, abychom mohli cifry zobrazovat vedle sebe.
-1. Jakmile uživatel klikne na tlačítko :i[Zkontrolovat], zavolejte na uživatelův vstup `mapCharacters`. Projděte vrácené pole pomocí cyklu a naplňte váš připravený `div` ciframi s použitím komponenty `Digit` a vlastnosti `innerHTML`.
+1. Jakmile uživatel klikne na tlačítko :i[Zkontrolovat], zavolejte na uživatelův vstup `validateCharacters`. Projděte vrácené pole pomocí cyklu `forEach` a naplňte váš připravený `div` ciframi s použitím vlastnosti `innerHTML`.
 
 Vaše aplikce by měla ve výsledku fungovat tak, že kdykoliv uživatel zadá rodné číslo a nechá si jej zkontrolovat, aplikace vypíše, zda je číslo zadané dobře nebo špatně, a zobrazí jednotlivé znaky čísla s tím, že cifry jsou zelené a špatně zadané znaky jsou červené.
 
@@ -55,18 +47,21 @@ Vaše aplikce by měla ve výsledku fungovat tak, že kdykoliv uživatel zadá r
 ### `index.js`
 
 ```js
-import { Digit } from './Digit.js';
-// …
 const formular = document.querySelector('#formular');
 formular.addEventListener('submit', (event) => {
   event.preventDefault();
   const vstup = formular.querySelector('input').value;
-  const vystup =
-    checkBirthID(vstup) === 'ok'
-      ? '✔️ V pořádku.'
-      : '❌ V rodném čísle jsou chyby.';
+  const vystup = checkBirthID(vstup) === 'ok'
+    ? '✔️ V pořádku.'
+    : '❌ V rodném čísle jsou chyby.';
   document.querySelector('#vystup').textContent = vystup;
-  document.querySelector('#cifry').innerHTML = mapCharacters(vstup)
+  const overeni = validateCharacters(vstup);
+  const cifry = document.querySelector('#cifry');
+  
+  overeni.forEach((znak) => {
+      
+  })
+  
     .map(Digit)
     .join('');
 });
