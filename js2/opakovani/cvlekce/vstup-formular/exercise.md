@@ -1,6 +1,7 @@
 ---
 title: Vstup pomocí formuláře
 demand: 2
+access: claim
 ---
 
 Upravte vaši aplikaci na kontrolu rodných čísel tak, aby obsahovala formulář.

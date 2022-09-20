@@ -1,6 +1,7 @@
 ---
 title: Rodná čísla
 demand: 3
+access: claim
 ---
 
 Napište program, který zjistí, jestli je zadané rodné číslo platné. Postupujte dle následujících kroků.

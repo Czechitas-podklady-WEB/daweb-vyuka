@@ -1,6 +1,7 @@
 ---
 title: Cifry jako HTML elementy
 demand: 3
+access: claim
 ---
 
 Pokračuje v kódu předchozího příkladu. Budeme chtít zobrazit jednotlivé cifry rodného čísla dle následujícího vzoru.

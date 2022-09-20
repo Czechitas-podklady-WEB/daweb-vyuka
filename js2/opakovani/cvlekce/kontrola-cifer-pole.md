@@ -1,6 +1,7 @@
 ---
 title: Detailní kontrola cifer
 demand: 3
+access: claim
 ---
 
 V předchozím cvičení jsme pomocí cyklu vypisovali všechny špatně zadané znaky do konzole. Nyní tento kód přepíšeme tak, aby místo výpisů do konzole vyrobil pole objektů, obsahující informace o každém znaku. Například pro vstup

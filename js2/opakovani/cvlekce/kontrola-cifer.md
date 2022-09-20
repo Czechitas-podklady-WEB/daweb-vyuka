@@ -1,6 +1,7 @@
 ---
 title: Kontrola cifer
 demand: 2
+access: claim
 ---
 
 V případě, že uživatel zadal do rodného čísla špatné znaky, budeme chtít tyto znaky vypsat a ukázat, kde se stala chyba. Pokračuje v kódu z předchozího příkladu.
