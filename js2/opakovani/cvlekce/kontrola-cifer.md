@@ -20,7 +20,7 @@ const digits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 const isDigit = (znak) => znak.length === 1 && digits.includes(znak);
 
 const logInvalidCharacters = (vstup) => {
-  vstup.forEach((znak) => {
+  Array.from(vstup).forEach((znak) => {
     if (!isDigit(znak)) {
       console.log(`Vstup obsahuje neplatný znak „${znak}“.`);
     }

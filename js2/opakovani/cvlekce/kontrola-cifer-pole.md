@@ -68,7 +68,7 @@ Napište tedy funkci `validateCharacters`, která na vstupu dostane text a vrát
 ```js
 const validateCharacters = (vstup) => {
   const result = [];
-  vstup.forEach((znak) => {
+  Array.from(vstup).forEach((znak) => {
     result.push({ char: znak, digit: isDigit(znak) });
   });
   return result;
