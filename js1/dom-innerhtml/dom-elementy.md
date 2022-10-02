@@ -86,7 +86,7 @@ Pokud chceme tlačítku odebrat modifikátor `btn-primary`, použijeme metodu `c
 > const buttonElm = document.querySelector('button')
 > buttonElm
 <button class="btn btn-primary">Click me</button>
-> buttonElm.classList.remove('btn btn-primary')
+> buttonElm.classList.remove('btn-primary')
 > buttonElm
 <button class="btn">Click me</button>
 ```
