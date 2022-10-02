@@ -55,29 +55,18 @@ formular.addEventListener('submit', (event) => {
   const vystup = checkBirthID(vstup) === 'ok'
     ? '✔️ V pořádku.'
     : '❌ V rodném čísle jsou chyby.';
+  
   document.querySelector('#vystup').textContent = vystup;
+  
   const overeni = validateCharacters(vstup);
   const cifry = document.querySelector('#cifry');
   
   overeni.forEach((znak) => {
-      
-  })
-  
-    .map(Digit)
-    .join('');
+    cifry.innerHTML += `
+      <span style="background-color: ${digit ? '#00DD00' : '#FF8686'}">
+        ${char}
+      </span>
+    `;
+  });
 });
-```
-
-### `Digit.js`
-
-```js
-export const Digit = (props) => {
-  const { char, digit } = props;
-
-  return `
-    <span style="background-color: ${digit ? '#00DD00' : '#FF8686'}">
-      ${char}
-    </span>
-  `;
-};
 ```
