@@ -1,4 +1,4 @@
-## Cvičení na doma: metody na poli
+## Doporučené úložky na doma
 
-::exc[cvlekce>nadoma]
-::exc[cvlekce>ukolnicek]
+::exc[cvdoma>zpracovani-dat]
+<!-- ::exc[cvlekce>ukolnicek] -->

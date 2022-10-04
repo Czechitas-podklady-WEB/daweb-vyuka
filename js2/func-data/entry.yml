@@ -3,7 +3,9 @@ lead: Ukážeme si šikovné funkce pro práci s daty jako map a filter, a také
 access: 'claim'
 sections:
   - funkcionalni-zpracovani
-  - cv-funkcionalni-zpracovani
-  - filtry-mapy
-  - cv-filtry-mapy
+  - vyhledavani-dotazovani
+  - cv-vyhledavani-dotazovani
+  - transformace
+  - agregace-retezeni
+  - cv-transformace-agregace
   - cv-nadoma

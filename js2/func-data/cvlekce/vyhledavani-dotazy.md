@@ -1,29 +1,34 @@
 ---
-title: Funkcionální jednohubky 1
+title: Vyhledávání a dotazy
 demand: 2
 ---
 
-Založte si nový projekt pomocí `create-czechitas-app jednohubky vanilla`. Do `index.js` si zkopírujte následující pole dat. Budeme s nimi pracovat v následujících cvičeních.
+Založte si nový projekt JavaScriptový project se soubory `index.html` a `index.js` Do `index.js` si zkopírujte následující pole dat. Budeme s nimi pracovat v dalších cvičeních.
 
 ```js
 const numbers = [15, 6, 70, 41, 33, 27, 8, 16, 98, 60, 56];
-const names = ['Petr', 'Jana', 'Pavel', 'Zuzana', 'Eva', 'Adam', 'Onyx'];
+const names = ['Petr', 'Jana', 'Pavel', 'Zuzana', 'Eva', 'Adam', 'Onyx', 'Alex'];
 const persons = [
   { name: 'Petr', age: 16, gender: 'male' },
   { name: 'Jana', age: 8, gender: 'female' },
   { name: 'Pavel', age: 34, gender: 'male' },
   { name: 'Zuzana', age: 41, gender: 'female' },
-  { name: 'Eva', age: 13, gender: 'female' },
-  { name: 'Adam', age: 22, gender: 'male' },
+  { name: 'Eva', age: 22, gender: 'female' },
   { name: 'Adam', age: 22, gender: 'male' },
   { name: 'Onyx', age: 37, gender: 'intersex' },
+  { name: 'Alex', age: 29, gender: 'androgyne' },
 ];
 ```
 
 1. Pomocí funkce `forEach` vypište do konzole postupně věk každé osoby z pole `persons`.
-2. Pomocí metody `forEach` napište cyklus, který vypíše do konzole první písmeno z každného jména v poli `names`.
-3. Pomocí metody `every` zjistěje, jestli v poli `names` platí, že každé jméno má alespoň 4 znaky.
-4. Pomocí metody `some` zjistěte, jestli jsou v poli `numbers` nějaká čísla dělitelná 11.
+1. Pomocí metody `forEach` napište cyklus, který vypíše do konzole první písmeno z každného 
+jména v poli `names`.
+1. Pomocí metody `find` najděte v poli `persons` osobu se jménem "Adam" a vypište ji do konzole. 
+1. Vypište do konzole gender osoby se jménem "Onyx".
+1. Pomocí metody `findIndex` najděte v poli `persons` index osoby s věkem 22 a mužským pohlavím.
+1. Pomocí metody `some` zjistěte, jestli jsou v poli `numbers` nějaká čísla dělitelná 11.
+1. Pomocí metody `some` zjistěte, jestli jsou v poli `persons` nějaké osoby nebinárního pohlaví, tedy nejsou ani `male` ani `female`. 
+1. Pomocí metody `every` zjistěje, jestli v poli `persons` platí, že každá osoba je starší 18 let. 
 
 ---solution
 
