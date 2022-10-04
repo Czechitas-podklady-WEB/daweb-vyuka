@@ -4,7 +4,7 @@ demand: 2
 hasSolution: false
 ---
 
-Založte si nový projekt JavaScriptový project se soubory `index.html` a `index.js` Do `index.js` si zkopírujte následující pole dat. Budeme s nimi pracovat v dalších cvičeních.
+Založte si nový JavaScriptový projekt se soubory `index.html` a `index.js` Do `index.js` si zkopírujte následující pole dat. Budeme s nimi pracovat v dalších cvičeních.
 
 ```js
 const numbers = [15, 6, 70, 41, 33, 27, 8, 16, 98, 60, 56];
