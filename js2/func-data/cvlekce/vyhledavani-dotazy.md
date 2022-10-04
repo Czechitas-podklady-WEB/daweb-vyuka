@@ -1,6 +1,7 @@
 ---
 title: Vyhledávání a dotazy
 demand: 2
+hasSolution: false
 ---
 
 Založte si nový projekt JavaScriptový project se soubory `index.html` a `index.js` Do `index.js` si zkopírujte následující pole dat. Budeme s nimi pracovat v dalších cvičeních.

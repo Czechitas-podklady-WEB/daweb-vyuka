@@ -1,6 +1,7 @@
 ---
 title: Agregace
 demand: 3
+hasSolution: false
 ---
 
 Použijte opět pole `numbers`, `names` a `persons` z předchozího cvičení.
