@@ -20,31 +20,31 @@ Ze záznamů o počasí vybereme jen ty dny, ve kterých byl slabý nebo žádn�
 [
   {
     date: '03.10.2022',
-    temps: [12, 12, 8]
+    temps: [12, 12, 8],
     rain: 4.1,
     sunlight: 'partly-cloudy',
   },
   {
     date: '04.10.2022',
-    temps: [14, 13, 11]
+    temps: [14, 13, 11],
     rain: 0,
     sunlight: 'sunny',
   },
   {
     date: '05.10.2022',
-    temps: [17, 15, 10]
+    temps: [17, 15, 10].
     rain: 1.2,
     sunlight: 'partly-cloudy',
   },
   {
     date: '06.10.2022',
-    temps: [20, 18, 14]
+    temps: [20, 18, 14],
     rain: 10.5,
     sunlight: 'cloudy',
   },
   {
     date: '07.10.2022',
-    temps: [21, 18, 16]
+    temps: [21, 18, 16],
     rain: 12.4,
     sunlight: 'cloudy',
   },
