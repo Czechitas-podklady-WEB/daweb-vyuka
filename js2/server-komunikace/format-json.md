@@ -1,8 +1,36 @@
 ## Formát JSON
 
+Jak už jsme viděli v předchozí lekci, data v naší aplikaci mají velmi často formu pole objektů. Takto bychom mohli reprezentovat například kurz Czechitas jménem :i[Úvod do programování].
+
+```js
+const course = {
+  nazev: 'Úvod do programování',
+  lektor: 'Martin Podloucký',
+  konani: [
+    {
+      misto: 'T-Mobile',
+      koucove: ['Dan Vrátil', 'Filip Kopecký', 'Martina Nemčoková'],
+      ucastnic: 30,
+    },
+    {
+      misto: 'MSD IT',
+      koucove: ['Dan Vrátil', 'Zuzana Tučková', 'Martina Nemčoková'],
+      ucastnic: 25,
+    },
+    {
+      misto: 'Škoda DigiLab',
+      koucove: ['Dan Vrátil', 'Filip Kopecký', 'Kateřina Kalášková'],
+      ucastnic: 41,
+    },
+  ],
+};
+```
+
+Všimněte si, jak objekt představující jeden kurz obsahuje pod klíčem `konani` pole dalších objektů. Každý z těchto objektů reprezentuje jedno konání kurzu a dále obsahuje například pole koučů, místo atp.
+
 Podle většiny moderních doporučení je lepší v JavaScriptu používat v řetězcích jednoduché uvozovky. V počátcích JavaScriptu však bylo běžné používat spíše dvojité. Pokud v našich objektech schválně uzavřeme všechny klíče a řetězce do dvojitých uvozovek i tam, kde by to jinak nebylo potřeba, dostaneme reprezentaci zapsanou takto.
 
-```json
+```js
 const course = {
   "nazev": "Úvod do programování",
   "lektor": "Martin Podloucký",

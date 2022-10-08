@@ -1,0 +1,13 @@
+title: Komunikace se serverem
+lead: Vysvětlíme si fungování World Wide Webu a ukážeme si, jak ze serveru načíst data pomocí API.
+access: claim
+sections:
+  - klient-server
+  - volani-api
+  - format-json
+  - api-js
+  - cv-volani-api
+  - api-komponenty
+  - skladani-komponent
+  - cv-api-komponenty
+  - ulozky-na-doma

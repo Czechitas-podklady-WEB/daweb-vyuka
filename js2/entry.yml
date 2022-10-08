@@ -4,9 +4,9 @@ lessons:
   - opakovani
   - zaklady-gitu
   - func-data
+  - server-komunikace
   - komponenty
   - skladani-aktualizace
-  - json-api
   - posilani-dat
   - webpack
   - dom-elementy
