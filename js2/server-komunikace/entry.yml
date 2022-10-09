@@ -7,7 +7,6 @@ sections:
   - format-json
   - api-js
   - cv-volani-api
-  - api-komponenty
-  - skladani-komponent
+  - zobrazovani-dat
   - cv-api-komponenty
   - ulozky-na-doma
