@@ -5,7 +5,7 @@ V předešlé lekci jsme se naučili používat metody pro zpracování dat jako
 Vzpomeňte na cvičení [Nákupní seznam](../../func-data/cv-nadoma#cvdoma%3Enakupni-seznam) z minulé lekce. Zobrazovali jsme v něm položky nákupního seznamu na základě pole objektů. Místo abychom toto pole měli natvrdo uložené přímo v kódu, stáhneme si jej z API. Příslušný endpoint má URL
 
 ```
-https://apps.kodim.cz/daweb/shoplist/api/lists/default
+https://apps.kodim.cz/daweb/trening-api/apis/shopping
 ```
 
 Pojďme nejdříve seznam stáhnout a vypsat do konzole. 
@@ -23,14 +23,13 @@ fetch('https://apps.kodim.cz/daweb/shoplist/api/lists/default')
 Nyní už můžeme využít metody pro zpracování dat a vytvořit obsah stránky. 
 
 ```js
-fetch('https://apps.kodim.cz/daweb/shoplist/api/lists/default')
+fetch('https://apps.kodim.cz/daweb/trening-api/apis/shopping')
   .then((response) => {
     return response.json();
   })
   .then((data) => {
-    const items = data.results.items;
     const shoppingList = document.querySelector('.shopping-list');
-    shoppingList.innerHTML = items.map((item) => {
+    shoppingList.innerHTML = data.map((item) => {
       return `
         <li class="item">
           <div class="item__name">${item.name}</div>
@@ -60,19 +59,19 @@ const renderShoppingList = (items) => {
 Tato funkce nám pomůže trochu pročistit náš fetchovací kód.
 
 ```js
-fetch('https://apps.kodim.cz/daweb/shoplist/api/lists/default')
+fetch('https://apps.kodim.cz/daweb/trening-api/apis/shopping')
   .then((response) => {
     return response.json();
   })
   .then((data) => {
-    renderShoppingList(data.results.items)
+    renderShoppingList(data)
   });
 ```
 
 Můžeme jej pak i hezky pozkracovat. 
 
 ```js
-fetch('https://apps.kodim.cz/daweb/shoplist/api/lists/default')
+fetch('https://apps.kodim.cz/daweb/trening-api/apis/shopping')
   .then((response) => response.json())
-  .then((data) => renderShoppingList(data.results.items));
+  .then((data) => renderShoppingList(data));
 ```
