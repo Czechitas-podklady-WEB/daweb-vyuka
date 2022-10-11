@@ -11,12 +11,12 @@ https://apps.kodim.cz/daweb/trening-api/apis/shopping
 Pojďme nejdříve seznam stáhnout a vypsat do konzole. 
 
 ```js
-fetch('https://apps.kodim.cz/daweb/shoplist/api/lists/default')
+fetch('https://apps.kodim.cz/daweb/trening-api/apis/shopping')
   .then((response) => {
     return response.json();
   })
   .then((data) => {
-    console.log(data.results.items);
+    console.log(data);
   });
 ```
 
@@ -32,7 +32,7 @@ fetch('https://apps.kodim.cz/daweb/trening-api/apis/shopping')
     shoppingList.innerHTML = data.map((item) => {
       return `
         <li class="item">
-          <div class="item__name">${item.name}</div>
+          <div class="item__name">${item.product}</div>
           <div class="item__amount">${item.amount}</div>
         </li>
       `;
@@ -48,7 +48,7 @@ const renderShoppingList = (items) => {
   shoppingList.innerHTML = items.map((item) => {
     return `
       <li class="item">
-        <div class="item__name">${item.name}</div>
+        <div class="item__name">${item.product}</div>
         <div class="item__amount">${item.amount}</div>
       </li>
     `;
