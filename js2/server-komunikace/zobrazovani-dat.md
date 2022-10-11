@@ -2,7 +2,7 @@
 
 V předešlé lekci jsme se naučili používat metody pro zpracování dat jako `map`, `join` a další. Obzvláště tyto dvě metody se nám velmi hodily na generování obsahu stránky z dat. V tuto chvíli už umíme stáhnout data ze serveru, je tedy na čase tyto dva postupy spojit dohromady.
 
-Vzpomeňte na cvičení [Nákupní seznam](../../func-data/cv-nadoma#cvdoma%3Enakupni-seznam) z minulé lekce. Zobrazovali jsme v něm položky nákupního seznamu na základě pole objektů. Místo abychom toto pole měli natvrdo uložené přímo v kódu, stáhneme si jej z API. Příslušný endpoint má URL
+Vzpomeňte na cvičení [Nákupní seznam](../func-data/cv-nadoma#cvdoma%3Enakupni-seznam) z minulé lekce. Zobrazovali jsme v něm položky nákupního seznamu na základě pole objektů. Místo abychom toto pole měli natvrdo uložené přímo v kódu, stáhneme si jej z API. Příslušný endpoint má URL
 
 ```
 https://apps.kodim.cz/daweb/trening-api/apis/shopping
