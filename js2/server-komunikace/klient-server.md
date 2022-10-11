@@ -13,7 +13,7 @@ Příkladem softwarového serveru je například program `serve`, který spoušt
 
 ## Požadavky
 
-Prohlížeč obsah stránky získá tak, že na server posílá takzvané :term{cs=požadavky en=requests}. Prohlížečem odeslané požadavky můžeme sledovat v developer tools v záložce :i[Network], Pokud například otevřete stránku [kodim.cz]{https://kodim.cz} uvidíte v této záložce seznam požadavků jako na obrázku.
+Prohlížeč obsah stránky získá tak, že na server posílá takzvané :term{cs=požadavky en=requests}. Prohlížečem odeslané požadavky můžeme sledovat v developer tools v záložce :i[Network], Pokud například otevřete stránku [kodim.cz](https://kodim.cz) uvidíte v této záložce seznam požadavků jako na obrázku.
 
 ::fig{src=assets/pozadavky.png}
 
