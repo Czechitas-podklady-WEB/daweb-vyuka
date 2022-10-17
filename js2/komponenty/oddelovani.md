@@ -1,4 +1,4 @@
-Čím budou naše webové aplikace pokročilejší a schopnější tím více budou obsahovat komponent ale také různých knihoven. Brzy již přestane být únosné mít všechen kód v jednom obřím `index.js`, protože by se v něm za chvíli už nikdo nikdy nevyznal. Od samého začátku se tedy budeme snažit rozdělitovat naše komponenty do jednotlivých souborů.
+Čím budou naše webové aplikace pokročilejší a schopnější tím více budou obsahovat komponent ale také různých knihoven. Brzy již přestane být únosné mít všechen kód v jednom obřím `index.js`, protože by se v něm za chvíli už nikdo nikdy nevyznal. Od samého začátku se tedy budeme snažit rozdělovat naše komponenty do jednotlivých souborů.
 
 ## Oddělování komponent
 
@@ -99,23 +99,16 @@ Hlavní soubor `index.html` bude vypadat takto:
 Všimněte si hlavičky, kam musíme vložit všechny soubory stylů. Co se JavaScriptu týče, stačí nám do stránky vložit pouze hlavní `index.js` s tímto obsahem:
 
 ```js
-const items = [
-  {
-    product: 'Rohlíky',
-    amount: '10',
-    done: true,
-  },
-  {
-    product: 'Rajčate',
-    amount: '1kg',
-    done: false,
-  },
-];
+const renderShoppingList = (items) => {
+  const shoppingList = document.querySelector('.shopping-list');
+  shoppingList.innerHTML = items
+    .map((item) => ShoppingItem(item))
+    .join('');
+};
 
-const listElm = document.querySelector('.shopping-list');
-for (let i = 0; i < items.length; i += 1) {
-  listElm.innerHTML += ShoppingItem(items[i]);
-}
+fetch('https://apps.kodim.cz/daweb/trening-api/apis/shopping')
+  .then((response) => response.json())
+  .then((data) => renderShoppingList(data));
 ```
 
 Ještě nám zbývá hlavní soubor `style.css` s tímto obsahem:

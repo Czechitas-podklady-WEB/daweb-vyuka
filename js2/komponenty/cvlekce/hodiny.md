@@ -3,7 +3,7 @@ title: Hodiny
 demand: 2
 ---
 
-Naklonuje si [repozitář](https://github.com/Czechitas-podklady-WEB/hodiny-zadani) se stránku zobrazující digitální hodiny. Následujte instrukce níže.
+Naklonuje si [repozitář](https://github.com/Czechitas-podklady-WEB/hodiny-zadani) se stránkou zobrazující digitální hodiny. Následujte instrukce níže.
 
 1. Vytvořte komponentu `Clock`, která bude na vstupu očekávat takovýto objekt:
    ```js
@@ -15,8 +15,16 @@ Naklonuje si [repozitář](https://github.com/Czechitas-podklady-WEB/hodiny-zada
    Komponenta nechť z takového objektu vytvoří HTML pro jedny hodiny. Jak má vypadat HTML hodin najdete v souboru `index.html`.
 1. HTML kód hodin ze stránky vyjměte a nechte v ní pouze element `app`.
 1. Ve vašem programu vyberte element `app` a pomocí komponenty `Clock` do něj zapojte hodiny zobrazující nějaký čas.
-1. Zkuste pomocí funkce `Clock` vložit do stránky několik různých hodin pod sebe.
-1. Zkuste vyrobit pole hodin a zobrazit je pomocí cyklu na stránce.
+1. Pomocí funkce `Clock` vložte do stránky několik různých hodin pod sebe s různými časy.
+1. Vyrobte pole hodin a zobrazit je pomocí cyklu na stránce.
+1. Zajistěte, aby hodiny vždy zobrazovaly čas dvouciferně, tedy aby například pro čas
+   ```js
+   {
+     hours: 8,
+     minutes: 5,
+   }
+   ```
+  zobrazily čas *08:05*.
 
 ---solution
 
@@ -52,25 +60,24 @@ const times = [
   },
   {
     hours: 17,
-    minutes: 18,
+    minutes: 08,
   },
 ];
 
 const Clock = (props) => {
   const { hours, minutes } = props;
+  const paddedHours = String(hours).padStart(2, '0');
+  const paddedMinutes = String(minutes).padStart(2, '0');
 
   return `
     <div class="clock">
-      <span class="clock__hours">${hours}</span>:<span class="clock__minutes">${minutes}</span>
+      <span class="clock__hours">${paddedHours}</span>:<span class="clock__minutes">${paddedMinutes}</span>
     </div>
   `;
 };
 
-// const appElm = document.querySelector('#app');
-// appElm.innerHTML += Clock(time1);
-
 const appElm = document.querySelector('#app');
-for (let i = 0; i < times.length; i += 1) {
-  appElm.innerHTML += Clock(times[i]);
-}
+appElm.innerHTML = times
+  .map((time) => Clock(time))
+  .join('');
 ```

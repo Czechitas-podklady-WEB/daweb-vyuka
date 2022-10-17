@@ -58,4 +58,4 @@ Naklonujte si [repozitář](https://github.com/Czechitas-podklady-WEB/podcasty-z
      },
    ];
    ```
-   V hlavním souboru `index.js` napište cyklus, který projde toto pole a pro každou položku vytvoří novou epizodu uvnitř elementu `episodes-list`. Nezpomeňte na správné importy/exporty.
+   V hlavním souboru `index.js` pomocí vaší komponenty zobrazte toto pole na stránce. Nezapomeňte na správné importy/exporty.
