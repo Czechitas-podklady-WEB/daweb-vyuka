@@ -2,7 +2,6 @@ title: Jednoduché komponenty
 lead: Postupně se začneme seznamovat s komponentami a jak pomocí nich vytvářet složitější webové aplikace.
 sections:
   - prvni-komponenta
-  - seznamy
   - props
   - cv-komponenty
   - oddelovani
