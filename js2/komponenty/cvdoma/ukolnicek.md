@@ -3,19 +3,15 @@ title: Úkolníček
 demand: 3
 ---
 
-Naklonujte si [repozitář](https://github.com/Czechitas-podklady-WEB/ukolnicek-zadani) se strákou zobrazující jednoduchý úkolníček. V tomto cvičení si vyzkoušíme vytvořit projekt s více komponentami.
+Vaším úkolem bude vytvořit dle zadání jednoduchou aplikaci zobrazující seznam úkolů.
 
-1. Podívejte se, jak stránka vypadá. Smažte obsah elementu `todo__tasks` uvnitř souboru `index.html`, ale zapamatujte si, jak se v HTML vytvoří jeden úkol.
-1. V JavaScriptu vytvořte pole objektů `tasks`, které bude reprezentovat seznam úkolů. Každý úkol bude mí zatím pouze název.
-1. V oddělené složce vytvořte komponentu `Task`, která na vstupu očekává jeden úkol a vytvoří pro něj patřičné HTML.
-1. Zavolejte funkci `Task` v cyklu přes pole úkolů a zapojte výsledek do vaší stránky.
-1. V oddělené složce vytvořte další komponentu `TasksList`, která na vstupu `props` očekává objekt obsahující pole úkolů v tomto tvaru.
-   ```js
-   {
-     tasks: [
-       // array of tasks
-     ];
-   }
-   ```
-1. Z HTML odstraňte celý prvek `todo__tasks` a nechte komponentu `TasksList` vytvořit celý tento prvek i s jeho obsahem. Komponenta `TasksList` tedy bude postupně v cyklu volat komponentu `Task` a vrátí HTML celého divu s třdiou `todo__taska`.
-1. Zavolejte funkci `TasksList`, předejte jí všechny úkoly v očekávaném formátu `tasks` a zapojte výsledek funkce do vaší stránky na konec elementu s třidou `todo`.
+
+1. Pomocí tlačítka *Use this template* si vytvořte vlastní kopii [repozitáře](https://github.com/Czechitas-podklady-WEB/ukolnicek-zadani) se zadáním. **Nedělejte fork!**
+1. Seznamte se se strukturou projektu. Především si prohlédněte strukturu HTML.
+1. Prohledněte si data, která vrací [API pro úkoly](https://apps.kodim.cz/daweb/trening-api/docs/ukoly-api).
+1. V hlavním souboru `index.js` vytvořte komponentu `Task`, která bude představovat jeden úkol. Komponenta bude jako svoje `props` očekávat objekt s jedním úkolem.
+1. Vytvořte funkci `renderTasks`, která obdrží seznam úkolů a zobrazí je na stránce pomocí komponenty `Task`.
+1. Stáhněte si z API seznam úkolů a pomocí `renderTasks` je zobrazte na stránce. 
+1. Seznamte se s tím, jak API filtruje úkoly podle toho, zda jsou splněné či nikoliv.
+1. Zařiďte, že při zaškrtnutí přepínače *Pouze nesplněné* se zobrazí pouze nesplněné úkoly. Bude potřeba ve správnou chvíli znovu zavolat funkci `fetch` a poté `renderTasks` s novými daty.
+1. Pokud uživatel odškrtne přepínač, měly by se zobrazit opět všechny úkoly.
