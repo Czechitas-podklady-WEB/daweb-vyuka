@@ -1,6 +1,6 @@
 ## První komponenta
 
-V minulé lekci jsme se naučili vyrobit obsah stránky z dat ze serveru. Takto vypadala funkce zobrazující položky nákupního seznamu
+V minulé lekci jsme se naučili vyrobit obsah stránky z dat ze serveru. Takto vypadala funkce zobrazující položky nákupního seznamu:
 
 ```js
 const renderShoppingList = (items) => {
@@ -16,7 +16,7 @@ const renderShoppingList = (items) => {
 };
 ```
 
-Zde je jedna položka relativné malý kousek HTML. Brzy však obsah našich stránek bude složitější a vytvoření jedné položku zabere více řádků kódu. V takovém případě se naám vyplatí přesunout tvorbu jedné položky do speciální funkce. Nazveme ji `ShoppigItem`. 
+Zde je jedna položka relativné malý kousek HTML. Brzy však obsah našich stránek bude složitější a vytvoření jedné položky zabere více řádků kódu. V takovém případě se nám vyplatí přesunout tvorbu jedné položky do speciální funkce. Nazveme ji `ShoppigItem`. 
 
 ```js
 const ShoppingItem = (item) => {
@@ -40,7 +40,7 @@ const renderShoppingList = (items) => {
 };
 ```
 
-Funkci `ShoppingItem` budeme říkat :term{cs="komponenta" en="component"}. Komponenta je vždy nějaké funkce, která dostane na vstupu data v podobě objektu, a vytvoří z těchto dat kus obsahu naší stránky. Díky komponentám můžeme naši stránku stavět z menších a snadno stravitelných stavebních bloků.
+Funkci `ShoppingItem` budeme říkat :term{cs="komponenta" en="component"}. Komponenta je vždy nějaká funkce, která dostane na vstupu data v podobě objektu, a vytvoří z těchto dat kus obsahu naší stránky. Díky komponentám můžeme naši stránku stavět z menších a snadno stravitelných stavebních bloků.
 
 Dle zažitých konvencí budeme komponenty vždy pojmenovávat s velkým písmenem na začátku. Tuto konvenci si vytvořili především React programátoři, aby dokázali rychle odlišit funkce představující komponenty od všech ostatních funkcí. JavaScriptu je úplně jedno, jaké písmenko na začátku názvu funkce uvedeme. Jde pouze o pomůcku pro nás a čtenáře našeho programu, aby všichni rychle dokázali poznat, z jakých komponent se náš program skládá. Protože v tomto kurzu směřujeme k vývoji v Reactu, budeme tuto konvenci dodržovat už od této chvíle.
 
