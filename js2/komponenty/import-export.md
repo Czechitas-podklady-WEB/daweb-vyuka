@@ -8,7 +8,7 @@ Pokud chceme nějakou proměnnou nebo funkci používat mimo soubor, ve kterém 
 export const ShoppingItem = (props) => {
 ```
 
-Od této chvíle je naše komponenta použitelná i mimo soubor, ve kterém je definována. My ji používáme v našem hlavním `index.js` a tedy potřebujeme aby prohlížeč správně našel kód naší komponenty. Musíme ji proto v naše `index.js` takzvaně importovat. To provedeme tak, že na začátek souboru napíšeme:
+Od této chvíle je naše komponenta použitelná i mimo soubor, ve kterém je definována. My ji používáme v našem hlavním `index.js`, a tedy potřebujeme, aby prohlížeč správně našel její kód. Musíme ji proto v naše `index.js` takzvaně importovat. To provedeme tak, že na začátek souboru napíšeme:
 
 ```js
 import { ShoppingItem } from './ShoppingItem/index.js';
