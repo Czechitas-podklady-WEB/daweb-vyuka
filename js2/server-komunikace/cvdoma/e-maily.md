@@ -18,20 +18,18 @@ Soubor `index.js`:
 const renderEmails = (emails) => {
   const inboxElm = document.querySelector('#inbox');
   inboxElm.innerHTML = emails
-    .map(
-      (email) => `
-  <div class="email">
-    <div class="email__icon email__icon--closed"></div>
-    <div class="email__fill">
-      <div class="email__sender-name">${email.sender.name}</div>
-      <div class="email__subject">${email.subject}</div>
-    </div>
-    <div class="email__end">
-      <div class="email__time">${email.time}</div>
-    </div>
-  </div>
-  `,
-    )
+    .map((email) => `
+      <div class="email">
+        <div class="email__icon email__icon--closed"></div>
+        <div class="email__fill">
+          <div class="email__sender-name">${email.sender.name}</div>
+          <div class="email__subject">${email.subject}</div>
+        </div>
+        <div class="email__end">
+          <div class="email__time">${email.time}</div>
+        </div>
+      </div>
+    `)
     .join('');
 };
 
