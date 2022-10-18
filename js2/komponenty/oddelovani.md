@@ -1,4 +1,4 @@
-Čím budou naše webové aplikace pokročilejší a schopnější tím více budou obsahovat komponent ale také různých knihoven. Brzy již přestane být únosné mít všechen kód v jednom obřím `index.js`, protože by se v něm za chvíli už nikdo nikdy nevyznal. Od samého začátku se tedy budeme snažit rozdělovat naše komponenty do jednotlivých souborů.
+Čím budou naše webové aplikace pokročilejší a schopnější, tím více budou obsahovat komponent, ale také různých knihoven. Brzy již přestane být únosné mít všechen kód v jednom obřím `index.js`, protože by se v něm za chvíli už nikdo nikdy nevyznal. Od samého začátku se tedy budeme snažit rozdělovat naše komponenty do jednotlivých souborů.
 
 ## Oddělování komponent
 
@@ -10,13 +10,13 @@ Pro každou komponentu si tedy vytvoříme spociální složku a domluvíme se n
 - soubor `style.css` s CSS styly pro komponentu,
 - případně složku `img` s obrázky.
 
-Kromě složek s komponentami budeme v každém projektu také mít hlavní soubor `index.html`, hlavní `index.js` a hlavní `style.css` jak jsme byli doposud zvyklí.
+Kromě složek s komponentami budeme v každém projektu také mít hlavní soubor `index.html`, hlavní `index.js` a hlavní `style.css`, jak jsme byli doposud zvyklí.
 
-Uvažme například projekt používající komponentu `ShoppingItem`, kterou jsme viděli dříve v této lekci. Struktura celého projektu bude vypadat takto.
+Uvažme například projekt používající komponentu `ShoppingItem`, kterou jsme viděli dříve v této lekci. Struktura celého projektu bude vypadat takto:
 
 ::fig{src=assets/struktura-projektu.png size=40}
 
-V souboru `ShoppingItem/index.js` bude JavaScriptový kód komponenty.
+V souboru `ShoppingItem/index.js` bude JavaScriptový kód komponenty:
 
 ```js
 const ShoppingItem = (props) => {
