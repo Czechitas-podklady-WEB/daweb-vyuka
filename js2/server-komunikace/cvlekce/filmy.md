@@ -32,7 +32,7 @@ const renderMovies = (movies) => {
       <h2 class="movie-title">${movie.title}</h2>
       <div class="movie-year">Rok vydání: ${movie.year}</div>
       <div class="movie-link">
-        <a href="https://www.csfd.cz/film/2294-vykoupeni-z-veznice-shawshank" target="_blank">Odkaz na CSFD</a>
+        <a href="${movie.url}" target="_blank">Odkaz na CSFD</a>
       </div>
     </div>
   </li>
