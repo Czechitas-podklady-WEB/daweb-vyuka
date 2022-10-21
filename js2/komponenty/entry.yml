@@ -3,6 +3,7 @@ lead: Postupně se začneme seznamovat s komponentami a jak pomocí nich vytvá�
 sections:
   - prvni-komponenta
   - props
+  - skladani-komponent
   - cv-komponenty
   - oddelovani
   - import-export

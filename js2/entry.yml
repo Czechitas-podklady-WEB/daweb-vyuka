@@ -6,10 +6,9 @@ lessons:
   - func-data
   - server-komunikace
   - komponenty
-  - skladani-aktualizace
+  - dom-elementy
   - posilani-dat
   - webpack
-  - dom-elementy
   - cloud-db
   - cafe-lora-1
   - cafe-lora-2

@@ -12,7 +12,7 @@ Pro každou komponentu si tedy vytvoříme spociální složku a domluvíme se n
 
 Kromě složek s komponentami budeme v každém projektu také mít hlavní soubor `index.html`, hlavní `index.js` a hlavní `style.css`, jak jsme byli doposud zvyklí.
 
-Uvažme například projekt používající komponentu `ShoppingItem`, kterou jsme viděli dříve v této lekci. Struktura celého projektu bude vypadat takto:
+Uvažme například náš projekt dříve v této lekci používající komponenty `ShoppingItem` a `ShoppingList`,
 
 ::fig{src=assets/struktura-projektu.png size=40}
 
@@ -37,7 +37,23 @@ const ShoppingItem = (props) => {
 };
 ```
 
-Komponentu lehce nastylujeme v souboru `ShoppingItem/style.css`:
+Podobně bude vypadat soubor `ShoppingList/index.js`:
+
+```js
+const ShoppingList = (props) => {
+  const { day, items } = props;
+  return `
+    <div class="shopping-list">
+      <h2>${day}</h2>  
+      <ul class="shopping-list">
+        ${items.map((item) => ShoppingItem(item)).join('')}
+      </ul>
+    </div>
+  `;
+};
+```
+
+Komponenty lehce nastylujeme v souboru `ShoppingItem/style.css`:
 
 ```css
 .item {
@@ -69,6 +85,14 @@ Komponentu lehce nastylujeme v souboru `ShoppingItem/style.css`:
 }
 ```
 
+a `ShoppingList/style.css`:
+
+```css
+ul.shopping-list {
+  padding: 0;
+}
+```
+
 Do složky `ShoppingItem` také přidáme složku `img` s obrázekm [tick.svg](assets/tick.svg).
 
 Hlavní soubor `index.html` bude vypadat takto:
@@ -82,6 +106,7 @@ Hlavní soubor `index.html` bude vypadat takto:
 
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="ShoppingItem/style.css" />
+    <link rel="stylesheet" href="ShoppingList/style.css" />
 
     <script type="module" src="index.js"></script>
 
@@ -90,8 +115,9 @@ Hlavní soubor `index.html` bude vypadat takto:
 
   <body>
     <div class="container">
-      <ul class="shopping-list"></ul>
+      <h1>Nákupní seznam</h1>
     </div>
+    <div id="lists" class="container"></div>
   </body>
 </html>
 ```
@@ -99,16 +125,19 @@ Hlavní soubor `index.html` bude vypadat takto:
 Všimněte si hlavičky, kam musíme vložit všechny soubory stylů. Co se JavaScriptu týče, stačí nám do stránky vložit pouze hlavní `index.js` s tímto obsahem:
 
 ```js
-const renderShoppingList = (items) => {
-  const shoppingList = document.querySelector('.shopping-list');
-  shoppingList.innerHTML = items
-    .map((item) => ShoppingItem(item))
-    .join('');
-};
+const listsElement = document.querySelector('#lists');
 
-fetch('https://apps.kodim.cz/daweb/trening-api/apis/shopping')
+fetch('https://apps.kodim.cz/daweb/trening-api/apis/shopping/mon')
   .then((response) => response.json())
-  .then((data) => renderShoppingList(data));
+  .then((data) => {
+    listsElement.innerHTML += ShoppingList({ day: 'Pondělí', items: data });
+  });
+
+fetch('https://apps.kodim.cz/daweb/trening-api/apis/shopping/tue')
+  .then((response) => response.json())
+  .then((data) => {
+    listsElement.innerHTML += ShoppingList({ day: 'Úterý', items: data });
+  });
 ```
 
 Ještě nám zbývá hlavní soubor `style.css` s tímto obsahem:
