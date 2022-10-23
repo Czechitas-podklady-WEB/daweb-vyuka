@@ -3,15 +3,9 @@ title: Kontakty
 demand: 2
 ---
 
-Pomocí `create-czechitas-app` založte projekt s názvem `contacts`.
+Vytvoříme aplikaci, která zobrazuje seznam kontaktů. U každého kontaktu budeme evidovat jméno, email a telefonní číslo.
 
-```sh
-$ npx create-czechitas-app contacts vanilla
-```
-
-Budeme chtít vytvořit aplikaci, která zobrazuje seznam kontaktů. U každého kontaktu bychom chtěli evidovat jméno, email a telefonní číslo.
-
-1. V souboru `index.html` smažte obsah elementu `#app`.
+1. Vytvořte jednoduchou stránku s prázdným elementem `#app`.
 1. Uvnitř souboru`index.js` pomocí `document.createElement` vytvořte element `div` a uložte jej do proměnné `contact1`.
 1. Na váš element přidejte CSS třídu `contact`.
 1. Nastavte `innerHTML` vašho elementu na následujicí obsah
@@ -26,4 +20,38 @@ Budeme chtít vytvořit aplikaci, která zobrazuje seznam kontaktů. U každého
 
 ---solution
 
-Řešení naleznete v samostatném [Codesanboxu zde](https://codesandbox.io/s/da-web-kontakty-17c8bc?file=/index.js).
+Soubor `index.js`:
+
+```js
+// Vytvoření prvního kontaktu
+const contact1 = document.createElement("div");
+contact1.classList.add("contact");
+contact1.innerHTML = `
+  <span class="name">Jaromír Bystřina</span>
+  <span class="phone">+420 777 666 323</span>
+  <span class="email">lesni.bystrina@gmail.com</span>
+`;
+
+// Vložení kontaktu do stránky
+const app = document.querySelector("#app");
+app.append(contact1);
+
+// Druhý kontakt
+const contact2 = document.createElement("div");
+contact2.classList.add("contact");
+contact2.innerHTML = `
+  <span class="name">Martin Podloucký</span>
+  <span class="phone">+420 765 432 100</span>
+  <span class="email">podloucky@fit.cvut.cz</span>
+`;
+app.append(contact2);
+
+// Třetí kontakt
+const contact3 = document.createElement("div");
+contact3.classList.add("contact");
+contact3.innerHTML = `
+  <span class="name">Jsem Někdo</span>
+  <span class="phone">+420 123 456 789</span>
+  <span class="email">nekdo@example.com</span>
+`;
+app.append(contact3);

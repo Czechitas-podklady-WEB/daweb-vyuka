@@ -1,5 +1,3 @@
-## Označení položky pomocí API
-
 Úplně posledním krokem v naší aplikace pro správu nákupních seznamů bude označení položky seznamu pomocí API. V předchozí části jsme sice komponentu `ShoppingItem` uděleli hezky interaktivní, ale zaškrtnutí položky seznamu se projeví pouze na frontendu. Když stránku obnovíme, vrátí se seznam do stavu, v jakém je na backendu.
 
 Tuto situaci napravíme tak, že při stisknutí tlačítka odešleme POST požadavek, který označní nebo odznačí položku seznamu na backendu. Kód tlačítka uvnitř komponenty `ShoppingItem` pak bude vypadat takto:

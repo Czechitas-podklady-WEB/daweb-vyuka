@@ -1,4 +1,4 @@
-Přestože už dokážeme díky komponentám vytvářet vcelku hezké webové stránky, pořád to ještě nejsou opravdové aplikace. Naše komponenty totiž zatím vytvářejí pouze statické HTML a chybí jim interaktivita. V této lekci tuto situaci napravíme tím, že se naučímte vytvářet vlastní DOM elementy.
+Přestože už dokážeme díky komponentám vytvářet vcelku hezké webové stránky, pořád to ještě nejsou opravdové aplikace. Naše komponenty totiž zatím generují pouze statické HTML a chybí jim interaktivita. V této lekci tuto situaci napravíme tím, že se naučíme vytvářet vlastní DOM elementy.
 
 ## Vlastní DOM elementy
 
@@ -17,7 +17,7 @@ V tuto chvíli máme vytvořený zcela plnoprávný DOM element, se kterým mů�
 > h1Elm.classList.add('title')
 ```
 
-Důležité je, že tento element není zapojen do naší stránky. Je zatím uložen pouze v proměnné `h1Elm` a na stránce jej tedy není vidět. Pokud jej chceme do stránky vložit, můžeme jej například zapojit na konec nějakého elementu, který už na stránce je.
+Důležité je, že tento element není zapojen do naší stránky. Je zatím uložen pouze v proměnné `h1Elm`, na stránce jej tedy není vidět. Pokud jej chceme do stránky vložit, můžeme jej například zapojit na konec nějakého elementu, který už na stránce je.
 
 Mějme například následujicí HTML.
 
@@ -27,18 +27,18 @@ Mějme například následujicí HTML.
 </body>
 ```
 
-Nyní v konzoli vybereme element `#app` a poté použijeme metodu `appendChild`, která zapojí zadaný element na konec elementu `#app`.
+Nyní v konzoli vybereme element `#app` a poté použijeme metodu `append`, která zapojí zadaný element na konec elementu `#app`.
 
 ```jscon
 > const appElm = document.querySelector('#app');
-> appElm.appendChild(h1Elm)
+> appElm.append(h1Elm)
 ```
 
 Po spuštění těchto příkazů bychom měli na stránce uvidět náš nadpis.
 
 ### Obsah vlastních elementů
 
-DOM elementy, které si vytvoříme pomocí `document.createElement` jsou zcela plnohodnotné DOM elementy. Kromě stylů a textového obsahu můžeme taky měnit jejich vnitřní obsah pomocí vlastnosti `innerHTML`. Takto například přidáme složitější obsah do našeho nadpisu.
+DOM elementy, které si vytvoříme pomocí `document.createElement`, jsou zcela plnohodnotné DOM elementy. Kromě stylů a textového obsahu můžeme taky měnit jejich vnitřní obsah pomocí vlastnosti `innerHTML`. Takto například přidáme složitější obsah do našeho nadpisu.
 
 ```jscon
 > h1Elm.innerHTML = '<span class="bold">Nadpis</span><span>mojí stránky</span>'
