@@ -15,15 +15,17 @@ export const ShoppingList = (props) => {
     <ul class="shopping-list__items"></ul>
   `;
   
-  fetch(`https://apps.kodim.cz/daweb/trening-api/apis/shopping/${day}`)
-    .then((response) => response.json())
-    .then((data) => {
-      element.replaceWith(ShoppingList({
-        day: day,
-        dayName: dayName,
-        items: data,
-      }));
-    });
+  if (items.length === 0) {
+    fetch(`https://apps.kodim.cz/daweb/trening-api/apis/shopping/${day}`)
+      .then((response) => response.json())
+      .then((data) => {
+        element.replaceWith(ShoppingList({
+          day: day,
+          dayName: dayName,
+          items: data,
+        }));
+      });
+  }
 
   const ulElement = element.querySelector('ul');
   ulElement.append(...items.map((item) => ShoppingItem(item)));
