@@ -7,6 +7,7 @@ V naší e-mailové aplikaci zobrazíme dvě oddělné sekce: přečtené zpráv
 
 1. V HTML stránky vytvořte dvě sekce. Jedna bude sloužit k zobrazení přečtené a druhá nepřečtené pošty.
 1. Naplňte každou sekci přislušnými zprávami načtenými z API.
+1. Zařiďte, aby se u přečtených e-mailů zobrazovala ikonka otevřené obálky (viz CSS třída `email__icon--opened`).
 
 ---solution
 
@@ -48,26 +49,34 @@ Soubor `index.js`:
 ```js
 const renderSection = (emails, elementId) => {
   document.getElementById(elementId).innerHTML = emails
-    .map((email) => `
-      <div class="email">
-        <div class="email__icon email__icon--closed"></div>
-        <div class="email__fill">
-          <div class="email__sender-name">${email.sender.name}</div>
-          <div class="email__subject">${email.subject}</div>
+    .map((email) => {
+      let iconClass = 'closed';
+      if (elementId === 'read') {
+        iconClass = 'opened';
+      };
+
+      return `
+        <div class="email">
+          <div class="email__head">
+            <div class="email__icon email__icon--${iconClass}"></div>
+            <div class="email__info">
+              <div class="email__sender">${email.sender.name}</div>
+              <div class="email__subject">${email.subject}</div>
+            </div>
+            <div class="email__time">${email.time}</div>
+          </div>
+          <div class="email__body"></div>
         </div>
-        <div class="email__end">
-          <div class="email__time">${email.time}</div>
-        </div>
-      </div>
-    `)
+      `;
+    })
     .join('');
 };
 
 fetch(`https://apps.kodim.cz/daweb/trening-api/apis/emails?folder=unread`)
   .then((response) => response.json())
-  .then((data) => renderEmails(data.emails, 'unread'));
+  .then((data) => renderSection(data.emails, 'unread'));
 
 fetch(`https://apps.kodim.cz/daweb/trening-api/apis/emails?folder=read`)
   .then((response) => response.json())
-  .then((data) => renderEmails(data.emails, 'read'));
+  .then((data) => renderSection(data.emails, 'read'));
 ```
