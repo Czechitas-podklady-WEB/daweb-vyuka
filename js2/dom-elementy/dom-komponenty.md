@@ -69,7 +69,7 @@ const ShoppingItem = (props) => {
 };
 ``` -->
 
-Protože komponenta `ShoppingList` nyní vrací DOM element, musíme upravit komponentu `ShoppingList`. Místo `innerHTML` použijeme metodu `append`. 
+Protože komponenta `ShoppingItem` nyní vrací DOM element, musíme upravit komponentu `ShoppingList`. Místo `innerHTML` použijeme metodu `append`. 
 
 ```js
 import { ShoppingItem } from '../ShoppingItem/index.js';
@@ -113,7 +113,7 @@ Musíme hodnoty z pole nějak dostat do jednotlivých parametrů. Píšeme pak
 domElement.append(...[arg1, arg2, arg3]);
 ```
 
-*Spread* operátor má ještě mnoho využití v jiných situacích, ale o tom si povíme až někdy přiště.
+*Spread* operátor má ještě mnoho využití v jiných situacích, ale o tom si povíme až někdy příště.
 
 Nakonec ještě upravíme použití komponenty `ShoppingList` v hlavním `index.js`.
 
