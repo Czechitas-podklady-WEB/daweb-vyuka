@@ -1,3 +1,3 @@
 ## Cvičení: Aktualizace stránky
 
-*Bude doplněno...*
+::exc[cvlekce>zmena-mnozstvi]

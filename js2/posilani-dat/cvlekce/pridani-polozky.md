@@ -3,18 +3,17 @@ title: Přidání položky do seznamu
 demand: 3
 ---
 
-Pokračujte se stránkou z předchozího cvičení. Přidáme na stránku možnost přidat položku do seznamu.
+Rozšiřme náš nákupní seznam o možnost přídání nové položky. Dokumentaci API pro nákupní 
+seznam nejdete [zde](https://apps.kodim.cz/daweb/shoplist/docs/).
 
-1. Přidejte na svoji stránku druhá formulář s tlačítkem :i[Nová položka]. Do formuláře vložte tři textová políčka:
-   - políčko pro název již existujícího seznamu,
-   - políčko pro název produktu,
-   - políčko pro množství.
-     Tento formulář bude sloužit k přidání nové položky do seznamu. Do prvního políčka uživatel zadá název už existujícího seznamu, do dalšího zadá název produktu a do třetího množství.
-1. Při stisknutí tlačítka zatím vytvořte jednoduchý objekt s vlastnostmi `product` a `amount` získanými od uživatele. Objekt si uložte do proměnné s názvem `newItem`.
-1. Pomocí funkce `JSON.stringify` vypište do konzole JSON verzi vaší nové položky. Toto je pro vaši kontrolu, abyste viděli, co přesně se později odešle na server.
-1. Prohlédněte si [dokumentaci](https://apps.kodim.cz/daweb/shoplist/docs/sending#add-item-to-a-list-post) a podívejte se, jak se přidává položka do seznamu. Do objektu `newItem` přidejte property `action`.
-1. Nechte uživatele zadat do políček na stránce název seznamu, produkt a množství. Po kliknutí na tlačítko :i[Nová položka] přidejte do zadaného seznamu novou položku voláním funkce `fetch`. Nebuďte zatím zlí a přidávejte položky pouze do seznamů, které jste před tím sami vytvořili.
-1. V dokumentaci najděte, jak vypadá adresa pro získání položek v seznamu. Zadejte ji do adresní řádky prohlížeče a vyzkoušejte, že se váš seznam skutečně aktualizoval.
+Vyjděte z kódu aplikace [vytvořené na lekci](https://github.com/Czechitas-podklady-WEB/prvni-komponenta/tree/posilani-dat). 
 
----solution
-Řešení naleznete v samostatném [Codesanboxu zde](https://codesandbox.io/s/da-web-nakupni-seznam-5wiqxd?file=/index.js).
+1. Najděte si v dokumentaci k API jakým způsobem se do seznamu přidává nová položka.
+1. V komonentě `ShoppingList`
+1. V prohlížeči si vyzkoušejte enpoint `/api/lists`. Měl by vrátit názvy všech nákupních seznamů. Vždy byste měli vidět alespoň jeden seznam s názvem :i[default].
+1. Pomocí endpointu `/api/lists/default` si prohlédněte obsah seznamu :i[default].
+1. Prohlédněte si [dokumentaci](https://apps.kodim.cz/daweb/shoplist/docs/sending#create-new-shopping-list-post) a podívejte se, jak se dělá přidání nového nákupního seznamu.
+1. Založte si prázdnou stránku s JavaScriptovým programem.
+1. Zkuste pomocí funkce `fetch` vytvořit prázdný seznam s nějakým názvem. Pozor na název seznamu, může obsahovat pouze malá písmena bez diakritiky a čísla.
+1. Vytvořte na stránce formulář, který umožné uživateli zadat název seznamu a odesláním formuláře tento seznam vytvořit.
+1. V prohlížeči si pomocí enpodointu `/api/lists` zkountrolujte, že se vámi vytvořené seznamy skutečně objevují na serveru.
