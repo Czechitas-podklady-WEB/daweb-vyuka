@@ -4,7 +4,7 @@ Pojďme si posílání POST dotazů ukázat na reálném API. Na adrese [apps.ko
 
 Chceme-li zahlasovat pro nějakou otázku, musíme na správný endpoint odeslat POST požadavek, který řekne pod jakým jménem a pro jakou volbu hlasujeme. Pokud chceme hlasovat v otázce s `id` 3, pošleme POST na endpoint `/api/poll/3`.
 
-Na tento endpoint pošleme objekt, který říká, že hlasuje uživatel Zuzka pro volbu s `id` 2.
+Na tento endpoint pošleme objekt, který říká, že hlasuje uživatel Zuzka pro volbu s `optionId` 2.
 
 ```js
 {
