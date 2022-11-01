@@ -8,7 +8,7 @@ V minulé lekci jsme posílali dotazy na API tímto způsobem.
 fetch('https://api.sunrise-sunset.org/json?lat=50&lng=14.5');
 ```
 
-Takto se posílá základní typ dotazu, kterému říkáme GET. Tento dotaz má za úkol získat nějaká data ze serveru. Typů dotazů však existuje více, například POST, PUT, DELETE apod. Tyto většinou slouží ke změně dat na serveru. My se v tomto kurzu budeme zabývat pouze dotazem POST.
+Takto se posílá základní typ dotazu, kterému říkáme GET. Tento dotaz má za úkol získat nějaká data ze serveru. Typů dotazů však existuje více, například POST, PATCH, DELETE apod. Tyto většinou slouží ke změně dat na serveru. Začneme dotazem POST, kterým přidáváme nová data.
 
 ### Data jako řetězec
 
