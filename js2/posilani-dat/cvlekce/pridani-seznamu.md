@@ -3,7 +3,7 @@ title: Nákupní seznam
 demand: 2
 ---
 
-Další API, na kterém si můžeme vyzkoušet POST se jmenuje :i[Shoplist] a umožňuje pracovat s nákupními seznamy tak, jak je známe z předchozích lekzí. API umožňuje vytvářet nové seznamy, přidávat či odebírat položky ze seznamů nebo nastavovat položky jako koupené. Dokumentaci k tomuto API nejdete [zde](https://apps.kodim.cz/daweb/shoplist/docs/).
+Rozšiřme náš nákupní seznam o možnost přídání nové položky. API pro nákupní seznam, na kterém si můžeme vyzkoušet POST se jmenuje :i[Shoplist] a umožňuje pracovat s nákupními seznamy tak, jak je známe z předchozích lekzí. API umožňuje vytvářet nové seznamy, přidávat či odebírat položky ze seznamů nebo nastavovat položky jako koupené. Dokumentaci k tomuto API nejdete [zde](https://apps.kodim.cz/daweb/shoplist/docs/).
 
 Nejdříve si vyzkoušíme vytvoření nového seznamu.
 

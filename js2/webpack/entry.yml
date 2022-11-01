@@ -1,10 +1,10 @@
-title: Aktualizace stránky, Webpack
-lead: Když se data naší aplikace mění, je třeba stránku patřičně aktualizovat. Také uvídíme, jak sestavovat aplikace pomocí nástroje Webpack
-access: 'claim'
+title: Webpack a větší aplikace
+lead: Uvídíme, jak sestavovat větší aplikace pomocí nástroje Webpack
+access: claim
 sections:
-  - aktualizace-obsahu
-  - aktualizace-z-api
-  - cv-aktualizace
+  # - aktualizace-obsahu
+  # - aktualizace-z-api
+  # - cv-aktualizace
   - system-npm
   - webpack
   - startovace
