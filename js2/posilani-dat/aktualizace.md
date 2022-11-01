@@ -1,8 +1,8 @@
 ## Aktualizace obsahu stránky
 
-V této části se opět vrátíme k naší aplikaci s nákupními seznamy. V předchozí části jsme sice komponentu `ShoppingItem` uděleli hezky interaktivní, a můžeme v ní označovat položky jako koupené, ale zaškrtnutí položky se projeví pouze na frontendu. Když stránku obnovíme, vrátí se seznam do stavu, v jakém je na backendu. Budeme tedy změnu zaškrnutí odeslat na server.
+V této části se opět vrátíme k naší aplikaci s nákupními seznamy. V předchozí části jsme sice komponentu `ShoppingItem` uděleli hezky interaktivní, a můžeme v ní označovat položky jako koupené, ale zaškrtnutí položky se projeví pouze na frontendu. Když stránku obnovíme, vrátí se seznam do stavu, v jakém je na backendu. Budeme tedy změnu zaškrnutí chtít odeslat na server.
 
-Abychom mohli různými způbosy měnit data na serveru, potřebujeme několik dalších metod pro naše HTTP požadavky. V předchozí částí jsme viděli metodu POST. Běžně se dále používají metody PATCH a DELETE. Jejich významy jsou následující:
+Abychom mohli různými způsoby měnit data na serveru, potřebujeme několik dalších metod pro naše HTTP požadavky. V předchozí částí jsme viděli metodu POST. Běžně se dále používají metody PATCH a DELETE. Jejich významy jsou následující:
 
 - POST: slouží k přídání nového prvku do kolekce,
 - PATCH: slouží k změně už existujícího prvku,
@@ -14,15 +14,15 @@ Většina backendových API funguje tak, že když nějakým požadavkem změní
 
 Vyjdeme z [poslední verze](https://github.com/Czechitas-podklady-WEB/prvni-komponenta/tree/dom-elementy) našeho nákupního seznamu.
 
-V našem příkladu nejdříve musíme přejít na noví API na adrese
+V našem příkladu nejdříve musíme přejít na nové API na adrese
 
 ```
 https://apps.kodim.cz/daweb/shoplist/api
 ```
 
-Naše starté stréninkové API totiž neumí aktualizaci dat na serveru.
+Naše staré stréninkové API totiž neumí aktualizovat data na serveru.
 
-Při stisknutí zaškrtávacího tlačítka odešleme PATCH požadavek, který označní nebo odznačí položku seznamu na backendu. Kód tlačítka uvnitř komponenty `ShoppingItem` pak bude vypadat takto:
+Při stisknutí zaškrtávacího tlačítka odešleme PATCH požadavek, který označí nebo odznačí položku seznamu na backendu. Kód tlačítka uvnitř komponenty `ShoppingItem` pak bude vypadat takto:
 
 ```js
 element.querySelector('button').addEventListener('click', () => {
