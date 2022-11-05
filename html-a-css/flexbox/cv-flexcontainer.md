@@ -1,3 +1,3 @@
 ## Cvičení: Procvičení flex-containeru
 
-::exc[cvflexcontainer>sidebar]
+::exc[cvlekce>sidebar]

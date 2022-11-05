@@ -1,0 +1,10 @@
+title: BEM a responzivní design 1
+lead: Podíváme na princip psaní CSS pomocí metodiky BEM a uvedeme responzivní design.
+access: claim
+sections:
+  - bem
+  - cv-bem
+  - responsivity-history
+  - mobile-first
+  - how-to-responsive
+  - cv-responzivni-design
