@@ -6,7 +6,7 @@ access: claim
 
 Napište program, který zjistí, jestli je zadané rodné číslo platné. Postupujte dle následujících kroků.
 
-1. Založte si projekt v čistém JavaScriptu, stačí soubory `index.html` a `index.js`. 
+1. Založte si projekt v čistém JavaScriptu, stačí soubory `index.html` a `index.js`.
 1. JavaScript vložte do stránky pomocí
    ```html
    <script type="module" src="index.js"></script>

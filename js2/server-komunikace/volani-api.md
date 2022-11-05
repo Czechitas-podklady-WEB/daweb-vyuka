@@ -4,7 +4,7 @@ V této lekci směřujeme k tomu, abychom dokázali požadavek na server odeslat
 
 ::fig{src=assets/detail-pozadavku.png}
 
-Jako první informaci ihned vidíme, na jakou URL se požadavek poslal. Pokud tuto URL zadáme přímo do adresního řádku prohlížeče, vykonáme tak požadavek vlastnoručně a přímo v prohlížeči vidíme obsah odpovědi, kterou nám server poslal. 
+Jako první informaci ihned vidíme, na jakou URL se požadavek poslal. Pokud tuto URL zadáme přímo do adresního řádku prohlížeče, vykonáme tak požadavek vlastnoručně a přímo v prohlížeči vidíme obsah odpovědi, kterou nám server poslal.
 
 ### Struktura URL
 
@@ -26,7 +26,7 @@ Cesta v požadavku je tedy `/search`, parametr `q` udává, že se má vyhledat 
 
 ### Dotazy na API
 
-V našich aplikacích většinou chceme ze serveru získat data v čisté podobě, tedy rovnou jako JavaScriptové pole a objekty. Pokud takovou možnost server nabízí, poskytuje k tomuto účelu jasně danou sadu URL. Na tyto URL můžeme posílat požadavky a obdržíme data nejčastěji ve formátu JSON (viz dále). Sadě URL adres, na které server takto poskytuje čistá data pak říkáme API (Application Programming Interface). 
+V našich aplikacích většinou chceme ze serveru získat data v čisté podobě, tedy rovnou jako JavaScriptové pole a objekty. Pokud takovou možnost server nabízí, poskytuje k tomuto účelu jasně danou sadu URL. Na tyto URL můžeme posílat požadavky a obdržíme data nejčastěji ve formátu JSON (viz dále). Sadě URL adres, na které server takto poskytuje čistá data pak říkáme API (Application Programming Interface).
 
 Některé servery poskytují API zcela veřejně a nemusíme za ně nic platit. Vyzkoušejme si veřejné API poskytující časy východu a západu slunce na různých místech na Zemi. Takto například zjistíme, kdy dnes vychází a zapadá slunce v České republice.
 

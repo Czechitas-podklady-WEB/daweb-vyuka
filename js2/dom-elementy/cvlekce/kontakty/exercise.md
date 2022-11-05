@@ -24,8 +24,8 @@ Soubor `index.js`:
 
 ```js
 // Vytvoření prvního kontaktu
-const contact1 = document.createElement("div");
-contact1.classList.add("contact");
+const contact1 = document.createElement('div');
+contact1.classList.add('contact');
 contact1.innerHTML = `
   <span class="name">Jaromír Bystřina</span>
   <span class="phone">+420 777 666 323</span>
@@ -33,12 +33,12 @@ contact1.innerHTML = `
 `;
 
 // Vložení kontaktu do stránky
-const app = document.querySelector("#app");
+const app = document.querySelector('#app');
 app.append(contact1);
 
 // Druhý kontakt
-const contact2 = document.createElement("div");
-contact2.classList.add("contact");
+const contact2 = document.createElement('div');
+contact2.classList.add('contact');
 contact2.innerHTML = `
   <span class="name">Martin Podloucký</span>
   <span class="phone">+420 765 432 100</span>
@@ -47,11 +47,12 @@ contact2.innerHTML = `
 app.append(contact2);
 
 // Třetí kontakt
-const contact3 = document.createElement("div");
-contact3.classList.add("contact");
+const contact3 = document.createElement('div');
+contact3.classList.add('contact');
 contact3.innerHTML = `
   <span class="name">Jsem Někdo</span>
   <span class="phone">+420 123 456 789</span>
   <span class="email">nekdo@example.com</span>
 `;
 app.append(contact3);
+```

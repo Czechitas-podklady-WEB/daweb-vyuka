@@ -24,7 +24,7 @@ Naklonuje si [repozitář](https://github.com/Czechitas-podklady-WEB/hodiny-zada
      minutes: 5,
    }
    ```
-  zobrazily čas *08:05*.
+   zobrazily čas _08:05_.
 
 ---solution
 
@@ -77,7 +77,5 @@ const Clock = (props) => {
 };
 
 const appElm = document.querySelector('#app');
-appElm.innerHTML = times
-  .map((time) => Clock(time))
-  .join('');
+appElm.innerHTML = times.map((time) => Clock(time)).join('');
 ```

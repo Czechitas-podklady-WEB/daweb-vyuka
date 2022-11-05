@@ -8,7 +8,7 @@ Pokračuje v kódu předchozího příkladu. Budeme chtít zobrazit jednotlivé 
 
 ::fig[Cifry]{src=assets/digits.png size=80}
 
-Cifry budeme do stránky vkládat pomocí vlastnosti `innerHTML`. 
+Cifry budeme do stránky vkládat pomocí vlastnosti `innerHTML`.
 
 1. Nedříve si rozmysleme, jak bude vypadat HTML pro jednu cifru. Může jít například o jednoduchý `div` s nějakou vhodně nastylovanou třídou.
 1. Pokud je znak platná číslice, bude mít na stránce zelené pozadí `#00DD00`. V opačném případě bude mít červené pozadí `#FF8686`.
@@ -52,15 +52,16 @@ const formular = document.querySelector('#formular');
 formular.addEventListener('submit', (event) => {
   event.preventDefault();
   const vstup = formular.querySelector('input').value;
-  const vystup = checkBirthID(vstup) === 'ok'
-    ? '✔️ V pořádku.'
-    : '❌ V rodném čísle jsou chyby.';
-  
+  const vystup =
+    checkBirthID(vstup) === 'ok'
+      ? '✔️ V pořádku.'
+      : '❌ V rodném čísle jsou chyby.';
+
   document.querySelector('#vystup').textContent = vystup;
-  
+
   const overeni = validateCharacters(vstup);
   const cifry = document.querySelector('#cifry');
-  
+
   overeni.forEach((znak) => {
     cifry.innerHTML += `
       <span style="background-color: ${digit ? '#00DD00' : '#FF8686'}">

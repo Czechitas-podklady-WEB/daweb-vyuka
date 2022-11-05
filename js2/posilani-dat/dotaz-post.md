@@ -23,8 +23,8 @@ Na začátek je důležité si uvědomit, že formát JSON je textový formát. 
 
 musíme na příslušný API endpoint odeslat takovýto řetězec.
 
-```js
-'{ "name": "Petr", "age": 25 }'
+```json
+{ "name": "Petr", "age": 25 }
 ```
 
 K převodu objektů na řetezce nám pomůže funkce `JSON.stringify`.
@@ -41,7 +41,7 @@ Nyní už máme všechny ingredience a můžeme sestavit nějaký POST dotaz.
 Dotazy POST se posílají opět pomocí funkce `fetch`. Musíme však specifikovat několik věcí navíc:
 
 - typ dotazu, v našem případě `POST`,
-- takzvaný *Content-Type*, tedy v jakém formátu data na server posíláme. My posíláme JSON, takže *Content-Type* bude `application/json`,
+- takzvaný _Content-Type_, tedy v jakém formátu data na server posíláme. My posíláme JSON, takže _Content-Type_ bude `application/json`,
 - tělo dotazu, tedy samotná JSON data zapsaná jako řetězec.
 
 Představme si zatím fiktivní stránku `https://it-seznamka.cz`, která by mohla mít API endpoint `register`, kde bychom pomocí POST mohli zaregistrovali nového uživatele. Výslední kód by vypadal takto:

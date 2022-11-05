@@ -75,7 +75,7 @@ Můžeme také třeba z našeho počasí vyrobit pole obsahujuící pouzde jedno
 ]
 ```
 
-Transformace může být samozřejmě složitějš. Vyrobme například pro každý den objekt obsahující datum a promůrnou teplotu. 
+Transformace může být samozřejmě složitějš. Vyrobme například pro každý den objekt obsahující datum a promůrnou teplotu.
 
 ```js
 weather.map((day) => ({
@@ -89,7 +89,7 @@ Pokud bám takto zkrácená funkce přijde nečitelná, můžete ji rozepsat do 
 ```js
 weather.map((day) => {
   const avgTemp = (day.temps[0] + day.temps[1] + day.temps[2]) / 3;
-  
+
   return {
     date: day.date,
     avgTemp: avgTemp,

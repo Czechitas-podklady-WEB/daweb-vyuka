@@ -13,19 +13,19 @@ V tomto cvičení na stránce zobrazíme položky nákupního seznamu uložného
        id: 'MFJSFr',
        product: 'Rohlíky',
        amount: '10',
-       done: false
+       done: false,
      },
      {
        id: 'wvsbDD',
        product: 'Máslo',
        amount: '500 g',
-       done: true
+       done: true,
      },
      {
        id: 'm0CccN',
        product: 'Šunka',
        amount: '200 g',
-       done: true
+       done: true,
      },
    ];
    ```

@@ -1,3 +1,3 @@
 ## Osnova
 
-*TBD...*
+_TBD…_

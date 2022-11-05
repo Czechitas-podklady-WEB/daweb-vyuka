@@ -34,14 +34,15 @@ export const ShoppingItem = (props) => {
     <button class="item__btn-done ${checkClass}"></button>
   `;
   element.querySelector('button').addEventListener('click', () => {
-    element.replaceWith(ShoppingItem({ 
-      product: product,
-      amount: amount,
-      done: !done,
-    }));
+    element.replaceWith(
+      ShoppingItem({
+        product: product,
+        amount: amount,
+        done: !done,
+      })
+    );
   });
 
   return element;
 };
 ```
-

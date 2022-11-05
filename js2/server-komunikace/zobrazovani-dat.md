@@ -8,7 +8,7 @@ Vzpomeňte na cvičení [Nákupní seznam](../func-data/cv-nadoma#cvdoma%3Enakup
 https://apps.kodim.cz/daweb/trening-api/apis/shopping
 ```
 
-Pojďme nejdříve seznam stáhnout a vypsat do konzole. 
+Pojďme nejdříve seznam stáhnout a vypsat do konzole.
 
 ```js
 fetch('https://apps.kodim.cz/daweb/trening-api/apis/shopping')
@@ -20,7 +20,7 @@ fetch('https://apps.kodim.cz/daweb/trening-api/apis/shopping')
   });
 ```
 
-Nyní už můžeme využít metody pro zpracování dat a vytvořit obsah stránky. 
+Nyní už můžeme využít metody pro zpracování dat a vytvořit obsah stránky.
 
 ```js
 fetch('https://apps.kodim.cz/daweb/trening-api/apis/shopping')
@@ -29,30 +29,34 @@ fetch('https://apps.kodim.cz/daweb/trening-api/apis/shopping')
   })
   .then((data) => {
     const shoppingList = document.querySelector('.shopping-list');
-    shoppingList.innerHTML = data.map((item) => {
-      return `
+    shoppingList.innerHTML = data
+      .map((item) => {
+        return `
         <li class="item">
           <div class="item__name">${item.product}</div>
           <div class="item__amount">${item.amount}</div>
         </li>
       `;
-    }).join('');
+      })
+      .join('');
   });
 ```
 
-V tomto případě už může být kód malinko hůře čitelný. Mohlo by se vyplatit založit si na vytvoření obsahu vlastní funkci. 
+V tomto případě už může být kód malinko hůře čitelný. Mohlo by se vyplatit založit si na vytvoření obsahu vlastní funkci.
 
 ```js
 const renderShoppingList = (items) => {
   const shoppingList = document.querySelector('.shopping-list');
-  shoppingList.innerHTML = items.map((item) => {
-    return `
+  shoppingList.innerHTML = items
+    .map((item) => {
+      return `
       <li class="item">
         <div class="item__name">${item.product}</div>
         <div class="item__amount">${item.amount}</div>
       </li>
     `;
-  }).join('');
+    })
+    .join('');
 };
 ```
 
@@ -64,11 +68,11 @@ fetch('https://apps.kodim.cz/daweb/trening-api/apis/shopping')
     return response.json();
   })
   .then((data) => {
-    renderShoppingList(data)
+    renderShoppingList(data);
   });
 ```
 
-Můžeme jej pak i hezky pozkracovat. 
+Můžeme jej pak i hezky pozkracovat.
 
 ```js
 fetch('https://apps.kodim.cz/daweb/trening-api/apis/shopping')

@@ -29,7 +29,7 @@ chceme jako výsledek obdržet takovéto pole.
 
 Napište tedy funkci `validateCharacters`, která na vstupu dostane text a vrátí pole ve formátu jako výše. Postupujte následovně:
 
-1. Na začátku funkce si vytvořte proměnnou `result`, do které uložte prázdné pole. 
+1. Na začátku funkce si vytvořte proměnnou `result`, do které uložte prázdné pole.
 1. Projděte vstup znak po znaku jako v předchozim cvičení. Místo `console.log` však pro každý znak vyrobte odpovídající objekt a vložte jej do pole `result` pomocí metody `push`.
 1. Na konci funkce pole `result` vraťte pomocí `return`.
 1. Vyzkoušejte vaši funci zavolat třeba se vstupy `'123č56q8y7'` a `'7060201236'` a výsledná pole vypište do konzole.

@@ -5,18 +5,20 @@ V minulé lekci jsme se naučili vyrobit obsah stránky z dat ze serveru. Takto 
 ```js
 const renderShoppingList = (items) => {
   const shoppingList = document.querySelector('.shopping-list');
-  shoppingList.innerHTML = items.map((item) => {
-    return `
+  shoppingList.innerHTML = items
+    .map((item) => {
+      return `
       <li class="item">
         <div class="item__name">${item.name}</div>
         <div class="item__amount">${item.amount}</div>
       </li>
     `;
-  }).join('');
+    })
+    .join('');
 };
 ```
 
-Zde je jedna položka relativné malý kousek HTML. Brzy však obsah našich stránek bude složitější a vytvoření jedné položky zabere více řádků kódu. V takovém případě se nám vyplatí přesunout tvorbu jedné položky do speciální funkce. Nazveme ji `ShoppigItem`. 
+Zde je jedna položka relativné malý kousek HTML. Brzy však obsah našich stránek bude složitější a vytvoření jedné položky zabere více řádků kódu. V takovém případě se nám vyplatí přesunout tvorbu jedné položky do speciální funkce. Nazveme ji `ShoppigItem`.
 
 ```js
 const ShoppingItem = (item) => {
@@ -34,9 +36,7 @@ Tuto funkci pak můžeme použít při vytváření nákupního seznamu.
 ```js
 const renderShoppingList = (items) => {
   const shoppingList = document.querySelector('.shopping-list');
-  shoppingList.innerHTML = items
-    .map((item) => ShoppingItem(item))
-    .join('');
+  shoppingList.innerHTML = items.map((item) => ShoppingItem(item)).join('');
 };
 ```
 
@@ -78,9 +78,7 @@ Jednotlivé položky už si jako profíci stáhneme z API. Výsledné použítí
 ```js
 const renderShoppingList = (items) => {
   const shoppingList = document.querySelector('.shopping-list');
-  shoppingList.innerHTML = items
-    .map((item) => ShoppingItem(item))
-    .join('');
+  shoppingList.innerHTML = items.map((item) => ShoppingItem(item)).join('');
 };
 
 fetch('https://apps.kodim.cz/daweb/trening-api/apis/shopping')

@@ -33,7 +33,7 @@ console.log(greetFunction('Alex'));
 console.log(shortGreetFunction('Alex'));
 ```
 
-Nemusíme samozřejme vracet jen řetězec. 
+Nemusíme samozřejme vracet jen řetězec.
 
 ```js
 const createPerson = (name, age, gender) => ({

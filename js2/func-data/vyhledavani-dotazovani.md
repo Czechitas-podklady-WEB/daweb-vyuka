@@ -1,9 +1,17 @@
 ## Vyhledávání a dotazování
 
-Z předchozích kurzů jste již zvyklí na metodu `forEach`, která jako svůj parametr obdrží funkci a tato funkce se pak spustí na každém prvku pole. 
+Z předchozích kurzů jste již zvyklí na metodu `forEach`, která jako svůj parametr obdrží funkci a tato funkce se pak spustí na každém prvku pole.
 
 ```js
-const names = ['petr', 'pavel', 'jana', 'eva', 'jan', 'veronika', 'pravdoslava'];
+const names = [
+  'petr',
+  'pavel',
+  'jana',
+  'eva',
+  'jan',
+  'veronika',
+  'pravdoslava',
+];
 
 names.forEach((name) => console.log(name));
 ```
@@ -12,7 +20,7 @@ Metody pro vyhledávání a dotazování fungují na stejném principu. Vždy ob
 
 ### Metody `find` a `findIndex`
 
-Pokud chceme v poli vyhledat **první hodnotu**, která splňuje nějaká kritéria, použijeme metodu `find` nebo `findIndex`. 
+Pokud chceme v poli vyhledat **první hodnotu**, která splňuje nějaká kritéria, použijeme metodu `find` nebo `findIndex`.
 
 Metoda `find` vrátí přímo nalazený prvek nebo `undefined`, pokud žádná hodnota vyhledávací kritérium nesplňuje.
 
@@ -36,7 +44,7 @@ Pokud bychom chtěli místo hodnoty její index, použijeme metodu `findIndex`. 
 
 Naše data samozřejmě mohou mít složitější strukturu. Jedním z nejčastějších formátů, v jakém budeme data získávat a zobrazovat, je pole objektů. Proto je dobré si hned od začátku zvyknout na používání metod na polích, které obsahují objekty.
 
-V proměnné `weather` máme pro příklad uložena data o počasí za posledních 5 dní. Pro každý den máme 
+V proměnné `weather` máme pro příklad uložena data o počasí za posledních 5 dní. Pro každý den máme
 
 - datum jako string,
 - odpolední, večerní a noční temploty jako pole čísel (ve stupních Celsia),

@@ -23,21 +23,21 @@ Soubor `index.js`:
 
 ```js
 // Vytvoření prvního tlačítka
-const tlacitko1 = document.createElement("button");
-tlacitko1.textContent = "Mačkej";
-tlacitko1.classList.add("btn");
+const tlacitko1 = document.createElement('button');
+tlacitko1.textContent = 'Mačkej';
+tlacitko1.classList.add('btn');
 
 // Vložení tlačítka do stránky
-const app = document.querySelector("#app");
+const app = document.querySelector('#app');
 app.append(tlacitko1);
 
 // Druhé tlačítko
-const tlacitko2 = document.createElement("button");
-tlacitko2.textContent = "Druhé tlačítko";
+const tlacitko2 = document.createElement('button');
+tlacitko2.textContent = 'Druhé tlačítko';
 app.append(tlacitko2);
 
 // Třetí tlačítko
-const tlacitko3 = document.createElement("button");
-tlacitko3.textContent = "Třetí tlačítko";
+const tlacitko3 = document.createElement('button');
+tlacitko3.textContent = 'Třetí tlačítko';
 app.append(tlacitko3);
 ```

@@ -45,7 +45,7 @@ const products = [
      <p class="product__price">Cena: 520 Kč</p>
    </div>
    ```
-1. Vytvořte funkci `renderProducts`, která vybere ze stránky element s *id* `products-section` a naplní jej obsahem s pomocí komponenty `Product`.
+1. Vytvořte funkci `renderProducts`, která vybere ze stránky element s _id_ `products-section` a naplní jej obsahem s pomocí komponenty `Product`.
 1. Zavolejte vaši funkci a vykoušejte, že se produkty zobrazují správně. V reálné aplikaci bychom samozřejmě tuto funkci volali jako reakci na nějaký `fetch` dat.
 
 ---solution

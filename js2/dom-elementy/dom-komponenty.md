@@ -69,39 +69,39 @@ const ShoppingItem = (props) => {
 };
 ``` -->
 
-Protože komponenta `ShoppingItem` nyní vrací DOM element, musíme upravit komponentu `ShoppingList`. Místo `innerHTML` použijeme metodu `append`. 
+Protože komponenta `ShoppingItem` nyní vrací DOM element, musíme upravit komponentu `ShoppingList`. Místo `innerHTML` použijeme metodu `append`.
 
 ```js
 import { ShoppingItem } from '../ShoppingItem/index.js';
 
 export const ShoppingList = (props) => {
   const { day, items } = props;
-  
+
   const element = document.createElement('div');
   element.classList.add('shopping-list');
   element.innerHTML = `
     <h2>${day}</h2>  
     <ul class="shopping-list__items"></ul>
   `;
-  
+
   const ulElement = element.querySelector('ul');
   ulElement.append(...items.map((item) => ShoppingItem(item)));
-  
+
   return element;
 };
 ```
 
-Tady se nám do kódu vkradly dvě věci, které je potřeba lépe vysvětlit. 
+Tady se nám do kódu vkradly dvě věci, které je potřeba lépe vysvětlit.
 
 Všimněte si, že metodu `querySelector` voláme nikoliv na dokumentu, ale na našem novém elementu. Pokud `querySelector` voláme na DOM elementu, vybíráme pouze zevnitř tohoto elementu a nikoliv z celého dokumentu. Snadno tak vybereme náš prvek `ul` a vložíme do něj vytvořený obsah.
 
-Druhá pozuruhodná věc je použití metody `append` s třemi tečkami. Tomuto operátoru se říká *spread*. Zde jej potřebujeme, protože metoda `append` bere libovolný počet parametrů. Můžeme psát
+Druhá pozuruhodná věc je použití metody `append` s třemi tečkami. Tomuto operátoru se říká _spread_. Zde jej potřebujeme, protože metoda `append` bere libovolný počet parametrů. Můžeme psát
 
 ```js
 domElement.append(arg1, arg2, arg3);
 ```
 
-Pokud však máme pole hodnot, nemůžeme metodu `append` volat takto. 
+Pokud však máme pole hodnot, nemůžeme metodu `append` volat takto.
 
 ```js
 domElement.append([arg1, arg2, arg3]);
@@ -113,7 +113,7 @@ Musíme hodnoty z pole nějak dostat do jednotlivých parametrů. Píšeme pak
 domElement.append(...[arg1, arg2, arg3]);
 ```
 
-*Spread* operátor má ještě mnoho využití v jiných situacích, ale o tom si povíme až někdy příště.
+_Spread_ operátor má ještě mnoho využití v jiných situacích, ale o tom si povíme až někdy příště.
 
 Nakonec ještě upravíme použití komponenty `ShoppingList` v hlavním `index.js`.
 
@@ -136,4 +136,3 @@ fetch('https://apps.kodim.cz/daweb/trening-api/apis/shopping/tue')
 ```
 
 Když nyní aplikaci spustíme, bude fungovat úplně stejně, jako dříve. Máme však připravenou půdu na posluchač události pro tlačítko.
-

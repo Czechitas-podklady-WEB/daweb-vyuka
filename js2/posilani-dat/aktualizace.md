@@ -32,7 +32,8 @@ element.querySelector('button').addEventListener('click', () => {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({ done: !done }),
-  }).then((response) => response.json())
+  })
+    .then((response) => response.json())
     .then((data) => element.replaceWith(ShoppingItem(data.results)));
 });
 ```

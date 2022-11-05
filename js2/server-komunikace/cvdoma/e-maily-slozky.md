@@ -20,9 +20,9 @@ Soubor `index.html`:
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    
+
     <title>E-maily</title>
-    
+
     <script src="index.js" type="module"></script>
   </head>
 
@@ -53,7 +53,7 @@ const renderSection = (emails, elementId) => {
       let iconClass = 'closed';
       if (elementId === 'read') {
         iconClass = 'opened';
-      };
+      }
 
       return `
         <div class="email">
