@@ -1,5 +1,5 @@
 title: BEM a responzivní design 1
-lead: Podíváme na princip psaní CSS pomocí metodiky BEM a uvedeme responzivní design.
+lead: Podíváme na princip psaní CSS pomocí metodiky BEM a uvedeme responzivní design. Vysvětlíme si, co znamená mobile-first, proč a jak bychom tak měli kódovat stránky.
 access: claim
 sections:
   - bem
