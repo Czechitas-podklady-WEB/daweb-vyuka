@@ -1,4 +1,4 @@
-Jak přibývá naších programátorských schopností, tak se naše aplikace stávají většími a složitejšími. Budou postupně obsahovat více a více komponent, knihoven, stylů a dalších. Budeme proto potřebovat pokročilejší nástroje, jak tuto rostoucí komplexitu zkrotit a dát jí nějaký řád.
+Jak přibývá naších programátorských schopností, tak se naše aplikace stávají většími a složitejšími. Budou postupně obsahovat více a více komponent, knihoven, stylů a dalších stavebních prvků. Budeme proto potřebovat pokročilejší nástroje, jak tuto rostoucí komplexitu zkrotit a dát jí nějaký řád.
 
 ## Systém NPM
 
@@ -16,7 +16,7 @@ Založíme si tedy složku `muj-projekt` a otevřeme ji ve VS Code. Do ní vlož
 }
 ```
 
-Vlastnost `dependencies` říká, jaké všechny balíčky náš projekt používá. Odborně se takovým balíčkům říká závislosti. V našem případě zatím žádné závislosti nemáme.
+Vlastnost `dependencies` říká, jaké všechny balíčky náš projekt používá. Odborně se takovým balíčkům říká *závislosti*. V našem případě zatím žádné závislosti nemáme.
 
 Mohli bychom však v našem projektu chtít použít například nám už známé knihovny `validator.js` a `dayjs`. Abychom je zapojili jako závislosti do našeho projektu, musíme je nainstalovat. V terminálu proto spustíme tento příkaz:
 
