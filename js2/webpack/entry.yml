@@ -9,4 +9,6 @@ sections:
   - webpack
   - startovace
   - cv-zaklady-webpacku
+  - komunikace
+  - cv-komunikace
 #  - ulozky-na-doma

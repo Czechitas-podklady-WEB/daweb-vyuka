@@ -1,0 +1,3 @@
+## Cvičení: Základy komunikace
+
+*TBD...*
