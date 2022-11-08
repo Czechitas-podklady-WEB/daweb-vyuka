@@ -15,7 +15,7 @@ Jedním z takových oblíbených generátorů pro Reactové projekty je `create-
 
 Založíme si startovací Webpack projekt, do kterého poté zkopírujeme kód naší aplikace na správu nákupních seznamů.
 
-Pokud chceme pomocí `create-czechitas-app` založit nový projekt, postupujte dle následujících kroků:
+Pokud chceme pomocí `create-czechitas-app` založit nový projekt, postupujeme dle následujících kroků:
 
 1. V terminálu si otevřeme složku, ve které skladujeme své projekty.
 1. Pro vytvoření projektu s názvem `nakupni-seznam` spustíme příkaz
@@ -28,7 +28,7 @@ Pokud chceme pomocí `create-czechitas-app` založit nový projekt, postupujte d
    npm run start
    ```
 1. V prohlížeči by se měla otevřít jednoduchá stránka zobrazující úvodní HTML. Ve VS Code smažeme obsah složky `src` a nahrdíme ji kódem z [poslední verze](https://github.com/Czechitas-podklady-WEB/prvni-komponenta/tree/posilani-dat) našeho nákupního seznamu. 
-1. Startovací projekt obsahuje ve složce `public` vlastní `index.html` správně nastavn7 tak, aby používal JavaScriptový soubor vygenerovaný Webpackem. Vložíme do něj obsah `body` z `index.html` našeho projektu. Náš původní `index.htm` smažeme.
+1. Startovací projekt obsahuje ve složce `public` vlastní `index.html` správně nastavený tak, aby používal JavaScriptový soubor vygenerovaný Webpackem. Vložíme do něj obsah `body` z `index.html` našeho projektu. Náš původní `index.html` smažeme.
 
 ## Import stylů
 
