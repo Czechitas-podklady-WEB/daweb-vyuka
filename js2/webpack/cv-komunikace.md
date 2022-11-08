@@ -1,3 +1,3 @@
 ## Cvičení: Základy komunikace
 
-*TBD...*
+::exc[cvlekce>posun-polozek]
