@@ -1,5 +1,7 @@
-title: Autentizace a cookies
-lead: Naučíme se pracovat s přihlášením uživatele, cookies a localStorage
+title: Routing a autentizace
+lead: Do našich stránek přidáme routování a naučíme se pracovat s přihlášením uživatele a localStorage
 access: claim
 sections:
-  - osnova
+  - routing
+  - cv-routing
+  - autentizace
