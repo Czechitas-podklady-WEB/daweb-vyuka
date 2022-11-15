@@ -13,7 +13,7 @@ Vyrobte jednoduchý web pro malé rodinné vinařství. Web bude obsahovat něko
   - Katalog vín: (URL `/catalogue`)
   - Degustace: (URL `/degustation`)
   - Kontakty: (URL `/contact`)
-1. Použijte komponentu `Header` uvnitř komonenty `App`.
+1. Použijte komponentu `Navigation` uvnitř komonenty `App`.
 1. Ke každé z těchto stránek vytvořte příslušnou komponentu: `IntroPage`, `CataloguePage`, `DegustationPage` a `ContactPage`. Zatím do všech komponent vložte pouze nadpis `h1`.
 1. V komponentě `App` vytvořte klientské routování a zobrazte pro aktuální URL správnou stránku.
 1. Vyzkoušejte, že váš web správně přepíná mezi stránkami.
