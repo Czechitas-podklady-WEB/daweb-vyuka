@@ -1,41 +1,10 @@
 ## Routing na klientu
 
-Do naší aplikace s nákupními seznamy, kterou už několik lekcí stále vylepšujeme, bychom chtěli přidat možnost registrace a přihlášení. K tomu však potřebujeme, abychom se v aplikaci mohli pomocí navigace přepínat mezi různými stránkami, jako je formulář pro registraci nebo přihlášení. 
+Do naší aplikace s nákupními seznamy, kterou už několik lekcí stále vylepšujeme, bychom chtěli přidat možnost registrace a přihlášení. K tomu však potřebujeme, abychom se v aplikaci mohli pomocí navigace přepínat mezi různými stránkami, jako je formulář pro registraci nebo přihlášení.
 
-Hlavní `index.html`:
-```html
-<body>
-  <div id="app"></div>
-</body>
-```
+Abychom dosáhli káženého cíle, bude potřeba vytvořit několik komponent. Konečně už naše aplikace nebude zakrslík jen se dvěma komponentami.
 
-Hlavní `index.js`:
-
-```js
-import { Header } from './Header/index.js';
-import { HomePage } from './HomePage/index.js';
-import { LoginPage } from './LoginPage/index.js';
-import { RegisterPage } from './RegisterPage/index.js';
-import './style.css';
-
-document.querySelector('#app').append(Header());
-
-window.addEventListener('DOMContentLoaded', () => {
-  const appElement = document.querySelector('#app');
-  
-  const { pathname } = window.location;
-  console.log(pathname);
-  if (pathname === '/') {
-    appElement.append(HomePage());
-  } else if (pathname === '/login') {
-    appElement.append(LoginPage());
-  } else if (pathname === '/register') {
-    appElement.append(RegisterPage());
-  }
-});
-```
-
-Komponenta `Header`:
+Nejprve vytvoříme komponentu pro hlavičku naší stránky.
 
 ```js
 import './style.css';
@@ -49,13 +18,43 @@ export const Header = () => {
         <a href="/">Domů</a>  
       </nav>
       <div class="user">
-        <nav>  
+        <nav>
           <a href="/register">Registrovat</a>
           <a href="/login">Přihlásit</a>
         </nav>
       </div>
     </div>
   `;
+
+  return element;
+};
+```
+
+Poté budeme potřebovat komponentu pro každou stránku naší aplikace, tedy `HomePage`, `RegisterPage` a `LoginPage`.
+
+Abychom se ve struktuře všech komponent v aplikaci vyznali, zařídíme, aby celá naše aplikace byla jedna velká komponenta. V souboru `index.html` tak v prvku `body` nezbude už vůbec žádný obsah.
+
+Vytvoříme komponentu `App`.
+
+```js
+import { Header } from '../Header/index.js';
+import { HomePage } from '../HomePage/index.js';
+import { LoginPage } from '../LoginPage/index.js';
+import { RegisterPage } from '../RegisterPage/index.js';
+
+export const App = () => {
+  const element = document.createElement('div');
+  element.classList.add('app');
+  element.append(Header());
+
+  const { pathname } = window.location;
+  if (pathname === '/') {
+    element.append(HomePage());
+  } else if (pathname === '/login') {
+    element.append(LoginPage());
+  } else if (pathname === '/register') {
+    element.append(RegisterPage());
+  }
 
   return element;
 };
