@@ -3,5 +3,5 @@ lead: Do našich stránek přidáme routování a naučíme se pracovat s přihl
 access: claim
 sections:
   - routing
-  - cv-routing
   - autentizace
+  - cv-routing
