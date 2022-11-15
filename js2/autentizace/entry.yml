@@ -5,3 +5,5 @@ sections:
   - routing
   - autentizace
   - cv-routing
+  - prihlaseni
+  - cv-prihlaseni

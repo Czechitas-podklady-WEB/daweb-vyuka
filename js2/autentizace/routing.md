@@ -4,7 +4,7 @@ Do naší aplikace s nákupními seznamy, kterou už několik lekcí stále vyle
 
 Abychom dosáhli káženého cíle, bude potřeba vytvořit několik komponent. Konečně už naše aplikace nebude zakrslík jen se dvěma komponentami.
 
-Nejprve vytvoříme komponentu pro hlavičku naší stránky.
+Vyjdeme z [poslední verze](https://github.com/Czechitas-podklady-WEB/prvni-komponenta/tree/delete-item) naší aplikace, ve které jsme implementovali mazání položek. Nejprve vytvoříme komponentu pro hlavičku naší stránky.
 
 ```js
 import './style.css';
