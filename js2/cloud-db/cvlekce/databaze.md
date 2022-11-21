@@ -1,65 +1,12 @@
 ---
-title: Odhlášení uživatele
+title: Nákupní seznam z databáze
 demand: 2
 ---
 
-V rámci tohoto cvičení si založíme projekt na supabase a vyzkoušíme si, jak přihlášeného uživatele odhlásit.
+Budeme pokračovat v práci na projektu z předchozího cvičení.
 
-1. Udělejte si fork tohoto [repozitáře](https://github.com/Czechitas-podklady-WEB/supabase-shopping-list), vzniklý fork naklonujte k sobě do počítače a nainstalujte závislosti, projekt zatím nespouštějte
-1. Zaregistrujete se na supabase
-1. Dle popisu v první části lekce si založte nový projekt
-1. V souboru **functions/supabase.js** nastavte hodnoty SUPABASE_URL a SUPABASE_KEY pro váš projekt
-1. Vypněte odesílání potvrzovacího emailu dle popisu v lekci
-1. Spusťte projekt pomocí `npm run start`, přejděte na stránku s registrací a zkuste zaregistrovat nového uživatele
-1. Pokud vše proběhlo v pořádku, měl by být uživatel přihlášen. V hlavičce stránky uvidíte emailovou adresu uživatele a tlačítko **Odhlásit**
-1. Na tlačítko **Odhlásit** přidejte posluchač na událost click, po tomto kliknutí zajistěte odhlášení uživatele a jeho přesměrování na stránku s přihlášením. (funkce pro odhlášení je již připravena v souboru `functions/auth.js`)
-1. Pokud ti zbyl čas, můžeš se podívat do komponenty `LoginPage`, jak je implementováno přihlašování uživatele a na stránce vyzkoušet, zda přihlášení v pořádku funguje.
-
----solution
-
-Soubor `Header/index.js`:
-
-```js
-import { signOut } from '../functions/auth.js';
-import './style.css';
-
-export const Header = (props) => {
-  const { session } = props;
-
-  let userContent = `
-    <nav>
-      <a href="/register">Registrovat</a>
-      <a href="/login">Přihlásit</a>
-    </nav>
-  `;
-
-  if (session) {
-    userContent = `<div>${session.user.email}<button class="btn-logout">Odhlásit</button></div>`;
-  }
-
-  const element = document.createElement('header');
-  element.innerHTML = `
-    <div class="container">  
-      <nav>
-        <a href="/">Domů</a>  
-      </nav>
-      <div class="user">
-        ${userContent}
-      </div>
-    </div>
-  `;
-
-  const logoutButton = element.querySelector('.btn-logout');
-  if (logoutButton) {
-    logoutButton.addEventListener('click', () => {
-      signOut().then((response) => {
-        if (!response.error) {
-          window.location.href = '/login';
-        }
-      });
-    });
-  }
-
-  return element;
-};
-```
+1. Dle popisu v lekci si na supabase založte databázovou tabulku s názvem `shopping_item`, nezapomeňte na propojení sloupce user_id s tabulkou registrovaných uživatelů
+1. Vytvoř soubor `functions/db.js` dle popisu v lekci
+1. V komponentě `HomePage` do elementu `.lists` připoj komponentu `ShoppingList`, které v props předáš session (aplikace nyní přestane fungovat, jelikož komponentě ShoppingList chybí položky)
+1. Uprav komponentu `ShoppingList` tak, že pokud má proměnná `items` hodnotu `undefined`, tak si komponenta zajistí získání položek ze supabase databáze pomocí funkce `getShopingItems` v souboru `functions/db.js`, tato funkce potřebuje parametr userId, jeho hodnotu můžete získat z `session.user.id`. Po získání položek komponenta překreslí sebe samu.
+1. Nyní zprovozněte formulář pro přidání položky, k tomu využijte funkci `addShoppingItem`. Po přidání položky je potřeba opět načíst položky pomocí funkce `getShopingItems` a následně překresilt komponentu.

@@ -5,3 +5,5 @@ sections:
   - supabase
   - auth
   - cv-autentizace
+  - databaze
+  - cv-databaze
