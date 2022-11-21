@@ -4,3 +4,4 @@ access: claim
 sections:
   - supabase
   - auth
+  - cv-autentizace
