@@ -12,7 +12,7 @@ Po založení projektu se dostaneme na stránku, na které nás bude později za
 
 ::fig[Údaje projektu]{src=assets/url__api_key.jpg}
 
-K zapojení supabase do našeho projektu nám pomůže [dokumentace pro JavaScript](https://supabase.com/docs/reference/javascript/installing), ve které se dozvíme vše potřebné. Začnemeinstalací balíčku pomocí:
+K zapojení supabase do našeho projektu nám pomůže [dokumentace pro JavaScript](https://supabase.com/docs/reference/javascript/installing), ve které se dozvíme vše potřebné. Začneme instalací balíčku pomocí:
 
 ```sh
 $ npm install @supabase/supabase-js
@@ -23,9 +23,8 @@ Dále si ve složce src našeho projektu založíme složku **functions** a v n�
 ```js
 import { createClient } from '@supabase/supabase-js';
 
-const SUPABASE_URL = 'https://dqdbjnrcaghgomxnujva.supabase.co';
-const SUPABASE_KEY =
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRxZGJqbnJjYWdoZ29teG51anZhIiwicm9sZSI6ImFub24iLCJpYXQiOjE2Njg5NDMxOTgsImV4cCI6MTk4NDUxOTE5OH0.Yjdb2KyzApw8A8277JxpDqA3LSdN7Ow797zYXrIa3as';
+const SUPABASE_URL = '';
+const SUPABASE_KEY = '';
 
 export const getSupabase = () => {
   return createClient(SUPABASE_URL, SUPABASE_KEY);
