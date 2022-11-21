@@ -3,3 +3,4 @@ lead: Naučíme využívat cloudové databáze k vytvoření backend API
 access: claim
 sections:
   - supabase
+  - auth
