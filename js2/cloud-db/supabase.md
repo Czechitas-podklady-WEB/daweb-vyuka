@@ -31,4 +31,6 @@ export const getSupabase = () => {
 };
 ```
 
-V kódu pouze doplníme hodnoty pro URL a klíč k našemu projektu z předchozího kroku. Nyní máme připravenou funkci, která nám vrací supabase klient, jelikož tuto funkci exportujeme, tak ji můžeme importovat kdekoliv v rámci našeho projektu a dále s tímto klientem pracovat. Jak s klientem pracovat si ukážeme hned v další části, kde se podíváme na možnost, jak využít supabase pro autentizaci uživatelů.
+V kódu pouze doplníme hodnoty pro URL a klíč k našemu projektu z předchozího kroku.
+
+Nyní máme připravenou funkci, která nám vrací supabase klient. Jelikož tuto funkci exportujeme, tak ji můžeme importovat kdekoliv v rámci našeho projektu a dále s tímto klientem pracovat. Jak s klientem pracovat si ukážeme hned v další části, kde se podíváme na možnost, jak využít supabase pro autentizaci uživatelů.
