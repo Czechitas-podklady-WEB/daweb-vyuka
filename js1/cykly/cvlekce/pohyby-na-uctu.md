@@ -3,7 +3,7 @@ title: Pohyby na účtu
 demand: 3
 ---
 
-Založe JavaScriptový program s následujícím s záznamem vkladů a výběrů na nějakém bankovním účtu.
+Založte JavaScriptový program s následujícím s záznamem vkladů a výběrů na nějakém bankovním účtu.
 
 ```js
 const amounts = [2500, -550, 1000, -1200, -3000, 1270, 2300];
