@@ -1,5 +1,5 @@
 ---
-title: Nápoje jako komponenty
+title: Ingredience jako komponenty
 demand: 3
 ---
 
