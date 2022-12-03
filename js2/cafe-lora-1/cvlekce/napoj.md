@@ -26,6 +26,7 @@ Abychom nakonec mohli zobrazit celou nabídku nápojů, budeme potřebovat, aby 
      ]
    };
    ```
+
 1. Uvnitř komponenty bude potřeba použít komponentu `Layer`. Dejte si pozor, abyse ji správně importovali.
 1. Adresa obrázku, který se má zobrazit, je uložena ve vlastnosti `image`. Tato cesta se použije pro atribut `src` obrázku.
 1. Tlačítko zatím pouze zobrazte, funkčnost mu přidáme v dalším kroku.

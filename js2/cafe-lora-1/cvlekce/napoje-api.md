@@ -11,5 +11,5 @@ Konečně zobrazíme celou nabídku nápojů, které si stáhneme z API.
    Email vas.email@example.com
    ```
    odeslanou v `Authorization` hlavičce. Při první autentizaci vám server vytvoří účet, ve které můžete spravovat vlastní objednávku. Bez autentizace vás API k datům nepustí.
-1. Upravte komponentu `Menu` tak, aby stahovala nápoje z API. K tomu je potřeba přidat *prop* s názvem `drinks`, která na začátku bude `undefined`. V takovém případě stáhneme data z API, zavoláme komponentu znova a načtená data pošleme do *prop* `drinks`.
+1. Upravte komponentu `Menu` tak, aby stahovala nápoje z API. K tomu je potřeba přidat _prop_ s názvem `drinks`, která na začátku bude `undefined`. V takovém případě stáhneme data z API, zavoláme komponentu znova a načtená data pošleme do _prop_ `drinks`.
 1. Vyzkoušejte, že vaše stránka zobrazuje všechny nápoje. Commitněte se srozumitelnou zprávou a pushněte do zvdáleného repozitáře.

@@ -12,7 +12,7 @@ Jak implementovat registraci uživatele můžeme najít v [dokumentaci](https://
 const { data, error } = await supabase.auth.signUp({
   email: 'example@email.com',
   password: 'example-password',
-})
+});
 ```
 
 Většina metod, se kterými budeme v rámci supabase pracovat vrací Promise (slib), který již dobře známe z funkce **fetch**. Na slibu jsme zvyklí volat metodu **then**, která přijímá funkci, která se vykoná po naplnění slibu. Výše uvedenou funkci bychom mohli tedy upravit tímto způsobem:
@@ -45,20 +45,20 @@ Pokud budeme chtít naší nově vytvořenou funkci použít v rámci aplikace, 
 
 ```js
 element.querySelector('form').addEventListener('submit', (e) => {
-    e.preventDefault();
-    const email = element.querySelector('.email-input').value;
-    const password = element.querySelector('.password-input').value;
+  e.preventDefault();
+  const email = element.querySelector('.email-input').value;
+  const password = element.querySelector('.password-input').value;
 
-    signUp(email, password).then((response) => {
-      const { data, error } = response;
+  signUp(email, password).then((response) => {
+    const { data, error } = response;
 
-      if (error) {
-        element.replaceWith(RegisterPage({ error: error.message }));
-      } else {
-        window.location.href = '/';
-      }
-    });
+    if (error) {
+      element.replaceWith(RegisterPage({ error: error.message }));
+    } else {
+      window.location.href = '/';
+    }
   });
+});
 ```
 
 Nejprve si uložíme do proměnných hodnoty ze vstupů našeho registračního formuláře, ty následně předáme naší funkci signUp, která vrací promise. Po naplnění slibu provedeme destrikturalizaci odpovědi, pokud došlo k nějaké chybě, tak překreslíme komponentu registrační stránky a předáme jí chybovou hlášku. V opačném případě byla registrace úspěšná, supabase automaticky vytvoří session a mi můžeme uživatele přesměrovat na domovskou stránku.
@@ -113,7 +113,7 @@ export const App = (props) => {
       element.replaceWith(
         App({
           session: session,
-        }),
+        })
       );
     });
   } else {

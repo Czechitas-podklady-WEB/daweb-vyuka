@@ -1,6 +1,5 @@
 ## Složitější cykly
 
-
 ### document.querySelectorAll
 
 Díky tomu, že už rozumíme polím, si můžeme představit funkci `document.querySelectorAll`. Ta funguje podobně jako už známá funkce `document.querySelector`. Vrátí nám však **všechny** elementy, které najde pomocí zadaného selektoru. Výsledek obdržíme jako pole DOM elementů. To pak můžeme zpracovat pomocí nějakého cyklu.
@@ -47,17 +46,10 @@ for (let i = 0; i < buttons.length; i += 1) {
 Cyklus `for` je univerzální díky tomu, jakými různými způsoby ho můžeme zapsat. Od velikosti kroku iterace po ukončovací podmínku. Tím umíme pokrýt širokou škálu situací a to ho dělá velmi mocným. Pro běžnou práci s poli však takový zápis může být zbytečně dlouhý a repetetivní. Pojďme se podívat na cyklus `forEach`, který je ideální pro práci s polem prvků.
 
 ```js
-const names = [
-  'petr',
-  'pavel',
-  'jana',
-  'eva',
-  'jan',
-  'veronika',
-];
+const names = ['petr', 'pavel', 'jana', 'eva', 'jan', 'veronika'];
 
 names.forEach((name) => {
-  console.log(name)
+  console.log(name);
 });
 ```
 
@@ -72,10 +64,9 @@ const selectSmiley = (event) => {
 
 const buttons = document.querySelectorAll('.btn-smiley');
 buttons.forEach((button) => {
-  button.addEventListener('click', selectSmiley)
+  button.addEventListener('click', selectSmiley);
 });
 ```
-
 
 <!-- ### Datové atributy
 

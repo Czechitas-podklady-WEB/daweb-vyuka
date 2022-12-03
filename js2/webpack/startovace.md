@@ -27,12 +27,12 @@ Pokud chceme pomocí `create-czechitas-app` založit nový projekt, postupujeme 
    ```
    npm run start
    ```
-1. V prohlížeči by se měla otevřít jednoduchá stránka zobrazující úvodní HTML. Ve VS Code smažeme obsah složky `src` a nahrdíme ji kódem z [poslední verze](https://github.com/Czechitas-podklady-WEB/prvni-komponenta/tree/posilani-dat) našeho nákupního seznamu. 
+1. V prohlížeči by se měla otevřít jednoduchá stránka zobrazující úvodní HTML. Ve VS Code smažeme obsah složky `src` a nahrdíme ji kódem z [poslední verze](https://github.com/Czechitas-podklady-WEB/prvni-komponenta/tree/posilani-dat) našeho nákupního seznamu.
 1. Startovací projekt obsahuje ve složce `public` vlastní `index.html` správně nastavený tak, aby používal JavaScriptový soubor vygenerovaný Webpackem. Vložíme do něj obsah `body` z `index.html` našeho projektu. Náš původní `index.html` smažeme.
 
 ## Import stylů
 
-Webpack umí kromě JavaScriptu zabalit také CSS. To nás zachrání od ručního importu stylů pro každou jednotlivou komponentu, jak jsme byli doposud vzyklí. Webpack dokonce výsledné sestavené CSS vloží do stránky pomocí JavaScriptu, naše stránka tak nemusí stahovat vůbec žádné CSS. 
+Webpack umí kromě JavaScriptu zabalit také CSS. To nás zachrání od ručního importu stylů pro každou jednotlivou komponentu, jak jsme byli doposud vzyklí. Webpack dokonce výsledné sestavené CSS vloží do stránky pomocí JavaScriptu, naše stránka tak nemusí stahovat vůbec žádné CSS.
 
 Aby Webpack poznal, které CSS má do výsledního projektu zabalit, je potřeba mu to říct pomocí importů. V hlavním souboru `index.js` je tedy potřeba na začátku importvat styly
 
@@ -41,4 +41,3 @@ import `./style.css`;
 ```
 
 Totéž je potřeba provést na začátku všech komponenty, které obsahují vlastní styly. Tím máme náš projekt hotový. Výsledný kód si můžete prohlédnout ve větvi [webpack](https://github.com/Czechitas-podklady-WEB/prvni-komponenta/tree/webpack) našeho hlavního repozitáře.
-

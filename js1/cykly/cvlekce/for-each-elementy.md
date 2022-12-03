@@ -12,5 +12,5 @@ Založte JavaScriptový program se stránkou a pěti odstavci `<p>`. Pomocí `do
 
    paragraphs.forEach((paragraph) => {
      paragraph.style.color = 'red';
-   })
+   });
    ```

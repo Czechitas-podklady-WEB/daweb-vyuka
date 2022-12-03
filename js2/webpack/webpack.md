@@ -25,7 +25,7 @@ Po tomto zásahu bude náš `package.json` vypadat následovně.
 }
 ```
 
-Přibyla nám nová položka `devDependencies`. V té je vypsán seznam balíčků, které představují takzvané *vývojové závislosti*. Tyto balíčky se nestávají součástí naší výsledné stránky, používáme je pouze během vývoje.
+Přibyla nám nová položka `devDependencies`. V té je vypsán seznam balíčků, které představují takzvané _vývojové závislosti_. Tyto balíčky se nestávají součástí naší výsledné stránky, používáme je pouze během vývoje.
 
 ### Struktura projektu
 
