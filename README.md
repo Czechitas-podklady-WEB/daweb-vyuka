@@ -11,6 +11,16 @@ npm ci
 npm run fix
 ```
 
+## Lokální běh pro vývoj
+
+Spuštěním příkazu:
+
+```sh
+docker-compose up
+```
+
+---
+
 ## Sylabus HTML/CSS
 
 ### Blok 1

@@ -1,0 +1,7 @@
+{
+	"name": "Vývojové prostředí pro materiály na kodim.cz",
+	"postCreateCommand": "npm ci",
+	"dockerComposeFile": "../docker-compose.yml",
+	"service": "kodim",
+	"forwardPorts": [3000]
+}
