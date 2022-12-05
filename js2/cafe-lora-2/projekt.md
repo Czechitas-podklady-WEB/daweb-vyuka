@@ -2,3 +2,4 @@
 
 ::exc[cvlekce>napoje-api]
 ::exc[cvlekce>objednavani]
+::exc[cvlekce>routovani]
