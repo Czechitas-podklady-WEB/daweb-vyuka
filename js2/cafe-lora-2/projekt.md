@@ -3,3 +3,4 @@
 ::exc[cvlekce>napoje-api]
 ::exc[cvlekce>objednavani]
 ::exc[cvlekce>routovani]
+::exc[cvlekce>objednavka-stranka]
