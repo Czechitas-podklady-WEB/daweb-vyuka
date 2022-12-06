@@ -1,4 +1,4 @@
-name: Quality assurance
+name: Quality assurance check
 
 on: push
 
@@ -7,8 +7,9 @@ jobs:
     name: Quality assurance
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Install packages
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install dependencies
         run: npm ci
       - name: Run
         run: npm run quality-assurance
