@@ -7,7 +7,7 @@ V komponentě `Menu` máme příklad tří napojů zatím jako natvrdo vytvořen
 
 Vytvoříme komponentu `Drink`, která zatím nebude mít funkční objednávací tlačítko a nebude ještě správně zobrazovat ingredience. Obojí doplníme později.
 
-1. Ve složce pro komoonentu `Menu` vytvořte složku `components` a v ní složku `Drink` s `index.js` a `style.css`. Do `style.css` přesuňte styly související s komponentou.
+1. Ve složce pro komponentu `Menu` vytvořte složku `components` a v ní složku `Drink` s `index.js` a `style.css`. Do `style.css` přesuňte styly související s komponentou.
 1. V `index.js` vytvořte komponentu `Drink`, která očekává `props` v následujícím tvaru. Vlastnost `id` se v komponentě v tuto chvíli nebude používat, bude se nám hodit při volání API pro objednávání.
 
    ```js
