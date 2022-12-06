@@ -10,4 +10,4 @@ API vyžaduje autentizaci ve formátu
 Email vas.email@example.com
 ```
 
-odeslanou v `Authorization` hlavičce. Při první autentizaci vám server vytvoří účet, ve které můžete spravovat vlastní objednávku. Bez autentizace vás API k datům nepustí.
+odeslanou v `Authorization` hlavičce. Při první autentizaci vám server vytvoří účet, ve kterém můžete spravovat vlastní objednávku. Bez autentizace vás API k datům nepustí.
