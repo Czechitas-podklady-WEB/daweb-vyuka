@@ -3,9 +3,9 @@ title: Ingredience jako komponenty
 demand: 3
 ---
 
-Abychom mohli vytvářet seznam ingrediancí podle dat, každá ingredience musí být také komponenta.
+Abychom mohli vytvářet seznam ingrediencí podle dat, každá ingredience musí být také komponenta.
 
-1. Ve složce `Menu/components` vytvořte vytvořte komponentu `Layer`, která očekává `props` v následujícím tvaru.
+1. Ve složce `Menu/components` vytvořte komponentu `Layer`, která očekává `props` v následujícím tvaru.
    ```js
    {
      color: '#feeeca',
