@@ -18,3 +18,5 @@ Spuštěním příkazu:
 ```sh
 docker-compose up
 ```
+
+a otevřením [http://localhost:3000](http://localhost:3000) v prohlížeči.
