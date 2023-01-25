@@ -1,5 +1,7 @@
 {
   "scripts": {
+    "start": "docker-compose up",
+    "dev": "npm start",
     "quality-assurance": "prettier --check \"**/*.{md,html,js,css}\"",
     "fix": "prettier --write \"**/*.{md,html,js,css}\""
   },
