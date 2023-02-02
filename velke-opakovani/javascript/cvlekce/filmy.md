@@ -39,6 +39,7 @@ https://apps.kodim.cz/daweb/trening-api/apis/movie-api/movies
 ## Bonusy
 1. Udělejte z názvu filmu odkaz, který povede na recenzi na ČSFD. V datech je adresa uložená ve vlastnosti `url`.
 1. Vypište ke každému filmu i žánry, do kterého patří. Nezapomeňte, že žánry jsou v datech u každého filmu uloženy do pole.
-1. Seřaďte filmy podle data vydání.
 1. Vytvořte ve vašem kódu komponentu `Movie`. To bude funkce pro zobrazení jednoho filmu. Funkce bude na vstupu přijímat objekt filmu, který chceme zobrazit. Na výstupu bude funkce vracet jako text HTML kód pro jeden film. Upravte funkci `showMovies`, aby komponentu používala pro přidání filmu do stránky.
 1. Destrukturujte objekt na vstupu komponenty na jednotlivé vlastnosti a upravte komponentu, aby používala takto vytvořené proměnné.
+1. Seřaďte filmy abecedně podle názvu.
+1. Přidejte do stránky 2 tlačítka. Na tlačítka přidejte událost při kliknutí tlačítkem myši. Jedno tlačítko seřadí filmy na stránce vzestupně a druhé sestupně podle roku vydání.
