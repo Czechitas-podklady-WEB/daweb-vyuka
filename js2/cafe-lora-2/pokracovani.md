@@ -5,7 +5,7 @@ Budeme pokračovat v projektu _Café Lóra_ z předchozí lekce. Tentokrát se b
 V [dokumnetaci](https://apps.kodim.cz/daweb/cafelora/docs/) k API _Café Lóra_ najdete popsané endpointy pro získání seznamu nápojů a objednání či zrušení objednávku nápoje.
 
 API vyžaduje autentizaci ve formátu
-   
+
 ```
 Email vas.email@example.com
 ```
