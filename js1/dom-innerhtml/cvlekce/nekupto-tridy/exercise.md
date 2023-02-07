@@ -16,7 +16,7 @@ Na konci by stránka v prohlížeči měla vypadat jako na obrázku níže:
 
 ---solution
 
-```
+```js
 const firstCard = document.querySelector('#product1');
 firstCard.classList.add('border-primary');
 

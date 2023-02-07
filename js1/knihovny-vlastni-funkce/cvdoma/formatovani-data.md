@@ -9,7 +9,7 @@ Bez použití knihovny `dayjs` napište funkci `formatDate`, která na vstupu ob
 { day: 12, month: 3, year: 2015 }
 ```
 
-Funkce vrátí řetězec představující datum ve formátu DD.MM.YYYY. Příklad použití.
+Funkce vrátí řetězec představující datum ve formátu **DD.MM.YYYY**. Příklad použití.
 
 ```jscon
 > formatDate({ day: 6, month: 4, year: 2021 })

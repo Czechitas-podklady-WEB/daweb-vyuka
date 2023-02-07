@@ -28,7 +28,7 @@ Pokračujte v předchozím cvičení. Všimněte si, že v souboru `index.js` js
 
 ---solution
 
-```
+```js
 const product1 = {
   image: 'img/destniklobouk.jpg',
   name: 'Deštníklobouk',

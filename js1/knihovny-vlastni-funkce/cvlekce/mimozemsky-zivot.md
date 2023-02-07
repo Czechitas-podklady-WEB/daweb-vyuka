@@ -12,18 +12,21 @@ Vytvořte podobnou stránku s vaším vlastním tématem.
 
 1. Vytvořte prázdnou stránku, do které vložte knihovnu `dayjs`.
 1. Vyberte si nějakou budoucí událost, jejíž datum je pevně určeno. Za pomoci knihovny `dayjs` vytvořte stránku zobrazující velké ANO nebo NE případně krátkou zprávu podle toho, zda už událost nastala či nikoliv.
-1. Publikuje vaši stránku na GitHub pages.
+
+#### Bonus
+
+1. Publikuje vaši stránku přes [GitHub Pages](https://pages.github.com/), [Netlify drop](https://app.netlify.com/drop) či jinou alternativu.
 
 ---solution
 
-```
-const today = dayjs()
-const aliensFoundDate = dayjs('2042-11-06')
-const pageTitleEl = document.querySelector('h1')
+```js
+const today = dayjs();
+const aliensFoundDate = dayjs('2042-11-06');
+const pageTitleEl = document.querySelector('h1');
 
 if (today.isAfter(aliensFoundDate)) {
-  pageTitleEl.textContent = 'Mimozemšťané konečně objeveni!'
+  pageTitleEl.textContent = 'Mimozemšťané konečně objeveni!';
 } else {
-  pageTitleEl.textContent = 'Mimoze-co? Nevím, o čem to mluvíte.'
+  pageTitleEl.textContent = 'Mimoze-co? Nevím, o čem to mluvíte.';
 }
 ```

@@ -8,3 +8,30 @@ Na obrázku vidíte rozložení čísel na klasické Francouzské ruletě. Rulet
 ::fig[Ruleta]{src=assets/roulette.png size=70}
 
 Vytvořte stránku, které uživatel zadá číslo a stránka odpoví jestli jde o číslo sudé nebo liché, černé nebo červené, nebo je to nula.
+
+---solution
+
+```js
+const cislo = prompt('Zadej číslo rulety od 0 do 36.');
+
+if (Number(cislo) === 0) {
+  document.body.innerHTML = `<p>Zadáno: ${cislo}. <br /> Zadané číslo je nula.</p>`;
+} else if (Number(cislo) > 36) {
+  document.body.innerHTML = `<p>Zadáno: ${cislo}. <br /> Zadané číslo se nenachází na ruletě.</p>`;
+} else if (
+  (Number(cislo) >= 1 && Number(cislo) <= 10) ||
+  (Number(cislo) >= 19 && Number(cislo) <= 28)
+) {
+  if (Number(cislo) % 2 === 1) {
+    document.body.innerHTML = `<p>Zadáno: ${cislo}. <br /> Zadané číslo je liché a červené.</p>`;
+  } else {
+    document.body.innerHTML = `<p>Zadáno: ${cislo}. <br /> Zadané číslo je sudé a černé.</p>`;
+  }
+} else {
+  if (Number(cislo) % 2 === 1) {
+    document.body.innerHTML = `<p>Zadáno: ${cislo}. <br /> Zadané číslo je liché a černé.</p>`;
+  } else {
+    document.body.innerHTML = `<p>Zadáno: ${cislo}. <br /> Zadané číslo je sudé a červené.</p>`;
+  }
+}
+```

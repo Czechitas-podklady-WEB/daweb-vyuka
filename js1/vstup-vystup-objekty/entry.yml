@@ -1,6 +1,5 @@
 title: Vstup a výstup, objekty
 lead: Naučíme naše programy komunikovat s uživatelem a pracovat se složitějšími daty.
-access: claim
 sections:
   - vstup
   - konverze-hodnot
@@ -10,4 +9,3 @@ sections:
   - cv-objekty
   - shrnuti
   - cv-ulozky
-  

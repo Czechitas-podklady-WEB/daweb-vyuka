@@ -14,7 +14,8 @@ Vytvoříme jednoduchou stránku s objednávacím tlačítkem.
    <p>Objednáno</p>
    ```
 1. Upravte program tak, že text se nevypíše do stránky, ale zobrazí se na samotném tlačítku.
-1. Dále program upravte tak, že akce objednání se vykoná při kliknutí kamkoliv na stránku, nikoliv pouze na tlačítko.
+
+::fig[ukázka řešení]{src=assets/ukazka.gif}
 
 ---solution
 
