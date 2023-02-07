@@ -33,15 +33,15 @@ Při servírování webových stránek přes server, i když lokální, dovoluje
 ```html
 <!DOCTYPE html>
 <html lang="cs">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>První program</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>První program</title>
 
-		<script type="module" src="index.js"></script>
-	</head>
-	<body>
-		<h1>První program</h1>
-	</body>
+    <script type="module" src="index.js"></script>
+  </head>
+  <body>
+    <h1>První program</h1>
+  </body>
 </html>
 ```
