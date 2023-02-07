@@ -4,7 +4,9 @@ Každý programátor, začátečník i profesionál, dělá v programech chyby. 
 
 Pokud máme v programu tak závažnou chybu, že JavaScript runtime vůbec nerozumí tomu, co po něm chceme, vypíše takzvanou :term{cs="chybovou hlášku" en="error message"}. Pokud náš program nefunguje, jak má, a obdržíme chybovou hlášku, je to důvod k velké radosti. Máme totiž rovnou informaci o tom, kde je něco špatně.
 
-V následující částí si probereme nejčastější chyby, na které jako začátečníci jistě často narazíte. Použijeme k tomu kód ze cvičení [Přihlášení](/kurzy/daweb/zaklady-js/udalosti-formulare/ulozky-na-doma#cvdoma>prihlaseni).
+V následující částí si probereme nejčastější chyby, na které jako začátečníci jistě často narazíte. Použijeme k tomu kód ze cvičení [Přihlášení](/kurzy/daweb/js1/udalosti-formulare/ulozky-na-doma#cvdoma>prihlaseni).
+
+<!-- @TODO: opravit nefunkční link výše -->
 
 ### Přístup k neexistujicím věcem
 

@@ -8,10 +8,11 @@ Představme si například, že vyměřujeme pozemek a chceme spočítat plochu 
 
 Naše funkce tedy bude mít dva vstupy - šířku a výšku. Ze školy si pamatujeme, že plochu prvoúhlého trojúhelníka spočítáme tak, že vynásobíme šířku výškou a výsledek vydělíme dvěma. Už tedy víme, co má funkce dělat a zbývá nám tento postup zapsat v JavaScritpu.
 
+<!-- prettier-ignore -->
 ```js
 (width, height) => {
-  return (width * height) / 2;
-};
+	return (width * height) / 2;
+}
 ```
 
 Zápis funkce se dělí na definici :term{cs="vstupů" en="inputs"} (před šipkou) a :term{cs="tělo" en="body"} (za šipkou). Jako vstupy v kulatých závorkách vidíme dvě slova `width` a `height`. To jsou speciální proměnné, kterým říkáme :term{cs="parametry" en="parameters"}.

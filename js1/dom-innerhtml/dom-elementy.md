@@ -71,7 +71,7 @@ Pomocí JavaScriptu také můžeme elementům snadno přidávat nebo odebírat C
 <div class="header">Dobré ráno</div>
 > headerElm.classList.add('new-header')
 > headerElm
-<div class="new-header">Dobré ráno</div>
+<div class="header new-header">Dobré ráno</div>
 ```
 
 Pomocí `classList` lze také třídy odebírat. Dejme tomu, že máme takovéto tlačítko.

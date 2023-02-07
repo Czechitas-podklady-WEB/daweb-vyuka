@@ -41,7 +41,7 @@ if (year % 100 === 0) {
     leap = 'je';
   }
 } else if (year % 4 === 0) {
-  leap = 'není';
+  leap = 'je';
 }
 
 document.body.innerHTML = `<p>${year} ${leap} přestupný</p>`;

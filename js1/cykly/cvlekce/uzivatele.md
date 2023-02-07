@@ -5,7 +5,7 @@ demand: 2
 
 Založte JavaScriptový program s následujícím seznamem uživatelů.
 
-```
+```js
 const users = ['paja', 'kaja', 'vlasta', 'peta', 'alex', 'ja', 'misa'];
 ```
 

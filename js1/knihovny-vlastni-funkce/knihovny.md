@@ -102,13 +102,13 @@ console.log(now.format('MM.DD.YYYY'));
 Můžeme také zcela konkrétní datum vyrobit, například
 
 ```js
-const stedryDen = dayjs('2021-12-24');
+const stedryDen = dayjs('2023-12-24');
 ```
 
 Pomocí metody `isAfter` pak můžeme vyzkoušet, jestli už jsme propásli Štědrý den 2021 nebo nás teprve čeká.
 
 ```js
-const stedryDen = dayjs('2021-12-24');
+const stedryDen = dayjs('2023-12-24');
 const dnes = dayjs();
 
 if (dnes.isAfter(stedryDen)) {

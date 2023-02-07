@@ -3,14 +3,30 @@ title: Doručování
 demand: 2
 ---
 
-Vytvořte webovou stránku, kde uživatel zadá svoji adresu například pro účely doručení objednaného zboží. Požaduje ulici, číslo domu, město a PSČ.
+Vytvořte webovou stránku, kde uživatel zadá svoji adresu například pro účely doručení objednaného zboží. Požaduje **ulici**, **číslo domu**, **město** a **PSČ**.
 
 1. Uložte všechny údaje do vhodně pojmenovaných proměnných.
-1. Ze zadanách údajů sestavte pomocí interpolace řetězec obsahující HTML ve formátu jako níže
+1. Ze zadanách údajů sestavte pomocí **interpolace řetězeců** obsahující HTML ve formátu jako níže
    ```html
-   <div class="address">
+   <address>
      <p>Pod Stájemi 67</p>
      <p>12754 Klysnov</p>
-   </div>
+   </address>
    ```
 1. Pomocí `document.body.innerHTML` vložte sestavené HTML do stránky.
+
+---solution
+
+```js
+const street = prompt('Zadejte ulici:');
+const houseNumber = prompt('Zadejte číslo domu:');
+const city = prompt('Zadejte město:');
+const zipCode = prompt('Zadejte PSČ:');
+
+document.body.innerHTML = `
+   <address>
+      <p>${street} ${houseNumber}</p>
+      <p>${zipCode} ${city}</p>
+   </address>
+`;
+```
