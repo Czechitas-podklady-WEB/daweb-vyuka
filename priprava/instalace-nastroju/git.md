@@ -1,6 +1,6 @@
 ## Git
 
-Git je verzovací systém, bez kterého se dnes už žádný pořádný programátor neobejde. Najdete jej na adrese [git-scm.com](https://git-scm.com). Git také funguje na všech operačních systémech, na každém se ale instaluje trochu jinak. Následujte tedy návod niže podle systému na vašem počítači.
+Git je verzovací systém, bez kterého se dnes už žádný pořádný programátor neobejde. Najdete jej na adrese [git-scm.com](https://git-scm.com). Git také funguje na všech operačních systémech, na každém se ale instaluje trochu jinak. Následujte tedy návod niže podle systému na vašem počítači. Pokud máte **starší verzi gitu, než je 2.39.2**, zaktualizujte Git na nejnovější verzi. Nedávno byla v Gitu objevena bezpečnostní chyba, která je v aktuálníverzi opravena.
 
 ### Windows
 
@@ -15,6 +15,16 @@ Na Macu by mělo stačit spustit terminál a napsat do něj příkaz `git --vers
 ### Linux (Ubuntu, Debian)
 
 Stačí do terminálu napsat `sudo apt install git`.
+
+### Ověření instalace
+
+Až Git nainstalujete, ověřte jeho funkčnost tak, že z příkazového řádku ([nápověda je v další lekci](https://kodim.cz/kurzy/daweb/priprava/klavesnice-terminal/terminal)) spustíte příkaz:
+
+```bash
+git --version
+```
+
+Pokud příkaz vypíše starší verzi, než je 2.39.2, Git si zaktualizujte na nejnovější verzi.
 
 ## Účet na GitHubu
 
