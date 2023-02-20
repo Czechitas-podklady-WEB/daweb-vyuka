@@ -1,6 +1,6 @@
 ## Git
 
-Git je verzovací systém, bez kterého se dnes už žádný pořádný programátor neobejde. Najdete jej na adrese [git-scm.com](https://git-scm.com). Git také funguje na všech operačních systémech, na každém se ale instaluje trochu jinak. Následujte tedy návod niže podle systému na vašem počítači. Pokud máte **starší verzi gitu, než je 2.39.2**, zaktualizujte Git na nejnovější verzi. Nedávno byla v Gitu objevena bezpečnostní chyba, která je v aktuálníverzi opravena.
+Git je verzovací systém, bez kterého se dnes už žádný pořádný programátor neobejde. Najdete jej na adrese [git-scm.com](https://git-scm.com). Git také funguje na všech operačních systémech, na každém se ale instaluje trochu jinak. Následujte tedy návod niže podle systému na vašem počítači. **Pokud máte starší verzi gitu, než je 2.39.2, zaktualizujte Git** na nejnovější verzi. Nedávno byla v Gitu objevena bezpečnostní chyba, která je v aktuálníverzi opravena.
 
 ### Windows
 
