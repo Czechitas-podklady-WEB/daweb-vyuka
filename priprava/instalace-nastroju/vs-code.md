@@ -4,6 +4,8 @@ Visual Studio Code je textový editor specializovaný na psaní programů a výv
 
 Aktuální verzi editoru si nanistalujte podle instrukcí na [oficiálních stránkách](https://code.visualstudio.com). VS Code je dostupný pro všechny operační systémy.
 
+Pokud máte VS Code nainstalován z dřívějška, zkontrolujte, že máte nejnovější verzi. Z hlavního menu vyberete _Help_ → _About_, v dialogovém okně by se měla zobrazit verze 1.75.1 nebo novější. Pokud máte starší verzi, zvolte v menu _Help_ → _Check for Updates…_, VS Code na pozadí stáhne novou verzi a nabídne její aktualizaci.
+
 ### VS Code - Extensions
 
 VS Code lze přizpůsobit instalací různých rozšíření, které vývojářům poskytují nové možnosti a usnadňují jim práci. Rozšíření nainstalujete tak, že kliknete na ikonu rozšíření (_Extensions_) v levém panelu okna VS Code. Případně můžete zmáčknout klávesovou zkratku :kbd[Ctrl] + :kbd[Shift] + :kbd[X].
