@@ -2,7 +2,9 @@
 
 ::fig[logo Git]{src=assets/git.svg size=10}
 
-Git je verzovací systém, bez kterého se dnes už žádný pořádný programátor neobejde. Najdete jej na adrese [git-scm.com](https://git-scm.com). Git také funguje na všech operačních systémech, na každém se ale instaluje trochu jinak. Podrobný popis, jak jej nainstalovat najdete na samostatné stránce [czechitas-podklady.cz/git-instalace/](https://czechitas-podklady.cz/git-instalace/). Na zmíněném odkaze je rozepsaný i průvodce vytvořením účtu na GitHubu, který budete také potřebovat.
+Git je verzovací systém, bez kterého se dnes už žádný pořádný programátor neobejde. Najdete jej na adrese [git-scm.com](https://git-scm.com). Git také funguje na všech operačních systémech, na každém se ale instaluje trochu jinak. Podrobný popis, jak jej nainstalovat najdete na samostatné stránce [czechitas-podklady.cz/git-instalace/](https://czechitas-podklady.cz/git-instalace/).
+
+Na zmíněném odkaze je rozepsaný i průvodce vytvořením účtu na GitHubu, který budete také potřebovat.
 
 ## Účet na GitHubu
 
