@@ -1,5 +1,5 @@
-title: Základy Gitu
-lead: Představíme si verzovací systém Git, který nám usnadní správu a sdílení zdrojových kódů
+title: Úvod do Gitu
+lead: Představíme si verzovací systém Git, který nám usnadní správu a sdílení zdrojových kódů.
 access: claim
 sections:
   - system-git

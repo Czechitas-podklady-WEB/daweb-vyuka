@@ -2,7 +2,6 @@ title: JavaScript 2
 lead: Naučíte se vytvářet složitější webové aplikace a poznáte hlubší zákoutí JavaScriptu.
 lessons:
   - opakovani
-  - zaklady-gitu
   - func-data
   - server-komunikace
   - komponenty
