@@ -1,5 +1,7 @@
 ## Visual Studio Code
 
+::fig[logo Visual Studio Code]{src=assets/visual-studio-code.svg size=10}
+
 Visual Studio Code je textový editor specializovaný na psaní programů a vývoj software. Obsahuje spoustu pomůcek, nástrojů a rozšíření, která zjednodušují programátorům život a umožňují jim spravovat obsáhlé projekty. VS Code je v současné době jedním z nejpoužívanějších programátorských editorů a mnoho profesionálů jej používá při své práci každý den.
 
 Aktuální verzi editoru si nanistalujte podle instrukcí na [oficiálních stránkách](https://code.visualstudio.com). VS Code je dostupný pro všechny operační systémy.
@@ -38,26 +40,31 @@ Otevře se okno editoru. Jeho obsah smažte a místo něj vložte následující
   "window.zoomLevel": 0,
   "files.autoSave": "off",
   "files.eol": "\n",
+  "files.insertFinalNewline": true,
   "editor.tabSize": 2,
   "editor.links": false,
   "editor.renderWhitespace": "boundary",
-  "editor.insertSpaces": true,
   "editor.wordWrap": "on",
-  "editor.minimap.enabled": false,
   "editor.fontSize": 16,
   "editor.multiCursorModifier": "alt",
   "editor.formatOnSave": true,
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": "active",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
   "prettier.singleQuote": true,
   "prettier.arrowParens": "always",
-  "prettier.trailingComma": "all",
-  "workbench.colorCustomizations": {
-    "editorError.foreground": "#ffff00"
-  }
+  "prettier.trailingComma": "all"
 }
 ```
