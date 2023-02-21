@@ -40,26 +40,31 @@ Otevře se okno editoru. Jeho obsah smažte a místo něj vložte následující
   "window.zoomLevel": 0,
   "files.autoSave": "off",
   "files.eol": "\n",
+  "files.insertFinalNewline": true,
   "editor.tabSize": 2,
   "editor.links": false,
   "editor.renderWhitespace": "boundary",
-  "editor.insertSpaces": true,
   "editor.wordWrap": "on",
-  "editor.minimap.enabled": false,
   "editor.fontSize": 16,
   "editor.multiCursorModifier": "alt",
   "editor.formatOnSave": true,
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": "active",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
   "prettier.singleQuote": true,
   "prettier.arrowParens": "always",
-  "prettier.trailingComma": "all",
-  "workbench.colorCustomizations": {
-    "editorError.foreground": "#ffff00"
-  }
+  "prettier.trailingComma": "all"
 }
 ```
