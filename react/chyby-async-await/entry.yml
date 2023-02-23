@@ -1,0 +1,6 @@
+title: Async/await a ošetření chyb
+lead: Ošetření chybových stavů API a použití async/await místo then()
+access: claim
+sections:
+  - osetreni-chyb
+  - async-await
