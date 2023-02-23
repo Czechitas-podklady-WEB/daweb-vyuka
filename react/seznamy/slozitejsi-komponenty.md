@@ -27,8 +27,8 @@ const App = () => (
 
         return (
           <li className="item">
-            <div className="item__product">{product}</div>
-            <div className="item__amount">{amount}</div>
+            <div className="item__product">{item.product}</div>
+            <div className="item__amount">{item.amount}</div>
             <div className={tickClass}></div>
           </li>
         );
@@ -53,9 +53,11 @@ const ShoppingItem = ({ product, amount, done }) => {
     </li>
   );
 };
+```
 
 Možná jste ji už někde viděli. Nyní stačí ji použít v komponentě `App`.
 
+```
 const App = () => (
   <>
     <h1>Nákupní seznam</h1>
