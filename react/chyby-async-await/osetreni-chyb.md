@@ -44,7 +44,7 @@ Stavové kódy jsou rozdělené do skupin podle významu, vždy první číslice
 * `4xx` – Chyba klienta – server požadavku porozuměl, ale požadavek byl chybný a chyba je nejspíš na straně klienta. Může to být chyba v kódu frontendové aplikace, nebo uživatel zadal špatná data. Sem patří i kód `404 Not Found` – adresa na serveru neexistuje, buď ji máte špatně zadanou v aplikaci, nebo zadal uživatel špatnou adresu (cestu v adrese).
 * `5xx` – Chyba klienta – podobné, jako předchozí případ, ale v tomto případě server sebekriticky přiznává, že chyba je pravděpodobně na jeho straně. Asi nejčastější je chyba `500 Internal Server Error`, která znamená zhruba to, že došlo k nějaké nečekané chybě, se kterou si server neví rady (tedy zhruba: „Já vím, co s tím je. Je to rozbitý“).
 
-Přehled všech standardních stavovývh kódu najdete třeba v dokumentaci MDN: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+Přehled všech standardních stavových kódu najdete třeba v dokumentaci MDN: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
 
 Stavové kódy všech odpovědí od serveru nám prohlížeč zobrazuje v *Dev Tools*, když si otevřete záložku *Network*. Zobrazuje se (překvapivě) ve sloupečku *Status*. Zároveň prohlížeč zobrazí červeně požadavky/odpovědi, které skončily chybou (kódem 400 nebo 500, čímž se myslí vše od 400 po 499 a vše od 500 po 599 – programátoři někdy celou skupinu označují názvem té „stovky“, takže „čtyři sta“ může znamenat *jakýkoli kód začínající „čtyři sta“, tedy od 400 do 499*. Na to si zvyknete.)
 
