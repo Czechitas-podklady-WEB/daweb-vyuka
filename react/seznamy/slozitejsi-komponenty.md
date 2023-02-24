@@ -15,7 +15,7 @@ const list = [
 
 Pokud tento seznam budeme chtít zobrazit, budeme potřebovat složitější JSX strukturu. Například jako v následující ukázce.
 
-```js
+```jsx
 const App = () => (
   <>
     <h1>Nákupní seznam</h1>
@@ -42,7 +42,7 @@ Všimněte si, že funkce, která vyrábí JSX pro jednotlivé položky našeho 
 
 V praxi však často nastane situace, že funkce použitá uvnitř `map` je tak složitá, že je těžké se v kódu orientovat. Náš poslední příklad už je také trochu na hraně. V takovém případě si vzpomeneme na předchozí lekci, kde jsme probírali rozdělování jedné velké komponenty na menší celky. Rozhodně se nám vyplatí vytvořit si pro zobrazování jednotlivých prvků seznamu komponentu, například takto.
 
-```js
+```jsx
 const ShoppingItem = ({ product, amount, done }) => {
   const tickClass = done ? 'item__done item__done--tick' : 'item__done';
   return (
@@ -57,7 +57,7 @@ const ShoppingItem = ({ product, amount, done }) => {
 
 Možná jste ji už někde viděli. Nyní stačí ji použít v komponentě `App`.
 
-```
+```jsx
 const App = () => (
   <>
     <h1>Nákupní seznam</h1>
