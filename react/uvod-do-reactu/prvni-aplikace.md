@@ -10,10 +10,10 @@ Na tyto problémy tvrdě narazili vývojáři Facebooku a proto vytvořili frame
 
 Ať už je to šikovná náhoda nebo dokonale promyšlený plán, velkou část Reactových principů už jste v tomto kurzu používali, aniž byste o tom věděli. K vytvoření našeho prvního React projektu tak stačí pouze malinko upravit konfiguraci Webpacku a naučit se psát náš kód Reactovým způsobem.
 
-Základní Webpack projekt nastavený pro práci v Reactu si můžete vygenerovat pomocí `create-czechitas-app`.
+Základní Webpack projekt nastavený pro práci v Reactu si můžete vygenerovat pomocí `npm init kodim-app`.
 
 ```sh
-$ npx create-czechitas-app my-app
+$ npm init kodim-app my-app
 ```
 
 Pozor na to, že tontokrát v příkazu chybí slovíčko `vanilla`. React projekt se používá stejným způsobem jako jsme u Webpack projektů zvyklí. Všimněte si však, že místo `index.js` zde máme soubor `index.jsx`. Příponu `.jsx` budeme používat u souborů, které obsahují Reactový kód. Co tato přípona znamená si povíme v následující části.

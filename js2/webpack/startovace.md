@@ -9,18 +9,18 @@ Projekt, který jsme si zkoušeli nakonfiguravat v přechozí části, byl extr�
 
 Vytvořit konfiguraci pro takovýto projekt z hlavy je velmi obtížené. Zde ke slovu přicházají generátory, které umí základní strukturu projektu i s Webpack konfigurací vytvořit jedním příkazem.
 
-Jedním z takových oblíbených generátorů pro Reactové projekty je `create-react-app`. Často jej na internetu potkáte v různých Reactových tutoriálech a kurzech. My však ještě s Reactem nepracujeme a tento generátor se nám tudíž nehodí. Použijeme proto jiný, vytvořený přímo pro tuto akademii. Jmenuje se `create-czechitas-app`.
+Jedním z takových oblíbených generátorů pro Reactové projekty je `create-react-app`. Často jej na internetu potkáte v různých Reactových tutoriálech a kurzech. My však ještě s Reactem nepracujeme a tento generátor se nám tudíž nehodí. Použijeme proto jiný, vytvořený na míru přímo pro naše kurzy. Jmenuje se `create-kodim-app`.
 
 ### Postup založení nového projektu
 
 Založíme si startovací Webpack projekt, do kterého poté zkopírujeme kód naší aplikace na správu nákupních seznamů.
 
-Pokud chceme pomocí `create-czechitas-app` založit nový projekt, postupujeme dle následujících kroků:
+Pokud chceme pomocí `create-kodim-app` založit nový projekt, postupujeme dle následujících kroků:
 
 1. V terminálu si otevřeme složku, ve které skladujeme své projekty.
 1. Pro vytvoření projektu s názvem `nakupni-seznam` spustíme příkaz
    ```sh
-   $ npx create-czechitas-app nakupni-seznam vanilla
+   $ npm init kodim-app nakupni-seznam vanilla
    ```
    Poslední parametr [vanilla](https://en.wikipedia.org/wiki/Plain_vanilla) znamená, že chceme vytvořit projekt v základním JavaScriptu.
 1. Otevřeme složku `nakupni-seznam` ve VS Code. Spustíme terminál a uvnitř této složky spustíme příkaz

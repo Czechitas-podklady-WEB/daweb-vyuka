@@ -11,7 +11,7 @@ Repozitář s designem si naklonujte. **Neforkujte** jej a nedělejte v něm ž�
 1. Na stránkách najdete příklad nápojů a objednávky. Tato data samozřejmě budeme později stahovat z API.
 1. Na vašem vlastním GitHubu si založte repozitář `cafelora`. Repozitář si naklonujte a uvnitř spusťte příkaz
    ```
-   npx create-czechitas-app . vanilla
+   npm init kodim-app . vanilla
    ```
    čímž vytvořte základ _vanilla_ JavaScriptového projektu. Commitněte změny s hezky formulovanou zprávou.
 1. Projekt si spusťte pomocí `npm run start` a jste připraveni začít programovat.

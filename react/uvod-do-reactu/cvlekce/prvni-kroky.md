@@ -5,7 +5,7 @@ demand: 1
 
 Vyzkoušíme si založit jednoduchou React aplikaci s jedním `index.jsx` a jednoduchým CSS. Přestože v Reactu se běžně veškerý kód dělí do komponent, v tomto cvičení je ještě používat nebudeme.
 
-1. Pomocí `create-czechitas-app` vytvořte Reactový projekt. Dejte si pozor, abyste omylem nevytvořili vanilla projekt. Projekt spusťte pomocí `npm run start` jak už to znáte z dřívejška.
+1. Pomocí `npm init kodim-app` vytvořte Reactový projekt. Dejte si pozor, abyste omylem nevytvořili vanilla projekt. Projekt spusťte pomocí `npm run start` jak už to znáte z dřívejška.
 1. Prozatím z projektu vymažte obsah souboru `index.jsx` S komponentou `App` budeme pracovat až v druhé části lekce. Obsah souboru nahraďte tímto kódem.
 
    ```js
