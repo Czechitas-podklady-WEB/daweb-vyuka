@@ -4,6 +4,8 @@ Tato lekce v našem kurzu uzavírá téma čistého nebo-li „vanilla“ JavaSc
 
 Vaším úkolem bude vytvořit webovou stránku fiktivní kavárny s názvem :i[Café Lóra]. Jde o takzvanou _Single Page Application (SPA)_, neboli aplikaci, která sestává pouze z jedné serverové stránky. Café Lóra poskytuje zajímavou službu, kdy si přímo na stránce můžete objednat kávu, kterou vám poté přinesou ke stolu.
 
-Design, CSS styly a všechny obrázky potřebné po tvorbu stránky máte již připraveny. Vaším úkolem je doplnit především JavaScriptovou část. Cílem je vyzkoušet si práci na větším uceleném projektu.
+Ukázku fungování této stránky najdete na adrese https://cafelora.kodim.app.
 
-Celý projekt má dvě části, první najdete v této lekcí, druhá část je v lekci navazující.
+Cílem je vyzkoušet si práci na větším uceleném projektu. Design, CSS styly a všechny obrázky potřebné po tvorbu stránky máte již připraveny. Vaším úkolem je doplnit především JavaScriptovou část.
+
+Celý projekt má dvě části, první najdete v této lekcí, druhá část následuje v lekci navazující.

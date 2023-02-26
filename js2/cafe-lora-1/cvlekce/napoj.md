@@ -15,7 +15,7 @@ Vytvoříme komponentu `Drink`, která zatím nebude mít funkční objednávac�
      id: 'romano',
      name: 'Romano',
      ordered: false,
-     image: 'https://apps.kodim.cz/daweb/cafelora/assets/cups/romano.png',
+     image: 'https://cafelora.kodim.app/assets/cups/romano.png',
      layers: [
        {
          color: '#fbdf5b',
