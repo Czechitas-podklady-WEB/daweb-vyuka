@@ -6,4 +6,5 @@ Po této lekci byste měli vědět a znát
 - jak se v něm navigovat ve složkách pomocí `cd`,
 - jak vytvářet nové složky přes `mkdir`,
 - jak z terminálu otevřít/vytvořit soubor,
-- jak spustit lokální server.
+- jak spustit lokální server,
+- jak otevřít integrovaný terminál ve VS Code.
