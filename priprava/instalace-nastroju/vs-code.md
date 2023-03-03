@@ -29,7 +29,7 @@ Aby se nám s VS Code pracovalo dobře a zároveň nám všem fungovalo stejně,
 Open Settings
 ```
 
-a vyberte položku _Preferences: Open Settings (JSON)_ viz obrázek.
+a vyberte položku _Preferences: Open User Settings (JSON)_ viz obrázek.
 
 ::fig[Nastavení]{src=assets/nastaveni.png size=85}
 
