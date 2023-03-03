@@ -40,7 +40,7 @@ Markdown má různé „dialekty“, dialekt používaný GitHubem je popsaný v
 
 ### Osobní webová stránka na GitHubu
 
-Na GitHubu si můžete vytvořit i svou osobní webovou stránku, která pak bude dostupná na adrese {UZIVATELSKE_JMENO}.github.io.
+Na GitHubu si můžete vytvořit i svou osobní webovou stránku, která pak bude dostupná na adrese {UZIVATELSKE-JMENO}.github.io.
 Používá se k tomu technologie GitHub Pages, která je popsaná v následující kapitole.
 Podrobnější informace najdete na webu [Websites for you and your projects](https://pages.github.com), pro svůj osobní web zvolte variantu _User or organization site_.
 Na vytváření osobní stránky na GitHub Pages je v tuto chvíli ještě brzo, bude se hodit naučit se [základy HTML a CSS](https://kodim.cz/kurzy/daweb#html-a-css), ale až budete mít tyto lekce za sebou, víte, kam se můžete vrátit 😀
