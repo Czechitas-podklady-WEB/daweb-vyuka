@@ -4,16 +4,16 @@ demand: 4
 ---
 
 1. Vytvořte na [GitHubu](https://github.com/new) nový repozitář.
-   - *Repository template* (pokud se bude nabízet) ponechte volbu *No template*. 
+   - _Repository template_ (pokud se bude nabízet) ponechte volbu _No template_.
    - Projekt nazvěte `vizitka-2023`.
    - Zvolte variantu `Public`.
-   - V *Description* můžete vyplnit stručný popis projektu viditelný pro všechny (později jde změnit), třeba *DA Web – cvičení na Git*
-   - Zaškrtněte *Add a README file*, aby ve vytvořeném repository vznikl alespoň jeden soubor.
-   - Šablonu pro `.gitignore` ponechte na *None*.
-   - Licenci ponechte na *None*.   
+   - V _Description_ můžete vyplnit stručný popis projektu viditelný pro všechny (později jde změnit), třeba _DA Web – cvičení na Git_
+   - Zaškrtněte _Add a README file_, aby ve vytvořeném repository vznikl alespoň jeden soubor.
+   - Šablonu pro `.gitignore` ponechte na _None_.
+   - Licenci ponechte na _None_.
 1. Z terminálu, příkazové řádky repozitář naklonujte k sobě na počítač.
    - `git clone https://github.com/{UZIVATELSKE_JMENO}/vizitka-2023.git` kde místo {UZIVATELSKE_JMENO} bude váš login na GitHubu
-   - Pokud jste v předchozím kroku nevybrali *Add a README file*, zobrazí se varování *„warning: You appear to have cloned an empty repository“*, které můžete ignorovat.
+   - Pokud jste v předchozím kroku nevybrali _Add a README file_, zobrazí se varování _„warning: You appear to have cloned an empty repository“_, které můžete ignorovat.
 1. V novém okně VS Code otevřete gitem vytvořenou složku `vizitka-2023`.
    - V okně zatím nic nebude. V panelu souborů vlevo bude soubor `README.md`.
 1. Ve složce vytvořte soubor `index.html`.

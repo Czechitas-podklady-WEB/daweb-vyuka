@@ -31,7 +31,7 @@ Hodí se tedy do tohoto souboru popsat, co v tom repository je, ke čemu to slou
 Pro repository, která budete používat jako cvičení při lekcích, je to spíš poznáka pro vás.
 Ale můžete si tam třeba poznamenat, které se to týká lekce, jaké látky, případně si tam dát odkaz na lekci na Kodim.cz.
 
-Pokud ale v budoucnosti budete chtít nějaké repository prezentovat potenciálním zaměstnavatelům, je dobré `README.md` soubor *vytunit* a popsat tam, co je to za projekt a jak si ho případně může kdokoli sám spustit.
+Pokud ale v budoucnosti budete chtít nějaké repository prezentovat potenciálním zaměstnavatelům, je dobré `README.md` soubor _vytunit_ a popsat tam, co je to za projekt a jak si ho případně může kdokoli sám spustit.
 Přípona `.md` označuje, že se jedná o soubor ve formátu [Markdown](https://www.markdownguide.org).
 Markdown je jednoduchý značkovací jazyk pro formátování dokumentů – vznikl pro to, že se někomu zdálo HTML moc složité 😉
 Obecně platí, že když napíšete čistý text bez jakýchkoli značek, je to platný Markdown soubor.
@@ -42,8 +42,5 @@ Markdown má různé „dialekty“, dialekt používaný GitHubem je popsaný v
 
 Na GitHubu si můžete vytvořit i svou osobní webovou stránku, která pak bude dostupná na adrese {UZIVATELSKE_JMENO}.github.io.
 Používá se k tomu technologie GitHub Pages, která je popsaná v následující kapitole.
-Podrobnější informace najdete na webu [Websites for you and your projects](https://pages.github.com), pro svůj osobní web zvolte variantu *User or organization site*.
+Podrobnější informace najdete na webu [Websites for you and your projects](https://pages.github.com), pro svůj osobní web zvolte variantu _User or organization site_.
 Na vytváření osobní stránky na GitHub Pages je v tuto chvíli ještě brzo, bude se hodit naučit se [základy HTML a CSS](https://kodim.cz/kurzy/daweb#html-a-css), ale až budete mít tyto lekce za sebou, víte, kam se můžete vrátit 😀
-
-
-
