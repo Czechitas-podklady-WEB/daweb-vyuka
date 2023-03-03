@@ -1,4 +1,4 @@
-## Server
+## Server pro HTML
 
 Následující příkaz pro příkazovou řádku spustí na vašem počítači webový server s kořenem v dané složce. Bývá zvykem v této složce mít soubor `index.html`, kde vše začíná. Takto spuštěný server umožní návštěvníkům webu zobrazit pouze obsah uvnitř. Soubory v nadřazených složkách jsou tím pádem v „bezpečí“ i kdyby obsahovaly nějaké vaše tajnosti.
 
