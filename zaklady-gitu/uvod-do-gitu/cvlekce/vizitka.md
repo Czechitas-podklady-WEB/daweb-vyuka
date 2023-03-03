@@ -3,14 +3,7 @@ title: Vizitka
 demand: 4
 ---
 
-1. Vytvořte na [GitHubu](https://github.com/new) nový repozitář.
-   - _Repository template_ (pokud se bude nabízet) ponechte volbu _No template_.
-   - Projekt nazvěte `vizitka-2023`.
-   - Zvolte variantu `Public`.
-   - V _Description_ můžete vyplnit stručný popis projektu viditelný pro všechny (později jde změnit), třeba _DA Web – cvičení na Git_
-   - Zaškrtněte _Add a README file_, aby ve vytvořeném repository vznikl alespoň jeden soubor.
-   - Šablonu pro `.gitignore` ponechte na _None_.
-   - Licenci ponechte na _None_.
+1. Vytvořte si na GitHubu nový repozitář ze šablony [vizitka-2023](https://github.com/Czechitas-podklady-WEB/vizitka-2023).
 1. Z terminálu, příkazové řádky repozitář naklonujte k sobě na počítač.
    - `git clone https://github.com/{UZIVATELSKE_JMENO}/vizitka-2023.git` kde místo {UZIVATELSKE_JMENO} bude váš login na GitHubu
    - Pokud jste v předchozím kroku nevybrali _Add a README file_, zobrazí se varování _„warning: You appear to have cloned an empty repository“_, které můžete ignorovat.
