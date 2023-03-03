@@ -2,7 +2,7 @@
 
 Na GitHubu existují dva způsoby, jak se do svého účtu vytvořit kopii cizího projektu – fork a vytvoření projektu ze šablony.
 
-![Tlačítka pro forknutí a vytvoření ze šablony](assets/fork-and-template.png)
+::fig[Tlačítka pro forknutí a vytvoření ze šablony]{src=assets/fork-and-template.png}
 
 ### Fork
 
@@ -28,7 +28,7 @@ V obou případech následuje obrazovka, kde zvolíte, do kterého účtu na Git
 
 Dále můžete napsat stručný popisek projektu a zvolíte, že má být _Public_ (aby se k projektu dostali koučové, lektoři a zvídavé spolužačky). V případě použití šablony je k dispozici ještě volba _Include all branches_. Pokud se nikdo z lektorů nesplete, bude vždy nepřístupná. A pokud by se náhodou někdy někdo spletl, nechte volbu nezaškrtnutou – jedna větev z repository vám určitě bude stačit. A někdy v hospodě nebo při jiné příležitosti se můžete zeptat, co jsou to vlastně ty :term{cs="větve" en="branches"} (používá se i počeštěné „branche“, čti \[branče\]) v Gitu.
 
-![Nastavení parametrů kopie](assets/kopie-dokonceni.png)
+::fig[Nastavení parametrů kopie]{src=assets/kopie-dokonceni.png}
 
 Pak už stačí jen kliknout na velké zelené tlačítko na konci, chvilinku počkat a máte pod svým účtem zbrusu nové repository (v případě forku s pořádnou porcí historie).
 
