@@ -10,7 +10,7 @@ Vnořený/integrovaný terminál by měl vyjet ve spodní části okna VS Code.
 
 ### Na co si dávat pozor
 
-- Integrovaných terminálů můžete mít v VS Code více. Pokud v nějakém ze zapomenutých necháte běžet třeba `npx serve`, může vás později potrápit. Jesnotlivé terminály můžete zavřít kliknutím na ikonku popelnice. Pozor, že křížek terminály pouze skryje, ale nezavře.
+- Integrovaných terminálů můžete mít v VS Code více. Pokud v nějakém ze zapomenutých necháte běžet třeba `npx serve`, může vás později potrápit. Jednotlivé terminály můžete zavřít kliknutím na ikonku popelnice. Pozor, že křížek terminály pouze skryje, ale nezavře.
   ::fig[více integrovaných terminálů]{src=assets/vice-integrovanych-terminalu.png}
 
 - Stejně jako u klasické terminálu je potřeba dávat si pozor, v jaké jste složce a případně použít příkaz `cd`.
