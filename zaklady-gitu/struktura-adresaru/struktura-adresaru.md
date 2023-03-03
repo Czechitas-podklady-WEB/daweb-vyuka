@@ -14,7 +14,7 @@ Adresáře, neboli složky můžeme procházet, podobně jako to znáte z Window
 
 #### Výpis souborů a složek v aktuální složce
 
-- ##### Mac
+- ##### Mac, Linux
 
   ```sh
   ls
@@ -28,7 +28,7 @@ Adresáře, neboli složky můžeme procházet, podobně jako to znáte z Window
 
 #### Přesun do zanořené složky
 
-- ##### Mac i Windows
+- ##### Mac, Linux i Windows
 
   ```sh
   cd nazev-slozky
@@ -36,7 +36,7 @@ Adresáře, neboli složky můžeme procházet, podobně jako to znáte z Window
 
 #### Přesun do rodičovské složky
 
-- ##### Mac i Windows
+- ##### Mac, Linux i Windows
 
   (`cd`, mezera a dvě tečky)
 
@@ -48,15 +48,25 @@ Adresáře, neboli složky můžeme procházet, podobně jako to znáte z Window
 
 #### Vytvoření další složky
 
-- ##### Mac i Windows
+- ##### Mac, Linux i Windows
 
   ```sh
   mkdir nazev-nove-slozky
   ```
 
+#### Zjištění aktuální složky
+
+- ##### Mac, Linux i Windows
+
+  aneb _print working directory_
+
+  ```sh
+  pwd
+  ```
+
 #### Otevření textového souboru
 
-- ##### Mac
+- ##### Mac a Linux
 
   `touch` vytvoří nový soubor, pokud neexistuje.
 
@@ -64,7 +74,7 @@ Adresáře, neboli složky můžeme procházet, podobně jako to znáte z Window
   touch nazev-souboru.txt
   ```
 
-  `open` otevře existující soubor v aplikaci _TextEdit_.
+  `open -e` otevře existující soubor v aplikaci _TextEdit_.
 
   ```sh
   open -e nazev-souboru.txt
@@ -77,3 +87,31 @@ Adresáře, neboli složky můžeme procházet, podobně jako to znáte z Window
   ```
 
 Pokud soubor `nazev-souboru.txt` neexistuje, příkazem výšeho ho můžete zároveň vytvořit.
+
+### Jazyk Markdown
+
+Abychom aspoň trochu vylepšili uživatelský zážitek z naší textové hry, použijeme jazyk Markdown. Ten umožňuje obyčejné textové soubory obohatit jednoduchým formátováním a přidat odkazy.
+
+Markdown soubor (obvykle má příponu `.md`) tedy může vypadat třeba takhle:
+
+```markdown
+# Hlavní nadpis
+
+## První podnadpis
+
+Tady bude první odstavec textu.
+
+Tady je druhý odstavec textu. Může být klidně dlouhý
+a zalomený na několik řádek. Ve výsledku z toho pořád
+bude jeden odstavec.
+
+Nový odstavec začne prázdným řádkem.
+
+## Druhý podnadpis
+
+V Markdownu můžeme snadno vytvářet odkazy:
+
+[Text odkazu](https://www.czechitas.cz)
+
+Odkaz může být i [uvnitř textu](https://www.czechitas.cz).
+```

@@ -7,7 +7,21 @@ Hru z předchozího cvičení převeďte na webovou stránku.
 
 1. Otevřete si složku `vetrelec` ve _VS Code_.
 
-1. Z jednotlivých textových souborů udělejte soubory HTML s klasickou HTML strukturou (bez `<script>` značky). Můžete začít tím, že všem postupně změníte příponu z `.txt` na `.html`.
+1. Z jednotlivých textových souborů udělejte soubory HTML s klasickou HTML strukturou (bez `<script>` značky). Můžete začít tím, že všem postupně změníte příponu z `.md` na `.html`. Pro hromadné přejmenování z příkazového řídku můžete použít následující příkaz. **Pozor, pomocí `pwd` si nejprve ověřte, že jste opravdu ve správném adresáři!** Skript se na nic neptá a projde všechny soubory s příponou `.md` v aktuálním adresáři a všech podadresářích a přejmenuje příponu na `.html`.
+
+   ##### Mac a Linux
+
+   ```sh
+   find . -name "*.md" -exec bash -c 'mv "$1" "${1%.md}".html' - '{}' +
+   ```
+
+   ##### Windows
+
+   ```sh
+   FOR /R %f IN (*.md) DO ren "%f" *.html
+   ```
+
+   Jak dlouho byste přípony opravovali ručně? Na otm příkazovém řádku přeci jen něco je, že? 😉
 
 1. Přejmenujte `zacatek.html` v kořenové složce na `index.html`.
 
