@@ -24,7 +24,7 @@ Důležité je i číslo, port `3000` za dvojtečkou. Na vašem počítači mů�
 
 ::fig[jiný port]{src=assets/serve-port.png}
 
-V tomto kurzu paralelně více `npx serve` pouštět nebudeme. Může se ale stát, že vám na pozadí zůstane nějaký nepotřebný běžet a bude blokovat to hezké kulaté číslo `3000`. Pro jeho ukončení stiskněte v příslušné příkazové řádce :kbd[Ctrl] + :kbd[C] nebo :kbd[Cmd] + :kbd[C] na Macu. Dokud běží, nejde v dané řádce zadávat další příkazy jako `cd` apod.
+V tomto kurzu paralelně více `npx serve` pouštět nebudeme. Může se ale stát, že vám na pozadí zůstane nějaký nepotřebný běžet a bude blokovat to hezké kulaté číslo `3000`. Pro jeho ukončení stiskněte v příslušné příkazové řádce :kbd[Ctrl] + :kbd[C]. Dokud běží, nejde v dané řádce zadávat další příkazy jako `cd` apod.
 
 ## Script s `type="module"`
 
