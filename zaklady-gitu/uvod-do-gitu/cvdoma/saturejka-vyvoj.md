@@ -23,7 +23,9 @@ Vše máme připraveno a můžeme začít programovat.
      </body>
    </html>
    ```
-1. Přidejte tento soubor do stage pomocí `git add`.
+1. Spusťte v terminálu `npx serve`. V prohlížeči na adrese http://localhost:3000 zkontrolujte, jak stránka vypadá.
+1. S gitem pracujte v druhém terminálu – `npx serve` si zabral terminál pro sebe.
+1. Přidejte soubor `index.html` do stage pomocí `git add`.
 1. Pomocí `git status` zkontrolujte, že soubor `index.html` je připraven ke commitu.
 1. Vytvořte nový commit pomocí `git commit`. Ke commitu napište zprávu „Základní HTML“
 1. Pomocí `git log` zkontrolujte, že commit se opravdu vytvořil.
