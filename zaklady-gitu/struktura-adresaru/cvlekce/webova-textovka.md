@@ -26,6 +26,7 @@ Pro hromadné přejmenování z příkazového řídku můžete použít násled
 
    Jak dlouho byste přípony opravovali ručně? Na tom příkazovém řádku přeci jen něco je, že? 😉
 -->
+
 1. Přejmenujte `zacatek.html` v kořenové složce na `index.html`.
 
 1. Z textových odkazů udělejte opravdové HTML odkazy ve formátu:
