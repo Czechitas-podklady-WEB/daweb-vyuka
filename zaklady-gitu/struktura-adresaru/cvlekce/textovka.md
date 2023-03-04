@@ -30,7 +30,7 @@ Pomocí příkazové řádky vytvořte hru podle následujícího scénáře. Ne
 1.  V druhém okně spusťte následující příkaz:
 
     ```sh
-    npx markserve index.md
+    npx markserv index.md
     ```
 
     Nastartuje se vám prohlížeč, ve kterém se zobrazí uvítací obrazovka vaší hry.
