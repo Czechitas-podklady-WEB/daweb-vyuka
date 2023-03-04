@@ -28,7 +28,7 @@ Vše máme připraveno a můžeme začít programovat.
 1. Přidejte soubor `index.html` do stage pomocí `git add`.
 1. Pomocí `git status` zkontrolujte, že soubor `index.html` je připraven ke commitu.
 1. Vytvořte nový commit pomocí `git commit -m "…"`. Ke commitu napište zprávu „Základní HTML“
-1. Pomocí `git log` zkontrolujte, že commit se opravdu vytvořil.
+1. Pomocí `git log` zkontrolujte, že commit se opravdu vytvořil. Výpis logu ukončíte klávesou <kbd>q</kbd>
 1. Pomocí `git push` publikujte nový commit na GitHub.
 1. Stejným postupem jako výše vytvořte soubor `style.css` s tímto obsahem
 
