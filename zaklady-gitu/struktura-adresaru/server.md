@@ -25,23 +25,3 @@ Důležité je i číslo, port `3000` za dvojtečkou. Na vašem počítači mů�
 ::fig[jiný port]{src=assets/serve-port.png}
 
 V tomto kurzu paralelně více `npx serve` pouštět nebudeme. Může se ale stát, že vám na pozadí zůstane nějaký nepotřebný běžet a bude blokovat to hezké kulaté číslo `3000`. Pro jeho ukončení stiskněte v příslušné příkazové řádce :kbd[Ctrl] + :kbd[C]. Dokud běží, nejde v dané řádce zadávat další příkazy jako `cd` apod.
-
-## Script s `type="module"`
-
-Při servírování webových stránek přes server, i když lokální, dovoluje prohlížeč používat pokročilejší funkce, které z bezpečnostních důvodů při obyčejném otevření HTML souboru nefungují. Od teď dále používejme HTML základ z minulé lekce se `<script type="module" src="index.js">`.
-
-```html
-<!DOCTYPE html>
-<html lang="cs">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>První program</title>
-
-    <script type="module" src="index.js"></script>
-  </head>
-  <body>
-    <h1>První program</h1>
-  </body>
-</html>
-```
