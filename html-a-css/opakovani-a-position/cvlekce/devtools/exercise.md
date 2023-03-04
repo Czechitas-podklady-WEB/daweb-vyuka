@@ -3,8 +3,6 @@ title: Vývojářské nástroje
 demand: 2
 ---
 
-# Cvičení: Úpravy přes vývojářské nástroje / developer tools
-
 1. Vyberte si libovolný cizí web.
 
 1. Otevřete si pro něj vývojářské nástroje prohlížeče.
@@ -25,4 +23,4 @@ demand: 2
 
    - Změňte obrázek.
 
-1. Na závěr udělejte přes vývojářské nástroje snímek, obrázek celé stránky a ten si u sebe ulož.
+1. Na závěr udělejte přes vývojářské nástroje snímek, obrázek celé stránky a ten si u sebe uložte.

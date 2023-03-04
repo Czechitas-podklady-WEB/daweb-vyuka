@@ -3,7 +3,7 @@ title: Kočičí domeček
 demand: 1
 ---
 
-Použijte šablonu [Kočičí domeček](https://github.com/Czechitas-podklady-WEB/kocici-domecek). 
+Použijte šablonu [Kočičí domeček](https://github.com/Czechitas-podklady-WEB/kocici-domecek).
 Vytvořte a naklonujte si repozitář a spusťte si stránku pomocí `npx serve`.
 
 V kočičím domečku máte připravené kočičky, které budeme pozicovat. Podívejte se na výsledný obrázek.
