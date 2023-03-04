@@ -72,7 +72,6 @@ Adresáře, neboli složky můžeme procházet, podobně jako to znáte z Window
   cd
   ```
 
-
 #### Otevření textového souboru
 
 - ##### Mac a Linux
