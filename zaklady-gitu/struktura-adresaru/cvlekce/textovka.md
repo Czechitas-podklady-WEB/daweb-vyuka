@@ -25,7 +25,7 @@ Pomocí příkazové řádky vytvořte hru podle následujícího scénáře. Ne
 
 1.  Otevřete si ještě jedno okno terminálu (`cmd` ve Windows).
 
-1.  V prvním okně si pomocí `pwd` vypište aktuální adresář, v novém okně se pomocí příkazu `cd` a cesty přesuňte do stejného adresáře.
+1.  V prvním okně si pomocí `pwd` (na MacOS a Linuxu) nebo `cd` (Windows) vypište aktuální adresář, v novém okně se pomocí příkazu `cd` a cesty přesuňte do stejného adresáře. Pozor na to, pokud je v adresáři mezera (třeba ve jméně uživatele), musíte celou cestu dát do dvojitých uvozovek, třeba `cd "/Users/Eva Adamová/DAweb/vetrelec"`.
 
 1.  V druhém okně spusťte následující příkaz:
 
