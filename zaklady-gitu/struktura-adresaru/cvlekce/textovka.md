@@ -108,10 +108,10 @@ Pomocí příkazové řádky vytvořte hru podle následujícího scénáře. Ne
    #### Cesta: `vetrelec/loznice/skrin/ve-skrini.md`
 
    ```text
-   Škvírkou mezi dveřmi pozoruješ, jak jeden z lupičů vstupuje
+   Škvírkou mezi dveřmi pozoruješ, jak lupič vstupuje
    do ložnice. Co čert nechtěl, jde rovnou ke skříni.
 
-   1. Bereš do ruky ramínko a rozhodneš se pro rychlou akci
+   1. Bereš do ruky dřevěné ramínko a rozhodneš se pro rychlou akci
 
    [Akce s ramínkem](akce.md)
 
@@ -123,11 +123,11 @@ Pomocí příkazové řádky vytvořte hru podle následujícího scénáře. Ne
    #### Cesta: `vetrelec/loznice/skrin/akce.md`
 
    ```text
-   A válečným rykem a ramínkem v ruce vyrazíš ze skříně. Lupič
+   A válečným rykem a napřaženým raminkem vyrazíš ze skříně. Lupič
    v úleku přepadne přes postel a zamotá se do prostěradla.
    Vybíháš dolů po schodech a ven na ulici před dům.
 
-   [Vyběhnout na ulici]()../../pred-domem/ulice.md)
+   [Vyběhnout na ulici](../../pred-domem/ulice.md)
    ```
 
    #### Cesta: `vetrelec/loznice/skrin/osud.md`
