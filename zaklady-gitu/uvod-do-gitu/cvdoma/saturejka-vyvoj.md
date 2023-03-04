@@ -27,7 +27,7 @@ Vše máme připraveno a můžeme začít programovat.
 1. S gitem pracujte v druhém terminálu – `npx serve` si zabral terminál pro sebe.
 1. Přidejte soubor `index.html` do stage pomocí `git add`.
 1. Pomocí `git status` zkontrolujte, že soubor `index.html` je připraven ke commitu.
-1. Vytvořte nový commit pomocí `git commit`. Ke commitu napište zprávu „Základní HTML“
+1. Vytvořte nový commit pomocí `git commit -m "…"`. Ke commitu napište zprávu „Základní HTML“
 1. Pomocí `git log` zkontrolujte, že commit se opravdu vytvořil.
 1. Pomocí `git push` publikujte nový commit na GitHub.
 1. Stejným postupem jako výše vytvořte soubor `style.css` s tímto obsahem
