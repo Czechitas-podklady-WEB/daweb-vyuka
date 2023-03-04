@@ -56,13 +56,22 @@ Adresáře, neboli složky můžeme procházet, podobně jako to znáte z Window
 
 #### Zjištění aktuální složky
 
-- ##### Mac, Linux i Windows
+- ##### Mac, Linux
 
   aneb _print working directory_
 
   ```sh
   pwd
   ```
+
+- #### Windows
+
+  Příkaz `cd` bez parametru.
+
+  ```sh
+  cd
+  ```
+
 
 #### Otevření textového souboru
 
