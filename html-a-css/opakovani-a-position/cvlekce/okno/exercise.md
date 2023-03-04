@@ -3,9 +3,10 @@ title: Okno
 demand: 1
 ---
 
-Stáhněte si [webovou stránku](assets/okno.zip),
+Použijte šablonu [Vyskakovací okno](https://github.com/Czechitas-podklady-WEB/vyskakovaci-okno). 
+Vytvořte a naklonujte si repozitář a spusťte si stránku pomocí `npx serve`.
 
-- Posuňte vyskakovací okno 200px od levého okraje stránky. Zamyslete se, v čem bude rozdíl, když na to použijete position:absolute nebo position: relative.
+- Posuňte vyskakovací okno 200px od levého okraje stránky. Zamyslete se, v čem bude rozdíl, když na to použijete position: absolute nebo position: relative.
 - Tlačítka "Ok" a "X" posuňte na vhodnější místa.
   Tedy "Ok" dolů přibližně doprostřed (nemusí být přesně), "X" doprava nahoru.
   Napozicujte je vůči modálu, ve kterém se nacházejí.
