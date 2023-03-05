@@ -29,15 +29,13 @@ V tomto cvičení si osvěžíte základy HTML a CSS.
 
    - Označte tagem `<strong>` tu věc, na kterou se těšíte nejvíc.
 
-   - Odrážkový seznam s odkazy, kde jsi online k zastižení.
-
    - Přidejte tag `footer` a do něj vložte odkaz na svůj github účet.
 
-1. Nastav celé stránce jinou barvu pozadí.
+1. Nastavte celé stránce jinou barvu pozadí.
 
-   - Vytvoř soubor pro styly s příponou `.css`.
+   - Vytvořte soubor pro styly `style.css`.
 
-   - Do souboru přidej kód s libovolnou oblíbenou barvou:
+   - Do souboru přidejte kód s libovolnou oblíbenou barvou:
 
      ```css
      body {
@@ -45,19 +43,19 @@ V tomto cvičení si osvěžíte základy HTML a CSS.
      }
      ```
 
-   - Nalinkuj stylový soubor v hlavičce html.
+   - Nalinkujte stylový soubor v hlavičce html.
 
      ```html
-     <link rel="stylesheet" href="nazev_souboru.css" />
+     <link rel="stylesheet" href="style.css" />
      ```
 
-1. Dostyluj stránku podle svého uvážení.
+1. Dostylujte stránku podle svého uvážení.
 
-   - Nastav bezpatkový font.
+   - Nastavte bezpatkový font.
 
-   - Vystřeď text na stránce.
+   - Vystřeďte text na stránce.
 
-   - Skryj seznamům odrážky, číslování. Spoj selektory v jeden pomocí čárky.
+   - Skryjte seznamům odrážky, číslování. Spojte selektory v jeden pomocí čárky.
 
      ```css
      ul,
@@ -66,23 +64,23 @@ V tomto cvičení si osvěžíte základy HTML a CSS.
      }
      ```
 
-   - Oprav seznamům odsazení. Všimni si, že nejsou úplně na středu a lehce posunuté doprava.
+   - Opravte seznamům odsazení. Všimněte si, že nejsou úplně na středu a lehce posunuté doprava. V devtools najdete, která vlastnost to způsobuje.
 
-   - Zmenši ikonky podle velikosti textu.
+   - Zmenšete ikonky podle velikosti textu.
 
      ```
      width: 1em;
      height: 1em;
      ```
 
-   - Zkus změnit velikost odkazů. Pokud se ti budou, líbit nech je klidně třeba zvětšené.
+   - Zkuste změnit velikost odkazů.
 
-   - Zaobli okraje fotce. Přidej jí css třídu, ať styly novlivňuješ i ikonky u odkazů.
+   - Zaoblete okraje fotce. Přidejte jí css třídu, ať styly novlivňujete i ikonky u technologií v seznamu.
 
-   - Obravi odkazy a zruš jim výchozí podtržení.
+   - Obravěte odkazy a zrušte jim výchozí podtržení.
 
-   - Po najetí myši je zvýrazni jinou barvou.
+   - Po najetí myši je zvýrazněte jinou barvou.
 
 ### Bonus
 
-Publikuj stránku na github pages, aby si ji mohli prohlédnout i ostatní.
+Publikujte stránku na github pages, aby si ji mohli prohlédnout i ostatní.
