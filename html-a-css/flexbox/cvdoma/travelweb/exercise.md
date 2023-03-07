@@ -3,7 +3,8 @@ title: Travelweb
 demand: 1
 ---
 
-Stáhněte si [webovou stránku](assets/travelweb.zip). Jedná se o mock cestovatelské stránky. Za použití pozicování přetvořte stránku tak, aby vypadala, jako výsledek:
+Vytvořte si repository na základě šablony [travelweb](https://github.com/Czechitas-podklady-WEB/travelweb).
+Jedná se o mock cestovatelské stránky. Za použití pozicování přetvořte stránku tak, aby vypadala, jako výsledek:
 
 ::fig[travel web result]{src=assets/cviceni_travel_result.gif}
 

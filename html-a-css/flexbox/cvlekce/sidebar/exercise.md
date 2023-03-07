@@ -3,7 +3,7 @@ title: Flex container
 demand: 2
 ---
 
-Stáhněte si [připravenou stránku](assets/flex-container.zip).
+Vytvořte si repository na základě šablony [flex-container](https://github.com/Czechitas-podklady-WEB/flex-container).
 Na stránce je připravený obsah, který budeme stylovat. Otevřete si `index.html` a prohlédněte si strukturu dokumentu, všímejte si, které prvky jsou do sebe jak vnořené.
 
 Podívejte se na výsledek.
