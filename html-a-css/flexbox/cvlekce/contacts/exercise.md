@@ -3,7 +3,7 @@ title: Kontakty
 demand: 2
 ---
 
-Vytvořte si repository na základě šablony [contacts-zadani](https://github.com/Czechitas-podklady-WEB/contacts-zadani).
+Vytvořte si repository na základě šablony [contacts](https://github.com/Czechitas-podklady-WEB/contacts).
 Na stránce je připravený obsah stránky s kontakty. Otevřete si `index.html` a prohlédněte si strukturu dokumentu, všímejte si, které prvky jsou do sebe jak vnořené.
 
 Rozmyslete si, které prvky budou flex kontejnery. V HTML souboru není potřeba nic měnit.
