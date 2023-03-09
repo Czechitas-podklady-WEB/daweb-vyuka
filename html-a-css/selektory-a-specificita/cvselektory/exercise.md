@@ -3,7 +3,7 @@ title: Kontakty podruhé
 demand: 2
 ---
 
-Stáhněte si [připravenou stránku](assets/selektory-zadani.zip).
+Použijte šablonu repozitáře [Kontakty](https://github.com/Czechitas-podklady-WEB/Kontakty-CSS-selektory).
 
 Uvidíte podobnou stránku s kontakty jako ze cvičení flexboxu. V tomto cvičení ji budeme ještě vylepšovat. Finální verze bude vypadat takto:
 ::fig[Contact selectors result]{src=assets/selektory_result.gif}

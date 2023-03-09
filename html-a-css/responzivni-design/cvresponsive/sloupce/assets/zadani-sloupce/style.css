@@ -1,0 +1,37 @@
+/* intuitivni box-sizing */
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  font: 16px/1.5 sans-serif;
+}
+
+.sloupec {
+  padding: 30px;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+}
+
+.sloupec:nth-child(1) {
+  background-color: #3498db;
+}
+.sloupec:nth-child(2) {
+  background-color: #e74c3c;
+}
+.sloupec:nth-child(3) {
+  background-color: #2ecc71;
+}
+
+/*
+Nastavte CSS pro třídu .kontejner a .sloupec:
+- ve výchozím stavu (=mobil) budou obdélníky pod sebou
+- na obrazovce širší než 800px budou všechny 3 obdélníky vedle sebe
+  a budou roztažené přes celou stránku, všechny budou mít stejnou šířku
+*/

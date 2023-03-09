@@ -3,7 +3,9 @@ title: Zájezdy
 demand: 1
 ---
 
-Stáhněte si [připravenou stránku](assets/bem-zadani.zip).
+Použijte šablonu [Zájezdy](https://github.com/Czechitas-podklady-WEB/BEM-cviceni). 
+Naklonujte si repozitář a spusťte si `index.html`
+
 Na stránce je připravený obsah stránky se zájezdy. Prohlédněte si strukturu HTML souboru a prohlédněte si soubor `style.css`.
 Všechny styly už jsou připravené, je potřeba přiřadit správným prvkům správné CSS třídy. Zájezd má třídu `holiday` a následně elementy uvnitř mají odpovídající třídy jako `holiday__title` a další.
 
