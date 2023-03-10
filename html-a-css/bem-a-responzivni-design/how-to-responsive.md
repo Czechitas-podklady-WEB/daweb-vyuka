@@ -18,7 +18,9 @@ Meta značka `viewport` v hlavičce html zajišťuje, že obsah našeho webu se 
 ```
 
 ## Techniky responzivního webdesignu
+
 Máme tři hlavní techniky responzivního webdesignu, v této lekci si projdeme flexibilní grid:
+
 - flexibilní grid
 - flexibilní obrázky
 - media queries

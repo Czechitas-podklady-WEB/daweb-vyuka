@@ -1,5 +1,7 @@
 ## Techniky responzivního webdesignu
-Máme tři hlavní techniky responzivního webdesignu, v minulé lekci jsme prošli flexibilní grid, dnes se zaměříme na další dvě: 
+
+Máme tři hlavní techniky responzivního webdesignu, v minulé lekci jsme prošli flexibilní grid, dnes se zaměříme na další dvě:
+
 - flexibilní obrázky
 - media queries
 

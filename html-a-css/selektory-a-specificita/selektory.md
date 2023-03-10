@@ -78,9 +78,9 @@ Pro referenci si můžete pročíst celý [seznam pseudotříd](https://develope
 
 Pomocí CSS selektorů je možné vybírat elementy v HTML podle toho, jaké mají artibuty.
 
-#### `a[href="https://www.kodim.cz/"]`
+#### `a[href="https://kodim.cz/"]`
 
-Pomocí tohoto selektoru vybíráme prvek `a`, který má atribut `href`, jehož hodnota je `https://www.kodim.cz/`.
+Pomocí tohoto selektoru vybíráme prvek `a`, který má atribut `href`, jehož hodnota je `https://kodim.cz/`.
 Je možné vybírat podle přesné hodnoty atributu, nebo podle toho zda atribut na nějakou hodnotu začíná, končí nebo ji obsahuje.
 
 Pro referenci si můžete pročíst celý [seznam selektorů podle atributu](https://css-tricks.com/almanac/selectors/a/attribute/).
