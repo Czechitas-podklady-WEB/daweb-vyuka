@@ -13,15 +13,15 @@ Uvidíte podobnou stránku s kontakty jako ze cvičení flexboxu. V tomto cviče
 
 - Každé druhé sekci nastavte bílé pozadí
 
-- Fotografii přidejte 3px silný rámeček barvy lightblue (dejte pozor, aby se rámeček nepřidal i ikonám)
+- Fotografii přidejte `3px` silný rámeček barvy `lightblue` (dejte pozor, aby se rámeček nepřidal i ikonám)
 
 #### Při následujícím stylování můžete použít třídy, ale jde to i bez nich
 
-- Nastylujte ikonu call a message tak, aby se při najetí myši zvětšila.
+- Nastylujte ikonu `call` a `message` tak, aby se při najetí myši zvětšila.
   - Použijte pro to vlastnost a hodnotu
-    `transform: scale(1.3);`
-- Na najetí myši také nastavte kurzor na pointer/ručičku (vlasnost cursor)
+    `transform: scale(1.3)`
+- Na najetí myši také nastavte kurzor na pointer/ručičku (vlasnost `cursor`)
 
 #### Bonus
 
-Pro plynulé zvětšení si můžete najít použití css vlastnosti `transition`.
+Pro plynulé zvětšení si můžete najít použití CSS vlastnosti `transition`.
