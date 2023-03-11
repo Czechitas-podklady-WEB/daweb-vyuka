@@ -25,3 +25,34 @@ Uvidíte podobnou stránku s kontakty jako ze cvičení flexboxu. V tomto cviče
 #### Bonus
 
 Pro plynulé zvětšení si můžete najít použití CSS vlastnosti `transition`.
+
+---solution
+
+```css
+/*
+Každé druhé sekci přidej bílé pozadí.
+*/
+section:nth-child(2n) {
+  background-color: white;
+}
+
+/*
+Fotografii přidej 3px silný rámeček barvy lightblue.
+Dej pozor, aby se rámeček nepřidal i ikonám.
+*/
+section > img {
+  border: 3px solid lightblue;
+}
+
+/*
+Nastyluj ikony, tak aby se při najetí myši ikonka zvětšila.
+Použij pro to vlasnost a hodnotu transform: scale(1.3).
+Na najetí myši také nastavte kurzor na pointer/ručičku.
+Dej pozor, aby se nezvětšovala i fotografie.
+*/
+div img:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+```
