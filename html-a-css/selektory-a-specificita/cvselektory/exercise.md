@@ -53,6 +53,7 @@ Dej pozor, aby se nezvětšovala i fotografie.
 div img:hover {
   transform: scale(1.3);
   cursor: pointer;
+  /* Bonusový úkol: */
   transition: 0.2s ease-in-out;
 }
 ```
