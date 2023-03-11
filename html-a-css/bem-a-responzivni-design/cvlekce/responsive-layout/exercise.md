@@ -10,7 +10,7 @@ Na stránce je připravený obsah stránky. V souboru `style.css` je nastylovan�
 
 Nastylujte `header` tak, aby nadpis a podnadpis byly vedle sebe na opačných koncích stránky. Text podnadpisu zarovnejte doprava, tak aby na menších obrazovkách byl stále vpravo i na dvou řádcích.
 
-Galerii nastylujte tak, aby obrázky byly ve svou sloupích vedle sebe, které se flexibilně roztahují podle šířky stránky. Zkuste potom nastylovat i tři a čtyři sloupce.
+Galerii nastylujte tak, aby obrázky byly ve svou sloupcích vedle sebe, které se flexibilně roztahují podle šířky stránky. Zkuste potom nastylovat i tři a čtyři sloupce.
 
 Každou variantu si zkontrolujte v devtools a udělejte si printscreen celé stránky.
 
@@ -18,7 +18,7 @@ Podívejte se na výsledek:
 ::fig[výsledek]{src=assets/result.png}
 
 ---solution
-Varianty pro tři a čtyři sloupce jsou níže uvedeny v blocíh `@media(…)` – co znamenají se dozvíte v příští lekci.
+Varianty pro tři a čtyři sloupce jsou níže uvedeny v blocích `@media(…)` – co znamenají se dozvíte v příští lekci.
 Ve vašem řešení budete mít obsah příslušného bloku přímo u selektoru třídy `.foto`.
 Když použijete níže uvedené řešení s `@media(…)`, bude se počet sloupců měnit v závislosti na šířce okna prohlížeče.
 
