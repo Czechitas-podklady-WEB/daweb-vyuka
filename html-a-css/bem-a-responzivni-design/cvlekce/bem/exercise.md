@@ -4,15 +4,15 @@ demand: 1
 ---
 
 Použijte šablonu [Zájezdy](https://github.com/Czechitas-podklady-WEB/BEM-cviceni).
-Naklonujte si repozitář a spusťte si `index.html`
+Naklonujte si repozitář a spusťte si `npx serve`.
 
-Na stránce je připravený obsah stránky se zájezdy. Prohlédněte si strukturu HTML souboru a prohlédněte si soubor `style.css`.
-Všechny styly už jsou připravené, je potřeba přiřadit správným prvkům správné CSS třídy. Zájezd má třídu `holiday` a následně elementy uvnitř mají odpovídající třídy jako `holiday__title` a další.
+Na stránce je připravený obsah stránky se zájezdy. Prohlédněte si strukturu HTML souboru a také soubor `style.css`.
+Všechny styly už jsou připravené, jen je potřeba přiřadit v HTML správným prvkům správné CSS třídy. Zájezd má třídu `holiday` a následně elementy uvnitř mají odpovídající třídy jako `holiday__title` a další.
 
 Podívejte se na výsledek:
 ::fig[výsledek]{src=assets/BEM_cviceni_result.png}
 
-Pokud nevíte odkud začít, ve složce se zadáním je soubor `BEM_cviceni_hint`, kde je nápověda, jak třídy přiřadit.
+Pokud nevíte, odkud začít, ve složce se zadáním je soubor `BEM_cviceni_hint`, kde je nápověda, jak třídy přiřadit.
 
 Pokud vám zbyde čas, můžete si odkomentovat obsah a nastylovat i další kartičky se zájezdy.
 
