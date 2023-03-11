@@ -23,23 +23,26 @@ V souboru `style.css` se nic neupravuje. Upravuje se poize souboru `index.html`,
 
 ```html
 <article class="holiday">
-    <img src="img/norway.jpg" alt="norway polar lights"  class="holiday__picture"/>
-    <div class="holiday__offer">
-        <div>
-        <h2 class="holiday__title">Norway</h2>
-        <span class="holiday__stay"> 8 days (7 nights) </span>
-        <p class="holiday__description">
-            Skasgaden is perhaps best known for the intricate patterns in the
-            sand where a small stream flows into the ocean. One could spend
-            hours walking and seeing new patterns/angles the entire time. The
-            rest of the beach is a beautiful golden-sand beach that makes for
-            a nice walk.
-        </p>
-        </div>
-        <div class="holiday__footer">
-        <span class="holiday__price holiday__price--promo"> $ 1.499 </span>
-        <button class="holiday__book-btn">Book now</button>
-        </div>
+  <img
+    src="img/norway.jpg"
+    alt="norway polar lights"
+    class="holiday__picture"
+  />
+  <div class="holiday__offer">
+    <div>
+      <h2 class="holiday__title">Norway</h2>
+      <span class="holiday__stay"> 8 days (7 nights) </span>
+      <p class="holiday__description">
+        Skasgaden is perhaps best known for the intricate patterns in the sand
+        where a small stream flows into the ocean. One could spend hours walking
+        and seeing new patterns/angles the entire time. The rest of the beach is
+        a beautiful golden-sand beach that makes for a nice walk.
+      </p>
     </div>
-    </article>
+    <div class="holiday__footer">
+      <span class="holiday__price holiday__price--promo"> $ 1.499 </span>
+      <button class="holiday__book-btn">Book now</button>
+    </div>
+  </div>
+</article>
 ```
