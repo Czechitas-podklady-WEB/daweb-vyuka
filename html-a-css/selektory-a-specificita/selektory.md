@@ -24,7 +24,7 @@ Vybere všechny elementy, které mají id `unique-content`
 
 ### Pseudotřídy
 
-Tento zápis při stylování dokáže určit v jakém stavu je element a podle toho styl aplikovat nebo ne. Zápis je:
+Tento zápis při stylování dokáže určit, v jakém stavu je element, a podle toho styl aplikovat nebo neaplikovat. Zápis je:
 
 ```css
 selector:pseudo-class {
@@ -32,7 +32,7 @@ selector:pseudo-class {
 }
 ```
 
-Existuje mnoho druhů pseudotříd, které určují prvky podle stavu odkazu, chování uživatele, nebo HTML struktury. V HTML tyto třídy nevidíme a prohlížeč si je přidá, pokud prvek stavu odpovídá. Některé často využívané pseudotřídy jsou
+Existuje mnoho druhů pseudotříd, které určují prvky podle stavu odkazu, chování uživatele nebo HTML struktury. V HTML tyto třídy nevidíme a prohlížeč si je přidá, pokud prvek stavu odpovídá. Některé často využívané pseudotřídy jsou:
 
 #### Odkaz před navštívením `:link`
 
@@ -48,7 +48,7 @@ Aplikuje stylování, pokud nad ním uživatel přejede myší.
 
 #### Prvek, který má fokus `:focus`
 
-Aplikuje stylování, pokud má na sobě element fokus (projeví se nejčastěji na tlačítkách a inputech)
+Aplikuje stylování, pokud má na sobě element _fokus_, tj. do tohoto prvku aktuálně směřuje vstup z klávesnice. Projeví se nejčastěji na tlačítkách a inputech – např. když budete na klávesnici psát, text se bude vepisovat do toho inputu, který má právě _fokus_.
 
 #### Prvek, který je aktivní `:active`
 
@@ -59,14 +59,14 @@ Aplikuje stylování, pokud je prvek aktivní - například tlačítko, na kter�
 ::codepen{user=marketaanezka id=rNpNbKM tab=html,result}
 <br/>
 
-Existují také pseudotřídy, které vybírají elementy podle jejich pozice v dokumentu
+Existují také pseudotřídy, které vybírají elementy podle jejich pozice v dokumentu:
 
 #### Selektor typu n-tý potomek `p:nth-child(n)`
 
 Za `n` je možné si dosadit jakékoli číslo.
 Selektor **`p:nth-child(3)`**, vybere ten element `p`, který je třetím potomkem svého rodiče. Je možné používat i násobky.
-Selektor **`div:nth-child(2n)`**, vybere všechny elementy `div`, které jsou sudé potomky svého rodiče.
-Nezapomeňte, že při výpočtu se počítají všechny potomci v daném rodiči, ne pouze paragrafy nebo pouze divy.
+Selektor **`div:nth-child(2n)`**, vybere všechny elementy `div`, které jsou sudými potomky svého rodiče.
+Nezapomeňte, že při výpočtu se počítají všechny potomci v daném rodiči, ne pouze odstavce `p` nebo pouze `div`y.
 </br>
 
 ::codepen{user=marketaanezka id=eYyYamW tab=html,result}
@@ -81,7 +81,7 @@ Pomocí CSS selektorů je možné vybírat elementy v HTML podle toho, jaké maj
 #### `a[href="https://kodim.cz/"]`
 
 Pomocí tohoto selektoru vybíráme prvek `a`, který má atribut `href`, jehož hodnota je `https://kodim.cz/`.
-Je možné vybírat podle přesné hodnoty atributu, nebo podle toho zda atribut na nějakou hodnotu začíná, končí nebo ji obsahuje.
+Je možné vybírat podle přesné hodnoty atributu, nebo podle toho zda atribut na nějakou hodnotu _začíná_, _končí_ nebo ji _obsahuje_.
 
 Pro referenci si můžete pročíst celý [seznam selektorů podle atributu](https://css-tricks.com/almanac/selectors/a/attribute/).
 
