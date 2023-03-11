@@ -8,7 +8,7 @@ Spusťte si soubor `index.html`.
 
 Všimněte si, že soubor `style.css` je prázný. I přesto ale na stránce vidíme nějaké stylování - písmo, padding, barva tlačítka. Je to proto, že v HTML hlavičce je kromě souboru `style.css` nalinkovaný také další styl. Pomocí tohoto odkazu v linkování stylu jste do dokumentu napojili stylovací knihovnu [Bootstrap](https://getbootstrap.com/). Tato knihovna dokáže to, že pouze přidáním určitých tříd přidá na dané elementy stylování, aniž bychom styly museli my sami psát.
 
-- Zkuste z elementu `a` odebrat třídu `btn-primary` a podívejte se, jak se stylování změní. Poté třídu zase přidete zpátky.
+- Zkuste z elementu `button` odebrat třídu `btn-primary` a podívejte se, jak se stylování změní. Poté třídu zase přidete zpátky.
 
 <br/>
 
