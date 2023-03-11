@@ -5,27 +5,27 @@ Existují různé způsoby, jak vybírat prvky na stránce - pomocí selektorů 
 ### Jak funguje přebíjení stylů
 
 Často stylujeme jeden element na více různých místech v CSS. To není problém, protože různé třídy většinou stylují různé vlastnosti. Občas se ale může se stát, že jednu hodnotu nastavíme v CSS na dvě různé vlastnosti. V takovém případě se prohlížeč musí rozhodnout, kterou hodnotu vlastnosti použije.
-Pokud mají selektory stejnou specificitu, prohlížeč prostě vezme tu hodnotu, kterou přečetl jako poslední, tedy tu, která je v CSS dokumentu nejníž. Pokud mají selektory různou specificitu, prohlížeč si spočítá, který selektor má vyšší, a to stylování použije. Pamatujte si, že přebíjení stylů se děje pokud **jednu CSS vlastnost nastavíme na dvé různé hodnoty**.
+Pokud mají selektory stejnou specificitu, prohlížeč prostě vezme tu hodnotu, kterou přečetl jako poslední, tedy tu, která je v CSS dokumentu nejníž. Pokud mají selektory různou specificitu, prohlížeč si spočítá, který selektor má vyšší, a to stylování použije. Pamatujte si, že přebíjení stylů se děje pokud **jednu CSS vlastnost nastavíme na dvě různé hodnoty**.
 
 #### Selektor typu element
 
-Jeden ze způsobů je vybírat prvky pomocí jejich značky. Pokud nastavíme prvku `h1` barvu na různé hodnoty, bude platit ta, která je v CSS napsaná jako poslední. Je to proto, že prohlížeč "čte" CSS dokument odshora dolů.
+Jeden ze způsobů je vybírat prvky pomocí jejich značky. Pokud nastavíme prvku `h1` barvu na různé hodnoty, bude platit ta, která je v CSS napsaná jako poslední. Je to proto, že prohlížeč „čte“ CSS dokument odshora dolů.
 
 #### Selektor typu třída
 
-Pokud bychom použili na vybrání stejného prvku třídu, barva se nastaví podle třídy, a to i když bude v CSS nahoře. Je to proto, že selektor typu třída má větší specificitu, má přednost, před selektorem typu element.
+Pokud bychom použili na vybrání stejného prvku třídu, barva se nastaví podle třídy, a to i když bude v CSS nahoře. Je to proto, že selektor typu _třída_ má větší specificitu, má přednost, před selektorem typu _element_.
 
 #### Selektor typu id
 
-Pokud bychom přidali prvku id, stylování podle id přebije i třídu, a to proto, že má ještě větší specificitu.
+Pokud bychom přidali prvku _id_, stylování podle _id_ přebije i třídu, a to proto, že má ještě větší specificitu.
 
 ## Kalkulace specificity
 
 Jelikož můžeme používat i kombinace selektorů, například `h1.hlavni`, existuje způsob, jak zjistit, co se v CSS propíše. Je to kalkulace specificity prvku.
 
-- Selektor typu element má specificitu **`0, 0, 1`**
-- Selektor typu třída má specificitu **`0, 1, 0`**
-- Selektor typu id má specificitu **`1, 0, 0`**
+- Selektor typu _element_ má specificitu **`0, 0, 1`**
+- Selektor typu _třída_ má specificitu **`0, 1, 0`**
+- Selektor typu _id_ má specificitu **`1, 0, 0`**
 
 Při použití kombinace selektorů tedy sečteme kolikrát se jaký selektor používá a víme jeho specificitu.
 
@@ -43,7 +43,7 @@ Při porovnání vidíme, že druhý selektor má vyšší specificitu `0, 2, 1`
 
 ### Specificita - cheatsheet
 
-Podívejte se na níže ukázaný cheatsheet. Vidíte kalkulaci specificity, od nejniží po nejvyšší
+Podívejte se na níže ukázaný _cheatsheet_. Vidíte kalkulaci specificity, od nejniží po nejvyšší
 
 ::fig[Cheatsheet]{src=assets/cheatsheet.png}
 
@@ -51,7 +51,7 @@ Podívejte se na níže ukázaný cheatsheet. Vidíte kalkulaci specificity, od 
 
 #### Inline stylování v HTML
 
-Na obrázku vidíte, že ještě vyšší specificitu než **id**, má inline html stylování. To se aplikuje tak, že přímo u danému prvku do HTML se použije atribut `style`, do kterého se styly napíšou.
+Na obrázku vidíte, že ještě vyšší specificitu než **id**, má _inline stylování_ přímo v HTML kódu. To se aplikuje tak, že přímo u danému prvku v HTML se použije atribut `style`, do kterého se styly napíšou.
 
 ```html
 <p style="color:red;">A red paragraph.</p>
@@ -61,18 +61,18 @@ Tento způsob stylování není doporučovaný, jelikož může vnést do stylov
 
 #### `!important`
 
-Úplně nejvyšší specificitu, která přebije i inline HTML stylování má použití `!important` v CSS stylování. Tento příklad si pouze ukážeme, ale takové stylování není "good practice" a je lepší se mu vyhnout. Použití `!important` je možné k přebití stylování, které se tvoří dynamicky pomocí JS a není jiná možnost úpravy.
+Úplně nejvyšší specificitu, která přebije i inline HTML stylování, má použití `!important` v CSS stylování. Tento příklad si pouze ukážeme, ale takové stylování není _good practice_ a je lepší se mu vyhnout. Použití `!important` je možné k přebití stylování, které se tvoří dynamicky pomocí JavaScriptu a není jiná možnost úpravy.
 
 <br/>
 
 ### Praktické tipy
 
-Ve VSCode můžeme zjistit specificitu selektoru přímo při najetí na daný selektor v souboru css. Objeví se okénko, které kromě dalších informací ukáže i kalkulaci specificity selektoru.
+Ve VSCode můžeme zjistit specificitu selektoru přímo při najetí na daný selektor v souboru CSS. Objeví se okénko, které kromě dalších informací ukáže i kalkulaci specificity selektoru.
 
 ::fig[Vscode kalkulace specificity]{src=assets/CSS-specificita.png}
 
 <br/>
 
-Další způsob je podívat se do vývojářských nástrojů. V záložce **styles** je možné vidět, který styl a aplikuje a které se přebijí.
+Další způsob je podívat se do vývojářských nástrojů. V záložce **styles** je možné vidět, který styl se aplikuje a které se přebijí.
 
 ::fig[Devtools specificity]{src=assets/Devtools-specificity.png}
