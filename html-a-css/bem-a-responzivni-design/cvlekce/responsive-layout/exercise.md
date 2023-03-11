@@ -16,3 +16,44 @@ Každou variantu si zkontrolujte v devtools a udělejte si printscreen celé str
 
 Podívejte se na výsledek:
 ::fig[výsledek]{src=assets/result.png}
+
+---solution
+Varianty pro tři a čtyři sloupce jsou níže uvedeny v blocíh `@media(…)` – co znamenají se dozvíte v příští lekci.
+Ve vašem řešení budete mít obsah příslušného bloku přímo u selektoru třídy `.foto`.
+Když použijete níže uvedené řešení s `@media(…)`, bude se počet sloupců měnit v závislosti na šířce okna prohlížeče.
+
+Protože je v galerii _náhodou_ 12 obrázků, nemusíme extra řešit poslední řádek.
+Dvanáct je dělitelné 2, 3 i 4, tedy v každém případě budeme mít i poslední řádek kompletní.
+
+```css
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.galerie {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.foto {
+  flex: 50%;
+}
+
+/*
+Řešení pro tři a čtyři sloupce:
+*/
+@media (min-width: 600px) {
+  /* Tři sloupce */
+  .foto {
+    flex: calc(100% / 3);
+  }
+}
+
+@media (min-width: 1000px) {
+  /* Čtyři sloupce. */
+  .foto {
+    flex: 25%;
+  }
+}
+```
