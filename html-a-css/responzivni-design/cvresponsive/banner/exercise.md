@@ -3,7 +3,8 @@ title: Reklamní banner
 demand: 1
 ---
 
-Stáhněte si [webovou stránku](assets/zadani-banner.zip). Prohlédněte si pečlivě HTML strukturu, všímejte si jak jsou prvky do sebe zanořené.
+Naklonujte si repository na základě šablony [zadani-banner](https://github.com/Czechitas-podklady-WEB/zadani-banner).
+Prohlédněte si pečlivě HTML strukturu, všímejte si jak jsou prvky do sebe zanořené.
 
 Nastavte CSS pro třídu `.banner` tak, aby:
 
