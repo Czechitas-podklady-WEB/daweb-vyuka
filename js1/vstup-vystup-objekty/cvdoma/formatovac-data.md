@@ -18,7 +18,6 @@ Vytvořte stránku, která se zeptá uživatele na den, měsíc a rok.
    ```
 
 ---solution
-<!--
 
 ```js
 const den = prompt('Zadej den:');
@@ -34,4 +33,3 @@ document.body.innerHTML =
   rok +
   '</span></p>';
 ```
--->

@@ -15,7 +15,6 @@ Pokračujme v našem registračním systému na očkováni. Zatím se umíme už
 1. Poté, co uživatel zadá všechny údaje, vypište do stránky objekt `person` v nějakém hezkém formátu a zkontrolujte, že obsahuje správné informace.
 
 ---solution
-<!--
 
 ```js
 const person = {
@@ -25,4 +24,3 @@ const person = {
 ​
 document.body.innerHTML += "<p>Zadane jmeno je: " + person.name + ", vas vek je: " + person.age + ", boli ste zaregistrovany na ockovanie.</p>";
 ```
--->

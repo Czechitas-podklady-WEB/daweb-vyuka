@@ -69,7 +69,6 @@ Proveďte následující:
 1. Pokud máte chuť, malinko stránku nastylujte, aby se uživatel v informacích vyznal.
 
 ---solution
-<!--
 
 ```js
 const flight = {
@@ -147,4 +146,3 @@ document.body.innerHTML +=
   Math.ceil(flight.bags_price[2] * flight.conversion.EUR) +
   ' Kč</p>';
 ```
--->

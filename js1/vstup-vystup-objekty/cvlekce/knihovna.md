@@ -7,7 +7,6 @@ demand: 2
 1. Vytvořte alespoň jednu další knihu se stejnými vlastnostmi ale jinými hodnotami.
 
 ---solution
-<!--
 
 ```js
 const book = {
@@ -44,4 +43,3 @@ const book = {
   },
 };
 ```
--->
