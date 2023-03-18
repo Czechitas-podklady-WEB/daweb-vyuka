@@ -12,7 +12,6 @@ Představte si, že vyrábíte registrační systém na očkování proti COVID-
    ```
 
 ---solution
-<!--
 
 ```js
 let celeJmeno = prompt("Jake je vase jmeno a primeni?");
@@ -20,4 +19,3 @@ let vek = Number(prompt("Jaky je vas vek?"));
 ​
 document.body.innerHTML += "<p>" + celeJmeno + ", vek: " + vek + "</p>";
 ```
--->

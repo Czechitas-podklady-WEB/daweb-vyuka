@@ -41,7 +41,6 @@ Vytvořte webovou stránku s JavaScriptem, zkopírujte si tento kód do vašeho 
 1. Změnte stav inzerátu z `'free'` na `'taken'`.
 
 ---solution
-<!--
 
 ```js
 const apartment = {
@@ -82,4 +81,3 @@ document.body.innerHTML += "<p>Mestska cast: "+ district +"</p>"
 apartment.status = "taken"
 document.body.innerHTML += "<p>Stav inzeratu: "+ apartment.status +"</p>"
 ```
--->

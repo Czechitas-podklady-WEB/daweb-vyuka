@@ -7,7 +7,6 @@ demand: 2
 1. Nechte uživatele zadat nejen hodinovou sazbu, ale také počet hodin a dní v měsíci. Opět dejte pozor na správnou konverzi.
 
 ---solution
-<!--
 
 ```js
 const hodinovaSazba = Number(prompt("Jaka je vasa hodinova sazba?"));
@@ -16,4 +15,3 @@ const pocetDni = Number(prompt("Kolko dni mesacne pracujete?"));
 ​
 document.body.innerHTML += "<p>" + (hodinovaSazba*pocetHodin*pocetDni) + "</p>";
 ```
--->
