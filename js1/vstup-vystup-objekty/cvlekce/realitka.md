@@ -40,8 +40,8 @@ Vytvořte webovou stránku s JavaScriptem, zkopírujte si tento kód do vašeho 
 1. Pomocí destrukturování si do separátních proměnných uložte město a městskou část. Vypište je do stránky.
 1. Změnte stav inzerátu z `'free'` na `'taken'`.
 
-<!--
 ---solution
+<!--
 
 ```js
 const apartment = {

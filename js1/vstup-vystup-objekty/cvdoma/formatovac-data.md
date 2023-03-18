@@ -17,8 +17,8 @@ Vytvořte stránku, která se zeptá uživatele na den, měsíc a rok.
    </p>
    ```
 
-<!--
 ---solution
+<!--
 
 ```js
 const den = prompt('Zadej den:');

@@ -10,8 +10,8 @@ demand: 2
    Mzda v korunách: 532 Kč
    ```
 
-<!--
 ---solution
+<!--
 
 ```js
 const wageInEur = 20;

@@ -15,8 +15,8 @@ Co kdybychom však chtěli zaokrouhlit na desetiny, setiny nebo třeba celé sto
 1. zaokrouhlí číslo `x` s přesností na setiny,
 1. zaokrouhlí číslo `x` s přesností na celé stovky.
 
-<!--
 ---solution
+<!--
 
 ```js
 const x = 6543.14159;
