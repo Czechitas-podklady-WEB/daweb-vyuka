@@ -15,6 +15,7 @@ Co kdybychom však chtěli zaokrouhlit na desetiny, setiny nebo třeba celé sto
 1. zaokrouhlí číslo `x` s přesností na setiny,
 1. zaokrouhlí číslo `x` s přesností na celé stovky.
 
+<!--
 ---solution
 
 ```js
@@ -23,3 +24,4 @@ const naDesetiny = Math.round(x * 10) / 10;
 const naSetiny = Math.round(x * 100) / 100;
 const naStovky = Math.round(x / 100) * 100;
 ```
+-->

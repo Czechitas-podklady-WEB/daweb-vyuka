@@ -10,6 +10,7 @@ demand: 2
    Mzda v korunách: 532 Kč
    ```
 
+<!--
 ---solution
 
 ```js
@@ -18,3 +19,4 @@ const rate = 26.58;
 const wageInCzk = Math.round(wageInEur * rate);
 document.body.innerHTML = '<h1>Mzda v korunách: ' + wageInCzk + ' Kč</h1>';
 ```
+-->

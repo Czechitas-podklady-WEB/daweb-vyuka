@@ -7,8 +7,10 @@ Vymyslete jak použít funkci `Math.random` a různé zaokrouhlovací funkce pro
 
 Zamyslete se nad tím, zda vámi vytvořený výraz generuje všechna čísla skutečně se stejnou pravděpodobností. Vemte v úvahu, že funkce `Math.random` generuje náhodná čísla mezi 0 (včetně) a 1 (vyjma). Je tedy malinká pravěpodobnost, že **občas padne přesně číslo 0**. Naopak **číslo 1 padnout nemůže**.
 
+<!--
 ---solution
 
 ```js
 1 + Math.floor(Math.random() * 6);
 ```
+-->
