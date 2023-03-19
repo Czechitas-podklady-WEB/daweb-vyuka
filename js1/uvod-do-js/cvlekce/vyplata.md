@@ -7,7 +7,6 @@ demand: 1
 1. Pokud pracujete na živnostenský list, můžete si odečíst 60 % příjmů jako paušál a ze zbytku zaplatíte 15% daň. Spočítejte jak velkou daň zaplatíte ze své výplaty. Pomocí funkce `Math.floor` zaokrouhlete výsledek dolů na celé koruny.
 
 ---solution
-<!--
 
 #### Měsíční příjem
 
@@ -20,4 +19,3 @@ demand: 1
 ```js
 Math.floor(21 * 7 * 265 * (1 - 0.6) * 0.15);
 ```
--->

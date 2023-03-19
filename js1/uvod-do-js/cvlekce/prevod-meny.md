@@ -11,7 +11,6 @@ demand: 2
    ```
 
 ---solution
-<!--
 
 ```js
 const wageInEur = 20;
@@ -19,4 +18,3 @@ const rate = 26.58;
 const wageInCzk = Math.round(wageInEur * rate);
 document.body.innerHTML = '<h1>Mzda v korunách: ' + wageInCzk + ' Kč</h1>';
 ```
--->
