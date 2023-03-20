@@ -7,8 +7,8 @@ V **konzoli prohlížeče** si založte proměnnou `title` a uložte do ní **n�
 
 1. Vypište do konzole **počet znaků** názvu.
 1. Vypište název filmu převedený na **velká písmena**.
-1. Vyřízněte z názvu **prvních pět** písmen.
-1. Vyřízněte z názvu **posledních pět** písmen.
+1. Vypište z názvu **prvních pět** písmen.
+1. Vypište z názvu **posledních pět** písmen.
 
 ---solution
 
@@ -23,11 +23,11 @@ title.length
 ​
 title.toUpperCase()
 ​
-// Vyřízněte z názvu prvních pět písmen.
+// Vypište z názvu prvních pět písmen.
 ​
 title.slice(0, 5)
 ​
-// Vyřízněte z názvu posledních pět písmen.
+// Vypište z názvu posledních pět písmen.
 ​
 title.slice(title.length - 5, title.length)
 ```
