@@ -69,11 +69,10 @@ const apartment = {
 };
 ​
 document.body.innerHTML += "<p>Dispozice: "+ apartment.disposition +"</p>"
-document.body.innerHTML += "<p>Najem bez poplatku: "+ apartment.rent +"</p>"
+document.body.innerHTML += "<p>Najem bez poplatku: "+ apartment.price.rent +"</p>"
 document.body.innerHTML += "<p>Vymera bytu: "+ apartment.area.floorage + apartment.area.units +"</p>"
 ​
-const city = apartment.city;
-const district = apartment.district;
+const { city, district } = apartment;
 ​
 document.body.innerHTML += "<p>Mesto: "+ city +"</p>"
 document.body.innerHTML += "<p>Mestska cast: "+ district +"</p>"
