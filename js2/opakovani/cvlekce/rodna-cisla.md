@@ -4,7 +4,9 @@ demand: 3
 access: claim
 ---
 
-Napište program, který zjistí, jestli je zadané rodné číslo platné. Postupujte dle následujících kroků.
+Napište program, který zjistí, jestli je zadané rodné číslo platné.
+(Skutečná rodná čísla mají 9 nebo 10 číslic, my budeme uvažovat pouze rodná čísla mladších lidí, která mají 10 číslic.)
+Postupujte dle následujících kroků.
 
 1. Založte si projekt v čistém JavaScriptu, stačí soubory `index.html` a `index.js`.
 1. JavaScript vložte do stránky pomocí
