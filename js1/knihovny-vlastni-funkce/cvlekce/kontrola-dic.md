@@ -25,7 +25,7 @@ Postupujte dle následujících kroků.
 
 ---solution
 
-```
+```js
 const isDIC = (inputStr) => {
   if (inputStr.length < 11) {
     return false
