@@ -7,7 +7,7 @@ Zlovolní zahrádkáři nám chtějí ztížit výměru pozemků a proto si poř
 
 ::fig[Elipsa]{src=assets/ellipse.png size=60}
 
-Z matematiky víme, že známe-li šířku a výšku elipsy, její obsah je polovina šířky krát polovina výšky krát číslo π.
+Z matematiky víme, že známe-li šířku a výšku elipsy, její obsah je _polovina šířky_ krát _polovina výšky_ krát _číslo π_ (tj. přibližně 3,14).
 
 Založte si prázdnou stránku s JavaScriptovým souborem a napište funkci `ellipseArea`, která spočítá (**vrátí**) plochu pozemku dle zadané šířky a výšky. Číslo π najdete v JavaScriptu v proměnné `Math.PI`.
 
