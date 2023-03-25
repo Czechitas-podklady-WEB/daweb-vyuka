@@ -15,7 +15,7 @@ Vytvořte podobnou stránku s vaším vlastním tématem.
 
 #### Bonus
 
-1. Publikuje vaši stránku přes [GitHub Pages](https://pages.github.com/), [Netlify drop](https://app.netlify.com/drop) či jinou alternativu.
+1. Publikuje vaši stránku přes [GitHub Pages](https://pages.github.com/) (případně [Netlify drop](https://app.netlify.com/drop) či jinou alternativu, pokud je znáte).
 
 ---solution
 

@@ -3,7 +3,7 @@ title: Nekup to, třídy
 demand: 2
 ---
 
-Naklonujte si [repozitář](https://github.com/Czechitas-podklady-WEB/nekupto-zadani) se stránkou, která nabízí několik neotřelých produktů.
+Vytvořte si repozitář ze šablony [nekupto-zadani](https://github.com/Czechitas-podklady-WEB/nekupto-zadani). Repository obsahuje stránku, která nabízí několik neotřelých produktů.
 
 1. Otevřete si naklonovanou složku ve VS Code a prohlédněte si zdrojové HTML. Stránka je nastylována pomocí CSS knihovny [Bootstrapu](https://getbootstrap.com). Co přesně dělají použité CSS třídy není pro toto cvičení podstatné, nemusíte jim věnovat velkou pozornost.
 1. V konzoli prohlížeče si do proměnné uložte kartu s prvním produktem. Pomocí metody `classList.add` přidejte na tento element třídu `border-primary` abychom první produkt na stránce zvýraznili.
