@@ -28,22 +28,22 @@ Postupujte dle následujících kroků.
 ```js
 const isDIC = (inputStr) => {
   if (inputStr.length < 11) {
-    return false
+    return false;
   }
   if (inputStr.length > 12) {
-    return false
+    return false;
   }
 
-  const prefix = inputStr.slice(0, 2)
+  const prefix = inputStr.slice(0, 2);
   if (prefix !== 'CZ') {
-    return false
+    return false;
   }
 
-  const digits = inputStr.slice(2)
+  const digits = inputStr.slice(2);
   if (!validator.isInt(digits)) {
-    return false
+    return false;
   }
 
-  return true
-}
+  return true;
+};
 ```

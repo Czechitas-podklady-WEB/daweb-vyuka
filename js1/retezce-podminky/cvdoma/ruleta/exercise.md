@@ -13,7 +13,7 @@ Vytvořte stránku, které uživatel zadá číslo a stránka odpoví jestli jde
 
 ```js
 const cislo = Number(prompt('Zadej číslo rulety od 0 do 36.'));
-const cisloJeLiche = cislo % 2 === 1
+const cisloJeLiche = cislo % 2 === 1;
 
 document.body.innerHTML = `<p>Zadáno: ${cislo}.</p>`;
 if (cislo < 0 || cislo > 36) {

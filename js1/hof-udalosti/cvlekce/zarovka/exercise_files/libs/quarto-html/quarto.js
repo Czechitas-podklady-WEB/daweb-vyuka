@@ -1,22 +1,22 @@
-const sectionChanged = new CustomEvent("quarto-sectionChanged", {
+const sectionChanged = new CustomEvent('quarto-sectionChanged', {
   detail: {},
   bubbles: true,
   cancelable: false,
   composed: false,
 });
 
-window.document.addEventListener("DOMContentLoaded", function (_event) {
+window.document.addEventListener('DOMContentLoaded', function (_event) {
   const tocEl = window.document.querySelector('nav.toc-active[role="doc-toc"]');
-  const sidebarEl = window.document.getElementById("quarto-sidebar");
-  const leftTocEl = window.document.getElementById("quarto-sidebar-toc-left");
+  const sidebarEl = window.document.getElementById('quarto-sidebar');
+  const leftTocEl = window.document.getElementById('quarto-sidebar-toc-left');
   const marginSidebarEl = window.document.getElementById(
-    "quarto-margin-sidebar"
+    'quarto-margin-sidebar'
   );
   // function to determine whether the element has a previous sibling that is active
   const prevSiblingIsActiveLink = (el) => {
     const sibling = el.previousElementSibling;
-    if (sibling && sibling.tagName === "A") {
-      return sibling.classList.contains("active");
+    if (sibling && sibling.tagName === 'A') {
+      return sibling.classList.contains('active');
     } else {
       return false;
     }
@@ -24,56 +24,56 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
 
   // fire slideEnter for bootstrap tab activations (for htmlwidget resize behavior)
   function fireSlideEnter(e) {
-    const event = window.document.createEvent("Event");
-    event.initEvent("slideenter", true, true);
+    const event = window.document.createEvent('Event');
+    event.initEvent('slideenter', true, true);
     window.document.dispatchEvent(event);
   }
   const tabs = window.document.querySelectorAll('a[data-bs-toggle="tab"]');
   tabs.forEach((tab) => {
-    tab.addEventListener("shown.bs.tab", fireSlideEnter);
+    tab.addEventListener('shown.bs.tab', fireSlideEnter);
   });
 
   // fire slideEnter for tabby tab activations (for htmlwidget resize behavior)
-  document.addEventListener("tabby", fireSlideEnter, false);
+  document.addEventListener('tabby', fireSlideEnter, false);
 
   // Track scrolling and mark TOC links as active
   // get table of contents and sidebar (bail if we don't have at least one)
   const tocLinks = tocEl
-    ? [...tocEl.querySelectorAll("a[data-scroll-target]")]
+    ? [...tocEl.querySelectorAll('a[data-scroll-target]')]
     : [];
-  const makeActive = (link) => tocLinks[link].classList.add("active");
-  const removeActive = (link) => tocLinks[link].classList.remove("active");
+  const makeActive = (link) => tocLinks[link].classList.add('active');
+  const removeActive = (link) => tocLinks[link].classList.remove('active');
   const removeAllActive = () =>
     [...Array(tocLinks.length).keys()].forEach((link) => removeActive(link));
 
   // activate the anchor for a section associated with this TOC entry
   tocLinks.forEach((link) => {
-    link.addEventListener("click", () => {
-      if (link.href.indexOf("#") !== -1) {
-        const anchor = link.href.split("#")[1];
+    link.addEventListener('click', () => {
+      if (link.href.indexOf('#') !== -1) {
+        const anchor = link.href.split('#')[1];
         const heading = window.document.querySelector(
           `[data-anchor-id=${anchor}]`
         );
         if (heading) {
           // Add the class
-          heading.classList.add("reveal-anchorjs-link");
+          heading.classList.add('reveal-anchorjs-link');
 
           // function to show the anchor
           const handleMouseout = () => {
-            heading.classList.remove("reveal-anchorjs-link");
-            heading.removeEventListener("mouseout", handleMouseout);
+            heading.classList.remove('reveal-anchorjs-link');
+            heading.removeEventListener('mouseout', handleMouseout);
           };
 
           // add a function to clear the anchor when the user mouses out of it
-          heading.addEventListener("mouseout", handleMouseout);
+          heading.addEventListener('mouseout', handleMouseout);
         }
       }
     });
   });
 
   const sections = tocLinks.map((link) => {
-    const target = link.getAttribute("data-scroll-target");
-    if (target.startsWith("#")) {
+    const target = link.getAttribute('data-scroll-target');
+    if (target.startsWith('#')) {
       return window.document.getElementById(decodeURI(`${target.slice(1)}`));
     } else {
       return window.document.querySelector(decodeURI(`${target}`));
@@ -125,7 +125,7 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
     return false;
   };
 
-  const categorySelector = "header.quarto-title-block .quarto-category";
+  const categorySelector = 'header.quarto-title-block .quarto-category';
   const activateCategories = (href) => {
     // Find any categories
     // Surround them with a link pointing back to:
@@ -136,8 +136,8 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
         const categoryText = categoryEl.textContent;
         if (categoryText) {
           const link = `${href}#category=${encodeURIComponent(categoryText)}`;
-          const linkEl = window.document.createElement("a");
-          linkEl.setAttribute("href", link);
+          const linkEl = window.document.createElement('a');
+          linkEl.setAttribute('href', link);
           for (const child of categoryEl.childNodes) {
             linkEl.append(child);
           }
@@ -153,36 +153,36 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
   }
 
   function offsetRelativeUrl(url) {
-    const offset = getMeta("quarto:offset");
+    const offset = getMeta('quarto:offset');
     return offset ? offset + url : url;
   }
 
   function offsetAbsoluteUrl(url) {
-    const offset = getMeta("quarto:offset");
+    const offset = getMeta('quarto:offset');
     const baseUrl = new URL(offset, window.location);
 
-    const projRelativeUrl = url.replace(baseUrl, "");
-    if (projRelativeUrl.startsWith("/")) {
+    const projRelativeUrl = url.replace(baseUrl, '');
+    if (projRelativeUrl.startsWith('/')) {
       return projRelativeUrl;
     } else {
-      return "/" + projRelativeUrl;
+      return '/' + projRelativeUrl;
     }
   }
 
   // read a meta tag value
   function getMeta(metaName) {
-    const metas = window.document.getElementsByTagName("meta");
+    const metas = window.document.getElementsByTagName('meta');
     for (let i = 0; i < metas.length; i++) {
-      if (metas[i].getAttribute("name") === metaName) {
-        return metas[i].getAttribute("content");
+      if (metas[i].getAttribute('name') === metaName) {
+        return metas[i].getAttribute('content');
       }
     }
-    return "";
+    return '';
   }
 
   async function findAndActivateCategories() {
     const currentPagePath = offsetAbsoluteUrl(window.location.href);
-    const response = await fetch(offsetRelativeUrl("listings.json"));
+    const response = await fetch(offsetRelativeUrl('listings.json'));
     if (response.status == 200) {
       return response.json().then(function (listingPaths) {
         const listingHrefs = [];
@@ -191,7 +191,7 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
           for (const item of listingPath.items) {
             if (
               item === currentPagePath ||
-              item === currentPagePath + "index.html"
+              item === currentPagePath + 'index.html'
             ) {
               // Resolve this path against the offset to be sure
               // we already are using the correct path to the listing
@@ -219,7 +219,7 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
           const referrerListing = listingHrefs.find((listingHref) => {
             const isListingReferrer =
               listingHref === referredRelativePath ||
-              listingHref === referredRelativePath + "index.html";
+              listingHref === referredRelativePath + 'index.html';
             return isListingReferrer;
           });
 
@@ -243,9 +243,9 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
       return undefined;
     }
     // Look up the tree for a nearby linting and use that if we find one
-    const relativeParts = href.substring(1).split("/");
+    const relativeParts = href.substring(1).split('/');
     while (relativeParts.length > 0) {
-      const path = relativeParts.join("/");
+      const path = relativeParts.join('/');
       for (const listingHref of listingHrefs) {
         if (listingHref.startsWith(path)) {
           return listingHref;
@@ -278,39 +278,39 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
         const convertToMenu = () => {
           for (const child of el.children) {
             child.style.opacity = 0;
-            child.style.overflow = "hidden";
+            child.style.overflow = 'hidden';
           }
 
-          const toggleContainer = window.document.createElement("div");
-          toggleContainer.style.width = "100%";
-          toggleContainer.classList.add("zindex-over-content");
-          toggleContainer.classList.add("quarto-sidebar-toggle");
-          toggleContainer.classList.add("headroom-target"); // Marks this to be managed by headeroom
+          const toggleContainer = window.document.createElement('div');
+          toggleContainer.style.width = '100%';
+          toggleContainer.classList.add('zindex-over-content');
+          toggleContainer.classList.add('quarto-sidebar-toggle');
+          toggleContainer.classList.add('headroom-target'); // Marks this to be managed by headeroom
           toggleContainer.id = placeholderDescriptor.id;
-          toggleContainer.style.position = "fixed";
+          toggleContainer.style.position = 'fixed';
 
-          const toggleIcon = window.document.createElement("i");
-          toggleIcon.classList.add("quarto-sidebar-toggle-icon");
-          toggleIcon.classList.add("bi");
-          toggleIcon.classList.add("bi-caret-down-fill");
+          const toggleIcon = window.document.createElement('i');
+          toggleIcon.classList.add('quarto-sidebar-toggle-icon');
+          toggleIcon.classList.add('bi');
+          toggleIcon.classList.add('bi-caret-down-fill');
 
-          const toggleTitle = window.document.createElement("div");
+          const toggleTitle = window.document.createElement('div');
           const titleEl = window.document.body.querySelector(
             placeholderDescriptor.titleSelector
           );
           if (titleEl) {
             toggleTitle.append(titleEl.innerText, toggleIcon);
           }
-          toggleTitle.classList.add("zindex-over-content");
-          toggleTitle.classList.add("quarto-sidebar-toggle-title");
+          toggleTitle.classList.add('zindex-over-content');
+          toggleTitle.classList.add('quarto-sidebar-toggle-title');
           toggleContainer.append(toggleTitle);
 
-          const toggleContents = window.document.createElement("div");
+          const toggleContents = window.document.createElement('div');
           toggleContents.classList = el.classList;
-          toggleContents.classList.add("zindex-over-content");
-          toggleContents.classList.add("quarto-sidebar-toggle-contents");
+          toggleContents.classList.add('zindex-over-content');
+          toggleContents.classList.add('quarto-sidebar-toggle-contents');
           for (const child of el.children) {
-            if (child.id === "toc-title") {
+            if (child.id === 'toc-title') {
               continue;
             }
 
@@ -319,7 +319,7 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
             clone.style.display = null;
             toggleContents.append(clone);
           }
-          toggleContents.style.height = "0px";
+          toggleContents.style.height = '0px';
           toggleContainer.append(toggleContents);
           el.parentElement.prepend(toggleContainer);
 
@@ -334,8 +334,8 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
 
           const closeToggle = () => {
             if (tocShowing) {
-              toggleContainer.classList.remove("expanded");
-              toggleContents.style.height = "0px";
+              toggleContainer.classList.remove('expanded');
+              toggleContents.style.height = '0px';
               tocShowing = false;
             }
           };
@@ -350,7 +350,7 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
 
           // Get rid of any expanded toggle if the user scrolls
           window.document.addEventListener(
-            "scroll",
+            'scroll',
             throttle(() => {
               closeToggle();
             }, 50)
@@ -358,7 +358,7 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
 
           // Handle positioning of the toggle
           window.addEventListener(
-            "resize",
+            'resize',
             throttle(() => {
               positionToggle();
             }, 50)
@@ -368,7 +368,7 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
           // Process the click
           clickEl.onclick = () => {
             if (!tocShowing) {
-              toggleContainer.classList.add("expanded");
+              toggleContainer.classList.add('expanded');
               toggleContents.style.height = null;
               tocShowing = true;
             } else {
@@ -391,7 +391,7 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
             placeholderEl.remove();
           }
 
-          el.classList.remove("rollup");
+          el.classList.remove('rollup');
         };
 
         if (isReaderMode()) {
@@ -421,7 +421,7 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
   // Find any conflicting margin elements and add margins to the
   // top to prevent overlap
   const marginChildren = window.document.querySelectorAll(
-    ".column-margin.column-container > * "
+    '.column-margin.column-container > * '
   );
 
   nexttick(() => {
@@ -433,7 +433,7 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
         marginChild.style.marginTop = `${margin}px`;
       }
       const styles = window.getComputedStyle(marginChild);
-      const marginTop = parseFloat(styles["marginTop"]);
+      const marginTop = parseFloat(styles['marginTop']);
 
       lastBottom = top + marginChild.getBoundingClientRect().height + marginTop;
     }
@@ -441,20 +441,20 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
 
   // Manage the visibility of the toc and the sidebar
   const marginScrollVisibility = manageSidebarVisiblity(marginSidebarEl, {
-    id: "quarto-toc-toggle",
-    titleSelector: "#toc-title",
+    id: 'quarto-toc-toggle',
+    titleSelector: '#toc-title',
     dismissOnClick: true,
   });
   const sidebarScrollVisiblity = manageSidebarVisiblity(sidebarEl, {
-    id: "quarto-sidebarnav-toggle",
-    titleSelector: ".title",
+    id: 'quarto-sidebarnav-toggle',
+    titleSelector: '.title',
     dismissOnClick: false,
   });
   let tocLeftScrollVisibility;
   if (leftTocEl) {
     tocLeftScrollVisibility = manageSidebarVisiblity(leftTocEl, {
-      id: "quarto-lefttoc-toggle",
-      titleSelector: "#toc-title",
+      id: 'quarto-lefttoc-toggle',
+      titleSelector: '#toc-title',
       dismissOnClick: true,
     });
   }
@@ -468,26 +468,26 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
   // the do conflict on the left or ride side
   const arrConflictingEls = Array.from(conflictingEls);
   const leftSideConflictEls = arrConflictingEls.filter((el) => {
-    if (el.tagName === "ASIDE") {
+    if (el.tagName === 'ASIDE') {
       return false;
     }
     return Array.from(el.classList).find((className) => {
       return (
-        className !== "column-body" &&
-        className.startsWith("column-") &&
-        !className.endsWith("right") &&
-        !className.endsWith("container") &&
-        className !== "column-margin"
+        className !== 'column-body' &&
+        className.startsWith('column-') &&
+        !className.endsWith('right') &&
+        !className.endsWith('container') &&
+        className !== 'column-margin'
       );
     });
   });
   const rightSideConflictEls = arrConflictingEls.filter((el) => {
-    if (el.tagName === "ASIDE") {
+    if (el.tagName === 'ASIDE') {
       return true;
     }
 
     const hasMarginCaption = Array.from(el.classList).find((className) => {
-      return className == "margin-caption";
+      return className == 'margin-caption';
     });
     if (hasMarginCaption) {
       return true;
@@ -495,10 +495,10 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
 
     return Array.from(el.classList).find((className) => {
       return (
-        className !== "column-body" &&
-        !className.endsWith("container") &&
-        className.startsWith("column-") &&
-        !className.endsWith("left")
+        className !== 'column-body' &&
+        !className.endsWith('container') &&
+        className.startsWith('column-') &&
+        !className.endsWith('left')
       );
     });
   });
@@ -533,15 +533,15 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
         const el = document.getElementById(id);
         if (el) {
           if (slow) {
-            el.classList.add("slow");
+            el.classList.add('slow');
           } else {
-            el.classList.remove("slow");
+            el.classList.remove('slow');
           }
         }
       };
 
-      manageTransition("TOC", slow);
-      manageTransition("quarto-sidebar", slow);
+      manageTransition('TOC', slow);
+      manageTransition('quarto-sidebar', slow);
     };
 
     const readerMode = !isReaderMode();
@@ -561,29 +561,29 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
   };
 
   const highlightReaderToggle = (readerMode) => {
-    const els = document.querySelectorAll(".quarto-reader-toggle");
+    const els = document.querySelectorAll('.quarto-reader-toggle');
     if (els) {
       els.forEach((el) => {
         if (readerMode) {
-          el.classList.add("reader");
+          el.classList.add('reader');
         } else {
-          el.classList.remove("reader");
+          el.classList.remove('reader');
         }
       });
     }
   };
 
   const setReaderModeValue = (val) => {
-    if (window.location.protocol !== "file:") {
-      window.localStorage.setItem("quarto-reader-mode", val);
+    if (window.location.protocol !== 'file:') {
+      window.localStorage.setItem('quarto-reader-mode', val);
     } else {
       localReaderMode = val;
     }
   };
 
   const isReaderMode = () => {
-    if (window.location.protocol !== "file:") {
-      return window.localStorage.getItem("quarto-reader-mode") === "true";
+    if (window.location.protocol !== 'file:') {
+      return window.localStorage.getItem('quarto-reader-mode') === 'true';
     } else {
       return localReaderMode;
     }
@@ -597,13 +597,13 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
   // - they are directly below an link that is 'active'
   const walk = (el, depth) => {
     // Tick depth when we enter a UL
-    if (el.tagName === "UL") {
+    if (el.tagName === 'UL') {
       depth = depth + 1;
     }
 
     // It this is active link
     let isActiveNode = false;
-    if (el.tagName === "A" && el.classList.contains("active")) {
+    if (el.tagName === 'A' && el.classList.contains('active')) {
       isActiveNode = true;
     }
 
@@ -614,11 +614,11 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
     }
 
     // Process the collapse state if this is an UL
-    if (el.tagName === "UL") {
+    if (el.tagName === 'UL') {
       if (depth === 1 || hasActiveChild || prevSiblingIsActiveLink(el)) {
-        el.classList.remove("collapse");
+        el.classList.remove('collapse');
       } else {
-        el.classList.add("collapse");
+        el.classList.add('collapse');
       }
 
       // untick depth when we leave a UL
@@ -636,7 +636,7 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
 
   // Throttle the scroll event and walk peridiocally
   window.document.addEventListener(
-    "scroll",
+    'scroll',
     throttle(() => {
       if (tocEl) {
         updateActiveLink();
@@ -648,7 +648,7 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
     }, 5)
   );
   window.addEventListener(
-    "resize",
+    'resize',
     throttle(() => {
       if (!isReaderMode()) {
         hideOverlappedSidebars();
@@ -660,11 +660,11 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
 });
 
 // grouped tabsets
-window.addEventListener("pageshow", (_event) => {
+window.addEventListener('pageshow', (_event) => {
   function getTabSettings() {
-    const data = localStorage.getItem("quarto-persistent-tabsets-data");
+    const data = localStorage.getItem('quarto-persistent-tabsets-data');
     if (!data) {
-      localStorage.setItem("quarto-persistent-tabsets-data", "{}");
+      localStorage.setItem('quarto-persistent-tabsets-data', '{}');
       return {};
     }
     if (data) {
@@ -674,7 +674,7 @@ window.addEventListener("pageshow", (_event) => {
 
   function setTabSettings(data) {
     localStorage.setItem(
-      "quarto-persistent-tabsets-data",
+      'quarto-persistent-tabsets-data',
       JSON.stringify(data)
     );
   }
@@ -686,14 +686,14 @@ window.addEventListener("pageshow", (_event) => {
   }
 
   function toggleTab(tab, active) {
-    const tabPanelId = tab.getAttribute("aria-controls");
+    const tabPanelId = tab.getAttribute('aria-controls');
     const tabPanel = document.getElementById(tabPanelId);
     if (active) {
-      tab.classList.add("active");
-      tabPanel.classList.add("active");
+      tab.classList.add('active');
+      tabPanel.classList.add('active');
     } else {
-      tab.classList.remove("active");
-      tabPanel.classList.remove("active");
+      tab.classList.remove('active');
+      tabPanel.classList.remove('active');
     }
   }
 
@@ -713,7 +713,7 @@ window.addEventListener("pageshow", (_event) => {
     );
     for (const item of tabs) {
       const div = item.parentElement.parentElement.parentElement;
-      const group = div.getAttribute("data-group");
+      const group = div.getAttribute('data-group');
       if (!result[group]) {
         result[group] = {};
       }
@@ -732,7 +732,7 @@ window.addEventListener("pageshow", (_event) => {
     Object.entries(selectorsToSync).forEach(([group, tabSetsByValue]) => {
       Object.entries(tabSetsByValue).forEach(([value, items]) => {
         items.forEach((item) => {
-          item.addEventListener("click", (_event) => {
+          item.addEventListener('click', (_event) => {
             setTabState(group, value);
             toggleAll(value, selectorsToSync[group]);
           });
