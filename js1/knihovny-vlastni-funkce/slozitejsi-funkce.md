@@ -1,6 +1,6 @@
 ## Složitější funkce
 
-Ne každá funkce je tak přímočará, jako výpočet obsahu. Často se stane, že potřebujeme ve funkci provést nějaké rozhodování, výpočet sestávají z více kroků apod. Mějme například funkci, která rozhodne, zda máme dostatečně bezpečné heslo. Heslo budeme považovat za bezpečné, pokud je delší než 12 znaků. V takovéto funkci tedy potřebujeme použít podmínky. Tělo funkce proto bude obsahovat více příkazů, které se nám už nevejdou na jeden řádek. V takovém případě bude tělo funkce blok kódu podobně jako to už známe u podmínek.
+Ne každá funkce je tak přímočará, jako výpočet obsahu. Často se stane, že potřebujeme ve funkci provést nějaké rozhodování, výpočet sestávají z více kroků apod. Mějme například funkci, která rozhodne, zda máme dostatečně bezpečné heslo. Heslo budeme považovat za bezpečné, pokud je delší než 12 znaků. V takovéto funkci tedy potřebujeme použít podmínky. Tělo funkce proto bude obsahovat více příkazů, které se nám už nevejdou na jeden řádek. V takovém případě bude tělo funkce blok kódu – podobně, jako to už známe z podmínek:
 
 ```js
 const isSafe = (password) => {
@@ -12,7 +12,7 @@ const isSafe = (password) => {
 };
 ```
 
-Všimněte si, že v této funkci máme vícero slovíček `return`, protože funkce v různých situacích vrací různé výsledky. Ve chvíli, kdy JavaScript runtime při vykonává funkce narazí na `return`, vykonávání funkce se ukončí a program se vrací na místo, odkud byla funkce volána. Vrácená hodnota pak bude na tomto místě výsledkem naší funkce. Ten si pak můžeme uložit třeba do proměné.
+Všimněte si, že v této funkci máme vícero slovíček `return`, protože funkce v různých situacích vrací různé výsledky. Ve chvíli, kdy JavaScript runtime při vykonávání funkce narazí na `return`, vykonávání funkce se ukončí a program se vrací na místo, odkud byla funkce volána. Vrácená hodnota pak bude na tomto místě výsledkem naší funkce. Ten si pak můžeme uložit třeba do proměné.
 
 ```js
 const result = isSafe('popokatepetl');
