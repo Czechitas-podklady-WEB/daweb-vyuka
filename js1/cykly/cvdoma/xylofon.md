@@ -3,7 +3,7 @@ title: Xylofon
 demand: 4
 ---
 
-Vytvořte si erpozitář ze šablony [Cviceni-Xylofon](https://github.com/Czechitas-podklady-WEB/Cviceni-Xylofon) a postupujte podle zadání v repozitáři.
+Vytvořte si repozitář ze šablony [Cviceni-Xylofon](https://github.com/Czechitas-podklady-WEB/Cviceni-Xylofon) a postupujte podle zadání v repozitáři.
 
 ---solution
 
