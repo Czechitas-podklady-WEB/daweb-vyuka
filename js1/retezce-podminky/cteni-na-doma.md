@@ -1,4 +1,4 @@
-## Povinné čtení na doma - logické operátory
+## Povinné čtení na doma: Logické operátory
 
 V matematice jsme zvyklí na takzvané aritmetické operátory, tedy plus, mínus apod. Takové operátory obecně vyrábějí z čísel jiná čísla, například
 
