@@ -1,4 +1,4 @@
-## Dobrovolné čtení na doma - alternativní zápis funkcí
+## Dobrovolné čtení na doma: Alternativní zápis funkcí
 
 V různých výukových materiálech se můžete setkat s alternativním zápisem funkce. Ten by pro naši obarvovací funkci vypadal takto:
 
