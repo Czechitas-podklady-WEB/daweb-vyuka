@@ -12,26 +12,25 @@ Vytvořte stránku, které uživatel zadá číslo a stránka odpoví jestli jde
 ---solution
 
 ```js
-const cislo = prompt('Zadej číslo rulety od 0 do 36.');
+const cislo = Number(prompt('Zadej číslo rulety od 0 do 36.'));
+const cisloJeLiche = cislo % 2 === 1
 
-if (Number(cislo) === 0) {
-  document.body.innerHTML = `<p>Zadáno: ${cislo}. <br /> Zadané číslo je nula.</p>`;
-} else if (Number(cislo) > 36) {
-  document.body.innerHTML = `<p>Zadáno: ${cislo}. <br /> Zadané číslo se nenachází na ruletě.</p>`;
-} else if (
-  (Number(cislo) >= 1 && Number(cislo) <= 10) ||
-  (Number(cislo) >= 19 && Number(cislo) <= 28)
-) {
-  if (Number(cislo) % 2 === 1) {
-    document.body.innerHTML = `<p>Zadáno: ${cislo}. <br /> Zadané číslo je liché a červené.</p>`;
+document.body.innerHTML = `<p>Zadáno: ${cislo}.</p>`;
+if (cislo < 0 || cislo > 36) {
+  document.body.innerHTML += `<p>Zadané číslo se nenachází na ruletě.</p>`;
+} else if (cislo === 0) {
+  document.body.innerHTML += `<p>Zadané číslo je nula.</p>`;
+} else if ((cislo >= 1 && cislo <= 10) || (cislo >= 19 && cislo <= 28)) {
+  if (cisloJeLiche) {
+    document.body.innerHTML += `<p>Zadané číslo je liché a červené.</p>`;
   } else {
-    document.body.innerHTML = `<p>Zadáno: ${cislo}. <br /> Zadané číslo je sudé a černé.</p>`;
+    document.body.innerHTML += `<p>Zadané číslo je sudé a černé.</p>`;
   }
 } else {
-  if (Number(cislo) % 2 === 1) {
-    document.body.innerHTML = `<p>Zadáno: ${cislo}. <br /> Zadané číslo je liché a černé.</p>`;
+  if (cisloJeLiche) {
+    document.body.innerHTML += `<p>Zadané číslo je liché a černé.</p>`;
   } else {
-    document.body.innerHTML = `<p>Zadáno: ${cislo}. <br /> Zadané číslo je sudé a červené.</p>`;
+    document.body.innerHTML += `<p>Zadané číslo je sudé a červené.</p>`;
   }
 }
 ```
