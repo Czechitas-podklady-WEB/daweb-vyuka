@@ -10,18 +10,18 @@ Formát DIČ sestává z předpony CZ a poté následuje devět nebo deset čís
 - CZ123456789
 - CZ1234567890
 
-Postupujte dle následujících kroků.
+Postupujte dle následujících kroků:
 
 1. Vytvořte prázdnou stránku s JavaScriptem a knihovnou `validator.js`.
 1. Vytvořte funkci `isDIC` s jedním parametrem `inputStr`, což bude řetězec, který chceme zkontrolovat.
-1. Jako první ve funkci zkontrolujte, jestli je vstupní řetězce kratší než 11 znaků. V takovém případě namá smysl dál nic dělat, protože vstup evidentně není DIČ. Vraťte tady z funkce `false`. Tím naše funkce končí. Všimněte si, že takto používáme vzor "časný návrat".
+1. Jako první ve funkci zkontrolujte, jestli je vstupní řetězce kratší než 11 znaků. V takovém případě nemá smysl dál nic dělat, protože vstup evidentně není DIČ. Vraťte tady z funkce `false`. Tím naše funkce končí. Všimněte si, že takto používáme vzor _časný návrat_.
 1. Dále ve funkci zkontrolujte, jestli je vstupní řetězce delší než 12 znaků. V takovém případě opět vraťte `false`.
-1. Dále ve funkce si do proměnné `prefix` uložte první dva znaky vstupního řetězce.
+1. Dále si ve funkce do proměnné `prefix` uložte první dva znaky vstupního řetězce.
 1. Pomocí podmínky zkontrolujte, že proměnná `prefix` obsahuje přesně znaky `CZ`. Pokud ne, ihned vraťte `false`.
 1. Do promměné `digits` si uložte část vstupního řetězce od třetího znaku dále.
 1. Použijte metodu `validator.isInt`, která umí zkontrolovat, zda řetězec obsahuje pouze číslice. Pokud metoda vrátí `false`, ihned také vraťte `false`.
 1. Pokud funkce dospěla až do tohoto bodu, vstup prošel všemi testy. Můžeme vrátit `true`.
-1. Vyzoušejte svoji funkci v konzoli na různých vstupech a ověřte, že funguje.
+1. Vyzoušejte svoji funkci v konzoli na různých vstupech a ověřte, že funguje. Nezapomeňte ověřit platná i neplatná DIČ.
 
 ---solution
 

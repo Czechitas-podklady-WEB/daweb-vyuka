@@ -10,9 +10,9 @@ demand: 2
    ```html
    <p id="msg" class="msg"></p>
    ```
-1. Napojte do stránky váš vlastní javascriptový soubor.
+1. Napojte do stránky váš vlastní javascriptový soubor `index.js`.
 1. Pomocí funkce `prompt` **požádejte uživatele o jeho e-mail**. V případě, že jde o platný e-mail, zobrazte v připraveném odstavci zprávu „**E-mail v pořádku**“. V opačném případě zobrazte „**Neplatný e-mail**“.
-1. Pokud je e-mail platný, přidejte zároveň na odstavec CSS třídu `msg--valid`. V opačném případě použijte třídu `msg--invalid`. Přidejte do stránky soubor `style.css` a třídy nastylujte například tak, že `msg--valid` bude mí zelené pozadí a `msg--invalid` naopak červené.
+1. Pokud je e-mail platný, přidejte zároveň na odstavec CSS třídu `msg--valid`. V opačném případě použijte třídu `msg--invalid`. Přidejte do stránky soubor `style.css` a třídy nastylujte například tak, že `msg--valid` bude mít zelené pozadí a `msg--invalid` naopak červené.
 
    ```html
    <!-- index.html -->

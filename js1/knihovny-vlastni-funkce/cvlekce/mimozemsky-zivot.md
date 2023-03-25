@@ -10,8 +10,8 @@ Podívejte se na stránku [existuje-mimozemsky-zivot.cz](http://existuje-mimozem
 
 Vytvořte podobnou stránku s vaším vlastním tématem.
 
-1. Vytvořte prázdnou stránku, do které vložte knihovnu `dayjs`.
-1. Vyberte si nějakou budoucí událost, jejíž datum je pevně určeno. Za pomoci knihovny `dayjs` vytvořte stránku zobrazující velké ANO nebo NE případně krátkou zprávu podle toho, zda už událost nastala či nikoliv.
+1. Vytvořte prázdnou stránku, do které vložte knihovnu `Day.js`.
+1. Vyberte si nějakou budoucí událost, jejíž datum je pevně určeno. Za pomoci knihovny `Day.js` vytvořte stránku zobrazující velké _ANO_ nebo _NE_ případně krátkou zprávu podle toho, zda už událost nastala či nikoliv.
 
 #### Bonus
 

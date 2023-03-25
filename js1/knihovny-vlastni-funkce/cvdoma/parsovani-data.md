@@ -3,7 +3,7 @@ title: Parsování data
 demand: 2
 ---
 
-Bez použití knihovny `dayjs` napište funkci `parseDate`, která na vstupu obdrží řetězec obsahující datum ve formátu **DD.MM.YYYY** a vrátí objekt s jednotlivýnu částmi zadaného data. Příklad použití:
+Bez použití knihovny `Day.js` napište funkci `parseDate`, která na vstupu obdrží řetězec obsahující datum ve formátu **DD.MM.YYYY** a vrátí objekt s jednotlivýnu částmi zadaného data. Příklad použití:
 
 ```jscon
 > parseDate('12.03.2015')
