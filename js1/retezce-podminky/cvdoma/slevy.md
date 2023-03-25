@@ -16,11 +16,11 @@ let cena;
 
 if (pocetKusu < 50) {
   cena = pocetKusu * 300;
-} else if (pocpocetKusu < 200) {
+} else if (pocetKusu <= 200) {
   cena = pocetKusu * 250;
-} else if (pocetKusu < 500) {
+} else if (pocetKusu <= 500) {
   cena = pocetKusu * 200;
-} else if (pocetKusu < 1000) {
+} else if (pocetKusu <= 1000) {
   cena = pocetKusu * 150;
 } else {
   cena = pocetKusu * 120;
