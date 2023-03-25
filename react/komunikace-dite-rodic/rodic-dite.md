@@ -6,7 +6,7 @@ V předchozích lekcích už jsme se naučili téměř všechno, co v Reactu pot
 
 _(Češtinářská perlička – sice v komunikaci vystupují „rodič“ a „dítě“, ale když chceme označit komponentu, neříkáme jí „dětská komponenta“ nýbrž „dceřiná komponenta“.)_
 
-V této lekci rozeberme první dvě možnosti a třetí si necháme do další lekce. K ilustraci komunikace mezi komponentami použijeme jednoduchou webovou aplikaci, ve které si budeme hrát na prezidentské volby. Zdrojové kódy aplikace najdete v tomto [repozitáři](https://github.com/Czechitas-podklady-WEB/volby). Repozitář si naklonujeme a prohlédneme si jeho strukturu.
+V této lekci rozeberme první dvě možnosti a třetí si necháme do další lekce. K ilustraci komunikace mezi komponentami použijeme jednoduchou webovou aplikaci, ve které si budeme hrát na prezidentské volby. Vytvořte si repozitář ze šablony [volby](https://github.com/Czechitas-podklady-WEB/volby). Repozitář si naklonujeme a prohlédneme si jeho strukturu.
 
 Naše volební aplikace zobrazuje čtyři kandidáty pomocí komponenty `Candidate`. Pole obsahující jména a podobizny kandidátů najdeme ve stavu komponenty `App`. Tato data bychom normálně stáhli odněkud ze serveru. V tomto případě si život malinko ulehčíme a obsah stavu zadrátujeme přímo do kódu.
 

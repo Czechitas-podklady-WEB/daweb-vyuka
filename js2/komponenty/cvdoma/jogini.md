@@ -5,7 +5,7 @@ demand: 2
 
 Vyzkoušíme si rozdělit běžnou stránku do několika komponent.
 
-Naklonujte si [repozitář](https://github.com/Czechitas-podklady-WEB/jogini-zadani) se stránkou pro začínající jóga studio. Přepracujte stránku tak, aby byla vytvořena celá v JavaScriptu pomocí komponent.
+Vytvořte si repozitář ze šablony [cviceni-jogini](https://github.com/Czechitas-podklady-WEB/cviceni-jogini) se stránkou pro začínající jóga studio. Přepracujte stránku tak, aby byla vytvořena celá v JavaScriptu pomocí komponent.
 
 1. V oddělené složce vytvořte komponentu `Header`, která vytvoří hlavičku stránky. Bude očekávat svoje `props` v následujícím formátu.
 

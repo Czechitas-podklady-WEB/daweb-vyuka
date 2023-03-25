@@ -5,7 +5,8 @@ demand: 2
 
 V rámci tohoto cvičení si založíme projekt na supabase a vyzkoušíme si, jak přihlášeného uživatele odhlásit.
 
-1. Udělejte si fork tohoto [repozitáře](https://github.com/Czechitas-podklady-WEB/supabase-shopping-list), vzniklý fork naklonujte k sobě do počítače a nainstalujte závislosti, projekt zatím nespouštějte
+1. Vytvořte si repozitář ze šablony [cviceni-supabase-shopping-list](https://github.com/Czechitas-podklady-WEB/cviceni-supabase-shopping-list).
+1. Otevřete repozitář ve VS Code a  nainstalujte závislosti, projekt zatím nespouštějte
 1. Zaregistrujete se na supabase
 1. Dle popisu v první části lekce si založte nový projekt
 1. V souboru **functions/supabase.js** nastavte hodnoty SUPABASE_URL a SUPABASE_KEY pro váš projekt

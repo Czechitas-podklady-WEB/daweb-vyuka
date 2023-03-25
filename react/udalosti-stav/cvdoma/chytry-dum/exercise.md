@@ -7,8 +7,7 @@ Cílem tohoto cvičení je na základě připraveného kódu vytvořit pomocí R
 
 ::fig[BEM Block]{src=assets/ukazka.png}
 
-1. Pomocí tlačíka _Use this template_ si vytvořte vlastní GitHub repozitář z [této šablony](https://github.com/Czechitas-podklady-WEB/chytry-dum). **Nepoužívejte** forkování, protože pak všichni ostatní uvidí váš projekt.
-1. Nově vytvořený repozitář si naklonujte na svůj počítat. **Neklonujte** přímo repozitář se zadáním, nemohli byste do něj pak pushnout.
+1. Vytvořte si repozitář ze šablony [projekt-chytry-dum](https://github.com/Czechitas-podklady-WEB/projekt-chytry-dum).
 1. Nainstalujte závislosti pomocí `npm install`.
 
 Konkrétní zadání úkolu najdete přímo v popisu repozitáře.

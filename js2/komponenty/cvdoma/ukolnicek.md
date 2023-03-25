@@ -5,7 +5,7 @@ demand: 3
 
 Vaším úkolem bude vytvořit dle zadání jednoduchou aplikaci zobrazující seznam úkolů.
 
-1. Pomocí tlačítka _Use this template_ si vytvořte vlastní kopii [repozitáře](https://github.com/Czechitas-podklady-WEB/ukolnicek-zadani) se zadáním. **Nedělejte fork!**
+1. Vytvořte si repozitář ze šablony [cviceni-ukolnicek](https://github.com/Czechitas-podklady-WEB/cviceni-ukolnicek).
 1. Seznamte se se strukturou projektu. Především si prohlédněte strukturu HTML.
 1. Prohledněte si data, která vrací [API pro úkoly](https://apps.kodim.cz/daweb/trening-api/docs/ukoly-api).
 1. V hlavním souboru `index.js` vytvořte komponentu `Task`, která bude představovat jeden úkol. Komponenta bude jako svoje `props` očekávat objekt s jedním úkolem.

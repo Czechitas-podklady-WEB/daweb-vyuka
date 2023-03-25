@@ -5,8 +5,7 @@ demand: 3
 
 Cílem tohoto cvičení je na základě připraveného kódu vytvořit Reactovou aplikaci, která bude zobrazovat návrhy barevných palet. Takové palety používají například designéři při vybírání barevných schémata pro nové weby. Barevné palety se budou načítat z dat připravených přímo v kódu aplikace.
 
-1. Pomocí tlačíka _Use this template_ si vytvořte vlastní GitHub repozitář z [této šablony](https://github.com/Czechitas-podklady-WEB/barevne-palety). **Nepoužívejte** forkování, protože pak všichni ostatní uvidí váš projekt.
-1. Nově vytvořený repozitář si naklonujte na svůj počítat. **Neklonujte** přímo repozitář se zadáním, nemohli byste do něj pak pushnout.
+1. Vytvořte si repozitář ze šablony [cviceni-barevne-palety](https://github.com/Czechitas-podklady-WEB/cviceni-barevne-palety).
 1. Nainstalujte závislosti pomocí `npm install`.
 1. Prohlédněte si strukturu projektu. Aplikace zatím obsahuje pouze jednu komponentu `App` v hlavním souboru `index.jsx`. V té je ukázka toho, jak by měla výsledná webová stránka vypadat. Spusťte si projekt pomocí `npm run start` a prohlédněte si dvě ukázkové barevné palety vykreslené na stránce.
 1. V souboru `palettes.js` najdete připravená data pro další barevné palety, které budeme na stránce chtít zobrazit. Importujte si toto pole s daty do hlavního `index.jsx`, abychom s ním mohli dále pracovat.

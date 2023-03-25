@@ -3,7 +3,7 @@ title: Minutka 2
 demand: 3
 ---
 
-Stáhněte si [základ aplikace](https://github.com/Czechitas-podklady-WEB/minutka-2-zadani/archive/refs/heads/main.zip) pro vylepšenou kuchyňskou minutku.
+Vytvořte si repozitář ze šablony [cviceni-minutka-2](https://github.com/Czechitas-podklady-WEB/cviceni-minutka-2) pro vylepšenou kuchyňskou minutku.
 
 Umožněte uživateli zadat počet vteřin skrze připravené textové poličko. K získání hodnoty z políčka použijte vlastnost `value`. Nezapomeňte obsah políčka zkonvertovat na číslo. Minutku spusťte tlačítkem :i[Start].
 

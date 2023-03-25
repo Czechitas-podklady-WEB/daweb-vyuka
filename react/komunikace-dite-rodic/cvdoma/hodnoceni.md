@@ -5,7 +5,7 @@ demand: 3
 
 V tomto cvičení vdechneme život komponentě, která umožňuje hodnocení pomocí hvězdiček. To znáte například z hodnocení filmů nebo třeba restaurací a hotelů.
 
-1. Naklonujte si [repozitář](https://github.com/Czechitas-podklady-WEB/hodnoceni) obsahující React stránku s hodnocením pomocí pěti hvězdiček.
+1. Vytvořte si repozitář ze šablony [cviceni-hodnoceni](https://github.com/Czechitas-podklady-WEB/cviceni-hodnoceni) obsahující React stránku s hodnocením pomocí pěti hvězdiček.
 1. Prohlédněte si, jak fungují komponenty `Rating` a `Star`. V následujicích bodech budeme chtít zařídit, aby se při rozsvícení libovolné hvězdičky zvýšilo číslo udávající hodnocení o jedna. V tomto případě nám nebude vadit, když budeme hvězdičky rozsvěcet mimo pořadí
 1. V komponentě `Star` vyrobte handler pro událost `onClick`. Zařiďte, aby se hvězdička po kliknutí rozsvítila a po opětovném kliknutí opět zhasla.
 1. Do komponenty `Star` přidejte prop `onGlow`. Toto bude funkce, která se zavolá, když se hvězdička rozsvítí.

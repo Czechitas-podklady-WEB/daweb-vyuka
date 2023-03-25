@@ -1,5 +1,5 @@
 ---
-title: E-maily - načítání dat
+title: E-maily – načítání dat
 demand: 3
 ---
 

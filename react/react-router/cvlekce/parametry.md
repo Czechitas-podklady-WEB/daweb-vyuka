@@ -5,7 +5,7 @@ demand: 4
 
 Vyzkoušejme si práci s URL parametry v naší React Router aplikaci. Podíváme se na to, jak vytvořit detailovou stránku a dostat na ní relevantní data.
 
-1. Vycházejme z podkladů v [repozitáři zde](https://github.com/Czechitas-podklady-WEB/Cviceni-React-Router).
+1. Vytvořte si repozitář ze šablony [cviceni-react-router](https://github.com/Czechitas-podklady-WEB/cviceni-react-router).
 1. Po otevření projektu nezapomeňme na příkazy `npm install` a `npm start`, abychom mohli začít vyvíjet.
 1. V souboru `data.js` se podívejme na seznam faktur, jejich strukturu a na funkci `getInvoices`, která je jednoduše vrací. Tu můžeme použít v nějaké komponentě, abychom faktury získali a dále s nimi pracovali.
 1. Všimněme si, jak v souboru `Invoices.jsx` importujeme funkci `getInvoices` a jak ji voláme, abychom získali seznam faktur.

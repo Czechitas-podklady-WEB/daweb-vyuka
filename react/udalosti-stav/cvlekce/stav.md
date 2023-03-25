@@ -3,7 +3,7 @@ title: Stav
 demand: 4
 ---
 
-1. Vycházejte z podkladů v [repozitáři zde](https://github.com/Czechitas-podklady-WEB/Cviceni-React-stav).
+1. Vytvořte si repozitář ze šablony [cviceni-react-stav](https://github.com/Czechitas-podklady-WEB/cviceni-react-stav).
 1. Otevřete příkazovou řádku ve složce s podklady.
 1. Nainstalujte závislosti pomocí `npm install`.
 1. Spusťte vývojový server přes `npm start`.
@@ -11,4 +11,4 @@ demand: 4
 
 ---solution
 
-Vypracované řešení najdete v [repozitáři zde](https://github.com/Czechitas-podklady-WEB/Cviceni-React-stav/tree/reseni).
+Vypracované řešení najdete v původním repozitáři ve větvi [reseni](https://github.com/Czechitas-podklady-WEB/cviceni-react-stav/tree/reseni).

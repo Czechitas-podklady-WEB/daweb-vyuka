@@ -3,7 +3,7 @@ title: Události
 demand: 3
 ---
 
-1. Vycházejte z podkladů v [repozitáři zde](https://github.com/Czechitas-podklady-WEB/Cviceni-React-udalosti).
+1. Vytvořte si repozitář ze šablony [cviceni-react-udalosti](https://github.com/Czechitas-podklady-WEB/cviceni-react-udalosti).
 1. Otevřete příkazovou řádku ve složce s podklady.
 1. Nainstalujte závislosti pomocí `npm install`.
 1. Spusťte vývojový server přes `npm start`.
@@ -11,4 +11,4 @@ demand: 3
 
 ---solution
 
-Vypracované řešení najdete v [repozitáři zde](https://github.com/Czechitas-podklady-WEB/Cviceni-React-udalosti/tree/reseni).
+Vypracované řešení najdete v původním repozitáři ve větvi [reseni](https://github.com/Czechitas-podklady-WEB/Cviceni-React-udalosti/tree/reseni).

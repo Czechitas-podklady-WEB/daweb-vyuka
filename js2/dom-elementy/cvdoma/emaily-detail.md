@@ -1,5 +1,5 @@
 ---
-title: E-maily - detail
+title: E-maily – detail
 demand: 4
 ---
 

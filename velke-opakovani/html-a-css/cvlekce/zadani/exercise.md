@@ -3,9 +3,11 @@ title: Seznámení se s projektem
 demand: 1
 ---
 
-Zadání úkolu je v [repozitáři chata arnica](https://github.com/Czechitas-podklady-WEB/chata-arnica). Udělejte si **fork** a naklonujte si ho k sobě. Přesuňte se do správně složky a pomocí `npx serve` si projekt spusťte.
+Vytvořte si repozitář ze šablony [projekt-chata-arnica](https://github.com/Czechitas-podklady-WEB/projekt-chata-arnica).
 
-Ve složce uvidíte několik souborů. Kromě složek s obrázky a ikonkami jsou tu soubory
+Otevřete si projekt ve VS Code a v terminálu spusťte `npx serve`. Ověřte, že vám v prohlížeči funguje zobrazení výchozí stránky projektu.
+
+Ve složce projektu uvidíte několik souborů. Kromě složek s obrázky a ikonkami jsou tu soubory
 
 - `index.html` - tady je html struktura projektu, není potřeba nijak upravovat, pouze si ji prohlédněte a všímejte si, jaké třídy jsou na jakých elementech. Část v html je zakomentovaná, ta je připravená pro bonusový úkol.
 - `style.css` - tady jsou připravené styly. Styly **nepřepisujte**, pouze přidávejte své styly podle zadání
