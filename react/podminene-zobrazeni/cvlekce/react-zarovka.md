@@ -3,7 +3,7 @@ title: React žárovka
 demand: 2
 ---
 
-Vzpomeňte si na naše cvičení z vanilla JavaScriptu, kdy jsme rozsvěcovali a zhasínali žárovku. Zkusíme naši žárovku zprovoznit v Reactu. Styly a obrázky pro žárovku můžete v průběhu cvičení vykrádat z původního zadání v [tomto rezpitáří](https://github.com/Czechitas-podklady-WEB/zarovka-zadani).
+Vzpomeňte si na naše cvičení z vanilla JavaScriptu, kdy jsme rozsvěcovali a zhasínali žárovku. Zkusíme naši žárovku zprovoznit v Reactu. Styly a obrázky pro žárovku můžete v průběhu cvičení vykrádat z původního zadání v repozitáři [cviceni-zarovka](https://github.com/Czechitas-podklady-WEB/cviceni-zarovka).
 
 1. Založte si nový React projekt pomocí `npm init kodim-app`.
 1. Ve vašem React projektu vytvořte v samostatné složce komponentu `Bulb`. Zařiďte, aby vytvořila jeden `div` s třídou `bulb`.

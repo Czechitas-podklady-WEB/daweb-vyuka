@@ -17,4 +17,4 @@ Aplikaci _E-maily_ rozšíříme tak, aby zobrazovala detail e-mailu. Když uži
 
 ---solution
 
-Řešení célé série cvičení o e-mailech najdete v [samostatném repozitáři](https://github.com/Czechitas-podklady-WEB/emaily-dom-reseni).
+Řešení célé série cvičení o e-mailech najdete v repozitáři v branchi [reseni](https://github.com/Czechitas-podklady-WEB/cviceni-emaily-dom/tree/reseni).

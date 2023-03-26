@@ -3,7 +3,7 @@ title: Podcasty
 demand: 2
 ---
 
-1. Nastylovanou stránku zobrazující epizody jakéhosi podcastu najdete v repozitáři [cviceni-podcasty](https://www.github.com/Czechitas-podklady-WEB/cviceni-podcasty). Tento repozitář **nebudeme používat jako šablonu**. Místo toho si repozitář rovnou naklonujte – příkazem `git clone https://github.com/Czechitas-podklady-WEB/cviceni-podcasty.git`. Repozitář použijeme jenom jako vzor, nebudeme v něm nic měnit.
+1. Nastylovanou stránku zobrazující epizody jakéhosi podcastu najdete v repozitáři [cviceni-podcasty](https://github.com/Czechitas-podklady-WEB/cviceni-podcasty). Tento repozitář **nebudeme používat jako šablonu**. Místo toho si repozitář rovnou naklonujte – příkazem `git clone https://github.com/Czechitas-podklady-WEB/cviceni-podcasty.git`. Repozitář použijeme jenom jako vzor, nebudeme v něm nic měnit.
 1. Známým postupem si založte nový React projekt.
 1. Vytvořte komponentu `Episode`, která bude zobrazovat jednu podcastovou epizodu. Její props budou `num`, `title` a `guest`. Pomocí této komponenty zobrazte stejné dvě epizody, jako vidíte na připravené stránce. Z připravné stránky vykradněte CSS styly a zařiďte aby vaše aplikace vypadala stejně.
 1. Nezapomeňte pro vaši komponentu vytvořit separátní složku s vlastním JavaScriptem a CSS styly.
