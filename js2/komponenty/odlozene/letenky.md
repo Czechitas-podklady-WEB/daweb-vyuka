@@ -3,7 +3,7 @@ title: Letenky
 demand: 2
 ---
 
-Naklonujte si [repozitář](https://github.com/Czechitas-podklady-WEB/letenky-zadani) se stránkou, která se tváří, že zobrazuje výsledky vyhledávání letů. Vaším úkolem bude vytvořit komponentu zobrazující jeden let.
+Vytvořte si repozitář ze šablony [letenky-zadani](https://github.com/Czechitas-podklady-WEB/letenky-zadani) se stránkou, která se tváří, že zobrazuje výsledky vyhledávání letů. Vaším úkolem bude vytvořit komponentu zobrazující jeden let.
 
 1. Spusťte si připravenou stránku a prohlédněte si strukturu HTML.
 1. Přidejte do stránky hlavní soubor `index.js` a vytvořte v něm komponentu `Flight`. Ta bude na vstupu očekávat takovéto `props`:

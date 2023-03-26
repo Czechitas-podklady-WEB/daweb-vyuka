@@ -3,7 +3,7 @@ title: Hlavička
 demand: 2
 ---
 
-Vytvořte si repository na základě šablony [navbar](https://github.com/Czechitas-podklady-WEB/navbar).
+Vytvořte si repository na základě šablony [cvicei-navbar](https://github.com/Czechitas-podklady-WEB/cviceni-navbar).
 
 Nastylujte hlavičku s navigací podle výsledku:
 

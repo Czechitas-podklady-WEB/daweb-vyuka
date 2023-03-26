@@ -3,7 +3,7 @@ title: Kalkulačka
 demand: 2
 ---
 
-Vytvořte si repozitář ze šablony [kalkulacka-zadani](https://github.com/Czechitas-podklady-WEB/kalkulacka-zadani) se stránkou, která obsahuje číselník a display jednoduché kalkulačky.
+Vytvořte si repozitář ze šablony [cviceni-kalkulacka](https://github.com/Czechitas-podklady-WEB/cviceni-kalkulacka) se stránkou, která obsahuje číselník a display jednoduché kalkulačky.
 
 Zařiďte, aby se při kliknutí na libovolné tlačítko na displaji kalkulačky objevila cifra, která je na tlačíku napsaná. Postupujte dle návodu:
 

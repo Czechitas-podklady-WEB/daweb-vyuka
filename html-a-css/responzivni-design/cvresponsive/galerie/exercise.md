@@ -3,7 +3,7 @@ title: Galerie
 demand: 2
 ---
 
-Naklonujte si repository na základě šablony [zadani-galerie](https://github.com/Czechitas-podklady-WEB/zadani-galerie). V repository máte soubor `index.html`, `style.css` a obrázek se zadáním úkolu. Prohlédněte si pečlivě HTML strukturu, všímejte si jak jsou prvky do sebe zanořené.
+Vytvořte si repository na základě šablony [cviceni-galerie](https://github.com/Czechitas-podklady-WEB/cviceni-galerie). V repository máte soubor `index.html`, `style.css` a obrázek se zadáním úkolu. Prohlédněte si pečlivě HTML strukturu, všímejte si jak jsou prvky do sebe zanořené.
 
 Zařiďte, aby se fotogalerie měnila tak, že pro různé šířky prohlížeče je na jednom řádku vždy jiný počet obrázků vedle sebe.
 Viz obrázek `zadani-ukolu.jpg`.

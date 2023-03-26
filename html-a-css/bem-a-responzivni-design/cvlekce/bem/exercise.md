@@ -3,7 +3,7 @@ title: Zájezdy
 demand: 1
 ---
 
-Použijte šablonu [Zájezdy](https://github.com/Czechitas-podklady-WEB/BEM-cviceni).
+Použijte šablonu [cviceni-BEM](https://github.com/Czechitas-podklady-WEB/cviceni-BEM).
 Naklonujte si repozitář a spusťte si `npx serve`.
 
 Na stránce je připravený obsah stránky se zájezdy. Prohlédněte si strukturu HTML souboru a také soubor `style.css`.

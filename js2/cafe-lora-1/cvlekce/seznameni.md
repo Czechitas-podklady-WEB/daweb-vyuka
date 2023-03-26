@@ -3,7 +3,7 @@ title: Seznámení s projektem
 demand: 2
 ---
 
-Design cílové stránky v HTML a CSS spolu s veškerými obrázky najdete v [tomto repozitáři](https://github.com/Czechitas-podklady-WEB/Cafe-Lora). Poděkujte grafikům a kodérům, kteří pro vás tento návrh připravili a vy se už můžete zabývat pouze programováním.
+Design cílové stránky v HTML a CSS spolu s veškerými obrázky najdete v repozitáři [Cafe-Lora](https://github.com/Czechitas-podklady-WEB/Cafe-Lora). Poděkujte grafikům a kodérům, kteří pro vás tento návrh připravili a vy se už můžete zabývat pouze programováním.
 
 Repozitář s designem si naklonujte. **Neforkujte** jej a nedělejte v něm žádné změny, slouží **pouze jako zdroj HTML a CSS**. V následujících krocích si pro váš projekt založíte vlastní repozitář na svém GitHubu.
 

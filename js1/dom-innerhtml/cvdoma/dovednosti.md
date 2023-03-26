@@ -3,7 +3,7 @@ title: Dovednosti
 demand: 2
 ---
 
-Vytvořte si repozitář ze šablony [dovednosti-zadani](https://github.com/Czechitas-podklady-WEB/dovednosti-zadani).
+Vytvořte si repozitář ze šablony [cviceni-dovednosti](https://github.com/Czechitas-podklady-WEB/cviceni-dovednosti).
 V repozitáři najdete zdrojové soubory stránky se třemi posuvníky.
 Ty ukazují úroveň dovedností v různých oblastech.
 

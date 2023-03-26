@@ -3,7 +3,7 @@ title: Seznam filmů
 demand: 2
 ---
 
-Vytvořte si repozitář ze šablony [projekt-filmy](https://github.com/Czechitas-podklady-WEB/projekt-filmy), ve kterém máte připravený prázdný projekt se vzorovým HTML a CSS.
+Vytvořte si repozitář ze šablony [projekt-Filmy](https://github.com/Czechitas-podklady-WEB/projekt-Filmy), ve kterém máte připravený prázdný projekt se vzorovým HTML a CSS.
 
 Ve cvičení budete načítat filmy ze serverového API. K API existuje jednoduchá [dokumentace](https://apps.kodim.cz/daweb/trening-api/docs/filmove-api), kde se dozvíte vše potřebné.
 

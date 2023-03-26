@@ -4,7 +4,7 @@ demand: 2
 ---
 
 Vytvořte si repository na základě šablony .
-Na procvičení všech vlastnostní flex kontejneru a flex položek je pro vás v repository [cardio](https://github.com/Czechitas-podklady-WEB/cardio) připravena sada cvičení.
+Na procvičení všech vlastnostní flex kontejneru a flex položek je pro vás v repository [cviceni-cardio](https://github.com/Czechitas-podklady-WEB/cviceni-cardio) připravena sada cvičení.
 Vytvořte si z této šablony své repository a naklonujte si ho k sobě.
 V jednotlivých složkách je HTML a CSS soubor a také ukázka výsledku.
 Nastylujte jednotlivé stránky podle zadání na výsledných obrázcích.

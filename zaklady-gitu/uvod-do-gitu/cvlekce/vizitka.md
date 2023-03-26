@@ -3,9 +3,9 @@ title: Vizitka
 demand: 4
 ---
 
-1. Vytvořte si na GitHubu nový repozitář ze šablony [vizitka-2023](https://github.com/Czechitas-podklady-WEB/vizitka-2023).
+1. Vytvořte si na GitHubu nový repozitář ze šablony [cviceni-vizitka-2023](https://github.com/Czechitas-podklady-WEB/cviceni-vizitka-2023).
 1. Z terminálu, příkazové řádky repozitář naklonujte k sobě na počítač.
-   - `git clone https://github.com/{UZIVATELSKE_JMENO}/vizitka-2023.git` kde místo {UZIVATELSKE_JMENO} bude váš login na GitHubu
+   - `git clone https://github.com/{UZIVATELSKE_JMENO}/cviceni-vizitka-2023.git` kde místo {UZIVATELSKE_JMENO} bude váš login na GitHubu
    - Pokud jste v předchozím kroku nevybrali _Add a README file_, zobrazí se varování _„warning: You appear to have cloned an empty repository“_, které můžete ignorovat.
 1. V novém okně VS Code otevřete gitem vytvořenou složku `vizitka-2023`.
    - V okně zatím nic nebude. V panelu souborů vlevo bude soubor `README.md`.

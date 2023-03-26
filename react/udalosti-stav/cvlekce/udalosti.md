@@ -11,4 +11,4 @@ demand: 3
 
 ---solution
 
-Vypracované řešení najdete v původním repozitáři ve větvi [reseni](https://github.com/Czechitas-podklady-WEB/Cviceni-React-udalosti/tree/reseni).
+Vypracované řešení najdete v původním repozitáři ve větvi [reseni](https://github.com/Czechitas-podklady-WEB/cviceni-react-udalosti/tree/reseni).

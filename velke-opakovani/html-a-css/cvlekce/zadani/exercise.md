@@ -3,7 +3,7 @@ title: Seznámení se s projektem
 demand: 1
 ---
 
-Vytvořte si repozitář ze šablony [projekt-chata-arnica](https://github.com/Czechitas-podklady-WEB/projekt-chata-arnica).
+Vytvořte si repozitář ze šablony [projekt-Chata-Arnica](https://github.com/Czechitas-podklady-WEB/projekt-Chata-Arnica).
 
 Otevřete si projekt ve VS Code a v terminálu spusťte `npx serve`. Ověřte, že vám v prohlížeči funguje zobrazení výchozí stránky projektu.
 

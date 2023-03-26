@@ -3,7 +3,7 @@ title: Responzivní sloupce
 demand: 1
 ---
 
-Naklonujte si repository na základě šablony [zadani-sloupce](https://github.com/Czechitas-podklady-WEB/zadani-sloupce).
+Vytvořte si repository na základě šablony [cviceni-sloupce](https://github.com/Czechitas-podklady-WEB/cviceni-sloupce).
 Prohlédněte si pečlivě HTML strukturu, všímejte si jak jsou prvky do sebe zanořené.
 
 Nastavte CSS pro třídu `.kontejner` a `.sloupec`:

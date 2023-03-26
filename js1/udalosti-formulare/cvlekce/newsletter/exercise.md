@@ -22,6 +22,6 @@ Podle postupu níže vyrobte stránku podobnou té na obrázku.
 
 ---solution
 
-Kód: https://github.com/Czechitas-podklady-WEB/newsletter-reseni
+Kód: https://github.com/Czechitas-podklady-WEB/cviceni-newsletter
 
-Výsledek: https://czechitas-podklady-web.github.io/newsletter-reseni/
+Výsledek: https://czechitas-podklady-web.github.io/cviceni-newsletter/

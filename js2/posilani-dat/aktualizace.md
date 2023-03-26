@@ -40,4 +40,4 @@ element.querySelector('button').addEventListener('click', () => {
 
 Nyní si můžeme vyzkoušet, že po obnovení stránky náš seznam bude už ve správném stavu podle toho, jak s ním interagujeme na frontendu.
 
-Kód celé aplikace najdete na ve větvi [posilani-dat](https://github.com/Czechitas-podklady-WEB/prvni-komponenta/tree/posilani-dat) repozitáře s nakupním seznamem.
+Kód celé aplikace najdete ve větvi [posilani-dat](https://github.com/Czechitas-podklady-WEB/prvni-komponenta/tree/posilani-dat) repozitáře s nakupním seznamem.

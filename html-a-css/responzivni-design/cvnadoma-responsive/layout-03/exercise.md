@@ -3,7 +3,7 @@ title: Responzivní layout 03
 demand: 3
 ---
 
-Naklonujte si repository na základě šablony [zadani-layout-03](https://github.com/Czechitas-podklady-WEB/zadani-layout-03).
+Naklonujte si repository na základě šablony [cviceni-layout-03](https://github.com/Czechitas-podklady-WEB/cviceni-layout-03).
 V repositor máte soubor `index.html`, `style.css` a obrázek se zadáním úkolu.
 
 Nakódujte stránku podle obrázku `zadani-ukolu.jpg`.

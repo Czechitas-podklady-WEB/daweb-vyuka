@@ -3,7 +3,7 @@ title: Fine Dining
 demand: 1
 ---
 
-Použijte šablonu [Flexibilní layout cvičení](https://github.com/Czechitas-podklady-WEB/Flexibilni-layout-cviceni).
+Použijte šablonu [cviceni-flexibilni-layout](https://github.com/Czechitas-podklady-WEB/cviceni-flexibilni-layout).
 Naklonujte si repozitář a spusťte si `npx serve`.
 
 Na stránce je připravený obsah stránky. V souboru `style.css` je nastylovaný typ písma (font).
