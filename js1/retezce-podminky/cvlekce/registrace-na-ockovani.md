@@ -14,15 +14,18 @@ Vytvořte novou stránku, nebo pokračujte ve stránce z předchozí lekce pro r
 ---solution
 
 ```js
-const age = Number(prompt('Zadej svůj věk:'));
-if (age >= 65) {
-  const heslo = prompt('V pořádku. Teď zadej heslo:');
+const name = prompt('Zadejte své jméno:');
+const age = Number(prompt('Zadejte svůj věk:'));
+const heslo = prompt('Zadejte nové heslo:');
+
+if (age >= 65) { 
+  document.body.innerHTML += 'Věk je v pořádku.';
   if (heslo.length <= 8) {
-    document.body.innerHTML = 'Slabé heslo.';
+    document.body.innerHTML += 'Slabé heslo.';
   } else {
-    document.body.innerHTML = 'Heslo je v pořádku.';
+    document.body.innerHTML += 'Heslo je v pořádku.';
   }
 } else {
-  document.body.innerHTML = 'Nízký věk.';
+  document.body.innerHTML += 'Nízký věk.';
 }
 ```
