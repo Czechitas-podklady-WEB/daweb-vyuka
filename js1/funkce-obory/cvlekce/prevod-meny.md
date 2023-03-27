@@ -16,7 +16,7 @@ Výslednou částku zakrouhlete na celé koruny. Příklad použití:
 
 ```jscon
 > convertToCZK(25, 'EUR')
-675
+612
 ```
 
 Pokud funkce jako parametr dostane neznámý kód měny, vrátí jako výsledek `null`. Otestujte funkci v konzoli.
