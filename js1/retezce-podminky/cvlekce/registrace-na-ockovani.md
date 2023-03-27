@@ -18,7 +18,7 @@ const name = prompt('Zadejte své jméno:');
 const age = Number(prompt('Zadejte svůj věk:'));
 const heslo = prompt('Zadejte nové heslo:');
 
-if (age >= 65) { 
+if (age >= 65) {
   document.body.innerHTML += 'Věk je v pořádku.';
   if (heslo.length <= 8) {
     document.body.innerHTML += 'Slabé heslo.';
