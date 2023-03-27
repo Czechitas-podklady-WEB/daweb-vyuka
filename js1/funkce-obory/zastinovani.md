@@ -7,10 +7,10 @@ const age = Number(prompt('Zadej svůj věk:'));
 const message = 'Utíkej za mamkou';
 
 if (age < 18) {
-  document.innerHTML = `<p>${message}</p>`;
+  document.body.innerHTML = `<p>${message}</p>`;
 } else {
   const message = 'Vítej mezi dospěláky';
-  document.innerHTML = `<p>${message}</p>`;
+  document.body.innerHTML = `<p>${message}</p>`;
 }
 ```
 
