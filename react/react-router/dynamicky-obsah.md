@@ -60,7 +60,7 @@ cosnt invoices = [
     amount: 6500
   },
 ];
-}
+
 export const Invoice = () => {
   const { invoideId } = useParams();
   const invoiceData = invoices.find((inv) => inv.id === invoiceId);
