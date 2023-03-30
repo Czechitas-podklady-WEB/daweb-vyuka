@@ -1,3 +1,3 @@
 ## Cvičení: React Router
 
-::exc[cvlekce>navigace]
+::exc[cvlekce>detsky-koutek]

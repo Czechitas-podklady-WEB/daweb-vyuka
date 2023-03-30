@@ -20,7 +20,7 @@ import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider, Link } from 'react-router-dom';
 import './style.css';
 
-const Root = () => {
+const App = () => {
   return (
     <div className="container">
       <h1>Bookkeeper!</h1>
@@ -54,7 +54,7 @@ const InvoicesPage = () => {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root />,
+    element: <App />,
   },
   {
     path: "/expenses",
@@ -66,18 +66,14 @@ const router = createBrowserRouter([
   },
 ]);
 
-const App = () => {
-  return (
-    <RouterProvider router={router} />
-  );
-};
-
 createRoot(
   document.querySelector('#app'),
-).render(<App />);
+).render(
+  <RouterProvider router={router} />
+);
 ```
 
-Na začátku aplikace jsme vytvořili komponentu `Root`, která se zorazí jako hlavní stránky. Jednotlivé odkazy pak vedou na dvě podstránky `ExpensesPage` a `InvoicesPage`.
+Na začátku aplikace jsme vytvořili komponentu `App`, která se zorazí jako hlavní stránka.Jednotlivé odkazy pak vedou na dvě podstránky `ExpensesPage` a `InvoicesPage`.
 
 ### Komponenta `Link`
 
@@ -93,7 +89,7 @@ Náš objekt s routami upravíme takto:
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root />,
+    element: <App />,
     children: [
       {
         path: "expenses",
@@ -111,7 +107,7 @@ const router = createBrowserRouter([
 Vytvořili jsme tak dva potomky naší kořenové routy. Nyní musíme routeru říct, kde na stránce má naše potomky zobrazovat. To zařídíme pomoctí komponenty `Outlet`. 
 
 ```jsx
-const Root = () => {
+const App = () => {
   return (
     <div className="container">
       <h1>Bookkeeper!</h1>
