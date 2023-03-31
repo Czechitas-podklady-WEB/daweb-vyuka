@@ -1,4 +1,4 @@
-V předchozích lekcích jsme si ukázali, jak můžeme pomocí JavaScriptu měnit obsah stránky a jak vyrábět vlastní funkce. Díky těmto nástrojům se postupně bližíme k tomu, abychom uměli naše stránky udělat skutečně interaktivní. Nakonec chceme umět změnit obsah stránky ve chvíli, kdy uživatel klikne na tlačítko nebo mu umožnit vložit vstup pomocí textového políčka a tak dále. K tomu potřebujeme porozumět takzvaným :term{cs="událostem" en="events"}. Abychom uměli dobře používat události, bude se nám hodit vědět něco více o tom, jak fungují funkce.
+V předchozích lekcích jsme si ukázali, jak můžeme pomocí JavaScriptu měnit obsah stránky a jak vyrábět vlastní funkce. Díky těmto nástrojům se postupně bližíme k tomu, abychom uměli naše stránky udělat skutečně interaktivní. Budeme chtít umět změnit obsah stránky ve chvíli, kdy uživatel klikne na tlačítko, umožnit uživateli vložit vstup pomocí textového políčka a mnoho dalších interakcí. K tomu potřebujeme porozumět takzvaným :term{cs="událostem" en="events"}. Abychom uměli dobře používat události, bude se nám hodit vědět něco více o tom, jak fungují funkce.
 
 ## Funkce vyššího řádu
 
@@ -14,81 +14,116 @@ Ohledně toho, co vše je možné s funkcemi dělat, jsme teprve na začátku. J
 
 Jelikož každá funkce je zcela rovnoprávná hodnota, můžeme ji nejen uložit do proměnné, ale také předat jiné funkci jako vstup. Je tedy možné zavolat funkci a na vstup jí při tom předat jinou funkci jako hodnotu. Taková myšlenka může ze začátku působit dost odvážně a neuchopitelně. Postupujme tedy pomaličku a s rozvahou.
 
-### Rozvoz jídla
+### Kulturní akce
 
-Představme si Pražskou restauraci, která rozváží jídlo k jednotlivým zákazníkům. K rozvozu jídla máme k dispozici následující tři rozvozové služby, každou s jiným cenníkem a jinou úrovní kvality služeb.
+Představme si stránku, která zobrazuje seznam kulturních akcí ve vašem městě. U každé akce budeme chtít pro jednoduchost evidovat její název a den konání. 
 
-**Hejsci na kolech**
-: Šance, že zásilka bude skutečně doručena, je 90%. Pokud se doručení povede, je to vždy do 30 minut do okolí 5 km.
+Nejprve si připravíme jednoduchý `div`, do kterého budeme skládat jednotlivé akce.
 
-**Machři, co maj drony**
-: Šance, že zásilka bude skutečně doručena, je 50%. Pokud se doručení povede, je to vždy do deseti minut po celé Praze.
+```html
+<body>
+  <div class="shows-list"></div>
+</body>
+```
 
-**Borci v autech**
-: Zásilka je doručena vždy. Doručení však může trvat až dvě hodiny.
-
-Napišme si funkce, které simulují naše doručovací společnosti.
+Den konání budeme v JavaScriptu reprezentovat takovýmto objektem:
 
 ```js
-const hejsci = (zasilka) => {
-  if (Math.random() > 0.1) {
-    return `Zásilka „${zasilka}“ doručena za 30 minut, kámo.`;
-  }
-
-  return `Zásilka „${zasilka}“ se ztratila. Kurýra přepadla smečka hladových bezdomovců.`;
-};
-
-const machri = (zasilka) => {
-  if (Math.random() > 0.5) {
-    return `Zásilka „${zasilka}“ doručena za 10 minut.`;
-  }
-
-  return `Zásilka „${zasilka}“ ztracena. Drona přepadlo hejno hladových holubů.`;
-};
-
-const borci = (zasilka) => {
-  return `Zásilka „${zasilka}“ doručena s přehledem za dvě hodiny.`;
-};
+{
+  year: 2023,
+  month: 4,
+  day: 25,
+}
 ```
 
-Tyto funkce si můžeme vyzkoušet například v konzoli.
-
-```jscon
-> machri('Cous cous se zeleninou')
-'Zásilka „Cous cous se zeleninou“ ztracena. Drona přepadlo hejno hladových holubů.'
-```
-
-Představme si nyní, že si jako zákazník objednáte jídlo a chcete si zvolit, jakou službou vám bude doručeno. Můžeme tedy napsat funkci `objednat`, které předáme objednané jídlo a funkci, která se má použít k doručení. Ve funkci `objednat` vygeneruje číslo objednávky a použije zadanou funkci k doručení balíčku.
+Můžeme si nyní snadno napsat funkci, která přijme dva parametry `name` a `date` a vyrobí pro nás jednoduché HTML pro jednu akci.
 
 ```js
-const objednat = (jidlo, doruceni) => {
-  const cislo = Math.floor(Math.random() * 1000);
-  const id = String(cislo).padStart(4, '0');
-  const balicek = `${jidlo} (${id})`;
-  return doruceni(balicek);
+const renderShow = (name, date) => {
+  return `
+    <div class="show">
+      <h2>${name}</h2>
+      <p>${date.day}.${date.month}.${date.year}</p>
+    </div>
+  `;
+}
+```
+
+Pak můžeme snadno do stránky vložit několik klasických akcí:
+
+```js
+const showsList = document.querySelector('.shows-list');
+showsList.innerHTML += renderShow(
+  'Matrix', { year: 2023, month: 4, day: 25 }
+);
+showsList.innerHTML += renderShow(
+  'Spejbl a Hurvínek', { year: 2023, month: 4, day: 11 }
+);
+```
+
+Takto bychom mohli se stránkou být spokojeni. Pokud se však s tímto webem budeme chtít vydat do světa, narazíme na jednu potíž. V každé zemi se datum formátuje trošku jinak. Nechceme ale naši funkci `renderShow` zaplevelit všemi možnými formáty data, jaké na světě existují. To by se nám z hezké funkce stala ohromná obluda. Nejlepší by bylo, kdyby funkce `renderShow` dokázala zodpovědnost za formátování data delegovat na někoho jiného.
+
+To můžeme udělat tak, že si vytvoříme například funkci, která datum formátuje po česku, tedy jako 25.4.2023.
+
+```js
+const formatCs = (date) => {
+  return `${date.day}.${date.month}.${date.year}`;
 };
 ```
 
-Všimněte si, že funkce `objednat` se chová k parametru `doruceni` jako by to byla funkce. Očekáváme tedy, že v tomto parametru skutečně obdržíme nějakou funkci, kterou poté můžeme zavolat. Zkusme třeba naši funkci `objednat` zavolat s funkcí `hejsci`.
+Ve Velké Británii by však očekávali datum spíš jako 4/25/2023:
 
-```jscon
-> objednat('Hovězí cheeseburger', hejsci)
-'Zásilka „Hovězí cheeseburger (0397)“ doručena za 30 minut, kámo.'
+```js
+const formatGb = (date) => {
+  return `${date.month}/${date.day}/${date.year}`;
+};
 ```
 
-Pokud si chceme být doručením opravdu jistí, můžeme použít Borce v autech.
+Ve spojených státech je zase zvykem psát spíše pomlčky 4-25-2023:
 
-```jscon
-> objednat('Hovězí cheeseburger', borci)
-'Zásilka „Hovězí cheeseburger (7354)“ doručena s přehledem za dvě hodiny.'
+```js
+const formatUs = (date) => {
+  return `${date.month}-${date.day}-${date.year}`;
+};
 ```
 
-Všimněte si, že funkce `hejsci` a `borci` předáváme jako celek, tedy jako hodnotu. Nevoláme je tady my sami, nýbrž je předáváme funkci `objednat`, aby ta je zavolala dle svého vlastního uvážení.
+Nyní se dostáváme k jádru pudla. Naše funkce `renderShow` může mít třetí parametr `formatDate`, ve kterém bude očekávat **funkci**. Tuto funkci pak použije ke zformátování data.
 
-Dejte si pozor na následující chybu, kdy funkci `hejsci` místo předávání omylem zavoláme a funkce `objednat` tak jako druhý vstup nedostane funkci `hejsci` ale její výsledek.
-
-```jscon
-> odeslat('6682', hejsci())
+```js
+const renderShow = (name, date, formatDate) => {
+  return `
+    <div class="show">
+      <h2>${name}</h2>
+      <p>${formatDate(date)}</p>
+    </div>
+  `;
+}
 ```
 
-Způsob uvažování, na který si díky tomuto příkladu snažíme zvyknout je, že občas můžeme mít funkci jako například `objednat`, která očekává na vstupu nějako jinou funkci, kterou poté sama zavolá. Takových funkcí uvidíme během naší pouti JavaScriptovou krajinou docela dost a budeme je často používat.
+Funkce `renderShow` pak můžeme zavolat například takto:
+
+```js
+showsList.innerHTML += renderShow(
+  'Matrix', { year: 2023, month: 4, day: 25 }, formatCs,
+);
+```
+
+nebo takto:
+
+```js
+showsList.innerHTML += renderShow(
+  'Matrix', { year: 2023, month: 4, day: 25 }, formatGb,
+);
+```
+
+Všimněte si, že funkci `formatCs` předáváme jako celek, tedy jako **hodnotu**. Nevoláme ji tedy my sami, nýbrž ji předáváme funkci `renderShow`, aby ta ji pak zavolala ve chvíli, kdy bude potřebovat naformátovat datum. Tímto vlastně funkci `renderShow` jakoby **podstrčíme** nějakou logiku, o které ona dopředu nic neví a jen ji vykoná.
+
+Dejte si **velký pozor** na následující chybu, kdy funkci `formatCs` místo předávání omylem zavoláme a funkce `renderShow` tak jako třetí vstup nedostane funkci `formatCs` nýbrž její **výsledek**.
+
+```js
+showsList.innerHTML += renderShow(
+  'Matrix', { year: 2023, month: 4, day: 25 }, formatCs(),
+);
+```
+
+Způsob uvažování, na který si díky tomuto příkladu snažíme zvyknout je, že občas můžeme mít funkci jako například `renderShow`, která očekává na vstupu nějakou jinou funkci, kterou poté sama zavolá. Takových funkcí uvidíme během naší pouti JavaScriptovou krajinou docela dost a budeme je často používat.
