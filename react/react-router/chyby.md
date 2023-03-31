@@ -6,7 +6,7 @@ Pokud například v naší ukázkové účetní aplikaci zajdeme na adresu `/naz
 
 Možná jste už někdy narazili na hezkou chybovou stránku například na [GitHubu](https://github.com/abrakadabra-treskyplesky).
 
-Pro naši chybovou stránku si nejprve vyrobíme komponentu `ErrorPage`. 
+Pro naši chybovou stránku si nejprve vyrobíme komponentu `ErrorPage`.
 
 ```jsx
 const ErrorPage = () => {
@@ -16,7 +16,7 @@ const ErrorPage = () => {
       <p>Asi jste se spletli</p>
     </main>
   );
-}
+};
 ```
 
 V chybové zprávě o neexistující stránce se sluší uvést kód 404, což je standardní HTTP kód pro požadavek, který nikam nevede.

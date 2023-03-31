@@ -16,7 +16,7 @@ Jelikož každá funkce je zcela rovnoprávná hodnota, můžeme ji nejen uloži
 
 ### Kulturní akce
 
-Představme si stránku, která zobrazuje seznam kulturních akcí ve vašem městě. U každé akce budeme chtít pro jednoduchost evidovat její název a den konání. 
+Představme si stránku, která zobrazuje seznam kulturních akcí ve vašem městě. U každé akce budeme chtít pro jednoduchost evidovat její název a den konání.
 
 Nejprve si připravíme jednoduchý `div`, do kterého budeme skládat jednotlivé akce.
 
@@ -46,19 +46,19 @@ const renderShow = (name, date) => {
       <p>${date.day}.${date.month}.${date.year}</p>
     </div>
   `;
-}
+};
 ```
 
 Pak můžeme snadno do stránky vložit několik klasických akcí:
 
 ```js
 const showsList = document.querySelector('.shows-list');
-showsList.innerHTML += renderShow(
-  'Matrix', { year: 2023, month: 4, day: 25 }
-);
-showsList.innerHTML += renderShow(
-  'Spejbl a Hurvínek', { year: 2023, month: 4, day: 11 }
-);
+showsList.innerHTML += renderShow('Matrix', { year: 2023, month: 4, day: 25 });
+showsList.innerHTML += renderShow('Spejbl a Hurvínek', {
+  year: 2023,
+  month: 4,
+  day: 11,
+});
 ```
 
 Takto bychom mohli se stránkou být spokojeni. Pokud se však s tímto webem budeme chtít vydat do světa, narazíme na jednu potíž. V každé zemi se datum formátuje trošku jinak. Nechceme ale naši funkci `renderShow` zaplevelit všemi možnými formáty data, jaké na světě existují. To by se nám z hezké funkce stala ohromná obluda. Nejlepší by bylo, kdyby funkce `renderShow` dokázala zodpovědnost za formátování data delegovat na někoho jiného.
@@ -97,14 +97,16 @@ const renderShow = (name, date, formatDate) => {
       <p>${formatDate(date)}</p>
     </div>
   `;
-}
+};
 ```
 
 Funkce `renderShow` pak můžeme zavolat například takto:
 
 ```js
 showsList.innerHTML += renderShow(
-  'Matrix', { year: 2023, month: 4, day: 25 }, formatCs,
+  'Matrix',
+  { year: 2023, month: 4, day: 25 },
+  formatCs
 );
 ```
 
@@ -112,7 +114,9 @@ nebo takto:
 
 ```js
 showsList.innerHTML += renderShow(
-  'Matrix', { year: 2023, month: 4, day: 25 }, formatGb,
+  'Matrix',
+  { year: 2023, month: 4, day: 25 },
+  formatGb
 );
 ```
 
@@ -122,7 +126,9 @@ Dejte si **velký pozor** na následující chybu, kdy funkci `formatCs` místo 
 
 ```js
 showsList.innerHTML += renderShow(
-  'Matrix', { year: 2023, month: 4, day: 25 }, formatCs(),
+  'Matrix',
+  { year: 2023, month: 4, day: 25 },
+  formatCs()
 );
 ```
 

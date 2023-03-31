@@ -40,7 +40,7 @@ const ExpensesPage = () => {
       <p>Here are you business expenses for the last month</p>
     </main>
   );
-}
+};
 
 const InvoicesPage = () => {
   return (
@@ -49,26 +49,24 @@ const InvoicesPage = () => {
       <p>Here are you issued invoices for the last month</p>
     </main>
   );
-}
+};
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <App />,
   },
   {
-    path: "/expenses",
+    path: '/expenses',
     element: <ExpensesPage />,
   },
   {
-    path: "/invoices",
+    path: '/invoices',
     element: <InvoicesPage />,
   },
 ]);
 
-createRoot(
-  document.querySelector('#app'),
-).render(
+createRoot(document.querySelector('#app')).render(
   <RouterProvider router={router} />
 );
 ```
@@ -88,15 +86,15 @@ Náš objekt s routami upravíme takto:
 ```js
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <App />,
     children: [
       {
-        path: "expenses",
+        path: 'expenses',
         element: <ExpensesPage />,
       },
       {
-        path: "invoices",
+        path: 'invoices',
         element: <InvoicesPage />,
       },
     ],
@@ -104,7 +102,7 @@ const router = createBrowserRouter([
 ]);
 ```
 
-Vytvořili jsme tak dva potomky naší kořenové routy. Nyní musíme routeru říct, kde na stránce má naše potomky zobrazovat. To zařídíme pomoctí komponenty `Outlet`. 
+Vytvořili jsme tak dva potomky naší kořenové routy. Nyní musíme routeru říct, kde na stránce má naše potomky zobrazovat. To zařídíme pomoctí komponenty `Outlet`.
 
 ```jsx
 const App = () => {
@@ -122,4 +120,4 @@ const App = () => {
 };
 ```
 
-Nyní už naše aplikace bude mnohem hezčí a přehlednější. 
+Nyní už naše aplikace bude mnohem hezčí a přehlednější.
