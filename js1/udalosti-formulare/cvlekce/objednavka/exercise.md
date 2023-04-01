@@ -19,6 +19,15 @@ Podle instrukcí níže vytvořte jednoduchý formulář pro dokončení objedn�
 1. Přidejte tlačítko „Odeslat objednávku“.
 1. Přidejte posluchače na událost `submit`. Jakmile uživatel formulář odešle, nahraďte celý formulář zprávou „Objednávka odeslána ke zpracování.“
 
+#### Bonus
+
+- Platební karta musí mít přesně 16 číslic. Pokud uživatel zadá méně nebo více, zobrazte pod formulářem chybovou hlášku. Pro hlášku si v HTML souboru připravte prvek `<p>`. Hlášku zobrazte s každým novým vstupem od uživatele (událost `input` na prvku `<input>`). Pokud je vše v pořádku, chybovou hlášku smažte.
+
+  - Pro příliš krátkou kartu použijte text „**Číslo karty je příliš krátké. Chybí X číslic.**“
+  - Pro příliš dlouhou kartu použijte text „**Číslo karty je moc dlouhé. Přebývá X číslic.**“
+
+- Zkuste místo události `input` poslouchat na událost `change`. Jak se liší jejich chování? Která varianta je lepší? `input` nebo `change`?
+
 ---solution
 
 Obsah souboru `index.html`:
