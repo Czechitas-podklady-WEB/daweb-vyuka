@@ -15,6 +15,10 @@ Zařiďte, aby se při kliknutí na libovolné tlačítko na displaji kalkulačk
 1. Pověste váš posluchač na všechna tlačítka s ciframi.
 1. U běžné kalkulačky mačkáním tlačítek postupně sestavujeme nějaké víceciferné číslo. Zařiďte, aby cifry na displeji přibývaly jako na běžné kalkulačce. Také zaříďte, aby se na displej nedalo vložit delší než devíticiferné číslo.
 
+#### Bonus
+
+- Pomocí podmínky `if` zařiďte, aby číslo na displayi nezačínalo nulou, ledaže je tam nula samotná.
+
 ---solution
 
 ```js
@@ -37,4 +41,19 @@ document.querySelector('#btn-6').addEventListener('click', handleDigitClick);
 document.querySelector('#btn-7').addEventListener('click', handleDigitClick);
 document.querySelector('#btn-8').addEventListener('click', handleDigitClick);
 document.querySelector('#btn-9').addEventListener('click', handleDigitClick);
+```
+
+#### Bonus
+
+```js
+const handleDigitClick = (event) => {
+  if (display.textContent.length < 9) {
+    const value = event.target.textContent;
+    if (display.textContent === '0') {
+      display.textContent = value;
+    } else {
+      display.textContent += value;
+    }
+  }
+};
 ```
