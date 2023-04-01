@@ -25,7 +25,12 @@ npm init kodim-app cviceni-objednavka html-css-js
 1. Přidejte tlačítko „**Odeslat objednávku**“.
 1. Přidejte posluchače na událost `submit`. Jakmile uživatel formulář odešle, nahraďte celý formulář zprávou „**Objednávka odeslána ke zpracování.**“
 
-#### Bonus
+#### Bonus 1
+
+- Zkuste si po odeslání formuláře zobrazit všechny hodnoty, které uživatel vyplnil. Vypište je do konzole.
+- Pohledem do konzole ověřte, že pokud uživatel zadá jako dopravu **Českou poštu**, v konzoli se objeví hodnota `posta`.
+
+#### Bonus 2
 
 - Platební karta musí mít přesně 16 číslic. Pokud uživatel zadá méně nebo více, zobrazte pod formulářem chybovou hlášku. Pro hlášku si v HTML souboru připravte prvek `<p>`. Hlášku zobrazte s každým novým vstupem od uživatele (událost `input` na prvku `<input>`). Pokud je vše v pořádku, chybovou hlášku smažte.
 
