@@ -28,3 +28,15 @@ updateSkill('skill1', html);
 updateSkill('skill2', css);
 updateSkill('skill3', js);
 ```
+
+Alternativa funkce updateSkill, která najde `div` podle `id` a pak hledá elementy s třídou `skill__progress` a `skill__value` v nalezeném elementu:
+
+```js
+const updateSkill = (id, uroven) => {
+  const skillElement = document.getElementById(id)
+  const progressElement = skillElement.querySelector('.skill__progress');
+  const valueElement = skillElement.querySelector('.skill__value');
+  valueElement.textContent = `${uroven} / 100`;
+  progressElement.style.width = `${uroven}%`;
+};
+```
