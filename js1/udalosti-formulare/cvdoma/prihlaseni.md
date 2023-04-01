@@ -5,7 +5,10 @@ demand: 2
 
 Vytvořte klasický přihlašovací formulář, do kterého uživatel zadá svůj e-mail a heslo a stránka ověří, zda má uživatel přístup do systému. Postupujte podle instrukcí níže.
 
-1. Založte si HTML stránku s JavaScriptem, třeba příkazem `npm init kodim-app cviceni-prihlaseni html-css-js`.
+1. Založte si HTML stránku s JavaScriptem, třeba následujícím příkazem:
+  ```sh
+  npm init kodim-app cviceni-prihlaseni html-css-js
+  ```
 1. V `index.html` vytvořte s formulář, který bude mít jedno textové pole pro e-mail (typ `email`), jedno pole pro heslo (typ `password`) a tlačíto „Přihlásit“.
 1. Na začátek souboru `index.js` vložte následující objekt představující jednoho uživatele. Budeme se tvářit, že jsme jej získali například z databáze.
    ```js
