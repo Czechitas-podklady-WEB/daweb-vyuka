@@ -3,7 +3,7 @@ title: Pole v divadle
 demand: 1
 ---
 
-Celé toto cvičení prováďejte v JavaScript konzoli.
+Celé toto cvičení provádějte v JavaScript konzoli.
 
 1. Vytvořte nějaké pole celých čísel, například počty diváků na několika po sobě jdoucích divadelních představeních. Použije metodu `push` a přidejte do pole počet diváků na novém představení.
 1. Vytvořte nějaké pole desetinných čísel, například zaplněnost divadla v několika po sobě jdoucích představeních.
