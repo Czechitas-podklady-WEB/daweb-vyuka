@@ -6,7 +6,7 @@ demand: 2
 Pojďme dále rozvinout cvičení s [vyplňováním e-mailu](/kurzy/daweb/js1/funkce-obory/cv-funkce#cvlekce%3Ee-mail-telo) z předchozí lekce.
 
 1. Vytvořte si repozitář ze šablony [cviceni-email](https://github.com/Czechitas-podklady-WEB/cviceni-email) a pojmenujte ho **email2-zadani**.
-1. Do souboru `index.js` vložte kód [vzorového řešení](/kurzy/daweb/js1/funkce-obory/cv-funkce#cvlekce%3Ee-mail-telo). Na tomto kódu budeme dále stavět.
+1. Do souboru `index.js` vložte kód [vzorového řešení](/kurzy/daweb/js1/funkce-obory/cv-funkce/cvlekce>e-mail-telo#reseni). Na tomto kódu budeme dále stavět.
 1. Všimněte si funkce `goodbye`, která generuje pozdrav na konec e-mailu. Přidejte alespoň dvě další funkce, kde každá generuje k zadanému jménu jiný typ pozdravu. Například `formalGoodbye` pro velmi formální pozdravy jako „S uctivou poklonou…“, nebo naopak `rudeGoodbye` typu „Se měj…“, pokud se chcete rozloučit nevybíravě.
 1. Udělejte z funkce `fillBody` funkci vyššího řádu. Přidejte jí třetí parametr `goodbyeFunction`, který představuje funkci, pomocí které se má vygenerovat závěrečný pozdrav. Vyzkoušejte zavolat funkci `fillBody` postupně s každou z vašich zdravících funkcí a ověřte, že vše správně funguje.
 
