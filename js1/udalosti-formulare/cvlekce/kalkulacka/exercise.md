@@ -25,10 +25,11 @@ Zařiďte, aby se při kliknutí na libovolné tlačítko na displaji kalkulačk
 const display = document.querySelector('.display');
 
 const handleDigitClick = (event) => {
-  if (display.textContent.length < 9) {
-    const value = event.target.textContent;
-    display.textContent += value;
+  if (display.textContent.length >= 9) {
+    return;   // Uživatel se pokouší zadat delší číslo, než kolik máme číslic na displeji – nedovolíme mu to.
   }
+  const digit = event.target.textContent;
+  display.textContent += digit;
 };
 
 document.querySelector('#btn-0').addEventListener('click', handleDigitClick);
@@ -47,13 +48,14 @@ document.querySelector('#btn-9').addEventListener('click', handleDigitClick);
 
 ```js
 const handleDigitClick = (event) => {
-  if (display.textContent.length < 9) {
-    const value = event.target.textContent;
-    if (display.textContent === '0') {
-      display.textContent = value;
-    } else {
-      display.textContent += value;
-    }
+  if (display.textContent.length >= 9) {
+    return;
+  }
+  const digit = event.target.textContent;
+  if (display.textContent === '0') {
+    display.textContent = digit;
+  } else {
+    display.textContent += digit;
   }
 };
 ```
