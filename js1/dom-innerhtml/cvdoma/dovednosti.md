@@ -33,7 +33,7 @@ Alternativa funkce updateSkill, která najde `div` podle `id` a pak hledá eleme
 
 ```js
 const updateSkill = (id, uroven) => {
-  const skillElement = document.getElementById(id)
+  const skillElement = document.getElementById(id);
   const progressElement = skillElement.querySelector('.skill__progress');
   const valueElement = skillElement.querySelector('.skill__value');
   valueElement.textContent = `${uroven} / 100`;
