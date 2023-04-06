@@ -23,7 +23,7 @@ Nyn již máme ve stavu `journey` uložené všechny potřebné informace k tomu
        'Content-Type': 'application/json',
      },
      body: JSON.stringify({
-       action: 'create'
+       action: 'create',
        seat: journey.autoSeat,
        journeyId: journey.journeyId,
      }),
