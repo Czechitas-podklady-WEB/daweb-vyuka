@@ -26,7 +26,7 @@ const display = document.querySelector('.display');
 
 const handleDigitClick = (event) => {
   if (display.textContent.length >= 9) {
-    return;   // Uživatel se pokouší zadat delší číslo, než kolik máme číslic na displeji – nedovolíme mu to.
+    return; // Uživatel se pokouší zadat delší číslo, než kolik máme číslic na displeji – nedovolíme mu to.
   }
   const digit = event.target.textContent;
   display.textContent += digit;

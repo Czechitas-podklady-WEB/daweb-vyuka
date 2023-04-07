@@ -15,5 +15,11 @@ Program napsaný pomocí lambda funkcí vám možná přijde hůř k přečtení
 Podobně jako u funkce `setTimout`, anonymní funkci můžeme předat i naší známé funkci `calc`. Zkuste určit, co bude výsledkem následujícího výrazu a proč.
 
 ```js
-calc(13, (x, y) => { return (x + y) / 2 }, 7)
+calc(
+  13,
+  (x, y) => {
+    return (x + y) / 2;
+  },
+  7
+);
 ```

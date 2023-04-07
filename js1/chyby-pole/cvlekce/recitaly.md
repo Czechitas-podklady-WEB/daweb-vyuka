@@ -37,6 +37,7 @@ U všech následujících úryvků kódů vytvořte technický popis jejich fung
 ---solution
 
 ### 1
+
 ```js
 const average = (a, b) => {
   return (a + b) / 2;
@@ -49,6 +50,7 @@ const average = (a, b) => {
 Funkce `average` počítá průměrnou hodnotu dvou zadaných čísel.
 
 ### 2
+
 ```js
 const titleElement = document.querySelector('.title');
 titleElement.textContent = 'Nadpis';
@@ -60,6 +62,7 @@ titleElement.textContent = 'Nadpis';
 Kód nastaví text „Nadpis“ do prvního elekemntu se třídou `title` v dokumentu. (Pokud by v dokumentu takový element nebyl, kód spadne s chybou.)
 
 ### 3
+
 ```js
 let time = 0;
 setTimeout(() => {
@@ -67,6 +70,7 @@ setTimeout(() => {
   console.log('time', time);
 }, 1000);
 ```
+
 1. Vytvořím proměnnou `time`, do které se uloží číslo `0`. Obsah proměnné bude možné později v kódu změnit.
 1. Zavolám funkci `setTimeout()`, která zavolá mou funkci (_callback_) za jednu sekundu.
 1. Předaná callback funkce je anonymní.
@@ -77,11 +81,13 @@ setTimeout(() => {
 Kód jednu sekundu po načtení stránky vypíše do konzole `time 1`.
 
 ### 4
+
 ```js
 buttonOk.addEventListener('click', () => {
   document.body.innerHTML = '<p>Everything OK</p>';
 });
 ```
+
 1. Kód předpokládá existenci proměnné `buttonOk`, která obsahuje DOM element (pravděpodobně potvrzovací tlačítko).
 1. Na proměnné `buttonOk` se volá metoda addEventListener se dvěma parametry. Metoda `addEventListener` nastaví posluchače událostí na DOM elementu `buttonOk`.
 1. První parametr metody `addEventListener` je název události, které chceme poslouchat. Zde se nastavuje událost `click`, tedy kliknutí tlačítkem myši.
@@ -94,6 +100,7 @@ buttonOk.addEventListener('click', () => {
 Při kliknutí na tlačítko `buttonOk` se přepíše obsah celé webové stránky, nahradí se jedním odstavcem, ve kterém bude text „Everything OK“.
 
 ### 5
+
 ```js
 document.addEventListener('keyup', (event) => {
   if (event.code === 'KeyP') {
