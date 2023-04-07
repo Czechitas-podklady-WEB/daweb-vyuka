@@ -2,9 +2,15 @@ title: Cykly
 lead: Síla počítačů spočívá především v tom, že dokáží velmi rychle opakovaně vykonávat nějakou činnost, tedy provádět takzvaný cyklus.
 access: claim
 sections:
-  - zaklady-cyklu
-  - cv-cykly
-  - slozitejsi-cykly
-  - cv-slozitejsi-cykly
+  - uvod
+  - pole-a-foreach
+  - nodelist-a-foreach
+  - cv-foreach
+  - map
+  - cv-map
+  - cteni-na-doma
+  - shrnuti
   - ulozky-na-doma
   - volitelne-ulozky
+  - zaklady-cyklu
+  - slozitejsi-cykly
