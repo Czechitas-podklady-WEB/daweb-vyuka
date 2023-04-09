@@ -25,3 +25,13 @@ const ovciJmena = [
 Pomocí metody `forEach` do stránky vepište deset za sebou jdoucích vět v následující podobě:
 
 > Ovečka Bětuška jako 1. přeskočila přes plot. Ovečka Cína jako 2. přeskočila přes plot…
+
+---solution
+
+```js
+ovciJmena.forEach((jmeno, index) => {
+  document.body.textContent += `Ovečka ${jmeno} jako ${
+    index + 1
+  }. přeskočila přes plot. `;
+});
+```
