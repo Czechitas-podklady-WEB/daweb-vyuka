@@ -1,0 +1,27 @@
+---
+title: Na dobrou noc
+demand: 2
+---
+
+Vytvořte JavaScriptový program, který vepíše do stránky ovčí příběh pro děti na dobrou noc. Výsledkem by měl být text počítající ovečky.
+
+Využijte násjedujících deset jmen oveček:
+
+```js
+const ovciJmena = [
+  'Bětuška',
+  'Cína',
+  'Dolly',
+  'Heidy',
+  'Líza',
+  'Belinda',
+  'Celia',
+  'Elvíra',
+  'Karla',
+  'Otýlie',
+];
+```
+
+Pomocí metody `forEach` do stránky vepište deset za sebou jdoucích vět v následující podobě:
+
+> Ovečka Bětuška jako 1. přeskočila přes plot. Ovečka Cína jako 2. přeskočila přes plot…
