@@ -5,6 +5,8 @@ demand: 2
 
 Vytvořte JavaScriptový program, který vepíše do stránky ovčí příběh pro děti na dobrou noc. Výsledkem by měl být text počítající ovečky.
 
+::fig[ovce]{src=assets/ovce.jpg}
+
 Využijte násjedujících deset jmen oveček:
 
 ```js
