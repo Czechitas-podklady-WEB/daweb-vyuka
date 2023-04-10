@@ -1,3 +1,3 @@
 ## Cvičení: Metoda `map`
 
-// K doplnění
+::exc[cvlekce>nezaplacene-objednavky]
