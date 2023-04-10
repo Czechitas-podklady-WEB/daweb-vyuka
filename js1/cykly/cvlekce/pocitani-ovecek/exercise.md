@@ -22,7 +22,7 @@ const ovciJmena = [
   'Karla',
   'Otýlie',
   'Škraboška',
-  'Pampeliška',
+  'Kopretinka',
   'Berta',
   'Růženka',
   'Bobinka',
