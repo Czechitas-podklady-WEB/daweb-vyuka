@@ -1,5 +1,7 @@
 ## Volitelné úložky na doma
 
+::exc[cvdoma>pocitani-hodin]
+::exc[cvdoma>cekani-na-sestku]
 ::exc[cvdoma>pocitani-while]
 ::exc[cvdoma>pocitani-for]
 ::exc[cvdoma>uzivatele]
