@@ -1,5 +1,5 @@
 ---
-title: Piškvorky
+title: Piškvorky 3x3
 demand: 4
 ---
 
@@ -27,12 +27,19 @@ Na chvilku se z vás stane rozhodčí na turnaji v piškvorkách. Vytvořte Java
       - `'x'` je náhrada za políčko se třídou `krizek`.
       - `'_'` je náhrada za políčko, které není ani jedno.
 
-   1. Nově vytvořené pole předejte předpřipravené funkci `findWinner`, kterou pro vás už předchystal jiný programátor. Funkce vám vrátí jednu ze čtyř možností.
+      Pro první hru by vám mělo vzniknout pole:
+
+      <!-- prettier-ignore -->
+      ```js
+      ['o', 'o', 'o', 'x', '_', '_', '_', 'x', '_']
+      ```
+
+   1. Nově vytvořené pole předejte předpřipravené funkci `findWinner`, kterou pro vás už napsal jiný programátor. Funkce vám vrátí jednu ze čtyř možností.
 
       - `'o'`, pokud vyhrálo kolečko.
-      - `'x'`, pokud vyhrálo kolečko.
+      - `'x'`, pokud vyhrál křížek.
       - `'tie'`, pokud hra skončila nerozhodně.
-      - `null`, pokud ještě není u konce.
+      - `null`, pokud hra ještě není u konce.
 
    1. Podle navrácené hodnoty z funkce `findWinner` vypište do prvku se třídou `vysledek` jeden z následujících textů.
 

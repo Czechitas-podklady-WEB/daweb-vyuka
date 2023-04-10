@@ -7,36 +7,42 @@ Vytvořte JavaScriptový program, který vepíše do stránky ovčí příběh p
 
 ::fig[ovce]{src=assets/ovce.jpg}
 
-Využijte násjedujících dvacet jmen oveček:
+1. Pro rychlejší vytvoření základní struktury použijte příkaz níže:
 
-```js
-const ovciJmena = [
-  'Bětuška',
-  'Cína',
-  'Dolly',
-  'Heidy',
-  'Líza',
-  'Belinda',
-  'Celia',
-  'Elvíra',
-  'Karla',
-  'Otýlie',
-  'Škraboška',
-  'Kopretinka',
-  'Berta',
-  'Růženka',
-  'Bobinka',
-  'Žofka',
-  'Dášenka',
-  'Vlnka',
-  'Květuše',
-  'Pampeliška',
-];
-```
+   ```bash
+   npm init kodim-app na-dobrou-noc html-css-js
+   ```
 
-Pomocí metody `forEach` do stránky vepište deset za sebou jdoucích vět v následující podobě:
+1. Využijte následujících dvacet jmen oveček:
 
-> Ovečka Bětuška jako 1. přeskočila přes plot. Ovečka Cína jako 2. přeskočila přes plot. Ovečka Dolly jako 3. přeskočila přes plot…
+   ```js
+   const ovciJmena = [
+     'Bětuška',
+     'Cína',
+     'Dolly',
+     'Heidy',
+     'Líza',
+     'Belinda',
+     'Celia',
+     'Elvíra',
+     'Karla',
+     'Otýlie',
+     'Škraboška',
+     'Kopretinka',
+     'Berta',
+     'Růženka',
+     'Bobinka',
+     'Žofka',
+     'Dášenka',
+     'Vlnka',
+     'Květuše',
+     'Pampeliška',
+   ];
+   ```
+
+1. Pomocí metody `forEach` do stránky vepište deset za sebou jdoucích vět v následující podobě:
+
+   > Ovečka Bětuška jako 1. přeskočila přes plot. Ovečka Cína jako 2. přeskočila přes plot. Ovečka Dolly jako 3. přeskočila přes plot…
 
 ---solution
 

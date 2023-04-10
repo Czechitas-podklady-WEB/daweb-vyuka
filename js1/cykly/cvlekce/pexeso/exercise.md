@@ -17,7 +17,7 @@ Oživte pexesové kartičky. Kliknutí na libovolnou kartičku by ji mělo obrá
 
 1. Pokud jsou dvě kartičky otočené tak, že ukazují obrázek, zařiďte, aby se po jedné sekundě vrátily do původního stavu.
 
-2. Neotáčejte zpět kartičky, u kterých uživatel našel celý pár. Kartičkám přidejte vlastnout `disabled`, aby na ně ani nešlo znovu kliknout.
+2. Neotáčejte zpět kartičky, u kterých uživatel našel celý pár. Kartičkám přidejte vlastnost `disabled`, aby na ně ani nešlo znovu kliknout.
 
    - Že jsou kartičky ze stejného páru poznáte tak, že mají uvnitř obrázek `<img>` se stejnou hodnotou v atributu `src`.
 
