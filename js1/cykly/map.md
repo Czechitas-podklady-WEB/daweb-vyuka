@@ -1,12 +1,15 @@
 ## `map`
 
-// K doplnění
+Metoda `map` slouží k transformaci prvků pole. Prochází pole a pro každý prvek vrací novou hodnotu. Výsledkem je nové pole s transformovanými prvky.
 
 ### `querySelectorAll` a `map`
 
 Na rozdíl od `forEach` metoda `map` neexistuje na objektu `NodeList` (návratová hodnota volání `querySelectorAll`). Proto je potřeba před použitím `map` z `NodeList` udělat klasické pole pomocí funkce `Array.from` například takto:
 
 <!-- Vymyslet lepší příklad -->
+
+V tomto příkladu se každý prvek pole `polePolozekVSeznamu` prochází a jeho innerHTML se mění ze „zelené“ na „červené“. Výsledkem je nové pole `novePole` s transformovanými prvky.
+Nakonec se nové prvky vypíší na stránku pomocí metody `join` a vlastnosti `innerHTML` elementu seznam.
 
 ```html
 <h2>Nákupní seznam</h2>
@@ -30,5 +33,3 @@ const novePole = polePolozekVSeznamu.map((polozka) => {
 
 seznam.innerHTML = novePole.join('');
 ```
-
-// K doplnění
