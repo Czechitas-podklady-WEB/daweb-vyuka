@@ -7,7 +7,7 @@ Vytvořte JavaScriptový program, který vepíše do stránky ovčí příběh p
 
 ::fig[ovce]{src=assets/ovce.jpg}
 
-Využijte násjedujících deset jmen oveček:
+Využijte násjedujících dvacet jmen oveček:
 
 ```js
 const ovciJmena = [
@@ -21,6 +21,16 @@ const ovciJmena = [
   'Elvíra',
   'Karla',
   'Otýlie',
+  'Škraboška',
+  'Pampeliška',
+  'Berta',
+  'Růženka',
+  'Bobinka',
+  'Žofka',
+  'Dášenka',
+  'Vlnka',
+  'Květuše',
+  'Pampeliška',
 ];
 ```
 
