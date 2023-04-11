@@ -41,12 +41,12 @@ let celkovaVzdalenost = 0;
 vzdalenosti.forEach((vzdalenost) => {
   celkovaVzdalenost += vzdalenost;
 });
-console.log(`Celková najetá vzdálenost je ${celkovaVzdalenost} km.`);
+document.body.innerHTML += `<p>Celková najetá vzdálenost je ${celkovaVzdalenost} km.</p>`;
 
 const prumernaVzdalenostZaDen = Math.round(
   celkovaVzdalenost / vzdalenosti.length
 );
-console.log(`Průměrná vzdálenost za den je ${prumernaVzdalenostZaDen} km.`);
+document.body.innerHTML += `<p>Průměrná vzdálenost za den je ${prumernaVzdalenostZaDen} km.</p>`;
 ```
 
 V tomto příkladu se každý prvek pole `polePolozekVSeznamu` prochází a z jeho zanořeného spanu se třídou `vzdalenost` se bere číslo. Výsledkem je nové pole `vzdalenosti` obsahující pouze čísla, se kterémi se lépe dělají další výpočty.
