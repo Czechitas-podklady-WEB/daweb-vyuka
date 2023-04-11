@@ -36,6 +36,7 @@ const polePolozekVSeznamu = Array.from(polozkyVSeznamu);
 const vzdalenosti = polePolozekVSeznamu.map((polozka) => {
   return Number(polozka.querySelector('.vzdalenost').textContent);
 });
+
 let celkovaVzdalenost = 0;
 vzdalenosti.forEach((vzdalenost) => {
   celkovaVzdalenost += vzdalenost;
