@@ -1,26 +1,42 @@
 ## `querySelectorAll` a `forEach`
 
-`querySelectorAll` a `forEach` jsou velmi užitečné funkce v JavaScriptu, které vám umožní snadno vyhledat prvky na stránce a provést nějakou operaci na každém z těchto prvků.
+### document.querySelectorAll
 
-Funkce `querySelectorAll` vám umožní vyhledávat prvky na stránce pomocí selektoru CSS. To znamená, že můžete vyhledávat prvky na stránce podle třídy, ID nebo jiného atributu. Vyhledané prvky jsou vráceny jako seznam, který lze použít k provedení operace na každém z nich.
+Díky tomu, že už rozumíme polím, si můžeme představit funkci `document.querySelectorAll`. Ta funguje podobně jako už známá funkce `document.querySelector`. Vrátí nám však **všechny** elementy, které najde pomocí zadaného selektoru. Výsledek obdržíme jako pole DOM elementů. To pak můžeme zpracovat pomocí nějakého cyklu.
 
-Metoda `forEach` pak umožňuje provést operaci na každém prvku v seznamu. To vám umožní provést stejnou operaci na každém prvku bez nutnosti psát stejný kód pro každý prvek zvlášť.
+V lekci o událostech jsme si slíbili, že díky cyklům dokážeme zjednodušít kód naší aplikace se smajlíky. Připomeňme si HTML kód našich tlačítek.
 
 ```html
-<!-- HTML struktura -->
-<ul>
-  <li>vysát</li>
-  <li>utřít prach</li>
-  <li>vynést koš</li>
-</ul>
+<button id="btn-smiley1" class="btn-smiley">😀</button>
+<button id="btn-smiley2" class="btn-smiley">😍</button>
+<button id="btn-smiley3" class="btn-smiley">😜</button>
+<button id="btn-smiley4" class="btn-smiley">😢</button>
+<button id="btn-smiley5" class="btn-smiley">😱</button>
 ```
 
+Náš výsledný učesaný JavaScriptový kód vypadal takto.
+
 ```js
-// JavaScript kód
-// vyhledání všech <li> prvků v <ul> a použití forEach smyčky k iteraci přes každý prvek
-const liElements = document.querySelectorAll('ul li');
-liElements.forEach((li) => {
-  console.log(li.textContent); // vypíše text každého <li> prvku
-  li.classList.add('fulfilled'); // přidá třídu fulfilled každému <li> prvku
+const selectSmiley = (event) => {
+  event.target.classList.add('btn-smiley--selected');
+};
+
+document.querySelector('#btn1').addEventListener('click', selectSmiley);
+document.querySelector('#btn2').addEventListener('click', selectSmiley);
+document.querySelector('#btn3').addEventListener('click', selectSmiley);
+document.querySelector('#btn4').addEventListener('click', selectSmiley);
+document.querySelector('#btn5').addEventListener('click', selectSmiley);
+```
+
+Všimněte si, že kód pro nasazení posluchače na událost `click` jsme museli opakovat pětkrát. Díky `document.querySelectorAll` můžeme nyní posluchače nasadit na všechna tlačítka jedním cyklem.
+
+```js
+const selectSmiley = (event) => {
+  event.target.classList.add('btn-smiley--selected');
+};
+
+const buttons = document.querySelectorAll('.btn-smiley');
+buttons.forEach((button) => {
+  button.addEventListener('click', selectSmiley);
 });
 ```
