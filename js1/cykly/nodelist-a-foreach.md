@@ -4,14 +4,14 @@
 
 Funkce `querySelectorAll` vám umožní vyhledávat prvky na stránce pomocí selektoru CSS. To znamená, že můžete vyhledávat prvky na stránce podle třídy, ID nebo jiného atributu. Vyhledané prvky jsou vráceny jako seznam, který lze použít k provedení operace na každém z nich.
 
-Funkce `forEach` pak umožňuje provést operaci na každém prvku v seznamu. To vám umožní provést stejnou operaci na každém prvku bez nutnosti psát stejný kód pro každý prvek zvlášť.
+Metoda `forEach` pak umožňuje provést operaci na každém prvku v seznamu. To vám umožní provést stejnou operaci na každém prvku bez nutnosti psát stejný kód pro každý prvek zvlášť.
 
 ```html
 <!-- HTML struktura -->
 <ul>
-  <li>První položka</li>
-  <li>Druhá položka</li>
-  <li>Třetí položka</li>
+  <li>vysát</li>
+  <li>utřít prach</li>
+  <li>vynést koš</li>
 </ul>
 ```
 

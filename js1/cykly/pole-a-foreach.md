@@ -4,7 +4,7 @@ Pole a metoda `forEach()` jsou dva základní koncepty v práci s poli v JavaScr
 
 Při práci s polem můžeme používat indexy k přístupu k jednotlivým prvkům. Indexy jsou čísla, které označují pozici prvku v poli. Indexování v JavaScriptu začíná od nuly, tedy první prvek má index `0`, druhý prvek má index `1` atd.
 
-Metoda `forEach()` nám pak umožňuje iterovat přes všechny prvky v poli a provádět na nich nějakou akci. Syntaxe této metody je následující:
+### Syntaxe
 
 ```js
 const pole = [1, 2, 3, 4, 5];
