@@ -10,7 +10,7 @@ Pro začátek je potřeba se ve službě [zaregistrovat](https://app.supabase.co
 
 Po založení projektu se dostaneme na stránku, na které nás bude později zajím **URL** našeho projektu a veřejný **API klíč**.
 
-::fig[Údaje projektu]{src=assets/url\_\_api_key.jpg}
+::fig[Údaje projektu]{src=assets/url_api_key.jpg}
 
 K zapojení supabase do našeho projektu nám pomůže [dokumentace pro JavaScript](https://supabase.com/docs/reference/javascript/installing), ve které se dozvíme vše potřebné. Začneme instalací balíčku pomocí:
 
