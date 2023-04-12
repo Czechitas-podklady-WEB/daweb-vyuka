@@ -2,7 +2,7 @@ Jen málo webových aplikací je čistě frontendových. Většina aplikací pot
 
 ## Supabase
 
-My s v rámci dnešní lekce podíváme na službu Supabase, která může vašemu projektu poskytnou velké množství funkcí. My se dnes podíváme na autentizaci a práci s databází. Velkou výhodou supabase je, že má velice přehlednou dokumentaci a pro JavaScript poskytuje NPM knihovnu, která nám zjednoduší většinu práce.
+My s v rámci dnešní lekce podíváme na službu [Supabase](https://supabase.com), která může vašemu projektu poskytnou velké množství funkcí. My se dnes podíváme na autentizaci a práci s databází. Velkou výhodou supabase je, že má velice přehlednou dokumentaci a pro JavaScript poskytuje NPM knihovnu, která nám zjednoduší většinu práce.
 
 Pro začátek je potřeba se ve službě [zaregistrovat](https://app.supabase.com/sign-up), pro urychlení registrace můžete využít i svůj účet na GitHubu. Po dokončení registrace si založíme svůj první projekt kliknutím na tlačítko **New Project**, nyní stačí zadat název projektu, nastavit heslo do databáze a vybrat region, který by měl být co nejblíže uživatelům naší aplikace.
 
