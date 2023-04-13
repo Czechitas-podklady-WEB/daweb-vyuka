@@ -3,12 +3,12 @@ title: Detail jízdenky
 demand: 3
 ---
 
-V minulé lekci jsme se dostali k vytvoření rezervace a sízkání `reservationId`. K dokončení základní verze projektu tak stačí vytvořit detail pro jednu jízdenku a zobrazit její data.
+V předešlé lekci jsme dospěli k vytvoření rezervace a získání `reservationId`. K dokončení základní verze projektu tak stačí vytvořit detail pro jednu jízdenku a zobrazit její data.
 
-1. V komponentě `App` připravte již existující `<Route path="/reservation">` komponentu na správné zpracování detailu jízdenky. Upravte `path` prop tak, aby dynamicky zpracovávala `:id` parametr. Výsledná path bude vypadat takto: `path="/reservation/:id"`. Uvnitř `<Route>` komponenty ponechte `<Reservation />`.
+1. V komponentě `App` připravte již existující komponentu na správné zpracování detailu jízdenky. Upravte `path` v routeru tak, aby dynamicky zpracovávala `:id` parametr. Výsledná path bude vypadat takto: `path="/reservation/:id"`.
 1. Do komponenty `Reservation` zkopírujte HTML kód ze zadání. Ze souboru `reservation.html` převezměte element `div` s třídou `reservation` i s jeho obsahem.
 1. Vytvoře v komponentě soubor `style.css`, do kterého zkopírujte ze zadání styly pro třídy začínající `reservation`. Naimportujte soubor se styly do komponenty.
-1. Komponenta musí zjistit, na detailu které jízdenky se nachází. Naimportujte si `useParams` hook z `react-router-dom`. Uvnitř komponenty tento hook zavolejte a získejte z něj parametr `id`. [Příklad použití](https://reactrouter.com/docs/en/v6/hooks/use-params).
+1. Komponenta musí zjistit, na detailu které jízdenky se nachází. Naimportujte si `useParams` hook z `react-router-dom`. Uvnitř komponenty tento hook zavolejte a získejte z něj parametr `id`. [Příklad použití](https://reactrouter.com/en/6.10.0/hooks/use-params).
 1. Pomocí `useState` vytvořte nový stav `reservation`, výchozí hodnota bude `null`.
 1. Přidejte `useEffect` volaný při prvním zobrazení komponenty. Bude z API získávat podrobné informace o jedné jízdence. Endpoint je na adrese
    ```

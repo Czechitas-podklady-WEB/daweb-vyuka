@@ -5,13 +5,13 @@ V předešlé lekci jsme se naučili používat metody pro zpracování dat jako
 Vzpomeňte na cvičení [Nákupní seznam](../func-data/cv-nadoma#cvdoma%3Enakupni-seznam) z minulé lekce. Zobrazovali jsme v něm položky nákupního seznamu na základě pole objektů. Místo abychom toto pole měli natvrdo uložené přímo v kódu, stáhneme si jej z API. Příslušný endpoint má URL
 
 ```
-https://apps.kodim.cz/daweb/trening-api/apis/shopping
+https://nakupy.kodim.cz/api/sampleweek/mon/items
 ```
 
 Pojďme nejdříve seznam stáhnout a vypsat do konzole.
 
 ```js
-fetch('https://apps.kodim.cz/daweb/trening-api/apis/shopping')
+fetch('https://nakupy.kodim.cz/api/sampleweek')
   .then((response) => {
     return response.json();
   })
@@ -23,13 +23,13 @@ fetch('https://apps.kodim.cz/daweb/trening-api/apis/shopping')
 Nyní už můžeme využít metody pro zpracování dat a vytvořit obsah stránky.
 
 ```js
-fetch('https://apps.kodim.cz/daweb/trening-api/apis/shopping')
+fetch('https://nakupy.kodim.cz/api/sampleweek')
   .then((response) => {
     return response.json();
   })
   .then((data) => {
     const shoppingList = document.querySelector('.shopping-list');
-    shoppingList.innerHTML = data
+    shoppingList.innerHTML = data.result
       .map((item) => {
         return `
         <li class="item">
