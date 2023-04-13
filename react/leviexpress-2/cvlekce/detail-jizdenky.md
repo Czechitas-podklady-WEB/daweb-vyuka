@@ -18,5 +18,5 @@ V předešlé lekci jsme dospěli k vytvoření rezervace a získání `reservat
 1. Endpoint vrací údaje o jízdence, pomocí funkce `setReservation` z `useState` hooku nastavte do proměnné `reservation` výsledek volání uvedeného endpointu.
 1. Data z endpointu si také můžete vypsat do konzole. Podívejte se na jejich formát a porovnejte strukturu dat s daty, která jsou natvrdo v JSX (vykopírované z `reservation.html`).
 1. Nahraďte data jízdenky vepsaná natvrdo za ta, která jsou nyní uložená v proměnné `reservation`. Nezapomeňte zobrazení dat podmínit tím, že stav `reservation` nemá hodnotu `null`, jinak bude prohlížeč hlásit chybu, že nelze číst z `undefined`.
-1. Zkontrolujte, že stránka vzhledově odpovídá [zadání](https://czechitas-podklady-web.github.io/leviexpress-zadani/reservation).
+1. Zkontrolujte, že stránka vzhledově odpovídá [zadání](https://czechitas-podklady.cz/leviexpress-design/reservation).
 1. Commitněte a pushněte změny. Nyní máte zcela hotovou první část projektu. Pokochejte se hotovou aplikací a pochvalte se za pořádný kus dobře odvedené práce. Po malé oslavě svých úspěchů se můžete vrhnout na druhou část.
