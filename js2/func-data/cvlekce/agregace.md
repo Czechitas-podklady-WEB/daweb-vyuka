@@ -55,7 +55,8 @@ const seznamHTMLZletile = persons
 document.body.innerHTML = '<ul>' + seznamHTMLZletile + '</ul>';
 
 // Proveďte totéž jako v předchozím bodě, přidejte však do položky seznamu CSS
-// třídu dle pohlaví dané osoby. U nebinárních osob použijte CSS třídu `nonbinary`.
+// třídu dle pohlaví dané osoby. U nebinárních osob použijte CSS třídu
+// `nonbinary`.
 const seznamHTMLSPohlavim = persons
   .map((person) => {
     let className = 'nonbinary';
