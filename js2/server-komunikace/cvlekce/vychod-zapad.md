@@ -5,7 +5,7 @@ demand: 2
 
 Vytvořme webovou stránku, která bude zobrazovat čas, kdy dnes vyšlo a kdy zapadá slunce. Zatím budeme pracovat bez komponent a vrátíme se k nim v druhé části lekce.
 
-1. Založte si novou HTML stránku s JavaScriptem.
+1. Založte si nový projekt příkazem `npm init kodim-app cviceni-vychod-zapad html-css-js` a otevřete si ve VS Code vytvořenou složku `cviceni-vychod-zapad`.
 1. V souboru `index.js` pomocí funkce `fetch` získejte data z API na adrese
    ```
    https://api.sunrise-sunset.org/json?lat=50&lng=14.5
