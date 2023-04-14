@@ -15,7 +15,7 @@ Upravte vaši aplikaci na kontrolu rodných čísel tak, aby obsahovala formulá
 
 1. Pokud vrátí cokoliv jiného, vypište zprávu ve smyslu
 
-  > ❌ V rodném čísle jsou chyby.
+> ❌ V rodném čísle jsou chyby.
 
 1. Vyzkoušejte do formuláře vyplnit aspoň jedno platné rodné číslo a jedno neplatné.
 
@@ -55,11 +55,11 @@ const formular = document.querySelector('#formular');
 formular.addEventListener('submit', (event) => {
   event.preventDefault();
   const vstup = formular.querySelector('input').value;
-  const vystupElm = document.querySelector('#vystup')
+  const vystupElm = document.querySelector('#vystup');
   if (checkBirthID(vstup) === 'ok') {
-    vystupElm.textContent = '✔️ V pořádku.'
+    vystupElm.textContent = '✔️ V pořádku.';
   } else {
-    vystupElm.textContent = '❌ V rodném čísle jsou chyby.'
+    vystupElm.textContent = '❌ V rodném čísle jsou chyby.';
   }
 });
 ```

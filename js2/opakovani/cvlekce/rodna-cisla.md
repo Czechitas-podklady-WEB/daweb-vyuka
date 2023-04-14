@@ -9,10 +9,10 @@ Napište program, který zjistí, jestli je zadané rodné číslo platné.
 Postupujte dle následujících kroků.
 
 1. Založte si projekt příkazem
-    ```shell
-    npm init kodim-app cviceni-rodna-cisla html-css-js
-    ```
-    Ve VS Code otevřete složku `cviceni-rodna-cisla`.
+   ```shell
+   npm init kodim-app cviceni-rodna-cisla html-css-js
+   ```
+   Ve VS Code otevřete složku `cviceni-rodna-cisla`.
 1. JavaScript vložte do stránky pomocí
    ```html
    <script type="module" src="index.js"></script>
@@ -54,15 +54,15 @@ Postupujte dle následujících kroků.
 
 1. Každé rodné číslo musí být dělitelné 11. Zkontrolujte tedy, že zadané číslo je dělitelné jedenácti a výsledek opět **vypište do konzole**.
 
-  > ✔️ Rodné číslo je dělitelné 11.
-  > ❌ Rodné číslo není dělitelné číslem 11.
+> ✔️ Rodné číslo je dělitelné 11.
+> ❌ Rodné číslo není dělitelné číslem 11.
 
 1. Pokud jsou všechny podmínky splněny, rodné číslo budeme považovat za platné. Informaci o platnosti **vypište do konzole**.
 
-  > ✔️ Zadané rodné číslo je platné.
-  > ❌ Uživatel zadal neplatné rodné číslo.
+> ✔️ Zadané rodné číslo je platné.
+> ❌ Uživatel zadal neplatné rodné číslo.
 
-   Po zadání rodného čísla by se v konzoli měly objevit čtyři výpisy.
+Po zadání rodného čísla by se v konzoli měly objevit čtyři výpisy.
 
 ---solution
 
