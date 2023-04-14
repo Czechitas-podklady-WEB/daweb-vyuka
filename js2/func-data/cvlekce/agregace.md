@@ -46,15 +46,16 @@ const seznamHTMLJednoduchy = persons
 // Pomocí `innerHTML` vložte tento seznam do stránky.
 document.body.innerHTML = '<ul>' + seznamHTMLJednoduchy + '</ul>';
 
-// Proveďte totéž jako v předchozím bodě, zobrazte však v seznamu pouze zletilé osoby.
+// Proveďte totéž jako v předchozím bodě, zobrazte však v seznamu pouze zletilé
+// osoby.
 const seznamHTMLZletile = persons
   .filter((person) => person.age >= 18)
   .map((person) => `<li>${person.name} (${person.age})</li>`)
   .join();
 document.body.innerHTML = '<ul>' + seznamHTMLZletile + '</ul>';
 
-// Proveďte totéž jako v předchozím bodě, přidejte však do položky seznamu CSS třídu
-// dle pohlaví dané osoby. U nebinárních osob použijte CSS třídu `nonbinary`.
+// Proveďte totéž jako v předchozím bodě, přidejte však do položky seznamu CSS
+// třídu dle pohlaví dané osoby. U nebinárních osob použijte CSS třídu `nonbinary`.
 const seznamHTMLSPohlavim = persons
   .map((person) => {
     let className = 'nonbinary';

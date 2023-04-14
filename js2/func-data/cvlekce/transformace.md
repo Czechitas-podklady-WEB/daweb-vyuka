@@ -42,9 +42,9 @@ console.log(numbersAsStrings);
 const emails = persons.map((item) => `${item.name.toLowerCase()}@gmail.com`);
 console.log(emails);
 
-// Z pole `persons` pomocí metody `map` vytvořte pro každou osobu položku HTML seznamu
-//  ve formátu `<li>Petr (16)</li>`, a výsledek uložte do proměnné `list`. Vypište toto
-//  nové pole do konzole.
+// Z pole `persons` pomocí metody `map` vytvořte pro každou osobu položku HTML
+// seznamu ve formátu `<li>Petr (16)</li>`, a výsledek uložte do proměnné `list`.
+// Vypište toto nové pole do konzole.
 const list = persons.map((item) => `<li>${item.name} (${item.age})`);
 console.log(list);
 ```
