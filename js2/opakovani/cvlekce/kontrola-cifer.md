@@ -8,7 +8,7 @@ V případě, že uživatel zadal do rodného čísla špatné znaky, budeme cht
 
 1. Vytvořte pole `digits` obsahující všechny cifry `'0'` až `'9'` jako řetězce.
 1. Napište funkci `isDigit`, která na vstup dostane řetězec a vrátí `true` pokud tento řetězec obsahuje právě jednu cifru. Použijte k tomu pole `digits` a metodu `includes` ([viz dokumentace](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)). V opačném případě funkce vrátí `false`.
-1. Napište funci `logInvalidCharacters`, která na vstupu dostane řetězec a pomocí cyklu `forEach` projde všechny znaky. Do konzole vypíše ty znaky, které nesplňují podmínky z funkce `isDigit`. `logInvalidCharacters` vyzkoušejte například na textu `'123č56q8y7'` a `'7060201236'`. V prvním případě by se v konzoli mělo objevit na třech řádcích `č`, `q` a `y`. Pro druhý text by se nemělo vypsat nic.
+1. Napište funci `logInvalidCharacters`. Funkce na vstupu dostane řetězec, ten převede na pole znaků (zkuste vygooglit, jak na to). Následně všechny znaky projde pomocí `forEach`. Do konzole vypíše ty znaky, které nesplňují podmínky z funkce `isDigit`. `logInvalidCharacters` vyzkoušejte například na textu `'123č56q8y7'` a `'7060201236'`. V prvním případě by se v konzoli mělo objevit na třech řádcích `č`, `q` a `y`. Pro druhý text by se nemělo vypsat nic.
 
 ---solution
 
@@ -47,6 +47,7 @@ const rodnaCislaKOtestovani = [
   '123',
   'nepovím',
   '7060201236',
+  '7060201235',
   '123456789123456789',
   '9062185440',
   '123č56q8y7',

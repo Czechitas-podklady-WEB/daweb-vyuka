@@ -11,15 +11,11 @@ Upravte vaši aplikaci na kontrolu rodných čísel tak, aby obsahovala formulá
 1. Do HTML vložte pod formulář `div` s nějakým vhodně zvoleným `id`. Tento `div` bude představovat zprávu pro uživatele.
 1. Z přechozích cvičení máme hotovou funkci `checkBirthID`, Pokud pro uživatelův vstup vrátí `'ok'`, vypište do vašeho `divu`
 
-   ```text
-   ✔️ V pořádku.
-   ```
+   > ✔️ V pořádku.
 
 1. Pokud vrátí cokoliv jiného, vypište zprávu ve smyslu
 
-   ```text
-   ❌ V rodném čísle jsou chyby.
-   ```
+  > ❌ V rodném čísle jsou chyby.
 
 1. Vyzkoušejte do formuláře vyplnit aspoň jedno platné rodné číslo a jedno neplatné.
 
@@ -53,15 +49,17 @@ Upravte vaši aplikaci na kontrolu rodných čísel tak, aby obsahovala formulá
 ### `index.js`
 
 ```js
-// …
+// … zde jsou validační funkce z předchozích cvičení …
+
 const formular = document.querySelector('#formular');
 formular.addEventListener('submit', (event) => {
   event.preventDefault();
   const vstup = formular.querySelector('input').value;
-  const vystup =
-    checkBirthID(vstup) === 'ok'
-      ? '✔️ V pořádku.'
-      : '❌ V rodném čísle jsou chyby.';
-  document.querySelector('#vystup').textContent = vystup;
+  const vystupElm = document.querySelector('#vystup')
+  if (checkBirthID(vstup) === 'ok') {
+    vystupElm.textContent = '✔️ V pořádku.'
+  } else {
+    vystupElm.textContent = '❌ V rodném čísle jsou chyby.'
+  }
 });
 ```
