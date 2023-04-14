@@ -51,7 +51,8 @@ persons.forEach((person) => {
   console.log(person.age);
 });
 
-//Pomocí metody `forEach` napište cyklus, který vypíše do konzole první písmeno z každného jména v poli `names`.
+// Pomocí metody `forEach` napište cyklus, který vypíše do konzole první písmeno z každného
+// jména v poli `names`.
 console.log('První písmeno každého jména:');
 names.forEach((person) => {
   console.log(person.slice(0, 1));
@@ -77,7 +78,8 @@ console.log(
 const chosenNumbers = numbers.some((item) => item % 11 === 0);
 console.log('Obsahuje číslo dělitelné 11:', chosenNumbers);
 
-// Pomocí metody `some` zjistěte, jestli jsou v poli `persons` nějaké osoby nebinárního pohlaví, tedy nejsou ani `male` ani `female`.
+// Pomocí metody `some` zjistěte, jestli jsou v poli `persons` nějaké osoby nebinárního pohlaví,
+// tedy nejsou ani `male` ani `female`.
 const nonBinary = numbers.some(
   (person) => !(person.gender === 'female' || person.gender === 'male')
 );
