@@ -17,13 +17,13 @@ Hodnotě uvnitř kulatých závorek říkáme :term{cs="vstup" en="input"} funkc
 
 Funkce jsou rozsáhlé téma, které nás bude provázet až do konce kurzu. Již brzy se také naučíme psát funkce vlastní. Pro lepší představu o tom, jak funce fungují, se nám bude hodit následující analogie.
 
-Můžeme si představovat, že funkce je něco jako stánek s rychlým občerstvením. Takový stánek má dvě okýnka. Jedno vstupní, do kterého zadáte svoji objednávku, a druhé výstupní, kde po chvíli obdržíte svůj hamburger nebo smažák v housce. Objednávání rychlé svačiny je pak podobné jako volání funkce. Do stánku vložíte nějaké vstupy a ven vám vypadne výstup. Pokud nejste vysloveně zvědaví nebo paranoidní, dění uvnitř stánku vás až tolik nezajímá, podobně jako vás až tolik nezajímá, jak vlastně JavaScript technicky provádní zaokrouhlování. Důležité je, že funkce funguje, a že párek v rohlíku nakonec chutná tak, jak jste zvyklí.
+Můžeme si představovat, že funkce je něco jako stánek s rychlým občerstvením. Takový stánek má dvě okýnka. Jedno vstupní, do kterého zadáte svoji objednávku, a druhé výstupní, kde po chvíli obdržíte svůj hamburger nebo smažák v housce. Objednávání rychlé svačiny je pak podobné jako volání funkce. Do stánku vložíte nějaké vstupy a ven vám vypadne výstup. Pokud nejste vysloveně zvědaví nebo paranoidní, dění uvnitř stánku vás až tolik nezajímá, podobně jako vás až tolik nezajímá, jak vlastně JavaScript technicky provádí zaokrouhlování. Důležité je, že funkce funguje a že párek v rohlíku nakonec chutná tak, jak jste zvyklí.
 
 ::fig[Zaokrouhlování]{src=assets/zaokrouhlovani.png size=60}
 
 ### Výrazy s funkcemi
 
-Volání funkce je také výraz podobně jako operace s hodnotami a proměnnými. Můžeme jej tedy použít uvnitř libovolného jiného výrazu. Navíc vstup pro funkci lze také vytvořit pomocí výrazu. Nabízí se tedy mnoho způsobů, jak skládat složitější výpočty, jako například tento.
+Volání funkce je také výraz, podobně jako operace s hodnotami a proměnnými. Můžeme jej tedy použít uvnitř libovolného jiného výrazu. Navíc vstup pro funkci lze také vytvořit pomocí výrazu. Nabízí se tedy mnoho způsobů, jak skládat složitější výpočty, jako například tento.
 
 ```jscon
 > 70 % Math.round(100 / 3)
@@ -32,7 +32,7 @@ Volání funkce je také výraz podobně jako operace s hodnotami a proměnnými
 
 ### Užitečné funkce
 
-JavaScript obsahuje spousty a spousty funkcí, díky kterým lze provádět mnoho užitěčných a zajímavých věcí. Během celého kurzu je budeme společně objevovat. Takto zkraje si ukážeme jen ty nejzákladnější.
+JavaScript obsahuje spousty a spousty funkcí, díky kterým lze provádět mnoho užitečných a zajímavých věcí. Během celého kurzu je budeme společně objevovat. Takto zkraje si ukážeme jen ty nejzákladnější.
 
 Pokud bychom místo klasického zaokrouhlování chtěli zaokrouhlovat vždy dolů nebo vždy nahoru, můžeme použít funkce `Math.floor` a `Math.ceil`.
 

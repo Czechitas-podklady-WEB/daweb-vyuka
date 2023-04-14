@@ -2,7 +2,7 @@
 
 Při složitějších operacích a výpočtech často vyvstane potřeba si nějaký mezivýpočet uložit pro pozdější použití. K tomu nám poslouží takzvané :term{cs="proměnné" en="variables"}. Proměnná je jakási pojmenovaná krabička nebo šuplík, do kterého si můžeme uložit nějakou hodnotu, abychom ji neztratili a mohli ji používat v dalších výpočtech. Abychom si procvičili proměnné a zajímavé operátory, zkusíme vyřešit následující úlohu.
 
-Mějme čas v hodinách zadaný ve 24-hodinovém formátu. Tři hodiny odpoledne tedy píšeme jako 15h. Nyní chceme spočítat, kolik hodin uvidíme na hodinách po uplynutí zadané doby. Například jaký bude čas po uplynutí 15 hodin?
+Mějme čas v hodinách zadaný ve 24hodinovém formátu. Tři hodiny odpoledne tedy píšeme jako 15h. Nyní chceme spočítat, kolik hodin uvidíme na hodinách po uplynutí zadané doby. Například jaký bude čas po uplynutí 15 hodin?
 
 ```js
 const cas = 13;
@@ -14,7 +14,7 @@ V tomto kusu kódu jsme vytvořili hned dvě proměnné: :var[cas] a :var[novyCa
 
 Proměnná :var[document.body.innerHTML] je trochu speciální. Tuto proměnnou vytvářet nemusíme, protože už ji pro nás vytvořil prohlížeč při načtení stránky. Nepíšeme tedy před ni `const`.
 
-Většinu proměnných budeme používat tak, že jim při vytvoření přiřadíme nějakou hodnotu a tato hodnota už v proměnná zůstane až do konce jejího života. Občas se však stane, že potřebujeme hodnotu uloženou v nějaké proměnné změnit. V takovém případě musíme proměnnou vytvořit pomocí slovíčka `let`.
+Většinu proměnných budeme používat tak, že jim při vytvoření přiřadíme nějakou hodnotu a tato hodnota už v proměnné zůstane až do konce jejího života. Občas se však stane, že potřebujeme hodnotu uloženou v nějaké proměnné změnit. V takovém případě musíme proměnnou vytvořit pomocí slovíčka `let`.
 
 Takto můžeme například zkusit spočítat svou budoucí výplatu, pokud budeme pracovat na plný úvazek 21 dní v měsíci za 500 Kč na hodinu.
 
