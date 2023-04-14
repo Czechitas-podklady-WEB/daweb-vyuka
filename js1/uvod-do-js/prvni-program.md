@@ -18,13 +18,13 @@ Naše JavaScriptové programy budou vždy součástí nějaké webové stránky.
 </html>
 ```
 
-Pro náš JavaScriptový kód budeme vždy vytvářet oddělený soubor podobně jako jste zvyklí vytvářet oddělený soubor pro CSS styly. JavaScriptovému programu většinou budeme dávat název `index.js`. Jeho obsah může vypadat například takto.
+Pro náš JavaScriptový kód budeme vždy vytvářet oddělený soubor, podobně jako jste zvyklí vytvářet oddělený soubor pro CSS styly. JavaScriptovému programu většinou budeme dávat název `index.js`. Jeho obsah může vypadat například takto.
 
 ```js
 document.body.innerHTML = '<h1>ahoj</h1>';
 ```
 
-Co tento kód přesně dělá se dozvíme za malou chvíli. Teď je naším hlavním úkolem zapojit tento program do naší stránky. To provedeme tak, že vložíme značku `script` s odkazem na soubor `index.js` do hlavičky stránky.
+Co tento kód přesně dělá, se dozvíme za malou chvíli. Teď je naším hlavním úkolem zapojit tento program do naší stránky. To provedeme tak, že vložíme značku `script` s odkazem na soubor `index.js` do hlavičky stránky.
 
 ```html
 <head>
@@ -42,4 +42,4 @@ Proč se JavaScriptový kód vkládá do stránky tímto způsobem a co přesně
 
 ### Středníky
 
-Téměř každý příkaz v JavaScriptu končí středníkem. Tím JavaScript runtime pozná, kde končí jeden příkaz a začíná jiný. Inu, ve skutečnosti by to JavaScript poznal i bez středníků a dokonce bychom je na většině míst ani psát nemuseli. Psaní nebo nepsaní středníků je opět kulturní záležitost podobně jako jednoduché nebo dvojité uvozovky. Každý to má rád po svém, jednou je trendy to, jindy zase ono. My na tomto webu budeme středníky používat svědomitě a vám do začátku doporučujeme totéž. Později se jistě sami rozhodnete pro styl, který se vám osobně líbí nejvíce.
+Téměř každý příkaz v JavaScriptu končí středníkem. Tím JavaScript runtime pozná, kde končí jeden příkaz a začíná jiný. Inu, ve skutečnosti by to JavaScript poznal i bez středníků a dokonce bychom je na většině míst ani psát nemuseli. Psaní nebo nepsaní středníků je opět kulturní záležitost, podobně jako jednoduché nebo dvojité uvozovky. Každý to má rád po svém, jednou je trendy to, jindy zase ono. My na tomto webu budeme středníky používat svědomitě a vám do začátku doporučujeme totéž. Později se jistě sami rozhodnete pro styl, který se vám osobně líbí nejvíce.

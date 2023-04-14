@@ -20,7 +20,7 @@ Každý počítač je ve svojí nejniternější podstatě jen hrozně rychlá k
 Vždy, když v konzoli napíšete příkaz a stisknete klávesu :kbd[Enter], pošlete tím JavaScriptovému runtimu uvnitř prohlížeče příkaz. Runtime tento příkaz vykoná a ihned vám odpoví výsledek. Zatím jsme sice nic závratného nespočítali, použili jsme však základní JavaScriptové hodnoty a operátory. Hodnoty jsou v našem případě čísla. Později uvidíme další druhy hodnot, které na kalkulačce nepotkáte.
 
 :::warn
-Pozor na to, že ve všech programovacích jazycích (s výjimkou MS Excel) se destinná čísla píší s tečkou, nikoliv s čárkou.
+Pozor na to, že ve všech programovacích jazycích (s výjimkou MS Excel) se desetinná čísla píší s tečkou, nikoliv s čárkou.
 :::
 
 Operátory jsou v našem případě sčítání, odčítání, násobení a dělení. Je potřeba si zvyknout na to, jakými symboly se JavaScriptu zapisují. Možná budete muset malinko prohledat klávesnici, než najdete například dopředné lomítko nebo hvězdičku.
@@ -34,7 +34,7 @@ Kromě výše zmíněných nabízí JavaScript jeden zajímavý operátor, kter�
 1
 ```
 
-Pro zbytek po dělení se překvapivě používá znak procenta, přestože s procenty tento operátor nemá nic společného. Jeho výsledek je zbytek po celočíselném dělení prvního čísla druhým číslem. Zbytek po dělení můžeme použít například k zjištění zde ja číslo sudé nebo liché. Sudá čísla totiž mají po dělení dvěma zbytek 0. Později uvidíme užitečnější a také zajímavější použití této operace.
+Pro zbytek po dělení se překvapivě používá znak procenta, přestože s procenty tento operátor nemá nic společného. Jeho výsledek je zbytek po celočíselném dělení prvního čísla druhým číslem. Zbytek po dělení můžeme použít například ke zjištění, zde ja číslo sudé nebo liché. Sudá čísla totiž mají po dělení dvěma zbytek 0. Později uvidíme užitečnější a také zajímavější použití této operace.
 
 Z operátorů a hodnot můžete samozřejmě stavět mnohem složitější konstrukce třeba i s použitím závorek.
 
@@ -62,7 +62,7 @@ Pokud chceme v JavaScriptu pracovat s textem, použijeme hodnotu, které se ří
 "<h1 class="title">Digitální akademie Web</h1>"
 ```
 
-Textové řetězce vždy uzavíráme do uvozovek. V JavaScriptu můžete používat jak apostrofy (jednoduché uvozovky), tak dvojité uvozovky. Z hlediska funkčnosti programu na druhu použitých uvozovek nezáleží. Můžete si tak pomaličku začít budovat svůj programátorský styl a používat ty uvozovky, které se vám líbí. Občas se dvojité uvozovky hodí pokud chceme mít uvnitř řetězce například apostrof. Pro tento případ si však později ukážeme obecnější techniku.
+Textové řetězce vždy uzavíráme do uvozovek. V JavaScriptu můžete používat jak apostrofy (jednoduché uvozovky), tak dvojité uvozovky. Z hlediska funkčnosti programu na druhu použitých uvozovek nezáleží. Můžete si tak pomaličku začít budovat svůj programátorský styl a používat ty uvozovky, které se vám líbí. Občas se dvojité uvozovky hodí, pokud chceme mít uvnitř řetězce například apostrof. Pro tento případ si však později ukážeme obecnější techniku.
 
 Textové řetězce jdou sčítat podobně jako čísla, můžete tedy psát například následující.
 

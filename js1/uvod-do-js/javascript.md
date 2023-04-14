@@ -6,7 +6,7 @@ Svět programování může ve srovnání s HTML a CSS ze začátku působit vel
 
 Jazyk JavaScript je jedním z nejdůležitějších programovacích jazyků nejen v prostředí webu ale i v IT obecně. V tomto kurzu se tedy budeme zaměřovat pouze na něj. Do začátku počítáme s tím, že jste už nějaký programovací jazyk viděli alespoň z jedoucího vlaku. I tak však budeme při představování JavaScriptu postupovat od úplných základů.
 
-Než se naplno pustíme do JavaScriptu, je dobré si pořádně ujasnit terminologii. JavaScript je programovací jazyk, tedy sada nějakých pravidel jak sestavovat textové příkazy pro počítač. Pokud chceme, aby náš počítač tyto příkazy vykonal, protřebujeme takzvaný _JavaScript runtime_. To je program, který čte JavaScriptové příkazy, a jeden za druhým je provádí. Pokud bychom použili divadelní analogii, můžeme si představit, že JavaScriptový program je scénář nějakého představení, a JavaScript runtime je herec, který představení podle tohoto scénáře zahraje.
+Než se naplno pustíme do JavaScriptu, je dobré si pořádně ujasnit terminologii. JavaScript je programovací jazyk, tedy sada nějakých pravidel, jak sestavovat textové příkazy pro počítač. Pokud chceme, aby náš počítač tyto příkazy vykonal, protřebujeme takzvaný _JavaScript runtime_. To je program, který čte JavaScriptové příkazy a jeden za druhým je provádí. Pokud bychom použili divadelní analogii, můžeme si představit, že JavaScriptový program je scénář nějakého představení a JavaScript runtime je herec, který představení podle tohoto scénáře zahraje.
 
 ::fig[JavaScript runtime]{src=assets/runtime.jpg}
 
