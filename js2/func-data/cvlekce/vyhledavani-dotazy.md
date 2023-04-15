@@ -4,7 +4,11 @@ demand: 2
 offerSolution: false
 ---
 
-Založte si nový projekt příkazem `npm init kodim-app cviceni-func-data html-css-js` a otevřete si ve VS Code vytvořenou složku `cviceni-func-data`.
+Založte si nový projekt příkazem
+```shell
+npm init kodim-app cviceni-func-data html-css-js
+```
+Otevřete si ve VS Code vytvořenou složku `cviceni-func-data`.
 
 Do `index.js` si zkopírujte následující pole dat. Budeme s nimi pracovat v dalších cvičeních.
 
