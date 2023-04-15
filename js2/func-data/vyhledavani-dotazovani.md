@@ -121,7 +121,7 @@ Metoda `every` je podobná metodě `some` v tom, že také vrací pravdivostní 
 Zkusme zjistit, zda jsou všechna jména kratší než pět znaků.
 
 ```js
-> names.some((name) => name.length < 5);
+> names.every((name) => name.length < 5);
 false
 ```
 
