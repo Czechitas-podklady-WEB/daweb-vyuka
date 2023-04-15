@@ -48,58 +48,67 @@ const persons = [
 
 ---solution
 
-```js
-// Pomocí funkce `forEach` vypište do konzole postupně věk každé osoby z pole
-// `persons`.
-console.log('Věk všech osob:');
-persons.forEach((person) => {
-  console.log(person.age);
-});
+1. Pomocí funkce `forEach` vypište do konzole postupně věk každé osoby z pole `persons`.
+    ```js
+    console.log('Věk všech osob:');
+    persons.forEach((person) => {
+      console.log(person.age);
+    });
+    ```
 
-// Pomocí metody `forEach` napište cyklus, který vypíše do konzole první
-// písmeno z každného jména v poli `names`.
-console.log('První písmeno každého jména:');
-names.forEach((person) => {
-  console.log(person.slice(0, 1));
-});
+1. Pomocí metody `forEach` napište cyklus, který vypíše do konzole první písmeno z každného
+   jména v poli `names`.
+    ```js
+    console.log('První písmeno každého jména:');
+    names.forEach((person) => {
+      console.log(person.slice(0, 1));
+    });
+    ```
+    
+1. Pomocí metody `find` najděte v poli `persons` osobu se jménem "Adam" a vypište ji do konzole.
+    ```js
+    const personAdam = persons.find((person) => person.name === 'Adam');
+    console.log('Adam:', personAdam);
+    ```
+    
+1. Vypište do konzole gender osoby se jménem "Onyx".
+    ```js
+    console.log(
+      'Gender Onyxe:',
+      persons.find((person) => person.name === 'Onyx').gender
+    );
+    ```
+    
+1. Pomocí metody `findIndex` najděte v poli `persons` index osoby s věkem 22 a mužským pohlavím.
+    ```js
+    console.log(
+      'Index osoby s věkem 22 a mužským pohlavím:',
+      persons.findIndex((person) => person.age === 22 && person.gender === 'male')
+    );
+    ```
+    
+1. Pomocí metody `some` zjistěte, jestli jsou v poli `numbers` nějaká čísla dělitelná 11.
+    ```js
+    const chosenNumbers = numbers.some((item) => item % 11 === 0);
+    console.log('Obsahuje číslo dělitelné 11:', chosenNumbers);
+    ```
+    
+1. Pomocí metody `some` zjistěte, jestli jsou v poli `persons` nějaké osoby nebinárního pohlaví, tedy nejsou ani `male` ani `female`.
+    ```js
+    const nonBinary = numbers.some(
+      (person) => !(person.gender === 'female' || person.gender === 'male')
+    );
+    console.log('Obsahuje osoby nebinárního pohlaví:', nonBinary);
 
-// Pomocí metody `find` najděte v poli `persons` osobu se jménem "Adam"
-// a vypište ji do konzole.
-const personAdam = persons.find((person) => person.name === 'Adam');
-console.log('Adam:', personAdam);
-
-// Vypište do konzole gender osoby se jménem "Onyx".
-console.log(
-  'Gender Onyxe:',
-  persons.find((person) => person.name === 'Onyx').gender
-);
-
-// Pomocí metody `findIndex` najděte v poli `persons` index osoby s věkem
-// 22 a mužským pohlavím.
-console.log(
-  'Index osoby s věkem 22 a mužským pohlavím:',
-  persons.findIndex((person) => person.age === 22 && person.gender === 'male')
-);
-
-// Pomocí metody `some` zjistěte, jestli jsou v poli `numbers` nějaká čísla
-// dělitelná 11.
-const chosenNumbers = numbers.some((item) => item % 11 === 0);
-console.log('Obsahuje číslo dělitelné 11:', chosenNumbers);
-
-// Pomocí metody `some` zjistěte, jestli jsou v poli `persons` nějaké osoby
-// nebinárního pohlaví, tedy nejsou ani `male` ani `female`.
-const nonBinary = numbers.some(
-  (person) => !(person.gender === 'female' || person.gender === 'male')
-);
-console.log('Obsahuje osoby nebinárního pohlaví:', nonBinary);
-// jiná varianata téhož
-const nonBinary2 = numbers.some(
-  (person) => !['female', 'male'].includes(person.gender)
-);
-console.log('Obsahuje osoby nebinárního pohlaví:', nonBinary2);
-
-// Pomocí metody `every` zjistěje, jestli v poli `persons` platí, že každá
-// osoba je starší 18 let.
-const majorPersons = names.every((person) => person.age >= 18);
-console.log('Jen osoby starší 18 let:', majorPersons);
-```
+    // jiná varianata téhož
+    const nonBinary2 = numbers.some(
+      (person) => !['female', 'male'].includes(person.gender)
+    );
+    console.log('Obsahuje osoby nebinárního pohlaví:', nonBinary2);
+    ```
+    
+1. Pomocí metody `every` zjistěje, jestli v poli `persons` platí, že každá osoba je starší 18 let.
+    ```js
+    const majorPersons = names.every((person) => person.age >= 18);
+    console.log('Jen osoby starší 18 let:', majorPersons);
+    ```
