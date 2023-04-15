@@ -32,7 +32,7 @@ Ze záznamů o počasí vybereme jen ty dny, ve kterých byl slabý nebo žádn�
   },
   {
     date: '05.10.2022',
-    temps: [17, 15, 10].
+    temps: [17, 15, 10],
     rain: 1.2,
     sunlight: 'partly-cloudy',
   },
