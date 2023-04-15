@@ -6,8 +6,8 @@ Vyhledávání a dotazování:
 
 - `Array.find`
 - `Array.findIndex`
-- `Array.every`
 - `Array.some`
+- `Array.every`
 
 Transformace:
 

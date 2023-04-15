@@ -98,7 +98,7 @@ Můžeme zkusit najit první den, kdy bylo zataženo:
 },
 ```
 
-### Metody `every` a `some`
+### Metody `some` a `every`
 
 Metoda `some` jako parametr bere funkci vracející boolean. Vrací pak `true` nebo `false` podle toho, zda předaná funkce alespoň na jednom prvku pole vrátila `true`.
 
