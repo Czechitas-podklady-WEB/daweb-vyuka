@@ -6,8 +6,8 @@ demand: 3
 V tomto cvičení budeme opět pracovat s poli z našich jednohubek.
 
 1. Napište cyklus, který spočítá průměr čísel v poli `numbers`. Napište tento cyklus ve staré formě `forEach`.
-1. Pomocí metody `forEach` napište cyklus, který vypíše do konzole poslední písmeno z každného jména v poli `names`.
-1. Pomocí metody `every` zjistěje, jestli v poli `persons` platí, že každá zletilá osoba je vždy buď muž nebo žena (tedy že vlastnost `gender` má hodnotu `male` nebo hodnotu `female`).
+1. Pomocí metody `forEach` napište cyklus, který vypíše do konzole poslední písmeno z každého jména v poli `names`.
+1. Pomocí metody `every` zjistěte, jestli v poli `persons` platí, že každá zletilá osoba je vždy buď muž nebo žena (tedy že vlastnost `gender` má hodnotu `male` nebo hodnotu `female`).
 1. Pomocí metody `filter` získejte z pole `names` pouze ta jména, která jsou delší než 4 znaky.
 1. Pomocí metody `filter` získejte z pole `persons` pouze dospělé muže.
 
@@ -20,7 +20,7 @@ numbers.forEach((item) => {sum+=item});
 const average = sum / numbers.length;
 console.log(average);
 ​
-// 1b Pomocí metody forEach napište cyklus, který vypíše do konzole poslední písmeno z každného jména v poli names.
+// 1b Pomocí metody forEach napište cyklus, který vypíše do konzole poslední písmeno z každého jména v poli names.
 ​
 names.forEach((item) => {
   console.log(item.slice(-1));

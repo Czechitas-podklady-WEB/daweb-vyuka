@@ -62,7 +62,7 @@ Převeďme například všechna jména na velká písmena.
 [ 'PETR', 'PAVEL', 'JANA', 'EVA', 'JAN', 'VERONIKA', 'PRAVDOSLAVA' ]
 ```
 
-Můžeme také třeba z našeho počasí vyrobit pole obsahujuící pouzde jednotlivé datumy.
+Můžeme také třeba z našeho počasí vyrobit pole obsahující pouze jednotlivá data.
 
 ```js
 > weather.map((day) => day.date)
@@ -75,7 +75,7 @@ Můžeme také třeba z našeho počasí vyrobit pole obsahujuící pouzde jedno
 ]
 ```
 
-Transformace může být samozřejmě složitějš. Vyrobme například pro každý den objekt obsahující datum a promůrnou teplotu.
+Transformace může být samozřejmě složitějš. Vyrobme například pro každý den objekt obsahující datum a průměrnou teplotu.
 
 ```js
 weather.map((day) => ({
@@ -84,7 +84,7 @@ weather.map((day) => ({
 });
 ```
 
-Pokud bám takto zkrácená funkce přijde nečitelná, můžete ji rozepsat do nazkrácené podoby.
+Pokud vám takto zkrácená funkce přijde nečitelná, můžete ji rozepsat do nezkrácené podoby.
 
 ```js
 weather.map((day) => {

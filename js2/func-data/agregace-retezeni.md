@@ -1,6 +1,6 @@
 ## Agregace a řetězení
 
-Agregaci provádíme ve chvíli, kdy data nějakám způsobem slučujeme dohromady. Budeme k tomu používat metody `join` a `flat`.
+Agregaci provádíme ve chvíli, kdy data nějakým způsobem slučujeme dohromady. Budeme k tomu používat metody `join` a `flat`.
 
 ### Metoda `join`
 
@@ -11,7 +11,7 @@ Metoda `join` spojí všechny prvky pole za sebe jako řetězce a vloží mezi n
 '1,2,3'
 ```
 
-Oddělovací řetezec si můžeme vybrat
+Oddělovací řetezec si můžeme zvolit
 
 ```js
 > [1, 2, 3].join('-')
@@ -24,7 +24,7 @@ Oddělovací řetezec si můžeme vybrat
 
 ### Řetězení
 
-Jelikož funkce `map` a `filter` vracejí pole, můžene na výsledném pole použít nějakou další metodu pro zpracování dat. Tako za sebe můžeme řetězit mnoho metod a sestavit tak nějakou sožitější operaci.
+Jelikož funkce `map` a `filter` vracejí pole, můžeme na výsledném poli použít nějakou další metodu pro zpracování dat. Takto za sebe můžeme řetězit mnoho metod a sestavit tak nějakou složitější operaci.
 
 Pojďme například z pole `names` vybrat všechna jména začínající na "p", převést je na velká písmena a spojit do jednoho dlouhého řetězce.
 

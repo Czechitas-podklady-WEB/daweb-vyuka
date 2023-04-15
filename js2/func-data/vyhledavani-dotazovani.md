@@ -22,7 +22,7 @@ Metody pro vyhledávání a dotazování fungují na stejném principu. Vždy ob
 
 Pokud chceme v poli vyhledat **první hodnotu**, která splňuje nějaká kritéria, použijeme metodu `find` nebo `findIndex`.
 
-Metoda `find` vrátí přímo nalazený prvek nebo `undefined`, pokud žádná hodnota vyhledávací kritérium nesplňuje.
+Metoda `find` vrátí přímo nalezený prvek nebo `undefined`, pokud žádná hodnota vyhledávací kritérium nesplňuje.
 
 ```js
 > names.find((name) => name === 'jana');
@@ -109,7 +109,7 @@ Zkusme zjistit, zda máme v poli `names` nějaká čtyřpísmenná jména.
 true
 ```
 
-Můžeme také ověřit zda například bude alespoň jeden svítilo slunce.
+Můžeme také ověřit, zda například alespoň jednou svítilo slunce.
 
 ```js
 > weather.some((day) => day.sunlight === 'sunny');
