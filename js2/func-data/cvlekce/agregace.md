@@ -36,6 +36,7 @@ const persons = [
   { name: 'Onyx', age: 37, gender: 'intersex' },
   { name: 'Alex', age: 29, gender: 'androgyne' },
 ];
+```
 
 1. Pomocí metod `map` a `join` vytvořte z pole `persons` HTML seznam v uvedeném formátu.
     ```js
