@@ -59,7 +59,7 @@ buttonElm.addEventListener('click', () => {
 });
 ```
 
-Bonus
+#### Bonus
 Soubor `index.html`:
 
 ```html
