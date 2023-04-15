@@ -34,13 +34,13 @@ Postupujte dle následujících kroků.
    ❌ Uživatel zadal rodné číslo neplatné délky.
    ```
 
-   V opačném případě vypiště:
+   V opačném případě vypište:
 
    ```text
    ✔️ Zadané rodné číslo má správně deset znaků.
    ```
 
-1. Každé rodné číslo musí být celé číslo. Zde je nějaká hodnota celé číslo v JavaScriptu zkontrolujete pomocí funkce `Number.isInteger`. Musíte však vstup předtím převést na číslo pomocí funkce `Number`.
+1. Každé rodné číslo musí být celé číslo. Zda je nějaká hodnota celé číslo, v JavaScriptu zkontrolujete pomocí funkce `Number.isInteger`. Musíte však vstup předtím převést na číslo pomocí funkce `Number`.
 
    ```text
    > Number.isInteger(Number('25'))
@@ -61,7 +61,7 @@ Postupujte dle následujících kroků.
    ✔️ Rodné číslo je celé číslo.
    ```
 
-1. Každé rodné číslo musí být dělitelné 11. Zkontrolujte tedy, že zadané číslo je dělitelné jedenácti a výsledek opět **vypište do konzole**.
+1. Každé rodné číslo musí být dělitelné 11. Zkontrolujte tedy, že zadané číslo je dělitelné jedenácti, a výsledek opět **vypište do konzole**.
 
    ```text
    ❌ Rodné číslo není dělitelné číslem 11.
