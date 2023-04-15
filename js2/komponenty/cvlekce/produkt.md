@@ -29,7 +29,11 @@ const products = [
   },
 ];
 ```
-
+1. Založte si nový projekt příkazem
+  ```shell
+  npm init kodim-app cviceni-produkt html-css-js
+  ```
+1. Otevřete si ve VS Code vytvořenou složku `cviceni-produkt`.
 1. Vytvořte HTML stránku s následující strukturou `body`:
    ```html
    <body>
