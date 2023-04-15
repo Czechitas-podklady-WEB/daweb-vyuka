@@ -55,7 +55,7 @@ V proměnné `weather` máme pro příklad uložena data o počasí za poslední
 const weather = [
   {
     date: '03.10.2022',
-    temps: [12, 12, 8]
+    temps: [12, 12, 8],
     rain: 4.1,
     sunlight: 'partly-cloudy',
   },
