@@ -5,6 +5,8 @@ demand: 2
 
 Vytvořme webovou stránku, která bude zobrazovat čas, kdy dnes vyšlo a kdy zapadá slunce.
 
+::fig[ukázka výsledku]{src=assets/ukazka.gif}
+
 1. Založte si nový projekt příkazem
 
    ```shell
