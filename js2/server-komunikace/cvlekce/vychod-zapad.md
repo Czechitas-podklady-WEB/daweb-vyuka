@@ -6,9 +6,11 @@ demand: 2
 Vytvořme webovou stránku, která bude zobrazovat čas, kdy dnes vyšlo a kdy zapadá slunce.
 
 1. Založte si nový projekt příkazem
-  ```shell
-  npm init kodim-app cviceni-vychod-zapad html-css-js
-  ```
+
+   ```shell
+   npm init kodim-app cviceni-vychod-zapad html-css-js
+   ```
+
 1. Otevřete si ve VS Code vytvořenou složku `cviceni-vychod-zapad`.
 1. V souboru `index.js` pomocí funkce `fetch` získejte data z API na adrese
    ```
@@ -24,7 +26,7 @@ Soubor `index.html`:
 
 ```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
