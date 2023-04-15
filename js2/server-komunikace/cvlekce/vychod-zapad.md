@@ -3,7 +3,7 @@ title: Východ a západ slunce
 demand: 2
 ---
 
-Vytvořme webovou stránku, která bude zobrazovat čas, kdy dnes vyšlo a kdy zapadá slunce. Zatím budeme pracovat bez komponent a vrátíme se k nim v druhé části lekce.
+Vytvořme webovou stránku, která bude zobrazovat čas, kdy dnes vyšlo a kdy zapadá slunce.
 
 1. Založte si nový projekt příkazem
   ```shell
