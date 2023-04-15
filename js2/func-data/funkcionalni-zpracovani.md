@@ -33,7 +33,7 @@ console.log(greetFunction('Alex'));
 console.log(shortGreetFunction('Alex'));
 ```
 
-Nemusíme samozřejme vracet jen řetězec, ale i číslo, logickou hodnotu (boolean) a všechny ostatní typy. Pozor na to, že když chceme vrátit objekt (který se píše do složených závorek `{` a `}`), musíme jej celý vložit ještě do kulatých závorek `(` a `)`:
+Nemusíme samozřejme vracet jen řetězec, ale i číslo, logickou hodnotu (boolean) a všechny ostatní typy. Pozor na to, že když chceme vrátit objekt, který se píše do složených závorek `{` a `}`, musíme jej celý vložit ještě do kulatých závorek `(` a `)`:
 
 ```js
 const createPerson = (name, age, gender) => ({
