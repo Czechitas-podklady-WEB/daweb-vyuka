@@ -60,6 +60,7 @@ buttonElm.addEventListener('click', () => {
 ```
 
 #### Bonus
+
 Soubor `index.html`:
 
 ```html
