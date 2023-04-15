@@ -55,7 +55,7 @@ V proměnné `weather` máme pro příklad uložena data o počasí za poslední
 const weather = [
   {
     date: '03.10.2022',
-    temps: [12, 12, 8]
+    temps: [12, 12, 8],
     rain: 4.1,
     sunlight: 'partly-cloudy',
   },
@@ -98,7 +98,7 @@ Můžeme zkusit najit první den, kdy bylo zataženo:
 },
 ```
 
-### Metody `every` a `some`
+### Metody `some` a `every`
 
 Metoda `some` jako parametr bere funkci vracející boolean. Vrací pak `true` nebo `false` podle toho, zda předaná funkce alespoň na jednom prvku pole vrátila `true`.
 
@@ -121,7 +121,7 @@ Metoda `every` je podobná metodě `some` v tom, že také vrací pravdivostní 
 Zkusme zjistit, zda jsou všechna jména kratší než pět znaků.
 
 ```js
-> names.some((name) => name.length < 5);
+> names.every((name) => name.length < 5);
 false
 ```
 

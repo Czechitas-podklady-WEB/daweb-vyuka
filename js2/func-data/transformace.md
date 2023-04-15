@@ -32,37 +32,25 @@ Ze záznamů o počasí vybereme jen ty dny, ve kterých byl slabý nebo žádn�
   },
   {
     date: '05.10.2022',
-    temps: [17, 15, 10].
+    temps: [17, 15, 10],
     rain: 1.2,
     sunlight: 'partly-cloudy',
-  },
-  {
-    date: '06.10.2022',
-    temps: [20, 18, 14],
-    rain: 10.5,
-    sunlight: 'cloudy',
-  },
-  {
-    date: '07.10.2022',
-    temps: [21, 18, 16],
-    rain: 12.4,
-    sunlight: 'cloudy',
   },
 ]
 ```
 
 ### Metoda `map`
 
-Metodu `map` použijeme ve chvílí, kdy potřebujeme jednotlivé položky pole nějak pozměnit či přetvořit. Metoda `map` opět bere jako parametr funkci, kterou zavolá na každé položce pole. Výsledky této funkce pak posbirá do nově vytvořeného pole. Původní pole tak zůstane netknuté.
+Metodu `map` použijeme ve chvíli, kdy potřebujeme jednotlivé položky pole nějak pozměnit či přetvořit. Metoda `map` opět bere jako parametr funkci, kterou zavolá na každé položce pole. Výsledky této funkce pak posbírá do nově vytvořeného pole. Původní pole tak zůstane netknuté.
 
-Převeďme například všechna jména na velká písmena.
+Převeďme například všechna jména na velká písmena:
 
 ```js
 > names.map((name) => name.toUpperCase())
 [ 'PETR', 'PAVEL', 'JANA', 'EVA', 'JAN', 'VERONIKA', 'PRAVDOSLAVA' ]
 ```
 
-Můžeme také třeba z našeho počasí vyrobit pole obsahující pouze jednotlivá data.
+Můžeme také třeba z našeho počasí vyrobit pole obsahujuící pouze jednotlivá data:
 
 ```js
 > weather.map((day) => day.date)
@@ -75,7 +63,7 @@ Můžeme také třeba z našeho počasí vyrobit pole obsahující pouze jednotl
 ]
 ```
 
-Transformace může být samozřejmě složitějš. Vyrobme například pro každý den objekt obsahující datum a průměrnou teplotu.
+Transformace může být samozřejmě složitější. Vyrobme například pro každý den objekt obsahující datum a průměrnou teplotu:
 
 ```js
 weather.map((day) => ({
@@ -84,7 +72,7 @@ weather.map((day) => ({
 });
 ```
 
-Pokud vám takto zkrácená funkce přijde nečitelná, můžete ji rozepsat do nezkrácené podoby.
+Pokud bám takto zkrácená funkce přijde nečitelná, můžete ji rozepsat do nazkrácené podoby:
 
 ```js
 weather.map((day) => {

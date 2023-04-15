@@ -8,7 +8,11 @@ Napište program, který zjistí, jestli je zadané rodné číslo platné.
 (Skutečná rodná čísla mají 9 nebo 10 číslic, my budeme uvažovat pouze rodná čísla mladších lidí, která mají 10 číslic.)
 Postupujte dle následujících kroků.
 
-1. Založte si projekt v čistém JavaScriptu, stačí soubory `index.html` a `index.js`.
+1. Založte si projekt příkazem
+   ```shell
+   npm init kodim-app cviceni-rodna-cisla html-css-js
+   ```
+   Ve VS Code otevřete složku `cviceni-rodna-cisla`.
 1. JavaScript vložte do stránky pomocí
    ```html
    <script type="module" src="index.js"></script>
@@ -16,29 +20,21 @@ Postupujte dle následujících kroků.
 1. Pomocí funkce `prompt` se zeptejte uživatele na rodné číslo. Rodné číslo zkontrolujte podle bodů popsaných níže.
 1. Každé rodné číslo musí mít přesně 10 znaků. Zkontrolujte tedy, že zadaný řetězec je délky 10 a neprojdou nám například vstupy typu
 
-   ```text
-   nepovím
-   ```
+   > nepovím
 
    Slovo „nepovím“ má totiž jen 7 znaků.
 
-   ```text
-   123456789123456789
-   ```
+   > 123456789123456789
 
    Řetězec „123456789123456789“ má totiž 18 znaků.
 
    Pokud uživatel zadal číslo špatné délky, **vypište do konzole text**:
 
-   ```text
-   ❌ Uživatel zadal rodné číslo neplatné délky.
-   ```
+   > ❌ Uživatel zadal rodné číslo neplatné délky.
 
    V opačném případě vypište:
 
-   ```text
-   ✔️ Zadané rodné číslo má správně deset znaků.
-   ```
+   > ✔️ Zadané rodné číslo má správně deset znaků.
 
 1. Každé rodné číslo musí být celé číslo. Zda je nějaká hodnota celé číslo, v JavaScriptu zkontrolujete pomocí funkce `Number.isInteger`. Musíte však vstup předtím převést na číslo pomocí funkce `Number`.
 
@@ -53,35 +49,20 @@ Postupujte dle následujících kroků.
 
    Opět **vypište do konzole**, zda podmínka platí.
 
-   ```text
-   ❌ Rodné číslo obsahuje nepovolené znaky.
-   ```
-
-   ```text
-   ✔️ Rodné číslo je celé číslo.
-   ```
+   > ✔️ Rodné číslo je celé číslo.
+   > ❌ Rodné číslo obsahuje nepovolené znaky.
 
 1. Každé rodné číslo musí být dělitelné 11. Zkontrolujte tedy, že zadané číslo je dělitelné jedenácti, a výsledek opět **vypište do konzole**.
 
-   ```text
-   ❌ Rodné číslo není dělitelné číslem 11.
-   ```
-
-   ```text
-   ✔️ Rodné číslo je dělitelné 11.
-   ```
+> ✔️ Rodné číslo je dělitelné 11.
+> ❌ Rodné číslo není dělitelné číslem 11.
 
 1. Pokud jsou všechny podmínky splněny, rodné číslo budeme považovat za platné. Informaci o platnosti **vypište do konzole**.
 
-   ```text
-   ❌ Uživatel zadal neplatné rodné číslo.
-   ```
+> ✔️ Zadané rodné číslo je platné.
+> ❌ Uživatel zadal neplatné rodné číslo.
 
-   ```text
-   ✔️ Zadané rodné číslo je platné.
-   ```
-
-   Po zadání rodného čísla by se v konzoli měly objevit čtyři výpisy.
+Po zadání rodného čísla by se v konzoli měly objevit čtyři výpisy.
 
 ---solution
 

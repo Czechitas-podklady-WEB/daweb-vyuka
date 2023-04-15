@@ -52,12 +52,13 @@ const formular = document.querySelector('#formular');
 formular.addEventListener('submit', (event) => {
   event.preventDefault();
   const vstup = formular.querySelector('input').value;
-  const vystup =
-    checkBirthID(vstup) === 'ok'
-      ? '✔️ V pořádku.'
-      : '❌ V rodném čísle jsou chyby.';
-
-  document.querySelector('#vystup').textContent = vystup;
+  const vystupElm = document.querySelector('#vystup');
+  const vysledekValidace = checkBirthID(vstup);
+  if (vysledekValidace === 'ok') {
+    vystupElm.textContent = '✔️ V pořádku.';
+  } else {
+    vystupElm.textContent = '❌ V rodném čísle jsou chyby.';
+  }
 
   const overeni = validateCharacters(vstup);
   const cifry = document.querySelector('#cifry');

@@ -5,13 +5,13 @@ V předešlé lekci jsme se naučili používat metody pro zpracování dat jako
 Vzpomeňte na cvičení [Nákupní seznam](../func-data/cv-nadoma#cvdoma%3Enakupni-seznam) z minulé lekce. Zobrazovali jsme v něm položky nákupního seznamu na základě pole objektů. Místo abychom toto pole měli natvrdo uložené přímo v kódu, stáhneme si jej z API. Příslušný endpoint má URL
 
 ```
-https://nakupy.kodim.cz/api/sampleweek/mon/items
+https://nakupy.kodim.app/api/sampleweek/mon/items
 ```
 
 Pojďme nejdříve seznam stáhnout a vypsat do konzole.
 
 ```js
-fetch('https://nakupy.kodim.cz/api/sampleweek')
+fetch('https://nakupy.kodim.app/api/sampleweek/mon/items')
   .then((response) => {
     return response.json();
   })
@@ -23,7 +23,7 @@ fetch('https://nakupy.kodim.cz/api/sampleweek')
 Nyní už můžeme využít metody pro zpracování dat a vytvořit obsah stránky.
 
 ```js
-fetch('https://nakupy.kodim.cz/api/sampleweek')
+fetch('https://nakupy.kodim.app/api/sampleweek/mon/items')
   .then((response) => {
     return response.json();
   })
@@ -32,11 +32,11 @@ fetch('https://nakupy.kodim.cz/api/sampleweek')
     shoppingList.innerHTML = data.result
       .map((item) => {
         return `
-        <li class="item">
-          <div class="item__name">${item.product}</div>
-          <div class="item__amount">${item.amount}</div>
-        </li>
-      `;
+          <li class="item">
+            <div class="item__name">${item.product}</div>
+            <div class="item__amount">${item.amount}</div>
+          </li>
+        `;
       })
       .join('');
   });
@@ -50,11 +50,11 @@ const renderShoppingList = (items) => {
   shoppingList.innerHTML = items
     .map((item) => {
       return `
-      <li class="item">
-        <div class="item__name">${item.product}</div>
-        <div class="item__amount">${item.amount}</div>
-      </li>
-    `;
+        <li class="item">
+          <div class="item__name">${item.product}</div>
+          <div class="item__amount">${item.amount}</div>
+        </li>
+      `;
     })
     .join('');
 };
@@ -63,19 +63,19 @@ const renderShoppingList = (items) => {
 Tato funkce nám pomůže trochu pročistit náš fetchovací kód.
 
 ```js
-fetch('https://apps.kodim.cz/daweb/trening-api/apis/shopping')
+fetch('https://nakupy.kodim.app/api/sampleweek/mon/items')
   .then((response) => {
     return response.json();
   })
   .then((data) => {
-    renderShoppingList(data);
+    renderShoppingList(data.result);
   });
 ```
 
 Můžeme jej pak i hezky pozkracovat.
 
 ```js
-fetch('https://apps.kodim.cz/daweb/trening-api/apis/shopping')
+fetch('https://nakupy.kodim.app/api/sampleweek/mon/items')
   .then((response) => response.json())
   .then((data) => renderShoppingList(data));
 ```
