@@ -53,7 +53,7 @@ const createPersonLong = (name, age, gender) => {
 
 ```
 
-Kdybychom použili jen složené závorky `{` a `}`, JavaScript si bude myslet, že chceme napsat blok kódu. Proto objekt uzavřeme do kulatých závorek – jsou to ty samé závorky, které používáme pro určení přednosti při vyhodnocování výrazů – třeba `5 + (3 * 4)`. Tady je nepoužíváme pro určení přednosti (uvnitř bude jenom jeden výraz – námi vtvářený objekt), ale JavaScript díky nim bude vědět, že uvnitř nemůže být blok kódu – a pak už složené závorky nemůžou znamenat nic jiného, než vytvoření objektu.
+Kdybychom použili jen složené závorky `{` a `}`, JavaScript si bude myslet, že chceme napsat blok kódu. Proto objekt uzavřeme do kulatých závorek – jsou to ty samé závorky, které používáme pro určení přednosti při vyhodnocování [výrazů](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators),třeba `5 + (3 * 4)`. Tady je nepoužíváme pro určení přednosti (uvnitř bude jenom jeden výraz – námi vytvářený objekt), ale JavaScript díky nim bude vědět, že uvnitř nemůže být blok kódu – a pak už složené závorky nemůžou znamenat nic jiného, než vytvoření objektu.
 
 
 Je dobré si dát pozor, aby náš kód zůstal čitelný. Pokud je funkce jasná a jednoduchá, zkrácení se vyplatí. Pokud pracujeme s obřími objekty, může se vyplatit napsat funkci běžným způsobem.
