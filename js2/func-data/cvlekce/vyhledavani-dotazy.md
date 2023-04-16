@@ -103,7 +103,7 @@ const persons = [
    console.log('Obsahuje číslo dělitelné 11:', chosenNumbers);
    ```
 
-1. Pomocí metody `some` zjistěte, jestli jsou v poli `persons` nějaké osoby nebinárního pohlaví, tedy nejsou ani `male` ani `female`.
+1. Pomocí metody `some` zjistěte, jestli jsou v poli `persons` nějaké osoby nebinárního pohlaví, tedy nejsou ani `male`, ani `female`.
 
    ```js
    const nonBinary = numbers.some(
