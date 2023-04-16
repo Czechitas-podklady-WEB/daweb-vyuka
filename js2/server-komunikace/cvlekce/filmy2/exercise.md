@@ -5,6 +5,8 @@ demand: 4
 
 Pokračujte v předchozím cvičení. Úkolem bude umožnit filtrování filmů podle žánrů.
 
+::fig[ukázka výsledku]{src=assets/ukazka.gif}
+
 1. Zakomentujte pro tuto chvíli kód, který z API stahuje jednotlivé filmy. Vrátíme se k němu později.
 1. Filmové API umožňuje získat názvy všech dostupných žánrů pomocí endpointu `/movie-api/genres`. Prohlédněte si data, která tento endpoint vrací.
 1. Pomocí funkce `fetch` naplňte těmito daty prvek `select` podle připravenéno vzoru.
@@ -40,7 +42,7 @@ const renderMovies = (movies) => {
       return `
     <li class="movie-detail">
     <div class="movie-poster">
-      <img 
+      <img
         src="${movie.posterUrl}"
         alt="${movie.title}"
       />

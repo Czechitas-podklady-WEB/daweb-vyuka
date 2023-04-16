@@ -19,8 +19,8 @@ Vytvořme webovou stránku, která bude zobrazovat čas, kdy dnes vyšlo a kdy z
    https://api.sunrise-sunset.org/json?lat=50&lng=14.5
    ```
    Výsledný JSON zatím pouze vypište do konzole a prohlédněte si jeho strukturu.
-1. Místo do konzole vypište někam do stránky čas západu a východu slunce.
-1. Přidejte na stránku tlačítko. Když uživatel toto tlačíko stiskne, teprve pak zavolejte API a zobrazte západ slunce.
+1. Místo do konzole vypište někam do stránky čas východu a západu slunce.
+1. Přidejte na stránku tlačítko. Když uživatel toto tlačíko stiskne, teprve pak zavolejte API a zobrazte čas východu a západu slunce.
 
 ---solution
 

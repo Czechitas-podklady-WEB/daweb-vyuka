@@ -6,9 +6,11 @@ demand: 2
 Vytvoříme aplikaci, která zobrazuje seznam kontaktů. U každého kontaktu budeme evidovat jméno, email a telefonní číslo.
 
 1. Založte si nový projekt příkazem
-  ```shell
-  npm init kodim-app cviceni-kontakty-dom html-css-js
-  ```
+
+```shell
+npm init kodim-app cviceni-kontakty-dom html-css-js
+```
+
 1. Otevřete si ve VS Code vytvořenou složku `cviceni-kontakty-dom`.
 1. Vytvořte jednoduchou stránku s prázdným elementem `#app`.
 1. Uvnitř souboru`index.js` pomocí `document.createElement` vytvořte element `div` a uložte jej do proměnné `contact1`.

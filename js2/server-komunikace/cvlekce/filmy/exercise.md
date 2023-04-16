@@ -5,6 +5,8 @@ demand: 3
 
 Vytvřte si repozitář ze šablony [cviceni-filmy](https://github.com/Czechitas-podklady-WEB/cviceni-filmy) se stránkou, která zobrazuje seznam filmů. Zatím na stránce vidíme film pouze jeden jako příklad. Vaším cílem bude zobrazovat filmy stažené z API.
 
+::fig[ukázka výsledku]{src=assets/vysledek.png}
+
 1. Spusťte si připravenou stránku, prohlédněte `index.html` a strukturu filmu v seznamu.
 1. Seznam filmů budeme stahovat z endpointu `https://apps.kodim.cz/daweb/trening-api/apis/movie-api/movies`, jak vypadá struktura dat si můžete ověřit otevřením adresy v prohlížeči.
 1. Napište JavaScriptový kód, který zajistí stažení pole filmů z API. Zatím jej vypište do konzole.
@@ -23,7 +25,7 @@ const renderMovies = (movies) => {
       return `
     <li class="movie-detail">
     <div class="movie-poster">
-      <img 
+      <img
         src="${movie.posterUrl}"
         alt="${movie.title}"
       />
