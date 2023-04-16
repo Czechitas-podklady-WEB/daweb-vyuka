@@ -8,11 +8,11 @@ const renderShoppingList = (items) => {
   shoppingList.innerHTML = items
     .map((item) => {
       return `
-      <li class="item">
-        <div class="item__product">${item.name}</div>
-        <div class="item__amount">${item.amount}</div>
-      </li>
-    `;
+        <div class="list-item">
+          <div class="list-item__product">${item.product}</div>
+          <div class="list-item__amount">${item.amount}</div>
+        </div>
+      `;
     })
     .join('');
 };
@@ -24,7 +24,7 @@ Zde je jedna položka relativné malý kousek HTML. Brzy však obsah našich str
 const ListItem = (item) => {
   return `
     <div class="list-item">
-      <div class="list-item__product">${item.name}</div>
+      <div class="list-item__product">${item.product}</div>
       <div class="list-item__amount">${item.amount}</div>
     </div>
   `;
