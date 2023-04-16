@@ -6,35 +6,40 @@ Struktura komponent často kopíruje strukturu naších dat. Vraťme se zde k na
 
 ```js
 const ShoppingList = (props) => {
-  const { day, items } = props;
+  const { dayName, items } = props;
+  
   return `
     <div class="shopping-list">
-      <h2>${day}</h2>  
-      <ul class="shopping-list__items">
-        ${items.map((item) => ShoppingItem(item)).join('')}
-      </ul>
+      <h2 class="shopping-list__day">${dayName}</h2>
+      <div class="shopping-list__items">
+        ${items.map((item) => ListItem(item)).join('')}
+      </div>
     </div>
   `;
 };
 ```
 
-Všimněte si, jak elegantně můžeme pomocí interpolace vložit do HTML řetězce obsah generovaný pomocí kompnenty `ShoppingItem`.
+Všimněte si, jak elegantně můžeme pomocí interpolace vložit do HTML řetězce obsah generovaný pomocí kompnenty `ListItem`.
 
 Komponentu `ShoppingList` pak použijeme k vytvořené seznamu pro pondělí a úterý. Zbavíme se tak úplně funkce `renderShoppingList`.
 
 ```js
-const listsElement = document.querySelector('#lists');
+const mainElement = document.querySelector('main');
 
-fetch('https://apps.kodim.cz/daweb/trening-api/apis/shopping/mon')
+fetch('https://nakupy.kodim.app/api/sampleweek/mon/items')
   .then((response) => response.json())
   .then((data) => {
-    listsElement.innerHTML += ShoppingList({ day: 'Pondělí', items: data });
+    mainElement.innerHTML += ShoppingList(
+      { dayName: 'Pondělí', items: data.result }
+    );
   });
 
-fetch('https://apps.kodim.cz/daweb/trening-api/apis/shopping/tue')
+fetch('https://nakupy.kodim.app/api/sampleweek/tue/items')
   .then((response) => response.json())
   .then((data) => {
-    listsElement.innerHTML += ShoppingList({ day: 'Úterý', items: data });
+    mainElement.innerHTML += ShoppingList(
+      { dayName: 'Úterý', items: data.result }
+    );
   });
 ```
 
