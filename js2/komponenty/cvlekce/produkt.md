@@ -32,26 +32,30 @@ const products = [
 
 1. Založte si nový projekt příkazem
 
-```shell
-npm init kodim-app cviceni-produkt html-css-js
-```
+   ```shell
+   npm init kodim-app cviceni-produkt html-css-js
+   ```
 
 1. Otevřete si ve VS Code vytvořenou složku `cviceni-produkt`.
 1. Vytvořte HTML stránku s následující strukturou `body`:
+
    ```html
    <body>
      <section id="products-section"></section>
    </body>
    ```
+
 1. Vložte do stránky soubor `index.js` a na jeho začátek vložte pole s produkty.
 1. Vytvořte funkci `Product`, s jedním parametrem `props`. Tato funkce bude představovat komponentu pro jeden produkt.
 1. Do funkce `Product` vložte kód vytvářející HTML pro jeden produkt. Dejte pozor, že uvnitř komponenty se produkt předává v parametru `props`. Nechť vaše funkce jako svůj výsledek vrátí vyrobené HTML v tomto tvaru:
+
    ```html
    <div class="product">
      <h2 class="product__name">Mlýnek na kávu</h2>
      <p class="product__price">Cena: 520 Kč</p>
    </div>
    ```
+
 1. Vytvořte funkci `renderProducts`, která vybere ze stránky element s _id_ `products-section` a naplní jej obsahem s pomocí komponenty `Product`.
 1. Zavolejte vaši funkci a vykoušejte, že se produkty zobrazují správně. V reálné aplikaci bychom samozřejmě tuto funkci volali jako reakci na nějaký `fetch` dat.
 
