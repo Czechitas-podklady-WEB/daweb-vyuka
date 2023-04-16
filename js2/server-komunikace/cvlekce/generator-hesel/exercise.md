@@ -3,7 +3,7 @@ title: Generátor hesel
 demand: 3
 ---
 
-Vyrobíme stránku, která pomůže uživateli vygenerovat upravdu silné a neprůstřelné heslo. Použijeme k tomu [tréningové API](https://apps.kodim.cz/daweb/trening-api/docs/heslo) na generování hesel.
+Vyrobíme stránku, která pomůže uživateli vygenerovat opravdu silné a neprůstřelné heslo. Použijeme k tomu [tréninkové API](https://apps.kodim.cz/daweb/trening-api/docs/heslo) na generování hesel.
 
 ::fig[ukázka výsledku]{src=assets/ukazka.gif}
 
