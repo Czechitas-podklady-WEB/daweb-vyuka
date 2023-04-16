@@ -7,7 +7,7 @@ Struktura komponent často kopíruje strukturu naších dat. Vraťme se zde k na
 ```js
 const ShoppingList = (props) => {
   const { dayName, items } = props;
-  
+
   return `
     <div class="shopping-list">
       <h2 class="shopping-list__day">${dayName}</h2>
@@ -29,17 +29,19 @@ const mainElement = document.querySelector('main');
 fetch('https://nakupy.kodim.app/api/sampleweek/mon/items')
   .then((response) => response.json())
   .then((data) => {
-    mainElement.innerHTML += ShoppingList(
-      { dayName: 'Pondělí', items: data.result }
-    );
+    mainElement.innerHTML += ShoppingList({
+      dayName: 'Pondělí',
+      items: data.result,
+    });
   });
 
 fetch('https://nakupy.kodim.app/api/sampleweek/tue/items')
   .then((response) => response.json())
   .then((data) => {
-    mainElement.innerHTML += ShoppingList(
-      { dayName: 'Úterý', items: data.result }
-    );
+    mainElement.innerHTML += ShoppingList({
+      dayName: 'Úterý',
+      items: data.result,
+    });
   });
 ```
 
