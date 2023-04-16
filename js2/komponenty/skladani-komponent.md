@@ -1,8 +1,8 @@
 ## Skládání komponent
 
-Většina webových aplikací se skládá z mnoha různých komponent. Když takovou aplikaci tvoříme, postupujeme vždy směrem zdola nahoru. Vytváříme nejdříve jednoduché komponenty jako tlačítka, položky seznamů, vstupní pole apod. Tyto pak skládáme do větších komponent jako formuláře, seznamy, různá menu a další. Nakonec se dostaneme až k největším komponentám jako jsou samotné stránky naší aplikace.
+Většina webových aplikací se skládá z mnoha různých komponent. Když takovou aplikaci tvoříme, postupujeme vždy směrem zdola nahoru. Vytváříme nejdříve jednoduché komponenty jako tlačítka, položky seznamů, vstupní pole apod. Tyto pak skládáme do větších komponent jako formuláře, seznamy, různá menu a další. Nakonec se dostaneme až k největším komponentám, jako jsou samotné stránky naší aplikace.
 
-Struktura komponent často kopíruje strukturu naších dat. Vraťme se zde k našemu nákupnímu seznamu. Chtěli bychom aplikaci rozšířit tak, abychom mohli zobrazovat nákupný seznamy pro jednotlivé dny v týdnu. Budeme tedy chtít vytvořit komponentu `ShoppingList`, která zobrazí nákupní seznam pro jeden den v týdnu.
+Struktura komponent často kopíruje strukturu našich dat. Vraťme se zde k našemu nákupnímu seznamu. Chtěli bychom aplikaci rozšířit tak, abychom mohli zobrazovat nákupní seznamy pro jednotlivé dny v týdnu. Budeme tedy chtít vytvořit komponentu `ShoppingList`, která zobrazí nákupní seznam pro jeden den v týdnu.
 
 ```js
 const ShoppingList = (props) => {
@@ -18,9 +18,9 @@ const ShoppingList = (props) => {
 };
 ```
 
-Všimněte si, jak elegantně můžeme pomocí interpolace vložit do HTML řetězce obsah generovaný pomocí kompnenty `ShoppingItem`.
+Všimněte si, jak elegantně můžeme pomocí interpolace vložit do HTML řetězce obsah generovaný pomocí komponenty `ShoppingItem`.
 
-Komponentu `ShoppingList` pak použijeme k vytvořené seznamu pro pondělí a úterý. Zbavíme se tak úplně funkce `renderShoppingList`.
+Komponentu `ShoppingList` pak použijeme k vytvoření seznamu pro pondělí a úterý. Zbavíme se tak úplně funkce `renderShoppingList`.
 
 ```js
 const listsElement = document.querySelector('#lists');

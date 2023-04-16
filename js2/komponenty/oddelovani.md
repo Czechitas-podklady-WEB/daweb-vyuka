@@ -4,7 +4,7 @@
 
 Ve výsledku se chceme ke každé komponentě chovat jako k jakémusi samostatnému uzlíku či balíčku. Každá komponenta má nějaký JavaScriptový kód, styly a také třeba soubory s obrázky. Toto všechno chceme mít pohromadě, aby bylo jasné, co všechno patří k jaké komponentě.
 
-Pro každou komponentu si tedy vytvoříme spociální složku a domluvíme se na společné struktuře, kterou budeme dodržovat. Každá složka bude obsahovat
+Pro každou komponentu si tedy vytvoříme speciální složku a domluvíme se na společné struktuře, kterou budeme dodržovat. Každá složka bude obsahovat
 
 - soubor `index.js` s JavaScriptovým kódem komponenty,
 - soubor `style.css` s CSS styly pro komponentu,
