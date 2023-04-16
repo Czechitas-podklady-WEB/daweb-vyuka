@@ -72,7 +72,7 @@ weather.map((day) => ({
 });
 ```
 
-Pokud bám takto zkrácená funkce přijde nečitelná, můžete ji rozepsat do nazkrácené podoby:
+Pokud nám takto zkrácená funkce přijde nečitelná, můžete ji rozepsat do nazkrácené podoby:
 
 ```js
 weather.map((day) => {

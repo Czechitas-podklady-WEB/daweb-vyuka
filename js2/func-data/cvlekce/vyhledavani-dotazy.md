@@ -45,7 +45,7 @@ const persons = [
 1. Vypište do konzole gender osoby se jménem "Onyx".
 1. Pomocí metody `findIndex` najděte v poli `persons` index osoby s věkem 22 a mužským pohlavím.
 1. Pomocí metody `some` zjistěte, jestli jsou v poli `numbers` nějaká čísla dělitelná 11.
-1. Pomocí metody `some` zjistěte, jestli jsou v poli `persons` nějaké osoby nebinárního pohlaví, tedy nejsou ani `male` ani `female`.
+1. Pomocí metody `some` zjistěte, jestli jsou v poli `persons` nějaké osoby nebinárního pohlaví, tedy nejsou ani `male`, ani `female`.
 1. Pomocí metody `every` zjistěte, jestli v poli `persons` platí, že je každá osoba starší 18 let.
 
 ---solution
@@ -59,7 +59,7 @@ const persons = [
    });
    ```
 
-1. Pomocí metody `forEach` napište cyklus, který vypíše do konzole první písmeno z každného
+1. Pomocí metody `forEach` napište cyklus, který vypíše do konzole první písmeno z každého
    jména v poli `names`.
 
    ```js
@@ -103,7 +103,7 @@ const persons = [
    console.log('Obsahuje číslo dělitelné 11:', chosenNumbers);
    ```
 
-1. Pomocí metody `some` zjistěte, jestli jsou v poli `persons` nějaké osoby nebinárního pohlaví, tedy nejsou ani `male` ani `female`.
+1. Pomocí metody `some` zjistěte, jestli jsou v poli `persons` nějaké osoby nebinárního pohlaví, tedy nejsou ani `male`, ani `female`.
 
    ```js
    const nonBinary = numbers.some(
@@ -118,7 +118,7 @@ const persons = [
    console.log('Obsahuje osoby nebinárního pohlaví:', nonBinary2);
    ```
 
-1. Pomocí metody `every` zjistěje, jestli v poli `persons` platí, že každá osoba je starší 18 let.
+1. Pomocí metody `every` zjistěte, jestli v poli `persons` platí, že každá osoba je starší 18 let.
 
    ```js
    const majorPersons = names.every((person) => person.age >= 18);

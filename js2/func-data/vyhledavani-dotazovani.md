@@ -42,12 +42,12 @@ Pokud bychom chtěli místo hodnoty její index, použijeme metodu `findIndex`. 
 
 ### Pole objektů
 
-Naše data samozřejmě mohou mít složitější strukturu. Jedním z nejčastějších formátů, v jakém budeme data získávat a zobrazovat, je pole objektů. Proto je dobré si hned od začátku zvyknout na používání metod na polích, které obsahují objekty.
+Naše data samozřejmě mohou mít složitější strukturu. Jedním z nejčastějších formátů, v jakém budeme data získávat a zobrazovat, je pole objektů. Proto je dobré si hned od začátku zvyknout na používání metod na polích, která obsahují objekty.
 
 V proměnné `weather` máme pro příklad uložena data o počasí za posledních 5 dní. Pro každý den máme
 
 - datum jako string,
-- odpolední, večerní a noční temploty jako pole čísel (ve stupních Celsia),
+- odpolední, večerní a noční teploty jako pole čísel (ve stupních Celsia),
 - dešťové srážky jako číslo (v milimetrech),
 - sluneční podmínky jako string.
 
@@ -116,7 +116,7 @@ Můžeme také ověřit, zda například alespoň jednou svítilo slunce.
 true
 ```
 
-Metoda `every` je podobná metodě `some` v tom, že také vrací pravdivostní hodnotu. Vrátí však `true` pouze pokud **všechny** položky pole splňují zadanou podmínku.
+Metoda `every` je podobná metodě `some` v tom, že také vrací pravdivostní hodnotu. Vrátí však `true`, pouze pokud **všechny** položky pole splňují zadanou podmínku.
 
 Zkusme zjistit, zda jsou všechna jména kratší než pět znaků.
 
