@@ -1,4 +1,4 @@
-Před tím, než se pustíme do hlubin komunikace se serverem, ukážeme si základní principy, na kterých je postavená technologie World Wide Web (www).
+Než se pustíme do hlubin komunikace se serverem, ukážeme si základní principy, na kterých je postavená technologie World Wide Web (www).
 
 ## Klient/Server
 
@@ -13,7 +13,7 @@ Příkladem softwarového serveru je například program `serve`, který spoušt
 
 ## Požadavky
 
-Prohlížeč obsah stránky získá tak, že na server posílá takzvané :term{cs=požadavky en=requests}. Prohlížečem odeslané požadavky můžeme sledovat v developer tools v záložce :i[Network], Pokud například otevřete stránku [kodim.cz](https://kodim.cz) uvidíte v této záložce seznam požadavků jako na obrázku.
+Prohlížeč obsah stránky získá tak, že na server posílá takzvané :term{cs=požadavky en=requests}. Prohlížečem odeslané požadavky můžeme sledovat v developer tools v záložce :i[Network], Pokud například otevřete stránku [kodim.cz](https://kodim.cz), uvidíte v této záložce seznam požadavků jako na obrázku.
 
 ::fig{src=assets/pozadavky.png}
 
@@ -22,7 +22,7 @@ Vidíme, že k plnému načtení stránky bylo potřeba celkem 23 požadavků. N
 - HTML stránky (typ document),
 - CSS styly (typ stylesheet),
 - JavaScript (typ script),
-- obrázky a icony (typy svg+xml, png),
+- obrázky a ikony (typy svg+xml, png),
 - fonty (typ font).
 
 U všech odpovědí vidíme status s číslem 200, což v řeči HTTP znamená "všechno v pořádku". Další běžné kódy jsou

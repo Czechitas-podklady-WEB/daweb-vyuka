@@ -8,7 +8,7 @@ Vytvřte si repozitář ze šablony [cviceni-filmy](https://github.com/Czechitas
 ::fig[ukázka výsledku]{src=assets/vysledek.png}
 
 1. Spusťte si připravenou stránku, prohlédněte `index.html` a strukturu filmu v seznamu.
-1. Seznam filmů budeme stahovat z endpointu `https://apps.kodim.cz/daweb/trening-api/apis/movie-api/movies`, jak vypadá struktura dat si můžete ověřit otevřením adresy v prohlížeči.
+1. Seznam filmů budeme stahovat z endpointu `https://apps.kodim.cz/daweb/trening-api/apis/movie-api/movies`, jak vypadá struktura dat, si můžete ověřit otevřením adresy v prohlížeči.
 1. Napište JavaScriptový kód, který zajistí stažení pole filmů z API. Zatím jej vypište do konzole.
 1. Někam si zkopírujte strukturu jednoho filmu z `index.html`. Obsah elementu `.movie-list` smažte, aby zůstal prázdný.
 1. Upravte kód tak, abyste naplnili element `.movie-list` obsahem staženým z API.

@@ -1,6 +1,6 @@
 ## Agregace a řetězení
 
-Agregaci provádíme ve chvíli, kdy data nějakým způsobem slučujeme dohromady. Budeme k tomu používat metodu `join` .
+Agregaci provádíme ve chvíli, kdy data nějakým způsobem slučujeme dohromady. Budeme k tomu používat metodu `join`.
 
 ### Metoda `join`
 
