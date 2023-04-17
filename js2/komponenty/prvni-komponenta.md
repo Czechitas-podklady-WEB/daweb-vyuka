@@ -22,7 +22,7 @@ const renderShoppingList = (items) => {
 };
 ```
 
-Zde je jedna položka relativné malý kousek HTML. Brzy však obsah našich stránek bude složitější a vytvoření jedné položky zabere více řádků kódu. V takovém případě se nám vyplatí přesunout tvorbu jedné položky do speciální funkce. Nazveme ji `ListItem` a vložíme ji do souboru `script.js` v naší nově založené aplikaci _Nákupy_.
+Zde je jedna položka relativně malý kousek HTML. Brzy však obsah našich stránek bude složitější a vytvoření jedné položky zabere více řádků kódu. V takovém případě se nám vyplatí přesunout tvorbu jedné položky do speciální funkce. Nazveme ji `ListItem` a vložíme ji do souboru `script.js` v naší nově založené aplikaci _Nákupy_.
 
 ```js
 const ListItem = (item) => {
