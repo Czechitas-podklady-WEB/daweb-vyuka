@@ -1,6 +1,6 @@
 Jak se v tomto kurzu stáváme stále zkušenějšími a mocnějšími, nazrává čas k tomu, abychom se pokusili sestavit malinko větší a zajímavější aplikaci, na které budeme ilustrovat pokročilejší dovednosti. Od této chvíli budeme společně pracovat na aplikaci s názvem _Nákupy_, která bude umožňovat správu nákupních seznamů pro jednotlivé dny v týdny.
 
-Abychom se nemuseli trápit se stylováním, začneme již s hotovým základem aplikace, který najdete v [tomto repozitáři](https://github.com/Czechitas-podklady-WEB/nakupy-start). Použijte jej jako šablonu pro založení vlastního repozítáře, do kterého si budete dle výkladu postupně přidávat další funkčnosti.
+Abychom se nemuseli trápit se stylováním, začneme již s hotovým základem aplikace, který najdete v [tomto repozitáři](https://github.com/Czechitas-podklady-WEB/nakupy-start). Použijte jej jako šablonu pro založení vlastního repozitáře, do kterého si budete dle výkladu postupně přidávat další funkčnosti.
 
 ## První komponenta
 
