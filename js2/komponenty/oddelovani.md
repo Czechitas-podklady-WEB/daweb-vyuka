@@ -69,38 +69,39 @@ Hlavní soubor `index.html` bude vypadat takto:
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" />
-    
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap"
+    />
+
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="ListItem/style.css" />
     <link rel="stylesheet" href="ShopList/style.css" />
 
     <script type="module" src="script.js"></script>
-    
+
     <title>Nákupy</title>
   </head>
-<body>
-  <div id="app">
-    <div class="page">
-      <header>
-        <div class="container">
-          <div class="brand">
-            <div class="brand__logo"></div>
-            <div class="brand__name">Nákupy</div>
+  <body>
+    <div id="app">
+      <div class="page">
+        <header>
+          <div class="container">
+            <div class="brand">
+              <div class="brand__logo"></div>
+              <div class="brand__name">Nákupy</div>
+            </div>
           </div>
-        </div>  
-      </header>
-      <main class="container"></main>
-      <footer>
-        <div class="container">
-          <p class="footer__text">
-            Cvičná aplikace pro výuku JavaScriptu.
-          </p>
-        </div>  
-      </footer>
+        </header>
+        <main class="container"></main>
+        <footer>
+          <div class="container">
+            <p class="footer__text">Cvičná aplikace pro výuku JavaScriptu.</p>
+          </div>
+        </footer>
+      </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>
 ```
 
@@ -112,17 +113,16 @@ const mainElement = document.querySelector('main');
 fetch('https://nakupy.kodim.app/api/sampleweek/mon/items')
   .then((response) => response.json())
   .then((data) => {
-    mainElement.innerHTML += ShopList(
-      { dayName: 'Pondělí', items: data.result }
-    );
+    mainElement.innerHTML += ShopList({
+      dayName: 'Pondělí',
+      items: data.result,
+    });
   });
 
 fetch('https://nakupy.kodim.app/api/sampleweek/tue/items')
   .then((response) => response.json())
   .then((data) => {
-    mainElement.innerHTML += ShopList(
-      { dayName: 'Úterý', items: data.result }
-    );
+    mainElement.innerHTML += ShopList({ dayName: 'Úterý', items: data.result });
   });
 ```
 
