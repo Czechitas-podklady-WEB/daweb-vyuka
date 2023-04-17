@@ -14,8 +14,10 @@ const ListItem = (props) => {
   return `
     <div class="list-item">
       <button class="icon-btn btn-tick${tickClass}"></button>
-      <div class="list-item__product">${props.product}</div>
-      <div class="list-item__amount">${props.amount} ${props.unit}</div>
+      <div class="list-item__body">
+        <div class="list-item__product">${props.product}</div>
+        <div class="list-item__amount">${props.amount} ${props.unit}</div>
+      </div>
     </div>
   `;
 };
@@ -35,8 +37,10 @@ const ListItem = (props) => {
   return `
     <div class="list-item">
       <button class="icon-btn btn-tick${tickClass}"></button>
-      <div class="list-item__product">${product}</div>
-      <div class="list-item__amount">${amount} ${unit}</div>
+      <div class="list-item__body">
+        <div class="list-item__product">${product}</div>
+        <div class="list-item__amount">${amount} ${unit}</div>
+      </div>
     </div>
   `;
 };

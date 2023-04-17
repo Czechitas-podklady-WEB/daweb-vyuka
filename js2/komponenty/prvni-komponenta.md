@@ -70,8 +70,10 @@ const ListItem = (item) => {
   return `
     <div class="list-item">
       <button class="icon-btn btn-tick${tickClass}"></button>
-      <div class="list-item__product">${item.product}</div>
-      <div class="list-item__amount">${item.amount} ${item.unit}</div>
+      <div class="list-item__body">
+        <div class="list-item__product">${item.product}</div>
+        <div class="list-item__amount">${item.amount} ${item.unit}</div>
+      </div>
     </div>
   `;
 };
