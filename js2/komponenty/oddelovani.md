@@ -20,19 +20,17 @@ V souboru `ListItem/index.js` bude JavaScriptový kód komponenty:
 
 ```js
 const ListItem = (props) => {
-  const { done, product, amount } = props;
-
   let tickClass = '';
-  if (done) {
-    tickClass = ' item__done--tick';
+  if (props.done) {
+    tickClass = ' btn-tick--on';
   }
 
   return `
-    <li class="item">
-      <div class="item__product">${product}</div>
-      <div class="item__amount">${amount}</div>
-      <div class="item__done${tickClass}"></div>
-    </li>
+    <div class="list-item">
+      <button class="icon-btn btn-tick${tickClass}"></button>
+      <div class="list-item__product">${props.product}</div>
+      <div class="list-item__amount">${props.amount}</div>
+    </div>
   `;
 };
 ```
@@ -41,11 +39,14 @@ Podobně bude vypadat soubor `ShopList/index.js`:
 
 ```js
 const ShopList = (props) => {
-  const { day, items } = props;
+  const { dayName, items } = props;
+
   return `
     <div class="shoplist">
-      <h2>${day}</h2>  
-      <div class="shopping-list__items">
+      <div class="shoplist__head">
+        <h2 class="shoplist__day">${dayName}</h2>
+      </div>
+      <div class="shoplist__items"></div>
         ${items.map((item) => ListItem(item)).join('')}
       </div>
     </div>
@@ -53,104 +54,78 @@ const ShopList = (props) => {
 };
 ```
 
-Komponenty lehce nastylujeme v souboru `ListItem/style.css`:
+Každá komponenta potřebuje také svoje styly. Ve startovacím projektu v souboru `style.css` máte nadepsané sekce pro jednotlivé komponenty. Stačí je tedy přesunou do souborů `ListItem/style.css` a `ShopList/style.css`.
 
-```css
-.item {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  background-color: #e4e4e4;
-  padding: 1rem 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.item__product {
-  flex: 1;
-}
-
-.item__amount {
-  margin: 0 1rem;
-}
-
-.item__done {
-  width: 1.5rem;
-  height: 1.5rem;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.item__done--tick {
-  background-image: url(./img/tick.svg);
-}
-```
-
-a `ShopList/style.css`:
-
-```css
-ul.shoplist {
-  padding: 0;
-}
-```
-
-Do složky `ListItem` také přidáme složku `img` s obrázekm [tick.svg](assets/tick.svg).
+Do složky `ListItem` také přidáme složku `img`, do které přesunňte všechny obrázky z hlavní složky `img` kromě obrázků `icon.svg` a `bg.png`, které zůstanou na svém místě.
 
 Hlavní soubor `index.html` bude vypadat takto:
 
 ```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" />
+    
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="ListItem/style.css" />
     <link rel="stylesheet" href="ShopList/style.css" />
 
-    <script type="module" src="index.js"></script>
-
-    <title>První komponenta</title>
+    <script type="module" src="script.js"></script>
+    
+    <title>Nákupy</title>
   </head>
-
-  <body>
-    <div class="container">
-      <h1>Nákupní seznam</h1>
+<body>
+  <div id="app">
+    <div class="page">
+      <header>
+        <div class="container">
+          <div class="brand">
+            <div class="brand__logo"></div>
+            <div class="brand__name">Nákupy</div>
+          </div>
+        </div>  
+      </header>
+      <main class="container"></main>
+      <footer>
+        <div class="container">
+          <p class="footer__text">
+            Cvičná aplikace pro výuku JavaScriptu.
+          </p>
+        </div>  
+      </footer>
     </div>
-    <div id="lists" class="container"></div>
-  </body>
+  </div>
+</body>
 </html>
 ```
 
-Všimněte si hlavičky, kam musíme vložit všechny soubory stylů. Co se JavaScriptu týče, stačí nám do stránky vložit pouze hlavní `index.js` s tímto obsahem:
+Všimněte si hlavičky, kam musíme vložit všechny soubory stylů. Co se JavaScriptu týče, stačí nám do stránky vložit pouze hlavní `script.js` s tímto obsahem:
 
 ```js
-const listsElement = document.querySelector('#lists');
+const mainElement = document.querySelector('main');
 
-fetch('https://apps.kodim.cz/daweb/trening-api/apis/shopping/mon')
+fetch('https://nakupy.kodim.app/api/sampleweek/mon/items')
   .then((response) => response.json())
   .then((data) => {
-    listsElement.innerHTML += ShopList({ day: 'Pondělí', items: data });
+    mainElement.innerHTML += ShopList(
+      { dayName: 'Pondělí', items: data.result }
+    );
   });
 
-fetch('https://apps.kodim.cz/daweb/trening-api/apis/shopping/tue')
+fetch('https://nakupy.kodim.app/api/sampleweek/tue/items')
   .then((response) => response.json())
   .then((data) => {
-    listsElement.innerHTML += ShopList({ day: 'Úterý', items: data });
+    mainElement.innerHTML += ShopList(
+      { dayName: 'Úterý', items: data.result }
+    );
   });
 ```
 
-Ještě nám zbývá hlavní soubor `style.css` s tímto obsahem:
+V hlavním souboru `style.css` pak zbydou pouze obecné styly týkající se celé stránky:
 
-```
-html {
-  font-family: sans-serif;
-}
-
-.container {
-  max-width: 30rem;
-  margin: 3rem auto;
-}
-```
-
-Nyní máme veškerý kód projektu hezky rozdělený na logické části. Všimněte si však, že jsme do hlavičky HTML vložili pouze hlavní `index.js`, ale nevložili jsme tam JavaScript naší komponenty. Ten se do naší stránky dostane jiným způsbem, který uvidíme v následující sekci.
+Nyní máme veškerý kód projektu hezky rozdělený na logické části. Všimněte si však, že jsme do hlavičky HTML vložili pouze hlavní `script.js`, nevložili jsme tam ale JavaScript našich komponent. Ten se do stránky dostane jiným způsbem, který uvidíme v následující sekci.
