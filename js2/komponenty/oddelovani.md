@@ -12,14 +12,14 @@ Pro každou komponentu si tedy vytvoříme spociální složku a domluvíme se n
 
 Kromě složek s komponentami budeme v každém projektu také mít hlavní soubor `index.html`, hlavní `index.js` a hlavní `style.css`, jak jsme byli doposud zvyklí.
 
-Uvažme například náš projekt dříve v této lekci používající komponenty `ShoppingItem` a `ShoppingList`,
+Uvažme například náš projekt dříve v této lekci používající komponenty `ListItem` a `ShopList`,
 
 ::fig{src=assets/struktura-projektu.png size=40}
 
-V souboru `ShoppingItem/index.js` bude JavaScriptový kód komponenty:
+V souboru `ListItem/index.js` bude JavaScriptový kód komponenty:
 
 ```js
-const ShoppingItem = (props) => {
+const ListItem = (props) => {
   const { done, product, amount } = props;
 
   let tickClass = '';
@@ -29,7 +29,7 @@ const ShoppingItem = (props) => {
 
   return `
     <li class="item">
-      <div class="item__name">${product}</div>
+      <div class="item__product">${product}</div>
       <div class="item__amount">${amount}</div>
       <div class="item__done${tickClass}"></div>
     </li>
@@ -37,23 +37,23 @@ const ShoppingItem = (props) => {
 };
 ```
 
-Podobně bude vypadat soubor `ShoppingList/index.js`:
+Podobně bude vypadat soubor `ShopList/index.js`:
 
 ```js
-const ShoppingList = (props) => {
+const ShopList = (props) => {
   const { day, items } = props;
   return `
-    <div class="shopping-list">
+    <div class="shoplist">
       <h2>${day}</h2>  
-      <ul class="shopping-list__items">
-        ${items.map((item) => ShoppingItem(item)).join('')}
-      </ul>
+      <div class="shopping-list__items">
+        ${items.map((item) => ListItem(item)).join('')}
+      </div>
     </div>
   `;
 };
 ```
 
-Komponenty lehce nastylujeme v souboru `ShoppingItem/style.css`:
+Komponenty lehce nastylujeme v souboru `ListItem/style.css`:
 
 ```css
 .item {
@@ -65,7 +65,7 @@ Komponenty lehce nastylujeme v souboru `ShoppingItem/style.css`:
   margin-bottom: 0.5rem;
 }
 
-.item__name {
+.item__product {
   flex: 1;
 }
 
@@ -85,15 +85,15 @@ Komponenty lehce nastylujeme v souboru `ShoppingItem/style.css`:
 }
 ```
 
-a `ShoppingList/style.css`:
+a `ShopList/style.css`:
 
 ```css
-ul.shopping-list {
+ul.shoplist {
   padding: 0;
 }
 ```
 
-Do složky `ShoppingItem` také přidáme složku `img` s obrázekm [tick.svg](assets/tick.svg).
+Do složky `ListItem` také přidáme složku `img` s obrázekm [tick.svg](assets/tick.svg).
 
 Hlavní soubor `index.html` bude vypadat takto:
 
@@ -105,8 +105,8 @@ Hlavní soubor `index.html` bude vypadat takto:
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="ShoppingItem/style.css" />
-    <link rel="stylesheet" href="ShoppingList/style.css" />
+    <link rel="stylesheet" href="ListItem/style.css" />
+    <link rel="stylesheet" href="ShopList/style.css" />
 
     <script type="module" src="index.js"></script>
 
@@ -130,13 +130,13 @@ const listsElement = document.querySelector('#lists');
 fetch('https://apps.kodim.cz/daweb/trening-api/apis/shopping/mon')
   .then((response) => response.json())
   .then((data) => {
-    listsElement.innerHTML += ShoppingList({ day: 'Pondělí', items: data });
+    listsElement.innerHTML += ShopList({ day: 'Pondělí', items: data });
   });
 
 fetch('https://apps.kodim.cz/daweb/trening-api/apis/shopping/tue')
   .then((response) => response.json())
   .then((data) => {
-    listsElement.innerHTML += ShoppingList({ day: 'Úterý', items: data });
+    listsElement.innerHTML += ShopList({ day: 'Úterý', items: data });
   });
 ```
 
