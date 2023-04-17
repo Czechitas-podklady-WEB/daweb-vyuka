@@ -15,7 +15,7 @@ const ListItem = (props) => {
     <div class="list-item">
       <button class="icon-btn btn-tick${tickClass}"></button>
       <div class="list-item__product">${props.product}</div>
-      <div class="list-item__amount">${props.amount}</div>
+      <div class="list-item__amount">${props.amount} ${props.unit}</div>
     </div>
   `;
 };
@@ -25,7 +25,7 @@ U větších komponent se nám velmi hodí destrukturovat objekt `props` do sepa
 
 ```js
 const ListItem = (props) => {
-  const { done, product, amount } = props;
+  const { done, product, amount, unit } = props;
 
   let tickClass = '';
   if (done) {
@@ -34,9 +34,9 @@ const ListItem = (props) => {
 
   return `
     <div class="list-item">
-      <button class="icon-btn btn-tick${tickClass}" />
+      <button class="icon-btn btn-tick${tickClass}"></button>
       <div class="list-item__product">${product}</div>
-      <div class="list-item__amount">${amount}</div>
+      <div class="list-item__amount">${amount} ${unit}</div>
     </div>
   `;
 };

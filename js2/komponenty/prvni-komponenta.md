@@ -14,7 +14,7 @@ const renderShoppingList = (items) => {
       return `
         <div class="list-item">
           <div class="list-item__product">${item.product}</div>
-          <div class="list-item__amount">${item.amount}</div>
+          <div class="list-item__amount">${item.amount} ${item.unit}</div>
         </div>
       `;
     })
@@ -29,7 +29,7 @@ const ListItem = (item) => {
   return `
     <div class="list-item">
       <div class="list-item__product">${item.product}</div>
-      <div class="list-item__amount">${item.amount}</div>
+      <div class="list-item__amount">${item.amount} ${item.unit}</div>
     </div>
   `;
 };
@@ -71,7 +71,7 @@ const ListItem = (item) => {
     <div class="list-item">
       <button class="icon-btn btn-tick${tickClass}"></button>
       <div class="list-item__product">${item.product}</div>
-      <div class="list-item__amount">${item.amount}</div>
+      <div class="list-item__amount">${item.amount} ${item.unit}</div>
     </div>
   `;
 };
