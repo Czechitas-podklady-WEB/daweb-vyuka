@@ -13,7 +13,7 @@ const ShopList = (props) => {
       <div class="shoplist__head">
         <h2 class="shoplist__day">${dayName}</h2>
       </div>
-      <div class="shoplist__items"></div>
+      <div class="shoplist__items">
         ${items.map((item) => ListItem(item)).join('')}
       </div>
     </div>
