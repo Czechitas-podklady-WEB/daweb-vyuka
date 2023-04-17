@@ -20,6 +20,7 @@ const ShopList = (props) => {
   `;
 };
 ```
+
 Všimněte si, jak elegantně můžeme pomocí interpolace vložit do HTML řetězce obsah generovaný pomocí komponenty `ListItem`.
 
 Komponentu `ShopList` pak použijeme k vytvoření seznamu pro pondělí a úterý. Zbavíme se tak úplně funkce `renderShoppingList`.
