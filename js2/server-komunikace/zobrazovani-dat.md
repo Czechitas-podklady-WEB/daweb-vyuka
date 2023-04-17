@@ -32,10 +32,10 @@ fetch('https://nakupy.kodim.app/api/sampleweek/mon/items')
     shoppingList.innerHTML = data.result
       .map((item) => {
         return `
-          <li class="item">
-            <div class="item__name">${item.product}</div>
-            <div class="item__amount">${item.amount}</div>
-          </li>
+          <div class="list-item">
+            <div class="list-item__product">${item.product}</div>
+            <div class="list-item__amount">${item.amount}</div>
+          </div>
         `;
       })
       .join('');
@@ -50,10 +50,10 @@ const renderShoppingList = (items) => {
   shoppingList.innerHTML = items
     .map((item) => {
       return `
-        <li class="item">
-          <div class="item__name">${item.product}</div>
-          <div class="item__amount">${item.amount}</div>
-        </li>
+        <div class="list-item">
+          <div class="list-item__product">${item.product}</div>
+          <div class="list-item__amount">${item.amount}</div>
+        </div>
       `;
     })
     .join('');
