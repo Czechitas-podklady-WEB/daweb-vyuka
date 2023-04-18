@@ -1,8 +1,8 @@
 ## Komponenty pomocí DOM elementů
 
-Do této chvíle naše komponenty tvořily obsah stránky tak, že komponenta vrátila řetězec obsahující HTML. Na žádný prvek uvnitř takového HTML však nejde v komponentě pověsit posluchač události. Naše komponenty tak nemohly být nijak interaktivní. To nyní můžeme napravit tak, že naše komopnenty již nebudou vracet HTML jako řetězec, ale vrátí rovnou hotový DOM element.
+Do této chvíle naše komponenty tvořily obsah stránky tak, že komponenta vrátila řetězec obsahující HTML. Na žádný prvek uvnitř takového HTML však nejde v komponentě pověsit posluchač události. Naše komponenty tak nemohly být nijak interaktivní. To nyní můžeme napravit tak, že naše komponenty již nebudou vracet HTML jako řetězec, ale vrátí rovnou hotový DOM element.
 
-Tuto novou techniku si ukážeme na našem příkladu s nákupním seznamem. Kód najdeme v repozitáři [nakupy-komponenty](https://github.com/Czechitas-podklady-WEB/nakupy-komponenty), který jsme vytvořili na konci minulé lekce. Budeme chtít uživateli umožnit nějakou položku ze seznamu označit jako koupenou. Vdechneme tedy život tlačíku pro pro označení položky.
+Tuto novou techniku si ukážeme na našem příkladu s nákupním seznamem. Kód najdeme v repozitáři [nakupy-komponenty](https://github.com/Czechitas-podklady-WEB/nakupy-komponenty), který jsme vytvořili na konci minulé lekce. Budeme chtít uživateli umožnit nějakou položku ze seznamu označit jako koupenou. Vdechneme tedy život tlačíku pro označení položky.
 
 Prohlédněte na původní kód komponenty `ListItem`.
 
@@ -95,7 +95,7 @@ domElement.append(arg1, arg2, arg3, arg4, arg5);
 
 apod.
 
-Pokud však máme pole hodnot, nemůžeme metodu `append` volat takto.
+Pokud však máme pole hodnot, nemůžeme metodu `append` volat takto:
 
 ```js
 domElement.append([arg1, arg2, arg3]);
@@ -127,4 +127,4 @@ fetch('https://nakupy.kodim.app/api/sampleweek/tue')
   });
 ```
 
-Když nyní aplikaci spustíme, bude fungovat úplně stejně, jako dříve. Máme však připravenou půdu na posluchač události pro tlačítko.
+Když nyní aplikaci spustíme, bude fungovat úplně stejně jako dříve. Máme však připravenou půdu na posluchač události pro tlačítko.
