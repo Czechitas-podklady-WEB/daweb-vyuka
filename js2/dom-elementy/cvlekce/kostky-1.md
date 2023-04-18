@@ -9,4 +9,4 @@ V tomto cvičení vyrobíme stránku s několika hracími kostkami. Budeme chtí
 1. Spusťte aplikaci pomocí `npx serve` a prohlédněte si, jak vypadá.
 1. Podle vzoru uvedeného v souboru `index.html` vytvořte v oddělené složce komponentu `Dice`. Komponenta bude ve svých _props_ očekávat vlastnost `side`, která udává číslo zobrazené na kostce. Napište komponentu tak, aby vracela DOM element tak, jako jsme se učili v lekci. Do složky komponenty přesuňte patřičné styly a obrázky související s komponentou a komponentu také správně exportujte.
 1. Vložte na stránku několik kostek s různými hodnotami.
-1. Zařiďte, že když uživatel klikne na tlačítko :i[hodit] některé kostky, tato kostka zobrazí náhodné číslo mezi 1 a 6. K vygenerování náhodného čísla využijte již připravenou funkci `roll`.
+1. Zařiďte, že když uživatel klikne na tlačítko :i[hodit] některé kostky, tato kostka zobrazí náhodné číslo mezi 1 a 6. K vygenerování náhodného čísla využijte již připravenou funkci `roll`, kterou si můžete z hlavního `indexu.js` přesunout do komponenty `Dice`.
