@@ -113,24 +113,24 @@ tedy můžete pomocí `async/await` a `try-catch` přepsat takto:
 ```js
 const nacistData = async () => {
   try {
-    const resp = await fetch("https://random.zkusmo.eu/shaky")
+    const resp = await fetch('https://random.zkusmo.eu/shaky');
     switch (resp.status) {
       case 200:
         const data = await resp.json();
         setCislo(data.randomNumber);
         break;
       case 500:
-        alert("Server vrátil neočekávanou chybu.");
+        alert('Server vrátil neočekávanou chybu.');
         break;
       case 503:
-        alert("Server je přetížen.");
+        alert('Server je přetížen.');
         break;
     }
   } catch (error) {
-      console.error("Chyba komunikace se serverem:", error.message)
-      alert("Chyba komunikace se serverem. Jste připojeni k internetu?")
+    console.error('Chyba komunikace se serverem:', error.message);
+    alert('Chyba komunikace se serverem. Jste připojeni k internetu?');
   }
-}
+};
 ```
 
 ### Sekce finally
