@@ -1,6 +1,6 @@
 ## Stahování vlastních dat
 
-Naše aplikace je téměr hotová, trpí však jedním výrazným nešvarem. V závislosti na tom, který z _promisů_ v hlavním `index.js` se splní dříve, občas vidíme na stránce nejprve položky pro úterý a až poté pro pondělí. Toto vyřešíme tak, že komponenta `ShopList` si data stáhne sama. Vykreslíme ji tak už ve chvíli, kdy ještě žádná data nemá a aktualizujeme ji, jakmile data obdrží.
+Naše aplikace je téměr hotová, trpí však jedním výrazným nešvarem. V závislosti na tom, který z _promisů_ v hlavním `index.js` se splní dříve, občas vidíme na stránce nejprve položky pro úterý a až poté pro pondělí. Toto vyřešíme tak, že komponenta `ShopList` si data stáhne sama. Vykreslíme ji tak už ve chvíli, kdy ještě žádná data nemá, a aktualizujeme ji, jakmile data obdrží.
 
 Abychom toto dokázali, musíme trošku změnit _props_ komponenty. Místo `dayName` dostane komponenta přímo _id_ dne, který si má stáhnout, tedy `mon`, `tue` apod. Místo _prop_ `items` zavedeme novou _prop_ `dayResult`, ve které budeme očekávat objekt pro celý jeden den načtený z API. Ve chvíli, kdy komponentu poprvé vykreslujeme a nemá ještě žádná data, předáme jí v _prop_ `dayResult` řetězec `'loading'`, čímž dáme najevo, že je třeba stáhnout si data.
 
