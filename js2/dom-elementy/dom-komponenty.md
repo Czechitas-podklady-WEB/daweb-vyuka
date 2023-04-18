@@ -110,20 +110,24 @@ domElement.append(...[arg1, arg2, arg3]);
 Nakonec ještě upravíme použití komponenty `ShopList` v hlavním `script.js`.
 
 ```js
-import { ShopList } from "./ShopList/index.js";
+import { ShopList } from './ShopList/index.js';
 
 const mainElement = document.querySelector('main');
 
 fetch('https://nakupy.kodim.app/api/sampleweek/mon')
   .then((response) => response.json())
   .then((data) => {
-    mainElement.append(ShopList({ dayName: data.result.dayName, items: data.result }));
+    mainElement.append(
+      ShopList({ dayName: data.result.dayName, items: data.result })
+    );
   });
 
 fetch('https://nakupy.kodim.app/api/sampleweek/tue')
   .then((response) => response.json())
   .then((data) => {
-    mainElement.append(ShopList({ dayName: data.result.dayName, items: data.result }));
+    mainElement.append(
+      ShopList({ dayName: data.result.dayName, items: data.result })
+    );
   });
 ```
 

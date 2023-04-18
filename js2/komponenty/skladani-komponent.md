@@ -40,9 +40,9 @@ fetch('https://nakupy.kodim.app/api/sampleweek/mon')
 fetch('https://nakupy.kodim.app/api/sampleweek/tue')
   .then((response) => response.json())
   .then((data) => {
-    mainElement.innerHTML += ShopList({ 
+    mainElement.innerHTML += ShopList({
       dayName: data.result.dayName,
-      items: data.result
+      items: data.result,
     });
   });
 ```
