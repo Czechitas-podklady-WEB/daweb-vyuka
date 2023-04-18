@@ -114,16 +114,16 @@ import { ShopList } from "./ShopList/index.js";
 
 const mainElement = document.querySelector('main');
 
-fetch('https://nakupy.kodim.app/api/sampleweek/mon/items')
+fetch('https://nakupy.kodim.app/api/sampleweek/mon')
   .then((response) => response.json())
   .then((data) => {
-    mainElement.append(ShopList({ dayName: 'Pondělí', items: data.result }));
+    mainElement.append(ShopList({ dayName: data.result.dayName, items: data.result }));
   });
 
-fetch('https://nakupy.kodim.app/api/sampleweek/tue/items')
+fetch('https://nakupy.kodim.app/api/sampleweek/tue')
   .then((response) => response.json())
   .then((data) => {
-    mainElement.append(ShopList({ dayName: 'Úterý', items: data.result }));
+    mainElement.append(ShopList({ dayName: data.result.dayName, items: data.result }));
   });
 ```
 

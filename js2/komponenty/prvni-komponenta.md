@@ -1,6 +1,6 @@
 Jak se v tomto kurzu stáváme stále zkušenějšími a mocnějšími, nazrává čas k tomu, abychom se pokusili sestavit malinko větší a zajímavější aplikaci, na které budeme ilustrovat pokročilejší dovednosti. Od této chvíli budeme společně pracovat na aplikaci s názvem _Nákupy_, která bude umožňovat správu nákupních seznamů pro jednotlivé dny v týdny.
 
-Abychom se nemuseli trápit se stylováním, začneme již s hotovým základem aplikace, který najdete v [tomto repozitáři](https://github.com/Czechitas-podklady-WEB/nakupy-start). Použijte jej jako šablonu pro založení vlastního repozitáře, do kterého si budete dle výkladu postupně přidávat další funkčnosti.
+Abychom se nemuseli trápit se stylováním, začneme již s hotovým základem aplikace, který najdete v repozitáři [projekt-nakupy-start](https://github.com/Czechitas-podklady-WEB/projekt-nakupy-start). Použijte jej jako šablonu pro založení vlastního repozitáře, do kterého si budete dle výkladu postupně přidávat další funkčnosti.
 
 ## První komponenta
 
@@ -87,9 +87,9 @@ const renderShoppingList = (items) => {
   shoppingList.innerHTML = items.map((item) => ListItem(item)).join('');
 };
 
-fetch('https://nakupy.kodim.app/api/sampleweek/mon/items')
+fetch('https://nakupy.kodim.app/api/sampleweek/mon')
   .then((response) => response.json())
-  .then((data) => renderShoppingList(data.result));
+  .then((data) => renderShoppingList(data.result.items));
 ```
 
 Výhodou je, že v naší funkci `renderShoppingList` nemusíme nic měnit. O všechny změny nutné kvůli rozšíření dat o položku `done` jsme se postarali uvnitř komponenty `ListItem`.

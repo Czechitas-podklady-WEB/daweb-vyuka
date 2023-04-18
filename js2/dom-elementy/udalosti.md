@@ -54,8 +54,8 @@ export const ListItem = (props) => {
 };
 ```
 
-### Překreslení komponenty
+## Překreslení komponenty
 
-Možná si při čtení výše uvedeného kódu říkáte, proč voláme funkci `replaceWith` a tak DOM pro celou komopnenty vytváříme úplně znova. Mohli bychomn přece jednoduše přehodit třídu na tlačítku pomocí `classList.toggle()`.
+Možná si při čtení výše uvedeného kódu říkáte, proč voláme funkci `replaceWith` a tak DOM pro celou komponentu vytváříme úplně znova. Mohli bychomn přece jednoduše přehodit třídu na tlačítku pomocí `classList.toggle()`.
 
 Je pravda, že by to skutečně šlo provést takto jednoduše. Nám se však do budoucna bude velmi hodit řídit obsah komponenty pouze změnou jejich _props_. Kvůli tomu sice musíme komponentu vždy vytvořit celou znovu, máme však výhodu, že komponenta zobrazuje vždy přesně to, co dostala v _props_. To nám zjednoduší uvažování nad složitejšími programy. Zároveň tímto způsobem funguje i framework React, ke kterému se blížíme a vyplatí se nám již nyní trénovat tento způsob uvažování.

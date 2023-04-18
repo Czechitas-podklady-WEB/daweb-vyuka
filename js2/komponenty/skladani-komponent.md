@@ -28,19 +28,22 @@ Komponentu `ShopList` pak použijeme k vytvoření seznamu pro pondělí a úter
 ```js
 const mainElement = document.querySelector('main');
 
-fetch('https://nakupy.kodim.app/api/sampleweek/mon/items')
+fetch('https://nakupy.kodim.app/api/sampleweek/mon')
   .then((response) => response.json())
   .then((data) => {
     mainElement.innerHTML += ShopList({
-      dayName: 'Pondělí',
-      items: data.result,
+      dayName: data.result.dayName,
+      items: data.result.items,
     });
   });
 
-fetch('https://nakupy.kodim.app/api/sampleweek/tue/items')
+fetch('https://nakupy.kodim.app/api/sampleweek/tue')
   .then((response) => response.json())
   .then((data) => {
-    mainElement.innerHTML += ShopList({ dayName: 'Úterý', items: data.result });
+    mainElement.innerHTML += ShopList({ 
+      dayName: data.result.dayName,
+      items: data.result
+    });
   });
 ```
 

@@ -22,4 +22,4 @@ Komponentu `ShopList` používáme v hlavním `script.js` celé aplikace. I tuto
 import { ShopList } from './ShopList/index.js';
 ```
 
-Výše popsaný postup stačí k tomu, abychom propojili náš program do jednoho funkčního celku. Celý výsledný projekt najdete v [tomto repozitáři](https://github.com/Czechitas-podklady-WEB/nakupy-komponenty). Můžete jej do začátků používat jako tahák, dokud si nebudete zcela jistí strukturou projektů s oddělenými komponentami.
+Výše popsaný postup stačí k tomu, abychom propojili náš program do jednoho funkčního celku. Celý výsledný projekt najdete v repozitáři [projekt-nakupy-komponenty](https://github.com/Czechitas-podklady-WEB/projekt-nakupy-komponenty). Můžete jej do začátků používat jako tahák, dokud si nebudete zcela jistí strukturou projektů s oddělenými komponentami.
