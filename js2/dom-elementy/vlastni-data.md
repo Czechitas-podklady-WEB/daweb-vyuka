@@ -34,7 +34,7 @@ import { ListItem } from '../ListItem/index.js';
 export const ShopList = (props) => {
   const { day, dayResult } = props;
 
-  let dayName = 'Načítám...';
+  let dayName = 'Načítám…';
   if (dayResult !== 'loading') {
     dayName = dayResult.dayName;
   }
@@ -82,7 +82,7 @@ import { ListItem } from '../ListItem/index.js';
 export const ShopList = (props) => {
   const { day, dayResult } = props;
 
-  let dayName = 'Načítám...';
+  let dayName = 'Načítám…';
   if (dayResult !== 'loading') {
     dayName = dayResult.dayName;
   }
