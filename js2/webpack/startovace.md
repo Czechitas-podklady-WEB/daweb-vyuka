@@ -7,7 +7,7 @@ Projekt, který jsme si zkoušeli nakonfiguravat v přechozí části, byl extr�
 - přeložit náš JavaScript do podoby kompatibilní s většinou prohlížečů,
 - později zapojit knihovnu React.
 
-Vytvořit konfiguraci pro takovýto projekt z hlavy je velmi obtížené. Zde ke slovu přicházají generátory, které umí základní strukturu projektu i s Webpack konfigurací vytvořit jedním příkazem.
+Vytvořit konfiguraci pro takovýto projekt z hlavy je velmi obtížné. Zde ke slovu přicházají generátory, které umí základní strukturu projektu i s Webpack konfigurací vytvořit jedním příkazem.
 
 Jedním z takových oblíbených generátorů pro Reactové projekty je `create-react-app`. Často jej na internetu potkáte v různých Reactových tutoriálech a kurzech. My však ještě s Reactem nepracujeme a tento generátor se nám tudíž nehodí. Použijeme proto jiný, vytvořený na míru přímo pro naše kurzy. Jmenuje se `create-kodim-app`.
 
@@ -27,17 +27,17 @@ Pokud chceme pomocí `create-kodim-app` založit nový projekt, postupujeme dle 
    ```
    npm run start
    ```
-1. V prohlížeči by se měla otevřít jednoduchá stránka zobrazující úvodní HTML. Ve VS Code smažeme obsah složky `src` a nahrdíme ji kódem z [poslední verze](https://github.com/Czechitas-podklady-WEB/prvni-komponenta/tree/posilani-dat) našeho nákupního seznamu.
+1. V prohlížeči by se měla otevřít jednoduchá stránka zobrazující úvodní HTML. Ve VS Code smažeme obsah složky `src` a nahradíme ji kódem z [poslední verze](https://github.com/Czechitas-podklady-WEB/prvni-komponenta/tree/posilani-dat) našeho nákupního seznamu.
 1. Startovací projekt obsahuje ve složce `public` vlastní `index.html` správně nastavený tak, aby používal JavaScriptový soubor vygenerovaný Webpackem. Vložíme do něj obsah `body` z `index.html` našeho projektu. Náš původní `index.html` smažeme.
 
 ## Import stylů
 
-Webpack umí kromě JavaScriptu zabalit také CSS. To nás zachrání od ručního importu stylů pro každou jednotlivou komponentu, jak jsme byli doposud vzyklí. Webpack dokonce výsledné sestavené CSS vloží do stránky pomocí JavaScriptu, naše stránka tak nemusí stahovat vůbec žádné CSS.
+Webpack umí kromě JavaScriptu zabalit také CSS. To nás zachrání od ručního importu stylů pro každou jednotlivou komponentu, jak jsme byli doposud zvyklí. Webpack dokonce výsledné sestavené CSS vloží do stránky pomocí JavaScriptu, naše stránka tak nemusí stahovat vůbec žádné CSS.
 
-Aby Webpack poznal, které CSS má do výsledního projektu zabalit, je potřeba mu to říct pomocí importů. V hlavním souboru `index.js` je tedy potřeba na začátku importvat styly
+Aby Webpack poznal, které CSS má do výsledného projektu zabalit, je potřeba mu to říct pomocí importů. V hlavním souboru `index.js` je tedy potřeba na začátku importovat styly
 
 ```js
 import `./style.css`;
 ```
 
-Totéž je potřeba provést na začátku všech komponenty, které obsahují vlastní styly. Tím máme náš projekt hotový. Výsledný kód si můžete prohlédnout ve větvi [webpack](https://github.com/Czechitas-podklady-WEB/prvni-komponenta/tree/webpack) našeho hlavního repozitáře.
+Totéž je potřeba provést na začátku všech komponent, které obsahují vlastní styly. Tím máme náš projekt hotový. Výsledný kód si můžete prohlédnout ve větvi [webpack](https://github.com/Czechitas-podklady-WEB/prvni-komponenta/tree/webpack) našeho hlavního repozitáře.

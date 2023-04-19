@@ -1,4 +1,4 @@
-Jak přibývá naších programátorských schopností, tak se naše aplikace stávají většími a složitejšími. Budou postupně obsahovat více a více komponent, knihoven, stylů a dalších stavebních prvků. Budeme proto potřebovat pokročilejší nástroje, jak tuto rostoucí komplexitu zkrotit a dát jí nějaký řád.
+Jak přibývá našich programátorských schopností, tak se naše aplikace stávají většími a složitějšími. Budou postupně obsahovat více a více komponent, knihoven, stylů a dalších stavebních prvků. Budeme proto potřebovat pokročilejší nástroje, jak tuto rostoucí komplexitu zkrotit a dát jí nějaký řád.
 
 ## Systém NPM
 
@@ -39,4 +39,4 @@ Zároveň se nám změnil také soubor `package.json`.
 }
 ```
 
-Vidíte, že pod klíčem `dependencies` je seznam balíčků a jejich verzí, které jsou teď součástí naseho projektu. Vaše verze mohou mít trochu jiná čísla v závislosti na tom, jak daleko v budoucnosti si čtete tento text.
+Vidíte, že pod klíčem `dependencies` je seznam balíčků a jejich verzí, které jsou teď součástí našeho projektu. Vaše verze mohou mít trochu jiná čísla v závislosti na tom, jak daleko v budoucnosti si čtete tento text.
