@@ -1,8 +1,8 @@
 ## Hlasování
 
-Pojďme si posílání POST dotazů ukázat na reálném API. Na adrese [apps.kodim.cz/daweb/hlasovani](https://apps.kodim.cz/daweb/hlasovani) najdete webovou aplikaci, která nabízí několik otázek, o kterých mohou uživatelé hlasovat. Tato aplikace nabízí API, pomocí kterého je možné zahlasovat v nějaké otázce. Dokumentaci k tomuto API najdete [zde](https://apps.kodim.cz/daweb/hlasovani/docs).
+Pojďme si posílání POST dotazů ukázat na reálném API. Na adrese [apps.kodim.cz/daweb/hlasovani](https://apps.kodim.cz/daweb/hlasovani) najdete webovou aplikaci, která nabízí několik otázek, o kterých mohou uživatelé hlasovat. Tato aplikace nabízí API, pomocí kterého je možné zahlasovat v jedné otázce. Dokumentaci k tomuto API najdete [zde](https://apps.kodim.cz/daweb/hlasovani/docs).
 
-Chceme-li zahlasovat pro nějakou otázku, musíme na správný endpoint odeslat POST požadavek, který řekne pod jakým jménem a pro jakou volbu hlasujeme. Pokud chceme hlasovat v otázce s `id` 3, pošleme POST na endpoint `/api/poll/3`.
+Chceme-li v nějaké otázce hlasovat, musíme na správný endpoint odeslat POST požadavek, který řekne, pod jakým jménem a pro jakou volbu hlasujeme. Pokud chceme hlasovat v otázce s `id` 3, pošleme POST na endpoint `/api/poll/3`.
 
 Na tento endpoint pošleme objekt, který říká, že hlasuje uživatel Zuzka pro volbu s `optionId` 2.
 
