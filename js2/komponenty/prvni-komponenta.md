@@ -54,6 +54,7 @@ Rozšiřme nyní naši aplikaci o možnost u každé položky označit, zda jsme
 const item1 = {
   product: 'Rohlíky',
   amount: '10',
+  unit: 'ks',
   done: true,
 };
 ```
