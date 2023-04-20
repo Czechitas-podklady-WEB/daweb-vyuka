@@ -9,11 +9,11 @@ V rámci tohoto cvičení si založíme projekt na supabase a vyzkoušíme si, j
 1. Otevřete repozitář ve VS Code a nainstalujte závislosti, projekt zatím nespouštějte
 1. Zaregistrujete se na supabase
 1. Dle popisu v první části lekce si založte nový projekt
-1. V souboru **functions/supabase.js** nastavte hodnoty SUPABASE_URL a SUPABASE_KEY pro váš projekt
-1. Vypněte odesílání potvrzovacího emailu dle popisu v lekci
+1. V souboru `functions/supabase.js` nastavte hodnoty SUPABASE_URL a SUPABASE_KEY pro váš projekt
+1. Vypněte odesílání potvrzovacího e-mailu dle popisu v lekci
 1. Spusťte projekt pomocí `npm run start`, přejděte na stránku s registrací a zkuste zaregistrovat nového uživatele
 1. Pokud vše proběhlo v pořádku, měl by být uživatel přihlášen. V hlavičce stránky uvidíte emailovou adresu uživatele a tlačítko **Odhlásit**
-1. Na tlačítko **Odhlásit** přidejte posluchač na událost click, po tomto kliknutí zajistěte odhlášení uživatele a jeho přesměrování na stránku s přihlášením. (funkce pro odhlášení je již připravena v souboru `functions/auth.js`)
+1. Na tlačítko **Odhlásit** přidejte posluchač na událost `click,` po tomto kliknutí zajistěte odhlášení uživatele a jeho přesměrování na stránku s přihlášením. (Funkce pro odhlášení je již připravena v souboru `functions/auth.js`)
 1. Pokud ti zbyl čas, můžeš se podívat do komponenty `LoginPage`, jak je implementováno přihlašování uživatele a na stránce vyzkoušet, zda přihlášení v pořádku funguje.
 
 ---solution
