@@ -1,8 +1,7 @@
 title: Routing a autentizace
-lead: Do našich stránek přidáme routování a naučíme se pracovat s přihlášením uživatele a localStorage
+lead: Do našich stránek přidáme routování a naučíme se lépe pracovat s přihlášením uživatele a localStorage
 access: claim
 sections:
   - routing
   - cv-routing
-  - prihlaseni
   - cv-prihlaseni
