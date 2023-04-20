@@ -2,7 +2,7 @@
 
 Pokud nám má nějaký server dovolit, abychom na něm upravovali data, rozhodně nám to nedovolí dělat anonymně. Prozovozání serveru nikdy není zadarmo a za používání aplikací a jejich API se většinou platí. Každý uživatel nějaké služby tak musí mít založený účet, který používá k dotazování na API. Pokud chce uživatel přistoupit ke svým datům, musí prokázat, že je to skutečně on. Tomuto procesu se říká odborně říká :term{cs="autentizace" en="authentication"}. My v této lekci probereme způsob autentizace pmocí takzvaných _tokenů_.
 
-## Autentizační token
+### Autentizační token
 
 Autentizace pomocí tokenu funguje tak, že se nejprve k dané službě přihlásíme nejčastěji pomocí jména a hesla. Na oplátku od serveru obdržíme takzvaný _autentizační token_. To je často velká nesrozumitelná změť písmen a číslic, která může vypadat například takto:
 
