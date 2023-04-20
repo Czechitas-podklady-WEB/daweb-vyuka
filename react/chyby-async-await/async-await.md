@@ -1,8 +1,6 @@
-## Klíčová slova `async`/`await`
+## Asynchronní funkce
 
-Když ve funkcích uvnitř metody then() ošetřujeme chybové stavy nebo máme složitější kód, který zpracovává přijatá data, může se kód snadno stát nepřehledným.
-
-V novějších verzích JavaScriptu existují dvě nová klíčová slova, která umožňují napsat kód přehledněji: `async` a `await`. Tato klíčová slova jsou tzv. :term{cs="syntaktický cukr" en="syntactic sugar"} – snazší zápis kódu, který ovšem na pozadí provádí to samé, jako byste použili klasický zápis s `then()`.
+Jak si možná pamtujete z některé z předchozích lekcí, funkce `fetch`, kterou používáme ke stahování dat ze serveru, vrací takzvaný _promise_. Funkcím, které vracejí _promise_, se obecně říká _asynchronní funkce_. Asynchronnost nám umožňuje spustit nějakou operaci (například stažení dat ze serveru) a nemuset při vykonávání kódu čekat, než se tato operace dokončí. 
 
 Představme si například volání API, které bez ošetření chyb vypadá takto:
 
@@ -18,7 +16,9 @@ nacistData();
 console.log('Zavolána funkce nacistData()');
 ```
 
-S použitím `async`/`await` můžeme kód zjednodušit a zlepšit čitelnost:
+Když je kód obsluhující nějaký _promise_ složitější, můžeme se v něm pro samé `then` metody začít ztrácet. Takové situaci se mezi programátory říká _callback hell_.
+
+V novějších verzích JavaScriptu existují dvě nová klíčová slova, která umožňují napsat kód přehledněji: `async` a `await`. S použitím `async`/`await` můžeme kód zjednodušit a zlepšit čitelnost:
 
 ```js
 const nacistData = async () => {
@@ -31,29 +31,13 @@ const nacistData = async () => {
 console.log('Zavolána funkce nacistData()');
 ```
 
-Klíčové slovo znamená **jakoby** _na tomto místě zastav, počkej, až se dokončí požadavek na server a přijde odpověď – až bude odpověď k dispozici, vrať ji a ulož do proměnné `resp`_. Na dalším řádku to bude podobné – kód _jakoby_ počkal na zpracování JSON dat, a když jsou data převedená na objekt, uloží ho do proměnné `data`. Pak kód pokračuje posledním řádkem a zavolá se funkce `setCislo()`, do které se předá náhodné číslo načtené z dat.
+Klíčovým slovem `await` vlastaně říkáme, že na místě, kdy se volá nějaká asynchronní funkce se chceme opravdu zastavit a počkat, dokud se operace skutečně nedokončí. Možná si řeknete, co jsme tím získali, když hlavním smyslem _promisů_ je, abychom nemuseli čekat na dlouho trvající operace. Vtip je v tom, 6e pokud nějaká funkce obsahuje volání pomocí `await`, musí se sama také stát asynchronní. Musíme ji tedy vytvořit pomocí slovíčka `async`. Taková funkce automaticky vrací `Promise` a opět bychom ji buď museli volat s `await` a nebo se smířit s tím, že při jejím volání nebudeme mít její výsledek. 
 
-Proč _jakoby_? V obou případech (bez `await` i s ním) funkce nacistData() proběhne rychle, jenom se zadá požadavek a běh funkce se ukončí. Tj. v obou případech se text _„Zavolána funkce nacistData()“_ vypíše do konzole hned. Rozdíl je v chování kódu uvnitř funkce. V prvním případě se provedou funkce `fetch()`, dvakrát `then()` (ale funkce v nich se ještě nespustí) a hned se vypíše text _„Konec funkce nacistData()“_. V `async` funkci se ale provádění kódu _jakoby_ na `await` zastaví a po dokončení komunikace se serverem pokračuje. Ve skutečnosti ale není zastaveno provádění kódu, prohlížeč v daném místě nečeká. Lepší přirovnání by bylo, že prohlížeč v místě `await` provádění zastaví, vyskočí z funkce pryč a může dělat něco jiného. Když data ze serveru dorazí, vrátí se zpátky do místa, kde se zastavil a pokračuje. Proto se v `async` funkci _„Konec funkce nacistData()“_ vypíše až po načtení dat. Proto musí být funkce, ve které se používá `await`, označena klíčovým slovem `async` – kód v ní se provádí _asynchronně_, tj. provádí se na pozadí, mimo hlavní tok našeho programu.
-
-Jak bylo napsáno na začátku, žádné zastavování se ale ve skutečnosti neděje – ve skutečnosti si prohlížeč sám kód převede na funkci `then()`. Proč je tedy rozdíl v tom, kdy která funkce vypíše _„Konec funkce nacistData()“_? Protože druhá funkce ve skutečnosti není přesným přepisem první funkce. Druhá funkce by ve skutečnosti musela vypadat takto, aby byla shodná s druhou funkcí:
-
-```js
-const nacistData = () => {
-  fetch('https://random.zkusmo.eu/reliable')
-    .then((resp) => resp.json())
-    .then((data) => {
-      setCislo(data.randomNumber);
-      console.log('Konec funkce nacistData()');
-    });
-};
-
-nacistData();
-console.log('Zavolána funkce nacistData()');
-```
+V Reactu to většinou funguje tak, že se nám touto cestou asynchronnost zpropaguje až do nějakého posluchče události, který stejně nic nevratí, takže klidně může být asynchronní, aniž by se nám v kódu cokoliv rozbilo.
 
 ## Ošetření chyb serveru
 
-Pro ošetření chyb serveru můžeme použít `if-else` nebo `switch`, stejně jako v předchozí části lekce. Uvidíte, že kód s await je čitelnější (porovnejte si ho s kódem z předchozí části lekce):
+Pro ošetření chyb serveru můžeme použít `if-else` nebo `switch`, stejně jako v předchozí části lekce. Uvidíte, že kód s `await` je čitelnější (porovnejte si ho s kódem z předchozí části lekce):
 
 ```js
 const nacistData = async () => {
@@ -77,9 +61,9 @@ Kód se v tomto případě provádí jednoduše shora dolů, lépe se v něm pro
 
 ## Použití try-catch pro ošetření fatálních chyb
 
-Ošetření serverových chyb ve funkci používající `await` už máme vyřešené. Zbývá ošetřit chyby komunikace (např. nedostupný internet), který jsme v předchozí části lekce ošetřovali ve funkci `catch()`. Pro ošetření takovýchto chyb v případě použití `await` potřebujeme použít `try-catch` blok. To je další z konstrukcí JavaScriptu, se kterou jsme se ještě nesetkali. Tato konstrukce se používá pro ošetření chyb, které mohou nastat v kódu. Dá se jí ošetřit třeba i pokus o čtení properties z `undefined` (i když je to málokdy potřeba) a podobné chyby. Celá konstrukce vypadá tak, že kód, ve kterém může dojít k chybě, se uzavře do bloku `try { … }`. Za ním pak následuje blok `catch { … }`, který se provede v případě, kdy v bloku `try { … }` dojde k chybě. V takovém případě se provádění v bloku `try { … }` na řádku s chybou ukončí, zbytek bloku `try` se přeskočí a skočí se rovnou do bloku `catch`.
+Ošetření serverových chyb ve funkci používající `await` už máme vyřešené. Zbývá ošetřit chyby komunikace (např. nedostupný internet), který jsme v předchozí části lekce ošetřovali ve funkci `catch()`. Pro ošetření takovýchto chyb v případě použití `await` potřebujeme použít `try-catch` blok. To je další z konstrukcí JavaScriptu, se kterou jsme se ještě nesetkali. Tato konstrukce se používá pro ošetření chyb, které mohou nastat v kódu. Celá konstrukce vypadá tak, že kód, ve kterém může dojít k chybě, se uzavře do bloku `try { … }`. Za ním pak následuje blok `catch { … }`, který se provede v případě, kdy v bloku `try { … }` dojde k chybě. V takovém případě se provádění v bloku `try { … }` na řádku s chybou ukončí, zbytek bloku `try` se přeskočí a skočí se rovnou do bloku `catch`.
 
-Následující kód z předchozí lekce:
+Následující kód z předchozí sekce:
 
 ```js
 const nacistData = () => {
