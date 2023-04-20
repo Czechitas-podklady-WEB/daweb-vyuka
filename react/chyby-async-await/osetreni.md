@@ -44,7 +44,7 @@ Chyby, které nám posílá server, máme (aspoň trochu) ošetřené. Nyní je 
 
 Výpadky internetu nemusí být jednoduché otestovat. Abychom nemuseli vytahovat z počítače síťový kabel nebo balit notebook do alobalu kvůli WiFi, můžeme v prohlížeči v Dev Tools zajít na kartu _Network_ kde v rozbalovací nabídce pravděpodobně máte vybráno _No throttling_. V této nabídce můžete omezovat rychlost připojení prohlížeče, abyste si tak nasimulovali pomalé připojení k internetu. A je tam také volba _Offline_, která způsobí, že se (jen) prohlížeč od internetu úplně odpojí. Pozor na to, že se odpojí celý prohlížeč a nebude fungovat ani `localhost` – tj. svou aplikaci si musíte načíst, když máte internet v prohlížeči zapnutý, pak přepnete mód na _Offline_, zkusíte volání API, zjistíte, že máte něco špatně, opravíte to, zapnete internet, obnovíte stránku, přepnete do _Offline_ a tak pořád dokola.
 
-Pro ošetření fatálních chyb slouží funkce `catch()`, která se často píše na konec za všechny `then()`. Funkce uvnitř `catch()` se zavolá ve chvíli, kdy nastala fatální chyba. Všechny funkce uvnitř `then()` se při fatální chybě přeskočí. 
+Pro ošetření fatálních chyb slouží funkce `catch()`, která se často píše na konec za všechny `then()`. Funkce uvnitř `catch()` se zavolá ve chvíli, kdy nastala fatální chyba. Všechny funkce uvnitř `then()` se při fatální chybě přeskočí.
 
 ```js
 const fetchData = () => {
