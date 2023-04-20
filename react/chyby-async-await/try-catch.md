@@ -5,28 +5,28 @@ Ošetření serverových chyb ve funkci používající `await` už máme vyře�
 Následující kód z předchozí sekce:
 
 ```js
-const nacistData = () => {
-  fetch('https://random.zkusmo.eu/shaky')
+const fetchData = () => {
+  fetch('https://random.kodim.app/api/diceroll?act=shaky')
     .then((resp) => {
-      switch (resp.status) {
-        case 200:
-          return resp.json();
-        case 500:
-          alert('Server vrátil neočekávanou chybu.');
-          break;
-        case 503:
-          alert('Server je přetížen.');
-          break;
+      if (resp.status === 200) {
+        setErrorMessage(null);
+        return resp.json();
+      }
+
+      if (resp.status === 500) {
+        setErrorMessage('Server vrátil chybu.');
+      } else if (resp.status === 503) {
+        setErrorMessage('Server je přetížen.');
       }
     })
     .then((data) => {
-      if (data) {
-        setCislo(data.randomNumber);
+      if (data !== undefined) {
+        setRoll(data.result.number);
       }
     })
     .catch((error) => {
       console.error('Chyba komunikace se serverem:', error.message);
-      alert('Chyba komunikace se serverem. Jste připojeni k internetu?');
+      setErrorMessage('Chyba komunikace se serverem');
     });
 };
 ```
@@ -34,24 +34,25 @@ const nacistData = () => {
 tedy můžete pomocí `async/await` a `try-catch` přepsat takto:
 
 ```js
-const nacistData = async () => {
+const fetchData = async () => {
   try {
-    const resp = await fetch('https://random.zkusmo.eu/shaky');
-    switch (resp.status) {
-      case 200:
-        const data = await resp.json();
-        setCislo(data.randomNumber);
-        break;
-      case 500:
-        alert('Server vrátil neočekávanou chybu.');
-        break;
-      case 503:
-        alert('Server je přetížen.');
-        break;
+    const resp = fetch('https://random.kodim.app/api/diceroll?act=shaky')
+    if (resp.status === 200) {
+      setErrorMessage(null);
+      return;
     }
-  } catch (error) {
+
+    if (resp.status === 500) {
+      setErrorMessage('Server vrátil chybu.');
+    } else if (resp.status === 503) {
+      setErrorMessage('Server je přetížen.');
+    })
+    
+    const data = await resp.json();
+    setRoll(data.result.number);
+  } catch(error) {
     console.error('Chyba komunikace se serverem:', error.message);
-    alert('Chyba komunikace se serverem. Jste připojeni k internetu?');
+    setErrorMessage('Chyba komunikace se serverem');
   }
 };
 ```
@@ -61,24 +62,25 @@ const nacistData = async () => {
 Kromě `try` a `catch` můžeme také použít sekci `finally`. Tento blok se vykonává vždy, ať už došlo k chybě nebo ne. Je to ideální místo, pokud potřebujeme něco _uklidit_ poté, co je komunikace se serverem dokončena, ať už úspěšně nebo neúspěšně. Např. pokud máme v komponentě stav `loading`, který zobrazuje točící se kolečko při načítání dat, v sekci `finally` ho nastavíme na `false`, aby uživatel věděl, že komunikace se serverem už neprobíhá.
 
 ```js
-const nacistData = async () => {
+const fetchData = async () => {
   try {
-    const resp = await fetch('https://random.zkusmo.eu/shaky');
-    switch (resp.status) {
-      case 200:
-        const data = await resp.json();
-        setCislo(data.randomNumber);
-        break;
-      case 500:
-        alert('Server vrátil neočekávanou chybu.');
-        break;
-      case 503:
-        alert('Server je přetížen.');
-        break;
+    const resp = fetch('https://random.kodim.app/api/diceroll?act=shaky')
+    if (resp.status === 200) {
+      setErrorMessage(null);
+      return;
     }
-  } catch (error) {
+
+    if (resp.status === 500) {
+      setErrorMessage('Server vrátil chybu.');
+    } else if (resp.status === 503) {
+      setErrorMessage('Server je přetížen.');
+    })
+    
+    const data = await resp.json();
+    setRoll(data.result.number);
+  } catch(error) {
     console.error('Chyba komunikace se serverem:', error.message);
-    alert('Chyba komunikace se serverem. Jste připojeni k internetu?');
+    setErrorMessage('Chyba komunikace se serverem');
   } finally {
     setLoading(false);
   }
