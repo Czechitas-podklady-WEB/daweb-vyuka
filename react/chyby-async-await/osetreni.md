@@ -4,7 +4,7 @@ Než se začneme zabývat ošetřením chyb, podívejme se naposledy na krásný
 
 ```js
 const fetchData = () => {
-  fetch('https://random.kodim.app/api/diceroll/reliable')
+  fetch('https://random.kodim.app/api/diceroll')
     .then((resp) => resp.json())
     .then((data) => setRoll(data.result.number));
 };
@@ -15,8 +15,8 @@ Stavový kód, který nám vrátil server, nám prohlížeč ukládá do objektu
 Nyní se musíme dle stavového kódu rozhodnout, zda vše dopadlo dobře a zpracujeme data z odpovědi, nebo se něco nepovedlo a chceme uživateli zobrazit nějakou hezkou chybovou zprávu pomocí stavu `errorMessage`. Tentokrát použijeme endpoint `/shaky`, který není tak sebejistý a přiznává, že se občas něco nepovede a vrátí serverovou chybu.
 
 ```js
-const nacistData = () => {
-  fetch('https://random.kodim.app/api/diceroll/shaky')
+const fetchData = () => {
+  fetch('https://random.kodim.app/api/diceroll?act=shaky')
     .then((resp) => {
       if (resp.status === 200) {
         return resp.json();
@@ -47,28 +47,29 @@ Výpadky internetu nemusí být jednoduché otestovat. Abychom nemuseli vytahova
 Pro ošetření fatálních chyb slouží funkce `catch()`, která se často píše na konec za všechny `then()`. Funkce uvnitř `catch()` se zavolá ve chvíli, kdy nastala fatální chyba. Všechny funkce uvnitř `then()` se při fatální chybě přeskočí. 
 
 ```js
-const nacistData = () => {
-  fetch('https://random.zkusmo.eu/shaky')
+const fetchData = () => {
+  fetch('https://random.kodim.app/api/diceroll?act=shaky')
     .then((resp) => {
-      switch (resp.status) {
-        case 200:
-          return resp.json();
-        case 500:
-          alert('Server vrátil neočekávanou chybu.');
-          break;
-        case 503:
-          alert('Server je přetížen.');
-          break;
+      if (resp.status === 200) {
+        return resp.json();
+      }
+
+      if (resp.status === 500) {
+        setErrorMessage('Server vrátil chybu.');
+      }
+
+      if (resp.status === 503) {
+        setErrorMessage('Server je přetížen.');
       }
     })
     .then((data) => {
-      if (data) {
-        setCislo(data.randomNumber);
+      if (data !== undefined) {
+        setRoll(data.result.number);
       }
     })
     .catch((error) => {
       console.error('Chyba komunikace se serverem:', error.message);
-      alert('Chyba komunikace se serverem. Jste připojeni k internetu?');
+      setErrorMessage('Chyba komunikace se serverem');
     });
 };
 ```
