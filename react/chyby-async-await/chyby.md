@@ -9,9 +9,9 @@ Chyby v komunikaci můžeme podle závažnosti rozdělit na dvě kategorie:
 1. Server odpoví, ale vrátí chybu. 
 1. Vůbec se nepodaří se serverem spojit – například proto, že jste zadali špatnou adresu serveru, a nebo proto, že vůbec nefunguje připojení k internetu.
 
-Začneme první variantou. Vyrobíme si jednoduchou komponentu s jedním tlačítkem, na které Když uživatel klikne, zavolá se endpoint, který vrací náhodná čísla od 1 do 6 (simuluje hod kostkou). Používat budeme API na adrese `https://random.kodim.app`.
+Začneme první variantou. Vyrobíme si jednoduchou komponentu s jedním tlačítkem, na které když uživatel klikne, zavolá se endpoint, který vrací náhodná čísla od 1 do 6 (simuluje hod kostkou). Používat budeme API na adrese `https://random.kodim.app`.
 
-Hlavní komponenta aplikace může vypadat třeba takhle – komunikace se serverem je schválně vytažená do funkce `fetchData`, protože teď až do konce lekce budeme už jen měnit tělo této funkce:
+Hlavní komponenta aplikace může vypadat třeba takhle – komunikace se serverem je schválně vytažená do funkce `fetchData`, protože teď až do konce lekce budeme měnit už jen tělo této funkce:
 
 ```jsx
 const App = () => {
