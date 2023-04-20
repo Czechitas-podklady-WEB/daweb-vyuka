@@ -1,6 +1,6 @@
 ## Webpack
 
-Ve chvili, kdy máme založený projekt, budeme potřebovat nástroj, který vezme náš kód spolu s použitými knihovnami a zabalí je všechny do jednoho velkého JavaScriptového souboru. Ten si pak prohlížeč může stáhnout celý najednou a nemusí tak čekat na spoustu malých souborů jednotlitově po sebě. Nástroj, který k tomuto účelu budeme používat, se jmenuje [Webpack](https://webpack.js.org).
+Ve chvili, kdy máme založený projekt, budeme potřebovat nástroj, který vezme náš kód spolu s použitými knihovnami a zabalí je všechny do jednoho velkého JavaScriptového souboru. Ten si pak prohlížeč může stáhnout celý najednou a nemusí tak čekat na spoustu malých souborů jednotlivě po sobě. Nástroj, který k tomuto účelu budeme používat, se jmenuje [Webpack](https://webpack.js.org).
 
 Nejdříve musíme do našeho projektu Webpack nainstalovat. To provedeme příkazem
 
@@ -29,7 +29,7 @@ Přibyla nám nová položka `devDependencies`. V té je vypsán seznam balíčk
 
 ### Struktura projektu
 
-Od této chvíle bude každý náš projekty mít více souborů, než jsme zvyklí. Je tedy dobré projekt smysluplně organizovat, abychom se v něm vyznali.
+Od této chvíle bude každý náš projekt mít více souborů, než jsme zvyklí. Je tedy dobré projekt smysluplně organizovat, abychom se v něm vyznali.
 
 Nejprve v projektu `muj-projekt` vytvoříme složku `src`. Do té budeme vždy vkládat zdrojové kódy naší aplikace, tedy všechny soubory s JavaScriptem, CSS, HTML atd. Zatím v této složce vytvoříme hlavní soubor `index.js`.
 
@@ -70,7 +70,7 @@ module.exports = {
 
 Vytvořit takovou konfiguraci od základu je už relativně pokročilá dovednost. Proto jsme zde rádi, že nám byla seslána takto shůry a po jejím původu se nepídíme. Tato konfigurace v podstatě říká, že Webpack má vzít soubor `src/index.js` a sestavit z něj výsledek, který se bude nacházet ve složce `public/bundle.js`.
 
-Abychom mohli webpack spustit, v souboru `package.json` si vytvoříme příkaz `build`.
+Abychom mohli Webpack spustit, v souboru `package.json` si vytvoříme příkaz `build`.
 
 ```json
 {

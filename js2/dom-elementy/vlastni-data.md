@@ -49,7 +49,7 @@ export const ShopList = (props) => {
   `;
 
   if (dayResult === 'loading') {
-    // sem později přidme načtení dat
+    // sem později přidáme načtení dat
   } else {
     const itemsElement = element.querySelector('.shoplist__items');
     itemsElement.append(...dayResult.items.map((item) => ListItem(item)));
@@ -72,7 +72,7 @@ document
   );
 ```
 
-Všimněte si, jak komponentě `ShopList` posíláme hodnotu `'loading'`. Komponenta podle této hodnoty pozná, že si má data stáhnout sama. Než data se serveru přijdou, do seznamu `.shoplist__items` se nepřidá nic a bude na stránce viset prázdný.
+Všimněte si, jak komponentě `ShopList` posíláme hodnotu `'loading'`. Komponenta podle této hodnoty pozná, že si má data stáhnout sama. Než data ze serveru přijdou, do seznamu `.shoplist__items` se nepřidá nic a bude na stránce viset prázdný.
 
 Při otevření stránky nyní uvidíme, jak komponenta vypadá, když ještě nemá stažena svá data. Kód pro stažení dat přidáme do první větve naší podmínky.
 
@@ -116,6 +116,6 @@ export const ShopList = (props) => {
 };
 ```
 
-Takto se komponent `ShopList` stará o stažení vlastních dat a stane se tak mnohem samostatnějším celkem.
+Takto se komponenta `ShopList` stará o stažení vlastních dat a stane se tak mnohem samostatnějším celkem.
 
 Hotový kód aplikace najdete v repozitáři [projekt-nakupy-dom](https://github.com/Czechitas-podklady-WEB/projekt-nakupy-dom).
