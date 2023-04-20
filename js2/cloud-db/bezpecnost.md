@@ -1,6 +1,6 @@
 ## Bezpečnost aplikace
 
-V tuto chvíli naše aplikace není vůbec zabezpečená. Jelikož máme náš klíč v souboru `functions/supabase.js` a tento klíč bude i po zabalení webpackem veřejně přístupný v souboru `bundle.js`. Pokud by nějaký útočník nalezl náš klíč, může si napsat script, pomocí kterého například smaže všechny záznamy v databázi.
+V tuto chvíli naše aplikace není vůbec zabezpečená, jelikož máme náš klíč v souboru `functions/supabase.js` a tento klíč bude i po zabalení webpackem veřejně přístupný v souboru `bundle.js`. Pokud by nějaký útočník nalezl náš klíč, může si napsat script, pomocí kterého například smaže všechny záznamy v databázi.
 
 Pro vyřešení našeho problému poskytuje supabase funkci **Row level security**, která umožňuje nastavit přístupová práva k jednotlivým řádkům v tabulce na základě určitých podmínek. Můžeme nastavovat podmínky, na základě kterých může konkrétní uživatel číst, vkládat, upravovat či mazat jednotlivé řádky. Pokud u tabulky aktivujeme **RLS**, dojde k tomu, že se všem uživatelům zakáže vše včetně čtení z tabulky. Následně můžeme začít nastavovat jednotlivé podmínky. Tyto podmínky mohou být v některých aplikacích poměrně komplikované. Pro představu, kdybych například programoval nějaký blog, začal bych nyní nastavovat podmínky asi takto:
 
@@ -8,7 +8,7 @@ Pro vyřešení našeho problému poskytuje supabase funkci **Row level security
 1. Všichni návštěvníci mohou číst komentáře u článků, které jsou publikované
 1. Přihlášení uživatelé mohou k publikovaným článkům přidávat komentáře
 1. Přihlášení uživatelé mohou mazat a upravovat komentáře, které sami vytvořili
-1. Přihlášení uživatelé, kteří mají roli administrátor mohou číst, přidávat, upravovat a mazat všechny články a komentáře
+1. Přihlášení uživatelé, kteří mají roli administrátor, mohou číst, přidávat, upravovat a mazat všechny články a komentáře
 
 Pro náš nákupní seznam budou podmínky celkem jednoduché, nám zatím stačí povolit, že každý uživatel může přidávat a číst své vlastní položky v nákupním seznamu. K tomu se nám bude hodit relace mezi položkami nákupního seznamu a tabulkou uživatelů, které již máme vytvořeny.
 
