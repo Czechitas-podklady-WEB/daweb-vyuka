@@ -1,6 +1,6 @@
 ## Asynchronní funkce
 
-Jak si možná pamtujete z některé z předchozích lekcí, funkce `fetch`, kterou používáme ke stahování dat ze serveru, vrací takzvaný _promise_. Funkcím, které vracejí _promise_, se obecně říká _asynchronní funkce_. Asynchronnost nám umožňuje spustit nějakou operaci (například stažení dat ze serveru) a nemuset při vykonávání kódu čekat, než se tato operace dokončí. 
+Jak si možná pamtujete z některé z předchozích lekcí, funkce `fetch`, kterou používáme ke stahování dat ze serveru, vrací takzvaný _promise_. Funkcím, které vracejí _promise_, se obecně říká _asynchronní funkce_. Asynchronnost nám umožňuje spustit nějakou operaci (například stažení dat ze serveru) a nemuset při vykonávání kódu čekat, než se tato operace dokončí.
 
 Představme si například volání API, které bez ošetření chyb vypadá takto:
 
@@ -31,7 +31,7 @@ const nacistData = async () => {
 console.log('Zavolána funkce nacistData()');
 ```
 
-Klíčovým slovem `await` vlastaně říkáme, že na místě, kdy se volá nějaká asynchronní funkce se chceme opravdu zastavit a počkat, dokud se operace skutečně nedokončí. Možná si řeknete, co jsme tím získali, když hlavním smyslem _promisů_ je, abychom nemuseli čekat na dlouho trvající operace. Vtip je v tom, 6e pokud nějaká funkce obsahuje volání pomocí `await`, musí se sama také stát asynchronní. Musíme ji tedy vytvořit pomocí slovíčka `async`. Taková funkce automaticky vrací `Promise` a opět bychom ji buď museli volat s `await` a nebo se smířit s tím, že při jejím volání nebudeme mít její výsledek. 
+Klíčovým slovem `await` vlastaně říkáme, že na místě, kdy se volá nějaká asynchronní funkce se chceme opravdu zastavit a počkat, dokud se operace skutečně nedokončí. Možná si řeknete, co jsme tím získali, když hlavním smyslem _promisů_ je, abychom nemuseli čekat na dlouho trvající operace. Vtip je v tom, 6e pokud nějaká funkce obsahuje volání pomocí `await`, musí se sama také stát asynchronní. Musíme ji tedy vytvořit pomocí slovíčka `async`. Taková funkce automaticky vrací `Promise` a opět bychom ji buď museli volat s `await` a nebo se smířit s tím, že při jejím volání nebudeme mít její výsledek.
 
 V Reactu to většinou funguje tak, že se nám touto cestou asynchronnost zpropaguje až do nějakého posluchče události, který stejně nic nevratí, takže klidně může být asynchronní, aniž by se nám v kódu cokoliv rozbilo.
 
