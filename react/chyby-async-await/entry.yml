@@ -5,6 +5,7 @@ sections:
   - chyby
   - stavove-kody
   - osetreni
+  - cv-osetreni
   - async-await
   - try-catch
   - bonus
