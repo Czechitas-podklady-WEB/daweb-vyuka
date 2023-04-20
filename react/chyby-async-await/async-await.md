@@ -22,7 +22,7 @@ V novějších verzích JavaScriptu existují dvě nová klíčová slova, kter�
 
 ```js
 const fetchData = async () => {
-  const resp = await fetch('https://random.kodim.app/api/diceroll')
+  const resp = await fetch('https://random.kodim.app/api/diceroll');
   const data = await resp.json();
   setRoll(data.result.number);
   console.log('Konec funkce fetchData()');
@@ -41,12 +41,12 @@ Pro ošetření chyb serveru můžeme použít `if-else` nebo `switch`, stejně 
 
 ```js
 const fetchData = async () => {
-  const resp = await fetch('https://random.kodim.app/api/diceroll')
+  const resp = await fetch('https://random.kodim.app/api/diceroll');
   if (resp.status === 200) {
     setErrorMessage(null);
     return;
-  } 
-  
+  }
+
   if (resp.status === 500) {
     setErrorMessage('Server vrátil chybu.');
   } else if (resp.status === 503) {

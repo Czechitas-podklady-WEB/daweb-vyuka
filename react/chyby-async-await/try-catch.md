@@ -47,7 +47,7 @@ const fetchData = async () => {
     } else if (resp.status === 503) {
       setErrorMessage('Server je přetížen.');
     })
-    
+
     const data = await resp.json();
     setRoll(data.result.number);
   } catch(error) {
@@ -75,7 +75,7 @@ const fetchData = async () => {
     } else if (resp.status === 503) {
       setErrorMessage('Server je přetížen.');
     })
-    
+
     const data = await resp.json();
     setRoll(data.result.number);
   } catch(error) {
