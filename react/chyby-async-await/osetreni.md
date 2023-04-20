@@ -10,7 +10,7 @@ const fetchData = () => {
 };
 ```
 
-Stavový kód, který nám vrátil server, nám prohlížeč ukládá do objektu `Response`. To je ten objekt, který dostaneme jako parametr naší funkce, kterou předáváme prvnímu `then()` po volání `fetch()`. Konkrétně číselný stav je uložen v property `status`. Pokud si v naší funkci zpracovávající odpověď pojmenujeme parametr s odpovědí (Response) jako `resp`, jak jsme si v tomto kurzu zvykli, stavový kód načteme pomocí `resp.status`. 
+Stavový kód, který nám vrátil server, nám prohlížeč ukládá do objektu `Response`. To je ten objekt, který dostaneme jako parametr naší funkce, kterou předáváme prvnímu `then()` po volání `fetch()`. Konkrétně číselný stav je uložen v property `status`. Pokud si v naší funkci zpracovávající odpověď pojmenujeme parametr s odpovědí (Response) jako `resp`, jak jsme si v tomto kurzu zvykli, stavový kód načteme pomocí `resp.status`.
 
 Nyní se musíme dle stavového kódu rozhodnout, zda vše dopadlo dobře a zpracujeme data z odpovědi, nebo se něco nepovedlo a chceme uživateli zobrazit nějakou hezkou chybovou zprávu pomocí stavu `errorMessage`. Tentokrát použijeme endpoint `/shaky`, který není tak sebejistý a přiznává, že se občas něco nepovede a vrátí serverovou chybu.
 
