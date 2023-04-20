@@ -6,3 +6,5 @@ sections:
   - stavove-kody
   - osetreni
   - async-await
+  - try-catch
+  - bonus
