@@ -1,6 +1,6 @@
 ## Základy autentizace
 
-Pokud nám má nějaký server dovolit, abychom na něm upravovali data, rozhodně nám to nedovolí dělat anonymně. Prozovozání serveru nikdy není zadarmo a za používání aplikací a jejich API se většinou platí. Každý uživatel nějaké služby tak musí mít založený účet, který používá k dotazování na API. Pokud chce uživatel přistoupit ke svým datům, musí prokázat, že je to skutečně on. Tomuto procesu se říká odborně říká :term{cs="autentizace" en="authentication"}. My v této lekci probereme způsob autentizace pmocí takzvaných _tokenů_.
+Při práci s aplikací _Hlasování_ jste se mohli podivit, že si kdokoliv jen tak může zahlasovat pod jakýmkoliv jménem. Toto byla spíš výjimečná situace. Pokud nám má nějaký server dovolit, abychom na něj posílali data, rozhodně nám to nedovolí dělat anonymně. Prozovozání serveru nikdy není zadarmo a za používání aplikací a jejich API se většinou platí. Každý uživatel nějaké služby tak musí mít založený účet, který používá pak používá k práci s API. Pokud chce uživatel přistoupit ke svým datům, musí prokázat, že je to skutečně on. Tomuto procesu se říká odborně říká :term{cs="autentizace" en="authentication"}. My v této lekci probereme způsob autentizace pomocí takzvaných _tokenů_.
 
 ### Autentizační token
 
@@ -28,4 +28,8 @@ fetch('https://it-seznamka.cz/me/profile', {
 });
 ```
 
-Toto je zatím jakási šablona, které se budeme do budoucna vždy držet při vytváření požadavků, které nějak mění data na serveru. Praktický příklad s reálným serverem si vyzkoušíme v následující sekci.
+### Autentizace proti kodim.cz
+
+Abyste si nemuseli ve všemožných cvičných aplikacích neustále zakládat nové účty, jako jednotné autentizační místo použijeme přímo tento server, na kterém si právě čtete tyto materiály a účet už zde máte založený. Když jste přihlášeni na server kodim.cz, můžete si pod svým účtem vyzvednout token pro autentizaci do všech cvičných aplikací, které budeme používat. 
+
+::fig[Token pro aplikace]{src=assets/token.png}

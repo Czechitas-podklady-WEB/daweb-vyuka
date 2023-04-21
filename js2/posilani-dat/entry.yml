@@ -3,9 +3,10 @@ lead: Zatím jsme data z API pouze četli. Nyní si ukážeme, jak můžeme data
 access: 'claim'
 sections:
   - dotaz-post
-  - autentizace
   - hlasovani
   - cv-post
-  - aktualizace
-  - cv-aktualizace
+  - autentizace
+  - nova-polozka
+  # - aktualizace
+  # - cv-aktualizace
   # - ulozky-na-doma
