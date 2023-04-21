@@ -1,0 +1,3 @@
+## Cvičení: Dotaz PATCH
+
+TBD
