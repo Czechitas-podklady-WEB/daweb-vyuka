@@ -5,7 +5,7 @@ Abychom si procvičili dotaz POST s autentizací, rozšíříme naši aplikaci _
 Nejprve si vyzkoušíme získat informace o vašem účtu pomocí dotazu GET s autentizací.
 
 1. Založte nový JavaScriptový projekt a spusťte jej v prohlížeči
-1. Vyzvedněte si svůj autentizační token pro aplikace a uložte jej ručně do local storage pro vaši stránku. 
+1. Vyzvedněte si svůj autentizační token pro aplikace a uložte jej ručně do local storage pro vaši stránku.
 
 Nyní vyzkoušejte přístup k vašemu účtu v aplikaci _Nákupy_.
 
@@ -80,13 +80,16 @@ Na tlačítko pro odeslání formuláře si napojíme posluchač, který zatím 
 ```js
 const handleAdd = (e) => {
   e.preventDefault();
-  
+
   const productInput = element.querySelector('.product-input');
   const amountInput = element.querySelector('.amount-input');
   const unitInput = element.querySelector('.unit-input');
 
   console.log(
-    'položka', productInput.value, amountInput.value, unitInput.value
+    'položka',
+    productInput.value,
+    amountInput.value,
+    unitInput.value
   );
 };
 
@@ -104,7 +107,7 @@ Budeme na to potřebovat nový `fetch` ve funkci `handleAdd`.
 ```js
 const handleAdd = (e) => {
   e.preventDefault();
-  
+
   const productInput = element.querySelector('.product-input');
   const amountInput = element.querySelector('.amount-input');
   const unitInput = element.querySelector('.unit-input');

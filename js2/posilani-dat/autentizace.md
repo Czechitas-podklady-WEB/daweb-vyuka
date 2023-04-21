@@ -38,14 +38,14 @@ Abyste si nemuseli ve všemožných cvičných aplikacích neustále zakládat n
 
 V kódu ovedeném výše máme autentizační token vložený přímo v kódu. Pokud takový kód commitneme do veřejného GitHub repozitáře, prozradíme svůj tajný token celému internetu. To rozhodně nechceme. Místo toho si token uložíme do takzvané _local storage_. To je speciální úložiště rezervované prohlížečem pro naši stránku, které uchovává informace i když refreshneme stránku. Sem si můžeme uložit v podstatě co se nám zlíbí. Nejčastějí do local storage vkládáme tokeny a jiné věci, které mají přežít refresh stránky.
 
-Local storage pro naši stránku si zobrazíme v _dev tools_ v záložce _Application_. Zde v sekci _Storage_ rozklíkneme položku _Local Storage_. Otevře se nám tabulka, do které vložíme náš token pod klíč `token`. 
+Local storage pro naši stránku si zobrazíme v _dev tools_ v záložce _Application_. Zde v sekci _Storage_ rozklíkneme položku _Local Storage_. Otevře se nám tabulka, do které vložíme náš token pod klíč `token`.
 
 ::fig[Local Storage]{src=assets/local-storage.png}
 
 V JavaScriptu si pak token můžeme vyzvednout pomocí příkazu
 
 ```js
-localStorage.getItem('token')
+localStorage.getItem('token');
 ```
 
 Hlavičky naších dotazů na API pak budou vypadat následovně:
