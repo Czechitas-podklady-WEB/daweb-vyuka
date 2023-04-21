@@ -5,7 +5,7 @@ demand: 3
 
 Naše aplikace _Nákupy_ ještě neumí mazat položky seznamu. Když nám nákupní seznam příliš naroste, zatím to vyřešíme tak, že umožníme seznam vrátit do původní podoby tak, jak vypadal při prním přihlášení. Do komponenty `ShopList` přidáme tlačítko, které odešle požadavek na obnovu seznamu na server pomocí POST a překreslí komponentu.
 
-1. Vyjděte z kódu aplikace vytvořené na lekci. Použijte repozitář [projekt-nakupy-post](https://github.com/Czechitas-podklady-WEB/projekt-nakupy-post) jako šablonu a pro vytvoření vlastního repozitáře, který si naklonujte.
+1. Vyjděte z kódu aplikace vytvořené na lekci. Použijte repozitář [projekt-nakupy-post](https://github.com/Czechitas-podklady-WEB/projekt-nakupy-post) jako šablonu pro vytvoření vlastního repozitáře, který si naklonujte.
 1. Do hlavičky v komponentě `ShopList` přidejte HTML pro panel s tlačítkem _obnovit_. Hlavička komponenty pak bude vypadat takto:
    ```html
    <div class="shoplist__head">
