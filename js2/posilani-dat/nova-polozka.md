@@ -2,26 +2,29 @@
 
 Abychom si procvičili dotaz POST s autentizací, rozšíříme naši aplikaci _Nákupy_ o možnost přidání nové položky do seznamu. To znamená, že už nebudeme pracovat s veřejnými daty na adrese https://nakupy.kodim.app/api/sampleweek, neboť ta se nedají nijak měnit. Pokud máte účet na kodim.cz, máte automaticky účet i v aplikaci _Nákupy_, pod kterým máte svá data, která můžete libovolně upravovat.
 
-Nejprve si vyzkoušíme získat informace o vašem účtu pomocí dotazu GET s autentizací. Nejprve si vyzvedněte svůj autentizační token pro aplikace. Potom si založte čistý JavaScriptový projekt a vyzkušejte přístup k vašemu účtu v aplikaci _Nákupy_.
+Nejprve si vyzkoušíme získat informace o vašem účtu pomocí dotazu GET s autentizací.
+
+1. Založte nový JavaScriptový projekt a spusťte jej v prohlížeči
+1. Vyzvedněte si svůj autentizační token pro aplikace a uložte jej ručně do local storage pro vaši stránku. 
+
+Nyní vyzkoušejte přístup k vašemu účtu v aplikaci _Nákupy_.
 
 ```js
 fetch('https://nakupy.kodim.app/api/me', {
   method: 'GET',
   headers: {
     'Content-Type': 'application/json',
-    Authorization: 'Bearer váš-token',
+    Authorization: `Bearer ${localStorage.getItem('token')}`,
   },
 }).then((resp) => resp.json());
   .then((data) => console.log(data.result));
 ```
 
-Pokud jste vše provedli správně, měli byste získat data o svém účtu.
+Pokud jste vše provedli správně, měli byste získat data o svém účtu a jste připravení pokročit v práci na aplikaci _Nákupy_.
 
 ### Přechod na soukromá data
 
-Nyní jsme připravení pokračovat v našem projektu _Nákupy_. Začneme tak, jsme náš projekt zanechali v minulé lekci v repozitáři [projekt-nakupy-dom](https://github.com/Czechitas-podklady-WEB/projekt-nakupy-dom).
-
-Jelikož chceme v naší aplikaci pracovat s daty na vašem účtu, musíme všechny položky seznamu získávat z jiné API adresy. Proto je nejprve potřeba upravit stahování dat v komponentě `ShopList`.
+S projektem _Nákupy_ začneme tam, jak jsme jej zanechali v minulé lekci v repozitáři [projekt-nakupy-dom](https://github.com/Czechitas-podklady-WEB/projekt-nakupy-dom). Jelikož chceme v naší aplikaci pracovat s daty na vašem účtu, musíme všechny položky seznamu získávat z jiné API adresy, která je chráněna autentizací. Proto je nejprve potřeba upravit stahování dat v komponentě `ShopList`.
 
 ```js
 if (dayResult === 'loading') {
@@ -29,7 +32,7 @@ if (dayResult === 'loading') {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
-      Authorization: `Bearer váš-token`,
+      Authorization: `Bearer ${localStorage.getItem('token')}`,
     },
   })
     .then((response) => response.json())
@@ -45,7 +48,7 @@ if (dayResult === 'loading') {
 }
 ```
 
-Takto si stáhnete data přímo na vašem účtu, se kterými si můžete dělat, co chcete.
+Takto si stáhnete data přímo z vašeho účtu.
 
 ### Přidání položky
 
@@ -72,16 +75,19 @@ element.innerHTML = `
 `;
 ```
 
-Na tlačítko pro odeslání formuláře si napojíme posluchač, který zatím pouze sesbírá obsah textových políček.
+Na tlačítko pro odeslání formuláře si napojíme posluchač, který zatím pouze sesbírá obsah textových políček a poté je vymaže.
 
 ```js
 const handleAdd = (e) => {
   e.preventDefault();
-  const product = element.querySelector('.product-input').value;
-  const amount = element.querySelector('.amount-input').value;
-  const unit = element.querySelector('.unit-input').value;
+  
+  const productInput = element.querySelector('.product-input');
+  const amountInput = element.querySelector('.amount-input');
+  const unitInput = element.querySelector('.unit-input');
 
-  console.log('položka', product, amount, unit);
+  console.log(
+    'položka', productInput.value, amountInput.value, unitInput.value
+  );
 };
 
 element.querySelector('.btn-add').addEventListener('click', handleAdd);
@@ -98,25 +104,28 @@ Budeme na to potřebovat nový `fetch` ve funkci `handleAdd`.
 ```js
 const handleAdd = (e) => {
   e.preventDefault();
-  const product = element.querySelector('.product-input').value;
-  const amount = element.querySelector('.amount-input').value;
-  const unit = element.querySelector('.unit-input').value;
+  
+  const productInput = element.querySelector('.product-input');
+  const amountInput = element.querySelector('.amount-input');
+  const unitInput = element.querySelector('.unit-input');
 
   fetch(`https://nakupy.kodim.app/api/me/week/${day}/items`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      Authorization: `Bearer váš-token`,
+      Authorization: `Bearer ${localStorage.getItem('token')}`,
     },
     body: JSON.stringify({
-      product: product,
-      amount: amount,
-      unit: unit,
+      product: productInput.value,
+      amount: Number(amountInput.value),
+      unit: unitInput.value,
     }),
   })
     .then((response) => response.json())
     .then((data) => {
-      element.replaceWith(ShopList({ day, result: data.result }));
+      element.replaceWith(ShopList({ day, dayResult: data.result }));
     });
 };
 ```
+
+Celý hotový projekt nejdete v repozitáři [projekt-nakupy-post](https://github.com/Czechitas-podklady-WEB/projekt-nakupy-post).
