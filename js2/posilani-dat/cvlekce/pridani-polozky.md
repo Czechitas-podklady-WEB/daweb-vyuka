@@ -1,5 +1,5 @@
 ---
-title: Přidání položky do seznamu
+title: Vymazání seznamu položek
 demand: 3
 ---
 

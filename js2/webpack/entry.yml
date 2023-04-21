@@ -2,13 +2,9 @@ title: Webpack a větší aplikace
 lead: Uvídíme, jak sestavovat větší aplikace pomocí nástroje Webpack
 access: claim
 sections:
-  # - aktualizace-obsahu
-  # - aktualizace-z-api
-  # - cv-aktualizace
   - system-npm
   - webpack
   - startovace
   - cv-zaklady-webpacku
-  - komunikace
-  - cv-komunikace
+  - tipy-triky
 #  - ulozky-na-doma
