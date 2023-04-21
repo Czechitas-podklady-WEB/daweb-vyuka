@@ -30,6 +30,6 @@ fetch('https://it-seznamka.cz/me/profile', {
 
 ### Autentizace proti kodim.cz
 
-Abyste si nemuseli ve všemožných cvičných aplikacích neustále zakládat nové účty, jako jednotné autentizační místo použijeme přímo tento server, na kterém si právě čtete tyto materiály a účet už zde máte založený. Když jste přihlášeni na server kodim.cz, můžete si pod svým účtem vyzvednout token pro autentizaci do všech cvičných aplikací, které budeme používat. 
+Abyste si nemuseli ve všemožných cvičných aplikacích neustále zakládat nové účty, jako jednotné autentizační místo použijeme přímo tento server, na kterém si právě čtete tyto materiály a účet už zde máte založený. Když jste přihlášeni na server kodim.cz, můžete si pod svým účtem vyzvednout token pro autentizaci do všech cvičných aplikací, které budeme používat.
 
 ::fig[Token pro aplikace]{src=assets/token.png}
