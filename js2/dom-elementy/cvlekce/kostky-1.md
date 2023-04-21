@@ -15,3 +15,7 @@ V tomto cvičení vyrobíme stránku s několika hracími kostkami. Budeme chtí
 1. Upravte kód v `index.js` tak, aby na zobrazených kostkách byla různá čísla.
 1. Upravte komponentu Dice tak, aby se při kliknutí na tlačítko :i[hodit] vypsalo náhodné číslo (zatím) do konzole. K vygenerování náhodného čísla využijte již připravenou funkci `roll`, kterou si můžete z hlavního `indexu.js` přesunout do komponenty `Dice`.
 1. Upravte komponentu tak, aby se při kliknutí na tlačítko změnilo číslo zobrazené na kostce – aby byla nastavena správná třída `dice__side--X` (místo X bude náhodné číslo). Postupovat můžete např. tak, že odstraníte všechny třídy `dice__side--1` až `dice__side--6` a nakonec nastavíte jednu třídu odpovídající náhodnému číslu.
+
+----solution
+
+Příklad možného řešení najdete na GitHubu: https://github.com/Czechitas-podklady-WEB/cviceni-kostky/tree/reseni
