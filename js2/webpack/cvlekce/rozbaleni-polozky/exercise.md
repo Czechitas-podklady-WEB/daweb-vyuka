@@ -7,11 +7,12 @@ Ještě než se pustíme do dotazů typu PATCH, procvičíme si samotné překre
 
 1. Založte si vlastní repozitář, který vyrobte ze šablony [projekt-nakupy-patch](https://github.com/Czechitas-podklady-WEB/projekt-nakupy-patch), tedy z aktuální verze naší aplikace _Nákupy_.
 1. Upravte vytváření hlavního DOM elementu v komponentě `ListItem` tak, že přidáme tlačítko pro rozbalení položky, tlačítka panelu nástrojů a detail položky.
+
    ```js
    const element = document.createElement('div');
-     element.classList.add('list-item');
-     element.classList.add('list-item--expanded');
-     element.innerHTML = `
+   element.classList.add('list-item');
+   element.classList.add('list-item--expanded');
+   element.innerHTML = `
        <div class="list-item__toolbar">
          Tlačítka
        </div>

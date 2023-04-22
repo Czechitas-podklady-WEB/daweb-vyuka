@@ -4,7 +4,7 @@ demand: 3
 ---
 
 Navážeme na předchozí cvičení a umožníme u každé položky upravit název, množství nebo jednotku. K tomu bude potřeba do detailu položky přidat formálář a odeslat data z něj na server pomocí dotazu PATCH.
- 
+
 1. Pokračujte v projektu z předchozího cvičení. Upravíme DOM element komponenty `ListItem` tak, že do detailu položky přidáme formulář pro editaci názvvu, množství a jednotky. Jde o téměř stejný formulář jako jsme už vytvořili při přidání nové položky.
    ```html
    <div class="list-item__detail">
@@ -19,7 +19,7 @@ Navážeme na předchozí cvičení a umožníme u každé položky upravit náz
        </div>
      </form>
    </div>
-   ``` 
+   ```
 1. Vytvořte posluchač události obsluhující odeslání formuláře. Nejdříve si jen do konzole vypište data sebraná z formuláře.
 1. Do obsluhy události přidejte `fetch`, který pomocí metody PATCH odešle na server upravená data položky. Adresa položky je stejná jako při změně zaskřtnutí
    ```
