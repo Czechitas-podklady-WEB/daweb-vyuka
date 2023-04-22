@@ -93,7 +93,9 @@ const handleSubmit = (e) => {
   );
 };
 
-element.querySelector('.shoplist__new').addEventListener('submit', handleSubmit);
+element
+  .querySelector('.shoplist__new')
+  .addEventListener('submit', handleSubmit);
 ```
 
 Data sesbíraná z textových políčk nyní pošleme pomocí metody POST na API endpoint
