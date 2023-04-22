@@ -29,7 +29,7 @@ V tomto cvičení budete ovládat hotelové osvětlení vašich dvou pokojů.
 
         Za `XXX` dosaďte váš osobní token z [vašeho Kódím.cz účtu](https://kodim.cz/ucet), aby vám server umožnil přístup k vašim zařízením.
 
-    1.  Vyberte si vaši oblínebou barvu v hexadecimálním zápisu (třeba bílou `#ffffff`).
+    1.  Vyberte si vaši oblíbenou barvu v hexadecimálním zápisu (třeba bílou `#ffffff`).
 
     1.  V Javascriptovém souboru pomocí volání `fetch` hned po načtení stránky pošlete informaci na server, že chcete rozsvítit první světlo.
 
