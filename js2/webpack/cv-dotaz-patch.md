@@ -1,3 +1,3 @@
 ## Cvičení: Dotaz PATCH
 
-TBD
+::exc[cvlekce>rozbaleni-polozky]
