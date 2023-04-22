@@ -76,7 +76,7 @@ V tomto cvičení si vytvoříte vlastní chatovací aplikaci.
 
 1.  Stránku nastylujte.
 
-----solution
+---solution
 
 `script.js`:
 
