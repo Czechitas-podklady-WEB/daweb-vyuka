@@ -75,10 +75,10 @@ element.innerHTML = `
 `;
 ```
 
-Na tlačítko pro odeslání formuláře si napojíme posluchač, který zatím pouze sesbírá obsah textových políček a poté je vymaže.
+Na událost odeslání formuláře si napojíme posluchač, který zatím pouze sesbírá obsah textových políček a poté je vymaže.
 
 ```js
-const handleAdd = (e) => {
+const handleSubmit = (e) => {
   e.preventDefault();
 
   const productInput = element.querySelector('.product-input');
@@ -93,7 +93,7 @@ const handleAdd = (e) => {
   );
 };
 
-element.querySelector('.btn-add').addEventListener('click', handleAdd);
+element.querySelector('.shoplist__new').addEventListener('submit', handleSubmit);
 ```
 
 Data sesbíraná z textových políčk nyní pošleme pomocí metody POST na API endpoint
@@ -102,10 +102,10 @@ Data sesbíraná z textových políčk nyní pošleme pomocí metody POST na API
 https://nakupy.kodim.app/api/me/week/:day/items
 ```
 
-Budeme na to potřebovat nový `fetch` ve funkci `handleAdd`.
+Budeme na to potřebovat nový `fetch` ve funkci `handleSubmit`.
 
 ```js
-const handleAdd = (e) => {
+const handleSubmit = (e) => {
   e.preventDefault();
 
   const productInput = element.querySelector('.product-input');

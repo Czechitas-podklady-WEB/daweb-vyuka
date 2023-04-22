@@ -15,7 +15,7 @@ Naše aplikace _Nákupy_ ještě neumí mazat položky seznamu. Když nám náku
      </div>
    </div>
    ```
-1. Vytořte posluchač události `handleReset` a připojte jej na tlačítko. Je to velmi podobné tomu, jak je vytvořen posluchač `handleAdd`. Do vašeho posluchače zatím dejte například `console.log`, a vyzkoušejte, že funguje.
+1. Vytořte posluchač události `handleReset` a připojte jej na tlačítko. Je to velmi podobné tomu, jak je vytvořen posluchač `handleSubmit`. Do vašeho posluchače zatím dejte například `console.log`, a vyzkoušejte, že funguje.
 1. Nyní je potřeba odeslat požadavek na server. Zkontrolujte si, že máte v local storage uložený správný token. Zavolejte funkci `fetch`, která na adresu
    ```
    https://nakupy.kodim.app/api/me/week/:day/actions
