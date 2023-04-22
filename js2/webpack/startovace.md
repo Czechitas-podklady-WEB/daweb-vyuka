@@ -18,7 +18,7 @@ Naši aplikaci _Nákupy_ jsme v minulé lekci zanechali v repozitáři [projekt-
 1. V terminálu si otevřeme složku, ve které skladujeme své projekty.
 1. Pro vytvoření projektu s názvem `nakupy-webpack` spustíme příkaz
    ```sh
-   $ npm init kodim-app nakupy-webpack vanilla
+   $ npm init kodim-app@latest nakupy-webpack vanilla
    ```
    Poslední parametr [vanilla](https://en.wikipedia.org/wiki/Plain_vanilla) znamená, že chceme vytvořit projekt v základním JavaScriptu zatím bez Reactu.
 1. Otevřeme složku `nakupy-webpack` ve VS Code. Spustíme terminál a uvnitř této složky spustíme příkaz

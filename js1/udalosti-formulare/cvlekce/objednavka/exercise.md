@@ -10,7 +10,7 @@ Podle instrukcí níže vytvořte jednoduchý formulář pro dokončení objedn�
 1. Založte si HTML stránku s JavaScriptem, třeba následujícím příkazem:
 
 ```sh
-npm init kodim-app cviceni-objednavka html-css-js
+npm init kodim-app@latest cviceni-objednavka html-css-js
 ```
 
 1. Do souboru `style.css` vložte [styly pro formuláře](https://raw.githubusercontent.com/Czechitas-podklady-WEB/formulare/main/style.css) ať se nemusíte trápit se stylováním.

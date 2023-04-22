@@ -8,7 +8,7 @@ Vytvoříme aplikaci, která zobrazuje seznam kontaktů. U každého kontaktu bu
 1. Založte si nový projekt příkazem
 
    ```shell
-   npm init kodim-app cviceni-kontakty-dom html-css-js
+   npm init kodim-app@latest cviceni-kontakty-dom html-css-js
    ```
 
 1. Otevřete si ve VS Code vytvořenou složku `cviceni-kontakty-dom`.

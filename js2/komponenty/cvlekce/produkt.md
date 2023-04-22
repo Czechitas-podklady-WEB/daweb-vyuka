@@ -33,7 +33,7 @@ const products = [
 1. Založte si nový projekt příkazem
 
    ```shell
-   npm init kodim-app cviceni-produkt html-css-js
+   npm init kodim-app@latest cviceni-produkt html-css-js
    ```
 
 1. Otevřete si ve VS Code vytvořenou složku `cviceni-produkt`.

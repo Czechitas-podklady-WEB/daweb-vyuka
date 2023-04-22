@@ -10,7 +10,7 @@ Vyrobíme stránku, která pomůže uživateli vygenerovat opravdu silné a nepr
 1. Založte si nový projekt příkazem
 
    ```shell
-   npm init kodim-app cviceni-generator-hesel html-css-js
+   npm init kodim-app@latest cviceni-generator-hesel html-css-js
    ```
 
 1. Otevřete si ve VS Code vytvořenou složku `cviceni-generator-hesel`.

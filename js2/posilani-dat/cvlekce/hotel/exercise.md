@@ -10,7 +10,7 @@ V tomto cvičení budete ovládat hotelové osvětlení vašich dvou pokojů.
 1.  Pro rychlejší vytvoření základní struktury použijte příkaz níže:
 
     ```bash
-    npm init kodim-app hotel html-css-js
+    npm init kodim-app@latest hotel html-css-js
     ```
 
 1.  Rozsviťe vaše dvě led světla ve virtuálním hotelu.

@@ -8,7 +8,7 @@ Pomocí vlastních DOM elementů přidáme na stránku několik tlačítek.
 1. Založte si nový projekt příkazem
 
    ```shell
-   npm init kodim-app cviceni-tlacitko html-css-js
+   npm init kodim-app@latest cviceni-tlacitko html-css-js
    ```
 
 1. Otevřete si ve VS Code vytvořenou složku `cviceni-tlacitko`.

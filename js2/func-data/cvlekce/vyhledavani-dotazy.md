@@ -7,7 +7,7 @@ offerSolution: false
 Založte si nový projekt příkazem
 
 ```shell
-npm init kodim-app cviceni-func-data html-css-js
+npm init kodim-app@latest cviceni-func-data html-css-js
 ```
 
 Otevřete si ve VS Code vytvořenou složku `cviceni-func-data`.

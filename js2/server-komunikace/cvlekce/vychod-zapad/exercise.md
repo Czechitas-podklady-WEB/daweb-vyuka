@@ -10,7 +10,7 @@ Vytvořme webovou stránku, která bude zobrazovat čas, kdy dnes vyšlo a kdy z
 1. Založte si nový projekt příkazem
 
    ```shell
-   npm init kodim-app cviceni-vychod-zapad html-css-js
+   npm init kodim-app@latest cviceni-vychod-zapad html-css-js
    ```
 
 1. Otevřete si ve VS Code vytvořenou složku `cviceni-vychod-zapad`.

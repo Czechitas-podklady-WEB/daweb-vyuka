@@ -5,7 +5,7 @@ demand: 3
 
 Vyrobte jednoduchý web pro malé rodinné vinařství. Web bude obsahovat několik stránek vztahujících se k výrobě a prodeji vín.
 
-1. Pomocí `npm init kodim-app` založte nový projekt s názvem `vinecko`.
+1. Pomocí `npm init kodim-app@latest` založte nový projekt s názvem `vinecko`.
 1. Upravte soubor `index.html` tak, aby měl prázdné `body`.
 1. Vytvořte komponentu `App`, která zatím bude vracet pouze prázdný `div`. Zapojte tuto komponentu do stránky.
 1. Vytvořte komponentu `Navigation`, která bude představovat navigaci. Do navigace přidejte tyto odkazy

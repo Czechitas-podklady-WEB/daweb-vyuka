@@ -10,7 +10,7 @@ V tomto cvičení si vytvoříte vlastní chatovací aplikaci.
 1.  Pro rychlejší vytvoření základní struktury použijte příkaz níže:
 
     ```bash
-    npm init kodim-app chat html-css-js
+    npm init kodim-app@latest chat html-css-js
     ```
 
 1.  Do HTML přidejte formulář s jedním textovým políčkem pro uživatelovu zprávu a tlačítkem pro odeslání.

@@ -8,7 +8,7 @@ Vytvoříme aplikaci, která umožní hlasovat pro jednotlivé možnosti na webu
 1. Založte si nový projekt příkazem
 
 ```shell
-npm init kodim-app cviceni-hlasovani html-css-js
+npm init kodim-app@latest cviceni-hlasovani html-css-js
 ```
 
 1. Otevřete si ve VS Code vytvořenou složku `cviceni-hlasovani`.
