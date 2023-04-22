@@ -80,7 +80,7 @@ V tomto cvičení si vytvoříte vlastní chatovací aplikaci.
 
 `script.js`:
 
-```javascript
+```js
 const sendFormElement = document.querySelector('#send');
 const messageElement = document.querySelector('#message');
 const nameElement = document.querySelector('#name');

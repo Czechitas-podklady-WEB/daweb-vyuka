@@ -9,7 +9,7 @@ Pro připomenutí: když vložíte tlačítko do HTML formuláře `<form>`, proh
 
 Aby k odeslání formuláře nedošlo, je potřeba prohlížeči říci, že nemá provádět výchozí akci. K tomu slouží metoda `preventDefault` na události. Tuto metodu byste měli zavolat hned na začátku zpracování události, třeba takhle:
 
-```javascript
+```js
 addButton.addEventListener('click', (event) => {
   event.preventDefault();
   // pokračování kódu zpracování události 'click'…
