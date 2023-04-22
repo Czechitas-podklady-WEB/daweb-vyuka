@@ -53,7 +53,7 @@ V tomto cvičení budete ovládat hotelové osvětlení vašich dvou pokojů.
         });
         ```
 
-        Za `{ID_ZAŘÍZENÍ}` dosaďte identifikátor příslušného světla. Místo `XXX` dosaďte token.
+        Za `{ID_ZAŘÍZENÍ}` dosaďte identifikátor příslušného světla (bez složených závorek). Místo `XXX` dosaďte token.
 
     1.  Po načtení stránky přidejte i instrukci pro rozsvícení druhého světla.
 
