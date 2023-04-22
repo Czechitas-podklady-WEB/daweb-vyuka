@@ -81,81 +81,82 @@ V tomto cvičení si vytvoříte vlastní chatovací aplikaci.
 `script.js`:
 
 ```javascript
-const sendFormElement = document.querySelector("#send")
-const messageElement = document.querySelector("#message")
-const nameElement = document.querySelector("#name")
+const sendFormElement = document.querySelector('#send');
+const messageElement = document.querySelector('#message');
+const nameElement = document.querySelector('#name');
 
 const handleSendMessage = (event) => {
-    event.preventDefault();
-    const apiPayload = {
-        message: messageElement.value,
-        name: nameElement.value
+  event.preventDefault();
+  const apiPayload = {
+    message: messageElement.value,
+    name: nameElement.value,
+  };
+
+  fetch('https://czechichat.deno.dev/api/send-message', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(apiPayload),
+  }).then((response) => {
+    if (response.status === 200) {
+      messageElement.value = '';
+      nameElement.value = '';
+    } else {
+      alert(`Odeslání zprávy se nezdařilo.\n${response.statusText}`);
     }
+  });
+};
 
-    fetch('https://czechichat.deno.dev/api/send-message', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(apiPayload),
-    }).then(response => {
-        if (response.status === 200) {
-            messageElement.value = ""
-            nameElement.value = ""
-        } else {
-            alert(`Odeslání zprávy se nezdařilo.\n${response.statusText}`)
-        }
-    })
-
-}
-
-sendFormElement.addEventListener("submit", handleSendMessage)
+sendFormElement.addEventListener('submit', handleSendMessage);
 
 // -------------- bonus --------------
-const messagesElement = document.querySelector("#messages")
+const messagesElement = document.querySelector('#messages');
 
 const loadMessagesHistory = () => {
-    fetch("https://czechichat.deno.dev/api/list-messages")
-        .then(response => response.json())
-        .then(showMessagesHistory)
-}
+  fetch('https://czechichat.deno.dev/api/list-messages')
+    .then((response) => response.json())
+    .then(showMessagesHistory);
+};
 
 const showMessagesHistory = (data) => {
-    const messagesHTML = data.messages
-        .map((message) => `<li><small>${message.date}</small> <strong>${message.name}</strong>: ${message.message}</li>`)
-        .join("")
-    messagesElement.innerHTML = messagesHTML
-}
+  const messagesHTML = data.messages
+    .map(
+      (message) =>
+        `<li><small>${message.date}</small> <strong>${message.name}</strong>: ${message.message}</li>`
+    )
+    .join('');
+  messagesElement.innerHTML = messagesHTML;
+};
 
-loadMessagesHistory()   // zobrazit historii hned po načtení stránky
-setInterval(loadMessagesHistory, 3000)
+loadMessagesHistory(); // zobrazit historii hned po načtení stránky
+setInterval(loadMessagesHistory, 3000);
 ```
 
 Obsah elementu `body` v souboru `index.html`:
 
 ```html
-  <div class="container">
-    <h1>Czechichat</h1>
-    <h2>Poslat zprávu</h2>
-    <form id="send">
-      <div class="inputs">
-        <label for="name">Jméno:</label>
-        <input id="name" type="text">
-      </div>
-      <div class="inputs">
-        <label for="message">Zpráva:</label>
-        <input id="message" type="text">
-      </div>
-      <div class="controls">
-        <button>➤ Odeslat</button>
-      </div>
-    </form>
+<div class="container">
+  <h1>Czechichat</h1>
+  <h2>Poslat zprávu</h2>
+  <form id="send">
+    <div class="inputs">
+      <label for="name">Jméno:</label>
+      <input id="name" type="text" />
+    </div>
+    <div class="inputs">
+      <label for="message">Zpráva:</label>
+      <input id="message" type="text" />
+    </div>
+    <div class="controls">
+      <button>➤ Odeslat</button>
+    </div>
+  </form>
 
-    <!-- bonus -->
-    <h2>Historie zpráv</h2>
-    <ul id="messages">
-    </ul>
-  </div>
+  <!-- bonus -->
+  <h2>Historie zpráv</h2>
+  <ul id="messages"></ul>
+</div>
 ```
 
 `style.css`:
@@ -178,7 +179,7 @@ html {
   margin-left: auto;
 }
 
-#send>div {
+#send > div {
   margin-bottom: 1rem;
 }
 
@@ -223,7 +224,7 @@ li {
 
 #messages small {
   display: block;
-  background-color: #EEE;
+  background-color: #eee;
   border-radius: 8px;
   padding: 2px 4px;
   margin-bottom: 5px;

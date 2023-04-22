@@ -21,11 +21,11 @@ Uvnitř komponenty `ShopList` pak musíme upravit volání funkce `ListItem`:
 ```js
 const itemsElement = element.querySelector('.shoplist__items');
 itemsElement.append(
-  ...dayResult.items.map((item) => ListItem({ day: day, item: item })
-));
+  ...dayResult.items.map((item) => ListItem({ day: day, item: item }))
+);
 ```
 
-Nyní vytvoříme posluchač události pro tlačítko `.btn-tick` postupem, který už dobře známe. 
+Nyní vytvoříme posluchač události pro tlačítko `.btn-tick` postupem, který už dobře známe.
 
 ```js
 const handleTick = () => {
@@ -49,7 +49,7 @@ Musíme mu předat _body_, které říká, jakou vlastnost chceme změnit. Pokud
 }
 ```
 
-v opačeném případě 
+v opačeném případě
 
 ```json
 {
@@ -73,11 +73,7 @@ const handleTick = () => {
   })
     .then((response) => response.json())
     .then((data) => {
-      element.replaceWith(
-        ListItem(
-          { day, item: data.result }
-        )
-      );
+      element.replaceWith(ListItem({ day, item: data.result }));
     });
 };
 ```
