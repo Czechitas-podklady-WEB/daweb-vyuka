@@ -136,22 +136,22 @@ setInterval(loadMessagesHistory, 3000);
 Obsah elementu `body` v souboru `index.html`:
 
 ```html
-  <div class="container">
-    <h1>Czechichat</h1>
-    <h2>Poslat zprávu</h2>
-    <form id="send">
-      <div class="inputs">
-        <label for="name">Jméno:</label>
-        <input id="name" type="text" autofocus>
-      </div>
-      <div class="inputs">
-        <label for="message">Zpráva:</label>
-        <input id="message" type="text">
-      </div>
-      <div class="controls">
-        <button>➤ Odeslat</button>
-      </div>
-    </form>
+<div class="container">
+  <h1>Czechichat</h1>
+  <h2>Poslat zprávu</h2>
+  <form id="send">
+    <div class="inputs">
+      <label for="name">Jméno:</label>
+      <input id="name" type="text" autofocus />
+    </div>
+    <div class="inputs">
+      <label for="message">Zpráva:</label>
+      <input id="message" type="text" />
+    </div>
+    <div class="controls">
+      <button>➤ Odeslat</button>
+    </div>
+  </form>
 
   <!-- bonus -->
   <h2>Historie zpráv</h2>
