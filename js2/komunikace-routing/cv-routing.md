@@ -1,4 +1,5 @@
 ## Cvičení: Routování a autentizace
 
-::exc[cvlekce>registrace]
+::exc[cvlekce>chyba-stranka]
+::exc[cvlekce>recepty]
 ::exc[cvlekce>vinarstvi]

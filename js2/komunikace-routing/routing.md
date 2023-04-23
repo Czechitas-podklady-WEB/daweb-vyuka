@@ -1,63 +1,17 @@
 ## Routing na klientu
 
-Do naší aplikace s nákupními seznamy, kterou už několik lekcí stále vylepšujeme, bychom chtěli přidat možnost registrace a přihlášení. K tomu však potřebujeme, abychom se v aplikaci mohli pomocí navigace přepínat mezi různými stránkami, jako je formulář pro registraci nebo přihlášení.
+Do naší aplikace s _Nákupy_, kterou už několik lekcí stále vylepšujeme, bychom chtěli přidat novou stránku s recepty, které by si v nějaké další verzi aplikace mohl uživatel rovnou přidat do nákupního seznamu. Abychom se v aplikaci mohli pomocí navigace přepínat mezi různými stránkami, potřebujem takzvaný _routing_. To je technika, kdy se podle URL adresy rozhodujeme, kterou komponentu chceme zobrazit.
 
 Abychom dosáhli kýženého cíle, bude potřeba vytvořit několik komponent. Konečně už naše aplikace nebude zakrslík jen se dvěma komponentami.
 
-Vyjdeme z [poslední verze](https://github.com/Czechitas-podklady-WEB/prvni-komponenta/tree/delete-item) naší aplikace, ve které jsme implementovali mazání položek. Nejprve vytvoříme komponentu pro hlavičku naší stránky.
+Vyjdeme z poslední verze projektu _Nákupy_ v repozitáři [projekt-nakupy-routing](https://github.com/Czechitas-podklady-WEB/projekt-nakupy-routing).
 
-```js
-import './style.css';
+### Domovská stránka
 
-export const Header = () => {
-  const element = document.createElement('header');
-  element.classList.add('shopping-list');
-  element.innerHTML = `
-    <div class="container">  
-      <nav>
-        <a href="/">Domů</a>  
-      </nav>
-      <div class="user">
-        <nav>
-          <a href="/register">Registrovat</a>
-          <a href="/login">Přihlásit</a>
-        </nav>
-      </div>
-    </div>
-  `;
+### Komponenty Header a Footer
 
-  return element;
-};
-```
+### Stránka s recepty a routing
 
-Poté budeme potřebovat komponentu pro každou stránku naší aplikace, tedy `HomePage`, `RegisterPage` a `LoginPage`.
+### Aktivní odkazy v navigaci
 
-Abychom se ve struktuře všech komponent v aplikaci vyznali, zařídíme, aby celá naše aplikace byla jedna velká komponenta. V souboru `index.html` tak v prvku `body` nezbude už vůbec žádný obsah.
-
-Vytvoříme komponentu `App`.
-
-```js
-import { Header } from '../Header/index.js';
-import { HomePage } from '../HomePage/index.js';
-import { LoginPage } from '../LoginPage/index.js';
-import { RegisterPage } from '../RegisterPage/index.js';
-
-export const App = () => {
-  const element = document.createElement('div');
-  element.classList.add('app');
-  element.append(Header());
-
-  const { pathname } = window.location;
-  if (pathname === '/') {
-    element.append(HomePage());
-  } else if (pathname === '/login') {
-    element.append(LoginPage());
-  } else if (pathname === '/register') {
-    element.append(RegisterPage());
-  }
-
-  return element;
-};
-```
-
-Celý projekt najdete ve větvi [routing](https://github.com/Czechitas-podklady-WEB/prvni-komponenta/tree/routing) repozitáře s naší aplikací.
+Celý projekt najdete v repozitáři [projekt-nakupy-routing](https://github.com/Czechitas-podklady-WEB/projekt-nakupy-routing).

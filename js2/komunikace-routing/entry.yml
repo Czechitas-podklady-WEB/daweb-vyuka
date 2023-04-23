@@ -1,7 +1,7 @@
-title: Komunikace mezi komponentami, routing
-lead: Ukážeme si, jak si mohou komponenty mezi sebou předávat data a přidáme do naších stránek routování.
+title: Routing na klientu
+lead: Umožníme naší aplikaci přepínat mezi stránkami.
 access: claim
 sections:
   - routing
   - cv-routing
-  - komunikace
+  # - komunikace
