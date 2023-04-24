@@ -36,7 +36,7 @@ Webpack umí kromě JavaScriptu zabalit také CSS. To nás zachrání od ruční
 Aby Webpack poznal, které CSS má do výsledného projektu zabalit, je potřeba mu to říct pomocí importů. V hlavním souboru `index.js` je tedy potřeba na začátku importovat styly
 
 ```js
-import `./style.css`;
+import './style.css';
 ```
 
 Totéž je potřeba provést na začátku všech komponent, které obsahují vlastní styly. Tím máme náš projekt hotový a funkční.

@@ -56,13 +56,10 @@ console.log(greet('Martin'));
 Nyní použijeme Webpack k sestavení výsledné aplikace. Aby se náš projekt sestavil, potřebujeme Webpack správně nakonfigurovat. V projektu `muj-projekt` vytvoříme soubor `webpack.config.js` s tímto obsahem.
 
 ```js
-const path = require('path');
-
 module.exports = {
   mode: 'production',
   entry: './src/index.js',
   output: {
-    path: path.join(__dirname, 'public'),
     filename: 'bundle.js',
   },
 };
