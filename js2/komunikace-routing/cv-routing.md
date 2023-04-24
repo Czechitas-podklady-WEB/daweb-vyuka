@@ -1,4 +1,4 @@
-## Cvičení: Routování a autentizace
+## Cvičení: Routování
 
 ::exc[cvlekce>chybova-stranka]
 ::exc[cvlekce>recepty]
