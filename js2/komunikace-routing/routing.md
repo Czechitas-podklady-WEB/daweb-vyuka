@@ -4,7 +4,7 @@ Do naší aplikace s _Nákupy_, kterou už několik lekcí stále vylepšujeme, 
 
 Abychom dosáhli kýženého cíle, bude potřeba vytvořit několik komponent. Konečně už naše aplikace nebude zakrslík jen se dvěma komponentami.
 
-Vyjdeme z poslední verze projektu _Nákupy_ v repozitáři [projekt-nakupy-routing](https://github.com/Czechitas-podklady-WEB/projekt-nakupy-routing).
+Vyjdeme z poslední verze projektu _Nákupy_ v repozitáři [projekt-nakupy-patch](https://github.com/Czechitas-podklady-WEB/projekt-nakupy-patch).
 
 ### Domovská stránka
 
