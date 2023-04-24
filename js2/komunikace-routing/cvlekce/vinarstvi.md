@@ -18,7 +18,7 @@ Vyrobte jednoduchý web pro malé rodinné vinařství. Web bude obsahovat něko
 - Degustace: (URL `/degustation`)
 - Kontakty: (URL `/contact`)
 
-1. Použijte komponentu `Navigation` uvnitř komonenty `IntroPage`.
+1. Použijte komponentu `Navigation` uvnitř komponenty `HomePage`.
 1. Ke každé z dalších stránek vytvořte příslušnou komponentu: `CataloguePage`, `DegustationPage` a `ContactPage`. Zatím do všech komponent vložte pouze nadpis `h1`.
 1. V hlavním `index.js` celé aplikace a zobrazte pro aktuální URL správnou stránku.
 1. Vyzkoušejte, že váš web správně přepíná mezi stránkami.
