@@ -20,4 +20,4 @@ Vyrobte jednoduchý web pro malé rodinné vinařství. Web bude obsahovat něko
 1. V hlavním `index.js` celé aplikace a zobrazte pro aktuální URL správnou stránku.
 1. Vyzkoušejte, že váš web správně přepíná mezi stránkami.
 1. Přidejte do komponenty `Navigation` schopnost zvýraznit odkaz aktuální stránky.
-1. Dejte prostor své kreativitě a naplňte jednotlivé stránky obsahem dle vaší fantazie. Vaše stránka bude takzvaně _statická_, to znamená, že se neptá na žádné API. Obsah si tedy můžete uplně vymyslet například s pomocí [ChatGPT](https://chat.opanai.com).
+1. Dejte prostor své kreativitě a naplňte jednotlivé stránky obsahem dle vaší fantazie. Nebojte si hrát si tím, co vám zrovna nejde nebo co si chcete lépe procvičit. Vaše stránka bude takzvaně _statická_, to znamená, že se neptá na žádné API. Obsah si tedy můžete uplně vymyslet například s pomocí [ChatGPT](https://chat.opanai.com) nebo se inspirovat například na [Pinterestu](https://cz.pinterest.com/search/pins/?rs=ac&q=wine%20website%20design).
