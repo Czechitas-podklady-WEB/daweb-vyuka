@@ -24,13 +24,12 @@ Dále si ve složce src našeho projektu založíme složku **functions** a v n�
 import { createClient } from '@supabase/supabase-js';
 
 const SUPABASE_URL = '';
-const SUPABASE_KEY = '';
 
 export const getSupabase = () => {
-  return createClient(SUPABASE_URL, SUPABASE_KEY);
+  return createClient(SUPABASE_URL, localStorage.getItem('key'));
 };
 ```
 
-V kódu pouze doplníme hodnoty pro URL a klíč k našemu projektu z předchozího kroku.
+V kódu pouze doplníme hodnotu SUPABASE_URL. Klíč si po spuštění projektu uložíme do localStorage našeho prohlížeče. V pozdější části lekce si ukážeme, že to lze i jinak.
 
-Nyní máme připravenou funkci, která nám vrací supabase klient. Jelikož tuto funkci exportujeme, tak ji můžeme importovat kdekoliv v rámci našeho projektu a dále s tímto klientem pracovat. Jak s klientem pracovat si ukážeme hned v další části, kde se podíváme na možnost, jak využít supabase pro autentizaci uživatelů.
+Nyní máme připravenou funkci, která nám vrací supabase klient. Jelikož tuto funkci exportujeme, tak ji můžeme importovat kdekoliv v rámci našeho projektu a dále s tímto klientem pracovat. Jak s klientem pracovat si ukážeme hned v další části, kde se podíváme na možnost, jak využít supabase pro práci s databází.
