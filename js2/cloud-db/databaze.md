@@ -6,14 +6,14 @@ Databáze je strukturována do tabulek. Každá tabulka má svůj název a obsah
 Každá tabulka obsahuje sloupce, které představují atributy (vlastnosti), které můžeme do tabulky ukládat. Každý sloupec má nastaven svůj datový typ, který do něj může být uložen, zároveň je možné nastavit, zda je vyplnění hodnoty v daném sloupci povinné, nebo zda hodnota ve sloupci může být null. Řádky v tabulce poté představují jednotlivé záznamy.
 
 Jednotlivé tabulky si můžeme představit jako tabulku v Excelu, pokud bychom chtěli v Excelu reprezentovat náš nákupní seznam, mohl by vypadat takto:
-::fig[Excel tabulka]{src=assets/excel_db2.jpg}
+::fig[Excel tabulka]{src=assets/excel_db_2.jpg}
 
 Podobným způsobem to můžeme udělat i v supabase. Bude zde rozdíl v tom, že oproti Excelu zde musíme nastavit datové typy jednotlivých sloupců a rozhodnout se, zda mohou hodnoty v jednotlivých sloupcích nabývat hodnoty null.
 
 Poslední, co potřebujeme vědět, je, že databázové tabulky spolu mohou být propojeny pomocí relací, jedná se o provázání informace ve sloupci v nějaké tabulce s nějakým řádkem v tabulce jiné. V našem případě tuto vazbu použijeme ve sloupci pro ID uživatele.
 
 Přejdeme na záložku **Table editor** a klikneme na tlačítko **Create a new table**. Nastavíme název tabulky na **shopping_item**, prozatím vypneme položku Enable Row Level Security (RLS) (o té si ještě povíme později). A nastavíme jednotlivé sloupce. Takto:
-::fig[Sloupce v tabulce]{src=assets/db_cols2.jpg}
+::fig[Sloupce v tabulce]{src=assets/db_cols_2.jpg}
 
 Když máme tabulku vytvořenou, můžeme do ní začít ukládat data a následně je číst, s tím nám pomůže [dokumentace](https://supabase.com/docs/reference/javascript/select).
 
