@@ -40,16 +40,16 @@ Pokud budeme chtít impolemtovat registraci, mohlo by odeslání registračního
 
 ```js
 formElm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const emailInput = formElm.querySelector('.input__email');
-    const passwordInput = formElm.querySelector('.input__password');
-    console.log(emailInput.value, passwordInput.value);
-    // registrace uživatele
-    signUp(emailInput.value, passwordInput.value).then((response) => {
-      console.log(response);
-      window.location.href = '/';
-    });
+  e.preventDefault();
+  const emailInput = formElm.querySelector('.input__email');
+  const passwordInput = formElm.querySelector('.input__password');
+  console.log(emailInput.value, passwordInput.value);
+  // registrace uživatele
+  signUp(emailInput.value, passwordInput.value).then((response) => {
+    console.log(response);
+    window.location.href = '/';
   });
+});
 ```
 
 Nejprve si uložíme do proměnných hodnoty ze vstupů našeho registračního formuláře, ty následně předáme naší funkci `signUp`, která vrací promise. Pokud vče proběhlo v pořádku, tak uživatele přesměrujeme na domovskou stránku. Bylo by dobré zde případně i ošetřit nějaké chyby a eventuelně vypsat chybové hlášky, tomu se ale pro dnešek vyhneme.
@@ -86,11 +86,12 @@ Díky tomu, že předáváme `session` do všech stránek, můžeme nyní třeba
 Do komponenty `HomePage` můžeme tedy hned nahoru přidat:
 
 ```js
-  const { session } = props;
-  if (!session) {
-    window.location.pathname = '/login';
-  }
+const { session } = props;
+if (!session) {
+  window.location.pathname = '/login';
+}
 ```
+
 Opačně budeme postupovat na stránce pro přihlášení a registraci, odkud budeme chtít přesměrovat uživatele, který je již přihlášený.
 
 Nyní když máme přihlášeného užovatele, můžeme upravit naší databázi tak, aby obsahovala propojení mezi registrovanými uživateli a položkami nákupního seznamu. To uděláme tak, že si do tabulky v databázi přidáme sloupec `user_id` a nastavíme mu propojení následujícám způsobem. Půjdeme s administraci supabase do `Database -> Tables` u naší tabulky klikneme na talčítko pro editaci. Následně v dolní části klikneme na `Add column`, pojmenuje jej `user_id` a nakonec klikneme na tlačítko řetězu, kde zajistíme propojení na uživatele následujícím způsobem:
@@ -98,6 +99,7 @@ Nyní když máme přihlášeného užovatele, můžeme upravit naší databázi
 
 Nakonec už zbývá jen upravit naši aplikaci tak, aby při vytváření položky nákupního seznamu ukládala také `id` přihlášeného uživatele.
 Upravíme funkci pro přidávání položky v `db.js` takto:
+
 ```js
 export const addShoppingItem = (product, amount, unit, userId) => {
   const supabase = getSupabase();
@@ -114,24 +116,24 @@ export const addShoppingItem = (product, amount, unit, userId) => {
 Do komponenty `ShopList` si předáme `session` při volání funkce `addShoppingItem` předáme jako 4. parametr id uživatele, které nalezneme v `session.user.id`. Kód pro přidání bude nakonec vypadat takto:
 
 ```js
-    addShoppingItem(
-      productInput.value,
-      amountInput.value,
-      unitInput.value,
-      session.user.id,
-    ).then((response) => {
-      getShoppingItems().then((response) => {
-        const { data, error } = response;
-        if (data) {
-          element.replaceWith(
-            ShopList({
-              day: day,
-              dayResult: data,
-            }),
-          );
-        }
-      });
-    });
+addShoppingItem(
+  productInput.value,
+  amountInput.value,
+  unitInput.value,
+  session.user.id
+).then((response) => {
+  getShoppingItems().then((response) => {
+    const { data, error } = response;
+    if (data) {
+      element.replaceWith(
+        ShopList({
+          day: day,
+          dayResult: data,
+        })
+      );
+    }
+  });
+});
 ```
 
 V poslední části lekce si povíme něco o zabezpečení databáze a konečne smažeme klíč z localStorage.

@@ -36,7 +36,7 @@ V tomto cvičení budeme opět pracovat s poli z našich jednohubek.
 
    ```js
    const adultMen = persons.filter(
-     (person) => person.gender === "male" && person.age >= 18,
+     (person) => person.gender === 'male' && person.age >= 18
    );
    ```
 
@@ -47,7 +47,7 @@ V tomto cvičení budeme opět pracovat s poli z našich jednohubek.
    ```js
    const maleOrFemale = persons.every(
      (item) =>
-       person.age < 18 || item.gender === "male" || item.gender === "female",
+       person.age < 18 || item.gender === 'male' || item.gender === 'female'
    );
    console.log(maleOrFemale);
    ```
