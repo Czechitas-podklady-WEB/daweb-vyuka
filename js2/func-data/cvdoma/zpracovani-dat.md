@@ -11,8 +11,8 @@ V tomto cvičení budeme opět pracovat s poli z našich jednohubek.
    delší než 4 znaky.
 1. Pomocí metody `filter` získejte z pole `persons` pouze dospělé muže.
 1. Pomocí metody `every` zjistěte, jestli v poli `persons` platí, že každá
-   zletilá osoba je vždy buď muž nebo žena (tedy že vlastnost `gender` má
-   hodnotu `male` nebo hodnotu `female`).
+   zletilá osoba je vždy buď muž nebo žena (tedy že vlastnost `gender` u
+   dospělých osob má hodnotu `male` nebo hodnotu `female`).
 1. Pomocí metody `forEach` napište cyklus, který spočítá průměr čísel v poli
    `numbers`.
 
@@ -41,8 +41,8 @@ V tomto cvičení budeme opět pracovat s poli z našich jednohubek.
    ```
 
 1. Pomocí metody `every` zjistěte, jestli v poli `persons` platí, že každá
-   zletilá osoba je vždy buď muž nebo žena (tedy že vlastnost `gender` má
-   hodnotu `male` nebo hodnotu `female`).
+   zletilá osoba je vždy buď muž nebo žena (tedy že vlastnost `gender` u
+   dospělých osob má hodnotu `male` nebo hodnotu `female`).
 
    ```js
    const maleOrFemale = persons.every(
