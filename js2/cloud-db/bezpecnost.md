@@ -18,7 +18,7 @@ Začneme tím, že u naší tabulky zapneme **Row level security** a následně 
 Následně vybereme možnost **For full customization**
 
 Nyní nastavíme pravidlo, že každý uživatel může přidávat, číst, upravovat a mazat všechny položky, kde souhlasí jeho `id`
-::fig[Pravidlo pro plný přístup ke svým záznamům]{src=assets/rls_all.jpg}
+::fig[Pravidlo pro plný přístup ke svým záznamům]{src=assets/rls_all.png}
 
 Důležitý je zde výraz `auth.uid() = user_id`, který říká, že pro čtení řádku musí být splněna podmínka, že ID přihlášeného uživatele se rovná hodnotě ve sloupci `user_id` na danném řádku.
 

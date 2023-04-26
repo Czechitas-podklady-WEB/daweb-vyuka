@@ -39,16 +39,17 @@ export const getSession = () => {
 Pokud budeme chtít impolemtovat registraci, mohlo by odeslání registračního formuláře vypadat následovně:
 
 ```js
-element.querySelector('form').addEventListener('submit', (e) => {
-  e.preventDefault();
-  const email = element.querySelector('.email-input').value;
-  const password = element.querySelector('.password-input').value;
-
-  signUp(email, password).then((response) => {
+formElm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const emailInput = formElm.querySelector('.input__email');
+    const passwordInput = formElm.querySelector('.input__password');
+    console.log(emailInput.value, passwordInput.value);
+    // registrace uživatele
+    signUp(emailInput.value, passwordInput.value).then((response) => {
+      console.log(response);
       window.location.href = '/';
-    }
+    });
   });
-});
 ```
 
 Nejprve si uložíme do proměnných hodnoty ze vstupů našeho registračního formuláře, ty následně předáme naší funkci `signUp`, která vrací promise. Pokud vče proběhlo v pořádku, tak uživatele přesměrujeme na domovskou stránku. Bylo by dobré zde případně i ošetřit nějaké chyby a eventuelně vypsat chybové hlášky, tomu se ale pro dnešek vyhneme.
