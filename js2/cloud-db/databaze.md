@@ -20,9 +20,7 @@ Když máme tabulku vytvořenou, můžeme do ní začít ukládat data a násled
 Zde narazíme na drobný problém, dokumentace supabase ukazuje práci s asynchronními funkcemi jinak, než jsme se učili v rámci našeho kurzu. Tím se ale nenecháme odradit a popíšeme si, jak můžeme kód z dokumentace používat tak, jak jsme zvyklí. V dokumentaci vidíme kód:
 
 ```js
-const { data, error } = await supabase
-  .from('countries')
-  .select()
+const { data, error } = await supabase.from('countries').select();
 ```
 
 Většina metod, se kterými budeme v rámci supabase pracovat, vrací Promise (slib), který již dobře známe z funkce `fetch`. Na slibu jsme zvyklí volat metodu `then`, která přijímá funkci, která se vykoná po naplnění slibu. Výše uvedenou funkci bychom mohli tedy upravit tímto způsobem:
