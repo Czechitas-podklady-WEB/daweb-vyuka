@@ -73,7 +73,3 @@ Váš projekt můžete zpřístupnit na GitHub Pages. Protože váš projekt už
 1. Všechny soubory (`index.js`, `.gitignore`, `package-lock.json`, `webpack.config.js`, `.github/workflows/pages.yml`) commitněte a pushněte na GitHub.
 
 1. Na konfigurační stránce GitHub Pages (viz první krok) se za chvilku objeví odkaz, kde běží publikovaný web. Otevřete web v prohlížeči a přidejte do LocalStorage svůj token z `kodim.cz` (pod klíč `token`). Po obnovení stránky by vám (se správným tokenem v prohlížeči) měla stránka plně fungovat včetně volání API.
-
-```
-
-```
