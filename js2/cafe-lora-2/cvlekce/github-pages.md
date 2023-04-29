@@ -74,4 +74,10 @@ Váš projekt můžete zpřístupnit na GitHub Pages. Protože váš projekt už
 
 1. Na konfigurační stránce GitHub Pages (viz první krok) se za chvilku objeví odkaz, kde běží publikovaný web. Otevřete web v prohlížeči a přidejte do LocalStorage svůj token z `kodim.cz` (pod klíč `token`). Po obnovení stránky by vám (se správným tokenem v prohlížeči) měla stránka plně fungovat včetně volání API.
 
-1. (Na GitHub Pages nebude fungovat stránka s objednávkou. To si necháme na příště.)
+1. Pokud chcete zprovoznit i stránku s detailem objednávky, upravte v komponentě `Objednavka` (v `Menu`) odkaz na detail objednávky na `objednavka` (odstraníte lomítko na začátku). Dále je potřeba v souboru `package.json` upravit skript pro `build`. Za původní `webpack --mode=production` přidejte ` && cp dist/index.html dist/404.html`. Celý objekt `scripts` tedy bude vypadat takto:
+   ```json
+   "scripts": {
+     "build": "webpack --mode=production && cp dist/index.html dist/404.html",
+     "start": "webpack serve --open"
+   },
+   ```
