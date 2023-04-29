@@ -68,50 +68,12 @@ Váš projekt můžete zpřístupnit na GitHub Pages. Protože váš projekt už
    ```
 
 1. Vytvořte v kořenové složce projektu složku `.github`, v ní složku `workflows` a v ní soubor `pages.yml`. Celá cesta tedy bude `.github/worfkflows/pages.yml`.
-1. Do osuboru `pages.yml` vložte následující obsah:
-   ```yaml
-   name: Deploy static content to Pages
-   ```
-
-on:
-push:
-branches: ["main"]
-
-workflow_dispatch:
-
-permissions:
-contents: read
-pages: write
-id-token: write
-
-concurrency:
-group: "pages"
-cancel-in-progress: true
-
-jobs:
-deploy:
-environment:
-name: github-pages
-url: ${{ steps.deployment.outputs.page_url }}
-runs-on: ubuntu-latest
-steps: - name: Checkout
-uses: actions/checkout@v3 - name: Node.js setup
-uses: actions/setup-node@v3
-with:
-node-version: 18
-cache: "npm" - name: Install dependencies
-run: npm ci - name: Build
-run: npm run build - name: Setup Pages
-uses: actions/configure-pages@v3 - name: Upload artifact
-uses: actions/upload-pages-artifact@v1
-with:
-path: "dist" - name: Deploy to GitHub Pages
-id: deployment
-uses: actions/deploy-pages@v1
-
-```
+1. Do souboru `pages.yml` zkopírujte obsah ze vzorového souboru [pages.yml](https://github.com/FilipJirsak/cafelora-reseni/blob/main/.github/workflows/pages.yml).
 
 1. Všechny soubory (`index.js`, `.gitignore`, `package-lock.json`, `webpack.config.js`, `.github/workflows/pages.yml`) commitněte a pushněte na GitHub.
 
 1. Na konfigurační stránce GitHub Pages (viz první krok) se za chvilku objeví odkaz, kde běží publikovaný web. Otevřete web v prohlížeči a přidejte do LocalStorage svůj token z `kodim.cz` (pod klíč `token`). Po obnovení stránky by vám (se správným tokenem v prohlížeči) měla stránka plně fungovat včetně volání API.
+
+```
+
 ```
