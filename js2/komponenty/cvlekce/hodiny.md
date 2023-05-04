@@ -60,7 +60,7 @@ const times = [
   },
   {
     hours: 17,
-    minutes: 08,
+    minutes: 8,
   },
 ];
 
