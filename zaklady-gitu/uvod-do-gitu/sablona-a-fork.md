@@ -20,7 +20,7 @@ Založení projektu na základě šablony udělá to, že se vytvoří úplně n
 
 Kopii ze šablony vytvoříte tak, že na stránce projektu kliknete na nepřehlédnutelné zelené tlačítko _Use this template_ a z nabídky zvolíte _Create a new repository_.
 
-Vytváření kopie projektu s pomocí šablony má jednu _drobnou_ nevýhodu – vlastník původního projektu musí povolit, že projekt může sloužit jako šablona. Projekty v DA Web tak jsou nastavené, ale u cizích projektů vám obvykle nezbyde nic jiného, než forkovat. Ale tak je to správně, nechcete se chlubit cizím peřím – jenom si chcete na cizím projektu něco vyzkoušet či vylepšit (a ideálně pak vylepšení pull requestem nabídnout původnímu autorovi k začlenění. Takhle funguje opensource).
+Vytváření kopie projektu s pomocí šablony má jednu _drobnou_ nevýhodu – vlastník původního projektu musí povolit, že projekt může sloužit jako šablona. Projekty v DA Web tak jsou nastavené, ale u cizích projektů vám obvykle nezbyde nic jiného než forkovat. Ale tak je to správně, nechcete se chlubit cizím peřím – jenom si chcete na cizím projektu něco vyzkoušet či vylepšit (a ideálně pak vylepšení pull requestem nabídnout původnímu autorovi k začlenění. Takhle funguje opensource).
 
 ### Dokončení
 

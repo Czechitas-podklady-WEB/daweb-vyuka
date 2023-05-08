@@ -23,7 +23,7 @@
 
 ### Příkazy pro počáteční nastavení
 
-Pokud jste postupovaly podle návodu v [Přípravě před kurzem](https://kodim.cz/kurzy/daweb/#priprava) a na závěr jste provedli [Ověření istalace](https://kodim.cz/kurzy/daweb/priprava/instalace-nastroju/overeni), následující příkazy spouštět nemusíte – spustily se už v rámci ověření instalace.
+Pokud jste postupovali podle návodu v [Přípravě před kurzem](https://kodim.cz/kurzy/daweb/#priprava) a na závěr jste provedli [Ověření istalace](https://kodim.cz/kurzy/daweb/priprava/instalace-nastroju/overeni), následující příkazy spouštět nemusíte – spustily se už v rámci ověření instalace.
 
 ```sh
 $ git config --global user.name "Jméno Příjmení"

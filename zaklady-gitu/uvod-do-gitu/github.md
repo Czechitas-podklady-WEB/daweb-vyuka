@@ -2,12 +2,12 @@
 
 Git je nástroj (program), který můžete používat na svém počítači a nepotřebujete žádného externího posktovatele služeb.
 Nicméně největší síla Gitu je v tom, že můžete kód snadno sdílet s dalšími vývojáři nebo doslova s kýmkoli na světě.
-Aby bylo sdílení s dalšími lidmi snadné, je vhodné kopii vašeho repository vystavit někde na internetu, aby byl k dispozici kdykoli – bez ohledu na to, zda zrovna máte zapntý počítač a jste připojeni k internetu.
+Aby bylo sdílení s dalšími lidmi snadné, je vhodné kopii vašeho repository vystavit někde na internetu, aby byl k dispozici kdykoli – bez ohledu na to, zda zrovna máte zapnutý počítač a jste připojeni k internetu.
 Postupem času vzniklo mnoho poskytovatelů služeb, kteří vám umožní takto zveřejnit Git repository – a často k tomu přidávají další služby.
 Největším takovým poskytovatelem je [GitHub](https://github.com/) (před několika lety ho koupil Microsoft).
 GitHub vám umožňuje zdarma hostovat soukromá i veřejná repository.
 
-Občas se to plete, co je Git a co GitHub.
+Občas se plete, co je Git a co GitHub.
 Když to spletete, nevadí.
 Ale je dobré si pamatovat že to není jedno a totéž – GitHub je jeden z poskytovatelů služeb postavených nad Gitem.
 
@@ -15,7 +15,7 @@ Ale je dobré si pamatovat že to není jedno a totéž – GitHub je jeden z po
 
 Vzhledem k tomu, že GitHub umožňuje vystavit váš kód, vaše projekty, můžete si tam vybudovat jakýsi svůj profil vývojáře, své portfolio projektů.
 To se bude hodit, pokud budete později shánět zaměstnání – v životopisu můžete dát odkaz na svůj profil na GitHubu.
-Potenciální zaměstanavatel se tak rovnou může podívat na váš kód, udělat si představu o vašich znalostech – případně se na pohovoru můžete bavit rovnou nad vaším konkrétním kódem.
+Potenciální zaměstanavatel se tak rovnou může podívat na váš kód, udělat si představu o vašich znalostech – případně se na pohovoru můžete bavit rovnou o vašem konkrétním kódu.
 
 Do svého profilu si můžete kdykoli připnout některá svá repository, ta, která považujete za důležitá.
 Ve vašem profilu budou vidět všechna vaše veřejná repository.
@@ -26,8 +26,8 @@ To ale nevadí.
 
 ### Soubor `README.md`
 
-Pokud máte v repository v kořenové složce soubor `README.md`, GitHub bude jeho obsah zobrazovat na úvodí stránce respoitory na webu.
-Hodí se tedy do tohoto souboru popsat, co v tom repository je, ke čemu to slouží, jak se to používá.
+Pokud máte v repository v kořenové složce soubor `README.md`, GitHub bude jeho obsah zobrazovat na úvodí stránce repository na webu.
+Hodí se tedy do tohoto souboru popsat, co v tom repository je, k čemu to slouží, jak se to používá.
 Pro repository, která budete používat jako cvičení při lekcích, je to spíš poznáka pro vás.
 Ale můžete si tam třeba poznamenat, které se to týká lekce, jaké látky, případně si tam dát odkaz na lekci na Kodim.cz.
 
