@@ -6,9 +6,9 @@ Verzovací systém Git nabízí několik možnosti pro organizaci spolupráce mn
 
 Když na projektu pracuje pouze jeden vývojář, situace je téměř vždy stejná. Projekt má jeden vzdálený repozitář například na GitHubu a vývojář ho má naklonovaný v lokální kopii. Pokud pracují na projektu vývojáři dva, každý má naklonovanou svou lokálni kopii a z té může pomocí příkazu `git push` odeslat svoje commity do společného vzdáleného repozitáře. Druhý vývojář si pak tyto nové změny může stáhnout do svého lokálního repozitáře pomocí příkazu `git pull`.
 
-Během používáním příkazu `git pull` mohou nastat různé situace, které je potřeba umět vlastními silami vyřešit. V podstatě se potkáme se čtyřmi základními scénáři, které postupně detialně rozebereme:
+Během používáním příkazu `git pull` mohou nastat různé situace, které je potřeba umět vlastními silami vyřešit. V podstatě se potkáme se čtyřmi základními scénáři, které postupně detailně rozebereme:
 
 - **scénář 1**: vzájemné koordinované střídání `push` a `pull`,
 - **scénář 2**: automatický `merge` během `pull`,
 - **scénář 3**: konflikt během `pull` a manuální `merge`,
-- **scénář 4**: zablkovaný `pull` kvůli lokálním změnám.
+- **scénář 4**: zablokovaný `pull` kvůli lokálním změnám.
