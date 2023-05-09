@@ -3,8 +3,8 @@ title: Responzivní menu
 demand: 2
 ---
 
-Vytvořte si repository na základě šablony [cviceni-menu](https://github.com/Czechitas-podklady-WEB/cviceni-menu).
-V repository máte soubor `index.html`, `style.css` a obrázek se zadáním úkolu.
+Vytvořte si repozitář na základě šablony [cviceni-menu](https://github.com/Czechitas-podklady-WEB/cviceni-menu).
+V repozitáři máte soubor `index.html`, `style.css` a obrázek se zadáním úkolu.
 
 Nakódujte stránku podle obrázku `zadani-ukolu.jpg`.
 

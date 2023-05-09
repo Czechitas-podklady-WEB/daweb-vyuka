@@ -3,7 +3,7 @@ title: Flex container
 demand: 2
 ---
 
-Vytvořte si repository na základě šablony [cviceni-flex-container](https://github.com/Czechitas-podklady-WEB/cviceni-flex-container).
+Vytvořte si repozitář na základě šablony [cviceni-flex-container](https://github.com/Czechitas-podklady-WEB/cviceni-flex-container).
 Na stránce je připravený obsah, který budeme stylovat. Otevřete si `index.html` a prohlédněte si strukturu dokumentu, všímejte si, které prvky jsou do sebe jak vnořené.
 
 Podívejte se na výsledek.

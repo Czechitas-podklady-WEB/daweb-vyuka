@@ -13,7 +13,7 @@ Váš projekt můžete zpřístupnit na GitHub Pages. Protože váš projekt už
      // … původní kód podmínky …
    }
    ```
-1. V repository na GitHubu přejděte nahoře do **Settings** → vlevo v sekci _Code and automation_ vyberte **Pages** a na stránce pod _Build and deployment_ v _Source_ změňte _Deploy from branch_ na **GitHub Actions (beta)**.
+1. V repozitáři na GitHubu přejděte nahoře do **Settings** → vlevo v sekci _Code and automation_ vyberte **Pages** a na stránce pod _Build and deployment_ v _Source_ změňte _Deploy from branch_ na **GitHub Actions (beta)**.
 1. Otevřete soubor .gitignore v kořenové složce vašeho projektu. V souboru zakomentujte pomocí znaku `#` řádek s `package-lock.json`:
    ```plain
    # Ignore the package-lock.json to prevent conflicts when collaborating
