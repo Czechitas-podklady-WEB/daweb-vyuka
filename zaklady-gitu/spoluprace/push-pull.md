@@ -1,4 +1,4 @@
-Abychom si vyzkoušeli spolupráci na jedné větvi na praktickém příkladu, budeme po zbytek lekce sledovat dva vývojáře **Aleše** a **Bedřicha** jak společně vyvíjejí webovou stránku pro milovníky kaktusů jménem _Pichláci_. Projekt bude pro naše účely extrémně jednoduchý. Určitě se nám však bude hodit tento [obrázek kaktusu](assets/cactus.jpg).
+Abychom si vyzkoušeli spolupráci na jedné větvi na praktickém příkladu, budeme po zbytek lekce sledovat dva vývojáře **Aleše** a **Bedřicha**, jak společně vyvíjejí webovou stránku pro milovníky kaktusů jménem _Pichláci_. Projekt bude pro naše účely extrémně jednoduchý. Určitě se nám však bude hodit tento [obrázek kaktusu](assets/cactus.jpg).
 
 Nejprve musí jeden z vývojářů, například Aleš, založit projekt na svém GitHubu jménem `pichlaci`. Do tohoto projektu pak musí pozvat Bedřicha jeko spolupracovníka. To se provede na stránce _Settings_ → _Collaborators_.
 
