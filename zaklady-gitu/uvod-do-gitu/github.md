@@ -15,25 +15,25 @@ Ale je dobré si pamatovat že to není jedno a totéž – GitHub je jeden z po
 
 Vzhledem k tomu, že GitHub umožňuje vystavit váš kód, vaše projekty, můžete si tam vybudovat jakýsi svůj profil vývojáře, své portfolio projektů.
 To se bude hodit, pokud budete později shánět zaměstnání – v životopisu můžete dát odkaz na svůj profil na GitHubu.
-Potenciální zaměstanavatel se tak rovnou může podívat na váš kód, udělat si představu o vašich znalostech – případně se na pohovoru můžete bavit rovnou o vašem konkrétním kódu.
+Potenciální zaměstnavatel se tak rovnou může podívat na váš kód, udělat si představu o vašich znalostech – případně se na pohovoru můžete bavit rovnou o vašem konkrétním kódu.
 
-Do svého profilu si můžete kdykoli připnout některé své repozitáře, která považujete za důležitá.
+Do svého profilu si můžete kdykoli připnout některé své repozitáře, které považujete za důležité.
 Ve vašem profilu budou vidět všechny vaše veřejné repozitáře.
-V rámci DA Web budeme všechna repozitáře vytvářet jako veřejné, aby je viděli lektoři, koučové, případně třeba u domácího úkolů i ostatní účastnice.
-Po skončení akademie můžete některé repozitáře změnit na privátní, pokud nechcete, aby zůstala na vašem profilu viditelná pro všechny.
+V rámci DA Web budeme všechny repozitáře vytvářet jako veřejné, aby je viděli lektoři, koučové, případně třeba u domácího úkolu i ostatní účastnice.
+Po skončení akademie můžete některé repozitáře změnit na privátní, pokud nechcete, aby zůstaly na vašem profilu viditelné pro všechny.
 GitHub bude mírně protestovat, protože co bylo jednou veřejné, mohl si kdokoli zkopírovat a repozitář tedy schováte jen u sebe.
 To ale nevadí.
 
 ### Soubor `README.md`
 
-Pokud máte v repozitáři v kořenové složce soubor `README.md`, GitHub bude jeho obsah zobrazovat na úvodí stránce repozitáře na webu.
+Pokud máte v repozitáři v kořenové složce soubor `README.md`, GitHub bude jeho obsah zobrazovat na úvodní stránce repozitáře na webu.
 Hodí se tedy do tohoto souboru popsat, co v tom repozitáři je, k čemu to slouží, jak se to používá.
-Pro repozitář, který budete používat jako cvičení při lekcích, je to spíš poznáka pro vás.
+Pro repozitář, který budete používat jako cvičení při lekcích, je to spíš poznámka pro vás.
 Ale můžete si tam třeba poznamenat, které se to týká lekce, jaké látky, případně si tam dát odkaz na lekci na Kodim.cz.
 
 Pokud ale v budoucnosti budete chtít nějaký repozitář prezentovat potenciálním zaměstnavatelům, je dobré `README.md` soubor _vytunit_ a popsat tam, co je to za projekt a jak si ho případně může kdokoli sám spustit.
 Přípona `.md` označuje, že se jedná o soubor ve formátu [Markdown](https://www.markdownguide.org).
-Markdown je jednoduchý značkovací jazyk pro formátování dokumentů – vznikl pro to, že se někomu zdálo HTML moc složité 😉
+Markdown je jednoduchý značkovací jazyk pro formátování dokumentů – vznikl proto, že se někomu zdálo HTML moc složité 😉
 Obecně platí, že když napíšete čistý text bez jakýchkoli značek, je to platný Markdown soubor.
 Pak můžete postupně začít různé značky přidávat.
 Markdown má různé „dialekty“, dialekt používaný GitHubem je popsaný v dokumentaci GitHubu [Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
