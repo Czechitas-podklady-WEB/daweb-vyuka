@@ -3,6 +3,8 @@ title: Hotel
 demand: 4
 ---
 
+ℹ️ Cvičení pouze pro účastnice webové digitální akademie. Vyžaduje přístupové údaje.
+
 V tomto cvičení budete ovládat hotelové osvětlení vašich dvou pokojů.
 
 ::fig[ilustrační obrázek]{src=assets/hotel.jpg}
