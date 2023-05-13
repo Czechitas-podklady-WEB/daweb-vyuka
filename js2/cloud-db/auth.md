@@ -1,69 +1,16 @@
 ## Autentizace
 
-Nyní když máme připraveného supabase klienta, můžeme začít do naší aplikace implementovat autentizaci. V této kapitole se podíváme na registraci, přihlašování a odhlašování uživatelů.
+Nyní máme naší aplikaci propojenou s cloudovou databází. Zbývá nám vyřešit poslední problém, kterým je, že si zatím stále ukládáme klíč ručně do localStorage. Pokud se chceme vyhnout, bude potřeba omezit přístupová práva do databáze na konkrétní uživatele. Abychom toto mohli udělat, musíme nejprve v naší aplikaci umožnit registraci a přihlašování uživatelů.
 
-Supabase umožňuje implementovat autentizaci pomocí velkého množství poskytovatelů. Pro náš účel bude stačit základní autentizace pomocí **Emailu** a **Hesla**. Než se pustíme do programování, tak jen trochu upravíme základní nastavení v administaci našeho projektu, aby bylo možné registrovat i fiktivní emailové adresy a nebylo nutné klikat na odkaz v emailu pro aktivaci účtu. Přejdeme do **Authentication** -> **Providers** -> **Email**. Zde deaktivujeme Položku **Confirm email** a uložíme.
+Supabase umožňuje implementovat autentizaci pomocí velkého množství poskytovatelů. Pro náš účel bude stačit základní autentizace pomocí **E-mailu** a **Hesla**. Než se pustíme do programování, jen trochu upravíme základní nastavení v administraci našeho projektu, aby bylo možné registrovat i fiktivní emailové adresy a nebylo nutné klikat na odkaz v emailu pro aktivaci účtu. Přejdeme do **Authentication** -> **Providers** -> **Email**. Zde deaktivujeme položku **Confirm email** a uložíme.
 
 ::fig[Nastavení registrace]{src=assets/auth_email_settings.jpg}
 
-Jak implementovat registraci uživatele můžeme najít v [dokumentaci](https://supabase.com/docs/reference/javascript/auth-signup). Zde narazíme na drobný problém, dokumentace supabase ukazuje práci s asynchronními funkcemi jinak, než jsme se učili v rámci našeho kurzu. Tím se ale nenecháme odradit a popíšeme si, jak můžeme kód z dokumentace používat tak, jak jsme zvyklí. V dokumentaci vidíme kód:
+Pro implementaci autentizace budeme vycházet z [repozitáře](https://github.com/Czechitas-podklady-WEB/projekt-nakupy-supabase-autentizace-start), kde jsou připravené stránky pro přihlášení a registraci.
 
-```js
-const { data, error } = await supabase.auth.signUp({
-  email: 'example@email.com',
-  password: 'example-password',
-});
-```
+Jak implementovat registraci uživatele můžeme najít v [dokumentaci](https://supabase.com/docs/reference/javascript/auth-signup). Zde vidíme, že jsou metodu pro autentizaci asynchonní, stejně jako metody pro práci s databází. Metody, se kterými budeme pracovat i oprodti dokumetaci trochu upravíme a připravíme si je do souboru `functions/auth.js` takto:
 
-Většina metod, se kterými budeme v rámci supabase pracovat vrací Promise (slib), který již dobře známe z funkce **fetch**. Na slibu jsme zvyklí volat metodu **then**, která přijímá funkci, která se vykoná po naplnění slibu. Výše uvedenou funkci bychom mohli tedy upravit tímto způsobem:
-
-```js
-supabase.auth
-  .signUp({
-    email: 'example@email.com',
-    password: 'example-password',
-  })
-  .then((response) => {
-    const { data, error } = response;
-  });
-```
-
-Zkusíme si nyní funkci připravit tak, aby se nám s ní v rámci našeho projektu dobře pracovalo. Ve složce functions si vytvoříme soubor **auth.js**, do kterého budeme postupně přidávat funkce pro autentizaci uživatele. Zatím by obsah souboru mohl vypadat takto:
-
-```js
-import { getSupabase } from './supabase';
-
-export const signUp = (email, password) => {
-  const supabase = getSupabase();
-  return supabase.auth.signUp({ email, password });
-};
-```
-
-Nejprve importujeme funkci **getSupabase**, kterou jsme si vytvořili v předchozí části. Dále vytváříme novou funkci **signUp**, která přijme email a heslo, následně pomocí supabase klienta zajistí registraci uživatele. Jelikož již víme, že výsledkem volání metody supabase.auth.signUp je promise, který z naší funkce vracíme, tak i výsledkem naší funkce bude promise.
-
-Pokud budeme chtít naší nově vytvořenou funkci použít v rámci aplikace, mohlo by odeslání registračního formuláře vypadat následovně:
-
-```js
-element.querySelector('form').addEventListener('submit', (e) => {
-  e.preventDefault();
-  const email = element.querySelector('.email-input').value;
-  const password = element.querySelector('.password-input').value;
-
-  signUp(email, password).then((response) => {
-    const { data, error } = response;
-
-    if (error) {
-      element.replaceWith(RegisterPage({ error: error.message }));
-    } else {
-      window.location.href = '/';
-    }
-  });
-});
-```
-
-Nejprve si uložíme do proměnných hodnoty ze vstupů našeho registračního formuláře, ty následně předáme naší funkci signUp, která vrací promise. Po naplnění slibu provedeme destrikturalizaci odpovědi, pokud došlo k nějaké chybě, tak překreslíme komponentu registrační stránky a předáme jí chybovou hlášku. V opačném případě byla registrace úspěšná, supabase automaticky vytvoří session a mi můžeme uživatele přesměrovat na domovskou stránku.
-
-Implementace přihlášení a odhlášení bude fungovat velice podobně jako registrace. Pokud bychom v implementaci pokračovali dle dokumentace, náš výsledný soubor **auth.js** bude vypadat nějak takto:
+Implementace přihlášení a odhlášení bude fungovat velice podobně jako registrace. Pokud bychom v implementaci pokračovali dle dokumentace, náš výsledný soubor `auth.js` bude vypadat nějak takto:
 
 ```js
 import { getSupabase } from './supabase';
@@ -89,47 +36,104 @@ export const getSession = () => {
 };
 ```
 
-Jako poslední zde vidíme funkci getSession, která je pro nás také velice důležitá. Může díky ní zjistit, zda a jaký uživatel je právě přihlášený. To se nám bude hodit vědět napříč celou naší aplikací, z toho důvodu bude nejsnazší tuto funkci využít rovnou v komponentě App a její výsledek předávat ostatním komponentám. Komponenta App, by tedy nakonec mohla vypadat takto:
+Pokud budeme chtít impolemtovat registraci, mohlo by odeslání registračního formuláře vypadat následovně:
 
 ```js
-import { Header } from '../Header/index.js';
-import { HomePage } from '../HomePage/index.js';
-import { LoginPage } from '../LoginPage/index.js';
-import { RegisterPage } from '../RegisterPage/index.js';
-import { getSession } from '../functions/auth.js';
+formElm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const emailInput = formElm.querySelector('.input__email');
+  const passwordInput = formElm.querySelector('.input__password');
+  console.log(emailInput.value, passwordInput.value);
+  // registrace uživatele
+  signUp(emailInput.value, passwordInput.value).then((response) => {
+    console.log(response);
+    window.location.href = '/';
+  });
+});
+```
 
-export const App = (props) => {
-  const { session } = props;
+Nejprve si uložíme do proměnných hodnoty ze vstupů našeho registračního formuláře, ty následně předáme naší funkci `signUp`, která vrací promise. Pokud vče proběhlo v pořádku, tak uživatele přesměrujeme na domovskou stránku. Bylo by dobré zde případně i ošetřit nějaké chyby a eventuelně vypsat chybové hlášky, tomu se ale pro dnešek vyhneme.
 
-  const element = document.createElement('div');
+Dále by bylo vhodné podobným způsobem implementovat přihlašování a odhlašování.
 
-  if (session === undefined) {
-    getSession().then((response) => {
-      const { data } = response;
-      let session = null;
-      if (data && data.session) {
-        session = data.session;
-      }
-      element.replaceWith(
-        App({
-          session: session,
-        })
-      );
-    });
-  } else {
-    element.classList.add('app');
-    element.append(Header({ session: session }));
+Jako poslední vidíme v souboru `auth.js` funkci `getSession`, která je pro nás také velice důležitá. Můžeme díky ní zjistit, zda a jaký uživatel je právě přihlášený. To se nám bude hodit vědět napříč celou naší aplikací, z toho důvodu bude nejsnazší tuto funkci využít rovnou v hlavním `index.js` a její výsledek předávat ostatním komponentám.
 
-    const { pathname } = window.location;
-    if (pathname === '/') {
-      element.append(HomePage({ session: session }));
-    } else if (pathname === '/login') {
-      element.append(LoginPage({ session: session }));
-    } else if (pathname === '/register') {
-      element.append(RegisterPage({ session: session }));
-    }
+```js
+import { HomePage } from './pages/HomePage/index.js';
+import { SignUpPage } from './pages/SignUpPage/index.js';
+import { LoginPage } from './pages/LoginPage/index.js';
+import { getSession } from './functions/auth.js';
+import './style.css';
+
+const appElement = document.querySelector('#app');
+
+getSession().then((response) => {
+  const { data } = response;
+  const { session } = data;
+
+  if (location.pathname === '/') {
+    appElement.append(HomePage({ session: session }));
+  } else if (location.pathname === '/sign-up') {
+    appElement.append(SignUpPage({ session: session }));
+  } else if (location.pathname === '/login') {
+    appElement.append(LoginPage({ session: session }));
   }
+});
+```
 
-  return element;
+Díky tomu, že předáváme `session` do všech stránek, můžeme nyní třeba automaticky zajistit přesměrování uživatele na jinou stránku, pokud by na ni neměl mít přístup. Například na domovkou stránku by neměl mít přístup nepřihlášený uživatel. Pokud uživatel přihlášený není, tak jej odsud přesměrujeme na stránku pro přihlášení.
+
+Do komponenty `HomePage` můžeme tedy hned nahoru přidat:
+
+```js
+const { session } = props;
+if (!session) {
+  window.location.pathname = '/login';
+}
+```
+
+Opačně budeme postupovat na stránce pro přihlášení a registraci, odkud budeme chtít přesměrovat uživatele, který je již přihlášený.
+
+Nyní když máme přihlášeného užovatele, můžeme upravit naší databázi tak, aby obsahovala propojení mezi registrovanými uživateli a položkami nákupního seznamu. To uděláme tak, že si do tabulky v databázi přidáme sloupec `user_id` a nastavíme mu propojení následujícám způsobem. Půjdeme s administraci supabase do `Database -> Tables` u naší tabulky klikneme na talčítko pro editaci. Následně v dolní části klikneme na `Add column`, pojmenuje jej `user_id` a nakonec klikneme na tlačítko řetězu, kde zajistíme propojení na uživatele následujícím způsobem:
+::fig[Excel tabulka]{src=assets/db_relation.jpg}
+
+Nakonec už zbývá jen upravit naši aplikaci tak, aby při vytváření položky nákupního seznamu ukládala také `id` přihlášeného uživatele.
+Upravíme funkci pro přidávání položky v `db.js` takto:
+
+```js
+export const addShoppingItem = (product, amount, unit, userId) => {
+  const supabase = getSupabase();
+  return supabase.from('shopping_items').insert({
+    product: product,
+    amount: amount,
+    unit: unit,
+    done: false,
+    user_id: userId,
+  });
 };
 ```
+
+Do komponenty `ShopList` si předáme `session` při volání funkce `addShoppingItem` předáme jako 4. parametr id uživatele, které nalezneme v `session.user.id`. Kód pro přidání bude nakonec vypadat takto:
+
+```js
+addShoppingItem(
+  productInput.value,
+  amountInput.value,
+  unitInput.value,
+  session.user.id
+).then((response) => {
+  getShoppingItems().then((response) => {
+    const { data, error } = response;
+    if (data) {
+      element.replaceWith(
+        ShopList({
+          day: day,
+          dayResult: data,
+        })
+      );
+    }
+  });
+});
+```
+
+V poslední části lekce si povíme něco o zabezpečení databáze a konečne smažeme klíč z localStorage.

@@ -5,3 +5,4 @@
 ::exc[cvlekce>routovani]
 ::exc[cvlekce>objednavka-stranka]
 ::exc[cvlekce>objednavka-obsah]
+::exc[cvlekce>github-pages]

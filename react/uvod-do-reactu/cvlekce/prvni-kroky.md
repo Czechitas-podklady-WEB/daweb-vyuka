@@ -5,7 +5,7 @@ demand: 1
 
 Vyzkoušíme si založit jednoduchou React aplikaci s jedním `index.jsx` a jednoduchým CSS. Přestože v Reactu se běžně veškerý kód dělí do komponent, v tomto cvičení je ještě používat nebudeme.
 
-1. Pomocí `npm init kodim-app` vytvořte Reactový projekt. Dejte si pozor, abyste omylem nevytvořili vanilla projekt. Projekt spusťte pomocí `npm run start` jak už to znáte z dřívejška.
+1. Pomocí `npm init kodim-app@latest` vytvořte Reactový projekt. Dejte si pozor, abyste omylem nevytvořili vanilla projekt. Projekt spusťte pomocí `npm run start` jak už to znáte z dřívejška.
 1. Prozatím nahraďte celý obsah souboru `index.jsx` tímto kódem.
 
    ```js

@@ -8,7 +8,7 @@ Vytvořte klasický přihlašovací formulář, do kterého uživatel zadá svů
 1. Založte si HTML stránku s JavaScriptem, třeba následujícím příkazem:
 
 ```sh
-npm init kodim-app cviceni-prihlaseni html-css-js
+npm init kodim-app@latest cviceni-prihlaseni html-css-js
 ```
 
 1. V `index.html` vytvořte s formulář, který bude mít jedno textové pole pro e-mail (typ `email`), jedno pole pro heslo (typ `password`) a tlačíto „Přihlásit“.

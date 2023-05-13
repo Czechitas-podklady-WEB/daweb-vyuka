@@ -33,7 +33,7 @@ const products = [
 1. Založte si nový projekt příkazem
 
    ```shell
-   npm init kodim-app cviceni-produkt html-css-js
+   npm init kodim-app@latest cviceni-produkt html-css-js
    ```
 
 1. Otevřete si ve VS Code vytvořenou složku `cviceni-produkt`.
@@ -46,7 +46,7 @@ const products = [
    ```
 
 1. Vložte do stránky soubor `index.js` a na jeho začátek vložte pole s produkty.
-1. Vytvořte funkci `Product`, s jedním parametrem `props`. Tato funkce bude představovat komponentu pro jeden produkt.
+1. Vytvořte funkci `Product` s jedním parametrem `props`. Tato funkce bude představovat komponentu pro jeden produkt.
 1. Do funkce `Product` vložte kód vytvářející HTML pro jeden produkt. Dejte pozor, že uvnitř komponenty se produkt předává v parametru `props`. Nechť vaše funkce jako svůj výsledek vrátí vyrobené HTML v tomto tvaru:
 
    ```html

@@ -28,10 +28,10 @@ demand: 4
 1. Následujícími příkazy v terminálu nově vytvořený soubor commitněte.
    - `git add index.html`
    - `git commit -m "Základní HTML"`
-1. Commit nahrajte na GitHub příkazem `git push`. Při úspěchu by poslední řádek v příkazové řádce po nahrání měl vypadat začínající na jinou změť čísel a písmen přibližně takto:
+1. Commit nahrajte na GitHub příkazem `git push`. Při úspěchu by poslední řádek v příkazové řádce po nahrání měl vypadat přibližně takto, i když bude začína jinou změtí čísel a písmen:
 
    ```
    668612b..54c9a30 main     -> origin/main
    ```
 
-1. Ověřte, že `index.html` se ukazuje v nahraných souborech v repozitáři na webu GitHubu.
+1. Ověřte, že se `index.html` ukazuje v nahraných souborech v repozitáři na webu GitHubu.

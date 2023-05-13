@@ -10,7 +10,7 @@ Postupujte dle následujících kroků.
 
 1. Založte si projekt příkazem
    ```shell
-   npm init kodim-app cviceni-rodna-cisla html-css-js
+   npm init kodim-app@latest cviceni-rodna-cisla html-css-js
    ```
    Ve VS Code otevřete složku `cviceni-rodna-cisla`.
 1. JavaScript vložte do stránky pomocí

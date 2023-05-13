@@ -3,7 +3,7 @@ title: Reklamní banner
 demand: 1
 ---
 
-Vytvořte si repository na základě šablony [cviceni-banner](https://github.com/Czechitas-podklady-WEB/cviceni-banner).
+Vytvořte si repozitář na základě šablony [cviceni-banner](https://github.com/Czechitas-podklady-WEB/cviceni-banner).
 Prohlédněte si pečlivě HTML strukturu, všímejte si jak jsou prvky do sebe zanořené.
 
 Nastavte CSS pro třídu `.banner` tak, aby:

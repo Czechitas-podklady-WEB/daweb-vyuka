@@ -1,16 +1,20 @@
+Jak se v tomto kurzu stáváme stále zkušenějšími a mocnějšími, nazrává čas k tomu, abychom se pokusili sestavit malinko větší a zajímavější aplikaci, na které budeme ilustrovat pokročilejší dovednosti. Od této chvíli budeme společně pracovat na aplikaci s názvem _Nákupy_, která bude umožňovat správu nákupních seznamů pro jednotlivé dny v týdny.
+
+Abychom se nemuseli trápit se stylováním, začneme již s hotovým základem aplikace, který najdete v repozitáři [projekt-nakupy-start](https://github.com/Czechitas-podklady-WEB/projekt-nakupy-start). Použijte jej jako šablonu pro založení vlastního repozitáře, do kterého si budete dle výkladu postupně přidávat další funkčnosti.
+
 ## První komponenta
 
-V minulé lekci jsme se naučili vyrobit obsah stránky z dat ze serveru. Takto vypadala funkce zobrazující položky nákupního seznamu:
+V minulé lekci jsme se naučili vyrobit obsah stránky z dat ze serveru. Dokonce už jsme načali téma nákupních seznamů a takto vypadala funkce zobrazující položky seznamu:
 
 ```js
 const renderShoppingList = (items) => {
-  const shoppingList = document.querySelector('.shopping-list');
+  const shoppingList = document.querySelector('.shoplist');
   shoppingList.innerHTML = items
     .map((item) => {
       return `
         <div class="list-item">
           <div class="list-item__product">${item.product}</div>
-          <div class="list-item__amount">${item.amount}</div>
+          <div class="list-item__amount">${item.amount} ${item.unit}</div>
         </div>
       `;
     })
@@ -18,24 +22,24 @@ const renderShoppingList = (items) => {
 };
 ```
 
-Zde je jedna položka relativné malý kousek HTML. Brzy však obsah našich stránek bude složitější a vytvoření jedné položky zabere více řádků kódu. V takovém případě se nám vyplatí přesunout tvorbu jedné položky do speciální funkce. Nazveme ji `ListItem`.
+Zde je jedna položka relativně malý kousek HTML. Brzy však obsah našich stránek bude složitější a vytvoření jedné položky zabere více řádků kódu. V takovém případě se nám vyplatí přesunout tvorbu jedné položky do speciální funkce. Nazveme ji `ListItem` a vložíme ji do souboru `script.js` v naší nově založené aplikaci _Nákupy_.
 
 ```js
 const ListItem = (item) => {
   return `
     <div class="list-item">
       <div class="list-item__product">${item.product}</div>
-      <div class="list-item__amount">${item.amount}</div>
+      <div class="list-item__amount">${item.amount} ${item.unit}</div>
     </div>
   `;
 };
 ```
 
-Tuto funkci pak můžeme použít při vytváření nákupního seznamu.
+Tuto funkci pak můžeme použít při vytváření celého nákupního seznamu.
 
 ```js
 const renderShoppingList = (items) => {
-  const shoppingList = document.querySelector('.shopping-list');
+  const shoppingList = document.querySelector('.shoplist__items');
   shoppingList.innerHTML = items.map((item) => ListItem(item)).join('');
 };
 ```
@@ -50,6 +54,7 @@ Rozšiřme nyní naši aplikaci o možnost u každé položky označit, zda jsme
 const item1 = {
   product: 'Rohlíky',
   amount: '10',
+  unit: 'ks',
   done: true,
 };
 ```
@@ -65,9 +70,11 @@ const ListItem = (item) => {
 
   return `
     <div class="list-item">
-      <button class="icon-btn btn-tick${tickClass}" />
-      <div class="list-item__product">${item.product}</div>
-      <div class="list-item__amount">${item.amount}</div>
+      <button class="icon-btn btn-tick${tickClass}"></button>
+      <div class="list-item__body">
+        <div class="list-item__product">${item.product}</div>
+        <div class="list-item__amount">${item.amount} ${item.unit}</div>
+      </div>
     </div>
   `;
 };
@@ -77,13 +84,13 @@ Jednotlivé položky už si jako profíci stáhneme z API. Výsledné použítí
 
 ```js
 const renderShoppingList = (items) => {
-  const shoppingList = document.querySelector('.shopping-list');
+  const shoppingList = document.querySelector('.shoplist__items');
   shoppingList.innerHTML = items.map((item) => ListItem(item)).join('');
 };
 
-fetch('https://nakupy.kodim.app/api/sampleweek/mon/items')
+fetch('https://nakupy.kodim.app/api/sampleweek/mon')
   .then((response) => response.json())
-  .then((data) => renderShoppingList(data.result));
+  .then((data) => renderShoppingList(data.result.items));
 ```
 
 Výhodou je, že v naší funkci `renderShoppingList` nemusíme nic měnit. O všechny změny nutné kvůli rozšíření dat o položku `done` jsme se postarali uvnitř komponenty `ListItem`.

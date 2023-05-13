@@ -8,7 +8,7 @@ Pomocí vlastních DOM elementů přidáme na stránku několik tlačítek.
 1. Založte si nový projekt příkazem
 
    ```shell
-   npm init kodim-app cviceni-tlacitko html-css-js
+   npm init kodim-app@latest cviceni-tlacitko html-css-js
    ```
 
 1. Otevřete si ve VS Code vytvořenou složku `cviceni-tlacitko`.
@@ -22,7 +22,7 @@ Pomocí vlastních DOM elementů přidáme na stránku několik tlačítek.
 1. Nastavte tomuto tlačítku `textContent` na „Mačkej“.
 1. Přidejte na tlačítko CSS třídu `btn`.
 1. Vyberte ze stránky element `#app` a vložte tlačítko na stránku pomocí metody `append`.
-1. Stejným postupem přidejte na stránku ještě další dvě tlačítka s různými nápisy a sleduje, kam do stránky se vložila.
+1. Stejným postupem přidejte na stránku ještě další dvě tlačítka s různými nápisy a sledujte, kam do stránky se vložila.
 
 ---solution
 

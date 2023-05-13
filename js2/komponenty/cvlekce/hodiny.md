@@ -12,7 +12,7 @@ Vytvořte si repozitář ze šablony [cviceni-hodiny](https://github.com/Czechit
      minutes: 34,
    }
    ```
-   Komponenta nechť z takového objektu vytvoří HTML pro jedny hodiny. Jak má vypadat HTML hodin najdete v souboru `index.html`.
+   Komponenta nechť z takového objektu vytvoří HTML pro jedny hodiny. Jak má vypadat HTML hodin, najdete v souboru `index.html`.
 1. HTML kód hodin ze stránky vyjměte a nechte v ní pouze element `app`.
 1. Ve vašem programu vyberte element `app` a pomocí komponenty `Clock` do něj zapojte hodiny zobrazující nějaký čas.
 1. Pomocí funkce `Clock` vložte do stránky pod sebe několik různých hodin s různými časy.
@@ -33,16 +33,16 @@ Vytvořte si repozitář ze šablony [cviceni-hodiny](https://github.com/Czechit
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <script type="module" src="index.js"></script>
-  <title>Hodiny</title>
-</head>
-<body>
-  <div id="app">
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="index.js"></script>
+    <title>Hodiny</title>
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
 </html>
 ```
 
@@ -60,7 +60,7 @@ const times = [
   },
   {
     hours: 17,
-    minutes: 08,
+    minutes: 8,
   },
 ];
 

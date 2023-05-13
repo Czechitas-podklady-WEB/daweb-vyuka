@@ -10,7 +10,7 @@ Vytvořte JavaScriptový program, který vepíše do stránky ovčí příběh p
 1. Pro rychlejší vytvoření základní struktury použijte příkaz níže:
 
    ```bash
-   npm init kodim-app na-dobrou-noc html-css-js
+   npm init kodim-app@latest na-dobrou-noc html-css-js
    ```
 
 1. Využijte následujících dvacet jmen oveček:

@@ -16,4 +16,4 @@ Pokračujte v projektu z předchozího cvičení. Dle již známých postupů vy
 1. Do složky s komponentou nezapomeňte vložit souvisjící styly a ty správně importujte v souboru `Quote/index.js`.
 1. Předejte vaší komponentě nějaký citát a zapojte výsledek do elementu `#app`.
 1. Ve složce `Quote` vytvořte složku `img` a do ní si stáhněte [ikonku citátu](assets/quote-icon.svg)
-1. Upravte komponentu `Quote` a její CSS styly tak, aby zobrazovala citát s touto ikonkou. Ikonku použijte v CSS jako `backround-image`.
+1. Upravte komponentu `Quote` a její CSS styly tak, aby zobrazovala citát s touto ikonkou. Ikonku použijte v CSS jako `background-image`.

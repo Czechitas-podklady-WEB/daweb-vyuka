@@ -7,7 +7,7 @@ V tomto cvičení vytvoříte jednoduchou stránku pro dětský koutek. Pomocí 
 
 1. Vygenerujte si novou aplikaci pomocí příkazu
    ```sh
-   npm init kodim-app detsky-koutek
+   npm init kodim-app@latest detsky-koutek
    ```
 1. Nainstalujte si knihovnu React Router pomocí _npm_:
    ```sh

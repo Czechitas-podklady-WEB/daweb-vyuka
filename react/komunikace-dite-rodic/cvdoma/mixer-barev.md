@@ -8,7 +8,7 @@ Cílem projektu je vytvořit Reactovou aplikaci, která umožňuje namíchat si 
 1. Vzor funkční aplikace v čistém JavaScriptu je v repozitáři [projekt-mixer-barev-js](https://github.com/Czechitas-podklady-WEB/projekt-mixer-barev-js). **Nepoužívejte repozitář jako šablonu**, nebudeme v něm dělat žádné úpravy. Repozitář si pouze naklonujte příkazem `git clone https://github.com/Czechitas-podklady-WEB/projekt-mixer-barev-js.git`. Otevřete si projekt ve VS Code. Stránka je napsána v čistém JavaScriptu bez Webpacku, stačí ji tedy spustit pomocí `npx serve`. Vyzkoušejte si, jak aplikace funguje.
 1. Budeme chtít tuto aplikaci přepsat do Reactu. Za tímto účelem si založte vlastní prázdný repozitář na vašem GitHubu. Naklonujte si jej k sobě do počítače a vytvořte v něm základ Reactové aplikace pomocí
    ```
-   npm init kodim-app .
+   npm init kodim-app@latest .
    ```
 1. Vytvořte hlavní komponentu `App`, která zobrazuje celý obsah stránky včetně stylů a obrázků podle zadání. Stránka zatím nebude funkční, protože původní JavaScriptový kód nám v Reactu fungovat nebude.
 1. Vytvořte nejprve komponentu `ColorSlider` zobrazující jeden posuvník. Přesuňte do složky s komponentou správné CSS styly. Komponenta `ColorSlider` bude mít dvě props: `baseColor` a `colorName`. Prop `baseColor` udává, jakou posuvník ovládá barvu, tedy `red`, `green` nebo `blue`. Prop `colorName` udává zobrazený název barvy.

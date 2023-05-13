@@ -5,6 +5,9 @@ sections:
   - dotaz-post
   - hlasovani
   - cv-post
-  - aktualizace
-  - cv-aktualizace
+  - autentizace
+  - nova-polozka
+  - cv-autentizace-post
+  # - aktualizace
+  # - cv-aktualizace
   # - ulozky-na-doma

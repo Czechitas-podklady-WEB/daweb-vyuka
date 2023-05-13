@@ -17,9 +17,9 @@ V tuto chvíli máme vytvořený zcela plnoprávný DOM element, se kterým mů�
 > h1Elm.classList.add('title')
 ```
 
-Důležité je, že tento element není zapojen do naší stránky. Je zatím uložen pouze v proměnné `h1Elm`, na stránce jej tedy není vidět. Pokud jej chceme do stránky vložit, můžeme jej například zapojit na konec nějakého elementu, který už na stránce je.
+Důležité je, že tento element není zapojen do naší stránky. Je zatím uložen pouze v proměnné `h1Elm`, na stránce jej tedy není vidět. Pokud jej chceme do stránky vložit, můžeme jej například připojit na konec nějakého elementu, který už na stránce je.
 
-Mějme například následujicí HTML.
+Mějme například následujicí HTML:
 
 ```html
 <body>
@@ -27,7 +27,7 @@ Mějme například následujicí HTML.
 </body>
 ```
 
-Nyní v konzoli vybereme element `#app` a poté použijeme metodu `append`, která zapojí zadaný element na konec elementu `#app`.
+Nyní v konzoli vybereme element `#app` a poté použijeme metodu `append`, která připojí zadaný element na konec elementu `#app`.
 
 ```jscon
 > const appElm = document.querySelector('#app');
@@ -38,10 +38,10 @@ Po spuštění těchto příkazů bychom měli na stránce uvidět náš nadpis.
 
 ### Obsah vlastních elementů
 
-DOM elementy, které si vytvoříme pomocí `document.createElement`, jsou zcela plnohodnotné DOM elementy. Kromě stylů a textového obsahu můžeme taky měnit jejich vnitřní obsah pomocí vlastnosti `innerHTML`. Takto například přidáme složitější obsah do našeho nadpisu.
+DOM elementy, které si vytvoříme pomocí `document.createElement`, jsou zcela plnohodnotné DOM elementy. Kromě stylů a textového obsahu můžeme měnit také jejich vnitřní obsah pomocí vlastnosti `innerHTML`. Takto například přidáme složitější obsah do našeho nadpisu.
 
 ```jscon
 > h1Elm.innerHTML = '<span class="bold">Nadpis</span><span>mojí stránky</span>'
 ```
 
-Vidíte tedy, že si tak říkajíc na vlasním písečku můžeme vytvářet i velmi složité a obsáhldé DOM elementy a zapojit je do stránky až ve chvíli, kdy je máme správně zkonstruované. Toto se nám bude velmi hodit při vytváření komponent. O tom však až v druhé části.
+Vidíte tedy, že si tak říkajíc na vlastním písečku můžeme vytvářet i velmi složité a obsáhlé DOM elementy a zapojit je do stránky až ve chvíli, kdy je máme správně zkonstruované. Toto se nám bude velmi hodit při vytváření komponent. O tom však až v druhé části.
