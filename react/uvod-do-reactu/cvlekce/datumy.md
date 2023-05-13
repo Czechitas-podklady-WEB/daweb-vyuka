@@ -1,9 +1,13 @@
 ---
-title: Datumy
+title: Data („datumy“)
 demand: 2
 ---
 
-1. Založte nový React projekt.
+1. Založte si nový Reactový projekt:
+    ```shell
+    npm init kodim-app@latest datumy react
+    ```
+1. Projekt spusťte pomocí `npm run start` jak už to znáte z dřívejška.
 1. Vytvořte komponentu `Today`, která bude očekávat tři props:
 
    - `day` - řetězec s číslem dne, například `'07'`,
