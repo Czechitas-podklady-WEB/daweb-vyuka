@@ -24,6 +24,6 @@ Vzpomeňte si na naše cvičení z vanilla JavaScriptu, kdy jsme rozsvěcovali a
    <Bulb on={true} />
    ```
 
-   žárovka se zobrazí rozsvícená. Kýženého chování dosáhnete tak, že sestavíte obsah atributu `className` pomocí podmíněného operátoru v závislosti na hodnotě v prop `on`.
+   žárovka se zobrazí rozsvícená. Kýženého chování dosáhnete tak, že sestavíte obsah atributu `className` pomocí podmíněného operátoru v závislosti na hodnotě v prop `on`. Nezapomeňte, že třída `bulb` musí být na elementu žárovky přítomna vždy, rozsvícená žárovka bude mít navíc k třídě `buld` ještě třídu `bulb--on` (názvy tříd vycházejí z metodiky BEM).
 
 1. Vložte na vaši stránku dvě zhasnuté a dvě rozsvícené žárovky.
