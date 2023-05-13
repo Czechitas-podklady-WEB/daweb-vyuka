@@ -42,5 +42,5 @@ Postupujte dle následujících kroků.
      <p class="plushy__text">Text o plyšákovi</p>
    </div>
    ```
-   Převeďte tento kód na JSX a vložte jej do elementu `.plushies`, jednou pro každého plyšáka. Nezapomeňte, že v JSX se místo `class` píše `className`. Data pro obě karty vezměte z objektů `plushy1` a `plushy2`.
+   Převeďte tento kód na JSX a vložte jej do elementu s třídou `plushies`, jednou pro každého plyšáka. Nezapomeňte, že v JSX se místo `class` píše `className`. Data pro obě karty vezměte z objektů `plushy1` a `plushy2`.
 1. Přidejte do stránky soubor se styly a nastylujte ji dle zadání.
