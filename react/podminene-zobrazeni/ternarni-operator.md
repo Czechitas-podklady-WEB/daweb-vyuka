@@ -53,7 +53,7 @@ Možná si ještě vzpomenete, že zaškrtnutí položky jsme dělali pomocí CS
 <div className="item__done item__done--tick">
 ```
 
-Obsah atributu `className` chceme zkonstruovat dle hodnoty `props.selected`. To bychom mohli udělat pomocí podmínky.
+Obsah atributu `className` chceme zkonstruovat dle hodnoty `props.done`. To bychom mohli udělat pomocí podmínky.
 
 ```js
 const ShoppingItem = (props) => {
