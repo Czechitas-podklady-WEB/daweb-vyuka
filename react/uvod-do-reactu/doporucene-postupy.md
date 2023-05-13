@@ -4,7 +4,7 @@ Framework React vznikl ve společnosti Facebook mezi roky 2011 až 2013. Má ted
 
 ### Hlavní komponenta
 
-V Reactu není příliš zvykem psát do funkce `render` příliš obsáhly kód. Většinou postupujeme tak, že celá naše aplikace je jedna velká komponenta, která pak skládá dohromady další námi napsané komponenty. Této komponentě většinou dáváme název `App`. Kód nákupního seznamu by pak vypadal takto.
+V Reactu není příliš zvykem psát do funkce `render` příliš obsáhlý kód. Většinou postupujeme tak, že celá naše aplikace je jedna velká komponenta, která pak skládá dohromady další námi napsané komponenty. Této komponentě většinou dáváme název `App`. Kód nákupního seznamu by pak vypadal takto.
 
 ```js
 import React from 'react';

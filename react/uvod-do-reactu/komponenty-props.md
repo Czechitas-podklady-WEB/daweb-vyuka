@@ -1,6 +1,6 @@
 ## React komponenty a props
 
-Velká výhoda, kterou nám JSX přináší, spočívá v tom, že můžeme naše komponenty psát podobně, jako na začátku, kdy jsme z komponent vraceli řetězec obsahující HTML. Připomeňme si, jak kdysi dávno vypadala jedndoduchá verze naší komponenty `ShoppingItem`.
+Velká výhoda, kterou nám JSX přináší, spočívá v tom, že můžeme naše komponenty psát podobně, jako na začátku, kdy jsme z komponent vraceli řetězec obsahující HTML. Připomeňme si, jak kdysi dávno vypadala jednoduchá verze naší komponenty `ShoppingItem`.
 
 ```js
 const ShoppingItem = (props) => {
@@ -15,7 +15,7 @@ const ShoppingItem = (props) => {
 };
 ```
 
-V Reactu tutéž komponenty napíšeme tak, že místo řetězce bude vracet JSX element.
+V Reactu tutéž komponentu napíšeme tak, že místo řetězce bude vracet JSX element.
 
 ```js
 const ShoppingItem = (props) => {
