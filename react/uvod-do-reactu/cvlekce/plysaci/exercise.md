@@ -10,9 +10,9 @@ Vytvořte v Reactu webovou stránku dle následujícího vzoru.
 Postupujte dle následujících kroků.
 
 1. Založte si nový Reactový projekt:
-    ```shell
-    npm init kodim-app@latest plysaci react
-    ```
+   ```shell
+   npm init kodim-app@latest plysaci react
+   ```
 1. Projekt spusťte pomocí `npm run start` jak už to znáte z dřívejška.
 1. Smažte komponentu `App`. Vytvořte si proměnnou `content` a vložte do ní JSX s následujícím obsahem.
    ```html
