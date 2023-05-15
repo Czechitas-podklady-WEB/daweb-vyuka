@@ -3,7 +3,7 @@ title: Barevné palety
 demand: 3
 ---
 
-Cílem tohoto cvičení je na základě připraveného kódu vytvořit Reactovou aplikaci, která bude zobrazovat návrhy barevných palet. Takové palety používají například designéři při vybírání barevných schémata pro nové weby. Barevné palety se budou načítat z dat připravených přímo v kódu aplikace.
+Cílem tohoto cvičení je na základě připraveného kódu vytvořit reactovou aplikaci, která bude zobrazovat návrhy barevných palet. Takové palety používají například designéři při vybírání barevných schémata pro nové weby. Barevné palety se budou načítat z dat připravených přímo v kódu aplikace.
 
 1. Vytvořte si repozitář ze šablony [cviceni-barevne-palety](https://github.com/Czechitas-podklady-WEB/cviceni-barevne-palety).
 1. Nainstalujte závislosti pomocí `npm install`.

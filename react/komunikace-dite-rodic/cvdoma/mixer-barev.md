@@ -3,10 +3,10 @@ title: Mixér barev
 demand: 3
 ---
 
-Cílem projektu je vytvořit Reactovou aplikaci, která umožňuje namíchat si barvu ze složek RGB tak, jak jste na to zvyklí z různých grafických programů. Na začátku máte připravenou funkční aplikaci v čistém JavaScriptu. Vaším úkolem bude tuto aplikaci přepsat do Reactu.
+Cílem projektu je vytvořit reactovou aplikaci, která umožňuje namíchat si barvu ze složek RGB tak, jak jste na to zvyklí z různých grafických programů. Na začátku máte připravenou funkční aplikaci v čistém JavaScriptu. Vaším úkolem bude tuto aplikaci přepsat do Reactu.
 
 1. Vzor funkční aplikace v čistém JavaScriptu je v repozitáři [projekt-mixer-barev-js](https://github.com/Czechitas-podklady-WEB/projekt-mixer-barev-js). **Nepoužívejte repozitář jako šablonu**, nebudeme v něm dělat žádné úpravy. Repozitář si pouze naklonujte příkazem `git clone https://github.com/Czechitas-podklady-WEB/projekt-mixer-barev-js.git`. Otevřete si projekt ve VS Code. Stránka je napsána v čistém JavaScriptu bez Webpacku, stačí ji tedy spustit pomocí `npx serve`. Vyzkoušejte si, jak aplikace funguje.
-1. Budeme chtít tuto aplikaci přepsat do Reactu. Za tímto účelem si založte vlastní prázdný repozitář na vašem GitHubu. Naklonujte si jej k sobě do počítače a vytvořte v něm základ Reactové aplikace pomocí
+1. Budeme chtít tuto aplikaci přepsat do Reactu. Za tímto účelem si založte vlastní prázdný repozitář na vašem GitHubu. Naklonujte si jej k sobě do počítače a vytvořte v něm základ reactové aplikace pomocí
    ```
    npm init kodim-app@latest .
    ```

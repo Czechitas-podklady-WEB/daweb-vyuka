@@ -1,6 +1,6 @@
 ## Vkládání hodnot do JSX
 
-Velmi často budeme potřebovat do obsahu stránky zakomponovat také hodnoty uložené v různých proměnných. Připomeňme si, jak bychom vložili do našeho HTML obsah proměnné ještě před Reactovými časy.
+Velmi často budeme potřebovat do obsahu stránky zakomponovat také hodnoty uložené v různých proměnných. Připomeňme si, jak bychom vložili do našeho HTML obsah proměnné ještě před reactovými časy.
 
 ```js
 const nazev = 'Moje stránka';

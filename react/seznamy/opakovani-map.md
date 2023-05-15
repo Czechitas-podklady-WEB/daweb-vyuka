@@ -20,7 +20,7 @@ const names = ['petr', 'jana', 'marek', 'eva', 'lenka', 'ondra'];
 const emails = names.map((name) => `${name}@mejlik.cz`);
 ```
 
-Zkracování funkcí nám však pomůže i v psaní Reactových komponent.
+Zkracování funkcí nám však pomůže i v psaní reactových komponent.
 
 ### Zkrácený zápis delších funkcí
 
