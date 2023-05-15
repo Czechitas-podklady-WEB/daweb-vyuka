@@ -19,7 +19,7 @@ V tomto cvičení vytvoříme základ komponenty pro zobrazování příchozí e
 
    ::fig[Schránka]{src=assets/inbox.png size=60}
 
-1. Použijte v komponentě podmíněný operátor tak, aby zobrazila jinou zprávu v případě, že nepřečtených zpráv je nula.
+1. Použijte v komponentě podmíněný operátor tak, aby zobrazila jinou zprávu v případě, že počet nepřečtených zpráv je nula.
 
    ::fig[Schránka]{src=assets/inbox-empty.png size=60}
 

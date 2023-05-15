@@ -16,7 +16,7 @@ const Product = (props) => {
 };
 ```
 
-Tato komponenty hezky ukazuje, kam všude můžeme do JSX vložit JavaScriptovou hodnotu pomocí složených závorek. Říkáme tomu "otevírání JavaScriptového okna".
+Tato komponenta hezky ukazuje, kam všude můžeme do JSX vložit JavaScriptovou hodnotu pomocí složených závorek. Říkáme tomu "otevírání JavaScriptového okna".
 
 Za prvé můžeme JavaScriptové okno otevřít, když předáváme hodnotu nějaké prop.
 
