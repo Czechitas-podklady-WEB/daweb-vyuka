@@ -1,14 +1,14 @@
 Do této chvíle jsem naše aplikace psali v "čistém" (anglicky se též říká "vanilla") JavaScriptu. Postupy, které jsme se dosud naučili, jsou zcela legitimní samy o sobě a můžeme takto psát i větší aplikace. U aplikací, které jsou velmi interaktivní a často mění obsah stránky, však narazíme na různé problémy.
 
-- Budeme muset náš kód zodpovědně strukturovat do komponent. Protože všechny komponenty se píší velmi podobně, budeme mít spousta kódu, který píšeme pořád dokola.
+- Budeme muset náš kód zodpovědně strukturovat do komponent. Protože všechny komponenty se píší velmi podobně, budeme mít spoustu kódu, který píšeme pořád dokola.
 - Zařídit správnou komunikaci mezi velkým množstvím komponent začne být čím dál těžší.
 - Při velkém množství komponent je poměrně těžké zajistit dobrý výkon aplikace.
 
-Na tyto problémy tvrdě narazili vývojáři Facebooku a proto vytvořili framework s názvem [React](https://reactjs.org/), který by tyto problémy pomohl odstranit. Podobných frameworků existuje vícero. Mezi nejznámější vedle Reactu patří [Angular](https://angular.io/) a [Vue](https://vuejs.org/). Tato trojice jsou nejpoužívanější frameworky pro vývoj webů. V současné době je React stále s přehledem nejpopulárnější a také nejžádanější na trhu práce.
+Na tyto problémy tvrdě narazili vývojáři Facebooku, a proto vytvořili framework s názvem [React](https://reactjs.org/), který měl tyto problémy pomoci odstranit. Podobných frameworků existuje vícero. Mezi nejznámější vedle Reactu patří [Angular](https://angular.io/) a [Vue](https://vuejs.org/). Tato trojice je nejpoužívanějšími frameworky pro vývoj webů. V současné době je React stále s přehledem nejpopulárnější a také nejžádanější na trhu práce.
 
 ## První React aplikace
 
-Ať už je to šikovná náhoda nebo dokonale promyšlený plán, velkou část Reactových principů už jste v tomto kurzu používali, aniž byste o tom věděli. K vytvoření našeho prvního React projektu tak stačí pouze malinko upravit konfiguraci Webpacku a naučit se psát náš kód Reactovým způsobem.
+Ať už je to šikovná náhoda nebo dokonale promyšlený plán, velkou část Reactových principů už jste v tomto kurzu používali, aniž byste o tom věděli. K vytvoření našeho prvního React projektu tak stačí pouze malinko upravit konfiguraci Webpacku a naučit se psát náš kód reactovým způsobem.
 
 Základní Webpack projekt nastavený pro práci v Reactu si můžete vygenerovat pomocí `npm init kodim-app@latest`.
 
@@ -16,7 +16,7 @@ Základní Webpack projekt nastavený pro práci v Reactu si můžete vygenerova
 $ npm init kodim-app@latest my-app
 ```
 
-Pozor na to, že tontokrát v příkazu chybí slovíčko `vanilla`. React projekt se používá stejným způsobem jako jsme u Webpack projektů zvyklí. Všimněte si však, že místo `index.js` zde máme soubor `index.jsx`. Příponu `.jsx` budeme používat u souborů, které obsahují Reactový kód. Co tato přípona znamená si povíme v následující části.
+Pozor na to, že tontokrát v příkazu chybí slovíčko `vanilla`. React projekt se používá stejným způsobem, jakým jsme u Webpack projektů zvyklí. Všimněte si však, že místo `index.js` zde máme soubor `index.jsx`. Příponu `.jsx` budeme používat u souborů, které obsahují Reactový kód. Co tato přípona znamená, si povíme v následující části.
 
 ### JavaScript XML
 
@@ -40,7 +40,7 @@ const appElm = document.querySelector('#app');
 appElm.appendChild(obsah);
 ```
 
-Toto řešení už je praktičtější, kód je však delší a méně přehledný. Zde proto s velkou famfárou a na alegorickém voze přijíždí React s třetím způsobem, jak vytvářet obsah stránky.
+Toto řešení už je praktičtější, kód je však delší a méně přehledný. Zde proto s velkou fanfárou a na alegorickém voze přijíždí React se třetím způsobem, jak vytvářet obsah stránky.
 
 ```js
 const obsah = <h1 className="title">Moje stránka</h1>;
@@ -52,7 +52,7 @@ JSX elementy jsou Reactová obdoba DOM elementů, které jsme používali ve van
 
 ### Reactová aplikace
 
-Pokud chceme náš JSX element vložit na stránku, musíme nejdříve v kódu založit Reactovou aplikaci. To se dělá pomocí funkce `createRoot`. Této funkci předáme DOM element, uvnitř kterého se bude aplikace vykreslovat. Většinou do bývá `div`, kterému nastavíme `id` na `app`.
+Pokud chceme náš JSX element vložit na stránku, musíme nejdříve v kódu založit Reactovou aplikaci. To se dělá pomocí funkce `createRoot`. Této funkci předáme DOM element, uvnitř kterého se bude aplikace vykreslovat. Většinou to bývá `div`, kterému nastavíme `id` na `app`.
 
 ```js
 import { createRoot } from 'react-dom/client';

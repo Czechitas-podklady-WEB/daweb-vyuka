@@ -35,7 +35,7 @@ Když tento kód spustíme, React nám do konzole prohlížeče vypíše varová
 Warning: Each child in a list should have a unique "key" prop.
 ```
 
-Pro tutu chvíli jej můžeme ignorovat. Později si vysvětlíme co přesně znamená a jak se k němu postavit.
+Pro tutu chvíli jej můžeme ignorovat. Později si vysvětlíme, co přesně znamená a jak se k němu postavit.
 
 ### Použití map
 

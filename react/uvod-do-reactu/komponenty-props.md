@@ -1,6 +1,6 @@
 ## React komponenty a props
 
-Velká výhoda, kterou nám JSX přináší, spočívá v tom, že můžeme naše komponenty psát podobně, jako na začátku, kdy jsme z komponent vraceli řetězec obsahující HTML. Připomeňme si, jak kdysi dávno vypadala jednoduchá verze naší komponenty `ShoppingItem`.
+Velká výhoda, kterou nám JSX přináší, spočívá v tom, že můžeme naše komponenty psát podobně jako na začátku, kdy jsme z komponent vraceli řetězec obsahující HTML. Připomeňme si, jak kdysi dávno vypadala jednoduchá verze naší komponenty `ShoppingItem`.
 
 ```js
 const ShoppingItem = (props) => {
@@ -33,7 +33,7 @@ const ShoppingItem = (props) => {
 Všimněte si důležitých rozdílů:
 
 1. Nepoužíváme už zpětné apostrofy. Místo toho celé JSX uzavřeme do závorek, aby se nám kód hezky četl.
-1. Pokud chceme dovnitř JSX zakomponenovat obsah nějaké proměnné, místo `${promenna}` píšeme prostě `{promenna}`. Proti předchozímu zápisu nám tak zmizí znak dolaru.
+1. Pokud chceme dovnitř JSX zakomponovat obsah nějaké proměnné, místo `${promenna}` píšeme prostě `{promenna}`. Proti předchozímu zápisu nám tak zmizí znak dolaru.
 
 Ta nejhezčí věc na Reactu je však způsob, jakým naši komponentu zapojíme do zbytku stránky. Místo toho, abychom složitě používali `innerHTML` nebo `appendChild`, můžeme se tvářít, že naše komponenta je obyčejná HTML značka a `props` jí předat pomocí atributů. Použití komponenty `ShoppingItem` by pak mohlo vypadat takto.
 
@@ -68,4 +68,4 @@ createRoot(document.querySelector('#app')).render(
 );
 ```
 
-React se za nás postará a veškerou špinavou práci, kdy hodnoty atributů zabalí do jednoho objektu, pošle jej funkci `ShoppingItem` a výsledek zapojí do naší stránky.
+React se za nás postará o veškerou špinavou práci, kdy hodnoty atributů zabalí do jednoho objektu, pošle jej funkci `ShoppingItem` a výsledek zapojí do naší stránky.

@@ -2,7 +2,7 @@
 
 V tuto chvíli se dostáváme k základnímu principu při vytváření React aplikací. Celý obsah stránky je vždy vytvořen přímo v Reactu. V souboru `index.html` tak už vždy budeme mít pouze element `#app`, do kterého zapojíme obsah vytvořený Reactem.
 
-Samozřejmě budeme chtít, aby naše byla zajímavější než jen jeden nadpis. Můžeme tedy zkusit napsat například toto.
+Samozřejmě budeme chtít, aby naše aplikace byla zajímavější než jen jeden nadpis. Můžeme tedy zkusit napsat například toto.
 
 ```js
 import React from 'react';

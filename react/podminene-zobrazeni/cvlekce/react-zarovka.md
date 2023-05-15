@@ -10,8 +10,8 @@ Vzpomeňte si na naše cvičení z vanilla JavaScriptu, kdy jsme rozsvěcovali a
    npm init kodim-app@latest react-zarovka react
    ```
 1. Ve vašem React projektu vytvořte v samostatné složce komponentu `Bulb`. Zařiďte, aby vytvořila jeden `div` s třídou `bulb`.
-1. Styly a obrázky týkající se žárovky vložte do složky `Bulb`. Styly týkající se stránky samotné vložte to hlavního souboru `style.css`.
-1. Použijte komponentu `Bulb` a zobrazte na stránce žárovku.
+1. Styly a obrázky týkající se žárovky vložte do složky `Bulb`. Styly týkající se stránky samotné vložte do hlavního souboru `style.css`.
+1. Použijte komponentu `Bulb` a zobrazte žárovku na stránce.
 1. Chceme zařídit, že pokud komponentu použijeme takto
 
    ```js

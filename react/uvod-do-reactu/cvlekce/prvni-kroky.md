@@ -3,13 +3,13 @@ title: První kroky v Reactu
 demand: 1
 ---
 
-Vyzkoušíme si založit jednoduchou React aplikaci s jedním `index.jsx` a jednoduchým CSS. Přestože v Reactu se běžně veškerý kód dělí do komponent, v tomto cvičení je ještě používat nebudeme.
+Vyzkoušíme si založení jednoduché React aplikace s jedním `index.jsx` a jednoduchým CSS. Přestože v Reactu se běžně veškerý kód dělí do komponent, v tomto cvičení je ještě používat nebudeme.
 
 1. Vytvořte si nový Reactový projekt. Použijte opět nástroj `kodim-app`, tentokrát ale místo `vanilla` šablony použijeme šablonu `react`:
    ```shell
    npm init kodim-app@latest prvni-kroky react
    ```
-1. Projekt spusťte pomocí `npm run start` jak už to znáte z dřívejška.
+1. Projekt spusťte pomocí `npm run start`, jak už to znáte z dřívejška.
 1. Prozatím nahraďte celý obsah souboru `index.jsx` tímto kódem.
 
    ```js

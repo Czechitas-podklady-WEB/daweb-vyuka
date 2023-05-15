@@ -18,7 +18,7 @@ Tato podmínka vypadá velmi přímočaře. Má však určité nevýhody.
 1. Jde o celkem dlouhý kód pro velmi jednoduchou věc.
 1. Musíme požívat proměnnou `let`, čemuž se snažíme co nejvíce vyhýbat.
 
-JavaScript nám pro tuto situaci nabízí zkraktu, které se říká :term{cs="operátor pro podmíněný výraz" en="conditional operator"}.
+JavaScript nám pro tuto situaci nabízí zkratku, které se říká :term{cs="operátor pro podmíněný výraz" en="conditional operator"}.
 
 ```js
 const message = age >= 18 ? 'Smíš vstoupit' : 'Utíkej za mamkou';
@@ -41,7 +41,7 @@ const ShoppingItem = (props) => {
 };
 ```
 
-V této verzi komponenty nám zatím chybí možnost označit položku jako koupenou. Předáme tedy komponentě novou `prop` s názvem `done` a použíjeme ji takto.
+V této verzi komponenty nám zatím chybí možnost označit položku jako koupenou. Předáme tedy komponentě novou `prop` s názvem `done` a použijeme ji takto.
 
 ```js
 <ShoppingList product="jablka" amount="1 kg" done={true} />

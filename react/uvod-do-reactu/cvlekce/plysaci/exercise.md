@@ -13,7 +13,7 @@ Postupujte dle následujících kroků.
    ```shell
    npm init kodim-app@latest plysaci react
    ```
-1. Projekt spusťte pomocí `npm run start` jak už to znáte z dřívejška.
+1. Projekt spusťte pomocí `npm run start`, jak už to znáte z dřívejška.
 1. Smažte komponentu `App`. Vytvořte si proměnnou `content` a vložte do ní JSX s následujícím obsahem.
    ```html
    <h1>Plyšáci</h1>

@@ -43,7 +43,7 @@ createRoot(document.querySelector('#app')).render(<App />);
 
 ### Rozdělení komponent do složek
 
-Už při práci v čistém JavaScriptu jsme se učili rozdělovat komponenty do separátních složek. Tento postup budeme v Reactu přísně dodržovat a pro každou komponenty vždy vytvoříme složku obsahující její zdrojový JavaScript, styly i obrázky.
+Už při práci v čistém JavaScriptu jsme se učili rozdělovat komponenty do separátních složek. Tento postup budeme v Reactu přísně dodržovat a pro každou komponentu vždy vytvoříme složku obsahující její zdrojový JavaScript, styly i obrázky.
 
 Naší komponentu `ShoppingItem` tak vložíme do složky `ShoppingItem` se souborem `index.jsx`. Ten bude obsahovat kód naší komponenty.
 

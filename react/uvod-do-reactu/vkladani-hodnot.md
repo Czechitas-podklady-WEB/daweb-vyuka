@@ -14,7 +14,7 @@ const nazev = 'Moje stránka';
 const obsah = <h1 className="title">{nazev}</h1>;
 ```
 
-Když stavíme řetězec, můžeme si obsah proměnné vložit kam chceme. JSX je však přísnější a takto velkou svobodu nemáme. Složené závorky můžeme použít pouze pro obsah elementu nebo pro hodnotu atributu. Následující kód je tedy v pořádku.
+Když sestavujeme řetězec, můžeme si obsah proměnné vložit kam chceme. JSX je však přísnější a takto velkou svobodu nemáme. Složené závorky můžeme použít pouze pro obsah elementu nebo pro hodnotu atributu. Následující kód je tedy v pořádku.
 
 ```js
 const nazev = 'Moje stránka';

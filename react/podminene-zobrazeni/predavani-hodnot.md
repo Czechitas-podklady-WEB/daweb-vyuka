@@ -12,7 +12,7 @@ Někoho by mohlo lákat předat hodnotu `true` takto
 <ShoppingItem product="jablka" amount="1 kg" done="true" />
 ```
 
-ve vlastnosti `props.done` uvnitř komponenty bychom pak ale měli řetězec `'true'`, nikoliv prvadivostní hodnotu `true`. Pokud totiž předáváme hodnoty do props pomocí uvozovek jako jsme zvyklí z HTML, uvnitř komponenty vždy obdržíme tyto hodnoty jako řetězce. Pokud chceme skutečnou boolean hodnotu `true` nebo `false`, musíme si pomocí složených závorek otevřít JavaScriptové okénko. Toto platí i pro ostatní hodnoty. Pokud chceme předat pomocí props číslo, nebo třeba `null`, provedeme to opět pomocí složených závorek.
+ve vlastnosti `props.done` uvnitř komponenty bychom pak ale měli řetězec `'true'`, nikoliv pravdivostní hodnotu `true`. Pokud totiž předáváme hodnoty do props pomocí uvozovek jak jsme zvyklí z HTML, uvnitř komponenty vždy obdržíme tyto hodnoty jako řetězce. Pokud chceme skutečnou boolean hodnotu `true` nebo `false`, musíme si pomocí složených závorek otevřít JavaScriptové okénko. Toto platí i pro ostatní hodnoty. Pokud chceme předat pomocí props číslo, nebo třeba `null`, provedeme to opět pomocí složených závorek.
 
 ```js
 <ShoppingItem product="jablka" amount={3} done={true} />
