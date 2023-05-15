@@ -38,4 +38,4 @@ Všechny hodnoty vlastnoti `product` jsou unikátní. Můžeme tedy tuto vlastno
 
 Všimněte si, že například vlastnost `amount` unikátní hodnoty nemá. Nelze tedy použít jako klíč. Pokud to uděláte, React si bude v konzoli opět hlasitě stěžovat.
 
-V praxi občas narazíme na data, která žádnou unikátní vlastnost použitelnou jako klíč nemají. V takovém případě čeká trošku bolehlav i zkušenější programátory. Řešení tětcho situací proto necháme na některou z pozdějších lekci, až budete v Reactu více kovaní.
+V praxi občas narazíme na data, která žádnou unikátní vlastnost použitelnou jako klíč nemají. V takovém případě čeká trošku bolehlav i zkušenější programátory. Řešení těchto situací proto necháme na některou z pozdějších lekci, až budete v Reactu více kovaní.

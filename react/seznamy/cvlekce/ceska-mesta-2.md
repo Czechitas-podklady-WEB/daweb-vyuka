@@ -62,7 +62,7 @@ Pokračujte v projektu z předchozího příkladu.
     ```
 1.  Upravte kód vaší aplikace tak, aby u každého města zobrazoval kromě názvu také počet obyvatel a rozlohu v kilometrech.
 1.  Jako `key` prop opět použijte název města.
-1.  Vytvořte komponentu `City`, jejímž úkolem bude zobrazovat jedno město. Tato kompnenta bude mít props `name`, `population` a `area`. Použijte komponentu k zobrazení každého města ze seznamu.
+1.  Vytvořte komponentu `City`, jejímž úkolem bude zobrazovat jedno město. Tato komponenta bude mít props `name`, `population` a `area`. Použijte komponentu k zobrazení každého města ze seznamu.
 1.  Pro komponentu `City` vytvořte vlastní složku a komponentu malinko nastylujte, aby vypadala hezky.
 
 ---solution
