@@ -8,7 +8,7 @@ Představte si, že někde přes inzerát prodáváte svoji starou pohovku. V ta
 
 Dalším příkladem může být stav vašeho auta. Během používání auta se průběžně mění stav nádrže, počet najetých kilometrů, počet pasažérů v autě a další vlastnosti. U některých aut je možné přidat nebo ubrat sedadla, takže se může například změnit i počet míst v autě. Rozhodně se však nemění například obsah nádrže, počet kol apod.
 
-Uvnitř webové aplikace samozřejmě také nalezneme mnoho stavů. Zaškrtávácí políčko může být zaškrtnuté nebo nezaškrtuné, vyjížděcí menu může být otevřené nebo zavřené. Stavem je však také například počet objednaných produktů v košíku, počet nepřečtených emailů ve schránce, jméno právě přihlášeného uživatele, text, který uživatel vyplnil do nějakého formuláře a tak dále.
+Uvnitř webové aplikace samozřejmě také nalezneme mnoho stavů. Zaškrtávácí políčko může být zaškrtnuté nebo nezaškrtnuté, vyjížděcí menu může být otevřené nebo zavřené. Stavem je však také například počet objednaných produktů v košíku, počet nepřečtených emailů ve schránce, jméno právě přihlášeného uživatele, text, který uživatel vyplnil do nějakého formuláře a tak dále.
 
 ### Stav v JavaScriptu
 
@@ -18,7 +18,7 @@ V JavaScriptu každou vlastnost představující stav reprezentujeme jednou prom
 let tankLevel = 'full';
 ```
 
-Po dlouhé cestě autem se nejspíš stav nádrže změní takto.
+Po dlouhé cestě autem se nejspíš stav nádrže změní takto:
 
 ```js
 tankLevel = 'almost empty';
@@ -30,7 +30,7 @@ a pokud dlouho ignorujeme blikající kontrolku, můžeme se dostat do velmi nap
 tankLevel = 'empty';
 ```
 
-Takto bychom mohli se stavem pracovat v čistém JavaScriptu. React však pro práci se stavem nabízí speciální konstrukci. Pokud bychom chtěli například vytvořit komponentu `Auto`, která pracuje se stavem nádrže, napsali bychom toto.
+Takto bychom mohli se stavem pracovat v čistém JavaScriptu. React však pro práci se stavem nabízí speciální konstrukci. Pokud bychom chtěli například vytvořit komponentu `Auto`, která pracuje se stavem nádrže, napsali bychom toto:
 
 ```js
 import React, { useState } from 'react';
@@ -42,7 +42,7 @@ const Auto = () => {
 };
 ```
 
-Pomocí specální funkce `useState` říkáme Reactu, že chceme vytvořit proměnnou, která se během života komponenty bude měnit. Jedná se o speciální funkci, která vrací pole o dvou prvcích. První položka reprezentuje hodnotu našeho stavu. V našem případě budeme používat `'full'`, `'almost empty'` nebo `'empty'`. Druhá položka je funkce pro změnu hodnoty našeho stavu. Funkce `useState` navíc přijímá jeden vstup, který použije pro počáteční hodnotu stavu.
+Pomocí speciální funkce `useState` říkáme Reactu, že chceme vytvořit proměnnou, která se během života komponenty bude měnit. Jedná se o speciální funkci, která vrací pole o dvou prvcích. První položka reprezentuje hodnotu našeho stavu. V našem případě budeme používat `'full'`, `'almost empty'` nebo `'empty'`. Druhá položka je funkce pro změnu hodnoty našeho stavu. Funkce `useState` navíc přijímá jeden vstup, který použije pro počáteční hodnotu stavu.
 
 V našem případě tedy můžeme v komponentě pracovat s proměnnou `tankLevel`, která bude mít při prvním renderu hodnotu `'full'`. Hodnotu `tankLevel` však můžeme například v reakci na nějakou událost změnit. To provedeme voláním
 
