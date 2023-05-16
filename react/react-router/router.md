@@ -1,6 +1,6 @@
 ## React Router
 
-Napsat navigaci mezi stránkami v čistém JavaScritpu jste si už vyzkoušeli v předchozím kurzu. Co se Reactu týká, máme situaci malinko jednodušší. Existuje totiž standardní knihovna pro routing v Reactu, kterou používá většina Reactových projektů na celém světě. Jmenuje [React Router](https://reactrouter.com/) a nainstalovat si ji můžete jako závislost přes _npm_ a následně z ní můžeme používat připravené komponenty přímo v našem kódu.
+Napsat navigaci mezi stránkami v čistém JavaScritpu jste si už vyzkoušeli v předchozím kurzu. Co se Reactu týká, máme situaci malinko jednodušší. Existuje totiž standardní knihovna pro routing v Reactu, kterou používá většina reactových projektů na celém světě. Jmenuje [React Router](https://reactrouter.com/) a nainstalovat si ji můžete jako závislost přes _npm_ a následně z ní můžeme používat připravené komponenty přímo v našem kódu.
 
 ### Instalace a používání knihovny
 

@@ -5,7 +5,7 @@ demand: 3
 
 Každá slušně vychovaná aplikace má nějakou správu uživatelů a možnost se zaregistrovat. Registrační formulář by však měl umět ověřit, že zadáváme správná data. Validaci dat bude dělat server a vždy, když pošleme neplatný e-mail nebo slabé heslo, vrátí nám chybu _400 Bad Request_.
 
-1. Založte Reactovou aplikace s registračním formulářem. Formulář nechť obsahuje textová pole pro zadání e-mailu, hesla a zaškrtávací políčko pro souhlas s obchodními podmínkami.
+1. Založte reactovou aplikace s registračním formulářem. Formulář nechť obsahuje textová pole pro zadání e-mailu, hesla a zaškrtávací políčko pro souhlas s obchodními podmínkami.
 1. Obsah formuláře odesílejte pomocí metody POST na API endpoint
 
    ```

@@ -3,7 +3,7 @@ title: Data („datumy“)
 demand: 2
 ---
 
-1. Založte si nový Reactový projekt:
+1. Založte si nový reactový projekt:
    ```shell
    npm init kodim-app@latest datumy react
    ```

@@ -5,7 +5,7 @@ demand: 1
 
 Vyzkoušíme si založení jednoduché React aplikace s jedním `index.jsx` a jednoduchým CSS. Přestože v Reactu se běžně veškerý kód dělí do komponent, v tomto cvičení je ještě používat nebudeme.
 
-1. Vytvořte si nový Reactový projekt. Použijte opět nástroj `kodim-app`, tentokrát ale místo `vanilla` šablony použijeme šablonu `react`:
+1. Vytvořte si nový reactový projekt. Použijte opět nástroj `kodim-app`, tentokrát ale místo `vanilla` šablony použijeme šablonu `react`:
    ```shell
    npm init kodim-app@latest prvni-kroky react
    ```

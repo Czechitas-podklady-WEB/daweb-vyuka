@@ -9,7 +9,7 @@ Projekt, který jsme si zkoušeli nakonfiguravat v přechozí části, byl extr�
 
 Vytvořit konfiguraci pro takovýto projekt z hlavy je velmi obtížné. Zde ke slovu přicházají generátory, které umí základní strukturu projektu i s Webpack konfigurací vytvořit jedním příkazem.
 
-Jedním z takových oblíbených generátorů pro Reactové projekty je `create-react-app`. Často jej na internetu potkáte v různých Reactových tutoriálech a kurzech. My však ještě s Reactem nepracujeme a tento generátor se nám tudíž nehodí. Použijeme nám již známý `create-kodim-app`, který kromě projektů typu `html-css-js` umí generovat i projekty založené na Webpacku.
+Jedním z takových oblíbených generátorů pro reactové projekty je `create-react-app`. Často jej na internetu potkáte v různých reactových tutoriálech a kurzech. My však ještě s Reactem nepracujeme a tento generátor se nám tudíž nehodí. Použijeme nám již známý `create-kodim-app`, který kromě projektů typu `html-css-js` umí generovat i projekty založené na Webpacku.
 
 ### Postup založení nového projektu
 

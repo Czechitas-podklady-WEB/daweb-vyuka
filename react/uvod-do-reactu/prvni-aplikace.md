@@ -8,7 +8,7 @@ Na tyto problémy tvrdě narazili vývojáři Facebooku, a proto vytvořili fram
 
 ## První React aplikace
 
-Ať už je to šikovná náhoda nebo dokonale promyšlený plán, velkou část Reactových principů už jste v tomto kurzu používali, aniž byste o tom věděli. K vytvoření našeho prvního React projektu tak stačí pouze malinko upravit konfiguraci Webpacku a naučit se psát náš kód reactovým způsobem.
+Ať už je to šikovná náhoda nebo dokonale promyšlený plán, velkou část reactových principů už jste v tomto kurzu používali, aniž byste o tom věděli. K vytvoření našeho prvního React projektu tak stačí pouze malinko upravit konfiguraci Webpacku a naučit se psát náš kód reactovým způsobem.
 
 Základní Webpack projekt nastavený pro práci v Reactu si můžete vygenerovat pomocí `npm init kodim-app@latest`.
 
@@ -16,7 +16,7 @@ Základní Webpack projekt nastavený pro práci v Reactu si můžete vygenerova
 $ npm init kodim-app@latest my-app
 ```
 
-Pozor na to, že tontokrát v příkazu chybí slovíčko `vanilla`. React projekt se používá stejným způsobem, jakým jsme u Webpack projektů zvyklí. Všimněte si však, že místo `index.js` zde máme soubor `index.jsx`. Příponu `.jsx` budeme používat u souborů, které obsahují Reactový kód. Co tato přípona znamená, si povíme v následující části.
+Pozor na to, že tontokrát v příkazu chybí slovíčko `vanilla`. React projekt se používá stejným způsobem, jakým jsme u Webpack projektů zvyklí. Všimněte si však, že místo `index.js` zde máme soubor `index.jsx`. Příponu `.jsx` budeme používat u souborů, které obsahují reactový kód. Co tato přípona znamená, si povíme v následující části.
 
 ### JavaScript XML
 
@@ -48,11 +48,11 @@ const obsah = <h1 className="title">Moje stránka</h1>;
 
 V tuto chvíli do proměnné :var[obsah] přímo bez obalení uvozovkami ukládáme něco, co vypadá podezřele jako HTML. Není to však přesně HTML, nýbrž takzvané _JSX (JavaScript XML)_. Zápis JSX je velmi podobný jazyku HTML, jsou zde však drobné rozdíly. Například místo atributu `class` se v JSX používá atribut `className`.
 
-JSX elementy jsou Reactová obdoba DOM elementů, které jsme používali ve vanilla JavaScriptu. Jde o zcela nový typ hodnoty, a proto je můžeme stejně jako ostatní hodnoty ukládat do proměnných, předávat funkcím, vracet z funkcí, vkládat do polí i objektů a tak dále.
+JSX elementy jsou reactová obdoba DOM elementů, které jsme používali ve vanilla JavaScriptu. Jde o zcela nový typ hodnoty, a proto je můžeme stejně jako ostatní hodnoty ukládat do proměnných, předávat funkcím, vracet z funkcí, vkládat do polí i objektů a tak dále.
 
 ### Reactová aplikace
 
-Pokud chceme náš JSX element vložit na stránku, musíme nejdříve v kódu založit Reactovou aplikaci. To se dělá pomocí funkce `createRoot`. Této funkci předáme DOM element, uvnitř kterého se bude aplikace vykreslovat. Většinou to bývá `div`, kterému nastavíme `id` na `app`.
+Pokud chceme náš JSX element vložit na stránku, musíme nejdříve v kódu založit reactovou aplikaci. To se dělá pomocí funkce `createRoot`. Této funkci předáme DOM element, uvnitř kterého se bude aplikace vykreslovat. Většinou to bývá `div`, kterému nastavíme `id` na `app`.
 
 ```js
 import { createRoot } from 'react-dom/client';

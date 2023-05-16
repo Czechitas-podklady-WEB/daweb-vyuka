@@ -38,4 +38,4 @@ const App = () => {
 
 ### Přímá manipulace s obsahem stránky
 
-V Reactu se téměř nikdy nepoužívá přímá manipulace s obsahem stránky. Nepoužíváme tedy `querySelector` pro výběr elementů ani jim sami nenastavujeme vlastnosti jako `textContent`, `className` apod. Naše události jsou tedy zatím omezeny pouze na zobrazování vyskakovacích oken a vypisování do konzole. Jak správně měnit obsah stránky Reactovým způsobem se naučíme v druhé části lekce.
+V Reactu se téměř nikdy nepoužívá přímá manipulace s obsahem stránky. Nepoužíváme tedy `querySelector` pro výběr elementů ani jim sami nenastavujeme vlastnosti jako `textContent`, `className` apod. Naše události jsou tedy zatím omezeny pouze na zobrazování vyskakovacích oken a vypisování do konzole. Jak správně měnit obsah stránky reactovým způsobem se naučíme v druhé části lekce.
