@@ -3,7 +3,7 @@ title: Xylofon
 demand: 4
 ---
 
-Máte hotovou úlohu [Xylofon ze Základů JS](/kurzy/daweb/zaklady-js/cykly/ulozky-na-doma#cvdoma>xylofon)? V tomto cvičení oživíte xylofon tentokrát pomocí Reactu.
+Máte hotovou úlohu [Xylofon ze Základů JS](/kurzy/daweb/js1/cykly/ulozky-na-doma#cvdoma>xylofon)? V tomto cvičení oživíte xylofon tentokrát pomocí Reactu.
 
 1. Vytvořte si repozitář ze šablony [cviceni-xylofon-react](https://github.com/Czechitas-podklady-WEB/cviceni-xylofon-react).
 1. Otevřete příkazovou řádku ve složce s podklady.

@@ -1,4 +1,4 @@
-Práce se stavem je hlavní téma celého React frameworku. Porozumění tomu, jak stav v Reactu funguje je základem pro tvorbu interaktivních komponent. Porozumět stavovému mechanizmu v Reactu může být ze začátku výzva, proto jsme si dali v této kapitole na čas a ke stavu se dostáváme až nyní, kdy už umíme pracovat s komponentami i JSX.
+Práce se stavem je hlavní téma celého React frameworku. Porozumění tomu, jak stav v Reactu funguje, je základem pro tvorbu interaktivních komponent. Porozumět stavovému mechanismu v Reactu může být ze začátku výzva, proto jsme si dali s touto kapitolou na čas a ke stavu se dostáváme až nyní, kdy už umíme pracovat s komponentami i JSX.
 
 ## Události
 
