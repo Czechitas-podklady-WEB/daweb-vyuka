@@ -3,7 +3,7 @@ title: Výběr data cesty
 demand: 2
 ---
 
-Na konci tohoto cvičení bude uživatel schopen vybrat datum cesty podle dat stažených z API. Budeme postupovat obdobně, jako s komponentou `CityOptions`. Tentokrát však vytvoříme komponentu `DatesOptions`, která vygeneruje elementy `option` do výběru termínů cesty. Termíny cest se budou získávat z API endpointu [/api/dates](https://apps.kodim.cz/daweb/leviexpress/api/dates). Prohlédněte si strukturu dat, která tento endpoint vrací.
+Na konci tohoto cvičení bude uživatel schopen vybrat datum cesty podle dat stažených z API. Budeme postupovat obdobně jako s komponentou `CityOptions`. Tentokrát však vytvoříme komponentu `DatesOptions`, která vygeneruje elementy `option` do výběru termínů cesty. Termíny cest se budou získávat z API endpointu [/api/dates](https://apps.kodim.cz/daweb/leviexpress/api/dates). Prohlédněte si strukturu dat, která tento endpoint vrací.
 
 1. Komponentu `DatesOptions` vytvořte opět přímo v souboru s komponentami `JourneyPicker` a `CityOptions`.
 1. HTML kód s elementy `<option>` pro výběr termínu přesuňte ze `select`u pro výběr data do komponenty `DatesOptions`. V `select`u použijte vytvořenou komponentu `DatesOptions`. Zkontrolujte v prohlížeči, že se výběr termínů zobrazuje stále stejně.
@@ -26,7 +26,7 @@ Na konci tohoto cvičení bude uživatel schopen vybrat datum cesty podle dat st
 
    https://apps.kodim.cz/daweb/leviexpress/api/dates
 
-   a vrací seznam termínů ve formátu, který máme připraven. Změňte výchozí stav `dates` na prázdné pole a po té do něj nastavte výsledek volání uvedeného endpointu.
+   a vrací seznam termínů ve formátu, který máme připraven. Změňte výchozí stav `dates` na prázdné pole a poté do něj nastavte výsledek volání uvedeného endpointu.
 
 1. Ověřte v prohlížeči, že se do `select`ů načítají data (města a termíny) a že po kliknutí na tlačítko „Vyhledat spoj“ se uživatelem zvolené údaje vypíší do konzole prohlížeče.
 1. Commitněte změny.
