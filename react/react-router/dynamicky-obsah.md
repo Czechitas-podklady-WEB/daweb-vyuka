@@ -68,7 +68,7 @@ export const Invoice = () => {
   return (
     <div>
       <h3>
-        {invoiceData.product} ({invoiceData.invoiceId})
+        {invoiceData.product} ({invoiceData.amount},-)
       </h3>
     </div>
   );
