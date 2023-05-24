@@ -14,4 +14,4 @@ V tomto cvičení vdechneme život komponentě, která umožňuje hodnocení pom
 1. Nyní upravte funkci `handleGlow` tak, aby ke stavu `value` přičetla jedničku. Pokochejte se, jak to všechno krásně funguje.
 1. Nyní budeme chtít od hodnocení odečíst jedničku, když se hvězdička zhasne. Komponenta `Star` tedy bude mít druhou prop s názvem `onDim`, která se zavolá při zhasnutí hvězdičky. K tomu budeme na straně komponenty `Rating` potřebovat funkci `handleDim`. Postup je analogický jako v případě rozsvěcení, jistě jej zvládnete bez dalších instrukcí.
 
-Zatím si můžeme hvězdičky zhasínat a rozsvěcet jak se nám zachce i mimo pořadí. To napravíme v dalším cvičení.
+Zatím si můžeme hvězdičky zhasínat a rozsvěcet, jak se nám zachce, i mimo pořadí. To napravíme v dalším cvičení.

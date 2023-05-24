@@ -1,6 +1,6 @@
 ## Komunikace dítě → rodič
 
-Nyní bychom chtěli zařídit, aby se uživatelem vybraný kandidát zobrazil vedle obrázku hradu. Jakmile tedy uživatel vybere nějakého kandidáta v některé z komponent `Candidate`, potřebujeme jeho jméno poslat „nahoru“ rodičovské komponentě `App` aby si jej tato mohla uložit do stavu `president`.
+Nyní bychom chtěli zařídit, aby se uživatelem vybraný kandidát zobrazil vedle obrázku hradu. Jakmile tedy uživatel vybere nějakého kandidáta v některé z komponent `Candidate`, potřebujeme jeho jméno poslat „nahoru“ rodičovské komponentě `App`, aby si jej tato mohla uložit do stavu `president`.
 
 Zde však narážíme na zásadní problém. Komponenta `Candidate` nemá nejmenší tušení, kdo je její rodič. Zevnitř této komponenty tato informace není nijak dostupná. Musíme si tedy pomoct malým trikem.
 
@@ -16,7 +16,7 @@ const SensitiveButton = (props) => {
     console.log('Au');
   };
 
-  return <button onClick={handleClick}>{props.caption}</Button>;
+  return <button onClick={handleClick}>{props.caption}</button>;
 };
 ```
 
@@ -30,7 +30,7 @@ Nejprve tedy přidáme do komponenty `Candidate` novou prop s názvem `onVote`. 
 const Candidate = ({ name, avatar, onVote }) => ( … )
 ```
 
-Nyní potřebujeme funkci `onVote` zavolat se jménem kondidáta ve chvíli, kdy uživatel klikne na tlačítko. Použijeme tedy událost `onClick` a naše výsledná komponenta bude vypadat takto.
+Nyní potřebujeme funkci `onVote` zavolat se jménem kandidáta ve chvíli, kdy uživatel klikne na tlačítko. Použijeme tedy událost `onClick` a naše výsledná komponenta bude vypadat takto.
 
 ```js
 const Candidate = ({ name, avatar, onVote }) => (
@@ -120,4 +120,4 @@ Situaci můžene znázornit následujícím diagramem.
 
 ::fig{src=assets/dite-rodic.png}
 
-Z tohoto diagramu vydíme, že komunikace od rodiče k dítěti probíhá skrze props a komunikace od dítěte k rodiči probíhá skrze callbacky.
+Z tohoto diagramu vidíme, že komunikace od rodiče k dítěti probíhá skrze props a komunikace od dítěte k rodiči probíhá skrze callbacky.
