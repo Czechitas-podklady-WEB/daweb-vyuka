@@ -36,7 +36,7 @@ Pokračujte v předchozím cvičení.
    ```text
    Uživatel „???“ ze země „???“ se chce zaregistrovat.
    ```
-   Ve zprávě zobrazte jméno a zemi, kteoru si uživatel při registraci vybral.
+   Ve zprávě zobrazte jméno a zemi, kterou si uživatel při registraci vybral.
 
 ---solution
 

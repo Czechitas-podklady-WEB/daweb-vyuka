@@ -14,5 +14,5 @@ Logiku fungování zařídíme tak, že tentokrát hvězdičky nebudou mít vlas
    ```js
    <Star glowing={value >= 1} // zbytek props....
    ```
-   Upravte podmínky u všech hvězdiček tak, aby svítily ve správnou chvíli. Zkuste si nastavit výchozí stav na různé hodnoty a vyzkoušejte, že se hvězdičky svítí správně.
+   Upravte podmínky u všech hvězdiček tak, aby svítily ve správnou chvíli. Zkuste si nastavit výchozí stav na různé hodnoty a vyzkoušejte, že se hvězdičky rozsvítí správně.
 1. V tuto chvíli už při kliknutí na hvězdičku nepotřebujeme posílat informace o rozsvěcení a zhasínání. To se od teď dělá změnou stavu `value`. Už tedy v komponentě nepotřebujeme props `onGlow` a `onDim`. Stačí nám jedna prop `onSelect`, která se zavolá s hodnotou, kterou je potřeba nastavit do stavu `value`. Je tedy potřeba, aby každá hvězdička věděla, jakou hodnotu má poslat svému rodiči. To můžeme zařídit tak, že každé `Star` dáme prop `rating`. První hvězdička tak bude mít `rating={1}`, druhá `rating={2}` apod. V tuto chvíli už každá hvězdička může zavolat funkci `onSelect` se správnou hodnotou a předat ji rodiči. Rodič (komponenta `Rating`) pak tuto hodnotu uloží do stavu `value` a tím se nám rozsvítí příslušné hvězdíčky.
