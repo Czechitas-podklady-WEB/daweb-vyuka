@@ -75,7 +75,7 @@ Na začátku aplikace jsme vytvořili komponentu `App`, která se zobrazí jako 
 
 ### Komponenta `Link`
 
-Všimněte si, že pro navigaci mezi stránkami používáme místo obyčejného prvku `<a href>` komponentu `Link`. To je velmi důležité, protože kdybychom použili normální HTML odkazy, vždy bychom tím poslali požadavek na novou stránku na server. V SPA aplikacích však server posílá vždy jednu a tutéž stránku `index.html` jako odpověd na všechny cesty v URL. Soubor `index.html` už však dávno máme načtený, takže jen nepotřebujeme znovu. Dotaz na server je zbytečný a zbytečně by způsobil refresh stránky. My naopak chceme, aby se ze serveru nic nenačítalo a přepnutí stránky se stalo pouze na frontendu v režii React Routeru.
+Všimněte si, že pro navigaci mezi stránkami používáme místo obyčejného prvku `<a href>` komponentu `Link`. To je velmi důležité, protože kdybychom použili normální HTML odkazy, vždy bychom tím poslali požadavek na novou stránku na server. V SPA aplikacích však server posílá vždy jednu a tutéž stránku `index.html` jako odpověd na všechny cesty v URL. Soubor `index.html` už však dávno máme načtený, takže jej nepotřebujeme znovu. Dotaz na server je zbytečný a zbytečně by způsobil refresh stránky. My naopak chceme, aby se ze serveru nic nenačítalo a přepnutí stránky se stalo pouze na frontendu v režii React Routeru.
 
 ### Routování části stránky
 

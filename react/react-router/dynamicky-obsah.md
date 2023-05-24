@@ -63,12 +63,12 @@ const invoices = [
 
 export const Invoice = () => {
   const { invoiceId } = useParams();
-  const invoiceData = invoices.find((inv) => inv.id === invoiceId);
+  const invoiceData = invoices.find((inv) => inv.id === Number(invoiceId));
 
   return (
     <div>
       <h3>
-        {invoiceData.product} ({invoideData.invoiceId})
+        {invoiceData.product} ({invoiceData.invoiceId})
       </h3>
     </div>
   );
