@@ -3,7 +3,7 @@ title: Dětský koutek
 demand: 3
 ---
 
-V tomto cvičení vytvoříte jednoduchou stránku pro dětský koutek. Pomocí knihovny React Router vytvoříte navigaci která umožní zobrazit různé komponenty na základě cesty v URL.
+V tomto cvičení vytvoříte jednoduchou stránku pro dětský koutek. Pomocí knihovny React Router vytvoříte navigaci, která umožní zobrazit různé komponenty na základě cesty v URL.
 
 1. Vygenerujte si novou aplikaci pomocí příkazu
    ```sh
@@ -15,8 +15,8 @@ V tomto cvičení vytvoříte jednoduchou stránku pro dětský koutek. Pomocí 
    ```
 1. Spusťte aplikaci příkazem `npm start` a zkontrolujte, že vám v prohlížeči správně běží.
 1. Nebojte se v následujících krocích inspirovat dokumentací [React Routeru](https://reactrouter.com/en/main/start/overview)!
-1. V hlavním souboru `index.jsx` založte objekt s routami. Zatím zobrazujte pouze hlavní komponentu `App` pod cestou `/`. Nezapomeňte použít `RouterPorivder` ve funkci `render`. Vyzkoušejte, že takto vaše aplikace funguje.
-1. V `src` adresáři vytvořte složku `pages` a uvnitř složky s komponentemi pro jednotlivé stránky _Home_, _About_ a _Contact_.
+1. V hlavním souboru `index.jsx` založte objekt s routami. Zatím zobrazujte pouze hlavní komponentu `App` pod cestou `/`. Nezapomeňte použít `RouterProvider` ve funkci `render`. Vyzkoušejte, že takto vaše aplikace funguje.
+1. V `src` adresáři vytvořte složku `pages` a uvnitř složky s komponentami pro jednotlivé stránky _Home_, _About_ a _Contact_.
 1. Stránka _Home_ bude obsahovat nadpis a odstavec s textem:
 
    ```
@@ -41,7 +41,7 @@ V tomto cvičení vytvoříte jednoduchou stránku pro dětský koutek. Pomocí 
    Pokud máte jakékoliv otázky, nápady nebo nám chcete prostě jen napsat, zanechte nám zprávu přes náš kontaktní formulář a my se vám co nejdříve ozveme. Pokud preferujete jiný způsob komunikace, můžete nám také napsat e-mail na adresu info@detskykoutek.cz nebo nás kontaktovat přes naše sociální sítě. Děkujeme vám za vaši zpětnou vazbu a těšíme se na vaše zprávy!
    ```
 
-1. V souboru `index.jsx` si naimportujme všechny vytvořené stránky a přidejte je jako ;`children` vašeho routeru pod cesty `/`, `about` a `contact`.
+1. V souboru `index.jsx` si naimportujte všechny vytvořené stránky a přidejte je jako `children` vašeho routeru pod cesty `/`, `about` a `contact`.
 1. V komponentě `App` vytvořte navigaci pomocí `Link` komponent a dejte do ní odkazy na všechny výše uvedené stránky. Použijte komponentu `Outlet` na vyznačení místa, kam se máji vkládat jednotlivé stránky.
 1. Vyzkoušejte, že aplikace správně naviguje - mění adresu a obsah podle klikání na odkazy.
 1. Pokud máte čas a chuť, přidejte na web zajímavější obsah dle libosti a nastylujte jednotlivé stránky i navigaci.

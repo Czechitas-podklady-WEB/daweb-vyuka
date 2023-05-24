@@ -2,7 +2,7 @@
 
 Jsou weby, kde si vystačíme s pár stránkami - _Domovská stránka_, _O nás_, _Kontakt_ apod. Tyto stránky si nachystáme v kódu, nastylujeme a máme hotovo. Jednou za pár let možná upravíme naši adresu nebo telefonní číslo.
 
-Stránky jako blogy, zpravodajské weby, e-shopy a další však mívají mnohem složitější strukturu, tísíce článků, produktů, uživatelů a tak dále. Budeme tak potřebovat komponenty, které zobrazují data s databáze například na základě id. Adresy pro jednotlivé faktury za poslední měssíc pak mohou vypadat například takto:
+Stránky jako blogy, zpravodajské weby, e-shopy a další však mívají mnohem složitější strukturu, tísíce článků, produktů, uživatelů a tak dále. Budeme tak potřebovat komponenty, které zobrazují data z databáze například na základě id. Adresy pro jednotlivé faktury za poslední měsíc pak mohou vypadat například takto:
 
 ```
 /invoices/lastmonth/249857
@@ -10,7 +10,7 @@ Stránky jako blogy, zpravodajské weby, e-shopy a další však mívají mnohem
 /invoices/lastmonth/934568
 ```
 
-Samozřejmě nechcem vytvářet speciální routu pro každou takovou stránku. Místo toho využijeme takzvané _URL parametry_.
+Samozřejmě nechceme vytvářet speciální routu pro každou takovou stránku. Místo toho využijeme takzvané _URL parametry_.
 
 ### URL parametry
 
@@ -23,7 +23,7 @@ Pomocí URL parametru můžeme do URL cesty vložit jakousi proměnnou. Napřík
 Parametr `invoiceId` pak udává, jaké id faktury chceme vytáhnout z databáze. Hodnotu této proměnné můžeme pak v naší komponentě vytáhnout pomocí hooku `useParams`.
 
 ```js
-cosnt invoices = [
+const invoices = [
   {
     id: 12759,
     product: "Platba za marketingovou kampaň",
@@ -62,7 +62,7 @@ cosnt invoices = [
 ];
 
 export const Invoice = () => {
-  const { invoideId } = useParams();
+  const { invoiceId } = useParams();
   const invoiceData = invoices.find((inv) => inv.id === invoiceId);
 
   return (

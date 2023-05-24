@@ -1,8 +1,8 @@
 ## Ošetření chyb
 
-Naše stránky by měly umět odbře reagovat na všechny možné situace, kdy se je někdo pokouší používat nesprávným způsobem. Jednou z hlavních takových situací je pokus o načtení URL adresy, na které nic není.
+Naše stránky by měly umět dobře reagovat na všechny možné situace, kdy se je někdo pokouší používat nesprávným způsobem. Jednou z hlavních takových situací je pokus o načtení URL adresy, na které nic není.
 
-Pokud například v naší ukázkové účetní aplikaci zajdeme na adresu `/nazdar`, vyskočí nám chybová stránka, jejíž obsah dodává přímo React Router. Tato stránka nás zároveň nabádá, abychom byli k uživateli vstrícnější v vyrobili si vlastní chybovou stránku, která lépe zapadá do naší aplikace.
+Pokud například v naší ukázkové účetní aplikaci zajdeme na adresu `/nazdar`, vyskočí nám chybová stránka, jejíž obsah dodává přímo React Router. Tato stránka nás zároveň nabádá, abychom byli k uživateli vstřícnější v vyrobili si vlastní chybovou stránku, která lépe zapadá do naší aplikace.
 
 Možná jste už někdy narazili na hezkou chybovou stránku například na [GitHubu](https://github.com/abrakadabra-treskyplesky).
 
