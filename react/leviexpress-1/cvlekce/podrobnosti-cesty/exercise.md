@@ -5,6 +5,8 @@ demand: 1
 
 V tomto cvičení vytvoříte komponentu pro zobrazení detailu cesty a komponentu pro zobrazení zastávky. Využijí se informace, které vrátilo API pro vyhledání spoje.
 
+::fig[náhled]{src=assets/nahled.png}
+
 1. Ve svém projektu vyvořte komponentu s názvem `JourneyDetail`. Do komponenty `JourneyDetail` zatím zkopírujte HTML kód ze zadání – celý element `div` s třídami `journey-detail` a `container` i s jeho obsahem. Vytvoře v komponentě také soubor `style.css`, do kterého zkopírujte ze zadání styly pro třídy `stops` a `journey-detail`. Naimportujte soubor se styly do komponenty.
 1. Použijete komponentu `JourneyDetail` v komponentě `Home` na místě, kde se nyní vypisuje id nalezeného spoje. Komponenta se bude zobrazovat jenom tehdy, když ve stavu `journey` v komponentě `Home` je něco jiného, než `null`. Ověřte, že po vyhledání spojení se na stránce zobrazí podrobnosti cesty s městy 1 až 4.
 1. V samostatné složce vytvořte komponentu s názvem `BusStop`. V komponentě vytvořte také soubor se styly, do kterého ze zadání zkopírujete všechny styly pro třídy začínající `bus-stop`.

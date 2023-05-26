@@ -36,8 +36,13 @@ Nyn již máme ve stavu `journey` uložené všechny potřebné informace k tomu
    navigate(`/reservation/${reservationId}`);
    ```
 1. Zkontrolujte, že po kliknutí na tlačíko „Rezervovat" se stránka přesměruje například na adresu
+
    ```
    http://localhost:8080/reservation/HAQBAQASf7M
    ```
+
    kde záhy vytvoříme detail jízdenky!
+
+   ::fig[náhled]{src=assets/nahled.png}
+
 1. Commitněte změny.

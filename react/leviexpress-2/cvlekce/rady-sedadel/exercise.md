@@ -5,6 +5,8 @@ demand: 3
 
 Nyní zařídíme zobrazování sedadel v řadách. Plánek sedadel bude vypadat tak, že v HTML bude pro každou řadu sedadel jedna komponenta `SeatRow` a teprve uvnitř této komponenty budou jednotlivá sedadla – komponenty `Seat`.
 
+::fig[náhled]{src=assets/nahled.png}
+
 1. V projektu vytvořte komponentu `SeatRow`, která představuje jednu řadu sedadel. Bude vracet `div` s třídou `seat-row`, který v dalších krocích naplníme sedadly tak, jak nám přijdou z API. Zatím do komponenty natvrdo vložte pár sedadel jen pro testovací účely. Komponentu `SeatRow` pak vložte do `div`u `seats` v komponentě `SeatPicker`.
 1. Komponenta `SeatRow` bode očekávat prop s názvem `row`, ve které budou data pro jednu čadu sedadel. Pro testovací účely si vytvořte proměnnou `testRow`, která bude obsahovat takovýto objekt.
    ```js
