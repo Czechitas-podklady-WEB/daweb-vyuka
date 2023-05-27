@@ -6,6 +6,7 @@ demand: 4
 V předchozí verzi projektu jsme sedadlo pro rezervaci získali z hodnoty `autoSeat` stavu `journey` v komponentě `Home`. Nyní však sedadlo bude vybírat uživatel. Potřebujeme tedy nový stav v komponentě `Home`. Zde si užijeme hodně komunikace od potomka k předkovi.
 
 1. V komponentě `Home` vytvořte nový stav s názvem `userSeat`. Jeho hodnota bude na začátku `null`.
+1. Na začátku budeme chtít, aby se uživateli nabídlo sedadlo, které server vybral automaticky. Ve funkci `handleJourneyChange` tak nastavte stav `userSeat` na hodnotu `autoSeat`, která přišla ze serveru při výběru cesty.
 1. Hodnotu ze stavu `userSeat` pošlete do prop `selectedSeat` komponenty `SeatPicker`.
 1. Do komponenty `Seat` přidejte prop `onSelect`. V této prop bude funkce, kterou `Seat` zavolá, když uživatel vybere sedadlo. Jako parametr této funkci předejte číslo sedadla.
 1. Nyní chceme být schopní změnit stav `userSeat` při kliknutí na komponentu `Seat`, která je ovšem zanořena v hlubinách komponenty `SeatPicker`. Mezi komponentami `Seat` a `Home` je vztah potomek - pra-prarodič. Komunikace mezi nimi tedy musí probíhat skrze komponenty `SeatRow` a `SeatPicker`.
