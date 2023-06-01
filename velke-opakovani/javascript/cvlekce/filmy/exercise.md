@@ -22,7 +22,7 @@ https://apps.kodim.cz/daweb/trening-api/apis/movie-api/movies
 ```
 
 1. Z adresy uvedené výše načtěte seznam filmů pomocí funkce `fetch` a výsledek si uložte do proměnné.
-1. Vypište proměnnou do konzole prohlížeče a podívejte se, jak data vypadají. Jde o pole objektů, kde každý objekt představuje jeden film, který vypadá následovně:
+1. Vypište proměnnou do konzole prohlížeče a podívejte se, jak data vypadají. Jde o pole objektů, kde každý objekt představuje jeden film. Objekt vypadá následovně:
    ```json
    {
      "id": 1,
@@ -35,7 +35,7 @@ https://apps.kodim.cz/daweb/trening-api/apis/movie-api/movies
    ```
 1. Vidíte, že každý film má id, název, odkaz na popis filmu na ČSFD, obrázek filmu, rok vydání a také pole, které obsahuje seznam žánrů, do kterých film patří.
 1. Vytvořte funkci `showMovies`, která bude vypisovat seznam filmů. Ve funkci pomocí metody pole `forEach` projděte postupně seznam filmů a vypište do konzole prohlížeče vždy jenom název filmu. Pokud vše funguje, měli byste pod sebou vidět názvy všech filmů v seznamu.
-1. Když nyní víme, že se nám filmy správně načetli ze serveru a že je umíme projít, můžeme přistoupit k jejich vypsání do stránky místo do konzole prohlížeče.
+1. Když nyní víme, že se nám filmy správně načetly ze serveru a že je umíme projít, můžeme přistoupit k jejich vypsání do stránky místo do konzole prohlížeče.
 1. Když se podíváte do připraveného HTML, uvidíte v něm `<div id="movies"></div>`. Uvnitř tohoto divu najdete zakomentovaný kus HTML kódu pro jeden film. Tento HTML kód budeme do stránky přidávat pro každý film místo vypisování jeho názvu do konzole uvnitř funkce `showMovies`.
 1. Pomocí `document.querySelector` najděte ve stránce prvek s `id="movies"` a uložte si ho do proměnné s názvem `movieList`.
 1. V cyklu `forEach` uvnitř funkce `showMovies` si do proměnné uložte HTML kód pro jeden film (zakomentovaný vzor z HTML souboru) a doplňte do něho na příslušných místech název filmu, adresu obrázku a rok vydání. Řádek s žánrem filmu můžete zatím ignorovat nebo úplně vynechat.
