@@ -3,7 +3,15 @@ title: Seznam filmů
 demand: 2
 ---
 
+V tomto cvičení si vyzkoušíte:
+
+- načíst seznam filmů ze serveru
+- postupně projít získaná data
+- vypsat jednotlivé filmy do stránky
+
 Vytvořte si repozitář ze šablony [projekt-Filmy](https://github.com/Czechitas-podklady-WEB/projekt-Filmy), ve kterém máte připravený prázdný projekt se vzorovým HTML a CSS.
+
+::fig[Seznam filmů]{src=assets/result.png}
 
 Ve cvičení budete načítat filmy ze serverového API. K API existuje jednoduchá [dokumentace](https://apps.kodim.cz/daweb/trening-api/docs/filmove-api), kde se dozvíte vše potřebné.
 
