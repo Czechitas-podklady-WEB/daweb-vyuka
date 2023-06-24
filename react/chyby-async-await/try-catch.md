@@ -64,7 +64,7 @@ Kromě `try` a `catch` můžeme také použít sekci `finally`. Tento blok se vy
 ```js
 const fetchData = async () => {
   try {
-    const resp = fetch('https://random.kodim.app/api/diceroll?act=shaky')
+    const resp = await fetch('https://random.kodim.app/api/diceroll?act=shaky')
     if (resp.status === 200) {
       setErrorMessage(null);
       return;
