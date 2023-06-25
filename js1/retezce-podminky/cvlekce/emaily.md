@@ -20,7 +20,7 @@ Postupujte dle následujících kroků.
 1. Vytvořte jednoduchou **webovou stránku** s JavaScriptovým programem.
 1. Nechte uživatele **zadat jeho e-mail** a uložte si jej do proměnné `email`.
 1. Pomocí metody `indexOf` najděte v tomto e-mailu **pozici znaku zavináč**. Tuto pozici si uložte do proměnné `atIndex`.
-1. Pomocí metody `slice` získejte z e-mailu první část představující **jméno a příjmení** uživatele.
+1. Pomocí metody `slice` získejte z e-mailu první část představující **uživatelské jméno** uživatele.
 1. Dále z e-mailu získehte **název domény** tedy například `gmail.com`.
 1. Ze získaných informací vytvořte **objekt**, který bude vypadat například takto:
    ```js
