@@ -69,3 +69,5 @@ if (!(age >= 18 && age < 65)) {
 ```
 
 Takovýto výraz už je však trochu hůře k přečtení. Logické operátory jsou užiteční pomocníci, v praxi je však dobré s nimi šetřit. Pokud výraz ve vaší podmínce obsahuje více než jeden logický operátor, váš kód se stává těžko čitelným a pochopitelným. Držte se proto při používání logickách operátor pri zemi. Vaši budoucí kolegová vás za to budou mít rádi.
+
+Obzvlášť záludné k porozumění jsou výrazy, které jsou jednou velkou negací složitějšího vnitřního výrazu (proto je také poslední ukázka podstatně méně čitelná než ta předešlá). Ty bychom se vždy měli snažit přepsat na ekvivalentní výrazy bez „obalující“ negace. Za tímto účelem se hodí připomenout si [De Morganovy zákony](https://cs.wikipedia.org/wiki/De_Morganovy_z%C3%A1kony), které sice mohou na první pohled působit složitě, ale ve skutečnosti je jejich použití velmi jednoduché a přirozené.
