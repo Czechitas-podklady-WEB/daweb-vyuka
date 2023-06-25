@@ -54,7 +54,7 @@ const fetchData = async () => {
 
   const data = await resp.json();
   setRoll(data.result.number);
-  
+
   console.log('Konec funkce fetchData()');
 };
 ```
