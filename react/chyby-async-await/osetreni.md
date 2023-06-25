@@ -19,6 +19,7 @@ const fetchData = () => {
   fetch('https://random.kodim.app/api/diceroll?act=shaky')
     .then((resp) => {
       if (resp.status === 200) {
+        setErrorMessage(null);
         return resp.json();
       }
 
