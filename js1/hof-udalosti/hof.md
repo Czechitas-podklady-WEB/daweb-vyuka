@@ -63,27 +63,27 @@ showsList.innerHTML += renderShow('Spejbl a Hurvínek', {
 
 Takto bychom mohli se stránkou být spokojeni. Pokud se však s tímto webem budeme chtít vydat do světa, narazíme na jednu potíž. V každé zemi se datum formátuje trošku jinak. Nechceme ale naši funkci `renderShow` zaplevelit všemi možnými formáty data, jaké na světě existují. To by se nám z hezké funkce stala ohromná obluda. Nejlepší by bylo, kdyby funkce `renderShow` dokázala zodpovědnost za formátování data delegovat na někoho jiného.
 
-To můžeme udělat tak, že si vytvoříme například funkci, která datum formátuje po česku, tedy jako 25.4.2023.
+To můžeme udělat tak, že si vytvoříme například funkci, která datum formátuje po česku, tedy jako 25. 4. 2023.
 
 ```js
 const formatCs = (date) => {
-  return `${date.day}.${date.month}.${date.year}`;
+  return `${date.day}. ${date.month}. ${date.year}`;
 };
 ```
 
-Ve Velké Británii by však očekávali datum spíš jako 4/25/2023:
+Ve Velké Británii by však očekávali datum spíš jako 25/04/2023:
 
 ```js
 const formatGb = (date) => {
-  return `${date.month}/${date.day}/${date.year}`;
+  return `${String(date.day).padStart(2, "0")}/${String(date.month).padStart(2, "0")}/${date.year}`;
 };
 ```
 
-Ve spojených státech je zase zvykem psát spíše pomlčky 4-25-2023:
+Ve spojených státech je zase zvykem psát nejdříve měsíc a navíc rok zkracovat (04/25/23):
 
 ```js
 const formatUs = (date) => {
-  return `${date.month}-${date.day}-${date.year}`;
+  return `${String(date.month).padStart(2, "0")}/${String(date.day).padStart(2, "0")}/${date.year % 100}`;
 };
 ```
 
