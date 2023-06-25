@@ -39,14 +39,13 @@ const fetchData = async () => {
     const resp = fetch('https://random.kodim.app/api/diceroll?act=shaky')
     if (resp.status === 200) {
       setErrorMessage(null);
-      return;
-    }
-
-    if (resp.status === 500) {
+    } else if (resp.status === 500) {
       setErrorMessage('Server vrátil chybu.');
+      return;
     } else if (resp.status === 503) {
       setErrorMessage('Server je přetížen.');
-    })
+      return;
+    }
 
     const data = await resp.json();
     setRoll(data.result.number);
