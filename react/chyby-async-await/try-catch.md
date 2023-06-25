@@ -36,7 +36,7 @@ tedy můžete pomocí `async/await` a `try-catch` přepsat takto:
 ```js
 const fetchData = async () => {
   try {
-    const resp = fetch('https://random.kodim.app/api/diceroll?act=shaky')
+    const resp = fetch('https://random.kodim.app/api/diceroll?act=shaky');
     if (resp.status === 200) {
       setErrorMessage(null);
     } else if (resp.status === 500) {
@@ -49,7 +49,7 @@ const fetchData = async () => {
 
     const data = await resp.json();
     setRoll(data.result.number);
-  } catch(error) {
+  } catch (error) {
     console.error('Chyba komunikace se serverem:', error.message);
     setErrorMessage('Chyba komunikace se serverem');
   }
@@ -63,7 +63,7 @@ Kromě `try` a `catch` můžeme také použít sekci `finally`. Tento blok se vy
 ```js
 const fetchData = async () => {
   try {
-    const resp = await fetch('https://random.kodim.app/api/diceroll?act=shaky')
+    const resp = await fetch('https://random.kodim.app/api/diceroll?act=shaky');
     if (resp.status === 200) {
       setErrorMessage(null);
     } else if (resp.status === 500) {
@@ -76,7 +76,7 @@ const fetchData = async () => {
 
     const data = await resp.json();
     setRoll(data.result.number);
-  } catch(error) {
+  } catch (error) {
     console.error('Chyba komunikace se serverem:', error.message);
     setErrorMessage('Chyba komunikace se serverem');
   } finally {

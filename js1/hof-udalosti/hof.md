@@ -75,7 +75,10 @@ Ve Velké Británii by však očekávali datum spíš jako 25/04/2023:
 
 ```js
 const formatGb = (date) => {
-  return `${String(date.day).padStart(2, "0")}/${String(date.month).padStart(2, "0")}/${date.year}`;
+  return `${String(date.day).padStart(2, '0')}/${String(date.month).padStart(
+    2,
+    '0'
+  )}/${date.year}`;
 };
 ```
 
@@ -83,7 +86,10 @@ Ve spojených státech je zase zvykem psát nejdříve měsíc a navíc rok zkra
 
 ```js
 const formatUs = (date) => {
-  return `${String(date.month).padStart(2, "0")}/${String(date.day).padStart(2, "0")}/${date.year % 100}`;
+  return `${String(date.month).padStart(2, '0')}/${String(date.day).padStart(
+    2,
+    '0'
+  )}/${date.year % 100}`;
 };
 ```
 
