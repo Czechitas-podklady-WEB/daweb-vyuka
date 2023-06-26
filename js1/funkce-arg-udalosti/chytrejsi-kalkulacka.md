@@ -1,6 +1,6 @@
 ## Chytřejší kalkulačka
 
-Abychom funkce vyšších řádů viděli z více úhlů pohledu, ukážeme si ještě jeden příklad, který navazuje cvičení Kalkulačka z minulé lekce. Zadání bylo vytvořit funkci `calc`, která spočítá výsledek operace zadané jako řetězec. Přímočaré řešení by mohlo vypadat například takto.
+Abychom funkce jako argumenty viděli z více úhlů pohledu, ukážeme si ještě jeden příklad, který navazuje cvičení Kalkulačka z minulé lekce. Zadání bylo vytvořit funkci `calc`, která spočítá výsledek operace zadané jako řetězec. Přímočaré řešení by mohlo vypadat například takto.
 
 ```js
 const calc = (num1, op, num2) => {
@@ -71,4 +71,4 @@ Ze začátku se vám možná z takovýchto triků malinko točí hlava. Pojďme 
 1. Funkce `calc` funkci `op` zavolá, aniž by věděla, co je tato funkce vlastně zač. Prostě vezme cokoliv, co jí dáme na vstup, a zavolá to.
 1. Když voláme funkci `calc` a na vstupu je například funkce `plus`, všimněte si, že funkci `plus` nevoláme. Za proměnnou `plus` nejsou kulaté závorky. Funkci pouze předáváme jako hodnotu, podobně, jako bychom předávali číslo, řetězec apod.
 
-Funkcím, které berou jiné funkce jako vstup nebo vracejí funkce jako svůj výstup, se v teorii programování říká :term{cs="funkce vyšších řádů" en="higher order functions"}. Je to velmi důležitý koncept, který má spoustu využítí a budeme jej používat v mnoha různých situacích.
+Funkcím, které berou jiné funkce jako svůj vstup nebo vracejí funkce jako svůj výstup, se v teorii programování říká :term{cs="funkce vyšších řádů" en="higher order functions"}. Je to velmi důležitý koncept, který má spoustu využítí a budeme jej používat v mnoha různých situacích.

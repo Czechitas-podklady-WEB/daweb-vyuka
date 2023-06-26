@@ -1,0 +1,15 @@
+title: Funkce jako argumenty, události
+lead: Naučíme naše stránky reagovat na události jako je kliknutí, stisknutí klávesy nebo scrollování. K tomu budeme potřeba předávat funkce jako argumenty jiným funkcím.
+access: claim
+sections:
+  - funkce-arg
+  - chytrejsi-kalkulacka
+  - cv-funkce-arg
+  - zpozdeni-casovace
+  - anonymni-funkce
+  - udalosti
+  - druhy-udalosti
+  - cv-udalosti
+  - cteni-na-doma
+  - shrnuti
+  - ulozky-na-doma
