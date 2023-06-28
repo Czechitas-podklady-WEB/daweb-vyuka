@@ -1,6 +1,6 @@
 Zatím jsme všechny aplikace zkoušeli jen u sebe na počítači.¨
-V prohlížeči píšeme do daresního řádku `localhost`, což označuje tento (místní) počítač – ten počítač, na kterém adresu napíšu.
-Kdybyste se chtěly svými stránkami pochlubit a někomu poslaly odkaz na `localhost`, pokusí se prohlížeč připojit na jeho lokální počítač – kde ale vaše aplikace neběží.
+V prohlížeči píšeme do adresního řádku `localhost`, což označuje tento (místní) počítač – ten počítač, na kterém adresu napíšu.
+Kdybyste se chtěli svými stránkami pochlubit a někomu poslali odkaz na `localhost`, pokusí se prohlížeč připojit na jeho lokální počítač – kde ale vaše aplikace neběží.
 
 My ale chceme vytvářet www stránky, kde to „www“ je zkratka z „World Wide Web“, tedy celosvětová síť.
 Potřebujeme tedy, aby naše webové stránky byly dostupné z celého světa, ne jen z našeho počítače.
