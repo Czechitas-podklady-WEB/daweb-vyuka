@@ -7,11 +7,11 @@ Potřebujeme tedy, aby naše webové stránky byly dostupné z celého světa, n
 
 Zpřístupnit náš počítač celému světu by bylo technicky obtížné a nepohodlné – asi byste nechtěli, aby váš notebook musel pořád běžet a být připojený k internetu, protože co kdyby se někdo chtěl podívat na váš web.
 Řešením je umístit naše webové stránky u někoho, kdo má trvale běžící server, který je trvale připojený do internetu (a má spolehlivější a rychlejší připojení k internetu, než my; má také zálohované napájení elektrickým proudem).
-Dotyčný (a jeho server) bude náš web *hostovat*, proto se té službě říká **webhosting**.
+Dotyčný (a jeho server) bude náš web _hostovat_, proto se té službě říká **webhosting**.
 
 Než se pustíme do toho, jaký webhosting vybrat a jak s ním pracovat, musíme udělat odbočku k tomu, jakému typu webhostingu se vyhnout.
 Webhosting je totiž už hodně stará záležitost, pochází ještě z doby, kdy se webové stránky psaly bez JavaScriptu a často i bez CSS, žádný React neexistoval, a webové aplikace se psaly nejčastěji v PHP.
-Pokud se dnes řekne *webhosting* obvykle se tím myslí tento starý typ webhostingu.
+Pokud se dnes řekne _webhosting_ obvykle se tím myslí tento starý typ webhostingu.
 A tomu my se chceme vyhnout, protože poskytuje služby, které nechceme (třeba právě PHP), ale museli bychom za ně platit.
 Naopak tento typ hostingu neposkytuje služby, které nám usnadní práci – třeba spolupráci s Gitem a GitHubem.
 Pokud tedy narazíte na webhosting jako Wedos, Active24, Savana nebo jiný webhosting, který se bude chlubit tím, které verze PHP podporuje, vyhněte se mu.
@@ -21,8 +21,8 @@ Zprovoznit je na tomto typu hostingu by sice šlo, ale bylo by to zbytečně pra
 My budeme hledat služby, které ještě nemají svůj ustálený název – někdy se jim říká třeba cloud hosting, serverless deployment platform nebo třeba [Jamstack](https://jamstack.org) deployment.
 Nejznámějšími zástupci těchto služeb jsou:
 
-* [Netlify](https://www.netlify.com)
-* [Vercel](https://vercel.com/) (dříve se jmenoval Zeit.co, kdybyste na to někde narazily)
+- [Netlify](https://www.netlify.com)
+- [Vercel](https://vercel.com/) (dříve se jmenoval Zeit.co, kdybyste na to někde narazily)
 
 Zařadit sem lze i [GitHub Pages](https://pages.github.com) (které mají svá specifika a hodí se zejména v případě, kdy potřebujete web pro svůj projekt hostovaný na GitHubu) nebo [Cloudflare Pages](https://pages.cloudflare.com).
 Pokud si budete vybírat hosting pro svůj projekt, doporučuju volit mezi Netlify a Vercelem.
@@ -39,7 +39,8 @@ Ano, bude 😀
 Netlify i Vercel jsou placené služby, ale obě mají základní variantu zdarma, která je dostatečná pro soukromé nebo hobby projekty.
 
 ## Vytvoření účtu a přihlášení
-Obě dvě služby – Netlify i Vercel – fungují tak, že propojíte službu se svým GitHub účtem, řeknete, které repository chcete jako web zveřejnit, doplníte pár informací o tom, jak se s vaším projektem má zacházet – a Netlify nebo Vercel si stáhne zdrojové kódy, *vybuildí* aplikaci, tj. převede ji do tvaru, v jakém se dá zveřejnit na webu, a nakonec ji nahraje na nějaký server a web zveřejní.
+
+Obě dvě služby – Netlify i Vercel – fungují tak, že propojíte službu se svým GitHub účtem, řeknete, které repository chcete jako web zveřejnit, doplníte pár informací o tom, jak se s vaším projektem má zacházet – a Netlify nebo Vercel si stáhne zdrojové kódy, _vybuildí_ aplikaci, tj. převede ji do tvaru, v jakém se dá zveřejnit na webu, a nakonec ji nahraje na nějaký server a web zveřejní.
 
 Začneme tedy vytvořením účtu / přihlášením.
 Obě služby podporují přihlášení prostřednictvím dalších služeb – doporučuji přihlásit se pomocí GitHubu.
@@ -53,9 +54,10 @@ Zjednodušíte si tak přidávání budoucích projektů.
 Když jste povolily Netlify/Vercelu přístup ke svým repozitářům na GitHubu, Netlify/Vercel si načte jejich seznam a nabídne vám, ze kterého repozitáře chcete nasadit web.
 Pod jedním účtem můžete mít zveřejněno i více webů z různých repozitářů.
 Vyberte si ten, který chcete nyní zveřejnit, a dokončete nastavení v průvodci, který vás provede konfigurací toho, aby bylo možné váš repozitář publikovat na webu.
-Nejdůležitější je konfigurace deploye – tedy postupu, jak ze zdrojového repozitory *vyrobit* výsledný web.
+Nejdůležitější je konfigurace deploye – tedy postupu, jak ze zdrojového repozitory _vyrobit_ výsledný web.
 
 ## Deploy nebo-li zveřejnění projektu
+
 Jak už bylo řečeno v lekci o Webpacku, dnešní weby se prohlížeči neposkytují v tom tvaru, jak je napsaný zdrojový kód.
 Námi napsaný zdrojový kód prochází tzv. buildem (sestavením), kdy se vezmou HTML soubory, CSS, skripty, a zmenší se a zabalí do balíčků, aby se s nimi prohlížeči lépe pracovalo.
 Podobně se upraví třeb ai obrázky – mohou se zkomprimovat, aby zabíraly menší objem a rychleji se stáhly, případně se i přizpůsobí pro různě velká zařízení.
@@ -94,12 +96,14 @@ Takže pushnete, počkáte pár desítek vteřin, než proběhne build, a máte 
 Někdy to není tak snadné a build skončí nějakou chybou.
 V tom případě se nemusíte bát, vystavena je pořád předchozí verze webu.
 Doporučuji spustit build lokálně pomocí `npm run build` – pravděpodobně vám spadne na stejnou chybu, na jaké spadl na cloudovém hostingu.
-Až chybu opravíte, pushnete změnu, Netlify nebo Vercel se o změně dozví, čapne nové zdrojové kódy, *zbuildí* je – a pokud se podařilo chybu opravit a build projde bez chyby, máte za pár desítek sekund zveřejněnou novou verzi webu.
+Až chybu opravíte, pushnete změnu, Netlify nebo Vercel se o změně dozví, čapne nové zdrojové kódy, _zbuildí_ je – a pokud se podařilo chybu opravit a build projde bez chyby, máte za pár desítek sekund zveřejněnou novou verzi webu.
 
 Netlify i Vercel toho umí daleko víc, ale pro zveřejnění sourkomého projektu tohle stačí.
 
 ## Na co si dát pozor
+
 ### Velikost písmen v názvech souborů
+
 Nejčastější problém při nasazení nového projektu na Netlify nebo Vercel je ve velikostech písmen v názvech souborů.
 Windows ani MacOS moc nerozlišují velikost písmen v názvech souborů a složek (laždý trochu jiným způsobem).
 Takže třeba soubor `fotka.jpg` a `Fotka.jpg` pro ně bude to samé.
@@ -110,10 +114,11 @@ Takže ve výše uvedeném případě vám bude tvrdit, že žádný soubor `fot
 Pokud tedy nasazujete projekt na Netlify nebo Vercel, musíte mít v kódu názvy souborů a složek přesně tak, jak jsou na disku.
 Pokud je název na disku správně a v kódu špatně, jednoduše název v kódu opravte.
 Pokud je správně název v kódu a na disku je špatně – pak hodně štěstí.
-Tím, že Windows a MacOS nerozlišují velikost písmen, nejde rozumně přejmenovat `Fotka.jpg` na `fotka.jpg` (*vždyť je to přece to samé*) a ještě tak, aby si té změny všiml Git.
-Řešení, které není zrovna sofistikované, ale pro menší množství souborů či složek funguje – přejmenujte soubor na úplně jiný název, třeba z `Fotka.jpg` udělejte `xfotka.jpg`, změnu commitněte, a pak soubor přejmenujte zpět ale už se správným názvem, např. `fotka.jpg`. 
+Tím, že Windows a MacOS nerozlišují velikost písmen, nejde rozumně přejmenovat `Fotka.jpg` na `fotka.jpg` (_vždyť je to přece to samé_) a ještě tak, aby si té změny všiml Git.
+Řešení, které není zrovna sofistikované, ale pro menší množství souborů či složek funguje – přejmenujte soubor na úplně jiný název, třeba z `Fotka.jpg` udělejte `xfotka.jpg`, změnu commitněte, a pak soubor přejmenujte zpět ale už se správným názvem, např. `fotka.jpg`.
 
 ### Chyba 404 při obnovení (refresh) stránky
+
 Když vystavíte web, který bude mít více stránek (třeba `/`, `/kontakty`, `/galerie`) a bude to řešené pomocí routováí v JavaScriptu (nebudou pro to existovat samostatné HTML soubory), zjistíte, že když přejdete na nějakou podstránku a dáte obnovit stránku (refresh), zobrazí se vám chyba 404 – stránka neexistuje.
 To samé se stane, když adresu takto přímo zadáte do adresního řádku prohlížeče.
 Nebo třeba kdyby někdo na vaši podstránku odkázal z jiného webu nebo poslal odkaz třeba přes WhatsApp.
