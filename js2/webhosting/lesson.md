@@ -38,9 +38,24 @@ Bude pro vás někdo jen tak platit provoz serveru, abyste na něm mohly mít zd
 Ano, bude 😀
 Netlify i Vercel jsou placené služby, ale obě mají základní variantu zdarma, která je dostatečná pro soukromé nebo hobby projekty.
 
-## Deploy nebo-li zveřejnění projektu
-Obě dvě služby – Netlify i Vercel – fungují tak, že propojjíte službu se svým GitHub účtem, řeknete, které repository chcete jako web zveřejnit, doplníte pár informací o tom, jak se s vaším projektem má zacházet – a Netlify nebo Vercel si stáhne zdrojové kódy, *vybuildí* aplikaci, tj. převede ji do tvaru, v jakém se dá zveřejnit na webu, a nakonec ji nahraje na nějaký server a web zveřejní.
+## Vytvoření účtu a přihlášení
+Obě dvě služby – Netlify i Vercel – fungují tak, že propojíte službu se svým GitHub účtem, řeknete, které repository chcete jako web zveřejnit, doplníte pár informací o tom, jak se s vaším projektem má zacházet – a Netlify nebo Vercel si stáhne zdrojové kódy, *vybuildí* aplikaci, tj. převede ji do tvaru, v jakém se dá zveřejnit na webu, a nakonec ji nahraje na nějaký server a web zveřejní.
 
+Začneme tedy vytvořením účtu / přihlášením.
+Obě služby podporují přihlášení prostřednictvím dalších služeb – doporučuji přihlásit se pomocí GitHubu.
+Stejně budete chtít Netlify nebo Vercelu zpřístupnit projekty na svém GitHub účtu, když se přes GitHub přihlásíte, bude to jednodušší.
+Po přihlášení a propojení Netlify/Vercelu s GitHubem budete muset udělit Netlify/Vercelu přístup k vašim repozitářům na GitHubu.
+Provede vás tím průvodce, který vás přesměruje na GitHub, kde dostanete na výběr – buď Netlify/Vercelu zpřístupnit všechna svá repozitory (i ta budoucí), nebo vybrat, ke kterým přesně repozitory má mít Netlify/Vercel přístup.
+Své rozhodnutí můžete kdykoli později změnit.
+Pokud nemáte na svém GitHub účtu vyloženě nějaký tajný armádní výzkum, klidně povolte přístup ke všem repozitářům.
+Zjednodušíte si tak přidávání budoucích projektů.
+
+Když jste povolily Netlify/Vercelu přístup ke svým repozitářům na GitHubu, Netlify/Vercel si načte jejich seznam a nabídne vám, ze kterého repozitáře chcete nasadit web.
+Pod jedním účtem můžete mít zveřejněno i více webů z různých repozitářů.
+Vyberte si ten, který chcete nyní zveřejnit, a dokončete nastavení v průvodci, který vás provede konfigurací toho, aby bylo možné váš repozitář publikovat na webu.
+Nejdůležitější je konfigurace deploye – tedy postupu, jak ze zdrojového repozitory *vyrobit* výsledný web.
+
+## Deploy nebo-li zveřejnění projektu
 Jak už bylo řečeno v lekci o WebPacku, dnešní weby se prohlížeči neposkytují v tom tvaru, jak je napsaný zdrojový kód.
 Námi napsaný zdrojový kód prochází tzv. buildem (sestavením), kdy se vezmou HTML soubory, CSS, skripty, a zmenší se a zabalí do balíčků, aby se s nimi prohlížeči lépe pracovalo.
 Podobně se upraví třeb ai obrázky – mohou se zkomprimovat, aby zabíraly menší objem a rychleji se stáhly, případně se i přizpůsobí pro různě velká zařízení.
