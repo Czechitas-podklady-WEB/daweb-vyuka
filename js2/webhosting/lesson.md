@@ -56,7 +56,7 @@ Vyberte si ten, který chcete nyní zveřejnit, a dokončete nastavení v průvo
 Nejdůležitější je konfigurace deploye – tedy postupu, jak ze zdrojového repozitory *vyrobit* výsledný web.
 
 ## Deploy nebo-li zveřejnění projektu
-Jak už bylo řečeno v lekci o WebPacku, dnešní weby se prohlížeči neposkytují v tom tvaru, jak je napsaný zdrojový kód.
+Jak už bylo řečeno v lekci o Webpacku, dnešní weby se prohlížeči neposkytují v tom tvaru, jak je napsaný zdrojový kód.
 Námi napsaný zdrojový kód prochází tzv. buildem (sestavením), kdy se vezmou HTML soubory, CSS, skripty, a zmenší se a zabalí do balíčků, aby se s nimi prohlížeči lépe pracovalo.
 Podobně se upraví třeb ai obrázky – mohou se zkomprimovat, aby zabíraly menší objem a rychleji se stáhly, případně se i přizpůsobí pro různě velká zařízení.
 Pro nás teď ale není podstatné, co vše se při buildu dělá – to zařídil někdo, kdo pro nás napsal `webpack.config.js` nebo jiný předpis buildu.
@@ -68,14 +68,14 @@ npm run build
 
 Příkaz sestaví web do výsledné podoby, v jaké má být vystaven na webovém serveru, a jak si z něj bude prohlížeč stahovat jednotlivé soubory.
 Výsledek umístí do adresáře `dist`, který vznikl ve vašem projektu.
-V jiných projektech (s jinou konfigurací WebPacku) se cílový adresář může jmenovat třeba `build`, v našich projektech vytvořených pomocí `npm init kodim-app` se vždy bude jmenovat `dist`.
+V jiných projektech (s jinou konfigurací Webpacku) se cílový adresář může jmenovat třeba `build`, v našich projektech vytvořených pomocí `npm init kodim-app` se vždy bude jmenovat `dist`.
 Mimochodem, tento adresář nepatří do gitu, nebude na GitHubu (o to se zase stará konfigurace v souboru `.gitignore`).
 
 Kdybyste přeci jen použily PHP hosting, nyní nahrajete obsah adresáře `dist` na server ručně (nejspíš pomocí FTP nebo SFTP).
 Cloud hostingy se ale o tohle postarají automaticky – naklonují si repozitory, spustí build a výsledný adresář zveřejní na svém serveru.
 Jenom jim musíte pomoci s tím, kterým příkazem se build spouští (v našem případě `npm run build`) a kde bude výsledný web (u nás `dist`).
 
-To je vše, Netlify i Vercel vám po úspěšném buildu napíšou, na jakou doménu váš web nasadili.
+To je vše, Netlify i Vercel vám po úspěšném buildu napíšou, na jakou doménu váš web nasadily.
 Bude to doména ve tvaru `*.netlify.app` nebo `*.vercel.app`, takže třeba `jumping-squirrel-7586.netlify.app`.
 Jméno na místě hvězdičky si můžete zvolit, jaké chcete – pokud už není zabrané.
 Domény pod doménou `netlify.app` nebo `vercel.app` (tzv. domény třetího řádu) máte zdarma.
