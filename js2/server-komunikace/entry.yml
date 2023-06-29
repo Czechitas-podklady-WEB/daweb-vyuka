@@ -2,4 +2,11 @@ title: Komunikace se serverem
 lead: Vysvětlíme si, jak funguje World Wide Web, a ukážeme si, jak ze serveru načíst data pomocí API.
 access: claim
 sections:
-  - lesson
+  - klient-server
+  - volani-api
+  - format-json
+  - api-js
+  - cv-volani-api
+  - zobrazovani-dat
+  - cv-zobrazovani-dat
+  - ulozky-na-doma
