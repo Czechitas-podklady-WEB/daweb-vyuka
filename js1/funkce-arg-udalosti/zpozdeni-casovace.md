@@ -2,7 +2,7 @@
 
 Dobrá zpráva pro začínající programátory je, že psát funkce očekávající jiné funkce na vstupu je spíše pokročilá věc a budeme ji používat až při práci v Reactu. Zatím budeme funkce tohoto ražení používat už hotové, zabuduované přímo v JavaScriptu.
 
-Jedna ze situací, kdy se nám velmi hodí použít funkci jako argument, nastává, když chceme v JavaScriptu provedení nějaké funkce pozdržet nebo její volání pravidelně opakovat. Vzpomeňte si na příklad [kvíz](../dom-innerhtml/cv-manipulace#cvlekce%3Ekviz). Představme si, že chceme, aby uživatel měl na každou odpověď nějaký časový limit. Po zobrazení otázky chceme počkat 5 vteřin a poté vypsat něco jako „čas vypršel“. Vyrobíme si tedy funkci, která vypisuje naši zprávu, zatím pro jednoduchost přimo do `body`.
+Jedna ze situací, kdy se nám velmi hodí použít funkci jako argument, nastává, když chceme v JavaScriptu provedení nějaké funkce pozdržet nebo její volání pravidelně opakovat. Jako příklad vezměme aplikaci, kde uživatel odpovídá na kvízové otázky. Budeme chtít, aby uživatel měl na každou odpověď nějaký časový limit, například 5 vteřin, po jehož uplynutí vypíšeme „čas vypršel“. Vyrobíme si tedy funkci, která vypisuje naši zprávu, zatím pro jednoduchost přimo do `body`.
 
 ```js
 const timeIsUp = () => {
