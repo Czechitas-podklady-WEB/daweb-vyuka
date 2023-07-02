@@ -3,7 +3,7 @@ title: Kalkulačka
 demand: 4
 ---
 
-Naše úvodní povídání o funkcích vyššího řádu přímo vybízí k tomu, abychom dotáhli do konce aplikaci kalkulačka. Naprogramovat kalkulačku, aby skutečně fungovala dle běžných očekávání není tak přímočaré, jak by se na první pohled mohlo zdát. Prohlédněte si [toto video](assets/kalkulacka.mp4), které ukazuje, jak klasická kalkulačka skutečně funguje. Povšimněte si především následujících funkčností.
+Naše úvodní povídání o funkcích jako argumentech přímo vybízí k tomu, abychom dotáhli do konce aplikaci kalkulačka. Naprogramovat kalkulačku, aby skutečně fungovala dle běžných očekávání není tak přímočaré, jak by se na první pohled mohlo zdát. Prohlédněte si [toto video](assets/kalkulacka.mp4), které ukazuje, jak klasická kalkulačka skutečně funguje. Povšimněte si především následujících funkčností.
 
 1. Displej kalkulačky slouži pro vstup i výstup. Musíme si tedy dávat pozor, kdy jej používáme pro vstup a kdy pro výstup.
 1. Všechne matematické operace se dají řetězit. Můžeme tedy napsat například :kbd[2]:kbd[5]:kbd[+]:kbd[4]:kbd[-]:kbd[1]:kbd[6] a displej nám bude ukazovat mezivýsledky. Konečnou hodnotu se dozvíme po stisknutí :kbd[=].

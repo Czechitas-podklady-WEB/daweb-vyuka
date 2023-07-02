@@ -1,6 +1,6 @@
 V předchozích lekcích jsme si ukázali, jak můžeme pomocí JavaScriptu měnit obsah stránky a jak vyrábět vlastní funkce. Díky těmto nástrojům se postupně bližíme k tomu, abychom uměli naše stránky udělat skutečně interaktivní. Budeme chtít umět změnit obsah stránky ve chvíli, kdy uživatel klikne na tlačítko, umožnit uživateli vložit vstup pomocí textového políčka a mnoho dalších interakcí. K tomu potřebujeme porozumět takzvaným :term{cs="událostem" en="events"}. Abychom uměli dobře používat události, bude se nám hodit vědět něco více o tom, jak fungují funkce.
 
-## Funkce vyššího řádu
+## Funkce jako argumenty
 
 Z minula už víme, že funkce jsou hodnoty podobně jako čísla, řetězce nebo DOM elementy. Vzpomeňte si, že při vytváření funkce ve skutečnosti vytváříme proměnnou, do které novou funkci ukládáme.
 
@@ -75,10 +75,9 @@ Ve Velké Británii by však očekávali datum spíš jako 25/04/2023:
 
 ```js
 const formatGb = (date) => {
-  return `${String(date.day).padStart(2, '0')}/${String(date.month).padStart(
-    2,
-    '0'
-  )}/${date.year}`;
+  const paddedDay = String(date.day).padStart(2, '0');
+  const paddedMonth = String(date.month).padStart(2, '0');
+  return `${paddedDay}/${paddedMonth}/${date.year}`;
 };
 ```
 
@@ -86,10 +85,9 @@ Ve spojených státech je zase zvykem psát nejdříve měsíc a navíc rok zkra
 
 ```js
 const formatUs = (date) => {
-  return `${String(date.month).padStart(2, '0')}/${String(date.day).padStart(
-    2,
-    '0'
-  )}/${date.year % 100}`;
+  const paddedMonth = String(date.month).padStart(2, '0');
+  const paddedDay = String(date.day).padStart(2, '0');
+  return `${paddedMonth}/${paddedDay}/${date.year % 100}`;
 };
 ```
 
