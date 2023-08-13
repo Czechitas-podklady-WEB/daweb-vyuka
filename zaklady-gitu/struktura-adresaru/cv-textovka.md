@@ -1,3 +1,3 @@
 ## Cvičení: Textovka
 
-::exc[cvlekce>textovka]
+::exc[cvlekce/textovka]

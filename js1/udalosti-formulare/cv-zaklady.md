@@ -1,4 +1,4 @@
 ## Cvičení: Základy formulářů
 
-::exc[cvlekce>kalkulacka]
-::exc[cvlekce>newsletter]
+::exc[cvlekce/kalkulacka]
+::exc[cvlekce/newsletter]

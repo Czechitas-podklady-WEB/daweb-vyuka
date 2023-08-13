@@ -1,3 +1,3 @@
 ## Zobrazení rezervované jízdenky
 
-::exc[cvlekce>detail-jizdenky]
+::exc[cvlekce/detail-jizdenky]

@@ -1,3 +1,3 @@
 ## Volitelné úložky na doma
 
-::exc[cvdoma>minutka3]
+::exc[cvdoma/minutka3]

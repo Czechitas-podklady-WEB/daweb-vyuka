@@ -1,3 +1,3 @@
 ## Doporučené úložky na doma
 
-::exc[cvdoma>pokracovani-textovky]
+::exc[cvdoma/pokracovani-textovky]

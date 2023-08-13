@@ -1,3 +1,3 @@
 ## Rozšíření na desktop
 
-::exc[cvlekce>desktop]
+::exc[cvlekce/desktop]
