@@ -15,7 +15,7 @@ Postupujte dle následujicích kroků.
 
    ::fig[ukázka běhu ověření]{src=assets/overeni.gif}
 
-1. Pokud program zahlásí, že všechno proběhlo v pořádku, slavte úspěch. Pokud se cestou cokoliv pokazilo, napište do kanálu `#04-otazky`` na Slacku, lektoři a koučové s vámi problém vyřeší.
+1. Pokud program zahlásí, že všechno proběhlo v pořádku, slavte úspěch. Pokud se cestou cokoliv pokazilo, napište do kanálu `#04-otazky` na Slacku, lektoři a koučové s vámi problém vyřeší.
 
    Například se může stát, že se po spuštění výše uvedeného příkazu program nebude na nic ptát, vypíše následující chybu a ukončí se:
 
