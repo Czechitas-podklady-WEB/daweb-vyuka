@@ -8,6 +8,8 @@ Vytvořte si repozitář ze šablony [cviceni-pocitadlo](https://github.com/Czec
 1. Bez použítí `console.log` opravte všechny chyby, které runtime vypisuje do konzole.
 1. Když vyřešíte všechna chybová hlášení, program stejně nebude fungovat. Použijte tedy své detektivní schopnosti spolu s funkcí `console.log` a odhalte poslední problémy, které brání programu ve správném fungování.
 
----solution
+:::solution
 
 [index.js](https://github.com/Czechitas-podklady-WEB/cviceni-pocitadlo/blob/reseni/index.js)
+
+:::

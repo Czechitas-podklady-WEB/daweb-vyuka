@@ -17,7 +17,7 @@ const numbers = [
 1. Najděte druhý největší prvek v seznamu.
 1. Najděte nejnižší vrchol a nejvyšší údolí. Údolí je číslo, které je menší než jeho předchůdce i následovník.
 
----solution
+:::solution
 
 **a. Vypište na výstup délku nejdelší rostoucí sekvence čísel, které v poli následují přímo po sobě.**
 
@@ -122,3 +122,5 @@ for (let i = 0; i < numbers.length; i++) {
 
 console.log(`Druhý největší prvek v seznamu je ${secondMaximumNumber}`);
 ```
+
+:::

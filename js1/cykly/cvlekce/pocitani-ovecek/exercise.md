@@ -44,7 +44,7 @@ Vytvořte JavaScriptový program, který vepíše do stránky ovčí příběh p
 
    > Ovečka Bětuška jako 1. přeskočila přes plot. Ovečka Cína jako 2. přeskočila přes plot. Ovečka Dolly jako 3. přeskočila přes plot…
 
----solution
+:::solution
 
 ```js
 ovciJmena.forEach((jmeno, index) => {
@@ -53,3 +53,5 @@ ovciJmena.forEach((jmeno, index) => {
   }. přeskočila přes plot. `;
 });
 ```
+
+:::

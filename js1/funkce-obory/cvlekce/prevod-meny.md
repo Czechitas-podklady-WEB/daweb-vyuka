@@ -21,7 +21,7 @@ Výslednou částku zakrouhlete na celé koruny. Příklad použití:
 
 Pokud funkce jako parametr dostane neznámý kód měny, vrátí jako výsledek `null`. Otestujte funkci v konzoli.
 
----solution
+:::solution
 
 ```js
 const convertToCZK = (amount, currency) => {
@@ -42,3 +42,5 @@ const convertToCZK = (amount, currency) => {
   return Math.round(rate * amount);
 };
 ```
+
+:::

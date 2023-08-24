@@ -23,8 +23,10 @@ Podle postupu níže vyrobte stránku podobnou té na obrázku.
 
 1. Pokud máte čas a chuť, nastylujte stránku dle svého citu. Obrázek výše může posloužit jako inspirace.
 
----solution
+:::solution
 
 Kód: https://github.com/Czechitas-podklady-WEB/cviceni-newsletter
 
 Výsledek: https://czechitas-podklady-web.github.io/cviceni-newsletter/
+
+:::

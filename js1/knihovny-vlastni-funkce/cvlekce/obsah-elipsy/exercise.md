@@ -16,7 +16,7 @@ Funkci `ellipseArea` otestujte (např. pomocí `console.log` vypište výsledek 
 - Pro šířku `1` a výšku `2` by mělo vyjít `1.5707963267948966`.
 - Pro `2` a `2` pak `3.141592653589793`.
 
----solution
+:::solution
 
 ```js
 const ellipseArea = (width, height) => {
@@ -26,3 +26,5 @@ const ellipseArea = (width, height) => {
 console.log(ellipseArea(1, 2));
 console.log(ellipseArea(2, 2));
 ```
+
+:::

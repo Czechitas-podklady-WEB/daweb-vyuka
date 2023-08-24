@@ -25,7 +25,7 @@ const numbers = [
 1. Spočítejte průměr všech čísel v poli.
 1. Spočítejte součet všech kladných čísel v poli.
 
----solution
+:::solution
 
 1. Vypište na výstup všechna čísla.
    ```js
@@ -151,3 +151,5 @@ const numbers = [
    });
    console.log('Průměr všech:', positiveSum);
    ```
+
+:::

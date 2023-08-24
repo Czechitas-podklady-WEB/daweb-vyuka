@@ -34,7 +34,7 @@ U všech následujících úryvků kódů vytvořte technický popis jejich fung
     });
     ```
 
----solution
+:::solution
 
 ### 1
 
@@ -117,3 +117,5 @@ document.addEventListener('keyup', (event) => {
 1. Pokud je podmínka splněna, zavolá se metoda `log` na objektu `console` s parametrem – textem „paused“.
 
 Pokaždé, když uživatel kdekoli v dokumentu stiskne a pak pustí klávesu „P“, vypíše se do konzole v DevTools text „paused“.
+
+:::

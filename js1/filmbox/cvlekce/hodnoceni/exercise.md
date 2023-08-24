@@ -35,6 +35,8 @@ Při přejíždění myší přes hvězdičky zvýrazněte všechny až po tu, n
 
 ::fig[řešení]{src=assets/reseni.gif}
 
----solution
+:::solution
 
 Všechny úlohy mají jedno společné vypracované řešení zde [github.com/Czechitas-podklady-WEB/projekt-FilmBox/tree/reseni](https://github.com/Czechitas-podklady-WEB/projekt-FilmBox/tree/reseni).
+
+:::

@@ -31,7 +31,7 @@ const shoppingList = [
    'moukamáslocukrjablkaskořicemlékocibule'
    ```
 
----solution
+:::solution
 
 1. ```js
    const shoppingList = [
@@ -58,3 +58,5 @@ const shoppingList = [
 
    console.log(shoppingListString);
    ```
+
+:::

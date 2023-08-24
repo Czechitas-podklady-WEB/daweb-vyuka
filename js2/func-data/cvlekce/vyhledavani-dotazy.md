@@ -48,7 +48,7 @@ const persons = [
 1. Pomocí metody `some` zjistěte, jestli jsou v poli `persons` nějaké osoby nebinárního pohlaví, tedy nejsou ani `male`, ani `female`.
 1. Pomocí metody `every` zjistěte, jestli v poli `persons` platí, že je každá osoba starší 18 let.
 
----solution
+:::solution
 
 1. Pomocí funkce `forEach` vypište do konzole postupně věk každé osoby z pole `persons`.
 
@@ -124,3 +124,5 @@ const persons = [
    const majorPersons = names.every((person) => person.age >= 18);
    console.log('Jen osoby starší 18 let:', majorPersons);
    ```
+
+:::

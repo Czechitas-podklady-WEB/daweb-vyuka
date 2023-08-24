@@ -52,6 +52,8 @@ Skryjte ovládací panel, pokud uživatel po dobu **tří sekund** nepohnul myš
 
 ::fig[řešení]{src=assets/reseni.gif}
 
----solution
+:::solution
 
 Všechny úlohy mají jedno společné vypracované řešení zde [github.com/Czechitas-podklady-WEB/projekt-FilmBox/tree/reseni](https://github.com/Czechitas-podklady-WEB/projekt-FilmBox/tree/reseni).
+
+:::

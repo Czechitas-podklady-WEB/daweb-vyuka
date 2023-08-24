@@ -18,7 +18,7 @@ Funkce vrátí řetězec představující datum ve formátu **DD.MM.YYYY**. Př�
 
 V tomto cvičení se vám jistě bude hodit metoda na textových řetězcích `padStart`. Zkuste také uvnitř těla funkce použít _destrukturování_.
 
----solution
+:::solution
 
 ```js
 const formatDate = ({ day, month, year }) => {
@@ -37,3 +37,5 @@ console.log(formatDate({ day: 3, month: 11, year: 2023 }));
 console.log(formatDate({ day: 1, month: 1, year: 2023 }));
 console.log(formatDate({ day: 28, month: 10, year: 2023 }));
 ```
+
+:::

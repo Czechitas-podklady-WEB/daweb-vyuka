@@ -18,7 +18,8 @@ Pokud vám zbyde čas, můžete si odkomentovat obsah a nastylovat i další kar
 
 ::fig[výsledek]{src=assets/BEM_cviceni_result.gif}
 
----solution
+:::solution
+
 V souboru `style.css` se nic neupravuje. Upravuje se poize souboru `index.html`, ve kterém se přidávají třídy (atribut `class`) elementu `article` a vnořeným elementům.
 
 ```html
@@ -46,3 +47,5 @@ V souboru `style.css` se nic neupravuje. Upravuje se poize souboru `index.html`,
   </div>
 </article>
 ```
+
+:::

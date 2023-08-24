@@ -22,6 +22,8 @@ Změňte ikonku tlačítka na křížek, pokud je menu rozbalené a na hamburger
 
 ::fig[řešení]{src=assets/reseni.gif}
 
----solution
+:::solution
 
 Všechny úlohy mají jedno společné vypracované řešení zde [github.com/Czechitas-podklady-WEB/projekt-FilmBox/tree/reseni](https://github.com/Czechitas-podklady-WEB/projekt-FilmBox/tree/reseni).
+
+:::

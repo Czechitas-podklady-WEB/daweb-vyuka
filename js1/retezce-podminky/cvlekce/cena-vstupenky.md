@@ -14,7 +14,7 @@ Nezapomeňte na **zaokrouhlování**, ať nám cena vyjde v celých centech.
 
 Nakonec spočtenou cenu vypište s nějakou hezkou zprávou na výstup.
 
----solution
+:::solution
 
 ```js
 const plnaCena = 12;
@@ -32,3 +32,5 @@ if (age < 6) {
 cena = Math.ceil(cena);
 document.body.innerHTML = 'Cena lístku je ' + cena + ' Eur.';
 ```
+
+:::

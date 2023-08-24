@@ -68,7 +68,7 @@ Proveďte následující:
 1. Vypište do stránky, kolik cestující zaplatí za **druhé zavazadlo** v českých korunách **zaokrouhleno nahoru** na celé koruny.
 1. Pokud máte chuť, malinko stránku nastylujte, aby se uživatel v informacích vyznal.
 
----solution
+:::solution
 
 ```js
 const flight = {
@@ -146,3 +146,5 @@ document.body.innerHTML +=
   Math.ceil(flight.bags_price[2] * flight.conversion.EUR) +
   ' Kč</p>';
 ```
+
+:::

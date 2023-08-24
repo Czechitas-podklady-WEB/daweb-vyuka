@@ -9,7 +9,7 @@ Na obrázku vidíte rozložení čísel na klasické Francouzské ruletě. Rulet
 
 Vytvořte stránku, které uživatel zadá číslo a stránka odpoví jestli jde o číslo sudé nebo liché, černé nebo červené, nebo je to nula.
 
----solution
+:::solution
 
 ```js
 const cislo = Number(prompt('Zadej číslo rulety od 0 do 36.'));
@@ -34,3 +34,5 @@ if (cislo < 0 || cislo > 36) {
   }
 }
 ```
+
+:::

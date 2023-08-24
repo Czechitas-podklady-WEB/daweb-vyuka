@@ -34,7 +34,7 @@ Splňte následující zadání za použití metod na poli `tasks`.
 1. Vytvořte pole `upcomingTasks`, které obsahuje objekty pouze těch úkolů, které mají být splněný během následujících tří dnů.
 1. Zjistěte, zda jsou všechny úkoly z pole `upcomingTasks` již splněny. Uložte si hodnotu do proměnné `areUpcomingTasksDone`.
 
----solution
+:::solution
 
 ```js
 const taskNames = tasks.map((task) => {
@@ -54,3 +54,5 @@ const areUpcomingTasksDone = upcomingTasks.every((task) => {
   return task.done;
 });
 ```
+
+:::

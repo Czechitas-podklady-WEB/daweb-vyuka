@@ -28,7 +28,7 @@ demand: 2
 1. Zbavte se proměnné `cityElements` a funkci `map` použijte přímo uvnitř komponenty `App`.
 1. V konzoli si React bude stěžovat, že mu chybí `key` prop. Máme však štěstí, jména měst jsou unikátní. Můžeme tak na náš `div` přídat prop `key` a do něj poslat přímo název města.
 
----solution
+:::solution
 
 ```jsx
 import React from 'react';
@@ -62,3 +62,5 @@ const App = () => (
 
 createRoot(document.querySelector('#app')).render(<App />);
 ```
+
+:::

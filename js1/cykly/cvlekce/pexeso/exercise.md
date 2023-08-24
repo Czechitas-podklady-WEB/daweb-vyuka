@@ -21,6 +21,8 @@ Oživte pexesové kartičky. Kliknutí na libovolnou kartičku by ji mělo obrá
 
    - Že jsou kartičky ze stejného páru poznáte tak, že mají uvnitř obrázek `<img>` se stejnou hodnotou v atributu `src`.
 
----solution
+:::solution
 
 [app.js](https://github.com/Czechitas-podklady-WEB/cviceni-pexeso/blob/reseni/app.js)
+
+:::

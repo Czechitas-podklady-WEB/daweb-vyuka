@@ -21,7 +21,7 @@ Vaše aplikce by měla ve výsledku fungovat tak, že kdykoliv uživatel zadá r
 
 ::fig[chybně]{src=assets/chybne.png}
 
----solution
+:::solution
 
 ### `index.html`
 
@@ -72,3 +72,5 @@ formular.addEventListener('submit', (event) => {
   });
 });
 ```
+
+:::

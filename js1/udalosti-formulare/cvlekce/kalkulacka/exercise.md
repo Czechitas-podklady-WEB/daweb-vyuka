@@ -19,7 +19,7 @@ Zařiďte, aby se při kliknutí na libovolné tlačítko na displaji kalkulačk
 
 - Pomocí podmínky `if` zařiďte, aby číslo na displayi nezačínalo nulou, ledaže je tam nula samotná.
 
----solution
+:::solution
 
 ```js
 const display = document.querySelector('.display');
@@ -59,3 +59,5 @@ const handleDigitClick = (event) => {
   }
 };
 ```
+
+:::

@@ -18,7 +18,7 @@ Příklad použití
 2.5
 ```
 
----solution
+:::solution
 
 ```js
 const calculate = (number1, operation, number2) => {
@@ -71,3 +71,5 @@ console.log(
   -8
 );
 ```
+
+:::

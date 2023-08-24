@@ -14,7 +14,7 @@ Na konci by stránka v prohlížeči měla vypadat jako na obrázku níže:
 
 ::fig[Snímek obazovky s řešením]{src=assets/screen-nekupto.png}
 
----solution
+:::solution
 
 ```js
 const firstCard = document.querySelector('#product1');
@@ -26,3 +26,5 @@ secondCardButton.classList.remove('btn-primary');
 const thirdCardTitle = document.querySelector('#product3 .card-title');
 thirdCardTitle.classList.toggle('text-center');
 ```
+
+:::

@@ -13,6 +13,8 @@ Vzpomeňte si na příklad se zapínámím a vypínáním žárovky. V tomto cvi
 1. Na `div` element uvnitř komponenty připojte posluchač událost `click`. Ten žárovku při kliknutí rozsvítí/zhasne tím, že pomocí `replaceWith` nahradí starou žárovku novou žárovkou.
 1. Vyzkoušejte, že dokážete na stránce nezávisle rozsvítit a zhasnout všechny tři žárovky.
 
----solution
+:::solution
 
 Řešení naleznete v samostatném [Codesanboxu zde](https://codesandbox.io/s/zarovky-reseni-forked-z7917z).
+
+:::

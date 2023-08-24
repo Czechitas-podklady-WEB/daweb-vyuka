@@ -17,7 +17,7 @@ Vytvořte podobnou stránku s vaším vlastním tématem.
 
 1. Publikuje vaši stránku přes [GitHub Pages](https://pages.github.com/) (případně [Netlify drop](https://app.netlify.com/drop) či jinou alternativu, pokud je znáte).
 
----solution
+:::solution
 
 ```js
 const today = dayjs();
@@ -30,3 +30,5 @@ if (today.isAfter(aliensFoundDate)) {
   pageTitleEl.textContent = 'Mimoze-co? Nevím, o čem to mluvíte.';
 }
 ```
+
+:::

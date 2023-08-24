@@ -33,6 +33,8 @@ Spočítejte kolik dní uběhlo od premiéry nebo za kolik dní premiéra bude. 
 
 Zařiďte, aby tvar slova _den_ byl ve správném tvaru, aby se třeba nestalo „což bylo před 1 dní“.
 
----solution
+:::solution
 
 Všechny úlohy mají jedno společné vypracované řešení zde [github.com/Czechitas-podklady-WEB/projekt-FilmBox/tree/reseni](https://github.com/Czechitas-podklady-WEB/projekt-FilmBox/tree/reseni).
+
+:::

@@ -13,7 +13,7 @@ Zařiďte, aby minutka správně odpočítávala vteřiny a začala zvonit ve ch
 1. Při kliknutí na :i[Start] nastavte časovač pomocí `setInterval`. Ten se bude opakovat každou vteřinu a pokaždé sníží hodnotu v proměnné `time` o jedna.
 1. Jakmile proměnná `time` dosáhne nuly, zapněte zvonění a zrušte časovač aby nezačal počítat do mínusu.
 
----solution
+:::solution
 
 ```js
 const nastartujMinutku = (e) => {
@@ -46,3 +46,5 @@ const nastartujMinutku = (e) => {
 const formularElm = document.querySelector('.controls');
 formularElm.addEventListener('submit', nastartujMinutku);
 ```
+
+:::

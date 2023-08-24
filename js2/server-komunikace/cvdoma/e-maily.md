@@ -10,7 +10,7 @@ Vytvoříme jednoduchou aplikaci, která zobrazuje obsah e-mailové schránky.
 1. Podívejte se, jak se v HTML vytváří jeden e-mail.
 1. Smažte v HTML obsah elementu `#inbox`. Zobrazte na stránce e-maily stažené z API. Tělo e-mailu nechte prozatím prázdné.
 
----solution
+:::solution
 
 Soubor `index.js`:
 
@@ -40,3 +40,5 @@ fetch('https://apps.kodim.cz/daweb/trening-api/apis/emails')
   .then((response) => response.json())
   .then((data) => renderEmails(data.emails));
 ```
+
+:::

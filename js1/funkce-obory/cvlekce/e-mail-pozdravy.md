@@ -18,7 +18,7 @@ Každý e-mail je třeba zakončit zdvořilým pozdravem.
    S pozdravem Pavel Ovesný
    ```
 
----solution
+:::solution
 
 Obsah souboru `index.js`:
 
@@ -28,3 +28,5 @@ const goodbye = (name) => {
   closingElement.textContent = `Na shledanou ${name}`;
 };
 ```
+
+:::

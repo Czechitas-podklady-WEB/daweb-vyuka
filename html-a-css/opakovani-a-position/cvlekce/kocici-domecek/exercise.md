@@ -20,7 +20,7 @@ Každá z pěti kočiček si musí najít svoje místo.
 
 V souboru style.css je také přímo u daných tříd návod. Na počítání některých vzdáleností se bude hodit použití funkce [calc](https://www.vzhurudolu.cz/prirucka/css3-calc).
 
----solution
+:::solution
 
 Níže jsou uvedené pouze přidané styly. Mohou však být klidně přidané přímo k původním stylům.
 
@@ -104,3 +104,5 @@ Níže jsou uvedené pouze přidané styly. Mohou však být klidně přidané p
   bottom: 0;
 }
 ```
+
+:::
