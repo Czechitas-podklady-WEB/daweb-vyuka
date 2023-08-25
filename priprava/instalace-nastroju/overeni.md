@@ -13,6 +13,23 @@ Postupujte dle následujicích kroků.
 
    Tento příkaz spustí dotazník, který se vás zeptá na váš e-mail a jméno. E-mail zadejte ten, který jste použili při vytváření účtu na GitHubu.
 
-1. Pokud program záhlásí, že všechno proběhlo v pořádku, slavte úspěch. Pokud se cestou cokoliv pokazilo, pomohou vám naši lektoři a kouči.
+   ::fig[ukázka běhu ověření]{src=assets/overeni.gif}
 
-::fig[ukázka běhu ověření]{src=assets/overeni.gif}
+1. Pokud program zahlásí, že všechno proběhlo v pořádku, slavte úspěch. Pokud se cestou cokoliv pokazilo, napište do kanálu `#04_otazky` na Slacku, lektoři a koučové s vámi problém vyřeší.
+
+   Například se může stát, že se po spuštění výše uvedeného příkazu program nebude na nic ptát, vypíše následující chybu a ukončí se:
+
+   ```
+   npm ERR! code ENOENT
+   npm ERR! syscall lstat
+   npm ERR! path C:\Users\uzivatel\AAppData\Roaming\npm
+   npm ERR! errno -4058
+   npm ERR! enoent ENOENT: no such file or directory, lstat 'C:\Users\uzivatel\AppData\Roaming\npm'
+   npm ERR! enoent This is related to npm not being able to find a file.
+   npm ERR! enoent
+
+   npm ERR! A complete log of this run can be found in: C:\Users\uzivatel\AppData\Local\npm-cache\2023-…-debug-0.log
+
+   ```
+
+   To je přesně ten případ, kdy se _něco pokazilo_ a napište na Slack 😎
