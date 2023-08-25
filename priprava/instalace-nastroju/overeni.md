@@ -32,5 +32,4 @@ Postupujte dle následujicích kroků.
 
    ```
 
-   To je přesně ten případ, kdy se *něco pokazilo* a napište na Slack 😎
-
+   To je přesně ten případ, kdy se _něco pokazilo_ a napište na Slack 😎
