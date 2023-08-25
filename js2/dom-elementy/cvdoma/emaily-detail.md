@@ -15,6 +15,8 @@ Aplikaci _E-maily_ rozšíříme tak, aby zobrazovala detail e-mailu. Když uži
 1. Nyní stačí zařídit, aby se tělo e-mailu stáhlo z API. Přidejte posluchač události na tlačítko s obálkou. Při kliknutí na obálku zkontrolujte, jestli je _prop_ `body` prázdná. Pokud ano, stáhněte detail e-mailu dle [dokumentace](https://apps.kodim.cz/daweb/trening-api/docs/e-mailove-api#detail-e-mailu-get). Pomocí `replaceWith` aktualizujte komponentu a pošlete jí získané `body`.
 1. Pokud při kliknutí na obáku už `body` máme, chceme e-mail zase sbalit. Aktualizujte tedy komponentu tak, že jí pošlete _props_ bez `body`.
 
----solution
+:::solution
 
 Řešení célé série cvičení o e-mailech najdete v repozitáři v branchi [reseni](https://github.com/Czechitas-podklady-WEB/cviceni-emaily-dom/tree/reseni).
+
+:::

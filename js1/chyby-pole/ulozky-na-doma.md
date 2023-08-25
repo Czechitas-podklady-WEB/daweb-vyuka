@@ -1,4 +1,4 @@
 ## Doporučené úložky na doma
 
-::exc[cvdoma>pocitadlo]
-::exc[cvdoma>minutka2]
+::exc[cvdoma/pocitadlo]
+::exc[cvdoma/minutka2]

@@ -26,7 +26,7 @@ Vytvořte si repozitář ze šablony [cviceni-hodiny](https://github.com/Czechit
    ```
    zobrazily čas _08:05_.
 
----solution
+:::solution
 
 ## `index.html`
 
@@ -79,3 +79,5 @@ const Clock = (props) => {
 const appElm = document.querySelector('#app');
 appElm.innerHTML = times.map((time) => Clock(time)).join('');
 ```
+
+:::

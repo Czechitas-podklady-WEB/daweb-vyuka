@@ -1,3 +1,3 @@
 ## Cvičný projekt
 
-::exc[cvdoma>chytry-dum]
+::exc[cvdoma/chytry-dum]

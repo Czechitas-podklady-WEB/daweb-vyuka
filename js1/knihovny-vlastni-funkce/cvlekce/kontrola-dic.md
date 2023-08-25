@@ -23,7 +23,7 @@ Postupujte dle následujících kroků:
 1. Pokud funkce dospěla až do tohoto bodu, vstup prošel všemi testy. Můžeme vrátit `true`.
 1. Vyzoušejte svoji funkci v konzoli na různých vstupech a ověřte, že funguje. Nezapomeňte ověřit platná i neplatná DIČ.
 
----solution
+:::solution
 
 ```js
 const isDIC = (inputStr) => {
@@ -68,3 +68,5 @@ console.log('CZ12345678901', isDIC('CZ12345678901'));
 console.log('CZ12345678', isDIC('CZ12345678'));
 console.log('CZA23456789', isDIC('CZA12345678'));
 ```
+
+:::

@@ -5,4 +5,4 @@ Výsledkem bude responzivní stránka s light a dark módem.
 
 ::fig[Chata Arnica mobile]{src=assets/result.png}
 
-::exc[cvlekce>zadani]
+::exc[cvlekce/zadani]

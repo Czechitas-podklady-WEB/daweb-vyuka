@@ -1,4 +1,4 @@
 ## Cvičení: Interaktivní komponenty
 
-::exc[cvlekce>zarovky]
-::exc[cvlekce>kostky-1]
+::exc[cvlekce/zarovky]
+::exc[cvlekce/kostky-1]

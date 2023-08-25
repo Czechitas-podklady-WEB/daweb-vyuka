@@ -9,6 +9,8 @@ demand: 3
 1. Spusťte vývojový server přes `npm start`.
 1. Postupně projděte soubory `src/Uloha1/index.jsx`, `src/Uloha2/index.jsx`, `…` a vypracujte zadání v komentářích.
 
----solution
+:::solution
 
 Vypracované řešení najdete v původním repozitáři ve větvi [reseni](https://github.com/Czechitas-podklady-WEB/cviceni-react-udalosti/tree/reseni).
+
+:::

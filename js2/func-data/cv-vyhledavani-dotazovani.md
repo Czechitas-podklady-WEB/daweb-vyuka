@@ -1,3 +1,3 @@
 ## Cvičení: Vyhledávání, dotazování
 
-::exc[cvlekce>vyhledavani-dotazy]
+::exc[cvlekce/vyhledavani-dotazy]

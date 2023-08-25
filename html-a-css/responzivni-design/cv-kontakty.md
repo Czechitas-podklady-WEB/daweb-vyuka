@@ -1,3 +1,3 @@
 ## Projekt na doma: kontakty
 
-::exc[cvkontakty>projekt-kontakty]
+::exc[cvkontakty/projekt-kontakty]

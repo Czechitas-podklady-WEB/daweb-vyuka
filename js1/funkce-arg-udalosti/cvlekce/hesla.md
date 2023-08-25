@@ -42,7 +42,7 @@ Uživatel Řízek s heslem 074031827
 Uživatel Hustodémon s heslem mwwf9epts
 ```
 
----solution
+:::solution
 
 ```js
 const createAccount = (user, generatePassword) => {
@@ -55,3 +55,5 @@ document.body.innerHTML += `
 	<p>${createAccount('Hustodémon', strongPassword)}</p>
 `;
 ```
+
+:::

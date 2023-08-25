@@ -1,3 +1,3 @@
 ## Cvičení: Složitější formuláře
 
-::exc[cvlekce>objednavka]
+::exc[cvlekce/objednavka]

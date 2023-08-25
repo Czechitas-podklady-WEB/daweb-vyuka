@@ -5,7 +5,7 @@ demand: 2
 
 Přepište všechny WHILE cykly z předchozího cvičení na FOR cykly.
 
----solution
+:::solution
 
 1. ```js
    console.log('První FOR cyklus');
@@ -25,3 +25,5 @@ Přepište všechny WHILE cykly z předchozího cvičení na FOR cykly.
      console.log(i);
    }
    ```
+
+:::

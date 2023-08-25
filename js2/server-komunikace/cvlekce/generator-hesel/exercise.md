@@ -21,7 +21,7 @@ Vyrobíme stránku, která pomůže uživateli vygenerovat opravdu silné a nepr
 
 1. Přepracujte stránku tak, aby obsahovala formulář s textovým políčkem, do kterého uživatel může zadat délku hesla. Po odeslání formuláře se mu zobrazí heslo zadané délky.
 
----solution
+:::solution
 
 Soubor `index.html`:
 
@@ -106,3 +106,5 @@ formElm.addEventListener('submit', (e) => {
     });
 });
 ```
+
+:::

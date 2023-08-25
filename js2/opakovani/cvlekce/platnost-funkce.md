@@ -25,7 +25,7 @@ const rodnaCislaKOtestovani = [
 ];
 ```
 
----solution
+:::solution
 
 ```js
 const checkBirthID = (rodneCislo) => {
@@ -63,3 +63,5 @@ rodnaCislaKOtestovani.forEach((rc) => {
   }
 });
 ```
+
+:::

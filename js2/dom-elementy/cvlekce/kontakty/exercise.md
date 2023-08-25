@@ -25,7 +25,7 @@ Vytvoříme aplikaci, která zobrazuje seznam kontaktů. U každého kontaktu bu
 1. Stejným postupem přidejte na stránku ještě další dva kontakty `contact2` a `contact3`.
 1. Nepovinně si můžete pohrát se stylováním. U každého kontaktu se vám například může hodit takováto hezká [ikonka](assets/contact.png).
 
----solution
+:::solution
 
 Soubor `index.js`:
 
@@ -63,3 +63,5 @@ contact3.innerHTML = `
 `;
 app.append(contact3);
 ```
+
+:::

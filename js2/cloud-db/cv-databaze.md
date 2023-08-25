@@ -1,3 +1,3 @@
 ## Cvičení: Databáze
 
-::exc[cvlekce>databaze]
+::exc[cvlekce/databaze]

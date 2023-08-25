@@ -1,4 +1,4 @@
 ## Cvičení: Transformace, agregace
 
-::exc[cvlekce>transformace]
-::exc[cvlekce>agregace]
+::exc[cvlekce/transformace]
+::exc[cvlekce/agregace]

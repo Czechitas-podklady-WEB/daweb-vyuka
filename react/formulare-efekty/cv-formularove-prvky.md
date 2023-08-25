@@ -1,5 +1,5 @@
 ## Cvičení: Formulářové prvky
 
-::exc[cvlekce>registrace]
-::exc[cvlekce>vyber-zeme]
-::exc[cvlekce>zasilani-newsletteru]
+::exc[cvlekce/registrace]
+::exc[cvlekce/vyber-zeme]
+::exc[cvlekce/zasilani-newsletteru]

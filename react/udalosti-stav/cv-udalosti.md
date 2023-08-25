@@ -1,3 +1,3 @@
 ## Cvičení: Události
 
-::exc[cvlekce>udalosti]
+::exc[cvlekce/udalosti]

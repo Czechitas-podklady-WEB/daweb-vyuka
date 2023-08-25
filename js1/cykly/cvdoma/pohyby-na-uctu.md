@@ -14,7 +14,7 @@ const amounts = [2500, -550, 1000, -1200, -3000, 1270, 2300];
 1. Napište cyklus WHILE, který zjistí číslo pohybu, ve kterém se účet dostal poprvé do mínusu. Vypište jak číslo pohybu, tak výši záporného zůstatku.
 1. Výpis se spočtenými hodnotami by měl obsahovat zmínku, že se účet dostal na hodnotu **-1250** po **páté** transakci.
 
----solution
+:::solution
 
 1. ```js
    const amounts = [2500, -550, 1000, -1200, -3000, 1270, 2300];
@@ -39,3 +39,5 @@ const amounts = [2500, -550, 1000, -1200, -3000, 1270, 2300];
      `Zůstatek se poprvé dostal do záporné hodnoty ${zustatek} po transakci číslo ${i}.`
    );
    ```
+
+:::

@@ -19,7 +19,7 @@ const numbers = [
 1. Najděte v seznamu největší prvek.
 1. Najděte v seznamu největší prvek, který je menší než číslo 16.
 
----solution
+:::solution
 
 1. Vypište na výstup všechna čísla, která jsou větší než jejich předchůdce.
    ```js
@@ -84,3 +84,5 @@ const numbers = [
    });
    console.log('Největší číslo je:', max);
    ```
+
+:::

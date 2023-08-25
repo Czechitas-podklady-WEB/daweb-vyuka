@@ -17,6 +17,8 @@ Palindrom je slovo, které se čte stejně zleva doprava i zprava doleva. Např�
 
 - Pro určení palindromy ignorujte velikost písmen a mezery ve větách. Předpokládejte tedy, že i `Anna` nebo `drb z Brd` jsou palindromy.
 
----solution
+:::solution
 
 [app.js](https://github.com/Czechitas-podklady-WEB/cviceni-palindromy/blob/reseni/app.js)
+
+:::

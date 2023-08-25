@@ -11,7 +11,7 @@ V tomto cvičení budeme opět pracovat s poli z našich jednohubek.
 1. Pomocí metody `every` zjistěte, jestli v poli `persons` platí, že každá zletilá osoba je vždy buď muž nebo žena (tedy že vlastnost `gender` u dospělých osob má hodnotu `male` nebo hodnotu `female`).
 1. Pomocí metody `forEach` napište cyklus, který spočítá průměr čísel v poli `numbers`.
 
----solution
+:::solution
 
 1. Pomocí metody `forEach` napište cyklus, který vypíše do konzole poslední písmeno z každého jména v poli `names`.
 
@@ -50,3 +50,5 @@ V tomto cvičení budeme opět pracovat s poli z našich jednohubek.
    const average = sum / numbers.length;
    console.log(average);
    ```
+
+:::

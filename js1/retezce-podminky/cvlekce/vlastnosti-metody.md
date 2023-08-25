@@ -10,7 +10,7 @@ V **konzoli prohlížeče** si založte proměnnou `title` a uložte do ní **n�
 1. Vypište z názvu **prvních pět** písmen.
 1. Vypište z názvu **posledních pět** písmen.
 
----solution
+:::solution
 
 ```js
 const title = "Lord of the Rings"
@@ -31,3 +31,5 @@ title.slice(0, 5)
 ​
 title.slice(title.length - 5, title.length)
 ```
+
+:::

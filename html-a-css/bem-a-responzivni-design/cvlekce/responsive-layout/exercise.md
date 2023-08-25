@@ -17,7 +17,8 @@ Každou variantu si zkontrolujte v devtools a udělejte si printscreen celé str
 Podívejte se na výsledek:
 ::fig[výsledek]{src=assets/result.png}
 
----solution
+:::solution
+
 Varianty pro tři a čtyři sloupce jsou níže uvedeny v blocích `@media(…)` – co znamenají se dozvíte v příští lekci.
 Ve vašem řešení budete mít obsah příslušného bloku přímo u selektoru třídy `.foto`.
 Když použijete níže uvedené řešení s `@media(…)`, bude se počet sloupců měnit v závislosti na šířce okna prohlížeče.
@@ -57,3 +58,5 @@ header {
   }
 }
 ```
+
+:::

@@ -25,7 +25,7 @@ npm init kodim-app@latest cviceni-prihlaseni html-css-js
 
 Všimněte si, že se snažíme dodržovat standardní praxi. Uživatel by neměl vědět, jestli zadal špatně heslo nebo e-mail. Nikdo by totiž neměl bý schopný zjistit, jestli v systému daný uživatel už existuje. Zároveň je dobré špatné heslo z políčka vymazat, aby jej mohl uživatel rovnou zkusit napsat znovu.
 
----solution
+:::solution
 
 Obsah `body` v souboru `index.html`:
 
@@ -72,3 +72,5 @@ document.querySelector('#login-form').addEventListener('submit', (e) => {
   }
 });
 ```
+
+:::

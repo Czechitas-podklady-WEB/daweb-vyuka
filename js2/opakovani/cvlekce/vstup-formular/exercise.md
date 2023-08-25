@@ -23,7 +23,7 @@ Upravte vaši aplikaci na kontrolu rodných čísel tak, aby obsahovala formulá
 
 ::fig[chybně]{src=assets/chybne.png}
 
----solution
+:::solution
 
 ### `index.html`
 
@@ -63,3 +63,5 @@ formular.addEventListener('submit', (event) => {
   }
 });
 ```
+
+:::

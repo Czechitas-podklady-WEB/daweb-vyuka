@@ -28,7 +28,7 @@ fillSubject('Pozvánka na oslavu narozenin');
 fillBody('Zítra oslava. 18:00 ve Starý hospodě.', 'Patrik Veselý', rudeGoodbye);
 ```
 
----solution
+:::solution
 
 ```js
 const goodbye = (name) => {
@@ -54,3 +54,5 @@ const fillBody = (body, name, goodbyeFunction) => {
   closingElm.textContent = goodbyeFunction(name);
 };
 ```
+
+:::

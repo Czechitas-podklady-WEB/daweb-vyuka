@@ -36,6 +36,8 @@ demand: 3
    Tato zpráva bude vidět pouze pokud je ve stavu `userName` prázdný řetězec. V opačném případě tento div nezobrazujte.
 1. Vzpomeňte si na vlastnost `disabled` a zařiďte, aby registrační tlačítko bylo klikatelné pouze v případě, že ve stavu `userName` není prázdný řetězec.
 
----solution
+:::solution
 
 Řešení naleznete v samostatném [Codesanboxu zde](https://codesandbox.io/s/da-web-registrace-t1ogp1?file=/src/App.jsx).
+
+:::

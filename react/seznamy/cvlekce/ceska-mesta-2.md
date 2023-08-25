@@ -65,7 +65,7 @@ Pokračujte v projektu z předchozího příkladu.
 1.  Vytvořte komponentu `City`, jejímž úkolem bude zobrazovat jedno město. Tato komponenta bude mít props `name`, `population` a `area`. Použijte komponentu k zobrazení každého města ze seznamu.
 1.  Pro komponentu `City` vytvořte vlastní složku a komponentu malinko nastylujte, aby vypadala hezky.
 
----solution
+:::solution
 
 hlavní index.jsx
 
@@ -161,3 +161,5 @@ export const City = ({ name, population, area }) => (
   </div>
 );
 ```
+
+:::

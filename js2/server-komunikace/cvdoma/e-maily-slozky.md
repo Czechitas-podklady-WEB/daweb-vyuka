@@ -9,7 +9,7 @@ V naší e-mailové aplikaci zobrazíme dvě oddělené sekce: přečtené zprá
 1. Naplňte každou sekci přislušnými zprávami načtenými z API.
 1. Zařiďte, aby se u přečtených e-mailů zobrazovala ikonka otevřené obálky (viz CSS třída `email__icon--opened`).
 
----solution
+:::solution
 
 Soubor `index.html`:
 
@@ -80,3 +80,5 @@ fetch(`https://apps.kodim.cz/daweb/trening-api/apis/emails?folder=read`)
   .then((response) => response.json())
   .then((data) => renderSection(data.emails, 'read'));
 ```
+
+:::

@@ -1,3 +1,3 @@
 ## Cvičení: Stav
 
-::exc[cvlekce>stav]
+::exc[cvlekce/stav]

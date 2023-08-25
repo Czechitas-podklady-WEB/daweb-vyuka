@@ -39,7 +39,7 @@ npm init kodim-app@latest cviceni-objednavka html-css-js
 
 - Zkuste místo události `input` poslouchat na událost `change`. Jak se liší jejich chování? Která varianta je lepší? `input` nebo `change`?
 
----solution
+:::solution
 
 Obsah souboru `index.html`:
 
@@ -76,3 +76,5 @@ formular.addEventListener('submit', (event) => {
    `;
 });
 ```
+
+:::

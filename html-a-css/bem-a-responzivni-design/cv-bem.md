@@ -1,3 +1,3 @@
 ## Cvičení: BEM
 
-::exc[cvlekce>bem]
+::exc[cvlekce/bem]

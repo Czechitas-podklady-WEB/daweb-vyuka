@@ -23,6 +23,8 @@ Pokračujte v předchozím cvičení.
    Uživatel „???“ ze země „???“ se chce zaregistrovat a o novinky nemá zájem.
    ```
 
----solution
+:::solution
 
 Řešení naleznete v samostatném [Codesanboxu zde](https://codesandbox.io/s/da-web-registrace-zasilani-newsletteru-ibp3g3?file=/src/App.jsx).
+
+:::

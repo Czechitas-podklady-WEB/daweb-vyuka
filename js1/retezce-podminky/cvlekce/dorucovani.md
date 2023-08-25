@@ -15,7 +15,7 @@ Vytvořte webovou stránku, kde uživatel zadá svoji adresu například pro ú�
    ```
 1. Pomocí `document.body.innerHTML` vložte sestavené HTML do stránky.
 
----solution
+:::solution
 
 ```js
 const street = prompt('Zadejte ulici:');
@@ -30,3 +30,5 @@ document.body.innerHTML = `
    </address>
 `;
 ```
+
+:::

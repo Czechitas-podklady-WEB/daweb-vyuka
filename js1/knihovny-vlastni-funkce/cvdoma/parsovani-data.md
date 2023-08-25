@@ -12,7 +12,7 @@ Bez použití knihovny `Day.js` napište funkci `parseDate`, která na vstupu ob
 { day: 6, month: 4, year: 2021 }
 ```
 
----solution
+:::solution
 
 ```js
 const parseDate = (datum) => {
@@ -23,3 +23,5 @@ const parseDate = (datum) => {
   };
 };
 ```
+
+:::

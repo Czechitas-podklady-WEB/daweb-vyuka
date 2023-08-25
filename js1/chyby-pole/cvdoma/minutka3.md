@@ -7,7 +7,7 @@ Vylepšete program naší kuchyňské minutky tak, aby zobrazovala nejen vteřin
 
 Dejte pozor na správné formátování, kdy jednociferné hodnoty je zvykem zobrazovat s nulou na začátku. Vzpomeňte si, že na řetězcích máme metodu `padStart`, která nám s tímto může velmi pomoct.
 
----solution
+:::solution
 
 ```js
 const nastartujMinutku = (e) => {
@@ -49,3 +49,5 @@ const nastartujMinutku = (e) => {
 const formularElm = document.querySelector('.controls');
 formularElm.addEventListener('submit', nastartujMinutku);
 ```
+
+:::

@@ -1,3 +1,3 @@
 ## Zadání cvičení Filmy
 
-::exc[cvlekce>filmy]
+::exc[cvlekce/filmy]

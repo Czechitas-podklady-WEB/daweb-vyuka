@@ -1,3 +1,3 @@
 ## Cvičný projekt
 
-::exc[cvdoma>barevne-palety]
+::exc[cvdoma/barevne-palety]

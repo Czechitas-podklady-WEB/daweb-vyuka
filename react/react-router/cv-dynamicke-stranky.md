@@ -1,3 +1,3 @@
 ## Cvičení: Dynamické stránky
 
-::exc[cvlekce>parametry]
+::exc[cvlekce/parametry]

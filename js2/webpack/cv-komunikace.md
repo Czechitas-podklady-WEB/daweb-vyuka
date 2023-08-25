@@ -1,3 +1,3 @@
 ## Cvičení: Základy komunikace
 
-::exc[cvlekce>posun-polozek]
+::exc[cvlekce/posun-polozek]

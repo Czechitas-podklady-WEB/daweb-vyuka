@@ -9,7 +9,7 @@ Založte JavaScriptový program a splňte následující úkoly.
 1. Váš program nechť hází kostkou tak dlouho, až poprvé padne šestka. Vypište na výstup na kolikátý pokus šestka padla.
 1. Spusťte váš program desetkrát za sebou a zaznamenejte výsledky. Sdílejte vaše výsledky s ostatními abychom nasbírali co nejvíce dat.
 
----solution
+:::solution
 
 ```js
 const roll = () => {
@@ -26,3 +26,5 @@ while (rolledNumber !== 6) {
 
 console.log(`Šestka se hodila na ${counter}. pokus`);
 ```
+
+:::

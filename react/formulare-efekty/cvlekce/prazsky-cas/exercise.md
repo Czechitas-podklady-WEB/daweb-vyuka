@@ -23,6 +23,8 @@ demand: 2
 
    pod položkou `datetime`. Získanou hodnotu uložte do stavu a vyzkoušejte, že vaše aplikace funguje.
 
----solution
+:::solution
 
 Řešení naleznete v samostatném [Codesanboxu zde](https://codesandbox.io/s/da-web-prazsky-cas-8n3ruv?file=/src/App.jsx).
+
+:::

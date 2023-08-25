@@ -64,7 +64,7 @@ Postupujte dle následujících kroků.
 
 Po zadání rodného čísla by se v konzoli měly objevit čtyři výpisy.
 
----solution
+:::solution
 
 ### `index.js`
 
@@ -99,3 +99,5 @@ if (platne) {
   console.log('❌ Uživatel zadal neplatné rodné číslo.');
 }
 ```
+
+:::

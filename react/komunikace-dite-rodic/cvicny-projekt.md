@@ -1,3 +1,3 @@
 ## Cvičný projekt
 
-::exc[cvdoma>mixer-barev]
+::exc[cvdoma/mixer-barev]

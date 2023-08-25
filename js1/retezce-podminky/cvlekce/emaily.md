@@ -31,7 +31,7 @@ Postupujte dle následujících kroků.
    ```
 1. Pro kontrolu **vypište tento objekt do stránky**. Každou hodnotu vypište jako odstavec.
 
----solution
+:::solution
 
 ```js
 const email = prompt('Zadejte e-mail:');
@@ -44,3 +44,5 @@ document.body.innerHTML =
   '<p>Uživatelské jméno: ' + parsedEmail.userName + '</p>';
 document.body.innerHTML += '<p>Doména: ' + parsedEmail.domain + '</p>';
 ```
+
+:::

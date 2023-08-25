@@ -1,4 +1,4 @@
 ## Cvičení: Flexbox
 
-::exc[cvlekce>flexorder]
-::exc[cvlekce>contacts]
+::exc[cvlekce/flexorder]
+::exc[cvlekce/contacts]

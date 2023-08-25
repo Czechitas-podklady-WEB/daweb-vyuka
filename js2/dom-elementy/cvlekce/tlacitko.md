@@ -24,7 +24,7 @@ Pomocí vlastních DOM elementů přidáme na stránku několik tlačítek.
 1. Vyberte ze stránky element `#app` a vložte tlačítko na stránku pomocí metody `append`.
 1. Stejným postupem přidejte na stránku ještě další dvě tlačítka s různými nápisy a sledujte, kam do stránky se vložila.
 
----solution
+:::solution
 
 Soubor `index.js`:
 
@@ -48,3 +48,5 @@ const tlacitko3 = document.createElement('button');
 tlacitko3.textContent = 'Třetí tlačítko';
 app.append(tlacitko3);
 ```
+
+:::

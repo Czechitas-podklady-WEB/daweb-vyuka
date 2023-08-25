@@ -15,7 +15,7 @@ Dále vytvořte funkci `taxed`, která na vstupu obdrží částku a procento zd
 
 Použítím funkcí `salary` a `taxed` spočítejte svoji měsíční mzdu po 15% zdanění.
 
----solution
+:::solution
 
 ```js
 const salary = (wage, hours, days) => {
@@ -40,3 +40,5 @@ document.body.innerHTML = `
 	<p>After taxation: ${afterTaxation} Kč</p>
 `;
 ```
+
+:::
