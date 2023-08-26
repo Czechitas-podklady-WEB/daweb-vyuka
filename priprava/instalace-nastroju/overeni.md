@@ -15,14 +15,14 @@ Postupujte dle následujicích kroků.
 
    ::fig[ukázka běhu ověření]{src=assets/overeni.gif}
 
-1. Pokud program zahlásí, že všechno proběhlo v pořádku, slavte úspěch. Pokud se cestou cokoliv pokazilo, napište do kanálu `#04_otazky` na Slacku, lektoři a koučové s vámi problém vyřeší.
+1. Pokud program zahlásí, že všechno proběhlo v pořádku, slavte úspěch. Pokud se cestou cokoliv pokazilo, napište do kanálu `#04_otazky-XXXX` na Slacku, lektoři a koučové s vámi problém vyřeší. Je dobré z terminálu do Slacku zkopírovat příkaz, který jste spustili, a celý jeho výstup. Můžete poslat i snímek obrazovky, ale kopie textu hezky zformátovaná jako kód je lepší (jak na to se dozvíte o dvě kapitolky dál v [Sdílení kódu v textových zprávách](kod-ve-zpravach)).
 
    Například se může stát, že se po spuštění výše uvedeného příkazu program nebude na nic ptát, vypíše následující chybu a ukončí se:
 
    ```
    npm ERR! code ENOENT
    npm ERR! syscall lstat
-   npm ERR! path C:\Users\uzivatel\AAppData\Roaming\npm
+   npm ERR! path C:\Users\uzivatel\AppData\Roaming\npm
    npm ERR! errno -4058
    npm ERR! enoent ENOENT: no such file or directory, lstat 'C:\Users\uzivatel\AppData\Roaming\npm'
    npm ERR! enoent This is related to npm not being able to find a file.
@@ -32,4 +32,9 @@ Postupujte dle následujicích kroků.
 
    ```
 
-   To je přesně ten případ, kdy se _něco pokazilo_ a napište na Slack 😎
+   To je přesně ten případ, kdy se _něco pokazilo_ a napište na Slack do `#04_otazky-XXXX` 😎
+
+1. Pokud oveření dopadlo dobře, můžete terminál zavřít zadáním příkazu
+   ```shell
+   exit
+   ```

@@ -4,8 +4,8 @@ access: public
 sections:
   - prohlizec
   - vs-code
-  - node
   - git
+  - node
   - slozka
   - overeni
   - specialni-znaky
