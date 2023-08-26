@@ -12,12 +12,6 @@ Do terminálu napište následující příkaz:
 npm i -g npm
 ```
 
-Pozor na mezery, všechna písmena jsou malá, před `g` je jedna pomlčka. Vypíše se pár řádků o tom, z jaké verze na jakou verzi se `npm` aktualizuje (skončit byste měli na verzi 9.8.1 nebo novější) a po chvilce se objeví opět řádek s výzvou (končí zobáčkem `>` ve Windows nebo dolarem `$` na MacOS a Linuxu), za kterou můžete psát další příkaz. Můžete zkusit třeba příkaz:
-
-```shell
-npm -v
-```
-
-Ten vypíše aktuální verzi `npm` a hned skončí.
+Pozor na mezery, všechna písmena jsou malá, před `g` je jedna pomlčka. Vypíše se pár řádků o tom, z jaké verze na jakou verzi se `npm` aktualizuje (skončit byste měli na verzi 9.8.1 nebo novější) a po chvilce se objeví opět řádek s výzvou (končí zobáčkem `>` ve Windows nebo dolarem `$` na MacOS a Linuxu), za kterou můžete psát další příkaz.
 
 Okno terminálu se vám bude hodit ještě pro ověření celé instalace, takže ho ještě nezavírejte.
