@@ -31,3 +31,13 @@ Druhý vypíše všechny zprávy, které byly do chatu odeslány.
 ```sh
 npx @czechitas/chat list
 ```
+
+Občas se program `npx` ještě dozeptá, jestli si do sebe může doinstalovat rozšiřující balíček `@czechitas/chat`. Otázku odsouhlasíte stisknutím klávesy :kbd[Enter].
+
+```text
+Need to install the following packages:
+  @czechitas/chat
+Ok to proceed? (y)
+```
+
+::fig[npx serve]{src=assets/serve.png}

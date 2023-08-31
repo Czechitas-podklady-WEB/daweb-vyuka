@@ -6,16 +6,6 @@ Následující příkaz pro příkazovou řádku spustí na vašem počítači w
 npx serve
 ```
 
-Občas se program `npx` ještě dozeptá, jestli si do sebe může doinstalovat rozšiřující balíček `serve`. Otázku odsouhlasíte stisknutím klávesy :kbd[Enter].
-
-```text
-Need to install the following packages:
-  serve
-Ok to proceed? (y)
-```
-
-::fig[npx serve]{src=assets/serve.png}
-
 Server poté můžete navštívit na adrese [localhost:3000](http://localhost:3000) ve webovém prohlížeči.
 
 Všimněte si názvu _localhost_, který slouží jako přezdívka vašeho počítače. Na server přes tuto adresu můžete přistoupit jen vy, je lokální/místní.
