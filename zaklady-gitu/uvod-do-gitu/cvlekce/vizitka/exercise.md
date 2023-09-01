@@ -29,7 +29,7 @@ demand: 4
    - `git commit -m "Základní HTML"`
 1. Commit nahrajte na GitHub příkazem `git push`. Při úspěchu by poslední řádek v příkazové řádce po nahrání měl vypadat přibližně takto, i když bude začína jinou změtí čísel a písmen:
 
-   ```
+   ```text
    668612b..54c9a30 main     -> origin/main
    ```
 
