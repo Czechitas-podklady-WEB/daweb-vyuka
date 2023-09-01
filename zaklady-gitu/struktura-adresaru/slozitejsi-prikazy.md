@@ -10,7 +10,7 @@ nazev-prikazu první druhý třetí 100 "delší text"
 
 ### `echo`
 
-Ukázkou programu, který pracuje s více parametry je například `echo` (zvěna). Tento program vypíše zpět na obrazovku všechno, co mu zadáte jako parametry.
+Ukázkou programu, který pracuje s více parametry je například `echo` (ozvěna). Tento program vypíše zpět na obrazovku všechno, co mu zadáte jako parametry.
 
 ```sh
 echo Ahoj
