@@ -40,4 +40,4 @@ Need to install the following packages:
 Ok to proceed? (y)
 ```
 
-::fig[npx serve]{src=assets/serve.png}
+::fig[výsledek `npx @czechitas/chat list`]{src=assets/chat-list.png}
