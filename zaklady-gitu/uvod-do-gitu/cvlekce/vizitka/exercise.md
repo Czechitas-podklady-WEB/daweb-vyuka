@@ -20,7 +20,7 @@ demand: 4
 
    - Na Macu a v Linux by měl výstup příkazu `ls` vypadat nějak takto:
 
-     ::fig[dir]{src=assets/ls.png size=50}
+     ::fig[ls]{src=assets/ls.png size=50}
 
    - Pokud jste ve špatné složce, příkazem `cd` se přesuňte na správné umístění.
 
