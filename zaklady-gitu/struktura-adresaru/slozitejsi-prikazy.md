@@ -20,13 +20,18 @@ echo Ahoj
 
 Vést konverzaci se sebou samým je trochu zvláštní a rychle omrzí. Pokud si chcete popovídat s někým dalším, může vyzkoušet následující příkazy.
 
-První odešle zprávu do společného chatu.
+#### První odešle zprávu do společného chatu.
 
 ```sh
 npx @czechitas/chat send "Jak se máte?"
 ```
 
-Druhý vypíše všechny zprávy, které byly do chatu odeslány.
+- `npx` je program,
+- `@czechitas/chat` je první parametr,
+- `send` je druhý parametr,
+- `Jak se máte?` je poslední parametr.
+
+#### Druhý příkaz vypíše všechny zprávy, které byly do chatu odeslány.
 
 ```sh
 npx @czechitas/chat list
