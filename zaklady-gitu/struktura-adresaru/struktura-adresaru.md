@@ -46,14 +46,6 @@ Adresáře, neboli složky můžeme procházet, podobně jako to znáte z Window
 
   Příkaz `cd` je možné pouštět vícekrát za sebou nebo skládat delší cesty pomocí lomítek. Například `cd ../../..` vás přesune o tři úrovně výše nebo `cd ../tajne` do složky `tajne`, která je o jednu úroveň výše.
 
-#### Vytvoření další složky
-
-- ##### Mac, Linux i Windows
-
-  ```sh
-  mkdir nazev-nove-slozky
-  ```
-
 #### Zjištění aktuální složky
 
 - ##### Mac, Linux
@@ -84,4 +76,14 @@ Adresáře, neboli složky můžeme procházet, podobně jako to znáte z Window
 
   ```sh
   type nazev-souboru.txt
+  ```
+
+### Bonus
+
+#### Vytvoření nové složky
+
+- ##### Mac, Linux i Windows
+
+  ```sh
+  mkdir nazev-nove-slozky
   ```

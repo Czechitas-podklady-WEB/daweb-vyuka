@@ -10,7 +10,7 @@ nazev-prikazu první druhý třetí 100 "delší text"
 
 ### `echo`
 
-Ukázkou programu, který pracuje s více parametry je například `echo` (zvěna). Tento program vypíše zpět na obrazovku všechno, co mu zadáte jako parametry.
+Ukázkou programu, který pracuje s více parametry je například `echo` (ozvěna). Tento program vypíše zpět na obrazovku všechno, co mu zadáte jako parametry.
 
 ```sh
 echo Ahoj
@@ -20,13 +20,18 @@ echo Ahoj
 
 Vést konverzaci se sebou samým je trochu zvláštní a rychle omrzí. Pokud si chcete popovídat s někým dalším, může vyzkoušet následující příkazy.
 
-První odešle zprávu do společného chatu.
+#### První odešle zprávu do společného chatu.
 
 ```sh
 npx @czechitas/chat send "Jak se máte?"
 ```
 
-Druhý vypíše všechny zprávy, které byly do chatu odeslány.
+- `npx` je program,
+- `@czechitas/chat` je první parametr,
+- `send` je druhý parametr,
+- `Jak se máte?` je poslední parametr.
+
+#### Druhý příkaz vypíše všechny zprávy, které byly do chatu odeslány.
 
 ```sh
 npx @czechitas/chat list
@@ -40,4 +45,4 @@ Need to install the following packages:
 Ok to proceed? (y)
 ```
 
-::fig[npx serve]{src=assets/serve.png}
+::fig[výsledek `npx @czechitas/chat list`]{src=assets/chat-list.png}

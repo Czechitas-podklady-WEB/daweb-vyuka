@@ -1,9 +1,9 @@
 ---
-title: Webová textovka
+title: Webová textovka Vetřelec
 demand: 3
 ---
 
-Hru z předchozího cvičení převeďte na webovou stránku.
+Hru Vetřelec z předchozího cvičení převeďte na webovou stránku.
 
 1. Otevřete si složku `vetrelec-main` ve _VS Code_.
 
