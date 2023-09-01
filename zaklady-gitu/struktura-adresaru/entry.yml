@@ -2,8 +2,9 @@ title: Struktura adresářů
 lead: Procvičíme si orientaci v adresářích a naučíme se základní práci s příkazovou řádkou.
 sections:
   - prikazova-radka
+  - slozitejsi-prikazy
   - struktura-adresaru
-  - cv-textovka
+  - cv-prikazova-radka
   - server
   - cv-webova-textovka
   - integrovany-terminal
