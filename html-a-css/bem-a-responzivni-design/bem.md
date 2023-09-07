@@ -52,8 +52,6 @@ Elementy jsou jednotky, ze kterých je blok tvořen. Elementy samy o sobě nemaj
 .card__title
 .card__amount
 .card__difference
-.card__footer__amount ❌
-.card__footer__difference ❌
 ```
 
 Elementy se nezanořují, není to kopírování HTML struktury.
