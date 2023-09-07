@@ -93,6 +93,8 @@ Proto pokud je element modifikovaný, je potřeba do HTML přidat všechny stylo
 
 Na obrázku vidíte jeden z možných příkladů, jak využít metodiky BEM při stylování. Pokud máme takto nachystanou jednu kartičku s produktem, můžeme ji opakovat několikrát s jinými produkty. Díky stejným třídám budou mít všechny karty stejné stylování. 
 
+::fig[BEM Block]{src=assets/BEM-example.png}
+
 #### Výhody použití BEM
 
 - můžeme recyklovat CSS na více komponentách
