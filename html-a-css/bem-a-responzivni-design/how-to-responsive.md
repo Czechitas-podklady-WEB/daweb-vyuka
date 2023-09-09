@@ -17,6 +17,7 @@ Prvním krokem pro tvorbu responzivního webu je přidat `meta` značku `viewpor
 </html>
 ```
 
+::fig[Meta viewport]{src=assets/meta-viewport.png}
 
 ## Techniky responzivního webdesignu
 
@@ -30,16 +31,25 @@ V této lekci si projdeme flexibilní layout.
 
 ### Flexibilní layout
 
-Pro tvorbu flexibilního layoutu pomáhá designérům grid, neboli mřížka. Jde o systém sloupců a řádků, kde elementy zabírají vždy nějaký poměr stránky nehledě na na velikost zařízení. Oproti neresponsivním webům se tak třeba několikaslopcový grid nezmenší (neodzoomuje), aby se vmáčkl na telefon, ale sloupce se zalomí pod sebe. [Příklad komponent navrhovaných do grid systému.](https://dribbble.com/shots/15341964-Grid-System-UI-Components)
+Pro tvorbu flexibilního layoutu pomáhá designérům rozvržení stránky do gridu, neboli mřížky. Jde o systém sloupců a řádků, kde elementy zabírají vždy nějaký poměr stránky nehledě na velikost zařízení. Při změně velikosti zařízení si prvky na stránce drží svůj poměr, nebo se zalomí pod sebe, pokud už je prostor nedostačující. Oproti neresponzivním webům tak třeba několikaslopcový grid nepřeteče mimo viewport menšího zařízení, ale sloupce se zalomí pod sebe. 
 
-Pružného layoutu, který se přizpůsobí jakékoli velikosti stránek, dosáhneme pomocí relativních jednotek. Díky procentům budou elementy na stránce zabírat stejný poměr prostoru nehledě na rozlišení. 
+::fig[grid-responzivni]{src=assets/grid-gif.gif}
 
+#### Relativní jednotky
 
+Pružného layoutu, který se přizpůsobí jakékoli velikosti stránek, dosáhneme pomocí relativních jednotek jako jsou procenta, `vw` a `vh`. Díky nim budou elementy na stránce zabírat stejný poměr prostoru nehledě na velikost zařízení. Mřížku např. tří sloupců si tak jednoduše vytvoříme pomocí procent a funkce `calc()`. 
 
-Mřížku napři. tří sloupců si tak jednoduše vytvoříme pomocí procent a funkce calc()
+```
+width: calc(100% / 3);
+```
 
-Stejně tak se hodí jednotky vh a vw, kde pracujeme s poměrem aktuálního viewportu. 
+#### Flexbox
 
-Flexbox
+Další nástroj pro tvorbu responzivního layoutu už znáte - je to flexbox. S ním snadno zařídíte např. responzivní galerii obrázků, které se budou zalamovat pod sebe nehledě na velikost obrazovky. Zásadní je tady vlastnost `flex-wrap`, pomocí které nastavíme automatické zalamování.
 
-Další nástroj pro tvorbu reponsivního layoutu už znáte - je o flexbox. Pomocí něj např. zařídíte responsivní galerii obrázků, které se budou zalamovat pod sebe nehledě na velikost obrazovky.
+```
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+```
