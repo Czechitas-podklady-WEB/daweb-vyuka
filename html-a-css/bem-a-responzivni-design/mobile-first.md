@@ -1,6 +1,6 @@
 ## Mobile first
 
-Správný postup, jak navrhovat a kódovat responzivní webové stránky je začít od mobilních zařízení, a teprve potom přidávat styly pro větší zařízení. Proč bychom měli postupovat tímto způsobem?
+Správný přístup, jak navrhovat a kódovat responzivní webové stránky je začít od mobilních zařízení, a teprve potom přidávat styly pro větší zařízení. Proč bychom měli postupovat tímto způsobem?
 
 ### Nějaká ta čísla
 

@@ -17,17 +17,14 @@ img {
 }
 ```
 
-Toto ale znamená, že se při zvětšení kontejneru obrázek může roztáhnout nad svojí původní šířku, a mít tak horší kvalitu. Pokud chceme, aby se obrázek přizpůsobil obsahu, ale nepřekročil svoji původní velikost, použijeme `max-width`. 
+Toto ale znamená, že se při zvětšení kontejneru obrázek může roztáhnout nad svojí původní šířku, a mít tak horší kvalitu. Pokud chceme, aby se obrázek přizpůsobil obsahu, ale nepřekročil svoji původní velikost, použijeme `max-width`. Zároveň můžeme využít `width` pro specifikování jeho ideální šířky. 
 
 ```css
 img {
   max-width: 100%;
+  width: 500px;
 }
 ```
-
-Tady bude mít obrázek ideálně šířku 500px, a pokud se nevejde, tak se zmenší.
-
-
 
 Další možností jak přizpůsobit obrázek velikosti kontejneru je použití [background image](https://www.freecodecamp.org/news/css-background-image-with-html-example-code/).
 

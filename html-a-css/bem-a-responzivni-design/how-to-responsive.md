@@ -31,7 +31,7 @@ V této lekci si projdeme flexibilní layout.
 
 ### Flexibilní layout
 
-Pro tvorbu flexibilního layoutu pomáhá designérům rozvržení stránky do gridu, neboli mřížky. Jde o systém sloupců a řádků, kde elementy zabírají vždy nějaký poměr stránky nehledě na velikost zařízení. Při změně velikosti zařízení si prvky na stránce drží svůj poměr, nebo se zalomí pod sebe, pokud už je prostor nedostačující. Oproti neresponzivním webům tak třeba několikaslopcový grid nepřeteče mimo viewport menšího zařízení, ale zmenší se počet sloupců.
+Pro tvorbu flexibilního layoutu pomáhá designérům rozvržení stránky do gridu, neboli mřížky. Jde o systém sloupců a řádků, kde elementy zabírají vždy nějaký poměr stránky nehledě na velikost zařízení. Při změně velikosti zařízení si prvky na stránce drží svůj poměr, nebo se zalomí pod sebe, pokud už je prostor nedostačující. Oproti neresponzivním webům tak třeba několikasloupcový grid nepřeteče mimo viewport menšího zařízení, ale zmenší se jeho počet sloupců.
 
 ::fig[grid-responzivni]{src=assets/grid-gif.gif}
 
@@ -45,7 +45,7 @@ width: calc(100% / 3);
 
 #### Flexbox
 
-Další nástroj pro tvorbu responzivního layoutu už znáte - je to flexbox. S ním snadno zařídíte např. responzivní galerii obrázků, které se budou zalamovat pod sebe nehledě na velikost obrazovky. Zásadní je tady vlastnost `flex-wrap`, pomocí které nastavíme automatické zalamování.
+Další nástroj pro tvorbu responzivního layoutu už znáte - je to flexbox. S ním snadno zařídíte např. responzivní galerii obrázků, které se budou zalamovat pod sebe při zmenšení obrazovky. Zásadní je tady vlastnost `flex-wrap`, pomocí které nastavíme automatické zalamování.
 
 ```
 .container {
@@ -55,4 +55,4 @@ Další nástroj pro tvorbu responzivního layoutu už znáte - je to flexbox. S
 ```
 
 #### CSS Grid
-Poslední nástroj, který musíme zmínit, ale který není součástí našeho kurzu je CSS Grid. V rámci samostudia si můžete pročíst, [jak se pomocí něj nastavují řádky a sloupce layoutu](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout).
+Poslední nástroj, který musíme zmínit, ale který není součástí našeho kurzu je CSS Grid. V rámci samostudia si můžete pročíst, [jak se s ním nastavují řádky a sloupce layoutu](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout).
