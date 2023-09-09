@@ -2,7 +2,7 @@
 
 ### Meta značka viewport
 
-Meta značka `viewport` v hlavičce HTML zajišťuje, že obsah našeho webu se bude přizpůsobovat šířce zařízení a že standardní zobrazení je 1:1, tj. prohlížeč nebude stránku sám zvětšovat nebo zmenšovat (_zoomovat_).
+Prvním krokem pro tvorbu responzivního webu je přidat `meta` značku `viewport` v hlavičce HTML se správným nastavením atributu `content`. To zajistí, že se obsah stránky bude přizpůsobovat šířce zařízení a že nebude prohlížečem nijak _přizoomovaný_ nebo _odzoomovaný_. Bez použití této značky použije prohlížeč defaultní rozměr 980px a stránku dostatečně oddálí, aby se vmáčkla na menší zařízení. (HTML šablona generovaná přes emmet má toto nastavení automaticky a není třeba ho přidávat).
 
 ```html
 <html>
@@ -17,20 +17,29 @@ Meta značka `viewport` v hlavičce HTML zajišťuje, že obsah našeho webu se 
 </html>
 ```
 
+
 ## Techniky responzivního webdesignu
 
 Máme tři hlavní techniky responzivního webdesignu:
 
-- flexibilní grid
+- flexibilní layout
 - flexibilní obrázky
 - media queries
 
-V této lekci si projdeme flexibilní grid.
+V této lekci si projdeme flexibilní layout.
 
-### Flexibilní grid
+### Flexibilní layout
 
-Grid, neboli mřížka, byla původně používaná pro tištěný design. Mřížku tvořil systém sloupců a řádků, na které se umisťuje obsah – představte si třeba staré papírové noviny. Je to ale i velice užitečný návod pro návrh webových designů. [Příklad komponent navrhovaných do grid systému.](https://dribbble.com/shots/15341964-Grid-System-UI-Components)
+Pro tvorbu flexibilního layoutu pomáhá designérům grid, neboli mřížka. Jde o systém sloupců a řádků, kde elementy zabírají vždy nějaký poměr stránky nehledě na na velikost zařízení. Oproti neresponsivním webům se tak třeba několikaslopcový grid nezmenší (neodzoomuje), aby se vmáčkl na telefon, ale sloupce se zalomí pod sebe. [Příklad komponent navrhovaných do grid systému.](https://dribbble.com/shots/15341964-Grid-System-UI-Components)
 
-Protože nevíme, na jak velké obrazovce se bude náš web zobrazovat, je potřeba zajistit, aby se přizpůsobil všem. V našem kódu toho docílíme pomocí relativních jednotek (např. procenta).
+Pružného layoutu, který se přizpůsobí jakékoli velikosti stránek, dosáhneme pomocí relativních jednotek. Díky procentům budou elementy na stránce zabírat stejný poměr prostoru nehledě na rozlišení. 
 
-::codepen{user=marketaanezka id=RwxpYzY tab=html,result}
+
+
+Mřížku napři. tří sloupců si tak jednoduše vytvoříme pomocí procent a funkce calc()
+
+Stejně tak se hodí jednotky vh a vw, kde pracujeme s poměrem aktuálního viewportu. 
+
+Flexbox
+
+Další nástroj pro tvorbu reponsivního layoutu už znáte - je o flexbox. Pomocí něj např. zařídíte responsivní galerii obrázků, které se budou zalamovat pod sebe nehledě na velikost obrazovky.
