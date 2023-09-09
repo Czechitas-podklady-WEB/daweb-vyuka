@@ -1,14 +1,14 @@
 ## BEM
 
-BEM aneb Block - Element - Modifier je jedna z metodik pro pojmenovávání tříd při stylování stránek. BEM není technologie, preprocesor, ani knihovna na stylování. Je to spíš konvence a doporučení, jak je možné si organizovat CSS soubory, vytvářet znovupoužitelné komponenty a psát čitelné CSS.
+BEM aneb _Block - Element - Modifier_ je jedna z metodik pro pojmenovávání tříd při stylování stránek. BEM není technologie, preprocesor, ani knihovna na stylování. Je to spíš konvence a doporučení, jak je možné si organizovat CSS soubory, vytvářet znovupoužitelné komponenty a psát čitelné CSS.
 
 Pro představu k čemu se BEM hodí, se podívejte na následující design a promyslete si, jak byste přistoupili ke stylování takové stránky.
 
 ::fig[BEM Block]{src=assets/page.png}
 
-Všimněte si, že na stránce je mnoho sekcí, které se opakují, nebo mají velmi podobné stylování. Abychom zbytečně neopakovali stejný kód, je dobré si stránku rozvrhnout na jednolitvé komponenty/bloky, které lze stylovat pomocí stejných tříd. S tím nám pomůže právě metodika BEM.
+Všimněte si, že na stránce je mnoho sekcí, které se opakují, nebo mají velmi podobné stylování. Abychom zbytečně neopakovali stejný kód, je dobré si stránku rozvrhnout na jednotlivé části/oddíly, které lze stylovat pomocí stejných tříd. S tím nám pomůže právě metodika BEM.
 
-Než se metodice ale dostaneme, připomeňme si, že při zápisu CSS tříd se používá tzv. **kebab case**. Pokud se název třídy skládá z více slov, píše se mezi nimi pomlčka. (Další druhy zápisu jsou snake case, camel case a pascal case).
+Než se k metodice ale dostaneme, připomeňme si, že při zápisu CSS tříd se používá tzv. **kebab case**. Pokud se název třídy skládá z více slov, píše se mezi nimi pomlčka.
 
 ```
 .page-title ✅
@@ -44,7 +44,7 @@ Prohlédněte si obrázek a vyznačené oblasti. Všimněte si, které prvky se 
 
 #### Element
 
-Elementy jsou jednotky, ze kterých je blok tvořen. Elementy samy o sobě nemají význam, **vždy jsou spojené s blokem**. Jako u bloků jejich název popisuje, co je daný element, ne jak vypadá, nebo jaký má stav. Zapisují se do tříd po názvu bloku s **dvojitým podtržítkem**.
+Elementy jsou jednotky, které tvoří nějaký blok. Elementy nikdy nestojí samy o sobě, **vždy jsou součástí nějakého bloku.** Podobně jako u bloku, název elementu popisuje jeho význam a smysl na stránce, nikoliv jak vypadá. V CSS se zapisují jako názvu pomocí **dvojitého podtržítka.**
 
 ```
 .card__icon
@@ -54,7 +54,7 @@ Elementy jsou jednotky, ze kterých je blok tvořen. Elementy samy o sobě nemaj
 .card__difference
 ```
 
-Elementy se nezanořují, není to kopírování HTML struktury.
+Elementy se nezanořují, není to kopírování HTML struktury. V CSS nepotřebujeme znázornit vztah rodičů a potomků. Stylujeme pomocí tříd a ne podle HTML elementů a jejich pozice vůči rodiči. Při vytváření tříd se tedy naopak snažíme, aby byla struktura CSS co nejplošší. 
 
 ```
 .card__footer__amount ❌
@@ -67,7 +67,7 @@ Na obrázku jsou vyznačené možné elementy v daném bloku.
 
 #### Modifier
 
-Modifier neboli modifikátor dává možnosti variace stylu daného bloku nebo elementu. Na rozdíl od bloku a elementu popisuje vzhled nebo stav. Když se jednotlivé bloky a elementy liší pouze velikostí, barvou atp., není potřeba psát celý nový styl, stačí pouze přidat změnu do nové třídy. Modifikátory se píšou **na konec názvu třídy, za dvojitou pomlčku.** 
+Modifier neboli modifikátor umožňuje měnit styl daného bloku nebo elementu. Na rozdíl od bloku a elementu popisuje vzhled nebo stav. Když se jednotlivé bloky a elementy liší pouze velikostí, barvou atp., není potřeba psát úplně novou CSS gřídu, stačí přidat změnu k nějakému bloku nebo elementu. Modifikátory se píšou **na konec názvu bloku nebo elementu, za dvojitou pomlčku.**
 
 ```
 .navitem--active
