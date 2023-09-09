@@ -5,8 +5,8 @@ Správný postup, jak navrhovat a kódovat responzivní webové stránky je zač
 ### Nějaká ta čísla
 
 ::fig[Mobile traffic 2012-2023]{src=assets/Mobile-Traffic-2012-2023.png}
+
 [Zdroj obrázku](https://www.oberlo.com/statistics/mobile-internet-traffic)
-<br/>
 
 - 60 % návštěv webů pochází z mobilních zařízení
 - 61 % uživatelů se na stránku už nevrátí, pokud neměli dobrou zkušenost na telefonu
@@ -20,9 +20,8 @@ Správný postup, jak navrhovat a kódovat responzivní webové stránky je zač
 Prostor na telefonu je omezený a náročný na design. Je lepší tedy začít tím těžším, vymezit si ty nejdůležitější informace a akce. Poté už bude snadnější přidávat další věci pro větší zařízení. Jde o dobrou praxi, protože se zaměřujeme primárně na obsah a dobrou použitelnost. Animace a sekundární obsah řešíme až v druhém kroku.
 
 ::fig[Display comparison czechitas mapy cz]{src=assets/mobile-first-czechitas.png}
-<br/>
+
 ::fig[Display comparison skyscanner]{src=assets/responsive-skyscanner.png}
-<br/>
 
 ### Jak postupovat při designu pro mobilní zařízení? 
 
