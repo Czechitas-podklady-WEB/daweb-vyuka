@@ -23,18 +23,18 @@ Prostor na telefonu je omezený a náročný na design. Je lepší tedy začít 
 
 ::fig[Display comparison skyscanner]{src=assets/responsive-skyscanner.png}
 
-### Jak postupovat při designu pro mobilní zařízení? 
+### Jak postupovat při designu pro mobilní zařízení?
 
 - _content first_: obsah je klíčový, nezahlcujte uživatele množstvím informací a vyberte jen to nejdůležitější
 - jasná vizuální hierarchie, přehledná navigace
 - _call-to-action_ tlačítka jsou dobře viditelná, mají velkou klikatelnou plochu a nespoléhají na _hover_
 - pouze jeden sloupec pro obsah, vyhýbejte se horizontálnímu scrollování
-- dosažitelnost elementu při držení telefonu v jedné ruce 
+- dosažitelnost elementu při držení telefonu v jedné ruce
 
 ::fig[Mobile reach]{src=assets/mobile-reach.png}
 <br/>
 
- Kromě devtools si můžete otestovat, zda je web mobile-friendly pomocí [Google nástroje](https://search.google.com/test/mobile-friendly). 
+Kromě devtools si můžete otestovat, zda je web mobile-friendly pomocí [Google nástroje](https://search.google.com/test/mobile-friendly).
 
 ### Jak rozšířit design na další zařízení
 

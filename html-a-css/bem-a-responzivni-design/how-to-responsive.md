@@ -37,7 +37,7 @@ Pro tvorbu flexibilního layoutu pomáhá designérům rozvržení stránky do g
 
 #### Relativní jednotky
 
-Pružného layoutu, který se přizpůsobí jakékoli velikosti stránek, dosáhneme pomocí relativních jednotek jako jsou procenta, `vw` a `vh`. Díky nim budou elementy na stránce zabírat stejný poměr prostoru nehledě na velikost zařízení. Mřížku např. tří sloupců, které budou na všech zařízeních zabírat 1/3 stránky, tak jednoduše vytvoříme pomocí procent a funkce `calc()`. 
+Pružného layoutu, který se přizpůsobí jakékoli velikosti stránek, dosáhneme pomocí relativních jednotek jako jsou procenta, `vw` a `vh`. Díky nim budou elementy na stránce zabírat stejný poměr prostoru nehledě na velikost zařízení. Mřížku např. tří sloupců, které budou na všech zařízeních zabírat 1/3 stránky, tak jednoduše vytvoříme pomocí procent a funkce `calc()`.
 
 ```
 width: calc(100% / 3);
@@ -55,4 +55,5 @@ Další nástroj pro tvorbu responzivního layoutu už znáte - je to flexbox. S
 ```
 
 #### CSS Grid
+
 Poslední nástroj, který musíme zmínit, ale který není součástí našeho kurzu je CSS Grid. V rámci samostudia si můžete pročíst, [jak se s ním nastavují řádky a sloupce layoutu](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout).

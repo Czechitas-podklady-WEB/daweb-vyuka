@@ -17,7 +17,7 @@ img {
 }
 ```
 
-Toto ale znamená, že se při zvětšení kontejneru obrázek může roztáhnout nad svojí původní šířku, a mít tak horší kvalitu. Pokud chceme, aby se obrázek přizpůsobil obsahu, ale nepřekročil svoji původní velikost, použijeme `max-width`. Zároveň můžeme využít `width` pro specifikování jeho ideální šířky. 
+Toto ale znamená, že se při zvětšení kontejneru obrázek může roztáhnout nad svojí původní šířku, a mít tak horší kvalitu. Pokud chceme, aby se obrázek přizpůsobil obsahu, ale nepřekročil svoji původní velikost, použijeme `max-width`. Zároveň můžeme využít `width` pro specifikování jeho ideální šířky.
 
 ```css
 img {
