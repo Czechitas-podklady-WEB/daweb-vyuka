@@ -54,7 +54,7 @@ Elementy jsou jednotky, které tvoří nějaký blok. Elementy nikdy nestojí sa
 .card__difference
 ```
 
-Elementy se nezanořují, není to kopírování HTML struktury. V CSS nepotřebujeme znázornit vztah rodičů a potomků. Stylujeme pomocí tříd a ne podle HTML elementů a jejich pozice vůči rodiči. Při vytváření tříd se tedy naopak snažíme, aby byla struktura CSS co nejplošší. 
+Elementy se nezanořují, není to kopírování HTML struktury. V CSS nepotřebujeme znázornit vztah rodičů a potomků. Stylujeme pomocí tříd a ne podle HTML elementů a jejich pozice vůči rodiči. Při vytváření tříd se tedy naopak snažíme, aby byla struktura CSS co nejplošší.
 
 ```
 .card__footer__amount ❌
@@ -89,7 +89,7 @@ Proto pokud je element modifikovaný, je potřeba do HTML přidat všechny stylo
 
 ### Příklad
 
-Na obrázku vidíte jeden z možných příkladů, jak využít metodiky BEM při stylování. Pokud máme takto nachystanou jednu kartičku s produktem, můžeme ji opakovat několikrát s jinými produkty. Díky stejným třídám budou mít všechny karty stejné stylování. 
+Na obrázku vidíte jeden z možných příkladů, jak využít metodiky BEM při stylování. Pokud máme takto nachystanou jednu kartičku s produktem, můžeme ji opakovat několikrát s jinými produkty. Díky stejným třídám budou mít všechny karty stejné stylování.
 
 ::fig[BEM Block]{src=assets/BEM-example.png}
 
