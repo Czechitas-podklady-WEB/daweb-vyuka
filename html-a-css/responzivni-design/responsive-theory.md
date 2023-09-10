@@ -13,7 +13,6 @@ Obrázky na stránce často dostáváme v různých velikostech. Je potřeba, ab
 
 Fluidní obrázky jsou takové, které se přizpůsobují kontejneru, ve kterém jsou umístěny. Pokud chceme, aby obrázek zabíral celou šířku svého kontejneru, nastavíme:
 
-
 ```css
 img {
   width: 100%;
@@ -42,11 +41,12 @@ small-img.jpg  320w"
 src="small.jpg"
 />
 ```
-Kromě vlastnosti `src` tedy přidáme ještě vlastnost `srcset`, kde uvedeme varianty obrázku a jeho šířku. Prohlížeč pak sám podle šířky viewportu a hardwarového rozlišení zařízení vybere vhodný obrázek. Výpočet pro výběr obrázku je jednoduchý: šířka okna x poměr harwarových pixelů vůči CSS pixelům (_device-pixel-ratio_). (Vzpomeňmě si na předchozí lekci, kde jsme zmiňovali, že zařízení s vysokým rozlišením můžou mít poměr 2, 4 atp.) 
+
+Kromě vlastnosti `src` tedy přidáme ještě vlastnost `srcset`, kde uvedeme varianty obrázku a jeho šířku. Prohlížeč pak sám podle šířky viewportu a hardwarového rozlišení zařízení vybere vhodný obrázek. Výpočet pro výběr obrázku je jednoduchý: šířka okna x poměr harwarových pixelů vůči CSS pixelům (_device-pixel-ratio_). (Vzpomeňmě si na předchozí lekci, kde jsme zmiňovali, že zařízení s vysokým rozlišením můžou mít poměr 2, 4 atp.)
 
 Např.: U telefonu s velikostí displeje 400px a poměrem pixelů 2, vybere prohlížeč největší obrázek large-img, který se nejvíce blíží k ideální velikosti 800px.
 
-Jak vidíte, připravit bitmapové obrázky pro responzivní web nemusí být jednoduché. Nejlepší je proto využívat vektorového formátu SVG, kde je to možné. Oproti bitmapám má menší datový objem a je nezávislý na zmíněném device-pixel-ratio. [Více o svg.](https://www.vzhurudolu.cz/prirucka/svg) 
+Jak vidíte, připravit bitmapové obrázky pro responzivní web nemusí být jednoduché. Nejlepší je proto využívat vektorového formátu SVG, kde je to možné. Oproti bitmapám má menší datový objem a je nezávislý na zmíněném device-pixel-ratio. [Více o svg.](https://www.vzhurudolu.cz/prirucka/svg)
 
 ### Media queries
 
@@ -67,7 +67,7 @@ Hlavním nástrojem pro tvorbu responzivních stránek jsou media queries. Je to
 Výše uvedený kód můžeme číst jako:
 **element s třídou `button-login` má primárně šířku 100% svého rodiče a pokud je zařízení širší než 600px má šířku 50% svého rodiče.**
 
-Kromě podmínky se šířkou se můžete často setkat s určením typu média - zda jde o obrazovku nebo tisk. 
+Kromě podmínky se šířkou se můžete často setkat s určením typu média - zda jde o obrazovku nebo tisk.
 
 ```
 @media screen and (min-width: 600px) {
@@ -75,7 +75,7 @@ Kromě podmínky se šířkou se můžete často setkat s určením typu média 
 
 @media print {
 }
- 
+
 ```
 
 ::fig[BEM Block]{src=assets/css-media-query.png}
