@@ -6,11 +6,11 @@ demand: 1
 Použijte šablonu [cviceni-flexibilni-layout](https://github.com/Czechitas-podklady-WEB/cviceni-flexibilni-layout).
 Naklonujte si repozitář a spusťte si `npx serve`.
 
-Na stránce je připravený obsah stránky. V souboru `style.css` je nastylovaný typ písma (font).
+V HTML souboru je připravený obsah stránky. V souboru `style.css` je nastylovaný typ písma (font) a další základní styly. Vlastní styly doplňte dolů pod komentář.
 
-Nastylujte `header` tak, aby nadpis a podnadpis byly vedle sebe na opačných koncích stránky. Text podnadpisu zarovnejte doprava, tak aby na menších obrazovkách byl stále vpravo i na dvou řádcích.
+Nastylujte `header` tak, aby nadpis a podnadpis byly vedle sebe na opačných koncích stránky.
 
-Galerii nastylujte tak, aby obrázky byly ve svou sloupcích vedle sebe, které se flexibilně roztahují podle šířky stránky. Zkuste potom nastylovat i tři a čtyři sloupce.
+Galerii nastylujte tak, aby obrázky byly ve svou sloupcích vedle sebe, které se flexibilně roztahují podle šířky stránky. Potom si zkuste nastylovat 3 a 4 sloupce. Ty už se vám sice nevejdou na menší velikost obrazovky, ale příští hodinu si ukážeme, jak je zobrazovat jen na širších obrazovkách. Pokud už znáte media queries, můžete si rovnou vyzkoušet.
 
 Každou variantu si zkontrolujte v devtools a udělejte si printscreen celé stránky.
 
@@ -20,7 +20,7 @@ Podívejte se na výsledek:
 :::solution
 
 Varianty pro tři a čtyři sloupce jsou níže uvedeny v blocích `@media(…)` – co znamenají se dozvíte v příští lekci.
-Ve vašem řešení budete mít obsah příslušného bloku přímo u selektoru třídy `.foto`.
+Bez použití media queries by byl rozměr přímo u selektoru třídy `.foto`, jako je tomu v případě 2 sloupců.
 Když použijete níže uvedené řešení s `@media(…)`, bude se počet sloupců měnit v závislosti na šířce okna prohlížeče.
 
 Protože je v galerii _náhodou_ 12 obrázků, nemusíme extra řešit poslední řádek.

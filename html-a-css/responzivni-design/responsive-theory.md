@@ -1,15 +1,15 @@
 ## Techniky responzivního webdesignu
 
-Máme tři hlavní techniky responzivního webdesignu, v minulé lekci jsme prošli flexibilní grid, dnes se zaměříme na další dvě:
+Máme tři hlavní techniky responzivního webdesignu, v minulé lekci jsme prošli flexibilní layout, dnes se zaměříme na další dvě:
 
 - flexibilní obrázky
 - media queries
 
 ### Flexibilní obrázky
 
-Obrázky na stránce často dostáváme v různých velikostech. Je potřeba, aby uživatel i na malém displeji viděl celý obrázek a ne jen roh nebo výřez.
+Obrázky na stránce často dostáváme v různých velikostech. Je potřeba, aby uživatel i na malém displeji viděl celý obrázek a ne jen roh nebo výřez, nebo aby obrázek nezabral celou stránku a nevytvářel nám zbytečné scrollbary.
 
-Fluidní obrázky jsou takové, které se přizpůsobují kontejneru, ve kterém jsou umístěny. Dosáhneme toho nastavením stylu obrázku na
+Fluidní obrázky jsou takové, které se přizpůsobují kontejneru, ve kterém jsou umístěny. Pokud chceme, aby obrázek zabíral celou šířku svého kontejneru, nastavíme:
 
 ```css
 img {
@@ -17,17 +17,15 @@ img {
 }
 ```
 
-Pokud chceme, aby obrázek měl ideálně šířku 500px, a pokud se nevejde, tak se přizpůsobil obsahu, můžeme použít tento zápis.
+Toto ale znamená, že se při zvětšení kontejneru obrázek může roztáhnout nad svojí původní šířku, a mít tak horší kvalitu. Pokud chceme, aby se obrázek přizpůsobil obsahu, ale nepřekročil svoji původní velikost, použijeme `max-width`. Zároveň můžeme využít `width` pro specifikování jeho ideální šířky.
 
 ```css
 img {
-  width: 500px;
   max-width: 100%;
+  width: 500px;
 }
 ```
 
-::codepen{user=marketaanezka id=jOYBePP tab=html,result}
-<br/>
 Další možností jak přizpůsobit obrázek velikosti kontejneru je použití [background image](https://www.freecodecamp.org/news/css-background-image-with-html-example-code/).
 
 Pro případ, že potřebujeme ovlivnit i rychlost načítání, je možnost na menším displeji zobrazovat menší obrázek a na větším zase obrázek v lepší kvalitě. K tomu se používá [srcset](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/).
