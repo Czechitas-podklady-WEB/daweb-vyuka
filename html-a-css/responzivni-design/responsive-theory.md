@@ -9,8 +9,6 @@ Máme tři hlavní techniky responzivního webdesignu, v minulé lekci jsme pro�
 
 Obrázky na stránce často dostáváme v různých velikostech. Je potřeba, aby uživatel i na malém displeji viděl celý obrázek a ne jen roh nebo výřez, nebo aby obrázek nezabral celou stránku a nevytvářel nám zbytečné scrollbary.
 
-#### Flexibilní šířka
-
 Fluidní obrázky jsou takové, které se přizpůsobují kontejneru, ve kterém jsou umístěny. Pokud chceme, aby obrázek zabíral celou šířku svého kontejneru, nastavíme:
 
 ```css
@@ -23,8 +21,8 @@ Toto ale znamená, že se při zvětšení kontejneru obrázek může roztáhnou
 
 ```css
 img {
-  width: 500px;
   max-width: 100%;
+  width: 500px;
 }
 ```
 
