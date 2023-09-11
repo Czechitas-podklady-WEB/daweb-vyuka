@@ -32,11 +32,10 @@ Další možností jak přizpůsobit obrázek velikosti kontejneru je použití 
 
 U obrázků je také dobré myslet na jejich datový objem, abychom zbytečně nenutili uživatele mobilních zařízení stahovat obrázky o velikosti pro desktop. Nechceme jim vyplýtvat data ani zpomalovat rychlost načítání stránky. V ideálním případě do HTML připravíme různé varianty velikostí.
 
-```
-<img srcset="large-img.jpg 1024w,
-middle-img.jpg 640w,
-small-img.jpg  320w"
-src="small.jpg"
+```html
+<img
+  srcset="large-img.jpg 1024w, middle-img.jpg 640w, small-img.jpg 320w"
+  src="small.jpg"
 />
 ```
 
@@ -50,14 +49,14 @@ Jak vidíte, připravit bitmapové obrázky pro responzivní web nemusí být je
 
 Hlavním nástrojem pro tvorbu responzivních stránek jsou media queries. Je to způsob, jak v CSS aplikovat nějaké styly pouze pokud zařízení odpovídá požadovaným parametrům.
 
-```
+```css
 .button-login {
-  width: 100%
+  width: 100%;
 }
 
 @media (min-width: 600px) {
   .button-login {
-    width: 50%
+    width: 50%;
   }
 }
 ```
@@ -67,13 +66,12 @@ Výše uvedený kód můžeme číst jako:
 
 Kromě podmínky se šířkou se můžete často setkat s určením typu média - zda jde o obrazovku nebo tisk.
 
-```
+```css
 @media screen and (min-width: 600px) {
 }
 
 @media print {
 }
-
 ```
 
 ::fig[BEM Block]{src=assets/css-media-query.png}
