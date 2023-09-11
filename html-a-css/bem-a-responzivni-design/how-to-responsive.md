@@ -39,7 +39,7 @@ Pro tvorbu flexibilního layoutu pomáhá designérům rozvržení stránky do g
 
 Pružného layoutu, který se přizpůsobí jakékoli velikosti stránek, dosáhneme pomocí relativních jednotek jako jsou procenta, `vw` a `vh`. Díky nim budou elementy na stránce zabírat stejný poměr prostoru nehledě na velikost zařízení. Mřížku např. tří sloupců, které budou na všech zařízeních zabírat 1/3 stránky, tak jednoduše vytvoříme pomocí procent a funkce `calc()`.
 
-```
+```css
 width: calc(100% / 3);
 ```
 
@@ -47,7 +47,7 @@ width: calc(100% / 3);
 
 Další nástroj pro tvorbu responzivního layoutu už znáte - je to flexbox. S ním snadno zařídíte např. responzivní galerii obrázků, které se budou zalamovat pod sebe při zmenšení obrazovky. Zásadní je tady vlastnost `flex-wrap`, pomocí které nastavíme automatické zalamování.
 
-```
+```css
 .container {
   display: flex;
   flex-wrap: wrap;
