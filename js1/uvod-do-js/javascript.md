@@ -9,4 +9,3 @@ Jazyk JavaScript je jedním z nejdůležitějších programovacích jazyků neje
 Než se naplno pustíme do JavaScriptu, je dobré si pořádně ujasnit terminologii. JavaScript je programovací jazyk, tedy sada nějakých pravidel, jak sestavovat textové příkazy pro počítač. Pokud chceme, aby náš počítač tyto příkazy vykonal, protřebujeme takzvaný _JavaScript runtime_. To je program, který čte JavaScriptové příkazy a jeden za druhým je provádí. Pokud bychom použili divadelní analogii, můžeme si představit, že JavaScriptový program je scénář nějakého představení a JavaScript runtime je herec, který představení podle tohoto scénáře zahraje.
 
 ::fig[JavaScript runtime]{src=assets/runtime.jpg}
-

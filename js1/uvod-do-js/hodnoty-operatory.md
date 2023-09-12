@@ -45,7 +45,7 @@ Pro zbytek po dělení se překvapivě používá znak procenta, přestože s pr
 Z operátorů a hodnot můžete samozřejmě stavět mnohem složitější konstrukce třeba i s použitím závorek.
 
 ```js
-document.body.innerHTML += 5 * (3 + 7) % 9;
+document.body.innerHTML += (5 * (3 + 7)) % 9;
 ```
 
 Konstrukcím vytvořeným z hodnot a operátorů se odborně říká :term{cs="výrazy" en="expressions"}. Pokud necháme JavaScript runtime spočítat výsledek výrazu, získáme tak jeho hodnotu. Každý výraz tedy má svoji hodnotu a můžeme si ji vždy vypsat do stránky, abychom ji viděli. Je dobré zde zmínit, že ne všechny konstrukce v JavaScriptu jsou výrazy. To se však ukáže jako důležité až později.
