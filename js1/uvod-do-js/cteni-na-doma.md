@@ -8,9 +8,9 @@ Podobně jako má čeština :i[Pravidla českého pravopisu], má i JavaScript s
 
 Ve verzi ES5 se například proměnné nevytvářejí pomocí `let` a `const` nýbrž pomocí `var`. Náš příklad s výplatou by tedy ve verzi ES5 vypadal takto.
 
-```jscon
-> var celkem = 1 + 2 + 4 + 1 + 6
-> var prumer = celkem / 5
+```js
+var sazba = 500;
+var vyplata = 8 * 21 * sazba;
 ```
 
 Proměnné vytvořené pomocí `var` se dají měnit podobně jako proměnné vytvořené pomocí `let`. Platí pro ně ovšem trochu jiná pravidla a ta jsou právě často na překážku dobrému programátorskému stylu. To je důvod, proč toto klíčové slovo bylo v ES6 nahrazeno klíčovými slovy `let` a `const`. Klíčové slovo `var` už je tedy zastaralé a není žádný důvod jej používat. My v tomto kurzu budeme striktně používat `let` a `const`. Pokud v nějakém starším online kurzu nebo knize narazíte na `var`, použíjte místo něj vždy `let` nebo `const`.

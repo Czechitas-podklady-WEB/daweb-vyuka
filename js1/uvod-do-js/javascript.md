@@ -10,4 +10,3 @@ Než se naplno pustíme do JavaScriptu, je dobré si pořádně ujasnit terminol
 
 ::fig[JavaScript runtime]{src=assets/runtime.jpg}
 
-Velkou výhodu máme do začátku v tom, že každý webový prohlížeč v sobě obsahuje JavaScript runtime. Naše první JavaScriptové příkazy tak můžeme psát rovnou v prohlížeči. Stačí otevřít takzvané _Developer Tools_.

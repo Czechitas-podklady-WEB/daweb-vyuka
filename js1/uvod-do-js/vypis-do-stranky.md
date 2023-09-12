@@ -1,8 +1,8 @@
 ## Výpis do stránky
 
-Zatím jsme si ještě pořád nevysvětlili, jak přesně dokážeme pomocí JavaScriptu měnit obsah stránky. Ve všech dosavadních ukázkách jsme k tomu používali tajemnou proměnnou :var[document.body.innerHTML], o které zatím víme pouze to, že ji pro nás vytvořil prohlížeč automaticky. V této speciální proměnné je vždy uložen obsah elementu `body`, a to jako jeden dlouhý řetězec.
+Nakonec jsme dospěli až k odhalení tajemství našeho příkazu pro výstup do stránky, který tak trochu slepě používáme už od první lekce. Všimněte si, že v něm používáme operátor `+=`, který jsme si ukázali v předchozí části. V proměnné :var[document.body.innerHTML] má totiž prohlížeč uložen aktuální obsah elementu `<body>` jako jeden dlouhý JavaScriptový řetězec.
 
-Mějme následující stránku.
+Pokud naše stránka vypadá například takto:
 
 ```html
 <!DOCTYPE html>
@@ -20,26 +20,19 @@ Mějme následující stránku.
 </html>
 ```
 
-Když ji otevřeme v prohlížeči, můžeme si v konzoli ověřit, co proměnná :var[document.body.innerHTML] obsahuje.
+V proměnné :var[document.body.innerHTML] je pak uložen řetězec:
 
-```jscon
-> document.body.innerHTML
+```js
 "
     <h1>První program</h1>
 
 "
 ```
 
-Obdrželi jsme řetězec s celým HTML stránky včetně všech mezer a odsazení. Pokud chceme obsah stránky změnit, můžeme prostě změnit obsah této proměnné a prohlížeč se už sám postará o překreslení stránky. Vyzkoušejte si to v konzoli.
+Všiměte si, že řetězec obsahuje i všechny mezery a odsazení.
+
+Pokud chceme obsah stránky změnit, můžeme prostě změnit obsah této proměnné a prohlížeč se už sám postará o překreslení stránky. Například můžete k řetězci v :var[document.body.innerHTML] přičíst další řetězec, klidně i třeba s kouskem HTML.
 
 ```jscon
 > document.body.innerHTML = '<h1>Nový obsah</h1>';
 ```
-
-Tímto postupem nahradíme celý obsah stránky obsahem našeho řetězce. Nejčastěji však budeme chtít k obsahu stránky pouze něco přidat. K tomu využijeme operátor `+=`.
-
-```jscon
-> document.body.innerHTML += '<p>Výsledek výpočtu</p>';
-```
-
-Takto můžeme přímo do stránky vkládat jakékoliv HTML značky a máme tak stránku zcela pod kontrolou.
