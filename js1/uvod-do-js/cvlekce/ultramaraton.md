@@ -9,7 +9,8 @@ Představte si, že jste pořadatelé ultramaratonského závodu. Závod začín
 
 1. Založte si JavaScriptový program a uložte čas startu závodu do proměnné `start`.
 1. Do proměnné `delka` uložte délku závodu pro nějakého běžce. Klidně může být pomalejší než náš šampion.
-1. Do proměnné `konec` spočítejte, v kolik hodin závod pro našeho běžce skončí a vypište její obsah do stránky. Vyzkoušejte různé délky a ověřte, že váš postup funguje.
+1. Do proměnné `konec` spočítejte, v kolik hodin závod pro našeho běžce skončí a vypište její obsah do stránky.
+1. Vyzkoušejte různé délky a ověřte, že váš postup funguje.
 
 :::solution
 

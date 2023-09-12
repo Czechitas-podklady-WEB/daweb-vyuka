@@ -34,5 +34,5 @@ Všiměte si, že řetězec obsahuje i všechny mezery a odsazení.
 Pokud chceme obsah stránky změnit, můžeme prostě změnit obsah této proměnné a prohlížeč se už sám postará o překreslení stránky. Například můžete k řetězci v :var[document.body.innerHTML] přičíst další řetězec, klidně i třeba s kouskem HTML.
 
 ```jscon
-> document.body.innerHTML = '<h1>Nový obsah</h1>';
+> document.body.innerHTML += '<p>Nový obsah</p>';
 ```

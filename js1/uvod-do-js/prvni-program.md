@@ -20,7 +20,7 @@ Založme si nejdříve úplně prázdnou stránku:
 Když tuto stránku zobrazíte v prohlížeči, uvidíte pouze prázdné bílé okno. Ideální inspirace pro naši první JavaScriptovou aplikaci. Založme si soubor `index.js` a vložme do něj následující příkaz.
 
 ```js
-document.body.innerHTML += 'Vítejte na našem webu';
+document.body.innerHTML += '<h1>Vítejte na našem webu</h1>';
 ```
 
 Co tento kód přesně dělá, se dozvíme za malou chvíli. Nejprve tento program zapojíme do naší stránky. To provedeme tak, že vložíme značku `script` s odkazem na soubor `index.js` do hlavičky stránky.
@@ -35,10 +35,10 @@ Co tento kód přesně dělá, se dozvíme za malou chvíli. Nejprve tento progr
 </head>
 ```
 
-Pokud nyní v prohlížeči obnovíte stránku, měl byste vidět text :i[Vítejte na našem webu]. Takto jsme do úplně prázdné stránky vložili obsah pomocí JavaScriptu.
+Pokud nyní v prohlížeči obnovíte stránku, měl byste vidět nadpis :i[Vítejte na našem webu]. Takto jsme do úplně prázdné stránky vložili obsah pomocí JavaScriptu.
 
 Proč se JavaScriptový kód vkládá do stránky tímto způsobem a co přesně znamená atribut `type="module"` si povíme později, až budete malinko zkušenější.
 
 ### Středníky
 
-Než rozebereme náš první příklad, všimněte si, že končí středníkem. Takto JavaScript runtime pozná, kde končí jeden příkaz a začíná jiný. Inu, ve skutečnosti by to JavaScript poznal i bez středníků a dokonce bychom je na většině míst ani psát nemuseli. Psaní nebo nepsaní středníků je ve skutešnosti značně kulturní záležitost. Každý na to má svůj názor, jednou je trendy to, jindy zase ono. My na tomto kurzu budeme středníky používat svědomitě a vám do začátku doporučujeme totéž. Později se jistě sami rozhodnete pro styl, který se vám osobně líbí nejvíce.
+Než rozebereme náš první příklad, všimněte si, že končí středníkem. Takto JavaScript runtime pozná, kde končí jeden příkaz a začíná jiný. Inu, ve skutečnosti by to JavaScript poznal i bez středníků a dokonce bychom je na většině míst ani psát nemuseli. Psaní nebo nepsaní středníků je značně kulturní záležitost, každý na to má svůj názor. Jednou je trendy to, jindy zase ono. My na tomto kurzu budeme středníky používat svědomitě a vám do začátku doporučujeme totéž. Později se jistě sami rozhodnete pro styl, který se vám osobně líbí nejvíce.

@@ -10,7 +10,7 @@ Sestavte e-mailovou adresu tak, že sečtete dohromady vaše křestní jméno, z
 :::solution
 
 ```js
-'Tomáš' + '.' + 'Marný' + '@mujmail.com';
+'Franta' + '.' + 'Dobrota' + '@mujmail.com';
 ```
 
 :::
