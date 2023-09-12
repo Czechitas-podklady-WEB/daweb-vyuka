@@ -12,14 +12,16 @@ Založme si nejdříve úplně prázdnou stránku:
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>První program</title>
   </head>
-  <body></body>
+  <body>
+    <h1>První program</h1>
+  </body>
 </html>
 ```
 
-Když tuto stránku zobrazíte v prohlížeči, uvidíte pouze prázdné bílé okno. Ideální inspirace pro naši první JavaScriptovou aplikaci. Založme si soubor `index.js` a vložme do něj následující příkaz.
+Když tuto stránku zobrazíte v prohlížeči, uvidíte pouze prázdnou stránku s nadpisem. Ideální inspirace pro naši první JavaScriptovou aplikaci. Založme si soubor `index.js` a vložme do něj následující příkaz.
 
 ```js
-document.body.innerHTML += '<h1>Vítejte na našem webu</h1>';
+document.body.innerHTML += 'Vítejte na našem webu';
 ```
 
 Co tento kód přesně dělá, se dozvíme za malou chvíli. Nejprve tento program zapojíme do naší stránky. To provedeme tak, že vložíme značku `script` s odkazem na soubor `index.js` do hlavičky stránky.
