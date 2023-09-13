@@ -84,7 +84,7 @@ Tento zápis není tak šikovný jako tečková notace a proto se v praxi použ�
 Hodnoty uvnitř objektů lze také měnit. Takto například můžeme změnit číslo ulice.
 
 ```js
-address.number = 28
+address.number = 28;
 ```
 
 Všimněte si, že při vytváření objekt ukládáme do proměnné, jde tedy o nový typ hodnoty, podobně jako číslo nebo řetězec. To mimo jiné znamená, že uvnitř objektu můžeme mít vnořené další objekty. Takto bychom mohli například reprezentovat uživatele i s doručovací adresou.
@@ -106,7 +106,7 @@ const user1 = {
 Kdybychom pak chtěli získat například město, kam máme objednané zboží doručit, opět použijeme tečkovou notaci.
 
 ```js
-user1.address.city
+user1.address.city;
 ```
 
 Díky objektům tak můžeme v našich programech reprezentovat i velmi komplikovaná data.

@@ -21,4 +21,5 @@ document.body.innerHTML =
   Math.round((5 * (fahrnheit - 32)) / 9) +
   ' stupňů Celsia';
 ```
+
 :::

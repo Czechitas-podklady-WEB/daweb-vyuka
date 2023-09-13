@@ -148,4 +148,5 @@ document.body.innerHTML +=
   Math.ceil(flight.bags_price[2] * flight.conversion.EUR) +
   ' Kč</p>';
 ```
+
 :::

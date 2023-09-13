@@ -15,7 +15,7 @@ Pokračujme v našem registračním systému na očkováni. Zatím se umíme už
    }
    ```
 1. Poté, co uživatel zadá všechny údaje, vypište do stránky objekt `person` v nějakém hezkém formátu a zkontrolujte, že obsahuje správné informace.
-1. Přidejte do objektu `person` údaj o tom, v jakém jazyce si uživatel přeje komunikovat. Zjistěte jej z objektu `window`. 
+1. Přidejte do objektu `person` údaj o tom, v jakém jazyce si uživatel přeje komunikovat. Zjistěte jej z objektu `window`.
 
 :::solution
 
