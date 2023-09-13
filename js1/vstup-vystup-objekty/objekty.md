@@ -1,6 +1,6 @@
 ## Objekty
 
-Prozatím jsme v naších programech pracovali pouze s čísly a řetězci. V reálnějších programech však budeme potřebovat do naších proměných uložit více než pouze jednu informaci. Představte si například, že chceme evidovat doručovací adresu uživatele e-shopu. Každá adresa má ulici, číslo domu, město a PSČ. Takovou informaci bychom mohli zkusit nacpat do jednoho řetězce třeba takto.
+Prozatím jsme v našich programech pracovali pouze s čísly a řetězci. V reálnějších programech však budeme potřebovat do naších proměných uložit více než pouze jednu informaci. Představte si například, že chceme evidovat doručovací adresu uživatele e-shopu. Každá adresa má ulici, číslo domu, město a PSČ. Takovou informaci bychom mohli zkusit nacpat do jednoho řetězce třeba takto.
 
 ```js
 const address = 'Pod Kaštany 31, 123 11 Horní Dlouhonosy';
@@ -23,14 +23,21 @@ Objekt vytvoříme tak, že do složených závorek vložíme čárkou oddělen�
 
 Pomocí klíčů pak můžeme z objektu získat jednotlivé hodnoty použitím takzvané :term{cs="tečkové notace" en="dot notation"}.
 
-```jscon
-> address.city
-"Horní Dlouhonosy"
-> address.streetName
-"Pod Kaštany"
-> address.number
-31
+```js
+document.innerHTML += '<p>' + address.city + '</p>';
+document.innerHTML += '<p>' + address.streetName + '</p>';
+document.innerHTML += '<p>' + address.address.number + '</p>';
 ```
+
+Objekty do stránky vždy vypisujeme po jednotlivých položkách. Pokud bychom se pokusili vypsat celý objekt takto:
+
+```js
+document.innerHTML += '<p>' + address + '</p>';
+```
+
+na stránce se objeví pouze tajemné `[object Object]`. Protože objekt může být velmi složitá struktura, prohlížeč neví, jak by ji měl správně vypsat a snaží se vytvořit alespoň nějaký textový popis, který nám však moc nepomůže.
+
+### Klíče
 
 Klíče v objektu se chovají podobně jako proměnné. Řídí se stejnými pravidly pro názvosloví. Můžete tedy mít objekty třeba v hadí notací.
 
@@ -43,7 +50,7 @@ const address = {
 };
 ```
 
-Nelze však použít například klíče s pomlčkou.
+Nelze však použít například klíče s pomlčkou, tedy kebab notaci, na kterou jsem zvyklí z CSS.
 
 ```js
 const address = {
@@ -54,7 +61,7 @@ const address = {
 };
 ```
 
-Pokud trváme na tom, že v klíči chceme mít pomlčku nebo dokonce mezeru, můžeme jej uzavřít do uvozovek jako řetězec.
+Pokud trváme na tom, že v klíči chceme mít pomlčku nebo dokonce mezeru, můžeme jej uzavřít do uvozovek jako řetězec:
 
 ```js
 const address = {
@@ -67,19 +74,17 @@ const address = {
 
 Potíž je v tom, že k takovým klíčům se už pomocí tečkové notace nedostaneme a musíme použít jiný zápis.
 
-```jscon
-> address['street name']
-"Pod Kaštany"
-> address['postal-code']
-"123 11"
+```js
+document.innerHTML += '<p>' + address.address['street name'] + '</p>';
+document.innerHTML += '<p>' + address['postal-code'] + '</p>';
 ```
 
-Tento zápis není tak šikovný jako tečková notace a proto se budeme klíčům v uvozovkách snažit co nejvíce vyhýbat.
+Tento zápis není tak šikovný jako tečková notace a proto se v praxi používá pouze zřídka a v situacích, kdy to z nějakého technického důvodu nejde jinak.
 
 Hodnoty uvnitř objektů lze také měnit. Takto například můžeme změnit číslo ulice.
 
-```jscon
-> address.number = 28
+```js
+address.number = 28
 ```
 
 Všimněte si, že při vytváření objekt ukládáme do proměnné, jde tedy o nový typ hodnoty, podobně jako číslo nebo řetězec. To mimo jiné znamená, že uvnitř objektu můžeme mít vnořené další objekty. Takto bychom mohli například reprezentovat uživatele i s doručovací adresou.
@@ -100,9 +105,8 @@ const user1 = {
 
 Kdybychom pak chtěli získat například město, kam máme objednané zboží doručit, opět použijeme tečkovou notaci.
 
-```jscon
-> user1.address.city
-"Horní Dlouhonosy"
+```js
+user1.address.city
 ```
 
 Díky objektům tak můžeme v našich programech reprezentovat i velmi komplikovaná data.

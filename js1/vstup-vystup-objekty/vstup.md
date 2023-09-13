@@ -8,7 +8,7 @@ Zatím jsme viděli, jak může náš program provést jednoduchý výstup pomoc
 const start = 15;
 const delka = prompt('Zadej délku závodu:');
 const konec = (start + delka) % 24;
-document.body.innerHTML = konec;
+document.body.innerHTML += konec;
 ```
 
 Tento program vypadá velmi přímočaře. Zadáme-li mu však v dobré víře na vstup délku 10 dočkáme se nesprávné odpovědi 22. Abychom odhalili, kde je zakopaný pes, musíme si povědět něco o konverzi hodnot.
