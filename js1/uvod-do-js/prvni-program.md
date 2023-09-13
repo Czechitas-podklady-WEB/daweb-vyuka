@@ -36,7 +36,7 @@ Co tento kód přesně dělá, se dozvíme za malou chvíli. Nejprve tento progr
 </head>
 ```
 
-Pokud nyní v prohlížeči obnovíte stránku, měl byste vidět nadpis :i[Vítejte na našem webu]. Takto jsme do úplně prázdné stránky vložili obsah pomocí JavaScriptu.
+Pokud nyní v prohlížeči obnovíte stránku, měli byste pod nadpisem vidět text :i[Vítejte na našem webu]. Takto jsme do téměř prázdné stránky vložili obsah pomocí JavaScriptu.
 
 Proč se JavaScriptový kód vkládá do stránky tímto způsobem a co přesně znamená atribut `type="module"` si povíme později, až budete malinko zkušenější.
 
