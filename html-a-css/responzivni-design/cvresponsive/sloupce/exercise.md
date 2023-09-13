@@ -15,3 +15,18 @@ HTML není potřeba nijak upravovat.
 
 Výsledek bude vypadat takto:
 ::fig[responsive columns result]{src=assets/sloupce-result.gif}
+
+:::solution
+
+```css
+@media (min-width: 800px) {
+  .kontejner {
+    display: flex;
+  }
+  .sloupec {
+    width: calc(100 / 3);
+  }
+}
+```
+
+:::

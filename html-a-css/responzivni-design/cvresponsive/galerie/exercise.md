@@ -22,3 +22,41 @@ HTML není potřeba nijak upravovat.
 
 Výsledek bude vypadat takto:
 ::fig[responsive layout result]{src=assets/galerie-result.gif}
+
+:::solution
+
+```css
+.foto img {
+  width: 100%;
+}
+
+@media (min-width: 500px) {
+  .galerie {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .foto {
+    width: 50%;
+  }
+}
+
+@media (min-width: 650px) {
+  .foto {
+    width: calc(100% / 3);
+  }
+}
+
+@media (min-width: 800px) {
+  .foto {
+    width: calc(100% / 4);
+  }
+}
+
+@media (min-width: 1000px) {
+  .foto {
+    width: calc(100% / 6);
+  }
+}
+```
+
+:::

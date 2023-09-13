@@ -15,3 +15,19 @@ HTML není potřeba nijak upravovat.
 
 Výsledek bude vypadat takto:
 ::fig[responsive banner result]{src=assets/banner-result.gif}
+
+:::solution
+
+```css
+.banner {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .banner {
+    display: block;
+  }
+}
+```
+
+:::
