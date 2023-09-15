@@ -1,6 +1,8 @@
 ---
 title: Letenka
 demand: 2
+lead: Vypište informace o letu.
+solutionAccess: lock
 ---
 
 Vytvořte webovou stránku s JavaScriptem a do kódu vašeho programu vložte následující objekt představující reálná data o letu z Prahy do Barcelony.
@@ -63,7 +65,7 @@ const flight = {
 Proveďte následující:
 
 1. Vypište do stránky název **startovní** a **cílové země**.
-1. Pomocí **destrukturování** uložte do separátní proměnné objekt udávající **maximální rozměry zavazadel**.
+1. Uložte do separátní proměnné objekt udávající **maximální rozměry zavazadel**.
 1. Z objektu s rozměry zavazadel vytáhněte maximální povolené **rozměry příručního zavazadla** a vypište tyto rozměry opět jeden po druhém vypište do stránky.
 1. Vypište do stránky, kolik cestující zaplatí za **druhé zavazadlo** v českých korunách **zaokrouhleno nahoru** na celé koruny.
 1. Pokud máte chuť, malinko stránku nastylujte, aby se uživatel v informacích vyznal.
@@ -128,7 +130,7 @@ document.body.innerHTML =
   '<p><strong>Startovní země:</strong> ' + flight.countryFrom.name + '</p>';
 document.body.innerHTML +=
   '<p><strong>Startovní země:</strong> ' + flight.countryTo.name + '</p>';
-const { baglimit } = flight;
+const baglimit = flight.baglimit;
 document.body.innerHTML +=
   '<p><strong>Maximální šířka příručního zavazadla:</strong> ' +
   baglimit.hand_width +
