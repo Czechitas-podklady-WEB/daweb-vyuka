@@ -18,16 +18,17 @@ Další zajímavý objekt je uložen v proměnné `window`. Zde se dozvíme info
 
 Můžeme například zjistit:
 
-1. Jakou má uživatel šířku a výšku okna prohlížeče:
+1. Jakou má stránka v prohlížeči šířku a výšku:
    ```js
-   const width = window.innerWidth;
-   const height = window.innerHeight;
+   const siteWidth = window.innerWidth;
+   const siteHeight = window.innerHeight;
    ```
-2. Jaký má aktuálně nastavený jazyk:
+1. Jakou má výšku a šířku úplně celé okno prohlížeče.
+   ```js
+   const browserWidth = window.outerWidth;
+   const browserHeight = window.outerHeight;
+   ```
+1. Jaký má uživatel aktuálně nastavený jazyk:
    ```js
    const language = window.navigator.language;
-   ```
-3. Název prohlížeče:
-   ```js
-   const browser = window.navigator.userAgent;
    ```

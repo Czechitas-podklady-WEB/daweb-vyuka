@@ -14,7 +14,7 @@ Naopak tato operace do stránky vypíše řetězec `125`:
 document.body.innerHTML += '12' + '5';
 ```
 
-JavaScript se nám (občas k naší škodě) snaží udělat život jednodušší a tak za nás v určitých případech provádí automatickou konverzi čísel na řetězce. Sami si vyzkoušejte následující příklady a zkuste dopředu odhadnout, co se objeví na stránce.
+JavaScript se nám (občas k naší škodě) snaží udělat život jednodušší a tak za nás v určitých případech provádí automatickou konverzi čísel na řetězce nebo řetězců na čísla. Sami si vyzkoušejte následující příklady a zkuste dopředu odhadnout, co se objeví na stránce.
 
 ```js
 document.body.innerHTML += '12' + 5;
@@ -74,7 +74,7 @@ Vybaveni touto zkušeností můžeme začít rozplétat, co se nám pokazilo na 
 const start = 15;
 const delka = '10';
 document.body.innerHTML += start + delka; // Vypíše '1510'
-document.body.innerHTML += <br />; // Odřádkujeme
+document.body.innerHTML += '<br />'; // Odřádkujeme
 document.body.innerHTML += '1510' % 24; // Vypíše 22
 ```
 
