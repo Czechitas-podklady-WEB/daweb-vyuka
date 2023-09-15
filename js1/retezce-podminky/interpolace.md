@@ -2,44 +2,42 @@
 
 Když chceme v JavaScriptu vytvořit nějaký kus textu, například nějakou zprávu pro uživatele, často potřebujeme do tohoto textu vložit obsah několika různých proměnných.
 
-```
+```js
 const order = {
   id: 37214,
   product: 'pěnová matrace',
   delivery: '21.8.2021',
 };
 
-const { id, product, delivery } = order;
-
 document.body.innerHTML = (
-  '<h2>Objednávka: ' + id + '</h2>' +
-  '<p>Zboží ' + product + ' bude doručeno ' + delivery + '.</p>'
+  '<h2>Objednávka: ' + order.id + '</h2>' +
+  '<p>Zboží ' + order.product + ' bude doručeno ' + order.delivery + '.</p>'
 );
 ```
 
-Abychom se ze všeho toho sčítání a uvozovek nezbláznili, moderní JavaScript nabízí nový zápis řetězců, kterému se odborně říká :term{cs="interpolace řetězců" en="string interpolation"}. V tomto zápisu se místo obyčejných nebo dvojitých uvozovek používá takzvaný zpětný apostrof &#96;. Pomocí tohoto zápisu můžeme obsah proměnných vložit přímo do řetězce pomocí znaku `$` a složených závorek.
+Abychom se ze všeho toho sčítání a uvozovek nezbláznili, moderní JavaScript nabízí zápis řetězců, kterému se odborně říká :term{cs="interpolace řetězců" en="string interpolation"}. V tomto zápisu se místo obyčejných nebo dvojitých uvozovek používá takzvaný zpětný apostrof &#96;. Pomocí tohoto zápisu můžeme obsah proměnných vložit přímo do řetězce pomocí znaku `$` a složených závorek.
 
 ```js
 document.body.innerHTML =
-  `<h2>Objednávka: ${id}</h2>` +
-  `<p>Zboží ${product} bude doručeno ${delivery}.</p>`;
+  `<h2>Objednávka: ${order.id}</h2>` +
+  `<p>Zboží ${order.product} bude doručeno ${order.delivery}.</p>`;
 ```
 
 Uvnitř složených závorek otevíráme jakési JavaScriptové okno, do kterého můžeme vepsat nejen proměnnou, ale zcela libovolný výraz, jehož výsledek bude automaticky zkonvertován na řetězec.
 
 ```js
 document.body.innerHTML =
-  `<h2>Objednávka: ${String(id).padStart(8, '0')}</h2>` +
-  `<p>Zboží ${product} bude doručeno ${delivery}.</p>`;
+  `<h2>Objednávka: ${String(order.id).padStart(8, '0')}</h2>` +
+  `<p>Zboží ${order.product} bude doručeno ${order.delivery}.</p>`;
 ```
 
 Díky interpolaci řetězců se náš kód stává mnohem čitelnějším a budeme ji tedy používat všude, kde to půjde.
 
 ### Víceřádkové řetězce
 
-Když v JavaScriptu vytváříme HTML, které chceme vložit do stránky, často potřebujeme vygenerovat dlouhý řetězec, který se nám nevejde na jeden řádek. V JavaScriptu ovšem nelze zapsat běžný řetězec na více řádků. Následující kód by bohužel nefungoval.
+Když v JavaScriptu vytváříme kus HTML, která chceme vložit do stránky, často potřebujeme vygenerovat dlouhý řetězec, který se nám ovšem nevejde na jeden řádek. V JavaScriptu nelze zapsat běžný řetězec na více řádků. Následující kód by bohužel nefungoval.
 
-```js
+```
 const content = '
   <header>
     <h1>Název stránky</h1>
@@ -81,17 +79,15 @@ const order = {
   delivery: '21.8.2021',
 };
 
-const { id, product, delivery } = order;
-
 const content = `
   <header>
-    <h1>Objednávka: ${String(id).padStart(8, '0')}</h1>
+    <h1>Objednávka: ${String(order.id).padStart(8, '0')}</h1>
   </header>
   <main>
-    <p>Zboží ${product} bude doručeno ${delivery}.</p>
+    <p>Zboží ${order.product} bude doručeno ${order.delivery}.</p>
   </main>
   <footer>www.matrace-a-syn.cz</footer>
 `;
 
-document.body.innerHTML = content;
+document.body.innerHTML += content;
 ```

@@ -6,37 +6,30 @@ Z předchozí lekce už víme jak vytvářet jednoduché objekty a jak do nich p
 
 U řetězců je situace v celku jednoduchá, protože mají pouze jednu vlastnost. Jmenuje se `length` a udává počet znaků v řetězci.
 
-```jscon
-> 'martin'.length
-6
-> 'm'.length
-1
-> ''.length
-0
+```js
+'martin'.length // 6
+'m'.length // 1
+''.length // 0
 ```
 
-V objektech však kromě vlastností najdeme i takzvané :term{cs="metody" en="methods"}. Metoda je funkce schovaná uvnitř objektu a je tak s ním pevně spjata. V praxi se totiž často stává, že některé funkce se hodí na práci pouze s jedním typem hodnoty. Například bychom mohli mít funkci `toUpperCase`, která by převedla všechna písmena v řetězci na velká. Kdyby taková funkce existovala, mohli bychom ji
-volat třeba takto
+V objektech však kromě vlastností najdeme i takzvané :term{cs="metody" en="methods"}. Metoda je funkce schovaná uvnitř objektu a je tak s ním pevně spjata. V praxi se totiž často stává, že některé funkce se hodí na práci pouze s jedním typem hodnoty. Například bychom mohli mít funkci `toUpperCase`, která by převedla všechna písmena v řetězci na velká. Kdyby taková funkce existovala, mohli bychom ji volat třeba takto
 
-```jscon
-> toUpperCase('martin')
-'MARTIN'
+```js
+toUpperCase('martin') // 'MARTIN'
 ```
 
 Je pochopitelné, že tato funkce funguje pouze pro řetězce. Pro ostatní
 hodnoty nedává smysl. Těžko si představit, co by taková funkce měla vrátit
 například v takovémto případě.
 
-```jscon
-> toUpperCase(3.14)
+```js
+toUpperCase(3.14) // ?
 ```
 
-Funkce, které pracují pouze na jednom typu objektu, můžeme svázat přímo s tímto objektem. Můžeme tedy říct, že funkce `toUpperCase` patří pouze řetězcům. Máme-li funkci, která patří pouze typu řetězec, voláme ji pomocí už známé tečkové notace.
+Funkce, které pracují pouze na jednom typu objektu, můžeme svázat přímo s tímto objektem. Můžeme tak říct, že funkce `toUpperCase` patří pouze řetězcům. Máme-li funkci, která patří pouze typu řetězec, voláme ji pomocí už známé tečkové notace.
 
-```jscon
-> 'martin'.toUpperCase()
-'MARTIN'
+```js
+document.body.innerHTML += 'martin'.toUpperCase();
 ```
 
-Funkce `toUpperCase` je prvním příkladem jednoduché metody. Výhoda je, že tato metoda v JavaScriptu skutečně existuje, takže výše uvedený kód bude fungovat. Podobně existuje například metoda
-`toLowerCase`. Vyzkoušejte si ji!
+Funkce `toUpperCase` je prvním příkladem jednoduché metody. Výhoda je, že tato metoda v JavaScriptu skutečně existuje, takže výše uvedený kód bude fungovat. Podobně existuje například metoda `toLowerCase`. Vyzkoušejte si ji!
