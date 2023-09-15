@@ -2,14 +2,15 @@ title: JavaScript 2
 lead: Naučíte se vytvářet složitější webové aplikace a poznáte hlubší zákoutí JavaScriptu.
 lessons:
   - opakovani
-  - func-data
-  - server-komunikace
-  - komponenty
-  - dom-elementy
-  - posilani-dat
-  - webpack
-  - komunikace-routing
-  - cloud-db
-  - cafe-lora-1
-  - cafe-lora-2
-  - webhosting
+  - organizace
+  # - func-data
+  # - server-komunikace
+  # - komponenty
+  # - dom-elementy
+  # - posilani-dat
+  # - webpack
+  # - komunikace-routing
+  # - cloud-db
+  # - cafe-lora-1
+  # - cafe-lora-2
+  # - webhosting
