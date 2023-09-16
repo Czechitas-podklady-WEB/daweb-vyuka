@@ -54,8 +54,8 @@ Pokud chceme v JavaScriptu pracovat s textem, použijeme hodnotu, které se ří
 "Pavel"
 > 'Prací prášek'
 "Prací prášek"
-> "I'am awesome"
-"I'am awesome"
+> "I'm awesome"
+"I'm awesome"
 > 'Řekl: "ahoj"'
 "Řekl: "ahoj""
 > '<h1 class="title">Digitální akademie Web</h1>'
