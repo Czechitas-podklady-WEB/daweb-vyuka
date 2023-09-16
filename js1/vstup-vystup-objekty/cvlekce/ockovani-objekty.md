@@ -1,5 +1,5 @@
 ---
-title: Očkování - objekty
+title: Očkování – objekty
 demand: 2
 lead: Vytvořte objekt s údaji o uživateli.
 solutionAccess: lock
