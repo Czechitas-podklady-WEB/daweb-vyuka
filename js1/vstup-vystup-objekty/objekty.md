@@ -24,15 +24,15 @@ Objekt vytvoříme tak, že do složených závorek vložíme čárkou oddělen�
 Pomocí klíčů pak můžeme z objektu získat jednotlivé hodnoty použitím takzvané :term{cs="tečkové notace" en="dot notation"}.
 
 ```js
-document.innerHTML += '<p>' + address.city + '</p>';
-document.innerHTML += '<p>' + address.streetName + '</p>';
-document.innerHTML += '<p>' + address.address.number + '</p>';
+document.body.innerHTML += '<p>' + address.city + '</p>';
+document.body.innerHTML += '<p>' + address.streetName + '</p>';
+document.body.innerHTML += '<p>' + address.address.number + '</p>';
 ```
 
 Objekty do stránky vždy vypisujeme po jednotlivých položkách. Pokud bychom se pokusili vypsat celý objekt takto:
 
 ```js
-document.innerHTML += '<p>' + address + '</p>';
+document.body.innerHTML += '<p>' + address + '</p>';
 ```
 
 na stránce se objeví pouze tajemné `[object Object]`. Protože objekt může být velmi složitá struktura, prohlížeč neví, jak by ji měl správně vypsat a snaží se vytvořit alespoň nějaký textový popis, který nám však moc nepomůže.
@@ -75,8 +75,8 @@ const address = {
 Potíž je v tom, že k takovým klíčům se už pomocí tečkové notace nedostaneme a musíme použít jiný zápis.
 
 ```js
-document.innerHTML += '<p>' + address.address['street name'] + '</p>';
-document.innerHTML += '<p>' + address['postal-code'] + '</p>';
+document.body.innerHTML += '<p>' + address.address['street name'] + '</p>';
+document.body.innerHTML += '<p>' + address['postal-code'] + '</p>';
 ```
 
 Tento zápis není tak šikovný jako tečková notace a proto se v praxi používá pouze zřídka a v situacích, kdy to z nějakého technického důvodu nejde jinak.
