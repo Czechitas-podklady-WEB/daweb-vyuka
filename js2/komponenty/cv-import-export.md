@@ -1,3 +1,3 @@
 ## Cvičení: Import/export
 
-::exc[cvlekce>filmy-komponenta]
+::exc[cvlekce/filmy-komponenta]

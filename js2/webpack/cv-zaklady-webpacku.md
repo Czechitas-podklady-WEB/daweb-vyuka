@@ -1,4 +1,4 @@
 ## Cvičení: Základy Webpacku
 
-::exc[cvlekce>citat]
-::exc[cvlekce>citat-komponenta]
+::exc[cvlekce/citat]
+::exc[cvlekce/citat-komponenta]

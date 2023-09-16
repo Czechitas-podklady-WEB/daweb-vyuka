@@ -23,7 +23,7 @@ Vyzkoušjte si vaše funkce v konzoli. Poté napište funkci `createEvent`, kter
 Událost Inaugurace prezidenta s catering od Flavour Haven pro 100 lidí za 300000 Kč
 ```
 
----solution
+:::solution
 
 ```js
 const justFood = (pocetLidi) => {
@@ -52,3 +52,5 @@ document.body.innerHTML += createEvent(
   flavourHaven
 );
 ```
+
+:::

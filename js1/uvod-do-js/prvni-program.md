@@ -1,8 +1,8 @@
 ## První program
 
-Do této chvíle jsme si s runtimem JavaScriptu povídali pouze skrze konzoli. Vždy jsme poslali jeden příkaz a rovnou na něj dostali odpověď. Nyní je čas začít psát programy, tedy nechat náš prohlížeč spustit více příkazů najednou.
+JavaScriptový program je další díl skládačky tvořící naši webovou stránku nebo aplikaci. Pro JavaScriptový kód budeme vždy vytvářet oddělený soubor, podobně jako jsme zvyklí vytvářet oddělený soubor pro CSS styly. JavaScriptovému programu většinou budeme dávat název `index.js` a podobně jako CSS jej musíme do stránky zapojit.
 
-Naše JavaScriptové programy budou vždy součástí nějaké webové stránky. Založíme si proto složku s jedním HTML souborem, který prozatím nebude obsahovat nic než nadpis.
+Založme si nejdříve úplně prázdnou stránku:
 
 ```html
 <!DOCTYPE html>
@@ -18,13 +18,13 @@ Naše JavaScriptové programy budou vždy součástí nějaké webové stránky.
 </html>
 ```
 
-Pro náš JavaScriptový kód budeme vždy vytvářet oddělený soubor, podobně jako jste zvyklí vytvářet oddělený soubor pro CSS styly. JavaScriptovému programu většinou budeme dávat název `index.js`. Jeho obsah může vypadat například takto.
+Když tuto stránku zobrazíte v prohlížeči, uvidíte pouze prázdnou stránku s nadpisem. Ideální inspirace pro naši první JavaScriptovou aplikaci. Založme si soubor `index.js` a vložme do něj následující příkaz.
 
 ```js
-document.body.innerHTML = '<h1>ahoj</h1>';
+document.body.innerHTML += 'Vítejte na našem webu';
 ```
 
-Co tento kód přesně dělá, se dozvíme za malou chvíli. Teď je naším hlavním úkolem zapojit tento program do naší stránky. To provedeme tak, že vložíme značku `script` s odkazem na soubor `index.js` do hlavičky stránky.
+Co tento kód přesně dělá, se dozvíme za malou chvíli. Nejprve tento program zapojíme do naší stránky. To provedeme tak, že vložíme značku `script` s odkazem na soubor `index.js` do hlavičky stránky.
 
 ```html
 <head>
@@ -36,10 +36,10 @@ Co tento kód přesně dělá, se dozvíme za malou chvíli. Teď je naším hla
 </head>
 ```
 
-Pokud nyní soubor `index.html` otevřete v prohlížeči, měl by nadpis stránky znít :i[ahoj]. Všimměte si, že v HTML kódu stránka obsahuje nadpis :i[První program].
+Pokud nyní v prohlížeči obnovíte stránku, měli byste pod nadpisem vidět text :i[Vítejte na našem webu]. Takto jsme do téměř prázdné stránky vložili obsah pomocí JavaScriptu.
 
 Proč se JavaScriptový kód vkládá do stránky tímto způsobem a co přesně znamená atribut `type="module"` si povíme později, až budete malinko zkušenější.
 
 ### Středníky
 
-Téměř každý příkaz v JavaScriptu končí středníkem. Tím JavaScript runtime pozná, kde končí jeden příkaz a začíná jiný. Inu, ve skutečnosti by to JavaScript poznal i bez středníků a dokonce bychom je na většině míst ani psát nemuseli. Psaní nebo nepsaní středníků je opět kulturní záležitost, podobně jako jednoduché nebo dvojité uvozovky. Každý to má rád po svém, jednou je trendy to, jindy zase ono. My na tomto webu budeme středníky používat svědomitě a vám do začátku doporučujeme totéž. Později se jistě sami rozhodnete pro styl, který se vám osobně líbí nejvíce.
+Než rozebereme náš první příklad, všimněte si, že končí středníkem. Takto JavaScript runtime pozná, kde končí jeden příkaz a začíná jiný. Inu, ve skutečnosti by to JavaScript poznal i bez středníků a dokonce bychom je na většině míst ani psát nemuseli. Psaní nebo nepsaní středníků je značně kulturní záležitost, každý na to má svůj názor. Jednou je trendy to, jindy zase ono. My na tomto kurzu budeme středníky používat svědomitě a vám do začátku doporučujeme totéž. Později se jistě sami rozhodnete pro styl, který se vám osobně líbí nejvíce.

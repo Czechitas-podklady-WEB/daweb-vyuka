@@ -1,3 +1,3 @@
 ## Cvičení: Ošetření chyb
 
-::exc[cvlekce>prihlaseni]
+::exc[cvlekce/prihlaseni]

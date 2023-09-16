@@ -11,7 +11,7 @@ Nastylujte jednotlivé stránky podle zadání na výsledných obrázcích.
 
 Nezapomeňte, že při spouštění pomocí `npx serve` musíte být v terminálu ve správné složce – v tomto případě tedy ve složce konkrétního cvičení, třeba `flex1`.
 
----solution
+:::solution
 
 V řešení jsou uváděny pouze styly doplněné v rámci cvičení. Původní styly ani HTML kód se nemění.
 
@@ -165,3 +165,5 @@ V řešení jsou uváděny pouze styly doplněné v rámci cvičení. Původní 
   */
 }
 ```
+
+:::

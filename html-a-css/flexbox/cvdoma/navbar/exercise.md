@@ -14,7 +14,7 @@ Nastylujte hlavičku s navigací podle výsledku:
 - Položky v navigaci jsou vedle sebe, mají margin 1px, žadný padding
 - Odkazy v seznamu zabírají celou výšku rodiče a jsou vertikálně vycentrované
 
----solution
+:::solution
 
 ```css
 .hlavicka {
@@ -61,3 +61,5 @@ a {
     */
 }
 ```
+
+:::

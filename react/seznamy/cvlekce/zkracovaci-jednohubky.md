@@ -32,7 +32,7 @@ Založte si obyčejnou stránku s JavaScriptem, bez Webpacku i bez Reactu. Násl
 
     **Nápověda:** Použijte ternární operátor.
 
----solution
+:::solution
 
 ```js
 const isEmail = (str) => str.includes('@');
@@ -43,3 +43,5 @@ const getNumber = (id) => Number(document.querySelector(`#${id}`).value);
 
 const weather = (temperature) => (temperature > 16 ? 'teplo' : 'zima');
 ```
+
+:::

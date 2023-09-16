@@ -13,7 +13,7 @@ Pokračujte v předchozím cvičení. Úkolem bude umožnit filtrování filmů 
 1. V [dokumentaci](https://apps.kodim.cz/daweb/trening-api/docs/filmove-api#seznam-film%C5%AF-get) k filmovému API si nastudujte, jakým způsobem můžete poslat dotaz na filmy pouze určitého žánru.
 1. Při odeslání formuláře zobrazte uživateli pouze filmy, které mají vybraný žánr.
 
----solution
+:::solution
 
 Soubor `index.js`:
 
@@ -79,3 +79,5 @@ filtersForm.addEventListener('submit', (e) => {
     .then(renderMovies);
 });
 ```
+
+:::

@@ -13,7 +13,7 @@ Použijte opět pole `numbers`, `names` a `persons` z předchozího cvičení.
 1. Z pole `persons` pomocí metody `map` vytvořte pro každou osobu e-mail ve formátu `petr@gmail.com` a výsledek uložte do proměnné `emails`. Vypište toto nové pole do konzole.
 1. Z pole `persons` pomocí metody `map` vytvořte pro každou osobu položku HTML seznamu ve formátu `<li>Petr (16)</li>` a výsledek uložte do proměnné `list`. Vypište toto nové pole do konzole.
 
----solution
+:::solution
 
 1. Pomocí metody `filter` získejte z pole `numbers` pouze ta čísla, která jsou sudá, a uložte je do proměnné `evenNumbers`. Vypište toto nové pole do konzole.
 
@@ -56,3 +56,5 @@ Použijte opět pole `numbers`, `names` a `persons` z předchozího cvičení.
    const list = persons.map((item) => `<li>${item.name} (${item.age})`);
    console.log(list);
    ```
+
+:::

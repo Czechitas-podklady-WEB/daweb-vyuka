@@ -16,7 +16,7 @@ Napište cyklus **WHILE**, který do konzole postupně vypíše všechny časov�
 23:59
 ```
 
----solution
+:::solution
 
 #### WHILE
 
@@ -41,3 +41,5 @@ for (let hodiny = 0; hodiny < 24; hodiny++) {
   }
 }
 ```
+
+:::

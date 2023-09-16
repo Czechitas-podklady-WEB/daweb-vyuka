@@ -16,7 +16,7 @@ V rámci tohoto cvičení si založíme projekt na supabase a vyzkoušíme si, j
 1. Na tlačítko **Odhlásit** přidejte posluchač na událost `click,` po tomto kliknutí zajistěte odhlášení uživatele a jeho přesměrování na stránku s přihlášením. (Funkce pro odhlášení je již připravena v souboru `functions/auth.js`)
 1. Pokud ti zbyl čas, můžeš se podívat do komponenty `LoginPage`, jak je implementováno přihlašování uživatele a na stránce vyzkoušet, zda přihlášení v pořádku funguje.
 
----solution
+:::solution
 
 Soubor `Header/index.js`:
 
@@ -64,3 +64,5 @@ export const Header = (props) => {
   return element;
 };
 ```
+
+:::

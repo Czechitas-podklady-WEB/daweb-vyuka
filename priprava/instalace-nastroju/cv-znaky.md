@@ -1,3 +1,3 @@
 ## Cvičení: Speciální znaky
 
-::exc[cvdoma>klavesova-zviratka]
+::exc[cvdoma/klavesova-zviratka]

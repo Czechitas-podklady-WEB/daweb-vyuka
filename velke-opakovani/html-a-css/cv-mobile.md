@@ -1,3 +1,3 @@
 ## Mobile first
 
-::exc[cvlekce>mobile]
+::exc[cvlekce/mobile]

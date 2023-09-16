@@ -15,3 +15,29 @@ Rozložení stránky se mění v breakpointech:
 - 1000px
 
 HTML není potřeba nijak upravovat.
+
+:::solution
+
+```css
+@media (min-width: 640px) {
+  .kontejner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .druhy,
+  .prvni {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .prvni,
+  .druhy,
+  .treti {
+    width: calc(100% / 3);
+  }
+}
+```
+
+:::

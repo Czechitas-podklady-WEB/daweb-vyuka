@@ -24,6 +24,8 @@ Pracujete na velkém e-shopu a vaším úkolem je z nezaplacených objednávek v
 
 ::fig[ukázka výsledku]{src=assets/vysledek.png}
 
----solution
+:::solution
 
 [app.js](https://github.com/Czechitas-podklady-WEB/cviceni-nezaplacene-objednavky/blob/reseni/app.js)
+
+:::

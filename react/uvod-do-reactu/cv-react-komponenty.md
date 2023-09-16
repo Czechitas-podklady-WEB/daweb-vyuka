@@ -1,4 +1,4 @@
 ## Cvičení: React komponenty
 
-::exc[cvlekce>aplikace]
-::exc[cvlekce>datumy]
+::exc[cvlekce/aplikace]
+::exc[cvlekce/datumy]

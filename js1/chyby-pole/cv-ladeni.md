@@ -1,3 +1,3 @@
 ## Cvičení: Ladění
 
-::exc[cvlekce>recitaly]
+::exc[cvlekce/recitaly]

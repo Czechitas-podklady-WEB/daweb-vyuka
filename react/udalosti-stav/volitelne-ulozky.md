@@ -1,3 +1,3 @@
 ## Volitelné úložky na doma
 
-::exc[cvdoma>xylofon]
+::exc[cvdoma/xylofon]

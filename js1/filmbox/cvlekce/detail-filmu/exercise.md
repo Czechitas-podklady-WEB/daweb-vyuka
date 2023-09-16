@@ -22,6 +22,8 @@ Zobrazte příslušné informace o filmu na stránce s detailem.
 
 ::fig[řešení]{src=assets/reseni.jpg size=60}
 
----solution
+:::solution
 
 Všechny úlohy mají jedno společné vypracované řešení zde [github.com/Czechitas-podklady-WEB/projekt-FilmBox/tree/reseni](https://github.com/Czechitas-podklady-WEB/projekt-FilmBox/tree/reseni).
+
+:::

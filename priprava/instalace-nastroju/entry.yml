@@ -4,13 +4,14 @@ access: public
 sections:
   - prohlizec
   - vs-code
-  - node
   - git
+  - node
   - slozka
   - overeni
   - specialni-znaky
   - kod-ve-zpravach
   - cv-znaky
-  - pristup
+# Dočasně skryto kvůli neexistujícímu přihlášení:
+# - pristup
   - shrnuti
   - dobrovolne-cteni

@@ -1,4 +1,4 @@
 ## Cvičení: Vlastní DOM elementy
 
-::exc[cvlekce>tlacitko]
-::exc[cvlekce>kontakty]
+::exc[cvlekce/tlacitko]
+::exc[cvlekce/kontakty]

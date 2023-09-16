@@ -21,7 +21,7 @@ Zajistěte, aby funkce správně fungovala i pro záporná čísla.
 
 Tedy například `-3.5` se zaokrouhlí na `-4`, naopak `-2.5` se zaokrouhlí na `-2`.
 
----solution
+:::solution
 
 ```js
 const round = (cislo) => {
@@ -84,3 +84,5 @@ const round = (cislo) => {
 V reálných programech se to řeší tak, že se desetinná čísla neporovnávají na přesnou shodu (pomocí `===`), ale porovnává se, jestli je rozdíl dvou čísel dostatečně malý. Takže místo `cislo - Math.trunc(cislo) === -0.5` by se použila podmínka `Math.abs(cislo - Math.trunc(cislo) - 0.5) < 0.00001`.
 
 Pokud jde někde o peníze (nebo něco jiného důležitého, kde si nemůžeme dovolit nepřesnosti), nepoužívají tato běžná čísla. Používají se jiné typy, které umí pracovat s čísly přesně, za cenu, že jsou výrazně pomalejší. V JavaSCriptu se může např. použít typ [BigInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt) a částky se nebudou počítat v korunách, ale v halířích, a teprve na konci pro uživatele se převedou na koruny.
+
+:::

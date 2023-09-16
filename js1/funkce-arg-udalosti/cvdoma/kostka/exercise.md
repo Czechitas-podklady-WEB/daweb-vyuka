@@ -9,7 +9,7 @@ Vytvořte si repozitář ze šablony [cviceni-kostka](https://github.com/Czechit
 
 ::fig[ukázka řešení]{src=assets/ukazka.gif}
 
----solution
+:::solution
 
 ```js
 let viditelneCislo = 1;
@@ -23,3 +23,5 @@ const pootocKostkou = () => {
 };
 document.addEventListener('keydown', pootocKostkou);
 ```
+
+:::

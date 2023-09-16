@@ -13,7 +13,7 @@ const users = ['paja', 'kaja', 'vlasta', 'peta', 'alex', 'ja', 'misa'];
 1. Do konzole vypište všechna jména jako emailové adresy z domény `gmail.com`. Uživatel 'paja' tak bude `paja@gmail.com`.
 1. Vypište do konzole e-maily pouze těch uživatelů, jejichž jméno má nejvýše **4 znaky**.
 
----solution
+:::solution
 
 ```js
 const users = ['paja', 'kaja', 'vlasta', 'peta', 'alex', 'ja', 'misa'];
@@ -26,3 +26,5 @@ for (let i = 0; i < users.length; i++) {
   }
 }
 ```
+
+:::

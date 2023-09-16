@@ -15,7 +15,7 @@ Na konci by stránka v prohlížeči měla vypadat jako na obrázku níže:
 
 ::fig[Snímek obazovky s řešením]{src=assets/screen-novinky.png}
 
----solution
+:::solution
 
 ```js
 // a.
@@ -40,3 +40,5 @@ firstPostElm.classList.add('post--main');
 const lastPostImgElm = document.querySelector('#zprava3 img');
 lastPostImgElm.src = 'img/zprava3-novy.jpg';
 ```
+
+:::

@@ -19,7 +19,7 @@ Příklad použití:
 'petr'
 ```
 
----solution
+:::solution
 
 ```js
 const fillcut = (str, len) => {
@@ -32,3 +32,5 @@ const fillcut = (str, len) => {
   }
 };
 ```
+
+:::

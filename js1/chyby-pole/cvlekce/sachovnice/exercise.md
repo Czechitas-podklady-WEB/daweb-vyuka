@@ -57,7 +57,7 @@ Sem přijde váš kód, který na poli sachovnice provede tah koněm.
 zobraz(sachovnice);
 ```
 
----solution
+:::solution
 
 ```js
 const zobraz = (data) => {
@@ -82,3 +82,5 @@ sachovnice[5][5] = 0;
 
 zobraz(sachovnice);
 ```
+
+:::

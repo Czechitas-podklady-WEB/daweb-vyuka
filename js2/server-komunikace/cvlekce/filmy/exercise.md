@@ -13,7 +13,7 @@ Vytvřte si repozitář ze šablony [cviceni-filmy](https://github.com/Czechitas
 1. Někam si zkopírujte strukturu jednoho filmu z `index.html`. Obsah elementu `.movie-list` smažte, aby zůstal prázdný.
 1. Upravte kód tak, abyste naplnili element `.movie-list` obsahem staženým z API.
 
----solution
+:::solution
 
 Soubor `index.js`:
 
@@ -49,3 +49,5 @@ fetch('https://apps.kodim.cz/daweb/trening-api/apis/movie-api/movies')
   })
   .then(renderMovies);
 ```
+
+:::

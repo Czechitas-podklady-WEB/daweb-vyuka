@@ -1,3 +1,3 @@
 ## Cvičení: Autentizace
 
-::exc[cvlekce>autentizace]
+::exc[cvlekce/autentizace]

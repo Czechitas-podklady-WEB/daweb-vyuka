@@ -23,6 +23,8 @@ Pokračujte v předchozím příkladu.
 1. Zařiďte, aby se efekt volal při každé změně stavu `timezone`. Uvnitř efektu zkonstruujte URL pro dotaz tak, aby server poslal data pro časovou zónu vybranou uživatelem.
 1. Vaše aplikace by měla fungovat tak, že když uživatel vybere z nabídky časovou zónu, rovnou se mu na stránce ukáže aktuální čas v této zóně.
 
----solution
+:::solution
 
 Řešení naleznete v samostatném [Codesanboxu zde](https://codesandbox.io/s/da-web-vyber-zony-mlvz2e?file=/src/App.jsx).
+
+:::

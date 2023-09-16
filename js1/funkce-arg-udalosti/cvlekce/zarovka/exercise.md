@@ -10,7 +10,7 @@ Vytvořte si repozitář ze šablony [cviceni-zarovka](https://github.com/Czechi
 
 ::fig[ukázka řešení]{src=assets/ukazka.gif}
 
----solution
+:::solution
 
 ```js
 const bulb = document.querySelector('.bulb');
@@ -18,3 +18,5 @@ document.addEventListener('keydown', () => {
   bulb.classList.toggle('bulb--on');
 });
 ```
+
+:::

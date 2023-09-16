@@ -10,7 +10,7 @@ Pokud se přihlásíte jako student například na Fakultu Informačních Techno
 1. Pomocí metody `slice` **vyřízněte** ze jména i příjmení **příslušné části**.
 1. Pomocí **interpolace řetězců** sestavte výslednou adresu a vypište ji do stránky.
 
----solution
+:::solution
 
 ```js
 const jmeno = prompt('Zadejte křestní jméno.')
@@ -21,3 +21,5 @@ const prijmeni = prompt('Zadejte příjmení.').toLowerCase().trim().slice(0, 5)
 
 document.body.innerHTML = `<p>Váš e-mail je: ${prijmeni}${jmeno}@fit.cvut.cz</p>`;
 ```
+
+:::

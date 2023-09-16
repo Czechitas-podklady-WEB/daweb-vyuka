@@ -14,7 +14,7 @@ demand: 2
 
 1. Upravte výsledek předchozího cvičení tak, že obsah číslovaného seznamu vytvoříte voláním funkce `shoppingList`.
 
----solution
+:::solution
 
 1. ```js
    const shoppingList = (polozky) => {
@@ -30,3 +30,5 @@ demand: 2
    const list = ['mouka', 'máslo', 'cukr', 'jablka', 'skořice'];
    document.querySelector('ol').innerHTML = shoppingList(list);
    ```
+
+:::

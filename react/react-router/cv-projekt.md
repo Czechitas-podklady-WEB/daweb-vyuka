@@ -1,3 +1,3 @@
 ## Cvičný projekt
 
-::exc[cvdoma>filmovy-magazin]
+::exc[cvdoma/filmovy-magazin]

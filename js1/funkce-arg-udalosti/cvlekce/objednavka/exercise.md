@@ -17,7 +17,7 @@ Vytvoříme jednoduchou stránku s objednávacím tlačítkem.
 
 ::fig[ukázka řešení]{src=assets/ukazka.gif}
 
----solution
+:::solution
 
 ```js
 const button = document.querySelector('#btn-order');
@@ -26,3 +26,5 @@ button.addEventListener('click', () => {
   button.textContent = 'Objednáno';
 });
 ```
+
+:::

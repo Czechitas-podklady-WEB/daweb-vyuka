@@ -63,7 +63,7 @@ Napište tedy funkci `validateCharacters`, která na vstupu dostane text a vrát
    ];
    ```
 
----solution
+:::solution
 
 ```js
 const validateCharacters = (vstup) => {
@@ -74,3 +74,5 @@ const validateCharacters = (vstup) => {
   return result;
 };
 ```
+
+:::

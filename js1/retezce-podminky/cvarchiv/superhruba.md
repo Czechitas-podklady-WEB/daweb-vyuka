@@ -26,7 +26,7 @@ Superhrubá mzda se spočítá z hrubé mzdy takto:
 
 **Příklad:** Celkové náklady na mzdu zaměstnance z hodinovou sazbou 450 Kč/h a 70% úvazkem jsou 70&nbsp;807 Kč. Hrubá mzda činí 52&nbsp;920 Kč a čistá mzda 38&nbsp;533 Kč. Své výpočty můžete ověřit například na [této stránce](https://www.vypocet.cz/cista-mzda). Bude nám stačit už pouze jedna lekce, abyste takovou stránku dokázali vyrobit úplně sami.
 
----solution
+:::solution
 
 ```
 const pay = Number(prompt('Hodinová mzda:'));
@@ -46,3 +46,5 @@ document.body.innerHTML = (
   'čistá: ' + net + ' Kč'
 );
 ```
+
+:::

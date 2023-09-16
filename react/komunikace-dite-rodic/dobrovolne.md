@@ -1,3 +1,3 @@
 ## Dobrovolné úložky na doma
 
-::exc[cvdoma>hodnoceni-2]
+::exc[cvdoma/hodnoceni-2]

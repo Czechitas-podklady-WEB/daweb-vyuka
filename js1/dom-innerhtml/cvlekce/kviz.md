@@ -11,7 +11,7 @@ Uveďte příjmení amerického vynálezce, který v roce 1876 jako první úsp�
 
 Použijte funkci `prompt` a zeptejte se uživatele na správnou odpověď. Vyberte element s třídou `answer__text` a nastavte obsah elementu na odpověď od uživatele. Vyberte element s třidou `answer`. Pokud je odpověď příjmení Bell, přidejte k tomuto elementu třídu `answer--correct`. V opačném případě přidejte třídu `answer--wrong`.
 
----solution
+:::solution
 
 ```js
 const questionElm = document.querySelector('.question');
@@ -33,3 +33,5 @@ if (userAnswer === 'Bell') {
   answerElm.classList.add('answer--wrong');
 }
 ```
+
+:::

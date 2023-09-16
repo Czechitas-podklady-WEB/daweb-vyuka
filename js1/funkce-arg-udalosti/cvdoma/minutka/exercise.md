@@ -12,7 +12,7 @@ Vytvořte si repozitář ze šablony [cviceni-minutka](https://github.com/Czechi
 
 ::fig[ukázka řešení]{src=assets/ukazka.gif}
 
----solution
+:::solution
 
 ```html
 <button>Stop</button>
@@ -32,3 +32,5 @@ tlacitko.addEventListener('click', () => {
   clearTimeout(odpocet);
 });
 ```
+
+:::

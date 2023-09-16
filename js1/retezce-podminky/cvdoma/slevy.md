@@ -7,7 +7,7 @@ Firma nabízející trička s potiskem poskytuje množstevní slevy podle počtu
 
 Napište stránku, která od uživatele obdrží **počet kusů**, které si chce objednat, a program **odpoví celkovou ceny objednávky** výpisem do stránky.
 
----solution
+:::solution
 
 ```js
 const pocetKusu = Number(prompt('Zadejte počet kusů.'));
@@ -28,3 +28,5 @@ if (pocetKusu < 50) {
 
 document.body.innerHTML = `<p>Výsledná cena je ${cena} Kč.</p>`;
 ```
+
+:::

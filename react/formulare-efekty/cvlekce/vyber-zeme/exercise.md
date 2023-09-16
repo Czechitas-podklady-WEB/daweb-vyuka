@@ -38,6 +38,8 @@ Pokračujte v předchozím cvičení.
    ```
    Ve zprávě zobrazte jméno a zemi, kterou si uživatel při registraci vybral.
 
----solution
+:::solution
 
 Řešení naleznete v samostatném [Codesanboxu zde](https://codesandbox.io/s/da-web-registrace-vyber-zeme-klztj1?file=/src/App.jsx).
+
+:::

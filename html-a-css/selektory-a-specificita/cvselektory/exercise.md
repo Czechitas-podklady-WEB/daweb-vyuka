@@ -26,7 +26,7 @@ Uvidíte podobnou stránku s kontakty jako ze cvičení flexboxu. V tomto cviče
 
 Pro plynulé zvětšení si můžete najít použití CSS vlastnosti `transition`.
 
----solution
+:::solution
 
 ```css
 /*
@@ -57,3 +57,5 @@ div img:hover {
   transition: 0.2s ease-in-out;
 }
 ```
+
+:::

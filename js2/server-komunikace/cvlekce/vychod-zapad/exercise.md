@@ -22,7 +22,7 @@ Vytvořme webovou stránku, která bude zobrazovat čas, kdy dnes vyšlo a kdy z
 1. Místo do konzole vypište někam do stránky čas východu a západu slunce.
 1. Přidejte na stránku tlačítko. Když uživatel toto tlačíko stiskne, teprve pak zavolejte API a zobrazte čas východu a západu slunce.
 
----solution
+:::solution
 
 Soubor `index.html`:
 
@@ -64,3 +64,5 @@ showBtn.addEventListener('click', () => {
     });
 });
 ```
+
+:::

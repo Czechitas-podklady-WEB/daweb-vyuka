@@ -1,15 +1,9 @@
 version: '3'
 services:
   kodim:
-    image: onset/kodimcz:1.5.17
+    image: onset/kodimcz:2.0.0-beta.6
     restart: always
     ports:
       - '3000:3000'
-    links:
-      - mongo
     volumes:
       - ./:/content/kurzy/kurz
-  mongo:
-    image: mongo
-    ports:
-      - '27017:27017'

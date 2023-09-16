@@ -5,7 +5,7 @@ demand: 3
 
 Napište funkci `max3`, která vrátí největší ze tří zadaných čísel. Opět se vyhněte použití funkce `Math.max`.
 
----solution
+:::solution
 
 ```js
 const max3 = (a, b, c) => {
@@ -18,3 +18,5 @@ const max3 = (a, b, c) => {
   return c;
 };
 ```
+
+:::

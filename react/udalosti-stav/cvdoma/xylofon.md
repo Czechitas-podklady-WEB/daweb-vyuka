@@ -11,6 +11,8 @@ Máte hotovou úlohu [Xylofon ze Základů JS](/kurzy/daweb/js1/cykly/ulozky-na-
 1. Spusťte vývojový server přes `npm start`.
 1. Upravte soubor `src/Xylofon.jsx` podle komentářů uvnitř.
 
----solution
+:::solution
 
 Vypracované řešení najdete v původním repozitáři ve větvi [reseni](https://github.com/Czechitas-podklady-WEB/cviceni-xylofon-react/tree/reseni).
+
+:::

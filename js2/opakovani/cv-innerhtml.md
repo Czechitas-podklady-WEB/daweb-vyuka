@@ -1,3 +1,3 @@
 ## Cvičení: innerHTML
 
-::exc[cvlekce>cifry-innerhtml]
+::exc[cvlekce/cifry-innerhtml]

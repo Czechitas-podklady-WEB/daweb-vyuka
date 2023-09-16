@@ -11,7 +11,7 @@ Vyjděte z řešení předchozího příkladu, kdy se objednává při kliknutí
 
 ::fig[ukázka řešení]{src=assets/ukazka.gif}
 
----solution
+:::solution
 
 ```html
 <button id="btn-order" disabled>Kontroluji dostupnost…</button>
@@ -27,3 +27,5 @@ button.addEventListener('click', () => {
   button.textContent = 'Objednáno';
 });
 ```
+
+:::

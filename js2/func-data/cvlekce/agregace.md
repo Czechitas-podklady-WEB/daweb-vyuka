@@ -26,7 +26,7 @@ Použijte opět pole `persons` z předchozího cvičení.
 
    U nebinárních osob použijte CSS třídu `nonbinary`.
 
----solution
+:::solution
 
 Používáme pole `persons` z předchozího cvičení:
 
@@ -97,3 +97,5 @@ Soubor `style.css`:
   color: grey;
 }
 ```
+
+:::

@@ -51,8 +51,10 @@ https://apps.kodim.cz/daweb/trening-api/apis/movie-api/movies
 1. Seřaďte filmy abecedně podle názvu.
 1. Přidejte do stránky 2 tlačítka. Na tlačítka přidejte událost při kliknutí tlačítkem myši. Jedno tlačítko seřadí filmy na stránce vzestupně a druhé sestupně podle roku vydání.
 
----solution
+:::solution
 
 Vypracované řešení najdete v původním repozitáři ve větvi [reseni](https://github.com/Czechitas-podklady-WEB/projekt-Filmy/tree/reseni).
 
 Živý náhled pak na adrese [czechitas-podklady.cz/projekt-Filmy/](https://czechitas-podklady.cz/projekt-Filmy/).
+
+:::

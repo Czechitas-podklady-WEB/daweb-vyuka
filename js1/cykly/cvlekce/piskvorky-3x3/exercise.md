@@ -56,6 +56,8 @@ Na chvilku se z vás stane rozhodčí na turnaji v piškvorkách. Vytvořte Java
 
   ::fig[celkový výsledek]{src=assets/vysledek.png}
 
----solution
+:::solution
 
 [app.js](https://github.com/Czechitas-podklady-WEB/cviceni-piskvorky-3x3/blob/reseni/app.js)
+
+:::

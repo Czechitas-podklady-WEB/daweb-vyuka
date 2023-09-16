@@ -35,7 +35,7 @@ demand: 2
 
 1. Stránku postupně otestujte zadáním platné i neplatné adresy.
 
----solution
+:::solution
 
 ```js
 const email = prompt('Zadejte váš e-mail');
@@ -51,3 +51,5 @@ if (isEmail) {
   messageElement.classList.add('msg--invalid');
 }
 ```
+
+:::

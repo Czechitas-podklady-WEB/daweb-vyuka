@@ -6,4 +6,4 @@ Po této lekci byste měli vědět a znát
 - jak správně konvertovat hodnoty pomocí funkcí `Number` a `String`,
 - jak ukládat informace do objektů a jak k těmto informacím přistupovat pomocí tečkové notace,
 - jak vytvářet vnořené objekty,
-- jednoduché destrukturování.
+- k čemu slouží proměnné `document` a `window`.

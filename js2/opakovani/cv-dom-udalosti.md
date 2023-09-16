@@ -1,3 +1,3 @@
 ## Cvičení: DOM a události
 
-::exc[cvlekce>vstup-formular]
+::exc[cvlekce/vstup-formular]
