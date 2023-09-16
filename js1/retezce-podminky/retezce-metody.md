@@ -35,20 +35,20 @@ Na řetězcích máme v JavaScriptu spoustu metod, které nám umožňují prov�
 : Vyhledá řetězec zadaný v parametru `value` uvnitř řetězce, na kterém tuto metodu voláme. Vrací pozici prvního výskytu nebo -1 pokud se obsah `value` v řetězci nenachází.
 
 ```js
-'popokatepetl'.indexOf('kat') // 4
-'popokatepetl'.indexOf('po') // 0
-'popokatepetl'.indexOf('t') // 6
-'popokatepetl'.indexOf('katka') // -1
+'popokatepetl'.indexOf('kat') // ⟶ 4
+'popokatepetl'.indexOf('po') // ⟶ 0
+'popokatepetl'.indexOf('t') // ⟶ 6
+'popokatepetl'.indexOf('katka') // ⟶ -1
 ```
 
 `padStart(targetLength, padString)`
 : Prodlouží řetězec na zadanou délku tak, že na začátek přidá opakování řetězce `padString`. Hodí se na zarovnávání nebo na formátování čísel.
 
 ```js
-'12'.padStart(4, '0') // '0012'
-'12'.padStart(4, ' ') // '  12'
-'12'.padStart(3, ' ') // ' 12'
-'12'.padStart(2, ' ') // '12'
+'12'.padStart(4, '0') // ⟶ '0012'
+'12'.padStart(4, ' ') // ⟶ '  12'
+'12'.padStart(3, ' ') // ⟶ ' 12'
+'12'.padStart(2, ' ') // ⟶ '12'
 ```
 
 Možná vám nyní vrtá hlavou, jestli funkce `Math.round` nebo `Math.floor` nejsou náhodou metody, když používají tečkovou notaci. Je to skutečně tak. `Math` je přepřipravený JavaScriptový objekt, který sdružuje metody pro matematické výpočty. I ostatní předpřípravené objekty, jako `window` nebo `document` mají své užitečné metody. Některé z nich potkáme hned v následující lekci.

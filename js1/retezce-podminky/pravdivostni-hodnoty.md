@@ -1,6 +1,6 @@
 ## Pravdivostní hodnoty
 
-Ve zbývající části lekce se vrhneme na podmínky a umožníme naším programům dělat rozhodnutí. Před tím si ale musíme trošku připravit půdu a ukázat si nový typ hodnoty. Zatím jsme viděli čísla, řetězce a objekty. Nyní přichází takzvané :term{cs="pravdivostní hodnoty" en="boolean values"}. Čísel a řetězců je nekonečně mnoho, pravdivostní hodnoty jsou však jen dvě: `true` a `false`. Používají se k tomu, abychom vyjádřili, zda je něco pravda nebo není. Například:
+Ve zbývající části lekce se vrhneme na takzvané __podmínky__ a umožníme tím naším programům dělat rozhodnutí. Před tím si ale musíme trošku připravit půdu a ukázat si nový typ hodnoty. Zatím jsme viděli čísla, řetězce a objekty. Nyní přichází takzvané :term{cs="pravdivostní hodnoty" en="boolean values"}. Čísel a řetězců je nekonečně mnoho, pravdivostní hodnoty jsou však jen dvě: `true` a `false`. Používají se k tomu, abychom vyjádřili, zda je něco pravda nebo není. Například:
 
 ```js
 const pristupPovolen = false;
@@ -10,21 +10,16 @@ const mobilniProhlizec = true;
 
 Abychom mohli v našich programech činit rozhodnutí, budeme také potřebovat výrazy vracející pravdivostní hodnoty. Ty můžeme sestavit pomocí takzvaných :term{cs="porovnávacích operátorů" en="comparison operators"}.
 
-```jscon
-> const age = 21
-> age > 18
-true
-> age > 21
-false
-> age >= 21
-true
-> age === 21
-true
-> age !== 21
-false
+```js
+const age = 21;
+age > 18 // ⟶ true
+age > 21 // ⟶ false
+age >= 21 // ⟶ true
+age === 21 // ⟶ true
+age !== 21 // ⟶ false
 ```
 
-Kompletní sada porovnávacích operátorů vypadá takto.
+Kompletní sada porovnávacích operátorů vypadá takto:
 
 | Operátor  | Popis            |
 | --------- | ---------------- |
@@ -35,4 +30,6 @@ Kompletní sada porovnávacích operátorů vypadá takto.
 | **`===`** | rovno            |
 | **`!==`** | nerovno          |
 
-V JavaScriptu můžete narazit i na operátory `==` a `!=`. Ty však nebudeme nikdy používat, protože v některých případech mohou zanést do našeho programu nechtěné chyby.
+:::warn
+V JavaScriptu můžete narazit i na operátory `==` a `!=`. Ty však nebudeme nikdy používat! V některých případech mohou zanést do našeho programu nechtěné chyby a zmatky.
+:::
