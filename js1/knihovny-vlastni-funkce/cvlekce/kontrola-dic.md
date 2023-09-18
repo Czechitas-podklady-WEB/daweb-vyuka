@@ -25,6 +25,22 @@ Postupujte dle následujících kroků:
 1. Pokud funkce dospěla až do tohoto bodu, vstup prošel všemi testy. Můžeme vrátit `true`.
 1. Vyzoušejte svoji funkci na různých vstupech a ověřte, že funguje. Nezapomeňte ověřit platná i neplatná DIČ.
 
+#### Příklady platných DIČ:
+
+- CZ123456789
+- CZ1234567890
+
+#### Příklady neplatných DIČ:
+
+- 123
+- ABC
+- 1234567890
+- 001234567890
+- 1234567890CZ
+- CZ12345678901
+- CZ12345678
+- CZA12345678
+
 :::solution
 
 ```js
