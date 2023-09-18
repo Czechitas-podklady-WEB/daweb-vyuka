@@ -7,15 +7,15 @@ Z předchozí lekce už víme jak vytvářet jednoduché objekty a jak do nich p
 U řetězců je situace v celku jednoduchá, protože mají pouze jednu vlastnost. Jmenuje se `length` a udává počet znaků v řetězci.
 
 ```js
-'martin'.length // 6
-'m'.length // 1
-''.length // 0
+'martin'.length; // 6
+'m'.length; // 1
+''.length; // 0
 ```
 
 V objektech však kromě vlastností najdeme i takzvané :term{cs="metody" en="methods"}. Metoda je funkce schovaná uvnitř objektu a je tak s ním pevně spjata. V praxi se totiž často stává, že některé funkce se hodí na práci pouze s jedním typem hodnoty. Například bychom mohli mít funkci `toUpperCase`, která by převedla všechna písmena v řetězci na velká. Kdyby taková funkce existovala, mohli bychom ji volat třeba takto
 
 ```js
-toUpperCase('martin') // 'MARTIN'
+toUpperCase('martin'); // 'MARTIN'
 ```
 
 Je pochopitelné, že tato funkce funguje pouze pro řetězce. Pro ostatní
@@ -23,7 +23,7 @@ hodnoty nedává smysl. Těžko si představit, co by taková funkce měla vrát
 například v takovémto případě.
 
 ```js
-toUpperCase(3.14) // ?
+toUpperCase(3.14); // ?
 ```
 
 Funkce, které pracují pouze na jednom typu objektu, můžeme svázat přímo s tímto objektem. Můžeme tak říct, že funkce `toUpperCase` patří pouze řetězcům. Máme-li funkci, která patří pouze typu řetězec, voláme ji pomocí už známé tečkové notace.

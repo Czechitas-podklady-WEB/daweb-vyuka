@@ -3,16 +3,16 @@
 V matematice jsme zvyklí na takzvané aritmetické operátory, tedy plus, mínus apod. Takové operátory obecně vyrábějí z čísel jiná čísla, například
 
 ```js
-2 + 3 // ⟶ 5
+2 + 3; // ⟶ 5
 ```
 
 Logika má však také své operátory, kterým se (logicky) říká <em>logické operátory</em>. Tyto operátory místo čísel pracují s pravdivostními hodnotami. Můžeme tak použít například operátor `&&`.
 
 ```js
-true && true // ⟶ true
-true && false // ⟶ false
-false && true // ⟶ false
-false && false // ⟶ false
+true && true; // ⟶ true
+true && false; // ⟶ false
+false && true; // ⟶ false
+false && false; // ⟶ false
 ```
 
 Tento operátor v podstatě znamená **a zároveň**. Tedy pokud jsou obě hodnoty `true`, výsledek je také `true`. Jinak je výsledek `false`.
@@ -20,17 +20,17 @@ Tento operátor v podstatě znamená **a zároveň**. Tedy pokud jsou obě hodno
 Můžeme také použít operátor **nebo** který se píše jako dvě roury `||`.
 
 ```js
-true || true // ⟶ true
-true || false // ⟶ true
-false || true // ⟶ true
-false || false // ⟶ false
+true || true; // ⟶ true
+true || false; // ⟶ true
+false || true; // ⟶ true
+false || false; // ⟶ false
 ```
 
 Operátor `||` vrací `true` v případě, že alespoň jedna z hodnot je `true`. Jako poslední máme operátor **negace**, který se píše jako vykřičník `!`. Ten jen vrací opak zadané pravdivostní hodnoty.
 
 ```js
-!true // ⟶ false
-!false // ⟶ true
+!true; // ⟶ false
+!false; // ⟶ true
 ```
 
 Tyto logické operátory můžeme s výhodou využít v našich podmínkách. Například bychom mohli chtít zkontrolovat, že věk uživatele je mezi 15 a 18. Chceme tedy logicky říct že věk je :i[větší nebo roven 15] **a zároveň** :i[menší nebo roven 18]. Kombinujeme tak vlastně dva logické výrazy do jednoho.

@@ -9,10 +9,15 @@ const order = {
   delivery: '21.8.2021',
 };
 
-document.body.innerHTML = (
-  '<h2>Objednávka: ' + order.id + '</h2>' +
-  '<p>Zboží ' + order.product + ' bude doručeno ' + order.delivery + '.</p>'
-);
+document.body.innerHTML =
+  '<h2>Objednávka: ' +
+  order.id +
+  '</h2>' +
+  '<p>Zboží ' +
+  order.product +
+  ' bude doručeno ' +
+  order.delivery +
+  '.</p>';
 ```
 
 Abychom se ze všeho toho sčítání a uvozovek nezbláznili, moderní JavaScript nabízí zápis řetězců, kterému se odborně říká :term{cs="interpolace řetězců" en="string interpolation"}. V tomto zápisu se místo obyčejných nebo dvojitých uvozovek používá takzvaný zpětný apostrof &#96;. Pomocí tohoto zápisu můžeme obsah proměnných vložit přímo do řetězce pomocí znaku `$` a složených závorek.

@@ -23,4 +23,5 @@ const prijmeni = prompt('Zadejte příjmení.').toLowerCase().trim().slice(0, 5)
 
 document.body.innerHTML = `<p>Váš e-mail je: ${prijmeni}${jmeno}@fit.cvut.cz</p>`;
 ```
+
 :::
