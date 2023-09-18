@@ -63,7 +63,7 @@ document.body.innerHTML += 'Prací prášek';
 ```
 
 ```js
-document.body.innerHTML += "I'am awesome";
+document.body.innerHTML += "I'm awesome";
 ```
 
 ```js

@@ -97,7 +97,7 @@ Number('-2.48'); // Vrátí číslo -2.48
 Number('-2,48'); // Vrátí hodnotu NaN
 ```
 
-Všimněte si, co se stane, když se pokusíme zkonvertovat nějaký řetězec, který na číslo převést nejde. V takovém případě obdržíme speciální hodnotu `NaN`, což je zkratka pro :i[Not a Number - Není číslo].
+Všimněte si, co se stane, když se pokusíme zkonvertovat nějaký řetězec, který na číslo převést nejde. V takovém případě obdržíme speciální hodnotu `NaN`, což je zkratka pro :i[Not a Number – Není číslo].
 
 Nyní už můžeme náš program přepracovat tak, aby fungoval správně.
 

@@ -1,8 +1,8 @@
 ---
-title: Očkování - objekty
+title: Očkování – objekty
 demand: 2
 lead: Vytvořte objekt s údaji o uživateli.
-solutionAccess: lock
+solutionAccess: allow
 ---
 
 Pokračujme v našem registračním systému na očkováni. Zatím se umíme uživatele zeptat na jméno a věk.
