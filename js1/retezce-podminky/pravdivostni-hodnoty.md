@@ -31,5 +31,5 @@ Kompletní sada porovnávacích operátorů vypadá takto:
 | **`!==`** | nerovno          |
 
 :::warn
-V JavaScriptu můžete narazit i na operátory `==` a `!=`. Ty však nebudeme nikdy používat! V některých případech mohou zanést do našeho programu nechtěné chyby a zmatky.
+V JavaScriptu můžete narazit i na operátory `==` a `!=`. Ty však nebudeme nikdy používat! Jde o zastaralé operátory, které v některých případech mohou zanést do našeho programu nechtěné chyby a zmatky.
 :::

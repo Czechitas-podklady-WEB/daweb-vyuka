@@ -1,6 +1,8 @@
 ---
 title: Přestupný rok 3
 demand: 5
+lead: Ještě o kus těžší zadání přestupného roku.
+solutionAccess: lock
 ---
 
 Napište program, který po zadání kalendářního roku vypíše, zda jde o rok přestupný, či nikoliv.
