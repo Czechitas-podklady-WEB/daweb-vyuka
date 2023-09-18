@@ -2,7 +2,7 @@
 title: Realitka
 demand: 2
 lead: Vypište do stránky některé údaje z inzerátu na byt.
-solutionAccess: lock
+solutionAccess: allow
 ---
 
 Mějme následující objekt představující inzerát na stránkách nějaké realitní kanceláře.
