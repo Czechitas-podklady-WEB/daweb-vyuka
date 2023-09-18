@@ -8,9 +8,9 @@ Pro jednoduchý příklad si představme e-shop prodávající alkoholické náp
 const age = Number(prompt('Zadejte svůj věk:'));
 
 if (age >= 18) {
-  document.body.innerHTML = '<p>Pokračujte k platbě</p>';
+  document.body.innerHTML += '<p>Pokračujte k platbě</p>';
 } else {
-  document.body.innerHTML = '<p>Bohužel máte nízký věk</p>';
+  document.body.innerHTML += '<p>Bohužel máte nízký věk</p>';
 }
 ```
 
@@ -20,22 +20,22 @@ Toto je příklad velmi jednoduché podmínky se dvěm větvemi. V závorkách p
 
 Pokud nějaké řádky kódu uzavřeme do složených závorek, vytváříme takzvaný blok. JavaScript každý blok chápe jako samostatnou jednotku, která se vykoná za určité situace. Taková situace může být například splnění nebo nesplnění výrazu v podmínce. Později uvidíme další situace, kde se nám budou bloky kódu hodit.
 
-Aby se nám kód dobře četl, odsazujeme řádky uvnitř bloku o kus doprava. V tomto kurzu budeme používat dvě mezery. Pokud máte VS Code nastavené podle naších doporučení, při psaní se vám řádky budou automaticky odsazovat. Stisknutím tabulátoru :kbd[Tab] pak můžete odsazení vložit sami. Stisknutím :kbd[Shift]+:kbd[Tab] jej naopak zrušíte. To se hodí pokud chcete například odsadit velký kus kódu najednou. Stačí jej vybrat myší a stiknout :kbd[Tab] nebo :kbd[Shift]+:kbd[Tab].
+Aby se nám kód dobře četl, odsazujeme řádky uvnitř bloku o kus doprava. V tomto kurzu budeme používat dvě mezery. Pokud máte prostředí VS Code nastavené podle naších doporučení, při psaní se vám řádky budou automaticky odsazovat. Stisknutím tabulátoru :kbd[Tab] pak můžete odsazení vložit sami. Stisknutím :kbd[Shift]+:kbd[Tab] jej naopak zrušíte. To se hodí pokud chcete například odsadit velký kus kódu najednou. Stačí jej vybrat myší a stiknout :kbd[Tab] nebo :kbd[Shift]+:kbd[Tab].
 
 Je dobré mít na paměti, že odsazování a obecně většina bílých znaků, je především pro nás pro lidi, tedy pro čtenáře kódu. Počítači, tedy přesnějí JavaScript runtimu, jsou bílé znaky jedno. Můžeme si je tady dávat kam chceme. Následující dva zápisy jsou z hlediska runtimu zcela stejné.
 
 ```js
 if (age >= 18) {
-  document.body.innerHTML = '<p>Pokračujte k platbě</p>';
+  document.body.innerHTML += '<p>Pokračujte k platbě</p>';
 } else {
-  document.body.innerHTML = '<p>Bohužel máte nízký věk</p>';
+  document.body.innerHTML += '<p>Bohužel máte nízký věk</p>';
 }
 ```
 
 <!-- prettier-ignore -->
 ```js
-if(age>=18){document.body.innerHTML = '<p>Pokračujte k platbě</p>';}
-else{document.body.innerHTML = '<p>Bohužel máte nízký věk</p>';}
+if(age>=18){document.body.innerHTML+='<p>Pokračujte k platbě</p>';}
+else{document.body.innerHTML+='<p>Bohužel máte nízký věk</p>';}
 ```
 
 Věřím, že uznáte, že první varianta je mnohem čitelnější než druhá. Způsobů, jak formátovat kód existuje vícero a můžete se tak účastnit nekonečných hospodských disputací o tom, jestli odsazovat pomocí dvou mezer nebo čtyř, jestli otvírací složenou závorku psát na konec řádku nebo na začátek nového a tak dále.
@@ -44,15 +44,15 @@ Věřím, že uznáte, že první varianta je mnohem čitelnější než druhá.
 ```js
 if (age >= 18)
 {
-    document.body.innerHTML = '<p>Pokračujte k platbě</p>';
+    document.body.innerHTML += '<p>Pokračujte k platbě</p>';
 }
 else
 {
-    document.body.innerHTML = '<p>Bohužel máte nízký věk</p>';
+    document.body.innerHTML += '<p>Bohužel máte nízký věk</p>';
 }
 ```
 
-Nakonec je však důležité hlavně si nějaká pravidla stanovit a ta pak dodržovat. V tomto směru existuje [několik manuálů](https://codeburst.io/5-javascript-style-guides-including-airbnb-github-google-88cbc6b2b7aa), kterým se říká _style guide_. Ty kodifikují určitá pravidla formátování kódu tak, abyste je nemuseli vždy od nuly vymýšlet sami. Ve firmě nebo v programátorském týmu pak stačí říct, že používáme takový nebo onaký style guide, a předejít tak nekonečným diskuzím o tom, kde mají být mezery a kde ne. V tomto kurzu používáme [AirBnB style guide](https://github.com/airbnb/javascript).
+Ať už vzájemné spory dopadnou jakkoliv, nakonec je důležité si nějaká pravidla stanovit a ta pak svorně dodržovat. V tomto směru existuje [několik manuálů](https://codeburst.io/5-javascript-style-guides-including-airbnb-github-google-88cbc6b2b7aa), kterým se říká _style guide_. Ty kodifikují určitá pravidla formátování kódu tak, abyste je nemuseli vždy od nuly vymýšlet sami. Ve firmě nebo v programátorském týmu pak stačí říct, že používáme takový nebo onaký style guide, a předejít tak nekonečným diskuzím o tom, kde mají být mezery a kde ne. V tomto po dohodě kurzu používáme [AirBnB style guide](https://github.com/airbnb/javascript).
 
 ### Podmínky s více větvemi
 
@@ -60,7 +60,7 @@ Zatím jsme viděli podmínky se dvěma větvemi. Není ovšem problém mít pod
 
 ```js
 if (age >= 18) {
-  document.body.innerHTML = '<p>Pokračujte k platbě</p>';
+  document.body.innerHTML += '<p>Pokračujte k platbě</p>';
 }
 ```
 
@@ -106,15 +106,15 @@ Každý blok kódu může obsahovat libovolné příkazy, tedy i další podmín
 
 ```js
 if (age >= 18) {
-  document.body.innerHTML = '<p>Pokračujte k platbě</p>';
+  document.body.innerHTML += '<p>Pokračujte k platbě</p>';
 } else {
   const remains = 18 - age;
   if (remains < 2) {
-    document.body.innerHTML = '<p>Ještě si chvíli počkejte</p>';
+    document.body.innerHTML += '<p>Ještě si chvíli počkejte</p>';
   } else if (remains < 5) {
-    document.body.innerHTML = '<p>Co to tady zkoušíš?</p>';
+    document.body.innerHTML += '<p>Co to tady zkoušíš?</p>';
   } else {
-    document.body.innerHTML = '<p>Utíkej za mamkou!</p>';
+    document.body.innerHTML += '<p>Utíkej za mamkou!</p>';
   }
 }
 ```

@@ -1,6 +1,8 @@
 ---
 title: Ruleta
 demand: 2
+lead: Napište program, který zjistí vlastnosti zadaného čísla na ruletě.
+solutionAccess: lock
 ---
 
 Na obrázku vidíte rozložení čísel na klasické Francouzské ruletě. Ruleta obsahuje čísla 0–36. Každé číslo s výjimkou nuly je buď sudé nebo liché a zároveň červené nebo černé. Pro čísla 1 až 10 a 19 až 28 platí, že lichá čísla jsou červená a sudá jsou černá. Pro zbytek platí obrácené pravidlo, tedy lichá jsou černá a sudá červená. Nula není ani lichá ani sudá, ani černá ani červená.
@@ -15,7 +17,7 @@ Vytvořte stránku, které uživatel zadá číslo a stránka odpoví jestli jde
 const cislo = Number(prompt('Zadej číslo rulety od 0 do 36.'));
 const cisloJeLiche = cislo % 2 === 1;
 
-document.body.innerHTML = `<p>Zadáno: ${cislo}.</p>`;
+document.body.innerHTML += `<p>Zadáno: ${cislo}.</p>`;
 if (cislo < 0 || cislo > 36) {
   document.body.innerHTML += `<p>Zadané číslo se nenachází na ruletě.</p>`;
 } else if (cislo === 0) {
