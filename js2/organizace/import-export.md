@@ -3,4 +3,4 @@
 Osnova:
 
 1. Motivace pomocí řešení FilmBoxu, všechno je v jednom souboru, nečitelné, těžko spravovatelné.
-1. Ukázak jak funguje import/export
+1. Ukázka jak funguje import/export

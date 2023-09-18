@@ -3,6 +3,7 @@ lead: Naučíte se vytvářet složitější webové aplikace a poznáte hlubš�
 lessons:
   - opakovani
   - organizace
+  - bundlovani
   # - func-data
   # - server-komunikace
   # - komponenty
