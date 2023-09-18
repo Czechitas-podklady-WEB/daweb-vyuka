@@ -1,6 +1,8 @@
 ---
 title: Mimozemský život
 demand: 2
+lead: Porovnejte datumy.
+solutionAccess: lock
 ---
 
 Podívejte se na stránku [existuje-mimozemsky-zivot.cz](http://existuje-mimozemsky-zivot.cz). Podle toho, v jakém období toto zadání čtete, se dozvíte, zda jsme již objevili život mimo planetu Zemi. Stránka zobrazuje pouze jednoduchou zprávu. Podobných stránek lze na internetu najít vícero. Například

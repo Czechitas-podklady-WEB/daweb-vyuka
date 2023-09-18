@@ -1,6 +1,8 @@
 ---
 title: Obsah elipsy
 demand: 1
+lead: Spočítejte obsah elipsy.
+solutionAccess: lock
 ---
 
 Zlovolní zahrádkáři nám chtějí ztížit výměru pozemků a proto si pořídíli pozemek ve tvaru elipsy.

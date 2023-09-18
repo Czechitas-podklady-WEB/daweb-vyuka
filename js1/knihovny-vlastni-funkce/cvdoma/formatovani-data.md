@@ -1,6 +1,8 @@
 ---
 title: Formátování data
 demand: 3
+lead: Převeďte datum do lidské podoby.
+solutionAccess: lock
 ---
 
 Bez použití knihovny `Day.js` napište funkci `formatDate`, která na vstupu obdrží objekt představující datum v následujícím formátu:
