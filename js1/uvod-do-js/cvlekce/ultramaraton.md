@@ -2,7 +2,7 @@
 title: Ultramaraton
 demand: 2
 lead: Spočítejte, v kolik hodin skončí ultramaratonský závod.
-solutionAccess: lock
+solutionAccess: allow
 ---
 
 Představte si, že jste pořadatelé ultramaratonského závodu. Závod začíná ve **tři hodiny odpoledne**, což ve 24hodinovém formátu zapíšeme jako **15**. Nejlepší běžec zvládne vaši brutální trasu za **10 hodin**. Doběhne tedy **v jednu hodinu ráno**, v našem formátu zapsáno jako **1**.
