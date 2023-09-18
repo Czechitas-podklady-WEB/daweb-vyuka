@@ -5,7 +5,7 @@ lead: Ovlivněte stránku JavaScriptem.
 solutionAccess: lock
 ---
 
-Vytvořte si repozitář ze šablony [cviceni-novinky](https://github.com/Czechitas-podklady-WEB/cviceni-novinky). V repozitáři je připravena webová stránka, která zobrazuje několik zajímavých zpráv. Zobrazte stránku v prohlížeči a veškeré úkoly z tohoto cvičení proveďte v JavaScriptové konzoli.
+Vytvořte si repozitář ze šablony [cviceni-novinky](https://github.com/Czechitas-podklady-WEB/cviceni-novinky). V repozitáři je připravena webová stránka, která zobrazuje několik zajímavých zpráv. Zobrazte stránku v prohlížeči a veškeré úkoly z tohoto cvičení proveďte v JavaScriptovém souboru `index.js`.
 
 1. Pomocí `document.querySelector` vyberte element `body` a uložte si jej do proměnné `bodyElement`. Pomocí této proměnné nastavte barvu pozadí elementu na hodnotu `#e9e9e9`.
 1. Do jiné proměnné vyberte element s třídou `news` a nastavte mu barvu pozadí na bílou a maximální šířku na `60rem`.

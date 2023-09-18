@@ -14,12 +14,10 @@ Když prohlížeč zpracovává HTML kód, každá značka a její obsah se pře
 </body>
 ```
 
-Prohlížeč má DOM celé naší stránky uložený v proměnné :var[dokument]. Metoda `document.querySelector` pak umí z dokumentu vybrat DOM element pomocí CSS selektoru. Například element hlavičky najdeme snadno podle jeho třídy. Výsledný DOM element si pak uložíme do proměnné. Zatím budeme experimentovat v konzoli, abychom si mohli rovnou zobrazit výsledky.
+Prohlížeč má DOM celé naší stránky uložený v proměnné :var[dokument]. Metoda `document.querySelector` pak umí z dokumentu vybrat DOM element pomocí CSS selektoru. Například element hlavičky najdeme snadno podle jeho třídy. Výsledný DOM element si pak uložíme do proměnné.
 
-```jscon
-> const headerElm = document.querySelector('.header');
-> headerElm
-<div class="header">Hlavička</div>
+```js
+const headerElm = document.querySelector('.header');
 ```
 
 Jakmile máme element uložený v proměnné, můžeme si s ním začít hrát pomocí jeho vlastností a metod.
@@ -28,50 +26,43 @@ Jakmile máme element uložený v proměnné, můžeme si s ním začít hrát p
 
 První důležitá vlastnost každého DOM elementu je `textContent`. Ta obsahuje textový obsah našeho elementu. Použitím vlastnosti `textContent` můžeme tento obsah číst a také měnit.
 
-```jscon
-> const headerElm = document.querySelector('.header')
-> headerElm.textContent
-Hlavička
-> headerElm.textContent = 'Dobré ráno'
-> headerElm
-<div class="header">Dobré ráno</div>
+```js
+const headerElm = document.querySelector('.header');
+const puvodniObsah = headerElm.textContent;
+headerElm.textContent = 'Dobré ráno';
 ```
 
 Snadno také můžeme změnit jakýkoliv styl pomocí vlastnosti `style`. Takto můžeme změnit například barvu textu a dolní okraj.
 
-```jscon
-> const headerElm = document.querySelector('.header')
-> headerElm.style.color = 'white'
-> headerElm.style.marginBottom = '2rem'
+```js
+const headerElm = document.querySelector('.header');
+headerElm.style.color = 'white';
+headerElm.style.marginBottom = '2rem';
 ```
 
 Všimněte si hned dvou důležitých věcí:
 
 1. Názvy CSS vlastností musíme zapisovat **velbloudí notací**. Je to proto, že kdybychom použili kebab notaci (ano, toto je skutečný název) jako zde
 
-   ```jscon
-   > headerElm.style.margin-bottom = '2rem'
+   ```js
+   headerElm.style.margin-bottom = '2rem'
    ```
 
    JavaScript by si pomlčku spletl s mínusem a kód by nefungoval.
 
 2. Hodnoty všech CSS vlastností se zapisují pomocí řetězců. Proto dávejte pozor například na takovéto chyby.
-   ```jscon
-   > headerElm.style.color = white
-   > headerElm.style.marginBottom = 2rem
+   ```js
+   headerElm.style.color = white
+   headerElm.style.marginBottom = 2rem
    ```
 
 ### Změna třídy
 
 Pomocí JavaScriptu také můžeme elementům snadno přidávat nebo odebírat CSS třídy. Použijeme k tomu vlastnost `classList`. Takto například přidáme třídu hlavičce naší stránky.
 
-```jscon
-> const headerElm = document.querySelector('.header')
-> headerElm
-<div class="header">Dobré ráno</div>
-> headerElm.classList.add('new-header')
-> headerElm
-<div class="header new-header">Dobré ráno</div>
+```js
+const headerElm = document.querySelector('.header');
+headerElm.classList.add('new-header');
 ```
 
 Pomocí `classList` lze také třídy odebírat. Dejme tomu, že máme takovéto tlačítko.
@@ -82,13 +73,9 @@ Pomocí `classList` lze také třídy odebírat. Dejme tomu, že máme takovéto
 
 Pokud chceme tlačítku odebrat modifikátor `btn-primary`, použijeme metodu `classList.remove`.
 
-```jscon
-> const buttonElm = document.querySelector('button')
-> buttonElm
-<button class="btn btn-primary">Click me</button>
-> buttonElm.classList.remove('btn-primary')
-> buttonElm
-<button class="btn">Click me</button>
+```js
+const buttonElm = document.querySelector('button');
+buttonElm.classList.remove('btn-primary');
 ```
 
 Vlastnost `classList` nabízí ještě další užitečné metody jako `toggle`, o kterých si povíme později.
