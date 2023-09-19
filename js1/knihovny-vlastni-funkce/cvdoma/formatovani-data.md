@@ -17,16 +17,16 @@ Funkce vrátí řetězec představující datum ve formátu **DD.MM.YYYY**. Př�
 document.body.innerHTML += formatDate({ day: 6, month: 4, year: 2021 }); // 06.04.2021
 ```
 
-V tomto cvičení se vám jistě bude hodit metoda na textových řetězcích `padStart`. Zkuste také uvnitř těla funkce použít _destrukturování_.
+V tomto cvičení se vám jistě bude hodit metoda na textových řetězcích `padStart`.
 
 :::solution
 
 ```js
-const formatDate = ({ day, month, year }) => {
-  const dayText = String(day).padStart(2, '0');
-  const monthText = String(month).padStart(2, '0');
+const formatDate = (date) => {
+  const dayText = String(date.day).padStart(2, '0');
+  const monthText = String(date.month).padStart(2, '0');
 
-  return `${dayText}.${monthText}.${year}`;
+  return `${dayText}.${monthText}.${date.year}`;
 };
 ```
 
