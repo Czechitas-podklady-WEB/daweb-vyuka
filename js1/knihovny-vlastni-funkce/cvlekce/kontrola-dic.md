@@ -73,19 +73,18 @@ Můžete si do javascriptového souboru přidat následující kód, kterým si 
 
 ```js
 document.body.innerHTML += '<p>Platná DIČ</p>';
-document.body.innerHTML += '<p>CZ123456789 ' + isDIC('CZ123456789') + '</p>';
-document.body.innerHTML += '<p>CZ1234567890 ' + isDIC('CZ1234567890') + '</p>';
+document.body.innerHTML += `<p>CZ123456789 ${isDIC('CZ123456789')}</p>`;
+document.body.innerHTML += `<p>CZ1234567890 ${isDIC('CZ1234567890')}</p>`;
 
 document.body.innerHTML += '<p>Neplatná DIČ</p>';
-document.body.innerHTML += '<p>123 ' + isDIC('123') + '</p>';
-document.body.innerHTML += '<p>ABC ' + isDIC('ABC') + '</p>';
-document.body.innerHTML += '<p>1234567890 ' + isDIC('1234567890') + '</p>';
-document.body.innerHTML += '<p>001234567890 ' + isDIC('001234567890') + '</p>';
-document.body.innerHTML += '<p>1234567890CZ ' + isDIC('1234567890CZ') + '</p>';
-document.body.innerHTML +=
-  '<p>CZ12345678901 ' + isDIC('CZ12345678901') + '</p>';
-document.body.innerHTML += '<p>CZ12345678 ' + isDIC('CZ12345678') + '</p>';
-document.body.innerHTML += '<p>CZA23456789 ' + isDIC('CZA12345678') + '</p>';
+document.body.innerHTML += `<p>123 ${isDIC('123')}</p>`;
+document.body.innerHTML += `<p>ABC ${isDIC('ABC')}</p>`;
+document.body.innerHTML += `<p>1234567890 ${isDIC('1234567890')}</p>`;
+document.body.innerHTML += `<p>001234567890 ${isDIC('001234567890')}</p>`;
+document.body.innerHTML += `<p>1234567890CZ ${isDIC('1234567890CZ')}</p>`;
+document.body.innerHTML += `<p>CZ12345678901 ${isDIC('CZ12345678901')}</p>`;
+document.body.innerHTML += `<p>CZ12345678 ${isDIC('CZ12345678')}</p>`;
+document.body.innerHTML += `<p>CZA23456789 ${isDIC('CZA12345678')}</p>`;
 ```
 
 :::
