@@ -33,14 +33,26 @@ const formatDate = (date) => {
 Můžete si do javascriptového souboru přidat následující kód, kterým si můžete otestovat, jak se funkce `formatDate` chová pro různá data:
 
 ```js
-document.body.innerHTML +=
-  '<p>' + formatDate({ day: 12, month: 3, year: 2023 }) + '</p>';
-document.body.innerHTML +=
-  '<p>' + formatDate({ day: 3, month: 11, year: 2023 }) + '</p>';
-document.body.innerHTML +=
-  '<p>' + formatDate({ day: 1, month: 1, year: 2023 }) + '</p>';
-document.body.innerHTML +=
-  '<p>' + formatDate({ day: 28, month: 10, year: 2023 }) + '</p>';
+document.body.innerHTML += `<p>${formatDate({
+  day: 12,
+  month: 3,
+  year: 2023,
+})}</p>`;
+document.body.innerHTML += `<p>${formatDate({
+  day: 3,
+  month: 11,
+  year: 2023,
+})}</p>`;
+document.body.innerHTML += `<p>${formatDate({
+  day: 1,
+  month: 1,
+  year: 2023,
+})}</p>`;
+document.body.innerHTML += `<p>${formatDate({
+  day: 28,
+  month: 10,
+  year: 2023,
+})}</p>`;
 ```
 
 :::
