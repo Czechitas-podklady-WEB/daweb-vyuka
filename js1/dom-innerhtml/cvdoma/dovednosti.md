@@ -1,6 +1,8 @@
 ---
 title: Dovednosti
 demand: 2
+lead: Vizualizujte vědomosti.
+solutionAccess: lock
 ---
 
 Vytvořte si repozitář ze šablony [cviceni-dovednosti](https://github.com/Czechitas-podklady-WEB/cviceni-dovednosti).

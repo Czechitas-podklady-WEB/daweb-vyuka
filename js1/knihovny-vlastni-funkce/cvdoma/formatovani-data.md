@@ -1,6 +1,8 @@
 ---
 title: Formátování data
 demand: 3
+lead: Převeďte datum do lidské podoby.
+solutionAccess: lock
 ---
 
 Bez použití knihovny `Day.js` napište funkci `formatDate`, která na vstupu obdrží objekt představující datum v následujícím formátu:
@@ -11,31 +13,46 @@ Bez použití knihovny `Day.js` napište funkci `formatDate`, která na vstupu o
 
 Funkce vrátí řetězec představující datum ve formátu **DD.MM.YYYY**. Příklad použití:
 
-```jscon
-> formatDate({ day: 6, month: 4, year: 2021 })
-"06.04.2021"
+```js
+document.body.innerHTML += formatDate({ day: 6, month: 4, year: 2021 }); // 06.04.2021
 ```
 
-V tomto cvičení se vám jistě bude hodit metoda na textových řetězcích `padStart`. Zkuste také uvnitř těla funkce použít _destrukturování_.
+V tomto cvičení se vám jistě bude hodit metoda na textových řetězcích `padStart`.
 
 :::solution
 
 ```js
-const formatDate = ({ day, month, year }) => {
-  const dayText = String(day).padStart(2, '0');
-  const monthText = String(month).padStart(2, '0');
+const formatDate = (date) => {
+  const dayText = String(date.day).padStart(2, '0');
+  const monthText = String(date.month).padStart(2, '0');
 
-  return `${dayText}.${monthText}.${year}`;
+  return `${dayText}.${monthText}.${date.year}`;
 };
 ```
 
 Můžete si do javascriptového souboru přidat následující kód, kterým si můžete otestovat, jak se funkce `formatDate` chová pro různá data:
 
 ```js
-console.log(formatDate({ day: 12, month: 3, year: 2023 }));
-console.log(formatDate({ day: 3, month: 11, year: 2023 }));
-console.log(formatDate({ day: 1, month: 1, year: 2023 }));
-console.log(formatDate({ day: 28, month: 10, year: 2023 }));
+document.body.innerHTML += `<p>${formatDate({
+  day: 12,
+  month: 3,
+  year: 2023,
+})}</p>`;
+document.body.innerHTML += `<p>${formatDate({
+  day: 3,
+  month: 11,
+  year: 2023,
+})}</p>`;
+document.body.innerHTML += `<p>${formatDate({
+  day: 1,
+  month: 1,
+  year: 2023,
+})}</p>`;
+document.body.innerHTML += `<p>${formatDate({
+  day: 28,
+  month: 10,
+  year: 2023,
+})}</p>`;
 ```
 
 :::

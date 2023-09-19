@@ -33,26 +33,20 @@ Zároveň ověřování e-mailu je tak častý programátorský úkon, že na to
 </head>
 ```
 
-Knihovnu do našeho programu přidáme tak, že její adresu vložíme do hlavičky stránky pomocí tagu `script`. Každá knihovna má svoje pravidla fungování, která vyčteme z dokumentace. Knihovna `validator.js` nám ve stránce vytvoří objekt `validator`, který má mnoho užitečných metod. Mezi nimi je i metoda `isEmail`, která umí ověřit, zda je zadaný řetězec platný e-mail. (Metoda ověří, zda by vstup **mohl** být e-mail – neumí zjistit, zda takový e-mail skutečně existuje.) Tuto metodu můžeme použít ve svém JavaScriptovém programu nebo si ji vyzkoušet rovnou v konzoli, když naši stránku otevřeme v prohlížeči.
+Knihovnu do našeho programu přidáme tak, že její adresu vložíme do hlavičky stránky pomocí tagu `script`. Každá knihovna má svoje pravidla fungování, která vyčteme z dokumentace. Knihovna `validator.js` nám ve stránce vytvoří objekt `validator`, který má mnoho užitečných metod. Mezi nimi je i metoda `isEmail`, která umí ověřit, zda je zadaný řetězec platný e-mail. (Metoda ověří, zda by vstup **mohl** být e-mail – neumí zjistit, zda takový e-mail skutečně existuje.)
 
-```jscon
-> validator.isEmail('pepa.novak@seznam.cz')
-true
-> validator.isEmail('žbrblymrmly@prdy.com')
-true
-> validator.isEmail('martin@home')
-false
-> validator.isEmail('C5dMFFegdK4RX&iL')
-false
+```js
+validator.isEmail('pepa.novak@seznam.cz'); // → true
+validator.isEmail('žbrblymrmly@prdy.com'); // → true
+validator.isEmail('martin@home'); // → false
+validator.isEmail('C5dMFFegdK4RX&iL'); // → false
 ```
 
 Knihovna `validator.js` má desítky ověřovacích funkcí pro mnoho různých situací. Mezi nimi například funkci pro ověřování mobilních čísel pro různé země.
 
-```jscon
-> validator.isMobilePhone('723 313 256', 'cs-CZ')
-true
-> validator.isMobilePhone('723 313 25', 'cs-CZ')
-false
+```js
+validator.isMobilePhone('723 313 256', 'cs-CZ'); // → true
+validator.isMobilePhone('723 313 25', 'cs-CZ'); // → false
 ```
 
 Mezi další užitečné funkce mohou patřit například:
@@ -93,10 +87,10 @@ My si zde vyzkoušíme pouze pár základních věci. Aktuální datum a čas z�
 const now = dayjs();
 ```
 
-Toto datum pak můžeme vypsat do konzole v námi zvoleném formátu:
+Toto datum pak můžeme vypsat do stránky v námi zvoleném formátu:
 
 ```js
-console.log(now.format('MM.DD.YYYY'));
+document.body.innerHTML += now.format('MM.DD.YYYY');
 ```
 
 Můžeme také zcela konkrétní datum vyrobit, například:
@@ -112,9 +106,9 @@ const stedryDen = dayjs('2023-12-24');
 const dnes = dayjs();
 
 if (dnes.isAfter(stedryDen)) {
-  console.log('Musíš počkat na příští rok');
+  document.body.innerHTML += 'Musíš počkat na příští rok';
 } else {
-  console.log('Už brzy přijde Ježíšek!');
+  document.body.innerHTML += 'Už brzy přijde Ježíšek!';
 }
 ```
 
