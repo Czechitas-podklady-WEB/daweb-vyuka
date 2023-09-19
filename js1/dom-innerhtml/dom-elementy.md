@@ -126,7 +126,7 @@ Jelikož lze v `document.querySelector` použít libovolný CSS selektor, někoh
 const cardElement = document.querySelector('.card:nth-child(2)');
 ```
 
-Tento kód bude skutečně fungovat, ale rovnou zde na místě vám takové triky navždy zakazuju. Takovéto komplikované selektory používejte pouze v případě, že opravdu není vyhnutí. Pro nás existuje jednodušší řešení a to dát každé kartě unikátní `id`.
+Tento kód bude skutečně fungovat, ale takové triky vám výrazně nedoporučujeme. Komplikované selektory používejte pouze v případě, že opravdu není vyhnutí. Pro nás existuje jednodušší řešení a to dát každé kartě unikátní `id`.
 
 ```html
 <body>
