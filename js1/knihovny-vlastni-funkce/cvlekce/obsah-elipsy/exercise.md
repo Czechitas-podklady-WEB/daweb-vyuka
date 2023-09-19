@@ -25,8 +25,8 @@ const ellipseArea = (width, height) => {
   return (width / 2) * (height / 2) * Math.PI;
 };
 
-document.body.innerHTML += '<p>' + ellipseArea(1, 2) + '</p>';
-document.body.innerHTML += '<p>' + ellipseArea(2, 2) + '</p>';
+document.body.innerHTML += `<p>${ellipseArea(1, 2)}</p>`;
+document.body.innerHTML += `<p>${ellipseArea(2, 2)}</p>`;
 ```
 
 :::
