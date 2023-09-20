@@ -1,7 +1,7 @@
 ## Cvičení: Manipulace s DOMem
 
-::exc[cvlekce/hod-minci]
 ::exc[cvlekce/novinky]
+::exc[cvlekce/hod-minci]
 
 ### Bonus
 
