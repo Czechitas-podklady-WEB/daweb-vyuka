@@ -2,6 +2,7 @@
 title: Doručování
 demand: 2
 lead: Vytvořte jednoduchý objednávkový systém.
+solutionAccess: allow
 ---
 
 Vytvořte webovou stránku, kde uživatel zadá svoji adresu například pro účely doručení objednaného zboží. Požaduje **ulici**, **číslo domu**, **město** a **PSČ**.
