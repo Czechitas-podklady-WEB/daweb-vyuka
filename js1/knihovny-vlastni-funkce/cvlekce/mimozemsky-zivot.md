@@ -5,7 +5,7 @@ lead: Porovnejte datumy.
 solutionAccess: lock
 ---
 
-Podívejte se na stránku [existuje-mimozemsky-zivot.cz](http://existuje-mimozemsky-zivot.cz). Podle toho, v jakém období toto zadání čtete, se dozvíte, zda jsme již objevili život mimo planetu Zemi. Stránka zobrazuje pouze jednoduchou zprávu. Podobných stránek lze na internetu najít vícero. Například
+Podívejte se na stránku [existuje-mimozemsky-zivot.czechitas-podklady.cz](https://existuje-mimozemsky-zivot.czechitas-podklady.cz/). Podle toho, v jakém období toto zadání čtete, se dozvíte, zda jsme již objevili život mimo planetu Zemi. Stránka zobrazuje pouze jednoduchou zprávu. Podobných stránek lze na internetu najít vícero. Například
 
 - [sediuzbabis.cz](https://sediuzbabis.cz)
 - [uzjepatek.cz](https://uzjepatek.cz)
