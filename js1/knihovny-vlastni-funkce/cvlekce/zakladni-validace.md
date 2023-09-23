@@ -1,11 +1,13 @@
 ---
 title: Základní validace
 demand: 2
+lead: Ověřte, že e-mailová adresa je ve správném tvaru.
+solutionAccess: lock
 ---
 
 1. Vytvořte prázdnou stránku, do které vložte knihovnu `validator.js` a svůj JavaScript `index.js`.
-1. Otevřete stránku v prohlížeči a v konzoli pomocí metody `validator.isEmail` ověřte svoji e-mailovou adresu.
-1. Pokud máte po ruce svoji **platební kartu**, ověřte v konzoli, že má platné číslo pomocí metody `isCreditCard`. Případně můžete otestovat kartu **4125010001000208**.
+1. Ověřte pomocí metody `validator.isEmail` platnost vaší e-mailovou adresu.
+1. Pokud máte po ruce **platební kartu**, ověřte, že má platné číslo pomocí metody `isCreditCard`. Případně můžete otestovat kartu **4125010001000208**.
 1. Do těla stránky vložte prázdný odstavec, který bude zobrazovat zprávu pro uživatele.
    ```html
    <p id="msg" class="msg"></p>

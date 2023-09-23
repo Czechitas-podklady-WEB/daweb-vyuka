@@ -1,9 +1,11 @@
 ---
 title: Přestupný rok
 demand: 3
+lead: Napište program, který pozná, který rok je přestupný.
+solutionAccess: lock
 ---
 
-Napište program, který po zadání kalendářního roku vypíše, zda jde o rok přestupný, či nikoliv. Letopočet je přestupný, pokud je dělitelný čtyřmi. Roky, které jsou dělitelné 100 jsou ovšem přestupné pouze tehdy, jsou-li zároveň dělitelné 400.
+Napište program, který po zadání kalendářního roku vypíše, zda jde o rok přestupný, či nikoliv. Letopočet je přestupný, pokud je dělitelný čtyřmi. Pozor však, že roky, které jsou dělitelné 100 jsou přestupné pouze tehdy, jsou-li zároveň dělitelné 400.
 
 :::solution
 
@@ -44,7 +46,7 @@ if (year % 100 === 0) {
   leap = 'je';
 }
 
-document.body.innerHTML = `<p>${year} ${leap} přestupný</p>`;
+document.body.innerHTML += `<p>${year} ${leap} přestupný</p>`;
 ```
 
 :::

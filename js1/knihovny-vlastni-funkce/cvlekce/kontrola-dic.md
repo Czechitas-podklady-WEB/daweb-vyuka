@@ -1,6 +1,8 @@
 ---
 title: Kontrola DIČ
 demand: 3
+lead: Napište funkci na kontrolu DIČ.
+solutionAccess: lock
 ---
 
 Všimněte si, že knihovna `validator.js` v době vzniku tohoto zadání neumí ověřit platnost českého DIČ (daňové identifikační číslo). Zkusme tedy takovou funkci napsat.
@@ -21,7 +23,23 @@ Postupujte dle následujících kroků:
 1. Do promměné `digits` si uložte část vstupního řetězce od třetího znaku dále.
 1. Použijte metodu `validator.isInt`, která umí zkontrolovat, zda řetězec obsahuje pouze číslice. Pokud metoda vrátí `false`, ihned také vraťte `false`.
 1. Pokud funkce dospěla až do tohoto bodu, vstup prošel všemi testy. Můžeme vrátit `true`.
-1. Vyzoušejte svoji funkci v konzoli na různých vstupech a ověřte, že funguje. Nezapomeňte ověřit platná i neplatná DIČ.
+1. Vyzoušejte svoji funkci na různých vstupech a ověřte, že funguje. Nezapomeňte ověřit platná i neplatná DIČ.
+
+#### Příklady platných DIČ:
+
+- CZ123456789
+- CZ1234567890
+
+#### Příklady neplatných DIČ:
+
+- 123
+- ABC
+- 1234567890
+- 001234567890
+- 1234567890CZ
+- CZ12345678901
+- CZ12345678
+- CZA12345678
 
 :::solution
 
@@ -54,19 +72,19 @@ const isDIC = (inputStr) => {
 Můžete si do javascriptového souboru přidat následující kód, kterým si můžete otestovat různá platná a neplatná DIČ:
 
 ```js
-console.log('Platná DIČ');
-console.log('CZ123456789', isDIC('CZ123456789'));
-console.log('CZ1234567890', isDIC('CZ1234567890'));
+document.body.innerHTML += '<p>Platná DIČ</p>';
+document.body.innerHTML += `<p>CZ123456789 ${isDIC('CZ123456789')}</p>`;
+document.body.innerHTML += `<p>CZ1234567890 ${isDIC('CZ1234567890')}</p>`;
 
-console.log('Neplatná DIČ');
-console.log('123', isDIC('123'));
-console.log('ABC', isDIC('ABC'));
-console.log('1234567890', isDIC('1234567890'));
-console.log('001234567890', isDIC('001234567890'));
-console.log('1234567890CZ', isDIC('1234567890CZ'));
-console.log('CZ12345678901', isDIC('CZ12345678901'));
-console.log('CZ12345678', isDIC('CZ12345678'));
-console.log('CZA23456789', isDIC('CZA12345678'));
+document.body.innerHTML += '<p>Neplatná DIČ</p>';
+document.body.innerHTML += `<p>123 ${isDIC('123')}</p>`;
+document.body.innerHTML += `<p>ABC ${isDIC('ABC')}</p>`;
+document.body.innerHTML += `<p>1234567890 ${isDIC('1234567890')}</p>`;
+document.body.innerHTML += `<p>001234567890 ${isDIC('001234567890')}</p>`;
+document.body.innerHTML += `<p>1234567890CZ ${isDIC('1234567890CZ')}</p>`;
+document.body.innerHTML += `<p>CZ12345678901 ${isDIC('CZ12345678901')}</p>`;
+document.body.innerHTML += `<p>CZ12345678 ${isDIC('CZ12345678')}</p>`;
+document.body.innerHTML += `<p>CZA23456789 ${isDIC('CZA12345678')}</p>`;
 ```
 
 :::
