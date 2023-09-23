@@ -2,7 +2,7 @@
 title: Fahrnheit vs. Celsius
 demand: 3
 lead: Vytvořte převodník stupňů Fahrenheita na stupně Celsia.
-solutionAccess: lock
+solutionAccess: allow
 ---
 
 Pokud pečete podle anglických receptů, často se po váš požaduje rozehřát troubu na uvedenou teplotu. Pokud si ovšem neuvědomíte, že Američané používají pro měření teploty stupně Fahrenheita namísto Celsia, bude vás na konci pečení čekat nemilé překvapení.
