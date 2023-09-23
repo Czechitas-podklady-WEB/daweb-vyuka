@@ -2,7 +2,7 @@
 title: Nekup to, třídy
 demand: 2
 lead: JavaScriptem upravte třídy.
-solutionAccess: lock
+solutionAccess: allow
 ---
 
 Vytvořte si repozitář ze šablony [cviceni-nekupto](https://github.com/Czechitas-podklady-WEB/cviceni-nekupto). Repozitář obsahuje stránku, která nabízí několik neotřelých produktů.
