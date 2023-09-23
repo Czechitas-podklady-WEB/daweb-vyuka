@@ -1,6 +1,6 @@
 ## Vlastnost innerHTML
 
-Z předchozí části už umíme změnit obsah nějakého DOM elementu pomocí vlastnosti `textContent`. Takto však můžeme pracovat pouze s čistě textovým obsahem. Co kdybychom však do nějakého elementu chtěli vložit kus HTML? K tomu nám poslouží vlastnost `innerHTML`. Tuto vlastnost jste potkáváli již od samého počátku kurzu při používání :var[dockument.body.innerHTML]. Vlastnost `innerHTML` však kromě elementu `body` najdeme i na většině ostatních elementů.
+Z předchozí části už umíme změnit obsah nějakého DOM elementu pomocí vlastnosti `textContent`. Takto však můžeme pracovat pouze s čistě textovým obsahem. Co kdybychom však do nějakého elementu chtěli vložit kus HTML? K tomu nám poslouží vlastnost `innerHTML`. Tuto vlastnost jste potkáváli již od samého počátku kurzu při používání :var[document.body.innerHTML]. Vlastnost `innerHTML` však kromě elementu `body` najdeme i na většině ostatních elementů.
 
 Vraťme se k ukázkové stránce z předchozí části.
 
