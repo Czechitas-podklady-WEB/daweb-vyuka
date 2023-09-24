@@ -25,7 +25,8 @@ Jak po předchozích lekcích už všichni víme, bloky kódu se používají ta
 ```js
 const message = 'Vítej ve světě slasti';
 
-const checkAge = (age, message) => { // Z hlediska oboru platnosti jsou „age“ a „message“ jakoby definovány až zde, uvnitř bloku funkce 
+const checkAge = (age, message) => {
+  // Z hlediska oboru platnosti jsou „age“ a „message“ jakoby definovány až zde, uvnitř bloku funkce 
   if (age < 18) {
     return message;
   } else {
