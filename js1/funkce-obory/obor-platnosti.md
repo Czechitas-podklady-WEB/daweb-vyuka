@@ -71,7 +71,7 @@ if (age < 18) {
 document.body.innerHTML = `<p>${age}</p>`; // V pořádku
 ```
 
-V tomto programu vidíme, že proměnná `age`` je vytvořená v globálním oboru platnosti. Takové proměnné říkáme prostě <em>globální</em>. Globální proměnné jsou vidět v celém programu a můžeme je tedy použít kdekoliv. Pokud proměnná není globální a je tedy vytvořena uvnitř nějakého bloku, říkáme o ní, že je :term{cs="lokální" en="local"}.
+V tomto programu vidíme, že proměnná `age` je vytvořená v globálním oboru platnosti. Takové proměnné říkáme prostě <em>globální</em>. Globální proměnné jsou vidět v celém programu a můžeme je tedy použít kdekoliv. Pokud proměnná není globální a je tedy vytvořena uvnitř nějakého bloku, říkáme o ní, že je :term{cs="lokální" en="local"}.
 
 Obory platnosti nám pomáhají rodělit náš kód na menší samostatné celky, které se navzájem neovlivňují. Můžete tak bez problému mít ve dvou blocích stejně pojmenovanou lokální proměnnou a význam bude zcela jasný.
 
