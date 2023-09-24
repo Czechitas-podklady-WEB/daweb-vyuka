@@ -1,6 +1,7 @@
 ---
 title: E-mail, tělo
 demand: 2
+solutionAccess: lock
 ---
 
 Pokračujte na stránce z přechozího příkladu.

@@ -1,6 +1,7 @@
 ---
 title: Porozumění kódu
 demand: 2
+solutionAccess: lock
 ---
 
 Přečtěte si následující úryvky kódu a u každého řekněte, co program vypíše do stránky aniž byste program spouštěli.
