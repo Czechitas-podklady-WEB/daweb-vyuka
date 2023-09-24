@@ -33,7 +33,7 @@ const days = 21;
 const beforeTaxation = salary(wage, hours, days);
 const afterTaxation = taxed(beforeTaxation, 15);
 
-document.body.innerHTML = `
+document.body.innerHTML += `
 	<p>Wage: ${wage} Kč</p>
 	<p>Hours: ${hours}</p>
 	<p>Days: ${days}</p>

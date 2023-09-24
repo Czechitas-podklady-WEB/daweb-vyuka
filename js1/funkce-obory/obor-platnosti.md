@@ -7,14 +7,14 @@ if (age < 18) {
   const remains = 18 - age;
 
   if (remains <= 2) {
-    document.body.innerHTML = '<p>Už to máš za pár</p>';
+    document.body.innerHTML += '<p>Už to máš za pár</p>';
   } else if (remains <= 5) {
-    document.body.innerHTML = `<p>Ještě si počkáš ${remains} let</p>`;
+    document.body.innerHTML += `<p>Ještě si počkáš ${remains} let</p>`;
   } else {
-    document.body.innerHTML = '<p>Utíkej za mamkou</p>';
+    document.body.innerHTML += '<p>Utíkej za mamkou</p>';
   }
 } else {
-  document.body.innerHTML = '<p>Vítej mezi dospěláky</p>';
+  document.body.innerHTML += '<p>Vítej mezi dospěláky</p>';
 }
 ```
 
@@ -27,18 +27,18 @@ if (age < 18) {
   const remains = 18 - age;
 
   if (remains >= 2) {
-    document.body.innerHTML = '<p>Už to máš za pár</p>';
+    document.body.innerHTML += '<p>Už to máš za pár</p>';
   } else if (remains >= 5) {
-    document.body.innerHTML = `<p>Ještě si počkáš ${remains} let</p>`;
+    document.body.innerHTML += `<p>Ještě si počkáš ${remains} let</p>`;
   } else {
-    document.body.innerHTML = '<p>Utíkej za mamkou</p>';
+    document.body.innerHTML += '<p>Utíkej za mamkou</p>';
   }
 } else {
-  document.body.innerHTML = `<p>${remains}</p>`; // Zde vznikne chyba
+  document.body.innerHTML += `<p>${remains}</p>`; // Zde vznikne chyba
   document.body.innerHTML += '<p>Vítej mezi dospěláky</p>';
 }
 
-document.body.innerHTML = `<p>${remains}</p>`; // Zde vznikne chyba
+document.body.innerHTML += `<p>${remains}</p>`; // Zde vznikne chyba
 ```
 
 Naopak všechny bloky zanořené uvnitř bloku, ve kterém byla proměnná vytvořená, k této proměnné přistupovat mohou. To můžeme v našem kódu vidět v bloku `else if`, kde proměnnou `remains` normálně používáme, přestože je vytvořena o blok výše.
@@ -56,19 +56,19 @@ if (age < 18) {
   const remains = 18 - age;
 
   if (remains >= 2) {
-    document.body.innerHTML = '<p>Už to máš za pár</p>';
+    document.body.innerHTML += '<p>Už to máš za pár</p>';
   } else if (remains >= 5) {
-    document.body.innerHTML = `<p>${age}</p>`; // V pořádku
+    document.body.innerHTML += `<p>${age}</p>`; // V pořádku
     document.body.innerHTML += `<p>Ještě si počkáš ${remains} let</p>`;
   } else {
-    document.body.innerHTML = '<p>Utíkej za mamkou</p>';
+    document.body.innerHTML += '<p>Utíkej za mamkou</p>';
   }
 } else {
-  document.body.innerHTML = `<p>${age}</p>`; // V pořádku
+  document.body.innerHTML += `<p>${age}</p>`; // V pořádku
   document.body.innerHTML += '<p>Vítej mezi dospěláky</p>';
 }
 
-document.body.innerHTML = `<p>${age}</p>`; // V pořádku
+document.body.innerHTML += `<p>${age}</p>`; // V pořádku
 ```
 
 V tomto programu vidíme, že proměnná `age` je vytvořená v globálním oboru platnosti. Takové proměnné říkáme prostě <em>globální</em>. Globální proměnné jsou vidět v celém programu a můžeme je tedy použít kdekoliv. Pokud proměnná není globální a je tedy vytvořena uvnitř nějakého bloku, říkáme o ní, že je :term{cs="lokální" en="local"}.
@@ -80,10 +80,10 @@ const age = Number(prompt('Zadej svůj věk:'));
 
 if (age < 18) {
   const message = 'Utíkej za mamkou';
-  document.body.innerHTML = `<p>${message}</p>`;
+  document.body.innerHTML += `<p>${message}</p>`;
 } else {
   const message = 'Vítej mezi dospěláky';
-  document.body.innerHTML = `<p>${message}</p>`;
+  document.body.innerHTML += `<p>${message}</p>`;
 }
 ```
 

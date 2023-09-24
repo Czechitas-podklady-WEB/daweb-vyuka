@@ -37,25 +37,18 @@ Pojďme zkusit omylem vybrat element pro naši zprávu pomocí CSS třídy, kter
 
 ```js
 const msgElm = document.querySelector('.msg');
-document.body.innerHTML = msgElm; // vymaže obsah stránky
+document.body.innerHTML += msgElm; // při dá konec stránky text „null“
 ```
 
-Do stránky se nevypíše nic – `null` znamená prázdnou hodnotu, nic, takže když vložíme `null` hodnotu do těla stránky, nezobrazí se opravdu nic.
+Když se k `innerHTML` přidává speciální hodnota `null`, musí si JavaScript s touto hodnotou nějak poradit a převést ji na text. Udělá to tak, že ji převede na text `'null'`, který následně přidá do stránky.
 
-Můžeme zkusit ještě jiný způsob zobrazení hodnoty, funkci `alert()`. Ta funguje podobně jako `prompt()`, také zobrazí okénko, ale uživatele se na nic neptá, pouze mu vypíše nějaký text. Pokud funkci ` alert()`` místo textu předáte hodnotu  `null`, zobrazí text „null“.
+Vidíme, že v proměnné `msgElm` máme místo očekávaného elementu uložena hodnota `null`. Z toho si domyslíme, že metoda `querySelector` kýžený element nenašla a můžeme začít zkoumat, kde jsme v programu udělali chybu.
 
-```js
-const msgElm = document.querySelector('.msg');
-alert(msgElm); // zobrazí okénko s textem „null“
-```
-
-Vidíme, že v proměnné `msgElm` máme místo očekávaného elementu uloženo `null`. Z toho si domyslíme, že metoda `querySelector` kýžený element nenašla a můžeme začít zkoumat, kde jsme v programu udělali chybu.
-
-Pokud to v programu potřebujeme, můžeme proměnnou na hodnotu `null` otestovat pomocí jednoduché podmínky.
+Pokud to v programu potřebujeme, můžeme proměnnou na hodnotu `null` otestovat pomocí jednoduché podmínky:
 
 ```js
 if (msgElm === null) {
-  document.body.innerHTML = 'Element nenalezen';
+  document.body.innerHTML += 'Element nenalezen';
 }
 ```
 
@@ -69,17 +62,19 @@ Hodnotu `undefined` potkáme v mnoha situacích, ale nejčastěji ve chvíli, kd
 
 ```js
 const name = 'Martin';
-document.body.innerHTML = name.lenght; // úmyslný překlep, vypíše do stránky „undefined“
+document.body.innerHTML += name.lenght; // úmyslný překlep, vypíše do stránky „undefined“
 ```
+
+Při přidávání do `innerHTML` se speciální hodnota `undefined` převede na text `'undefined'`, podobně jako se převádí `null`.
 
 Hodnotu `undefined` najdeme také v proměnných, do kterých nepřiřadíme žádnout hodnotu. Toto je však možné provést pouze s proměnnými vytvořenými pomocí `let`.
 
 ```js
 let name;
-document.body.innerHTML = name; // vypíše do stránky „undefined“
+document.body.innerHTML += name; // vypíše do stránky „undefined“
 ```
 
-Podobně jako u hodnoty `null` můžeme přítomnost hodnoty `undefined` ověřit podmínkou.
+Podobně jako u hodnoty `null` můžeme přítomnost hodnoty `undefined` ověřit podmínkou:
 
 ```js
 if (name === undefined) {
@@ -87,6 +82,6 @@ if (name === undefined) {
 }
 ```
 
-Podobně jako `null` je i undefined speciální hodnota, není to řetězec `'undefined'`.
+Podobně jako `null` je i ` undefined`` speciální hodnota, není to řetězec  `'undefined'`.
 
 Hodnota `undefined` nám v budoucnu způsobí ještě hodně nepříjemností, je tedy dobré se již teď obrnit trpělivostí.

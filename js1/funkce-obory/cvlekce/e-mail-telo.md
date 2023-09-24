@@ -27,7 +27,7 @@ const fillSubject = (subject) => {
 
 const fillBody = (body, name) => {
   const bodyElm = document.querySelector('.email__body');
-  bodyElm.innerHTML = body;
+  bodyElm.innerHTML += body;
   const closingElm = document.querySelector('.email__closing');
   closingElm.textContent = goodbye(name);
 };

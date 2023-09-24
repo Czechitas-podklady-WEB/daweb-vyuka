@@ -13,10 +13,10 @@ const name = 'Mississippi';
 
 if (name.length > 5) {
   const name = 'Missi';
-  document.body.innerHTML = `<p>${name}</p>`;
+  document.body.innerHTML += `<p>${name}</p>`;
 }
 
-document.body.innerHTML = `<p>${name}</p>`;
+document.body.innerHTML += `<p>${name}</p>`;
 ```
 
 **Úryvek 2:**
@@ -26,7 +26,7 @@ const name = 'Franta';
 
 const greet = (name) => {
   const name = 'Pepa';
-  document.body.innerHTML = `<p>${name}</p>`;
+  document.body.innerHTML += `<p>${name}</p>`;
 };
 
 greet('Jožin');
@@ -45,5 +45,5 @@ if (age > 21) {
   const price = 0;
 }
 
-document.body.innerHTML = `<p>${price}</p>`;
+document.body.innerHTML += `<p>${price}</p>`;
 ```
