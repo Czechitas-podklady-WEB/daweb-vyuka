@@ -1,6 +1,7 @@
 ---
 title: E-mail, pozdravy
 demand: 1
+solutionAccess: lock
 ---
 
 Vytvořte si repozitář ze šablony [cviceni-email](https://github.com/Czechitas-podklady-WEB/cviceni-email) se stránkou obsahující šablonu jednoduchého e-mailu.

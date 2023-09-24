@@ -1,6 +1,7 @@
 ---
 title: Výplata
 demand: 2
+solutionAccess: lock
 ---
 
 Vytvořte funkci `salary` se třemi parametry

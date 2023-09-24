@@ -1,6 +1,7 @@
 ---
 title: Výplňořez
 demand: 3
+solutionAccess: lock
 ---
 
 1. Napište funkci `fillcut`, která jako svůj první parametr `str` očekává řetězec a jako druhý parametr `len` kladné celé číslo. Úkolem funkce je oříznout nebo prodloužit zadaný řetězec tak, aby měl délku přesně `len`.

@@ -1,6 +1,7 @@
 ---
 title: Převod měny
 demand: 2
+solutionAccess: lock
 ---
 
 Napište funkci `convertToCZK`, která převede částku zadanou v cízí měně na české koruny. Funkce bude podporovat následující měny a kurzy.
