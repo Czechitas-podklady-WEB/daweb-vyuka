@@ -16,7 +16,7 @@ Napište funkci `convertToCZK`, která převede částku zadanou v cízí měně
 Výslednou částku zakrouhlete na celé koruny. Příklad použití:
 
 ```js
-document.body.innerHTML += convertToCZK(25, 'EUR')
+document.body.innerHTML += convertToCZK(25, 'EUR');
 ```
 
 Pokud funkce jako parametr dostane neznámý kód měny, vrátí jako výsledek `null`. Otestujte funkci výpisem výsledku do stránky.
@@ -42,10 +42,11 @@ const convertToCZK = (amount, currency) => {
   return Math.round(rate * amount);
 };
 
-document.body.innerHTML += '100 € je ' + convertToCZK(100, 'EUR') + ' Kč<br>'
-document.body.innerHTML += '£ 100 je ' + convertToCZK(100, 'GBP') + ' Kč<br>'
-document.body.innerHTML += '$ 100 je ' + convertToCZK(100, 'USD') + ' Kč<br>'
-document.body.innerHTML += '100 bitcoinů je ' + convertToCZK(100, 'BTC') + ' Kč<br>'
+document.body.innerHTML += '100 € je ' + convertToCZK(100, 'EUR') + ' Kč<br>';
+document.body.innerHTML += '£ 100 je ' + convertToCZK(100, 'GBP') + ' Kč<br>';
+document.body.innerHTML += '$ 100 je ' + convertToCZK(100, 'USD') + ' Kč<br>';
+document.body.innerHTML +=
+  '100 bitcoinů je ' + convertToCZK(100, 'BTC') + ' Kč<br>';
 ```
 
 :::

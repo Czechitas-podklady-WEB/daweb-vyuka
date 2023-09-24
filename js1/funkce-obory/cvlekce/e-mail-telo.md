@@ -33,7 +33,10 @@ const fillBody = (body, name) => {
 };
 
 fillSubject('Nepřišly gumičky');
-fillBody('Nepřišly gumičky. A co na to počítač? Mlčí. No tak to je konec. Všecko vylejt.', 'referent Kubrt');
+fillBody(
+  'Nepřišly gumičky. A co na to počítač? Mlčí. No tak to je konec. Všecko vylejt.',
+  'referent Kubrt'
+);
 ```
 
 :::

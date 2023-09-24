@@ -36,17 +36,17 @@ msgElm.textContent = message;
 Pojďme zkusit omylem vybrat element pro naši zprávu pomocí CSS třídy, která však v HTML vůbec není.
 
 ```js
-const msgElm = document.querySelector('.msg')
-document.body.innerHTML = msgElm // vymaže obsah stránky
+const msgElm = document.querySelector('.msg');
+document.body.innerHTML = msgElm; // vymaže obsah stránky
 ```
 
 Do stránky se nevypíše nic – `null` znamená prázdnou hodnotu, nic, takže když vložíme `null` hodnotu do těla stránky, nezobrazí se opravdu nic.
 
-Můžeme zkusit ještě jiný způsob zobrazení hodnoty, funkci `alert()`. Ta funguje podobně jako `prompt()`, také zobrazí okénko, ale uživatele se na nic neptá, pouze mu vypíše nějaký text. Pokud funkci `alert()`` místo textu předáte hodnotu `null`, zobrazí text „null“.
+Můžeme zkusit ještě jiný způsob zobrazení hodnoty, funkci `alert()`. Ta funguje podobně jako `prompt()`, také zobrazí okénko, ale uživatele se na nic neptá, pouze mu vypíše nějaký text. Pokud funkci ` alert()`` místo textu předáte hodnotu  `null`, zobrazí text „null“.
 
 ```js
-const msgElm = document.querySelector('.msg')
-alert(msgElm) // zobrazí okénko s textem „null“
+const msgElm = document.querySelector('.msg');
+alert(msgElm); // zobrazí okénko s textem „null“
 ```
 
 Vidíme, že v proměnné `msgElm` máme místo očekávaného elementu uloženo `null`. Z toho si domyslíme, že metoda `querySelector` kýžený element nenašla a můžeme začít zkoumat, kde jsme v programu udělali chybu.
@@ -68,15 +68,15 @@ Kromě celkem užitečné hodnoty `null` JavaScript také obsahuje zákeřnou ho
 Hodnotu `undefined` potkáme v mnoha situacích, ale nejčastěji ve chvíli, kdy se snažíme u nějakého objektu přistoupit k vlastnosi, která neexistuje. Je například velmi snadné udělat překlep v anglickém slově `length`.
 
 ```js
-const name = 'Martin'
-document.body.innerHTML = name.lenght // úmyslný překlep, vypíše do stránky „undefined“
+const name = 'Martin';
+document.body.innerHTML = name.lenght; // úmyslný překlep, vypíše do stránky „undefined“
 ```
 
 Hodnotu `undefined` najdeme také v proměnných, do kterých nepřiřadíme žádnout hodnotu. Toto je však možné provést pouze s proměnnými vytvořenými pomocí `let`.
 
 ```js
-let name
-document.body.innerHTML = name // vypíše do stránky „undefined“
+let name;
+document.body.innerHTML = name; // vypíše do stránky „undefined“
 ```
 
 Podobně jako u hodnoty `null` můžeme přítomnost hodnoty `undefined` ověřit podmínkou.
