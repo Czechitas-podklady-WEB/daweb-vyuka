@@ -10,13 +10,10 @@ demand: 3
 
 Příklad použití:
 
-```jscon
-> fillcut('petr', 8)
-'....petr'
-> fillcut('petr', 3)
-'pet'
-> fillcut('petr', 4)
-'petr'
+```js
+document.body.innerHTML += fillcut('petr', 8) + '<br>' // vypíše „....petr“
+document.body.innerHTML += fillcut('petr', 3) + '<br>' // vypíše „pet“
+document.body.innerHTML += fillcut('petr', 4) + '<br>' // vypíše „petr“
 ```
 
 :::solution

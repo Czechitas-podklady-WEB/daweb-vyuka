@@ -9,13 +9,10 @@ Napište funkci `calculate` se třemi parametry `number1`, `operation` a `number
 
 Příklad použití
 
-```jscon
-> calculate(2, '+', 3)
-5
-> calculate(3, '*', 7)
-21
-> calculate(10, '/', 4)
-2.5
+```js
+document.innerHTML += '2 + 3 = ' + calculate(2, '+', 3) + '<br>' // vypíše výsledek 5
+document.innerHTML += '3 * 7 = ' + calculate(3, '*', 7) + '<br>' // vypíše výsledek 21
+document.innerHTML += '10 / 4 = ' + calculate(10, '+', 4) + '<br>' // vypíše výsledek 2.5
 ```
 
 :::solution
