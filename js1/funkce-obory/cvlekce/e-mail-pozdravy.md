@@ -2,7 +2,7 @@
 title: E-mail, pozdravy
 demand: 1
 lead: Vytvořte funkci, která vloží do e-mailu rozloučení.
-solutionAccess: lock
+solutionAccess: allow
 ---
 
 Vytvořte si repozitář ze šablony [cviceni-email](https://github.com/Czechitas-podklady-WEB/cviceni-email) se stránkou obsahující šablonu jednoduchého e-mailu.

@@ -2,7 +2,7 @@
 title: Porozumění kódu
 demand: 2
 lead: Vyzkoušejte si, jak dobře umíte číst JavaScriptový kód.
-solutionAccess: lock
+solutionAccess: allow
 ---
 
 Přečtěte si následující úryvky kódu a u každého řekněte, co program vypíše do stránky aniž byste program spouštěli.
