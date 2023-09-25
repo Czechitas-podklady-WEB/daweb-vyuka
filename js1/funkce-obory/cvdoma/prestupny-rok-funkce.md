@@ -1,6 +1,7 @@
 ---
 title: Přestupný rok jako funkce
 demand: 2
+lead: Napište funkci, která zjistí, zda je zadaný rok přestupný.
 solutionAccess: lock
 ---
 

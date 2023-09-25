@@ -1,6 +1,7 @@
 ---
 title: Převod měny
 demand: 2
+lead: Napište funkci, která převede částku na české koruny.
 solutionAccess: lock
 ---
 

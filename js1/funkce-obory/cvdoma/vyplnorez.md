@@ -1,6 +1,7 @@
 ---
 title: Výplňořez
 demand: 3
+lead: Napište funkci, která ořízne nebo prodlouží řetězec.
 solutionAccess: lock
 ---
 

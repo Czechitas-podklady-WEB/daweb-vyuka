@@ -1,6 +1,7 @@
 ---
 title: Porozumění kódu
 demand: 2
+lead: Vyzkoušejte si, jak dobře umíte číst JavaScriptový kód.
 solutionAccess: lock
 ---
 
