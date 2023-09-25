@@ -43,11 +43,10 @@ const convertToCZK = (amount, currency) => {
   return Math.round(rate * amount);
 };
 
-document.body.innerHTML += '100 € je ' + convertToCZK(100, 'EUR') + ' Kč<br>';
-document.body.innerHTML += '£ 100 je ' + convertToCZK(100, 'GBP') + ' Kč<br>';
-document.body.innerHTML += '$ 100 je ' + convertToCZK(100, 'USD') + ' Kč<br>';
-document.body.innerHTML +=
-  '100 bitcoinů je ' + convertToCZK(100, 'BTC') + ' Kč<br>';
+document.body.innerHTML += `100 € je ${convertToCZK(100, 'EUR')} Kč<br>`;
+document.body.innerHTML += `£ 100 je ${convertToCZK(100, 'GBP')} Kč<br>`;
+document.body.innerHTML += `$ 100 je ${convertToCZK(100, 'USD')} Kč<br>`;
+document.body.innerHTML += `100 bitcoinů je ${convertToCZK(100, 'BTC')} Kč<br>`;
 ```
 
 :::
