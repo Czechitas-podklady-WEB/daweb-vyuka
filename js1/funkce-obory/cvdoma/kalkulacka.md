@@ -39,36 +39,7 @@ const calculate = (number1, operation, number2) => {
 Můžete si do javascriptového souboru přidat následující kód, kterým si můžete otestovat, zda funkce `calculate` funguje:
 
 ```js
-console.log(
-  'Vypočtená hodnota:',
-  calculate(2, '+', 3),
-  'Očekávaná hodnota: ',
-  5
-);
-console.log(
-  'Vypočtená hodnota:',
-  calculate(3, '*', 7),
-  'Očekávaná hodnota: ',
-  21
-);
-console.log(
-  'Vypočtená hodnota:',
-  calculate(10, '/', 4),
-  'Očekávaná hodnota: ',
-  2.5
-);
-console.log(
-  'Vypočtená hodnota:',
-  calculate(10, '-', 4),
-  'Očekávaná hodnota: ',
-  6
-);
-console.log(
-  'Vypočtená hodnota:',
-  calculate(-12, '+', 4),
-  'Očekávaná hodnota: ',
-  -8
-);
+const testCalculate = (expected, actual) => {
 ```
 
 :::
