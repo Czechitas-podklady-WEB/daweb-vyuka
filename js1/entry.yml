@@ -1,14 +1,15 @@
 title: JavaScript 1
-lead: Naučíte se základy programování v jazyce JavaScript, který vám umožní udělat vaše webové stránky interaktivní.
+lead: Dlouhodobý kurz základů jazyka JavaScript pro vývoj webových aplikací
+image: assets/javascript.svg
 lessons:
-  - uvod-do-js
-  - vstup-vystup-objekty
-  - retezce-podminky
-  - dom-innerhtml
-  - knihovny-vlastni-funkce
-  - funkce-obory
-  - funkce-arg-udalosti
-  - udalosti-formulare
-  - chyby-pole
-  - cykly
-  - filmbox
+  - ../daweb/js1/uvod-do-js
+  - ../daweb/js1/vstup-vystup-objekty
+  - ../daweb/js1/retezce-podminky
+  - ../daweb/js1/dom-innerhtml
+  - ../daweb/js1/knihovny-vlastni-funkce
+  - ../daweb/js1/funkce-obory
+  - ../daweb/js1/funkce-arg-udalosti
+  - ../daweb/js1/udalosti-formulare
+  - ../daweb/js1/chyby-pole
+  - ../daweb/js1/cykly
+  - ../daweb/js1/filmbox
