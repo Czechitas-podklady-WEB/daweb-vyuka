@@ -12,9 +12,9 @@ Napište funkci `calculate` se třemi parametry `number1`, `operation` a `number
 Příklad použití
 
 ```js
-document.innerHTML += `2 + 3 = ${calculate(2, '+', 3)}<br>`; // vypíše výsledek 5
-document.innerHTML += `3 * 7 = ${calculate(3, '*', 7)}<br>`; // vypíše výsledek 21
-document.innerHTML += `10 / 4 = ${calculate(10, '/', 4)}<br>`; // vypíše výsledek 2.5
+document.body.innerHTML += `2 + 3 = ${calculate(2, '+', 3)}<br>`; // vypíše výsledek 5
+document.body.innerHTML += `3 * 7 = ${calculate(3, '*', 7)}<br>`; // vypíše výsledek 21
+document.body.innerHTML += `10 / 4 = ${calculate(10, '/', 4)}<br>`; // vypíše výsledek 2.5
 ```
 
 :::solution
@@ -41,7 +41,7 @@ Můžete si do javascriptového souboru přidat následující kód, kterým si 
 ```js
 const testCalculate = (expected, actual) => {
   const solution = expected === actual ? '✔' : '❌';
-  document.innerHTML += `${symbol} Očekávaná hodnota: ${expected}, vypočtená hodnota: ${actual}<br>`;
+  document.body.innerHTML += `${symbol} Očekávaná hodnota: ${expected}, vypočtená hodnota: ${actual}<br>`;
 };
 
 testCalculate(5, calculate(2, '+', 3));
