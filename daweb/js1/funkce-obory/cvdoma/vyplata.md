@@ -1,6 +1,8 @@
 ---
 title: Výplata
 demand: 2
+lead: Spočítejte si svoji měsíční výplatu pomocí funkcí.
+solutionAccess: lock
 ---
 
 Vytvořte funkci `salary` se třemi parametry
@@ -32,7 +34,7 @@ const days = 21;
 const beforeTaxation = salary(wage, hours, days);
 const afterTaxation = taxed(beforeTaxation, 15);
 
-document.body.innerHTML = `
+document.body.innerHTML += `
 	<p>Wage: ${wage} Kč</p>
 	<p>Hours: ${hours}</p>
 	<p>Days: ${days}</p>

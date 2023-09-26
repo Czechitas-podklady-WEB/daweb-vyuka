@@ -16,7 +16,7 @@ Představte si například funkci, jejíž úkolem je vypsat do stránky nějako
 ```js
 const showOrderSummary = (summary) => {
   const summaryElm = document.querySelector('#summary');
-  summaryElm.innerHTML = `
+  summaryElm.innerHTML += `
     <div class="summary__count">Celkem položek: ${summary.count}</div>
     <div class="summary__sum">Částka: ${summary.sum}</div>
   `;
@@ -28,7 +28,7 @@ K tomu, aby funkce splnila svůj úkol stačí, že do stránky vloží patřič
 ```js
 const showOrderSummary = (summary) => {
   const summaryElm = document.querySelector('#summary');
-  summaryElm.innerHTML = `
+  summaryElm.innerHTML += `
     <div class="summary__count">Celkem položek: ${summary.count}</div>
     <div class="summary__sum">Částka: ${summary.sum}</div>
   `;

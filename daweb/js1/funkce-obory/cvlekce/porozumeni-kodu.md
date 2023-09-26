@@ -1,6 +1,8 @@
 ---
 title: Porozumění kódu
 demand: 2
+lead: Vyzkoušejte si, jak dobře umíte číst JavaScriptový kód.
+solutionAccess: allow
 ---
 
 Přečtěte si následující úryvky kódu a u každého řekněte, co program vypíše do stránky aniž byste program spouštěli.
@@ -12,10 +14,10 @@ const name = 'Mississippi';
 
 if (name.length > 5) {
   const name = 'Missi';
-  document.body.innerHTML = `<p>${name}</p>`;
+  document.body.innerHTML += `<p>${name}</p>`;
 }
 
-document.body.innerHTML = `<p>${name}</p>`;
+document.body.innerHTML += `<p>${name}</p>`;
 ```
 
 **Úryvek 2:**
@@ -25,7 +27,7 @@ const name = 'Franta';
 
 const greet = (name) => {
   const name = 'Pepa';
-  document.body.innerHTML = `<p>${name}</p>`;
+  document.body.innerHTML += `<p>${name}</p>`;
 };
 
 greet('Jožin');
@@ -44,5 +46,5 @@ if (age > 21) {
   const price = 0;
 }
 
-document.body.innerHTML = `<p>${price}</p>`;
+document.body.innerHTML += `<p>${price}</p>`;
 ```
