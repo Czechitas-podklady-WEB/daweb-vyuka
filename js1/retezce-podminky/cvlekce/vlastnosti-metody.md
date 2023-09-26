@@ -16,13 +16,13 @@ V JavaScriptovém programu si založte proměnnou `title` a uložte do ní **ná
 
 ```js
 const title = "Lord of the Rings";​
-document.innerHTML += title.length;
-​document.innerHTML += `<br>`;​
-​document.innerHTML += title.toUpperCase();​
-​document.innerHTML += `<br>`;​
-​document.innerHTML += title.slice(0, 5);
-​document.innerHTML += `<br>`;​
-​document.innerHTML += title.slice(title.length - 5, title.length)Ł
+document.body.innerHTML += title.length;
+​document.body.innerHTML += `<br>`;​
+​document.body.innerHTML += title.toUpperCase();​
+​document.body.innerHTML += `<br>`;​
+​document.body.innerHTML += title.slice(0, 5);
+​document.body.innerHTML += `<br>`;​
+​document.body.innerHTML += title.slice(title.length - 5, title.length)Ł
 ```
 
 :::
