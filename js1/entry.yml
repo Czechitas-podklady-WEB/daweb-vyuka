@@ -1,6 +1,6 @@
 title: JavaScript 1
 lead: Dlouhodobý kurz základů jazyka JavaScript pro vývoj webových aplikací
-image: assets/academy.svg
+image: assets/javascript.svg
 lessons:
   - ../daweb/js1/uvod-do-js
   - ../daweb/js1/vstup-vystup-objekty
