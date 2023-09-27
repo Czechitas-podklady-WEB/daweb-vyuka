@@ -3,6 +3,7 @@ lead: Dlouhodobý kurz základů jazyka JavaScript pro vývoj webových aplikac�
 image: assets/javascript.svg
 lessons:
   - ../daweb/js1/uvod-do-js
+  - ../daweb/zaklady-gitu/uvod-do-gitu
   - ../daweb/js1/vstup-vystup-objekty
   - ../daweb/js1/retezce-podminky
   - ../daweb/js1/dom-innerhtml
