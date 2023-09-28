@@ -6,8 +6,8 @@ Abychom mohli na události reagovat, JavaScript nám umožňuje ke každé udál
 
 ```js
 const changeTitle = () => {
-  const h1Elm = document.querySelector('h1');
-  h1Elm.textContent = 'Baf!';
+  const h1Element = document.querySelector('h1');
+  h1Element.textContent = 'Baf!';
 };
 ```
 
@@ -24,12 +24,12 @@ Nejdříve tlačítko z dokumentu vybereme a poté na něm zavoláme speciální
 
 ```js
 const changeTitle = () => {
-  const h1Elm = document.querySelector('h1');
-  h1Elm.textContent = 'Baf!';
+  const h1Element = document.querySelector('h1');
+  h1Element.textContent = 'Baf!';
 };
 
-const btnElm = document.querySelector('button');
-btnElm.addEventListener('click', changeTitle);
+const buttonElement = document.querySelector('button');
+buttonElement.addEventListener('click', changeTitle);
 ```
 
 ### Nástrahy
@@ -39,7 +39,7 @@ S událostmi přichází několik nástrah, na které když si nedáme pozor, na
 Nástraha první spočítá v předávání funkce `changeTitle`. Všimněte si opět toho, že používáme funkci `changeTitle` jako hodnotu a předáváme ji jako vstup metodě `addEventListener`. Nikde v našem kódu funkci sami nevoláme. Zavolá ji až JavaScript runtime ve chvíli, kdy na tlačíku nastane událost `click`. Častou začátečnickou chybou je pokušet se funkci zavolat sami.
 
 ```js
-btnElm.addEventListener('click', changeTitle());
+buttonElement.addEventListener('click', changeTitle());
 ```
 
 V tomto případě se funkce `changeTitle` zavolá už ve chvíli, kdy voláme metodu `addEventListener`. Té se pak jako druhý vstup předá **výsledek** volání funkce `changeTitle`, nikoliv funkce samotná. Jelikož `changeTitle` nic nevrací (přesněji řečeno, vrací `undefined`), k události `click` se žádný posluchač nepřipojí. Naše tlačítko tedy nebude fungovat. Co nás může zmást je to, že takováto stránka nevyhodí žádnou chybu. Náš JavaScript kód totiž funguje jak má. Jen jsme ho napsali tak, že dělá něco jiného než chceme. JavaScript runtime však nemůže telepaticky nahlížet do našich hlav aby věděl, co doopravdy chceme. Prostě dělá to, co jsme mu řekli.
@@ -47,8 +47,8 @@ V tomto případě se funkce `changeTitle` zavolá už ve chvíli, kdy voláme m
 Nástraha druhá spočívá v názvech událostí. To jsou obyčejné řetězce, jak je známe už z první lekce. Není vůbec těžké udělat v názvu události překlep, obzvlášť, pokud je název delší, nebo nejsme tolik zdatní v angličtině.
 
 ```js
-btnElm.addEventListener('clik', changeTitle);
-btnElm.addEventListener('mousdown', changeTitle);
+buttonElement.addEventListener('clik', changeTitle);
+buttonElement.addEventListener('mousdown', changeTitle);
 ```
 
 Správně je `click` a `mousedown`. Toto za nás JavaScript runtime bohužel nezkontroluje. Jenoduše k našemu názvu připojí posluchače a už se nestará o to, že událost se špatným názvem nikdy nenastane. Naše stránka pak prostě nebude fungovat a opět také nenastane žádná chyba. Z hlediska runtimu je však jako v předchozím případě všechno v naprostém pořádku.

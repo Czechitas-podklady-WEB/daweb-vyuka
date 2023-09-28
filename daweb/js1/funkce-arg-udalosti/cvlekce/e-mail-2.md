@@ -50,10 +50,10 @@ const fillSubject = (subject) => {
 };
 
 const fillBody = (body, name, goodbyeFunction) => {
-  const bodyElm = document.querySelector('.email__body');
-  bodyElm.innerHTML = body;
-  const closingElm = document.querySelector('.email__closing');
-  closingElm.textContent = goodbyeFunction(name);
+  const bodyElement = document.querySelector('.email__body');
+  bodyElement.innerHTML = body;
+  const closingElement = document.querySelector('.email__closing');
+  closingElement.textContent = goodbyeFunction(name);
 };
 ```
 
