@@ -1,6 +1,7 @@
 ---
 title: E-mail podruhé
 demand: 2
+solutionAccess: lock
 ---
 
 Pojďme dále rozvinout cvičení s [vyplňováním e-mailu](/kurzy/daweb/js1/funkce-obory/cv-funkce#cvlekce%3Ee-mail-telo) z předchozí lekce.

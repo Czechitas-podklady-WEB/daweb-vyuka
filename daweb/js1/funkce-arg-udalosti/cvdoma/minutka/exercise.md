@@ -1,6 +1,7 @@
 ---
 title: Minutka
 demand: 2
+solutionAccess: lock
 ---
 
 Vytvořte si repozitář ze šablony [cviceni-minutka](https://github.com/Czechitas-podklady-WEB/cviceni-minutka) pro stránku s kuchyňskou minutkou. Využijte funkci `setTimeout` ke splnění následujících úkolů.

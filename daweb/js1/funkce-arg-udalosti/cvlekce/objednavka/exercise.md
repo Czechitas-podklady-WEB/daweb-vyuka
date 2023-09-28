@@ -1,6 +1,7 @@
 ---
 title: Objednávka
 demand: 1
+solutionAccess: lock
 ---
 
 Vytvoříme jednoduchou stránku s objednávacím tlačítkem.

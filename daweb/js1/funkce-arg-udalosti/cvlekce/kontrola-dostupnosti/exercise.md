@@ -1,6 +1,7 @@
 ---
 title: Kontrola dostupnosti
 demand: 2
+solutionAccess: lock
 ---
 
 Vyjděte z řešení předchozího příkladu, kdy se objednává při kliknutí na tlačítko.

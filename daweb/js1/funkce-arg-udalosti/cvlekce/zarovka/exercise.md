@@ -1,6 +1,7 @@
 ---
 title: Žárovka
 demand: 2
+solutionAccess: lock
 ---
 
 Vytvořte si repozitář ze šablony [cviceni-zarovka](https://github.com/Czechitas-podklady-WEB/cviceni-zarovka) se stránkou, která zobrazuje obyčejnou žárovku.

@@ -1,6 +1,7 @@
 ---
 title: Catering
 demand: 3
+solutionAccess: lock
 ---
 
 Mějme tři cateringové společnosti dodávající občerstvení na různé akce. Jsou to
