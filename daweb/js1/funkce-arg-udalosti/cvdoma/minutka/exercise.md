@@ -1,5 +1,6 @@
 ---
 title: Minutka
+lead: 'Oživte kuchyňskou minutku.'
 demand: 2
 solutionAccess: lock
 ---

@@ -1,5 +1,6 @@
 ---
 title: Kontrola dostupnosti
+lead: 'Oživte objednávkové tlačítko'
 demand: 2
 solutionAccess: lock
 ---
@@ -15,11 +16,11 @@ Vyjděte z řešení předchozího příkladu, kdy se objednává při kliknutí
 :::solution
 
 ```html
-<button id="btn-order" disabled>Kontroluji dostupnost…</button>
+<button id="button-order" disabled>Kontroluji dostupnost…</button>
 ```
 
 ```js
-const button = document.querySelector('#btn-order');
+const button = document.querySelector('#button-order');
 setTimeout(() => {
   button.textContent = 'Objednat';
   button.disabled = false;

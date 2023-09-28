@@ -1,5 +1,6 @@
 ---
 title: Kostka
+lead: 'Oživte herní kostku.'
 demand: 2
 solutionAccess: lock
 ---

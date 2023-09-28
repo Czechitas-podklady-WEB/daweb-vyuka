@@ -1,5 +1,6 @@
 ---
 title: Žárovka
+lead: 'Ovládejte žárovku.'
 demand: 2
 solutionAccess: lock
 ---
