@@ -32,7 +32,7 @@ Na konci javascriptového kódu vyzkoušejte založit více různých účtů s 
 document.body.innerHTML += `
 	<p>${createAccount('Míša', weakPassword)}</p>
 	<p>${createAccount('Řízek', mediumPassword)}</p>
-	<p>${createAccount('Hustodémon', strongPassword)}</p>
+	<p>${createAccount('Mápodčepicí', strongPassword)}</p>
 `;
 ```
 
@@ -41,7 +41,7 @@ by mělo vepsat do stránky něco jako:
 ```text
 Uživatel Míša s heslem 012345678
 Uživatel Řízek s heslem 074031827
-Uživatel Hustodémon s heslem mwwf9epts
+Uživatel Mápodčepicí s heslem mwwf9epts
 ```
 
 :::solution
@@ -54,7 +54,7 @@ const createAccount = (user, generatePassword) => {
 document.body.innerHTML += `
 	<p>${createAccount('Míša', weakPassword)}</p>
 	<p>${createAccount('Řízek', mediumPassword)}</p>
-	<p>${createAccount('Hustodémon', strongPassword)}</p>
+	<p>${createAccount('Mápodčepicí', strongPassword)}</p>
 `;
 ```
 
