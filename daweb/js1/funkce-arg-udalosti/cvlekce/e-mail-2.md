@@ -1,6 +1,8 @@
 ---
 title: E-mail podruhé
+lead: 'Pokračujte s e-maily'
 demand: 2
+solutionAccess: lock
 ---
 
 Pojďme dále rozvinout cvičení s [vyplňováním e-mailu](/kurzy/daweb/js1/funkce-obory/cv-funkce#cvlekce%3Ee-mail-telo) z předchozí lekce.
@@ -48,10 +50,10 @@ const fillSubject = (subject) => {
 };
 
 const fillBody = (body, name, goodbyeFunction) => {
-  const bodyElm = document.querySelector('.email__body');
-  bodyElm.innerHTML = body;
-  const closingElm = document.querySelector('.email__closing');
-  closingElm.textContent = goodbyeFunction(name);
+  const bodyElement = document.querySelector('.email__body');
+  bodyElement.innerHTML = body;
+  const closingElement = document.querySelector('.email__closing');
+  closingElement.textContent = goodbyeFunction(name);
 };
 ```
 

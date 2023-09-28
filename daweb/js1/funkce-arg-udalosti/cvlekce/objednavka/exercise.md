@@ -1,13 +1,15 @@
 ---
 title: Objednávka
+lead: 'Vytvořte stránku s objednávacím tlačítkem.'
 demand: 1
+solutionAccess: lock
 ---
 
 Vytvoříme jednoduchou stránku s objednávacím tlačítkem.
 
 1. Založte HTML stránku s jedním tlačítkem
    ```html
-   <button id="btn-order">Objednat</button>
+   <button id="button-order">Objednat</button>
    ```
 1. Doplňte do stránky JavaScriptový program, který zařídí, že po stisknutí tlačítka se do stránky za tlačítko vypíše odstavec:
    ```html
@@ -20,7 +22,7 @@ Vytvoříme jednoduchou stránku s objednávacím tlačítkem.
 :::solution
 
 ```js
-const button = document.querySelector('#btn-order');
+const button = document.querySelector('#button-order');
 button.addEventListener('click', () => {
   // document.body.innerHTML += '<p>Objednáno</p>';
   button.textContent = 'Objednáno';

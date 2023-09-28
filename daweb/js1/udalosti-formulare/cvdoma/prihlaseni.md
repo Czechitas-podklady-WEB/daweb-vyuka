@@ -1,6 +1,8 @@
 ---
 title: Přihlášení
+lead: 'Vytvořte přihlašovací formulář.'
 demand: 2
+solutionAccess: lock
 ---
 
 Vytvořte klasický přihlašovací formulář, do kterého uživatel zadá svůj e-mail a heslo a stránka ověří, zda má uživatel přístup do systému. Postupujte podle instrukcí níže.

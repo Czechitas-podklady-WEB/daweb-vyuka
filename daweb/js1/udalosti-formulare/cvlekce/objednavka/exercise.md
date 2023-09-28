@@ -1,6 +1,8 @@
 ---
 title: Objednávka
+lead: 'Formulář pro dokončení objednávky na e-shopu.'
 demand: 2
+solutionAccess: lock
 ---
 
 Podle instrukcí níže vytvořte jednoduchý formulář pro dokončení objednávky na nějakém e-shopu. Formulář umožní uživateli zadat číslo platební karty a způsob dopravy.
