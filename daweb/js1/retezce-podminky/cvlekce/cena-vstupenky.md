@@ -57,7 +57,7 @@ document.body.innerHTML += `<p>Cena lístku je ${cena} €.`;
 ```
 
 Pro fajnšmekry třetí možnost s operátorem `*=`, který funguje podobně jako `+=`, ale pro násobení. Tato možnost
-neodpovídá přesně zadání, protože vůbec nepotřebujeme proměnnou `plnaCena``:
+neodpovídá přesně zadání, protože vůbec nepotřebujeme proměnnou `plnaCena`:
 
 ```js
 let cena = 12;
