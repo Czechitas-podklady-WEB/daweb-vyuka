@@ -9,19 +9,16 @@ Vytvořte si repozitář ze šablony [cviceni-hesla](https://github.com/Czechita
 
 Příklad samostatného použití jednotlivých funkcí:
 
-```jscon
-> weakPassword(5)
-'01234'
+```js
+weakPassword(5); // → '01234'
 ```
 
-```jscon
-> mediumPassword(8)
-'48140525'
+```js
+mediumPassword(8); // → '48140525'
 ```
 
-```jscon
-> strongPassword(6)
-'azc7mw'
+```js
+strongPassword(6); // → 'azc7mw'
 ```
 
 Napište funkci `createAccount`, která se bude tvářit, že zakládá nový uživatelský účet. Funkce bude mít **dva parametry** `user` a `generatePassword`. **První bude uživatelské jméno** a **druhý bude funkce**, pomocí které se má vygenerovat heslo pro tento účet. Funkce `createAccount` **vrátí řetězec**, který bude obsahovat jméno uživatele a heslo vygenerované voláním funkce `generatePassword`. Funkci `generatePassword` při volání předejte **číslo 9** jako délku hesla.
