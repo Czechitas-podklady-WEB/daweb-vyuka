@@ -15,13 +15,17 @@ Pokud se přihlásíte jako student například na Fakultu Informačních Techno
 :::solution
 
 ```js
-const jmeno = prompt('Zadejte křestní jméno.')
+const jmeno = prompt('Zadejte křestní jméno (bez diakritiky).')
   .toLocaleLowerCase()
   .trim()
   .slice(0, 3);
-const prijmeni = prompt('Zadejte příjmení.').toLowerCase().trim().slice(0, 5);
+const prijmeni = prompt('Zadejte příjmení (bez diakritiky).')
+  .toLowerCase()
+  .trim()
+  .slice(0, 5);
 
-document.body.innerHTML = `<p>Váš e-mail je: ${prijmeni}${jmeno}@fit.cvut.cz</p>`;
+const email = `${prijmeni}${jmeno}@fit.cvut.cz`;
+document.body.innerHTML = `<p>Váš e-mail je: ${email}.</p>`;
 ```
 
 :::
