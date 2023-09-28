@@ -1,6 +1,8 @@
 ---
 title: Auto
+lead: 'Rozpohybujte auto.'
 demand: 2
+solutionAccess: lock
 ---
 
 1. Založte si HTML stránku s JavaScriptem, třeba následujícím příkazem:

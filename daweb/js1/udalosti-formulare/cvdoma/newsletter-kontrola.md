@@ -1,6 +1,8 @@
 ---
 title: Newsletter, kontrola
+lead: 'Kontrola vstupu ve formuláři.'
 demand: 2
+solutionAccess: lock
 ---
 
 Pokračujte v příkladu Newsletter z lekce. V tomto cvičení zařidíme, aby uživatel při zadávání e-mailu dostal zpětnou vazbu, pokud zadává neplatný vstup.
