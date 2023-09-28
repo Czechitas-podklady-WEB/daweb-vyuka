@@ -11,9 +11,9 @@
 Pokud chceme zjistit, jaká klávesa byla stisknuta při událostech `keyup` a `keydown`, musíme znát název této klávesy. Názvy kláves snadno najdete na [keycode.info](https://keycode.info). Zjistíme tak například, že klávesa :kbd[Enter] se jmenuje prostě `Enter`, klávesa :kbd[D] se jmenuje `KeyD` a tak dále. Takto pak na stránce můžeme zareagovat například na stisknutí :kbd[Enter].
 
 ```js
-document.addEventListener('keyup', (e) => {
-  if (e.code === 'Enter') {
-    console.log('enter');
+document.addEventListener('keyup', (event) => {
+  if (event.code === 'Enter') {
+    document.body.innerHTML += '<p>enter</p>';
   }
 });
 ```
@@ -21,9 +21,9 @@ document.addEventListener('keyup', (e) => {
 Nebo na stisknutí :kbd[Ctrl]+:kbd[C].
 
 ```js
-document.addEventListener('keyup', (e) => {
-  if (e.code === 'KeyC' && e.ctrlKey) {
-    console.log('Ctrl+C');
+document.addEventListener('keyup', (event) => {
+  if (event.code === 'KeyC' && event.ctrlKey) {
+    document.body.innerHTML += '<p>Ctrl+C</p>';
   }
 });
 ```
