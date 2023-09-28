@@ -1,9 +1,9 @@
 version: '3'
 services:
   kodim:
-    image: onset/kodimcz:2.0.0-beta.8
+    image: onset/kodimcz:2.0.0-beta.10
     restart: always
     ports:
       - '3000:3000'
     volumes:
-      - ./:/content/kurzy/kurz
+      - ./daweb:/content/kurzy/kurz # Ignoruje ostatní kurzy. Řešit všechny je komplikované.
