@@ -1,6 +1,6 @@
 ---
 title: Hesla
-lead: 'Generujte bezpečká i nebezpečná hesla.'
+lead: 'Generujte bezpečná i nebezpečná hesla.'
 demand: 2
 solutionAccess: lock
 ---
