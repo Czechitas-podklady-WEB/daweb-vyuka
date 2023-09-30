@@ -1,6 +1,7 @@
 ---
 title: Jednoduché pole a forEach
 demand: 2
+solutionAccess: lock
 ---
 
 Založte JavaScriptový program s následujícím polem řetězců představujícím nákupní seznam

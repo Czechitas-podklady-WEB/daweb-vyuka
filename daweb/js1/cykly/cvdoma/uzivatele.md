@@ -1,6 +1,7 @@
 ---
 title: Uživatelé
 demand: 2
+solutionAccess: lock
 ---
 
 Založte JavaScriptový program s následujícím seznamem uživatelů.
