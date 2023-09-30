@@ -5,7 +5,7 @@ demand: 2
 solutionAccess: lock
 ---
 
-Pojďme dále rozvinout cvičení s [vyplňováním e-mailu](/kurzy/daweb/js1/funkce-obory/cv-funkce#cvlekce%3Ee-mail-telo) z předchozí lekce.
+Pojďme dále rozvinout cvičení s [vyplňováním e-mailu](/vyvoj-webu/daweb/js1/funkce-obory/cv-funkce/e-mail-telo) z předchozí lekce.
 
 1. Vytvořte si repozitář ze šablony [cviceni-email](https://github.com/Czechitas-podklady-WEB/cviceni-email) a pojmenujte ho **email2-zadani**.
 1. Do souboru `index.js` vložte kód [vzorového řešení](/kurzy/daweb/js1/funkce-obory/cv-funkce/cvlekce>e-mail-telo#reseni). Na tomto kódu budeme dále stavět.
