@@ -5,9 +5,9 @@ demand: 2
 solutionAccess: lock
 ---
 
-Vytvořte si repozitář ze šablony [cviceni-kalkulacka](https://github.com/Czechitas-podklady-WEB/cviceni-kalkulacka) se stránkou, která obsahuje číselník a display jednoduché kalkulačky.
+Vytvořte si repozitář ze šablony [cviceni-kalkulacka](https://github.com/Czechitas-podklady-WEB/cviceni-kalkulacka) se stránkou, která obsahuje číselník a displej jednoduché kalkulačky.
 
-Zařiďte, aby se při kliknutí na libovolné tlačítko na displaji kalkulačky objevila cifra, která je na tlačíku napsaná. Postupujte dle návodu:
+Zařiďte, aby se při kliknutí na libovolné tlačítko na displeji kalkulačky objevila cifra, která je na tlačíku napsaná. Postupujte dle návodu:
 
 ::fig[Kalkulačka]{src=assets/kalkulacka.gif}
 
@@ -19,7 +19,7 @@ Zařiďte, aby se při kliknutí na libovolné tlačítko na displaji kalkulačk
 
 #### Bonus
 
-- Pomocí podmínky `if` zařiďte, aby číslo na displayi nezačínalo nulou, ledaže je tam nula samotná.
+- Pomocí podmínky `if` zařiďte, aby číslo na displeji nezačínalo nulou, ledaže je tam nula samotná.
 
 :::solution
 
