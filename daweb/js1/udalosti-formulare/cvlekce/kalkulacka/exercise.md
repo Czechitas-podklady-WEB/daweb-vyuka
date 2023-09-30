@@ -2,7 +2,7 @@
 title: Kalkulačka
 lead: 'Oživte kalkulačku.'
 demand: 2
-solutionAccess: lock
+solutionAccess: allow
 ---
 
 Vytvořte si repozitář ze šablony [cviceni-kalkulacka](https://github.com/Czechitas-podklady-WEB/cviceni-kalkulacka) se stránkou, která obsahuje číselník a display jednoduché kalkulačky.
