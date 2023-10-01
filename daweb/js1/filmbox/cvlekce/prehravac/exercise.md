@@ -1,6 +1,7 @@
 ---
 title: 'Bonus: Vlastní ovládání přehrávače'
 demand: 4
+solutionAccess: lock
 ---
 
 Obohaťte video přehrávač vlastními ovládacími prvky.

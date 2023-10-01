@@ -1,6 +1,7 @@
 ---
 title: Pexeso
 demand: 3
+solutionAccess: lock
 ---
 
 Oživte pexesové kartičky. Kliknutí na libovolnou kartičku by ji mělo obrátit. Další kliknutí by ji mělo vrátit do původního stavu.

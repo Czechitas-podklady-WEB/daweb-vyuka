@@ -1,6 +1,7 @@
 ---
 title: Hamburger menu
 demand: 2
+solutionAccess: lock
 ---
 
 Na všech stránkách webu je horní navigace se třemi odkazy. Pro úsporu místa na malých zařízeních se mění na tlačítko s ikonkou hamburgeru. Zařiďte, aby klikání na tlačítko rozbalovalo a opět skrývalo položky menu.

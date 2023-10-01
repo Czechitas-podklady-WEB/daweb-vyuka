@@ -1,6 +1,7 @@
 ---
 title: Počítadlo
 demand: 3
+solutionAccess: lock
 ---
 
 Vytvořte si repozitář ze šablony [cviceni-pocitadlo](https://github.com/Czechitas-podklady-WEB/cviceni-pocitadlo), která má fungovat jako počítadlo. Při klikání na tlačítka :i[up] a :i[down] by počítadlo správně mělo narůst nebo poklesnout o jedna. Nic takového se však neděje, neboť v kódu stránky je mnoho chyb. Použijte znalosti nabyté v této lekci ke splnění následujících úkolů.

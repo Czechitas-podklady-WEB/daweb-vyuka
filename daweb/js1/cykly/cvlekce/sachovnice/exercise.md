@@ -2,6 +2,7 @@
 title: Šachovnice
 demand: 2
 time: 20
+solutionAccess: lock
 ---
 
 Založte JavaScriptový program a vytvořte v něm pole, které bude reprezentavat rozehranou šachovou partii jako na obrázku.

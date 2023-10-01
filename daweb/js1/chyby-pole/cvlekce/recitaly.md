@@ -1,6 +1,7 @@
 ---
 title: Recitály
 demand: 2
+solutionAccess: lock
 ---
 
 U všech následujících úryvků kódů vytvořte technický popis jejich fungování a zároveň zkuste odhadnout záměr daného kódu. Obě dvě části si skutečně napište například do textového souboru.

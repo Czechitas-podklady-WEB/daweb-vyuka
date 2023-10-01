@@ -1,6 +1,7 @@
 ---
 title: Piškvorky 3x3
 demand: 4
+solutionAccess: lock
 ---
 
 Na chvilku se z vás stane rozhodčí na turnaji v piškvorkách. Vytvořte JavaScriptový program, který vyhodnotí výsledky všech zápasů a vypíše výsledky.

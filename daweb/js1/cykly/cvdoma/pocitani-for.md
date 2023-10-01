@@ -1,6 +1,7 @@
 ---
 title: Počítání pomocí FOR
 demand: 2
+solutionAccess: lock
 ---
 
 Přepište všechny WHILE cykly z předchozího cvičení na FOR cykly.

@@ -1,6 +1,7 @@
 ---
 title: Nákupní seznam
 demand: 2
+solutionAccess: lock
 ---
 
 Mějme pole řetězců představující nákupní seznam
