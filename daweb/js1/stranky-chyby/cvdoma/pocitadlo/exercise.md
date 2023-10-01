@@ -1,6 +1,7 @@
 ---
 title: Počítadlo
 demand: 3
+lead: Opravte chyby v kódu počítadla.
 solutionAccess: lock
 ---
 

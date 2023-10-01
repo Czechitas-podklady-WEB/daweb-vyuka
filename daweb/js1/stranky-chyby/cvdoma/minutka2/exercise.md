@@ -1,6 +1,7 @@
 ---
 title: Minutka 2
 demand: 3
+lead: Vylepšete aplikaci Minutka.
 solutionAccess: lock
 ---
 
