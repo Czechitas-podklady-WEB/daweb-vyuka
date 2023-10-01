@@ -1,0 +1,5 @@
+title: Šablony a architektura
+lead: Šablony nám usnadní vytváření kusů HTML v JavaScriptu a dovedou nás ke smysluplnější archtektuře aplikací
+sections:
+  - system-npm
+  - vite
