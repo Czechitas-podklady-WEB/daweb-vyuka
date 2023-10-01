@@ -1,33 +1,87 @@
 ---
 title: Šachovnice
 demand: 2
-time: 20
 solutionAccess: lock
 ---
 
-Založte JavaScriptový program a vytvořte v něm pole, které bude reprezentavat rozehranou šachovou partii jako na obrázku.
+Založte JavaScriptový program a vytvořte v něm pole pojmenované `sachovnice`, které bude reprezentavat rozehranou šachovou partii jako na obrázku.
 
-::fig[Šachovnice]{src=assets/sachovnice.png size=60}
+::fig[Počáteční rozestavení]{src=assets/sachovnice.png}
 
-1. Šachovnici reprezentujte jako pole polí, kde každý řádek je reprezentován jako jedno pole. Políčka reprerezentujte jako čísla dle následujícího klíče.
-   <table>
-     <thead>
-       <th>figura</th>
-       <th>bilá</th>
-       <th>černá</th>
-     </thead>
-     <tbody>
-      <tr><td>prázdné pole</td><td colspan="2">0</td></tr>
-      <tr><td>pěšec</td><td>1</td><td>-1</td></tr>
-      <tr><td>věž</td><td>2</td><td>-2</td></tr>
-      <tr><td>kůň</td><td>3</td><td>-3</td></tr>
-      <tr><td>střelec</td><td>4</td><td>-4</td></tr>
-      <tr><td>dáma</td><td>5</td><td>-5</td></tr>
-      <tr><td>král</td><td>6</td><td>-6</td></tr>
-     </tbody>
-   </table>
-1. Otevřete tento program v konzoli a napište příkaz, který přesune bílého koně z pozice f3 na pozici e5.
+1. Zkopírujte na začátek vašeho programu předpřipravenou funkci `zobraz`, pomocí které později zobrazíte šachovnici. Ve funkci není potřeba nic měnit.
+   ```js
+   const zobraz = (data) => {
+     const url = `https://czechitas-podklady.cz/vizualizace-sachovnice/?s=${JSON.stringify(
+       data
+     )}`;
+     document.body.innerHTML += `
+   		<div>
+   			<pre>${JSON.stringify(data)
+           .replace('[[', '[<br/>\t[')
+           .replace(']]', ']<br/>]')
+           .replaceAll(',[', ',<br/>\t[')
+           .replaceAll(',', ',\t')}</pre>
+   			<iframe src="${url}" width="550" height="420" frameBorder="0"></iframe>
+   			<hr/>
+   		</div>
+   		`;
+   };
+   ```
+1. Šachovnici reprezentujte jako pole polí, kde každý řádek šachovnice je reprezentován jako jedno pole. Políčka reprerezentujte jako čísla dle následujícího klíče. Pro prázdné políčko použijte číselnou hodnotu `0`.
+   ::fig[Figury]{src=assets/figury.png}
+1. Ověřte, že vaše pole má správnou podobu zavoláním funkce `zobraz(sachovnice)`.
+1. Pokračujte v kódu programu. Napište příkazy pro přesun bílého koně z pozice `f3` na pozici `e5`, kde sebere černého pěšce. Výsledkem by mělo být upravené pole obsahující nové pozice figurek.
+   ::fig[Výsledek]{src=assets/vysledek.png}
+1. Opět ověřte, že vaše pole má správnou podobu zavoláním funkce `zobraz(sachovnice)`.
 
-<!--
-Šachové pozice: https://chessfox.com/how-to-play-in-chess-positions-that-feature-material-imbalances/
--->
+#### Nápověda
+
+Výsledný kód by měl vypadat následovně:
+
+```js
+const zobraz = (data) => {
+  // Zde bude kód zkopírovaný ze zadání výše.
+};
+
+const sachovnice = [
+  /* Zde bude váš kód reprezentující rozehrané rozestavení. */
+];
+
+// Následující řádek zobrazí na stránce šachovnici s rozehraným rozestavení.
+zobraz(sachovnice);
+
+/*
+Sem přijde váš kód, který na poli sachovnice provede tah koněm.
+*/
+
+// Následující řádek zobrazí na stránce šachovnici po provedeném tahu.
+zobraz(sachovnice);
+```
+
+:::solution
+
+```js
+const zobraz = (data) => {
+  // …
+};
+
+const sachovnice = [
+  [0, 0, 0, 0, 0, -4, -6, 0],
+  [0, 0, 0, 0, 0, -1, -1, -1],
+  [0, 0, -1, 0, 0, 0, 0, 0],
+  [0, -1, 1, 0, -1, 0, 0, 0],
+  [0, 1, 0, 0, 1, 0, 0, 0],
+  [0, 0, 0, 0, 0, 3, 0, 1],
+  [0, 0, 0, 0, 2, 1, 1, 0],
+  [0, 0, 0, 0, 0, 0, 6, 0],
+];
+
+zobraz(sachovnice);
+
+sachovnice[3][4] = 3;
+sachovnice[5][5] = 0;
+
+zobraz(sachovnice);
+```
+
+:::

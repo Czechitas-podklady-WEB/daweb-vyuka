@@ -1,13 +1,11 @@
-title: Lovení chyb, pole
-lead: Naučíme se ve vlastních programech efektivně hledat chyby a ukážeme si jak pracovat s poli.
+title: Lovení chyb
+lead: Naučíme se ve vlastních programech efektivně hledat chyby.
 access: claim
 sections:
   - porozumeni-chybam
   - ladeni
   - recitaly
   - cv-ladeni
-  - pole
-  - cv-pole
   - shrnuti
   - ulozky-na-doma
   - volitelne-ulozky
