@@ -10,9 +10,9 @@ lessons:
   - komunikace-routing
   - posluchace
   - posilani-dat
+  - cloud-db
   - cafe-lora-1
   - cafe-lora-2
-  - cloud-db
   # - func-data
   # - komponenty
   # - dom-elementy
