@@ -40,8 +40,8 @@ Můžete si do javascriptového souboru přidat následující kód, kterým si 
 
 ```js
 const testCalculate = (expected, actual) => {
-  const solution = expected === actual ? '✔' : '❌';
-  document.body.innerHTML += `${symbol} Očekávaná hodnota: ${expected}, vypočtená hodnota: ${actual}<br>`;
+  const icon = expected === actual ? '✔' : '❌';
+  document.body.innerHTML += `${icon} Očekávaná hodnota: ${expected}, vypočtená hodnota: ${actual}<br>`;
 };
 
 testCalculate(5, calculate(2, '+', 3));
