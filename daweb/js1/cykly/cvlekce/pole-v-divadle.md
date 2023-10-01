@@ -4,7 +4,7 @@ demand: 1
 solutionAccess: lock
 ---
 
-Celé toto cvičení provádějte v JavaScript konzoli.
+Cvičení provádějte ve vašem JavaScript souboru.
 
 1. Vytvořte nějaké pole celých čísel, například počty diváků na několika po sobě jdoucích divadelních představeních. Použijte metodu `push` a přidejte do pole počet diváků na novém představení.
 1. Vytvořte nějaké pole desetinných čísel, například zaplněnost divadla v několika po sobě jdoucích představeních. Poté pomocí metody `pop` odstraňte poslední hodnotu v poli.

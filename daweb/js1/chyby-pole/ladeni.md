@@ -1,13 +1,13 @@
 ## Ladění programů
 
 Procesu hledání a opravování chyb v programech se obecně říká :term{cs="ladění" en="debugging"}.
-Situace, kdy náš program napíšeme tak, že nedělá, co chceme, je zcela v pořádku. Nikdo v praxi nedokáže na první dobrou napsat větší program bez chyby. Čím jsou však naše programy větší a složitější, tím roste prostor pro stále záludnější a húře odhalitelné chyby.
+Situace, kdy náš program napíšeme tak, že nedělá, co chceme, je zcela v pořádku. Nikdo v praxi nedokáže na první dobrou napsat větší program bez chyby. Čím jsou však naše programy větší a složitější, tím roste prostor pro stále záludnější a hůře odhalitelné chyby.
 
 ### console.log
 
 Ladění programů je neodmyslitelnou součástí vývoje v JavaScriptu. Když narazíte na chybu ve svém kódu, musíte ji najít a opravit. Jedním z nejběžnějších nástrojů pro ladění v JavaScriptu je `console.log`.
 
-`console.log` je metoda v JavaScriptu, kterou můžete použít k výpisu informací do konzole prohlížeče. Tato metoda je užitečná pro sledování hodnot proměnných, zjištění, kde se program zastavil, a pro zobrazení různých zpráv, které vám pomohou identifikovat chyby ve vašem kódu.
+`console.log` je metoda v JavaScriptu, kterou můžete použít k výpisu informací do konzole prohlížeče. Tato metoda je užitečná pro sledování hodnot proměnných, zjištění, kterou částí kódu program prošel nebo zda byla volána naše funkce, a pro zobrazení různých zpráv, které vám pomohou identifikovat chyby ve vašem kódu.
 
 ### Možnosti ladění
 
