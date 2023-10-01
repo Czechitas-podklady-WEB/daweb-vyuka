@@ -1,6 +1,7 @@
 ---
 title: Malé algoritmy
 demand: 2
+solutionAccess: lock
 ---
 
 Založte si nový JavaScriptový program a na jeho začátek vložte následující seznam čísel. Budeme jej používat ve všech následujících úlohách.

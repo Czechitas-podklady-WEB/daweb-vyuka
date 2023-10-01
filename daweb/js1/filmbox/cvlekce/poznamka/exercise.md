@@ -1,6 +1,7 @@
 ---
 title: Poznámka
 demand: 3
+solutionAccess: lock
 ---
 
 Umožněte uživateli vyplněním formuláře přidat k filmu vlastní poznámku.
