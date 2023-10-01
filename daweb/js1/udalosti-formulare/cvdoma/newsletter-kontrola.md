@@ -5,7 +5,7 @@ demand: 2
 solutionAccess: lock
 ---
 
-Pokračujte v příkladu Newsletter z lekce. V tomto cvičení zařidíme, aby uživatel při zadávání e-mailu dostal zpětnou vazbu, pokud zadává neplatný vstup.
+Pokračujte v příkladu [Newsletter](/vyvoj-webu/daweb/js1/udalosti-formulare/cv-zaklady/newsletter) z lekce. V tomto cvičení zařidíme, aby uživatel při zadávání e-mailu dostal zpětnou vazbu, pokud zadává neplatný vstup.
 
 1. V CSS si vytvořte třídu, která dělá výrazný červený rámeček kolem textového políčka.
 1. Přidejte na textové políčko posluchač události `input`.

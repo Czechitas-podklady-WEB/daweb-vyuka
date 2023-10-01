@@ -2,12 +2,12 @@
 title: Kalkulačka
 lead: 'Oživte kalkulačku.'
 demand: 2
-solutionAccess: lock
+solutionAccess: allow
 ---
 
-Vytvořte si repozitář ze šablony [cviceni-kalkulacka](https://github.com/Czechitas-podklady-WEB/cviceni-kalkulacka) se stránkou, která obsahuje číselník a display jednoduché kalkulačky.
+Vytvořte si repozitář ze šablony [cviceni-kalkulacka](https://github.com/Czechitas-podklady-WEB/cviceni-kalkulacka) se stránkou, která obsahuje číselník a displej jednoduché kalkulačky.
 
-Zařiďte, aby se při kliknutí na libovolné tlačítko na displaji kalkulačky objevila cifra, která je na tlačíku napsaná. Postupujte dle návodu:
+Zařiďte, aby se při kliknutí na libovolné tlačítko na displeji kalkulačky objevila cifra, která je na tlačíku napsaná. Postupujte dle návodu:
 
 ::fig[Kalkulačka]{src=assets/kalkulacka.gif}
 
@@ -15,11 +15,11 @@ Zařiďte, aby se při kliknutí na libovolné tlačítko na displaji kalkulačk
 1. Váš posluchač bude mít jeden parametr představující událost. Z vlastnosti `target` tohoto parametru získejte tlačíko, na které bylo kliknuto. Cifru zjístíte z jeho `textContent`.
 1. Jakmile znáte cifru, vložte ji jako `textContent` na displej kalkulačky.
 1. Pověste váš posluchač na všechna tlačítka s ciframi.
-1. U běžné kalkulačky mačkáním tlačítek postupně sestavujeme nějaké víceciferné číslo. Zařiďte, aby cifry na displeji přibývaly jako na běžné kalkulačce. Také zaříďte, aby se na displej nedalo vložit delší než devíticiferné číslo.
+1. U běžné kalkulačky mačkáním tlačítek postupně sestavujeme nějaké víceciferné číslo. Zařiďte, aby cifry na displeji přibývaly jako na běžné kalkulačce (tj. nově přidaná cifra se přidá doprava, jako je na animaci výše). Také zaříďte, aby se na displej nedalo vložit delší než devíticiferné číslo.
 
 #### Bonus
 
-- Pomocí podmínky `if` zařiďte, aby číslo na displayi nezačínalo nulou, ledaže je tam nula samotná.
+- Pomocí podmínky `if` zařiďte, aby číslo na displeji nezačínalo nulou, ledaže je tam nula samotná.
 
 :::solution
 
