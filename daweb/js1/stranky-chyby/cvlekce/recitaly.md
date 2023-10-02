@@ -1,6 +1,7 @@
 ---
 title: Recitály
 demand: 2
+lead: Vykoušejte si podrobné vysvětlování kódu.
 solutionAccess: lock
 ---
 

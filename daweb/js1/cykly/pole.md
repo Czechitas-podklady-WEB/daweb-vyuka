@@ -82,24 +82,6 @@ Naopak pomocí metody `pop` poslední prvek pole smažeme.
 [ 3, 1, 2, 2 ]
 ```
 
-Pokud chceme odebrat prvek ze začátku pole, použijeme metodu `shift`.
-
-```jscon
-> marks.shift()
-3
-> marks
-[ 1, 2, 2 ]
-```
-
-Chceme-li přidat prvek na začátek pole, je to vlastně opačná operace k `shift`. Metoda pro přidání prvku na začátek pole má tedy trochu zvláštní jméno `unshift`.
-
-```jscon
-> marks.unshift(1)
-4
-> marks
-[ 1, 1, 2, 2 ]
-```
-
 Pomocí metody `includes` můžeme zjistit, jestli se uvnitř pole nachází zadaný prvek.
 
 ```jscon
