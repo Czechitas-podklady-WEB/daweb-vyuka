@@ -4,14 +4,17 @@ lessons:
   - opakovani
   - organizace
   - bundlovani
+  - komponenty
+  - server-komunikace
+  - podminene-zobrazeni-seznamy
+  - komunikace-routing
+  - posluchace
+  - posilani-dat
+  - cloud-db
+  - cafe-lora-1
+  - cafe-lora-2
   # - func-data
-  # - server-komunikace
   # - komponenty
   # - dom-elementy
-  # - posilani-dat
   # - webpack
-  # - komunikace-routing
-  # - cloud-db
-  # - cafe-lora-1
-  # - cafe-lora-2
   # - webhosting
