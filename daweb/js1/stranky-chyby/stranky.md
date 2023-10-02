@@ -11,13 +11,22 @@ Celý postup si předvedeme na ukázkovém zpravodajském webu _Zprávičky_. Ho
 
 ::fig{src=assets/zpravicky.png}
 
-## URL parametry
+## URL hash
 
 U vícestránkových aplikací často chceme zobrazit detail něčeho, co si uživatel vybere na hlavní stránce. Může jít například o produkt v e-shopu, detail nalezeného dopravního spojení nebo v našem případě o konkrétní zprávu na zpravodajském webu. Všechny tyto detaily mají společné to, že je potřeba je nějakým způsobem identifikovat. Máme tedy id produktu, id spoje nebo id zprávy. Jak ale uživatelem vybraný identifikátor předat na detailní stránku?
 
-Jednou z možností je použít parametry v URL adrese. Všichni jste už jistě viděli adresy typu `https://www.google.com/search?q=vyhledavany+vyraz`. Parametry jsou vždy za otazníkem a oddělené ampersandem. V našem případě používáme například `/article.html?article=veverka_viki`. Na straně detailu pak můžeme parametry získat pomocí objektu `URLSearchParams`:
+Jednou z možností je použít takzvaný _URL hash_. Tento postup je s  našimi současnými znalostmi snadno pužitelný. V praxi by se použil postup jiný, který si ale ukážeme až později. 
+
+Na konci adresy URL můžeme za symbol hash kříže `#` uvést jakýkoliv kousek textu. Například:
+
+```
+https://localhost:3000#muj-text
+```
+
+Tato část adresy se dá získat z vlastnosti `window.location.hash`:
 
 ```js
-const urlParams = new URLSearchParams(window.location.search);
-const articleId = urlParams.get("article");
+const identifikator = window.location.hash.slice(1);
 ```
+
+Tento trik můžeme využít k tomu, abychom si předali id článku, který chceme zobrazit, například `/article.html#veverka_viki`.
