@@ -2,7 +2,7 @@
 title: Kostka
 lead: 'Oživte herní kostku.'
 demand: 2
-solutionAccess: lock
+solutionAccess: allow
 ---
 
 Vytvořte si repozitář ze šablony [cviceni-kostka](https://github.com/Czechitas-podklady-WEB/cviceni-kostka) se stránkou, která zobrazuje hrací kostku. Doplňte do stránky JavaScriptový program, který zařídí, že když uživatel zmáčkne na stránce libovolnou klávesu, na kostce se zobrazí číslo o jedna vyšší. Po šestce zobrazte opět jedničku.

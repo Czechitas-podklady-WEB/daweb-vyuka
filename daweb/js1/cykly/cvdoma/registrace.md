@@ -1,7 +1,7 @@
 ---
 title: Registrace
 demand: 3
-solutionAccess: lock
+solutionAccess: allow
 ---
 
 Vytvořte si repozitář ze šablony [cviceni-registrace](https://github.com/Czechitas-podklady-WEB/cviceni-registrace) s registračním formulářem pro nového uživatele. Doplňte do stránky JavaScriptový kód tak, aby byly splněny následující požadavky.
