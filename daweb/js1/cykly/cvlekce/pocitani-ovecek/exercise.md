@@ -1,7 +1,7 @@
 ---
 title: Na dobrou noc
 demand: 2
-solutionAccess: lock
+solutionAccess: allow
 ---
 
 Vytvořte JavaScriptový program, který vepíše do stránky ovčí příběh pro děti na dobrou noc. Výsledkem by měl být text počítající ovečky.

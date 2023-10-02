@@ -1,7 +1,7 @@
 ---
 title: Pole v divadle
 demand: 1
-solutionAccess: lock
+solutionAccess: allow
 ---
 
 Cvičení provádějte ve vašem JavaScript souboru.
