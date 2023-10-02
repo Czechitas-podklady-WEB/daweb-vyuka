@@ -9,7 +9,15 @@ Založte si JavaScriptový program a do něj vložte následující data:
 
 ```js
 const cisla = [7, 1, 4, 5, 2, 9, 3, 6, 8];
-const zvirata = ['pes', 'kočka', 'králík', 'had', 'andulka', 'morče', 'krkavec'];
+const zvirata = [
+  'pes',
+  'kočka',
+  'králík',
+  'had',
+  'andulka',
+  'morče',
+  'krkavec',
+];
 const napoje = [
   { nazev: 'Pivo', cena: 12, skladem: true },
   { nazev: 'Rum', cena: 120, skladem: false },

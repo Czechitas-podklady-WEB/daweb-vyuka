@@ -1,6 +1,6 @@
 ## Metoda `map`
 
-Metoda `map` bude jedna z nejpoužívanějších funkcí pro práci s daty. Slouží k transformaci prvků pole na jiné hodnoty, což nám poslouží v růcných situacích. 
+Metoda `map` bude jedna z nejpoužívanějších funkcí pro práci s daty. Slouží k transformaci prvků pole na jiné hodnoty, což nám poslouží v růcných situacích.
 
 Metoda `map` funguje v něčem podobně jako metoda `forEach`. Prochází prvky pole jeden po druhé a podobně jako `forEach` na každém prvku spustí nějakou naši funkci. Narozdil od `forEach` ale metoda `map` vždy vytvoří nové pole, které obsahuje výsledky volání naší funkce. Toto nové pole pak můžeme použít dál v našem programu.
 

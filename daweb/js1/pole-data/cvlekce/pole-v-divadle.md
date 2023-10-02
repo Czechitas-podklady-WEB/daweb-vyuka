@@ -10,7 +10,7 @@ Cvičení provádějte ve vašem JavaScript souboru.
 1. Vytvořte nějaké pole celých čísel, například počty diváků na několika po sobě jdoucích divadelních představeních. Použijte metodu `push` a přidejte do pole počet diváků na novém představení.
 1. Vytvořte nějaké pole desetinných čísel, například zaplněnost divadla v několika po sobě jdoucích představeních. Poté pomocí metody `pop` odstraňte poslední hodnotu v poli.
 1. Vytvořte nějaké pole řetězců, například seznam názvů několika divadelních představení, která divadlo hraje. Uložte toto pole do proměnné `plays`. Uložte do nějaké proměnné druhou položku tohoto pole.
-1. Uložte do proměnné `reviews` pole hodnocení, které obdržela divadelní hra _Plyšáci na útěku_ v různých recenzních časopisech. Hodnocení je vždy objekt obsahující název recenzního časopisu jako řetězec a samotné hodnocení jako číslo mezi 1 až 10. 
+1. Uložte do proměnné `reviews` pole hodnocení, které obdržela divadelní hra _Plyšáci na útěku_ v různých recenzních časopisech. Hodnocení je vždy objekt obsahující název recenzního časopisu jako řetězec a samotné hodnocení jako číslo mezi 1 až 10.
 
 :::solution
 
@@ -30,10 +30,11 @@ const plays = [
 let second = plays[1];
 
 const reviews = [
-  { magazine: 'Slovenka', rating: 10},
-  { magazine: 'Zivot', rating: 8},
-  { magazine: 'Divadelní Luk', rating: 9},
-  { magazine: 'Makarony', rating: 1},
+  { magazine: 'Slovenka', rating: 10 },
+  { magazine: 'Zivot', rating: 8 },
+  { magazine: 'Divadelní Luk', rating: 9 },
+  { magazine: 'Makarony', rating: 1 },
 ];
 ```
+
 :::
