@@ -6,7 +6,7 @@ solutionAccess: lock
 
 Na všech stránkách webu je horní navigace se třemi odkazy. Pro úsporu místa na malých zařízeních se mění na tlačítko s ikonkou hamburgeru. Zařiďte, aby klikání na tlačítko rozbalovalo a opět skrývalo položky menu.
 
-1. Na posledním řádku souboru `script.js` najděte pomocí `document.querySelector` prvek s id `menu-tlacitko`.
+1. V souboru `spolecne.js` najděte pomocí `document.querySelector` prvek s id `menu-tlacitko`.
 
 1. Přidejte mu posluchač události kliknutí.
 
