@@ -15,7 +15,7 @@ Celý postup si předvedeme na ukázkovém zpravodajském webu _Zprávičky_. Ho
 
 U vícestránkových aplikací často chceme zobrazit detail něčeho, co si uživatel vybere na hlavní stránce. Může jít například o produkt v e-shopu, detail nalezeného dopravního spojení nebo v našem případě o konkrétní zprávu na zpravodajském webu. Všechny tyto detaily mají společné to, že je potřeba je nějakým způsobem identifikovat. Máme tedy id produktu, id spoje nebo id zprávy. Jak ale uživatelem vybraný identifikátor předat na detailní stránku?
 
-Jednou z možností je použít takzvaný _URL hash_. Tento postup je s  našimi současnými znalostmi snadno pužitelný. V praxi by se použil postup jiný, který si ale ukážeme až později. 
+Jednou z možností je použít takzvaný _URL hash_. Tento postup je s našimi současnými znalostmi snadno pužitelný. V praxi by se použil postup jiný, který si ale ukážeme až později.
 
 Na konci adresy URL můžeme za symbol hash kříže `#` uvést jakýkoliv kousek textu. Například:
 
