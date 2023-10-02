@@ -1,6 +1,7 @@
 ---
 title: Piškvorky 3x3
 demand: 4
+lead: Vyhodnoťte výsledky malých piškvorek.
 solutionAccess: lock
 ---
 

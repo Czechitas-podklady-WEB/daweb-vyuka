@@ -1,6 +1,7 @@
 ---
 title: Xylofon
 demand: 4
+lead: Vytvořte jednoduchý xylofon.
 solutionAccess: lock
 ---
 

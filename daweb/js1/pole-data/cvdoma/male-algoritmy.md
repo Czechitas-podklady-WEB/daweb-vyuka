@@ -1,6 +1,7 @@
 ---
 title: Malé algoritmy
 demand: 2
+lead: Jednoduchá cvičení na použití metody `forEach`.
 solutionAccess: lock
 ---
 
@@ -13,14 +14,14 @@ const numbers = [
 ];
 ```
 
-1. Vypište na výstup všechna čísla.
-1. Vypište na výstup druhé mocniny všech čísel.
-1. Vypište na výstup pouze záporná čísla.
-1. Vypište na výstup absolutní hodnotu všech čísel.
-1. Vypište na výstup pouze sudá čísla.
-1. Vypište na výstup pouze ta čísla, jejíchž absolutní hodnota je dělitelná třemi.
-1. Vypište na výstup jak daleko je každé číslo v seznamu od čísla 5.
-1. Vypište na výstup druhé mocnicny vzdáleností všech čísel od čísla 5.
+1. Vypište do stránky všechna čísla.
+1. Vypište do stránky druhé mocniny všech čísel.
+1. Vypište do stránky pouze záporná čísla.
+1. Vypište do stránky absolutní hodnotu všech čísel.
+1. Vypište do stránky pouze sudá čísla.
+1. Vypište do stránky pouze ta čísla, jejíchž absolutní hodnota je dělitelná třemi.
+1. Vypište do stránky jak daleko je každé číslo v seznamu od čísla 5.
+1. Vypište do stránky druhé mocnicny vzdáleností všech čísel od čísla 5.
 1. Spočítejte, kolik je v seznamu záporných čísel.
 1. Spočítejte součet všech čísel v poli.
 1. Spočítejte průměr všech čísel v poli.
@@ -31,14 +32,14 @@ const numbers = [
 1. Vypište na výstup všechna čísla.
    ```js
    numbers.forEach((number) => {
-     console.log(number);
+     document.body.innerHTML += `<p>${number}</p>`;
    });
    ```
 1. Vypište na výstup druhé mocniny všech čísel.
 
    ```js
    numbers.forEach((number) => {
-     console.log(number * number);
+     document.body.innerHTML += `<p>${number * number}</p>`;
    });
    ```
 
@@ -47,7 +48,7 @@ const numbers = [
    ```js
    numbers.forEach((number) => {
      if (number < 0) {
-       console.log(number);
+       document.body.innerHTML += `<p>${number}</p>`;
      }
    });
    ```
@@ -57,16 +58,16 @@ const numbers = [
    ```js
    numbers.forEach((number) => {
      if (number < 0) {
-       console.log(-1 * number);
+       document.body.innerHTML += `<p>${-1 * number}</p>`;
      } else {
-       console.log(number);
+       document.body.innerHTML += `<p>${number}</p>`;
      }
    });
    ```
 
    ```js
    numbers.forEach((number) => {
-     console.log(Math.abs(number));
+     document.body.innerHTML += `<p>${Math.abs(number)}</p>`;
    });
    ```
 
@@ -75,7 +76,7 @@ const numbers = [
    ```js
    numbers.forEach((number) => {
      if (number % 2 === 0) {
-       console.log(number);
+       document.body.innerHTML += `<p>${number}</p>`;
      }
    });
    ```
@@ -85,7 +86,7 @@ const numbers = [
    ```js
    numbers.forEach((number) => {
      if (Math.abs(number) % 3 === 0) {
-       console.log(number);
+       document.body.innerHTML += `<p>${number}</p>`;
      }
    });
    ```
@@ -94,7 +95,7 @@ const numbers = [
 
    ```js
    numbers.forEach((number) => {
-     console.log(numbers.indexOf(5) - numbers.indexOf(number));
+     document.body.innerHTML += `<p>${Math.abs(5 - number)}</p>`;
    });
    ```
 
@@ -102,8 +103,8 @@ const numbers = [
 
    ```js
    numbers.forEach((number) => {
-     const distance = numbers.indexOf(5) - numbers.indexOf(number);
-     console.log(distance * distance);
+     const distance = Math.abs(5 - number);
+     document.body.innerHTML += `<p>${distance * distance}</p>`;
    });
    ```
 
@@ -116,7 +117,7 @@ const numbers = [
        negativeCount++;
      }
    });
-   console.log('Počet záporných:', negativeCount);
+   document.body.innerHTML += `<p>Počet záporných: ${negativeCount}</p>`;
    ```
 
 1. Spočítejte součet všech čísel v poli.
@@ -128,7 +129,7 @@ const numbers = [
        evenSum += number;
      }
    });
-   console.log('Součet sudých:', evenSum);
+   document.body.innerHTML += `<p>Součet sudých: ${evenSum}</p>`;
    ```
 
 1. Spočítejte průměr všech čísel v poli.
@@ -138,7 +139,7 @@ const numbers = [
    numbers.forEach((number) => {
      sum += number;
    });
-   console.log('Průměr všech:', sum / numbers.length);
+   document.body.innerHTML += `<p>Průměr všech: ${sum / numbers.length}</p>`;
    ```
 
 1. Spočítejte součet všech kladných čísel v poli.
@@ -150,7 +151,7 @@ const numbers = [
        positiveSum += number;
      }
    });
-   console.log('Průměr všech:', positiveSum);
+   document.body.innerHTML += `<p>Průměr všech:${positiveSum}</p>`;
    ```
 
 :::

@@ -1,6 +1,7 @@
 ---
 title: Palindromy
 demand: 3
+lead: Vyhrajte soutěž v hledání palindromů.
 solutionAccess: lock
 ---
 

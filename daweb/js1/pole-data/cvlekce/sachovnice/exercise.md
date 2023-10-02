@@ -1,6 +1,7 @@
 ---
 title: Šachovnice
 demand: 2
+lead: Vytvořte pole reprezentující rozehranou šachovou partii.
 solutionAccess: lock
 ---
 

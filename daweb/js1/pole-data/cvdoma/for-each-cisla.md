@@ -1,6 +1,7 @@
 ---
 title: Jednoduché pole a forEach
 demand: 2
+lead: Vypište do stránky obsah pole.
 solutionAccess: lock
 ---
 
