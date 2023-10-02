@@ -1,7 +1,7 @@
 ---
 title: 'Bonus: Premiéra'
 demand: 3
-solutionAccess: lock
+solutionAccess: allow
 ---
 
 Zobrazte datum premiéry filmu.
