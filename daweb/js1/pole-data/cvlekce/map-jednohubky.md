@@ -2,7 +2,7 @@
 title: Jednohubky pro `map`
 demand: 1
 lead: Jednoduché cvičení na použití metody `map`.
-solutionAccess: lock
+solutionAccess: allow
 ---
 
 Založte si JavaScriptový program a do něj vložte následující data:
