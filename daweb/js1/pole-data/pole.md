@@ -3,17 +3,17 @@ Do této chvíle jsme uměli do nějaké proměnné uložit pouze jednu hodnotu,
 ## Pole
 
 :term{cs="Pole" en="Array"} nám umožňují do jedné proměnné uložit více hodnot.
-Tvoříme je pomocí hranatých závorek. Takto například do jedné proměnné uložíme známky ze všech písemek psaných za jedno pololetí.
+Tvoříme je pomocí hranatých závorek. Takto například do jedné proměnné uložíme různé druhy ovoce.
 
 ```js
-const marks = [3, 1, 2, 4, 1];
+const fruits = ['jablko', 'hruška', 'banán', 'jahoda', 'malina'];
 ```
 
 Uvnitř polí je možné mít zcela libovolné hodnoty, tedy například řetězce, DOM elementy apod.
 
 ```js
 const ages = [23, 28, 19, 21, 25];
-const users = ['john', 'sue', 'peter', 'jane', 'soji'];
+const users = [true, false, false, true, true];
 ```
 
 V praxi se nejčastějeji setkáme s poli, která obsahují objekty. Takto například můžeme reprezentovat seznam studentů.
@@ -45,16 +45,16 @@ Pozor na to, že podobně jako existuje prázný řetězec `''`, existuje také 
 Hodnoty uvnitř polí sídlí na takzvaných indexech. Na jednotlivé indexy přistupujeme také pomocí hranatých závorek. Jak už víme z lekce o řetězcích, **programátoři všechno počítají od nuly**.
 
 ```js
-const marks = [3, 1, 2, 4, 1];
-marks[0]; // ⟶ 3
-marks[3]; // ⟶ 4
+const fruits = ['jablko', 'hruška', 'banán', 'jahoda', 'malina'];
+fruits[0]; // ⟶ 'jablko'
+fruits[3]; // ⟶ 'jahoda'
 ```
 
-Pomocí indexů také můžeme hodnoty uvnitř pole měnit. Dejme tomu, že si nehezkou čtyřku opravíme na dvojku.
+Pomocí indexů také můžeme hodnoty uvnitř pole měnit. Dejme tomu, že místo jahody chceme v poli mít broskev.
 
 ```js
-marks[3] = 2;
-marks; // ⟶ [ 3, 1, 2, 2, 1]
+fruits[3] = 'broskev';
+fruits; // ⟶ ['jablko', 'hruška', 'banán', 'broskev', 'malina']
 ```
 
 ### Vlastnosti a metody
@@ -62,36 +62,36 @@ marks; // ⟶ [ 3, 1, 2, 2, 1]
 Pole také mají zajímavé vlastnosti a metody. Vlastnost `length` už známe z řetězců.
 
 ```js
-marks.length; // ⟶ 5
+fruits.length; // ⟶ 5
 ```
 
 Pomocí metody `push` můžeme přidat novou hodnotu na konec pole.
 
 ```js
-marks.push(3);
-marks; // ⟶ [ 3, 1, 2, 4, 1, 3]
+fruits.push('pomeranč');
+fruits; // ⟶ ['jablko', 'hruška', 'banán', 'broskev', 'malina', 'pomeranč']
 ```
 
 Naopak pomocí metody `pop` poslední prvek pole smažeme.
 
 ```js
-marks.pop();
-marks; // ⟶ [ 3, 1, 2, 4, 1]
+fruits.pop(); // ⟶ 'pomeranč'
+fruits; // ⟶ ['jablko', 'hruška', 'banán', 'broskev', 'malina']
 ```
 
 Pomocí metody `includes` můžeme zjistit, jestli se uvnitř pole nachází zadaný prvek.
 
 ```js
-marks.includes(1); // ⟶ true
-marks.includes(5); // ⟶ false
+fruits.includes('malina'); // ⟶ true
+fruits.includes('švestka'); // ⟶ false
 ```
 
 Metoda `indexOf` nám přímo řekne první index, na kterém se zadaný prvek v poli nachází. Pokud prvek v poli není, obdržíme -1.
 
 ```js
-marks.indexOf(4); // ⟶ 3
-marks.indexOf(3); // ⟶ 0
-marks.indexOf(5); // ⟶ -1
+fruits.indexOf('broskev'); // ⟶ 3
+fruits.indexOf('jablko'); // ⟶ 0
+fruits.indexOf('švestka'); // ⟶ -1
 ```
 
 ### Řetězce versus pole
