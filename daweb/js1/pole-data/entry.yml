@@ -1,0 +1,14 @@
+title: Pole a zpracování dat
+lead: Ukážeme si jako ukládat hodnoty do polí a také jak transformovat a jinak zpracovávat strukturovaná data.
+access: claim
+sections:
+  - pole
+  - cv-pole
+  - pole-a-foreach
+  - nodelist-a-foreach
+  - map
+  - cv-foreach-map
+  # - cteni-na-doma
+  - shrnuti
+  - ulozky-na-doma
+  # - volitelne-ulozky

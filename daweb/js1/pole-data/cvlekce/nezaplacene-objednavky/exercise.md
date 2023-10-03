@@ -1,6 +1,7 @@
 ---
 title: Nezaplacené objednávky
 demand: 3
+lead: Vytvořte pole s identifikátory a e-maily zákazníků.
 solutionAccess: lock
 ---
 

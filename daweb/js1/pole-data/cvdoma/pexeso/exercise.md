@@ -1,6 +1,7 @@
 ---
 title: Pexeso
 demand: 3
+lead: Oživte pexesové kartičky.
 solutionAccess: lock
 ---
 
@@ -9,9 +10,7 @@ Oživte pexesové kartičky. Kliknutí na libovolnou kartičku by ji mělo obrá
 ::fig[kartičky pexesa]{src=assets/karticky.png}
 
 1. Vycházejte ze šablony na GitHubu [cviceni-pexeso](https://github.com/Czechitas-podklady-WEB/cviceni-pexeso).
-
-1. Upravte soubor `app.js` tak, aby prošel všechny prvky se třídou `karticka` a přidal jim posluchač události na kliknutí.
-
+1. Upravte soubor `app.js` tak, aby pomocí metody `querySelectorAll` prošel všechny prvky se třídou `karticka` a přidal jim posluchač události na kliknutí.
 1. Pokud událost nastane odeberte nebo přidejte kartičce třídu `otocena`. Styly už máte nachystané. Kartička s třídou `otocena` uživateli obrázek skrývá. Po odebrání této třídy se obrázek ukáže.
 
 #### Bonusy
