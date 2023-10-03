@@ -6,9 +6,9 @@ solutionAccess: lock
 
 Umožněte uživateli vyplněním formuláře přidat k filmu vlastní poznámku.
 
-1. Pokud je na stránce formulář, prvek s id `note-form`, přidejte mu posluchač události odeslání.
+1. V souboru `film.js` pomocí `document.querySelector` najděte prvek s id `note-form`.
 
-1. Při pokusu o odeslání zamezte výchozí chování prohlížeče.
+1. Při pokusu o odeslání tohoto formuláře zamezte výchozí chování prohlížeče.
 
 1. Ověřte, že uživatel do textového pole, prvku s id `message-input` něco napsal. Pokud ne, přidejte prvku třídu `is-invalid`, která ho zvýrazní červeně a nic dalšího v posluchači nedělejte.
 
