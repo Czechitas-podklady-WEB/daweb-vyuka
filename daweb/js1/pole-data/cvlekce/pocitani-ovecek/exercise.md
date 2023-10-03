@@ -1,6 +1,7 @@
 ---
-title: Na dobrou noc
+title: Počítání oveček
 demand: 2
+lead: Vypište do stránky ovčí příběh pro děti na dobrou noc.
 solutionAccess: lock
 ---
 
