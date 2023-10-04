@@ -1,7 +1,7 @@
 ---
 title: Počítání pomocí WHILE
 demand: 2
-solutionAccess: lock
+solutionAccess: allow
 ---
 
 Založte JavaScriptový program, který provede následující instrukce.

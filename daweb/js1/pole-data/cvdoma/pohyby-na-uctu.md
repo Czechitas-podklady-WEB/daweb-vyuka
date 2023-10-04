@@ -1,7 +1,7 @@
 ---
 title: Pohyby na účtu
 demand: 3
-solutionAccess: lock
+solutionAccess: allow
 ---
 
 Založte JavaScriptový program s následujícím s záznamem vkladů a výběrů na nějakém bankovním účtu.

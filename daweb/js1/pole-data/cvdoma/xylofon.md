@@ -2,7 +2,7 @@
 title: Xylofon
 demand: 4
 lead: Vytvořte jednoduchý xylofon.
-solutionAccess: lock
+solutionAccess: allow
 ---
 
 Vytvořte si repozitář ze šablony [cviceni-xylofon](https://github.com/Czechitas-podklady-WEB/cviceni-xylofon) a postupujte podle zadání v repozitáři.
