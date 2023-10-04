@@ -36,3 +36,25 @@ Pomocí metody `map` vždy vytvořte pole dle zadání a vypište jej pro kontro
 1. Vytvořte nové pole, které bude obsahovat délky všech řetězců z pole `zvirata`.
 1. Vytvořte nové pole, které bude obsahovat pouze názvy všech nápojů z pole `napoje`.
 1. Vytvořte nové pole, které bude obsahovat pouze název nápoje z pole `napoje`, pokud je nápoj skladem, v opačném případě bude obsahovat řetězec `Není skladem`.
+
+:::solution
+
+```js
+const kratDva = cisla.map((cislo) => cislo * 2);
+console.log(kratDva);
+
+const delky = zvirata.map((zvire) => zvire.length);
+console.log(delky);
+
+const nazvy = napoje.map((napoj) => napoj.nazev);
+console.log(nazvy);
+
+const skladem = napoje.map((napoj) => {
+  if (napoj.skladem) {
+    return napoj.nazev;
+  } else {
+    return 'Není skladem';
+  }
+});
+
+:::
