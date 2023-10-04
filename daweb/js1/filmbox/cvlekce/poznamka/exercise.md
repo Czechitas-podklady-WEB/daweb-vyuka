@@ -10,7 +10,7 @@ Umožněte uživateli vyplněním formuláře přidat k filmu vlastní poznámku
 
 1. Při pokusu o odeslání tohoto formuláře zamezte výchozí chování prohlížeče.
 
-1. Ověřte, že uživatel do textového pole, prvku s id `message-input` něco napsal. Pokud ne, přidejte prvku třídu `is-invalid`, která ho zvýrazní červeně a nic dalšího v posluchači nedělejte.
+1. Ověřte, že uživatel do textového pole, prvku s id `message-input` něco napsal. Pokud ne, přidejte prvku třídu `is-invalid`, která ho zvýrazní červeně.
 
 1. Pokud uživatel něco napsal, ověřte, že souhlasil s podmínkami, že zaškrtl políčko s id `terms-checkbox`. Pokud nezaškrtl, přidejte políčku třídu `is-invalid`
 
