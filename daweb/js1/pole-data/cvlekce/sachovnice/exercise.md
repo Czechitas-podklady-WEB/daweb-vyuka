@@ -1,7 +1,8 @@
 ---
 title: Šachovnice
 demand: 2
-solutionAccess: lock
+lead: Vytvořte pole reprezentující rozehranou šachovou partii.
+solutionAccess: allow
 ---
 
 Založte JavaScriptový program a vytvořte v něm pole pojmenované `sachovnice`, které bude reprezentavat rozehranou šachovou partii jako na obrázku.

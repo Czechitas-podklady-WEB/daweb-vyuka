@@ -12,6 +12,10 @@ Seznamte se s kódem, který je pro vás v projektu připraven. Postupujte dle n
    - [Detail filmu](http://localhost:3000/film.html)
    - [O webu](http://localhost:3000/o-webu.html)
 
-1. Koukněte ve VS Code do souboru `script.js`. Všimněte si `console.log` na prvním řádku. Ověřte, že se vám text propisuje do vývojářských nástrojů v prohlížeči.
+1. Většinu váší práce budete provádět v JavaScriptových souborech.
 
-1. Všimněte si také, že v souboru máte již předchystané pole objektů s filmy.
+   - `spolecne.js` bude obsahovat společný kód pro všechny stránky,
+   - `seznam.js` bude obsahovat kód pro stránku se seznamem filmů,
+   - a `film.js` bude obsahovat kód pro stránku s detailem filmu.
+
+1. Všimněte si, že v souboru `seznam.js` a `film.js` máte již předchystané pole objektů s filmy.

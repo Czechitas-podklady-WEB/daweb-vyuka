@@ -1,7 +1,8 @@
 ---
 title: Nezaplacené objednávky
 demand: 3
-solutionAccess: lock
+lead: Vytvořte pole s identifikátory a e-maily zákazníků.
+solutionAccess: allow
 ---
 
 Pracujete na velkém e-shopu a vaším úkolem je z nezaplacených objednávek vybrat všechny identifikátory a e-maily zákazníků pro zpracování dalšími systémy.

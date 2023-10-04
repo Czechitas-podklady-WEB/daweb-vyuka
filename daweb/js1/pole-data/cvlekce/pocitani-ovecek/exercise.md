@@ -1,7 +1,8 @@
 ---
-title: Na dobrou noc
+title: Počítání oveček
 demand: 2
-solutionAccess: lock
+lead: Vypište do stránky ovčí příběh pro děti na dobrou noc.
+solutionAccess: allow
 ---
 
 Vytvořte JavaScriptový program, který vepíše do stránky ovčí příběh pro děti na dobrou noc. Výsledkem by měl být text počítající ovečky.
