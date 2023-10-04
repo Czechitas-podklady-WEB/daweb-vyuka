@@ -1,0 +1,11 @@
+title: Organizace kódu a bundlování
+lead: Naučíme se dobře postavit zdrojový kód větších aplikací, aby se v nich vyznali jak vývojáři tak webový prohlížeč.
+sections:
+  - import-export
+  - cv-import-export
+  - system-npm
+  - vite
+  - startovace
+  - cv-vite
+  - shrnuti
+  - ulozky-na-doma
