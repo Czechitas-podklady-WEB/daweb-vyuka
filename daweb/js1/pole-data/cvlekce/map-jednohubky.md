@@ -56,5 +56,6 @@ const skladem = napoje.map((napoj) => {
     return 'Není skladem';
   }
 });
+```
 
 :::
