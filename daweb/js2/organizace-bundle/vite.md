@@ -77,7 +77,7 @@ Vytvořit takovou konfiguraci od základu je už relativně pokročilá dovednos
 Nyní stačí otevřít v našem projektu terminál a napsat příkaz
 
 ```sh
-$ npx vite build
+$ npm run dev build
 ```
 
 Pokud se vše povedlo, uvnitř projektu se vytvoří soubor `dist/assets/index-7a801922.js` (u vás možná s trochu jiným číslem na konci), který obsahuje takzvaně :term{cs="minifikovanou" en="minified"} verzi našeho kódu. Ta může vypadat například takto děsivě:
@@ -94,10 +94,10 @@ Vite dělá minifikaci proto, aby náš výsledný kód byl co nejmenší. Vzhle
 
 ## Vývojový server
 
-Pomocí příkazu `npx vite build` sestavujeme stránku pro finální nasazení na nějaký server. Během vývoje chceme, aby stránka běžela na našem lokálním serveru, podobně jako když jsme spouštěli příkad `npx serve`. Ten už nyní pro Vite projekty používat nebudeme. Místo toho používejem příkaz
+Pomocí příkazu `npm run dev build` sestavujeme stránku pro finální nasazení na nějaký server. Během vývoje chceme, aby stránka běžela na našem lokálním serveru, podobně jako když jsme spouštěli příkad `npx serve`. Ten už nyní pro Vite projekty používat nebudeme. Místo toho používejem příkaz
 
 ```sh
-$ npx vite
+$ npm run dev
 ```
 
 Ten sleduje změny v našem kódu a průběžně sestavuje všechny nezbytné JavaScriptové a CSS soubory. Funugje tady podobně, jako jsme zvyklí z příkazu `npx serve`.

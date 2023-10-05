@@ -23,7 +23,7 @@ Naši aplikaci _Nákupy_ jsme v zanechali v repozitáři [ukazka-nakupy-import-e
    Poslední parametr [vanilla](https://en.wikipedia.org/wiki/Plain_vanilla) znamená, že chceme vytvořit projekt v základním JavaScriptu zatím bez Reactu.
 1. Otevřeme složku `nakupy-vite` ve VS Code. Spustíme terminál a uvnitř této složky spustíme příkaz
    ```
-   npx vite
+   npm run dev
    ```
 1. V prohlížeči by se měla otevřít jednoduchá stránka zobrazující úvodní HTML. Ve VS Code smažeme obsah složky `src` a nahradíme ji kódem z poslední verze aplikace _Nákupy_.
 1. Pozor na to, že soubor `index.html` musí být mimo složku `src`.
