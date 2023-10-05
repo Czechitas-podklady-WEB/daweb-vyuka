@@ -10,7 +10,7 @@ Takových systému je pro JavaScript k dispozici nepřeberné množství. Tady j
 - [Nunjucks](https://mozilla.github.io/nunjucks/)
 - [uhtml](https://github.com/WebReflection/uhtml)
 
-S příchodem frameworku React, ke kterému zde postupně s napětím směřujeme, se stal populární šablonovací systém [JSX](https://reactjs.org/docs/introducing-jsx.html), který je součástí frameworku React. My proto JSX  v tomto kurzu budeme také používat, protože se tak mimochodem naučíme i základy Reactu ještě dříve, než se k němu oficiálně prokoušeme.
+S příchodem frameworku React, ke kterému zde postupně s napětím směřujeme, se stal populární šablonovací systém [JSX](https://reactjs.org/docs/introducing-jsx.html), který je součástí frameworku React. My proto JSX v tomto kurzu budeme také používat, protože se tak mimochodem naučíme i základy Reactu ještě dříve, než se k němu oficiálně prokoušeme.
 
 ## Základy JSX
 
@@ -22,7 +22,7 @@ npm init kodim-app@latest muj-projekt vanilla
 
 a následně v něm spustit vývojový server příkazem `npm run dev`.
 
-Nyní zkusíme pomocí JSX vytvořit jednoduchý obsah. 
+Nyní zkusíme pomocí JSX vytvořit jednoduchý obsah.
 
 ```jsx
 import { render } from 'react-dom';
@@ -32,7 +32,7 @@ document.querySelector('#app').innerHTML = render(<h1>Ahoj ze světa JSX</h1>);
 
 Tady nás čeká velké překvapení. Díky JSX můžeme psát HTML **přímo v JavaScriptu**. Všimněte si, že funkci `render` předáváme něco, co kolem sebe nemá uvozovky, není to tedy řetězec. Tomuto novému typu hodnoty budeme říkat prostě JSX.
 
-Hned na začátku je důležité si říct, že JSX není úplně přesně HTML. Je to podobný jazyk, který se snaží HTML co nejvíce napodobit. V JSX můžeme používat všechny HTML značky co známe, ale 
+Hned na začátku je důležité si říct, že JSX není úplně přesně HTML. Je to podobný jazyk, který se snaží HTML co nejvíce napodobit. V JSX můžeme používat všechny HTML značky co známe, ale
 narazíme na drobné odlišnosti:
 
 1. Všechny uzavírací značky musí být v JSX uzavřeny. To znamená, že i samozavírací značky musí mít uzavírací lomítko. Například `<br>` se vždy píše jako `<br />`.
@@ -54,7 +54,11 @@ V JSX dolar používat nemusíme a stačí nám pouze složené závorky. Pokud 
 const name = 'Martin';
 const age = 35;
 const cssTrida = 'message';
-const zprava = <p className={cssTrida}>Jmenuji se {name} a je mi {age} let.</p>;
+const zprava = (
+  <p className={cssTrida}>
+    Jmenuji se {name} a je mi {age} let.
+  </p>
+);
 ```
 
 Tady vidíte, že JSX je hodnota jako každá jiná z bez rozpaků ji tak můžeme uložit do proměnné nebo poslat na vstup nějaké funkci.
@@ -76,3 +80,4 @@ shoplistElement.innerHTML += render(
 )
 
 Nyní to možná vypadá, že nám JSX ušetřilo tak možná uvozovky a dolary a nepřináší nic zásadně průlomového. Už za chvíli si ale ukážeme, že JSX je mocnější, než se na první pohled zdá.
+```

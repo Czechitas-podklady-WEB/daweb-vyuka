@@ -58,7 +58,7 @@ V hlavní souboru `index.jsx` pak většinou vytváříme hlavni komponentu cel�
 import { render } from '@czechitas/render';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
-import './style.css';;
+import './style.css';
 
 const App = () => {
   return (

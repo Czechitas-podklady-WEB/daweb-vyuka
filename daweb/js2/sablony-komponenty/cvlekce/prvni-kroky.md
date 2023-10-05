@@ -13,6 +13,7 @@ Vyzkoušejte si založení jednoduché aplikace používající JSX s jedním `i
    ```
 1. Projekt spusťte pomocí `npm run dev`, jak už to znáte z dřívejška.
 1. Prozatím nahraďte celý obsah souboru `index.jsx` tímto kódem.
+
    ```jsx
    import { render } from '@czechitas/render';
 

@@ -7,7 +7,7 @@ solutionAccess: lock
 
 Vyzkoušíme si rozdělit běžnou stránku do několika komponent.
 
-1. Vytvořte si repozitář ze šablony [cviceni-jogini](https://github.com/Czechitas-podklady-WEB/cviceni-jogini) se stránkou pro začínající jóga studio. 
+1. Vytvořte si repozitář ze šablony [cviceni-jogini](https://github.com/Czechitas-podklady-WEB/cviceni-jogini) se stránkou pro začínající jóga studio.
 1. Vytvořte si nový projekt pomocí známého postupu.
 1. V oddělené složce vytvořte komponentu `Header`, která vytvoří hlavičku stránky. Bude očekávat svoje `props` v následujícím formátu.
 
@@ -18,6 +18,7 @@ Vyzkoušíme si rozdělit běžnou stránku do několika komponent.
    ```
 
 1. V další složce vytvořte komponentu `Intro` vytvářející úvodní text podle následujích props.
+
    ```js
    {
      heading: 'Vítejte mezi Jogíny',

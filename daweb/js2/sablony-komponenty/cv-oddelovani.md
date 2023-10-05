@@ -2,4 +2,3 @@
 
 ::exc[cvlekce/aplikace]
 ::exc[cvlekce/datumy]
-

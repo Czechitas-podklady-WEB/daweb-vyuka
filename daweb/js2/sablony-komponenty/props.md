@@ -15,7 +15,7 @@ appElement.innerHTML += render(
 );
 ```
 
-V funkci `Header` pak tyto atributy obdržíme ve speciálním objektu, který se tradičně pojmenovává `props`. V našem případě tedy jméno uživatele najdeme v  `props.user`.
+V funkci `Header` pak tyto atributy obdržíme ve speciálním objektu, který se tradičně pojmenovává `props`. V našem případě tedy jméno uživatele najdeme v `props.user`.
 
 ```jsx
 const Header = (props) => {

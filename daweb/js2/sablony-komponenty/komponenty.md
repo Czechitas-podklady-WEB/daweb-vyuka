@@ -57,7 +57,7 @@ appElement.innerHTML += render(
   <main>
     <h1>Ahoj ze světa JSX</h1>
   </main>
-); 
+);
 appElement.innerHTML += render(Footer());
 ```
 
