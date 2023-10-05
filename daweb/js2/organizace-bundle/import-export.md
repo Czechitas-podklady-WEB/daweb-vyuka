@@ -6,7 +6,7 @@ K tomu využijeme klíčová slova `import` a `export`. Tyto příkazy nám umo�
 
 Celý proces si předvedeme na ukázkové aplikaci _Nákupy_. Její zdrojový kód naleznete v repozitáři [ukazka-nakupy](https://github.com/Czechitas-podklady-WEB/ukazka-nakupy). V projektu najdeme jeden už trošku delší soubor `index.js`. Už v takovéto délce se nám vyplatí si jej rozdělit na menší kusy.
 
-Na začátku vidíme proměnnou `list` s daty pro náš program. 
+Na začátku vidíme proměnnou `list` s daty pro náš program.
 
 ```js
 const list = [
@@ -96,4 +96,3 @@ addBtn.addEventListener('click', (e) => {
 
 renderList();
 ```
-
