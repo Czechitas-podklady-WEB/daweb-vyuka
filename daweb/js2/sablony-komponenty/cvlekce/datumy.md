@@ -1,13 +1,15 @@
 ---
-title: Data („datumy“)
+title: Datumy
 demand: 2
+lead: Zobrazte pomocí komponent několik datumů
+solutionAccess: lock
 ---
 
-1. Založte si nový reactový projekt:
+1. Založte si nový projekt:
    ```shell
-   npm init kodim-app@latest datumy react
+   npm init kodim-app@latest datumy vanilla
    ```
-1. Projekt spusťte pomocí `npm run start`, jak už to znáte z dřívejška.
+1. Projekt spusťte pomocí `npm run dev`, jak už to znáte z dřívejška.
 1. Vytvořte komponentu `Today`, která bude očekávat tři props:
 
    - `day` - řetězec s číslem dne, například `'07'`,

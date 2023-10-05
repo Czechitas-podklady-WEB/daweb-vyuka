@@ -1,7 +1,7 @@
 ---
 title: 'Bonus: Vlastní ovládání přehrávače'
 demand: 4
-solutionAccess: lock
+solutionAccess: allow
 ---
 
 Obohaťte video přehrávač vlastními ovládacími prvky.
@@ -10,7 +10,7 @@ Obohaťte video přehrávač vlastními ovládacími prvky.
 
 1. Oživte tlačítko pro přehrávání a pozastavení.
 
-   1. Ve `script.js`, pokud je na stránce prvek s id `prehravac`, přidejte posluchač události kliknutí na prvek se třídou `play`.
+   1. V souboru `film.js`, pokud je na stránce prvek s id `prehravac`, přidejte posluchač události kliknutí na prvek se třídou `play`.
 
    1. Na kliknutí zavolejte na prvku `<video>` metodu `.play()`. Pokud uživatel klikne, video by se mělo začít přehrávat.
 

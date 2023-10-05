@@ -1,12 +1,12 @@
 ---
-title: Hodnocení
+title: 'Bonus: Hodnocení'
 demand: 3
-solutionAccess: lock
+solutionAccess: allow
 ---
 
 Zařiďte, aby klikání na hvězdičky v hodnocení filmu zvýraznilo všechny hvězdičky až po kliknutou.
 
-1.  Přichystejte si pomocnou funkci pro zvýraznění určitého počtu hvězdiček.
+1.  V souboru `film.js` si přichystejte pomocnou funkci pro zvýraznění určitého počtu hvězdiček.
 
     1.  Ve funkci počítejte s jedním vstupním parametrem, číslem od jedné do pěti.
 

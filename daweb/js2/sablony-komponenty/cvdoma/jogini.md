@@ -1,18 +1,19 @@
 ---
 title: Jogíni
 demand: 2
+lead: Rozdělte jednoduchou stránku na komponenty
+solutionAccess: lock
 ---
 
 Vyzkoušíme si rozdělit běžnou stránku do několika komponent.
 
-Vytvořte si repozitář ze šablony [cviceni-jogini](https://github.com/Czechitas-podklady-WEB/cviceni-jogini) se stránkou pro začínající jóga studio. Přepracujte stránku tak, aby byla vytvořena celá v JavaScriptu pomocí komponent.
-
+1. Vytvořte si repozitář ze šablony [cviceni-jogini](https://github.com/Czechitas-podklady-WEB/cviceni-jogini) se stránkou pro začínající jóga studio.
+1. Vytvořte si nový projekt pomocí známého postupu.
 1. V oddělené složce vytvořte komponentu `Header`, která vytvoří hlavičku stránky. Bude očekávat svoje `props` v následujícím formátu.
 
    ```js
    {
      title: 'Jogíni',
-     links: ['domů', 'lekce', 'náš tým', 'události', 'kontakt'],
    }
    ```
 
@@ -36,11 +37,11 @@ Vytvořte si repozitář ze šablony [cviceni-jogini](https://github.com/Czechit
    }
    ```
 
-Na konci tohoto úkolu by měl element `body` v souboru `index.html` vypadat takto.
+Na konci tohoto úkolu by měl element `body` v souboru `index.html` vypadat klasicky takto.
 
 ```html
 <body>
-  <div id="app" class="app container"></div>
+  <div id="app" class="app"></div>
 </body>
 ```
 

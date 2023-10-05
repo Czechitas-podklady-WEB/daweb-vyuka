@@ -1,14 +1,14 @@
 ---
 title: Seznam filmů
 demand: 3
-solutionAccess: lock
+solutionAccess: allow
 ---
 
 Na stránce se seznamem filmů vypište karty se všemi filmy z pole `filmy`.
 
 1.  Přejděte v prohlížeči na stránku se seznamem.
 
-1.  Ve `script.js` pomocí `document.querySelector` vyhledejte prvek s id `seznam-filmu`.
+1.  Na konci souboru `seznam.js` pomocí `document.querySelector` vyhledejte prvek s id `seznam-filmu`.
 
 1.  Vymažte tomuto prvku jeho vnitřní HTML, aby byl prázdný.
 
@@ -32,8 +32,6 @@ Na stránce se seznamem filmů vypište karty se všemi filmy z pole `filmy`.
       </div>
     </div>
     ```
-
-1.  Vzhledem k tomu, že `script.js` se používá i na podstránkách bez seznamu filmů, bez prvku `#seznam-filmu`, může se stát, že váš kód bude zobrazovat chybu ve vývojářských nástrojích například na detailu `film.html`. Obalte váš kód tedy podmínkou, ať se pouští pouze v případě, že se v HTML aktuální stránky `#seznam-filmu` nachází.
 
 ::fig[řešení]{src=assets/reseni.jpg size=60}
 
