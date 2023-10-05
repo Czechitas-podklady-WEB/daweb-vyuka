@@ -20,7 +20,7 @@ Abychom mohli pracovat s JSX, potřebujeme mít správně nastavený projekt. V 
 npm init kodim-app@latest muj-projekt vanilla
 ```
 
-a následně v něm spustit vývojový server příkazem `npx vite`.
+a následně v něm spustit vývojový server příkazem `npm run dev`.
 
 Nyní zkusíme pomocí JSX vytvořit jednoduchý obsah. 
 

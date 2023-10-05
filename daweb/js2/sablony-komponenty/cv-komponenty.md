@@ -1,4 +1,4 @@
 ## Cvičení: Komponenty
 
-::exc[cvlekce/produkt]
-::exc[cvlekce/hodiny]
+::exc[cvlekce/prvni-kroky]
+::exc[cvlekce/plysaci]

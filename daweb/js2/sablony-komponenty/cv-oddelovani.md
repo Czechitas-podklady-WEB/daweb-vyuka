@@ -1,3 +1,5 @@
-## Cvičení: Import/export
+## Cvičení: Oddělování komponent
 
-::exc[cvlekce/filmy-komponenta]
+::exc[cvlekce/aplikace]
+::exc[cvlekce/datumy]
+

@@ -1,21 +1,23 @@
 ---
 title: Plyšáci
 demand: 2
+lead: Vyrobte jednoduchou stránku s plyšáky.
+solutionAccess: lock
 ---
 
-Vytvořte v Reactu webovou stránku dle následujícího vzoru.
+Vytvořte pomocí JSX webovou stránku dle následujícího vzoru.
 
 ::fig[Stránka plyšáci]{src=assets/plysaci.jpg}
 
 Postupujte dle následujících kroků.
 
-1. Založte si nový reactový projekt:
+1. Založte si nový vanilla projekt:
    ```shell
-   npm init kodim-app@latest plysaci react
+   npm init kodim-app@latest plysaci vanilla
    ```
-1. Projekt spusťte pomocí `npm run start`, jak už to znáte z dřívejška.
-1. Smažte komponentu `App`. Vytvořte si proměnnou `content` a vložte do ní JSX s následujícím obsahem.
-   ```html
+1. Projekt spusťte pomocí `npm run dev`, jak už to znáte z dřívejška.
+1. V hlavním souboru `index.jsx` vytvořte proměnnou `content` a vložte do ní JSX s následujícím obsahem.
+   ```jsx
    <h1>Plyšáci</h1>
    <div className="plushies"></div>
    ```
@@ -42,5 +44,6 @@ Postupujte dle následujících kroků.
      <p class="plushy__text">Text o plyšákovi</p>
    </div>
    ```
-   Převeďte tento kód na JSX a vložte jej do elementu s třídou `plushies`, jednou pro každého plyšáka. Nezapomeňte, že v JSX se místo `class` píše `className`. Data pro obě karty vezměte z objektů `plushy1` a `plushy2`.
+   Převeďte tento kód na JSX a vytvořte dvě komponenty `Silvestr` a `Ctirad`, kde každá bude vracet JSX pro jednoho plyšáka. Nezapomeňte, že v JSX se místo `class` píše `className`. Data pro obě karty vezměte přimo z objektů `plushy1` a `plushy2`.
+1. Vložte obě komponenty do stránky a vyzkoušejte si, že se zobrazují.
 1. Přidejte do stránky soubor se styly a nastylujte ji dle zadání.
