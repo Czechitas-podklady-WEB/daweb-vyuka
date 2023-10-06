@@ -13,10 +13,6 @@ Postupujte dle následujících kroků.
    npm init kodim-app@latest cviceni-rodna-cisla html-css-js
    ```
    Ve VS Code otevřete složku `cviceni-rodna-cisla`.
-1. JavaScript vložte do stránky pomocí
-   ```html
-   <script type="module" src="index.js"></script>
-   ```
 1. Pomocí funkce `prompt` se zeptejte uživatele na rodné číslo. Rodné číslo zkontrolujte podle bodů popsaných níže.
 1. Každé rodné číslo musí mít přesně 10 znaků. Zkontrolujte tedy, že zadaný řetězec je délky 10 a neprojdou nám například vstupy typu
 
