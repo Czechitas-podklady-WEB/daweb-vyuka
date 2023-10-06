@@ -1,3 +1,4 @@
 ## Doporučené uložky na doma
 
-Bude doplněno.
+::exc[cvdoma/hot-dog]
+::exc[cvdoma/hot-dog-vite]
