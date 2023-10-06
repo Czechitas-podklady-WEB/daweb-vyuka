@@ -58,7 +58,7 @@ Postupujte dle následujících kroků.
 >
 > ❌ Uživatel zadal neplatné rodné číslo.
 
-Po zadání rodného čísla by se v konzoli měly objevit čtyři výpisy.
+Po zadání rodného čísla by se na stránce měly objevit čtyři výpisy.
 
 :::solution
 
