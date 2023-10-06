@@ -41,7 +41,7 @@ Na konci tohoto úkolu by měl element `body` v souboru `index.html` vypadat kla
 
 ```html
 <body>
-  <div id="app" class="app"></div>
+  <div id="root"></div>
 </body>
 ```
 

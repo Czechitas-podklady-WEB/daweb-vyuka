@@ -27,12 +27,7 @@ const Header = () => {
 };
 ```
 
-Tuto funkci pak můžeme použít při vytváření obsahu stránky.
-
-```jsx
-const rootElement = document.querySelector('#root');
-rootElement.innerHTML += render(Header());
-```
+Tuto funkci pak můžeme použít při vytváření obsahu stránky. K tomu si však potřebujeme ukázat skládání komponent v JSX.
 
 ## Skládání komponent
 

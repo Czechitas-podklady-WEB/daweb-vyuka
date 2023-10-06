@@ -82,19 +82,6 @@ Tady vidíte, že JSX je hodnota jako každá jiná z bez rozpaků ji tak může
 
 ## Funkce `render`
 
-Pomocí funkce `render` převedeme JSX na normální JavaScriptový řetězec, který pak můžeme vložit do stránky běžným způsobem pomocí vlastnosti `innerHTML`.
-
-Takto by například v JSX vypadalo vytvoření položky nákupního seznamu, jak ji známe z naší aplikace _Nákupy_.
-
-```jsx
-shoplistElement.innerHTML += render(
-  <div className="shopitem">
-    <button className={tickClass} className="shopitem__tick"></button>
-    <div className="shopitem__name">item.name</div>
-    <div className="shopitem__amount">item.amount</div>
-    <button className="btn-delete">Smazat</button>
-  </div>
-)
+Pomocí funkce `render` převedeme JSX na normální JavaScriptový řetězec, který pak můžeme vložit do stránky běžným způsobem pomocí vlastnosti `innerHTML`. Funkci `render` budeme vždy používat na vytvoření obsahu celé stránky. Obsah tedy vždy vkládáme do elementu `#root`.
 
 Nyní to možná vypadá, že nám JSX ušetřilo tak možná uvozovky a dolary a nepřináší nic zásadně průlomového. Už za chvíli si ale ukážeme, že JSX je mocnější, než se na první pohled zdá.
-```
