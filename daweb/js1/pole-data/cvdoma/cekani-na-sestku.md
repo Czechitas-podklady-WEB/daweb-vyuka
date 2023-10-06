@@ -1,7 +1,7 @@
 ---
 title: Čekání na šestku
 demand: 2
-solutionAccess: lock
+solutionAccess: allow
 ---
 
 Založte JavaScriptový program a splňte následující úkoly.

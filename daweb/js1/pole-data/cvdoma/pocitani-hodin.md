@@ -1,7 +1,7 @@
 ---
 title: Počítání hodin
 demand: 3
-solutionAccess: lock
+solutionAccess: allow
 ---
 
 Napište cyklus **WHILE**, který do konzole postupně vypíše všechny časové údaje v rámci jednoho dne od 0:00 až po 23:59.

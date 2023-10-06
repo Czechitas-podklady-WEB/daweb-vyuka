@@ -2,7 +2,7 @@
 title: Malé algoritmy
 demand: 2
 lead: Jednoduchá cvičení na použití metody `forEach`.
-solutionAccess: lock
+solutionAccess: allow
 ---
 
 Založte si nový JavaScriptový program a na jeho začátek vložte následující seznam čísel. Budeme jej používat ve všech následujících úlohách.
