@@ -56,9 +56,9 @@ rodnaCislaKOtestovani.forEach((rc) => {
   document.body.innerHTML + `Rodné číslo <code>${rc}</code> `;
   const vysledek = checkBirthID(rc);
   if (vysledek === 'ok') {
-    document.body.innerHTML + 'je platné. ✔️<br>';
+    document.body.innerHTML += 'je platné. ✔️<br>';
   } else {
-    document.body.innerHTML + `je neplatné. Důvod: ${vysledek}. ❌<br>`;
+    document.body.innerHTML += `je neplatné. Důvod: ${vysledek}. ❌<br>`;
 
     if (vysledek === 'notANumber') {
       logInvalidCharacters(rc);
