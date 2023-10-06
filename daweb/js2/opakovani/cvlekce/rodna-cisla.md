@@ -35,9 +35,9 @@ Postupujte dle následujících kroků.
 1. Každé rodné číslo musí být celé číslo. Zda je nějaká hodnota celé číslo, v JavaScriptu zkontrolujete pomocí funkce `Number.isInteger`. Musíte však vstup předtím převést na číslo pomocí funkce `Number`.
 
    ```js
-   Number.isInteger(Number('25')) // vrací true
-   Number.isInteger(Number('25.16')) // vrací false
-   Number.isInteger(Number('ahoj')) // vrací false
+   Number.isInteger(Number('25')); // vrací true
+   Number.isInteger(Number('25.16')); // vrací false
+   Number.isInteger(Number('ahoj')); // vrací false
    ```
 
    Opět **vypište do stránky**, zda podmínka platí.
