@@ -4,7 +4,7 @@ Protože větší aplikace mohou obsahovat stovky až tisíce komponent, je důl
 
 Domluvíme se zde na společné struktuře projektu, kterou budeme od této chvíle dodržovat.
 
-Ve složce `src` si vytvoříme složku `components`, do které budeme ukládat všechny složky pro jednotlivé komponenty. Složku s komponentou vždy pojmenujeme jako samotnou komponentu, tedy například `Header`, `Footer` apod. Složka komponenty bude obsahovat:
+Ve složce `src/pages` si vytvoříme složku `components`, do které budeme ukládat všechny složky pro jednotlivé komponenty. Složku s komponentou vždy pojmenujeme jako samotnou komponentu, tedy například `Header`, `Footer` apod. Složka komponenty bude obsahovat:
 
 - soubor `index.jsx` s JavaScriptovým kódem komponenty,
 - soubor `style.css` s CSS styly pro komponentu,
@@ -28,11 +28,11 @@ const Header = (props) => {
 };
 ```
 
-## Hlavní soubory aplikace
+## Stránky aplikace
 
-Kromě složek s komponentami budeme v každém projektu také mít hlavní soubor `index.html`, hlavní `index.jsx` a hlavní `style.css`, jak jsme byli doposud zvyklí.
+Kromě složek s komponentami budeme v každém projektu také mít jednu či více stránek. Hlavní stránka se bude vždy skládat ze souborů `index.html`, `index.jsx` a `index.css` ve složce `src/pages`.
 
-V souboru `index.html` bude většinou pouze kostra HTML stránky, která bude obsahovat hlavní element aplikace s id `app`.
+V souboru `index.html` bude pouze kostra HTML stránky, která bude obsahovat hlavní element aplikace s id `root`.
 
 ```html
 <!DOCTYPE html>
@@ -45,14 +45,14 @@ V souboru `index.html` bude většinou pouze kostra HTML stránky, která bude o
     <title>Moje aplikace</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="root"></div>
   </body>
 </html>
 ```
 
 Takto jsme se dostali do stavu, kdy celý obsah aplikace vytváříme v JavaScriptu a soubor HTML zůstává v podstatě prázdný.
 
-V hlavní souboru `index.jsx` pak většinou vytváříme hlavni komponentu celé aplikace zvanou `App`. Její použití pak vypadá následovně:
+V hlavní souboru `index.jsx` pak většinou vytváříme hlavni komponentu celé stránky. Pokud mámš jednus stránku, můžeme ji nazvat třeba `HomePage`. Její použití pak vypadá následovně:
 
 ```jsx
 import { render } from '@czechitas/render';
@@ -60,7 +60,7 @@ import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import './style.css';
 
-const App = () => {
+const HomePage = () => {
   return (
     <>
       <Header title="Hlavní stránka" user="Martin" />
@@ -72,10 +72,10 @@ const App = () => {
   );
 };
 
-document.querySelector('#app').innerHTML = render(App());
+document.querySelector('#root').innerHTML = render(HomePage());
 ```
 
-V hlavním souboru `style.css` pak nám po rozsekání projektu na komponenty zbydou pouze obecné styly týkající se celé stránky:
+V hlavním souboru `global.css` nám pak po rozsekání projektu na komponenty zbydou pouze obecné styly týkající se celé stránky:
 
 ```css
 * {
