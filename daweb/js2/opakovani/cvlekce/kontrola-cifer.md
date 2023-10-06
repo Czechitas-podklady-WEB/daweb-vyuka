@@ -22,7 +22,7 @@ const isDigit = (znak) => znak.length === 1 && digits.includes(znak);
 const logInvalidCharacters = (vstup) => {
   Array.from(vstup).forEach((znak) => {
     if (!isDigit(znak)) {
-      console.log(`Vstup obsahuje neplatný znak „${znak}“.`);
+      document.body.innerHTML += `Vstup obsahuje neplatný znak „${znak}“.<br>`;
     }
   });
 };
@@ -53,12 +53,12 @@ const rodnaCislaKOtestovani = [
 ];
 
 rodnaCislaKOtestovani.forEach((rc) => {
-  console.log(`Testuji rodné číslo „${rc}“.`);
+  document.body.innerHTML + `Rodné číslo <code>${rc}</code> `;
   const vysledek = checkBirthID(rc);
   if (vysledek === 'ok') {
-    console.log('✔️ je platné.');
+    document.body.innerHTML += 'je platné. ✔️<br>';
   } else {
-    console.log(`❌ je neplatné. Důvod: ${vysledek}.`);
+    document.body.innerHTML += `je neplatné. Důvod: ${vysledek}. ❌<br>`;
 
     if (vysledek === 'notANumber') {
       logInvalidCharacters(rc);

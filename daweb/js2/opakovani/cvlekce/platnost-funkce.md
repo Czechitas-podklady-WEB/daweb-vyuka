@@ -54,12 +54,12 @@ const rodnaCislaKOtestovani = [
 ];
 
 rodnaCislaKOtestovani.forEach((rc) => {
-  console.log(`Testuji rodné číslo „${rc}“.`);
+  document.body.innerHTML += `Rodné číslo <code>${rc}</code> `;
   const vysledek = checkBirthID(rc);
   if (vysledek === 'ok') {
-    console.log('✔️ je platné.');
+    document.body.innerHTML += 'je platné. ✔️<br>';
   } else {
-    console.log(`❌ je neplatné. Důvod: ${vysledek}.`);
+    document.body.innerHTML += `není neplatné. Důvod: ${vysledek}. ❌<br>`;
   }
 });
 ```

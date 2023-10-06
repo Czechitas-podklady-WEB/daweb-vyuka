@@ -2,9 +2,8 @@ title: JavaScript 2
 lead: Naučíte se vytvářet složitější webové aplikace a poznáte hlubší zákoutí JavaScriptu.
 lessons:
   - opakovani
-  - organizace
-  - bundlovani
-  - komponenty
+  - organizace-bundle
+  - sablony-komponenty
   - server-komunikace
   - podminene-zobrazeni-seznamy
   - komunikace-routing

@@ -8,7 +8,7 @@ Jednoduché použití metody `forEach` pro výpis všech prvků v poli do strán
 const pole = ['jana', 'petra', 'karel', 'josef'];
 pole.forEach((prvek) => {
   // provedení akce s prvkem
-  document.innerHTML += `<div>${prvek}</div>`;
+  document.body.innerHTML += `<div>${prvek}</div>`;
 });
 ```
 
@@ -17,7 +17,7 @@ Případně pokud bychom chtěli pracovat s indexem prvku, můžeme použít ná
 ```js
 pole.forEach((prvek, index) => {
   // provedení akce s prvkem
-  document.innerHTML += `<div>${index}: ${prvek}</div>`;
+  document.body.innerHTML += `<div>${index}: ${prvek}</div>`;
 });
 ```
 

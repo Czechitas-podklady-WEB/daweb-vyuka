@@ -1,5 +1,0 @@
-title: Bundlování
-lead: Pro vývoj větších aplikací budeme potřeba pomocný nástroj, který nám vytvoří kód optimalizovaný pro reální nasazení.
-sections:
-  - system-npm
-  - vite
