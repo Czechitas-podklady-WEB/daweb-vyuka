@@ -76,7 +76,7 @@ const Clock = (props) => {
   `;
 };
 
-const appElm = document.querySelector('#app');
+const appElm = document.querySelector('#root');
 appElm.innerHTML = times.map((time) => Clock(time)).join('');
 ```
 

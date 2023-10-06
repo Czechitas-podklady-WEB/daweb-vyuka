@@ -17,7 +17,7 @@ Vyzkoušejte si založení jednoduché aplikace používající JSX s jedním `i
    ```jsx
    import { render } from '@czechitas/render';
 
-   document.querySelector('#app').innerHTML = render(
+   document.querySelector('#root').innerHTML = render(
      <div className="container">
        <header>
          <h1>Emílie Zelenohorská</h1>

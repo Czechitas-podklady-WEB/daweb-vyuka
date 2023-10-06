@@ -14,20 +14,37 @@ S příchodem frameworku React, ke kterému zde postupně s napětím směřujem
 
 ## Základy JSX
 
-Abychom mohli pracovat s JSX, potřebujeme mít správně nastavený projekt. V úplně čístém JavaScriptu by nám JSX šablony nefungovaly. Naštěstí náš startovač projektů už je na toto připraven. Stačí tedy založi vanilla projekt už známým příkazem
+Abychom mohli pracovat s JSX, potřebujeme mít správně nastavený projekt. V úplně čístém JavaScriptu by nám JSX šablony nefungovaly. Naštěstí náš startovač projektů už je na toto připraven. Stačí tedy založit JSX projekt už známým příkazem `kodim-app`, jen musíme kromě názvu projektu zadat také parametr `jsx`.
 
 ```sh
-npm init kodim-app@latest muj-projekt vanilla
+npm init kodim-app@latest muj-projekt jsx
 ```
 
 a následně v něm spustit vývojový server příkazem `npm run dev`.
 
-Nyní zkusíme pomocí JSX vytvořit jednoduchý obsah.
+## Struktura projektu
+
+Vytvořený projekt má malinko složitější strukturu, neboť je připraven na vícestránkové aplikace. Nám zatím bude stačit stránka jedna, kterou najdeme v `src/pages`. Zde najdeme soubory `index.html`, `index.css` a `index.jsx`. Všimnetě si přípony `.jsx`. Ta pomáhá VS Code poznat, že uvnitř souboru používáme JSX a může nám tak nabídnout zvýrazňování kódu a další vychytávky.
+
+Všimněte si, že v souboru `index.html` je v podstatě prázdno. Máme zde pouze element `#root`, který bude sloužit jako kontejner pro celou naši aplikaci. Všechno ostatní budeme vytvářet JavaScriptem.
+
+V souboru `index.jsx` už máme pomocí JSX vytvořený základní obsah stránky. 
 
 ```jsx
-import { render } from 'react-dom';
-
-document.querySelector('#app').innerHTML = render(<h1>Ahoj ze světa JSX</h1>);
+document.querySelector('#root').innerHTML = render(
+  <div class="container">
+    <header>
+      <div className="logo"></div>
+      <h1>Webová aplikace</h1>
+    </header>
+    <main>
+      <p>Startovací šablona pro webovou aplikaci v JavaScriptu s JSX. Vytvořeno pomocí <a href="https://www.npmjs.com/package/create-kodim-app">create-kodim-app</a>.</p>
+    </main>
+    <footer>
+      <p>Czechitas, Digitální akademie: Web</p>
+    </footer>
+  </div>
+);
 ```
 
 Tady nás čeká velké překvapení. Díky JSX můžeme psát HTML **přímo v JavaScriptu**. Všimněte si, že funkci `render` předáváme něco, co kolem sebe nemá uvozovky, není to tedy řetězec. Tomuto novému typu hodnoty budeme říkat prostě JSX.
