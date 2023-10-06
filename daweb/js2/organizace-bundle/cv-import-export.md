@@ -1,3 +1,3 @@
 ## Cvičení: Import/export
 
-Bude doplněno.
+::exc[cvlekce/radio]

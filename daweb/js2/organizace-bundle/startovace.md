@@ -18,15 +18,14 @@ Naši aplikaci _Nákupy_ jsme v zanechali v repozitáři [ukazka-nakupy-import-e
 1. V terminálu si otevřeme složku, ve které skladujeme své projekty.
 1. Pro vytvoření projektu s názvem `nakupy-vite` spustíme příkaz
    ```sh
-   $ npm init kodim-app@latest nakupy-vite vanilla
+   $ npm init kodim-app@latest nakupy-vite jsx
    ```
-   Poslední parametr [vanilla](https://en.wikipedia.org/wiki/Plain_vanilla) znamená, že chceme vytvořit projekt v základním JavaScriptu zatím bez Reactu.
+   Poslední parametr jsx znamená, že chceme vytvořit projekt v základním JavaScriptu zatím bez Reactu.
 1. Otevřeme složku `nakupy-vite` ve VS Code. Spustíme terminál a uvnitř této složky spustíme příkaz
    ```
    npm run dev
    ```
-1. V prohlížeči by se měla otevřít jednoduchá stránka zobrazující úvodní HTML. Ve VS Code smažeme obsah složky `src` a nahradíme ji kódem z poslední verze aplikace _Nákupy_.
-1. Pozor na to, že soubor `index.html` musí být mimo složku `src`.
+1. V prohlížeči by se měla otevřít jednoduchá stránka zobrazující úvodní HTML. Ve VS Code smažeme obsah složky `src/pages` a nahradíme ji kódem z poslední verze aplikace _Nákupy_.
 
 ## Import stylů
 
@@ -35,7 +34,7 @@ Podobně jako jsme se učili dělit JavaScriptový kód do více souborů, budem
 Aby Vite poznal, které CSS má do výsledného projektu zabalit, je potřeba mu to říct pomocí importů. V hlavním souboru `index.js` je tedy potřeba na začátku importovat styly
 
 ```js
-import './style.css';
+import './index.css';
 ```
 
 V další lekci se naučíme vyrábět takzvané komponenty. CSS styly pak budeme importovat mnohem častěji, než jsem nyní zvyklí.
