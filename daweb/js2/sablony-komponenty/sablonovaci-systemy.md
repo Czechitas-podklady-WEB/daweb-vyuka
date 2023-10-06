@@ -28,7 +28,7 @@ Vytvořený projekt má malinko složitější strukturu, neboť je připraven n
 
 Všimněte si, že v souboru `index.html` je v podstatě prázdno. Máme zde pouze element `#root`, který bude sloužit jako kontejner pro celou naši aplikaci. Všechno ostatní budeme vytvářet JavaScriptem.
 
-V souboru `index.jsx` už máme pomocí JSX vytvořený základní obsah stránky. 
+V souboru `index.jsx` už máme pomocí JSX vytvořený základní obsah stránky.
 
 ```jsx
 document.querySelector('#root').innerHTML = render(
@@ -38,7 +38,14 @@ document.querySelector('#root').innerHTML = render(
       <h1>Webová aplikace</h1>
     </header>
     <main>
-      <p>Startovací šablona pro webovou aplikaci v JavaScriptu s JSX. Vytvořeno pomocí <a href="https://www.npmjs.com/package/create-kodim-app">create-kodim-app</a>.</p>
+      <p>
+        Startovací šablona pro webovou aplikaci v JavaScriptu s JSX. Vytvořeno
+        pomocí{' '}
+        <a href="https://www.npmjs.com/package/create-kodim-app">
+          create-kodim-app
+        </a>
+        .
+      </p>
     </main>
     <footer>
       <p>Czechitas, Digitální akademie: Web</p>

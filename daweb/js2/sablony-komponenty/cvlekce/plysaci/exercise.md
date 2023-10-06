@@ -23,15 +23,19 @@ Postupujte dle následujících kroků.
    ```
    Nezapomeňte obsah správně obalit do fragmentu!.
 1. Vytvořte si proměnné objekty obsahující informace o plyšácích dle následujícího vzoru.
+
    ```js
    const name1 = 'Silvestr';
    const image1 = 'adresa obrazku';
-   const text1 = 'Silvestr rád pozoruje dění za oknem a upřímně se usmívá na všechno kolemjdoucí.';
-   
+   const text1 =
+     'Silvestr rád pozoruje dění za oknem a upřímně se usmívá na všechno kolemjdoucí.';
+
    const name2 = 'Ctirad';
    const image2 = 'adresa obrazku';
-   const text2 = 'Ctirad tráví svůj čas v blízkosti lednice a s očekáváním pozoruje její bílé dveře.';
+   const text2 =
+     'Ctirad tráví svůj čas v blízkosti lednice a s očekáváním pozoruje její bílé dveře.';
    ```
+
 1. Adresy obrázků si můžeme zkopírovat z těcho odkazů: [elephant](assets/elephant.jpg), [mouse](assets/mouse.jpg).
 1. Karta s plyšákem by měla ve výsledné stránce vypadat takto.
    ```html
