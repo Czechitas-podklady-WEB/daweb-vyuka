@@ -4,13 +4,7 @@ demand: 3
 access: claim
 ---
 
-V předchozím cvičení jsme pomocí cyklu vypisovali všechny špatně zadané znaky do konzole. Nyní tento kód přepíšeme tak, aby místo výpisů do konzole vyrobil pole objektů, obsahující informace o každém znaku. Například pro vstup
-
-```text
-462748/312
-```
-
-chceme jako výsledek obdržet takovéto pole.
+V předchozím cvičení jsme pomocí cyklu vypisovali všechny špatně zadané znaky do konzole. Nyní tento kód přepíšeme tak, aby místo výpisů do konzole vyrobil pole objektů, obsahující informace o každém znaku. Například pro vstup `462748/312` chceme jako výsledek obdržet takovéto pole.
 
 ```js
 [
@@ -30,9 +24,9 @@ chceme jako výsledek obdržet takovéto pole.
 Napište tedy funkci `validateCharacters`, která na vstupu dostane text a vrátí pole ve formátu jako výše. Postupujte následovně:
 
 1. Na začátku funkce si vytvořte proměnnou `result`, do které uložte prázdné pole.
-1. Projděte vstup znak po znaku jako v předchozim cvičení. Místo `console.log` však pro každý znak vyrobte odpovídající objekt a vložte jej do pole `result` pomocí metody `push`.
+1. Projděte vstup znak po znaku jako v předchozim cvičení. Místo výpisu do stránky však pro každý znak vyrobte odpovídající objekt a vložte jej do pole `result` pomocí metody `push`.
 1. Na konci funkce pole `result` vraťte pomocí `return`.
-1. Vyzkoušejte vaši funci zavolat třeba se vstupy `'123č56q8y7'` a `'7060201236'` a výsledná pole vypište do konzole.
+1. Vyzkoušejte vaši funci zavolat třeba se vstupy `'123č56q8y7'` a `'7060201236'` a výsledná pole vypište pro otestování do konzole (pomocí `console.log`).
 
    ```js
    > validateCharacters('123č56q8y7')
