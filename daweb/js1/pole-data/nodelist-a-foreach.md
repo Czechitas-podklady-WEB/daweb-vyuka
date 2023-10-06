@@ -7,11 +7,11 @@ Díky tomu, že už rozumíme polím a metodě `forEach`, si můžeme představi
 V lekci o událostech jsme si slíbili, že dokážeme zjednodušít kód naší aplikace se smajlíky. Připomeňme si HTML kód našich tlačítek.
 
 ```html
-<button id="btn-smiley1" class="btn-smiley">😀</button>
-<button id="btn-smiley2" class="btn-smiley">😍</button>
-<button id="btn-smiley3" class="btn-smiley">😜</button>
-<button id="btn-smiley4" class="btn-smiley">😢</button>
-<button id="btn-smiley5" class="btn-smiley">😱</button>
+<button id="btn1" class="btn-smiley">😀</button>
+<button id="btn2" class="btn-smiley">😍</button>
+<button id="btn3" class="btn-smiley">😜</button>
+<button id="btn4" class="btn-smiley">😢</button>
+<button id="btn5" class="btn-smiley">😱</button>
 ```
 
 Náš výsledný učesaný JavaScriptový kód vypadal takto.
