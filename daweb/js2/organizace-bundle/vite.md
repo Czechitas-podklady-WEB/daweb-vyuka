@@ -65,26 +65,24 @@ Do souboru `index.html` vložíme náš `index.js` tak, jak jsme zvyklí.
 Nyní použijeme Vite k sestavení výsledné aplikace. Aby se náš projekt sestavil, potřebujeme Vite správně nakonfigurovat. V projektu `muj-projekt` vytvoříme soubor `vite.config.js` s tímto obsahem.
 
 ```js
-import { czechitasRenderVitePlugin } from '@czechitas/render/plugin';
 import { glob } from 'glob';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
   root: 'src/pages',
-	publicDir: '../../public',
+  publicDir: '../../public',
   server: {
     hmr: false,
   },
   build: {
-		outDir: '../../dist',
-		emptyOutDir: true,
-		target: 'es2022',
-		rollupOptions: {
-			input: glob.sync('src/pages/**/*.html'),
-		},
+    outDir: '../../dist',
+    emptyOutDir: true,
+    target: 'es2022',
+    rollupOptions: {
+      input: glob.sync('src/pages/**/*.html'),
+    },
     modulePreload: false,
   },
-  plugins: [czechitasRenderVitePlugin()],
 });
 ```
 

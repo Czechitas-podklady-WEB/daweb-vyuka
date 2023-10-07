@@ -96,3 +96,5 @@ addBtn.addEventListener('click', (e) => {
 
 renderList();
 ```
+
+Celý výsledný kód najdete v repozitáři [ukazka-nakupy-import-export](https://github.com/Czechitas-podklady-WEB/ukazka-nakupy-import-export).
