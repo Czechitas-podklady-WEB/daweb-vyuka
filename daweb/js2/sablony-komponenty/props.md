@@ -1,6 +1,6 @@
 ## Props
 
-Zatím jsme viděli komponenty pouze bez parametrů. Často obšem budeme potřebovat, aby komponenty zobrazovaly nějaká data. Můžeme si představit například hlavičku stránky z předchozí části, kde bychom rádi zobrazili jméno právě přihlášeného uživatele. V JSX to provedeme tak, že komoponentě předáme atributy stejně, jako kdybychom je psali do HTML.
+Zatím jsme viděli komponenty pouze bez parametrů. Často ovšem budeme potřebovat, aby komponenty zobrazovaly nějaká data. Můžeme si představit například hlavičku stránky z předchozí části, kde bychom rádi zobrazili jméno právě přihlášeného uživatele. V JSX to provedeme tak, že komponentě předáme atributy stejně, jako kdybychom je psali do HTML.
 
 ```jsx
 const rootElement = document.querySelector('#root');
@@ -15,7 +15,7 @@ rootElement.innerHTML += render(
 );
 ```
 
-V funkci `Header` pak tyto atributy obdržíme ve speciálním objektu, který se tradičně pojmenovává `props`. V našem případě tedy jméno uživatele najdeme v `props.user`.
+Ve funkci `Header` pak tyto atributy obdržíme jako objekt v parametru, který se tradičně pojmenovává `props`. V našem případě tedy jméno uživatele najdeme v `props.user`.
 
 ```jsx
 const Header = (props) => {
@@ -30,7 +30,7 @@ const Header = (props) => {
 };
 ```
 
-Komponentě samořejmě můžeme předat kolik atributů chceme. Všechny atributy budou pak uvnitř objektu `props`.
+Komponentě samozřejmě můžeme předat kolik atributů chceme. Všechny atributy budou pak uvnitř objektu `props`.
 
 ```jsx
 const rootElement = document.querySelector('#root');
