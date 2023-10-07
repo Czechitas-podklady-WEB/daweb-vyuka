@@ -73,7 +73,7 @@ rootElement.innerHTML += render(
 
 ## Fragmenty
 
-Na JSX je nešikovná jedna věc: JSX hodnota musí byt vždy jedna ucelená značka. Nemůžeme tak npasat něco jako:
+Na JSX je nešikovná jedna věc: JSX hodnota musí byt vždy jedna ucelená značka. Nemůžeme tak napsat něco jako:
 
 ```jsx
 const rootElement = document.querySelector('#root');
@@ -86,7 +86,7 @@ rootElement.innerHTML += render(
 );
 ```
 
-Z tohoto důvodu jsme měli v předchozím úryvku kódu obsah zabalený do v podstatě zbytečného `div`. Toto je v praxi tak častá situace, že JSX nabízí speciální typ značky zvaný _fragment_. Je to značka, která se ve výsledném HTML neobjeví, ale slouží pouze k tomu, aby obalila více značek a vytvořila tak jednu ucelenou hodnotu.
+Z tohoto důvodu jsme měli v předchozím úryvku kódu obsah zabalený do – v podstatě zbytečného – `div`. Toto je v praxi tak častá situace, že JSX nabízí speciální typ značky zvaný _fragment_. Je to značka, která se ve výsledném HTML neobjeví, ale slouží pouze k tomu, aby obalila více značek a vytvořila tak jednu ucelenou hodnotu.
 
 ```jsx
 const rootElement = document.querySelector('#root');
