@@ -8,12 +8,16 @@ Nejdříve musíme do našeho projektu Vite nainstalovat. To provedeme příkaze
 $ npm install -D vite glob
 ```
 
-Po tomto zásahu bude náš `package.json` vypadat následovně:
+Po tomto zásahu (a po přidání sekce `"scripts"`) bude náš `package.json` vypadat následovně:
 
 ```json
 {
   "name": "muj-projekt",
   "version": "0.0.1",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
   "dependencies": {
     "dayjs": "^1.10.4",
     "validator": "^13.5.2"
