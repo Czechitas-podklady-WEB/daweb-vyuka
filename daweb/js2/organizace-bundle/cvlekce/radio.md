@@ -10,27 +10,30 @@ Vytvoříme web, kde na každé stránce zobrazíme datail jedné stanice rádia
 1. Založte si nový prázdný projekt jen se souborem `radio.js`.
 1. V souboru založte datovou strukturu pro rádio. Každá stanice bude mít název, frekvenci, popis a odkaz. Např:
    ```js
-    const radio = [
-      { 
-        name: "Evropa 2",
-        frequency: "88.6 FM",
-        description: "Evropa 2 je nejposlouchanější česká komerční rádio mezi mladými posluchači. Vysílá hudbu z žebříčků, kterou si sami vybírají posluchači a nejnovější hity.",
-        link: "/evropa2.html",
-      },
-      { 
-        name: "Frekvence 1",
-        frequency: "102.1 FM",
-        description: "Frekvence 1 je česká soukromá rozhlasová stanice, která vysílá od roku 1991. Vysílá hudbu z žebříčků, kterou si sami vybírají posluchači a nejnovější hity.",
-        link: "/frekvence1.html",
-      },
-      { 
-        name: "Radiožurnál",
-        frequency: "92.6 FM",
-        description: "Radiožurnál je česká rozhlasová stanice Českého rozhlasu. Vysílá hudbu z žebříčků, kterou si sami vybírají posluchači a nejnovější hity.",
-        link: "/radiozurnal.html",
-      },      
-    ];
-    ```
+   const radio = [
+     {
+       name: 'Evropa 2',
+       frequency: '88.6 FM',
+       description:
+         'Evropa 2 je nejposlouchanější česká komerční rádio mezi mladými posluchači. Vysílá hudbu z žebříčků, kterou si sami vybírají posluchači a nejnovější hity.',
+       link: '/evropa2.html',
+     },
+     {
+       name: 'Frekvence 1',
+       frequency: '102.1 FM',
+       description:
+         'Frekvence 1 je česká soukromá rozhlasová stanice, která vysílá od roku 1991. Vysílá hudbu z žebříčků, kterou si sami vybírají posluchači a nejnovější hity.',
+       link: '/frekvence1.html',
+     },
+     {
+       name: 'Radiožurnál',
+       frequency: '92.6 FM',
+       description:
+         'Radiožurnál je česká rozhlasová stanice Českého rozhlasu. Vysílá hudbu z žebříčků, kterou si sami vybírají posluchači a nejnovější hity.',
+       link: '/radiozurnal.html',
+     },
+   ];
+   ```
 1. Tuto datovou strukturu ze souboru `radio.js` správně exportujte.
 1. Vytvořte stránku pro první stanici `evropa2.html` a na ni napojený soubor `evropa2.js`. V souboru `evropa2.js` importujte data ze souboru `radio.js` a pomocí JavaScriptu zobrazte na stráce stanici z nultého indexu pole. Použijte nějaké vhodné HTML elementy.
 1. Nyní vytvoříme pro náš web navigaci. V `evropa2.html` vytvořte hlavičku `<header>`. V souboru `evropa2.js` vytvořte funkci `renderNavigation`, pomocí které vykreslíte do hlavičky stránky navigaci s odkazy na jednotlivé stanice. Použijte k tomu funkci `forEach`.
