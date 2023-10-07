@@ -2,7 +2,7 @@
 title: První kroky s JSX
 demand: 1
 lead: Vyzkoušejte si základní použití JSX.
-solutionAccess: lock
+solutionAccess: allow
 ---
 
 Vyzkoušejte si založení jednoduché aplikace používající JSX s jednout stránkou a jednoduchým CSS.
