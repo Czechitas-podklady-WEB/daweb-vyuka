@@ -2,7 +2,7 @@
 title: Rádio
 demand: 3
 lead: Vytvořte webové stránky pro přehled rádií.
-solutionAccess: lock
+solutionAccess: allow
 ---
 
 Vytvoříme web, kde na každé stránce zobrazíme datail jedné stanice rádia.
