@@ -37,7 +37,7 @@ Pojďme si pro cvik vytvořit ještě komponentu `Footer`, která bude představ
 const Footer = () => {
   return (
     <footer>
-      <p>© 2023 Czechitas, z. s.</p>
+      <p>© 2023 Czechitas, z. ú.</p>
     </footer>
   );
 };
