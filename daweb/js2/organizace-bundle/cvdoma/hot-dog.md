@@ -5,7 +5,7 @@ lead: Vytvořte aplikaci pro výběr přísad do hot dogu.
 solutionAccess: lock
 ---
 
-Vytvořime aplikaci pro výběr oblohy hot dogů.
+Vytvoříme aplikaci pro výběr oblohy hot dogů.
 
 1. Založte si nový projekt s HTML a JavaScriptem, zatím bez Vite, jen s `index.html` a `index.js`.
 1. Založte si soubor `hotdog.js` a v něm založte datovou strukturu pro přísady hot dogů. Každá přísada bude mít název a cenu. Např:
@@ -22,7 +22,7 @@ Vytvořime aplikaci pro výběr oblohy hot dogů.
       { name: "Slanina", price: 10, selected: false  }
     ];
    ```
-1. Tuto datovou strukturu exportujte a importujte ji do hlavního souboru `index.js`.
+1. Tuto datovou strukturu exportujte z `hotdog.js` a importujte ji do hlavního souboru `index.js`.
 1. V souboru `hotdog.js` vytvořte funkci `renderToppings`, která pomocí `forEach` vykreslí každou položku do stránky. Každá přísada bude mít svůj vlastní element `div` s třídou `topping`. V tomto elementu bude `h3` s názvem přísady a `p` s cenou. Funkci správně exportujte a použijte v hlavním souboru `index.js`. 
 1. V CSS vytvořte třídu `topping--selected`, která bude mít nějakým vizuálním způsobem zvýrazněnou přísadu, která je vybraná. Ve funkci `renderToppings` přidejte do elementu `div` třídu `topping--selected`, pokud je přísada vybraná.
 1. V souboru `hotdog.js` vytvořte funkci `toggleTopping`, která bude mít jako parametr index přísady. Funkce bude měnit hodnotu vlastnosti `selected` na opačnou hodnotu. Funkci správně exportujte a importujte ji v hlavním souboru `index.js`.
