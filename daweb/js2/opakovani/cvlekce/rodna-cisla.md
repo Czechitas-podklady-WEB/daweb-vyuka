@@ -48,17 +48,17 @@ Postupujte dle následujících kroků.
 
 1. Každé rodné číslo musí být dělitelné 11. Zkontrolujte tedy, že zadané číslo je dělitelné jedenácti, a výsledek opět **vypište do stránky**.
 
-> ✔️ Rodné číslo je dělitelné 11.
->
-> ❌ Rodné číslo není dělitelné číslem 11.
+  > ✔️ Rodné číslo je dělitelné 11.
+  >
+  > ❌ Rodné číslo není dělitelné číslem 11.
 
 1. Pokud jsou všechny podmínky splněny, rodné číslo budeme považovat za platné. Informaci o platnosti **vypište do stránky**.
 
-> ✔️ Zadané rodné číslo je platné.
->
-> ❌ Uživatel zadal neplatné rodné číslo.
+  > ✔️ Zadané rodné číslo je platné.
+  >
+  > ❌ Uživatel zadal neplatné rodné číslo.
 
-Po zadání rodného čísla by se na stránce měly objevit čtyři výpisy.
+  Po zadání rodného čísla by se na stránce měly objevit čtyři výpisy.
 
 :::solution
 
