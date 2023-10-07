@@ -32,7 +32,7 @@ V souboru `index.jsx` už máme pomocí JSX vytvořený základní obsah stránk
 
 ```jsx
 document.querySelector('#root').innerHTML = render(
-  <div class="container">
+  <div className="container">
     <header>
       <div className="logo"></div>
       <h1>Webová aplikace</h1>
