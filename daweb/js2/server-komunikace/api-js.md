@@ -21,7 +21,7 @@ const response = await fetch(
 V parametru `response` máme uloženu odpověd ze serveru. Pokud z této odpovědi chceme získat JSON, stačí na něm zavolat metodu `json`. Čeká nás však podraz. Tato metoda je také asynchronní. Musíme tedy znova použít `await` abychom počkali, než se JSON z odpovědi vytvoří.
 
 ```js
-const reponse = await fetch(
+const response = await fetch(
   'https://api.sunrise-sunset.org/json?lat=50&lng=14.5'
 );
 const data = await response.json();

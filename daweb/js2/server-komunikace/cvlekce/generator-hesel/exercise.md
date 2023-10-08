@@ -2,6 +2,7 @@
 title: Generátor hesel
 demand: 3
 lead: Vyrobte stránku na generování silných hesel.
+solutionAccess: lock
 ---
 
 Vyrobíme stránku, která pomůže uživateli vygenerovat opravdu silné a neprůstřelné heslo. Použijeme k tomu [tréninkové API](https://apps.kodim.cz/daweb/trening-api/docs/heslo) na generování hesel. Zároveň už projekt vytvoříme pomocí Vite a JSX.
@@ -32,13 +33,13 @@ import { render } from '@czechitas/render';
 import '../global.css';
 import './index.css';
 
-const response = fetch(
+const response = await fetch(
   'https://apps.kodim.cz/daweb/trening-api/apis/passwords?length=16'
 );
-const data = response.json();
+const data = await response.json();
 
 document.querySelector('#root').innerHTML = render(
-  <div class="container">
+  <div className="container">
     <h1>Webová aplikace</h1>
     <p>
       Vaše heslo je: {data.password}, délka: {data.length}
@@ -69,13 +70,13 @@ import { StrongPassword } from '../components/StrongPassword';
 import '../global.css';
 import './index.css';
 
-const response = fetch(
+const response = await fetch(
   'https://apps.kodim.cz/daweb/trening-api/apis/passwords?length=16'
 );
-const data = response.json();
+const data = await response.json();
 
 document.querySelector('#root').innerHTML = render(
-  <div class="container">
+  <div className="container">
     <h1>Webová aplikace</h1>
     <StrongPassword password={data.password} length={data.length} />
   </div>
