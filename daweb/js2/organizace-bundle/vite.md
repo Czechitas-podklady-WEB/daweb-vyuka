@@ -8,12 +8,16 @@ Nejdříve musíme do našeho projektu Vite nainstalovat. To provedeme příkaze
 $ npm install -D vite glob
 ```
 
-Po tomto zásahu bude náš `package.json` vypadat následovně:
+Po tomto zásahu (a po přidání sekce `"scripts"`) bude náš `package.json` vypadat následovně:
 
 ```json
 {
   "name": "muj-projekt",
   "version": "0.0.1",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
   "dependencies": {
     "dayjs": "^1.10.4",
     "validator": "^13.5.2"
@@ -65,26 +69,24 @@ Do souboru `index.html` vložíme náš `index.js` tak, jak jsme zvyklí.
 Nyní použijeme Vite k sestavení výsledné aplikace. Aby se náš projekt sestavil, potřebujeme Vite správně nakonfigurovat. V projektu `muj-projekt` vytvoříme soubor `vite.config.js` s tímto obsahem.
 
 ```js
-import { czechitasRenderVitePlugin } from '@czechitas/render/plugin';
 import { glob } from 'glob';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
   root: 'src/pages',
-	publicDir: '../../public',
+  publicDir: '../../public',
   server: {
     hmr: false,
   },
   build: {
-		outDir: '../../dist',
-		emptyOutDir: true,
-		target: 'es2022',
-		rollupOptions: {
-			input: glob.sync('src/pages/**/*.html'),
-		},
+    outDir: '../../dist',
+    emptyOutDir: true,
+    target: 'es2022',
+    rollupOptions: {
+      input: glob.sync('src/pages/**/*.html'),
+    },
     modulePreload: false,
   },
-  plugins: [czechitasRenderVitePlugin()],
 });
 ```
 

@@ -4,7 +4,7 @@ Protože větší aplikace mohou obsahovat stovky až tisíce komponent, je důl
 
 Domluvíme se zde na společné struktuře projektu, kterou budeme od této chvíle dodržovat.
 
-Ve složce `src/pages` si vytvoříme složku `components`, do které budeme ukládat všechny složky pro jednotlivé komponenty. Složku s komponentou vždy pojmenujeme jako samotnou komponentu, tedy například `Header`, `Footer` apod. Složka komponenty bude obsahovat:
+Ve složce `src` si vytvoříme složku `components`, do které budeme ukládat všechny složky pro jednotlivé komponenty. Ve složce `src` tedy vedle sebe budeme mít složky `pages` a `components`. Složku s komponentou vždy pojmenujeme jako samotnou komponentu (s velkým písmenem na začátku), tedy například `Header`, `Footer` apod. Složka komponenty bude obsahovat:
 
 - soubor `index.jsx` s JavaScriptovým kódem komponenty,
 - soubor `style.css` s CSS styly pro komponentu,
@@ -52,7 +52,7 @@ V souboru `index.html` bude pouze kostra HTML stránky, která bude obsahovat hl
 
 Takto jsme se dostali do stavu, kdy celý obsah aplikace vytváříme v JavaScriptu a soubor HTML zůstává v podstatě prázdný.
 
-V hlavní souboru `index.jsx` pak většinou vytváříme hlavni komponentu celé stránky. Pokud mámš jednus stránku, můžeme ji nazvat třeba `HomePage`. Její použití pak vypadá následovně:
+V hlavní souboru `index.jsx` pak většinou vytváříme hlavni komponentu celé stránky. Pokud máme jednu stránku, můžeme ji nazvat třeba `HomePage`. Její použití pak vypadá následovně:
 
 ```jsx
 import { render } from '@czechitas/render';

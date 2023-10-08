@@ -2,7 +2,7 @@
 title: Citát
 demand: 2
 lead: Vyzkoušejte si založení vlastního Vite projektu s jednoduchou stránkou.
-solutionAccess: lock
+solutionAccess: allow
 ---
 
 Vyzkoušejte si založení vlastního Vite projektu s jednoduchou stránkou.
