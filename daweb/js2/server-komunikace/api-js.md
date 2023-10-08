@@ -13,13 +13,17 @@ Je zde však drobný zádrhel. Servery jsou různě rychlé podle toho, jak jsou
 Kdybychom tedy v našem programu na prvním řádku čekali, až funkce `fetch` skončí, mohli bychom si taky počkat notnou chvíli. Mezitím by náš program zcela zamrznul a uživatel by neměl ze stránky dobrý pocit. Aby se toto nestalo, funkce `fetch` je takzvaně :term{cs="asynchronní" en="asynchronous"}. V JavaScript pak máme speciální klíčové slovo `await`, které nám umožní počkat na výsledek takové funkce, aniž bychom tím zablokovali celý program. Správně tedy volání `fetch` vypadá takto.
 
 ```js
-const response = await fetch('https://api.sunrise-sunset.org/json?lat=50&lng=14.5');
+const response = await fetch(
+  'https://api.sunrise-sunset.org/json?lat=50&lng=14.5'
+);
 ```
 
 V parametru `response` máme uloženu odpověd ze serveru. Pokud z této odpovědi chceme získat JSON, stačí na něm zavolat metodu `json`. Čeká nás však podraz. Tato metoda je také asynchronní. Musíme tedy znova použít `await` abychom počkali, než se JSON z odpovědi vytvoří.
 
 ```js
-const reponse = await fetch('https://api.sunrise-sunset.org/json?lat=50&lng=14.5')
+const reponse = await fetch(
+  'https://api.sunrise-sunset.org/json?lat=50&lng=14.5'
+);
 const data = await response.json();
 ```
 
@@ -30,7 +34,9 @@ Tento zápis může na první pohled vypadat poněkud složitě. Jeho použití 
 Zatím jsme získaná data pouze vypisovali do konzole. S daty však můžeme dělat, cokoliv se nám zamane. Takto například můžeme zobrazit čas dnešního západu slunce v elementu s třídou `sunset`.
 
 ```js
-const response = await fetch('https://api.sunrise-sunset.org/json?lat=50&lng=14.5')
+const response = await fetch(
+  'https://api.sunrise-sunset.org/json?lat=50&lng=14.5'
+);
 const data = await response.json();
 
 const sunsetElm = document.querySelector('.sunset');

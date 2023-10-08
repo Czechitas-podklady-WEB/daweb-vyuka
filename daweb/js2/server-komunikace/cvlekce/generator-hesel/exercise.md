@@ -20,7 +20,7 @@ Vyrobíme stránku, která pomůže uživateli vygenerovat opravdu silné a nepr
 
 ### Bonus
 
-1. Vytvořte pro zobrazení heslo komponentu `StrongPassword`, která bude mít dvě `props` s názvem `password` a `length`. Tuto komponentu pak použijte ve funkci `render`. 
+1. Vytvořte pro zobrazení heslo komponentu `StrongPassword`, která bude mít dvě `props` s názvem `password` a `length`. Tuto komponentu pak použijte ve funkci `render`.
 1. Nezapomeňte pro komponentu vytvořit vlastní složku ve složce `src/components` a správně ji importujte.
 
 :::solution
@@ -32,13 +32,17 @@ import { render } from '@czechitas/render';
 import '../global.css';
 import './index.css';
 
-const response = fetch('https://apps.kodim.cz/daweb/trening-api/apis/passwords?length=16');
+const response = fetch(
+  'https://apps.kodim.cz/daweb/trening-api/apis/passwords?length=16'
+);
 const data = response.json();
 
 document.querySelector('#root').innerHTML = render(
   <div class="container">
     <h1>Webová aplikace</h1>
-    <p>Vaše heslo je: {data.password}, délka: {data.length}</p>
+    <p>
+      Vaše heslo je: {data.password}, délka: {data.length}
+    </p>
   </div>
 );
 ```
@@ -49,7 +53,11 @@ Soubor `src/components/StrongPassword/index.jsx`:
 
 ```jsx
 export const StrongPassword = (props) => {
-  return <p>Vaše heslo je: {props.password}, délka: {props.length}</p>;
+  return (
+    <p>
+      Vaše heslo je: {props.password}, délka: {props.length}
+    </p>
+  );
 };
 ```
 
@@ -61,7 +69,9 @@ import { StrongPassword } from '../components/StrongPassword';
 import '../global.css';
 import './index.css';
 
-const response = fetch('https://apps.kodim.cz/daweb/trening-api/apis/passwords?length=16');
+const response = fetch(
+  'https://apps.kodim.cz/daweb/trening-api/apis/passwords?length=16'
+);
 const data = response.json();
 
 document.querySelector('#root').innerHTML = render(

@@ -2,4 +2,3 @@
 
 ::exc[cvlekce/workshop]
 ::exc[cvlekce/workshop-komponenty]
-

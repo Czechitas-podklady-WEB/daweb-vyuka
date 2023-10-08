@@ -28,10 +28,12 @@ const { name, price, currency } = product;
 
 Tímto zápisem říkáme, že chceme vyrobit tři proměnné, do kterých se uloží hodnoty z objektu `product`.
 
-Příklad reálného použití může být náš kód pro fetchování silného hesla. 
+Příklad reálného použití může být náš kód pro fetchování silného hesla.
 
 ```js
-const response = await fetch('https://apps.kodim.cz/daweb/trening-api/apis/passwords?length=16');
+const response = await fetch(
+  'https://apps.kodim.cz/daweb/trening-api/apis/passwords?length=16'
+);
 const data = await response.json();
 const password = data.password;
 const length = data.length;
@@ -40,7 +42,9 @@ const length = data.length;
 Pomocí destrukturování si můžeme ušetřit jeden řádek kódu:
 
 ```js
-const response = await fetch('https://apps.kodim.cz/daweb/trening-api/apis/passwords?length=16');
+const response = await fetch(
+  'https://apps.kodim.cz/daweb/trening-api/apis/passwords?length=16'
+);
 const data = await response.json();
 const { password, length } = data;
 ```
@@ -48,7 +52,9 @@ const { password, length } = data;
 nebo dokonce dva:
 
 ```js
-const response = await fetch('https://apps.kodim.cz/daweb/trening-api/apis/passwords?length=16');
+const response = await fetch(
+  'https://apps.kodim.cz/daweb/trening-api/apis/passwords?length=16'
+);
 const { password, length } = await response.json();
 ```
 
@@ -60,12 +66,11 @@ Destrukturování se velmi často použivá při práci s komponentami. Mejmě p
 const Time = (props) => {
   return (
     <div className="time">
-      <span className="time__hours">{props.hours}</span>
-      :
+      <span className="time__hours">{props.hours}</span>:
       <span className="time__mins">{props.minutes}</span>
     </div>
   );
-}
+};
 ```
 
 Pomocí destrukturování můžeme získat hodnoty z objektu `props` a uložit je do proměnných, čímž si pak ušetříme psaní `props.`.
@@ -75,12 +80,11 @@ const Time = (props) => {
   const { hours, minutes } = props;
   return (
     <div className="time">
-      <span className="time__hours">{hours}</span>
-      :
+      <span className="time__hours">{hours}</span>:
       <span className="time__mins">{minutes}</span>
     </div>
   );
-}
+};
 ```
 
 Pohodlnost programátorů však nezná mezí, a proto přišli ještě s línejším způsobem, jak destrukturovat objekt a to přímo v parametru funkce.
@@ -89,12 +93,11 @@ Pohodlnost programátorů však nezná mezí, a proto přišli ještě s línej�
 const Time = ({ hours, minutes }) => {
   return (
     <div className="time">
-      <span className="time__hours">{hours}</span>
-      :
+      <span className="time__hours">{hours}</span>:
       <span className="time__mins">{minutes}</span>
     </div>
   );
-}
+};
 ```
 
 Takovýto zápis je pro nás novinka, ale v praxi se běžně používá, takže je dobré jej dostat pod kůži. Pokud vám přijde zápis až příliš líný, můžete jej prozatím bojkotovat. My jej však nadále v tomto kurzu budeme používat a brzy vás jistě zlákáme na naši stranu.
