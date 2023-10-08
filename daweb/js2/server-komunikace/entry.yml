@@ -8,5 +8,6 @@ sections:
   - api-js
   - cv-volani-api
   - destrukturovani
-  - cv-zobrazovani-dat
+  - cv-destrukturovani
+  - shrnuti
   - ulozky-na-doma
