@@ -1,3 +1,3 @@
 ## Doporučené úložky na doma
 
-Bude doplněno.
+::exc[cvdoma/realitka]
