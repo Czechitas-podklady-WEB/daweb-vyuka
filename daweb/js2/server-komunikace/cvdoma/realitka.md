@@ -5,7 +5,7 @@ lead: Vytvořte aplikaci zobrazující nabídku nemovitostí.
 solutionAccess: lock
 ---
 
-Vytvoříme jednoduchý web s několika stránkami zobrazující inzeráty na nemovitosti. 
+Vytvoříme jednoduchý web s několika stránkami zobrazující inzeráty na nemovitosti.
 
 1. Na adrese https://apps.kodim.cz/daweb/trening-api/apis/realitka/dum01 najdete API endpoint, který vrací informace o jedné nemovitosti ke koupi. Prohlédněte si dobře strukturu dat, která API vrací.
 1. V celku existují čtyři takové inzeráty, vždy končící `dum01`, `dum02`, `dum03` a `dum04`. Vyzkoušejte si, jak vypadají data pro všechny čtyři inzeráty.
