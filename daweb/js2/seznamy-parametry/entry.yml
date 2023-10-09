@@ -1,0 +1,7 @@
+title: Zobrazování seznamů a URL parametry
+lead: Ukážeme si, jak v JSX zobrazovat seznamy a jak pracovat s URL parametry.
+access: claim
+sections:
+  - routing
+  - cv-routing
+  # - komunikace
