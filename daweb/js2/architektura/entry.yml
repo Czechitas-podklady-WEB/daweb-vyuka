@@ -1,0 +1,5 @@
+title: Architektura JSX aplikací
+lead: Hluběji rozebereme jak strukturovat frontendové aplikace založené na čistém JSX.
+access: 'claim'
+sections:
+  - dotaz-patch
