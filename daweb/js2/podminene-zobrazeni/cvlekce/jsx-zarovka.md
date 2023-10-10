@@ -1,6 +1,8 @@
 ---
-title: React žárovka
+title: JSX žárovka
 demand: 2
+lead: Vytvořte komponentu pro zobrazování žárovky.
+solutionAccess: lock
 ---
 
 Vzpomeňte si na naše cvičení z vanilla JavaScriptu, kdy jsme rozsvěcovali a zhasínali žárovku. Zkusíme naši žárovku zprovoznit pomocí JSX. Styly a obrázky pro žárovku můžete v průběhu cvičení vykrádat z původního zadání v repozitáři [cviceni-zarovka](https://github.com/Czechitas-podklady-WEB/cviceni-zarovka).
