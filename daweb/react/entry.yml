@@ -2,7 +2,7 @@ title: React
 lead: Díky Reactu budete schopni vytvářet profesionální webové aplikace mnohem rychleji než v čistém JavaScriptu.
 lessons:
   - uvod-do-reactu
-  - podminene-zobrazeni
+# - podminene-zobrazeni
   - seznamy
   - udalosti-stav
   - formulare-efekty
