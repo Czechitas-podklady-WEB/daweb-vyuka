@@ -5,8 +5,8 @@ lessons:
   - organizace-bundle
   - sablony-komponenty
   - server-komunikace
-  - podminene-zobrazeni-seznamy
-  - komunikace-routing
+  - podminene-zobrazeni
+  - seznamy-parametry
   - posluchace
   - posilani-dat
   - cloud-db

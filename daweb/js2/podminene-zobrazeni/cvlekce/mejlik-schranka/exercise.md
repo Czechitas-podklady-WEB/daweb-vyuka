@@ -1,13 +1,15 @@
 ---
 title: Mejlík – schránka
 demand: 2
+lead: Vytvořte komponentu pro zobrazování počtu nepřečtených zpráv.
+solutionAccess: lock
 ---
 
 V tomto cvičení vytvoříme základ komponenty pro zobrazování příchozí e-mailové pošty v naší nové aplikaci jménem :i[Mejlík.cz].
 
-1. Založte si nový React projekt:
+1. Založte si nový JSX projekt:
    ```shell
-   npm init kodim-app@latest mejlik react
+   npm init kodim-app@latest mejlik jsx
    ```
 1. Vytvořte komponentu `Inbox`, která se použije takto.
 
