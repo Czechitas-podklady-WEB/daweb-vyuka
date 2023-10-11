@@ -2,7 +2,7 @@
 title: Plyšáci
 demand: 2
 lead: Vyrobte jednoduchou stránku s plyšáky.
-solutionAccess: lock
+solutionAccess: allow
 ---
 
 Vytvořte pomocí JSX webovou stránku dle následujícího vzoru.

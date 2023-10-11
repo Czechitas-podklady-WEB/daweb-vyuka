@@ -1,1 +1,0 @@
-## Podmíněné zobrazení
