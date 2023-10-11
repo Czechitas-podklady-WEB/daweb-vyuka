@@ -1,8 +1,8 @@
-Naše cesta Reactem pokračuje k další z velmi důležitých dovedností. Téměř každá webová aplikace zobrazuje nějaký seznam, ať už to je nákupní košík, seznam divadelních představení, jídelní lístek nebo třeba seznam nepřečtených e-mailů. V této lekci si ukážeme, jak v Reactu zařídit zobrazení seznamu uloženého v nějakém JavaScriptovém poli.
+Naše cesta tvorbou webových aplikací pokračuje k další z velmi důležitých dovedností. Téměř každá webová aplikace zobrazuje nějaký seznam, ať už to je nákupní košík, seznam divadelních představení, jídelní lístek nebo třeba seznam nepřečtených e-mailů. V této lekci si ukážeme, jak v JSX zařídit zobrazení seznamu uloženého v nějakém JavaScriptovém poli.
 
 ## Opakování metody map
 
-Na zobrazování seznamů budeme v Reactu používat metodu `map`, kterou již znáte z kapitoly o pokročílém JavaScriptu. Jistě se nám vyplatí si tuto metodu připomenout a zopakovat.
+Když jsme ještě neměli k dispozici JSX, používali jsme na zobrazení seznamů metodu `forEach`, V JSX je však výhodnější místo `forEach` používat metodu `map`, kterou již znáte z kapitoly o funkcionálním zpracování dat. Jistě se nám vyplatí si tuto metodu připomenout a zopakovat.
 
 Metoda `map` slouží k tomu, abychom z jednoho JavaScriptového pole vyrobili pole jiné pomocí nějaké transformační funkce. Takto například vyrobíme e-maily pro seznam uživatelů.
 
@@ -12,15 +12,6 @@ const emails = names.map((name) => {
   return `${name}@mejlik.cz`;
 });
 ```
-
-Jistě si také vzpomenete, že jsme při zápisu takovýchto transformací používali zkrácený zápis arrow funkcí.
-
-```js
-const names = ['petr', 'jana', 'marek', 'eva', 'lenka', 'ondra'];
-const emails = names.map((name) => `${name}@mejlik.cz`);
-```
-
-Zkracování funkcí nám však pomůže i v psaní reactových komponent.
 
 ### Zkrácený zápis delších funkcí
 
