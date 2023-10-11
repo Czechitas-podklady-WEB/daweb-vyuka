@@ -1,8 +1,8 @@
 ## Seznamy v JSX
 
-Na konci předchozí části jsme se dotknuli způsobu, jak v Reactu zobrazit nějaký seznam. Celá myšlenka tkví v tom, že React nám velmi přimočaře umožňuje zobrazit pole JSX elementů.
+Na konci předchozí části jsme se dotknuli způsobu, jak v JSX zobrazit nějaký seznam. Celá myšlenka tkví v tom, že v JSX můžeme velmi přimočaře umožňuje zobrazit pole JSX elementů.
 
-Představme si následující pole obsahující `li` elementy.
+Představme si následující pole obsahující JSX `li` elementy.
 
 ```js
 const dayElements = [
@@ -14,12 +14,10 @@ const dayElements = [
 ];
 ```
 
-Všimněte si, že jde o normální JavaScriptové pole, které jako svoje prvky obsahuje JSX elementy. Každý JSX element je hodnota, není tedy žádný problém mít pole takovýchto hodnot.
-
 Pokud takové pole máme už připravené, můžeme elementy v něm obsažené zobrazit uvnitř nějakého rodiče prostě tak, že proměnnou `dayElements` do tohoto rodiče vložíme.
 
 ```js
-const App = () => (
+const HomePage = () => (
   <>
     <h1>Pracovní dny</h1>
     <ol className="days">{dayElements}</ol>
@@ -27,9 +25,9 @@ const App = () => (
 );
 ```
 
-Kdyby byl v proměnné `dayElements` uložen řetězec, budeme mít uprostřed `ol` seznamu prostě kousek textu. Jelikož však máme v `dayElements` pole JSX elementů, React je jednoduše zapojí jako děti našeho seznamu.
+Kdyby byl v proměnné `dayElements` uložen řetězec, budeme mít uprostřed `ol` seznamu prostě kousek textu. Jelikož však máme v `dayElements` pole JSX elementů, budou jednoduše zapojeny jako děti našeho seznamu.
 
-Když tento kód spustíme, React nám do konzole prohlížeče vypíše varování.
+Když tento kód spustíme, v konzoli prohlížeče objevíme varování:
 
 ```
 Warning: Each child in a list should have a unique "key" prop.
@@ -37,7 +35,7 @@ Warning: Each child in a list should have a unique "key" prop.
 
 Pro tutu chvíli jej můžeme ignorovat. Později si vysvětlíme, co přesně znamená a jak se k němu postavit.
 
-### Použití map
+### Použití `map`
 
 V předchozím případě jsme pole JSX elementů měli připravené dopředu. V praxi jej však chceme vyrobit z nějakých dat. Máme například názvy dní v týdnu jako řetězce v poli.
 
@@ -52,7 +50,7 @@ const days = ['pondělí', 'úterý', 'středa', 'čtvrtek', 'pátek'];
 
 const dayElements = days.map((day) => <li>{day}</li>);
 
-const App = () => (
+const HomePage = () => (
   <>
     <h1>Pracovní dny</h1>
     <ol className="days">{dayElements}</ol>
