@@ -3,3 +3,5 @@ lead: Hluběji rozebereme jak strukturovat frontendové aplikace založené na �
 access: 'claim'
 sections:
   - dotaz-patch
+  - crud
+  
