@@ -112,6 +112,8 @@ const ShopItem = (props) => {
   );
 };
 ```
+
 ```
 
 Takovýto kód už však může být hůře čitelný, takže je dobré jej používat s mírou a uvážením.
+```
