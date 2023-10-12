@@ -1,4 +1,5 @@
 ## Metoda POST – odesílání dat
+
 Pokud ve své aplikaci používáme data z nějakého veřejného API, většinou je stahujeme pouze ke čtení. Málokterý veřejný server by nám jen tak dovolil na něm data upravovat. Pokud však píšeme aplikaci, ve které používáme vlastní backend, většinou si vytvoříme vlastní databázi a vlastní API, do kterého pak můžeme i zapisovat. V této lekci si proto ukážeme, jak můžeme pomocí dotazů na API měnit data na serveru.
 
 V minulé lekci jsme posílali dotazy na API tímto způsobem.

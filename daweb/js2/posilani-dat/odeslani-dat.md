@@ -1,4 +1,5 @@
 ## Odeslání dat na server
+
 ### Odeslání POST dotazu
 
 Dotazy POST se posílají opět pomocí funkce `fetch`. Musíme však specifikovat několik věcí navíc:
@@ -26,14 +27,16 @@ fetch('https://it-seznamka.cz/me/profile', {
 Toto je zatím jakási šablona, které se budeme do budoucna vždy držet při vytváření požadavků, které nějak mění data na serveru. Praktický příklad s reálným serverem si vyzkoušíme v následující sekci.
 
 ```js
-const data = {/*…*/};
+const data = {
+  /*…*/
+};
 const handleSubmit = async (event) => {
-    const resp = await fetch("…", {
-        method: "POST",
-        body: JSON.stringify(data)
-    })
-    const result = await resp.json()
-}
+  const resp = await fetch('…', {
+    method: 'POST',
+    body: JSON.stringify(data),
+  });
+  const result = await resp.json();
+};
 
-document.querySelector(".submit").addEventListener("click", handleSubmit);
+document.querySelector('.submit').addEventListener('click', handleSubmit);
 ```

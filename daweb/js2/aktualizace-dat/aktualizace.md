@@ -39,7 +39,7 @@ element.querySelector('button').addEventListener('click', () => {
     }),
   })
   const data = await resp.json())
-  //TODO location = 
+  //TODO location =
 });
 ```
 
