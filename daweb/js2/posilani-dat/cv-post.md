@@ -1,5 +1,4 @@
-## Cvičení: Dotaz POST
+## Cvičení: Požadavek POST
 
 ::exc[cvlekce/chat]
 ::exc[cvlekce/hlasovani]
-::exc[cvlekce/hlasovani-jmeno]
