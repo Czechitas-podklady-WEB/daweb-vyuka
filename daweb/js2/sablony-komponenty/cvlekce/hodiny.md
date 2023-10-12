@@ -77,7 +77,9 @@ const Clock = (props) => {
 };
 
 const appElm = document.querySelector('#root');
-appElm.innerHTML = times.map((time) => Clock(time)).join('');
+times.forEach((time) => {
+  appElm.innerHTML += <Clock hours={time.hours} minutes={time.minutes}/>;
+})
 ```
 
 :::
