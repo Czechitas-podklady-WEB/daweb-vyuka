@@ -1,0 +1,13 @@
+title: Zobrazování seznamů
+lead: Ukážeme si, jak v JSX zobrazovat seznamy.
+access: claim
+sections:
+  - opakovani-map
+  - cv-zkracovani-map
+  - zkracovani-komponent
+  - seznamy-v-jsx
+  - slozitejsi-komponenty
+  - key-prop
+  - cv-seznamy
+  - shrnuti
+  - ulozky-na-doma

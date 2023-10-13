@@ -1,0 +1,9 @@
+title: Aktualizace dat na serveru
+lead: Data na server nemusíme jen přidávat – můžeme je také měnit a mazat. Ukážeme si též, jak vedle stránky se seznamem připravit také stránku s detailem jedné položky.
+access: 'claim'
+sections:
+  - url-parametry
+#  - cv-detail
+  - aktualizace
+  - hlasovani
+#  - cv-put-delete

@@ -6,9 +6,9 @@ lessons:
   - sablony-komponenty
   - server-komunikace
   - podminene-zobrazeni
-  - seznamy-parametry
-  - posluchace
+  - seznamy
   - posilani-dat
+  - aktualizace-dat
   - cloud-db
   - cafe-lora-1
   - cafe-lora-2

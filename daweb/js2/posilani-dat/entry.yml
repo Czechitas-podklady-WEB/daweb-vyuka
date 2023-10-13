@@ -1,13 +1,12 @@
 title: Posílání dat na server
-lead: Zatím jsme data z API pouze četli. Nyní si ukážeme, jak můžeme data na server také zapisovat.
-access: 'claim'
+lead: Naučíme se, jak přečíst data z formuláře zadaná uživatelem a odeslat je na server.
+access: claim
 sections:
-  - dotaz-post
-  - hlasovani
+  - udalosti-opakovani
+  - metoda-post
+  - json
+  - odeslani-dat
+  - location
   - cv-post
-  - autentizace
-  - nova-polozka
-  - cv-autentizace-post
-  # - aktualizace
-  # - cv-aktualizace
-  # - ulozky-na-doma
+  - formulare
+  - cv-formular

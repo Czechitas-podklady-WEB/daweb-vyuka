@@ -1,6 +1,6 @@
 ## Seznamy v JSX
 
-Na konci předchozí části jsme se dotknuli způsobu, jak v JSX zobrazit nějaký seznam. Celá myšlenka tkví v tom, že v JSX můžeme velmi přimočaře umožňuje zobrazit pole JSX elementů.
+Na konci předchozí sekce jsme se dotkli způsobu, jak v JSX zobrazit nějaký seznam. Celá myšlenka tkví v tom, že v JSX můžeme velmi přimočaře umožňuje zobrazit pole JSX elementů.
 
 Představme si následující pole obsahující JSX `li` elementy.
 
@@ -35,7 +35,7 @@ Warning: Each child in a list should have a unique "key" prop.
 
 Pro tutu chvíli jej můžeme ignorovat. Později si vysvětlíme, co přesně znamená a jak se k němu postavit.
 
-### Použití `map`
+## Použití `map`
 
 V předchozím případě jsme pole JSX elementů měli připravené dopředu. V praxi jej však chceme vyrobit z nějakých dat. Máme například názvy dní v týdnu jako řetězce v poli.
 

@@ -1,9 +1,10 @@
 ---
 title: Zkracovací jednohubky
 demand: 1
+lead: Zkracujte funkce a vysvětlete, k čemu slouží.
 ---
 
-Založte si obyčejnou stránku s JavaScriptem, bez Webpacku i bez Reactu. Následující funkce přepište do zkráceného zápisu. Vlastními slovy popište, k čemu nejspíše funkce slouží.
+Založte si obyčejnou stránku s JavaScriptem, bez Vite i JSX. Následující funkce přepište do zkráceného zápisu. Vlastními slovy popište, k čemu nejspíše funkce slouží.
 
 1.  ```js
     const isEmail = (str) => {
