@@ -1,9 +1,11 @@
 ---
 title: Česká města 3
 demand: 3
+lead: Zobrate více českých měst
+solutionAccess: lock
 ---
 
-Pokračujte v projektu z předchozího příkladu.
+Pokračujte v projektu _Česká města_ z předchozího příkladu.
 
 1. Ve složce `src` vašeho projektu si vytvořte prázdný soubor `cz-cities.js`.
 1. Do tohoto souboru zkopírujet obsah souboru [cz-cities.js](https://github.com/Czechitas-podklady-WEB/cviceni-cz-cities/blob/main/cz-cities.js) z GitHubu. Soubor obsahuje seznam všech českých měst aktuální k 1. lednu 2020.
