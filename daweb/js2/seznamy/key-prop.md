@@ -6,7 +6,7 @@ U příkladů výše jsme při zobrazování seznamů narazili na toto varován�
 Warning: Each child in a list should have a unique "key" prop.
 ```
 
-Tím se nám JSX snaží říct, že u každé komponenty v seznamu potřebuje mít unikátní klíč, který tuto položku identifikuje. Jde o podobný princip jako je například `id` u HTML elementů. Tyto unkátní klíče jsou v JSX důležité až ve chvíli, kdy začneme používat React. Protože JSX pochází původem z Reactu, stěžuje si na vybějící klíče už nyní. 
+Tím se nám JSX snaží říct, že u každé komponenty v seznamu potřebuje mít unikátní klíč, který tuto položku identifikuje. Jde o podobný princip jako je například `id` u HTML elementů. Tyto unkátní klíče jsou v JSX důležité až ve chvíli, kdy začneme používat React. Protože JSX pochází původem z Reactu, stěžuje si na vybějící klíče už nyní.
 
 Nejjednodušší situaci máme ve chvíli, kdy jsou naše data připravená tak, že každá položka obsahuje vlastnost s unikátními hodnotami. Podívejme se například na náš nákupní seznam.
 

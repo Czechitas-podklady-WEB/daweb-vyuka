@@ -65,11 +65,7 @@ const HomaPage = () => (
     <h1>Nákupní seznam</h1>
     <ul className="shopping-list">
       {list.map((item) => (
-        <ShopItem
-          name={item.name}
-          amount={item.amount}
-          bought={item.bought}
-        />
+        <ShopItem name={item.name} amount={item.amount} bought={item.bought} />
       ))}
     </ul>
   </>

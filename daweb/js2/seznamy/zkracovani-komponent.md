@@ -59,4 +59,4 @@ const names = ['petr', 'jana', 'marek', 'eva', 'lenka', 'ondra'];
 const users = names.map((name) => <User login={name} />);
 ```
 
-Z tohoto bodu zbývá už jen malý krůček, abychom takovéto pole JSX komponent dokázali zobrazit na naší stránce. 
+Z tohoto bodu zbývá už jen malý krůček, abychom takovéto pole JSX komponent dokázali zobrazit na naší stránce.

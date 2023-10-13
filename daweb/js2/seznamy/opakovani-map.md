@@ -15,7 +15,7 @@ const emails = names.map((name) => {
 
 ## Zkracování funkcí
 
-Do metody `map` často posíláme funkce, které jsou relativně krátké. V takovém případě JavaScript nabízí možnost je ještě více zkrátit a trochu víc tak náš kód učesat. 
+Do metody `map` často posíláme funkce, které jsou relativně krátké. V takovém případě JavaScript nabízí možnost je ještě více zkrátit a trochu víc tak náš kód učesat.
 
 Pokud funkce nedělá nic jiného, než že vrací nějakou hodnotu, je možné vynechat složené závorky a klíčové slovo `return`. Obě níže napsané funkce budou fungovat a vrátí nám řetězec s pozdravem.
 
@@ -52,7 +52,7 @@ Je dobré si dát pozor, aby náš kód zůstal čitelný. Pokud je funkce jasn�
 
 ## Zracování v `map`
 
-Zkracování anonymních funkcí se velmi hodí právě při používání metody `map`. Tam totiž časo děláme právě to, že předávaná funkce rovnou vrací nějakou hodnotu. 
+Zkracování anonymních funkcí se velmi hodí právě při používání metody `map`. Tam totiž časo děláme právě to, že předávaná funkce rovnou vrací nějakou hodnotu.
 
 Náš dřívější příklad bez zkracování
 
