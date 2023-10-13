@@ -115,13 +115,16 @@ const Product = (props) => {
   `;
 };
 
-const renderProducts = () => {
-  document.querySelector('#products-section').innerHTML = products
-    .map((p) => Product(p))
-    .join('');
-};
-
-renderProducts();
+const productsSectionElement = document.querySelector('#products-section');
+products.forEach((product) => {
+  productsSectionElement.innerHTML += (
+    <Product
+      name={product.name}
+      price={product.price}
+      currency={product.currency}
+    />
+  );
+});
 ```
 
 :::
