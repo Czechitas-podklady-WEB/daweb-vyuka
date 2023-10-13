@@ -7,8 +7,8 @@ lessons:
   - server-komunikace
   - podminene-zobrazeni
   - seznamy-parametry
-  - posluchace
   - posilani-dat
+  - aktualizace-dat
   - cloud-db
   - cafe-lora-1
   - cafe-lora-2
