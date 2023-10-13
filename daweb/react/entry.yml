@@ -3,7 +3,7 @@ lead: Díky Reactu budete schopni vytvářet profesionální webové aplikace mn
 lessons:
   - uvod-do-reactu
 # - podminene-zobrazeni
-  - seznamy
+# - seznamy
   - udalosti-stav
   - formulare-efekty
   - komunikace-dite-rodic

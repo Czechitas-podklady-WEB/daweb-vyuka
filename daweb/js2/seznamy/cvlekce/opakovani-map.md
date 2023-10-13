@@ -1,9 +1,11 @@
 ---
 title: Opakování map
 demand: 2
+lead: Zopakujte si metodu `map` a zkracování funkcí.
+solutionAccess: lock
 ---
 
-Založte si obyčejnou stránku s JavaScriptem, bez Webpacku i bez Reactu. Do souboru `index.js` si zkopírujte následující pole.
+Založte si obyčejnou stránku s JavaScriptem, bez Vite i bez JSX. Do souboru `index.js` si zkopírujte následující pole.
 
 ```js
 const weekdays = [
@@ -67,15 +69,13 @@ const months = [
 ];
 ```
 
-Všechny body níže vyřešte pomocí metody `map`. Tam, kde je to možné, použijte zkrácený zápis arrow funkcí. Výsledky vypisujte do konzole pomocí `console.log`.
+Všechny body níže vyřešte pomocí metody `map`. Tam, kde je to možné, použijte zkrácený zápis funkcí. Výsledky vypisujte do konzole pomocí `console.log`.
 
-1.  Z pole `weekdays` vyrobte pole obsahující všechny názvy dnů napsané VELKÝMI PÍSMENY.
-1.  Z pole `weekdays` vyrobte pole obsahující pouze první dvě písmena každého dne, tedy
-
+1. Z pole `weekdays` vyrobte pole obsahující všechny názvy dnů napsané VELKÝMI PÍSMENY.
+1. Z pole `weekdays` vyrobte pole obsahující pouze první dvě písmena každého dne, tedy
     ```js
     ['po', 'út', 'st' /* atd. */];
     ```
-
 1.  Z pole `months` vyrobte pole obsahující pouze počty dní v každém měsíci.
 1.  Z pole `months` vyrobte pole obsahující pro každý měsíc datum jeho prvního dne v roce 2020, tedy
     ```js
@@ -97,5 +97,4 @@ console.log(monthsDays);
 const firstMonthsDays = months.map((month) => `1. ${month.name} 2020`);
 console.log(firstMonthsDays);
 ```
-
 :::

@@ -6,7 +6,7 @@ U příkladů výše jsme při zobrazování seznamů narazili na toto varován�
 Warning: Each child in a list should have a unique "key" prop.
 ```
 
-Tím se nám React snaží říct, že u každé komponenty v seznamu potřebuje mít unikátní klíč, který tuto položku identifikuje. Jde o podobný princip jako je například `id` u HTML elementů. Díky unikátním klíčům dokáže React rychleji vyřešit změny uvnitř seznamu jako přidávání nebo mazání položek.
+Tím se nám JSX snaží říct, že u každé komponenty v seznamu potřebuje mít unikátní klíč, který tuto položku identifikuje. Jde o podobný princip jako je například `id` u HTML elementů. Tyto unkátní klíče jsou v JSX důležité až ve chvíli, kdy začneme používat React. Protože JSX pochází původem z Reactu, stěžuje si na vybějící klíče už nyní. 
 
 Nejjednodušší situaci máme ve chvíli, kdy jsou naše data připravená tak, že každá položka obsahuje vlastnost s unikátními hodnotami. Podívejme se například na náš nákupní seznam.
 
@@ -26,7 +26,7 @@ Všechny hodnoty vlastnoti `product` jsou unikátní. Můžeme tedy tuto vlastno
 ```js
 <div className="shopping-list">
   {list.map((item) => (
-    <ShoppingList
+    <ShopItem
       key={item.product}
       product={item.product}
       amount={item.amount}
@@ -36,6 +36,6 @@ Všechny hodnoty vlastnoti `product` jsou unikátní. Můžeme tedy tuto vlastno
 </div>
 ```
 
-Všimněte si, že například vlastnost `amount` unikátní hodnoty nemá. Nelze tedy použít jako klíč. Pokud to uděláte, React si bude v konzoli opět hlasitě stěžovat.
+Všimněte si, že například vlastnost `amount` unikátní hodnoty nemá. Nelze tedy použít jako klíč. Pokud to uděláte, JSX si bude v konzoli opět hlasitě stěžovat.
 
-V praxi občas narazíme na data, která žádnou unikátní vlastnost použitelnou jako klíč nemají. V takovém případě čeká trošku bolehlav i zkušenější programátory. Řešení těchto situací proto necháme na některou z pozdějších lekci, až budete v Reactu více kovaní.
+V praxi občas narazíme na data, která žádnou unikátní vlastnost použitelnou jako klíč nemají. V takovém případě čeká trošku bolehlav i zkušenější programátory. Řešení těchto situací proto necháme na některou z pozdějších lekci, až budeme kovaní v Reactu.
