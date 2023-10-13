@@ -72,7 +72,7 @@ const HomePage = () => {
   );
 };
 
-document.querySelector('#root').innerHTML = render(<HomePage/>);
+document.querySelector('#root').innerHTML = render(<HomePage />);
 ```
 
 V hlavním souboru `global.css` nám pak po rozsekání projektu na komponenty zbydou pouze obecné styly týkající se celé stránky:
