@@ -33,7 +33,7 @@ const Time = ({ hours, minutes }) => {
 }
 ```
 
-Nyní už komponenta nedělá nic jiného, než že vrací JSX element. Můžeme ji proto převést na zkrácený zápis. Sluší se ale v zápise ponechat kulaté závorky pro lepší čítelnost.
+Nyní už komponenta nedělá nic jiného, než že vrací JSX element. Můžeme ji proto převést na zkrácený zápis. Sluší se ale v zápise ponechat kulaté závorky pro lepší čitelnost.
 
 <!-- prettier-ignore -->
 ```js
