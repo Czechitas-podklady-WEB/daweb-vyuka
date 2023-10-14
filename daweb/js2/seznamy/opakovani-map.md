@@ -50,7 +50,7 @@ Kdybychom použili jen složené závorky `{` a `}`, JavaScript si bude myslet
 
 Je dobré si dát pozor, aby náš kód zůstal čitelný. Pokud je funkce jasná a jednoduchá, zkrácení se vyplatí. Pokud pracujeme s obřími objekty nebo dlouhým kódem, spíše se vyplatí napsat funkci běžným způsobem.
 
-## Zracování v `map`
+## Zkracování v `map`
 
 Zkracování anonymních funkcí se velmi hodí právě při používání metody `map`. Tam totiž časo děláme právě to, že předávaná funkce rovnou vrací nějakou hodnotu.
 
