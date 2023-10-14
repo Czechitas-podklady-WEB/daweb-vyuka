@@ -1,0 +1,5 @@
+title: Organizace kódu
+lead: Pro vývoj větších aplikací budeme potřebovat rozdělit náš kód do více souboru a naučit se import a export
+access: 'claim'
+sections:
+  - import-export
