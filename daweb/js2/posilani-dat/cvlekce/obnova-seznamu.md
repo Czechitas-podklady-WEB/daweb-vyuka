@@ -21,5 +21,5 @@ Naše aplikace _Nákupy_ ještě neumí mazat položky seznamu. Když nám náku
      "type": "reset"
    }
    ```
-   Nezapomeňte použít pri autentizace své jméno. Po odeslání požadavku zavolejte funkci `window.location.reload()`, pro obnovení stránky. 
+   Nezapomeňte použít pri autentizace své jméno. Po odeslání požadavku zavolejte funkci `window.location.reload()`, pro obnovení stránky.
 1. Vyzkoušejte, že vaše aplikace funguje a že je možné pomocí tlačítka _obnovit_ vrátit seznamy do půvdní podoby.

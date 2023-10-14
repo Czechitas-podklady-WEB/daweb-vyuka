@@ -44,13 +44,13 @@ Všimněte si, že funkce, která vyrábí JSX pro jednotlivé položky našeho 
 V praxi však často nastane situace, že funkce použitá uvnitř `map` je tak složitá, že je těžké se v kódu orientovat. Náš poslední příklad už je také trochu na hraně. V takovém případě si vzpomeneme na předchozí lekci, kde jsme probírali rozdělování jedné velké komponenty na menší celky. Rozhodně se nám vyplatí vytvořit si pro zobrazování jednotlivých prvků seznamu komponentu, například takto.
 
 ```jsx
-const ShopItem = ({ name, amount, done }) => {
+const ShopItem = ({ name, amount, bought }) => {
   const tickClass = bought ? 'item__done item__done--tick' : 'item__done';
   return (
     <div className="shopitem">
       <button className={tickClass} />
-      <div className="shopitem__name">${name}</div>
-      <div className="shopitem__amount">${amount}</div>
+      <div className="shopitem__name">{name}</div>
+      <div className="shopitem__amount">{amount}</div>
       <button className="btn-delete">Smazat</button>
     </div>
   );

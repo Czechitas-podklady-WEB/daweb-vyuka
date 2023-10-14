@@ -16,7 +16,7 @@ npm init kodim-app@latest cviceni-hlasovani jsx
 1. Otevřete si ve VS Code vytvořenou složku `cviceni-hlasovani`.
 1. Prohlédněte si dokumentaci [API pro hlasování](https://apps.kodim.cz/daweb/hlasovani/docs) a pomocí požadavku GET v prohlížeči najděte `id` otázky, kterou jste si ve skupině vybrali.
 1. Na stránku přidejte tlačítko :i[Hlasovat]. Pověste na toto tlačíko posluchač a zatím na stisk pouze vypište něco do konzole pro ověření, že posluchač funugje.
-1. Při stisknutí tlačítka pošlete na API požadavek POST, který zahlasuje vaším jménem pro nějakou vámi zvolenou možnost. Auntentizujte se svým GitHub loginem. Login i možnost zatím budou zapsány natvrdo ve vašem kódu. **Nezapomeňte** posluchač události označit jako `async`.
+1. Při stisknutí tlačítka pošlete na API požadavek POST, který zahlasuje vaším jménem pro nějakou vámi zvolenou možnost. Jméno i možnost zatím budou zapsány natvrdo ve vašem kódu. **Nezapomeňte** posluchač události označit jako `async`.
 1. Na stránce [hlavní aplikace](https://apps.kodim.cz/daweb/hlasovani) si ověřte, že se vám povedlo správně zahlasovat.
 
 <!-- :::solution

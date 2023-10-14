@@ -25,4 +25,3 @@ fetch('https://it-seznamka.cz/me/profile', {
 ```
 
 Toto je zatím jakási šablona, které se budeme do budoucna vždy držet při vytváření požadavků, které nějak mění data na serveru. Praktický příklad s reálným serverem si vyzkoušíme v následující sekci.
-
