@@ -7,8 +7,8 @@ Pokračujte v aplikaci z předchozího příkladu. Rozšíříme náš nákupní
 
 Postup je velmi podobný jako v předchozím cvičení.
 
-1. Do prvku `shoplist__toolbar` přidejte tlačítko _vymazat_ s třídou `clear-btn`.
-1. Založte posluchač události `handleClear` a vyzkoušejte, že se zavolá při stisknutí tlačítka.
+1. Do aplikace přidejte tlačítko _vymazat_.
+1. Založte `async` posluchač události `handleClear` a vyzkoušejte, že se zavolá při stisknutí tlačítka.
 1. V obsluze události pošlete autentizovaný POST požadevek na stejnou adresu jako v předchozím příkladu
    ```
    https://nakupy.kodim.app/api/me/week/:day/actions
