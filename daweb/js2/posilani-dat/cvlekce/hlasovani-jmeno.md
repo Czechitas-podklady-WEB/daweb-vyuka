@@ -9,7 +9,6 @@ Pokračujte v aplikaci z předchozího příkladu. Mít jméno hlasujícího př
 
 1. V programu z minulého cvičení nahraďte hlasovací tlačíko formulářem, který bude obsahovat jedno textové políčko pro zadání jména.
 1. Při odeslání formuláře zahlasujte pro jednu možnost jménem, které zadal uživatel. Číslo možnosti, pro niž se hlasuje, bude stále natvrdo v kódu.
-1. Vypište si do konzole, co API endpoint vrátí, pokud se pokusíte zahlasovat dvakrát stejným jménem. Upravte stránku tak, aby v takovém případě zobrazila hlášku ve smyslu :i[Nelze hlasovat dvakrát se stejným jménem].
 
 <!-- :::solution
 

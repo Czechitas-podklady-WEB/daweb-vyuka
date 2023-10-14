@@ -12,14 +12,14 @@ Na tento endpoint pošleme objekt, který říká, že uživatel hlasuje pro vol
 }
 ```
 
-Zároveň chceme, aby server poznal, za jakého uživatele hlasujeme. Pošleme tady hlavičku authorization s naším GitHub loginem. Pro účely lekce máme přípraven login `lektor` pro lektora. Celý kód pak bude vypadat takto:
+Zároveň chceme, aby server poznal, za jakého uživatele hlasujeme. Pošleme tady hlavičku authorization s naším jménem, např. Zuzka. 
 
 ```js
 fetch('https://apps.kodim.cz/daweb/hlasovani/api/poll/3', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
-    Authorization: 'lektor', 
+    Authorization: 'Zuzka', 
   },
   body: JSON.stringify({
     optionId: 2,
