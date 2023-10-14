@@ -4,7 +4,7 @@ Pojďme si posílání POST dotazů ukázat na reálném API. Na adrese [apps.ko
 
 Chceme-li v nějaké otázce hlasovat, musíme na správný endpoint odeslat POST požadavek, který řekne, pod jakým jménem a pro jakou volbu hlasujeme. Pokud chceme hlasovat v otázce s `id` 3, pošleme POST na endpoint `/api/poll/3`.
 
-Na tento endpoint pošleme objekt, který říká, že uživatel hlasuje pro volbu s `optionId` 2. 
+Na tento endpoint pošleme objekt, který říká, že uživatel hlasuje pro volbu s `optionId` 2.
 
 ```js
 {
@@ -12,14 +12,14 @@ Na tento endpoint pošleme objekt, který říká, že uživatel hlasuje pro vol
 }
 ```
 
-Zároveň chceme, aby server poznal, za jakého uživatele hlasujeme. Pošleme tady hlavičku authorization s naším jménem, např. Zuzka. 
+Zároveň chceme, aby server poznal, za jakého uživatele hlasujeme. Pošleme tady hlavičku authorization s naším jménem, např. Zuzka.
 
 ```js
 fetch('https://apps.kodim.cz/daweb/hlasovani/api/poll/3', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
-    Authorization: 'Zuzka', 
+    Authorization: 'Zuzka',
   },
   body: JSON.stringify({
     optionId: 2,
@@ -36,13 +36,10 @@ Zatím jsme ještě funkci `fetch` nikdy nevolali unvnitř žádné funkce. Vol�
 Pokud používáme uvnitř jakékoliv funkce `await`, musíme funkci vždy označit jako `async`.
 
 ```js
-document.querySelector('button')
-  .addEventListener('click', async (e) => {
-    await fetch(
-      // ...
-    );
-  }
-);
+document.querySelector('button').addEventListener('click', async (e) => {
+  await fetch();
+  // ...
+});
 ```
 
 Kdybychom toto neudělali, obdržíme od JavaScript runtimu chybu. Problematika `async/await` může být dosti komplikovaná, proto se jí zde nebudeme hloubějí věnovat a omezíme pouze na toto jednoduché pravidlo, které budeme dodržovat.

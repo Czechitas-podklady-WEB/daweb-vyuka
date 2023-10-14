@@ -21,7 +21,7 @@ document.querySelector('#root').innerHTML = render(
     <div className="departure">
       <div className="departure__direction">{odjezd.smer}</div>
       <div className="departure__time">{odjezd.cas}</div>
-      <div className="departure__delay">{odjezd.zpozdeni}</div>  
+      <div className="departure__delay">{odjezd.zpozdeni}</div>
     </div>
     <button id="update-btn">Aktualizovat</button>
   </div>
@@ -47,4 +47,3 @@ updateBtn.addEventListener('click', () => {
 ```
 
 Pomocí volání metody `window.location.reload` jsme vynutili obnovení celé stránky, tedy v podstatě totéž, jako bychom udělali refresh stránky v prohlížeči. Tento postup má však zatím zásadní problém. Stránka se znova načte i s JavaScriptem, tedy i s původními daty. Výsledkem je, že se zpoždění nijak nezmění. Aby tento postup fungoval, museli bychom mít data uložená na serveru a změnit je tam. Tím pádem si při obnovení stránky stáhneme nová data a zobrazíme je již s novým zpožděním. Jak toto udělat si ukážeme v zápětí.
-
