@@ -2,11 +2,10 @@ title: Posílání dat na server
 lead: Naučíme se, jak přečíst data z formuláře zadaná uživatelem a odeslat je na server.
 access: claim
 sections:
-  - udalosti-opakovani
+  - aktualizace
   - metoda-post
-  - json
   - odeslani-dat
-  - location
+  - hlasovani
   - cv-post
-  - formulare
+  - aktualizace-post
   - cv-formular
