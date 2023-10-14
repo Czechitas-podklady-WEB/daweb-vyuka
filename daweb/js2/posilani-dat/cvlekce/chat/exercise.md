@@ -1,21 +1,23 @@
 ---
 title: Chat
 demand: 3
+lead: Odešlete jednoduchou zprávu do chatu.
+solutionAccess: lock
 ---
 
 V tomto cvičení si vytvoříte vlastní chatovací aplikaci.
 
 ::fig[ukázka výsledku]{src=assets/vysledek.png}
 
-1.  Pro rychlejší vytvoření základní struktury použijte příkaz níže:
+1.  Vytvořte Vite/JSX projekt pomocí:
 
     ```bash
-    npm init kodim-app@latest chat html-css-js
+    npm init kodim-app@latest chat jsx
     ```
 
-1.  Do HTML přidejte formulář s jedním textovým políčkem pro uživatelovu zprávu a tlačítkem pro odeslání.
+1.  Do stránky přidejte formulář s jedním textovým políčkem pro uživatelovu zprávu a tlačítkem pro odeslání.
 
-1.  V JavaScriptu přijdejte posluchač události `submit` na formulář. V jeho obsluze zamezte výchozímu odeslání formuláře (`preventDefault`).
+1.  Na konci souboru `index.jsx` přidejte posluchač události `submit` na formulář. V jeho obsluze zamezte výchozímu odeslání formuláře (`preventDefault`).
 
     1.  Obsah textového políčka zašlete na chatovací server.
 
@@ -44,7 +46,7 @@ V tomto cvičení si vytvoříte vlastní chatovací aplikaci.
 
 1.  Po odeslání formuláře uživateli vymažte obsah políčka, aby měl prostor pro zprávu novou.
 
-1.  K formuláři do HTML přidejte ještě jedno textové políčko na jméno. Nezapomeňte obě políčka označit štítkem `<label>`.
+1.  K formuláři přidejte ještě jedno textové políčko na jméno. Nezapomeňte obě políčka označit štítkem `<label>`.
 
 1.  Při odesílání formuláře přidejte do požadavku na server do těla zprávy ještě jméno jako vlastnost `name`.
 
