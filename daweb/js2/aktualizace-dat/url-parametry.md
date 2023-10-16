@@ -1,1 +1,0 @@
-## Čtení dat z URL

@@ -8,8 +8,8 @@ lessons:
   - podminene-zobrazeni
   - seznamy
   - posilani-dat
-  - aktualizace-dat
-  - cloud-db
+  - api-parametry
+  - crud
   - cafe-lora-1
   - cafe-lora-2
   # - func-data
