@@ -9,13 +9,14 @@ Jistě by se někomu mohla hodit aplikace, která bude spravovat různé interne
 
 1. Nejdříve vytvořte lokální API server pro náš projekt. Založted si někde na disku složku `odkazy-api` a otevřete ji ve VS Code.
 1. Vytvořte v ní soubor `links.json` a vložte do něj pole několika odkazů, abychom mělik do začátku nějaká data. Rozmyslete si, jak by měl objekt jednoho odkazu vypadat. Určitě budeme chtít evidovat
-   
+
    - URL na kterou odkaz míří, např. `https://www.seznam.cz`,
    - název odkazu, např. `Seznam`,
    - popis odkazu, např. `Nejlepší český vyhledávač`.
    - typ odkazu, např. `web`, `youtube video` apod.
 
    Sami si rozmyslete, jak se budou jednotlivé vlastnosti jmenovat a jaké hodnoty budou mít. Vytvořte si alespoň dva objekty s různými hodnotami.
+
 1. **Nezapomeňte**, že každá položka musí být číselné `id`.
 1. Rozeběhněte si lokální server pomocí `npx jsonhost`. Otevřete si v prohlížeči stránku [http://localhost:4000/api/links](http://localhost:4000/api/links) a ověřte, že se vám zobrazují data z vašeho souboru.
 1. Založte si nový Vite/JSX projekt pomocí `npm init kodim-app@latest spravce-odkazu jsx`. Otevřete si složku projektu v novém okně VS Code.

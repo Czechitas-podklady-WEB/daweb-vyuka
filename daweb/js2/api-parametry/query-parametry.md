@@ -5,7 +5,7 @@ Ve vícestránkových aplikacích si často budeme chtít předávat informace z
 - Location hash je určený pro navigaci uvnitř jedné stránky. Takže jsem jej vlastně trochu zneužívali pro účely, pro které nebyl vymyšlen.
 - Do hashe se obtížně vkládá více informací. Museli bychom vymýšlet nějaké způsoby, jak je oddělit, například pomocí znaku `,` nebo `;`. To je však zbytečně složité.
 
-Pro předávání informací z jedné stránky na druhou se standardně používají takzvané _query parametry_. Ty už jsem několikrát viděli například při práci s API pro východ a západ slunce. 
+Pro předávání informací z jedné stránky na druhou se standardně používají takzvané _query parametry_. Ty už jsem několikrát viděli například při práci s API pro východ a západ slunce.
 
 ```
 https://api.sunrise-sunset.org/json?lat=50&lng=14.5
@@ -13,7 +13,7 @@ https://api.sunrise-sunset.org/json?lat=50&lng=14.5
 
 Zde vidíme dva query parametry `lat` a `lng` oddělené znakem `&`. Každý z nich má svou hodnotu, kterou vidímze za znakem `=`.
 
-Naším hlavím cílem je naučit se query parametry přečíst pomocí JavaScriptu. 
+Naším hlavím cílem je naučit se query parametry přečíst pomocí JavaScriptu.
 
 ## Query parametry v JavaScriptu
 
