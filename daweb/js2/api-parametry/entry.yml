@@ -1,0 +1,9 @@
+title: Lokální API a URL parametry
+lead: Rozeběhneme lokální API server a naučíme se používat URL parametry
+access: claim
+sections:
+  - lokalni-api
+  - cv-lokalni-api
+  - query-parametry
+  - cv-query-parametry
+  - shrnuti
