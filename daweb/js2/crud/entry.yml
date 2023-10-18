@@ -3,5 +3,4 @@ lead: Data na serveru nemusíme jen vytvářet, můžeme je také měnit nebo ma
 access: 'claim'
 sections:
   - put-delete
-  - cv-put-delete
-
+  - cv-crud
