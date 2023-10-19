@@ -2,7 +2,7 @@
 title: Přestupný rok jako funkce
 demand: 2
 lead: Napište funkci, která zjistí, zda je zadaný rok přestupný.
-solutionAccess: allow
+solutionAccess: lock
 ---
 
 Napište funkci `isLeapYear`, která jako svůj parametr obdrží celé číslo představující rok. Funkce vrátí `true`, pokud je zadaný rok přestupný. V opačném případě vrátí `false`.

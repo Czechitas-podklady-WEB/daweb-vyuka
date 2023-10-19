@@ -2,7 +2,7 @@
 title: Registrace na očkování
 demand: 2
 lead: Zkontrolujte, zda je uživatel starší 65 let a zda má silné heslo.
-solutionAccess: allow
+solutionAccess: lock
 ---
 
 V předchozí lekci jsem vytvářeli stránku pro registraci na očkování. Chtěli jsme po uživateli jméno a věk. Nyní budeme chtít, aby uživatel zadal také heslo. To bychom v pozdější verzi aplikaci mohli použít například k přihlášení do systému.

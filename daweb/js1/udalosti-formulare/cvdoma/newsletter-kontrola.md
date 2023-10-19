@@ -2,7 +2,7 @@
 title: Newsletter, kontrola
 lead: 'Kontrola vstupu ve formuláři.'
 demand: 2
-solutionAccess: allow
+solutionAccess: lock
 ---
 
 Pokračujte v příkladu [Newsletter](/vyvoj-webu/daweb/js1/udalosti-formulare/cv-zaklady/newsletter) z lekce. V tomto cvičení zařidíme, aby uživatel při zadávání e-mailu dostal zpětnou vazbu, pokud zadává neplatný vstup.

@@ -2,7 +2,7 @@
 title: Vlastnosti a metody
 demand: 1
 lead: Vyzkoušejte si vlastnosti a metody řetězců.
-solutionAccess: allow
+solutionAccess: lock
 ---
 
 V JavaScriptovém programu si založte proměnnou `title` a uložte do ní **název svého oblíbeného filmu** (např. _Pán prstenů_). Proveďte následující úkoly.

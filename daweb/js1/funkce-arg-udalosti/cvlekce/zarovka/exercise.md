@@ -2,7 +2,7 @@
 title: Žárovka
 lead: 'Ovládejte žárovku.'
 demand: 2
-solutionAccess: allow
+solutionAccess: lock
 ---
 
 Vytvořte si repozitář ze šablony [cviceni-zarovka](https://github.com/Czechitas-podklady-WEB/cviceni-zarovka) se stránkou, která zobrazuje obyčejnou žárovku.

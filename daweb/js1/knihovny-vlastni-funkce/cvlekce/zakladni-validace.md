@@ -2,7 +2,7 @@
 title: Základní validace
 demand: 2
 lead: Ověřte, že e-mailová adresa je ve správném tvaru.
-solutionAccess: allow
+solutionAccess: lock
 ---
 
 1. Vytvořte prázdnou stránku, do které vložte knihovnu `validator.js` a svůj JavaScript `index.js`.

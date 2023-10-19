@@ -2,7 +2,7 @@
 title: Palindromy
 demand: 3
 lead: Vyhrajte soutěž v hledání palindromů.
-solutionAccess: allow
+solutionAccess: lock
 ---
 
 Účastníte se celostátního kola soutěže řešitelů křížovek. Soutěží se v hledání palindromů. Proti vám stojí největší mozky z celé země. V pravidlech však není vysloveně zakázáno pomáhat si JavaScriptem. Využijte toho a napište program, který vám bude palindromy hledat.

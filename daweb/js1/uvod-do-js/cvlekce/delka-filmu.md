@@ -2,7 +2,7 @@
 title: Délka filmu
 demand: 2
 lead: Spočítejte, kolik hodin a minut trvá film Pán prstenů.
-solutionAccess: allow
+solutionAccess: lock
 ---
 
 V programu kin se často uvádí délka filmu v minutách. Například rozšířená verze filmu :i[Pán prstenů: Dvě věže] trvá **223 minut**. My bychom ovšem délku filmu raději věděli **v hodinách a minutách**.

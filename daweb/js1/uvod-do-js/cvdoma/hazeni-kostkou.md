@@ -2,7 +2,7 @@
 title: Házení kostkou
 demand: 3
 lead: Vymyslete funkci, která simuluje hod kostkou.
-solutionAccess: allow
+solutionAccess: lock
 ---
 
 Vymyslete, jak použít funkci `Math.random` a různé zaokrouhlovací funkce probírané v této lekci k simulování hodu klasickou šestistěnnou kostkou. S použitím vhodných funkcí sestavte výraz, který vygeneruje náhodné celé číslo **mezi 1 a 6**.

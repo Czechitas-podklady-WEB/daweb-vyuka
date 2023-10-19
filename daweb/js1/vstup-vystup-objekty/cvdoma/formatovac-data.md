@@ -2,7 +2,7 @@
 title: Formátovač data
 demand: 2
 lead: Vypište do stránky hezky zformátované datum.
-solutionAccess: allow
+solutionAccess: lock
 ---
 
 Vytvořte stránku, která se zeptá uživatele na den, měsíc a rok a vypíše do stránky datum v hezkém formátu.

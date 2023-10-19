@@ -2,7 +2,7 @@
 title: Minutka 2
 demand: 3
 lead: Vylepšete aplikaci Minutka.
-solutionAccess: allow
+solutionAccess: lock
 ---
 
 Vytvořte si repozitář ze šablony [cviceni-minutka-2](https://github.com/Czechitas-podklady-WEB/cviceni-minutka-2) pro vylepšenou kuchyňskou minutku.
