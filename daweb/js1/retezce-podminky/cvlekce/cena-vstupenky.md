@@ -2,7 +2,7 @@
 title: Cena vstupenky
 demand: 2
 lead: Spočítejte cenu vstupenky do divadla.
-solutionAccess: allow
+solutionAccess: lock
 ---
 
 Pokusme se o základ jednoduchého rezervačního sestému pro vstupenky do divadla.

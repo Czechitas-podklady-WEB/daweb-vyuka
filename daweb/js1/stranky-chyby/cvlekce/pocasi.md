@@ -2,7 +2,7 @@
 title: Počasí
 demand: 2
 lead: Vytvořte aplikaci zobrazující aktuální počasí.
-solutionAccess: allow
+solutionAccess: lock
 ---
 
 Podobných postupem jako jsme na lekci tvořili aplikaci _Zprávičky_ zkuste vytvořit vlastní aplikaci, která bude zobrazovat počasí na aktální týden.

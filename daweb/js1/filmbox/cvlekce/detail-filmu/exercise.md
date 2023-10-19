@@ -1,7 +1,7 @@
 ---
 title: 'Bonus: Detail filmu'
 demand: 4
-solutionAccess: allow
+solutionAccess: lock
 ---
 
 Zobrazte příslušné informace o filmu na stránce s detailem.

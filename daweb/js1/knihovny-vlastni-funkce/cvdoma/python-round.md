@@ -2,7 +2,7 @@
 title: Python zaokrouhlování
 demand: 3
 lead: Vytvořte pokročilou zaokrouhlovací funkci.
-solutionAccess: allow
+solutionAccess: lock
 ---
 
 Jak jistě znalci jazyka Python dobře vědí, funkce `round` v tomto jazyce zaokrouhluje malinko jinak, než jsme zvyklí. Pokud je desetinná část čísla přesně 0.5, Python zaokrouhluje k nejbližšímu sudému číslu. JavaScriptová funkce `Math.round` naopak provádí zaokrouhlování způsobem, na který jste zvyklí, tedy pro 0.5 vždy nahoru.

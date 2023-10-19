@@ -2,7 +2,7 @@
 title: Výplata jako stránka
 demand: 2
 lead: Spočítejte, kolik si jako programátor vyděláte.
-solutionAccess: allow
+solutionAccess: lock
 ---
 
 1. Vytvořte webovou stránku, která uživatele požádá o jeho hodinovou sazbu v korunách a spočítá jeho hrubou mzdu za předpokladu, že pracuje 8 hodin denně 21 dní v měsíci. Do stránky vypište výsledek zabalený do nějaké přívětivé formulace. Dbejte na to, abyste korektně převedli uživatelem zadanou hodnotu na číslo.

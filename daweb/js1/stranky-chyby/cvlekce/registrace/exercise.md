@@ -1,7 +1,7 @@
 ---
 title: Registrace
 demand: 1
-solutionAccess: allow
+solutionAccess: lock
 ---
 
 Připravte si základ stránky pro registraci uživatele. Vložte na stránku textové políčko a tlačítko s nápisem _registrovat_.

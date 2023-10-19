@@ -2,7 +2,7 @@
 title: Příjem divadla
 demand: 2
 lead: Spočítejte příjem divadla ze vstupného.
-solutionAccess: allow
+solutionAccess: lock
 ---
 
 1. Jeden lístek do divadla :i[Pěst na oko] stojí **12 euro**. Spočítejte měsíční příjem divadla ze vstupného, přichází-li průměrně **174 návštěvníků** na jedno představení a divadlo hraje **15 představení** měsíčně. Uložte výsledek do proměnné `prijem`.

@@ -2,7 +2,7 @@
 title: Počítání oveček
 demand: 2
 lead: Vypište do stránky ovčí příběh pro děti na dobrou noc.
-solutionAccess: allow
+solutionAccess: lock
 ---
 
 Vytvořte JavaScriptový program, který vepíše do stránky ovčí příběh pro děti na dobrou noc. Výsledkem by měl být text počítající ovečky.

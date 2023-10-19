@@ -1,7 +1,7 @@
 ---
 title: Seznam filmů
 demand: 3
-solutionAccess: allow
+solutionAccess: lock
 ---
 
 Na stránce se seznamem filmů vypište karty se všemi filmy z pole `filmy`.

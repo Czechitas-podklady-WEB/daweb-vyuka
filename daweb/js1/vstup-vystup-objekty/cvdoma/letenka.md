@@ -2,7 +2,7 @@
 title: Letenka
 demand: 2
 lead: Vypište informace o letu.
-solutionAccess: allow
+solutionAccess: lock
 ---
 
 Vytvořte webovou stránku s JavaScriptem a do kódu vašeho programu vložte následující objekt představující reálná data o letu z Prahy do Barcelony.

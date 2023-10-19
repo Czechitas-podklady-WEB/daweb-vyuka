@@ -2,7 +2,7 @@
 title: Výplata
 demand: 1
 lead: Pomocí jednoduché aritmetiky spočítejte, kolik si jako programátor vyděláte.
-solutionAccess: allow
+solutionAccess: lock
 ---
 
 1. Založte si novou prázdnou stránku s JavaScriptovým programem.
