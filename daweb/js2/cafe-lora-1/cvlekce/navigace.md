@@ -1,6 +1,6 @@
 ---
 title: Zprovoznění navigace
-lead: Rozhoďte navigaci, aby fungovala i na úzkých displejích.
+lead: Rozchoďte navigaci, aby fungovala i na úzkých displejích.
 demand: 3
 ---
 
