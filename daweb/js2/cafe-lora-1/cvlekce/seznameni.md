@@ -1,18 +1,12 @@
 ---
 title: Seznámení s projektem
-lead: Založte si repozitář s seznamte se zadáním projektu.
+lead: Naklonujte si repozitář a seznamte se se zadáním projektu.
 demand: 2
 ---
 
-Design cílové stránky v HTML a CSS spolu s veškerými obrázky najdete v repozitáři [Cafe-Lora](https://github.com/Czechitas-podklady-WEB/Cafe-Lora). Poděkujte grafikům a kodérům, kteří pro vás tento návrh připravili a vy se už můžete zabývat pouze programováním.
+Projekt Café Lóra nebudeme dělat úplně na zelené louce. Budeme vycházet z již připraveného základu, V tomto cvičení se seznámíme s tím, co všechno je pro nás připraveno a jakým způsobem budeme pracovat.
 
-Repozitář s designem si rovnou naklonujte. **Neforkujte** jej a nedělejte v něm žádné změny, slouží **pouze jako zdroj HTML a CSS**. V následujících krocích si pro váš projekt založíte vlastní repozitář na svém GitHubu.
-
-1. Seznamte se se zdrojovým kódem, který je pro vás v projektu připraven. Spusťte si web pomocí `npx serve`. Prohlédněte si HTML a CSS obou stránek.
-1. Na stránkách najdete příklad nápojů a objednávky. Tato data samozřejmě budeme později stahovat z API.
-1. Na vašem vlastním GitHubu si založte repozitář `cafelora`. Repozitář si naklonujte, otevřete ve VS Code a v termínálu spusťte příkaz
-   ```bash
-   npm init kodim-app@latest . jsx
-   ```
-   čímž, jak jistě víte, vytvořte základ Vite/JSX JavaScriptového projektu. Commitněte změny s hezky formulovanou zprávou.
-1. Projekt si spusťte pomocí `npm run dev` a jste připraveni začít programovat.
+1. Základ celé stránky, kterou budete postupně tvořit najdete v repozitáři [cafelora](https://github.com/Czechitas-podklady-WEB/cafelora). Pomocí _Use this template_ si vytvořte kopii tohoto repozitáře na svém GitHubu a naklonujte si ji do svého počítače.
+1. Základní strukturu a design cílové stránky v JSX a CSS spolu s veškerými obrázky najdete v připraveném repozitáři. Poděkujte grafikům a kodérům, kteří pro vás tento návrh připravili a vy se už můžete zabývat pouze programováním.
+1. Seznamte se se zdrojovým kódem, který je pro vás v projektu připraven. Spusťte si web pomocí `npm run dev`. Prohlédněte si HTML a CSS obou stránek a vyzkoušejte si obě stránky zobrazit v prohlížeči.
+1. Na stránkách najdete příklad nápojů a objednávky. Tato data samozřejmě budeme později stahovat z API, nyní jsou zde pouze jako ukázka.
