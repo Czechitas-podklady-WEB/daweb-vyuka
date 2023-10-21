@@ -30,6 +30,6 @@ Vytvoříme komponentu `Drink`, která zatím nebude mít funkční objednávac�
     ```
 
 1.  Komponenta `Drink` zatím nebude využívat ani vlastnost `layers`. Ingredience zatím nechte tak, jak jsou zobrazené ve stránce se zadáním. Komponentu pro ingredience vytvoříme v následujícím cvičení. Zatím na stránce klidně zobrazte pouze jeden nápoj, ať se moc nenadřete.
-1.  Adresa obrázku, který se má zobrazit, je uložena ve vlastnosti `image`. Tato cesta se použije pro atribut `src` obrázku.
+1.  Adresa obrázku, který se má zobrazit, je uložena ve vlastnosti `image`. Tato cesta se použije pro atribut `src` obrázku. Obrázky se vám zatím nebudou zobrazovat – to zprovozníme až později. Pokud chcete obrázky vyzkoušet hned, zprovozněte si dopředu API postupem popsaným v druhé části projektu v úkolu [Zprovoznění API](/vyvoj-webu/daweb/js2/cafe-lora-2/projekt/napoje-api).¨
 1.  Tlačítko zatím pouze zobrazte, funkčnost mu přidáme v dalším kroku.
 1.  V této fázi si commitněte kód s užitečně napsanou commit zprávou a pushněte do vzdáleného repozitáře.
