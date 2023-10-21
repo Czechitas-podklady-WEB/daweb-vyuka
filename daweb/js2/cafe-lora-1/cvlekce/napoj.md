@@ -13,6 +13,7 @@ Vytvoříme komponentu `Drink`, která zatím nebude mít funkční objednávac�
 
     ```jsx
     <Drink
+      id={0}
       name="Romano"
       ordered={false}
       image="https://localhost:4000/assets/cups/romano.png"
