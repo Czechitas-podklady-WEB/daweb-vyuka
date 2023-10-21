@@ -10,9 +10,7 @@ demand: 3
 1.  Samotné objednání nápoje provedete pomocí PATCH požadavku na API endpoint `/api/drinks/:id`. Tento požadavek bude mít v těle JSON pole s objektem, tělo požadavku tedy bude vypadat takto:
 
     ```js
-    [
-        { op: 'replace', path: '/ordered', value: true }
-    ]
+    [{ op: 'replace', path: '/ordered', value: true }];
     ```
 
     Proveďte tento požadavek pomocí `fetch` a zkontrolujte, že se vám v konzoli vypíše odpověď od API. Jakmile je váš kód funkční, proveďte refresh stránky, aby se vám zobrazila aktuální data.
