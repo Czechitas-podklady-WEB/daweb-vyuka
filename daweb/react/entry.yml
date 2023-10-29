@@ -2,13 +2,11 @@ title: React
 lead: Díky Reactu budete schopni vytvářet profesionální webové aplikace mnohem rychleji než v čistém JavaScriptu.
 lessons:
   - uvod-do-reactu
-# - podminene-zobrazeni
-# - seznamy
-  - udalosti-stav
   - formulare-efekty
   - komunikace-dite-rodic
   - komunikace-sourozenci
   - react-router
   - leviexpress-1
   - leviexpress-2
-  - chyby-async-await
+  - navrh
+  - ui-knihovny

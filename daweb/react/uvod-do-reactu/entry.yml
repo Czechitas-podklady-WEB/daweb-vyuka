@@ -2,9 +2,9 @@ title: Úvod do Reactu
 lead: Napíšeme si první aplikace v Reactu a představíme si hlavní principy tohoto moderního frameworku.
 sections:
   - prvni-aplikace
-  - obsah-stranky
-  - vkladani-hodnot
-  - cv-prvni-aplikace
-  - komponenty-props
-  - doporucene-postupy
-  - cv-react-komponenty
+  - cv-react
+  - udalosti
+  - stav
+  - stav-pravidla
+  - cv-udalosti-stav
+  - shrnuti
