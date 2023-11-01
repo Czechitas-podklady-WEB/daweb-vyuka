@@ -51,3 +51,28 @@ setTankLevel('almost empty');
 ```
 
 Tím spustíme přerenderování komponenty s novým stavem, kde v `tankLevel` bude uloženo `'almost emmpty'`.
+
+### Stav a události
+
+Nejčastěji měníme stav komponenty v reakci na nějakou událost. Například v komponentě `Auto` můžeme mít tlačítko, které při kliknutí sníží stav nádrže, což sice není příliš realistické, ale pro ilustraci nám to zatím bude stačit.
+
+```js
+import React, { useState } from 'react';
+
+const Auto = () => {
+  const [tankLevel, setTankLevel] = useState('full');
+
+  const handleClick = () => {
+    setTankLevel('almost empty');
+  };
+
+  return (
+    <div className="auto">
+      Tank level: {tankLevel}
+      <button onClick={handleClick}>Drive</button>
+    </div>
+  );
+};
+```
+
+Po zavolání `setTankLevel` se komponenta takzvaně _překreslí_, též se říká _přerenderuje_. To znamená, že se znovu vykreslí na stránce, tentokrát s novou hodnotu stavu. Takto můžeme zařídit, že se obnoví jen ta část stránky, která se opravdu změnila a nemusíme ji celou znovu načítat, jak jsme byli zvyklí v čistém JavaScriptu s JSX.
