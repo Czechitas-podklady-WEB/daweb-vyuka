@@ -16,4 +16,4 @@ Co všechno je možné na projektu udělat:
 1. Pomocí JavaScriptu zvýraznit barvu, kterou si uživatel vybral. Obarvit košili danou barvou.
 1. Zařídit, aby šla vybrat pouze jedna barva.
 
-Pokud pracujete v JavaScriptu, vyberte si techniky, které znáte a ve kterých se cítíte pohodlně. Pokud máte chuť, vykouštejte si komponenty, vlastní DOM elementy nebo třeba Webpack.
+Pokud pracujete v JavaScriptu, vyberte si techniky, které znáte a ve kterých se cítíte pohodlně.
