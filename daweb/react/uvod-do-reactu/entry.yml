@@ -4,8 +4,9 @@ sections:
   - prvni-aplikace
   - cv-react
   - udalosti
+  - cv-udalosti
   - stav
   - stav-pravidla
-  - cv-udalosti-stav
+  - cv-stav
   - ulozky-na-doma
   - shrnuti
