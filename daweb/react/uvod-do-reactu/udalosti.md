@@ -36,7 +36,7 @@ const HomePage = () => {
 
 ### Přímá manipulace s obsahem stránky
 
-V kurzu JavaScript 1 jsme obsah stránky měnili pomocí funkce `querySelector` a nastavování vlastností jako `textContent`, `className` apod. Později, v kurzu JavaScript 2 jsme přešli na JSX a obsah stránky jsmě změnili tak, že jsem ji celou načetli znova. 
+V kurzu JavaScript 1 jsme obsah stránky měnili pomocí funkce `querySelector` a nastavování vlastností jako `textContent`, `className` apod. Později, v kurzu JavaScript 2 jsme přešli na JSX a obsah stránky jsmě změnili tak, že jsem ji celou načetli znova.
 
 V Reactu se až na velké výjimky nepoužívá žádný ze zmíněných přístupů. K aktualizaci stránky se využije technika, kdy se aktualizuje pouze obsah komponenty, které se nějak změnila data. Všechny ostatní komponenty zůstávají nedotčené. Toto umožňuje opravdu rychlou odezvu stránky a je to hlavní a nejdůležitější myšlenka Reactu, kvůli které vlastně celý React vzniknul.
 
