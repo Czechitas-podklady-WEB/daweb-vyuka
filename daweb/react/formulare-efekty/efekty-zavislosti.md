@@ -28,7 +28,7 @@ export const HomePage = () => {
         `https://nameday.abalin.net/api/V1/getdate?day=${den}&month=${mesic}`
       );
       const data = await response.json();
-      setName(data.namedays.cz);
+      setName(data.nameday.cz);
     };
 
     fetchName();
