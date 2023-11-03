@@ -126,7 +126,7 @@ Score
 
 TaskList
   :api http://localhost:4000/api/tasks
-  
+
   Task
     :props task
 ```
