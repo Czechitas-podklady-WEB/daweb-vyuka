@@ -1,7 +1,7 @@
 ---
 title: Stav
 demand: 4
-solutionAccess: lock
+solutionAccess: allow
 lead: Vyzkoušejte si práci se stavem v Reactu.
 ---
 
@@ -11,8 +11,8 @@ lead: Vyzkoušejte si práci se stavem v Reactu.
 1. Spusťte vývojový server přes `npm run dev`.
 1. Postupně projděte soubory `src/Uloha1/index.jsx`, `src/Uloha2/index.jsx`, `…` a vypracujte zadání v komentářích.
 
-<!-- :::solution
+:::solution
 
-Vypracované řešení najdete v původním repozitáři ve větvi [reseni](https://github.com/Czechitas-podklady-WEB/cviceni-react-stav/tree/reseni).
+Příklad možného řešení najdete v původním repozitáři ve větvi [reseni](https://github.com/Czechitas-podklady-WEB/cviceni-react-stav/tree/reseni).
 
-::: -->
+:::
