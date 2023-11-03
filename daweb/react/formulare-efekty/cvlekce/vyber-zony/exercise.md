@@ -1,5 +1,6 @@
 ---
 title: Výběr zóny
+lead: Vytvořte aplikaci, která zobrazuje aktuální čas ve zvolené časové zóně.
 demand: 2
 ---
 
