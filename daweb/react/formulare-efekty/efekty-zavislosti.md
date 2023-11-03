@@ -1,6 +1,6 @@
 ## Efekty se závislostmi
 
-Zatím jsme viděli efekty, které se spouštějí pouze jednou, tedy ve chvíli, kdy se komponenta poprvé objeví na stránce. Občas však potřebujeme efekt, který se spustí pokaždé, když se změní nějaká stavová proměnná nebo _prop_. Takový efekt vyrobíme tak, že do hranatých závorek napíšeme stavovou proměnnou nebo _prop_, na kterou má efekt reagovat, nebo-li na které spuštění efektu záviset.
+Zatím jsme viděli efekty, které se spouštějí pouze jednou, tedy ve chvíli, kdy se komponenta poprvé objeví na stránce. Občas však potřebujeme efekt, který se spustí pokaždé, když se změní nějaká stavová proměnná nebo _prop_. Takový efekt vyrobíme tak, že do hranatých závorek napíšeme stavovou proměnnou nebo _prop_, na kterou má efekt reagovat, nebo-li na které má spuštění efektu záviset.
 
 ```js
 const Komponenta = () => {
@@ -14,7 +14,7 @@ const Komponenta = () => {
 };
 ```
 
-Tato technika se nám hodí nejčastějí ve chvíli, kdy chceme stáhnout nějaká data z API ve chvíli, kdy komponenta změní svůj stav. V našem příkladu si stáhneme jméno z API, které má svátek v den, který uživatel vybere v kalendáři.
+Tato technika se nám hodí nejčastěji ve chvíli, kdy chceme stáhnout nějaká data z API ve chvíli, kdy komponenta změní svůj stav. V našem příkladu si stáhneme jméno z API, které má svátek v den, který uživatel vybere v kalendáři.
 
 ```jsx
 export const HomePage = () => {
