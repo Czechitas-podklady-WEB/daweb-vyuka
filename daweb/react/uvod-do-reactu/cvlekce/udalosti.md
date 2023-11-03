@@ -2,7 +2,7 @@
 title: Události
 demand: 3
 lead: Vyzkoušejte si práci s událostmi v Reactu.
-solutionAccess: allow
+solutionAccess: lock
 ---
 
 1. Vytvořte si repozitář ze šablony [cviceni-react-udalosti](https://github.com/Czechitas-podklady-WEB/cviceni-react-udalosti).
@@ -11,8 +11,8 @@ solutionAccess: allow
 1. Spusťte vývojový server přes `npm run dev`.
 1. Postupně projděte soubory `src/Uloha1/index.jsx`, `src/Uloha2/index.jsx`, `…` a vypracujte zadání v komentářích.
 
-:::solution
+<!-- :::solution
 
-Příklad možného řešení najdete v původním repozitáři ve větvi [reseni](https://github.com/Czechitas-podklady-WEB/cviceni-react-stav/tree/reseni).
+Vypracované řešení najdete v původním repozitáři ve větvi [reseni](https://github.com/Czechitas-podklady-WEB/cviceni-react-udalosti/tree/reseni).
 
-:::
+::: -->
