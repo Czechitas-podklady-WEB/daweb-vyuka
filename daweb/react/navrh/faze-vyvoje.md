@@ -1,6 +1,6 @@
 ## Fáze vývoje webové aplikace
 
-V mnoha cvičeních a projektech v tomto kurzu už jste jistě zažili, že i tu úplně nejobyčejnější webovou aplikaci nikdo nezvládne napsat najednou, takříkajíc z voleje. Vždy je potřeba si práci nějak dopředu rozvrhnout a naplánovat si jednotlivé fáze. 
+V mnoha cvičeních a projektech v tomto kurzu už jste jistě zažili, že i tu úplně nejobyčejnější webovou aplikaci nikdo nezvládne napsat najednou, takříkajíc z voleje. Vždy je potřeba si práci nějak dopředu rozvrhnout a naplánovat si jednotlivé fáze.
 
 Při vývoji webových aplikaci většinou postupujeme podle následujícího schématu:
 

@@ -1,8 +1,8 @@
 ## Formulářové prvky
 
-Díky tomu, že jsme se v minulé lekci naučili pracovat se stavem, otvírají se nám v Reactu mnohé nové možnosti.
+Díky tomu, že jsme se v minulé lekci naučili pracovat se stavem, otevírá se nám v Reactu mnoho nových možností.
 
-Formulářové prvky jako textová políčka, zaškrtávací tlačítka apod. jsou jedním z hlavních způsobů, jak získat vstup od uživatele. V čistém JavaScritpu jsme zvyklí získávat hodnoty z těchto prvků tak, že je vybereme pomocí `querySelector` a použijeme například vlastnost `value`.
+Formulářové prvky jako textová políčka, zaškrtávací tlačítka apod. jsou jedním z hlavních způsobů, jak získat vstup od uživatele. V čistém JavaScriptu jsme zvyklí získávat hodnoty z těchto prvků tak, že je vybereme pomocí `querySelector` a použijeme například vlastnost `value`.
 
 ```html
 <form>
