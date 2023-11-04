@@ -2,4 +2,3 @@
 
 ::exc[cvdoma/hodnoceni]
 ::exc[cvdoma/hodnoceni-2]
-
