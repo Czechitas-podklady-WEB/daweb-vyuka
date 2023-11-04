@@ -27,6 +27,6 @@ solutionAccess: lock
 
 :::solution
 
-Řešení naleznete v samostatném [Codesanboxu zde](https://codesandbox.io/s/da-web-prazsky-cas-8n3ruv?file=/src/App.jsx).
+Řešení naleznete v samostatném [Codesandboxu zde](https://codesandbox.io/s/da-web-prazsky-cas-8n3ruv?file=/src/App.jsx).
 
 :::
