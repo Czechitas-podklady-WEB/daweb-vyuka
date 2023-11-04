@@ -1,17 +1,17 @@
 ---
 title: Hodnocení
-demand: 3
+lead: Oživte komponentu pro hodnocení pomocí hvězdiček.
+demand: 4
+solutionAccess: lock
 ---
 
 V tomto cvičení vdechneme život komponentě, která umožňuje hodnocení pomocí hvězdiček. To znáte například z hodnocení filmů nebo třeba restaurací a hotelů.
 
 1. Vytvořte si repozitář ze šablony [cviceni-hodnoceni](https://github.com/Czechitas-podklady-WEB/cviceni-hodnoceni) obsahující React stránku s hodnocením pomocí pěti hvězdiček.
-1. Prohlédněte si, jak fungují komponenty `Rating` a `Star`. V následujicích bodech budeme chtít zařídit, aby se při rozsvícení libovolné hvězdičky zvýšilo číslo udávající hodnocení o jedna. V tomto případě nám nebude vadit, když budeme hvězdičky rozsvěcet mimo pořadí
-1. V komponentě `Star` vyrobte handler pro událost `onClick`. Zařiďte, aby se hvězdička po kliknutí rozsvítila a po opětovném kliknutí opět zhasla.
-1. Do komponenty `Star` přidejte prop `onGlow`. Toto bude funkce, která se zavolá, když se hvězdička rozsvítí.
-1. V komponentě `Rating` vytvořte funkci `handleGlow`. Tuto funkci obdrží všechny hvězdičky jako prop. Zatím do ní dejte pouze nějaký `console.log`.
-1. V komponentě `Star` zavolejte funkci `onGlow` jen v případě, že se hvězdička rozsvěcí. Vyzkoušejte, že v konzoli vidíte výpisy z funkce `handleGlow`.
-1. Nyní upravte funkci `handleGlow` tak, aby ke stavu `value` přičetla jedničku. Pokochejte se, jak to všechno krásně funguje.
-1. Nyní budeme chtít od hodnocení odečíst jedničku, když se hvězdička zhasne. Komponenta `Star` tedy bude mít druhou prop s názvem `onDim`, která se zavolá při zhasnutí hvězdičky. K tomu budeme na straně komponenty `Rating` potřebovat funkci `handleDim`. Postup je analogický jako v případě rozsvěcení, jistě jej zvládnete bez dalších instrukcí.
+1. Prohlédněte si, jak fungují komponenty `Rating` a `Star`. V následujicích bodech budeme chtít zařídit, aby se při rozsvícení libovolné hvězdičky zborazilo správné číslo udávající hodnocení.
+1. V komponentě `Star` vyrobte handler pro událost `onClick`. Zařiďte, aby se hvězdička po kliknutí rozsvítila. Zatím nepotřebujeme, aby šlo hvězdičku zhasnout.
+1. Každá hvězdička potřebuje vědět, jaké číslo se má po kliknutí na ni zobrazit. Do komponenty `Star` proto přidejte prop `value`, která bude obsahovat číslo, které se má po kliknutí zobrazit. První hvězdička tak bude mít `value={1}`, druhá `value={2}` apod.  Zajimavé je, že hvězdička toto číslo nebude nijak zobrazovat, ale pouze ho později předá komponentě `Rating`, když se na hvězdičku klikne. To provedeme v následujících krocích. 
+1. Do komponenty `Star` přidejte prop `onSelect`. Toto bude funkce, která se zavolá pouze v případě, když se hvězdička rozsvěcuje. Komponenta tuto funkci zavolá při kliknutí na hvězdičku a pošle jí jako parametr hodnotu `value`, kterou jsme v předchozím kroku přidali.
+1. V komponentě `Rating` předejte skrze prop `onSelect` všem instancím komponenty `Star` callback, který nastaví stav `rating` na hodnotu, kterou mu komponenta `Star` předala.
 
-Zatím si můžeme hvězdičky zhasínat a rozsvěcet, jak se nám zachce, i mimo pořadí. To napravíme v dalším cvičení.
+Nyní by mělo být možné kliknutím na hvězdičky nastavit správné hodnocení. Hvezdičky se sice nechovají úplně správně, protože bychom chtěli, aby se při kliknutí na hvězdičku rozsvítily všechny hvězdičky s nižším číslem. To si však necháme na další cvičení. 
