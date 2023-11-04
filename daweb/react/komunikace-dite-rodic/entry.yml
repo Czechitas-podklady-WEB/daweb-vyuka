@@ -5,6 +5,6 @@ sections:
   - rodic-dite
   - dite-rodic
   - cv-komunikace
-  - ulozky
-  - dobrovolne
-  - cvicny-projekt
+  # - ulozky
+  # - dobrovolne
+  # - cvicny-projekt
