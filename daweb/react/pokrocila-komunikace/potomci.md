@@ -13,9 +13,9 @@ const CandidateList = ({ candidates, onVote }) => {
       {candidates.map((c) => (
         <Candidate
           key={c.name}
-          name={c.name} 
+          name={c.name}
           avatar={c.avatar}
-          onVote={onVote} 
+          onVote={onVote}
         />
       ))}
     </div>
