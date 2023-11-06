@@ -2,7 +2,7 @@
 
 ::exc[cvlekce/komunikace]
 
-V následujících dvou cvičeních si budeme hrát s hamburge menu.
+V následujících dvou cvičeních si budeme hrát s hamburger menu.
 
 ::exc[cvlekce/hamburger-menu]
 ::exc[cvlekce/nazev-stranky]
