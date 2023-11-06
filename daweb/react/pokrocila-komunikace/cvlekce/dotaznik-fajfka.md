@@ -1,6 +1,8 @@
 ---
 title: Dotazník s fajfkou
+lead: Zařiďte, aby se po kliknutí na odpověď zobrazil symbol fajfky.
 demand: 3
+solutionAccess: lock
 ---
 
 V našem dotazníku budeme chtít zařídit, že po kliknutí na jednu z 5 možných odpovědí se u otázky zobrazí ikonka fajfky. To provedeme tak, že dvě děti `Option` a `QuestionBody` spolu budou komunikovat skrze stav rodiče.
