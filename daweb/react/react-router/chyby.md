@@ -30,6 +30,10 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
+      // naše další cesty
+    ],
+  },
+]);
 ```
 
 Poté si můžeme vyzkoušet přístup na nějakou neexistující URL adresu a měli bychom vidět naši specializovanou stránku.
