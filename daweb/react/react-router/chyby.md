@@ -26,7 +26,7 @@ Nyní naši komponentu jednoduše přidáme do routeru.
 ```js
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
