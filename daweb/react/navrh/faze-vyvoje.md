@@ -10,9 +10,9 @@ Při vývoji webových aplikaci většinou postupujeme podle následujícího sc
 1. **Implementace** – naprogramujeme aplikaci podle návrhu. Výsledkem je funkční aplikace, která ještě nemusí být plně odladěná.
 1. **Testování** – otestujeme aplikaci a odstraníme všechny chyby. Výsledkem je funkční aplikace, která je plně odladěná.
 1. **Nasazení** – nahrání aplikace na server, kde bude dostupná pro uživatele.
-1. **Údržba** – oprava chyb a přidávání nových funkcí. 
+1. **Údržba** – oprava chyb a přidávání nových funkcí.
 
-V praxi se tyto fáze často prolínají a některé z nich se mohou opakovat. Například při tvorbě architektury můžeme zjistit, že náš původní návrh není úplně ideální a musíme se vrátit zpět. Nebo při implementaci můžeme zjistit, že náš původní návrh architektury s něčím nepočítal a je potřeba ji upravit nebo úplně předělat. 
+V praxi se tyto fáze často prolínají a některé z nich se mohou opakovat. Například při tvorbě architektury můžeme zjistit, že náš původní návrh není úplně ideální a musíme se vrátit zpět. Nebo při implementaci můžeme zjistit, že náš původní návrh architektury s něčím nepočítal a je potřeba ji upravit nebo úplně předělat.
 
 Když je aplikace nasazená, každá nová funkce, kterou je potřeba přidat, může procházet všemi výše zmíněnými kroky, podle toho, o jak velkou změnu se jedná.
 

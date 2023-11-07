@@ -9,7 +9,10 @@ demand: 3
    ```jsx
    <CollapseBox title="Podrobnosti">
      <h2>Lorem ipsum dolor sit amet</h2>
-     <p>Consectetuer adipiscing elit. Fusce nibh. In laoreet, magna id viverra tincidunt.</p>
+     <p>
+       Consectetuer adipiscing elit. Fusce nibh. In laoreet, magna id viverra
+       tincidunt.
+     </p>
    </CollapseBox>
    ```
 1. Box bud standardně zavřený a bude se zobrazovat pouze záhlaví s titulkem a šipkou ukazující doprava. Kliknutím na záhlaví se šipka změní na šipku ukazující dolů a v boxu se zobrazí obsah. Opětovným kliknutím na záhlaví se box zase zavře.

@@ -6,11 +6,11 @@ Protože nejsme první, koho to napadlo, takových hotových knihoven už existu
 
 Mezi nejznámější patří třeba:
 
-* [Ant Design](https://ant.design/)
-* [MUI](https://mui.com/)
-* [Mantine](https://mantine.dev/)
-* [React Bootstrap](https://react-bootstrap.github.io/)
-* [Semantic UI](https://react.semantic-ui.com/)
-* [Onsen UI](https://onsen.io/react/)
+- [Ant Design](https://ant.design/)
+- [MUI](https://mui.com/)
+- [Mantine](https://mantine.dev/)
+- [React Bootstrap](https://react-bootstrap.github.io/)
+- [Semantic UI](https://react.semantic-ui.com/)
+- [Onsen UI](https://onsen.io/react/)
 
 Existují doslova desítky (možná stovky) dalších, méně známých knihoven. Každá má svoje výhody a nevýhody. Některé mají více nebo méně zabudovaných komponent, některé se snadněji používají.
