@@ -12,7 +12,7 @@ Stránky jako blogy, zpravodajské weby, e-shopy a další však mívají mnohem
 
 Samozřejmě nechceme vytvářet speciální routu pro každou takovou stránku. Místo toho využijeme takzvané _URL parametry_.
 
-### URL parametry
+## URL parametry
 
 Pomocí URL parametru můžeme do URL cesty vložit jakousi proměnnou. Například můžeme říct, že toto je route pro všech faktury.
 

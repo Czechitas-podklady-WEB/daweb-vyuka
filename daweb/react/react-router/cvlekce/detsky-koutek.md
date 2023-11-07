@@ -1,13 +1,15 @@
 ---
 title: Dětský koutek
+lead: Vytvořte jednoduchou stránku pro dětský koutek.
 demand: 3
+solutionAccess: lock
 ---
 
 V tomto cvičení vytvoříte jednoduchou stránku pro dětský koutek. Pomocí knihovny React Router vytvoříte navigaci, která umožní zobrazit různé komponenty na základě cesty v URL.
 
 1. Vygenerujte si novou aplikaci pomocí příkazu
    ```sh
-   npm init kodim-app@latest detsky-koutek
+   npm init kodim-app@latest detsky-koutek react
    ```
 1. Nainstalujte si knihovnu React Router pomocí _npm_:
    ```sh
@@ -16,7 +18,7 @@ V tomto cvičení vytvoříte jednoduchou stránku pro dětský koutek. Pomocí 
 1. Spusťte aplikaci příkazem `npm start` a zkontrolujte, že vám v prohlížeči správně běží.
 1. Nebojte se v následujících krocích inspirovat dokumentací [React Routeru](https://reactrouter.com/en/main/start/overview)!
 1. V hlavním souboru `index.jsx` založte objekt s routami. Zatím zobrazujte pouze hlavní komponentu `App` pod cestou `/`. Nezapomeňte použít `RouterProvider` ve funkci `render`. Vyzkoušejte, že takto vaše aplikace funguje.
-1. V `src` adresáři vytvořte složku `pages` a uvnitř složky s komponentami pro jednotlivé stránky _Home_, _About_ a _Contact_.
+1. V adresáři `pages` vytvořte komponenty pro jednotlivé stránky _Home_, _About_ a _Contact_.
 1. Stránka _Home_ bude obsahovat nadpis a odstavec s textem:
 
    ```
