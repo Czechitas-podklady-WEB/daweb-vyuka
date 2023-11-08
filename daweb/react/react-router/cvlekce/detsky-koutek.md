@@ -19,17 +19,17 @@ V tomto cvičení vytvoříte jednoduchou stránku pro dětský koutek. Pomocí 
 1. Nebojte se v následujících krocích inspirovat dokumentací [React Routeru](https://reactrouter.com/en/main/start/overview)!
 1. V hlavním souboru `index.jsx` založte objekt s routami. Vytvořte si v tomto souboru komponentu `App`, která zatím bude obsahovat pouze nadpis stránky. Zobrazujte ji pod cestou `/`. Nezapomeňte použít `RouterProvider` ve funkci `render`. Vyzkoušejte, že takto vaše aplikace funguje.
 1. V adresáři `pages` už máte vygenerovanou komponentu `HomePage`. Ta by měla obshovat nadpis a text:
+
    > Dětský koutek
-   > 
+   >
    > Vítejte v našem dětském koutku! Jsme místo plné zábavy a dobrodružství pro všechny děti do 6ti let. Najdete u nás hry, aktivity, kvízy a mnoho dalšího, co zabaví vaše ratolesti a > pomůže jim učit se nové věci. Vyberte si některou z našich poboček a začněte objevovat svět plný překvapení!
-   ```
 
 1. Ve složce `pages` vytvořte i komponenty pro stránky _About_ a _Contact_. Stránka _About_ bude obsahovat nadpis a odstavec s textem:
-   
+
    > O nás
-   > 
+   >
    > Jsme tým mladých nadšenců do vzdělávání a zábavy pro děti. Naše poslání je vytvářet podnětné a zábavné aktivity pro děti, které podporují jejich rozvoj a učení nových dovedností. Vytvořili jsme dětský koutek jako místo, kde se děti cítí v bezpečí, mohou objevovat a zároveň se něco nového naučit. Doufáme, že se k nám vydáte a budete s námi sdílet své zážitky a nápady na další aktivity!
-   
+
    Stránka _Contact_ bude obsahovat:
 
    > O nás
