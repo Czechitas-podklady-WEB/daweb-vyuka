@@ -1,4 +1,4 @@
-title: 'Opakování: LeviExpress, první část'
+title: 'Projekt: LeviExpress, první část'
 lead: Všechno, co jsme se v Reactu naučili, si procvičíme na projektu takzvaně „ze života“.
 access: 'claim'
 sections:
@@ -6,5 +6,3 @@ sections:
   - cv-zalozeni
   - cv-vyber-lokace
   - cv-detail-cesty
-  # - cv-rezervace
-  # - cv-jizdenka

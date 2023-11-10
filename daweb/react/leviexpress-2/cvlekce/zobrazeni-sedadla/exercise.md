@@ -1,6 +1,8 @@
 ---
 title: Zobrazení vybraného sedadla
+lead: Zobrazte vybrané sedadlo na plánku autobusu.
 demand: 3
+solutionAccess: lock
 ---
 
 Když už dokážeme zobrazit plánek autobusu, je na čase zobrazit vybrané sedadlo. Zde bude potřeba hodně komunikace směrem od rodiče k dítěti.

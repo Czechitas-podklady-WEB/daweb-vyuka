@@ -19,4 +19,4 @@ K projektu je již připravný funkční backend s API na adrese
 
 https://apps.kodim.cz/daweb/leviexpress/api
 
-Podrobnou dokumentaci ke všem endpointům najdete [zde](https://apps.kodim.cz/daweb/leviexpress/docs/) ve formátu, na který jste zvyklí.
+Podrobnou dokumentaci ke všem endpointům najdete [zde](https://apps.kodim.cz/daweb/leviexpress/docs).
