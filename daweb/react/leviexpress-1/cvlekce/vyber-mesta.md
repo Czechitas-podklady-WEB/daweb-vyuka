@@ -1,6 +1,8 @@
 ---
 title: Výběr města
+lead: Zprovozněte výběr města ze seznamu.
 demand: 2
+solutionAccess: lock
 ---
 
 Na konci tohoto cvičení si uživatel bude schopen vybrat startovní a cílové město ze seznamu měst stažených z API. Vytvoříte komponentu `CityOptions`, která dostane na vstupu pole se seznamem destinací a vytvoří z něj elementy `<option>` do `select`ů pro výběr výchozího a cílového města. Seznam měst se bude stahovat v komponentě `JourneyPicker` z API endpointu [/api/cities](https://apps.kodim.cz/daweb/leviexpress/api/cities). Prohlédněte si strukturu dat, která endpoint vrací.

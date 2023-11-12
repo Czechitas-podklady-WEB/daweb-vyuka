@@ -2,7 +2,7 @@
 title: Kuchtík
 lead: Vytvořte aplikaci pro správu receptů
 demand: 4
-solutionAccess: lock
+solutionAccess: allow
 ---
 
 Podle následujícího zadání vytvořte aplikaci pro správu receptů. Aplikace bude mít dvě stránky, jedna bude v mřížce zobrazovat seznam receptů, druhá bude zobrazovat detail jednoho receptu, který si uživatel vybere na hlavní stránce. Aplikaci uživateli umožní přidávat nové recepty nebo mazat již neaktuální recepty.
@@ -22,3 +22,7 @@ Co se týče vzhledu aplikace, můžete se inspirovat layoutem hlavní stránky,
 1.  Na všechny formuláře (získané pomocí `querySelectorAll`) navěsíte posluchače události `submit`. V ovladači události si přečtete hodnotu z vloženého inputu s `id` receptu (např. `formular.querySelector("input").value`). Získané `id` použijete pro vytvoření adresy pro volání API. Pomocí požadavku `DELETE` odešlete požadavek na smazání na server. Po úspěšném smazání receptu proveďte refresh stránky.
 1.  Na karty receptu přidejte odkaz pro přechod na detail receptu. Vytvořte stránku pro detail receptu a pomocí search parametrů jí předejte `id` receptu, který má zobrazit. Zobrazte recept na stránce.
 1.  Na stránce s detaily receptu přidejte odkaz pro návrat na hlavní stránku, aby se uživatel mohl vrátit zpět na seznam receptů.
+
+:::solution
+Příklad možného řešení je ve dvou repository: [cviceni-kuchtik-reseni](https://github.com/Czechitas-podklady-WEB/cviceni-kuchtik-reseni) (pro samotný web) a [cviceni-kuchtik-api-reseni](https://github.com/Czechitas-podklady-WEB/cviceni-kuchtik-api-reseni) (API s daty potřebnými pro řešení).
+:::

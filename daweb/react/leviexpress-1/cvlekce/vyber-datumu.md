@@ -1,6 +1,8 @@
 ---
 title: Výběr data cesty
+lead: Zprovizníme výběr data cesty.
 demand: 2
+solutionAccess: lock
 ---
 
 Na konci tohoto cvičení bude uživatel schopen vybrat datum cesty podle dat stažených z API. Budeme postupovat obdobně jako s komponentou `CityOptions`. Tentokrát však vytvoříme komponentu `DatesOptions`, která vygeneruje elementy `option` do výběru termínů cesty. Termíny cest se budou získávat z API endpointu [/api/dates](https://apps.kodim.cz/daweb/leviexpress/api/dates). Prohlédněte si strukturu dat, která tento endpoint vrací.

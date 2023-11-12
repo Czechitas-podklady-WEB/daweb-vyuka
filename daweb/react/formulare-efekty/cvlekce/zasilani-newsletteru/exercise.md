@@ -1,6 +1,8 @@
 ---
 title: Zasílání newsletteru
+lead: Přidejte do formuláře zaškrtávací políčko pro zasílání novinek.
 demand: 3
+solutionAccess: lock
 ---
 
 ::fig[ukázka řešení]{src=assets/ukazka-reseni.gif}
