@@ -14,3 +14,7 @@ Mezi nejznámější patří třeba:
 - [Onsen UI](https://onsen.io/react/)
 
 Existují doslova desítky (možná stovky) dalších, méně známých knihoven. Každá má svoje výhody a nevýhody. Některé mají více nebo méně zabudovaných komponent, některé se snadněji používají.
+
+Výhodou používání takové knihovny je, že většinou obsahuje komponenty, které jsou dobře vyladěné a vypadají dobře. Navíc jsou většinou dobře otestované a vývojáři se o ně starají, takže se nemusíme starat o jejich funkčnost a můžeme se soustředit na to, co je pro nás důležité - tvorba aplikační logiky.
+
+Mezi nevýhody patří to, že některé komponenty mohou být příliš specifické a nebudou se hodit do našeho projektu. Může být obtížné je přizpůsobit našim potřebám. Další nevýhodu mohou někteří vidět v tom, že to zbytečně zvětšuje velikost a komplexitu výsledné aplikace. To je ale většinou zanedbatelné, protože většina knihoven nabízí možnost využít pouze ty komponenty, které opravdu potřebujeme. Komplexitu může vyvážit rychlost a efektivita vývoje.
