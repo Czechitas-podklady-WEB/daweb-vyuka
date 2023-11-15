@@ -6,6 +6,10 @@ Pokud zobrazujeme nějaký seznam, často chceme, aby v něm uživatel mohl jedn
 
 V obou výše zmíněných případech budeme mít komponenty `List` a `ListItem` pro zobrazení seznamu a jednotlivých položek. Nejjednodušší případ nastává, když chceme umožni výběr několik položek a komponenta `List` nepotřebuje znát stav výběru. V tomto případě může mít každá komponenta `ListItem` vlastní stav, který bude obsahovat informaci o tom, zda je položka vybraná nebo ne.
 
+Diagram komponent pro tento případ vypadá takto:
+
+::fig{src="assets/diagram02.png" size="40"}
+
 ```jsx
 import { useState } from 'react';
 
@@ -32,6 +36,12 @@ Komponenta `List` může zůstat stejná jako při zobrazení seznamu bez výbě
 ### Výběr jedné položky
 
 Výběr jedné položky je kupodivu složitější. V tomto případě musí komponenta `List` znát stav výběru, aby zajistila, že lze vybrat pouze jednu položku. To zařídíme tak, že komponenta `List` bude mít stav `selectedId`, kde si bude pamatovat `id` vybrané položky. Musíme pak zajistit komunikaci od položky smeřem k rodiči, aby se komponenta `List` dozvěděla o změně výběru. Také musí komponenta `List` říct každé položce, zda je vybraná nebo ne.
+
+Nejdříve se podívejme na diagram komponent:
+
+::fig{src="assets/diagram03.png" size="60"}
+
+Kód komponenty `List` bude vypadat takto:
 
 ```jsx
 import { useState } from 'react';
