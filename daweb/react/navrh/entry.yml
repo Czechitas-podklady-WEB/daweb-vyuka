@@ -2,4 +2,12 @@ title: Návrh architektury aplikace
 lead: Naučíme se, jak přemýšlet nad strukturou aplikace ještě dříve, než vůbec začneme programovat
 access: 'claim'
 sections:
-  - faze-vyvoje
+  - diagram-komponent
+  - cv-diagramy
+  - stavebni-vzory  
+  - zobrazeni-seznamu
+  - vyber-polozky
+  - detail-polozky
+  - detail-seznamu
+  - cv-vzory
+  - shrnuti
