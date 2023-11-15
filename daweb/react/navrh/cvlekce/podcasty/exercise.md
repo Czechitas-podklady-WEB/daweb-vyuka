@@ -1,6 +1,6 @@
 ---
-title: Aplikace podcasty
-lead: Vytvořte diagram komponent pro aplikaci podcasty.
+title: Aplikace Podcasty
+lead: Vytvořte diagram komponent pro aplikaci Podcasty.
 demand: 3
 solutionAccess: lock
 ---
