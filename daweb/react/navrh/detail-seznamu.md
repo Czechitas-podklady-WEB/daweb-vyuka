@@ -7,4 +7,3 @@ K tomu budeme potřebovat tyto vzory:
 1. Zobrazení seznamu
 1. Výběr jedné položky
 1. Detail se stahováním dat
-

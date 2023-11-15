@@ -18,25 +18,22 @@ export const Main = () => {
       const response = await fetch('http://localhost:4000/api/items/0');
       const data = await response.json();
       setItem(data.result);
-    }
+    };
 
     fetchItem();
   }, []);
-  
+
   if (item === null) {
     return <p>Loading...</p>;
   }
 
   const toggleOpened = () => {
     setOpened(!opened);
-  }
+  };
 
   return (
     <>
-      <div
-        className="panel"
-        onClick={toggleOpened}
-      >
+      <div className="panel" onClick={toggleOpened}>
         {item.name}
       </div>
       <Detail opened={opened} description={item.description} />
@@ -52,12 +49,8 @@ export const Detail = ({ description, opened }) => {
   if (!opened) {
     return null;
   }
-  
-  return (
-    <div className="box">
-      {description}
-    </div>
-  );
+
+  return <div className="box">{description}</div>;
 };
 ```
 
@@ -68,14 +61,14 @@ V tomto případě budeme data stahovat v komponentě `Detail`. Budeme tedy pob�
 ```jsx
 export const Detail = ({ opened }) => {
   const [item, setItem] = useState(null);
-  
+
   useEffect(() => {
     const fetchItem = async () => {
       const response = await fetch('http://localhost:4000/api/items/0');
       const data = await response.json();
       setItem(data.result);
-    }
-  
+    };
+
     if (opened) {
       fetchItem();
     }
@@ -84,12 +77,8 @@ export const Detail = ({ opened }) => {
   if (!opened || item === null) {
     return null;
   }
-  
-  return (
-    <div className="box">
-      {item.description}
-    </div>
-  );
+
+  return <div className="box">{item.description}</div>;
 };
 ```
 
@@ -105,10 +94,7 @@ export const Main = () => {
 
   return (
     <>
-      <div
-        className="panel"
-        onClick={toggleOpened}
-      >
+      <div className="panel" onClick={toggleOpened}>
         Chřest
       </div>
       <Detail opened={opened} />

@@ -39,7 +39,7 @@ Z těchto elementárních prvků pak skládáme složitější celky, které byc
 Pojem _stavební vzor_ je podobně jako diagramy komponent vymyšlen pouze pro potřeby tohoto kurzu. Programátoři v praxi mají tyto vzory naučané podvědomě za mnoho let zkušeností a nemají pro ně žádné speciální názvy.
 :::
 
-Jak postupně webový vývojář získává zkušenosti, tyto vzory se mu dostanou do podvědomí, takzvaně pod kůži, a je schopen je implementovat a používat takřka automaticky. Většinou se také naučí, že již existujé vyzkoušené a osvědčené postupy, jak se tyto vzory implementují například v Reactu, a nemusí tak znova vymýšlet kolo. 
+Jak postupně webový vývojář získává zkušenosti, tyto vzory se mu dostanou do podvědomí, takzvaně pod kůži, a je schopen je implementovat a používat takřka automaticky. Většinou se také naučí, že již existujé vyzkoušené a osvědčené postupy, jak se tyto vzory implementují například v Reactu, a nemusí tak znova vymýšlet kolo.
 
 V Reactu pro implementaci všech těchto zvorů používáme techniky, které jsme se již naučili, tedy props, stav, efekty, komunikace mezi komponentami a tak dále. V této lekci si ukážeme, jak se tyto techniky použijí pro implementací konkrétních stavebních vzorů. Ukážeme si jen ty nejzákladnější a nejpoužívanější. Pokoušet se popsat všechny vzory by bylo pošetilé a strašlivě nazážívné. Ostatní vzory se nejlépe naučíte postupně sami, jak budete v praxi řešit různé problémy a získávat vlastní zkušenosti.
 

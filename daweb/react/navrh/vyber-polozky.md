@@ -1,6 +1,6 @@
 ## Vzor: výběr položky
 
-Pokud zobrazujeme nějaký seznam, často chceme, aby v něm uživatel mohl jednu nebo více položek ozančit jaké vybrané. Každý z těcho případů, tedy vybírání pouze jedné položky a vybírání více položek, má svá Reactová úskalí. 
+Pokud zobrazujeme nějaký seznam, často chceme, aby v něm uživatel mohl jednu nebo více položek ozančit jaké vybrané. Každý z těcho případů, tedy vybírání pouze jedné položky a vybírání více položek, má svá Reactová úskalí.
 
 ### Výběr více položek
 
@@ -11,7 +11,7 @@ import { useState } from 'react';
 
 export const ListItem = ({ item }) => {
   const [selected, setSelected] = useState(false);
-  
+
   const toggleSelected = () => {
     setSelected(!selected);
   };

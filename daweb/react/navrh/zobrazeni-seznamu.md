@@ -11,7 +11,6 @@ Na zobrazení seznamu potřebujeme tyto ingredience:
 
 Diagram komponent bude vypadat takto:
 
-
 Implementace tohoto vzoru je relativně přímočará.
 
 Komonenta `List`:

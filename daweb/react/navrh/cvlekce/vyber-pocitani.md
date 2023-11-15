@@ -5,7 +5,7 @@ demand: 3
 solutionAccess: lock
 ---
 
-Vezměte vzor _Vícenásobný výběr_ ze vzorového repozitáře a rozšiřte jej o možnost počítání vybraných položek. Chceme, aby se v hlavní kompentě zobrazovalo číslo, udávající, kolik položek je prá věvybráno. 
+Vezměte vzor _Vícenásobný výběr_ ze vzorového repozitáře a rozšiřte jej o možnost počítání vybraných položek. Chceme, aby se v hlavní kompentě zobrazovalo číslo, udávající, kolik položek je prá věvybráno.
 
 1.  Vyjděte z repozitáře [ukazka-vzory](https://github.com/Czechitas-podklady-WEB/ukazka-vzory). Pomocí _Use template_ si vytvořte vlastní kopii repozitáře a naklonujte si ji na disk.
 1.  Zprovozněte aplikaci:
