@@ -5,7 +5,7 @@ demand: 3
 solutionAccess: lock
 ---
 
-Představme si stránku, která umožňuje uživateli vybrat si platební plán pro nějakou internetovou službu. Budeme chtít, aby si uživatel kliknutím na tlačítko *Vybrat* mohl označit, který plán chce zvolit.
+Představme si stránku, která umožňuje uživateli vybrat si platební plán pro nějakou internetovou službu. Budeme chtít, aby si uživatel kliknutím na tlačítko _Vybrat_ mohl označit, který plán chce zvolit.
 
 ::fig{src=assets/layout.png}
 
