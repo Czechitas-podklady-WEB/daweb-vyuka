@@ -8,6 +8,8 @@ Tento vzor má dvě základní varianty. Buď v detailu zobrazujeme data, která
 
 Opět potřebujeme dvě komponenty, jednu nazveme `Main` a druhou `Detail`. Komponenta `Main` bude zobrazovat nějakou položku, na kterou se dá kliknout pro zobrazení detailu. Vzhledem k tomu, že tato komponenta bude mít data stažená ve stavu, stačí přidat další stav, který bude obsahovat informaci o tom, zda je detail zobrazený nebo ne.
 
+::fig{src="assets/diagram04.png" size="60"}
+
 ```jsx
 export const Main = () => {
   const [item, setItem] = useState(null);
@@ -57,6 +59,8 @@ export const Detail = ({ description, opened }) => {
 ### Zobrazení dat, která si komponenta stáhne sama
 
 V tomto případě budeme data stahovat v komponentě `Detail`. Budeme tedy pobřebovat `useEffect`, který bude záviset na prop `opened`. Když se `opened` změní na `true`, stáhneme data a uložíme je do stavu. Když se `opened` změní na `false`, pouze schováme detail.
+
+::fig{src="assets/diagram05.png" size="60"}
 
 ```jsx
 export const Detail = ({ opened }) => {

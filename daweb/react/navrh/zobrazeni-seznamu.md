@@ -11,9 +11,11 @@ Na zobrazení seznamu potřebujeme tyto ingredience:
 
 Diagram komponent bude vypadat takto:
 
+::fig{src="assets/diagram01.png" size="40"}
+
 Implementace tohoto vzoru je relativně přímočará.
 
-Komonenta `List`:
+Komponenta `List`:
 
 ```jsx
 const List = () => {
