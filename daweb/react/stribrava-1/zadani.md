@@ -1,4 +1,4 @@
-# Zadání od zákazníka
+## Zadání od zákazníka
 
 Vážení vývojáři, jsme moc rádi, že se chcete ujmout našeho projektu. Jsme rodinná firma, která provozuje malý hotel na břehu řeky Stříbravy. Hotel jsme z velmi zanedbaného stavu po původním majiteli vlastními silami zrekonstruovali a potřebovali bychom pro něj webové stránky.
 
@@ -7,6 +7,15 @@ Jelikož jsme většinu financí věnovali do rekonstrukce, můžeme si dovolit 
 - obytování s domácím mazlíčkem,
 - přistýlku pro dítě,
 - bezbariérový přístup.
+
+Chtělii bychom, aby návštěvník stránek během vyplňování formuláře viděl, jak se mění celková cena jeho poptávky. Výsledná cena se skládá z:
+
+- cena za pokoj za noc × počet nocí × počet osob,
+- cena za snídani/polopenzi/plnou penzi × počet osob × počet dní,
+- za přistýlku pro dítě se počítá polovina celkové ceny za pokoj,
+- za domácího mazlíčka se počítá čtvrtina celkové ceny za pokoj.
+
+## Administrace
 
 Jelikož nemáme dostatek financí na plnohodnotný rezervační systém, chceme zatím pouze, aby se po odeslání formuláře zobrazilo potvrzení o úspěšném odeslání a naše recepční Andulka se poté s klientem spojí telefonicky nebo e-mailem a domluví se s ním, zda máme zrovna volnou kapacitu.
 
@@ -18,4 +27,4 @@ Jelikož zatím máme pouze jednu recepční, není potřeba, aby admninistrace 
 
 Přítel naší recepční Roman je talentovaný grafik a navrhl pro nás design hlavní stránky. Návrh vzhledu administrace nám zatím neposlal, ale ten pro nás není tolik důležitý. Hlavní je, aby administrace byla přehledná a funkční. Zároveň nám doporučil zakoupit jednoduchou šablonu, podle které design dělal. Doufáme, že vám takto usnadníme práci na vzhledu stránek.
 
-Design od Romana najdete v repozitáři [stribrava-design](https://github.com/Czechitas-podklady-WEB/stribrava-zadani). My úplně nevíme, co to je repozitář, ale Roman říkal, že vy budete vědět. Zároveň také posílá odkaz na [šablonu](https://github.com/Czechitas-podklady-WEB/stribrava-sablona), která by vám prý měla usnadnit práci.
+Design od Romana najdete v repozitáři [stribrava-design](https://github.com/Czechitas-podklady-WEB/stribrava-zadani). My úplně nevíme, co to je repozitář, ale Roman říkal, že vy budete vědět. Zároveň také posílá odkaz na výše zmíněnou [šablonu](https://github.com/Czechitas-podklady-WEB/stribrava-sablona).

@@ -23,7 +23,9 @@ Projekt si rozdělíme do několika částí:
 
 ## Celková cena poptávky
 
-TODO
+Jelikož je potřeba celkovou cenu poptávky spočítat po každé změně stavu, můžete si založit proměnnou přímo v těle komponenty a spočítat do ní výslednou cenu podle toho, co je uloženo ve stavech. Pokud chcete mít výpočet oddělený od komponenty, můžete si vytvořit pomocnou funkci, která bude mít jako parametry stavy a vrátí výslednou cenu.
+
+Pro zjištění ceny je důležié nejprve spočítat počet strávených nocí. K tomu použijte knihovnu [Day.js](https://day.js.org/). Tuto knihovnu už jste mohli vidět na začátku výuky JavaScriptu. Bude potřeba ji do vašeho projektu nainstalovat. V dokumentaci pak najdete [příklady](https://day.js.org/docs/en/display/difference) pro výpočet rozdílu mezi dvěma daty.
 
 ## API pro administraci
 
@@ -49,9 +51,19 @@ Nyní si rozmyslete, jak bude fungovat administrace.
 
 Nyní přichází zajimavá část, kdy budeme chtít označovat poptávky jako vyřízené nebo zamítnuté. Při kliknutí na tlačíko pro označení poptávky jako vyřízené nebo zamítnuté je potřeba odeslat na API dotaz PATCH, abychom změnili fázi poptávky a hned po jeho dokončení znovu načíst filtrovaný seznam poptávek, aby se komponenta zobrazující seznam poptávek překreslila.
 
-TODO
+Server `jsonhost` používá pro aktualizaci záznamu v kolekci metodu PATCH. Do těla požadavku se vkládá objekt, který popisuje, jak se má záznam změnit. V našem případě chceme změnit pouze fázi poptávky. V těle požadavku tedy pošleme objekt, který bude vypadat například takto:
 
-1. Naprogramujte označování poptávek a ověřte, že administrace funguje.
+```json
+[
+  {
+    "op": "replace",
+    "path": "/phase",
+    "value": "confirmed"
+  }
+]
+```
+
+Naprogramujte označování poptávek a ověřte, že administrace funguje.
 
 ## Formulář pro odesílání poptávek
 
