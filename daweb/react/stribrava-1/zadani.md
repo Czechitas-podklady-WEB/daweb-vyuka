@@ -8,7 +8,7 @@ Jelikož jsme většinu financí věnovali do rekonstrukce, můžeme si dovolit 
 - přistýlku pro dítě,
 - bezbariérový přístup.
 
-Chtělii bychom, aby návštěvník stránek během vyplňování formuláře viděl, jak se mění celková cena jeho poptávky. Výsledná cena se skládá z:
+Chtěli bychom, aby návštěvník stránek během vyplňování formuláře viděl, jak se mění celková cena jeho poptávky. Výsledná cena se skládá z:
 
 - cena za pokoj za noc × počet nocí × počet osob,
 - cena za snídani/polopenzi/plnou penzi × počet osob × počet dní,
@@ -21,7 +21,7 @@ Jelikož nemáme dostatek financí na plnohodnotný rezervační systém, chceme
 
 Z tohoto důvodu bychom chtěli jednoduché administrační rozhraní, které si může naše recepční otevřít a vidět v něm seznam všech poptávek, které nám přišly. Měla by mít možnost v poptávce vidět všechny důležité informace o klientovi a také možnost poptávku označit jako pozitivně či negativně vyřízenou. Stačí nám, když na stránce bude vidět jednoduchý seznam poptávek seřazený od nejstarších po nejnovější.
 
-Jelikož zatím máme pouze jednu recepční, není potřeba, aby admninistrace měla příhlášení. Stránky by však měly jít dobře používat i na mobilních telefonech, aby si naše Andulka mohla poptávky prohlížet i na cestách nebo ve vaně.
+Jelikož zatím máme pouze jednu recepční, není potřeba, aby admninistrace měla přihlášení. Stránky by však měly jít dobře používat i na mobilních telefonech, aby si naše Andulka mohla poptávky prohlížet i na cestách nebo ve vaně.
 
 ## Design a grafika
 
