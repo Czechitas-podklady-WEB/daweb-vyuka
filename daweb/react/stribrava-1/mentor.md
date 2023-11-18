@@ -67,6 +67,6 @@ Naprogramujte označování poptávek a ověřte, že administrace funguje.
 
 ## Formulář pro odesílání poptávek
 
-Nyní už vám zbývá poslední krok a to je rozběhat formulář pro odesílání poptávek. Zde stačí přidat do kolekce s optávkami objekt ve správném tvaru – pomocí dotazu POST na API endpoint s poptávkami . POST automaticky přidává nový záznam na konec kolekce, takže se poptávky v administraci zobrazí rovnou v požadovaném pořadí od nejstarších po nejnovější.
+Nyní už vám zbývá poslední krok a to je rozběhat formulář pro odesílání poptávek. Zde stačí přidat do kolekce s poptávkami objekt ve správném tvaru – pomocí dotazu POST na API endpoint s poptávkami . POST automaticky přidává nový záznam na konec kolekce, takže se poptávky v administraci zobrazí rovnou v požadovaném pořadí od nejstarších po nejnovější.
 
 V této fázi byste měli mít projekt hotový. Uživatel by měl mít možnost provést poptávku a recepční by měla mít možnost poptávky zobrazit a označit jako vyřízené nebo zamítnuté.
