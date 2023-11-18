@@ -25,7 +25,7 @@ Projekt si rozdělíme do několika částí:
 
 Jelikož je potřeba celkovou cenu poptávky spočítat po každé změně stavu, můžete si založit proměnnou přímo v těle komponenty a spočítat do ní výslednou cenu podle toho, co je uloženo ve stavech. Pokud chcete mít výpočet oddělený od komponenty, můžete si vytvořit pomocnou funkci, která bude mít jako parametry stavy a vrátí výslednou cenu.
 
-Pro zjištění ceny je důležié nejprve spočítat počet strávených nocí. K tomu použijte knihovnu [Day.js](https://day.js.org/). Tuto knihovnu už jste mohli vidět na začátku výuky JavaScriptu. Bude potřeba ji do vašeho projektu nainstalovat. V dokumentaci pak najdete [příklady](https://day.js.org/docs/en/display/difference) pro výpočet rozdílu mezi dvěma daty.
+Pro zjištění ceny je důležité nejprve spočítat počet strávených nocí. K tomu použijte knihovnu [Day.js](https://day.js.org/). Tuto knihovnu už jste mohli vidět na začátku výuky JavaScriptu. Bude potřeba ji do vašeho projektu nainstalovat. V dokumentaci pak najdete [příklady](https://day.js.org/docs/en/display/difference) pro výpočet rozdílu mezi dvěma daty.
 
 ## API pro administraci
 
@@ -45,11 +45,11 @@ Než se pustíte do tvorby stránky pro administraci, navhrněte nejdříve API 
 
 Nyní si rozmyslete, jak bude fungovat administrace.
 
-1. Nejdříve navhrněte, jak bude vypadat stránka s administrací. Použije figmu, tužku a papír, nebo nějaký nástroj pro wireframing, cokoliv co je vám pohodlné. U každé poptávky budeme chtít vidět, jaké informace nám zákazník zadal. Chceme také mít možnost poptávku označit jako vyřízenou nebo zamítnutou.
+1. Nejdříve navhrněte, jak bude vypadat stránka s administrací. Použijte Figmu, tužku a papír, nebo nějaký nástroj pro wireframing, cokoliv co je vám pohodlné. U každé poptávky budeme chtít vidět, jaké informace nám zákazník zadal. Chceme také mít možnost poptávku označit jako vyřízenou nebo zamítnutou.
 1. Můžete si nakreslit diagram komponent, ale vhledem k tomu, že jde o jednoduchý vzor zobrazení seznamu, možná jej ani nepotřebujete.
 1. Naprogramujte zobrazní poptávek a vyzkoušejte si na vašich testovacích datech, že umíte zobrazit pouze poptávky ve fázi `new`.
 
-Nyní přichází zajimavá část, kdy budeme chtít označovat poptávky jako vyřízené nebo zamítnuté. Při kliknutí na tlačíko pro označení poptávky jako vyřízené nebo zamítnuté je potřeba odeslat na API dotaz PATCH, abychom změnili fázi poptávky a hned po jeho dokončení znovu načíst filtrovaný seznam poptávek, aby se komponenta zobrazující seznam poptávek překreslila.
+Nyní přichází zajímavá část, kdy budeme chtít označovat poptávky jako vyřízené nebo zamítnuté. Při kliknutí na tlačíko pro označení poptávky jako vyřízené nebo zamítnuté je potřeba odeslat na API dotaz PATCH, abychom změnili fázi poptávky, a hned po jeho dokončení znovu načíst filtrovaný seznam poptávek, aby se komponenta zobrazující seznam poptávek překreslila.
 
 Server `jsonhost` používá pro aktualizaci záznamu v kolekci metodu PATCH. Do těla požadavku se vkládá objekt, který popisuje, jak se má záznam změnit. V našem případě chceme změnit pouze fázi poptávky. V těle požadavku tedy pošleme objekt, který bude vypadat například takto:
 
@@ -67,6 +67,6 @@ Naprogramujte označování poptávek a ověřte, že administrace funguje.
 
 ## Formulář pro odesílání poptávek
 
-Nyní už vám zbývá poslední krok a to je rozběhat formulář pro odesílání poptávek. Zde stačí pomocí dotazu POST na API endpoint s poptávkami přidat do kolekce objekt ve správném tvaru. Post automaticky přidává nový záznam na konec kolekce, takže se poptávky v administraci zobrazí rovnou v požadovaném pořadí od nejstarších po nejnovější.
+Nyní už vám zbývá poslední krok a to je rozběhat formulář pro odesílání poptávek. Zde stačí přidat do kolekce s optávkami objekt ve správném tvaru – pomocí dotazu POST na API endpoint s poptávkami . POST automaticky přidává nový záznam na konec kolekce, takže se poptávky v administraci zobrazí rovnou v požadovaném pořadí od nejstarších po nejnovější.
 
 V této fázi byste měli mít projekt hotový. Uživatel by měl mít možnost provést poptávku a recepční by měla mít možnost poptávky zobrazit a označit jako vyřízené nebo zamítnuté.
