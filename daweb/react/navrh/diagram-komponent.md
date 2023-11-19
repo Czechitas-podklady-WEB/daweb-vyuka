@@ -33,7 +33,7 @@ state = prvniStav, druhyStav
 
 Stavy a props v naší aplikaci s počasím by mohly vypadat takto:
 
-::fig{src=assets/state-props.png}
+::fig{src=assets/props-state.png}
 
 Schválně říkáme **mohly vypadat**, protože opravdu vyčerpávajícím způsobem do diagramu zaznamenat, jaké přesně props a state bude každá komponta mít, je takto od stolu téměř nemožné. U menších aplikací jako je počasí by to s jistým vypětím sil ještě nějak šlo. Pro větší aplikace si ale ani seniorní vývojáři nedokážou celou strukturu představit takto precizně a do hloubky bez toho, aby napsali jediný řádek kódu.
 
