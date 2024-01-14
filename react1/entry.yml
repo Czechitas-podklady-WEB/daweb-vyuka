@@ -1,0 +1,17 @@
+title: React 1
+lead: Dlouhodobý kurz Reactu pro tvorbu moderních a profesionálních webových aplikací.
+image: assets/react.svg
+lessons:
+  - uvod-do-reactu
+  - podminene-zobrazeni
+  - seznamy
+  - udalosti-stav
+  - ../daweb/react/formulare-efekty
+  - ../daweb/react/komunikace-dite-rodic
+  - ../daweb/react/pokrocila-komunikace
+  - ../daweb/react/react-router
+  - ../daweb/react/ui-knihovny
+  - ../daweb/react/architektura
+  - ../daweb/react/stavebni-vzory
+  - ../daweb/react/leviexpress-1
+  - ../daweb/react/leviexpress-2

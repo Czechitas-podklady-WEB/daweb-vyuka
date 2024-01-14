@@ -1,5 +1,5 @@
-title: Návrh architektury aplikace
-lead: Naučíme se, jak přemýšlet nad strukturou aplikace ještě dříve, než vůbec začneme programovat
+title: Stavební vzory
+lead: Projdeme si některé mírně komplikovanější stavební vzory, které budete často potkávat 
 access: 'claim'
 sections:
   - diagram-komponent

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="640"
+   height="480"
+   viewBox="0 0 640 480"
+   version="1.1"
+   id="svg892"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodi:docname="inbox.svg">
+  <defs
+     id="defs886" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.96288056"
+     inkscape:cx="288.60734"
+     inkscape:cy="353.85825"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     units="px"
+     inkscape:snap-text-baseline="true"
+     inkscape:window-width="1280"
+     inkscape:window-height="656"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid1437" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata889">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-169.99998)">
+    <rect
+       style="fill:#f5ffff;fill-opacity:0.94117647;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1449"
+       width="360"
+       height="130"
+       x="100"
+       y="229.99998"
+       rx="0"
+       ry="0"
+       inkscape:export-filename="/home/podlomar/work/projects/kodim-content/dist/czechitas/daweb/react/podminene-zobrazeni/excs/mejlik/assets/inbox.png"
+       inkscape:export-xdpi="81.333336"
+       inkscape:export-ydpi="81.333336" />
+    <rect
+       style="fill:#74b62e;fill-opacity:0.94117647;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1439"
+       width="320"
+       height="40"
+       x="120"
+       y="249.99998"
+       rx="20"
+       ry="20" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="140"
+       y="274.99997"
+       id="text1443"><tspan
+         sodipodi:role="line"
+         id="tspan1441"
+         x="140"
+         y="274.99997">radovan.holatko@mejlik.cz</tspan></text>
+    <text
+       id="text1447"
+       y="329.99997"
+       x="420"
+       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         y="329.99997"
+         x="420"
+         id="tspan1445"
+         sodipodi:role="line"
+         style="text-align:end;text-anchor:end">Nepřečtených zpráv: 5</tspan></text>
+    <rect
+       inkscape:export-ydpi="81.333336"
+       inkscape:export-xdpi="81.333336"
+       inkscape:export-filename="/home/podlomar/work/projects/kodim-content/dist/czechitas/daweb/react/podminene-zobrazeni/excs/mejlik/assets/inbox-empty.png"
+       ry="0"
+       rx="0"
+       y="390"
+       x="100"
+       height="130"
+       width="360"
+       id="rect1472"
+       style="fill:#f5ffff;fill-opacity:0.94117647;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <rect
+       ry="20"
+       rx="20"
+       y="410"
+       x="120"
+       height="40"
+       width="320"
+       id="rect1474"
+       style="fill:#74b62e;fill-opacity:0.94117647;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <text
+       id="text1478"
+       y="434.99997"
+       x="140"
+       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         y="434.99997"
+         x="140"
+         id="tspan1476"
+         sodipodi:role="line">radovan.holatko@mejlik.cz</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="420"
+       y="489.99997"
+       id="text1486"><tspan
+         style="text-align:end;text-anchor:end"
+         sodipodi:role="line"
+         id="tspan1484"
+         x="420"
+         y="489.99997">Žádné nové zprávy</tspan></text>
+  </g>
+</svg>
