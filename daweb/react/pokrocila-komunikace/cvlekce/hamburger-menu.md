@@ -2,7 +2,7 @@
 title: Hamburger menu
 lead: Vytvořte hamburger menu, které se otevírá a zavírá.
 demand: 3
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Pomocí pokročilejší komunikace mezi komponentami zprovozníme hamburger menu, které se otevírá a zavírá při kliknutí na položku.

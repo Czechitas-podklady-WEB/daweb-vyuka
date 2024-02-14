@@ -2,7 +2,7 @@
 title: Kontrola DIČ
 demand: 3
 lead: Napište funkci na kontrolu DIČ.
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Všimněte si, že knihovna `validator.js` v době vzniku tohoto zadání neumí ověřit platnost českého DIČ (daňové identifikační číslo). Zkusme tedy takovou funkci napsat.

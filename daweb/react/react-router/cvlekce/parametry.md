@@ -2,7 +2,7 @@
 title: Pobočky dětského koutku
 lead: Přidejte do projektu dětského detail jednotlivých poboček.
 demand: 4
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Budeme pokračovat v projektu dětského koutku. Přidáme možnost zobrazit seznam poboček a každou pobočku rozkliknout pro získání více informaci.

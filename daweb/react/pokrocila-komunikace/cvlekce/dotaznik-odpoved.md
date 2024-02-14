@@ -2,7 +2,7 @@
 title: Dotazník s odpovědí
 lead: Zařiďte, aby se po kliknutí na odpověď zobrazil symbol odpovědi.
 demand: 3
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Pokračujme v příkladu z předchozího cvičení. Nyní budeme chtít místo fajfky zobrazovat přímo uživatelem vybranou odpověd.

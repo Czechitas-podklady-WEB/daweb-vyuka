@@ -2,7 +2,7 @@
 title: Údaje o cestě
 lead: Propojte výběr měst a data se příslušnými stavy.
 demand: 2
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Ve svém projektu již máte vytvořen základy komponenty s názvem `JourneyPicker`. Ta je součástí komponenty `HomePage` a zatím vrací pouze statické JSX. V tomto cvičení propojíme výběr měst a data se stavem komponenty.

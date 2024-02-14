@@ -2,7 +2,7 @@
 title: Správce odkazů
 demand: 2
 lead: Vytvořte aplikaci, která bude spravovat internetové odkazy.
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Jistě by se někomu mohla hodit aplikace, která bude spravovat různé internetové odkazy, abychom je nemuseli mít v tísíci záložkách v prohlížeči, které se pak bojíme zavřít. Postupujte dle následujících kroků. Naši aplikaci nazveme originálně _Správce odkazů_.

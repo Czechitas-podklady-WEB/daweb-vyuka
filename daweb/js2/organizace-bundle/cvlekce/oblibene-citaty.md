@@ -2,7 +2,7 @@
 title: Oblíbené citáty
 demand: 3
 lead: Dejte uživateli možnost seřadit citáty podle oblíbenosti.
-solutionAccess: allow
+solutionAccess: protected
 ---
 
 Pokračujte v projektu z předchozího cvičení.

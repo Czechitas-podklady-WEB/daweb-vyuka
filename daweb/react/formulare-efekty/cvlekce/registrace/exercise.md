@@ -2,7 +2,7 @@
 title: Registrace
 lead: Vytvořte jednoduchý formulář pro registraci uživatele.
 demand: 3
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 ::fig[ukázka řešení]{src=assets/ukazka-reseni.gif}

@@ -2,7 +2,7 @@
 title: Hot dog s Vite
 demand: 3
 lead: Přepište aplikaci pro výběr přísad do hot dogu na Vite.
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 1. Založte si nový projekt, tentokrát s Vite bundlerem:

@@ -2,7 +2,7 @@
 title: Dětský koutek
 lead: Vytvořte jednoduchou stránku pro dětský koutek.
 demand: 3
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 V tomto cvičení vytvoříte jednoduchou stránku pro dětský koutek. Pomocí knihovny React Router vytvoříte navigaci, která umožní zobrazit různé komponenty na základě cesty v URL.

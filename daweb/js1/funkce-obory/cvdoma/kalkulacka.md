@@ -2,7 +2,7 @@
 title: Kalkulačka
 demand: 2
 lead: Napište funkci, která spočítá výsledek výpočtu.
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Představte si úplně obyčejnou kalkulačku pouze s tlačítky pro čísla, čtyřmi základními operacemi a tlačítkem pro rovná se. Pokud na takové kalkulačce chcete spočítat něco velmi jednoduchého, například 2 + 3, musíme stisknout tlačíko :kbd[2], poté :kbd[+], pak :kbd[3] a pak :kbd[=]. Kalkulačka tedy nespočítá náš výsledek ve chvíli, kdy mačkáme :kbd[+], ale až ve chvíli, kdy mačkáme :kbd[=]. Musí si tedy zapamatovat, co jsme namačkali, a všecho spočítat až ve chvíli, kdy stiskneme :kbd[=].

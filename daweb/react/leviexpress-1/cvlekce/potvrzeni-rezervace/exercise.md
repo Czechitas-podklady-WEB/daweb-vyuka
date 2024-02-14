@@ -2,7 +2,7 @@
 title: Potvrzení rezervace
 lead: Umožníme uživateli potvrdit rezervaci jízdenky.
 demand: 2
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Nyn již máme ve stavu `journey` uložené všechny potřebné informace k tomu, abychom mohli provést rezervaci jizdenky. V tomto cvičení potvrdíme rezervaci kliknutím na tlačíko, zpracujeme odpověď ze serveru a přesměrujeme uživatele na detail rezervované jízdenky.

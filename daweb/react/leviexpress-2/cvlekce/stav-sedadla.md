@@ -2,7 +2,7 @@
 title: Stav pro výběr sedadla
 lead: Vytvořte stav pro výběr sedadla.
 demand: 4
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 V předchozí verzi projektu jsme sedadlo pro rezervaci získali z hodnoty `autoSeat` stavu `journey` v komponentě `HomePage`. Nyní však sedadlo bude vybírat uživatel. Potřebujeme tedy nový stav v komponentě `HomePage`. Zde si užijeme hodně komunikace od potomka k předkovi a malý prop drilling.

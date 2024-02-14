@@ -1,7 +1,7 @@
 ---
 title: Těžší algoritmy
 demand: 3
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Založte si nový JavaScriptový program a na jeho začátek vložte následující seznam čísel. Budeme jej používat ve všech následujících úlohách.

@@ -2,7 +2,7 @@
 title: Nekup to, obsah
 demand: 2
 lead: Využijte předchystané objekty.
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Pokračujte v předchozím cvičení. Všimněte si, že v souboru `index.js` jsou uloženy údaje k jednotlivým produktům. Budeme chtít obsah naší stránky vygenerovat z těchto dat místo abychom je měli natvrdo zadrátované v HTML kódu.

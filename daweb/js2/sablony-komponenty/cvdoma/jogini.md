@@ -2,7 +2,7 @@
 title: Jogíni
 demand: 2
 lead: Rozdělte jednoduchou stránku na komponenty
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Vyzkoušíme si rozdělit běžnou stránku do několika komponent.

@@ -2,7 +2,7 @@
 title: Název stránky
 lead: Vyzkoušejte si callback s parametrem.
 demand: 3
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Pokračujte v předchozím příkladu. Nyní si vyzkoušíme callback s parametrem a budeme chtít, aby se při kliknutí na položku menu zobrazil správný název stránky.

@@ -2,7 +2,7 @@
 title: Podcasty
 demand: 2
 lead: Vytvořte komponentu pro zobrazení seznamu podcastových epizod.
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 1. Nastylovanou stránku zobrazující epizody jakéhosi podcastu najdete v repozitáři [cviceni-podcasty](https://github.com/Czechitas-podklady-WEB/cviceni-podcasty). Tento repozitář **nebudeme používat jako šablonu**. Místo toho si repozitář rovnou naklonujte – příkazem `git clone https://github.com/Czechitas-podklady-WEB/cviceni-podcasty.git`. Repozitář použijeme jenom jako vzor, nebudeme v něm nic měnit.

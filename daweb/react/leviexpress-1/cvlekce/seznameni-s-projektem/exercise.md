@@ -2,7 +2,7 @@
 title: Seznámení s projektem
 lead: Začneme pracovat na projektu, který již obsahuje nějaký kód.
 demand: 2
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 V praxi často začnete pracovat na projektu, na kterém už pracoval někdo před vámi. V tomto cvičení tomu nebude jinak a také začneme s projektem, který již obsahuje nějaký kód.

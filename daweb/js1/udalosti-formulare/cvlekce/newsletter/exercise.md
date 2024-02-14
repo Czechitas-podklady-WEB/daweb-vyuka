@@ -2,7 +2,7 @@
 title: Newsletter
 lead: 'Formulář na sběr e-mailových adres.'
 demand: 2
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Podle postupu níže vyrobte stránku podobnou té na obrázku.

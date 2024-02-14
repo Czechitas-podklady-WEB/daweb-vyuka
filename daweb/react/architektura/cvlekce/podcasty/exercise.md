@@ -2,7 +2,7 @@
 title: Aplikace Podcasty
 lead: Vytvořte diagram komponent pro aplikaci Podcasty.
 demand: 3
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 1.  Podle následujícího designu zkuste nakreslit čistý strom komponent, zatím bez stavů a props.

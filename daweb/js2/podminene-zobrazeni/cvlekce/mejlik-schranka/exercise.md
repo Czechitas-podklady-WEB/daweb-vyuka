@@ -2,7 +2,7 @@
 title: Mejlík – schránka
 demand: 2
 lead: Vytvořte komponentu pro zobrazování počtu nepřečtených zpráv.
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 V tomto cvičení vytvoříme základ komponenty pro zobrazování příchozí e-mailové pošty v naší nové aplikaci jménem :i[Mejlík.cz].

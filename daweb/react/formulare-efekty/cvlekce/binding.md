@@ -2,7 +2,7 @@
 title: Data binding
 lead: Vyzkoušejte si obousměrný data binding.
 demand: 3
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 1. Vytvořte si repozitář ze šablony [cviceni-data-binding](https://github.com/Czechitas-podklady-WEB/cviceni-data-binding).

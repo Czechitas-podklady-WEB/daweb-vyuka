@@ -2,7 +2,7 @@
 title: Východ a západ slunce
 demand: 2
 lead: Zobrazte na stránce čas východu a západu slunce.
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Vytvořme webovou stránku, která bude zobrazovat čas, kdy dnes vyšlo a kdy zapadá slunce. V tomto cvičení ještě nebudeme používat JSX a komponenty, abychom se mohli soustředit na práci s API.

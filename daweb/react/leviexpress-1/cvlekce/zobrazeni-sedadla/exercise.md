@@ -2,7 +2,7 @@
 title: Zobrazení sedadla
 lead: Zobrazíme uživateli sedadlo, které mu bylo automaticky přiděleno.
 demand: 2
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 V první fázi projektu bude sedadlo pro cestujícího přidělovat automaticky backend. Jistě jste si všimli, že API endpoint `/journey` vrací JSON s vlastností `autoSeat`. Tato vlastnost obsahuje automaticky vybrané volné sedadlo. V tomto cvičení jej zobrazíme uživateli na stránce.

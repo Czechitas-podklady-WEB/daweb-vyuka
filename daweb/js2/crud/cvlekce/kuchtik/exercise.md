@@ -2,7 +2,7 @@
 title: Kuchtík
 lead: Vytvořte aplikaci pro správu receptů
 demand: 4
-solutionAccess: allow
+solutionAccess: protected
 ---
 
 Podle následujícího zadání vytvořte aplikaci pro správu receptů. Aplikace bude mít dvě stránky, jedna bude v mřížce zobrazovat seznam receptů, druhá bude zobrazovat detail jednoho receptu, který si uživatel vybere na hlavní stránce. Aplikaci uživateli umožní přidávat nové recepty nebo mazat již neaktuální recepty.

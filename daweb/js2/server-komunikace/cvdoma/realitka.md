@@ -2,7 +2,7 @@
 title: Realitka
 demand: 3
 lead: Vytvořte aplikaci zobrazující nabídku nemovitostí.
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Vytvoříme jednoduchý web s několika stránkami zobrazující inzeráty na nemovitosti.

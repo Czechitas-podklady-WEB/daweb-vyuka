@@ -1,7 +1,7 @@
 ---
 title: 'Bonus: Hodnocení'
 demand: 3
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Zařiďte, aby klikání na hvězdičky v hodnocení filmu zvýraznilo všechny hvězdičky až po kliknutou.

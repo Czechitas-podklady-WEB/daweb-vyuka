@@ -2,7 +2,7 @@
 title: Objednávka
 lead: 'Vytvořte stránku s objednávacím tlačítkem.'
 demand: 1
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Vytvoříme jednoduchou stránku s objednávacím tlačítkem.

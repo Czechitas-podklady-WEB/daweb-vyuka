@@ -2,7 +2,7 @@
 title: Minutka 3
 demand: 3
 lead: Vylepšete Minutku tak, aby zobrazovala i minuty.
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Vylepšete program naší kuchyňské minutky tak, aby zobrazovala nejen vteřiny, ale i minuty. Layout stránky je na to připraven. Nechejte uživatele zadat minuty, nikoliv vteřiny, a správně odpočítávejte čas až k nule.

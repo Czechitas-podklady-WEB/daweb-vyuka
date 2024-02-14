@@ -2,7 +2,7 @@
 title: Auto
 lead: 'Rozpohybujte auto.'
 demand: 2
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 1. Založte si HTML stránku s JavaScriptem, třeba následujícím příkazem:

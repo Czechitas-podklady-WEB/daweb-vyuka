@@ -2,7 +2,7 @@
 title: Vyhledání spoje
 lead: Dokončíme komponentu pro vyhledání spojení.
 demand: 3
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 V tomto cvičení dokončíte komponentu pro vyhledání spojení. V komponentě už funguje výběr výchozího a cílového města a také data cesty. Nyní napojíte komponentu

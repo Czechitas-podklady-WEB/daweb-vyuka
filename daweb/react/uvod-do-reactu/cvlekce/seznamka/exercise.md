@@ -2,7 +2,7 @@
 title: Seznamka
 lead: Vytvořte stránku s profilem uživatele na seznamce.
 demand: 2
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 1.  Založte si nový projekt pomocí `npm init kodim-app@latest seznamka react`.

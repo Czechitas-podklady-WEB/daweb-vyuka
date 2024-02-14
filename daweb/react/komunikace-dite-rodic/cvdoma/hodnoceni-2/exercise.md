@@ -2,7 +2,7 @@
 title: Hodnocení 2
 lead: Dokončete komponentu pro hodnocení hvězdičkami.
 demand: 4
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Navážeme na úložku s hodnocením a zařídíme, aby se při kliknutí na hvězdičku rozsvítily všechny hvězdičky před ní.

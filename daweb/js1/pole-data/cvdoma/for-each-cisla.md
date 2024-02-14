@@ -2,7 +2,7 @@
 title: Jednoduché pole a forEach
 demand: 2
 lead: Vypište do stránky obsah pole.
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Založte JavaScriptový program s následujícím polem řetězců představujícím nákupní seznam

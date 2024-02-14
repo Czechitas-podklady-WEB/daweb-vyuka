@@ -2,7 +2,7 @@
 title: E-mail podruhé
 lead: 'Pokračujte s e-maily'
 demand: 2
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Pojďme dále rozvinout cvičení s [vyplňováním e-mailu](/vyvoj-webu/daweb/js1/funkce-obory/cv-funkce/e-mail-telo) z předchozí lekce.

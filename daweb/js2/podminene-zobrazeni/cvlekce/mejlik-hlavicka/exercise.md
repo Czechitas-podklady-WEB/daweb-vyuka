@@ -2,7 +2,7 @@
 title: Mejlík – hlavička
 demand: 2
 lead: Vytvořte komponentu pro zobrazování hlavičky stránky.
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Navážeme na předchozí cvičení a vytvoříme komponentu pro hlavičku naší aplikace.

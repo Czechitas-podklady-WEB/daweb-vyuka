@@ -2,7 +2,7 @@
 title: Řady sedadel
 lead: Zařídíme zobrazení sedadel v řadách.
 demand: 3
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Nyní zařídíme zobrazování sedadel v řadách. Plánek sedadel bude vypadat tak, že v HTML bude pro každou řadu sedadel jedna komponenta `SeatRow` a teprve uvnitř této komponenty budou jednotlivá sedadla – komponenty `Seat`.

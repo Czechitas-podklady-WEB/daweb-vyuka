@@ -2,7 +2,7 @@
 title: Kontrola dostupnosti
 lead: 'Oživte objednávkové tlačítko'
 demand: 2
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Vyjděte z řešení předchozího příkladu, kdy se objednává při kliknutí na tlačítko.

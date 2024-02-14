@@ -2,7 +2,7 @@
 title: Maximum ze tří čísel
 demand: 3
 lead: Najděte největší číslo ze tří.
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Napište funkci `max3`, která vrátí největší ze tří zadaných čísel. Opět se vyhněte použití funkce `Math.max`.

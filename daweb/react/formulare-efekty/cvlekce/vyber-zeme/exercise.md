@@ -2,7 +2,7 @@
 title: Výběr země
 lead: Přidejte do formuláře rozbalovací nabídku pro výběr země.
 demand: 2
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 ::fig[ukázka řešení]{src=assets/ukazka-reseni.gif}

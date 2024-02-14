@@ -2,7 +2,7 @@
 title: Jednoduchá aplikace
 demand: 1
 lead: Vyzkoušejte si vytvořit základní strukturu aplikace
-solutionAccess: allow
+solutionAccess: protected
 ---
 
 1. Založte si nový projekt:

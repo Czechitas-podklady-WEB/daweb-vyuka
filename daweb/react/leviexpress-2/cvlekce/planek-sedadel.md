@@ -2,7 +2,7 @@
 title: Zobrazení sedadla
 lead: Vytvoříme komponentu zobrazující plánek autobusu se sedadly.
 demand: 2
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 V tomto cvičení vytvoříme komponentu zobrazující plánek autobusu se sedadly. Obsazená sedadla budou zobrazena šedě a nepůjde na ně kliknout. API vrací seznam sedadel po řadách – nemusíte tedy řešit rozmístění sedadel. Zobrazíte jednoduše každou řadu zvlášť a v ní sedadla zleva doprava.

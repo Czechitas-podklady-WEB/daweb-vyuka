@@ -2,7 +2,7 @@
 title: Kvíz
 demand: 2
 lead: Oživte kvíz.
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Vytvořte si repozitář ze šablony [cviceni-kviz](https://github.com/Czechitas-podklady-WEB/cviceni-kviz). V repozitáři je kostra stránky pro kvízové otázky. Napište JavaScriptový program, který vybere element s třídou `question` a nastaví jeho obsah na nějakou kvízovou otázku, například

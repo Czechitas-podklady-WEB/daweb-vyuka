@@ -2,7 +2,7 @@
 title: Česká města
 demand: 2
 lead: Zobrazte na stránce deset největších českých měst.
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 1. Založte si Vite/JSX projekt podle již známého postupu.

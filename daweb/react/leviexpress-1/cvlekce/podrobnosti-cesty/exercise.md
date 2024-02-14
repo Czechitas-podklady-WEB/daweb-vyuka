@@ -2,7 +2,7 @@
 title: Podrobnosti cesty
 lead: Vytvoříme komponenty pro zobrazení detailu cesty a zastávek.
 demand: 1
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 V tomto cvičení vytvoříte komponentu pro zobrazení detailu cesty a komponentu pro zobrazení zastávky. Využijí se informace, které vrátilo API pro vyhledání spoje.

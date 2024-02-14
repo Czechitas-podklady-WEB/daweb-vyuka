@@ -2,7 +2,7 @@
 title: Pole v divadle
 demand: 1
 lead: Vyzkoušejte si vytvořit jednoduchá pole.
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Cvičení provádějte ve vašem JavaScript souboru.

@@ -2,7 +2,7 @@
 title: Datumy
 demand: 2
 lead: Zobrazte pomocí komponent několik datumů
-solutionAccess: allow
+solutionAccess: protected
 ---
 
 1. Založte si nový projekt:

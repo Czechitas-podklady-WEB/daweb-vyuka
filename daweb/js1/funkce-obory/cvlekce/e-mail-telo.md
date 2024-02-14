@@ -2,7 +2,7 @@
 title: E-mail, tělo
 demand: 2
 lead: Vytvořte funkci, která vloží do e-mailu tělo.
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Pokračujte na stránce z přechozího příkladu.

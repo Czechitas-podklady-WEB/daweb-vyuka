@@ -2,7 +2,7 @@
 title: Hodnocení
 lead: Oživte komponentu pro hodnocení pomocí hvězdiček.
 demand: 4
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 V tomto cvičení vdechneme život komponentě, která umožňuje hodnocení pomocí hvězdiček. To znáte například z hodnocení filmů nebo třeba restaurací a hotelů.

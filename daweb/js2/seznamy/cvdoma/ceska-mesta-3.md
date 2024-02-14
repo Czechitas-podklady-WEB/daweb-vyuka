@@ -2,7 +2,7 @@
 title: Česká města 3
 demand: 3
 lead: Zobrate více českých měst
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Pokračujte v projektu _Česká města_ z předchozího příkladu.

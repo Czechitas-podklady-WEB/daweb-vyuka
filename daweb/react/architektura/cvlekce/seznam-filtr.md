@@ -2,7 +2,7 @@
 title: Filtrování seznamu
 lead: Přidejte do vzoru zobrazení seznamu možnost filtrování.
 demand: 3
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Vezměte vzor _Zobrazení seznamu_ ze vzorového repozitáře a rozšiřte jej o možnost filtrování podle předem daných kritérií.

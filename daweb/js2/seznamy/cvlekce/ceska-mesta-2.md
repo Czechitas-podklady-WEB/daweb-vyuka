@@ -2,7 +2,7 @@
 title: Česká města 2
 demand: 2
 lead: Vytvořte komponentu pro zobrazení jednoho města.
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Pokračujte v projektu z předchozího příkladu.

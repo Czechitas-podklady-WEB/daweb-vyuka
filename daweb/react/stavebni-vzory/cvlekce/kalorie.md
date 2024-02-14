@@ -2,7 +2,7 @@
 title: Zobrazení kalorií
 lead: 'Přidejte do vzoru „výběr jedné položky“ zobrazení kalorií.'
 demand: 3
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Vezměte vzor _Výběr jedné položky_ ze vzorového repozitáře a umožněte zobrazit, kolik kalorií má vybraná položka.

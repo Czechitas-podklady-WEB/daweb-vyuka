@@ -2,7 +2,7 @@
 title: Hod mincí
 demand: 2
 lead: Oživte virtuální minci.
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Vytvořte si repozitář ze šablony [cviceni-hod-minci](https://github.com/Czechitas-podklady-WEB/cviceni-hod-minci). Repozitář obsahuje stránku s nedokončenou simulací hodu mince. Vaším úkolem bude mincí „hodit“.

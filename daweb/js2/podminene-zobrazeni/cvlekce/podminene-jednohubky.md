@@ -2,7 +2,7 @@
 title: Podmíněné jednohubky
 demand: 2
 lead: Přepište kódu aby používal operátor pro podmíněný výraz.
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Přepište následující úryvky kódu tak, aby místo podmínek používaly operátor pro podmíněný výraz. Pracujeme v čistém JavaScriptu, není tedy potřeba zakládat ani React ani Webpack projekt.

@@ -2,7 +2,7 @@
 title: Catering
 lead: 'Tři cateringové společnosti dodávající občerstvení na různé akce.'
 demand: 3
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Mějme tři cateringové společnosti dodávající občerstvení na různé akce. Jsou to

@@ -2,7 +2,7 @@
 title: Kurzovní lístek, základ
 lead: Vytvořte aplikaci, která zobrazuje aktuální kurzy měn.
 demand: 2
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Rozhodně není od věci procvičit si také komunikaci směrem od rodiče k dítěti. To si vyzkoušíme na aplikaci, která převádí různé světové měny na české koruny. Vzhledem k tomu, že tento typ komunikace se odehrává prostě předáváním _props_, bude toto cvičení spíš opakování toho, co už znáte z minulách lekcí.

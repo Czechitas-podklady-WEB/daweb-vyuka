@@ -2,7 +2,7 @@
 title: Workshop
 demand: 3
 lead: Vytvořte aplikaci zobrazující informace o workshopu.
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Vyzkoušejte si práci s daty, která už vypadají o kousek realističtěji.

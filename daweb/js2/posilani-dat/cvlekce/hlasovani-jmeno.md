@@ -2,7 +2,7 @@
 title: Hlasování, jméno
 demand: 2
 lead: Vylepšete hlasování o formulář pro zadání jména.
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Pokračujte v aplikaci z předchozího příkladu. Mít jméno hlasujícího přímo v kódu je nepraktické. Umožníme tedy uživateli zadat si jméno dle libosti.

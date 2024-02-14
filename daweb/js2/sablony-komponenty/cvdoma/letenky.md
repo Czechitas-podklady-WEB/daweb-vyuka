@@ -2,7 +2,7 @@
 title: Letenky
 demand: 2
 lead: Vytvořte komponentu pro zobrazení jednoho letu.
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Vytvořte si repozitář ze šablony [letenky-zadani](https://github.com/Czechitas-podklady-WEB/letenky-zadani) se stránkou, která se tváří, že zobrazuje výsledky vyhledávání letů. Vaším úkolem bude vytvořit dle tohoto vzoru komponentu `Flight`, která bude zobrazovat jeden let.

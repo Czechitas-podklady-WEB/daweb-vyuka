@@ -2,7 +2,7 @@
 title: Hlasování
 demand: 2
 lead: Pomocí POST zahlasujte v aplikaci Hlasování.
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Vytvoříme aplikaci, která umožní hlasovat pro jednotlivé možnosti na webu _Hlasování_. Pro tento účel si vyberte z nabídky jednu otázku, ve které budete hlasovat.

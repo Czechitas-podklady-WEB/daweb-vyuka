@@ -2,7 +2,7 @@
 title: Řešení
 lead: Příklad možného řešení projektu LeviExpress.
 demand: 3
-solutionAccess: allow
+solutionAccess: protected
 ---
 
 ## Řešení

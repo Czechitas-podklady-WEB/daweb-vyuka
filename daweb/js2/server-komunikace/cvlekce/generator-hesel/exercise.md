@@ -2,7 +2,7 @@
 title: Generátor hesel
 demand: 3
 lead: Vyrobte stránku na generování silných hesel.
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Vyrobíme stránku, která pomůže uživateli vygenerovat opravdu silné a neprůstřelné heslo. Použijeme k tomu [tréninkové API](https://apps.kodim.cz/daweb/trening-api/docs/heslo) na generování hesel. Zároveň už projekt vytvoříme pomocí Vite a JSX.

@@ -2,7 +2,7 @@
 title: E-shop
 demand: 2
 lead: Vytvořte aplikaci simulující nějaký e-shop.
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Vytvořte aplikaci, která bude simulovat nějaký malý e-shop. E-shop bude mít dvě stránky, na jedné bude seznam produktů a na druhé detail jednoho produktu. Na stránce s produkty bude možné vybrat jeden produkt a přejít na jeho detail.

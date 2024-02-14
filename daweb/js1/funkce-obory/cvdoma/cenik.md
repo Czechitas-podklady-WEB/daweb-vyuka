@@ -2,7 +2,7 @@
 title: Ceník
 demand: 3
 lead: Vytvořte funkci pro výběr předplatného.
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Vytvořte si repozitář ze šablony [cviceni-cenik](https://github.com/Czechitas-podklady-WEB/cviceni-cenik) se stránkou, která nabízí předplatné za nějaké služby. Může jít například o internetovou televizi, pravidelné dovážky jídla nebo třeba webový hosting.

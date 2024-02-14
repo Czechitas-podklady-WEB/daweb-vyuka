@@ -2,7 +2,7 @@
 title: Výplata
 demand: 2
 lead: Spočítejte si svoji měsíční výplatu pomocí funkcí.
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Vytvořte funkci `salary` se třemi parametry

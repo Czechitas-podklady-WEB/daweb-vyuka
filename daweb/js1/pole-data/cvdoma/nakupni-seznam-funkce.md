@@ -1,7 +1,7 @@
 ---
 title: Nákupní seznam jako funkce
 demand: 2
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 1. Vytvořte funkci s názvem `shoppingList`, která na vstupu obdrží pole řetězců, představující nákupní seznam. Funkce vrátí řetězec obsahující prvky tohoto seznamu zabalené do HTML značek `li`.

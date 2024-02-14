@@ -2,7 +2,7 @@
 title: Routování
 lead: Rozběhněte základní routování.
 demand: 2
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Hned na začátku rozběháme routování, abychom ho pak nemuseli složitě včlenňovat do již rozpracovaného projektu. Knihovna `react-router` už je v naklonovaném projektu nainstalovaná, můžete ji rovnou začít používat.

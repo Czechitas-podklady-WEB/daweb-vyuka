@@ -2,7 +2,7 @@
 title: Hot dog přisady
 demand: 3
 lead: Vytvořte aplikaci pro výběr přísad do hot dogu.
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Vytvoříme aplikaci pro výběr oblohy hot dogů.

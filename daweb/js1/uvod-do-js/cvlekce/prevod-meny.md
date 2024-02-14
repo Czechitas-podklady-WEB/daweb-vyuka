@@ -2,7 +2,7 @@
 title: Převod měny
 demand: 2
 lead: Spočítejte, kolik si vyděláte v českých korunách.
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 1. Založte si novou prázdnou stránku s JavaScriptovým programem.

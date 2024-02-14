@@ -2,7 +2,7 @@
 title: Detail jízdenky
 lead: Vytvořte detail jízdenky.
 demand: 3
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 V předešlé lekci jsme dospěli k vytvoření rezervace a získání `reservationId`. K dokončení základní verze projektu tak stačí vytvořit detail pro jednu jízdenku a zobrazit její data.

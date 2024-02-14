@@ -1,7 +1,7 @@
 ---
 title: Nákupní seznam
 demand: 2
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Mějme pole řetězců představující nákupní seznam

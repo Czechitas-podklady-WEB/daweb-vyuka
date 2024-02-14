@@ -2,7 +2,7 @@
 title: Platební plán
 lead: Vytvořte diagram komponent pro výběr platebního plánu
 demand: 3
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Představme si stránku, která umožňuje uživateli vybrat si platební plán pro nějakou internetovou službu. Budeme chtít, aby si uživatel kliknutím na tlačítko _Vybrat_ mohl označit, který plán chce zvolit.

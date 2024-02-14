@@ -2,7 +2,7 @@
 title: Události
 demand: 3
 lead: Vyzkoušejte si práci s událostmi v Reactu.
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 1. Vytvořte si repozitář ze šablony [cviceni-react-udalosti](https://github.com/Czechitas-podklady-WEB/cviceni-react-udalosti).

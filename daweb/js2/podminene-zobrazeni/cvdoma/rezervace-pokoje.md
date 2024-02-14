@@ -2,7 +2,7 @@
 title: Rezervace pokoje
 demand: 2
 lead: Rozdělte komponentu pro rezervaci pokoje na menší komponenty.
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Rozdělte již naprogramovanou větší komponentu na vícero menších komponent.

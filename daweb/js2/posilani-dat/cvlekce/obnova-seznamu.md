@@ -2,7 +2,7 @@
 title: Obnova seznamu
 demand: 3
 lead: Přidejte do aplikace Nákupy možnost obnovy seznamu.
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Naše aplikace _Nákupy_ ještě neumí mazat položky seznamu. Když nám nákupní seznam příliš naroste, zatím to vyřešíme tak, že umožníme seznam vrátit do původní podoby tak, jak vypadal při prním přihlášení. Do aplikace přidáme tlačítko, které odešle požadavek na obnovu seznamu na server pomocí POST a překreslí komponentu.

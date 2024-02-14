@@ -2,7 +2,7 @@
 title: Efekty
 lead: Vyzkoušejte si vytvořit jednoduché efekty.
 demand: 3
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 1. Vytvořte si repozitář ze šablony [cviceni-react-efekty](https://github.com/Czechitas-podklady-WEB/cviceni-react-efekty).

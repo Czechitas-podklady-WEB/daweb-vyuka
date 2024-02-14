@@ -2,7 +2,7 @@
 title: Kurzovní lístek, API
 lead: Získávejte kurzy měn z veřejného API.
 demand: 2
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Jistě cítíte, že mít kurzy měn zadrátované přímo v kódu aplikace není zrovna užitečné. V tomto cvičení získáme kurzy z veřejného API jako praví profesionálové. Opět zatím budeme používat komunikaci pouze směrem od rodiče k dítěti, tedy budeme spíše opakovat práci s _props_ a efekty.

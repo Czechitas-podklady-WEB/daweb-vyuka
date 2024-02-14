@@ -2,7 +2,7 @@
 title: Barevné palety
 demand: 3
 lead: Vytvořte stránku zobrazující barvené palety
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Cílem tohoto cvičení je na základě připraveného kódu vytvořit reactovou aplikaci, která bude zobrazovat návrhy barevných palet. Takové palety používají například designéři při vybírání barevných schémata pro nové weby. Barevné palety se budou načítat z dat připravených přímo v kódu aplikace.

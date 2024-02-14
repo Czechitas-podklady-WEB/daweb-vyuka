@@ -2,7 +2,7 @@
 title: Workshop - komponenty
 demand: 3
 lead: Vytvořte komponenty zobrazující informace o workshopu.
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Pokračujte v předchozím cvičení. V tomto cvičení vytvoříme komponenty pro zobrazení informací o workshopu.

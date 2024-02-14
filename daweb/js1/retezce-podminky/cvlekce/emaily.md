@@ -2,7 +2,7 @@
 title: E-maily
 demand: 2
 lead: Vyzkoušejte si práci s řetězci obsahující e-mailové adresy.
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Vytvořte stránku, která bude pracovat s e-mailovými adresami ve formátu

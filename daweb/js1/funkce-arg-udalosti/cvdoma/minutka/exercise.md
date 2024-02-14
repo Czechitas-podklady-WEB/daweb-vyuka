@@ -2,7 +2,7 @@
 title: Minutka
 lead: 'Oživte kuchyňskou minutku.'
 demand: 2
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Vytvořte si repozitář ze šablony [cviceni-minutka](https://github.com/Czechitas-podklady-WEB/cviceni-minutka) pro stránku s kuchyňskou minutkou. Využijte funkci `setTimeout` ke splnění následujících úkolů.

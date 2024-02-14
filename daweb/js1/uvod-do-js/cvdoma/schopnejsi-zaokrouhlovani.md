@@ -2,7 +2,7 @@
 title: Schopnější zaokrouhlování
 demand: 3
 lead: Zaokrouhlete číslo na desetiny, setiny a celé stovky.
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Mějme v proměnné `x` uloženo nějaké desetinné číslo. Pomocí funkce `Math.round` jej můžeme zaokrouhlit na celá čísla takto.

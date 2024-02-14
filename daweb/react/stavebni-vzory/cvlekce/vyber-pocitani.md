@@ -2,7 +2,7 @@
 title: Počítání vybraných položek
 lead: Přidejte do vzoru vícenásobný výběr počítání položek.
 demand: 3
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Vezměte vzor _Vícenásobný výběr_ ze vzorového repozitáře a rozšiřte jej o možnost počítání vybraných položek. Chceme, aby se v hlavní komponentě zobrazovalo číslo udávající, kolik položek je právě vybráno.

@@ -2,7 +2,7 @@
 title: Chat
 demand: 3
 lead: Odešlete jednoduchou zprávu do chatu.
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 V tomto cvičení si vytvoříte vlastní chatovací aplikaci.

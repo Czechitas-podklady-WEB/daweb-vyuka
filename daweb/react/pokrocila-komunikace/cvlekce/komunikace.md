@@ -2,7 +2,7 @@
 title: Pokročilá komunikace
 lead: Vyzkoušejte si pokročilejší komunikaci mezi komponentami.
 demand: 3
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 1. Vytvořte si repozitář ze šablony [cviceni-pokrocila-komunikace](https://github.com/Czechitas-podklady-WEB/cviceni-pokrocila-komunikace).

@@ -2,7 +2,7 @@
 title: Dotazník, seznámení
 lead: Začneme tvořit aplikaci na tvorbu dotazníků spokojenosti.
 demand: 2
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 V tomto cvičení začneme vytvářet jednoduchou aplikaci na tvorbu dotazníků spokojenosti.

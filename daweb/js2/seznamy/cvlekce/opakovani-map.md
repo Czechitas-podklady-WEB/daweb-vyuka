@@ -2,7 +2,7 @@
 title: Opakování map
 demand: 2
 lead: Zopakujte si metodu `map` a zkracování funkcí.
-solutionAccess: lock
+solutionAccess: protected
 ---
 
 Založte si obyčejnou stránku s JavaScriptem, bez Vite i bez JSX. Do souboru `index.js` si zkopírujte následující pole.
