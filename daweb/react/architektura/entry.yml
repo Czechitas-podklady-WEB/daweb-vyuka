@@ -1,6 +1,6 @@
 title: Zaklady architektury aplikací
 lead: Naučíme se, jak přemýšlet nad strukturou aplikace ještě dříve, než vůbec začneme programovat
-access: 'claim'
+access: protected
 sections:
   - diagram-komponent
   - cv-diagramy

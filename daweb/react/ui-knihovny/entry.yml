@@ -1,6 +1,6 @@
 title: UI knihovny
 lead: Ukážeme si kompozici komponent a práci s UI knihovnami.
-access: claim
+access: protected
 sections:
   - children-prop
   - cv-children

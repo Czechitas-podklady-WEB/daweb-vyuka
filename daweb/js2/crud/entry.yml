@@ -1,6 +1,6 @@
 title: CRUD operace
 lead: Data na serveru nemusíme jen vytvářet, můžeme je také měnit nebo mazat.
-access: 'claim'
+access: protected
 sections:
   - put-delete
   - cv-crud

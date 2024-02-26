@@ -1,6 +1,6 @@
 title: Komunikace dítě rodič
 lead: 'Představíme si základní scénáře komunikace mezi komponentami a jejich použití v praxi.'
-access: 'claim'
+access: protected
 sections:
   - rodic-dite
   - dite-rodic

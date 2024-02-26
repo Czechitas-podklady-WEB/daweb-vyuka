@@ -1,6 +1,6 @@
 title: Podmíněné zobrazení
 lead: Naučíme se, jak sestavovat CSS třídy a jak se rozhodnout, kterou část JSX chceme zobrazit.
-access: claim
+access: protected
 sections:
   - ternarni-operator
   - predavani-hodnot

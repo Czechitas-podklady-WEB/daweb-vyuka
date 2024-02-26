@@ -1,6 +1,6 @@
 title: Formulářové prvky, efekty
 lead: Zapojíme do našich React aplikací formulářové prvky a ukážeme si, jak pomocí efektů volat API.
-access: claim
+access: protected
 sections:
   - formularove-prvky
   - cv-formularove-prvky

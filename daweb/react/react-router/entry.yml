@@ -1,6 +1,6 @@
 title: React Router
 lead: 'Pomocí routeru dokážeme v Reactu vyrobit vícestránkovou aplikaci.'
-access: 'claim'
+access: protected
 sections:
   - spa
   - router

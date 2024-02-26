@@ -1,6 +1,6 @@
 title: Stavební vzory
 lead: Projdeme si některé mírně komplikovanější stavební vzory, které budete často potkávat 
-access: 'claim'
+access: protected
 sections:
   - diagram-komponent
   - cv-diagramy

@@ -1,5 +1,6 @@
 title: Organizace kódu a bundlování
 lead: Naučíme se dobře postavit zdrojový kód větších aplikací, aby se v nich vyznali jak vývojáři tak webový prohlížeč.
+access: protected
 sections:
   - import-export
   - cv-import-export

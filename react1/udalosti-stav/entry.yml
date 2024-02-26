@@ -1,6 +1,6 @@
 title: Události, stav
 lead: 'Přidáme do našich komponent stav, abychom mohli měnit obsah stránky podle interakce s uživatelem.'
-access: 'claim'
+access: protected
 sections:
   - udalosti
   - cv-udalosti

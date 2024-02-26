@@ -1,6 +1,6 @@
 title: Posílání dat na server
 lead: Naučíme se, jak přečíst data z formuláře zadaná uživatelem a odeslat je na server.
-access: claim
+access: protected
 sections:
   - aktualizace
   - metoda-post

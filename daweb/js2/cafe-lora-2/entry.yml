@@ -1,6 +1,6 @@
 title: Projekt Café Lóra, druhá část
 lead: Pokračování opakovacího projektu, kde se zaměříme hlavně na práci s API a detail objednávky.
-access: claim
+access: protected
 sections:
   - pokracovani
   - projekt

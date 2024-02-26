@@ -1,6 +1,6 @@
 title: Zobrazování seznamů
 lead: 'Ukážeme si, jak v React komponentách zobrazovat seznamy.'
-access: 'claim'
+access: protected
 sections:
   - opakovani-map
   - cv-zkracovani-map
