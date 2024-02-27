@@ -1,6 +1,6 @@
 title: Funkce jako argumenty, události
 lead: Naučíme naše stránky reagovat na události, jako je kliknutí, stisknutí klávesy nebo scrollování. K tomu bude potřeba předávat funkce jako argumenty jiným funkcím.
-access: claim
+access: protected
 sections:
   - funkce-arg
   - chytrejsi-kalkulacka

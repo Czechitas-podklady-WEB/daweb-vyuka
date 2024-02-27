@@ -1,6 +1,6 @@
 title: Pole a zpracování dat
 lead: Ukážeme si jako ukládat hodnoty do polí a také jak transformovat a jinak zpracovávat strukturovaná data.
-access: claim
+access: protected
 sections:
   - pole
   - cv-pole

@@ -1,6 +1,6 @@
 title: Práce s řetězci, podmínky
 lead: Vyzkoušíme si užitečné operace s řetězci a naučíme naše programy dělat rozhodnutí.
-access: claim
+access: protected
 sections:
   - vlastnosti-metody
   - retezce-metody
