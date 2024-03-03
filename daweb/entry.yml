@@ -1,6 +1,7 @@
 title: Digitální akademie Web
 lead: Intenzivní prezenční kurz webového frontendu
 image: assets/academy.svg
+outboundLink: https://www.czechitas.cz/blog/digitalni-akademie-web-krok-za-krokem
 chapters:
   - priprava
   - html-a-css
