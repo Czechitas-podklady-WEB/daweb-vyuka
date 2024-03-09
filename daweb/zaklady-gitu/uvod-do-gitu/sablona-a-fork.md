@@ -1,6 +1,6 @@
 ## Kopírování projektů: fork a use template
 
-Na GitHubu existují dva způsoby, jak se do svého účtu vytvořit kopii cizího projektu – fork a vytvoření projektu ze šablony.
+Na GitHubu existují dva způsoby, jak si do svého účtu vytvořit kopii cizího projektu – _fork_ a _vytvoření projektu ze šablony_ (Use this template).
 
 ::fig[Tlačítka pro forknutí a vytvoření ze šablony]{src=assets/fork-and-template.png}
 
