@@ -4,13 +4,16 @@
 : Vytvoří lokální kopii vzdáleného repozitáře.
 
 **add**
-: Přidá změny do :term{cs="oblasti připravených změn" en="stage"}.
+: Přidá změny do :term{cs="oblasti připravených změn" en="stage, index"}.
 
 **status**
 : Zobrazí všechny rozpracované změny proti poslednímu commitu.
 
+**restore --staged**
+: Vyprázdní oblast připravených změn (experimentální!)
+
 **reset**
-: Vyprázdní oblast připravených změn.
+: Nebezpečnější alternativa příkazu `restore`.
 
 **commit**
 : Vytvoří novou revizi.
