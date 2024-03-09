@@ -22,7 +22,7 @@
 : Nahraje všechny nově vytvořené commity do vzdáleného repozitáře.
 
 **log**
-: Zobrazí historii commitů. Pokud se úplně dole na konci historie zobrazí dvojtečka `:`, znamená to, že historie je delší a můžete v ní listovat. Výpis logu ukončíte (a vrátíte se do terminálu) stisknutím klávesy <kbd>q</kbd>.
+: Zobrazí historii commitů. Pokud se úplně dole na konci historie zobrazí dvojtečka `:`, znamená to, že historie je delší a můžete v ní listovat. Výpis logu ukončíte (a vrátíte se do terminálu) stisknutím klávesy :kbd[q].
 
 ### Příkazy pro počáteční nastavení
 

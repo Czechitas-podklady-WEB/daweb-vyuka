@@ -18,7 +18,7 @@ Hledejte aplikaci _cmd.exe_ / _Command Prompt_ / _Příkazová řádka_ / _Termi
 
 ### Okno příkazové řádky
 
-Příkazová řádka se ovládá převážně z klávesnice. Pokud tedy budete chtít například něco upravit v již napsaném textu / příkazu, budete muset použít klávesy šipek. Pokud budete mít okno příkazové řádky aktivní, pravděpodobně na vás bude blikat na posledním řádku textový kurzor nebo svítit obdélníček.
+Příkazová řádka se ovládá převážně z klávesnice. Pokud tedy budete chtít například něco upravit v již napsaném textu/příkazu, budete muset použít klávesy šipek. Pokud budete mít okno příkazové řádky aktivní, pravděpodobně na vás bude blikat na posledním řádku textový kurzor nebo svítit obdélníček.
 
 ::fig[textový kurzor]{src=assets/kurzor.gif}
 
@@ -26,6 +26,6 @@ Pojďme si vyzkoušet zadat první příkaz. Napište `whoami` a stiskněte klá
 
 ::fig[whoami]{src=assets/whoami.png}
 
-Na dalším řádku by se vám mělo objevit, pod jakým uživatelským účtem a případně na jakém počítači jste přihlášení. Konkrétně příkaz výše byl pouštěn s účtem `chalu`.
+Na dalším řádku by se vám mělo objevit, pod jakým uživatelským účtem a případně na jakém počítači jste přihlášeni. Konkrétně příkaz výše byl pouštěn s účtem `chalu`.
 
-Jakmile program `whoami` doběhne, příkazová řádka se vrací do původního stavu připravená na zadání dalšího příkazu.
+Jakmile program `whoami` doběhne, příkazová řádka se vrací do původního stavu a je připravená na zadání dalšího příkazu.
