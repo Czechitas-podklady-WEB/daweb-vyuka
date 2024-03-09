@@ -2,14 +2,14 @@ Ve chvíli, kdy začneme pracovat na seriózních projektech s větším množst
 
 1. zajistit, aby se nám projekt nerozpadl pod rukama tím, jak přibývá stále více a více kódu,
 1. zálohovat náš kód, aby se nestalo, že nám klekne počítač a příjdeme třeba o rok práce,
-1. spravovavat různé verze projektu, abychom mohli zákazníkovi předat funkčí produkt a zároveň jej dále vylepšovat,
+1. spravovat různé verze projektu, abychom mohli zákazníkovi předat funkčí produkt a zároveň jej dále vylepšovat,
 1. organizovat spolupráci více lidí na jednom projektu tak, aby si navzájem nelezli do zelí.
 
 Se všemi těmito výzvami nám pomůže takzvaný :term{cs="verzovací systém" en="version control system"}. Takových systémů je k dispozici vícero, ale zdaleka nejpopulárnější je systém jménem Git.
 
 ## Systém Git
 
-Verzovací systém Git je jeden z nejpopulárnější systémů pro správu verzi, protože je velmi dobře promyšlený. Díky tomu se dá použít jak na malé projekty například v rámci tohoto kurzu, tak na rozsáhlý software, na kterém pracují desítky lidí zároveň.
+Verzovací systém Git je jeden z nejpopulárnější systémů pro správu verzí, protože je velmi dobře promyšlený. Díky tomu se dá použít jak na malé projekty, například v rámci tohoto kurzu, tak na rozsáhlý software, na kterém pracují desítky lidí zároveň.
 
 Git je velmi flexibilní a dá se použít mnoha různými způsoby. Existuje vícero různých metodik, jak s Gitem pracovat, které se liší podle typu a velikosti projektu. Základní princip je však víceméně pořád stejný.
 
