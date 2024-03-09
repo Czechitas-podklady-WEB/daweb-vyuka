@@ -10,4 +10,4 @@ Zahrajte si na příkazové řádce textovou hru Trosečník.
    ```sh
    npx extract-zip trosecnik-main.zip
    ```
-1. Přejděte do složky `trosecnik-main.zip` a pokračujte obdobně jako u hry Vetřelec.
+1. Přejděte do složky `trosecnik-main` a pokračujte obdobně jako u hry Vetřelec.
