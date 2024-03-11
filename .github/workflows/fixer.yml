@@ -21,4 +21,4 @@ jobs:
         with:
           title: Oprava podle pravidel Prettieru
           branch: pr/fix
-          commit-message: Oprava pomocí `npm run fix`
+          commit-message: Oprava formátování pomocí `npm run fix`
