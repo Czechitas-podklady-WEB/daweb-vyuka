@@ -1,6 +1,6 @@
 ## Pole a `forEach`
 
-Metoda `forEach` je základní nástroj pro práci s poli v JavaScriptu. Pole jsou datové struktury, které nám umožňují ukládat více hodnot do jedné proměnné. Metoda `forEach` pak umožňuje procházet přes všechny prvky v poli a provádět na nich nějakou akci.
+Metoda `forEach` je základní nástroj pro procházení poli prvek po prvku. Díky této metodě můžeme snadno provést nějakou akci pro každý prvek v poli.
 
 Jednoduché použití metody `forEach` pro výpis všech prvků v poli do stránky může vypadat takto:
 

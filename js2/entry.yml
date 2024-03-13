@@ -1,0 +1,16 @@
+title: JavaScript 2
+lead: Dlouhodobý kurz JavaScript 2 pro vývoj webových aplikací
+image: assets/javascript.svg
+lessons:
+  - ../daweb/js2/opakovani
+  - ../daweb/zaklady-gitu/spoluprace
+  - ../daweb/js2/organizace-bundle
+  - ../daweb/js2/sablony-komponenty
+  - ../daweb/js2/server-komunikace
+  - ../daweb/js2/podminene-zobrazeni
+  - ../daweb/js2/seznamy
+  - ../daweb/js2/posilani-dat
+  - ../daweb/js2/api-parametry
+  - ../daweb/js2/crud
+  - ../daweb/js2/cafe-lora-1
+  - ../daweb/js2/cafe-lora-2

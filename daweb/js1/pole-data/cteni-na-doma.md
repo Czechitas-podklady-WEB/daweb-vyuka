@@ -1,8 +1,8 @@
 ## Povinné čtení na doma
 
-Pro průchod polem existují ještě dva mnohem obecnější postupy pomocí klíčových slov `while` a `for`, které však v praxi s Reactem nejsou tolik využívané a my se jim tedy v tomto kurzu věnujeme jen okrajově.
+Pro průchod polem existují ještě dva mnohem obecnější postupy pomocí klíčových slov `while` a `for`, které však v tomto kurzu nebudeme tolik potřebovat a proto je zmíníme pouze okrajove. Pozor však na to, že v programátorské praxi se s nimi setkáte velmi často.
 
-Na rozdíl od `map` a `forEach` nám umožňují provádět smyčky i bez podkladového pole. Využívají se především v případě, kdy potřebujeme provádět nějakou operaci několikrát, ale nevíme předem, kolikrát.
+Na rozdíl od `map` a `forEach` nám `while` a `for` umožňují provádět cykly i bez podkladového pole. Využívají se především v případě, kdy potřebujeme provádět nějakou operaci několikrát, ale nevíme předem, kolikrát.
 
 ### Cyklus `while`
 
