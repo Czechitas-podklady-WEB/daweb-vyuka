@@ -47,8 +47,8 @@ Vlastnost `justify-content` určuje, jak se položky zarovnají **podél hlavní
 - `flex-end` – na konec osy
 - `center` – do středu hlavní osy
 - `space-between` – prvky jsou rozmístěny rovnoměrně na ose, první prvek úplně na začátku, poslední prvek úplně na konci
-- `space-around` – prvky jsou rozmístěny rovnoměrně na ose, a kolem nich je vždy stejně volného prostoru na každé straně (pro každý prvek zleva i zprava)
-- `space-evenly` - prvky jsou rozmístěny rovnoměrně na ose a mezi dvěma prvky je vždy stejné místo
+- `space-around` – prvky jsou rozmístěny rovnoměrně na ose a z každé strany mají stejně širokou mezeru (zleva i zprava). Prostor mezi vnitřními prvky je proto větší, protože se jejich mezery sčítají. Krajní prvky mají z vnější strany pouze svoji mezeru
+- `space-evenly` - prvky jsou rozmístěny rovnoměrně na ose tak, aby byly mezery na straně všech prvků stejně velké nehledě na to, zda jsou na kraji nebo uprostřed
 
 ::fig[justify content]{src=assets/justify-content.png}
 
