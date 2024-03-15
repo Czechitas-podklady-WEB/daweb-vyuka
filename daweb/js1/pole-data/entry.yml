@@ -3,12 +3,12 @@ lead: Ukážeme si jako ukládat hodnoty do polí a také jak transformovat a ji
 access: protected
 sections:
   - pole
-  - cv-pole
   - pole-a-foreach
+  - cv-pole
   - nodelist-a-foreach
   - map
   - cv-foreach-map
-  # - cteni-na-doma
   - shrnuti
   - ulozky-na-doma
+  - cteni-na-doma
   # - volitelne-ulozky

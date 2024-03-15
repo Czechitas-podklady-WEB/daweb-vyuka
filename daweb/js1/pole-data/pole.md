@@ -1,6 +1,6 @@
-Do této chvíle jsme uměli do nějaké proměnné uložit pouze jednu hodnotu, například řetězec, objekt, DOM element nebo funkci. Počítače ale často potřebují pracovat s mnohem větším objemem dat, než je několik čísel nebo řetězců. V této části si ukážeme jak ukládat větší množství hodnot do jedné proměnné.
-
 ## Pole
+
+Do této chvíle jsme uměli do nějaké proměnné uložit pouze jednu hodnotu, například řetězec, objekt, DOM element nebo funkci. Počítače ale často potřebují pracovat s mnohem větším objemem dat, než je několik čísel nebo řetězců. V této části si ukážeme jak ukládat větší množství hodnot do jedné proměnné.
 
 :term{cs="Pole" en="Array"} nám umožňují do jedné proměnné uložit více hodnot.
 Tvoříme je pomocí hranatých závorek. Takto například do jedné proměnné uložíme různé druhy ovoce.
@@ -28,7 +28,7 @@ const students = [
 ];
 ```
 
-Tato datová struktura v podstatě reprezentuje tabulku s řádky a sloupečky. V prvním sloupečku máme jména studentů, ve druhém jejich věk. Každý řádek tabulky je jeden objekt.
+Tato datová struktura v podstatě reprezentuje tabulku s řádky a sloupečky. V prvním sloupečku máme jména studentů, ve druhém jejich věk. Každý řádek tabulky je pak jeden JavaScriptový objekt.
 
 | Name  | Age | Mark |
 | ----- | --- | ---- |
@@ -42,7 +42,7 @@ Pozor na to, že podobně jako existuje prázný řetězec `''`, existuje také 
 
 ### Indexy
 
-Hodnoty uvnitř polí sídlí na takzvaných indexech. Na jednotlivé indexy přistupujeme také pomocí hranatých závorek. Jak už víme z lekce o řetězcích, **programátoři všechno počítají od nuly**.
+Hodnoty uvnitř polí sídlí na takzvaných _indexech_. Na jednotlivé indexy přistupujeme také pomocí hranatých závorek. Jak už víme z lekce o řetězcích, **programátoři všechno počítají od nuly**.
 
 ```js
 const fruits = ['jablko', 'hruška', 'banán', 'jahoda', 'malina'];
@@ -127,20 +127,4 @@ const messages = [
   { from: 'Jane', text: 'How about you?' },
   { from: 'John', text: 'I am fine too.' },
 ];
-```
-
-Pomocí pole však také polí můžeme reprezentovat herní plány v různých počítačovách hrách. Takto například mohou vypadat rozehrané piškvorky 3x3.
-
-```js
-const tictactoe = [
-  ['o', ' ', ' '],
-  [' ', 'x', ' '],
-  [' ', 'o', 'x'],
-];
-```
-
-Vidíme, že na tahu je zrovna křížek. Můžeme tak snadno provést nějaký chytrý tah.
-
-```js
-tictactoe[0][2] = 'x';
 ```
