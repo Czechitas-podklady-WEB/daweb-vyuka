@@ -1,12 +1,12 @@
 ## Povinné čtení na doma
 
-Díky tomu, že již ovládáte základy příkazové řádky, můžete od teď přes ni otevírat celé složky ve _VS Code_. Budete mít díky tomu větší jistotu, že jste v příkazové řádce i ve _VS Code_ ve složce stejné a zároveň tím můžete ušetřit čas při spouštění serveru a otevírání _VS Code_ zároveň.
+Díky tomu, že již ovládáte základy příkazové řádky, můžete od teď přes ni otevírat celé složky ve _VS Code_. Budete mít díky tomu větší jistotu, že jste v příkazové řádce i ve _VS Code_ ve stejné složce a zároveň tím můžete ušetřit čas při spouštění serveru a otevírání _VS Code_ zároveň.
 
 ```sh
 code .
 ```
 
-Příkaz `code .` spustí aplikaci _VS Code_ (pro příkazovou řádku pojmenovaný stručně `code`) a ve _VS Code_ otevře složku `.`, kde tečka odpovídá aktuální složce.
+Příkaz `code .` spustí aplikaci _VS Code_ (v příkazové řádce se _VS Code_ jmenuje stručně `code`) a ve _VS Code_ otevře složku `.`. Tečka `.` vždy znamená _aktuální složka_ (tedy to, co vypíše příkaz `pwd` na MacOS a Linuxu nebo `cd` na Windows).
 
 ### Mac
 
