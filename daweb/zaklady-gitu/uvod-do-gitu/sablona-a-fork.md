@@ -30,6 +30,6 @@ Dále můžete napsat stručný popisek projektu a zvolíte, že má být _Publi
 
 ::fig[Nastavení parametrů kopie]{src=assets/kopie-dokonceni.png}
 
-Pak už stačí jen kliknout na velké zelené tlačítko na konci, chvilinku počkat a máte pod svým účtem zbrusu nová repozitář (v případě forku s pořádnou porcí historie).
+Pak už stačí jen kliknout na velké zelené tlačítko na konci, chvilinku počkat a máte pod svým účtem zbrusu nový repozitář (v případě forku s pořádnou porcí historie).
 
 Když máte repozitář zkopírovaný ve svém GitHub účtu, můžete si jej starým známým `git clone` naklonovat na svůj počítač. Když uděláte změny, se kterými jste spokojeni, commitnete je a pushnete do svého repozitáře. Což je hlavní důvod, proč jsme celou tu anabázi s vytvářením kopie absolvovali – protože do cizích repozitářů obvykle pushovat nemůžete.

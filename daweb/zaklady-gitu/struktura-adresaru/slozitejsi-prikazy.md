@@ -18,7 +18,7 @@ echo Ahoj
 
 ### Chat
 
-Vést konverzaci se sebou samým je trochu zvláštní a rychle omrzí. Pokud si chcete popovídat s někým dalším, může vyzkoušet následující příkazy.
+Vést konverzaci se sebou samým je trochu zvláštní a rychle omrzí. Pokud si chcete popovídat s někým dalším, můžete vyzkoušet následující příkazy.
 
 #### První odešle zprávu do společného chatu.
 
