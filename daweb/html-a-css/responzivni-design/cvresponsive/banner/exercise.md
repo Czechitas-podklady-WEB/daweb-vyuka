@@ -1,6 +1,7 @@
 ---
 title: Reklamní banner
 demand: 1
+solutionAccess: protected
 ---
 
 Vytvořte si repozitář na základě šablony [cviceni-banner](https://github.com/Czechitas-podklady-WEB/cviceni-banner).

@@ -1,6 +1,7 @@
 ---
 title: Kontakty
 demand: 2
+solutionAccess: protected
 ---
 
 Vytvořte si repozitář na základě šablony [cviceni-contacts](https://github.com/Czechitas-podklady-WEB/cviceni-contacts).

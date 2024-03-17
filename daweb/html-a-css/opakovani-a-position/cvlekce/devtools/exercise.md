@@ -1,6 +1,7 @@
 ---
 title: Vývojářské nástroje
 demand: 2
+solutionAccess: protected
 ---
 
 1. Vyberte si libovolný cizí web.

@@ -1,6 +1,7 @@
 ---
 title: Flexibilní článek
 demand: 2
+solutionAccess: protected
 ---
 
 Použijte šablonu [cviceni-flexibilni-clanek](https://github.com/Czechitas-podklady-WEB/cviceni-flexibilni-clanek).

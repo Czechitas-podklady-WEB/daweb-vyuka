@@ -1,6 +1,7 @@
 ---
 title: Okno
 demand: 1
+solutionAccess: protected
 ---
 
 Použijte šablonu [cviceni-vyskakovaci-okno](https://github.com/Czechitas-podklady-WEB/cviceni-vyskakovaci-okno).

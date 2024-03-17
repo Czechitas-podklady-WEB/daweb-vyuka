@@ -1,6 +1,7 @@
 ---
 title: Fine Dining
 demand: 1
+solutionAccess: protected
 ---
 
 Použijte šablonu [cviceni-flexibilni-layout](https://github.com/Czechitas-podklady-WEB/cviceni-flexibilni-layout).

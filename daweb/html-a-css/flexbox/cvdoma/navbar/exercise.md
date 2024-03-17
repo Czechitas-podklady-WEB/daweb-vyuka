@@ -1,6 +1,7 @@
 ---
 title: Hlavička
 demand: 2
+solutionAccess: protected
 ---
 
 Vytvořte si repozitář na základě šablony [cviceni-navbar](https://github.com/Czechitas-podklady-WEB/cviceni-navbar).

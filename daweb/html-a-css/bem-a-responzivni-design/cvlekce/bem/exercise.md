@@ -1,6 +1,7 @@
 ---
 title: Zájezdy
 demand: 1
+solutionAccess: protected
 ---
 
 Použijte šablonu [cviceni-BEM](https://github.com/Czechitas-podklady-WEB/cviceni-BEM).

@@ -1,6 +1,7 @@
 ---
 title: Kočičí domeček
 demand: 1
+solutionAccess: protected
 ---
 
 Použijte šablonu [cviceni-kocici-domecek](https://github.com/Czechitas-podklady-WEB/cviceni-kocici-domecek).

@@ -1,6 +1,7 @@
 ---
 title: Kontakty podruhé
 demand: 2
+solutionAccess: protected
 ---
 
 Použijte šablonu repozitáře [cviceni-selektory](https://github.com/Czechitas-podklady-WEB/cviceni-selektory).

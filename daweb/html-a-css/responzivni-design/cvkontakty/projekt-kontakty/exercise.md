@@ -1,6 +1,7 @@
 ---
 title: Projekt kontakty
 demand: 3
+solutionAccess: protected
 ---
 
 Naklonujte si repozitář na základě šablony [cviceni-kontakty](https://github.com/Czechitas-podklady-WEB/cviceni-kontakty).

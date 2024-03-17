@@ -1,6 +1,6 @@
 title: CSS selektory a specificita
 lead: Ukážeme si pokročilé CSS selektory a vysvětlíme si jak se v CSS počítá specificita.
-access: claim
+access: protected
 sections:
   - selektory
   - cv-selektory

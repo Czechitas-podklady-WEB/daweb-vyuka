@@ -1,6 +1,7 @@
 ---
 title: Responzivní sloupce
 demand: 1
+solutionAccess: protected
 ---
 
 Vytvořte si repozitář na základě šablony [cviceni-sloupce](https://github.com/Czechitas-podklady-WEB/cviceni-sloupce).

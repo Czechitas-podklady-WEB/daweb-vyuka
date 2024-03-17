@@ -1,6 +1,7 @@
 ---
 title: Travelweb
 demand: 1
+solutionAccess: protected
 ---
 
 Vytvořte si repozitář na základě šablony [cviceni-travelweb](https://github.com/Czechitas-podklady-WEB/cviceni-travelweb).

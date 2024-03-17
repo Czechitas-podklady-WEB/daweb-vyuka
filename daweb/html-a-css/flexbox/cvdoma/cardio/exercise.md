@@ -1,6 +1,7 @@
 ---
 title: Flexbox cardio
 demand: 2
+solutionAccess: protected
 ---
 
 Vytvořte si repozitář na základě šablony .

@@ -1,6 +1,7 @@
 ---
 title: Vision board
 demand: 1
+solutionAccess: protected
 ---
 
 V tomto cvičení si osvěžíte základy HTML a CSS.

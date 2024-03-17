@@ -1,6 +1,7 @@
 ---
 title: Pořadí flex položek
 demand: 1
+solutionAccess: protected
 ---
 
 Vytvořte si repozitář na základě šablony [cviceni-flex-order-folder](https://github.com/Czechitas-podklady-WEB/cviceni-flex-order-folder).

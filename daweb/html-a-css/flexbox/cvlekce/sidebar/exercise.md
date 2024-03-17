@@ -1,6 +1,7 @@
 ---
 title: Flex container
 demand: 2
+solutionAccess: protected
 ---
 
 Vytvořte si repozitář na základě šablony [cviceni-flex-container](https://github.com/Czechitas-podklady-WEB/cviceni-flex-container).

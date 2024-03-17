@@ -1,6 +1,7 @@
 ---
 title: Responzivní menu
 demand: 2
+solutionAccess: protected
 ---
 
 Vytvořte si repozitář na základě šablony [cviceni-menu](https://github.com/Czechitas-podklady-WEB/cviceni-menu).

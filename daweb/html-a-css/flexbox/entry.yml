@@ -1,6 +1,6 @@
 title: Flexbox
 lead: Podíváme se na problematiku flexboxu. Naučíme se jaké vlastnosti má flex kontejner a flex položky.
-access: claim
+access: protected
 sections:
   - flex-container
   - cv-flexcontainer

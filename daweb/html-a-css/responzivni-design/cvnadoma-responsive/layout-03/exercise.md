@@ -1,6 +1,7 @@
 ---
 title: Responzivní layout 03
 demand: 3
+solutionAccess: protected
 ---
 
 Naklonujte si repozitář na základě šablony [cviceni-layout-03](https://github.com/Czechitas-podklady-WEB/cviceni-layout-03).

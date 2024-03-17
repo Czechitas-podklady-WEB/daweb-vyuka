@@ -1,6 +1,7 @@
 ---
 title: Kartička – specificita
 demand: 2
+solutionAccess: protected
 ---
 
 Použijte šablonu repozitáře [cviceni-specificita](https://github.com/Czechitas-podklady-WEB/cviceni-specificita).
