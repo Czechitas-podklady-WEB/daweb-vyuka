@@ -3,10 +3,10 @@ title: Vizitka
 demand: 4
 ---
 
-1. Vytvořte si na GitHubu nový repozitář ze šablony [cviceni-vizitka-2023](https://github.com/Czechitas-podklady-WEB/cviceni-vizitka-2023).
-1. Z terminálu, příkazové řádky repozitář naklonujte k sobě na počítač.
-   - `git clone https://github.com/{UZIVATELSKE_JMENO}/cviceni-vizitka-2023.git` kde místo {UZIVATELSKE_JMENO} bude váš login na GitHubu
-1. V novém okně VS Code otevřete gitem vytvořenou složku `vizitka-2023`.
+1. Vytvořte si na GitHubu nový repozitář ze šablony [cviceni-vizitka-git](https://github.com/Czechitas-podklady-WEB/cviceni-vizitka-git). Pojmenujte jej `cviceni-vizitka-git`.
+1. Z terminálu (příkazové řádky) repozitář naklonujte k sobě na počítač.
+   - `git clone https://github.com/<UZIVATELSKE_JMENO>/cviceni-vizitka-git.git` kde místo `<UZIVATELSKE_JMENO>` bude váš login na GitHubu
+1. V novém okně VS Code otevřete gitem vytvořenou složku `cviceni-vizitka-git`.
    - V okně zatím nic nebude. V panelu souborů vlevo bude soubor `README.md`.
 1. Ve složce vytvořte soubor `index.html`.
 1. Do souboru přidejte základní HTML strukturu (zkratka `!`, tj. na začátek souboru napíšete vykřičník `!` a stisknete :kbd[Enter]).
