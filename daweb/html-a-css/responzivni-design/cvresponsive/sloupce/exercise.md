@@ -30,4 +30,22 @@ Výsledek bude vypadat takto:
 }
 ```
 
+nebo:
+
+```css
+.kontejner {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 800px) {
+  .kontejner {
+    flex-direction: row;
+  }
+  .sloupec {
+    width: calc(100% / 3);
+  }
+}
+```
+
 :::
