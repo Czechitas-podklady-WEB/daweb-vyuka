@@ -30,3 +30,34 @@ const identifikator = window.location.hash.slice(1);
 ```
 
 Tento trik můžeme využít k tomu, abychom si předali id článku, který chceme zobrazit, například `/article.html#veverka_viki`.
+
+## Metoda `find`
+
+Kromě metod `forEach` a `map`, které jsme si už ukázali v minulé lekci, existuje v JavaScriptu ještě řada dalších metod na polích, které nám usnadní práci s daty. Jednou z hlavních je metoda `find`, která slouží k vyhledávání prvků v poli. Tuto metody potřebujeme, abychom v poli zpráv našli tu, kterou chce uživatel zobrazit.
+
+Metoda `find` funguje tak, že prochází pole a pro každý prvek zavolá námi předanou funkci. Potud to je stejný princip jako u metody `forEach`. Na rozdíl od `forEach` ale metoda `find` očekává, že naše funkce vrátí `true` nebo `false`. Jakmile `find` narazí na prvek, pro který naše funkce vrátí `true`, vrátí tento prvek a zbytek pole ignoruje.
+
+```js
+const uzivatele = [
+  { jmeno: "Viki", vek: 25 },
+  { jmeno: "Pepa", vek: 30 },
+  { jmeno: "Karel", vek: 40 },
+];
+
+const viki = uzivatele.find((uzivatel) => uzivatel.jmeno === "Viki");
+console.log(viki); // ⟶ { jmeno: "Viki", vek: 25 }
+```
+
+Pokud naše funkce pro žádný prvek nevrátí `true`, metoda `find` vrátí `undefined`.
+
+```js
+const evca = uzivatele.find((uzivatel) => uzivatel.jmeno === "Evča");
+console.log(evca); // ⟶ undefined
+```
+
+V naší aplikaci používáme metodu `find` k tomu, abychom našli zprávu, jejíž id odpovídá hashi v URL.
+
+```js
+const articleId = window.location.hash.slice(1);
+const articleData = articles.find((article) => article.id === articleId);
+```
