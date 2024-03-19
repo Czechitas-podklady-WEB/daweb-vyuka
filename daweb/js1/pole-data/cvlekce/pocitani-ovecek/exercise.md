@@ -1,6 +1,7 @@
 ---
 title: Počítání oveček
 demand: 2
+context: cvlekce
 lead: Vypište do stránky ovčí příběh pro děti na dobrou noc.
 solutionAccess: protected
 ---

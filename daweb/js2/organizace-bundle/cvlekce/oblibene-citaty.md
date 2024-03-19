@@ -1,6 +1,7 @@
 ---
 title: Oblíbené citáty
 demand: 3
+context: cvlekce
 lead: Dejte uživateli možnost seřadit citáty podle oblíbenosti.
 solutionAccess: protected
 ---

@@ -1,6 +1,7 @@
 ---
 title: Výplata
 demand: 1
+context: cvlekce
 lead: Pomocí jednoduché aritmetiky spočítejte, kolik si jako programátor vyděláte.
 solutionAccess: protected
 ---

@@ -1,6 +1,7 @@
 ---
 title: Přestupný rok 2
 demand: 4
+context: cvdoma
 lead: Těžší zadání přestupného roku.
 solutionAccess: protected
 ---

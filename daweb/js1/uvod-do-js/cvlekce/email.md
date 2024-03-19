@@ -1,6 +1,7 @@
 ---
 title: E-mail
 demand: 1
+context: cvlekce
 lead: Vytvořte řetězec obsahující vaši e-mailovou adresu.
 solutionAccess: protected
 ---

@@ -1,6 +1,7 @@
 ---
 title: Množstevní slevy
 demand: 2
+context: cvdoma
 lead: Napište program, který spočítá cenu objednávky triček s potiskem.
 solutionAccess: protected
 ---

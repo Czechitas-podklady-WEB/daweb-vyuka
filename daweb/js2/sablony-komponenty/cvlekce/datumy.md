@@ -1,6 +1,7 @@
 ---
 title: Datumy
 demand: 2
+context: cvlekce
 lead: Zobrazte pomocí komponent několik datumů
 solutionAccess: protected
 ---

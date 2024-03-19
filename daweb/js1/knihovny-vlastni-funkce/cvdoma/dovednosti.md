@@ -1,6 +1,7 @@
 ---
 title: Dovednosti
 demand: 2
+context: cvdoma
 lead: Vizualizujte vědomosti.
 solutionAccess: protected
 ---

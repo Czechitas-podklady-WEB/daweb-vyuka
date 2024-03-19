@@ -1,6 +1,7 @@
 ---
 title: Filmy dle žánrů
 demand: 4
+context: cvlekce
 ---
 
 Pokračujte v předchozím cvičení. Úkolem bude umožnit filtrování filmů podle žánrů.

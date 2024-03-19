@@ -1,6 +1,7 @@
 ---
 title: Podcasty
 demand: 2
+context: cvdoma
 lead: Vytvořte komponentu pro zobrazení seznamu podcastových epizod.
 solutionAccess: protected
 ---

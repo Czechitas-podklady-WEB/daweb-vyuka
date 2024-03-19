@@ -1,6 +1,7 @@
 ---
 title: Rádio
 demand: 3
+context: cvlekce
 lead: Vytvořte webové stránky pro přehled rádií.
 solutionAccess: protected
 ---

@@ -1,6 +1,7 @@
 ---
 title: Počítání pomocí WHILE
 demand: 2
+context: cvdoma
 solutionAccess: protected
 ---
 

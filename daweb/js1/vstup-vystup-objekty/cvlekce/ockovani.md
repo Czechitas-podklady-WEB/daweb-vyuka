@@ -1,6 +1,7 @@
 ---
 title: Očkování
 demand: 2
+context: cvlekce
 lead: Vytvořte registrační systém na očkování proti COVID-19.
 solutionAccess: protected
 ---

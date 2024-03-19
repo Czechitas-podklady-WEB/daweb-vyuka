@@ -1,6 +1,7 @@
 ---
 title: Úprava položky
 demand: 3
+context: cvlekce
 ---
 
 Navážeme na předchozí cvičení a umožníme u každé položky upravit název, množství nebo jednotku. K tomu bude potřeba do detailu položky přidat formálář a odeslat data z něj na server pomocí dotazu PATCH.

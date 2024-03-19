@@ -1,6 +1,7 @@
 ---
 title: Xylofon
 demand: 4
+context: cvdoma
 lead: Vytvořte jednoduchý xylofon.
 solutionAccess: protected
 ---

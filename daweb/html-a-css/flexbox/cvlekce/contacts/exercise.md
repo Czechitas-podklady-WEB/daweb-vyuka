@@ -1,6 +1,7 @@
 ---
 title: Kontakty
 demand: 2
+context: cvlekce
 solutionAccess: protected
 ---
 

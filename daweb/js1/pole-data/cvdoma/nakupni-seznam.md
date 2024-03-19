@@ -1,6 +1,7 @@
 ---
 title: Nákupní seznam
 demand: 2
+context: cvdoma
 solutionAccess: protected
 ---
 

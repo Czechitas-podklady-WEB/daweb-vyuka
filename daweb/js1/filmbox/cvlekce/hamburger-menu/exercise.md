@@ -1,6 +1,7 @@
 ---
 title: Hamburger menu
 demand: 2
+context: cvlekce
 solutionAccess: protected
 ---
 

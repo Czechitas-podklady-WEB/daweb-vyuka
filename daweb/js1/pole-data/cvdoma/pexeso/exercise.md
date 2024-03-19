@@ -1,6 +1,7 @@
 ---
 title: Pexeso
 demand: 3
+context: cvdoma
 lead: Oživte pexesové kartičky.
 solutionAccess: protected
 ---

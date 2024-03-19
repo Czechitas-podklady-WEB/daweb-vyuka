@@ -1,6 +1,7 @@
 ---
 title: 'Bonus: Detail filmu'
 demand: 4
+context: cvlekce
 solutionAccess: protected
 ---
 

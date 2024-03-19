@@ -1,6 +1,7 @@
 ---
 title: Kvíz
 demand: 2
+context: cvlekce
 lead: Oživte kvíz.
 solutionAccess: protected
 ---

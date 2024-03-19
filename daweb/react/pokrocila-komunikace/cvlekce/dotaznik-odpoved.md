@@ -2,6 +2,7 @@
 title: Dotazník s odpovědí
 lead: Zařiďte, aby se po kliknutí na odpověď zobrazil symbol odpovědi.
 demand: 3
+context: cvlekce
 solutionAccess: protected
 ---
 

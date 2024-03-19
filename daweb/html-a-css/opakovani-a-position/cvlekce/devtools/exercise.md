@@ -1,6 +1,7 @@
 ---
 title: Vývojářské nástroje
 demand: 2
+context: cvlekce
 solutionAccess: protected
 ---
 

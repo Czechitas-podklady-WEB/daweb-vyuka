@@ -1,6 +1,7 @@
 ---
 title: Česká města 3
 demand: 3
+context: cvdoma
 lead: Zobrate více českých měst
 solutionAccess: protected
 ---

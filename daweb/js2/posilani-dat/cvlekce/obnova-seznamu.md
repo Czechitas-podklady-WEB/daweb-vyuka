@@ -1,6 +1,7 @@
 ---
 title: Obnova seznamu
 demand: 3
+context: cvlekce
 lead: Přidejte do aplikace Nákupy možnost obnovy seznamu.
 solutionAccess: protected
 ---

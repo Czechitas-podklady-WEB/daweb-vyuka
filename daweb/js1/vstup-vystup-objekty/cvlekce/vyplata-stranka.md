@@ -1,6 +1,7 @@
 ---
 title: Výplata jako stránka
 demand: 2
+context: cvlekce
 lead: Spočítejte, kolik si jako programátor vyděláte.
 solutionAccess: protected
 ---

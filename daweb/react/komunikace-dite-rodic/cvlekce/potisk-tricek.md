@@ -2,6 +2,7 @@
 title: Potisk triček
 lead: Vdechněte život aplikaci na potisk triček.
 demand: 3
+context: cvlekce
 solutionAccess: protected
 ---
 

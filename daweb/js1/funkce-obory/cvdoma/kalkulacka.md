@@ -1,6 +1,7 @@
 ---
 title: Kalkulačka
 demand: 2
+context: cvdoma
 lead: Napište funkci, která spočítá výsledek výpočtu.
 solutionAccess: protected
 ---

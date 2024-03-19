@@ -1,6 +1,7 @@
 ---
 title: Cena vstupenky
 demand: 2
+context: cvlekce
 lead: Spočítejte cenu vstupenky do divadla.
 solutionAccess: protected
 ---

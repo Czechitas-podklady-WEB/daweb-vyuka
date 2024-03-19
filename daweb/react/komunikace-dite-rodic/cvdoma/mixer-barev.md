@@ -1,6 +1,7 @@
 ---
 title: Mixér barev
 demand: 3
+context: cvdoma
 ---
 
 Cílem projektu je vytvořit reactovou aplikaci, která umožňuje namíchat si barvu ze složek RGB tak, jak jste na to zvyklí z různých grafických programů. Na začátku máte připravenou funkční aplikaci v čistém JavaScriptu. Vaším úkolem bude tuto aplikaci přepsat do Reactu.

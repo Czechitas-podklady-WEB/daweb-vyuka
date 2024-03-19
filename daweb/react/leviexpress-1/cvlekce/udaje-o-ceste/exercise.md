@@ -2,6 +2,7 @@
 title: Údaje o cestě
 lead: Propojte výběr měst a data se příslušnými stavy.
 demand: 2
+context: cvlekce
 solutionAccess: protected
 ---
 

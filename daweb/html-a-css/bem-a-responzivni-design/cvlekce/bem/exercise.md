@@ -1,6 +1,7 @@
 ---
 title: Zájezdy
 demand: 1
+context: cvlekce
 solutionAccess: protected
 ---
 

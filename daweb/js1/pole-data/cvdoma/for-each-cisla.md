@@ -1,6 +1,7 @@
 ---
 title: Jednoduché pole a forEach
 demand: 2
+context: cvdoma
 lead: Vypište do stránky obsah pole.
 solutionAccess: protected
 ---

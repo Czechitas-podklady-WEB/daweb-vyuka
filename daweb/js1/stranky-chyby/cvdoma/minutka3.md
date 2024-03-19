@@ -1,6 +1,7 @@
 ---
 title: Minutka 3
 demand: 3
+context: cvdoma
 lead: Vylepšete Minutku tak, aby zobrazovala i minuty.
 solutionAccess: protected
 ---

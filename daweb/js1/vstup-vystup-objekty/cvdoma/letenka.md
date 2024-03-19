@@ -1,6 +1,7 @@
 ---
 title: Letenka
 demand: 2
+context: cvdoma
 lead: Vypište informace o letu.
 solutionAccess: protected
 ---

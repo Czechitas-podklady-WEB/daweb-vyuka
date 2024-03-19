@@ -1,6 +1,7 @@
 ---
 title: Saturejka - příprava
 demand: 2
+context: cvdoma
 ---
 
 Nejdříve připravíme vše potřebné, abychom mohli začít na stránce pracovat.

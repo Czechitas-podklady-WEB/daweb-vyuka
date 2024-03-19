@@ -2,6 +2,7 @@
 title: Newsletter, kontrola
 lead: 'Kontrola vstupu ve formuláři.'
 demand: 2
+context: cvdoma
 solutionAccess: protected
 ---
 

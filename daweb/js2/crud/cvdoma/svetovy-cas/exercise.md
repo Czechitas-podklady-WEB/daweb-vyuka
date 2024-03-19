@@ -1,6 +1,7 @@
 ---
 title: Lokální čas
 demand: 3
+context: cvdoma
 ---
 
 Stáhněte si [základ aplikace](assets/svetovy-cas-zadani.zip) zobrazující datum a čas v růnzých časových zónách.

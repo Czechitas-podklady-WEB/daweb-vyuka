@@ -2,6 +2,7 @@
 title: Přihlášení
 lead: 'Vytvořte přihlašovací formulář.'
 demand: 2
+context: cvdoma
 solutionAccess: protected
 ---
 

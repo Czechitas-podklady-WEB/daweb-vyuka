@@ -1,6 +1,7 @@
 ---
 title: Podcasty
 demand: 2
+context: cvdoma
 ---
 
 Vytvořte si repozitář ze šablony [cviceni-podcasty](https://github.com/Czechitas-podklady-WEB/cviceni-podcasty) se stránkou zobrazující seznam epizod nějakého podcastu. Prohlédněte si HTML stránku a všimněte si, že jedna epizoda podcastu se zobrazí pomocí tohoto HTML.

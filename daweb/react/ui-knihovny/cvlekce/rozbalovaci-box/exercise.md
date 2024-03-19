@@ -1,6 +1,7 @@
 ---
 title: Rozbalovací box
 demand: 3
+context: cvlekce
 ---
 
 1. Založte si nový projekt pomocí `npm init kodim-app@latest rozbalovaci-box react`.

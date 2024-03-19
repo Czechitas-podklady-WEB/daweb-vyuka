@@ -1,6 +1,7 @@
 ---
 title: Ceník
 demand: 3
+context: cvdoma
 lead: Vytvořte funkci pro výběr předplatného.
 solutionAccess: protected
 ---

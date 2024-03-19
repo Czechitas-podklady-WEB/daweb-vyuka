@@ -2,6 +2,7 @@
 title: Zasílání newsletteru
 lead: Přidejte do formuláře zaškrtávací políčko pro zasílání novinek.
 demand: 3
+context: cvlekce
 solutionAccess: protected
 ---
 

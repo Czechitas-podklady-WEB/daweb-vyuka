@@ -1,6 +1,7 @@
 ---
 title: Velikost okna
 demand: 2
+context: cvdoma
 lead: Zjistěte, jak velké je okno stránky a prohlížeče.
 ---
 

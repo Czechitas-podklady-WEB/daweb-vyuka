@@ -1,6 +1,7 @@
 ---
 title: Rozšíření na desktop
 demand: 2
+context: cvlekce
 ---
 
 ### 840px a více

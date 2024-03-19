@@ -1,6 +1,7 @@
 ---
 title: Seznámení s projektem
 demand: 1
+context: cvlekce
 ---
 
 Seznamte se s kódem, který je pro vás v projektu připraven. Postupujte dle následujících kroků.

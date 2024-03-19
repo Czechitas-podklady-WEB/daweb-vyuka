@@ -1,6 +1,7 @@
 ---
 title: Formátování data
 demand: 3
+context: cvdoma
 lead: Převeďte datum do lidské podoby.
 solutionAccess: protected
 ---

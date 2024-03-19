@@ -1,6 +1,7 @@
 ---
 title: Procvičování událostí a stavu
 demand: 3
+context: cvdoma
 solutionAccess: protected
 lead: Pořádně si procvičte práci s událostmi a stavem v Reactu.
 ---

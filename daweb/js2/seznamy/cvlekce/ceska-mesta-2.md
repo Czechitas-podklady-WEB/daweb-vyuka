@@ -1,6 +1,7 @@
 ---
 title: Česká města 2
 demand: 2
+context: cvlekce
 lead: Vytvořte komponentu pro zobrazení jednoho města.
 solutionAccess: protected
 ---

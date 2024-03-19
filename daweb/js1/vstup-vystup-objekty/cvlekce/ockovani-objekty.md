@@ -1,6 +1,7 @@
 ---
 title: Očkování – objekty
 demand: 2
+context: cvlekce
 lead: Vytvořte objekt s údaji o uživateli.
 solutionAccess: protected
 ---

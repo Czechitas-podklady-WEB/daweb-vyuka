@@ -1,6 +1,7 @@
 ---
 title: Formátovač data
 demand: 2
+context: cvdoma
 lead: Vypište do stránky hezky zformátované datum.
 solutionAccess: protected
 ---

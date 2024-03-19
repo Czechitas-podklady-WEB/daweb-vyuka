@@ -2,6 +2,7 @@
 title: Řady sedadel
 lead: Zařídíme zobrazení sedadel v řadách.
 demand: 3
+context: cvlekce
 solutionAccess: protected
 ---
 

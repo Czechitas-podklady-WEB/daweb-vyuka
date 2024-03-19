@@ -2,6 +2,7 @@
 title: Filtrování seznamu
 lead: Přidejte do vzoru zobrazení seznamu možnost filtrování.
 demand: 3
+context: cvlekce
 solutionAccess: protected
 ---
 

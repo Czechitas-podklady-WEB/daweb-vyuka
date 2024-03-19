@@ -2,6 +2,7 @@
 title: Kontrola dostupnosti
 lead: 'Oživte objednávkové tlačítko'
 demand: 2
+context: cvlekce
 solutionAccess: protected
 ---
 

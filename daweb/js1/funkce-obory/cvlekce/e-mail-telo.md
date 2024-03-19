@@ -1,6 +1,7 @@
 ---
 title: E-mail, tělo
 demand: 2
+context: cvlekce
 lead: Vytvořte funkci, která vloží do e-mailu tělo.
 solutionAccess: protected
 ---

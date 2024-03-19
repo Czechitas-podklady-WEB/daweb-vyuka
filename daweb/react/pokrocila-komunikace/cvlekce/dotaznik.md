@@ -2,6 +2,7 @@
 title: Dotazník, seznámení
 lead: Začneme tvořit aplikaci na tvorbu dotazníků spokojenosti.
 demand: 2
+context: cvlekce
 solutionAccess: protected
 ---
 

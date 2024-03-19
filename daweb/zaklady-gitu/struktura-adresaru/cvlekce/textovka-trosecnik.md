@@ -1,6 +1,7 @@
 ---
 title: Textovka Trosečník
 demand: 2
+context: cvlekce
 ---
 
 Zahrajte si na příkazové řádce textovou hru Trosečník.

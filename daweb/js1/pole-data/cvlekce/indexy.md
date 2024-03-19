@@ -1,6 +1,7 @@
 ---
 title: Práce s indexy
 demand: 3
+context: cvlekce
 lead: Vyzkoušejte si jak přistupovat k prvkům v poli pomocí indexů.
 solutionAccess: protected
 ---

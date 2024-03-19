@@ -1,6 +1,7 @@
 ---
 title: Výplňořez
 demand: 3
+context: cvdoma
 lead: Napište funkci, která ořízne nebo prodlouží řetězec.
 solutionAccess: protected
 ---

@@ -1,6 +1,7 @@
 ---
 title: Registrace
 demand: 3
+context: cvdoma
 solutionAccess: protected
 ---
 

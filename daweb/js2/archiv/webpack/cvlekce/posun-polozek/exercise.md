@@ -1,6 +1,7 @@
 ---
 title: Nákupní seznam - posun položek
 demand: 3
+context: cvlekce
 ---
 
 V našem projektu s nákupním seznamem přidáme možnost měnit pořadí položek. Každou položku budeme mít možnost posunout o jednu nahoru nebo dolů.

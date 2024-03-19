@@ -1,6 +1,7 @@
 ---
 title: Počítadlo
 demand: 3
+context: cvdoma
 lead: Opravte chyby v kódu počítadla.
 solutionAccess: protected
 ---

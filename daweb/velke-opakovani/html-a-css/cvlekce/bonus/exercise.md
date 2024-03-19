@@ -1,6 +1,7 @@
 ---
 title: Implementace dark módu a uložení preference uživatele
 demand: 3
+context: cvlekce
 ---
 
 V bonusovém úkolu si zprovozníme překlikávání light a dark módu na stránce.

@@ -1,6 +1,7 @@
 ---
 title: Platnost jako funkce
 demand: 2
+context: cvlekce
 access: claim
 ---
 

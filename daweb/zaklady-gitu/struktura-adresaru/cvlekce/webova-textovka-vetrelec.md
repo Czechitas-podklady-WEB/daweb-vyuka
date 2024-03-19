@@ -1,6 +1,7 @@
 ---
 title: Webová textovka Vetřelec
 demand: 3
+context: cvlekce
 ---
 
 Hru Vetřelec z předchozího cvičení převeďte na webovou stránku.

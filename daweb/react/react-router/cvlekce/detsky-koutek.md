@@ -2,6 +2,7 @@
 title: Dětský koutek
 lead: Vytvořte jednoduchou stránku pro dětský koutek.
 demand: 3
+context: cvlekce
 solutionAccess: protected
 ---
 

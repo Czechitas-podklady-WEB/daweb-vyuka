@@ -1,6 +1,7 @@
 ---
 title: Výplata
 demand: 2
+context: cvdoma
 lead: Spočítejte si svoji měsíční výplatu pomocí funkcí.
 solutionAccess: protected
 ---

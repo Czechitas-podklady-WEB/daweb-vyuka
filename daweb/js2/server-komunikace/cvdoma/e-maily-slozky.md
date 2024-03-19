@@ -1,6 +1,7 @@
 ---
 title: E-maily, složky
 demand: 3
+context: cvdoma
 ---
 
 V naší e-mailové aplikaci zobrazíme dvě oddělené sekce: přečtené zprávy a nepřečtené zprávy.

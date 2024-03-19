@@ -1,6 +1,7 @@
 ---
 title: Realitka
 demand: 3
+context: cvdoma
 lead: Vytvořte aplikaci zobrazující nabídku nemovitostí.
 solutionAccess: protected
 ---

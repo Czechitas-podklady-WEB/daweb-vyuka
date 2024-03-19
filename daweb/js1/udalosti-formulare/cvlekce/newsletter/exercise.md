@@ -2,6 +2,7 @@
 title: Newsletter
 lead: 'Formulář na sběr e-mailových adres.'
 demand: 2
+context: cvlekce
 solutionAccess: protected
 ---
 

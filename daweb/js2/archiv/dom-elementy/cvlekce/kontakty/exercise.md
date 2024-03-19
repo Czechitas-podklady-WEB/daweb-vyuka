@@ -1,6 +1,7 @@
 ---
 title: Kontakty
 demand: 2
+context: cvlekce
 ---
 
 Vytvoříme aplikaci, která zobrazuje seznam kontaktů. U každého kontaktu budeme evidovat jméno, email a telefonní číslo.

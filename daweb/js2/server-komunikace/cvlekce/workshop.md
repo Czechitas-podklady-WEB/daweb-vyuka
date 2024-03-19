@@ -1,6 +1,7 @@
 ---
 title: Workshop
 demand: 3
+context: cvlekce
 lead: Vytvořte aplikaci zobrazující informace o workshopu.
 solutionAccess: protected
 ---

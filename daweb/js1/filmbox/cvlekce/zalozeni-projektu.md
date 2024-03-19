@@ -1,6 +1,7 @@
 ---
 title: Založení projektu
 demand: 2
+context: cvlekce
 ---
 
 Nejprve pro naši aplikaci založte projekt z předpřipraveného základu.

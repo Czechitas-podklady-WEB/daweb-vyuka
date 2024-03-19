@@ -1,6 +1,7 @@
 ---
 title: 'Bonus: Vlastní ovládání přehrávače'
 demand: 4
+context: cvlekce
 solutionAccess: protected
 ---
 

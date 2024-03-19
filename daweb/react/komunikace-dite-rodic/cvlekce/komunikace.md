@@ -2,6 +2,7 @@
 title: Základy komunikace
 lead: Vyzkoušejte si základy komunikace mezi komponentami.
 demand: 3
+context: cvlekce
 solutionAccess: protected
 ---
 

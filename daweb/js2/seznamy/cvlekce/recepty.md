@@ -1,6 +1,7 @@
 ---
 title: Stránka s recepty
 demand: 3
+context: cvlekce
 ---
 
 V tomto cvičení oživíme stránku s recepty a zobrazíme jejich seznam. Pokračujte v projektu z předchozího cvičení.

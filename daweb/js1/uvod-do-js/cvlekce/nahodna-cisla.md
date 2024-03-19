@@ -1,6 +1,7 @@
 ---
 title: Náhodná čísla
 demand: 1
+context: cvlekce
 lead: Zobrazte na stránce náhodné číslo.
 solutionAccess: protected
 ---

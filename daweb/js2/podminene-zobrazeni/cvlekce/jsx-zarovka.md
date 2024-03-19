@@ -1,6 +1,7 @@
 ---
 title: JSX žárovka
 demand: 2
+context: cvlekce
 lead: Vytvořte komponentu pro zobrazování žárovky.
 solutionAccess: protected
 ---

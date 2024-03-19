@@ -1,6 +1,7 @@
 ---
 title: Zkracovací jednohubky
 demand: 1
+context: cvlekce
 lead: Zkracujte funkce a vysvětlete, k čemu slouží.
 ---
 

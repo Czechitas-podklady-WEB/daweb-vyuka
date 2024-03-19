@@ -1,6 +1,7 @@
 ---
 title: Parsování data
 demand: 2
+context: cvdoma
 lead: Převeďte datum na objekt.
 solutionAccess: protected
 ---

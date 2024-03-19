@@ -1,6 +1,7 @@
 ---
 title: Hlasování, jméno
 demand: 2
+context: cvlekce
 lead: Vylepšete hlasování o formulář pro zadání jména.
 solutionAccess: protected
 ---

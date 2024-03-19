@@ -1,6 +1,7 @@
 ---
 title: Mobile first
 demand: 2
+context: cvlekce
 ---
 
 Jako první budeme stylovat stránku pro nejmenší šířku a postupně budeme upravovat styly pro širší obrazovky.

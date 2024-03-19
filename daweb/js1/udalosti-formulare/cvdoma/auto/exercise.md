@@ -2,6 +2,7 @@
 title: Auto
 lead: 'Rozpohybujte auto.'
 demand: 2
+context: cvdoma
 solutionAccess: protected
 ---
 

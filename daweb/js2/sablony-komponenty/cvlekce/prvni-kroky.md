@@ -1,6 +1,7 @@
 ---
 title: První kroky s JSX
 demand: 1
+context: cvlekce
 lead: Vyzkoušejte si základní použití JSX.
 solutionAccess: protected
 ---

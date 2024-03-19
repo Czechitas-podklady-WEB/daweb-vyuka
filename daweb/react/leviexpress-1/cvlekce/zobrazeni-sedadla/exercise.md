@@ -2,6 +2,7 @@
 title: Zobrazení sedadla
 lead: Zobrazíme uživateli sedadlo, které mu bylo automaticky přiděleno.
 demand: 2
+context: cvlekce
 solutionAccess: protected
 ---
 

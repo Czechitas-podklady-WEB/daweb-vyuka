@@ -1,6 +1,7 @@
 ---
 title: Pole v divadle
 demand: 1
+context: cvlekce
 lead: Vyzkoušejte si vytvořit jednoduchá pole.
 solutionAccess: protected
 ---

@@ -1,6 +1,7 @@
 ---
 title: Flexibilní článek
 demand: 2
+context: cvlekce
 solutionAccess: protected
 ---
 

@@ -2,6 +2,7 @@
 title: Kuchtík
 lead: Vytvořte aplikaci pro správu receptů
 demand: 4
+context: cvlekce
 solutionAccess: protected
 ---
 

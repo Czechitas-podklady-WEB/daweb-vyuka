@@ -1,6 +1,7 @@
 ---
 title: Textovka Vetřelec
 demand: 3
+context: cvlekce
 ---
 
 Zahrajte si na příkazové řádce textovou hru Vetřelec.

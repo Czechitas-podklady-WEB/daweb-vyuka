@@ -2,6 +2,7 @@
 title: Nápoj jako komponenta
 lead: Vytvořte komponentu pro zobrazení jednoho nápoje.
 demand: 3
+context: cvlekce
 ---
 
 V komponentě `Menu` máme příklad tří napojů zatím jako natvrdo vytvořené HTML. Budeme chtít mít každý nápoj v menu jako komponentu. Připravujeme se tím na to, abychom později mohli seznam nápojů zobrazovat stažením dat z API.

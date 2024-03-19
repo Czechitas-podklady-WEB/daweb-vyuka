@@ -2,6 +2,7 @@
 title: Pražský čas
 lead: Vytvořte jednoduchou aplikaci, která zobrazuje aktuální čas v Praze.
 demand: 2
+context: cvlekce
 solutionAccess: protected
 ---
 

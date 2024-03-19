@@ -2,6 +2,7 @@
 title: Obsah objednávky
 lead: Vytvořte komponenty pro zobrazování obsahu objednávky.
 demand: 3
+context: cvlekce
 ---
 
 1.  Ve složce `src/components` vytvořte komponentu `Order` pro zobrazení obsahu objednávky. Tato komponenta bude mít jedinou _prop_ `items`, která bude očekávat pole objednaných nápojů. Toto pole bude obsahovat objekty s následující strukturou:

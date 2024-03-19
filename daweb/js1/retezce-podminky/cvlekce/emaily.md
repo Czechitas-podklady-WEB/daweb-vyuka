@@ -1,6 +1,7 @@
 ---
 title: E-maily
 demand: 2
+context: cvlekce
 lead: Vyzkoušejte si práci s řetězci obsahující e-mailové adresy.
 solutionAccess: protected
 ---
