@@ -1,7 +1,7 @@
 ---
 title: Generátor hesel
 demand: 3
-context: cvlekce
+context: lekce
 lead: Vyrobte stránku na generování silných hesel.
 solutionAccess: protected
 ---

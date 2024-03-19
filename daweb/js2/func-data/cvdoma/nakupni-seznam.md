@@ -1,7 +1,7 @@
 ---
 title: Nákupní seznam
 demand: 3
-context: cvdoma
+context: nadoma
 ---
 
 V tomto cvičení na stránce zobrazíme položky nákupního seznamu uložného v poli objektů.

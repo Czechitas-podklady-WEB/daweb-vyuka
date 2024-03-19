@@ -1,7 +1,7 @@
 ---
 title: Vizitka
 demand: 4
-context: cvlekce
+context: lekce
 ---
 
 1. Vytvořte si na GitHubu nový repozitář ze šablony [cviceni-vizitka-git](https://github.com/Czechitas-podklady-WEB/cviceni-vizitka-git). Pojmenujte jej `cviceni-vizitka-git`.

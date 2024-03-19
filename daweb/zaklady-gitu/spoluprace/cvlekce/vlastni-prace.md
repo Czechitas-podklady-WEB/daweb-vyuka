@@ -1,7 +1,7 @@
 ---
 title: Vlastní práce
 demand: 3
-context: cvlekce
+context: lekce
 ---
 
 Pokračujte dále v rolích Alice a Barbory. Společně si rozvhrněte práci na projektu a dotáhněte jej tak daleko, jak se vám samotným bude líbit. Nejlepší je, pokud jeden z týmu pracuje na HTML a stylech a druhý na JavaScriptu, abyse si navzájem nelezli do zelí a nevznikaly zbytečné konflikty.

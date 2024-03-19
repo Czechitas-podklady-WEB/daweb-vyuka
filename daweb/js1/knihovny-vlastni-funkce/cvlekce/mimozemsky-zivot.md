@@ -1,7 +1,7 @@
 ---
 title: Mimozemský život
 demand: 2
-context: cvlekce
+context: lekce
 lead: Porovnejte datumy.
 solutionAccess: protected
 ---

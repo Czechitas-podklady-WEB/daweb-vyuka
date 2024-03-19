@@ -1,7 +1,7 @@
 ---
 title: Česká města
 demand: 2
-context: cvlekce
+context: lekce
 lead: Zobrazte na stránce deset největších českých měst.
 solutionAccess: protected
 ---

@@ -1,7 +1,7 @@
 ---
 title: Založení projektu
 demand: 2
-context: cvlekce
+context: lekce
 ---
 
 Nejprve pro naši aplikaci založte projekt z předpřipraveného základu.

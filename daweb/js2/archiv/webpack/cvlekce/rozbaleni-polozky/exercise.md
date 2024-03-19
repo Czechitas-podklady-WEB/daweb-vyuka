@@ -1,7 +1,7 @@
 ---
 title: Rozbalení položky
 demand: 3
-context: cvlekce
+context: lekce
 ---
 
 Ještě než se pustíme do dotazů typu PATCH, procvičíme si samotné překreslování komponenty `ListItem`. Budeme chtít přídat možnost položku seznamu rozbalit a zobrazit další ovládací prvky. Se serverem v tomto cvičení zatím komunikovat nebudeme.

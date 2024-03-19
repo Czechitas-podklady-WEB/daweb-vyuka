@@ -1,7 +1,7 @@
 ---
 title: Ceník
 demand: 3
-context: cvdoma
+context: nadoma
 lead: Vytvořte funkci pro výběr předplatného.
 solutionAccess: protected
 ---

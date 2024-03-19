@@ -1,7 +1,7 @@
 ---
 title: Přestupný rok
 demand: 3
-context: cvdoma
+context: nadoma
 lead: Napište program, který pozná, který rok je přestupný.
 solutionAccess: protected
 ---

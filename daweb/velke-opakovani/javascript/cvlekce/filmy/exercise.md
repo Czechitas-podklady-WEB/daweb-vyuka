@@ -1,7 +1,7 @@
 ---
 title: Seznam filmů
 demand: 2
-context: cvlekce
+context: lekce
 ---
 
 V tomto cvičení si vyzkoušíte:

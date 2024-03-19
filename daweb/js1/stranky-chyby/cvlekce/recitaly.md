@@ -1,7 +1,7 @@
 ---
 title: Recitály
 demand: 2
-context: cvlekce
+context: lekce
 lead: Vykoušejte si podrobné vysvětlování kódu.
 solutionAccess: protected
 ---

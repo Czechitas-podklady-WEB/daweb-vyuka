@@ -2,7 +2,7 @@
 title: Platební plán
 lead: Vytvořte diagram komponent pro výběr platebního plánu
 demand: 3
-context: cvlekce
+context: lekce
 solutionAccess: protected
 ---
 

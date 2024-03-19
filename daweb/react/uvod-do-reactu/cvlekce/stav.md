@@ -1,7 +1,7 @@
 ---
 title: Stav
 demand: 4
-context: cvlekce
+context: lekce
 solutionAccess: protected
 lead: Vyzkoušejte si práci se stavem v Reactu.
 ---

@@ -1,7 +1,7 @@
 ---
 title: E-maily – detail
 demand: 4
-context: cvdoma
+context: nadoma
 ---
 
 Aplikaci _E-maily_ rozšíříme tak, aby zobrazovala detail e-mailu. Když uživatel klikne na ikonu obálky, e-mail se rozbalí a zobrazí textový obsah stažený z API.

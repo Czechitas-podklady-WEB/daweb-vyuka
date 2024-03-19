@@ -1,7 +1,7 @@
 ---
 title: Detailní kontrola cifer
 demand: 3
-context: cvlekce
+context: lekce
 access: claim
 ---
 

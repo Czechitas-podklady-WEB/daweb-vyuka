@@ -1,7 +1,7 @@
 ---
 title: Vlastnosti a metody
 demand: 1
-context: cvlekce
+context: lekce
 lead: Vyzkoušejte si vlastnosti a metody řetězců.
 solutionAccess: protected
 ---

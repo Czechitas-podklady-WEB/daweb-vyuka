@@ -2,7 +2,7 @@
 title: Výběr zóny
 lead: Vytvořte aplikaci, která zobrazuje aktuální čas ve zvolené časové zóně.
 demand: 2
-context: cvlekce
+context: lekce
 ---
 
 ::fig[ukázka řešení]{src=assets/ukazka-reseni.gif}

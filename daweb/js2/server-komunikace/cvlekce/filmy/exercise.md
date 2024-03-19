@@ -1,7 +1,7 @@
 ---
 title: Filmy
 demand: 3
-context: cvlekce
+context: lekce
 ---
 
 Vytvřte si repozitář ze šablony [cviceni-filmy](https://github.com/Czechitas-podklady-WEB/cviceni-filmy) se stránkou, která zobrazuje seznam filmů. Zatím na stránce vidíme film pouze jeden jako příklad. Vaším cílem bude zobrazovat filmy stažené z API.

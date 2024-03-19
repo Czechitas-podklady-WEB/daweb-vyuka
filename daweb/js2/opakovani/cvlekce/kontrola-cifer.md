@@ -1,7 +1,7 @@
 ---
 title: Kontrola cifer
 demand: 2
-context: cvlekce
+context: lekce
 access: claim
 ---
 

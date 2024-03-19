@@ -1,7 +1,7 @@
 ---
 title: Filmy - komponenta
 demand: 3
-context: cvlekce
+context: lekce
 ---
 
 Pokračujte ve cvičení [Filmy](../server-komunikace/cv-zobrazovani-dat#cvlekce%3Efilmy) z minulé lekce. Na začátku byste měli mít hotovou aplikaci, která zobrazuje seznam filmů stažených z API.

@@ -2,7 +2,7 @@
 title: Kurzovní lístek, základ
 lead: Vytvořte aplikaci, která zobrazuje aktuální kurzy měn.
 demand: 2
-context: cvlekce
+context: lekce
 solutionAccess: protected
 ---
 

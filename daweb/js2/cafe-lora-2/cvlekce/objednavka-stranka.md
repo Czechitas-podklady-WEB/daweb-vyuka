@@ -2,7 +2,7 @@
 title: Stránka pro detail objednávky
 lead: Oživte stránku pro zobrazení detailu objednávky.
 demand: 3
-context: cvlekce
+context: lekce
 ---
 
 Oživíme kostru stránky pro detail objednávky pomocí už existujících komponent. Komponenty pro jednotlivé položky objednávky vytvoříme v dalším cvičení.

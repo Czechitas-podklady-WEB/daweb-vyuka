@@ -1,7 +1,7 @@
 ---
 title: Saturejka - vývoj
 demand: 2
-context: cvdoma
+context: nadoma
 ---
 
 Vše máme připraveno a můžeme začít programovat.

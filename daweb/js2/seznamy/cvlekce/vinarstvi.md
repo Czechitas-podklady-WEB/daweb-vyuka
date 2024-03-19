@@ -1,7 +1,7 @@
 ---
 title: Vinařství
 demand: 3
-context: cvlekce
+context: lekce
 ---
 
 Vyrobte jednoduchý web pro malé rodinné vinařství. Web bude obsahovat několik stránek vztahujících se k výrobě a prodeji vín.

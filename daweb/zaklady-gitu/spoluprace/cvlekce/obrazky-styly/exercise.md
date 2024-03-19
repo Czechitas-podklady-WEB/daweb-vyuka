@@ -1,7 +1,7 @@
 ---
 title: Obrázky a styly
 demand: 2
-context: cvlekce
+context: lekce
 ---
 
 Úkol pro **Barboru**. Alice čeká.

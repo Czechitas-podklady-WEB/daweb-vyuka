@@ -1,7 +1,7 @@
 ---
 title: Tlačítko
 demand: 2
-context: cvlekce
+context: lekce
 ---
 
 Pomocí vlastních DOM elementů přidáme na stránku několik tlačítek.

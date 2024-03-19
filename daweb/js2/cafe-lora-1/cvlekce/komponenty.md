@@ -2,7 +2,7 @@
 title: Komponenty
 lead: Rozsekejte hlavní stránku na komponenty.
 demand: 3
-context: cvlekce
+context: lekce
 ---
 
 Jako první budeme chtít rozsekat hlavní stránku na následující komponenty:

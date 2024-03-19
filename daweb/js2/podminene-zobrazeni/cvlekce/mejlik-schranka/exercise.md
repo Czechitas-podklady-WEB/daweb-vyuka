@@ -1,7 +1,7 @@
 ---
 title: Mejlík – schránka
 demand: 2
-context: cvlekce
+context: lekce
 lead: Vytvořte komponentu pro zobrazování počtu nepřečtených zpráv.
 solutionAccess: protected
 ---

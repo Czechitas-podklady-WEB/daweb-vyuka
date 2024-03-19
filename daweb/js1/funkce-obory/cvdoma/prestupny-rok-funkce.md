@@ -1,7 +1,7 @@
 ---
 title: Přestupný rok jako funkce
 demand: 2
-context: cvdoma
+context: nadoma
 lead: Napište funkci, která zjistí, zda je zadaný rok přestupný.
 solutionAccess: protected
 ---

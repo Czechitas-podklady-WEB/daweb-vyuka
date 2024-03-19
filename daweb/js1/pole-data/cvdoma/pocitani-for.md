@@ -1,7 +1,7 @@
 ---
 title: Počítání pomocí FOR
 demand: 2
-context: cvdoma
+context: nadoma
 solutionAccess: protected
 ---
 

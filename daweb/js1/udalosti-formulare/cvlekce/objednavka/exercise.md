@@ -2,7 +2,7 @@
 title: Objednávka
 lead: 'Formulář pro dokončení objednávky na e-shopu.'
 demand: 2
-context: cvlekce
+context: lekce
 solutionAccess: protected
 ---
 

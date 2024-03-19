@@ -2,7 +2,7 @@
 title: Hamburger menu
 lead: Vytvořte hamburger menu, které se otevírá a zavírá.
 demand: 3
-context: cvlekce
+context: lekce
 solutionAccess: protected
 ---
 

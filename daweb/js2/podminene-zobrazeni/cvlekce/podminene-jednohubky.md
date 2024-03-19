@@ -1,7 +1,7 @@
 ---
 title: Podmíněné jednohubky
 demand: 2
-context: cvlekce
+context: lekce
 lead: Přepište kódu aby používal operátor pro podmíněný výraz.
 solutionAccess: protected
 ---

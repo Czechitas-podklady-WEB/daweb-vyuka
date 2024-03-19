@@ -1,7 +1,7 @@
 ---
 title: Nekup to, obsah
 demand: 2
-context: cvlekce
+context: lekce
 lead: Využijte předchystané objekty.
 solutionAccess: protected
 ---

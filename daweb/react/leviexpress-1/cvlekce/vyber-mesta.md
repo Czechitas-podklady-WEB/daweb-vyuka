@@ -2,7 +2,7 @@
 title: Výběr města
 lead: Zprovozněte výběr města ze seznamu.
 demand: 2
-context: cvlekce
+context: lekce
 solutionAccess: protected
 ---
 

@@ -2,7 +2,7 @@
 title: Dotazník s fajfkou
 lead: Zařiďte, aby se po kliknutí na odpověď zobrazil symbol fajfky.
 demand: 3
-context: cvlekce
+context: lekce
 solutionAccess: protected
 ---
 

@@ -2,7 +2,7 @@
 title: Data binding
 lead: Vyzkoušejte si obousměrný data binding.
 demand: 3
-context: cvlekce
+context: lekce
 solutionAccess: protected
 ---
 

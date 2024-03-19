@@ -2,7 +2,7 @@
 title: Aplikace Podcasty
 lead: Vytvořte diagram komponent pro aplikaci Podcasty.
 demand: 3
-context: cvlekce
+context: lekce
 solutionAccess: protected
 ---
 

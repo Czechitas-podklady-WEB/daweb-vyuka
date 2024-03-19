@@ -1,7 +1,7 @@
 ---
 title: Události
 demand: 3
-context: cvlekce
+context: lekce
 lead: Vyzkoušejte si práci s událostmi v Reactu.
 solutionAccess: protected
 ---

@@ -2,7 +2,7 @@
 title: Výběr data cesty
 lead: Zprovizníme výběr data cesty.
 demand: 2
-context: cvlekce
+context: lekce
 solutionAccess: protected
 ---
 

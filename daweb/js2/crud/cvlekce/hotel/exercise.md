@@ -1,7 +1,7 @@
 ---
 title: Hotel
 demand: 4
-context: cvlekce
+context: lekce
 ---
 
 ℹ️ Cvičení pouze pro účastnice webové digitální akademie. Vyžaduje přístupové údaje.

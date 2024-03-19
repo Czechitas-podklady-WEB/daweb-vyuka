@@ -1,7 +1,7 @@
 ---
 title: Algoritmy pro fajnšmekry
 demand: 4
-context: cvdoma
+context: nadoma
 solutionAccess: protected
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Těžší algoritmy
 demand: 3
-context: cvdoma
+context: nadoma
 solutionAccess: protected
 ---
 

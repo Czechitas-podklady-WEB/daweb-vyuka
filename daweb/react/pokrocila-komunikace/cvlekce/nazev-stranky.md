@@ -2,7 +2,7 @@
 title: Název stránky
 lead: Vyzkoušejte si callback s parametrem.
 demand: 3
-context: cvlekce
+context: lekce
 solutionAccess: protected
 ---
 

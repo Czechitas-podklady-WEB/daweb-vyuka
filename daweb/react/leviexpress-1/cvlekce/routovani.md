@@ -2,7 +2,7 @@
 title: Routování
 lead: Rozběhněte základní routování.
 demand: 2
-context: cvlekce
+context: lekce
 solutionAccess: protected
 ---
 

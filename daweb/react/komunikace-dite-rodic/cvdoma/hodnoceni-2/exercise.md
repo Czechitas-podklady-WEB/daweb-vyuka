@@ -2,7 +2,7 @@
 title: Hodnocení 2
 lead: Dokončete komponentu pro hodnocení hvězdičkami.
 demand: 4
-context: cvdoma
+context: nadoma
 solutionAccess: protected
 ---
 

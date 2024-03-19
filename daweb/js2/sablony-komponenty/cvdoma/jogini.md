@@ -1,7 +1,7 @@
 ---
 title: Jogíni
 demand: 2
-context: cvdoma
+context: nadoma
 lead: Rozdělte jednoduchou stránku na komponenty
 solutionAccess: protected
 ---

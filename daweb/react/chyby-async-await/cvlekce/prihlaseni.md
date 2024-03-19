@@ -1,7 +1,7 @@
 ---
 title: Přihlášení
 demand: 3
-context: cvlekce
+context: lekce
 ---
 
 Každá slušně vychovaná aplikace má nějakou správu uživatelů a možnost se zaregistrovat. Registrační formulář by však měl umět ověřit, že zadáváme správná data. Validaci dat bude dělat server a vždy, když pošleme neplatný e-mail nebo slabé heslo, vrátí nám chybu _400 Bad Request_.

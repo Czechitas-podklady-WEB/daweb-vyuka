@@ -1,7 +1,7 @@
 ---
 title: Seznam filmů
 demand: 3
-context: cvlekce
+context: lekce
 solutionAccess: protected
 ---
 

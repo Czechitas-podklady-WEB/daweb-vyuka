@@ -1,7 +1,7 @@
 ---
 title: Zpracování dat
 demand: 3
-context: cvdoma
+context: nadoma
 ---
 
 V tomto cvičení budeme opět pracovat s poli z našich jednohubek.

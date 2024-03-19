@@ -1,7 +1,7 @@
 ---
 title: Čekání na šestku
 demand: 2
-context: cvdoma
+context: nadoma
 solutionAccess: protected
 ---
 

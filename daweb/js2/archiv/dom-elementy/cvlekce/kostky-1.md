@@ -1,7 +1,7 @@
 ---
 title: Kostky 1
 demand: 3
-context: cvlekce
+context: lekce
 ---
 
 V tomto cvičení vyrobíme stránku s několika hracími kostkami. Budeme chtít, abychom mohli hodit každou kostkou zvlášť.

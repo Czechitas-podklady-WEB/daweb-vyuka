@@ -1,7 +1,7 @@
 ---
 title: Realitka
 demand: 2
-context: cvlekce
+context: lekce
 lead: Vypište do stránky některé údaje z inzerátu na byt.
 solutionAccess: protected
 ---

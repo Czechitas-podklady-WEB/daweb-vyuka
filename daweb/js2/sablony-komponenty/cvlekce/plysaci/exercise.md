@@ -1,7 +1,7 @@
 ---
 title: Plyšáci
 demand: 2
-context: cvlekce
+context: lekce
 lead: Vyrobte jednoduchou stránku s plyšáky.
 solutionAccess: protected
 ---

@@ -1,7 +1,7 @@
 ---
 title: Fahrnheit vs. Celsius
 demand: 3
-context: cvdoma
+context: nadoma
 lead: Vytvořte převodník stupňů Fahrenheita na stupně Celsia.
 solutionAccess: protected
 ---

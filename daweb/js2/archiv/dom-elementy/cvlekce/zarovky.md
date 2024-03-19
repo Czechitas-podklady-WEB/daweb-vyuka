@@ -1,7 +1,7 @@
 ---
 title: Žárovky
 demand: 2
-context: cvlekce
+context: lekce
 ---
 
 Vzpomeňte si na příklad se zapínámím a vypínáním žárovky. V tomto cvičení žárovku naprogramujeme pomocí komponent a DOM elementů.

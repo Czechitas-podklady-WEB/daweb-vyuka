@@ -1,7 +1,7 @@
 ---
 title: Registrace
 demand: 1
-context: cvlekce
+context: lekce
 solutionAccess: protected
 ---
 

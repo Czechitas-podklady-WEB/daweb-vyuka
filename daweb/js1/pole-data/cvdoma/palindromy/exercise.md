@@ -1,7 +1,7 @@
 ---
 title: Palindromy
 demand: 3
-context: cvdoma
+context: nadoma
 lead: Vyhrajte soutěž v hledání palindromů.
 solutionAccess: protected
 ---

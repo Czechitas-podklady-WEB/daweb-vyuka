@@ -1,7 +1,7 @@
 ---
 title: Jednoduchá aplikace
 demand: 1
-context: cvlekce
+context: lekce
 lead: Vyzkoušejte si vytvořit základní strukturu aplikace
 solutionAccess: protected
 ---

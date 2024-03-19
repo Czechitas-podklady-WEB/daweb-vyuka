@@ -1,7 +1,7 @@
 ---
 title: Úkolníček
 demand: 3
-context: cvdoma
+context: nadoma
 ---
 
 Založte si JavaScriptový program a vložte do něj následujicí [datovou strukturu](assets/tasks.js), pole `tasks`. Pole představuje seznam úkolů v tomto formátu:

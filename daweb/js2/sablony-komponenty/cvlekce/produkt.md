@@ -1,7 +1,7 @@
 ---
 title: Produkt
 demand: 2
-context: cvlekce
+context: lekce
 ---
 
 Představte si, že tvoříte e-shop a na hlavní stránce chcete zobrazit vaše produkty. K dispozici je pole produktů, které zatím vložíme natvrdo do programu.

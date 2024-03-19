@@ -1,7 +1,7 @@
 ---
 title: Malé algoritmy
 demand: 2
-context: cvdoma
+context: nadoma
 lead: Jednoduchá cvičení na použití metody `forEach`.
 solutionAccess: protected
 ---

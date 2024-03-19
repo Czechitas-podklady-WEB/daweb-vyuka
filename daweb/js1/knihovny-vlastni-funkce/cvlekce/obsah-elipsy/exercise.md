@@ -1,7 +1,7 @@
 ---
 title: Obsah elipsy
 demand: 1
-context: cvlekce
+context: lekce
 lead: Spočítejte obsah elipsy.
 solutionAccess: protected
 ---

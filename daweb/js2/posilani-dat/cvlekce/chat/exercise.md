@@ -1,7 +1,7 @@
 ---
 title: Chat
 demand: 3
-context: cvlekce
+context: lekce
 lead: Odešlete jednoduchou zprávu do chatu.
 solutionAccess: protected
 ---

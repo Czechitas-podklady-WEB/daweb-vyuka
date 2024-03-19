@@ -1,7 +1,7 @@
 ---
 title: Hot dog s Vite
 demand: 3
-context: cvdoma
+context: nadoma
 lead: Přepište aplikaci pro výběr přísad do hot dogu na Vite.
 solutionAccess: protected
 ---

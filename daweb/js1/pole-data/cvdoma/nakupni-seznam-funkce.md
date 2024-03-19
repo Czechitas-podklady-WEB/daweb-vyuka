@@ -1,7 +1,7 @@
 ---
 title: Nákupní seznam jako funkce
 demand: 2
-context: cvdoma
+context: nadoma
 solutionAccess: protected
 ---
 

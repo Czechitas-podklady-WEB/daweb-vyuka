@@ -1,7 +1,7 @@
 ---
 title: Transformace
 demand: 2
-context: cvlekce
+context: lekce
 hasSolution: false
 ---
 

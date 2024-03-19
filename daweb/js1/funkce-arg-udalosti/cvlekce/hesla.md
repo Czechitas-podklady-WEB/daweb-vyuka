@@ -2,7 +2,7 @@
 title: Hesla
 lead: 'Generujte bezpečná i nebezpečná hesla.'
 demand: 2
-context: cvlekce
+context: lekce
 solutionAccess: protected
 ---
 

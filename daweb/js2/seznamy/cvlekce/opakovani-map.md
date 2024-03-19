@@ -1,7 +1,7 @@
 ---
 title: Opakování map
 demand: 2
-context: cvlekce
+context: lekce
 lead: Zopakujte si metodu `map` a zkracování funkcí.
 solutionAccess: protected
 ---

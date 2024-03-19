@@ -1,7 +1,7 @@
 ---
 title: Nekup to, třídy
 demand: 2
-context: cvlekce
+context: lekce
 lead: JavaScriptem upravte třídy.
 solutionAccess: protected
 ---

@@ -2,7 +2,7 @@
 title: Zprovoznění API
 lead: Zprovozněte API backend a zobrazte nápoje na stránce.
 demand: 3
-context: cvlekce
+context: lekce
 ---
 
 V tomto cvičení konečně zobrazíme celou nabídku nápojů, které si stáhneme z API.

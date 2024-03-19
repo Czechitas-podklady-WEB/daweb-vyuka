@@ -1,7 +1,7 @@
 ---
 title: Převod měny
 demand: 2
-context: cvlekce
+context: lekce
 lead: Napište funkci, která převede částku na české koruny.
 solutionAccess: protected
 ---

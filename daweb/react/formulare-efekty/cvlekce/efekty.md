@@ -2,7 +2,7 @@
 title: Efekty
 lead: Vyzkoušejte si vytvořit jednoduché efekty.
 demand: 3
-context: cvlekce
+context: lekce
 solutionAccess: protected
 ---
 

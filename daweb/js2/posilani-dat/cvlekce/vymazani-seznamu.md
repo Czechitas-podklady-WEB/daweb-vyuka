@@ -1,7 +1,7 @@
 ---
 title: Vymazání seznamu položek
 demand: 3
-context: cvlekce
+context: lekce
 ---
 
 Pokračujte v aplikaci z předchozího příkladu. Rozšíříme náš nákupní seznam ještě o tlačítko _vymazat_, které naopak umožní odstranit najednou všechny položky seznamu.

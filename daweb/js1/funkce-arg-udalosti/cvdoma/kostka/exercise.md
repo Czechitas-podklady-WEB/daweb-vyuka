@@ -2,7 +2,7 @@
 title: Kostka
 lead: 'Oživte herní kostku.'
 demand: 2
-context: cvdoma
+context: nadoma
 solutionAccess: protected
 ---
 

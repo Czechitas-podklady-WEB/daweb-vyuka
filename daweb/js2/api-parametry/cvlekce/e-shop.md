@@ -1,7 +1,7 @@
 ---
 title: E-shop
 demand: 2
-context: cvlekce
+context: lekce
 lead: Vytvořte aplikaci simulující nějaký e-shop.
 solutionAccess: protected
 ---

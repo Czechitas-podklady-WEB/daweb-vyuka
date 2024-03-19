@@ -2,7 +2,7 @@
 title: Zobrazení vybraného sedadla
 lead: Zobrazte vybrané sedadlo na plánku autobusu.
 demand: 3
-context: cvlekce
+context: lekce
 solutionAccess: protected
 ---
 

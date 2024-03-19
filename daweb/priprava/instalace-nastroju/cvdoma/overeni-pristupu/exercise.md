@@ -1,7 +1,7 @@
 ---
 title: Ověření přístupu
 demand: 2
-context: cvdoma
+context: nadoma
 ---
 
 1. Pokud ještě nejste přihlášeni, přihlaste se na [kodim.cz/prihlasit](https://kodim.cz/prihlasit).

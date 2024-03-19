@@ -1,7 +1,7 @@
 ---
 title: Chat
 demand: 2
-context: cvlekce
+context: lekce
 ---
 
 Napište ostatním zprávu do společného chatu a přečtěte si zprávy od ostatních.

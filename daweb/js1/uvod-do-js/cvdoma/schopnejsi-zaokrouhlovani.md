@@ -1,7 +1,7 @@
 ---
 title: Schopnější zaokrouhlování
 demand: 3
-context: cvdoma
+context: nadoma
 lead: Zaokrouhlete číslo na desetiny, setiny a celé stovky.
 solutionAccess: protected
 ---

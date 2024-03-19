@@ -1,7 +1,7 @@
 ---
 title: Workshop - komponenty
 demand: 3
-context: cvlekce
+context: lekce
 lead: Vytvořte komponenty zobrazující informace o workshopu.
 solutionAccess: protected
 ---

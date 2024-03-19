@@ -2,7 +2,7 @@
 title: Zobrazení kalorií
 lead: 'Přidejte do vzoru „výběr jedné položky“ zobrazení kalorií.'
 demand: 3
-context: cvlekce
+context: lekce
 solutionAccess: protected
 ---
 

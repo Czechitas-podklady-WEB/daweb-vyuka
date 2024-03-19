@@ -1,7 +1,7 @@
 ---
 title: Rodná čísla
 demand: 3
-context: cvlekce
+context: lekce
 access: claim
 ---
 

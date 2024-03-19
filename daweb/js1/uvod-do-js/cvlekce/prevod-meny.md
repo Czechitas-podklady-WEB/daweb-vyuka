@@ -1,7 +1,7 @@
 ---
 title: Převod měny
 demand: 2
-context: cvlekce
+context: lekce
 lead: Spočítejte, kolik si vyděláte v českých korunách.
 solutionAccess: protected
 ---

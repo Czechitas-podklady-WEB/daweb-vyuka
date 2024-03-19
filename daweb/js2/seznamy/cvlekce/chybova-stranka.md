@@ -1,7 +1,7 @@
 ---
 title: Chybová stránka
 demand: 2
-context: cvlekce
+context: lekce
 ---
 
 V naší aplikaci _Nákupy_ budeme chtít ošetřit situaci, kdy uživatel zadá do prohlížeče adresu stránky, která neexistuje. Vytvoříme proto novou stránku zobrazující chybové hlášení.

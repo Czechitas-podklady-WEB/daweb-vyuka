@@ -1,7 +1,7 @@
 ---
 title: E-maily
 demand: 2
-context: cvdoma
+context: nadoma
 ---
 
 Vytvoříme jednoduchou aplikaci, která zobrazuje obsah e-mailové schránky.

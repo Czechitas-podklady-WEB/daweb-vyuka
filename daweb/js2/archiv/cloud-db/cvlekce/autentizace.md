@@ -1,7 +1,7 @@
 ---
 title: Odhlášení uživatele
 demand: 2
-context: cvlekce
+context: lekce
 ---
 
 V rámci tohoto cvičení si založíme projekt na supabase a vyzkoušíme si, jak přihlášeného uživatele odhlásit.

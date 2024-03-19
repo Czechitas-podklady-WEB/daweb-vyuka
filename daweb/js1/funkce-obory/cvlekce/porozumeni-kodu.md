@@ -1,7 +1,7 @@
 ---
 title: Porozumění kódu
 demand: 2
-context: cvlekce
+context: lekce
 lead: Vyzkoušejte si, jak dobře umíte číst JavaScriptový kód.
 solutionAccess: protected
 ---

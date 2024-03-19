@@ -1,7 +1,7 @@
 ---
 title: Hod mincí
 demand: 2
-context: cvlekce
+context: lekce
 lead: Oživte virtuální minci.
 solutionAccess: protected
 ---

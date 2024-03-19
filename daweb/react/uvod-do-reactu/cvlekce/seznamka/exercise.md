@@ -2,7 +2,7 @@
 title: Seznamka
 lead: Vytvořte stránku s profilem uživatele na seznamce.
 demand: 2
-context: cvlekce
+context: lekce
 solutionAccess: protected
 ---
 

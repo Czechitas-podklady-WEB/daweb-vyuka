@@ -1,7 +1,7 @@
 ---
 title: Minutka 2
 demand: 3
-context: cvdoma
+context: nadoma
 lead: Vylepšete aplikaci Minutka.
 solutionAccess: protected
 ---

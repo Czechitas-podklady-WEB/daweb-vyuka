@@ -1,7 +1,7 @@
 ---
 title: Registrace na očkování
 demand: 2
-context: cvlekce
+context: lekce
 lead: Zkontrolujte, zda je uživatel starší 65 let a zda má silné heslo.
 solutionAccess: protected
 ---
