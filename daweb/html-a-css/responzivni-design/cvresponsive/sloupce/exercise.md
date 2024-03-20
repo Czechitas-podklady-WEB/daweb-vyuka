@@ -25,7 +25,25 @@ Výsledek bude vypadat takto:
     display: flex;
   }
   .sloupec {
-    width: calc(100 / 3);
+    width: calc(100% / 3);
+  }
+}
+```
+
+nebo:
+
+```css
+.kontejner {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 800px) {
+  .kontejner {
+    flex-direction: row;
+  }
+  .sloupec {
+    width: calc(100% / 3);
   }
 }
 ```
