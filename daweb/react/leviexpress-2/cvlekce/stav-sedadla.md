@@ -2,6 +2,7 @@
 title: Stav pro výběr sedadla
 lead: Vytvořte stav pro výběr sedadla.
 demand: 4
+context: lekce
 solutionAccess: protected
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Knihovna
 demand: 2
+context: lekce
 lead: Vytvořte objekt představující jednu knihu v knihovně.
 solutionAccess: protected
 ---

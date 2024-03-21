@@ -1,6 +1,7 @@
 ---
 title: Výplata
 demand: 2
+context: nadoma
 lead: Spočítejte si svoji měsíční výplatu pomocí funkcí.
 solutionAccess: protected
 ---

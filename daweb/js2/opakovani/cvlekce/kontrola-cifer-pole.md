@@ -1,6 +1,7 @@
 ---
 title: Detailní kontrola cifer
 demand: 3
+context: lekce
 access: claim
 ---
 

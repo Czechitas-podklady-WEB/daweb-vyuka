@@ -2,6 +2,7 @@
 title: Potvrzení rezervace
 lead: Umožníme uživateli potvrdit rezervaci jízdenky.
 demand: 2
+context: lekce
 solutionAccess: protected
 ---
 

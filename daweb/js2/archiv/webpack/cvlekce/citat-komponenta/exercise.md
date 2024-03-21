@@ -1,6 +1,7 @@
 ---
 title: Citát jako komponenta
 demand: 3
+context: lekce
 ---
 
 Pokračujte v projektu z předchozího cvičení. Dle již známých postupů vytvoříme v oddělené složce komponentu pro jeden citát.

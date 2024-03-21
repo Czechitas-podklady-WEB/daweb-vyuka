@@ -1,6 +1,7 @@
 ---
 title: Registrace
 demand: 1
+context: lekce
 solutionAccess: protected
 ---
 

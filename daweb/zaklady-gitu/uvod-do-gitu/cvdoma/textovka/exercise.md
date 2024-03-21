@@ -1,6 +1,7 @@
 ---
 title: Zveřejnění textovky
 demand: 3
+context: nadoma
 ---
 
 Zveřejněte webovou textovku s vetřelcem z předchozího bloku na GitHub Pages.

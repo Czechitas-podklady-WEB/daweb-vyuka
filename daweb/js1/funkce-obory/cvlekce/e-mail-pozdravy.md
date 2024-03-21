@@ -1,6 +1,7 @@
 ---
 title: E-mail, pozdravy
 demand: 1
+context: lekce
 lead: Vytvořte funkci, která vloží do e-mailu rozloučení.
 solutionAccess: protected
 ---

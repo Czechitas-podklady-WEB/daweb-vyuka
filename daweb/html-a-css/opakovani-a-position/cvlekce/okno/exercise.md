@@ -1,6 +1,7 @@
 ---
 title: Okno
 demand: 1
+context: lekce
 solutionAccess: protected
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Počítání hodin
 demand: 3
+context: nadoma
 solutionAccess: protected
 ---
 

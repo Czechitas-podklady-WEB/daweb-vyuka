@@ -1,6 +1,7 @@
 ---
 title: Příjem divadla
 demand: 2
+context: nadoma
 lead: Spočítejte příjem divadla ze vstupného.
 solutionAccess: protected
 ---

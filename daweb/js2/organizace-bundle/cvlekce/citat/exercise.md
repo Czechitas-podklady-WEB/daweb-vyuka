@@ -1,6 +1,7 @@
 ---
 title: Citát
 demand: 2
+context: lekce
 lead: Vyzkoušejte si založení vlastního Vite projektu s jednoduchou stránkou.
 solutionAccess: protected
 ---

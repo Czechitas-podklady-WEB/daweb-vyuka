@@ -1,6 +1,7 @@
 ---
 title: Doručování
 demand: 2
+context: lekce
 lead: Vytvořte jednoduchý objednávkový systém.
 solutionAccess: protected
 ---

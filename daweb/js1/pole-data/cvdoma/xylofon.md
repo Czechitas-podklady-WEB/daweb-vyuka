@@ -1,6 +1,7 @@
 ---
 title: Xylofon
 demand: 4
+context: nadoma
 lead: Vytvořte jednoduchý xylofon.
 solutionAccess: protected
 ---

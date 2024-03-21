@@ -2,6 +2,7 @@
 title: Zobrazení sedadla
 lead: Vytvoříme komponentu zobrazující plánek autobusu se sedadly.
 demand: 2
+context: lekce
 solutionAccess: protected
 ---
 

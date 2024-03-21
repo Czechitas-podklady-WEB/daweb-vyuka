@@ -1,6 +1,7 @@
 ---
 title: Jednohubky pro `map`
 demand: 1
+context: lekce
 lead: Jednoduché cvičení na použití metody `map`.
 solutionAccess: protected
 ---

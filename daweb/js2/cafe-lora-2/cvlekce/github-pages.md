@@ -1,6 +1,7 @@
 ---
 title: Bonus – Publikování na GitHub Pages
 demand: 5
+context: lekce
 ---
 
 Váš projekt můžete zpřístupnit na GitHub Pages. Protože váš projekt už používá WebPack, nebude to tak jednoduché, jako dříve – ale jde to. Postupujte takto:

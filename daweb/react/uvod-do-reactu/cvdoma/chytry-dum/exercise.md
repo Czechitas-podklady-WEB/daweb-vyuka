@@ -1,6 +1,7 @@
 ---
 title: Chytrý dům
 demand: 4
+context: nadoma
 ---
 
 Cílem tohoto cvičení je na základě připraveného kódu vytvořit pomocí Reactu ovládací panel pro Chytrý dům. Ve skutečnosti samozřejmě nebudeme žádný dům ovládat, ale budeme předstírat, že náš panel umí rozsvěcet světla, informovat nás o teplotě, vlhkosti vzduchu, stažených žaluziích nebo spotřebě energie.

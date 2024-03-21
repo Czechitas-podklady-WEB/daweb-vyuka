@@ -1,6 +1,7 @@
 ---
 title: Letenky
 demand: 2
+context: nadoma
 lead: Vytvořte komponentu pro zobrazení jednoho letu.
 solutionAccess: protected
 ---

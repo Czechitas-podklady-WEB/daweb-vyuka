@@ -1,6 +1,7 @@
 ---
 title: Schopnější zaokrouhlování 2
 demand: 3
+context: nadoma
 lead: Zaokrouhlete číslo na zadaný počet cifer.
 ---
 

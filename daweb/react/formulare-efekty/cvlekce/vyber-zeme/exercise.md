@@ -2,6 +2,7 @@
 title: Výběr země
 lead: Přidejte do formuláře rozbalovací nabídku pro výběr země.
 demand: 2
+context: lekce
 solutionAccess: protected
 ---
 

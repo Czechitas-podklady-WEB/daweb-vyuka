@@ -1,6 +1,7 @@
 ---
 title: Formátování data
 demand: 3
+context: nadoma
 lead: Převeďte datum do lidské podoby.
 solutionAccess: protected
 ---

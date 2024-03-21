@@ -1,6 +1,7 @@
 ---
 title: Mejlík – hlavička
 demand: 2
+context: lekce
 lead: Vytvořte komponentu pro zobrazování hlavičky stránky.
 solutionAccess: protected
 ---

@@ -1,6 +1,7 @@
 ---
 title: Pánské obleky
 demand: 2
+context: lekce
 ---
 
 V tomto příkladu si vyzkoušíme týmovou spolupráci v Gitu. Vaším úkolem bude vytvořit webovou stránku pro e-shop s pánskými obleky. Stránka má vypadat přesně dle tohoto [grafického návrhu](assets/layout.png).

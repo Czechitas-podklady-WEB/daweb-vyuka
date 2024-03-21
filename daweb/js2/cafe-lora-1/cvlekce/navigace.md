@@ -2,6 +2,7 @@
 title: Zprovoznění navigace
 lead: Rozchoďte navigaci, aby fungovala i na úzkých displejích.
 demand: 3
+context: lekce
 ---
 
 Jako další úkol rozchodíme zatím nefunkční navigaci a zařídíme, aby se na úzkých displejích navigace zobrazovala po kliknutí na hamburger ikonku.

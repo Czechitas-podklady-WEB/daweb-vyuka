@@ -2,6 +2,7 @@
 title: Vyhledání spoje
 lead: Dokončíme komponentu pro vyhledání spojení.
 demand: 3
+context: lekce
 solutionAccess: protected
 ---
 

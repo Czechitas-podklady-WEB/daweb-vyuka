@@ -2,6 +2,7 @@
 title: Pokročilá komunikace
 lead: Vyzkoušejte si pokročilejší komunikaci mezi komponentami.
 demand: 3
+context: lekce
 solutionAccess: protected
 ---
 

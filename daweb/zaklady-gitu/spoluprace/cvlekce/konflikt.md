@@ -1,6 +1,7 @@
 ---
 title: Konflikt
 demand: 3
+context: lekce
 ---
 
 V tuto chvíli se obě dámy nezávisle na sobě rozhodnou upravit stejnou část stránky.

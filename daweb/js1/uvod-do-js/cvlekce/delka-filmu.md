@@ -1,6 +1,7 @@
 ---
 title: Délka filmu
 demand: 2
+context: lekce
 lead: Spočítejte, kolik hodin a minut trvá film Pán prstenů.
 solutionAccess: protected
 ---

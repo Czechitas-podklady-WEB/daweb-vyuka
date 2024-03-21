@@ -2,6 +2,7 @@
 title: Objednávka
 lead: 'Vytvořte stránku s objednávacím tlačítkem.'
 demand: 1
+context: lekce
 solutionAccess: protected
 ---
 

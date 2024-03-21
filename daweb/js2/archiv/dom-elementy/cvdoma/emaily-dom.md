@@ -1,6 +1,7 @@
 ---
 title: E-maily pomocí DOM elementů
 demand: 3
+context: nadoma
 ---
 
 Budeme pokračovat v naší aplikaci zobrazující přečtené a nepřečtené e-maily. Nejdříve celý kód převedeme na komponenty.

@@ -2,6 +2,7 @@
 title: Podrobnosti cesty
 lead: Vytvoříme komponenty pro zobrazení detailu cesty a zastávek.
 demand: 1
+context: lekce
 solutionAccess: protected
 ---
 

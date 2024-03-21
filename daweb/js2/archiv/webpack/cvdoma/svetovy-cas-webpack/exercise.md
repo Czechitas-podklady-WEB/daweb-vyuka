@@ -1,6 +1,7 @@
 ---
 title: Světový čas pomocí Webpacku
 demand: 2
+context: nadoma
 ---
 
 Stáhněte si [řešení](assets/svetovy-cas-2-reseni.zip) aplikace pro zobrazování světového času. Následujte postup pro založení nového Webpack projektu a předělejte toto řešení tak, aby využívalo Webpack.

@@ -1,6 +1,7 @@
 ---
 title: Pexeso
 demand: 3
+context: nadoma
 lead: Oživte pexesové kartičky.
 solutionAccess: protected
 ---

@@ -1,6 +1,7 @@
 ---
 title: Seznámení se s projektem
 demand: 1
+context: lekce
 ---
 
 Vytvořte si repozitář ze šablony [projekt-Chata-Arnica](https://github.com/Czechitas-podklady-WEB/projekt-Chata-Arnica).

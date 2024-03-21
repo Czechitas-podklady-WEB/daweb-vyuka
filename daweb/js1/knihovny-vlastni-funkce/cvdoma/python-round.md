@@ -1,6 +1,7 @@
 ---
 title: Python zaokrouhlování
 demand: 3
+context: nadoma
 lead: Vytvořte pokročilou zaokrouhlovací funkci.
 solutionAccess: protected
 ---
