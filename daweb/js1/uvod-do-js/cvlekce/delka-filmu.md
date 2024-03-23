@@ -22,7 +22,7 @@ document.body.innerHTML += Math.floor(223 / 60);
 #### A počet zbývajících minut
 
 ```js
-document.body.innerHTML += '<br>';
+document.body.innerHTML += ':';
 document.body.innerHTML += 223 % 60;
 ```
 
