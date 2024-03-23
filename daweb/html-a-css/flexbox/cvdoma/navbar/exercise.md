@@ -27,18 +27,6 @@ Nastylujte hlavičku s navigací podle výsledku:
   display: flex;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  display: flex;
-  list-style-type: none;
-  margin: 1px;
-  padding: 0;
-}
-
 .logo {
   padding: 10px 20px;
   font-size: 30px;
@@ -46,8 +34,22 @@ li {
   text-transform: uppercase;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: flex;  
+	align-items: stretch;
+  list-style-type: none;
+  margin: 1px;
+  padding: 0;
+}
+
 a {
   display: flex;
+	justify-content: center;
   align-items: center;
   /*
     height: calc(55px - 2px);
