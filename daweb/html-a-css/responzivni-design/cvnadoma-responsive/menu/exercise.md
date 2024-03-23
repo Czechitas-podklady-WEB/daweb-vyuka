@@ -58,7 +58,7 @@ li {
   .hlavicka {
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;    
+    align-items: center;
   }
 
   .logo {
