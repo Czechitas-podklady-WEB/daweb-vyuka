@@ -1,0 +1,55 @@
+since 2024-03-15T01:00 HTML/CSS 1 https://kodim.cz/czechitas/daweb/html-a-css/opakovani-a-position
+since 2024-03-15T01:00 HTML/CSS 2 https://kodim.cz/czechitas/daweb/html-a-css/flexbox
+since 2024-03-15T01:00 Pracovní skupinky
+
+since 2024-03-22T01:00 HTML/CSS 3 https://kodim.cz/czechitas/daweb/html-a-css/selektory-a-specificita
+since 2024-03-22T01:00 HTML/CSS 4	https://kodim.cz/czechitas/daweb/html-a-css/bem-a-responzivni-design
+since 2024-03-22T01:00 HTML/CSS 5	https://kodim.cz/czechitas/daweb/html-a-css/responzivni-design
+since 2024-03-22T01:00 JavaScript I - 01	https://kodim.cz/czechitas/daweb/js1/uvod-do-js
+since 2024-03-22T01:00 Pracovní skupinky
+
+since 2024-04-05T01:00 JavaScript I - 02  https://kodim.cz/czechitas/daweb/js1/vstup-vystup-objekty
+since 2024-04-05T01:00 JavaScript I - 03	https://kodim.cz/czechitas/daweb/js1/retezce-podminky
+since 2024-04-05T01:00 JavaScript I - 04	https://kodim.cz/czechitas/daweb/js1/dom-innerhtml
+since 2024-04-05T01:00 JavaScript I - 05	https://kodim.cz/czechitas/daweb/js1/knihovny-vlastni-funkce
+since 2024-04-05T01:00 JavaScript I - 06	https://kodim.cz/czechitas/daweb/js1/funkce-obory
+since 2024-04-05T01:00 Git 2 
+since 2024-04-05T01:00 Pracovní skupinky	
+
+since 2024-04-12T01:00 JavaScript I - 07 https://kodim.cz/czechitas/daweb/js1/funkce-arg-udalosti
+since 2024-04-12T01:00 JavaScript I - 08 https://kodim.cz/czechitas/daweb/js1/udalosti-formulare
+since 2024-04-12T01:00 JavaScript I - 09 https://kodim.cz/czechitas/daweb/js1/pole-data
+since 2024-04-12T01:00 JavaScript I - 10 https://kodim.cz/czechitas/daweb/js1/stranky-chyby
+since 2024-04-12T01:00 JavaScript I - 11 https://kodim.cz/czechitas/daweb/js1/filmbox
+since 2024-04-12T01:00 Pracovní skupinky	
+
+2024-04-13 JavaScript II - 2 Organizace kódu a bundlování
+2024-04-13 JavaScript II - 3 Šablony a komponenty
+2024-04-16 JavaScript II - 4 Komunikace se serverem
+2024-04-18 JavaScript II - 5 Podmíněné zobrazení
+2024-04-19 Pracovní skupinky
+
+2024-04-20 JavaScript II 6 Zobrazování seznamů
+2024-04-20 JavaScript II 7 Posílání dat na server
+2024-04-23 JavaScript II 8 Lokální API a URL parametry
+2024-04-25 JavaScript II 9 CRUD operace
+2024-04-26 Pracovní skupinky
+
+2024-04-27 JavaScript II 10 Opakování: Café Lóra, 1. část
+2024-04-27 JavaScript II 11 Opakování: Café Lóra, 2. část
+2024-05-07 React 1 Úvod do Reactu
+2024-05-10 Pracovní skupinky
+
+2024-05-11 React 2 Formulářové prvky, efekty
+2024-05-11 React 3 Komunikace dítě rodič
+2024-05-13 React 4 Pokročilá komunikace
+2024-05-16 React 5 React router
+2024-05-17 Pracovní skupinky	
+
+2024-05-18 React 6 Levi Express, první část
+2024-05-18 React 7 Levi Express, druhá část
+2024-05-20 React 8 Zaklady architektury aplikací I
+2024-05-22 React 9 Zaklady architektury aplikací II
+2024-05-24 Pracovní skupinky	Příprava na sobotní projekt
+
+2024-05-25 React 10	Samostatný projekt, první část 11) Samostatný projekt, druhá část"
