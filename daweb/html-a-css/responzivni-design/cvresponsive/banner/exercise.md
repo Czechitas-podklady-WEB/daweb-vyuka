@@ -1,6 +1,7 @@
 ---
 title: Reklamní banner
 demand: 1
+context: lekce
 solutionAccess: protected
 ---
 

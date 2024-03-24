@@ -1,6 +1,7 @@
 ---
 title: Kartička – specificita
 demand: 2
+context: lekce
 solutionAccess: protected
 ---
 

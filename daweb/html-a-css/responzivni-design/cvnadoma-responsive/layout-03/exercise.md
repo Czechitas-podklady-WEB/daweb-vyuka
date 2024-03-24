@@ -1,6 +1,7 @@
 ---
 title: Responzivní layout 03
 demand: 3
+context: nadoma
 solutionAccess: protected
 ---
 
@@ -20,3 +21,52 @@ Výsledek bude vypadat takto.
 ::fig[responsive layout result]{src=assets/layout-03-result.gif}
 
 Pro mezery mezi reklamami je možné použít vlastnost [gap](https://coryrylan.com/blog/css-gap-space-with-flexbox). Ale jde to i bez ní 😀
+
+:::solution
+
+```css
+.reklamy {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 640px) {
+  .obsah {
+    display: flex;
+  }
+  .clanek {
+    width: 60%;
+  }
+  .reklamy {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .kontejner {
+    display: flex;
+  }
+
+  .obsah {
+    flex-direction: column;
+    width: 75%;
+  }
+
+  .reklamy {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .menu {
+    width: 25%;
+  }
+
+  .reklama1,
+  .reklama2 {
+    width: 50%;
+  }
+}
+```
+
+:::

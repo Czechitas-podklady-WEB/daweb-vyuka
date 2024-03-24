@@ -1,6 +1,7 @@
 ---
 title: Responzivní sloupce
 demand: 1
+context: lekce
 solutionAccess: protected
 ---
 
