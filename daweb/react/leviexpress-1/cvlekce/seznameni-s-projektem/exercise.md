@@ -2,6 +2,7 @@
 title: Seznámení s projektem
 lead: Začneme pracovat na projektu, který již obsahuje nějaký kód.
 demand: 2
+context: lekce
 solutionAccess: protected
 ---
 

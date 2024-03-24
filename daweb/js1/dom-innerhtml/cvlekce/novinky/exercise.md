@@ -1,6 +1,7 @@
 ---
 title: Novinky
 demand: 2
+context: lekce
 lead: Ovlivněte stránku JavaScriptem.
 solutionAccess: protected
 ---

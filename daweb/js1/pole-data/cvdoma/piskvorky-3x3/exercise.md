@@ -1,6 +1,7 @@
 ---
 title: Piškvorky 3x3
 demand: 4
+context: nadoma
 lead: Vyhodnoťte výsledky malých piškvorek.
 solutionAccess: protected
 ---

@@ -1,6 +1,7 @@
 ---
 title: Hlasování
 demand: 2
+context: lekce
 lead: Pomocí POST zahlasujte v aplikaci Hlasování.
 solutionAccess: protected
 ---

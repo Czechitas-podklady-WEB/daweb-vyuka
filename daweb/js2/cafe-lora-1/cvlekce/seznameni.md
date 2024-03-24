@@ -2,6 +2,7 @@
 title: Seznámení s projektem
 lead: Naklonujte si repozitář a seznamte se se zadáním projektu.
 demand: 2
+context: lekce
 ---
 
 Projekt Café Lóra nebudeme dělat úplně na zelené louce. Budeme vycházet z již připraveného základu, V tomto cvičení se seznámíme s tím, co všechno je pro nás připraveno a jakým způsobem budeme pracovat.

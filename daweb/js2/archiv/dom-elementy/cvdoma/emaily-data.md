@@ -1,6 +1,7 @@
 ---
 title: E-maily – načítání dat
 demand: 3
+context: nadoma
 ---
 
 V aplikaci _E-maily_ vyrobíme komponentu pro zobrazování složek pro přečtené a nepřečtené zprávy.

@@ -1,6 +1,7 @@
 ---
 title: Rozšíření na desktop
 demand: 2
+context: lekce
 ---
 
 ### 840px a více

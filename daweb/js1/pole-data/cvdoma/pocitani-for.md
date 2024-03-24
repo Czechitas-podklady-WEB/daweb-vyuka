@@ -1,6 +1,7 @@
 ---
 title: Počítání pomocí FOR
 demand: 2
+context: nadoma
 solutionAccess: protected
 ---
 

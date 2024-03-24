@@ -1,6 +1,7 @@
 ---
 title: Vývojářské nástroje
 demand: 2
+context: lekce
 solutionAccess: protected
 ---
 

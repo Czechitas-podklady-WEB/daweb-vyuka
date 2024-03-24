@@ -2,6 +2,7 @@
 title: Objednání nápoje
 lead: Zprovozněte tlačítko pro objednávání nápoje.
 demand: 3
+context: lekce
 ---
 
 1.  Nejdříve si všimněte, že data pro jeden nápoj obsahují vlastnost `ordered`, která udává, zda je nápoj zrovna objednaný či nikoliv. Toto je zároveň _prop_ v komponentě `Drink`. Upravte tuto komponentu tak, aby v závislosti na hodnotě této _prop_ zobrazila na tlačíku text _Objednat_ nebo _Zrušit_.

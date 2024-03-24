@@ -1,6 +1,7 @@
 ---
 title: Nákupní seznam z databáze
 demand: 3
+context: lekce
 ---
 
 Budeme pokračovat v práci na projektu z předchozího cvičení.

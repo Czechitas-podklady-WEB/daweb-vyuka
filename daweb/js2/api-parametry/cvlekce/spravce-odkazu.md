@@ -1,6 +1,7 @@
 ---
 title: Správce odkazů
 demand: 2
+context: lekce
 lead: Vytvořte aplikaci, která bude spravovat internetové odkazy.
 solutionAccess: protected
 ---

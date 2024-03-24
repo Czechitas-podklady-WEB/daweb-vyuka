@@ -1,6 +1,7 @@
 ---
 title: Počasí
 demand: 2
+context: lekce
 lead: Vytvořte aplikaci zobrazující aktuální počasí.
 solutionAccess: protected
 ---

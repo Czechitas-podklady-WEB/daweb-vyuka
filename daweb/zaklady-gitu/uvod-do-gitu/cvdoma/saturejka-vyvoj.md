@@ -1,6 +1,7 @@
 ---
 title: Saturejka - vývoj
 demand: 2
+context: nadoma
 ---
 
 Vše máme připraveno a můžeme začít programovat.

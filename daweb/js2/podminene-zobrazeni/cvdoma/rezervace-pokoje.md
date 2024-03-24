@@ -1,6 +1,7 @@
 ---
 title: Rezervace pokoje
 demand: 2
+context: nadoma
 lead: Rozdělte komponentu pro rezervaci pokoje na menší komponenty.
 solutionAccess: protected
 ---

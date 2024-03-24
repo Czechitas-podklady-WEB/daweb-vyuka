@@ -1,6 +1,7 @@
 ---
 title: Nezaplacené objednávky
 demand: 3
+context: lekce
 lead: Vytvořte pole s identifikátory a e-maily zákazníků.
 solutionAccess: protected
 ---

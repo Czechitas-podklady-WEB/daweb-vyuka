@@ -2,6 +2,7 @@
 title: Registrace
 lead: Vytvořte jednoduchý formulář pro registraci uživatele.
 demand: 3
+context: lekce
 solutionAccess: protected
 ---
 

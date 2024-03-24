@@ -2,6 +2,7 @@
 title: Pobočky dětského koutku
 lead: Přidejte do projektu dětského detail jednotlivých poboček.
 demand: 4
+context: lekce
 solutionAccess: protected
 ---
 

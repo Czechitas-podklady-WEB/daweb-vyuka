@@ -1,6 +1,7 @@
 ---
 title: 'Bonus: Hodnocení'
 demand: 3
+context: lekce
 solutionAccess: protected
 ---
 

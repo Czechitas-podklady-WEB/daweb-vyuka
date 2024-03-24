@@ -1,6 +1,7 @@
 ---
 title: Ultramaraton
 demand: 2
+context: lekce
 lead: Spočítejte, v kolik hodin skončí ultramaratonský závod.
 solutionAccess: protected
 ---

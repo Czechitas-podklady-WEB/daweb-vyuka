@@ -1,6 +1,7 @@
 ---
 title: Velikost okna
 demand: 2
+context: nadoma
 lead: Zjistěte, jak velké je okno stránky a prohlížeče.
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: FIT e-mail
 demand: 2
+context: nadoma
 lead: Vytvořte e-mailovou adresu pro studenty FIT ČVUT.
 solutionAccess: protected
 ---

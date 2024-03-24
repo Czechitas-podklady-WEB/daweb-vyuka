@@ -1,6 +1,7 @@
 ---
 title: Maximum ze dvou čísel
 demand: 2
+context: lekce
 lead: Najděte největší číslo.
 solutionAccess: protected
 ---

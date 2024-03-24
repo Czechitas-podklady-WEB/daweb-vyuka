@@ -1,6 +1,7 @@
 ---
 title: Ruleta
 demand: 2
+context: nadoma
 lead: Napište program, který zjistí vlastnosti zadaného čísla na ruletě.
 solutionAccess: protected
 ---

@@ -1,6 +1,7 @@
 ---
 title: Letenka
 demand: 2
+context: nadoma
 lead: Vypište informace o letu.
 solutionAccess: protected
 ---

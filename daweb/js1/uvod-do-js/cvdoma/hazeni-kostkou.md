@@ -1,6 +1,7 @@
 ---
 title: Házení kostkou
 demand: 3
+context: nadoma
 lead: Vymyslete funkci, která simuluje hod kostkou.
 solutionAccess: protected
 ---

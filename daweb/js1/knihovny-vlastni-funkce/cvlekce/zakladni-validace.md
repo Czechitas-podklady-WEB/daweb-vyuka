@@ -1,6 +1,7 @@
 ---
 title: Základní validace
 demand: 2
+context: lekce
 lead: Ověřte, že e-mailová adresa je ve správném tvaru.
 solutionAccess: protected
 ---

@@ -1,6 +1,7 @@
 ---
 title: Maximum ze tří čísel
 demand: 3
+context: nadoma
 lead: Najděte největší číslo ze tří.
 solutionAccess: protected
 ---

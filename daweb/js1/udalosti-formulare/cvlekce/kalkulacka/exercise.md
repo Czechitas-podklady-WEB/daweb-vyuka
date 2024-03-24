@@ -2,6 +2,7 @@
 title: Kalkulačka
 lead: 'Oživte kalkulačku.'
 demand: 2
+context: lekce
 solutionAccess: protected
 ---
 

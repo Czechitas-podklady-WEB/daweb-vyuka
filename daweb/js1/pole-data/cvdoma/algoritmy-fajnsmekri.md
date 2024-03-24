@@ -1,6 +1,7 @@
 ---
 title: Algoritmy pro fajnšmekry
 demand: 4
+context: nadoma
 solutionAccess: protected
 ---
 

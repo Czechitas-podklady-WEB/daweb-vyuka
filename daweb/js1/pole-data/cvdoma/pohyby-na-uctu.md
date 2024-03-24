@@ -1,6 +1,7 @@
 ---
 title: Pohyby na účtu
 demand: 3
+context: nadoma
 solutionAccess: protected
 ---
 

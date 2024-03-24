@@ -1,6 +1,7 @@
 ---
 title: Fine Dining
 demand: 1
+context: lekce
 solutionAccess: protected
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Realitka
 demand: 3
+context: nadoma
 lead: Vytvořte aplikaci zobrazující nabídku nemovitostí.
 solutionAccess: protected
 ---

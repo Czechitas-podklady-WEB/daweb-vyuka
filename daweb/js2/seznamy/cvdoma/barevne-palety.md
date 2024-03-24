@@ -1,6 +1,7 @@
 ---
 title: Barevné palety
 demand: 3
+context: nadoma
 lead: Vytvořte stránku zobrazující barvené palety
 solutionAccess: protected
 ---

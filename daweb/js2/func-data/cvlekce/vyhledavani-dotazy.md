@@ -1,6 +1,7 @@
 ---
 title: Vyhledávání a dotazy
 demand: 2
+context: lekce
 offerSolution: false
 ---
 

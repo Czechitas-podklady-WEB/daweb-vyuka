@@ -2,6 +2,7 @@
 title: Kurzovní lístek, API
 lead: Získávejte kurzy měn z veřejného API.
 demand: 2
+context: lekce
 solutionAccess: protected
 ---
 

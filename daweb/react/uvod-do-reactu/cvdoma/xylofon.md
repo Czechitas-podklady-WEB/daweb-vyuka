@@ -1,6 +1,7 @@
 ---
 title: Xylofon
 demand: 4
+context: nadoma
 ---
 
 Máte hotovou úlohu [Xylofon ze Základů JS](/kurzy/daweb/js1/cykly/ulozky-na-doma#cvdoma>xylofon)? V tomto cvičení oživíte xylofon tentokrát pomocí Reactu.

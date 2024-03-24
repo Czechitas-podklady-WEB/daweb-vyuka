@@ -2,6 +2,7 @@
 title: E-mail podruhé
 lead: 'Pokračujte s e-maily'
 demand: 2
+context: lekce
 solutionAccess: protected
 ---
 

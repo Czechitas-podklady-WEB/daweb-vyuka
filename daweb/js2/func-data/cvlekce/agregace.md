@@ -1,6 +1,7 @@
 ---
 title: Agregace
 demand: 3
+context: lekce
 hasSolution: false
 ---
 

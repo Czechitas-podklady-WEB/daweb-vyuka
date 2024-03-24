@@ -2,6 +2,7 @@
 title: Ingredience jako komponenty
 lead: Vytvořte komponentu pro zobrazení jedné ingredience.
 demand: 3
+context: lekce
 ---
 
 Abychom mohli vytvářet seznam ingrediencí podle dat, každá ingredience musí být také komponenta.

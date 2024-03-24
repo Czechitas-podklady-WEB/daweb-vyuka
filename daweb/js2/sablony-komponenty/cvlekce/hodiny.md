@@ -1,6 +1,7 @@
 ---
 title: Hodiny
 demand: 2
+context: lekce
 ---
 
 Vytvořte si repozitář ze šablony [cviceni-hodiny](https://github.com/Czechitas-podklady-WEB/cviceni-hodiny) se stránkou zobrazující digitální hodiny. Následujte instrukce níže.

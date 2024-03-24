@@ -1,6 +1,7 @@
 ---
 title: Východ a západ slunce
 demand: 2
+context: lekce
 lead: Zobrazte na stránce čas východu a západu slunce.
 solutionAccess: protected
 ---

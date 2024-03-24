@@ -1,6 +1,7 @@
 ---
 title: Vstup pomocí formuláře
 demand: 2
+context: lekce
 access: claim
 ---
 

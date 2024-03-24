@@ -1,6 +1,7 @@
 ---
 title: Úkolníček
 demand: 3
+context: nadoma
 ---
 
 Vaším úkolem bude vytvořit dle zadání jednoduchou aplikaci zobrazující seznam úkolů.

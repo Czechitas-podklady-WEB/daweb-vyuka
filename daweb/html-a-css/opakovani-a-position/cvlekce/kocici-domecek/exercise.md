@@ -1,6 +1,7 @@
 ---
 title: Kočičí domeček
 demand: 1
+context: lekce
 solutionAccess: protected
 ---
 

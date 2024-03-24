@@ -1,6 +1,7 @@
 ---
 title: Hot dog přisady
 demand: 3
+context: nadoma
 lead: Vytvořte aplikaci pro výběr přísad do hot dogu.
 solutionAccess: protected
 ---

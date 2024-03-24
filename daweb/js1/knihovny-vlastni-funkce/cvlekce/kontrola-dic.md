@@ -1,6 +1,7 @@
 ---
 title: Kontrola DIČ
 demand: 3
+context: lekce
 lead: Napište funkci na kontrolu DIČ.
 solutionAccess: protected
 ---

@@ -1,6 +1,7 @@
 ---
 title: Poznámka
 demand: 3
+context: lekce
 solutionAccess: protected
 ---
 

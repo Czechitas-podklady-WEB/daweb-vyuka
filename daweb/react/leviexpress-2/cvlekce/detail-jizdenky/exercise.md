@@ -2,6 +2,7 @@
 title: Detail jízdenky
 lead: Vytvořte detail jízdenky.
 demand: 3
+context: lekce
 solutionAccess: protected
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Světový čas 2
 demand: 3
+context: nadoma
 ---
 
 Navažte na předchozí příklad se světovým časem. Naším cílem bude stáhnout seznam časových zón z API místo toho, abychom jej měli natvrdo zadrátovaný v HTML kódu.

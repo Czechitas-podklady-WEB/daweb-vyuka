@@ -1,6 +1,7 @@
 ---
 title: Vision board
 demand: 1
+context: lekce
 solutionAccess: protected
 ---
 
