@@ -1,6 +1,7 @@
 ---
 title: Projekt kontakty
 demand: 3
+context: nadoma
 solutionAccess: protected
 ---
 
@@ -17,3 +18,9 @@ Nakódujte stránku podle obrázku `navod.jpg`.
 
 V zadání máte ukázané rozložení na různých šířkách obrazovky.
 Co se týče velikosti písma, paddingu a rámečků, zkuste se zadání přiblížit, ale pokud chcete, dejte prostor kreativitě, o tom přece kódování je. 😀
+
+:::solution
+
+Možné řešení snazší varianty najdete v repository v branchi [reseni-lehci](https://github.com/Czechitas-podklady-WEB/cviceni-kontakty/tree/reseni-lehci). Těžší varianta je v branchi [reseni-tezsi](https://github.com/Czechitas-podklady-WEB/cviceni-kontakty/tree/reseni-tezsi).
+
+:::

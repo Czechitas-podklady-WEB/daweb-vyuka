@@ -1,6 +1,7 @@
 ---
 title: Responzivní layout 01
 demand: 1
+context: lekce
 solutionAccess: protected
 ---
 
