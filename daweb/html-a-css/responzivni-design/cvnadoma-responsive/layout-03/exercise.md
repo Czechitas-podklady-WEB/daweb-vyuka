@@ -1,6 +1,7 @@
 ---
 title: Responzivní layout 03
 demand: 3
+context: nadoma
 solutionAccess: protected
 ---
 

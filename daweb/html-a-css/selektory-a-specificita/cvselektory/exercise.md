@@ -1,6 +1,7 @@
 ---
 title: Kontakty podruhé
 demand: 2
+context: lekce
 solutionAccess: protected
 ---
 
