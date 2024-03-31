@@ -6,7 +6,7 @@ lead: Spočítejte cenu vstupenky do divadla.
 solutionAccess: protected
 ---
 
-Pokusme se o základ jednoduchého rezervačního sestému pro vstupenky do divadla.
+Pokusme se o základ jednoduchého rezervačního systému pro vstupenky do divadla.
 
 1. Založte si webovou stránku s JavaScriptem.
 1. Nechte uživatele zadat jeho věk.

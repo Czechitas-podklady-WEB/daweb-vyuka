@@ -96,7 +96,7 @@ petElement.src = 'images/dog.jpg';
 petElement.alt = 'Pejsek';
 ```
 
-Vidíte, že díky DOMu si můžeme se stránkou hrát zcela dle libosti. Možná se vám už v hlavně rodí odvážné a nadšené nápady jaké úžasné stránky by se daly tatko vyrobit. Vraťme se však na chvilinku ještě k selektorům.
+Vidíte, že díky DOMu si můžeme se stránkou hrát zcela dle libosti. Možná se vám už v hlavně rodí odvážné a nadšené nápady jaké úžasné stránky by se daly takto vyrobit. Vraťme se však na chvilinku ještě k selektorům.
 
 ### Selektory
 

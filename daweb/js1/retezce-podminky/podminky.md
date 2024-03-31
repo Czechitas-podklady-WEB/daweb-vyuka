@@ -14,13 +14,13 @@ if (age >= 18) {
 }
 ```
 
-Toto je příklad velmi jednoduché podmínky se dvěm větvemi. V závorkách po klíčovém slovu `if` musí vždy být výraz, který vrací pravdivostní hodnotu. Podle toho, jestli je výsledek výrazu `true` nebo `false`, se buď vykoná kód v prvních složených závorkách, nebo kód v závorkách za slovem `else`. Tady se proprvé potkáváme s takzvanými <em>bloky kódu</em>, které jsou téměř nezbytnou ingrediencí všech programů.
+Toto je příklad velmi jednoduché podmínky se dvěma větvemi. V závorkách po klíčovém slovu `if` musí vždy být výraz, který vrací pravdivostní hodnotu. Podle toho, jestli je výsledek výrazu `true` nebo `false`, se buď vykoná kód v prvních složených závorkách, nebo kód v závorkách za slovem `else`. Tady se poprvé potkáváme s takzvanými <em>bloky kódu</em>, které jsou téměř nezbytnou ingrediencí všech programů.
 
 ### Bloky kódu
 
 Pokud nějaké řádky kódu uzavřeme do složených závorek, vytváříme takzvaný blok. JavaScript každý blok chápe jako samostatnou jednotku, která se vykoná za určité situace. Taková situace může být například splnění nebo nesplnění výrazu v podmínce. Později uvidíme další situace, kde se nám budou bloky kódu hodit.
 
-Aby se nám kód dobře četl, odsazujeme řádky uvnitř bloku o kus doprava. V tomto kurzu budeme používat dvě mezery. Pokud máte prostředí VS Code nastavené podle naších doporučení, při psaní se vám řádky budou automaticky odsazovat. Stisknutím tabulátoru :kbd[Tab] pak můžete odsazení vložit sami. Stisknutím :kbd[Shift]+:kbd[Tab] jej naopak zrušíte. To se hodí pokud chcete například odsadit velký kus kódu najednou. Stačí jej vybrat myší a stiknout :kbd[Tab] nebo :kbd[Shift]+:kbd[Tab].
+Aby se nám kód dobře četl, odsazujeme řádky uvnitř bloku o kus doprava. V tomto kurzu budeme používat dvě mezery. Pokud máte prostředí VS Code nastavené podle našich doporučení, při psaní se vám řádky budou automaticky odsazovat. Stisknutím tabulátoru :kbd[Tab] pak můžete odsazení vložit sami. Stisknutím :kbd[Shift]+:kbd[Tab] jej naopak zrušíte. To se hodí pokud chcete například odsadit velký kus kódu najednou. Stačí jej vybrat myší a stisknout :kbd[Tab] nebo :kbd[Shift]+:kbd[Tab].
 
 Je dobré mít na paměti, že odsazování a obecně většina bílých znaků, je především pro nás pro lidi, tedy pro čtenáře kódu. Počítači, tedy přesnějí JavaScript runtimu, jsou bílé znaky jedno. Můžeme si je tady dávat kam chceme. Následující dva zápisy jsou z hlediska runtimu zcela stejné.
 
@@ -52,7 +52,7 @@ else
 }
 ```
 
-Ať už vzájemné spory dopadnou jakkoliv, nakonec je důležité si nějaká pravidla stanovit a ta pak svorně dodržovat. V tomto směru existuje [několik manuálů](https://codeburst.io/5-javascript-style-guides-including-airbnb-github-google-88cbc6b2b7aa), kterým se říká _style guide_. Ty kodifikují určitá pravidla formátování kódu tak, abyste je nemuseli vždy od nuly vymýšlet sami. Ve firmě nebo v programátorském týmu pak stačí říct, že používáme takový nebo onaký style guide, a předejít tak nekonečným diskuzím o tom, kde mají být mezery a kde ne. V tomto po dohodě kurzu používáme [AirBnB style guide](https://github.com/airbnb/javascript).
+Ať už vzájemné spory dopadnou jakkoliv, nakonec je důležité si nějaká pravidla stanovit a ta pak svorně dodržovat. V tomto směru existuje [několik manuálů](https://codeburst.io/5-javascript-style-guides-including-airbnb-github-google-88cbc6b2b7aa), kterým se říká _style guide_. Ty kodifikují určitá pravidla formátování kódu tak, abyste je nemuseli vždy od nuly vymýšlet sami. Ve firmě nebo v programátorském týmu pak stačí říct, že používáme takový nebo onaký style guide, a předejít tak nekonečným diskuzím o tom, kde mají být mezery a kde ne. V tomto kurzu po dohodě používáme [AirBnB style guide](https://github.com/airbnb/javascript).
 
 ### Podmínky s více větvemi
 
@@ -83,7 +83,7 @@ if (body >= 90) {
 }
 ```
 
-V takto rozvětvené podmínkce JavaScript runtime prochází jednotlivé výrazy dokud nenarazí na ten, který se vyhodnotí jako `true`. Vykoná příslušný blok a kódu a **zbylé větve přeskočí.** Vykoná se tak pouze první větev, která se vyhodnotí jako `true`. Pokud by byly všechny výrazy `false`, vykoná se větev `else`. Jak už víme, větev `else` přítomná být nemusí. Výše udovedný kód bychom tedy mohli malinko zkrátit takto.
+V takto rozvětvené podmínkce JavaScript runtime prochází jednotlivé výrazy dokud nenarazí na ten, který se vyhodnotí jako `true`. Vykoná příslušný blok kódu a **zbylé větve přeskočí.** Vykoná se tak pouze první větev, která se vyhodnotí jako `true`. Pokud by byly všechny výrazy `false`, vykoná se větev `else`. Jak už víme, větev `else` přítomná být nemusí. Výše uvedený kód bychom tedy mohli malinko zkrátit takto.
 
 ```js
 let znamka = 'F';
@@ -119,4 +119,4 @@ if (age >= 18) {
 }
 ```
 
-Takto můžeme vytvářet relativně komplikované rozhodování. Se zanořováním podmínek je ale dobré to příliš nepřehánět. Málokdo se dokáže snadno zorientovat v temných hlubínách pětkrát zanořené podmínky. Později se naučíme strategie, jak se takovým hlubokým zanořením vyhnout.
+Takto můžeme vytvářet relativně komplikované rozhodování. Se zanořováním podmínek je ale dobré to příliš nepřehánět. Málokdo se dokáže snadno zorientovat v temných hlubinách pětkrát zanořené podmínky. Později se naučíme strategie, jak se takovým hlubokým zanořením vyhnout.
