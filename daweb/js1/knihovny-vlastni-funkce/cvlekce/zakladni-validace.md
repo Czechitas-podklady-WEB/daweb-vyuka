@@ -25,7 +25,6 @@ solutionAccess: protected
    ```css
    /* style.css */
    .msg {
-     color: white;
      padding: 10px;
    }
    .msg--valid {
