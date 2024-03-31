@@ -6,7 +6,7 @@ Představme si například, že vyměřujeme pozemek a chceme spočítat plochu 
 
 ::fig[Pozemek]{src=assets/fields.svg}
 
-Naše funkce tedy bude mít dva vstupy – šířku a výšku. Ze školy si pamatujeme, že plochu prvoúhlého trojúhelníku spočítáme tak, že vynásobíme šířku výškou a výsledek vydělíme dvěma. Už tedy víme, co má funkce dělat a zbývá nám tento postup zapsat v JavaScritpu.
+Naše funkce tedy bude mít dva vstupy – šířku a výšku. Ze školy si pamatujeme, že plochu pravoúhlého trojúhelníku spočítáme tak, že vynásobíme šířku výškou a výsledek vydělíme dvěma. Už tedy víme, co má funkce dělat a zbývá nám tento postup zapsat v JavaScritpu.
 
 <!-- prettier-ignore -->
 ```js
@@ -41,4 +41,4 @@ Jakmile máme funkci takto hezky uloženou v proměnné, můžeme ji zavolat zn�
 landArea(5, 3);
 ```
 
-Jakmile funkci takto zavoláme, například s hodnotami 5 a 3, JavaScript tyto hodnoty uloží do parametrů `width` a `height`. V  těle funkce pak parametry použjeme jako normální proměnné pro náš výpočet.
+Jakmile funkci takto zavoláme, například s hodnotami 5 a 3, JavaScript tyto hodnoty uloží do parametrů `width` a `height`. V těle funkce pak parametry použijeme jako normální proměnné pro náš výpočet.

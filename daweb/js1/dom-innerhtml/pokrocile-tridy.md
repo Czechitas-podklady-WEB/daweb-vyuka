@@ -41,7 +41,7 @@ Pokud se daná CSS třída na elementu nachází, metoda `toggle` ji odstraní. 
 
 ### Vlastnost className
 
-Občas nastane situace, kdy chceme nastavit obsah celého atributu `class` najednou a nechceme se piplat s přidáváním nebo odebiráním jednotlivých CSS tříd. K tomu můžeme použít vlastnost `className`.
+Občas nastane situace, kdy chceme nastavit obsah celého atributu `class` najednou a nechceme se piplat s přidáváním nebo odebíráním jednotlivých CSS tříd. K tomu můžeme použít vlastnost `className`.
 
 Pokud bychom například chtěli, aby na našem přepínacím tlačíku zůstala jen třída `btn`, místo složitého mazání všech ostatních tříd prostě atribut `class` nastavíme natvrdo.
 

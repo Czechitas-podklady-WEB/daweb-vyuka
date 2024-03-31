@@ -21,7 +21,7 @@ Jeden z velmi častých problémů, které při vývoji potkáme, je kontrola vs
 
 Zkontrolovat správný formát e-mailu v žádném případě není jednoduchá úloha. Rozhodně nestačí zkontrolovat, že obsahuje zavináč. Na [Wikipedii](https://en.wikipedia.org/wiki/Email_address#Examples) si můžete pro zajímavost přečíst, co všechno se považuje za validní e-mail a co naopak ne.
 
-Zároveň ověřování e-mailu je tak častý programátorský úkon, že na to jistě musí existovat knihovna. My použíjeme knihovnu, která se jmenuje [validator.js](https://github.com/validatorjs/validator.js).
+Zároveň ověřování e-mailu je tak častý programátorský úkon, že na to jistě musí existovat knihovna. My použijeme knihovnu, která se jmenuje [validator.js](https://github.com/validatorjs/validator.js).
 
 ```html
 <head>
@@ -59,7 +59,7 @@ Pro kompletní výčet všech funkcí nahlédněte do [dokumentace knihovny](htt
 
 ### Práce s datem a časem
 
-Práce datem a časem je velmi častým úkolem v mnoha různých aplikacích. Zároveň je to jeden z nejtěžších programovacích problémů, protože datum a čas se řídí neuvěřitelně složitými pravidly jako například:
+Práce s datem a časem je velmi častým úkolem v mnoha různých aplikacích. Zároveň je to jeden z nejtěžších programovacích problémů, protože datum a čas se řídí neuvěřitelně složitými pravidly jako například:
 
 - fakt, že každý měsíc má jiný počet dní,
 - přestupné roky, přestupné sekundy,
