@@ -10,11 +10,7 @@ Vytvořte JavaScriptový program, který vepíše do stránky ovčí příběh p
 
 ::fig[ovce]{src=assets/ovce.jpg}
 
-1. Pro rychlejší vytvoření základní struktury použijte příkaz níže:
-
-   ```bash
-   npm init kodim-app@latest na-dobrou-noc html-css-js
-   ```
+1. Založte si HTML stránku s JavaScriptem.
 
 1. Využijte následujících dvacet jmen oveček:
 
