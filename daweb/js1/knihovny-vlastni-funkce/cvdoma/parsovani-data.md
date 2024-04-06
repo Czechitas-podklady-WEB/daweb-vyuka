@@ -6,7 +6,7 @@ lead: Převeďte datum na objekt.
 solutionAccess: protected
 ---
 
-Bez použití knihovny `Day.js` napište funkci `parseDate`, která na vstupu obdrží řetězec obsahující datum ve formátu **DD.MM.YYYY** a vrátí objekt s jednotlivýnu částmi zadaného data. Příklad použití:
+Bez použití knihovny `Day.js` napište funkci `parseDate`, která na vstupu obdrží řetězec obsahující datum ve formátu **DD.MM.YYYY** a vrátí objekt s jednotlivými částmi zadaného data. Příklad použití:
 
 ```js
 parseDate('12.03.2015'); // → { day: 12, month: 3, year: 2015 }
