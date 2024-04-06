@@ -16,8 +16,8 @@ Vytvořte si repozitář ze šablony [cviceni-cenik](https://github.com/Czechita
 
 :::solution
 
-Jednodušší řešení – před tím, než nastavíme vybraný plán, všem plánům zrušíme, že vybrané nejsou. Sice ten výběr „zrušíme“ i u plánů,
-které vybrané nejsou, to ale nikomu nevadí – a je to jednodušší.
+Jednodušší řešení – před tím, než nastavíme nově vybraný plán, všechny plány označíme jako nevybrané. Sice ten výběr zbytečně „zrušíme“ i u plánů,
+které vybrané nejsou, to ale nikomu nevadí – a kód je jednodušší.
 
 ```js
 const selectPlan = (planNumber) => {
@@ -34,7 +34,7 @@ selectPlan(1);
 selectPlan(3);
 ```
 
-Alternativní řešení – zapamatujeme si, který plán je vybraný, a když vybereme jiný, zrušíme výběr jenom toho jednoho dříve vybraného plánu. Je potřeba vypořádat se i s tím, že na začátku není vybrán žádný plán.
+Alternativní řešení – zapamatujeme si, který plán je vybraný, a než vybereme nový plán, zrušíme výběr jenom toho jednoho dříve vybraného plánu. Je potřeba vypořádat se i s tím, že na začátku není vybrán žádný plán.
 
 ```js
 let selectedPlanNumber;
