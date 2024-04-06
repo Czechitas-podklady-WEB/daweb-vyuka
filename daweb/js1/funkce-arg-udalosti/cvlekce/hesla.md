@@ -22,9 +22,13 @@ mediumPassword(8); // → '48140525'
 strongPassword(6); // → 'azc7mw'
 ```
 
-Napište funkci `createAccount`, která se bude tvářit, že zakládá nový uživatelský účet. Funkce bude mít **dva parametry** `user` a `generatePassword`. **První bude uživatelské jméno** a **druhý bude funkce**, pomocí které se má vygenerovat heslo pro tento účet. Funkce `createAccount` **vrátí řetězec**, který bude obsahovat jméno uživatele a heslo vygenerované voláním funkce `generatePassword`. Funkci `generatePassword` při volání předejte **číslo 9** jako délku hesla.
+Napište funkci `createAccount`, která se bude tvářit, že zakládá nový uživatelský účet. Funkce bude mít **dva parametry** `user` a `generatePassword`. **První bude uživatelské jméno** a **druhý bude funkce**, pomocí které se má vygenerovat heslo pro tento účet.
+Ve funkci `createAccount` si do proměnné `password` uložte heslo vygenerované voláním funkce `generatePassword`.
+Funkci `generatePassword` při volání předejte **číslo 9** jako délku požadovaného hesla.
+Funkce `createAccount` nakonec **vrátí řetězec**, který bude obsahovat jméno uživatele a vygenerované heslo z proměnné `password`.
+Například vrátí `"Uživateli Míša s heslem 012345678"`.
 
-Na konci javascriptového kódu vyzkoušejte založit více různých účtů s různými typy hesel. Například:
+Na konci javascriptového kódu vyzkoušejte založit více různých účtů (volání funkce `createAccount`) s různými typy hesel. Například:
 
 ```js
 document.body.innerHTML += `
@@ -37,16 +41,17 @@ document.body.innerHTML += `
 by mělo vepsat do stránky něco jako:
 
 ```text
-Uživatel Míša s heslem 012345678
-Uživatel Řízek s heslem 074031827
-Uživatel Mápodčepicí s heslem mwwf9epts
+Uživatel Míša s heslem 012345678.
+Uživatel Řízek s heslem 074031827.
+Uživatel Mápodčepicí s heslem mwwf9epts.
 ```
 
 :::solution
 
 ```js
 const createAccount = (user, generatePassword) => {
-  return `Uživatel ${user} s heslem ${generatePassword(9)}`;
+  const password = generatePassword(9);
+  return `Uživatel ${user} s heslem ${password}.`;
 };
 
 document.body.innerHTML += `
