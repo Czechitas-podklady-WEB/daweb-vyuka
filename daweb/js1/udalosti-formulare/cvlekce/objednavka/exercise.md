@@ -10,11 +10,7 @@ Podle instrukcí níže vytvořte jednoduchý formulář pro dokončení objedn�
 
 ::fig[Objednávka]{src=assets/objednavka.gif}
 
-1. Založte si HTML stránku s JavaScriptem, třeba následujícím příkazem:
-
-```sh
-npm init kodim-app@latest cviceni-objednavka html-css-js
-```
+1. Založte si HTML stránku s JavaScriptem.
 
 1. Do souboru `style.css` vložte [styly pro formuláře](https://raw.githubusercontent.com/Czechitas-podklady-WEB/formulare/main/style.css) ať se nemusíte trápit se stylováním.
 1. Vytvořte formulář s textovým políčkem pro číslo platební karty. Dejte mu štítek „**Platební karta**“ a atribut `type` nastavte na `text`.
