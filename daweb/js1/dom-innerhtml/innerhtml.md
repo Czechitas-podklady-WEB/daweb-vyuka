@@ -25,7 +25,7 @@ headerElm.innerHTML = '<h1>Hlavička</h1>';
 
 Ve chvíli, kdy takto nastavíme vlastnost `innerHTML`, prohlížeč si přečte obsah našeho řetězce a automaticky z něj vyrobí DOM elementy pro naši stránku. Můžete si v developer tools zkontrolovat, že obsah hlavičky má nyní opravdovou DOM strukturu.
 
-Pokud vytváříme kus stránky pomocí `innerHTML`, děláme to většinou proto, že chceme do HTML vložit obsah nějaký proměnných. Realističtější příklad by tedy byl ten, kdy máme například název stránky uložený v proměnné.
+Pokud vytváříme kus stránky pomocí `innerHTML`, děláme to většinou proto, že chceme do HTML vložit obsah nějakých proměnných. Realističtější příklad by tedy byl ten, kdy máme například název stránky uložený v proměnné.
 
 ```js
 const pageTitle = 'Moje stránka';

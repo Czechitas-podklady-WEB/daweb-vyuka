@@ -45,15 +45,15 @@ Všimněte si hned dvou důležitých věcí:
 1. Názvy CSS vlastností musíme zapisovat **velbloudí notací**. Je to proto, že kdybychom použili kebab notaci (ano, toto je skutečný název) jako zde
 
    ```js
-   headerElement.style.marginBottom = '2rem'
+   headerElement.style.marginBottom = '2rem';
    ```
 
    JavaScript by si pomlčku spletl s mínusem a kód by nefungoval.
 
 2. Hodnoty všech CSS vlastností se zapisují pomocí řetězců. Proto dávejte pozor například na takovéto chyby.
    ```js
-   headerElement.style.color = 'white'
-   headerElement.style.marginBottom = '2rem'
+   headerElement.style.color = 'white';
+   headerElement.style.marginBottom = '2rem';
    ```
 
 ### Změna třídy
@@ -96,7 +96,7 @@ petElement.src = 'images/dog.jpg';
 petElement.alt = 'Pejsek';
 ```
 
-Vidíte, že díky DOMu si můžeme se stránkou hrát zcela dle libosti. Možná se vám už v hlavně rodí odvážné a nadšené nápady jaké úžasné stránky by se daly tatko vyrobit. Vraťme se však na chvilinku ještě k selektorům.
+Vidíte, že díky DOMu si můžeme se stránkou hrát zcela dle libosti. Možná se vám už v hlavně rodí odvážné a nadšené nápady jaké úžasné stránky by se daly takto vyrobit. Vraťme se však na chvilinku ještě k selektorům.
 
 ### Selektory
 

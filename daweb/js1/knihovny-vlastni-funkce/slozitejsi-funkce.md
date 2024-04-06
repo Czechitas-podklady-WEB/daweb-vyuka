@@ -29,6 +29,6 @@ const isSafe = (password) => {
 };
 ```
 
-Proč není `else` potřeba? Zde je nuté oprášit logické uvažování. Pokud byla délka hesla dostatečná, funkce skončila u prvního `return` a k druhému se vůbec nedostala. Pokud se tedy vykonávání funkce dostalo až k druhému `return`, znamená to, heslo kontrolou neprošlo. Jinak by totiž funkce skončila mnohem dřív a sem bychom se vůbec nedostali. Nemusíme už tedy říkat žádné `else` a prostě vrátíme `false`.
+Proč není `else` potřeba? Zde je nutné oprášit logické uvažování. Pokud byla délka hesla dostatečná, funkce skončila u prvního `return` a k druhému se vůbec nedostala. Pokud se tedy vykonávání funkce dostalo až k druhému `return`, znamená to, heslo kontrolou neprošlo. Jinak by totiž funkce skončila mnohem dřív a sem bychom se vůbec nedostali. Nemusíme už tedy říkat žádné `else` a prostě vrátíme `false`.
 
 Této strategii se říká :term{cs="časný návrat" en="early return"} a zkušení programátoři jej používají velmi často. Je proto dobré si na tento způsob zápisu zvyknout už od samého začátku.

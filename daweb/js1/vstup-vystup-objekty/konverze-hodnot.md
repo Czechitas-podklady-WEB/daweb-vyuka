@@ -1,6 +1,6 @@
 ## Konverze hodnot
 
-Úplně na začátku je šikovné všimnout si rozdílu mezi hodnotami jako `12` a `'12'`. Jedna představuje číslo dvanáct, druhá představuje řetězec obsahující znaky 1 a 2. Proto můžeme čekat, že aritmetické operace s těmito hodnotami dopadnou jinak podle toho, zda jde o číslo nebo o řetězec.
+Úplně na začátku je šikovné všimnout si rozdílu mezi hodnotami jako `12` a `'12'`. Jedna představuje číslo dvanáct, druhá představuje řetězec obsahující znaky 1 a 2. Proto můžeme čekat, že aritmetické operace s těmito hodnotami dopadnou jinak podle toho, zda jde o číslo, nebo o řetězec.
 
 Tato operace například do stránky vypíše číslo 17:
 
@@ -32,7 +32,7 @@ document.body.innerHTML += 1 + 2 + 3 + '4';
 document.body.innerHTML += '1' + 2 + 3 + 4;
 ```
 
-Konverze fungují i pro jiné operátory, napříkad násobení.
+Konverze fungují i pro jiné operátory, například násobení.
 
 ```js
 document.body.innerHTML += 12 * 5;
