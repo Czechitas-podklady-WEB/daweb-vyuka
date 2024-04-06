@@ -26,7 +26,7 @@ Napište funkci `createAccount`, která se bude tvářit, že zakládá nový u�
 Ve funkci `createAccount` si do proměnné `password` uložte heslo vygenerované voláním funkce `generatePassword`.
 Funkci `generatePassword` při volání předejte **číslo 9** jako délku požadovaného hesla.
 Funkce `createAccount` nakonec **vrátí řetězec**, který bude obsahovat jméno uživatele a vygenerované heslo z proměnné `password`.
-Například vrátí `"Uživateli Míša s heslem 012345678"`. 
+Například vrátí `"Uživateli Míša s heslem 012345678"`.
 
 Na konci javascriptového kódu vyzkoušejte založit více různých účtů (volání funkce `createAccount`) s různými typy hesel. Například:
 
