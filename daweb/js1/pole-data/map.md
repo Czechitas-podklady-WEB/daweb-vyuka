@@ -17,7 +17,7 @@ Další příklad může být pole teplot ve stupních Fahrenheita. Chceme vytvo
 
 ```js
 const teplotyFahrenheit = [0, 32, 100, 212];
-const teplotyCelsia = teplotyVeStupnichFahrenheit.map((teplota) => {
+const teplotyCelsia = teplotyFahrenheit.map((teplota) => {
   return ((teplota - 32) * 5) / 9;
 });
 ```
