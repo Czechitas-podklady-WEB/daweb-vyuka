@@ -6,7 +6,7 @@ lead: Napište funkci, která převede částku na české koruny.
 solutionAccess: protected
 ---
 
-Napište funkci `convertToCZK`, která převede částku zadanou v cízí měně na české koruny. Funkce bude podporovat následující měny a kurzy.
+Napište funkci `convertToCZK`, která převede částku zadanou v cizí měně na české koruny. Funkce bude podporovat následující měny a kurzy.
 
 | Měna           | Kód | Kurz   |
 | -------------- | --- | ------ |
@@ -15,7 +15,7 @@ Napište funkci `convertToCZK`, která převede částku zadanou v cízí měně
 | Americký dolar | USD | 24.81  |
 | Bitcoin        | BTC | 478637 |
 
-Výslednou částku zakrouhlete na celé koruny. Příklad použití:
+Výslednou částku zaokrouhlete na celé koruny. Příklad použití:
 
 ```js
 document.body.innerHTML += convertToCZK(25, 'EUR');

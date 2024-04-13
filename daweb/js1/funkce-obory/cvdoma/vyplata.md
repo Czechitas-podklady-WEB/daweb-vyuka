@@ -16,7 +16,7 @@ Funkce spočítá vaši hrubou měsíční mzdu v celých korunách.
 
 Dále vytvořte funkci `taxed`, která na vstupu obdrží částku a procento zdanění, a vrátí částku v celých korunách zdaněnou podle zadaných procent.
 
-Použítím funkcí `salary` a `taxed` spočítejte svoji měsíční mzdu po 15% zdanění.
+Použitím funkcí `salary` a `taxed` spočítejte svoji měsíční mzdu po 15% zdanění.
 
 :::solution
 

@@ -1,6 +1,6 @@
 ## Speciální druhy funkcí
 
-Většina práce v JavaScriptu se točí kolem vytváření a volání funkcí. Během programování tak často budeme narážet na různé jejich podoby a příchuťe. Je proto dobré se už od začátku učit, k čemu tyto různé podoby slouží.
+Většina práce v JavaScriptu se točí kolem vytváření a volání funkcí. Během programování tak často budeme narážet na různé jejich podoby a příchutě. Je proto dobré se už od začátku učit, k čemu tyto různé podoby slouží.
 
 Podle druhu vykonávané práce můžeme funkce rozdělit v podstatě na dvě skupiny:
 
@@ -11,7 +11,7 @@ Funkce vyrábějící nějakou hodnotu tuto hodnotu vrací pomocí `return`. Nao
 
 ### Funkce bez návratové hodnoty
 
-Představte si například funkci, jejíž úkolem je vypsat do stránky nějakou souhrnou informaci, například shrnutí objednávky v e-shopu.
+Představte si například funkci, jejímž úkolem je vypsat do stránky nějakou souhrnou informaci, například shrnutí objednávky v e-shopu.
 
 ```js
 const showOrderSummary = (summary) => {
@@ -63,7 +63,7 @@ const roll = () => {
 };
 ```
 
-Tato funkce ke své činnosti žádné hodnoty z venku nepotřebuje, proto je bez parametrů. Další příklad může být funkce, který obarví nadpis stránky na červeno.
+Tato funkce ke své činnosti žádné hodnoty z venku nepotřebuje, proto je bez parametrů. Další příklad může být funkce, která obarví nadpis stránky na červeno.
 
 ```js
 const colorHeadingRed = () => {

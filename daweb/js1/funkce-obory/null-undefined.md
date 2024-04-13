@@ -1,4 +1,4 @@
-Do této chvíle jsme z jazyka JavaScript již poznali mnoho věcí. Věcí, které často potřebují čas na strávení a zažití aby se v hlavě dobře usadily na ta správná místa. Pokud se něco nového a náročného snažíme naučit příliš rychle, snadno se stane, že nám v hlavách nové pojmy lítají jak splašené a není jasné, co souvisí s čím a co kam patří. V této lekci tedy vrhneme více světla na věci, které jste už v minulých lekcích použili, ale možná ještě nebyl čas se nad nimi pořádně zamyslet.
+Do této chvíle jsme z jazyka JavaScript již poznali mnoho věcí. Věcí, které často potřebují čas na strávení a zažití, aby se v hlavě dobře usadily na ta správná místa. Pokud se něco nového a náročného snažíme naučit příliš rychle, snadno se stane, že nám v hlavách nové pojmy lítají jak splašené a není jasné, co souvisí s čím a co kam patří. V této lekci tedy vrhneme více světla na věci, které jste už v minulých lekcích použili, ale možná ještě nebyl čas se nad nimi pořádně zamyslet.
 
 ## Hodnoty null a undefined
 
@@ -58,7 +58,7 @@ Pozor na to, že `null` je speciální hodnota, v JavaScriptu ji zapisujeme pomo
 
 Kromě celkem užitečné hodnoty `null` JavaScript také obsahuje zákeřnou hodnotu `undefined`. Pokud `null` je jakási neutrální výplň, hodnota `undefined` v podstatě znamená „prázdno“. Pokud bychom přirovnali proměnné k šuplíkům, mohli bychom si představovat, že hodnota `null` znamená šuplík vyplněný vatou nebo molitanem. Hodnota `undefined` by pak znamenala, že šuplík je úplně prázdný.
 
-Hodnotu `undefined` potkáme v mnoha situacích, ale nejčastěji ve chvíli, kdy se snažíme u nějakého objektu přistoupit k vlastnosi, která neexistuje. Je například velmi snadné udělat překlep v anglickém slově `length`.
+Hodnotu `undefined` potkáme v mnoha situacích, ale nejčastěji ve chvíli, kdy se snažíme u nějakého objektu přistoupit k vlastnosti, která neexistuje. Je například velmi snadné udělat překlep v anglickém slově `length`.
 
 ```js
 const name = 'Martin';
@@ -67,7 +67,7 @@ document.body.innerHTML += name.lenght; // úmyslný překlep, vypíše do strá
 
 Při přidávání do `innerHTML` se speciální hodnota `undefined` převede na text `'undefined'`, podobně jako se převádí `null`.
 
-Hodnotu `undefined` najdeme také v proměnných, do kterých nepřiřadíme žádnout hodnotu. Toto je však možné provést pouze s proměnnými vytvořenými pomocí `let`.
+Hodnotu `undefined` najdeme také v proměnných, do kterých nepřiřadíme žádnou hodnotu. Toto je však možné provést pouze s proměnnými vytvořenými pomocí `let`.
 
 ```js
 let name;
