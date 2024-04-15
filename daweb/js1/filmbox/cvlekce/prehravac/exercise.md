@@ -7,9 +7,9 @@ solutionAccess: protected
 
 Obohaťte video přehrávač vlastními ovládacími prvky.
 
-1. V souboru `film.html` u prvku `<video>` umažte ručně atribut `controls`. Skryjí se tím ovládací prvky předchystané přímo prohlížečem. V CSS je pak už hotový kód, který automaticky zobrazí `<div class="player-controls">` s vlastním vizuálem. Vy v CSS nemusíte nic měnit. Jen si všimněte, že se na stránce objevily jiné ovládací prvky, které ale nereagují na klikání.
+1. V souboru `film.html` u prvku `<video>` umažte ručně atribut `controls`. Skryjí se tím ovládací prvky předchystané přímo prohlížečem. V CSS je pak už hotový kód, který automaticky zobrazí `<div class="player-controls">` s vlastním vizuálem. Vy v CSS nemusíte nic měnit. Jen si všimněte, že se na stránce objevilo tlačítko pro spuštění filmu, které ale nereaguje na klikání.
 
-1. Oživte tlačítko pro přehrávání a pozastavení.
+1. Oživte tlačítko pro přehrávání.
 
    1. V souboru `film.js`, pokud je na stránce prvek s id `prehravac`, přidejte posluchač události kliknutí na prvek se třídou `play`.
 
@@ -17,7 +17,9 @@ Obohaťte video přehrávač vlastními ovládacími prvky.
 
    1. Přidejte na `<video>` posluchač události `playing`. Ta nastává v okamžiku, kdy se video začíná přehrávat.
 
-   1. Při události na prvku s id `prehravac` přidejte třídu `playing`. Předchystané CSS v takovém případě zařídí, že se přehrávací tlačítko skryje a místo něho se objeví tlačítko pro pozastavení.
+   1. Při události na prvku s id `prehravac` přidejte třídu `playing`. Předchystané CSS v takovém případě zařídí, že se přehrávací tlačítko skryje a místo něho se objeví (dosud schované) tlačítko pro pozastavení.
+
+1. Oživte tlačítko pro pozastavení.
 
    1. Tlačítku `.pause` přidejte posluchač, který po kliknutí zavolá na videu metodu `.pause()`, což pozastaví přehrávání.
 
