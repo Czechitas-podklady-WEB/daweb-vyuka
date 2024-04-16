@@ -6,7 +6,7 @@ lead: Vyrobte stránku na generování silných hesel.
 solutionAccess: protected
 ---
 
-Vyrobte stránku, která pomůže uživateli vygenerovat opravdu silné a neprůstřelné heslo. Použijte k tomu veřejné API na [ússwrd.net](https://www.psswrd.net/api/v1/password/?length=17) na generování hesel. Zároveň už projekt vytvořte pomocí Vite a JSX.
+Vyrobte stránku, která pomůže uživateli vygenerovat opravdu silné a neprůstřelné heslo. Použijte k tomu veřejné API na [psswrd.net](https://www.psswrd.net/api/v1/password/?length=17) na generování hesel. Zároveň už projekt vytvořte pomocí Vite a JSX.
 
 1. Založte si nový projekt příkazem
 
