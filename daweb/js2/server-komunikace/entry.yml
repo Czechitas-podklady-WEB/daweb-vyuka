@@ -7,7 +7,8 @@ sections:
   - format-json
   - api-js
   - cv-volani-api
-  - destrukturovani
-  - cv-destrukturovani
+  - verejna-api
+  - lokalni-api
+  - cv-lokalni-api
   - shrnuti
   - ulozky-na-doma
