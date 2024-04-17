@@ -42,9 +42,7 @@ const json = await response.json();
 document.querySelector('#root').innerHTML = render(
   <div className="container">
     <h1>Webová aplikace</h1>
-    <p>
-      Vaše heslo je: {json.password}, délka: 12
-    </p>
+    <p>Vaše heslo je: {json.password}, délka: 12</p>
   </div>
 );
 ```
