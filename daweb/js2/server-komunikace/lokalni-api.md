@@ -1,6 +1,6 @@
 ## Lokální API server
 
-Abychom se při vývoji různých cvičných projektů vyhnuli potížím s veřejnými API, naučíme se spustit si lokální API server na svém vlastním počítači. Je to podbné, jak když si rozbíháme lokální server pro vývoj frontendu. 
+Abychom se při vývoji různých cvičných projektů vyhnuli potížím s veřejnými API, naučíme se spustit si lokální API server na svém vlastním počítači. Je to podbné, jak když si rozbíháme lokální server pro vývoj frontendu.
 
 Nad lokálním API serverem máme plnou kontrolu. Můžeme jej spouštět a zastavovat jak potřebujeme, můžeme do něj vložit vlastní data, a můžeme si nastavit, jak bude API fungovat.
 

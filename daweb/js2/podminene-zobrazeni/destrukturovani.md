@@ -1,5 +1,7 @@
 ## Destrukturování objektů
 
+Než se pustíme do podmíněného zobrazování, ukážeme si jednu užitěčnou techniku, která se nám bude hodit jak při fetchování dat ze serveru tak při práci s komponentami. Jedná se o takzvané :term{cs="destrukturování objektů" en="object destructuring"}.
+
 Při stahování dat ze serveru ale i v mnoha jiných situacích se nám bude často stávat, že chceme z objektu rychle získat vícero hodnot a uložit je do různých proměnných, například takto:
 
 ```js
@@ -14,7 +16,7 @@ const price = product.price;
 const currency = product.currency;
 ```
 
-Programátoři jsou líné bytosti a tento postup jim přijde zdlouhavý. Pokud se naše proměnné jmenují stejně jako klíče uvnitř objektu, můžeme si ušetřit psaní a použít takzvané :term{cs="destrukturování" en="destructuring"}.
+Programátoři jsou líné bytosti a tento postup jim přijde zdlouhavý. Pokud se naše proměnné jmenují stejně jako klíče uvnitř objektu, můžeme si ušetřit psaní a použít následující zkrácený zápis:
 
 ```js
 const product = {
@@ -60,7 +62,7 @@ const { password, length } = await response.json();
 
 ## Destrukturování props
 
-Destrukturování se velmi často použivá při práci s komponentami. Mejmě pro příklad komponentu zobrazující čas.
+Destrukturování se také často použije při práci s komponentami. Mejmě pro příklad komponentu zobrazující čas.
 
 ```jsx
 const Time = (props) => {
@@ -100,4 +102,4 @@ const Time = ({ hours, minutes }) => {
 };
 ```
 
-Takovýto zápis je pro nás novinka, ale v praxi se běžně používá, takže je dobré jej dostat pod kůži. Pokud vám přijde zápis až příliš líný, můžete jej prozatím bojkotovat. My jej však nadále v tomto kurzu budeme používat a brzy vás jistě zlákáme na naši stranu.
+Takovýto zápis je pro nás novinka, ale v praxi se běžně používá, takže je dobré jej dostat pod kůži. Pokud vám přijde zápis až příliš líný, můžete jej prozatím bojkotovat. My jej však nadále v tomto kurzu budeme používat a brzy vás jistě zlákáme na svou stranu.
