@@ -3,6 +3,7 @@ title: Zkracovací jednohubky
 demand: 1
 context: lekce
 lead: Zkracujte funkce a vysvětlete, k čemu slouží.
+solutionAccess: protected
 ---
 
 Založte si obyčejnou stránku s JavaScriptem, bez Vite i JSX. Následující funkce přepište do zkráceného zápisu. Vlastními slovy popište, k čemu nejspíše funkce slouží.
