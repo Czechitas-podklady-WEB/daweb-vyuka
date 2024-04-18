@@ -8,7 +8,7 @@ solutionAccess: protected
 
 Vzpomeňte si na naše cvičení z vanilla JavaScriptu, kdy jsme rozsvěcovali a zhasínali žárovku. Zkusíme naši žárovku zprovoznit pomocí JSX. Styly a obrázky pro žárovku můžete v průběhu cvičení vykrádat z původního zadání v repozitáři [cviceni-zarovka](https://github.com/Czechitas-podklady-WEB/cviceni-zarovka).
 
-1. Založte si nový React projekt pomocí
+1. Založte si nový JSX projekt pomocí
    ```shell
    npm init kodim-app@latest jsx-zarovka jsx
    ```
