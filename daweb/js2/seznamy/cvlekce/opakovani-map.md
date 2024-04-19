@@ -6,7 +6,12 @@ lead: Zopakujte si metodu `map` a zkracování funkcí.
 solutionAccess: protected
 ---
 
-Založte si obyčejnou stránku s JavaScriptem, bez Vite i bez JSX. Do souboru `index.js` si zkopírujte následující pole.
+Založte si obyčejnou stránku s JavaScriptem, bez Vite i bez JSX:
+  ```shell
+  npm init kodim-app@latest cviceni-opakovani-map html-css-js
+  ```
+
+Do souboru `index.js` si zkopírujte následující pole.
 
 ```js
 const weekdays = [

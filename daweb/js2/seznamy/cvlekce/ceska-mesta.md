@@ -6,7 +6,10 @@ lead: Zobrazte na stránce deset největších českých měst.
 solutionAccess: protected
 ---
 
-1. Založte si Vite/JSX projekt podle již známého postupu.
+1. Založte si Vite/JSX projekt:
+  ```shell
+  npm init kodim-app@latest cviceni-ceska-mesta jsx
+  ```
 1. Do souboru `index.jsx` vložte mimo komponentu pole s názvy deseti největších českých měst.
    ```js
    const cities = [

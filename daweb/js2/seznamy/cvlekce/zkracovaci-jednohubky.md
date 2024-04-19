@@ -6,7 +6,12 @@ lead: Zkracujte funkce a vysvětlete, k čemu slouží.
 solutionAccess: protected
 ---
 
-Založte si obyčejnou stránku s JavaScriptem, bez Vite i JSX. Následující funkce přepište do zkráceného zápisu. Vlastními slovy popište, k čemu nejspíše funkce slouží.
+Založte si obyčejnou stránku s JavaScriptem, bez Vite i bez JSX. Můžete použít následující kód (šablona `html-css-js` nepoužívá Vite ani JSX):
+  ```shell
+  npm init kodim-app@latest cviceni-zkracovaci-jednohubky html-css-js
+  ```
+
+Následující funkce přepište do zkráceného zápisu. Vlastními slovy popište, k čemu nejspíše funkce slouží.
 
 1.  ```js
     const isEmail = (str) => {
