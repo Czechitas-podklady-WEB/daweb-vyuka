@@ -7,6 +7,7 @@ solutionAccess: protected
 ---
 
 1. Vytvořte si repository ze šablony [cviceni-podcasty](https://github.com/Czechitas-podklady-WEB/cviceni-podcasty) a naklonujte si repository z vašeho GitHub účtu na počítač.
+1. Otevřete si repository ve VS Code a v terminálu spusťte příkaz `npm install` pro instalaci závislostí. Pokračujte spuštěním vývojového serveru klasickým `npm run dev`.
 1. Podívejte se na HTML/JSX kód v `src/pages/index.jsx`. Seznam epizod je v kódu napevno zadrátovaný – my z něj budeme chtít udělat slušně vychované JSX komponenty, které umí zobrazit jakýkoli seznam epizod, který dostanou na vstupu v poli.
 1. Vytvořte komponentu `Episode`, která bude zobrazovat jednu podcastovou epizodu. Její props budou `num`, `title` a `guest`. Pomocí této komponenty zobrazte stejné dvě epizody, jaké byly v původním kódu napevno zadrátované.
 1. Nezapomeňte pro vaši komponentu vytvořit separátní složku s vlastním JavaScriptem/JSX a CSS.
