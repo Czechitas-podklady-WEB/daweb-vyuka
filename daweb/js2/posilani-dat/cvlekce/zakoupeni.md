@@ -2,6 +2,8 @@
 title: Odkšrtnutí nákupu
 demand: 3
 context: lekce
+lead: Přidejte do aplikace Nákupy možnost odškrtnutí položky na seznamu jako nakoupené.
+solutionAccess: protected
 ---
 
 Pokračujte v aplikaci z předchozího příkladu. Rozšíříme náš nákupní seznam ještě o tlačítko _Nakoupeno_, které umožní označit položku jako zakoupenou.
