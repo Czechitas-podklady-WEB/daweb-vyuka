@@ -1,5 +1,5 @@
 ---
-title: Obnova seznamu
+title: Vymazání položky ze seznamu
 demand: 3
 context: lekce
 lead: Přidejte do aplikace Nákupy možnost smazání položky ze seznamu.
