@@ -17,5 +17,5 @@ Naše aplikace _Nákupy_ ještě neumí mazat položky seznamu. Do aplikace při
    ```
    https://nakupy.czechitas.dev/api/:day/:id
    ```
-  Tělo požadavku (`body`) bude prázdné, vůbec jej neuvádějte. Nezapomeňte použít pri autentizace své jméno. Po odeslání požadavku zavolejte funkci `window.location.reload()`, pro obnovení stránky.
+   Tělo požadavku (`body`) bude prázdné, vůbec jej neuvádějte. Nezapomeňte použít pri autentizace své jméno. Po odeslání požadavku zavolejte funkci `window.location.reload()`, pro obnovení stránky.
 1. Vyzkoušejte, že vaše aplikace funguje a že je možné pomocí tlačítka _Smazat_ smazat některou položku seznamu.

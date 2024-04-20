@@ -7,9 +7,10 @@ solutionAccess: protected
 ---
 
 Založte si obyčejnou stránku s JavaScriptem, bez Vite i bez JSX:
-  ```shell
-  npm init kodim-app@latest cviceni-opakovani-map html-css-js
-  ```
+
+```shell
+npm init kodim-app@latest cviceni-opakovani-map html-css-js
+```
 
 Do souboru `index.js` si zkopírujte následující pole.
 
