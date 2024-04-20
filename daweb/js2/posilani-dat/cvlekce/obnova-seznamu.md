@@ -2,25 +2,20 @@
 title: Obnova seznamu
 demand: 3
 context: lekce
-lead: Přidejte do aplikace Nákupy možnost obnovy seznamu.
+lead: Přidejte do aplikace Nákupy možnost smazání položky ze seznamu.
 solutionAccess: protected
 ---
 
-Naše aplikace _Nákupy_ ještě neumí mazat položky seznamu. Když nám nákupní seznam příliš naroste, zatím to vyřešíme tak, že umožníme seznam vrátit do původní podoby tak, jak vypadal při prním přihlášení. Do aplikace přidáme tlačítko, které odešle požadavek na obnovu seznamu na server pomocí POST a překreslí komponentu.
+Naše aplikace _Nákupy_ ještě neumí mazat položky seznamu. Do aplikace přidáme tlačítko, které odešle požadavek na smazání položky na server pomocí DELETE a překreslí komponentu.
 
 1. Vyjděte z kódu aplikace vytvořené na lekci. Použijte repozitář [cviceni-nakupy-post](https://github.com/Czechitas-podklady-WEB/cviceni-nakupy-post) jako šablonu pro vytvoření vlastního repozitáře, který si naklonujte.
-1. Předejte do aplikace tlačítko, které bude sloužit k obnově seznamu. Tlačítko může mít například název _Obnovit_. Vložte ho mezi formulář a seznam položek.
-1. Vytořte posluchač události `handleReset` a připojte jej na tlačítko. Je to velmi podobné tomu, jak je vytvořen posluchač `handleSubmit`. Do vašeho posluchače zatím dejte například `console.log`, a vyzkoušejte, že funguje.
+1. Nainstalujte závislosti příkazem `npm install` a pak spusťte vývojový server příkazem `npm run dev`.
+1. V komponentě `ShopItem` je tlačítko, které bude sloužit ke smazání položky seznamu.
+1. Vytořte posluchač události `handleDelete` a připojte jej na tlačítko. Je to velmi podobné tomu, jak je vytvořen posluchač `handleSubmit` v hlavní stránce. Do vašeho posluchače zatím dejte například `console.log`, a vyzkoušejte, že funguje.
 1. Udělejte posluchač rovnou `async`, ať jej máme připravený na volání `fetch`.
-1. Nyní je potřeba odeslat požadavek na server. Zavolejte funkci `fetch`, která na adresu
+1. Nyní je potřeba odeslat požadavek na server. Zavolejte funkci `fetch`, která pošle požadavek metodou `DELETE` na adresu:
    ```
-   https://nakupy.kodim.app/api/me/week/:day/actions
+   https://nakupy.czechitas.dev/api/:day/:id
    ```
-   odešle JSON ve tvaru
-   ```json
-   {
-     "type": "reset"
-   }
-   ```
-   Nezapomeňte použít pri autentizace své jméno. Po odeslání požadavku zavolejte funkci `window.location.reload()`, pro obnovení stránky.
-1. Vyzkoušejte, že vaše aplikace funguje a že je možné pomocí tlačítka _obnovit_ vrátit seznamy do půvdní podoby.
+  Tělo požadavku (`body`) bude prázdné, vůbec jej neuvádějte. Nezapomeňte použít pri autentizace své jméno. Po odeslání požadavku zavolejte funkci `window.location.reload()`, pro obnovení stránky.
+1. Vyzkoušejte, že vaše aplikace funguje a že je možné pomocí tlačítka _Smazat_ smazat některou položku seznamu.
