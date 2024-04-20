@@ -25,7 +25,7 @@ solutionAccess: protected
      'Pardubice',
    ];
    ```
-1. Vytvořte pole `cities` a pomocí funkce `map` z něj vyrobte pole JSX elementů. Každý JSX element nechť má následující strukturu.
+1. Z pole `cities` pomocí funkce `map` vyrobte pole JSX elementů. Každý JSX element nechť má následující strukturu.
    ```js
    <div className="city">Název města</div>
    ```
