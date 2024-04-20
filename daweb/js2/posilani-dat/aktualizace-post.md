@@ -2,10 +2,12 @@
 
 Vybaveni schopností změnit data na serveru požadavkem typu POST můžeme konečně sestavit aplikaci, která korektně aktualizuje data na stránce. Předvedeme si to na naší aplikaci _Nákupy_. Její aktuální verzi najdeme v repozitáři [ukazka-nakupy-fetch](https://github.com/Czechitas-podklady-WEB/ukazka-nakupy-fetch).
 
-V aplikaci nákupy zatím stahujeme nákupní seznam z API endpointu `https://nakupy.kodim.app/api/sampleweek/mon`. To je obecný endpoint se testovacími daty pouze pro čtení. Nyní budeme chtít pracovat s endpointem, který dokáže data i upravovat. Najdeme jej na adrese `https://nakupy.kodim.app/api/me/week/mon`. Tento endpoint však vyžaduje autentizaci, aby poznal, že nám mám poslat naše data a ne data někoho jiného. Jde o to stejnou autentizaci, jsme používali u _Hlasování_, stačí přidat hlavičku `Authorization` a do ní vložit nějaké uníkátní jméno, například svůj GitHub login.
+Podívejte se na [dokumentaci API](https://nakupy.czechitas.app/doc/), které se používá v aplikaci Nákupy. Základní adresa API je `https://nakupy.czechitas.app/api`.
+
+Endpointy API vyžadují autentizaci, aby backend poznal, že nám má poslat naše data a ne data někoho jiného. Jde o to stejnou autentizaci, jsme používali u _Hlasování_, stačí přidat hlavičku `Authorization` a do ní vložit nějaké uníkátní jméno, například svůj GitHub login.
 
 ```js
-const response = await fetch('https://nakupy.kodim.app/api/me/week/mon', {
+const response = await fetch('https://nakupy.czechitas.app/api', {
   headers: {
     Authorization: 'lektor',
   },
@@ -58,7 +60,7 @@ document
       done: false,
     };
 
-    await fetch('https://nakupy.kodim.app/api/me/week/mon/items', {
+    await fetch('https://nakupy.czechitas.app/api/mon', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
