@@ -1,9 +1,9 @@
-title: Lokální API a URL parametry
-lead: Rozeběhneme lokální API server a naučíme se používat URL parametry
+title: Vlastní API a URL parametry
+lead: Naučíme se vytvořit data pro lokální API server a vysvětlíme si, jak používat URL parametry
 access: protected
 sections:
-  - lokalni-api
-  - cv-lokalni-api
+  - vlastni-api
+  - cv-vlastni-api
   - query-parametry
   - cv-query-parametry
   - shrnuti

@@ -17,7 +17,7 @@ Naším hlavím cílem je naučit se query parametry přečíst pomocí JavaScri
 
 ## Query parametry v JavaScriptu
 
-Query parametry se v JavaScriptu čtou pomocí objektu `URLSearchParams`. Ten je součástí JavaScript runtimu uvnitř prohlížeče. Kdybychom například chtěli mít stránku e-shopu, do ktéré si pošleme `id` produktu, jehož detail chceme zobrazit, mohli bychom v URL použít následující adresu.
+Query parametry se v JavaScriptu čtou pomocí objektu `URLSearchParams`. Ten je součástí JavaScript runtimu uvnitř prohlížeče. Kdybychom například chtěli mít stránku e-shopu, do které si pošleme `id` produktu, jehož detail chceme zobrazit, mohli bychom v URL použít následující adresu.
 
 ```
 http://localhost:3000/produkt.html?id=123
