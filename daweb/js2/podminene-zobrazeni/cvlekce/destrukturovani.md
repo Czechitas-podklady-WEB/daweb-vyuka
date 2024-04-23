@@ -2,7 +2,7 @@
 title: Destrukturování
 demand: 2
 context: lekce
-lead: Vyzoušejte si destrukturování objektů na jednoduchém příkladu.
+lead: Vyzkoušejte si destrukturování objektů na jednoduchém příkladu.
 ---
 
 Založte si JavaScriptový soubor s názvem `index.js` a vložte do něj následující objekt:

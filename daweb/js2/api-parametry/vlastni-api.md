@@ -1,6 +1,6 @@
 ## Vlastní API server
 
-Téměř každá webová aplikace potřebuje pracovat s nějakými daty na serveru. Abychom takovou aplikaci mohli napsat celou sami, potřebavali bychom umět vyrobit nejen klientskou část, tedy frontend, ale i serverovou část, tedy vlastní backend. Tvorba vlastního backendu v JavaScriptu je pro zkušené vývojáře běžná záležitost. Do tohoto kurzu se nám však tato látka bohužel nevejde. Backendové programování je samostatná disciplína, která vyžaduje znalost jiných technologií a nástrojů než programování frontendu.
+Téměř každá webová aplikace potřebuje pracovat s nějakými daty na serveru. Abychom takovou aplikaci mohli napsat celou sami, potřebavali bychom umět vyrobit nejen klientskou část, tedy _frontend_, ale i serverovou část, tedy vlastní _backend_. Tvorba vlastního backendu v JavaScriptu je pro zkušené vývojáře běžná záležitost. Do tohoto kurzu se nám ovšem tato látka bohužel nevejde. Backendové programování je samostatná disciplína, která vyžaduje znalost jiných technologií a nástrojů než programování frontendu.
 
 Určitou záchranu nám však poskytne balíček `apidroid`, který používáme pro spuštění lokálního API serveru na vlastním počítači. Zatím jsme data pro `apidroid` vždy měli připravené dopředu. Nyní přišel čas si ukázat, jak si nějakou datovou sadu vytvořit sami.
 
@@ -13,7 +13,7 @@ Téměř vždy, když vytváříme nějaké API, strukturujeme data do takzvaný
 - kolekce článků na blogu,
 - kolekce zpráv v chatu.
 
-Vzpomeňte si na naše [ukázkové API](https://github.com/Czechitas-podklady-WEB/ukazka-simpsons-api) s postavami ze seriálu Simpsonovi. Toto API obsahuje jednu kolekci postav na endpointu `/api/characters`. Všechny objekty v této kolekci mají stejné vlastnosti.
+Vzpomeňte si na naše [ukázkové API](https://github.com/Czechitas-podklady-WEB/ukazka-simpsons-api) s postavami ze seriálu Simpsonovi. Toto API obsahuje jednu kolekci postav dostupnou na endpointu `/api/characters`. Všechny objekty v této kolekci mají stejné vlastnosti.
 
 ```json
 [
@@ -36,7 +36,7 @@ Vzpomeňte si na naše [ukázkové API](https://github.com/Czechitas-podklady-WE
 ]
 ```
 
-Každý prvek kolekce má své jedinečné `id`, které slouží k identifikaci. Pokud se podiváte do samotného repozitáře, uvidíte takovouto strukturu složek a souborů:
+Každý prvek kolekce má své jedinečné `id`, které slouží k jeho identifikaci. Pokud se podiváte do samotného repozitáře, uvidíte takovouto strukturu složek a souborů:
 
 ```
 ukazka-simpsons-api/
@@ -46,7 +46,7 @@ ukazka-simpsons-api/
 └── README.md
 ```
 
-Balíček `apidroid` předpokládá, že data pro každou kolekci budou uložena v samostatném JSON souboru ve složce `api`. Pro každou takovou kolekci nám pak automaticky vytvoří endpoint, který bude vracet data na adrese `/api/nazev-kolekce`.
+Balíček `apidroid` předpokládá, že data pro každou kolekci budou uložena v samostatném JSON souboru ve složce `api`. Pro každou takovou kolekci nám pak automaticky vytvoří endpoint, který bude vracet data na adrese `/api/nazev-kolekce`. Kolekcí můžeme mít ve složce `api` libovolně mnoho.
 
 ### Vlastní kolekce
 
@@ -87,3 +87,6 @@ Podle vzoru výše můžeme snadno vytvořit API s vlastní kolekcí. Zkusme nap
     ```bash
     npx apidroid@latest
     ```
+
+Tímto máme k dispozici endpoint `/api/studenti`, který vrací výše uvedená data. Můžeme si je zobrazit v prohlížeči na adrese [http://localhost:4000/api/studenti](http://localhost:4000/api/studenti).
+

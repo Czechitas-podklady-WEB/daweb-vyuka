@@ -3,7 +3,8 @@ lead: Naučíme se vytvořit data pro lokální API server a vysvětlíme si, ja
 access: protected
 sections:
   - vlastni-api
+  - post
   - cv-vlastni-api
-  - query-parametry
-  - cv-query-parametry
+  - search-parametry
+  - cv-search-parametry
   - shrnuti
