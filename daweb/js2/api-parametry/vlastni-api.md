@@ -89,4 +89,3 @@ Podle vzoru výše můžeme snadno vytvořit API s vlastní kolekcí. Zkusme nap
     ```
 
 Tímto máme k dispozici endpoint `/api/studenti`, který vrací výše uvedená data. Můžeme si je zobrazit v prohlížeči na adrese [http://localhost:4000/api/studenti](http://localhost:4000/api/studenti).
-

@@ -2,7 +2,7 @@
 
 V minulé lekci už jsme si ukazovali, jak pomocí JavaScriptu posílat POST dotazy na server. Když si založíme kolekci pro `apidroid`, získáme zároveň také možnost pomocí POST dotazů vkládat do kolekce nové prvky.
 
-Když chceme přidat nový prvek, pošleme na endpoint příšlušící dané kolekci POST dotaz s tělem, které obsahuje nový prvek. 
+Když chceme přidat nový prvek, pošleme na endpoint příšlušící dané kolekci POST dotaz s tělem, které obsahuje nový prvek.
 
 ```js
 fetch('http://localhost:4000/api/studenti', {
