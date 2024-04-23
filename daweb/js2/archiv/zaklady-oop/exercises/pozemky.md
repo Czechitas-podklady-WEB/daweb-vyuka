@@ -34,4 +34,4 @@ Tento objekt bude představovat prototyp pro všechny naše pozemky.
    > estate1.area()
    > estate1.border()
    ```
-1. Vytvořte pozemek `estate2` s nějakými rozměry a správným prototypem a v konzli vyzoušejte, že i tento správně funguje.
+1. Vytvořte pozemek `estate2` s nějakými rozměry a správným prototypem a v konzli vyzkoušejte, že i tento správně funguje.
