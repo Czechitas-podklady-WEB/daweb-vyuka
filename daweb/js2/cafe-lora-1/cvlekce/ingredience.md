@@ -5,7 +5,7 @@ demand: 3
 context: lekce
 ---
 
-Abychom mohli vytvářet seznam ingrediencí podle dat, každá ingredience musí být také komponenta.
+Abychom mohli vytvářet seznam ingrediencí podle dat, každá ingredience nápoje musí být také komponenta.
 
 1.  Ve složce `components` vytvořte komponentu `Layer`, která očekává `props` v následujícím tvaru.
 
