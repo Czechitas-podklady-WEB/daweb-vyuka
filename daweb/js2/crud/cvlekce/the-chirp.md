@@ -18,7 +18,7 @@ Začneme s již připraveným projektem, který obsahuje hlavní stránku sociá
 
 1. Vytvořte novou stránku pro zobrazení profilu uživatele. Stránka bude dostupná na URL `/profil.html`. Bude tedy potřeba vytvořit nové soubory `profil.html`, `profil.jsx` a `profil.css`.
 1. Zatím na stránku vložte pouze nadpis `h1` s textem `Profil uživatele`. Stránku si otevřete v prohlížeči a ověřte, že se nadpis zobrazuje.
-1. V komponentě `Post` máte již připravený odkaz na prvku s třídou `user__handle`. Zatím nikam nevede. Sestavte URL odkazu tak, aby vedl na stránku s profilem uživatele a předal jí ID uživatele skrze search parametr `?user=`. Například pro uživatele s ID 42 by URL měla vypadat takto: `/profil.html?user=42`.
+1. V komponentě `Post` máte již připravený odkaz na prvku s třídou `post__handle`. Zatím nikam nevede. Sestavte URL odkazu tak, aby vedl na stránku s profilem uživatele a předal jí ID uživatele skrze search parametr `?user=`. Například pro uživatele s ID 42 by URL měla vypadat takto: `/profil.html?user=42`.
 1. Na stránce s profilem uživatele získejte ID uživatele z URL. Načtěte z API informace o uživateli s tímto ID. Na stránce zobrazte jméno, handle a bio uživatele.
 1. Zobrazte také avatar uživatele. Cesta k obrázku je uložena v atributu `avatar` uživatele. Musíte tuto cestu složit s URL vašeho API stejně, jako to dělá komponenta `Post`.
 1. Nyní byste měli mít funkční zobrazení profilu každého uživatele kliknutím na jeho handle v seznamu příspěvků.
