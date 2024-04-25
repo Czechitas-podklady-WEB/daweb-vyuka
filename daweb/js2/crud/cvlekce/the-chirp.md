@@ -9,7 +9,7 @@ Začneme s již připraveným projektem, který obsahuje hlavní stránku sociá
 
 ### Rozběhnutí projektu
 
-1. Pro spuštění projektu budeme potřeba lokální API. To najdete v repoziáři [ukazka-the-chirp-api](https://github.com/Czechitas-podklady-WEB/ukazka-the-chirp-api). Repozitář si naklonujte a API spusťte podle návodu v README.
+1. Pro spuštění projektu budeme potřeba lokální API. To najdete v repoziáři [ukazka-the-chirp-api](https://github.com/Czechitas-podklady-WEB/ukazka-the-chirp-api). Repozitář si naklonujte a API spusťte příkazem `npx apidroid@latest`.
 1. Prohlédněte si kolekce v API. Tentokrát máme kolekce hned dvě: `users` a `posts`. Kolekce `users` obsahuje informace o uživatelích, kolekce `posts` obsahuje všechny příspěvky.
 1. Naklonujte si repozitář s frontendem [ukazka-the-chirp](https://github.com/Czechitas-podklady-WEB/ukazka-the-chirp). Otevřete jej ve VS Code a spusťte příkaz `npm install`, kterým nainstalujete potřebné závislosti. Poté spusťte příkaz `npm run dev`, kterým spustíte vývojový server.
 1. V prohlížeči si vyzkoušejte, jak aplikace funguje. Prohlédněte si její zdrojový kód a seznamte se s tím, jak je aplikace strukturovaná.
