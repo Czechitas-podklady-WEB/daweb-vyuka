@@ -10,7 +10,7 @@ context: lekce
     {
       id: 7,
       name: 'Romano',
-      image: 'https://localhost:4000/assets/cups/romano.png',
+      image: 'http://localhost:4000/assets/cups/romano.png',
     }
     ```
 1.  Vytvořte také komponentu `OrderItem` s _props_ `name` a `image` představující jednu položku objednávky.

@@ -17,7 +17,7 @@ Vytvoříme komponentu `Drink`, která zatím nebude mít funkční objednávac�
       id={0}
       name="Romano"
       ordered={false}
-      image="https://localhost:4000/assets/cups/romano.png"
+      image="http://localhost:4000/assets/cups/romano.png"
       layers={[
         {
           color: '#fbdf5b',
