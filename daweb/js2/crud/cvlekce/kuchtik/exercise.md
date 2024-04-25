@@ -19,7 +19,7 @@ Co se týče vzhledu aplikace, můžete se inspirovat layoutem hlavní stránky,
 1.  Založte si Vite/JSX projekt pro frontend aplikace. Na hlavní stránce stáhněte z API seznam receptů a zobrazte je na stránce.
 1.  Vytvořte komponentu `RecipeCard`, která bude zobrazovat jednu kartu s receptem. V této komponentě zobrazte název receptu, obrázek a popis. Vytvořte si pro tuto komponentu nějaké rozumné CSS styly.
 1.  Do stránky přidejte formulář, do kterého uživatel může zadat nový recept. Formulář osaďte spoluchačem události `submit` a pomocí požadavku `POST` odešlete nový recept na server. Po úspěšném přidání receptu proveďte refresh stránky.
-1.  Na kartu receptu přidejte možnost smazání. Protože je na stránce více receptů, potřebujete poznat, který recept chce uživatel smazat. Na tlačitko pro mazání proto přidejte `data-id` atribut s ID receptu. 
+1.  Na kartu receptu přidejte možnost smazání. Protože je na stránce více receptů, potřebujete poznat, který recept chce uživatel smazat. Na tlačitko pro mazání proto přidejte `data-id` atribut s ID receptu.
 1.  Na všechny tlačítka pro mazání navěsíte posluchače události. V posluchači události si přečtete ID receptu z vlastnosti `event.target.dataset.id`. Pomocí tohoto ID smažete recept na serveru. Nezapomeňte na refresh stránky.
 1.  Na karty receptu přidejte odkaz pro přechod na detail receptu. Vytvořte stránku pro detail receptu a pomocí search parametrů jí předejte `id` receptu, který má zobrazit. Zobrazte recept na stránce.
 1.  Na stránce s detaily receptu přidejte odkaz pro návrat na hlavní stránku, aby se uživatel mohl vrátit zpět na seznam receptů.
