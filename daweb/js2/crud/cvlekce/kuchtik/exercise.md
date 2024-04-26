@@ -24,6 +24,6 @@ Co se týče vzhledu aplikace, můžete se inspirovat layoutem hlavní stránky,
 1.  Na karty receptu přidejte odkaz pro přechod na detail receptu. Vytvořte stránku pro detail receptu a pomocí search parametrů jí předejte `id` receptu, který má zobrazit. Zobrazte recept na stránce.
 1.  Na stránce s detaily receptu přidejte odkaz pro návrat na hlavní stránku, aby se uživatel mohl vrátit zpět na seznam receptů.
 
-<!-- :::solution
-Příklad možného řešení je ve dvou repository: [cviceni-kuchtik-reseni](https://github.com/Czechitas-podklady-WEB/cviceni-kuchtik-reseni) (pro samotný web) a [cviceni-kuchtik-api-reseni](https://github.com/Czechitas-podklady-WEB/cviceni-kuchtik-api-reseni) (API s daty potřebnými pro řešení).
-::: -->
+:::solution
+Příklad možného řešení je v repository: [cviceni-kuchtik-reseni](https://github.com/Czechitas-podklady-WEB/cviceni-kuchtik-reseni).
+:::
