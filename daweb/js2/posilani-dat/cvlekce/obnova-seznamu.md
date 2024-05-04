@@ -10,7 +10,7 @@ Pokračujte v aplikaci z předchozího příkladu. Rozšíříme náš nákupní
 
 Postup je velmi podobný jako v předchozím cvičení.
 
-1. Do aplikace přidejte tlačítko _vymazat_.
+1. Do aplikace přidejte tlačítko _Nakoupeno_.
 1. Založte `async` posluchač události `handleDone` a vyzkoušejte, že se zavolá při stisknutí tlačítka.
 1. V obsluze události pošlete autentizovaný `PATCH` požadavek na stejnou adresu jako v předchozím příkladu
    ```
