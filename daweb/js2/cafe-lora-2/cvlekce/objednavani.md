@@ -18,5 +18,5 @@ context: lekce
     Proveďte tento požadavek pomocí `fetch` a zkontrolujte, že se vám v konzoli vypíše odpověď od API. Jakmile je váš kód funkční, proveďte refresh stránky, aby se vám zobrazila aktuální data.
 
 1.  Vyzkoušejte si na stránce, že objednávání nápojů funguje.
-1.  **Bonus**: Pokud vám toto cvičení přišlo jako pohodička, zkuste si zprovoznit zrušení objednávky. Stačí upravit vlastnost `value` v body požadavku, aby místo `true` posílala opak předchozího stavu nápoje. Přístup k `ordered` stavu nápoje máte díky datům z předchozího GET requestu. Budete muset najít nápoj, který odpovídá `id` použitého formuláře.
+1.  **Bonus**: Pokud vám toto cvičení přišlo jako pohodička, zkuste si zprovoznit zrušení objednávky. Stačí upravit vlastnost `value` v body požadavku, aby místo `true` posílala opak předchozího stavu nápoje. Přístup k `ordered` stavu nápoje máte díky datům z předchozího GET requestu. Budete muset v poli se všemi nápoji najít nápoj, který odpovídá `id` použitého formuláře.
 1.  Commitněte váš kód se zodpovědně napsanou commit zprávou a pushněte do vzdáleného repozitáře.
