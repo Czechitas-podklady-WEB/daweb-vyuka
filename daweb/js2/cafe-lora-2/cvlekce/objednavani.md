@@ -9,7 +9,7 @@ context: lekce
 1.  Na objednávací tlačítko také přidejte třídu `.order-btn--ordered` v případě, že nápoj je objednaný.
 1.  Prop `id` předejte atributu `data-id`, který vložte na `<form>`.
 1.  V hlavním souboru `index.jsx` pověste pomocí `querySelectorAll` posluchač události na každý objednávací formulář v nápojích. Zatím při kliknutí na tlačítko vypište do konzole `id` nápoje, abyste si ověřili, že váš posluchač události pracuje se správným prvkem pole. K `id` se dostanete pomocí vlastnosti `dataset.id`.
-1.  Samotné objednání nápoje provedete pomocí PATCH požadavku na API endpoint `/api/drinks/:id`. `:id` zde představuje dynamickou část url, kam vložíte `id` formuláře. Požadavek bude mít v těle JSON pole s objektem, tělo požadavku tedy bude vypadat takto:
+1.  Samotné objednání nápoje provedete pomocí `PATCH` požadavku na API endpoint `/api/drinks/:id`. `:id` zde představuje dynamickou část URL, kam vložíte `id` formuláře. Požadavek bude mít v těle JSON pole s objektem, tělo požadavku tedy bude vypadat takto:
 
     ```js
     [{ op: 'replace', path: '/ordered', value: true }];
