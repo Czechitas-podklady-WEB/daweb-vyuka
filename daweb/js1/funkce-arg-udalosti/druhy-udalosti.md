@@ -10,7 +10,7 @@ const handleClick = () => {
 document.addEventListener('click', handleClick);
 ```
 
-Takto přidáme posluchače události k celé naší stránce. Na celé stránce také můžeme použít událost `scroll`, která nastave pokaždé, když uživatel na stránce zascrolluje.
+Takto přidáme posluchače události k celé naší stránce. Na celé stránce také můžeme použít událost `scroll`, která nastane pokaždé, když uživatel na stránce zascrolluje.
 
 ```js
 const handleScroll = () => {

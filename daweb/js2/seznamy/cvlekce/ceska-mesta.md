@@ -34,7 +34,7 @@ npm init kodim-app@latest cviceni-ceska-mesta jsx
    Výsledné pole uložte do proměnné `cityElements`.
 1. Použijte pole `cityElements` uvnitř komponenty JSX a zobrazte jej tak na vaší stránce.
 1. Zbavte se proměnné `cityElements` a funkci `map` použijte přímo uvnitř komponenty JSX.
-1. V konzoli si JSX bude stěžovat, že chybí `key` prop. Máme však štěstí, jména měst jsou unikátní. Můžeme tak na náš `div` přídat prop `key` a do něj poslat přímo název města.
+1. V konzoli si JSX bude stěžovat, že chybí `key` prop. Máme však štěstí, jména měst jsou unikátní. Můžeme tak na náš `div` přidat prop `key` a do něj poslat přímo název města.
 
 <!-- :::solution
 

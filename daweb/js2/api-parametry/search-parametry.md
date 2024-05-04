@@ -11,9 +11,9 @@ Pro předávání informací z jedné stránky na druhou se standardně použív
 https://api.sunrise-sunset.org/json?lat=50&lng=14.5
 ```
 
-Zde vidíme dva search parametry `lat` a `lng` oddělené znakem `&`. Každý z nich má svou hodnotu, kterou vidímze za znakem `=`.
+Zde vidíme dva search parametry `lat` a `lng` oddělené znakem `&`. Každý z nich má svou hodnotu, kterou vidíme za znakem `=`.
 
-Naším hlavím cílem je naučit se search parametry přečíst v naší stránce pomocí JavaScriptu.
+Naším hlavním cílem je naučit se search parametry přečíst v naší stránce pomocí JavaScriptu.
 
 ## Search parametry v JavaScriptu
 

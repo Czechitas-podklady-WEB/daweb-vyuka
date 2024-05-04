@@ -1,13 +1,13 @@
 ## Startovače projektů
 
-Projekt, který jsme si zkoušeli nakonfiguravat v přechozí části, byl extrémně jednoduchý. Ve skutečné aplikaci budeme po Vite chtít mnohem více věcí než jen zminifikovat JavaScript. Budeme chtít
+Projekt, který jsme si zkoušeli nakonfigurovat v předchozí části, byl extrémně jednoduchý. Ve skutečné aplikaci budeme po Vite chtít mnohem více věcí než jen zminifikovat JavaScript. Budeme chtít
 
 - spojit všechny JavaScriptové soubory do jednoho,
 - spojit CSS styly,
 - přeložit náš JavaScript do podoby kompatibilní s většinou prohlížečů,
 - později zapojit knihovnu React.
 
-Vytvořit konfiguraci pro takovýto projekt z hlavy může být velmi zdlouhavé. Zde ke slovu přicházají generátory, které umí základní strukturu projektu i s Vite konfigurací vytvořit jedním příkazem.
+Vytvořit konfiguraci pro takovýto projekt z hlavy může být velmi zdlouhavé. Zde ke slovu přicházejí generátory, které umí základní strukturu projektu i s Vite konfigurací vytvořit jedním příkazem.
 
 Jedním z takových oblíbených generátorů pro reactové projekty je `create-react-app`. Často jej na internetu potkáte v různých reactových tutoriálech a kurzech. My však ještě s Reactem nepracujeme a tento generátor se nám tudíž nehodí. Použijeme nám již známý `create-kodim-app`, který kromě projektů typu `html-css-js` umí generovat i projekty založené na Vite.
 
@@ -29,7 +29,7 @@ Naši aplikaci _Nákupy_ jsme v zanechali v repozitáři [ukazka-nakupy-import-e
 
 ## Import stylů
 
-Podobně jako jsme se učili dělit JavaScriptový kód do více souborů, budeme totéž dělat i se soubory CSS. Vit umí kromě JavaScriptu zabalit také CSS. To nás zachrání od ručního importu mnoha stylů přímo do soubou `index.html`. Vite dokonce výsledné sestavené CSS vloží do stránky sám, naše stránka tak nemusí vůbec do HTML linkovat žádné CSS soubory. Všechny linky na CSS soubory tak můžeme z našeho `index.html` smazat.
+Podobně jako jsme se učili dělit JavaScriptový kód do více souborů, budeme totéž dělat i se soubory CSS. Vite umí kromě JavaScriptu zabalit také CSS. To nás zachrání od ručního importu mnoha stylů přímo do soubou `index.html`. Vite dokonce výsledné sestavené CSS vloží do stránky sám, naše stránka tak nemusí vůbec do HTML linkovat žádné CSS soubory. Všechny linky na CSS soubory tak můžeme z našeho `index.html` smazat.
 
 Aby Vite poznal, které CSS má do výsledného projektu zabalit, je potřeba mu to říct pomocí importů. V hlavním souboru `index.js` je tedy potřeba na začátku importovat styly
 
@@ -37,4 +37,4 @@ Aby Vite poznal, které CSS má do výsledného projektu zabalit, je potřeba mu
 import './index.css';
 ```
 
-V další lekci se naučíme vyrábět takzvané komponenty. CSS styly pak budeme importovat mnohem častěji, než jsem nyní zvyklí.
+V další lekci se naučíme vyrábět takzvané komponenty. CSS styly pak budeme importovat mnohem častěji, než jsme nyní zvyklí.

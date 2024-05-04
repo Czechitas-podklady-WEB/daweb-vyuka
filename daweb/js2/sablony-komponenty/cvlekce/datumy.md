@@ -1,8 +1,8 @@
 ---
-title: Datumy
+title: Kalendářová data
 demand: 2
 context: lekce
-lead: Zobrazte pomocí komponent několik datumů
+lead: Zobrazte pomocí komponent několik kalendářových dat
 solutionAccess: protected
 ---
 
@@ -10,7 +10,7 @@ solutionAccess: protected
    ```shell
    npm init kodim-app@latest datumy jsx
    ```
-1. Projekt spusťte pomocí `npm run dev`, jak už to znáte z dřívejška.
+1. Projekt spusťte pomocí `npm run dev`, jak už to znáte z dřívějška.
 1. Vytvořte komponentu `Today`, která bude očekávat tři props:
 
    - `day` - řetězec s číslem dne, například `'07'`,

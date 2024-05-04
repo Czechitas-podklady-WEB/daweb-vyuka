@@ -1,6 +1,6 @@
 ## Události
 
-Aby naše stránky mohly být skutečně interaktivní, potřebujeme být schopni reagovat na akce, které uživatel na stránce provádí - klikání na tlačíka, stiknutí kláves, scrollování, pohyb myší apod. Vždy, když některá z těcho akcí na stránce nastane, říkáme, že nastala určitá :term{cs="událost" en="event"}. JavaScript reprezentuje takovou událost jako speciální typ hodnoty podobně jako číslo, řetězec nebo funkci. Událost tedy můžeme uložit do proměnné nebo poslat nějaké funkci jako vstup. Událost obsahuje vlastnosti a metody, které popisují co se přesně stalo, například jaká klávesa byla zrovna stisknuta, kde na obrazovce bylo kliknuto a spoustu dalších užitenčných informací.
+Aby naše stránky mohly být skutečně interaktivní, potřebujeme být schopni reagovat na akce, které uživatel na stránce provádí – klikání na tlačítka, stisknutí kláves, scrollování, pohyb myší apod. Vždy, když některá z těcho akcí na stránce nastane, říkáme, že nastala určitá :term{cs="událost" en="event"}. JavaScript reprezentuje takovou událost jako speciální typ hodnoty podobně jako číslo, řetězec nebo funkci. Událost tedy můžeme uložit do proměnné nebo poslat nějaké funkci jako vstup. Událost obsahuje vlastnosti a metody, které popisují co se přesně stalo, například jaká klávesa byla zrovna stisknuta, kde na obrazovce bylo kliknuto a spoustu dalších užitečných informací.
 
 Abychom mohli na události reagovat, JavaScript nám umožňuje ke každé události, která nás zajímá, připojit funkci, která se zavolá ve chvíli, kdy daná událost nastane. Takové funkci často říkáme :term{cs="posluchač události" en="event listener"}. Můžeme si představit, že JavaScript runtime pečlivě naslouchá všem možným událostem a volá k nim přiřazené funkce. Taková funkce může vypadat například takto.
 
@@ -36,13 +36,13 @@ buttonElement.addEventListener('click', changeTitle);
 
 S událostmi přichází několik nástrah, na které když si nedáme pozor, naše stránka nejen že nebude fungovat, ale nevyhodí ani žádnou chybu. V takové situací může být těžké odhalit, v čem přesně je zakopaný pes. Tyto nástrahy se často rády objeví těsně před deadlinem odevzdání projektu a jejich hektické řešení pak má neblahý vliv na naše zdraví a zdraví našich kolegů.
 
-Nástraha první spočítá v předávání funkce `changeTitle`. Všimněte si opět toho, že používáme funkci `changeTitle` jako hodnotu a předáváme ji jako vstup metodě `addEventListener`. Nikde v našem kódu funkci sami nevoláme. Zavolá ji až JavaScript runtime ve chvíli, kdy na tlačíku nastane událost `click`. Častou začátečnickou chybou je pokušet se funkci zavolat sami.
+Nástraha první spočítá v předávání funkce `changeTitle`. Všimněte si opět toho, že používáme funkci `changeTitle` jako hodnotu a předáváme ji jako vstup metodě `addEventListener`. Nikde v našem kódu funkci sami nevoláme. Zavolá ji až JavaScript runtime ve chvíli, kdy na tlačíku nastane událost `click`. Častou začátečnickou chybou je pokoušet se funkci zavolat sami.
 
 ```js
 buttonElement.addEventListener('click', changeTitle());
 ```
 
-V tomto případě se funkce `changeTitle` zavolá už ve chvíli, kdy voláme metodu `addEventListener`. Té se pak jako druhý vstup předá **výsledek** volání funkce `changeTitle`, nikoliv funkce samotná. Jelikož `changeTitle` nic nevrací (přesněji řečeno, vrací `undefined`), k události `click` se žádný posluchač nepřipojí. Naše tlačítko tedy nebude fungovat. Co nás může zmást je to, že takováto stránka nevyhodí žádnou chybu. Náš JavaScript kód totiž funguje jak má. Jen jsme ho napsali tak, že dělá něco jiného než chceme. JavaScript runtime však nemůže telepaticky nahlížet do našich hlav aby věděl, co doopravdy chceme. Prostě dělá to, co jsme mu řekli.
+V tomto případě se funkce `changeTitle` zavolá už ve chvíli, kdy voláme metodu `addEventListener`. Té se pak jako druhý vstup předá **výsledek** volání funkce `changeTitle`, nikoliv funkce samotná. Jelikož `changeTitle` nic nevrací (přesněji řečeno, vrací `undefined`), k události `click` se žádný posluchač nepřipojí. Naše tlačítko tedy nebude fungovat. Co nás může zmást je to, že takováto stránka nevyhodí žádnou chybu. Náš JavaScript kód totiž funguje jak má. Jen jsme ho napsali tak, že dělá něco jiného než chceme. JavaScript runtime však nemůže telepaticky nahlížet do našich hlav, aby věděl, co doopravdy chceme. Prostě dělá to, co jsme mu řekli.
 
 Nástraha druhá spočívá v názvech událostí. To jsou obyčejné řetězce, jak je známe už z první lekce. Není vůbec těžké udělat v názvu události překlep, obzvlášť, pokud je název delší, nebo nejsme tolik zdatní v angličtině.
 
@@ -51,6 +51,6 @@ buttonElement.addEventListener('clik', changeTitle);
 buttonElement.addEventListener('mousdown', changeTitle);
 ```
 
-Správně je `click` a `mousedown`. Toto za nás JavaScript runtime bohužel nezkontroluje. Jenoduše k našemu názvu připojí posluchače a už se nestará o to, že událost se špatným názvem nikdy nenastane. Naše stránka pak prostě nebude fungovat a opět také nenastane žádná chyba. Z hlediska runtimu je však jako v předchozím případě všechno v naprostém pořádku.
+Správně je `click` a `mousedown`. Toto za nás JavaScript runtime bohužel nezkontroluje. Jednoduše k našemu názvu připojí posluchače a už se nestará o to, že událost se špatným názvem nikdy nenastane. Naše stránka pak prostě nebude fungovat a opět také nenastane žádná chyba. Z hlediska runtimu je však jako v předchozím případě všechno v naprostém pořádku.
 
 Když tedy pracujete s událostmi, vždy si dobře zkontrolujte, že jste jméno události napsali správně a že také správným způsobem předáváte posluchače.

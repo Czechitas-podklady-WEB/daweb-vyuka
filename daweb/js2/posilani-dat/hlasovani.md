@@ -12,7 +12,7 @@ Na tento endpoint pošleme objekt, který říká, že uživatel hlasuje pro vol
 }
 ```
 
-Zároveň chceme, aby server poznal, za jakého uživatele hlasujeme. Pošleme tady hlavičku authorization s naším jménem, např. Zuzka.
+Zároveň chceme, aby server poznal, za jakého uživatele hlasujeme. Pošleme tedy hlavičku authorization s naším jménem, např. Zuzka.
 
 ```js
 fetch('https://apps.kodim.cz/daweb/hlasovani/api/poll/3', {
@@ -31,7 +31,7 @@ Pokud se požadavek povede odeslat správně, měla by aplikace v reálném čas
 
 ## Klíčové slovo `async`
 
-Zatím jsme ještě funkci `fetch` nikdy nevolali unvnitř žádné funkce. Volání jsme vždy měli na samotném začátku kódu. Při posílání požadavku POST však budeme chtít `fetch` volat až při kliknutí na tlačítko nebo hlavně ve zpracování události `submit` formuláře. To znamená, že `fetch` bude volán uvnitř funkce, která je posluchačem události.
+Zatím jsme ještě funkci `fetch` nikdy nevolali uvnitř žádné funkce. Volání jsme vždy měli na samotném začátku kódu. Při posílání požadavku POST však budeme chtít `fetch` volat až při kliknutí na tlačítko nebo hlavně ve zpracování události `submit` formuláře. To znamená, že `fetch` bude volán uvnitř funkce, která je posluchačem události.
 
 Pokud používáme uvnitř jakékoliv funkce `await`, musíme funkci vždy označit jako `async`.
 

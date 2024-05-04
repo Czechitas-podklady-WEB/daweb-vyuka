@@ -6,7 +6,7 @@ lead: Vyzkoušejte si základní použití JSX.
 solutionAccess: protected
 ---
 
-Vyzkoušejte si založení jednoduché aplikace používající JSX s jednout stránkou a jednoduchým CSS.
+Vyzkoušejte si založení jednoduché aplikace používající JSX s jednou stránkou a jednoduchým CSS.
 
 1. Pomocí nástroje `kodim-app` vytvořte nový JSX Vite projekt.
    ```shell

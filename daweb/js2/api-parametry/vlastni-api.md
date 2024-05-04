@@ -1,6 +1,6 @@
 ## Vlastní API server
 
-Téměř každá webová aplikace potřebuje pracovat s nějakými daty na serveru. Abychom takovou aplikaci mohli napsat celou sami, potřebavali bychom umět vyrobit nejen klientskou část, tedy _frontend_, ale i serverovou část, tedy vlastní _backend_. Tvorba vlastního backendu v JavaScriptu je pro zkušené vývojáře běžná záležitost. Do tohoto kurzu se nám ovšem tato látka bohužel nevejde. Backendové programování je samostatná disciplína, která vyžaduje znalost jiných technologií a nástrojů než programování frontendu.
+Téměř každá webová aplikace potřebuje pracovat s nějakými daty na serveru. Abychom takovou aplikaci mohli napsat celou sami, potřebovali bychom umět vyrobit nejen klientskou část, tedy _frontend_, ale i serverovou část, tedy vlastní _backend_. Tvorba vlastního backendu v JavaScriptu je pro zkušené vývojáře běžná záležitost. Do tohoto kurzu se nám ovšem tato látka bohužel nevejde. Backendové programování je samostatná disciplína, která vyžaduje znalost jiných technologií a nástrojů než programování frontendu.
 
 Určitou záchranu nám však poskytne balíček `apidroid`, který používáme pro spuštění lokálního API serveru na vlastním počítači. Zatím jsme data pro `apidroid` vždy měli připravené dopředu. Nyní přišel čas si ukázat, jak si nějakou datovou sadu vytvořit sami.
 
@@ -36,7 +36,7 @@ Vzpomeňte si na naše [ukázkové API](https://github.com/Czechitas-podklady-WE
 ]
 ```
 
-Každý prvek kolekce má své jedinečné `id`, které slouží k jeho identifikaci. Pokud se podiváte do samotného repozitáře, uvidíte takovouto strukturu složek a souborů:
+Každý prvek kolekce má své jedinečné `id`, které slouží k jeho identifikaci. Pokud se podíváte do samotného repozitáře, uvidíte takovouto strukturu složek a souborů:
 
 ```
 ukazka-simpsons-api/

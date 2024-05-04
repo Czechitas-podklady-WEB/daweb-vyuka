@@ -19,7 +19,7 @@ const list = [
 ];
 ```
 
-Abychom neměli data přímo v hlavním `index.js`, vyčlením si pro ně samostatný soubor `shoplist.js`. Aby byla proměnná `list` dostupná i v jiných souborech, musíme ji exportovat. To uděláme pomocí klíčového slova `export`.
+Abychom neměli data přímo v hlavním `index.js`, vyčleníme si pro ně samostatný soubor `shoplist.js`. Aby byla proměnná `list` dostupná i v jiných souborech, musíme ji exportovat. To uděláme pomocí klíčového slova `export`.
 
 ```js
 export const list = [
@@ -37,7 +37,7 @@ import { list } from './shoplist.js';
 
 Můžeme ji pak použít stejně jako kdybychom ji definovali přímo v daném souboru. Už tímto jednoduchým krokem se nám podaří kód hodně pročistit a zpřehlednit.
 
-Abychom náš kód dále zpřehlednili, vyčleníme si funkce pro upravování pole s položkami seznamu. Budeme potřebovat funkci pri přidání nové položky:
+Abychom náš kód dále zpřehlednili, vyčleníme si funkce pro upravování pole s položkami seznamu. Budeme potřebovat funkci pro přidání nové položky:
 
 ```js
 export const addItem = (name, amount) => {
@@ -65,7 +65,7 @@ export const deleteItem = (index) => {
 };
 ```
 
-Všechny tyto funkce budeme mít v souboru `shoplist.js`. Zároveň si vyrobíme ještě jeden soubor `render.js`, do kterého přesuneme funkci pro vykreslení seznamu `renderList`. Tuto funkci uprvíme tak, aby používala naše funkce pro manipulaci se seznamem. Musíme si je proto importovat z `shoplist.js`.
+Všechny tyto funkce budeme mít v souboru `shoplist.js`. Zároveň si vyrobíme ještě jeden soubor `render.js`, do kterého přesuneme funkci pro vykreslení seznamu `renderList`. Tuto funkci upravíme tak, aby používala naše funkce pro manipulaci se seznamem. Musíme si je proto importovat z `shoplist.js`.
 
 ```js
 import { list, deleteItem, toggleBought } from './shoplist.js';
