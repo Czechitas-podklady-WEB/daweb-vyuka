@@ -12,7 +12,7 @@ Na tento endpoint pošleme objekt, který říká, že uživatel hlasuje pro vol
 }
 ```
 
-Zároveň chceme, aby server poznal, za jakého uživatele hlasujeme. Pošleme tedy hlavičku authorization s naším jménem, např. Zuzka.
+Zároveň chceme, aby server poznal, za jakého uživatele hlasujeme. Pošleme tedy hlavičku authorization s naším jménem, např. Zuzka. Pozor na to, že v HTTP hlavičkách nemohou být české znaky s diakritikou.
 
 ```js
 fetch('https://apps.kodim.cz/daweb/hlasovani/api/poll/3', {
