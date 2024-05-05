@@ -1,6 +1,6 @@
 ## Seznamy v JSX
 
-Na konci předchozí sekce jsme se dotkli způsobu, jak v JSX zobrazit nějaký seznam. Celá myšlenka tkví v tom, že v JSX můžeme velmi přimočaře umožňuje zobrazit pole JSX elementů.
+Na konci předchozí sekce jsme se dotkli způsobu, jak v JSX zobrazit nějaký seznam. Celá myšlenka tkví v tom, že v JSX můžeme velmi přímočaře umožňuje zobrazit pole JSX elementů.
 
 Představme si následující pole obsahující JSX `li` elementy.
 
@@ -33,7 +33,7 @@ Když tento kód spustíme, v konzoli prohlížeče objevíme varování:
 Warning: Each child in a list should have a unique "key" prop.
 ```
 
-Pro tutu chvíli jej můžeme ignorovat. Později si vysvětlíme, co přesně znamená a jak se k němu postavit.
+Pro tuto chvíli jej můžeme ignorovat. Později si vysvětlíme, co přesně znamená a jak se k němu postavit.
 
 ## Použití `map`
 
@@ -43,7 +43,7 @@ V předchozím případě jsme pole JSX elementů měli připravené dopředu. V
 const days = ['pondělí', 'úterý', 'středa', 'čtvrtek', 'pátek'];
 ```
 
-Z tohoto pole chceme vyrobit pole JSX elementů pro náš seznam. K tomu nám stačí poučít funkci `map`, kterou jsme v první části lekce tak poctivě trénovali.
+Z tohoto pole chceme vyrobit pole JSX elementů pro náš seznam. K tomu nám stačí použít funkci `map`, kterou jsme v první části lekce tak poctivě trénovali.
 
 ```js
 const days = ['pondělí', 'úterý', 'středa', 'čtvrtek', 'pátek'];
@@ -58,7 +58,7 @@ const HomePage = () => (
 );
 ```
 
-Tento kód bude hezky fungovat. Z hlediska profesionáních vývojářů je však zbytečně ukecaný. Proměnnou `dayElements` používáme pouze jednou, takže můžeme na místě jejího použití rovnou zavolat náš mapovací kód.
+Tento kód bude hezky fungovat. Z hlediska profesionálních vývojářů je však zbytečně ukecaný. Proměnnou `dayElements` používáme pouze jednou, takže můžeme na místě jejího použití rovnou zavolat náš mapovací kód.
 
 <!-- prettier-ignore -->
 ```js
@@ -76,7 +76,7 @@ const App = () => (
 );
 ```
 
-Pokud vám kód výše stále přijde srozumitelný, je zde příležitost jej udělat ještě malinko kompaktnější. V praxi se často setkáte s takovýmo formátováním.
+Pokud vám kód výše stále přijde srozumitelný, je zde příležitost jej udělat ještě malinko kompaktnější. V praxi se často setkáte s takovýmto formátováním.
 
 ```js
 const days = ['pondělí', 'úterý', 'středa', 'čtvrtek', 'pátek'];

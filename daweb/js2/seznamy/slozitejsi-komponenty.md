@@ -60,7 +60,7 @@ const ShopItem = ({ name, amount, bought }) => {
 Nyní stačí komponentu použít uvnitř `HomePage`.
 
 ```jsx
-const HomaPage = () => (
+const HomePage = () => (
   <>
     <h1>Nákupní seznam</h1>
     <ul className="shopping-list">

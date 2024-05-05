@@ -37,7 +37,7 @@ Pojďme si pro cvik vytvořit ještě komponentu `Footer`, která bude představ
 const Footer = () => {
   return (
     <footer>
-      <p>© 2023 Czechitas, z. ú.</p>
+      <p>© 2024 Czechitas, z. ú.</p>
     </footer>
   );
 };
@@ -56,7 +56,7 @@ rootElement.innerHTML += render(
 rootElement.innerHTML += render(Footer());
 ```
 
-Zde ale objevíme superschopnost JSX, která umožnuje používat námi vytvořené komponenty přímo na místě HTML značek. Naši aplikaci tak můžeme přepsat následovně:
+Zde ale objevíme superschopnost JSX, která umožňuje používat námi vytvořené komponenty přímo na místě HTML značek. Naši aplikaci tak můžeme přepsat následovně:
 
 ```jsx
 const rootElement = document.querySelector('#root');

@@ -112,10 +112,10 @@ Vite dělá minifikaci proto, aby náš výsledný kód byl co nejmenší. Vzhle
 
 ## Vývojový server
 
-Pomocí příkazu `npm run dev` sestavujeme stránku pro finální nasazení na nějaký server. Během vývoje chceme, aby stránka běžela na našem lokálním serveru, podobně jako když jsme spouštěli příkad `npx serve`. Ten už nyní pro Vite projekty používat nebudeme. Místo toho používejme příkaz
+Pomocí příkazu `npm run dev` sestavujeme stránku pro finální nasazení na nějaký server. Během vývoje chceme, aby stránka běžela na našem lokálním serveru, podobně jako když jsme spouštěli například `npx serve`. Ten už nyní pro Vite projekty používat nebudeme. Místo toho používejme příkaz
 
 ```sh
 $ npm run dev
 ```
 
-Ten sleduje změny v našem kódu a průběžně sestavuje všechny nezbytné JavaScriptové a CSS soubory. Funugje tady podobně, jako jsme zvyklí z příkazu `npx serve`.
+Ten sleduje změny v našem kódu a průběžně sestavuje všechny nezbytné JavaScriptové a CSS soubory. Funguje tedy podobně, jako jsme zvyklí z příkazu `npx serve`.

@@ -27,7 +27,7 @@ const pozdrav = (name) => {
 const zkracenyPozdrav = (name) => `Ahoj ${name}`;
 ```
 
-Nemusíme samozřejme vracet pouze řetězec. Často z funkcí vracíme číslo, pravdivostní hodnotu (boolean) a všechny ostatní typy hodnot. Pozor však na to, že když chceme vrátit z funkce objekt, který se píše do složených závorek `{` a `}`, musíme jej celý vložit ještě do kulatých závorek `(` a `)`:
+Nemusíme samozřejmě vracet pouze řetězec. Často z funkcí vracíme číslo, pravdivostní hodnotu (boolean) a všechny ostatní typy hodnot. Pozor však na to, že když chceme vrátit z funkce objekt, který se píše do složených závorek `{` a `}`, musíme jej celý vložit ještě do kulatých závorek `(` a `)`:
 
 ```js
 const createPerson = (name, age, gender) => ({
@@ -52,7 +52,7 @@ Je dobré si dát pozor, aby náš kód zůstal čitelný. Pokud je funkce jasn�
 
 ## Zkracování v `map`
 
-Zkracování anonymních funkcí se velmi hodí právě při používání metody `map`. Tam totiž časo děláme právě to, že předávaná funkce rovnou vrací nějakou hodnotu.
+Zkracování anonymních funkcí se velmi hodí právě při používání metody `map`. Tam totiž často děláme právě to, že předávaná funkce rovnou vrací nějakou hodnotu.
 
 Náš dřívější příklad bez zkracování
 
@@ -63,7 +63,7 @@ const emails = names.map((name) => {
 });
 ```
 
-pak můžeme přepsta takto:
+pak můžeme přepsat takto:
 
 ```js
 const emails = names.map((name) => `${name}@mejlik.cz`);

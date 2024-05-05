@@ -6,12 +6,12 @@ lead: Vytvořte aplikaci, která bude spravovat internetové odkazy.
 solutionAccess: protected
 ---
 
-Při brouzdání internetem by se jistě leckomu mohla hodit aplikace, která bude spravovat různé internetové odkazy, abychom je nemuseli mít v tísíci záložkách v prohlížeči, které se pak bojíme zavřít. Základ takové aplikací si vytvoříme v této úloze.
+Při brouzdání internetem by se jistě leckomu mohla hodit aplikace, která bude spravovat různé internetové odkazy, abychom je nemuseli mít v tisíci záložkách v prohlížeči, které se pak bojíme zavřít. Základ takové aplikací si vytvoříme v této úloze.
 
 Postupujte dle následujících kroků. Naši aplikaci nazveme originálně _Správce odkazů_.
 
 1. Nejdříve vytvořte lokální API server pro náš projekt. Založte si někde na disku složku `odkazy-api` a otevřete ji ve VS Code.
-1. V této složce vytvořte složku `api` a v ní soubor `links.json` a vložte do něj pole několika odkazů, abychom mělik do začátku nějaká data. Rozmyslete si, jak by měl objekt jednoho odkazu vypadat. Určitě budeme chtít evidovat
+1. V této složce vytvořte složku `api` a v ní soubor `links.json` a vložte do něj pole několika odkazů, abychom měli do začátku nějaká data. Rozmyslete si, jak by měl objekt jednoho odkazu vypadat. Určitě budeme chtít evidovat
 
    - URL na kterou odkaz míří, např. `https://www.seznam.cz`,
    - název odkazu, např. `Seznam`,

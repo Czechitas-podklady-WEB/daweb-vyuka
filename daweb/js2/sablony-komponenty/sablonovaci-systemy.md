@@ -1,6 +1,6 @@
 ## Šablonovací systémy
 
-Jedním z najčastějších úkonů při tvorbě webových stránek je vytváření obsahu stránky z nějakých dat. My k tomuto účelu zatím používáme vlastnost `innerHTML`, což znamená, že musíme vždy sestavit řetězec obsahující přesně takové HTML, jaké poté chceme vložit do stránky. Tento postup nám při tvorbě větších stránek brzy přeroste přes hlavu. Z tohoto důvodu se většina vývojářů obrací k nějakému šablonovacímu systému, který tvorbu HTML v JavaScriptu usnadní.
+Jedním z nejčastějších úkonů při tvorbě webových stránek je vytváření obsahu stránky z nějakých dat. My k tomuto účelu zatím používáme vlastnost `innerHTML`, což znamená, že musíme vždy sestavit řetězec obsahující přesně takové HTML, jaké poté chceme vložit do stránky. Tento postup nám při tvorbě větších stránek brzy přeroste přes hlavu. Z tohoto důvodu se většina vývojářů obrací k nějakému šablonovacímu systému, který tvorbu HTML v JavaScriptu usnadní.
 
 Takových systémů je pro JavaScript k dispozici nepřeberné množství. Tady je seznam jen několika nejznámějších:
 
@@ -58,11 +58,11 @@ Tady nás čeká velké překvapení. Díky JSX můžeme psát HTML **přímo v 
 
 Hned na začátku je důležité si říct, že JSX není úplně přesně HTML. Je to podobný jazyk, který se snaží HTML co nejvíce napodobit. V JSX můžeme používat všechny HTML značky co známe, ale narazíme na drobné odlišnosti:
 
-1. Všechny značky musí být v JSX uzavřeny. To znamená, že i samozavírací značky musí mít uzavírací lomítko. Například `<br>` se vždy píše jako `<br />`, obrázek bdue vždy `<img src="" alt="" />`.
+1. Všechny značky musí být v JSX uzavřeny. To znamená, že i samozavírací značky musí mít uzavírací lomítko. Například `<br>` se vždy píše jako `<br />`, obrázek bude vždy `<img src="" alt="" />`.
 1. Místo atributu `class` píšeme `className`. To proto, že `class` je v JavaScriptu klíčové slovo, které sice v tomto kurzu nepoužíváme, ale časem na něj jistě narazíte.
 1. Místo atributu `for` píšeme `htmlFor`. I slovo `for` je v JavaScriptu klíčové slovo, které v tomto kurzu také moc nepoužíváme, ale bylo ve čtení na doma.
 
-Když jsme vytvářeli kousky HTML pomocí interpolace řetězců, používali jsme znak doloru pro vložení obsahu proměnné nebo výsledku krátkého výpočtu.
+Když jsme vytvářeli kousky HTML pomocí interpolace řetězců, používali jsme znak dolaru `$` pro vložení obsahu proměnné nebo výsledku krátkého výpočtu.
 
 ```js
 const name = 'Martin';
@@ -71,7 +71,7 @@ const cssTrida = 'message';
 const zprava = `<p class="${cssTrida}">Jmenuji se ${name} a je mi ${age} let.</p>`;
 ```
 
-V JSX dolar používat nemusíme a stačí nám pouze složené závorky. Pokud chceme takto vložit hodnotu nějakého HTML atributu, nemusíme používat ani uvozovky.
+V JSX dolar používat nemůžeme, používají se pouze složené závorky. Pokud chceme takto vložit hodnotu nějakého HTML atributu, nemusíme používat ani uvozovky.
 
 ```jsx
 const name = 'Martin';
@@ -84,7 +84,7 @@ const zprava = (
 );
 ```
 
-Tady vidíte, že JSX je hodnota jako každá jiná z bez rozpaků ji tak můžeme uložit do proměnné nebo poslat na vstup nějaké funkci.
+Tady vidíte, že JSX je hodnota jako každá jiná – bez rozpaků ji tak můžeme uložit do proměnné nebo poslat na vstup nějaké funkci.
 
 ## Funkce `render`
 

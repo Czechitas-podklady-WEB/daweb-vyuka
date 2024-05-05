@@ -52,7 +52,7 @@ V souboru `index.html` bude pouze kostra HTML stránky, která bude obsahovat hl
 
 Takto jsme se dostali do stavu, kdy celý obsah aplikace vytváříme v JavaScriptu a soubor HTML zůstává v podstatě prázdný.
 
-V hlavní souboru `index.jsx` pak většinou vytváříme hlavni komponentu celé stránky. Pokud máme jednu stránku, můžeme ji nazvat třeba `HomePage`. Její použití pak vypadá následovně:
+V hlavní souboru `index.jsx` pak většinou vytváříme hlavní komponentu celé stránky. Pokud máme jednu stránku, můžeme ji nazvat třeba `HomePage`. Její použití pak vypadá následovně:
 
 ```jsx
 import { render } from '@czechitas/render';
@@ -92,4 +92,4 @@ body {
 }
 ```
 
-Nyní máme veškerý kód projektu hezky rozdělený na logické části. Bundler Vite zajistí, že se všechny exportované a importované soubory s JavaScriptem i se styly správně spojí a zapojí do výsledného HTML souboru, který se vývojový server naservíruje prohlížeči.
+Nyní máme veškerý kód projektu hezky rozdělený na logické části. Bundler Vite zajistí, že se všechny exportované a importované soubory s JavaScriptem i se styly správně spojí a zapojí do výsledného HTML souboru, který vývojový server naservíruje prohlížeči.

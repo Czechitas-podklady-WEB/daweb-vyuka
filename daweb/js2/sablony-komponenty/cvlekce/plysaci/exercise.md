@@ -22,8 +22,8 @@ Postupujte dle následujících kroků.
    <h1>Plyšáci</h1>
    <div className="plushies"></div>
    ```
-   Nezapomeňte obsah správně obalit do fragmentu!.
-1. Vytvořte si proměnné objekty obsahující informace o plyšácích dle následujícího vzoru.
+   Nezapomeňte obsah správně obalit do fragmentu.
+1. Vytvořte si proměnné obsahující informace o plyšácích dle následujícího vzoru.
 
    ```js
    const name1 = 'Silvestr';
@@ -37,7 +37,7 @@ Postupujte dle následujících kroků.
      'Ctirad tráví svůj čas v blízkosti lednice a s očekáváním pozoruje její bílé dveře.';
    ```
 
-1. Adresy obrázků si můžeme zkopírovat z těcho odkazů: [elephant](assets/elephant.jpg), [mouse](assets/mouse.jpg).
+1. Adresy obrázků si můžeme zkopírovat z těchto odkazů: [elephant](assets/elephant.jpg), [mouse](assets/mouse.jpg).
 1. Karta s plyšákem by měla ve výsledné stránce vypadat takto.
    ```html
    <div class="plushy">
@@ -46,6 +46,6 @@ Postupujte dle následujících kroků.
      <p class="plushy__text">Text o plyšákovi</p>
    </div>
    ```
-   Převeďte tento kód na JSX a vytvořte dvě komponenty `Silvestr` a `Ctirad`, kde každá bude vracet JSX pro jednoho plyšáka. Nezapomeňte, že v JSX se místo `class` píše `className`. Data pro obě karty vezměte přimo z proměnných výše.
+   Převeďte tento kód na JSX a vytvořte dvě komponenty `Silvestr` a `Ctirad`, kde každá bude vracet JSX pro jednoho plyšáka. Nezapomeňte, že v JSX se místo `class` píše `className`. Data pro obě karty vezměte přímo z proměnných výše.
 1. Vložte obě komponenty do stránky a vyzkoušejte si, že se zobrazují.
 1. Nastylujte stránku dle zadání.
