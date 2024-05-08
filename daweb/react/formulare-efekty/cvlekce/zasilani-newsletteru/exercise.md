@@ -16,7 +16,11 @@ Pokračujte v předchozím cvičení.
    Chci pravidelně dostávat novinky do mé e-mailové schránky.
    ```
 
-1. Do výpisu ve funkci `alert` přidejte informaci o tom, jestli uživatel chce dostávat novinky. Informaci o uživatelově volbě si uložte do stavové proměnné `newsletterAccepted`.
+1. Vytvořte si stav `newsletterAccepted`, ve kterém budete mít uloženo, zda si uživatel přeje či nepřeje dostávat e-mailové novinky – tedy stav zaškrtávacího políčka. 
+
+1. Přes dvoucestný (two-way) binding propojte stav `newsletterAccepted` a zaškrtávací políčko. Použijete k otmu událost `onChange` a atribut `value`, jako u textových políček. Jako hodnota se bude předávat `true` nebo `false`. 
+
+1. Do výpisu ve funkci `alert` přidejte informaci o tom, jestli uživatel chce dostávat novinky.
 
    ```text
    Uživatel „???“ ze země „???“ se chce zaregistrovat a dostávat pravidelně novinky.

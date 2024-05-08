@@ -34,7 +34,7 @@ Pokračujte v předchozím cvičení.
 
 1. Vytvořte stav `country`, který bude sloužit k uložení hodnoty z vaší nabídky. Výchozí hodnotu stavu nastavte na `Česká republika`.
 1. Pomocí události `onChange` zařiďte one-way data binding mezi nabídkou `select` a stavem `country`.
-1. Zařiďte two-way data binding mezi nabídkou `select` a stavem `country` tak, aby nabídka zobrazovala výchozí hodnotu uloženou ve stavu.
+1. Zařiďte two-way data binding mezi atributem `value` v nabídce `select` a stavem `country` tak, aby nabídka zobrazovala výchozí hodnotu uloženou ve stavu.
 1. Zprávu vypisovanou pomocí funkce `alert` po odeslání formuláře změňte na
    ```text
    Uživatel „???“ ze země „???“ se chce zaregistrovat.
