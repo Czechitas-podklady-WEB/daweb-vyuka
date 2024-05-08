@@ -8,7 +8,8 @@ solutionAccess: protected
 
 Pomocí Reactu, stavu a komunikace mezi komponentami rozchodíme aplikaci, kde si uživatel může objednat typ trička, jeho barvu a potisk.
 
-1. Vytvořte si repozitář ze šablony [cviceni-tricka](https://github.com/Czechitas-podklady-WEB/cviceni-tricka), repozitář si poté naklonujte a rozběhněte si základ aplikace.
+1. Vytvořte si repozitář ze šablony [cviceni-tricka](https://github.com/Czechitas-podklady-WEB/cviceni-tricka), repozitář si poté naklonujte.
+1. Pomocí `npm install` nainstalujte závislosti a spusťte vývojový server příkazem `npm run dev`.
 1. Dobře si aplikaci prohlédněte. Vykoušejte si, jaké _props_ můžete zadat do komponenty `TShirt`, kromě barvy a textu potisku můžete také zvolit typ trička:
    - `normalShortSleeve`
    - `normalLongSleeve`
