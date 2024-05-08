@@ -1,6 +1,6 @@
 ## Komunikace dítě → rodič
 
-Nyní bychom chtěli zařídit, aby se uživatelem vybraný kandidát zobrazil vedle obrázku hradu. Jakmile tedy uživatel vybere nějakého kandidáta v některé instance komponenty `Candidate`, potřebujeme jeho jméno poslat „nahoru“ rodičovské komponentě `HomePage`, aby si jej tato mohla uložit do stavu `president`.
+Nyní bychom chtěli zařídit, aby se uživatelem vybraný kandidát zobrazil vedle obrázku hradu. Jakmile tedy uživatel vybere nějakého kandidáta v některé instanci komponenty `Candidate`, potřebujeme jeho jméno poslat „nahoru“ rodičovské komponentě `HomePage`, aby si jej tato mohla uložit do stavu `president`.
 
 Zde však narážíme na zásadní problém. Komponenta `Candidate` nemá nejmenší tušení, kdo je její rodič. Zevnitř této komponenty tato informace není nijak dostupná. Musíme si tedy pomoct malým trikem.
 
@@ -24,7 +24,7 @@ const SensitiveButton = (props) => {
 
 V našem příkladu však callback nebudeme používat k poslouchání událostí. Budeme jej volat sami zevnitř komponenty `Candidate` ve chvíli, kdy chceme rodiči předat jméno zvoleného kandidáta.
 
-Nejprve tedy přidáme do komponenty `Candidate` novou _prop_ s názvem `onVote`. Abychom dali najevo, že do této prop budeme posílat funkci, volíme jméno podobně jako to známe u událostí, tedy `onClick`, `onMouseMove` apod. Jménem chceme naznačit, že tuto funkci zavoláme ve chvíli, kdy uživatel zahlasuje (anglicky :i[vote]) pro daného kandidáta.
+Nejprve tedy přidáme do komponenty `Candidate` novou _prop_ s názvem `onVote`. Abychom dali najevo, že do této prop budeme posílat funkci, volíme jméno podobně jako to známe u událostí, tedy `onClick`, `onMouseMove` apod. Jménem chceme naznačit, že tuto funkci zavoláme ve chvíli, kdy uživatel zahlasuje (anglicky _vote_) pro daného kandidáta.
 
 ```js
 const Candidate = ({ name, avatar, onVote }) => ( … )
@@ -99,12 +99,12 @@ V tuto chvíli už naše aplikace bude správně fungovat.
 
 ### Hlubší vysvětlení callbacků
 
-Komunikace pomocí callbacků může za začátku působit děsivě složitě a nepřístupně. Je tedy zapotřebí si v hlavě udělat jasný obrázek o tom, jak tento mechanizmus funguje. Pojďme shrnout, co přesně se děje ve výše uvedeném příkladu.
+Komunikace pomocí callbacků může ze začátku působit děsivě složitě a nepřístupně. Je tedy zapotřebí si v hlavě udělat jasný obrázek o tom, jak tento mechanizmus funguje. Pojďme shrnout, co přesně se děje ve výše uvedeném příkladu.
 
-Rodičovská komponenta `App` vytváří funkci `handleVote` a tu posílá skrze prop `onVote` komponentě `Candidate`. Dceřinná komponenta `Candidate` obdrží v prop `onVote` funkci, kterou zavolá se jménem vybraného kandidáta. Vzhledem k tomu, že v prop `onVote` je funkce `handleVote` vytvořená rodičem, komponenta `Candidate` tak propašuje do rodiče název zvoleného kandidáta.
+Rodičovská komponenta `App` vytváří funkci `handleVote` a tu posílá skrze prop `onVote` komponentě `Candidate`. Dceřinná komponenta `Candidate` obdrží v prop `onVote` funkci, kterou zavolá se jménem vybraného kandidáta. Vzhledem k tomu, že v prop `onVote` je funkce `handleVote` vytvořená rodičem, komponenta `Candidate` tak _propašuje_ do rodiče název zvoleného kandidáta.
 
 Situaci můžene znázornit následujícím diagramem.
 
 ::fig{src=assets/dite-rodic.png}
 
-Z tohoto diagramu vidíme, že komunikace od rodiče k dítěti probíhá skrze props a komunikace od dítěte k rodiči probíhá skrze callbacky.
+Z tohoto diagramu vidíme, že komunikace od rodiče k dítěti probíhá skrze props a komunikace od dítěte k rodiči probíhá skrze callbacky (které se ovšem předávají také pomocí props).

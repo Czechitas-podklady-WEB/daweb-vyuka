@@ -17,7 +17,7 @@ solutionAccess: protected
    Uživatelské jméno je povinný údaj
    ```
    Tato zpráva bude vidět pouze pokud je ve stavu `userName` prázdný řetězec. V opačném případě tento div nezobrazujte.
-1. Vzpomeňte si na vlastnost `disabled` a zařiďte, aby registrační tlačítko bylo klikatelné pouze v případě, že ve stavu `userName` není prázdný řetězec.
+1. Vzpomeňte si na vlastnost `disabled` a zařiďte, aby registrační tlačítko bylo klikatelné pouze v případě, že ve stavu `userName` není prázdný řetězec. HTML atributy, které mají formu příznaku (tj. atribut nemá žádnou hodnotu, ale důležité je, zda se atribut v HTML elementu vyskytuje či nevyskytuje), se v JSX předávají pomocí přiřazení hodnoty `true` nebo `false`. Tj. když v JSX uvedete `<button disabled={true}>Stiskni mne</button>`, je to jako kdybyste v HTML napsali `<button disabled>Stiskni mne</button>`. Pokud naopak uvedete v JSX `<button disabled={false}>Stiskni mne</button>`, výsledné HTML bude vypadat takto: `<button>Stiskni mne</button>`.
 
 :::solution
 

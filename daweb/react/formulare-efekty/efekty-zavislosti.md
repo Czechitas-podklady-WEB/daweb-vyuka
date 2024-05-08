@@ -14,7 +14,7 @@ const Komponenta = () => {
 };
 ```
 
-Tato technika se nám hodí nejčastěji ve chvíli, kdy chceme stáhnout nějaká data z API ve chvíli, kdy komponenta změní svůj stav. V našem příkladu si stáhneme jméno z API, které má svátek v den, který uživatel vybere v kalendáři.
+Tato technika se nám hodí nejčastěji ve chvíli, kdy chceme stáhnout nějaká data z API ve chvíli, kdy komponenta změní svůj stav. V našem příkladu si stáhneme z API jméno, které má svátek v den, který uživatel vybere v kalendáři.
 
 ```jsx
 export const HomePage = () => {

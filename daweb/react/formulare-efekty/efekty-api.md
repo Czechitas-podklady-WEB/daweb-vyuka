@@ -1,6 +1,6 @@
 ## Efekty a volání API
 
-Pokud chceme v naší aplikaci zobrazovat data z nějakého API, musíme si tato data stáhnout pomocí nám již známé funkce `fetch`. V čiistéme JavaScriptu jsme byli zvýklí tuto funkci volat ve chvíli, kdy se načítá naše stránka a načíst si všechna data pro celou stránku najednou. V Reactu však můžeme načítat data jen pro každou komponentu zvlášť. Funkci `fetch` tak budeme chtít volat ve chvíli, kdy se naše komponenta poprvé objeví na stránce. To zní jako případ pro použití efektů.
+Pokud chceme v naší aplikaci zobrazovat data z nějakého API, musíme si tato data stáhnout pomocí nám již známé funkce `fetch`. V čistém JavaScriptu jsme byli zvyklí tuto funkci volat ve chvíli, kdy se načítá naše stránka – načetli jsme si všechna data pro celou stránku najednou. V Reactu však můžeme načítat data jen pro každou komponentu zvlášť. Funkci `fetch` tak budeme chtít volat ve chvíli, kdy se naše komponenta poprvé objeví na stránce. To zní jako případ pro použití efektů.
 
 Naše poslední aplikace zatím zobrazovala, že svátek má Jiří. To je však pravda pouze jeden den v roce. Pojďme aplikaci vylepšit tak, aby si stáhla aktuální jméno z API.
 
