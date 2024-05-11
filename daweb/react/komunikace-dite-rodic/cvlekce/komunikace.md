@@ -8,3 +8,7 @@ solutionAccess: protected
 
 1. Vytvořte si repozitář ze šablony [cviceni-komunikace](https://github.com/Czechitas-podklady-WEB/cviceni-komunikace).
 1. Následujte instrukce z README repozitáře.
+
+:::solution
+Řešení je v repository cvičení v branchi [reseni](https://github.com/Czechitas-podklady-WEB/cviceni-komunikace/tree/reseni).
+:::

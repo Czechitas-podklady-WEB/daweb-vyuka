@@ -17,3 +17,7 @@ V tomto cvičení vdechneme život komponentě, která umožňuje hodnocení pom
 1. V komponentě `Rating` předejte skrze prop `onSelect` všem instancím komponenty `Star` callback, který nastaví stav `rating` na hodnotu, kterou mu komponenta `Star` předala.
 
 Nyní by mělo být možné kliknutím na hvězdičky nastavit správné hodnocení. Hvězdičky se nechovají úplně správně, protože bychom chtěli, aby se při kliknutí na hvězdičku rozsvítily všechny hvězdičky s nižším číslem. To si však necháme na další cvičení.
+
+:::solution
+Řešení je v repository cvičení společně s nálsedujícím cvičením v branchi [reseni](https://github.com/Czechitas-podklady-WEB/cviceni-hodnoceni/tree/reseni).
+:::
