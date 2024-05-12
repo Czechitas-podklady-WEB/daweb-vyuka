@@ -14,3 +14,7 @@ Pokračujme v příkladu z předchozího cvičení. Nyní budeme chtít místo f
 1. Funkce `handleSelect` v komponentě `Question` bude pak mít jeden parametr, který nazveme `iconType`. Jakmile se tato funkce zavolá, nastavíme náš stav `answer` na hodnotu získanou v tomto parametru.
 
 Tímto jsem zařídili, že komponenta `Option` předá svému sourozenci `QuestionBody` informaci o tom, kterou ikonku uživatel vybral.
+
+:::solution
+Řešení je v repository cvičení v branchi [reseni](https://github.com/Czechitas-podklady-WEB/cviceni-dotaznik/tree/reseni).
+:::

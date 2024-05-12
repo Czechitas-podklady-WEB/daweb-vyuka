@@ -13,3 +13,7 @@ Pomocí pokročilejší komunikace mezi komponentami zprovozníme hamburger menu
 1. Dle hodnoty ve stavu `menuOpened` správně sestavte třídu pro element `.menu`. K zavření menu slouží CSS třída `menu--closed`.
 1. Chceme, aby komponenta `MenuItem` přijímala prop s názvem `onSelect`. Ta bude očekávat callback, který se zavolá, když uživatel vybere danou položku, aby se tak menu zavřelo. Přidejte tedy na prvek `<a>` posluchač události `onClick`, který zavolá předaný callback.
 1. V komponentě `HomePage` předejte všem instancím komponenty `MenuItem` skrze _prop_ `onSelect` funkci `handleSelectItem`, která nastaví stav `menuOpened` na `false`.
+
+:::solution
+Řešení je v repository cvičení v branchi reseni v commitu [b51a03e](https://github.com/Czechitas-podklady-WEB/cviceni-hamburger/tree/b51a03e9b874ee00c1507b6884ca4fbcaa6c47f9).
+:::
