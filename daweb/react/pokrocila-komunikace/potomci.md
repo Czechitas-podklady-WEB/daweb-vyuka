@@ -58,7 +58,12 @@ https://kroki.io/plantuml/svg/eNp1UbFOwzAQ3f0VN7ZDfiBCqCILSAxISAxsTny0bhyfFF86pK
 
 -->
 
-::fig{src=assets/hierarchie-komponent.png}
+<!--
+::fig{src=assets/hierarchie-komponent.svg}
+TODO Hotfix: přímý odkaz na obrázek
+-->
+
+[Hierarchie komponent](https://kroki.io/plantuml/svg/eNp1UbFOwzAQ3f0VN7ZDfiBCqCILSAxISAxsTny0bhyfFF86pKrEPzAyMTL0F1gCP8KXcLVwQ1qx2H6ne_fuPS8C65a7xikq11gxXFODd3qJCd-jkwtNob2xRjPCVgFUCamd8iRFh08MORTD3sH38wv0zeer19BT2eoe_bCHfkNOHu8rgjqyhzfWSeU4_dYGnioEAVkmB_kHioKnnNjvdYNy6Y0WQ_9RDuiqYyYfOU6X6MbewtmqToZau1wdHD2altbQybaOAttorna29h2Lqe7rw4qiZKRUSk7GXZ7HlsM2nNZ2I-ciy6Yh5L_Lz45BzNU0pQnlvP3G_CHE5tF9ntzO5mqB3sj__wB2-bh0)
 
 ## Prop drilling v praxi
 
