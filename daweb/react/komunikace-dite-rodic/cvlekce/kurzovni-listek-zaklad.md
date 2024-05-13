@@ -13,3 +13,7 @@ Rozhodně není od věci procvičit si také komunikaci směrem od rodiče k dí
 1. Prohlédněte si připravený kód a strukturu projektu. Všimněte si komponmenty `Rate`, která zobrazuje kurz.
 1. Do komponenty `Rate` přidejte prop `from`, která bude obsahovat kód měny, ze které chceme konvertovat na české koruny. Zařiďte, aby komponenta zobrazila kód měny, který uživatel vybere z nabídky. Toto bude komunikace od rodiče (komponenta `HomePage`) směrem k dítěti (komponenta `Rate`).
 1. Upravate komponentu `Rate` tak, aby zobrazila správný kurz podle připravných dat v objektu `currencies`. Výsledná kurz zobrazte v elementu `.rate__value`.
+
+:::solution
+Řešení je spolu s řešeném následujícího cvičení v repository cvičení v branchi [reseni](https://github.com/Czechitas-podklady-WEB/cviceni-currencies/tree/reseni).
+:::

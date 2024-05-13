@@ -19,3 +19,7 @@ Logiku fungování zařídíme tak, že tentokrát hvězdičky nebudou mít vlas
    ```
    Upravte podmínky u všech hvězdiček tak, aby svítily ve správnou chvíli. Zkuste si nastavit výchozí stav na různé hodnoty a vyzkoušejte, že se hvězdičky rozsvítí správně.
 1. V tuto chvíli už každá hvězdička volá funkci `onSelect` se správnou hodnotou a předává ji rodiči. Rodič (komponenta `Rating`) pak tuto hodnotu uloží do stavu `rating` a tím se nám rozsvítí příslušné hvězdíčky.
+
+:::solution
+Řešení je v repository cvičení v branchi [reseni](https://github.com/Czechitas-podklady-WEB/cviceni-hodnoceni/tree/reseni).
+:::
