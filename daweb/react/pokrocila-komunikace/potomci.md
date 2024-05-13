@@ -58,8 +58,7 @@ https://kroki.io/plantuml/svg/eNp1UbFOwzAQ3f0VN7ZDfiBCqCILSAxISAxsTny0bhyfFF86pK
 
 -->
 
-::fig{src=assets/hierarchie-komponent.svg}
-
+::fig{src=assets/hierarchie-komponent.png}
 
 ## Prop drilling v praxi
 
