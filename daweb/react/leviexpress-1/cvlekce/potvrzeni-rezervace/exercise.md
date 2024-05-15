@@ -47,4 +47,3 @@ Nyn již máme ve stavu `journey` uložené všechny potřebné informace k tomu
 1. Odstraňte pomocné výpisy do konzole a jiné pozůstatky bitvy programátora se vzpurným kódem.
 1. Commitněte a pushněte změny.
 1. Nyní máte zcela hotovou první část projektu. Pokochejte se hotovou aplikací a pochvalte se za pořádný kus dobře odvedené práce. Po malé oslavě svých úspěchů se můžete vrhnout na druhou část.
-

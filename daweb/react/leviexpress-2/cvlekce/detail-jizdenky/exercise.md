@@ -20,6 +20,7 @@ V předešlé lekci jsme dospěli k vytvoření rezervace a získání `reservat
    > https://apps.kodim.cz/daweb/leviexpress/api/reservation?id=…
 
    kde tečky nahradí `id` konkrétní jízdenky. Toto `id` vezměte z proměnné `id` načtené z `useParams` hooku.
+
 1. Endpoint vrací údaje o jízdence. Vypište si je do konzole a podívejte se na jejich formát. Porovnejte strukturu získaných dat s tím, co je natvrdo v JSX (vykopírované z `reservation.html`).
 1. Pomocí funkce `setReservation` z `useState` hooku nastavte do proměnné `reservation` objekt s údaji o jízdence získaný z volání uvedeného endpointu.
 1. Nahraďte data jízdenky vepsaná natvrdo za ta, která jsou nyní uložená v proměnné `reservation`. Nezapomeňte zobrazení dat podmínit tím, že stav `reservation` nemá hodnotu `null`, jinak bude prohlížeč hlásit chybu, že nelze číst z `undefined`. Když data ještě nejsou k dispozici, ponechte příslušné místo prázdné – budeme spoléhat na to, že server odpoví rychle a než uživatel zjistí, že žádné údaje nevidí, údaje se tam objeví.

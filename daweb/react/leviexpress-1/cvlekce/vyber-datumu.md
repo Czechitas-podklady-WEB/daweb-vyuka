@@ -25,7 +25,7 @@ Na konci tohoto cvičení bude uživatel schopen vybrat datum cesty podle dat st
    ]
    ```
 1. Použijte stav `dates` pro naplnění hodnot property `dates` tam, kde je použita komponenta `DatesOptions`. Ověřte v prohlížeči, že se ve výběru termínů zobrazují dvě uvedená data.
-1. Upravte `useEffect` volaný při prvním zobrazení komponenty. Vedle funkce, která stahuje seznam měst, přidejte do `useEffect`u ještě funkci, která stáhne z API termíny cesty. Nezapomeňte v `useEffect`u zavolat i tuto druhou funkci.  Endpoint je na adrese
+1. Upravte `useEffect` volaný při prvním zobrazení komponenty. Vedle funkce, která stahuje seznam měst, přidejte do `useEffect`u ještě funkci, která stáhne z API termíny cesty. Nezapomeňte v `useEffect`u zavolat i tuto druhou funkci. Endpoint je na adrese
 
    > https://apps.kodim.cz/daweb/leviexpress/api/dates
 

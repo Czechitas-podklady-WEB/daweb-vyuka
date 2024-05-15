@@ -27,4 +27,5 @@ Na konci tohoto cvičení si uživatel bude schopen vybrat startovní a cílové
    > https://apps.kodim.cz/daweb/leviexpress/api/cities
 
    a vrací seznam měst jako JSON ve formátu, který jsme použili výše. Získaná data použijte místo Prahy a Brna ve stavu `cities`. Ověřte v prohlížeči, že se v seznamu měst objeví i další města.
+
 1. Commitněte změny.
