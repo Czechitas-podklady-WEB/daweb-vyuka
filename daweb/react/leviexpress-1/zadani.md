@@ -1,8 +1,8 @@
-Pokud jste všemi předchozíme lekcemi doputovali až sem, naučili jste se toho opravdu hodně. Možná vám nově nabyté znalosti v hlavách pořád šplouchají a hledají ty správné šuplíky. Proto na závěr kapitoly o Reactu zkusíme vytvořit jednu ucelenou webovou aplikaci, ve které spojíme dohromady všechny věci, které jste se v Reactu naučili.
+Pokud jste všemi předchozíme lekcemi doputovali až sem, naučili jste se toho opravdu hodně. Možná vám nově nabyté znalosti v hlavách pořád šplouchají a hledají ty správné šuplíky. Než budeme pokračovat na architektonické vzory, zkusíme v Reactu vytvořit jednu ucelenou webovou aplikaci. V ní spojíme dohromady všechny věci, které jste se v Reactu naučili.
 
 ## Zadání
 
-Vaším úkolem bude vytvořit webovou stránku fiktivní dopravní společnosti s názvem :i[LeviExpress]. Ta každý den vypravuje dvě autobusové linky spojující východní a západní Evropu. Jedna linka vyjíždí o půlnoci z Budapešti a končí opět o půlnoci v Amsterdamu. Protí ní vždy vyráží linka v opačném směru, tedy z Amsterdamu do Budapešti.
+Vašim úkolem bude vytvořit webovou stránku fiktivní dopravní společnosti s názvem _LeviExpress_. Ta každý den vypravuje dva autobusy na lince spojující východní a západní Evropu. Jeden spoj vyjíždí o půlnoci z Budapešti a po několika zastávkách končí o další půlnoci v Amsterdamu. Proti ní vždy vyráží spoj v opačném směru, tedy z Amsterdamu do Budapešti.
 
 Výsledná webová stránka bude mít dvě podstránky. Jedna bude umožňovat rezervaci jízdenky, druhá bude zobrazovat již rezervovanou jízdenku.
 
