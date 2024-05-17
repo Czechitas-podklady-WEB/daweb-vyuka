@@ -31,7 +31,7 @@ Nyn již máme ve stavu `journey` uložené všechny potřebné informace k tomu
 
 1. Volání tohoto API vrací JSON s daty, ze kterých nás bude zajímat hodnota `reservationId`. Vypište si ji do konzole.
 1. Podle [dokumentace](https://reactrouter.com/en/main/hooks/use-navigate) React Routeru se podívejte, jak lze pomocí hooku `useNavigate` přímo v kódu změnit stránku, na které se uživatel nachází. Tedy jak uživatele navigovat na novou adresu a stránku.
-1. Na začátku komponenty `HomePage` vytvořte proměnnou `navigate` s použitím hooku `useNavigate()`, nezapomeňte hook naimportovat z `react-router-dom`. Za moment tuto proměnnou použijeme.
+1. Na začátku komponenty `HomePage` vytvořte proměnnou `navigate` (bude to funkce) s použitím hooku `useNavigate()`, nezapomeňte hook naimportovat z `react-router-dom`.
 1. Pomocí funkce `navigate` a hodnoty `reservationId` přesměrujte uživatele na stránku detailu rezervace. Takové volání bude může vypadat následovně:
    ```js
    navigate(`/reservation/${reservationId}`);

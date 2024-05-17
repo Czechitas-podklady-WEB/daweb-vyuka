@@ -17,7 +17,7 @@ V tomto cvičení dokončíte komponentu pro vyhledání spojení. V komponentě
 
 1. Volání tohoto API vrací JSON s nalezenými spoji. Vypište si výsledek volání do konzole prohlížeče.
 1. Nalezená spojení budeme potřebovat zobrazit v další komponentě na stránce. Potřebujeme je tedy poslat z komponenty `JourneyPicker` jejímu rodiči – to uděláme v následujících krocích.
-1. V komponentě `HomePage` si připravte funkci `handleJourneyChange`. Funkce `handleJourneyChange` bude očekávat jeden parametr – objekt s údaji o nalezeném spojení. Nazvěte jej třeba `journey`. Ve funkci zatím vypište tento parametr do konzole. Volání funkce zařídíme v následujícím kroku.
+1. V komponentě `HomePage` si připravte funkci `handleJourneyChange`. Funkce `handleJourneyChange` bude očekávat jeden parametr – objekt s údaji o nalezeném spojení. Nazvěte jej třeba `journeyData`. Ve funkci zatím vypište tento parametr do konzole. Volání funkce zařídíme v následujícím kroku.
 1. V komponentě `HomePage` používáte komponentu `JourneyPicker`. Této komponentě předejte property jménem `onJourneyChange`, jako hodnotu jí předejte funkci (callback) `handleJourneyChange`.
 1. V komponentě `JourneyPicker` bude property `onJourneyChange`, do které rodič (`HomePage`) vkládá funkci, která se zavolá s údaji nalezeném spoji. Všimněte si, že v hlavičce komponenty `JourneyPicker` už je property `onJourneyChange` připravená.
 1. Ve funkci `handleSubmit` v komponentě `JourneyPicker` nyní vypisujete nalezená spojení jen do konzole prohlížeče. Tento výpis nahraďte voláním funkce uložené v property `onJourneyChange`, které jako parametr předáte data získaná z volání API pod klíčem `results`.
