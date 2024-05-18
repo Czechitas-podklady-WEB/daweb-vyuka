@@ -19,12 +19,12 @@
   { "rule": "since 2024-04-12T01:00 /czechitas/daweb/js1/filmbox/*/*[@context=\"lekce\"]" },
   { "rule": "since 2024-04-12T01:00 /czechitas/daweb/js1/**" },
   { "rule": "since 2024-05-10T01:00 /czechitas/daweb/js2/**" },
-  { "rule": "since 2024-05-17T01:00 /czechitas/daweb/react/uvod-do-reactu/**" }
-  { "rule": "since 2024-05-17T01:00 /czechitas/daweb/react/formulare-efekty/**" }
-  { "rule": "since 2024-05-17T01:00 /czechitas/daweb/react/komunikace-dite-rodic/**" }
-  { "rule": "since 2024-05-17T01:00 /czechitas/daweb/react/pokrocila-komunikace/**" }
-  { "rule": "since 2024-05-17T01:00 /czechitas/daweb/react/react-router/**" }
-  { "rule": "since 2024-05-18T15:30 /czechitas/daweb/react/leviexpress-1/**" }
-  { "rule": "since 2024-05-18T15:30 /czechitas/daweb/react/leviexpress-2/**" }
+  { "rule": "since 2024-05-17T01:00 /czechitas/daweb/react/uvod-do-reactu/**" },
+  { "rule": "since 2024-05-17T01:00 /czechitas/daweb/react/formulare-efekty/**" },
+  { "rule": "since 2024-05-17T01:00 /czechitas/daweb/react/komunikace-dite-rodic/**" },
+  { "rule": "since 2024-05-17T01:00 /czechitas/daweb/react/pokrocila-komunikace/**" },
+  { "rule": "since 2024-05-17T01:00 /czechitas/daweb/react/react-router/**" },
+  { "rule": "since 2024-05-18T15:30 /czechitas/daweb/react/leviexpress-1/**" },
+  { "rule": "since 2024-05-18T15:30 /czechitas/daweb/react/leviexpress-2/**" },
   { "rule": "since 2024-05-25T01:00 /czechitas/daweb/react/**" }
 ]
