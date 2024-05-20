@@ -1,13 +1,17 @@
 ## Diagram komponent
 
-Pokud máme zadání naprogramovat nějakou webovou aplikaci, začínáme většinou tak, že si uděláma představu o tom, jak má aplikace vypadat a jakým způsobem ji bude uživatel používat. Většinou pak uděláme nějaké skicy, wireframy, mockupy ve figmě apod. Všechny tyto pojmy označují nějakou formu návrhu, který nám pomůže udělat si před začátkem programování představu o tom, jak má aplikace vypadat a jaké funkce má mít.
+Pokud máme zadání naprogramovat nějakou webovou aplikaci, začínáme většinou tak, že si uděláma představu o tom, jak má aplikace vypadat a jakým způsobem ji bude uživatel používat. Většinou pak uděláme nějaké skicy, wireframy, mockupy ve Figmě apod. Všechny tyto pojmy označují nějakou formu návrhu, který nám pomůže udělat si před začátkem programování představu o tom, jak má aplikace vypadat a jaké funkce má mít.
 
 Jako programátoři si také potřebujeme umět dopředu rozmyslet, jak aplikaci naprogramovat.
-Potřebujeme vědět jaká data bude naše aplikace potřebovat, jaké komponenty budeme vytvářet a jak budou spolu komunikovat. Ideálně bychom z tohoto proceu chtěli také nějaký výstup, který nám pomůže zaznamenat si naše myšlenky. K tomuto účelu budeme používat _diagram komponent_.
+Potřebujeme vědět jaká data bude naše aplikace potřebovat, jaké komponenty budeme vytvářet a jak budou spolu komunikovat. Ideálně bychom z tohoto proceu chtěli také nějaký výstup, který nám pomůže zaznamenat si naše myšlenky. K tomuto účelu budeme používat takzvaný _diagram komponent_.
 
 :::box{type=warning}
-Diagram komponent není žádný standardní nástroj používaný v praxi. Je to systém vymyšlený pro potřeby tohoto kurzu, který nám pomůže lépe si představit strukturu aplikace. Zkušeněnšjí programátoři v praxi si většinou umí strukturu komponent představit bez nějakého diagramu pouze v hlavě.
+Diagram komponent není žádný standardní nástroj používaný v praxi. Je to systém vymyšlený pro potřeby tohoto kurzu, který nám pomůže lépe si představit strukturu aplikace. Zkušenější programátoři si většinou umí strukturu komponent představit bez nějakého diagramu pouze v své hlavě.
 :::
+
+Abychom mohli začít kreslit hezké diagramy, je potřeba si do VS Code nainstalovat rozšíření `Draw.io Integration`. Toto rozšíření nám umožní rychle kreslit diagramy přímo v editoru a ukládat je do souborů. Tyto soubory pak můžeme commitnout do gitu a sdílet s ostatními.
+
+::fig{src=assets/drawio.png}
 
 ## Strom komponent
 
