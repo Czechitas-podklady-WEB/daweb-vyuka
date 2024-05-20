@@ -1,5 +1,5 @@
 title: Zaklady architektury aplikací
-lead: Naučíme se, jak přemýšlet nad strukturou aplikace ještě dříve, než vůbec začneme programovat
+lead: Jak přemýšlet nad strukturou aplikace ještě dříve, než vůbec začneme programovat.
 access: protected
 sections:
   - diagram-komponent
@@ -7,7 +7,5 @@ sections:
   - stavebni-vzory  
   - zobrazeni-seznamu
   - vyber-polozky
-  - detail-polozky
-  - detail-seznamu
   - cv-vzory
   - shrnuti

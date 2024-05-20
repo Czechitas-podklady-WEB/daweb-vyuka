@@ -5,7 +5,7 @@ Pokud máme zadání naprogramovat nějakou webovou aplikaci, začínáme větš
 Jako programátoři si také potřebujeme umět dopředu rozmyslet, jak aplikaci naprogramovat.
 Potřebujeme vědět jaká data bude naše aplikace potřebovat, jaké komponenty budeme vytvářet a jak budou spolu komunikovat. Ideálně bychom z tohoto proceu chtěli také nějaký výstup, který nám pomůže zaznamenat si naše myšlenky. K tomuto účelu budeme používat _diagram komponent_.
 
-:::warn
+:::box{type=warning}
 Diagram komponent není žádný standardní nástroj používaný v praxi. Je to systém vymyšlený pro potřeby tohoto kurzu, který nám pomůže lépe si představit strukturu aplikace. Zkušeněnšjí programátoři v praxi si většinou umí strukturu komponent představit bez nějakého diagramu pouze v hlavě.
 :::
 

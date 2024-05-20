@@ -6,6 +6,5 @@ Po této lekci byste měli vědět a znát
 - jak v diagramu komponent znázornit stavy, props a datové toky,
 - jak fungují základní stavební vzory:
   - zobrazení seznamu,
-  - výběr více položek,
+  - výběr více položek ze seznamu,
   - výběr jedné položky,
-  - detail položky se stahováním dat.
