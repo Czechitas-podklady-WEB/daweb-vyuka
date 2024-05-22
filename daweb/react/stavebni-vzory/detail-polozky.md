@@ -1,6 +1,6 @@
 ## Vzor: detail položky
 
-Dalším z velmi častých vzorů je zobrazení detailu nějaké položky. Může se jednat o detail produktu v e-shopu, detail článku na blogu, detail události v kalendáři, ale také třeba o zobrazení rozbalovacího menu, zobrazení jedné ze záložek nebo přechod na jinou stránku pomocí navigace.
+V této lekci budeme ještě pokračovat v popisu stavebních vzorů. Podíváme se na další z velmi častých vzorů, a to je zobrazení detailu nějaké položky. Může se jednat o detail produktu v e-shopu, detail článku na blogu, detail události v kalendáři, ale také třeba o zobrazení rozbalovacího menu, zobrazení jedné ze záložek nebo přechod na jinou stránku pomocí navigace.
 
 Tento vzor má dvě základní varianty. Buď v detailu zobrazujeme data, která už máme stažená, nebo si je komponenta zobrazující detail musí stáhnout sama.
 
