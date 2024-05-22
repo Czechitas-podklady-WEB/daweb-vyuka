@@ -25,9 +25,9 @@ Takto si můžeme znázornit stromovou strukturu pomocí diagramu komponent:
 
 ## Stavy a props
 
-Už základní strom komponent nám může dobře posloužit a stačit k tomu, abychom si udělali představu o struktuře aplikace. Můžeme však zajít ješte do většího detailu a pokusit se znázornit také props a stavy jednotlivých komponent. To nám pomůže lépe pochopit, jak budou jednotlivé komponenty spolu komunikovat a jaké data budou potřebovat.
+Už základní strom komponent nám může dobře posloužit a stačit k tomu, abychom si udělali představu o struktuře aplikace. Můžeme však zajít ješte do většího detailu a pokusit se znázornit také props a stavy jednotlivých komponent. To nám pomůže lépe pochopit, jak budou jednotlivé komponenty spolu komunikovat a jaká data budou potřebovat.
 
-Stavy a props do komponenty zaznamenáme tímto zppůsobem:
+Stavy a props do komponenty zaznamenáme tímto způsobem:
 
 ```
 Komponenta
