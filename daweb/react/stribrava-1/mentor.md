@@ -31,10 +31,10 @@ Pro zjištění ceny je důležité nejprve spočítat počet strávených nocí
 ## API pro objednávkový systém
 
 Navhrněte API pro kolekci poptávek. U každé poptávky budeme chtít evidovat v jaké je fázi:
-  
-  - `new` - nová poptávka, kterou ještě nikdo nezkontroloval,
-  - `confirmed` - poptávka byla přijata,
-  - `rejected` - poptávka byla zamítnuta.
+
+- `new` - nová poptávka, kterou ještě nikdo nezkontroloval,
+- `confirmed` - poptávka byla přijata,
+- `rejected` - poptávka byla zamítnuta.
 
 Navhrněte tedy datovou strukturu pro objednávky, kde u každé objednávky budou informace, které zadal návštěvník na hlavní stránce a také informace o tom, v jaké fázi se poptávka nachází.
 

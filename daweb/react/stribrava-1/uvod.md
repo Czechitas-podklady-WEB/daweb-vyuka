@@ -23,5 +23,5 @@ Zbytek příkazů (`git branch`, `git remote` a `git push`) proveďte tak, jak j
 
 Po provedení příkazu `push` obnovte stránku repository v prohlížeči – měly byste v repository vidět soubory z vašeho projektu.
 
-Nyní je čas přizvat k vašemu projektu vaši parťačku resp. zbývající členy týmu. *Použijte na GitHubu Settings → Collaborators*. Těm přijde e-mail s pozvánkou, kterou akceptují, a tím získají právo přispívat do vašeho repository. Pomocí `git clone …` si naklonují váš projekt k sobě a vyzkouší si, že jim vše funguje (nezapomeňte na `npm install`). Vyzkoušejte si, že vám oběma funguje commitovat a
+Nyní je čas přizvat k vašemu projektu vaši parťačku resp. zbývající členy týmu. _Použijte na GitHubu Settings → Collaborators_. Těm přijde e-mail s pozvánkou, kterou akceptují, a tím získají právo přispívat do vašeho repository. Pomocí `git clone …` si naklonují váš projekt k sobě a vyzkouší si, že jim vše funguje (nezapomeňte na `npm install`). Vyzkoušejte si, že vám oběma funguje commitovat a
 pushovat do repository.
