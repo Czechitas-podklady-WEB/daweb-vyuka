@@ -9,9 +9,9 @@ Projekt si rozdělíme do několika částí:
 
 1. Hlavní stránka, kterou uvidí návštěvník a API pro hotelové pokoje.
 1. Počítání celkové ceny poptávky.
-1. API poskytující data pro administraci.
-1. Stránka pro administraci, kterou uvidí recepční.
+1. API poskytující data pro objednávkový systém.
 1. Zprovoznění formuáře pro odesílání poptávek.
+1. Stránka pro administraci, kterou uvidí recepční.
 
 ## Hlavní stránka
 
@@ -27,19 +27,19 @@ Jelikož je potřeba celkovou cenu poptávky spočítat po každé změně stavu
 
 Pro zjištění ceny je důležité nejprve spočítat počet strávených nocí. K tomu použijte knihovnu [Day.js](https://day.js.org/). Tuto knihovnu už jste mohli vidět na začátku výuky JavaScriptu. Bude potřeba ji do vašeho projektu nainstalovat. V dokumentaci pak najdete [příklady](https://day.js.org/docs/en/display/difference) pro výpočet rozdílu mezi dvěma daty.
 
-## API pro administraci
+## API pro objednávkový systém
 
-Než se pustíte do tvorby stránky pro administraci, navhrněte nejdříve API pro kolekci poptávek.
+Navhrněte API pro kolekci poptávek. U každé poptávky budeme chtít evidovat v jaké je fázi:
+  
+  - `new` - nová poptávka, kterou ještě nikdo nezkontroloval,
+  - `confirmed` - poptávka byla přijata,
+  - `rejected` - poptávka byla zamítnuta.
 
-1.  U každé poptávky budeme chtít evidovat v jaké je fázi:
+Navhrněte tedy datovou strukturu pro objednávky, kde u každé objednávky budou informace, které zadal návštěvník na hlavní stránce a také informace o tom, v jaké fázi se poptávka nachází.
 
-    - `new` - nová poptávka, kterou ještě nikdo nezkontroloval,
-    - `confirmed` - poptávka byla přijata,
-    - `rejected` - poptávka byla zamítnuta.
+## Formulář pro odesílání poptávek
 
-    Navhrněte tedy datovou strukturu pro objednávky, kde u každé objednávky budou informace, které zadal návštěvník na hlavní stránce a také informace o tom, v jaké fázi se poptávka nachází.
-
-1.  Server `apidroid` umí filtrování dat pomocí parametrů v URL. Pokud chceme pouze poptávky ve fázi `new`, napíšeme do URL `filter=phase:eq:new`. Celá adresa tak může vypadat například takto: `http://localhost:4000/api/poptavky?filter=phase:eq:new`. Vytvořte si několik fiktivních poptávek přímo v souboru JSON a vyzkoušejte si, jak funguje filtrování.
+Nyní chceme umožnit odeslat formulář s poptávkou a dano poptáku uložit do naší databáze. Zde stačí přidat do kolekce s poptávkami objekt ve správném tvaru – pomocí dotazu POST na API endpoint s poptávkami. Dotaz POST automaticky přidává nový záznam na konec kolekce, takže se poptávky v administraci zobrazí rovnou v požadovaném pořadí od nejstarších po nejnovější.
 
 ## Stránka pro administraci
 
@@ -47,6 +47,7 @@ Nyní si rozmyslete, jak bude fungovat administrace.
 
 1. Nejdříve navhrněte, jak bude vypadat stránka s administrací. Použijte Figmu, tužku a papír, nebo nějaký nástroj pro wireframing, cokoliv co je vám pohodlné. U každé poptávky budeme chtít vidět, jaké informace nám zákazník zadal. Chceme také mít možnost poptávku označit jako vyřízenou nebo zamítnutou.
 1. Můžete si nakreslit diagram komponent, ale vhledem k tomu, že jde o jednoduchý vzor zobrazení seznamu, možná jej ani nepotřebujete.
+1. Server `apidroid` umí filtrování dat pomocí parametrů v URL. Pokud chceme pouze poptávky ve fázi `new`, napíšeme do URL `filter=phase:eq:new`. Celá adresa tak může vypadat například takto: `http://localhost:4000/api/poptavky?filter=phase:eq:new`. Vytvořte si několik fiktivních poptávek přímo v souboru JSON a vyzkoušejte si, jak funguje filtrování.
 1. Naprogramujte zobrazní poptávek a vyzkoušejte si na vašich testovacích datech, že umíte zobrazit pouze poptávky ve fázi `new`.
 
 Nyní přichází zajímavá část, kdy budeme chtít označovat poptávky jako vyřízené nebo zamítnuté. Při kliknutí na tlačíko pro označení poptávky jako vyřízené nebo zamítnuté je potřeba odeslat na API dotaz PATCH, abychom změnili fázi poptávky, a hned po jeho dokončení znovu načíst filtrovaný seznam poptávek, aby se komponenta zobrazující seznam poptávek překreslila.
@@ -63,10 +64,4 @@ Server `apidroid` používá pro aktualizaci záznamu v kolekci metodu PATCH. Do
 ]
 ```
 
-Naprogramujte označování poptávek a ověřte, že administrace funguje.
-
-## Formulář pro odesílání poptávek
-
-Nyní už vám zbývá poslední krok a to je rozběhat formulář pro odesílání poptávek. Zde stačí přidat do kolekce s poptávkami objekt ve správném tvaru – pomocí dotazu POST na API endpoint s poptávkami . POST automaticky přidává nový záznam na konec kolekce, takže se poptávky v administraci zobrazí rovnou v požadovaném pořadí od nejstarších po nejnovější.
-
-V této fázi byste měli mít projekt hotový. Uživatel by měl mít možnost provést poptávku a recepční by měla mít možnost poptávky zobrazit a označit jako vyřízené nebo zamítnuté.
+Naprogramujte označování poptávek a ověřte, že administrace funguje. V této fázi byste měli mít projekt hotový. Uživatel by měl mít možnost provést poptávku a recepční by měla mít možnost poptávky zobrazit a označit jako vyřízené nebo zamítnuté.
