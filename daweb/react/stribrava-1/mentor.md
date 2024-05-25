@@ -26,7 +26,23 @@ Projekt si rozdělíme do několika částí:
 
 Jelikož je potřeba celkovou cenu poptávky spočítat po každé změně stavu, můžete si založit proměnnou přímo v těle komponenty a spočítat do ní výslednou cenu podle toho, co je uloženo ve stavech. Pokud chcete mít výpočet oddělený od komponenty, můžete si vytvořit pomocnou funkci, která bude mít jako parametry stavy a vrátí výslednou cenu.
 
-Pro zjištění ceny je důležité nejprve spočítat počet strávených nocí. K tomu použijte knihovnu [Day.js](https://day.js.org/). Tuto knihovnu už jste mohli vidět na začátku výuky JavaScriptu. Bude potřeba ji do vašeho projektu nainstalovat. V dokumentaci pak najdete [příklady](https://day.js.org/docs/en/display/difference) pro výpočet rozdílu mezi dvěma daty.
+Pro zjištění ceny je důležité nejprve spočítat počet strávených nocí. K tomu použijte knihovnu [Day.js](https://day.js.org/). Tuto knihovnu už jste mohli vidět na začátku výuky JavaScriptu.
+
+Bude potřeba Day.js do vašeho projektu nainstalovat. Bohužel Day,js nemá v dokumentaci popsánu instalaci do projektů, které používají moderní JavaScript, jako jsou i naše projekty. Vězte tedy, že knihovnu nainstalujete příkazem
+
+```shell
+npm install dayjs
+```
+
+Po provedení příkazu `npm install` je lepší ukončit a znovu nastartovat `npm run dev`, aby se Vite.js dozvěděl o nové knihovně.
+
+Následně můžete ve svých komponentách nebo javascriptových souborech naimportovat dayjs:
+
+```javascript
+import dayjs from 'dayjs';
+```
+
+Po importu už můžete `dayjs` používat tak, jak je popsáno v dokumentaci. Najdete tam [příklady](https://day.js.org/docs/en/display/difference) pro výpočet rozdílu mezi dvěma daty.
 
 ## API pro objednávkový systém
 
