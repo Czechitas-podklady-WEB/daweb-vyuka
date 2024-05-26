@@ -1,6 +1,6 @@
 ## Znovupoužitelnost
 
-Když vytváříme nějakou větší a složitější aplikaci, vždy se na maximum snažíme udržet kód přehledný a srozumitelný. Jedním z hlavních postupů, který pomáhají udržet kód aplikace v dobrém stavu je takzvaná ::term{cs=znovupoužitelnost en=reusability}. Znovupoužitelnost znamená, že kód, který napíšeme, můžeme použít na více místech v té samé aplikaci. 
+Když vytváříme nějakou větší a složitější aplikaci, vždy se na maximum snažíme udržet kód přehledný a srozumitelný. Jedním z hlavních postupů, který pomáhají udržet kód aplikace v dobrém stavu je takzvaná ::term{cs=znovupoužitelnost en=reusability}. Znovupoužitelnost znamená, že kód, který napíšeme, můžeme použít na více místech v té samé aplikaci.
 
 Princip znovupoužitelnosti využíváme vždy, když například píšeme nějakou funkci. Funkci píšeme většinou proto, aby šla použít na více různých místech. To nám pomáhá
 
@@ -33,9 +33,5 @@ Pojďme společně navrhnout komponentu `Alert`, která bude zobrazovat různé 
 Na obrázku vidíme 6 různých druhů upozornění. Musíme proto naši kompnentu navrhnout dostatečně obecně, aby dokázala zobrazit všechny tyto druhy upozornění. Například takto:
 
 ```jsx
-<Alert
-  type="warning"
-  title="Warning!"
-  body="This is a warning alert"
-/>
+<Alert type="warning" title="Warning!" body="This is a warning alert" />
 ```

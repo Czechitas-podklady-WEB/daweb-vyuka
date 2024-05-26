@@ -5,10 +5,7 @@ Když vytváříme znovupoužielné komponenty, často budeme chtít, aby si pro
 Například bychom chtěli mít možnost zobrazit v komponentě `Alert` několik odstavců textu:
 
 ```jsx
-<Alert
-  type="warning"
-  title="Warning!"
->
+<Alert type="warning" title="Warning!">
   <p>Something went a tiny bit wrong.</p>
   <p>But don't worry, it's not a big deal yet.</p>
 </Alert>
