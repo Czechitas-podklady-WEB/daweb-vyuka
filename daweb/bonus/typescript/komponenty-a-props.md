@@ -56,7 +56,7 @@ export const Activity: React.FC<ActivityProps> = ({
 Takto vytvořenou komponentu si naimportujeme do souboru `App.tsx`. Všimněte si, že nám ji Typescript červeně podtrhne a vyhodí chybu:
 
 ```js
-import { Activity } from "./components/activity";
+import { Activity } from './components/activity';
 
 function App() {
   return (

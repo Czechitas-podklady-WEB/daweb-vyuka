@@ -94,7 +94,7 @@ Teď už nám zbývá jen při odeslání formuláře předat data od uživatele
 Výsledná komponenta `Form` bude vypadat takto:
 
 ```js
-import { useState } from "react";
+import { useState } from 'react';
 
 interface FormProps {
   onSubmitForm: (data: FormDataStructure) => void;
@@ -106,10 +106,13 @@ interface FormDataStructure {
 }
 
 export const Form: React.FC<FormProps> = ({ onSubmitForm }) => {
-  const [formData, setFormData] = useState<FormDataStructure>({
-      name: "",
-      type: "",
-  })
+  const [formData, setFormData] =
+    useState <
+    FormDataStructure >
+    {
+      name: '',
+      type: '',
+    };
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>

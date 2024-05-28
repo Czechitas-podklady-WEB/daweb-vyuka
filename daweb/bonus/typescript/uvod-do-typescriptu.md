@@ -47,7 +47,7 @@ let count: number = 42;
 reprezentuje textové řetězce.
 
 ```js
-let message: string = "Hello, TypeScript!";
+let message: string = 'Hello, TypeScript!';
 ```
 
 **boolean:**
@@ -70,7 +70,7 @@ reprezentuje jakýkoliv objekt.
 
 ```js
 let user: object = {
-  name: "John",
+  name: 'John',
   age: 30,
 };
 ```
@@ -80,14 +80,14 @@ reprezentuje pole hodnot určitého typu.
 
 ```js
 let numbers: number[] = [1, 2, 3, 4];
-let fruits: Array<string> = ["apple", "banana", "orange"];
+let fruits: Array<string> = ['apple', 'banana', 'orange'];
 ```
 
 **any:**
 typ any umožňuje proměnným nabývat hodnot jakéhokoliv typu. Používejte s opatrností, protože ztrácíte typovou kontrolu.
 
 ```js
-let dynamicValue: any = "This can be anything.";
+let dynamicValue: any = 'This can be anything.';
 ```
 
 **void:**
@@ -95,12 +95,13 @@ reprezentuje absenci hodnoty. Používá se obvykle pro funkce, které nic nevra
 
 ```js
 const logMessage = (): void => {
-  console.log("This is a log message.");
+  console.log('This is a log message.');
 };
 ```
 
 **Promise<T>:**
 reprezentuje hodnotu, která bude k dispozici v budoucnosti, obvykle po dokončení asynchronní operace. Nejčastěji se používá při načítání dat z API. `<T>` představuje typ dat nebo datovou strukturu, kterou funkce vrací.
+
 ```js
 const myAsynFunction = async (url: string): Promise<T> => {
   const { data } = await fetch(url);
@@ -116,5 +117,5 @@ Interface, případně se můžete setkat s českým označením rozhraní, slou
 interface Person {
   name: string;
   age: number;
-};
+}
 ```
