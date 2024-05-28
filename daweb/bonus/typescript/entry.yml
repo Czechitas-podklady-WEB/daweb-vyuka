@@ -1,0 +1,10 @@
+title: Úvod do Typescriptu
+lead: Co je to Typescript a jak ho v Reactu používat
+access: claim
+sections:
+ - uvod-do-typescriptu
+ - typescript-v-reactu
+ - komponenty-a-props
+ - formulare-a-predavani-dat
+ - api
+ - cv-typescript
