@@ -1,6 +1,6 @@
 title: Úvod do Typescriptu
 lead: Co je to Typescript a jak ho v Reactu používat
-access: claim
+access: protected
 sections:
  - uvod-do-typescriptu
  - typescript-v-reactu
