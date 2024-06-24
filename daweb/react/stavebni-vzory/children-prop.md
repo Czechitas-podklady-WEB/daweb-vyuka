@@ -1,6 +1,6 @@
 ## Prop `children`
 
-Když vytváříme znovupoužielné komponenty, často budeme chtít, aby si programátor mohl sám rozhodnout, co se v komponentě zobrazí. Mohli bychom například umožnit zobrazit uvnitř komponenty `Alert` nějaký složitější obash, než pouze textový řetězec.
+Když vytváříme znovupoužitelné komponenty, často budeme chtít, aby si programátor mohl sám rozhodnout, co se v komponentě zobrazí. Mohli bychom například umožnit zobrazit uvnitř komponenty `Alert` nějaký složitější obsah, než pouze textový řetězec.
 
 Například bychom chtěli mít možnost zobrazit v komponentě `Alert` několik odstavců textu:
 
@@ -31,6 +31,6 @@ export const Alert = ({ type, title, children }) => {
 };
 ```
 
-Prop `children` budeme využívat vždy, kdy budeme potřebovat napsat komponentu, která má obsahovat další prvky nebo komponenty, ale my dopředu nevíme, jaké to budou.
+Prop `children` budeme využívat vždy, když budeme potřebovat napsat komponentu, která má obsahovat další prvky nebo komponenty, ale my dopředu nevíme, jaké to budou.
 
-Časté použití jsou například jsou znovupoužitelné komponenty jako různá dialogová okna, sidebary, nastylované boxy, ve kterých může být libovolný obsah, nebo obecné komponenty, které například řídí rozložení prvků na stránce.
+Časté použití jsou například znovupoužitelné komponenty jako různá dialogová okna, sidebary, nastylované boxy, ve kterých může být libovolný obsah, nebo obecné komponenty, které například řídí rozložení prvků na stránce.

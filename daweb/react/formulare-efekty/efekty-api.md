@@ -27,7 +27,7 @@ const HomePage = () => {
 };
 ```
 
-Povšimněte si funkce `fetchName`, kterou jsme si vytvořili přimo uvnitř efektu k tomu, aby získala jméno z API a nastavila jej do stavu. Funkci `fetchName` jsme museli vytvořit, neboť efekt sám o sobě nemůže být asynchronní. V Reactu Nemůžeme udělat toto:
+Povšimněte si funkce `fetchName`, kterou jsme si vytvořili přímo uvnitř efektu k tomu, aby získala jméno z API a nastavila jej do stavu. Funkci `fetchName` jsme museli vytvořit, neboť efekt sám o sobě nemůže být asynchronní. V Reactu nemůžeme udělat toto:
 
 ```js
 useEffect(async () => {

@@ -1,8 +1,8 @@
-Přestože je možné na internetu potkat weby, které mají pouze jednu stránku, je to spíš výjimka. Takové weby rozhodně mají svůj smysl například jako osobní prezentace nebo stránky pro malé podniky. My se však rozhodně na takové weby omezovat nechceme. Naučíme se se proto způsob, jak naši aplikaci rozšířit o další stránky a posunout ji na vyšší úroveň.
+Přestože je možné na internetu potkat weby, které mají pouze jednu stránku, je to spíš výjimka. Takové weby rozhodně mají svůj smysl například jako osobní prezentace nebo stránky pro malé podniky. My se však rozhodně na takové weby omezovat nechceme. Naučíme se proto způsob, jak naši aplikaci rozšířit o další stránky a posunout ji na vyšší úroveň.
 
 ## Single-page application (SPA)
 
-Mechanizmus, kterým se rozhodujeme, kterou stránku chceme zobrazit pro jakou URL adresu, se nazývá _routing_. Když jsme vyvíjeli naše první weby v čistém JavaScriptu s pomocí JSX, vždy jsme měli stránky na serveru připravné jako HTML soubory. To znamená, že odeslat tu správnou stránku bylo úkolem serveru. Dělalí jsme tedy takzvaný _server-side routing_.
+Mechanizmus, kterým se rozhodujeme, kterou stránku chceme zobrazit pro jakou URL adresu, se nazývá _routing_. Když jsme vyvíjeli naše první weby v čistém JavaScriptu s pomocí JSX, vždy jsme měli stránky na serveru připravené jako HTML soubory. To znamená, že odeslat tu správnou stránku bylo úkolem serveru. Dělali jsme tedy takzvaný _server-side routing_.
 
 V Reactu máme však pouze jeden HTML soubor a každá stránka je samostatná komponenta. Rozhodování, kterou komponentu zobrazit, se děje až na klientovi, což nazýváme _client-side routing_. Jelikož z hlediska serveru máme stránku pouze jednu, často se v tomto kontextu mluví o _single page application_ (SPA).
 

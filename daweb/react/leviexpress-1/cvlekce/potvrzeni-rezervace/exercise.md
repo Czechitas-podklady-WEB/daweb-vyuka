@@ -36,7 +36,7 @@ Nyn již máme ve stavu `journey` uložené všechny potřebné informace k tomu
    ```js
    navigate(`/reservation/${reservationId}`);
    ```
-1. Zkontrolujte, že po kliknutí na tlačíko „Rezervovat" se stránka přesměruje například na adresu
+1. Zkontrolujte, že po kliknutí na tlačítko „Rezervovat" se stránka přesměruje například na adresu
 
    > http://localhost:5173/reservation/HAQBAQASf7M
 

@@ -1,6 +1,6 @@
 ---
 title: Výběr data cesty
-lead: Zprovizníme výběr data cesty.
+lead: Zprovozníme výběr data cesty.
 demand: 2
 context: lekce
 solutionAccess: protected

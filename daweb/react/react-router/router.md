@@ -1,14 +1,14 @@
 ## React Router
 
-Většina vývojářů v Reactu používá na client-side routing knihovnu, která se jmenuje přiléhavě [React Router](https://reactrouter.com/). Nainstalovat si ji můžete jako závislost přes _npm_ a následně z ní můžeme používat připravené komponenty přímo v našem kódu.
+Většina vývojářů v Reactu používá na client-side routing knihovnu, která se jmenuje přiléhavě [React Router](https://reactrouter.com/). Nainstalujeme si ji jako závislost přes _npm_ a následně z ní můžeme používat připravené komponenty přímo v našem kódu.
 
-Do existujícího projektu můžeme nainstalovat React Router knihovnu přest terminál pomocí _npm_.
+Do existujícího projektu můžeme nainstalovat knihovnu React Router přes terminál pomocí _npm_.
 
 ```sh
 npm install react-router-dom
 ```
 
-Nyní máme v projektu k dispozici celou škálu komponent, se kterými můzeme pracovat. Stačí si je správně naimportovat a použít jako kteroukoliv jinou komponentu.
+Nyní máme v projektu k dispozici celou škálu komponent, se kterými můžeme pracovat. Stačí si je správně naimportovat a použít jako kteroukoliv jinou komponentu.
 
 Vytvořme pro začátek kostru webové aplikace pro vedení účetnictví. Stránky zatím pro rychlost vložíme přímo do hlavního souboru `index.jsx`. Později je samozřejmě přesuneme do samostatných složek ve složce `src/pages`.
 

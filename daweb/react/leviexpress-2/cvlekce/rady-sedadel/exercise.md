@@ -11,7 +11,7 @@ Nyní zařídíme zobrazování sedadel v řadách. Plánek sedadel bude vypadat
 ::fig[náhled]{src=assets/nahled.png}
 
 1. V projektu vytvořte komponentu `SeatRow`, která představuje jednu řadu sedadel. Bude vracet `div` s třídou `seat-row`, který v dalších krocích naplníme sedadly tak, jak nám přijdou z API. Zatím do komponenty natvrdo vložte pár sedadel jen pro testovací účely. Komponentu `SeatRow` pak vložte do `div`u `seats` v komponentě `SeatPicker`.
-1. Komponenta `SeatRow` bode očekávat _prop_ s názvem `row`, ve které budou v poli data pro jednu čadu sedadel. Pro testovací účely si vytvořte v `SeatPicker` proměnnou `testRow`, která bude obsahovat takovéto pole:
+1. Komponenta `SeatRow` bude očekávat _prop_ s názvem `row`, ve které budou v poli data pro jednu řadu sedadel. Pro testovací účely si vytvořte v `SeatPicker` proměnnou `testRow`, která bude obsahovat takovéto pole:
    ```js
    const testRow = [
      {
@@ -28,7 +28,7 @@ Nyní zařídíme zobrazování sedadel v řadách. Plánek sedadel bude vypadat
      },
    ];
    ```
-1. Předejte tuto proměnou komponentě `SeatRow` a uvnitř ní pomocí funkce `map` zobrazte jednotlivá sedadla. Jako `key` _prop_ u jednotlivých sedadel můžete použít samotné číslo sedadla, to je v řadě vždy unikátní. Ověřte, že se testovací řada sedadel správně zobrazuje v prohlížeči.
+1. Předejte tuto proměnmou komponentě `SeatRow` a uvnitř ní pomocí funkce `map` zobrazte jednotlivá sedadla. Jako `key` _prop_ u jednotlivých sedadel můžete použít samotné číslo sedadla, to je v řadě vždy unikátní. Ověřte, že se testovací řada sedadel správně zobrazuje v prohlížeči.
 1. Nyní máme vše připraveno pro zobrazení správného plánku sedadel podle dat z API. Pracovat budeme v komponentě `SeatPicker` – tam, kde máme testovací řadu sedadel. Když se podíváte, jaká odpověď chodí z API při vyhledání spojení (ta, kterou pak máte uloženou ve stavu `journey` komponenty `HomePage`), uvidíte, že máte velké štěstí. Ve vlastnosti `seats` je pole, které představuje přímo jednotlivé řady v autobusu.
 1. Nyní je tedy potřeba údaje o sedadlech předat z komponenty `HomePage` do komponenty `SeatPicker`. Do komponenty `SeatPicker` tedy přidejte _prop_ `seats` (vloží se do ní `journey.seats`).
 1. Ještě je potřeba upravit komponentu `HomePage` tak, aby komponenta `SeatPicker` byla vidět jedině v případě, že je stav `journey` jiný než `null` – tedy stejně, jako se zobrazuje komponenta `JourneyDetail`. Ověřte v prohlížeči, že po vyhledání spoje se zobrazí podrobnosti cesty a také komponenta pro výběr sedadel – zatím s vašimi testovacími sedadly.

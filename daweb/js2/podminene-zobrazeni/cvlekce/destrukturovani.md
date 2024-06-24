@@ -44,6 +44,6 @@ const recipe = {
 };
 ```
 
-1. Pomocí destrukturování si vytvořte proměnnou `name`, do které uložte hodnota klíče `name` z objektu `recipe`.
+1. Pomocí destrukturování si vytvořte proměnnou `name`, do které uložte hodnotu klíče `name` z objektu `recipe`.
 2. Podobným způsobem si vytvořte proměnné `cuisine`, `ingredients` a `instructions`.
 3. Z objektu `ingredients` si pomocí destrukturování vytvořte proměnné `chicken`, `vegetables`, `seasonings` a `others`.

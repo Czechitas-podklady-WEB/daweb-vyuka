@@ -4,7 +4,7 @@ Náš příklad s volbami by ještě pořád mohl být o kus složitější. V r
 
 V takové situaci musíme data předávat přes několik komponent, které tato data nepotřebují, pouze je předávají dále. Tento postup se běžně nazývá _prop drilling_, česky bychom mohli říct _vrtání_.
 
-Pro názorný příklad si představme, že bychom v naší aplikaci s volbami měli ještě další komponentu `CandidateList`, která by zobrazovala seznam všech kandidátů. To znamená, že komponenta `Candidate` je zanořena o jednu úrovně hlouběji a musíme k ní funkci `handleVote` provrtat přes komponentu `CandidateList`.
+Pro názorný příklad si představme, že bychom v naší aplikaci s volbami měli ještě další komponentu `CandidateList`, která by zobrazovala seznam všech kandidátů. To znamená, že komponenta `Candidate` je zanořena o jednu úroveň hlouběji a musíme k ní funkci `handleVote` provrtat přes komponentu `CandidateList`.
 
 ```jsx
 const CandidateList = ({ candidates, onVote }) => {
@@ -71,7 +71,7 @@ Prop drilling nám slouží k tomu, aby spolu mohly komunikovat komponenty, kter
 
 1. **Horší přehlednost** – čtenář kódu musí složitě navigovat kódem a držet v hlavě, kudy všude proudí data.
 1. **Nepohodlnost** – psát kód s hlubokým vrtáním je pro programátory otravné a zdlouhavé.
-1. **Průchozí komponenty** – máme v kódu spoustu komponent, která data ve skutečnosti nepotřebují, jen je předávají dále, čímž se komplikuje jejich kód.
-1. **Horší udržitelnost** – pokud se rozhodneme změnit strukturu komponent, musíme přepisovat i průchozí komponenty, která data vlastně nepotřebují.
+1. **Průchozí komponenty** – máme v kódu spoustu komponent, které data ve skutečnosti nepotřebují, jen je předávají dále, čímž se komplikuje jejich kód.
+1. **Horší udržitelnost** – pokud se rozhodneme změnit strukturu komponent, musíme přepisovat i průchozí komponenty, které data vlastně nepotřebují.
 
-V reálnách aplikacích se proto příliš agresivnímu prop drillingu snažíme vyhnout. Pokud to z hlediska struktury aplikace dává smysl, snažíme se předávání dat mezi komponentami řešit jinými způsoby, například pomocí _contextu_ nebo pomocí _state managementu_. To jsou však pro tento kurz příliš pokročilá témata. V následujících lekcích se proto omezíme na vrtání maximálně přes jednu komponentu, nebo se mu budeme vyhýbat úplně.
+V reálných aplikacích se proto příliš agresivnímu prop drillingu snažíme vyhnout. Pokud to z hlediska struktury aplikace dává smysl, snažíme se předávání dat mezi komponentami řešit jinými způsoby, například pomocí _contextu_ nebo pomocí _state managementu_. To jsou však pro tento kurz příliš pokročilá témata. V následujících lekcích se proto omezíme na vrtání maximálně přes jednu komponentu, nebo se mu budeme vyhýbat úplně.

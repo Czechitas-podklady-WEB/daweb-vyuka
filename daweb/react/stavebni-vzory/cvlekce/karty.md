@@ -1,5 +1,5 @@
 ---
-title: Znovupoužitlné karty
+title: Znovupoužitelné karty
 lead: Vytvořte znovupoužitelnou komponentu `Card` s nadpisem a popisem a dalšími prvky.
 demand: 3
 context: lekce

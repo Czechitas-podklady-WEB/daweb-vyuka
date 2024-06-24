@@ -75,10 +75,10 @@ Rozdělte již naprogramovanou větší komponentu na vícero menších komponen
      );
    };
    ```
-1. Zobrazte komponentu na stránce. Lehce ji nastylujte, aby se zobrazovala hezky. Můžete požádat aby to za vás udělal ChatGPT, abyste se nemuseli příliš trápit.
-1. Rozhodněte, jak rozdělit komponentu na více menších komponente. Navrhujeme vytvořit alespoň 4 různé komponenty, ze kterých pak poskládáte výslednou komponentu `BookingSummary`. Dejte komponentám smysluplná jména a vymyslete, jaké mají mít `props`.
+1. Zobrazte komponentu na stránce. Lehce ji nastylujte, aby se zobrazovala hezky. Můžete požádat, aby to za vás udělal ChatGPT, abyste se nemuseli příliš trápit.
+1. Rozhodněte, jak rozdělit komponentu na více menších komponent. Navrhujeme vytvořit alespoň 4 různé komponenty, ze kterých pak poskládáte výslednou komponentu `BookingSummary`. Dejte komponentám smysluplná jména a vymyslete, jaké mají mít `props`.
 
 ### Bonus
 
 1. Zkuste vymyslet strukturu JavaScriptového objektu, který bude obsahovat data pro komponentu `BookingSummary` a zařiďte, aby komponenta zobrazovala tato data.
-1. Jelikož ještě neumíme vytvořit vlastní API, zatím si pouze představuje, že tato data stahujete z nějakého serveru. Můžete této představe pomoct tak, že data vytvoříte na tom místě, kde byste jinak volali funkci `fetch`.
+1. Jelikož ještě neumíme vytvořit vlastní API, zatím si pouze představujte, že tato data stahujete z nějakého serveru. Můžete této představě pomoct tak, že data vytvoříte na tom místě, kde byste jinak volali funkci `fetch`.

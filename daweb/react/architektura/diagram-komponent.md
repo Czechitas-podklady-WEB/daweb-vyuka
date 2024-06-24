@@ -1,9 +1,9 @@
 ## Diagram komponent
 
-Pokud máme zadání naprogramovat nějakou webovou aplikaci, začínáme většinou tak, že si uděláma představu o tom, jak má aplikace vypadat a jakým způsobem ji bude uživatel používat. Většinou pak uděláme nějaké skicy, wireframy, mockupy ve Figmě apod. Všechny tyto pojmy označují nějakou formu návrhu, který nám pomůže udělat si před začátkem programování představu o tom, jak má aplikace vypadat a jaké funkce má mít.
+Pokud máme zadání naprogramovat nějakou webovou aplikaci, začínáme většinou tak, že si uděláme představu o tom, jak má aplikace vypadat a jakým způsobem ji bude uživatel používat. Většinou pak uděláme nějaké skicy, wireframy, mockupy ve Figmě apod. Všechny tyto pojmy označují nějakou formu návrhu, který nám pomůže udělat si před začátkem programování představu o tom, jak má aplikace vypadat a jaké funkce má mít.
 
 Jako programátoři si také potřebujeme umět dopředu rozmyslet, jak aplikaci naprogramovat.
-Potřebujeme vědět jaká data bude naše aplikace potřebovat, jaké komponenty budeme vytvářet a jak budou spolu komunikovat. Ideálně bychom z tohoto proceu chtěli také nějaký výstup, který nám pomůže zaznamenat si naše myšlenky. K tomuto účelu budeme používat takzvaný _diagram komponent_.
+Potřebujeme vědět jaká data bude naše aplikace potřebovat, jaké komponenty budeme vytvářet a jak budou spolu komunikovat. Ideálně bychom z tohoto procesu chtěli také nějaký výstup, který nám pomůže zaznamenat si naše myšlenky. K tomuto účelu budeme používat takzvaný _diagram komponent_.
 
 :::box{type=warning}
 Diagram komponent není žádný standardní nástroj používaný v praxi. Je to systém vymyšlený pro potřeby tohoto kurzu, který nám pomůže lépe si představit strukturu aplikace. Zkušenější programátoři si většinou umí strukturu komponent představit bez nějakého diagramu pouze v své hlavě.
@@ -25,7 +25,7 @@ Takto si můžeme znázornit stromovou strukturu pomocí diagramu komponent:
 
 ## Stavy a props
 
-Už základní strom komponent nám může dobře posloužit a stačit k tomu, abychom si udělali představu o struktuře aplikace. Můžeme však zajít ješte do většího detailu a pokusit se znázornit také props a stavy jednotlivých komponent. To nám pomůže lépe pochopit, jak budou jednotlivé komponenty spolu komunikovat a jaká data budou potřebovat.
+Už základní strom komponent nám může dobře posloužit a stačit k tomu, abychom si udělali představu o struktuře aplikace. Můžeme však zajít ještě do většího detailu a pokusit se znázornit také props a stavy jednotlivých komponent. To nám pomůže lépe pochopit, jak budou jednotlivé komponenty spolu komunikovat a jaká data budou potřebovat.
 
 Stavy a props do komponenty zaznamenáme tímto způsobem:
 
@@ -39,9 +39,9 @@ Stavy a props v naší aplikaci s počasím by mohly vypadat takto:
 
 ::fig{src=assets/props-state.png}
 
-Schválně říkáme **mohly vypadat**, protože opravdu vyčerpávajícím způsobem do diagramu zaznamenat, jaké přesně props a state bude každá komponta mít, je takto od stolu téměř nemožné. U menších aplikací jako je počasí by to s jistým vypětím sil ještě nějak šlo. Pro větší aplikace si ale ani seniorní vývojáři nedokážou celou strukturu představit takto precizně a do hloubky bez toho, aby napsali jediný řádek kódu.
+Schválně říkáme **mohly vypadat**, protože je téměř nemožné takto od stolu do diagramu vyčerpávajícím způsobem zaznamenat, jaké přesně props a state bude každá komponenta mít. U menších aplikací, jako je počasí, by to s jistým vypětím sil ještě nějak šlo. Pro větší aplikace si ale ani seniorní vývojáři nedokážou celou strukturu představit takto precizně a do hloubky bez toho, aby napsali jediný řádek kódu.
 
-Diagrmay nám tedy neslouží k tomu, abychom si dokonale zaznamenali strukturu aplikace. Jejich smysl je v tom, udělat si nějakou hrubou představu co bude potřeba naprogramovat, čímž se naučíme nad strukturou aplikace přemýšlet bez programování a neztratit se ihned v detailech toho, jak přesně napsat nějakou konkrétní komponentu.
+Diagramy nám tedy neslouží k tomu, abychom si dokonale zaznamenali strukturu aplikace. Jejich smysl je v tom, udělat si nějakou hrubou představu co bude potřeba naprogramovat, čímž se naučíme nad strukturou aplikace přemýšlet bez programování a neztratit se ihned v detailech toho, jak přesně napsat nějakou konkrétní komponentu.
 
 Diagramy také slouží k tomu, abychom se dokázali v týmu bavit o struktuře programů, aniž bychom museli hned vyrábět kód, který většinou řeší už zbytečné technické detaily, které nás na začátku tolik nezajímají.
 
@@ -70,4 +70,4 @@ V případě naší aplikace by mohly datové toky vypadat například takto:
 
 ::fig{src=assets/data-flow.png}
 
-Opět předesíláme, že tento popis nemusí být dokonale přesný. Až kdybychom aplikaci programovali, zjistili bychom, že by bylo potřeba diagram trochu upravit, některé stavy posunout do jiných komponent, někde zařídit složitější komunikací, která nám na začátku unikla, apod.
+Opět předesíláme, že tento popis nemusí být dokonale přesný. Až kdybychom aplikaci programovali, zjistili bychom, že by bylo potřeba diagram trochu upravit, některé stavy posunout do jiných komponent, někde zařídit složitější komunikaci, která nám na začátku unikla, apod.

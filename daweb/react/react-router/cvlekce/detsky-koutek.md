@@ -16,10 +16,10 @@ V tomto cvičení vytvoříte jednoduchou stránku pro dětský koutek. Pomocí 
    ```sh
    npm install react-router-dom
    ```
-1. Spusťte aplikaci příkazem `npm start` a zkontrolujte, že vám v prohlížeči správně běží.
+1. Spusťte aplikaci příkazem `npm run dev` a zkontrolujte, že vám v prohlížeči správně běží.
 1. Nebojte se v následujících krocích inspirovat dokumentací [React Routeru](https://reactrouter.com/en/main/start/overview)!
 1. V hlavním souboru `index.jsx` založte objekt s routami. Vytvořte si v tomto souboru komponentu `App`, která zatím bude obsahovat pouze nadpis stránky. Zobrazujte ji pod cestou `/`. Nezapomeňte použít `RouterProvider` ve funkci `render`. Vyzkoušejte, že takto vaše aplikace funguje.
-1. V adresáři `pages` už máte vygenerovanou komponentu `HomePage`. Ta by měla obshovat nadpis a text:
+1. V adresáři `pages` už máte vygenerovanou komponentu `HomePage`. Ta by měla obsahovat nadpis a text:
 
    > Dětský koutek
    >

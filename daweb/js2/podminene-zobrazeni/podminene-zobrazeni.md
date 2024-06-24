@@ -69,7 +69,7 @@ const Product = (props) => {
 };
 ```
 
-Občas se nám stane, že v jednom z případů podmínky nechcem zobrazit nic. Dejme tomu, že nechceme uživateli zobrazovat zprávu o nedostupnosti, ale chceme pouze vynechat objednávací tlačítko. V takovém případě můžeme vrátit hodnotu `null`, která pro React znamená, že nemá zobrazit nic.
+Občas se nám stane, že v jednom z případů podmínky nechceme zobrazit nic. Dejme tomu, že nechceme uživateli zobrazovat zprávu o nedostupnosti, ale chceme pouze vynechat objednávací tlačítko. V takovém případě můžeme vrátit hodnotu `null`, která pro React znamená, že nemá zobrazit nic.
 
 ```js
 const Product = (props) => {
