@@ -2,7 +2,7 @@
 
 Jsou weby, kde si vystačíme s pár stránkami - _Domovská stránka_, _O nás_, _Kontakt_ apod. Tyto stránky si nachystáme v kódu, nastylujeme a máme hotovo. Jednou za pár let možná upravíme naši adresu nebo telefonní číslo.
 
-Stránky jako blogy, zpravodajské weby, e-shopy a další však mívají mnohem složitější strukturu, tísíce článků, produktů, uživatelů a tak dále. Budeme tak potřebovat komponenty, které zobrazují data z databáze například na základě id. Adresy pro jednotlivé faktury za poslední měsíc pak mohou vypadat například takto:
+Stránky jako blogy, zpravodajské weby, e-shopy a další však mívají mnohem složitější strukturu, tisíce článků, produktů, uživatelů a tak dále. Budeme tak potřebovat komponenty, které zobrazují data z databáze například na základě id. Adresy pro jednotlivé faktury za poslední měsíc pak mohou vypadat například takto:
 
 ```
 /invoices/lastmonth/249857

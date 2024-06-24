@@ -1,6 +1,6 @@
 ## Vzor: zobrazení seznamu
 
-Nejzákladnější stavební vzor je zobrazení seznamu položek. Tuto techniku už jste v tomtu kurzu sami viděli nejméně stokrát. Ukažme si obecný přístup pro zobrazení seznamu v Reactu.
+Nejzákladnější stavební vzor je zobrazení seznamu položek. Tuto techniku už jste v tomto kurzu sami viděli nejméně stokrát. Ukažme si obecný přístup pro zobrazení seznamu v Reactu.
 
 Na zobrazení seznamu potřebujeme tyto ingredience:
 

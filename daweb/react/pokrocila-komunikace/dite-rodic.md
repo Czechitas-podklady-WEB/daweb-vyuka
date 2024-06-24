@@ -4,9 +4,9 @@ V předchozí lekci jsme se naučili jednoduchou komunikaci od dítěte k rodič
 
 > Dítě může rodiči poslat informaci tak, že nastaví jeho stav. Rodič tak musí dítěti předat funkci, která mu umožní stav měnit.
 
-My jsme proto dítěti vždycky posílali přímo funkci `setState`, tedy například `setPresident` v naší ukázce s volbami. Snadno ovšem narazíme na situace, kdy si s tímto postupem nevystačíme. Většinou to je ve chvíli, kdy chceme rodiči od dítěte předat nějakou informaci a rodič se má sám rozhodnout, jak s touto informací naloží. Zda například změní stav, jakým zůsobem jej změní nebo třeba udělá něco úplně jiného, například odešle data na server, zavolá nějaký API endpoint apod.
+My jsme proto dítěti vždycky posílali přímo funkci `setState`, tedy například `setPresident` v naší ukázce s volbami. Snadno ovšem narazíme na situace, kdy si s tímto postupem nevystačíme. Většinou to je ve chvíli, kdy chceme rodiči od dítěte předat nějakou informaci a rodič se má sám rozhodnout, jak s touto informací naloží. Zda například změní stav, jakým způsobem jej změní – nebo třeba udělá něco úplně jiného, například odešle data na server, zavolá nějaký API endpoint apod.
 
-Pro názornou ukázku s vraťme k našemu příkladu s volbami. V minulé lekci jsme si ukázali, jak může komponenta `Candidate` poslat informaci o tom, kdo byl zvolen, svému rodiči `HomePage`. Tato komunikace proběha srkze funkci předanou skrze prop `onVote`.
+Pro názornou ukázku se vraťme k našemu příkladu s volbami. V minulé lekci jsme si ukázali, jak může komponenta `Candidate` poslat informaci o tom, kdo byl zvolen, svému rodiči `HomePage`. Tato komunikace proběhne skrze funkci předanou skrze prop `onVote`.
 
 ```jsx
 export const Candidate = ({ name, avatar, onVote }) => {
@@ -26,7 +26,7 @@ export const Candidate = ({ name, avatar, onVote }) => {
 };
 ```
 
-Této komponentě pak její rodič `HomePage` předával rovnou funkci `setPresident`, která nastaví stav `president` na jméno kandidáta.
+Této komponentě pak její rodič `HomePage` předává rovnou funkci `setPresident`, která nastaví stav `president` na jméno kandidáta.
 
 ```jsx
 <div className="candidate-list">

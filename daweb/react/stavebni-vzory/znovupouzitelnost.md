@@ -1,6 +1,6 @@
 ## Znovupoužitelnost
 
-Když vytváříme nějakou větší a složitější aplikaci, vždy se na maximum snažíme udržet kód přehledný a srozumitelný. Jedním z hlavních postupů, který pomáhají udržet kód aplikace v dobrém stavu je takzvaná ::term{cs=znovupoužitelnost en=reusability}. Znovupoužitelnost znamená, že kód, který napíšeme, můžeme použít na více místech v té samé aplikaci.
+Když vytváříme nějakou větší a složitější aplikaci, vždy se na maximum snažíme udržet kód přehledný a srozumitelný. Jedním z hlavních postupů, které pomáhají udržet kód aplikace v dobrém stavum je takzvaná :term{cs=znovupoužitelnost en=reusability}. Znovupoužitelnost znamená, že kód, který napíšeme, můžeme použít na více místech v té samé aplikaci.
 
 Princip znovupoužitelnosti využíváme vždy, když například píšeme nějakou funkci. Funkci píšeme většinou proto, aby šla použít na více různých místech. To nám pomáhá
 
@@ -8,7 +8,7 @@ Princip znovupoužitelnosti využíváme vždy, když například píšeme něja
 - zvýšit spolehlivost kódu, protože danou funkčnost máme implementovanou jen na jednom místě, kde se o ni staráme, testujeme ji a opravujeme chyby,
 - zvýšit přehlednost kódu, protože stavíme srozumitelné stavební bloky, které další programátoři mohou snadno pochopit a použít.
 
-Abychom měli hezky pořádek i v Reactovém, naučíme se vytvářet takzvané znovupoužitelné komponenty.
+Abychom měli hezky pořádek i v Reactovém kódu, naučíme se vytvářet takzvané znovupoužitelné komponenty.
 
 ## Upozornění
 

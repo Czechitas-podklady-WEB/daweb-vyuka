@@ -1,6 +1,6 @@
 ## Komunikace mezi sourozenci
 
-Komunikaci mezi sourozenci je potřeba ve chvíli, kdy máme si potřebují nějaká data vyměnit komponenty, které mají společného rodiče.
+Komunikace mezi sourozenci je potřeba ve chvíli, kdy si potřebují nějaká data vyměnit komponenty, které mají společného rodiče.
 
 Tuto situaci si opět ilustrujeme na našem příkladu s volbou nového prezidenta. V minulé lekci jsme skončili v situaci, kdy komponenta `Candidate` dokáže svému rodiči `HomePage` poslat jméno kandidáta pomocí callbacku `onVote`. Naše aplikace však byla napsaná stále dosti jednoduše. V realitě bychom nejspíše narazili na složitější situaci. Podívejme se na začátek komponenty `HomePage`.
 
@@ -41,7 +41,7 @@ export const Castle = ({ president }) => {
 };
 ```
 
-Naše komponenta `HomePage` pak může komponentu `Castle` použíjt jako svoje dítě.
+Naše komponenta `HomePage` pak může komponentu `Castle` použít jako svoje dítě.
 
 ```jsx
 return (
@@ -52,7 +52,7 @@ return (
 );
 ```
 
-Všimněte si, že komponenta `Candidate` a komponenta `Castle` jsou sourozenci. Jejich společným rodičem je komponenta `HomePage`. Komponenta `Candidate` už neposílá jméno kandidáta svému rodiči jako dříve. Nyní jej posílá svému sourozenci `Castle`. Všimněte si však, že tato komunikace probíhá skrze rodiče `HomePage`. Jakmile komponenta `Candidate` zavolá callback `handleVote`, tento uloží jméno prezidenta do stavu komponenty `App`. Tímto se vyvolá překreslení komponenty `Home`, čimž se hodnota stavu `president` předá do props komponenty `Castle`.
+Všimněte si, že komponenta `Candidate` a komponenta `Castle` jsou sourozenci. Jejich společným rodičem je komponenta `HomePage`. Komponenta `Candidate` už neposílá jméno kandidáta svému rodiči jako dříve. Nyní jej posílá svému sourozenci `Castle`. Všimněte si však, že tato komunikace probíhá skrze rodiče `HomePage`. Jakmile komponenta `Candidate` zavolá callback `handleVote`, tento callback uloží jméno prezidenta do stavu komponenty `App`. Tímto se vyvolá překreslení komponenty `Home`, čímž se hodnota stavu `president` předá do props komponenty `Castle`.
 
 Z této ukázky plyne pravidlo pro komunikaci mezi sourozenci:
 

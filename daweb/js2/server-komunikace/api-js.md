@@ -1,6 +1,6 @@
 ## Volání API z JavaScriptu
 
-Většina API funguje velmi přímočaře. Odešlete správně zformulovaný požadavek na nějakou adresu a server vám pošle odpověď s kýženými daty nejčastěji ve formátu JSON.
+Většina API funguje velmi přímočaře. Odešlete správně zformulovaný požadavek na nějakou adresu a server vám pošle odpověď s kýženými daty, nejčastěji ve formátu JSON.
 
 Pokud chceme tento proces provést v JavaScriptu, máme k dispozici velmi šikovnou metodu `fetch`. Můžeme si tedy založit nový program a rovnou zkusit napsat toto.
 
@@ -10,7 +10,7 @@ const response = fetch('https://api.sunrise-sunset.org/json?lat=50&lng=14.5');
 
 Je zde však drobný zádrhel. Servery jsou různě rychlé podle toho, jak jsou vytížené nebo jak jsou od nás geograficky daleko. Dat ke stažení také může být poměrně hodně. Všechny tyto faktory přispívají k tomu, že stahování dat může trvat nějakou chvíli, a my dopředu nevíme, jak dlouhá tato chvíle bude. Dokonce se může stát, že server data nakonec nepošle vůbec, protože je přetížený požadavky jiných klientů, nebo dokonce úplně spadnul a už není dostupný.
 
-Kdybychom tedy v našem programu na prvním řádku čekali, až funkce `fetch` skončí, mohli bychom si taky počkat notnou chvíli. Mezitím by náš program zcela zamrznul a uživatel by neměl ze stránky dobrý pocit. Aby se toto nestalo, funkce `fetch` je takzvaně :term{cs="asynchronní" en="asynchronous"}. V JavaScript pak máme speciální klíčové slovo `await`, které nám umožní počkat na výsledek takové funkce, aniž bychom tím zablokovali celý program. Správně tedy volání `fetch` vypadá takto.
+Kdybychom tedy v našem programu na prvním řádku čekali, až funkce `fetch` skončí, mohli bychom si taky počkat notnou chvíli. Mezitím by náš program zcela zamrznul a uživatel by neměl ze stránky dobrý pocit. Aby se toto nestalo, funkce `fetch` je takzvaně :term{cs="asynchronní" en="asynchronous"}. V JavaScriptu pak máme speciální klíčové slovo `await`, které nám umožní počkat na výsledek takové funkce, aniž bychom tím zablokovali celý program. Správně tedy volání `fetch` vypadá takto.
 
 ```js
 const response = await fetch(
@@ -18,7 +18,7 @@ const response = await fetch(
 );
 ```
 
-V parametru `response` máme uloženu odpověd ze serveru. Pokud z této odpovědi chceme získat JSON, stačí na něm zavolat metodu `json`. Čeká nás však podraz. Tato metoda je také asynchronní. Musíme tedy znova použít `await` abychom počkali, než se JSON z odpovědi vytvoří.
+V parametru `response` máme uloženou odpověd ze serveru. Pokud z této odpovědi chceme získat JSON, stačí na něm zavolat metodu `json`. Čeká nás však podraz. Tato metoda je také asynchronní. Musíme tedy znova použít `await` abychom počkali, než se JSON z odpovědi vytvoří.
 
 ```js
 const response = await fetch(

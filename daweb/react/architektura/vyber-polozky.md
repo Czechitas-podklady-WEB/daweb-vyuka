@@ -1,10 +1,10 @@
 ## Vzor: výběr položky
 
-Pokud zobrazujeme nějaký seznam, často chceme, aby v něm uživatel mohl jednu nebo více položek ozančit jaké vybrané. Každý z těcho případů, tedy vybírání pouze jedné položky a vybírání více položek, má svá Reactová úskalí.
+Pokud zobrazujeme nějaký seznam, často chceme, aby v něm uživatel mohl jednu nebo více položek označit jako vybrané. Každý z těchto případů, tedy vybírání pouze jedné položky a vybírání více položek, má svá Reactová úskalí.
 
 ### Výběr více položek
 
-V obou výše zmíněných případech budeme mít komponenty `List` a `ListItem` pro zobrazení seznamu a jednotlivých položek. Nejjednodušší případ nastává, když chceme umožni výběr několik položek a komponenta `List` nepotřebuje znát stav výběru. V tomto případě může mít každá komponenta `ListItem` vlastní stav, který bude obsahovat informaci o tom, zda je položka vybraná nebo ne.
+V obou výše zmíněných případech budeme mít komponenty `List` a `ListItem` pro zobrazení seznamu a jednotlivých položek. Nejjednodušší případ nastává, když chceme umožnit výběr několik položek a komponenta `List` nepotřebuje znát stav výběru. V tomto případě může mít každá komponenta `ListItem` vlastní stav, který bude obsahovat informaci o tom, zda je položka vybraná nebo ne.
 
 Diagram komponent pro tento případ vypadá takto:
 
@@ -35,7 +35,7 @@ Komponenta `List` může zůstat stejná jako při zobrazení seznamu bez výbě
 
 ### Výběr jedné položky
 
-Výběr jedné položky je kupodivu složitější. V tomto případě musí komponenta `List` znát stav výběru, aby zajistila, že lze vybrat pouze jednu položku. To zařídíme tak, že komponenta `List` bude mít stav `selectedId`, kde si bude pamatovat `id` vybrané položky. Musíme pak zajistit komunikaci od položky smeřem k rodiči, aby se komponenta `List` dozvěděla o změně výběru. Také musí komponenta `List` říct každé položce, zda je vybraná nebo ne.
+Výběr jedné položky je kupodivu složitější. V tomto případě musí komponenta `List` znát stav výběru, aby zajistila, že lze vybrat pouze jednu položku. To zařídíme tak, že komponenta `List` bude mít stav `selectedId`, kde si bude pamatovat `id` vybrané položky. Musíme pak zajistit komunikaci od položky smerem k rodiči, aby se komponenta `List` dozvěděla o změně výběru. Také musí komponenta `List` říct každé položce, zda je vybraná nebo ne.
 
 Nejdříve se podívejme na diagram komponent:
 

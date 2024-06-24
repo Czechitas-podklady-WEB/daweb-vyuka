@@ -21,7 +21,7 @@ Navážeme na předchozí cvičení a vytvoříme komponentu pro hlavičku naš�
    <Header user="Radovan Holátko" />
    ```
 
-   zobrazí se hlavičku s přihlášeným uživatelem. Pokud je naopak použita takto
+   zobrazí se hlavička s přihlášeným uživatelem. Pokud je naopak použita takto
 
    ```js
    <Header />

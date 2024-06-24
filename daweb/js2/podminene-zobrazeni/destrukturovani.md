@@ -1,6 +1,6 @@
 ## Destrukturování objektů
 
-Než se pustíme do podmíněného zobrazování, ukážeme si jednu užitěčnou techniku, která se nám bude hodit jak při fetchování dat ze serveru tak při práci s komponentami. Jedná se o takzvané :term{cs="destrukturování objektů" en="object destructuring"}.
+Než se pustíme do podmíněného zobrazování, ukážeme si jednu užitečnou techniku, která se nám bude hodit jak při fetchování dat ze serveru, tak při práci s komponentami. Jedná se o takzvané :term{cs="destrukturování objektů" en="object destructuring"}.
 
 Při stahování dat ze serveru ale i v mnoha jiných situacích se nám bude často stávat, že chceme z objektu rychle získat vícero hodnot a uložit je do různých proměnných, například takto:
 
@@ -62,7 +62,7 @@ const { password, length } = await response.json();
 
 ## Destrukturování props
 
-Destrukturování se také často použije při práci s komponentami. Mejmě pro příklad komponentu zobrazující čas.
+Destrukturování se také často použije při práci s komponentami. Mějme pro příklad komponentu zobrazující čas.
 
 ```jsx
 const Time = (props) => {

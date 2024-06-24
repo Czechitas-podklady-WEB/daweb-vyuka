@@ -58,7 +58,7 @@ export const Detail = ({ description, opened }) => {
 
 ### Zobrazení dat, která si komponenta stáhne sama
 
-V tomto případě budeme data stahovat v komponentě `Detail`. Budeme tedy pobřebovat `useEffect`, který bude záviset na prop `opened`. Když se `opened` změní na `true`, stáhneme data a uložíme je do stavu. Když se `opened` změní na `false`, pouze schováme detail.
+V tomto případě budeme data stahovat v komponentě `Detail`. Budeme tedy potřebovat `useEffect`, který bude záviset na prop `opened`. Když se `opened` změní na `true`, stáhneme data a uložíme je do stavu. Když se `opened` změní na `false`, pouze schováme detail.
 
 ::fig{src="assets/diagram05.png" size="60"}
 

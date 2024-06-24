@@ -2,7 +2,7 @@
 
 Po této lekci byste měli vědět a znát
 
-- jak používat digramy komponent pro návrh stromové struktury aplikace,
+- jak používat diagramy komponent pro návrh stromové struktury aplikace,
 - jak v diagramu komponent znázornit stavy, props a datové toky,
 - jak fungují základní stavební vzory:
   - zobrazení seznamu,

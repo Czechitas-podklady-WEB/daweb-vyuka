@@ -16,7 +16,7 @@ if (age >= 18) {
 Tato podmínka vypadá velmi přímočaře. Má však určité nevýhody.
 
 1. Jde o celkem dlouhý kód pro velmi jednoduchou věc.
-1. Musíme požívat proměnnou `let`, čemuž se snažíme co nejvíce vyhýbat.
+1. Musíme používat proměnnou `let`, čemuž se snažíme co nejvíce vyhýbat.
 
 Ternární operátor nám umožňuje tuto podmínku zapsat mnohem jednodušeji.
 

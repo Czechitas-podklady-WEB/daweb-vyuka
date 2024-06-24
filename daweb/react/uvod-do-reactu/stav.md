@@ -24,7 +24,7 @@ Po dlouhé cestě autem se nejspíš stav nádrže změní takto:
 tankLevel = 'almost empty';
 ```
 
-a pokud dlouho ignorujeme blikající kontrolku, můžeme se dostat do velmi napříjemného stavu
+a pokud dlouho ignorujeme blikající kontrolku, můžeme se dostat do velmi nepříjemného stavu
 
 ```js
 tankLevel = 'empty';
@@ -75,4 +75,4 @@ const Auto = () => {
 };
 ```
 
-Po zavolání `setTankLevel` se komponenta takzvaně _překreslí_, též se říká _přerenderuje_. To znamená, že se znovu vykreslí na stránce, tentokrát s novou hodnotu stavu. Takto můžeme zařídit, že se obnoví jen ta část stránky, která se opravdu změnila a nemusíme ji celou znovu načítat, jak jsme byli zvyklí v čistém JavaScriptu s JSX.
+Po zavolání `setTankLevel` se komponenta takzvaně _překreslí_, též se říká _přerenderuje_. To znamená, že se znovu vykreslí na stránce, tentokrát s novou hodnotou stavu. Takto můžeme zařídit, že se obnoví jen ta část stránky, která se opravdu změnila a nemusíme ji celou znovu načítat, jak jsme byli zvyklí v čistém JavaScriptu s JSX.

@@ -15,7 +15,7 @@ Vytvořme webovou stránku, která bude zobrazovat čas, kdy dnes vyšlo a kdy z
    ```
 
 1. Otevřete si ve VS Code vytvořenou složku `cviceni-vychod-zapad`.
-1. V souboru `index.js` pomocí funkce `fetch` a klíčovécho slova `await` získejte data z API na adrese
+1. V souboru `index.js` pomocí funkce `fetch` a klíčového slova `await` získejte data z API na adrese
    ```
    https://api.sunrise-sunset.org/json?lat=50&lng=14.5
    ```
