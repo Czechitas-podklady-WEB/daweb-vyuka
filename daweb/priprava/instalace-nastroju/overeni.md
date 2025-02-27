@@ -15,7 +15,7 @@ Postupujte dle následujicích kroků.
 
    ::fig[ukázka běhu ověření]{src=assets/overeni.gif}
 
-1. Pokud program zahlásí, že všechno proběhlo v pořádku, slavte úspěch. Pokud se cestou cokoliv pokazilo, napište do kanálu [#_organizační/#_otázky_a_odpovědi](https://discord.com/channels/1252875899066388481/1338852707082965042) na Discordu, lektoři a koučové s vámi problém vyřeší. Je dobré z terminálu do Discordu zkopírovat příkaz, který jste spustili, a celý jeho výstup. (Označte celý text myší, klikněte pravým tlačítkem myši a v kontextové nabídce najděte volbu pro kopírování. :kbd[Ctrl] + :kbd[C] v terminálu nebude fungovat.) Můžete poslat i snímek obrazovky, ale kopie textu hezky zformátovaná jako kód je lepší (jak na to se dozvíte o dvě kapitolky dál v [Sdílení kódu v textových zprávách](kod-ve-zpravach)).
+1. Pokud program zahlásí, že všechno proběhlo v pořádku, slavte úspěch. Pokud se cestou cokoliv pokazilo, napište do kanálu [#\_organizační/#\_otázky_a_odpovědi](https://discord.com/channels/1252875899066388481/1338852707082965042) na Discordu, lektoři a koučové s vámi problém vyřeší. Je dobré z terminálu do Discordu zkopírovat příkaz, který jste spustili, a celý jeho výstup. (Označte celý text myší, klikněte pravým tlačítkem myši a v kontextové nabídce najděte volbu pro kopírování. :kbd[Ctrl] + :kbd[C] v terminálu nebude fungovat.) Můžete poslat i snímek obrazovky, ale kopie textu hezky zformátovaná jako kód je lepší (jak na to se dozvíte o dvě kapitolky dál v [Sdílení kódu v textových zprávách](kod-ve-zpravach)).
 
    Například se může stát, že po spuštění výše uvedeného příkazu se program nebude na nic ptát, jen vypíše následující chybu a ukončí se:
 
