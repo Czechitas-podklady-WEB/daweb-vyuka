@@ -11,13 +11,13 @@ Postupujte dle následujicích kroků.
    npx -y @czechitas/nastaveni-nastroju
    ```
 
-   Tento příkaz spustí dotazník, který se vás zeptá na váš e-mail a jméno. E-mail zadejte ten, který jste použili při vytváření účtu na GitHubu.
+   Tento prográmek ověří, že jsou správně nainstalované předchozí nástroje, a pak spustí dotazník, který se vás zeptá na váš e-mail a jméno. E-mail zadejte ten, který jste použili při vytváření účtu na GitHubu. Program vám zadané jméno a e-mail nastaví do Gitu, abyste se tím nemuseli trápit později.
 
    ::fig[ukázka běhu ověření]{src=assets/overeni.gif}
 
-1. Pokud program zahlásí, že všechno proběhlo v pořádku, slavte úspěch. Pokud se cestou cokoliv pokazilo, napište do kanálu `#04_otazky-XXXX` na Slacku, lektoři a koučové s vámi problém vyřeší. Je dobré z terminálu do Slacku zkopírovat příkaz, který jste spustili, a celý jeho výstup. Můžete poslat i snímek obrazovky, ale kopie textu hezky zformátovaná jako kód je lepší (jak na to se dozvíte o dvě kapitolky dál v [Sdílení kódu v textových zprávách](kod-ve-zpravach)).
+1. Pokud program zahlásí, že všechno proběhlo v pořádku, slavte úspěch. Pokud se cestou cokoliv pokazilo, napište do kanálu [#_organizační/#_otázky_a_odpovědi](https://discord.com/channels/1252875899066388481/1338852707082965042) na Discordu, lektoři a koučové s vámi problém vyřeší. Je dobré z terminálu do Discordu zkopírovat příkaz, který jste spustili, a celý jeho výstup. (Označte celý text myší, klikněte pravým tlačítkem myši a v kontextové nabídce najděte volbu pro kopírování. :kbd[Ctrl] + :kbd[C] v terminálu nebude fungovat.) Můžete poslat i snímek obrazovky, ale kopie textu hezky zformátovaná jako kód je lepší (jak na to se dozvíte o dvě kapitolky dál v [Sdílení kódu v textových zprávách](kod-ve-zpravach)).
 
-   Například se může stát, že se po spuštění výše uvedeného příkazu program nebude na nic ptát, vypíše následující chybu a ukončí se:
+   Například se může stát, že po spuštění výše uvedeného příkazu se program nebude na nic ptát, jen vypíše následující chybu a ukončí se:
 
    ```
    npm ERR! code ENOENT
@@ -32,7 +32,7 @@ Postupujte dle následujicích kroků.
 
    ```
 
-   To je přesně ten případ, kdy se _něco pokazilo_ a napište na Slack do `#04_otazky-XXXX` 😎
+   To je přesně ten případ, kdy se _něco pokazilo_ a napište na Discord do `#_otázky_a_odpovědi_` 😎
 
 1. Pokud oveření dopadlo dobře, můžete terminál zavřít zadáním příkazu
    ```shell
