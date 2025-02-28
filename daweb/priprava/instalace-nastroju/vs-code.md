@@ -6,11 +6,13 @@ Visual Studio Code je textový editor specializovaný na psaní programů a výv
 
 Aktuální verzi editoru si nanistalujte podle instrukcí na [oficiálních stránkách](https://code.visualstudio.com). VS Code je dostupný pro všechny operační systémy.
 
-Pokud máte VS Code nainstalován z dřívějška, zkontrolujte, že máte nejnovější verzi. Z hlavního menu vyberete _Help_ → _About_, v dialogovém okně by se měla zobrazit verze 1.75.1 nebo novější. Pokud máte starší verzi, zvolte v menu _Help_ → _Check for Updates…_, VS Code na pozadí stáhne novou verzi a nabídne její aktualizaci.
+Pokud máte VS Code nainstalován z dřívějška, zkontrolujte, že máte nejnovější verzi. Z hlavního menu vyberete _Help_ → _About_ (na Windows a Linuxu) nebo _Code_ , → _About Visual Studio Code_ (na Macu), v dialogovém okně by se měla zobrazit verze 1.97.0 nebo novější. Pokud máte starší verzi, zvolte v menu _Help_ → _Check for Updates…_, VS Code na pozadí stáhne novou verzi a nabídne její aktualizaci.
 
-### VS Code - Extensions
+Poznámka na okraj: _Visual Studio Code_ a _Visual Studio_ jsou dva úplně jiné programy. My budeme používat pouze ten první, jehož název se často zkracuje jen na _VS Code_, ale nikdy ne na _Visual Studio_.
 
-VS Code lze přizpůsobit instalací různých rozšíření, které vývojářům poskytují nové možnosti a usnadňují jim práci. Rozšíření nainstalujete tak, že kliknete na ikonu rozšíření (_Extensions_) v levém panelu okna VS Code. Případně můžete zmáčknout klávesovou zkratku :kbd[Ctrl] + :kbd[Shift] + :kbd[X].
+### VS Code – Extensions
+
+VS Code lze přizpůsobit instalací různých rozšíření, které vývojářům poskytují nové možnosti a usnadňují jim práci. Rozšíření nainstalujete tak, že kliknete na ikonu rozšíření (_Extensions_) v levém panelu okna VS Code. Případně můžete zmáčknout klávesovou zkratku :kbd[Ctrl] + :kbd[Shift] + :kbd[X] (na Windows či Linuxu) nebo :kbd[Command] + :kbd[Shift] + :kbd[X] (na Macu).
 
 ::fig[Rozšíření]{src=assets/rozsireni.png size=50}
 
@@ -23,7 +25,7 @@ Pro webovou akademii doporučujeme použití následujících rozšíření.
 
 ### Nastavení VS Code
 
-Aby se nám s VS Code pracovalo dobře a zároveň nám všem fungovalo stejně, je potřeba provést základní nastavení. Z hlavního menu vyberete _View_ → _Command Palette..._ a do vyhledávacího políčka napište
+Aby se nám s VS Code pracovalo dobře a zároveň nám všem fungovalo stejně, je potřeba provést základní nastavení. Z hlavního menu vyberete _View_ → _Command Palette..._ (nebo klávesová zkratka :kbd[Ctrl] + :kbd[Shift] + :kbd[P] resp. :kbd[Command] + :kbd[Shift] + :kbd[P], tahle zkratka se bude hodit i později) a do vyhledávacího políčka napište
 
 ```
 Open Settings
