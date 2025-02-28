@@ -8,7 +8,7 @@ Aktuální verzi editoru si nanistalujte podle instrukcí na [oficiálních str�
 
 Pokud máte VS Code nainstalován z dřívějška, zkontrolujte, že máte nejnovější verzi. Z hlavního menu vyberete _Help_ → _About_ (na Windows a Linuxu) nebo _Code_ , → _About Visual Studio Code_ (na Macu), v dialogovém okně by se měla zobrazit verze 1.97.0 nebo novější. Pokud máte starší verzi, zvolte v menu _Help_ → _Check for Updates…_, VS Code na pozadí stáhne novou verzi a nabídne její aktualizaci.
 
-Poznámka na okraj: _Visual Studio Code_ a _Visual Studio_ jsou dva úplně jiné programy. My budeme používat pouze ten první, jehože názave se často zkracuje jen na _VS Code_, ale nikdy ne na _Visual Studio_.
+Poznámka na okraj: _Visual Studio Code_ a _Visual Studio_ jsou dva úplně jiné programy. My budeme používat pouze ten první, jehož název se často zkracuje jen na _VS Code_, ale nikdy ne na _Visual Studio_.
 
 ### VS Code – Extensions
 
