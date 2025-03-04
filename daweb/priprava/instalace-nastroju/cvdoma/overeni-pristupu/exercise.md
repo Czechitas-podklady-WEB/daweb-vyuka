@@ -10,4 +10,4 @@ context: nadoma
 
 1. Tlačítkem potvrďte vstoupení do skupiny.
 
-1. Ověřte, že máte přístup. Otevřete si [tuto stránku](/kurzy/daweb/priprava/overeni-pristupu/overeni). Pokud vám nehlásí chybu, máte úspěšně splněno.
+1. Ověřte, že máte přístup. Otevřete si [tuto stránku](/czechitas/daweb/priprava/overeni-pristupu/overeni). Pokud vám nehlásí chybu, máte úspěšně splněno.
