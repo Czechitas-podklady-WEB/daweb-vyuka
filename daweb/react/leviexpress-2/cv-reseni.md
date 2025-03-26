@@ -1,13 +1,4 @@
----
-title: Řešení
-lead: Příklad možného řešení projektu LeviExpress.
-demand: 3
-solutionAccess: protected
----
-
 ## Řešení
-
-:::solution
 
 Příklad možného řešení najdete v samostatném repository [leviexpress-reseni](https://github.com/Czechitas-podklady-WEB/leviexpress-reseni/). Toto řešení také běží na Netlify na adrese https://leviexpress.netlify.app/.
 
@@ -16,5 +7,3 @@ U každého commitu jsou v pravo tři tlačítka.
 Kliknutím na tlačítko s identifikátorem commitu (třeba `585c305`) se dostanete na stránku zobrazující změny, které přibyly v daném commitu.
 
 Kliknutím na tlačítko kódu `<>` se dostanete do režimu prohlížení repository (všech souborů), jak vypadaly v okamžiku vytvoření daného commitu.
-
-:::
