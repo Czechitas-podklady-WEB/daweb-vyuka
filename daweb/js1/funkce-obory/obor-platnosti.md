@@ -41,7 +41,7 @@ if (age < 18) {
 document.body.innerHTML += `<p>${remains}</p>`; // Zde vznikne chyba
 ```
 
-Naopak všechny bloky zanořené uvnitř bloku, ve kterém byla proměnná vytvořená, k této proměnné přistupovat mohou. To můžeme v našem kódu vidět v bloku `else if`, kde proměnnou `remains` normálně používáme, přestože je vytvořena o blok výše.
+Naopak všechny bloky zanořené uvnitř bloku, ve kterém byla proměnná vytvořená, k této proměnné přistupovat mohou. To můžeme v našem kódu vidět v bloku `else if`, kde proměnnou `remains` normálně používáme, přestože je vytvořena o blok výše.
 
 Pokud tedy JavaScript runtime narazí uvnitř nějakého bloku na něco, co vypadá jako jméno proměnné, zkusí tuto proměnnou najít uvnitř tohoto bloku. Pokud se mu to nezdaří, podívá se do bloku o patro výš. Takto postupně prochází všechny nadřazené bloky, dokud nenarazí na nejvyšší patro — takzvaný :term{cs="globální obor platnosti" en="global scope"}.
 
