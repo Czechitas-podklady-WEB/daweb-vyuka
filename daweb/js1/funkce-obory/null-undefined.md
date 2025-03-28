@@ -82,6 +82,6 @@ if (name === undefined) {
 }
 ```
 
-Podobně jako `null` je i ` undefined`` speciální hodnota, není to řetězec  `'undefined'`.
+Podobně jako `null` je i `undefined` speciální hodnota, není to řetězec  `'undefined'`.
 
 Hodnota `undefined` nám v budoucnu způsobí ještě hodně nepříjemností, je tedy dobré se již teď obrnit trpělivostí.
