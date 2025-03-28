@@ -6,15 +6,15 @@ lead: Vytvořte pokročilou zaokrouhlovací funkci.
 solutionAccess: protected
 ---
 
-Jak jistě znalci jazyka Python dobře vědí, funkce `round` v tomto jazyce zaokrouhluje malinko jinak, než jsme zvyklí. Pokud je desetinná část čísla přesně 0.5, Python zaokrouhluje k nejbližšímu sudému číslu. JavaScriptová funkce `Math.round` naopak provádí zaokrouhlování způsobem, na který jste zvyklí, tedy pro 0.5 vždy nahoru.
+Jak jistě znalci jazyka Python dobře vědí, funkce `round` v tomto jazyce zaokrouhluje malinko jinak, než jsme zvyklí. Pokud je desetinná část čísla přesně 0,5, Python zaokrouhluje k nejbližšímu sudému číslu. JavaScriptová funkce `Math.round` naopak provádí zaokrouhlování způsobem, na který jste zvyklí, tedy pro 0,5 vždy nahoru.
 
 (Zaokrouhlování v Pythonu je složitější na implementaci, ale zajišťuje, že zaokrouhlování je _spravedlivé_. Naše běžné zaokrouhlování mírně preferuje větší čísla, pokud zaokrouhlujeme jen kladná čísla – 0,5 je totiž přesně uprostřed, ale my ho vždy zaokrouhlujeme nahoru.)
 
 Někomu by se po po Pythonovském zaokrouhlování mohlo stýskat. Napište proto funkci jménem `round`, která bude zaokrouhlovat čísla na celé jednotky podle následujících pravidel:
 
-1. Pokud je desetinná část **menší než 0.5**, zaokrouhlujeme **dolů** (k nižším honotám).
-1. Pokud je desetinná část **větší než 0.5**, zaokrouhlujeme **nahoru** (k vyšším hodnotám).
-1. Pokud je desetinná část **přesně rovna 0.5**, zaokrouhlujeme **k sudému číslu**. Tedy například `3.5` se zaokrouhlí na `4`, naopak `2.5` se zaokrouhlí na `2`.
+1. Pokud je desetinná část **menší než 0,5**, zaokrouhlujeme **dolů** (k nižším honotám).
+1. Pokud je desetinná část **větší než 0,5**, zaokrouhlujeme **nahoru** (k vyšším hodnotám).
+1. Pokud je desetinná část **přesně rovna 0,5**, zaokrouhlujeme **k sudému číslu**. Tedy například `3,5` se zaokrouhlí na `4`, naopak `2,5` se zaokrouhlí na `2`.
 
 V tomto cvičení se vám může hodit funkce `Math.trunc`, která umí odříznout desetinnou část čísla.
 
@@ -22,7 +22,7 @@ V tomto cvičení se vám může hodit funkce `Math.trunc`, která umí odřízn
 
 Zajistěte, aby funkce správně fungovala i pro záporná čísla.
 
-Tedy například `-3.5` se zaokrouhlí na `-4`, naopak `-2.5` se zaokrouhlí na `-2`.
+Tedy například `-3,5` se zaokrouhlí na `-4`, naopak `-2,5` se zaokrouhlí na `-2`.
 
 :::solution
 
@@ -86,6 +86,6 @@ const round = (cislo) => {
 
 V reálných programech se to řeší tak, že se desetinná čísla neporovnávají na přesnou shodu (pomocí `===`), ale porovnává se, jestli je rozdíl dvou čísel dostatečně malý. Takže místo `cislo - Math.trunc(cislo) === -0.5` by se použila podmínka `Math.abs(cislo - Math.trunc(cislo) - 0.5) < 0.00001`.
 
-Pokud jde někde o peníze (nebo něco jiného důležitého, kde si nemůžeme dovolit nepřesnosti), nepoužívají tato běžná čísla. Používají se jiné typy, které umí pracovat s čísly přesně, za cenu, že jsou výrazně pomalejší. V JavaSCriptu se může např. použít typ [BigInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt) a částky se nebudou počítat v korunách, ale v halířích, a teprve na konci pro uživatele se převedou na koruny.
+Pokud jde někde o peníze (nebo něco jiného důležitého, kde si nemůžeme dovolit nepřesnosti), nepoužívají se tato běžná čísla. Používají se jiné typy, které umí pracovat s čísly přesně – za cenu, že jsou výrazně pomalejší. V JavaScriptu se může např. použít typ [BigInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt) a částky se nebudou počítat v korunách, ale v halířích, a teprve na konci pro uživatele se převedou na koruny.
 
 :::
