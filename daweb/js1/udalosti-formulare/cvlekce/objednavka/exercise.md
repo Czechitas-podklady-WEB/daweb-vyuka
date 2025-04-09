@@ -11,9 +11,11 @@ Podle instrukcí níže vytvořte jednoduchý formulář pro dokončení objedn�
 ::fig[Objednávka]{src=assets/objednavka.gif}
 
 1. Založte si HTML stránku s JavaScriptem. Můžete použít následující příkaz, který vytvoří novou složku `cviceni-objednavka`. Nezapomeňte si pak složku znovu otevřít ve VS Code:
-  ```sh
-  $ npx create-kodim-app@latest cviceni-objednavka html-css-js
-  ```
+
+```sh
+$ npx create-kodim-app@latest cviceni-objednavka html-css-js
+```
+
 1. Do souboru `style.css` vložte [styly pro formuláře](https://raw.githubusercontent.com/Czechitas-podklady-WEB/formulare/main/style.css) ať se nemusíte trápit se stylováním.
 1. Vytvořte formulář s textovým políčkem pro číslo platební karty. Dejte mu štítek „**Platební karta**“ a atribut `type` nastavte na `text`.
 1. Přidejte do formuláře rozbalovací nabídku se štítkem „**Doprava**“. Jako jednotlivé možnosti použijte prvky `option` s následujícím obsahem:
