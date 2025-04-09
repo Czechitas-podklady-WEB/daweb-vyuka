@@ -7,7 +7,7 @@ solutionAccess: protected
 
 Zobrazte příslušné informace o filmu na stránce s detailem.
 
-1. Protože stránka `film.html` obsluhuje datail všech filmů, budete si muset přes adresu stránky předat informaci, který konkrétní film si uživatel právě prohlíží. Využijeme toho, že na konec adresy můžeme přidat znak mřížky (`#`) a za něj libovolný text, který následně můžeme v JavaScriptu přečíst. (V tomto kroku jsou jen informace, nic neděláte.)
+1. Protože stránka `film.html` obsluhuje datail každého filmu, budete si muset přes adresu stránky předat informaci, který konkrétní film si uživatel právě prohlíží. Využijeme toho, že na konec adresy můžeme přidat znak mřížky (`#`) a za něj libovolný text, který následně můžeme v JavaScriptu přečíst. (V tomto kroku jsou jen informace, nic neděláte.)
 1. V souboru `seznam.js` v HTML kódu z předchozího úkolu (který zobrazuje jeden film v seznamu) přidejte do odkazu `href` za `film.html` znak mřížky (`#`) a za něj ještě unikátní identifikátor (`id`), který má každý film jiný. HTML by pak mělo vypadat zhruba takto:
 
    <!-- prettier-ignore -->
