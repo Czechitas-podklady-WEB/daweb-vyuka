@@ -15,7 +15,7 @@ Funkci komponenty vždy v souboru `index.jsx` exportujeme, abychom mohli kompone
 ```jsx
 import './style.css';
 
-const Header = (props) => {
+export const Header = (props) => {
   return (
     <header>
       <h1>{props.title}</h1>
