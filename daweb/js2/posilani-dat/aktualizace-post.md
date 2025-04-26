@@ -4,14 +4,6 @@ Vybaveni schopností změnit data na serveru požadavkem typu POST můžeme kone
 
 Podívejte se na [dokumentaci API](https://nakupy.czechitas.dev/doc/), které se používá v aplikaci Nákupy. Základní adresa API je `https://nakupy.czechitas.dev/api`.
 
-```js
-const response = await fetch('https://nakupy.czechitas.dev/api', {
-  headers: {
-    Authorization: 'lektor',
-  },
-});
-```
-
 ## Odeslání dat z formuláře
 
 V aplikaci máme připraven formulář pro přidání nové položky do seznamu. Pověsíme si na něj posluchač události `submit` a v něm zatím pouze získáme data z formuláře a vypíšeme je do konzole.
