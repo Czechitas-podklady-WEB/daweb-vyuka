@@ -1,6 +1,6 @@
 ## Hlasování
 
-Pojďme si posílání POST dotazů ukázat na reálném API. Na adrese [apps.kodim.cz/daweb/hlasovani](https://apps.kodim.cz/daweb/hlasovani) najdete webovou aplikaci, která nabízí několik otázek, o kterých mohou uživatelé hlasovat. Tato aplikace nabízí API, pomocí kterého je možné zahlasovat v jedné otázce. Dokumentaci k tomuto API najdete [zde](https://apps.kodim.cz/daweb/hlasovani/docs).
+Pojďme si posílání POST dotazů ukázat na reálném API. Na adrese [hlasovani.czechitas.dev](https://hlasovani.czechitas.dev) najdete webovou aplikaci, která nabízí několik otázek, o kterých mohou uživatelé hlasovat. Tato aplikace nabízí API, pomocí kterého je možné zahlasovat v jedné otázce. Dokumentaci k tomuto API najdete [zde](https://apps.kodim.cz/daweb/hlasovani/docs).
 
 Chceme-li v nějaké otázce hlasovat, musíme na správný endpoint odeslat POST požadavek, který řekne, pod jakým jménem a pro jakou volbu hlasujeme. Pokud chceme hlasovat v otázce s `id` 3, pošleme POST na endpoint `/api/poll/3`.
 
@@ -15,14 +15,14 @@ Na tento endpoint pošleme objekt, který říká, že uživatel hlasuje pro vol
 Zároveň chceme, aby server poznal, za jakého uživatele hlasujeme. Pošleme tedy hlavičku authorization s naším jménem, např. Zuzka. Pozor na to, že v HTTP hlavičkách nemohou být české znaky s diakritikou.
 
 ```js
-fetch('https://apps.kodim.cz/daweb/hlasovani/api/poll/3', {
+fetch('https://hlasovani.czechitas.dev/api/poll/3', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
-    Authorization: 'Zuzka',
   },
   body: JSON.stringify({
-    optionId: 2,
+    option: 2,
+    name: "Zuzka"
   }),
 });
 ```
