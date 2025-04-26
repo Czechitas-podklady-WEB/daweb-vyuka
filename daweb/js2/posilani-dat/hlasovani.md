@@ -22,7 +22,7 @@ fetch('https://hlasovani.czechitas.dev/api/poll/3', {
   },
   body: JSON.stringify({
     option: 2,
-    name: "Zuzka"
+    name: 'Zuzka',
   }),
 });
 ```
