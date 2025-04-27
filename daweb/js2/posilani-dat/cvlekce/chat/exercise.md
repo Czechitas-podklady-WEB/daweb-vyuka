@@ -38,6 +38,7 @@ V tomto cvičení si vytvoříte vlastní chatovací aplikaci.
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({
+            name: "Lucie",
             message: 'Ahoj. Toto je moje první zpráva.',
           }),
         });
