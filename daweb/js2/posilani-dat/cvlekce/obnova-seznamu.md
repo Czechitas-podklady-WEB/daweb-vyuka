@@ -10,8 +10,9 @@ Pokračujte v aplikaci z předchozího příkladu. Rozšíříme náš nákupní
 
 Postup je velmi podobný jako v předchozím cvičení.
 
-1. Do aplikace přidejte tlačítko _Nakoupeno_.
-1. Založte `async` posluchač události `handleDone` a vyzkoušejte, že se zavolá při stisknutí tlačítka.
+1. V komponentě `ShopItem` je tlačítko, které zobrazuje stav nakoupení a zároveň umožňuje označit položku jako nakoupenou.
+1. V hlavní stránce vytvořte posluchač události `handleDone` a připojte jej na všechna tlačítka s třídou `btn-tick` – podobně, jako jste napojily `handleDelete`.
+1. Založte `async` posluchač události `handleDone` a vyzkoušejte, že se zavolá při stisknutí prázdného kolečka.
 1. V obsluze události pošlete autentizovaný `PATCH` požadavek na stejnou adresu jako v předchozím příkladu
    ```
    https://nakupy.czechitas.dev/api/:day/:id
@@ -23,3 +24,7 @@ Postup je velmi podobný jako v předchozím cvičení.
    }
    ```
 1. Opět vyzkoušejte, že aplikace funguje, a že můžete označit položku nákupu jako zakoupenou.
+
+:::solution
+Kompletní řešení naleznete v branchi [reseni](https://github.com/Czechitas-podklady-WEB/ukazka-nakupy-fetch/tree/reseni).
+:::

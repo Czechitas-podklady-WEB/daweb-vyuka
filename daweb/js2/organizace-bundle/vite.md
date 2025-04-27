@@ -5,7 +5,7 @@ Ve chvili, kdy máme založený projekt, budeme potřebovat nástroj, který vez
 Nejdříve musíme do našeho projektu Vite nainstalovat. To provedeme příkazem
 
 ```sh
-$ npm install -D vite glob
+$ npm install -D vite
 ```
 
 Po tomto zásahu (a po přidání sekce `"scripts"`) bude náš `package.json` vypadat následovně:
@@ -23,8 +23,7 @@ Po tomto zásahu (a po přidání sekce `"scripts"`) bude náš `package.json` v
     "validator": "^13.5.2"
   },
   "devDependencies": {
-    "vite": "^4.4.11",
-    "glob": "^10.3.0"
+    "vite": "^6.2.6"
   }
 }
 ```
@@ -69,7 +68,6 @@ Do souboru `index.html` vložíme náš `index.js` tak, jak jsme zvyklí.
 Nyní použijeme Vite k sestavení výsledné aplikace. Aby se náš projekt sestavil, potřebujeme Vite správně nakonfigurovat. V projektu `muj-projekt` vytvoříme soubor `vite.config.js` s tímto obsahem.
 
 ```js
-import { glob } from 'glob';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
@@ -82,10 +80,10 @@ export default defineConfig({
     outDir: '../../dist',
     emptyOutDir: true,
     target: 'es2022',
-    rollupOptions: {
-      input: glob.sync('src/pages/**/*.html'),
+    inputGlobPatterns: ['src/pages/**/*.html'],
+    modulePreload: {
+      resolveDependencies: false,
     },
-    modulePreload: false,
   },
 });
 ```

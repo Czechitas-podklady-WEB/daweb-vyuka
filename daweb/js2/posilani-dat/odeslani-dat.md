@@ -14,7 +14,6 @@ fetch('https://it-seznamka.cz/me/profile', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
-    Authorization: 'petr.laskavy',
   },
   body: JSON.stringify({
     name: 'Petr Laskavý',
