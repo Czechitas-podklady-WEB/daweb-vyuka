@@ -15,7 +15,7 @@ Naše aplikace _Nákupy_ ještě neumí mazat položky seznamu. Do aplikace při
 1. Udělejte posluchač rovnou `async`, ať jej máme připravený na volání `fetch`.
 1. V posluchači si načtěte id položky nákupního seznamu uložené v atributu `data-id`. Získáte ho z property `dataset` na elementu tlačítka:
    ```javascript
-   const id = event.target.dataset.id
+   const id = event.target.dataset.id;
    ```
 1. Nyní je potřeba odeslat požadavek na server. Zavolejte funkci `fetch`, která pošle požadavek metodou `DELETE` na adresu:
    ```
