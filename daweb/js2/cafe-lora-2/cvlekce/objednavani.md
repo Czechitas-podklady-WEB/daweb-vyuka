@@ -15,8 +15,8 @@ context: lekce
     [{ op: 'replace', path: '/ordered', value: true }];
     ```
 
-    Proveďte tento požadavek pomocí `fetch` a zkontrolujte, že se vám v konzoli vypíše odpověď od API. Jakmile je váš kód funkční, proveďte refresh stránky, aby se vám zobrazila aktuální data.
-
-1.  Vyzkoušejte si na stránce, že objednávání nápojů funguje.
+    Proveďte tento požadavek pomocí `fetch` a zkontrolujte, že se vám v konzoli vypíše odpověď od API.
+1. Když ověříte, že se správně volá API, doplňte na konec funkce pro objednání kód, který obnoví stránku (`window.location.reload()`).
+1. Vyzkoušejte, že se po kliknutí na nápoj stránka obnoví a nápoj bude zobrazen jako objednaný.
 1.  **Bonus**: Pokud vám toto cvičení přišlo jako pohodička, zkuste si zprovoznit zrušení objednávky. Stačí upravit vlastnost `value` v body požadavku, aby místo `true` posílala opak předchozího stavu nápoje. Přístup k `ordered` stavu nápoje máte díky datům z předchozího GET requestu. Budete muset v poli se všemi nápoji najít nápoj, který odpovídá `id` použitého formuláře.
 1.  Commitněte váš kód se zodpovědně napsanou commit zprávou a pushněte do vzdáleného repozitáře.
