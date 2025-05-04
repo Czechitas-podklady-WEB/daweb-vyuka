@@ -19,5 +19,5 @@ context: lekce
 
 1.  Když ověříte, že se správně volá API, doplňte na konec funkce pro objednání kód, který obnoví stránku (`window.location.reload()`).
 1.  Vyzkoušejte, že se po kliknutí na nápoj stránka obnoví a nápoj bude zobrazen jako objednaný.
-1.  **Bonus**: Pokud vám toto cvičení přišlo jako pohodička, zkuste si zprovoznit zrušení objednávky. Stačí upravit vlastnost `value` v body požadavku, aby místo `true` posílala opak předchozího stavu nápoje. Přístup k `ordered` stavu nápoje máte díky datům z předchozího GET requestu. Budete muset v poli se všemi nápoji najít nápoj, který odpovídá `id` použitého formuláře.
+1.  **Bonus**: Pokud vám toto cvičení přišlo jako pohodička, zkuste si zprovoznit zrušení objednávky. Stačí upravit vlastnost `value` v body požadavku, aby místo `true` posílala opak předchozího stavu nápoje. Potřebujete k tomu stav `ordered` – ten už máte v komponentě `Drink` v props. Uložte si jej do formuláře do atributu `data-ordered`, podobně jako už tam máte atribut `data-id`. V ovladači události pak hodnotu přečtete z `dataset.ordered`. Pozor na to, že vše uložené do `data-*` atributů se převádí na `string`.
 1.  Commitněte váš kód se zodpovědně napsanou commit zprávou a pushněte do vzdáleného repozitáře.
