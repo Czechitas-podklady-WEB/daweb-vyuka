@@ -26,7 +26,7 @@ správně) říká _merge_.
 
 - _fast-forward only_ `git pull --ff-only`
 - _fast-forward_ `git pull --ff`
-- _merge_ `git pull --no-ff`
+- _merge_ `git pull --no-rebase`
 - _rebase_ `git rebase <...>`
 
 Každý způsob se dá použít v různých situacích.
