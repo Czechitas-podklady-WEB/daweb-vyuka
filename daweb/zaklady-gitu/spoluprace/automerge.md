@@ -1,6 +1,6 @@
 ## Scénář 2: Automatický merge
 
-Pamatujete si ještě z první lekce, že Git je tzv. "decentralizovaný"?
+Pamatujete si ještě z první lekce, že Git je tzv. „decentralizovaný“?
 
 To znamená, že každý vývojář má u sebe plnohodnotný repozitář. V drtivé
 většině případů pak existuje ještě jeden hlavní (také plnohodnotný) repozitář,
@@ -9,7 +9,7 @@ na Githubu.
 
 Každý vývojář pracuje na svém repozitáři, nezávisle na těch ostatních. Když na
 jednom projektu pracuje víc lidí, Git musí umět jejich práci následně nějak
-konsolidovat do jednoho "stavu". Existuje několik způsobů, jak toho dosáhnout
+konsolidovat do jednoho „stavu“. Existuje několik způsobů, jak toho dosáhnout,
 a vždycky záleží na tom, v jakém stavu se zrovna nacházíme.
 
 Nejběžnější způsob je využití větví, kde na každé větvi pracuje jen omezený
@@ -31,7 +31,7 @@ správně) říká _merge_.
 
 Každý způsob se dá použít v různých situacích.
 
-> "Počkej, neříkal jsi _tři_ způsoby?"
+> „Počkej, neříkal jsi _tři_ způsoby?“
 
 Ano, říkal :) _fast-forward_ je hybrid mezi `--ff-only` a `--no-ff`.
 
@@ -39,4 +39,4 @@ Ukážeme si jen první tři body. _Rebase_ je sice velmi mocný a oblíbený, a
 složitý na pochopení, a vystačil by na samostatnou lekci.
 
 Proč se scénář jmenuje _automatický_ merge? Protože Git všechno udělá za nás!
-Tedy, pokud může... Pokud ne, nastane _konflikt_. Ten si ukážeme v dalším scénáři.
+Tedy, pokud může… Pokud ne, nastane _konflikt_. Ten si ukážeme v dalším scénáři.
