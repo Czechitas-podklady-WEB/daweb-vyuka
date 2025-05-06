@@ -5,7 +5,7 @@ Funkci `useState` můžeme použít v komponentě vícekrát pro několik různ�
 Proměnnou pro stav si můžete pojmenovat libovolně. Je však zvykem, že funkce pro změnu stavu se pojmenovává s prefixem `set` a názvem stavu s prvním velkým písmenem podle pravidel camelCase. Například pro stavovou proměnnou `jeVesely` by se funkce pro změnu pojmenovala `setJeVesely`, pro `teplota` pak `setTeplota` apod.
 
 ```js
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const HomePage = () => {
   const [pocet, setPocet] = useState(0);
