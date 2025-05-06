@@ -33,7 +33,7 @@ tankLevel = 'empty';
 Takto bychom mohli se stavem pracovat v čistém JavaScriptu. React však pro práci se stavem nabízí speciální konstrukci. Pokud bychom chtěli například vytvořit komponentu `Auto`, která pracuje se stavem nádrže, napsali bychom toto:
 
 ```js
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const Auto = () => {
   const [tankLevel, setTankLevel] = useState('full');
@@ -57,7 +57,7 @@ Tím spustíme přerenderování komponenty s novým stavem, kde v `tankLevel` b
 Nejčastěji měníme stav komponenty v reakci na nějakou událost. Například v komponentě `Auto` můžeme mít tlačítko, které při kliknutí sníží stav nádrže, což sice není příliš realistické, ale pro ilustraci nám to zatím bude stačit.
 
 ```js
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const Auto = () => {
   const [tankLevel, setTankLevel] = useState('full');
