@@ -19,5 +19,5 @@ V tomto cvičení vdechneme život komponentě, která umožňuje hodnocení pom
 Nyní by mělo být možné kliknutím na hvězdičky nastavit správné hodnocení. Hvězdičky se nechovají úplně správně, protože bychom chtěli, aby se při kliknutí na hvězdičku rozsvítily všechny hvězdičky s nižším číslem. To si však necháme na další cvičení.
 
 :::solution
-Řešení je v repository cvičení společně s nálsedujícím cvičením v branchi [reseni](https://github.com/Czechitas-podklady-WEB/cviceni-hodnoceni/tree/reseni).
+Řešení je spolu s řešením následujícího cvičení v branchi [reseni](https://github.com/Czechitas-podklady-WEB/cviceni-hodnoceni/tree/reseni).
 :::

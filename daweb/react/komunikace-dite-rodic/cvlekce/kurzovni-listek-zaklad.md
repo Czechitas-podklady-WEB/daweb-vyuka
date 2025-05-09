@@ -15,5 +15,5 @@ Rozhodně není od věci procvičit si také komunikaci směrem od rodiče k dí
 1. Upravte komponentu `Rate` tak, aby zobrazila správný kurz podle připravených dat v objektu `currencies`. Výsledný kurz zobrazte v elementu `.rate__value`.
 
 :::solution
-Řešení je spolu s řešeném následujícího cvičení v repository cvičení v branchi [reseni](https://github.com/Czechitas-podklady-WEB/cviceni-currencies/tree/reseni).
+Řešení je spolu s řešením následujícího cvičení v branchi [reseni](https://github.com/Czechitas-podklady-WEB/cviceni-currencies/tree/reseni).
 :::
