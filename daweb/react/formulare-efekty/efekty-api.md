@@ -10,9 +10,9 @@ const HomePage = () => {
 
   useEffect(() => {
     const fetchName = async () => {
-      const response = await fetch('https://nameday.abalin.net/api/V1/today');
-      const data = await response.json();
-      setName(data.nameday.cz);
+      const response = await fetch('https://nameday.abalin.net/api/V2/today');
+      const responseData = await response.json();
+      setName(responseData.data.cz);
     };
 
     fetchName();
@@ -31,9 +31,9 @@ Povšimněte si funkce `fetchName`, kterou jsme si vytvořili přímo uvnitř ef
 
 ```js
 useEffect(async () => {
-  const response = await fetch('https://nameday.abalin.net/api/V1/today');
-  const data = await response.json();
-  setName(data.nameday.cz);
+  const response = await fetch('https://nameday.abalin.net/api/V2/today');
+  const responseData = await response.json();
+  setName(responseData.data.cz);
 }, []);
 ```
 

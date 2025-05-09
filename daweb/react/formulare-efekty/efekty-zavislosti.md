@@ -25,10 +25,10 @@ export const HomePage = () => {
     const fetchName = async () => {
       const [rok, mesic, den] = datum.split("-");
       const response = await fetch(
-        `https://nameday.abalin.net/api/V1/getdate?day=${den}&month=${mesic}`
+        `https://nameday.abalin.net/api/V2/date?day=${den}&month=${mesic}`
       );
-      const data = await response.json();
-      setName(data.nameday.cz);
+      const responseData = await response.json();
+      setName(responseData.data.cz);
     };
 
     fetchName();

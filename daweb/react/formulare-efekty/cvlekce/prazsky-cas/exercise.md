@@ -21,10 +21,10 @@ solutionAccess: protected
 1. Upravte efekt tak, aby pomocí volání `fetch` získal aktuální datum a čas pro časovou zónu `Europe/Prague`. Hodnotu získáte na API endpointu
 
    ```text
-   https://worldtimeapi.org/api/timezone/Europe/Prague
+   https://timeapi.io/api/time/current/zone?timeZone=Europe/Prague
    ```
 
-   pod položkou `datetime`. Získanou hodnotu uložte do stavu a vyzkoušejte, že vaše aplikace funguje.
+   pod položkou `dateTime`. Získanou hodnotu uložte do stavu a vyzkoušejte, že vaše aplikace funguje.
 
 :::solution
 
