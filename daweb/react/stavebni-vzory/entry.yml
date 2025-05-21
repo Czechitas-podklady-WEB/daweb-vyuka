@@ -4,6 +4,7 @@ access: protected
 sections:
   - detail-polozky
   - detail-seznamu
+  - cv-master-detail
   - znovupouzitelnost
   - children-prop
   - cv-znovupouzitelnost
