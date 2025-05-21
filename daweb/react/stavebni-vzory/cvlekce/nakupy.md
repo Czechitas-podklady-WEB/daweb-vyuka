@@ -1,6 +1,6 @@
 ---
 title: Nákupy 2.0
-lead: Vytvořte znovupoužitelnou komponentu `Card` s nadpisem a popisem a dalšími prvky.
+lead: Vytvořte aplikaci pro zobrazení nákupního seznamu ve formě seznam–detail.
 demand: 3
 context: lekce
 solutionAccess: protected
