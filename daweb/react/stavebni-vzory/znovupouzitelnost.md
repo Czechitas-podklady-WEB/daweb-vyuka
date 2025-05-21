@@ -1,6 +1,6 @@
 ## Znovupoužitelnost
 
-Když vytváříme nějakou větší a složitější aplikaci, vždy se na maximum snažíme udržet kód přehledný a srozumitelný. Jedním z hlavních postupů, které pomáhají udržet kód aplikace v dobrém stavum je takzvaná :term{cs=znovupoužitelnost en=reusability}. Znovupoužitelnost znamená, že kód, který napíšeme, můžeme použít na více místech v té samé aplikaci.
+Když vytváříme nějakou větší a složitější aplikaci, vždy se na maximum snažíme udržet kód přehledný a srozumitelný. Jedním z hlavních postupů, které pomáhají udržet kód aplikace v dobrém stavu, je takzvaná :term{cs=znovupoužitelnost en=reusability}. Znovupoužitelnost znamená, že kód, který napíšeme, můžeme použít na více místech v té samé aplikaci.
 
 Princip znovupoužitelnosti využíváme vždy, když například píšeme nějakou funkci. Funkci píšeme většinou proto, aby šla použít na více různých místech. To nám pomáhá
 
