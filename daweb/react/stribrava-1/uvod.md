@@ -41,7 +41,7 @@ Majitelka repository ovšem nemusí čekat, až se parťačka připojí, a můž
 Nejprve si známým příkazem `git clone …` naklonuje projekt k sobě na počítač.
 Následně si projekt otevře ve VS Code – pozor, je potřeba otevřít složku `projekt-Hotel-Stribrava`, ne složku nad ní`.
 
-V projektu otevřeném ve VS Code uvidíte jediný souboru `README.md`.
+V projektu otevřeném ve VS Code uvidíte jen jeden soubor `README.md`.
 Ten mimochodem slouží jako popis repository – zobrazuje se na GitHubu na úvodní stránce repository.
 Později tedy do tohoto souboru můžete přidat popis projektu, aby návštěvníci vašeho repository věděli, o co se jedná, a třeba také to, jak si projekt u sebe spustit.
 Soubor `README.md` je psán v jazyce Markdown.
