@@ -15,7 +15,7 @@ Ještě před sobotní lekcí si ve dvojicích (v týmech) připravte repository
 
 Repository na GitHubu si vytvoří jen jedna z vás, druhá bude pracovat s repository té první.
 Pokud bude druhá z vás chtít repository mít ve svém účtu na GitHubu (minimálně u závěrečného projektu asi bude chtít), může později udělat _fork_ repository, čímž si vytvoří klon ve svém vlastním GitHub účtu.
-Doporučuji ale form udělat až po skončení práce, aby se vám dvě repository na GitHubu nepletla.
+Doporučuji ale fork udělat až po skončení práce, aby se vám dvě repository na GitHubu nepletla.
 
 #### Vytvoření repository
 Jedna z vás si vytvoří [nové repository](https://github.com/new) na GitHubu.
