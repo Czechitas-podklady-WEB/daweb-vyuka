@@ -18,16 +18,18 @@ Pokud bude druhá z vás chtít repository mít ve svém účtu na GitHubu (mini
 Doporučuji ale fork udělat až po skončení práce, aby se vám dvě repository na GitHubu nepletla.
 
 #### Vytvoření repository
+
 Jedna z vás si vytvoří [nové repository](https://github.com/new) na GitHubu.
 Repository nazvěte třeba `projekt-Hotel-Stribrava`.
 Repository vytvořte jako veřejné `Public`, aby do něj viděli i koučové (a v případě závěrečného projektu také porota).
 (Pozor na to, že dodatečné změny mezi `Public` a `Private` nebo opačně jsou na GitHubu velmi problematické.)
 Do _Description_ je zvykem psát stručný popis projektu, to ale můžete změnit později.
 
-V sekci _Initialize this repository with_ na stránce pro vytvoření repository zvolte _Add a README file_, v dalších dvou výběrech _Add .gitignore_ a _Choose a license_ ponechte  výchozí nastavení **None**.
+V sekci _Initialize this repository with_ na stránce pro vytvoření repository zvolte _Add a README file_, v dalších dvou výběrech _Add .gitignore_ a _Choose a license_ ponechte výchozí nastavení **None**.
 Tím, že necháte vytvořit soubor _README_, se vytvoří plnohodnotné repository, které jde rovnou naklonovat.
 
 #### Přizvání kolegyně k repository
+
 V tuto chvíli můžete rovnou ke svému projektu přizvat vaši parťačku.
 Jak už víte z lekce Git 2, pozvání spolupracovníka k projektu chvilku trvá, tak pozvánku pošleme hned – zatímco budeme dokončovat přípravu projektu, může si e-mail s pozvánkou někde putovat.
 
@@ -37,6 +39,7 @@ Až vaší parťačce přijde e-mail s pozvánkou, pozvánku musí akceptovat a 
 Repository si však ještě nebude klonovat, s tím počká až na dokončení přípravy projektu.
 
 #### Naklonování projektu
+
 Majitelka repository ovšem nemusí čekat, až se parťačka připojí, a může mezi tím pokračovat v přípravě projektu.
 Nejprve si známým příkazem `git clone …` naklonuje projekt k sobě na počítač.
 Následně si projekt otevře ve VS Code – pozor, je potřeba otevřít složku `projekt-Hotel-Stribrava`, ne složku nad ní`.
@@ -47,6 +50,7 @@ Později tedy do tohoto souboru můžete přidat popis projektu, aby návštěvn
 Soubor `README.md` je psán v jazyce Markdown.
 
 #### Vytvoření úvodní struktury projektu
+
 Nyní konečně nastal čas vytvořit úvodní strukturu projektu.
 Zkontrolujte, že jste opravdu ve složce `projekt-Hotel-Stribrava` a v terminálu spusťte následující příkaz:
 
@@ -76,6 +80,7 @@ git push
 ```
 
 #### Zprovoznění projektu u kolegyně
+
 Doufejme, že kolegyni mezi tím přišel e-mail s pozvánkou a získala přístup k repository.
 Nyní si tedy repository pomocí `git clone …` naklonuje i ona.
 Po naklonování nebude mít repository jen s jedním `README.md` souborem, ale bude tam už založená základní struktura projektu.
