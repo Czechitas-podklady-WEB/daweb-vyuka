@@ -31,8 +31,7 @@ deno run --allow-read --allow-write --allow-net nazev-skriptu.js
 Je možné povolit i přístup jen ke konkrétním souborům, síťovou komunikaci ke konkrétním serverům apod.
 
 Aby nebylo nutné stále dokola psát dlouhé příkazy pro spuštění skriptu, je možné je zapsat do sekce `tasks` v souboru `deno.json` (viz níže).
-Jednotlivé *tasky* se pak spouští příkazem `deno task <nazev-tasku>`.
-
+Jednotlivé _tasky_ se pak spouští příkazem `deno task <nazev-tasku>`.
 
 ## Konfigurace projektu
 
