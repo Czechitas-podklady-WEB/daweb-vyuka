@@ -23,7 +23,7 @@ V Deno KV by to tedy znamenalo na začátek pole, které tvoří klíč, vložit
 
 Jako hodnoty je možné do Deno KV ukládat běžné JavaScriptové hodnoty (objekty, pole, `string`, `number`, `boolean`, `null` a další).
 
-### Příklad – nákupní seznam
+## Příklad – nákupní seznam
 
 Příklad je jednoduchý webový server napsaný pomocí Hono, který umožňuje ukládat nákupní seznam do Deno KV.
 Příklad podporuje základní CRUD operace, tedy **C**reate, **R**ead, **U**pdate a **D**elete.
