@@ -5,7 +5,7 @@ Umožňuje také spouštět testy, používat JSX, používat mnoho API známýc
 Deno je moderní a bezpečnější alternativa k Node.js, od stejného autora – vzniklo tak, že si původní autor Node.js po 10 letech řekl: „Kdybych dnes vytvářel Node.js znovu, co bych udělal lépe?“
 Deno je zároveň kompatibilní s `node/npm`, jeho kompatibilita se stále zlepšuje a mnoho projektů a knihoven vytvořených původně pro `node` funguje i s Deno.
 
-### Instalace
+## Instalace
 
 Postupujte podle návodu na [úvodní stránce Deno](https://deno.com).
 Příkaz pro **Windows** je nutné spustit v **PowerShellu** (ne v CMD).
@@ -25,7 +25,7 @@ deno run --allow-read --allow-write --allow-net nazev-skriptu.js
 Je možné povolit i přístup jen ke konkrétním souborům, síťovou komunikaci ke konkrétním serverům apod.
 
 
-### Konfigurace projektu
+## Konfigurace projektu
 
 Místo `package.json`, který používá `npm`, používá Deno vlastní konfigurační soubor `deno.json`.
 
