@@ -2,4 +2,7 @@ title: Úvod do backendu
 lead: Jak si napsat jednoduchý backend pomocí Deno
 access: protected
 sections:
- - ukazkovy-projekt
+ - zaklady-deno
+ - server-hono
+ - deno-kv
+ - deno-deploy
