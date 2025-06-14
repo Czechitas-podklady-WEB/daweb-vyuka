@@ -3,7 +3,7 @@
 [Deno KV](https://docs.deno.com/deploy/kv/manual/) je key-value databáze, je tedy podobná např. LocalStorage/SessionStorage ve webových prohlížečích.
 Podstatné je, že je možné Deno KV používat v rámci Deno Deploy, takže pro ukládání dat již není potřeba žádná další služba nebo server.
 
-Pro lokální vývoj je stále označená jako *unstable*, ale není problém ji používat.
+Pro lokální vývoj je stále označená jako _unstable_, ale není problém ji používat.
 Je však nutné při spuštění skriptu použití Deno KV explicitně povolit příznakem `--unstable-kv`.
 
 Key-value databáze ukládá data jako dvojice klíč-hodnota.
@@ -28,11 +28,10 @@ Jako hodnoty je možné do Deno KV ukládat běžné JavaScriptové hodnoty (obj
 Příklad je jednoduchý webový server napsaný pomocí Hono, který umožňuje ukládat nákupní seznam do Deno KV.
 Příklad podporuje základní CRUD operace, tedy **C**reate, **R**ead, **U**pdate a **D**elete.
 
-
 ```javascript
-import { Hono } from "@hono/hono";
-import { cors } from "@hono/hono/cors";
-import { ulid } from "@std/ulid";
+import { Hono } from '@hono/hono';
+import { cors } from '@hono/hono/cors';
+import { ulid } from '@std/ulid';
 
 const generateId = () => ulid();
 const db2item = (entry) => ({ id: entry.key[1], ...entry.value });
@@ -46,51 +45,50 @@ const kv = await Deno.openKv();
 const app = new Hono();
 app.use(cors());
 
-app.post("/api/nakupni-seznam", async (c) => {
+app.post('/api/nakupni-seznam', async (c) => {
   const id = generateId();
   const polozka = await c.req.json();
-  const result = await kv.set(["nakupni-seznam", id], polozka);
+  const result = await kv.set(['nakupni-seznam', id], polozka);
   return c.json(result, 201);
 });
 
-app.get("/api/nakupni-seznam/:id", async (c) => {
-  const id = c.req.param("id");
-  const entry = await kv.get(["nakupni-seznam", id]);
+app.get('/api/nakupni-seznam/:id', async (c) => {
+  const id = c.req.param('id');
+  const entry = await kv.get(['nakupni-seznam', id]);
   const result = db2item(entry);
   return c.json(result);
 });
 
-app.put("/api/nakupni-seznam/:id", async (c) => {
-  const id = c.req.param("id");
+app.put('/api/nakupni-seznam/:id', async (c) => {
+  const id = c.req.param('id');
   const polozka = await c.req.json();
   const update = item2db(polozka);
-  const result = await kv.set(["nakupni-seznam", id], update);
+  const result = await kv.set(['nakupni-seznam', id], update);
   return c.json(result);
 });
 
-app.patch("/api/nakupni-seznam/:id", async (c) => {
-  const id = c.req.param("id");
+app.patch('/api/nakupni-seznam/:id', async (c) => {
+  const id = c.req.param('id');
   const polozka = await c.req.json();
   const patch = item2db(polozka);
-  const entry = await kv.get(["nakupni-seznam", id]);
+  const entry = await kv.get(['nakupni-seznam', id]);
   const update = Object.assign(entry.value, patch);
-  const result = await kv.set(["nakupni-seznam", id], update);
+  const result = await kv.set(['nakupni-seznam', id], update);
   return c.json(result);
 });
 
-app.delete("/api/nakupni-seznam/:id", async (c) => {
-  const id = c.req.param("id");
-  await kv.delete(["nakupni-seznam", id]);
+app.delete('/api/nakupni-seznam/:id', async (c) => {
+  const id = c.req.param('id');
+  await kv.delete(['nakupni-seznam', id]);
   return c.body(null, 204);
 });
 
-app.get("/api/nakupni-seznam", async (c) => {
-  const entries = kv.list({ prefix: ["nakupni-seznam"] });
+app.get('/api/nakupni-seznam', async (c) => {
+  const entries = kv.list({ prefix: ['nakupni-seznam'] });
   const list = await Array.fromAsync(entries);
   const result = list.map(db2item);
   return c.json(result);
 });
 
 export default app;
-
 ```

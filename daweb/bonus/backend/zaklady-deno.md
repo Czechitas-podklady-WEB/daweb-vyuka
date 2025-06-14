@@ -24,7 +24,6 @@ deno run --allow-read --allow-write --allow-net nazev-skriptu.js
 
 Je možné povolit i přístup jen ke konkrétním souborům, síťovou komunikaci ke konkrétním serverům apod.
 
-
 ## Konfigurace projektu
 
 Místo `package.json`, který používá `npm`, používá Deno vlastní konfigurační soubor `deno.json`.

@@ -5,11 +5,11 @@
 Příklad nejjednoduššího webového serveru:
 
 ```javascript
-import { Hono } from "@hono/hono";
+import { Hono } from '@hono/hono';
 
 const app = new Hono();
 
-app.get("/", (c) => c.text("Hello from Hono!"));
+app.get('/', (c) => c.text('Hello from Hono!'));
 
 export default app;
 ```
