@@ -3,14 +3,20 @@
 [Deno](https://deno.com) je JavaScript runtime pro běh skriptů napsaných v JavaScriptu (a TypeScriptu) přímo v počítači (mimo prohlížeč).
 Umožňuje také spouštět testy, používat JSX, používat mnoho API známých z prohlížečů (např. `fetch`,`JSON`) a také vlastní API (třeba pro práci se soubory).
 Deno je moderní a bezpečnější alternativa k Node.js, od stejného autora – vzniklo tak, že si původní autor Node.js po 10 letech řekl: „Kdybych dnes vytvářel Node.js znovu, co bych udělal lépe?“
+
 Deno je zároveň kompatibilní s `node/npm`, jeho kompatibilita se stále zlepšuje a mnoho projektů a knihoven vytvořených původně pro `node` funguje i s Deno.
+
+S Deno je možné používat `npm` balíčky, ale doporučuje se používat přednostně [JSR](https://jsr.io) – JavaScript Repository vytvořené autory Deno.
+U balíčků v JSR je zaručené, že používají moderní JavaScript a budou tak s Deno dobře fungovat.
 
 ## Instalace
 
 Postupujte podle návodu na [úvodní stránce Deno](https://deno.com).
 Příkaz pro **Windows** je nutné spustit v **PowerShellu** (ne v CMD).
 
-Spouštění skriptů:
+## Spouštění skriptů
+
+Skript napsaný v JavaScriptu nebo TypeScriptu je možné spustit rovnou příkazem `deno run`, není potřeba žádná instalace závislostí:
 
 ```shell
 deno run nazev-skriptu.js
@@ -23,6 +29,9 @@ deno run --allow-read --allow-write --allow-net nazev-skriptu.js
 ```
 
 Je možné povolit i přístup jen ke konkrétním souborům, síťovou komunikaci ke konkrétním serverům apod.
+
+Aby nebylo nutné stále dokola psát dlouhé příkazy pro spuštění skriptu, je možné je zapsat do sekce `tasks` v souboru `deno.json` (viz níže).
+Jednotlivé *tasky* se pak spouští příkazem `deno task <nazev-tasku>`.
 
 
 ## Konfigurace projektu
