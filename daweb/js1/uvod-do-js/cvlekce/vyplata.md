@@ -24,7 +24,7 @@ document.body.innerHTML += 21 * 7 * 320;
 
 ```js
 document.body.innerHTML += '<br>';
-document.body.innerHTML += Math.floor(21 * 7 * 265 * (1 - 0.6) * 0.15);
+document.body.innerHTML += Math.floor(21 * 7 * 320 * (1 - 0.6) * 0.15);
 ```
 
 :::
